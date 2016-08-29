@@ -1,0 +1,200 @@
+.b-stat
+{
+    padding-right: 6px;
+    padding-left: 30px;
+    &__like-img
+    {
+        display: inline-block;
+        padding-top: 5px;
+        padding-left: 7px;
+        padding-right: 18px;
+    }
+    &__sha
+    {
+        font-family: $font-family-OpenSans-Bold;
+        font-size: 14px;
+
+        float: left;
+
+        padding-top: 5px;
+        padding-right: 26px;
+
+        color: #000;
+    }
+    &__share
+    {
+        float: left;
+
+        width: 100%;
+        margin-top: 28px;
+        margin-bottom: 40px;
+        padding-top: 11px;
+        padding-left: 28px;
+
+        border: 1px solid #ebebeb;
+        background-color: #fff;
+    }
+    &__cit
+    {
+        font-family: Verdana;
+        font-size: 11px;
+        font-style: italic;
+
+        padding-top: 4px;
+        padding-bottom: 8px;
+
+        color: #444;
+    }
+    &__text
+    {
+        font-family: Verdana;
+        font-size: 15px;
+        line-height: 1.6;
+
+        padding-right: 59px;
+        padding-left: 59px;
+
+        color: #222;
+        & p
+        {
+            font-family: Verdana;
+            font-size: 15px;
+            line-height: 1.6;
+
+            margin-bottom: 22px;
+
+            color: #222;
+        }
+    }
+    &__img
+    {
+        padding-top: 10px;
+    }
+    &__tag
+    {
+        font-family: $font-family-OpenSans-Regular;
+        font-size: 10px;
+
+        display: inline-block;
+
+        padding-top: 1px;
+        padding-right: 6px;
+        padding-bottom: 1px;
+        padding-left: 6px;
+
+        text-decoration: none;
+
+        color: #fff;
+        background-color: #4db2ec;
+        &_black
+        {
+            background-color: #2b2b2b;
+        }
+    }
+    &__title
+    {
+        font-size: 32px;
+        line-height: 1.25;
+
+        padding-top: 14px;
+
+        color: #000;
+    }
+    &__date
+    {
+        font-family: $font-family-OpenSans-Regular;
+        font-size: 11px;
+
+        float: left;
+
+        padding-top: 5px;
+        padding-bottom: 13px;
+
+        color: #444;
+    }
+    &__autor
+    {
+        font-family: $font-family-OpenSans-Bold;
+
+        text-decoration: none;
+
+        color: #444;
+    }
+    &__views
+    {
+        font-size: 11px;
+
+        position: relative;
+
+        float: right;
+
+        padding-top: 7px;
+        padding-right: 21px;
+        padding-left: 20px;
+
+        color: #444;
+        &:before
+        {
+            position: absolute;
+            top: 10px;
+            left: 0;
+
+            display: block;
+
+            width: 13px;
+            height: 9px;
+
+            content: '';
+
+            background: url(../images/eye.png) no-repeat;
+        }
+    }
+    &__follows
+    {
+        font-size: 11px;
+
+        position: relative;
+
+        float: right;
+
+        padding-top: 7px;
+        padding-left: 20px;
+
+        color: #444;
+        &:before
+        {
+            position: absolute;
+            top: 5px;
+            left: 0;
+
+            display: block;
+
+            width: 18px;
+            height: 18px;
+
+            content: '';
+
+            background: url(../images/fol.png) no-repeat;
+        }
+    }
+}
+@media (max-width:640px)
+{
+    .b-stat
+    {
+        padding-right: 15px;
+        padding-left: 15px;
+        &__share {
+            padding-bottom: 10px;
+        }
+        &__title
+        {
+            font-size: 22px;
+        }
+        &__text
+        {
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+    }
+}

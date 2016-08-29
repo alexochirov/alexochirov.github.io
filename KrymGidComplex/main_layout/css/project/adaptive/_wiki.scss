@@ -1,0 +1,8 @@
+@media #{$large-down} {
+  #wikiInfo {
+    display: none!important;
+  }
+  #mainInfo {
+    display: block!important;
+  }
+}

@@ -1,0 +1,40 @@
+.b-techno {
+  background-color: #005481;
+  padding-top: 60px;
+  padding-bottom: 55px;
+}
+.b-techno__block {
+  padding-left: 0;
+  text-align: left;
+}
+
+.b-techno__img {
+  padding-bottom: 33px;
+
+}
+.b-techno__title {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 16px;
+  padding-bottom: 20px;
+}
+.b-techno__desc {
+  color: white;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  padding-right: 10px;
+}
+@media (max-width: 1000px)
+{
+  .b-techno {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media (max-width:640px) {
+  .b-techno__block {
+    text-align: center;
+  }
+}

@@ -1,0 +1,112 @@
+.header {
+
+  &__main {
+    padding-top: 16px;
+    padding-bottom: 21px;
+  }
+  &__course {
+    display: inline-block;
+    color: #474747;
+    font-size: 11px;
+    padding-top: 18px;
+    text-transform: uppercase;
+
+    img {
+      margin-top: -3px;
+      margin-left: 10px;
+      margin-right: 5px;
+    }
+  }
+  &__money {
+    display: inline-block;
+    font-family: $font-family-OpenSansBold;
+    color: #ff2e2e;
+    font-size: 11px;
+    padding-right: 18px;
+    position: relative;
+    text-transform: uppercase;
+    &:before {
+      width: 6px;
+      content: '';
+      right: 6px;
+      top: 4px;
+      height: 9px;
+      background: url('../images/sprite-my.png') no-repeat -52px -58px;
+      display: inline-block;
+      position: absolute;
+
+    }
+    &_up {
+      &:before {
+        background: url('../images/sprite-my.png') no-repeat -26px -29px;
+      }
+      color: #39a027;
+    }
+  }
+
+  &__form {
+    position: relative;
+    &-wrapper {
+      padding-left: 50px;
+      padding-right: 27px;
+    }
+  }
+  &__submit {
+    background: url('../images/sprite-my.png') no-repeat -311px -330px;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 11px;
+    right: 11px;
+  }
+  &__menu {
+    background: url('../images/sprite-my.png') no-repeat -805px -832px;
+    width: 37px;
+    height: 29px;
+    cursor: pointer;
+    float: right;
+    margin-top: 15px;
+  }
+}
+
+input.header__input {
+  color: #918f90;
+  font-size: 12px;
+  padding-bottom: 9px;
+  padding-top: 9px;
+  margin-top: 11px;
+  padding-left: 20px;
+  padding-right: 40px;
+  margin-bottom: 0;
+  background: url(../images/st.png) no-repeat calc(100% - 40px) center;
+  text-transform: uppercase;
+  border: 1px solid #e3e3e3;
+
+}
+
+@media (max-width: 1200px) {
+  .header {
+    &__menu {
+      float: left;
+    }
+    &__form {
+      &-wrapper {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    }
+
+    &__logo {
+      padding-left: 10px;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .header {
+    &__main {
+      padding-bottom: 10px;
+      padding-top: 10px;
+    }
+  }
+}

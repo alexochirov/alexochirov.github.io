@@ -1,0 +1,105 @@
+.services
+{
+    padding-bottom: 87px;
+    &__title
+    {
+        font-family: $font-family-OpenSans-Semibold;
+        font-size: 44px;
+        line-height: 1.1;
+
+        padding-top: 78px;
+
+        text-transform: uppercase;
+
+        color: #434343;
+    }
+    &__text
+    {
+        font-family: $font-family-DINPro-Medium;
+        font-size: 14px;
+        line-height: 1.29;
+
+        padding-top: 7px;
+
+        text-transform: uppercase;
+
+        color: #717171;
+    }
+    &__block
+    {
+        padding-top: 53px;
+
+        text-align: center;
+    }
+    &__img
+    {
+        display: inline-block;
+        &_1
+        {
+            width: 54px;
+            height: 62px;
+
+            background: url('../images/sprite-my.png') no-repeat -1020px -1090px;
+        }
+        &_2
+        {
+            width: 53px;
+            height: 55px;
+
+            background: url('../images/sprite-my.png') no-repeat -733px -778px;
+        }
+        &_3
+        {
+            width: 48px;
+            height: 60px;
+
+            background: url('../images/sprite-my.png') no-repeat -806px -853px;
+        }
+        &_4
+        {
+            width: 35px;
+            height: 63px;
+
+            background: url('../images/sprite-my.png') no-repeat -528px -553px;
+        }
+        &_5
+        {
+            width: 61px;
+            height: 45px;
+
+            background: url('../images/sprite-my.png') no-repeat -652px -713px;
+        }
+        &_6
+        {
+            width: 66px;
+            height: 54px;
+
+            background: url('../images/sprite-my.png') no-repeat -1094px -1172px;
+        }
+        &_7
+        {
+            width: 49px;
+            height: 57px;
+
+            background: url('../images/sprite-my.png') no-repeat -583px -636px;
+        }
+        &_8
+        {
+            width: 57px;
+            height: 57px;
+
+            background: url('../images/sprite-my.png') no-repeat -943px -1013px;
+        }
+    }
+}
+@media (max-width:640px) {
+  .services {
+    padding-bottom: 20px;
+    &__title {
+      font-size: 28px;
+    }
+    &__block {
+      padding-top: 20px;
+    }
+  }
+}

@@ -1,0 +1,138 @@
+.b-go
+{
+    padding-top: 10px;
+    &__slide
+    {
+        position: relative;
+
+        outline: none;
+    }
+    &__trip
+    {
+        position: absolute;
+        top: 116px;
+        left: 60px;
+    }
+    &__here
+    {
+        font-family: $font-family-Philosopher-Bold;
+        font-size: 32px;
+        line-height: 1.4;
+
+        text-transform: uppercase;
+
+        color: #0d436b;
+    }
+    &__sanat
+    {
+        font-family: $font-family-Philosopher-BoldItalic;
+        font-size: 15px;
+        line-height: 1;
+
+        color: #212121;
+    }
+    &__wrap
+    {
+        border: 2px solid #fff;
+        border-radius: 5px;
+        box-shadow: 2px 3.5px 4px rgba(0, 0, 0, .18) ;
+    }
+}
+
+.b-go__slider
+{
+    position: relative;
+    .slick-prev,
+    .slick-next
+    {
+        font-size: 0;
+
+        position: absolute;
+        z-index: 10;
+        top: 42%;
+        left: -1px;
+
+        width: 23px;
+        height: 44px;
+        padding: 0;
+
+        outline: none;
+        background: url(../images/slick-prev.png) no-repeat;
+    }
+    .slick-next
+    {
+        right: 0;
+        left: auto;
+
+        background: url(../images/slick-next.png);
+    }
+    .slick-dots
+    {
+        position: absolute;
+        left: calc(50% - 40px);
+
+        width: 80px;
+        height: 20px;
+        margin: 0;
+
+        list-style-type: none;
+
+        text-align: center;
+        li
+        {
+            float: left;
+
+            margin-left: 5px;
+            &.slick-active
+            {
+                & button
+                {
+                    background-color: #0d436b;
+                }
+            }
+            button
+            {
+                font-size: 0;
+
+                top: -47px;
+
+                width: 10px;
+                height: 10px;
+                margin-bottom: 0;
+                padding: 0;
+
+                border: 1px solid #0d436b;
+                border-radius: 5px;
+                outline: none;
+                background: transparent;
+            }
+        }
+    }
+}
+@media (max-width:960px)
+{
+    .b-go
+    {
+        &__trip
+        {
+            top: 30px;
+        }
+        &__slider
+        {
+            & .slick-dots
+            {
+                display: none!important;
+            }
+        }
+    }
+}
+@media (max-width:640px)
+{
+    .b-go
+    {
+        &__trip
+        {
+            display: none;
+        }
+    }
+}

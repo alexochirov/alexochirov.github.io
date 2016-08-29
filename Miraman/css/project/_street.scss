@@ -1,0 +1,49 @@
+.b-street
+{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+
+    float: left;
+
+    width: 100%;
+    margin-bottom: 27px;
+
+    text-align: center;
+
+    color: #282828;
+    background: url('../images/bg-heading.png') no-repeat 0 5px;
+    background-color: #fff;
+    &__elem
+    {
+        display: inline-block;
+
+        height: 24px;
+        padding-right: 15px;
+        padding-left: 15px;
+
+        background: #fff;
+    }
+    &_pop
+    {
+        margin-bottom: 0;
+        padding-bottom: 16px;
+
+        background-color: #fff;
+    }
+    &_art
+    {
+        margin-top: 41px;
+        margin-bottom: 0;
+        padding-bottom: 15px;
+
+        background-color: #fff;
+    }
+}
+@media (max-width:960px)
+{
+    .b-street
+    {
+        background-position: center 5px;
+    }
+}

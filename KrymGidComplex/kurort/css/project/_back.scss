@@ -1,0 +1,29 @@
+.b-back
+{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center top;
+    &__row
+    {
+        display: none;
+    }
+    &__more-block
+    {
+        display: none;
+    }
+    &__upper
+    {
+        position: relative;
+        top: -20px;
+    }
+}
+@media (max-width:960px)
+{
+    .b-back
+    {
+        &__upper
+        {
+            top: 0;
+        }
+    }
+}

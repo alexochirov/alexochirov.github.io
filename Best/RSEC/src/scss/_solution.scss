@@ -1,0 +1,47 @@
+.solution {
+  margin-top: 60px;
+
+  &__slider {
+    .slick-dots {
+      button {
+        width: 12px;
+        height: 12px;
+        border: 1px solid #30cede;
+        border-radius: 100%;
+        background: #fff;
+      }
+      .slick-active {
+        button {
+          background-color: #30cede;
+        }
+      }
+    }
+  }
+  &__slide {
+    text-align: center;
+  }
+  &__title {
+    color: #303030;
+    font-size: 16px;
+    line-height: 1.38;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: $font-family-georgiaItalic;
+  }
+  &__img {
+    height: 101px;
+    & > img {
+      display: inline-block;
+    }
+  }
+
+
+}
+
+@media (max-width: 640px) {
+  .solution {
+    margin-top: 40px;
+
+
+  }
+}

@@ -1,0 +1,340 @@
+.b-calendar
+{
+    margin-bottom: 40px;
+
+    background-color: white;
+    box-shadow: 1px 1.7px 4px rgba(0, 0, 0, .13);
+    &__store
+    {
+        position: absolute;
+        z-index: 300;
+        left: 0;
+
+        display: none;
+
+        width: calc(100% - 11px);
+        margin-left: 11px;
+        padding: .75rem;
+
+        border: 1px solid #dd249a;
+        border-radius: 5px;
+        background: #fff;
+    }
+    &__town
+    {
+        font-family: $font-family-OpenSansSemiBold;
+display: block;
+        padding-bottom: 5px;
+
+        color: #dd249a;
+        &:hover
+        {
+            color: #781c55;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
+    &_min
+    {
+        margin-bottom: 23px;
+    }
+    &__more
+    {
+        font-size: 14px;
+
+        width: 90%;
+        margin-top: 8px;
+        margin-left: 5%;
+
+        text-align: center;
+
+        color: #fff;
+        border-radius: 5px;
+        background-color: #dd249a;
+    }
+    &__sli-wrapper
+    {
+        padding-right: 46px;
+        padding-bottom: 18px;
+        &:before
+        {
+            font-size: 0;
+
+            position: absolute;
+            z-index: 10;
+            top: 5px;
+            left: -10px;
+
+            width: 67px;
+            height: 68px;
+
+            content: '1';
+            pointer-events: none;
+
+            background: url(../images/grad1.png) no-repeat right;
+        }
+        &:after
+        {
+            font-size: 0;
+
+            position: absolute;
+            z-index: 10;
+            top: 5px;
+            right: 35px;
+
+            width: 67px;
+            height: 68px;
+
+            content: '1';
+            pointer-events: none;
+
+            background: url(../images/grad2.png) no-repeat;
+        }
+    }
+    &__slider
+    {
+        margin-top: 20px;
+    }
+    &__slide
+    {
+        text-align: center;
+
+        outline: none;
+    }
+    &__block
+    {
+        display: inline-block;
+
+        width: 87px;
+        height: 50px;
+
+        border-radius: 5px;
+        background-color: #dd249a;
+        &_now
+        {
+            background-color: #781c55;
+        }
+        &:hover
+        {
+            background-color: #781c55;
+        }
+    }
+    &__day
+    {
+        font-family: $font-family-OpenSansBold;
+        font-size: 14px;
+
+        padding-top: 3px;
+
+        text-align: center;
+
+        color: white;
+    }
+    &__week-day
+    {
+        font-family: $font-family-OpenSansBold;
+        font-size: 12px;
+
+        padding-top: 2px;
+
+        text-align: center;
+
+        color: white;
+    }
+    &__place
+    {
+        padding-right: 5px;
+    }
+    &__month
+    {
+        font-family: $font-family-OpenSansBold;
+        font-size: 14px;
+        line-height: 18px;
+
+        display: inline-block;
+
+        margin-top: 33px;
+
+        text-transform: uppercase;
+
+        color: #dd249a;
+        border-bottom: 2px dashed #dd249a;
+        &:hover
+        {
+            color: #781c55;
+        }
+        &-wrap
+        {
+            padding-right: 5px;
+        }
+    }
+    &__wrapper
+    {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    &__main
+    {
+    }
+    &__city
+    {
+        font-size: 15px;
+        line-height: 24px;
+
+        float: left;
+
+        padding-top: 32px;
+        padding-bottom: 32px;
+        padding-left: 2px;
+
+        color: #383737;
+    }
+    &__sel
+    {
+        position: relative;
+
+        float: left;
+
+        width: calc(100% - 70px);
+    }
+    &__select
+    {
+        font-size: 15px;
+
+        height: 38px;
+        margin-top: 24px;
+        margin-left: 11px;
+        padding-top: 6px;
+        padding-left: 9px;
+
+        color: #383737;
+        border: 1px solid #e0e0e0;
+        border-radius: 5px;
+        outline: none;
+        background: #fff url('../images/shape-4.png') no-repeat right;
+        &:focus
+        {
+            background-color: #fff;
+        }
+    }
+}
+.b-calendar__slider:not(.b-calendar__slider_active)
+{
+    display: none;
+}
+@media (min-width:780px)
+{
+    .b-calendar
+    {
+        &__more
+        {
+            display: none;
+        }
+    }
+}
+
+
+@media (max-width:1140px) and (min-width:960px)
+{
+    .b-calendar
+    {
+        &__sli-wrapper
+        {
+            &:before
+            {
+                left: calc(13.9% - 83px);
+
+                width: 130px;
+
+                background-image: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,.9), rgba(255,255,255,0) ) ;
+            }
+            &:after
+            {
+                right: calc(11.1% - 34px);
+
+                width: 130px;
+
+                background-image: linear-gradient(to left, rgba(255,255,255,1), rgba(255,255,255,.9), rgba(255,255,255,0) ) ;
+            }
+        }
+    }
+}
+@media (max-width:960px) and (min-width:500px)
+{
+    .b-calendar
+    {
+        &__sli-wrapper
+        {
+            &:before
+            {
+                left: calc(13.9% - 85px);
+
+                width: 130px;
+
+                background-image: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,.9), rgba(255,255,255,0) ) ;
+            }
+            &:after
+            {
+                right: calc(18.5% - 85px);
+
+                width: 130px;
+
+                background-image: linear-gradient(to left, rgba(255,255,255,1), rgba(255,255,255,.9), rgba(255,255,255,0) ) ;
+            }
+        }
+    }
+}
+@media (max-width:500px)
+{
+    .b-calendar
+    {
+        &__sli-wrapper
+        {
+            &:before
+            {
+                display: none;
+            }
+            &:after
+            {
+                display: none;
+            }
+        }
+    }
+}
+@media (max-width:960px)
+{
+    .b-calendar
+    {
+        &__city
+        {
+            padding-bottom: 0;
+        }
+        &__select
+        {
+            margin-bottom: 0;
+        }
+    }
+}
+@media (max-width:640px)
+{
+    .b-calendar
+    {
+        margin-bottom: 10px;
+        &__sli-wrapper
+        {
+            padding-right: 25px;
+        }
+        &__place
+        {
+            padding-left: 0;
+        }
+        &__city
+        {
+            font-size: 15px;
+        }
+        &__select
+        {
+            font-size: 15px;
+        }
+    }
+}

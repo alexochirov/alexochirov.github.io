@@ -1,0 +1,84 @@
+.b-main
+{
+    margin-top: 30px;
+    &_pro {
+        margin-top: 0;
+    }
+    &__gran
+    {
+        height: 100%;
+
+        border: 2px solid #fff;
+        border-radius: 5px;
+        box-shadow: 2px 3.5px 4px rgba(0, 0, 0, .18) ;
+        &_chu
+        {
+            img
+            {
+                max-height: 270px;
+            }
+        }
+    }
+    &__church
+    {
+        max-height: 274px;
+        padding-right:0px;
+    }
+    &__map
+    {
+        padding-left: 8px;
+    }
+    &__karta
+    {
+        overflow: hidden;
+
+        width: 100%;
+        height: 482px;
+        max-height: 100%;
+        & > .ymaps-map
+        {
+            border-radius: 6px;
+        }
+    }
+}
+@media (max-width:960px) and (min-width:640px)
+{
+    .b-main
+    {
+        &__map {
+            padding-left: 0;    
+        }
+        &__church
+        {
+            padding-right: 20px;
+        }
+    }
+}
+@media (max-width:640px)
+{
+    .b-main
+    {
+        &__church
+        {
+            margin-bottom: 10px;
+            padding-right: 15px;
+            padding-bottom: 10px;
+
+            text-align: center;
+        }
+        &__gran
+        {
+            &_chu
+            {
+                float: left;
+
+                margin-left: calc(50% - 135px);
+            }
+        }
+        &__map
+        {
+            padding-left: 15px;
+            margin-bottom: 150px;
+        }
+    }
+}

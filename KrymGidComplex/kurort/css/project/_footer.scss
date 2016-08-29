@@ -1,0 +1,31 @@
+.b-footer
+{
+    padding-top: 8px;
+    padding-bottom: 31px;
+    &__sanatoriy
+    {
+        font-size: 15px;
+
+        padding-left: 37px;
+
+        color: #424242;
+    }
+    &__contacts
+    {
+        font-size: 15px;
+
+        padding-right: 33px;
+
+        text-align: right;
+
+        color: #424242;
+    }
+}
+@media (max-width:640px) {
+    .b-footer {
+        &__sanatoriy, &__contacts {
+            padding: 0 15px;
+            text-align: center;
+        }
+    }
+}

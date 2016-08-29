@@ -1,0 +1,227 @@
+.b-prodocts
+{
+  &>li {
+    padding-bottom: 0 ;
+  }
+	&__item-content
+	{
+		position: relative;
+		max-width:296px;
+    min-height: 100px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 2px 3.5px 4px rgba(0, 0, 0, 0.18);
+    margin:auto;
+    margin-top:20px;
+    transition:.4s;//delayTime
+
+    &_cloned {
+      position: absolute;
+      z-index: 100;
+      margin:auto;
+      left:0;
+      top: 20px;
+      
+    }
+    img{
+    	width:100%;
+    	border-radius: 5px;
+    }
+	}
+
+	
+
+	&__btn
+	{
+		font-family: $font-family-Philosopher-Bold;
+    font-size: 15px;
+    position: absolute;
+    top: 45%;
+    left: calc(50% - 73px);
+    display: block;
+    width: 146px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    cursor:pointer;
+    text-align: center;
+    color: #ed4543;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    background-color: #fff;
+    background-image: linear-gradient(to top, #e1e1e1 0%, #e1e1e1 1%, #fff 100%);
+    box-shadow: 2.5px 4.3px 5px rgba(0, 0, 0, 0.23);
+	}
+
+	&-produits
+	{
+    cursor:pointer;
+		&__item
+		{
+			min-height: 216px;
+		}
+		&__content{
+			max-width:216px;
+    	min-height: 100px;
+    	border: 2px solid #fff;
+    	border-radius: 3px;
+    	background: #fff;
+    	box-shadow: 2px 3.5px 4px rgba(0, 0, 0, 0.18);
+    	margin:auto;
+    	margin-top:20px;
+    	text-align:center;
+    	font-size: 15px;
+    	padding-left:20px;
+    	padding-right:20px;
+    	position:relative;
+      cursor:pointer;
+      &_right {
+        position: absolute;
+        bottom: 0;
+      }
+
+		}
+
+		&__content-rond
+		{
+		  width: 204px;
+		  height: 204px !important;
+		  border-radius: 50%;
+		  background-image: -moz-linear-gradient( 90deg, rgb(255,104,5) 0%, rgb(255,188,27) 99%);
+		  background-image: -webkit-linear-gradient( 90deg, rgb(255,104,5) 0%, rgb(255,188,27) 99%);
+		  background-image: -ms-linear-gradient( 90deg, rgb(255,104,5) 0%, rgb(255,188,27) 99%);
+		  position:relative;
+		  margin:auto;
+		  margin-top: 60px;
+		  text-align:center;
+		  line-height: 204px;
+		  color:white;
+
+		  &__somme
+		  {
+		  	color:white !important;
+		  }
+
+		  &__sens
+		  {
+		  	cursor:pointer;
+		  	margin-top:calc((100% - 16px) / 2);
+		  }
+
+		  &__sensL
+		  {
+		  	float:left;
+		  	margin-left:8px;
+		  }
+
+		  &__sensR
+		  {
+		  	float:right;
+		  	margin-right:8px;
+		  }
+		}
+
+		&__text
+		{
+			display:block;
+		  color: rgb( 66, 66, 66 );
+		  line-height: 1.467;
+		  text-align: left !important;
+		  margin-top:10px;
+		}
+
+		&__indice
+		{
+			text-align: left !important;
+			margin-top:0px;
+			position:relative;
+			min-height: 42px;
+			line-height: 42px;
+			margin-bottom:5px;
+		}
+
+		&__price
+		{
+			color:#e42e2e;
+			font-family: $font-family-Philosopher-Bold;
+		}
+
+		&__shop
+		{
+		float: right;
+			width: 42px;
+  		height: 42px;
+  		border-radius:50%;
+  		border:solid 1px rgb( 227, 227, 227 );
+  	
+  		background: url(../images/shop_img.png) no-repeat center;
+		}
+		
+	}
+
+}
+
+
+
+.b-tabs-prodoct{
+	background:none !important;
+	border:none !important;
+}
+
+.i-akciya
+{
+	&:before
+	{
+		content:" ";
+		width:70px;
+		height:20px;
+		background: url("../images/akciya.png") no-repeat center;
+		position:absolute;
+		top:10px;
+		left:-5px;
+	}
+}
+
+	.icone_price
+ {
+    font-weight: bold;
+    font-size: 15px;
+  }
+@media (max-width:960px)
+{
+  .b-prodocts
+  {
+    &-produits {
+      &__content_right {
+        float: right;
+        position: relative;
+      }
+      &__content-rond {
+        &_my{
+          margin-left: 20%;
+          float: left;
+        }
+      }
+    }
+
+  }
+
+}
+@media (max-width:640px) {
+  
+     .b-prodocts
+  {
+    &-produits {
+      &__content_right {
+        float: none;
+      }
+      &__content-rond {
+        &_my{
+          margin:auto;
+          float: none;
+        }
+      }
+    }
+
+  }
+}

@@ -1,0 +1,86 @@
+.b-place{
+  &__description {
+    #wikiInfo {
+      text-indent: 0;
+    }
+  }
+}
+@media #{ $large-down} {
+    .b-place{
+      &__wiki {
+        background: none;
+        min-height:  rem-calc(20);
+        padding-bottom: 0;
+        display: block;
+        &-title {
+          height: auto;
+          padding-left: rem-calc(15);
+        }
+      }
+      &__map {
+        font-size: rem-calc(12);
+        &:before {
+          margin-right: rem-calc(2);
+        }
+      }
+      &__add {
+        font-size: rem-calc(12);
+        padding: rem-calc(2 4);
+        &:before {
+          margin-right: rem-calc(2);
+        }
+      }
+      &__tabs {
+        width: 100%!important;
+        max-width: 100%!important;
+        margin: 0!important;
+        &_hide {
+          display: none!important;
+        }
+        &-title {
+          &__link {
+            &-span {
+              left:0 !important;
+            }
+          }
+        }
+      }
+      &__title{
+        margin: rem-calc(20 0 10 0);
+      }
+    }
+  }
+
+  @media #{$small-only} {
+    .b-place {
+      &__title{
+        font-size: rem-calc(21);
+        line-height: rem-calc(24);
+        margin: rem-calc(15 0 10 0);
+      }
+      &__description {
+        font-size: rem-calc(16);
+        line-height: rem-calc(20);
+        text-indent: rem-calc(10);
+        p {
+          font-size: rem-calc(16);
+          line-height: rem-calc(20);
+          text-indent: rem-calc(10);
+        }
+      }
+      &__tabs {
+        margin: 0!important;
+        &-title{
+          width: 100%!important;
+          left:0!important;
+          &:after {
+            display: none!important;
+          }
+          &:before {
+            display: none!important;
+          }
+        }
+      }
+    }
+  }
+

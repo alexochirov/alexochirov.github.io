@@ -1,0 +1,123 @@
+footer
+{
+  background-image: url(../i/wave.png);
+  background-repeat: repeat-x;
+  background-position: center top;
+  padding-top: rem-calc(21);
+  font-size: rem-calc(13);
+  font-family: $font-family-OpenSansRegular;
+  color: $white;
+  line-height: rem-calc(25);
+}
+
+.b-footer {
+  background-color: $blue;
+  padding-bottom: rem-calc(30);
+
+  &__col1 {
+    font-family: $font-family-OpenSansLight;
+  }
+
+  &__link {
+    color: $white;
+    text-decoration: underline;
+    &:hover {
+      color: $white;
+    }
+    &:active {
+      color: $white;
+    }
+    &:visited {
+      color: $white;
+    }
+
+    &_no-line {
+      text-decoration: none;
+    }
+  }
+
+  &__map-marker {
+    line-height: rem-calc(25);
+    height: rem-calc(25);
+    display: flex;
+
+    &:before {
+      display: inline-block;
+      content: "";
+      background-image: url("../i/sprite.png");
+      background-repeat: no-repeat;
+      background-position: rem-calc(-90 0);
+      width: rem-calc(17);
+      height: rem-calc(23);
+      margin-right: rem-calc(8);
+      position: relative;
+    }
+  }
+
+  &__mail {
+    &:before {
+      display: inline-block;
+      content: "";
+      background-image: url(../i/sprite.png);
+      background-repeat: no-repeat;
+      background-position: rem-calc(-12) 0;
+      width: rem-calc(14);
+      height: rem-calc(10);
+      margin-right: rem-calc(6);
+      position: relative;
+    }
+    &:after {
+      margin-right: rem-calc(15);
+      display: inline-block;
+      content: "";
+    }
+  }
+
+  &__phone {
+    &:before {
+      display: inline-block;
+      content: "";
+      background-image: url(../i/sprite.png);
+      background-repeat: no-repeat;
+      background-position: rem-calc(-28) 0;
+      width: rem-calc(12);
+      height: rem-calc(12);
+      margin-right: rem-calc(6);
+      top: rem-calc(2);
+      position: relative;
+    }
+  }
+
+  &__quick-subscribe{
+    &-form {
+      margin: 0;
+    }
+    &-text {
+      border-radius: rem-calc($global-radius 0 0 $global-radius)!important;
+      -webkit-border-radius: rem-calc($global-radius 0 0 $global-radius)!important;
+      border: none!important;
+      margin: 0!important;
+      height: rem-calc(33)!important;
+    }
+    &-button {
+      border-radius: rem-calc(0 $global-radius $global-radius 0);
+      -webkit-border-radius: rem-calc(0 $global-radius $global-radius 0);
+      width: rem-calc(31);
+      margin: 0;
+      height: rem-calc(33);
+      padding: 0;
+
+      &:after {
+        display: inline-block;
+        content: "";
+        background-image: url(../i/sprite.png);
+        background-repeat: no-repeat;
+        background-position: 0 rem-calc(-19);
+        width: rem-calc(22);
+        height: rem-calc(24);
+        margin-top: rem-calc(3);
+        margin-left: rem-calc(3);
+      }
+    }
+  }
+}

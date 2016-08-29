@@ -1,0 +1,48 @@
+  @media #{$large-down} {
+    .b-lenta{
+      top:0;
+    }
+  }
+
+
+  @media only screen and (min-width: #{upper-bound($medium-range)}) and (max-width: rem-calc(1240)) {
+    .b-lenta{
+      max-width: 93.5%;
+      min-width: 93.5%;
+      &__box {
+        max-width: 100%;
+        min-width: 100%;
+        padding: 0;
+        margin: 0;
+      }
+      &__tabs {
+        max-width: 100%;
+        min-width: 100%;
+        &-content{
+          max-width: 93.5%;
+          min-width: 93.5%;
+          &-box{
+            max-width: 100%;
+            min-width: 100%;
+          }
+        }
+        &-title{
+          width: 25%!important;
+          &__link{
+            width: 100%!important;
+            &-span {
+              font-size: rem-calc(11);
+              line-height: rem-calc(34);
+              width: 100%!important;
+            }
+            &:after {
+              display: none!important;
+            }
+            &:before {
+              display: none!important;
+            }
+          }
+        }
+      }
+    }
+  }

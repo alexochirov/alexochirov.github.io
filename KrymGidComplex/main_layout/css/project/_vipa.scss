@@ -1,0 +1,43 @@
+.b-vipa
+{
+    position: absolute;
+    z-index: 10;
+
+    display: none;
+
+    width: 300px;
+    padding: 10px;
+
+    text-align: center;
+
+    border: 2px solid #f57c00;
+    background: #fff;
+    &__btn
+    {
+        margin-bottom: 0;
+        padding-top: 5px;
+        padding-bottom: 5px;
+
+        text-align: center;
+
+        border-radius: 7px;
+    }
+    &__button {
+        margin-bottom: 0;
+        padding-top: 5px;
+        padding-bottom: 5px;
+
+        text-align: center;
+
+        border-radius: 7px;
+    }
+}
+input.b-vipa__input
+{
+    border-radius: 5px;
+}
+@media (max-width:640px) {
+    .b-vipa {
+        left: -120px;
+    }
+}

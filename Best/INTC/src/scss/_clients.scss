@@ -1,0 +1,72 @@
+.clients
+{
+    padding-top: 90px;
+    padding-bottom: 85px;
+
+    background: url(../images/back1.png)no-repeat center top;
+    &__block
+    {
+        display: inline-block;
+
+        width: 100%;
+        max-width: 200px;
+        height: 200px;
+        padding-top: 68px;
+
+        text-align: center;
+
+        border: 2px solid #fff;
+        border-radius: 3px;
+    }
+    &__img
+    {
+        display: inline-block;
+        &_1
+        {
+            width: 51px;
+            height: 43px;
+
+            background: url('../images/sprite-my.png') no-repeat -325px -348px;
+        }
+        &_2
+        {
+            width: 47px;
+            height: 51px;
+
+            background: url('../images/sprite-my.png') no-repeat -461px -482px;
+        }
+        &_3
+        {
+            width: 45px;
+            height: 51px;
+
+            background: url('../images/sprite-my.png') no-repeat -396px -411px;
+        }
+    }
+    &__text
+    {
+        font-family: $font-family-Din-cyr;
+        font-size: 14px;
+        line-height: 1.29;
+
+        padding-top: 9px;
+
+        text-transform: uppercase;
+
+        color: #fff;
+    }
+}
+@media (max-width:640px)
+{
+    .clients
+    {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        &__block
+        {
+            height: 110px;
+            margin-bottom: 10px;
+            padding-top: 10px;
+        }
+    }
+}

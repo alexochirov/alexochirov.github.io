@@ -1,0 +1,160 @@
+.b-contests {
+  padding-top: rem-calc(60);
+  padding-bottom: rem-calc(60);
+  &__bg {
+    background: linear-gradient(to top, #f7f6f6, #dfdfdf);
+    &-img {
+      background-repeat: no-repeat;
+      background-position: right center;
+      max-width: rem-calc(1400);
+      margin: 0 auto;
+      height: 100%;
+
+      &_show {
+        background-image: url("../i/bg-contests.png");
+      }
+    }
+  }
+  &__carousel {
+    overflow: hidden;
+    position: relative;
+    &-navigation {
+      padding-left: 0;
+      padding-right: 0;
+      padding-top: rem-calc(25);
+      overflow: hidden;
+
+      &-li {
+        float: left;
+        min-height: rem-calc(200);
+        padding-left: rem-calc(5) !important;
+        padding-right: rem-calc(5) !important;
+        line-height: rem-calc(22);
+        cursor: pointer;
+
+        &.active {
+          .b-contests {
+            &__carousel {
+              &-navigation {
+                &-li {
+                  &-bg {
+                    border: 3px solid $orange;
+                  }
+                }
+              }
+            }
+          }
+        }
+        &-bg {
+          height: rem-calc(100);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+        }
+      }
+      &-ul {
+        width: 20000em;
+        position: relative;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      &-time {
+        color: $orange;
+        font-size: rem-calc(11.5);
+        font-family: $font-family-OpenSansSemiBold;
+      }
+      &-title {
+        color: $gray;
+        font-size: rem-calc(14);
+        line-height: rem-calc(14);
+        font-family: $font-family-OpenSansSemiBold;
+        text-decoration: underline;
+        text-align: center;
+        margin: rem-calc(50 0);
+        &:hover {
+          color: $gray;
+        }
+        &:active {
+          color: $gray;
+        }
+      }
+      &__box {
+        bottom: rem-calc(-90);
+        position: relative;
+        height: 0;
+        width: 100%;
+      }
+      &_prev {
+        left: 0;
+        width: rem-calc(31);
+        height: rem-calc(26);
+        display: inline-block;
+        background-image: url(../i/sprite.png);
+        background-repeat: no-repeat;
+        background-position: rem-calc(-455 -2);
+        cursor: pointer;
+        position: absolute;
+        z-index: 10;
+      }
+      &_next {
+        right: 0;
+        width: rem-calc(31);
+        height: rem-calc(26);
+        display: inline-block;
+        background-image: url(../i/sprite.png);
+        background-repeat: no-repeat;
+        background-position: rem-calc(-486 -2);
+        cursor: pointer;
+        position: absolute;
+        z-index: 10;
+      }
+    }
+    &-ul {
+      width: 20000em;
+      position: relative;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      height: rem-calc(506);
+    }
+    &-li {
+      height: rem-calc(506);
+      float: left;
+      /*margin-right: 20%;*/
+
+      &-bg {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 100%;
+        position: absolute;
+      }
+    }
+    &-time {
+      color: $orange;
+      font-size: rem-calc(15);
+      font-family: $font-family-OpenSansSemiBold;
+    }
+    &-desc {
+      font-size: rem-calc(15);
+      font-family: $font-family-OpenSansSemiBold;
+      margin-bottom: rem-calc(20);
+    }
+    &-title {
+      color: $blue;
+      font-size: rem-calc(48);
+      line-height: rem-calc(48);
+      font-family: $font-family-OpenSansBold;
+      text-transform: uppercase;
+      text-align: center;
+      margin: rem-calc(50 0);
+    }
+  }
+  &-box {
+    background-image: url("../i/contests-border-bottom.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+  }
+}

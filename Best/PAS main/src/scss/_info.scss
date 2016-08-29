@@ -1,0 +1,15 @@
+.info {
+  margin-top: 50px;
+  padding-right: 8px;
+}
+@media (max-width:1200px) {
+    .info {
+      padding-left: 10px;
+    }
+}
+@media (max-width:640px) {
+    .info {
+      margin-top: 20px;
+      padding-right: 10px;
+    }
+}

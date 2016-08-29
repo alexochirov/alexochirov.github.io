@@ -1,0 +1,29 @@
+.header {
+  border-bottom: 3px solid #000;
+  &__inn {
+    padding-bottom: 5px;
+  }
+  &__bord {
+    padding-bottom: 5px;
+  }
+  &__row {
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+  &__logo {
+    width: 295px;
+  }
+  &__info {
+    display: inline-block;
+    width: 295px;
+  }
+  &__right {
+    text-align: right;
+  }
+  &__address {
+    font-size: 13px;
+  }
+  &__tel {
+
+  }
+}

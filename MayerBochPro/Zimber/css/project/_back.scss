@@ -1,0 +1,15 @@
+.b-back
+{
+    position: absolute;
+    z-index: -1;
+    top: 190px;
+    right: 0;
+
+    width: 50%;
+    &__img
+    {
+        float: right;
+
+        width: 50%;
+    }
+}

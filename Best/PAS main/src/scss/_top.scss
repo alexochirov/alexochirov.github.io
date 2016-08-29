@@ -1,0 +1,75 @@
+.top {
+  background: #f5f5f5;
+  border-bottom: 1px solid #e3e3e3;
+
+  &__icon {
+    width: 20px;
+    float: right;
+    height: 20px;
+    margin-top: 12px;
+    margin-left: 11px;
+    &_tw {
+      background: url('../images/sprite-my.png') no-repeat -469px -488px;
+    }
+    &_yo {
+      background: url('../images/sprite-my.png') no-repeat -389px -408px;
+    }
+    &_fb {
+      background: url('../images/sprite-my.png') no-repeat -349px -368px;
+    }
+    &_rs {
+      background: url('../images/sprite-my.png') no-repeat -429px -448px;
+    }
+  }
+  &__li {
+    float: left;
+    margin-right: 42px;
+    &-link {
+      color: #474747;
+      padding-top: 15px;
+      display: inline-block;
+      padding-bottom: 16px;
+      font-size: 11px;
+      font-family:$font-family-OpenSansBold;
+      text-transform: uppercase;
+    }
+  }
+  &__list {
+    float: left;
+    margin: 0;
+    width: 100%;
+    list-style-type: none;
+
+  }
+  &__social {
+    padding-bottom: 10px;
+  }
+}
+@media (max-width:1200px) {
+    .top {
+      &__menu {
+        padding-left: 10px;
+      }
+      &__li {
+        margin-right: 25px;
+        &-link {
+          padding-top: 5px;
+          padding-bottom: 5px;
+        }
+      }
+      &__social {
+        padding-right: 10px;
+      }
+    }
+}
+@media (max-width:640px) {
+    .top {
+      &__list {
+        display: none;
+      }
+      &__li {
+        float: none;
+        display: inline-block;
+      }
+    }
+}

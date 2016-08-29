@@ -1,0 +1,54 @@
+.b-top {
+    background-color: #ebebeb;
+}
+
+.b-top__logo {
+    padding-top: 25px;
+    padding-bottom: 21px;
+}
+
+.b-top__info {
+    padding-top: 28px;
+    padding-bottom: 23px;
+    text-align: right;
+}
+
+.b-top__tel-link {
+    opacity: 0.9;
+    color: black;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.b-top__vopros {
+    opacity: 0.9;
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.b-top__quest {
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.b-top__mail {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #1b9bd6;
+    text-transform: none;
+}
+@media (max-width: 1000px) {
+    .b-top {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}

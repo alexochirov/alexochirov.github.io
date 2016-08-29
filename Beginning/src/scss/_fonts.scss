@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "OpenSansBold";
+  src: url(#{$fontsPath}/OpenSansBold.eot);
+  src: url(#{$fontsPath}/OpenSansBold.eot?#iefix) format("embedded-opentype"),
+  url(#{$fontsPath}/OpenSansBold.woff) format("woff"),
+  url(#{$fontsPath}/OpenSansBold.ttf) format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+$font-family-OpenSansBold: "OpenSansBold", Arial, sans-serif;

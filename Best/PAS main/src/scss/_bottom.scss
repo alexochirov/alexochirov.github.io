@@ -1,0 +1,87 @@
+.bottom {
+  &__col {
+    font-size: 12px;
+    line-height: 2;
+    color: #bebebe;
+    padding-right: 10px;
+    font-family: $font-family-OpenSansBold;
+    &_cetera {
+      text-transform: uppercase;
+    }
+    &_form {
+      padding-right: 35px;
+      position: relative;
+    }
+  }
+  &__link {
+    color: #45a3d8;
+    padding-left: 6px;
+  }
+  &__icon {
+    background: url('../images/sprite-my.png') no-repeat -982px -1001px;
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin-bottom: 20px;
+    margin-right: 17px;
+    &_yo {
+      background: url('../images/sprite-my.png') no-repeat -1042px -1061px;
+    }
+    &_fb {
+      background: url('../images/sprite-my.png') no-repeat -922px -941px;
+    }
+    &_rs {
+      background: url('../images/sprite-my.png') no-repeat -862px -881px;
+    }
+  }
+  &__submit {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 35px;
+    top: 0;
+    background:#45a3d8 url('../images/sprite-my.png') no-repeat -227px -246px;
+
+
+  }
+
+}
+
+input.bottom__inp {
+  color: #918f90;
+  height: 40px;
+  font-size: 12px;
+  text-transform: uppercase;
+  &::-webkit-input-placeholder {
+    color: #918f90;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  &::-moz-placeholder {
+    color: #918f90;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  &:-moz-placeholder {
+    color: #918f90;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  &:-ms-input-placeholder {
+    color: #918f90;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+}
+@media (max-width:1200px) {
+    .bottom {
+      &__submit {
+        right: 10px;
+      }
+      &__col {
+        &_form {
+          padding-right: 10px;
+        }
+      }
+    }
+}

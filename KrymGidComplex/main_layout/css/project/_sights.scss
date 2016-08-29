@@ -1,0 +1,53 @@
+.b-sights {
+  &__title {
+    font-family: $font-family-OpenSansSemiBold;
+    font-size: rem-calc(36);
+  }
+  &__border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  &-list {
+    margin-bottom: rem-calc(60);
+  }
+  &__back{
+    background: linear-gradient(to top, #f57c00, #ffb400);
+    border-radius: rem-calc(20);
+    cursor: pointer;
+    width: rem-calc(230);
+    height: rem-calc(32);
+    position: relative;
+    opacity: 1;
+    text-align: center;
+    font-size: rem-calc(13);
+    font-family: $font-family-OpenSansSemiBold;
+    color: $white;
+    line-height: rem-calc(32);
+    display: inline-block;
+    margin-top: rem-calc(15);
+    margin-bottom: rem-calc(15);
+    &:hover {
+      color: $white;
+    }
+    &:focus {
+      color: white;
+    }
+    &:active {
+      color: white;
+    }
+    &:before {
+      display: inline-block;
+      content: "";
+      background-image: url('../i/sprite.png');
+      background-repeat: no-repeat;
+      background-position: rem-calc(-52 -18);
+      width: rem-calc(12);
+      height: rem-calc(12);
+      left: rem-calc(10);
+      position: relative;
+      float: left;
+      margin-top: rem-calc(10);
+      line-height: rem-calc(32);
+    }
+  }
+}

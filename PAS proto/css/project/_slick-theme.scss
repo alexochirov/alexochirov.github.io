@@ -1,0 +1,31 @@
+button.slick-prev,
+button.slick-next
+{
+    font-size: 0;
+
+    position: absolute;
+    z-index: 1;
+    right: 53px;
+
+    width: 25px;
+    height: 25px;
+    padding: 0;
+
+    transition: .3s all;
+
+    border: 1px solid #dbdbdb;
+    outline: none;
+    background:#fff url('../images/sprite-my.png') no-repeat -39px -43px;
+    &:hover
+    {
+        border-color: #000;
+    }
+}
+button.slick-next
+{
+    top: 0;
+    right: 21px;
+    left: auto;
+
+    background:#fff url('../images/sprite-my.png') no-repeat -14px -16px;
+}

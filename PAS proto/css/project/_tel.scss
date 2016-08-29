@@ -1,0 +1,29 @@
+.b-tel
+{
+    margin-top: 38px;
+    padding-left: 37px;
+    &_high
+    {
+        margin-top: 438px;
+    }
+}
+@media (max-width:960px) and (min-width:640px)
+{
+    .b-tel
+    {
+        padding-left: 0;
+    }
+}
+@media (max-width:640px)
+{
+    .b-tel
+    {
+        padding-left: 15px;
+
+        text-align: center;
+        &_high
+    {
+        margin-top: 38px;
+    }
+    }
+}

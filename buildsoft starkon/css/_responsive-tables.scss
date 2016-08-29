@@ -1,0 +1,164 @@
+/* Foundation v2.1.4 http://foundation.zurb.com */
+/* Artfully masterminded by ZURB  */
+
+/* -------------------------------------------------- 
+   Table of Contents
+-----------------------------------------------------
+:: Shared Styles
+:: Page Name 1
+:: Page Name 2
+*/
+
+
+/* -----------------------------------------
+   Shared Styles
+----------------------------------------- */
+
+.b-responsive-tables {
+	font-family: 'RobotoCondensed-Regular', sans-serif;
+	padding: 0;
+}
+.b-responsive-tables__item {
+	text-align: center;
+	font-size: 16px;
+	font-weight: 300;
+	color: #000;
+	padding-left: 22px;
+	&:first-child {
+		text-align: left;
+	}
+}
+.b-responsive-tables__head-item {
+	color: #15659d;
+	font-size: 24px;
+	font-weight: 700;
+	padding: 19px 0 18px 0;
+	text-align: center;
+}
+.b-responsive-tables__item-first {
+	color: black;
+	font-size: 18px;
+	font-weight: 700;
+}
+.b-responsive-tables__head-item-span {
+	color: #777;
+	font-size: 18px;
+	font-weight: 400;
+}
+.b-responsive-tables__head-item {
+		width: 188px;
+
+	}
+.b-responsive-tables__row {
+	&:nth-of-type(odd) {
+		background: #f7f7f7;
+	}
+	&:nth-of-type(even) {
+		background: #fff;
+	}
+}
+.b-responsive-tables__body > .b-responsive-tables__row_grey {
+	background-image: url(../i/grey.png);
+}
+
+.b-responsive-tables__item_grey {
+	color: #fff;
+	font-family: 'RobotoCondensed-Light', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	text-align: center;
+	padding: 15px 0 14px 0;
+	&:first-child {
+		text-align: center;
+	}
+}
+.b-responsive-tables__plus {
+	display: inline-block;
+	background: url('../i/sprites.png') no-repeat -466px -108px;
+	width: 35px;
+	height: 35px;
+}
+.b-responsive-tables__minus {
+	display: inline-block;
+	background: url('../i/sprites.png') no-repeat -403px -233px;
+	width: 35px;
+	height: 35px;
+}
+.b-responsive-tables__item_final {
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.b-responsive-tables__item_final-star {
+	color: #1b9bd7;
+	font-size: 36px;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding: 30px 0 32px 0;
+}
+.b-responsive-tables__item_final-scad {
+	color: #f00;
+	font-size: 24px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.b-responsive-tables__item_final-lira {
+	color: #f00;
+	font-size: 24px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.b-responsive-tables__rubl {
+	color: #1b9bd7;
+	font-family: "Times New Roman";
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 34px;
+}
+.b-responsive-tables__rub {
+	font-family: "Times New Roman";
+	font-size: 25px;
+	font-weight: 700;
+	line-height: 17px;
+}
+.b-responsive-tables__starkes {
+	background-image: url(../i/table_back.png);
+}
+table th { font-weight: bold; }
+table td, table th { padding: 9px 10px;  }
+
+/* Mobile */
+@media  (max-width: 767px) {
+	
+	table.responsive { margin-bottom: 0; border: 1px solid #eee; }
+	
+	.pinned { position: absolute; left: 0; top: 0; background: #fff; width: 230px; overflow: hidden; overflow-x: scroll; border-right: 1px solid #ccc; border-left: 1px solid #ccc; }
+	.pinned table { border-right: none; border-left: none; width: 100%; }
+	.pinned table th, .pinned table td {  }
+	.pinned td:last-child { border-bottom: 0; }
+	
+	div.table-wrapper { position: relative; margin-bottom: 20px; overflow: hidden; border-right: 1px solid #ccc; }
+	div.table-wrapper div.scrollable { margin-left: 230px; }
+	div.table-wrapper div.scrollable { overflow: scroll; overflow-y: hidden; }	
+	
+	table.responsive td, table.responsive th { position: relative; white-space: nowrap ;overflow: hidden; }
+	table.responsive th:first-child, table.responsive td:first-child, table.responsive td:first-child, table.responsive.pinned td { display: none; }
+	
+	
+}
+@media (max-width:900px) {
+	.pinned .b-responsive-tables__head-item {
+		width: 230px !important;
+	}
+	.b-responsive-tables {
+		margin-bottom: 30px;
+	}
+}
+@media (min-width:800px) {
+	.b-responsive-tables__item-first {
+		width: 380px;
+	}
+	.b-responsive-tables {
+		margin-bottom: 100px;
+	}
+}

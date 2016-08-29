@@ -1,0 +1,24 @@
+.b-lay
+{
+    padding-bottom: 20px;
+    &__slide
+    {
+        outline: none;
+    }
+    & a
+    {
+        outline: none;
+    }
+    & .slick-next
+    {
+        top: auto;
+        right: auto;
+        bottom: -41px;
+        left: 60px;
+    }
+    & .slick-prev
+    {
+        bottom: -41px;
+        left: 27px;
+    }
+}

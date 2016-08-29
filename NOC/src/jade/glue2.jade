@@ -1,0 +1,31 @@
+.row.b-info__row
+  .small-7.columns.b-info__name
+    | Вклейка: 
+  .small-17.columns.b-info__value
+    .b-buy
+      input#reklama.b-buy__inpt(type='radio', name='reklama', checked)
+      label.b-buy__chck(for='reklama') Нет
+    .b-buy
+      input#reklama2.b-buy__inpt.b-buy__inpt_hide2(type='radio', name='reklama')
+      label.b-buy__chck(for='reklama2') С вклейками
+    .b-buy.b-buy_di
+      .b-buy__legend.b-buy__legend_inherit Загрузить макет:
+      input.b-buy__file#maket27(type="file")
+    .b-info__container
+      .b-info__naming Количество листов:
+      select#d.b-info__select.b-info__select_min(name="d")
+        option(selected)
+          | 8(индивидуальный блок)
+    .b-info__container
+      .b-info__naming Расположение:
+      select#reklama-place.b-info__select.b-info__select_min(name="reklama-place")
+        option(selected)
+          | Перед блоком
+        option
+          | После блока
+        option
+          | Распределены по блоку
+    .b-buy
+      a(href='#').b-buy__download-link Скачать заготовку
+    .b-buy
+      a(href='#').b-buy__download-link Скачать технические требования

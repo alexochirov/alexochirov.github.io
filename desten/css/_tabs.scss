@@ -1,0 +1,43 @@
+.tabs {
+  padding-left: 50px;
+  background-color: #f5f5f5;
+  height: 48px;
+  .tab-title {
+    background-color: whitesmoke;
+    &>a {
+      color: #3d3d3d;
+      border-top: 1px solid #959595;
+      border-left: 1px solid #959595;
+      border-top: 1px solid #959595;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 28px;
+      padding-top: 10px;
+      padding-bottom: 9px;
+      height: 44px;
+      padding-left: 40px;
+      padding-right: 35px;
+    }
+    &:last-child {
+      &>a {
+        border-right: 1px solid #959595;
+      }
+    }
+    &.active >a {
+      border-right: 1px solid rgba(0, 0, 0, 0.1);
+      border-left: 1px solid rgba(0, 0, 0, 0.1);
+      border-top: 0;
+      background-color: #fff;
+      height: 48px;
+      box-shadow: -2px -2px 4px  rgba(3, 169, 244, 0.36);
+      outline: none;
+    }
+  }
+}
+.tabs-content {
+  margin-bottom: 0;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(3, 169, 244, 0.36);
+}
+#panel2-1 {
+}

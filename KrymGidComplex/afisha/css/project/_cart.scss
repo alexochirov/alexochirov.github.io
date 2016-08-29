@@ -1,0 +1,52 @@
+.b-cart
+{
+    &__cat
+    {
+        position: relative;
+
+        overflow: hidden;
+
+        margin-bottom: 15px;
+        padding-top: 5px;
+        &_big {
+            margin-top: 20px;
+        }
+    }
+    &__category
+    {
+        font-family: $font-family-OpenSansBold;
+        font-size: 14px;
+        line-height: 23px;
+
+        display: inline-block;
+
+        padding-right: 10px;
+        padding-left: 10px;
+
+        text-transform: uppercase;
+
+        color: white;
+        background-color: #781c55;
+        &:focus
+        {
+            color: #dd249a;
+        }
+        &:hover
+        {
+            color: #dd249a;
+        }
+        &:after
+        {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+
+            width: 100%;
+            height: 1px;
+
+            content: '';
+
+            background-color: #781c55;
+        }
+    }
+}

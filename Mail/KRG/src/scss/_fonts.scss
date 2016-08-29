@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "OpenSansLight";
+  src: url(#{$fontsPath}/OpenSansLight.eot);
+  src: url(#{$fontsPath}/OpenSansLight.eot?#iefix) format("embedded-opentype"),
+  url(#{$fontsPath}/OpenSansLight.woff) format("woff"),
+  url(#{$fontsPath}/OpenSansLight.ttf) format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+$font-family-OpenSansLight: "OpenSansLight", Arial, sans-serif;
+
+@font-face {
+  font-family: "OpenSansRegular";
+  src: url(#{$fontsPath}/OpenSansRegular.eot);
+  src: url(#{$fontsPath}/OpenSansRegular.eot?#iefix) format("embedded-opentype"),
+  url(#{$fontsPath}/OpenSansRegular.woff) format("woff"),
+  url(#{$fontsPath}/OpenSansRegular.ttf) format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+$font-family-OpenSans-Regular: "OpenSansRegular", Arial, sans-serif;
+
+
+@font-face {
+  font-family: "OpenSansSemiBold";
+  src: url(#{$fontsPath}/OpenSansSemiBold.eot);
+  src: url(#{$fontsPath}/OpenSansSemiBold.eot?#iefix) format("embedded-opentype"),
+  url(#{$fontsPath}/OpenSansSemiBold.woff) format("woff"),
+  url(#{$fontsPath}/OpenSansSemiBold.ttf) format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+$font-family-OpenSansSemiBold: "OpenSansSemiBold", Arial, sans-serif;
+
+@font-face {
+  font-family: "NeueCyr";
+  src: url(#{$fontsPath}/helveticaneuecyr-roman.otf) format("opentype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+$font-family-NeueCyr: "NeueCyr", Arial, sans-serif;

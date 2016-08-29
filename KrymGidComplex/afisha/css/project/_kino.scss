@@ -1,0 +1,275 @@
+.b-kino
+{
+    float: left;
+
+    width: 100%;
+
+    background-color: white;
+    box-shadow: 1px 1.7px 4px rgba(0, 0, 0, .13);
+    &__vtolk
+    {
+        float: left;
+
+        width: 100%;
+        padding-top: 10px;
+    }
+    &__dropper
+    {
+        font-size: 17px;
+        line-height: 1.8;
+
+        position: relative;
+        top: 0;
+
+        float: left;
+
+        width: 94%;
+        height: 35px;
+        margin-top: 0;
+        margin-left: 15px;
+
+        color: #fff;
+        &:hover
+        {
+            color: #fff;
+        }
+        &:focus
+        {
+            color: #fff;
+        }
+        &-span
+        {
+            position: absolute;
+            top: 14px;
+            left: 2%;
+            &,
+            &:after,
+            &:before
+            {
+                position: absolute;
+
+                display: block;
+
+                width: 35px;
+                height: 5px;
+
+                content: '';
+                cursor: pointer;
+
+                border-radius: 1px;
+                background: white;
+            }
+            &:before
+            {
+                top: -10px;
+            }
+            &:after
+            {
+                bottom: -10px;
+            }
+        }
+    }
+    &__title
+    {
+        font-family: $font-family-OpenSansBold;
+        font-size: 15px;
+        line-height: 24px;
+
+        position: relative;
+
+        float: left;
+
+        width: 94%;
+        margin-top: 12px;
+        margin-left: 3%;
+        padding-top: 2px;
+        padding-bottom: 2px;
+
+        text-align: center;
+        text-transform: uppercase;
+
+        color: white;
+        background-color: #dd249b;
+        &:before
+        {
+            font-size: 0;
+
+            position: absolute;
+            top: 0;
+            left: -1px;
+
+            width: 20px;
+            height: 28px;
+
+            content: '1';
+
+            background: url('../images/left-kino.png') no-repeat;
+        }
+        &:after
+        {
+            font-size: 0;
+
+            position: absolute;
+            top: 0;
+            right: -4px;
+
+            width: 20px;
+            height: 28px;
+
+            content: '1';
+
+            background: url('../images/right-kino.png') no-repeat;
+        }
+        &_green
+        {
+            background-color: #85be46;
+            &:before
+            {
+                background: url('../images/left-kino_g.png') no-repeat;
+            }
+            &:after
+            {
+                background: url('../images/right-kino_g.png') no-repeat;
+            }
+        }
+    }
+    &__list
+    {
+        float: left;
+
+        margin: 0;
+        padding-right: 21px;
+        padding-left: 21px;
+
+        list-style-type: none;
+        &_green
+        {
+            margin-bottom: 1px;
+        }
+    }
+    &__li
+    {
+        float: left;
+
+        width: 100%;
+
+        border-bottom: 1px solid #e0e0e0;
+        &:last-child
+        {
+            border-bottom: 0;
+        }
+        &-link
+        {
+            font-size: 15px;
+
+            display: inline-block;
+
+            padding-top: 11px;
+            padding-bottom: 9px;
+            padding-left: 9px;
+
+            text-decoration: none;
+
+            color: #383737;
+            &:before
+            {
+                position: relative;
+                left: -7px;
+
+                content: '\2022';
+
+                color: #f33a2c;
+            }
+            &:focus
+            {
+                color: #dd249b;
+            }
+            &:hover
+            {
+                color: #dd249b;
+            }
+        }
+        &_last
+        {
+            border-bottom: 0;
+        }
+    }
+}
+@media (max-width:960px) and (min-width:640px)
+{
+    .b-kino
+    {
+        &__list
+        {
+            &_green
+            {
+                padding-left: 10px;
+            }
+        }
+    }
+}
+@media (max-width:960px)
+{
+    .b-kino
+    {
+        &_bot
+        {
+        }
+        &__title_green
+        {
+            font-size: 12px;
+        }
+        &__list
+        {
+            padding-left: 20px;
+        }
+        &__title
+        {
+            &:before
+            {
+                display: none;
+            }
+            &:after
+            {
+                display: none;
+            }
+        }
+    }
+}
+@media (max-width:640px)
+{
+    .b-kino
+    {
+        &__title
+        {
+            margin-bottom: 10px;
+            &_green
+            {
+            }
+        }
+        &__list
+        {
+            display: none;
+            &_green
+            {
+                margin-top: -10px;
+            }
+        }
+        &_bot
+        {
+            margin-bottom: 20px;
+        }
+    }
+}
+@media (max-width:350px)
+{
+    .b-kino
+    {
+        &__dropper
+        {
+            padding-right: 10px;
+
+            text-align: right;
+        }
+    }
+}

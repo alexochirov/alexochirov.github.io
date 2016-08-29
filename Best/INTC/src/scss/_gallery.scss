@@ -1,0 +1,103 @@
+.gallery {
+    padding-top: 70px;
+    padding-bottom: 43px;
+    background: url(../images/girls.png)no-repeat right top;
+
+    &__title {
+        font-family: $font-family-OpenSans-Semibold;
+        font-size: 44px;
+        text-transform: uppercase;
+        color: #434343;
+    }
+
+    &__modal {
+        position: fixed;
+        top: 100px !important;
+        width: 640px!important;
+        height: 391px;
+        padding: 0;
+        border: 0;
+        outline: none;
+
+        & > * {
+            border: 0;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            height: 100%;
+        }
+    }
+
+    &__block {
+        padding-left: 0;
+    }
+
+    &__text {
+        font-family: $font-family-OpenSans-Bold;
+        font-size: 18px;
+        line-height: 1.33;
+        width: 70%;
+        padding-top: 50px;
+        padding-bottom: 26px;
+        text-transform: uppercase;
+        color: #434343;
+    }
+
+    &__link {
+        font-family: $font-family-OpenSans-Bold;
+        font-size: 14px;
+        display: inline-block;
+        padding: 5px 20px 6px;
+        text-transform: uppercase;
+        color: #67a980;
+        border: 2px solid #67a980;
+        border-radius: 35px;
+    }
+
+    &__video {
+        display: inline-block;
+        padding-top: 31px;
+    }
+}
+@media (max-width:1200px) {
+    .gallery {
+        &__block {
+            padding-left: 10px;
+        }
+    }
+}
+@media (max-width:960px) {
+    .gallery {
+        text-align: center;
+
+        &__text {
+            width: 100%;
+        }
+    }
+}
+@media (max-width:640px) {
+    .gallery {
+        padding-top: 15px;
+
+        &__title {
+            font-size: 28px;
+        }
+
+        &__text {
+            padding-top: 15px;
+            font-size: 18px;
+        }
+
+        &__modal {
+            left: 0 !important;
+            width: calc(100% - 17px) !important;
+        }
+    }
+}
+@media (max-width:520px) {
+    .gallery {
+        &__modal {
+            height: 270px;
+        }
+    }
+}

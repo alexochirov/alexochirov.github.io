@@ -1,0 +1,134 @@
+@media #{ $large-down} {
+  .b-header {
+    &__menu {
+      &-top {
+        padding-top: 0;
+        padding-left: 0;
+        padding-bottom: rem-calc(10);
+        .back {
+          padding-bottom: rem-calc(0)!important;
+          width: 100%!important;
+          h5 {
+            font-size: rem-calc(13)!important;
+            a {
+              padding: rem-calc(5)!important;
+            }
+          }
+        }
+        &__link {
+          padding: rem-calc(2 5)!important;
+        }
+        &-section {
+          height: 0;
+          min-height: 0;
+          overflow: hidden;
+          padding: 0;
+          display: none;
+        }
+        &__li {
+          &-separator {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .expanded {
+    &.fixed:not(.top-bar)  {
+      .b-header {
+        &__menu {
+          &-top {
+            &-section {
+              margin-top: rem-calc(54);
+            }
+          }
+        }
+      }
+    }
+    .b-header {
+      &__menu {
+        &-top {
+          &-section {
+            height: auto;
+            min-height: inherit;
+            overflow: visible;
+            padding: 0;
+            display: inline-block;
+          }
+        }
+      }
+    }
+    .dropdown{
+      &__second{
+        &-li {
+          a {
+            padding: rem-calc(3 5)!important;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media #{$medium-only} {
+  .b-header {
+    &__menu-mobile {
+      &-li {
+        &-title {
+          font-size: rem-calc(21);
+        }
+      }
+      &-link {
+      }
+    }
+  }
+  .expanded {
+    .dropdown{
+      width: 100%!important;
+      &__second{
+        &-li {
+          width: 32%!important;
+          float: left;
+        }
+      }
+    }
+  }
+}
+
+@media #{$small-only} {
+  .expanded {
+    .dropdown{
+      width: 100%!important;
+      &__second{
+        &-li {
+          width: 49%!important;
+          float: left;
+          a {
+            font-size: rem-calc(13);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: #{upper-bound($medium-range)}) and (max-width: rem-calc(1170)) {
+  .b-header {
+    &__menu{
+      &-top{
+        padding-left: 0;
+        &__link {
+          font-size: rem-calc(13)!important;
+          padding-right: rem-calc(5)!important;
+          padding-left: rem-calc(5)!important;
+        }
+        &__li{
+          &-separator {
+
+          }
+        }
+      }
+    }
+  }
+}

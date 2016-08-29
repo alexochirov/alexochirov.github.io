@@ -1,0 +1,140 @@
+.b-advantages
+{
+    padding-top: 86px;
+    padding-bottom: 70px;
+    &__title
+    {
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 55px;
+
+        padding-bottom: 3px;
+
+        text-transform: uppercase;
+
+        color: #202020;
+    }
+    &__why
+    {
+        font-family: 'NotoSerif-Italic';
+        font-size: 20px;
+        
+        line-height: 25px;
+
+        margin-bottom: 56px;
+
+        color: #717171;
+    }
+    &__block
+    {
+        float: left;
+
+        padding-right: 55px;
+        padding-bottom: 30px;
+    }
+    &__icon-1
+    {
+        float: left;
+
+        width: 28px;
+        height: 32px;
+
+        background: url('../i/sprite-my.png') no-repeat -313px -323px;
+    }
+    &__icon-2
+    {
+        float: left;
+
+        width: 32px;
+        height: 29px;
+
+        background: url('../i/sprite-my.png') no-repeat -361px -375px;
+    }
+    &__icon-3
+    {
+        float: left;
+
+        width: 32px;
+        height: 32px;
+
+        background: url('../i/sprite-my.png') no-repeat -465px -473px;
+    }
+    &__icon-4
+    {
+        float: left;
+
+        width: 32px;
+        height: 32px;
+
+        background: url('../i/sprite-my.png') no-repeat -517px -525px;
+    }
+    &__icon-5
+    {
+        float: left;
+
+        width: 32px;
+        height: 27px;
+
+        background: url('../i/sprite-my.png') no-repeat -209px -229px;
+    }
+    &__icon-6
+    {
+        float: left;
+
+        width: 21px;
+        height: 30px;
+
+        background: url('../i/sprite-my.png') no-repeat -79px -75px;
+    }
+    &__icon-7
+    {
+        float: left;
+
+        width: 32px;
+        height: 29px;
+
+        background: url('../i/sprite-my.png') no-repeat -413px -424px;
+    }
+    &__icon-8
+    {
+        float: left;
+
+        width: 23px;
+        height: 26px;
+
+        background: url('../i/sprite-my.png') no-repeat -36px -29px;
+    }
+    &__icon-9
+    {
+        float: left;
+
+        width: 32px;
+        height: 32px;
+
+        background: url('../i/sprite-my.png') no-repeat -725px -733px;
+    }
+    &__text
+    {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+
+        float: right;
+
+        width: calc(100% - 41px);
+
+        color: #646464;
+    }
+}
+@media (max-width:640px)
+{
+    .b-advantages
+    {
+        padding-bottom: 10px;
+        padding-top: 10px;
+        &__title
+        {
+            font-size: 30px;
+        }
+    }
+}

@@ -1,0 +1,97 @@
+.b-shipment
+{
+    padding-right: 9px;
+    padding-left: 9px;
+    &__slider
+    {
+        position: relative;
+
+        margin-top: 41px;
+        margin-bottom: 32px;
+    }
+    &__slide
+    {
+        outline: none;
+        a
+        {
+            outline: none;
+        }
+    }
+    &__helper
+    {
+    }
+    &__block
+    {
+        height: 173px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-top: 15px;
+        padding-right: 3px;
+        padding-bottom: 15px;
+        padding-left: 3px;
+
+        text-align: center;
+
+        border: 2px solid transparent;
+        border-radius: 1px;
+        background: #fff;
+        box-shadow: 2px 3.5px 4px rgba(0, 0, 0, .18);
+        &:hover
+        {
+            border-color: #ff820c;
+        }
+        img
+        {
+            display: inline-block;
+        }
+    }
+    .slick-arrow
+    {
+        font-size: 0;
+
+        position: absolute;
+        z-index: 3;
+        top: -29px;
+        left: calc(50% - 6px);
+
+        width: 15px;
+        height: 24px;
+        padding: 0;
+
+        transform: rotate(90deg);
+
+        outline: none;
+        background: url(../images/lin.png) no-repeat;
+    }
+    .slick-next
+    {
+        top: auto;
+        bottom: -49px;
+
+        transform: rotate(-90deg);
+    }
+}
+@media (max-width:640px) {
+    .b-shipment {
+        &__slide {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        padding-right: 15px;
+        &__slider {
+            margin-top: 10px;
+            margin-bottom: 0px;
+        }
+        .slick-arrow {
+            top: calc(50% - 12px);
+            left: 0; 
+            transform:rotate(0deg);
+        }
+        .slick-next {
+            right: 0;
+            transform:rotate(180deg);
+            left: auto;
+        }
+    }
+}

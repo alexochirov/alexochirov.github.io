@@ -1,0 +1,57 @@
+.b-header {
+    background-color: #005481;
+}
+
+.b-header__list {
+    list-style-type: none;
+    margin: 0;
+}
+
+.b-header__list-item {
+    float: left;
+    padding-right: 0;
+    margin-top: 9px;
+    margin-bottom: 13px;
+    padding-left: 20px;
+
+    &:first-child {
+        padding-left: 0;
+    }
+}
+@media (max-width: 1000px) {
+    .b-header {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+@media (max-width:640px) {
+    .b-header__list-item {
+        width: 95%;
+        text-align: center;
+    }
+
+    .b-header__delimiter {
+        display: none;
+    }
+}
+
+.b-header__list-link {
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+
+    &:hover {
+        color: #00ddff;
+        text-decoration: underline;
+    }
+}
+
+.b-header__delimiter {
+    width: 1px;
+    top: 17px;
+    position: relative;
+    margin-left: 20px;
+    height: 13px;
+    float: left;
+    background: url('../imgs/sprites.png') no-repeat -3px -1px;
+}

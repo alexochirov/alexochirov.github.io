@@ -1,0 +1,47 @@
+.b-text
+{
+    font-size: 18px;
+    font-weight: 400;
+
+    margin-bottom: 27px;
+    padding-top: 12px;
+    padding-right: 0;
+    padding-left: 0;
+
+    text-align: justify;
+
+    color: #7f7f7f;
+    &_mayer
+    {
+        padding-top: 24px;
+    }
+    &__par
+    {
+        font-size: 18px;
+        font-weight: 400;
+
+        margin-bottom: 15px;
+
+        color: #7f7f7f;
+    }
+    &__link
+    {
+        font-size: 18px;
+        font-weight: 400;
+
+        color: $myColor;
+    }
+}
+@media (max-width:960px)
+{
+    .b-text
+    {
+        padding-right: 15px;
+        padding-left: 15px;
+        &_mayer
+        {
+            padding-right: 24px;
+            padding-left: 24px;
+        }
+    }
+}

@@ -1,0 +1,271 @@
+.b-city__box-bg__item_link {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  position: absolute;
+  z-index: 1;
+}
+
+@media only screen and (min-width: #{upper-bound($medium-range)}) and (max-width: rem-calc(1200)) {
+  .b-city{
+    &__box {
+      &-slider {
+        &__map {
+          display: inline-block;
+          width: rem-calc(250);
+          height: rem-calc(250);
+          border-radius: 0;
+          border-width: rem-calc(4);
+          overflow: visible;
+          float: right;
+          right: 10%;
+          /*ymaps {
+            border-radius: 50%!important;
+            border: 8px solid #112f67!important;
+            overflow: hidden;
+            ymaps {
+              border-radius: 0!important;
+              border: none!important;
+              overflow: visible!important;
+            }
+          }*/
+
+          &-control {
+            position: relative;
+            top:rem-calc(-10);
+            left: rem-calc(40);
+          }
+        }
+      }
+    }
+  }
+}
+@media #{$medium-only} {
+    .b-city{
+      &__box {
+        &-bg {
+          &__item {
+            &-desc {
+              margin-left: auto;
+              margin-right: auto;
+            }
+          }
+        }
+        &-slider {
+          &__map {
+            display: inline-block;
+            width: rem-calc(250);
+            height: rem-calc(250);
+            border-radius: 0;
+            border-width: rem-calc(4);
+            overflow: visible;
+            float: right;
+            right: 10%;
+            /*ymaps {
+              border-radius: 50%!important;
+              border: 8px solid #112f67!important;
+              overflow: hidden!important;
+              ymaps {
+                border-radius: 0!important;
+                border: none!important;
+                overflow: visible!important;
+              }
+            }*/
+
+            &-control {
+              position: relative;
+              top:rem-calc(-10);
+              left: rem-calc(40);
+            }
+            &-box {
+              text-align: center;
+              top: rem-calc(-350);
+            }
+          }
+        }
+        &-thumbs{
+          &-content{
+            width: 86%;
+          }
+          &-arrow {
+            &:last-child {
+              float: left!important;
+            }
+          }
+          &__item {
+            &:nth-child(1) {
+              //display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media #{$small-only} {
+    .b-gismeteo__img {
+      background-repeat: no-repeat!important;
+      background-position: top center!important;
+      width: 100%;
+      margin: 0;
+    }
+    .b-city{
+      &__box {
+        &-detail {
+          &__item {
+            font-size: rem-calc(27);
+            &-objects{
+              margin-left: -60%;
+            }
+          }
+        }
+        &-bg {
+          &__item {
+            &-desc {
+              background-image:none;
+              background-color: $white;
+              margin-left: 0;
+              padding: rem-calc(10);
+              width: 100%;
+              height: auto;
+              display: inline-block;
+              &-text {
+                margin-right: 0;
+                padding-right: 0;
+                min-height: rem-calc(55);
+                width: 75%;
+              }
+              &-box {
+                font-size: rem-calc(14);
+                display: inline-block;
+                width: 100%;
+                background-size:  rem-calc(30);
+                padding-left:  rem-calc(40);
+              }
+              &-img {
+                &-box {
+                  width: 25%;
+                  text-align: center;
+                  margin-left: rem-calc(0);
+                  margin-top: rem-calc(0);
+                }
+              }
+              &-weather{
+                &-box {
+                  width: 25%;
+                  margin-top: rem-calc(0);
+                  &_today {
+                    display: none;
+                  }
+                }
+                &-value {
+                  margin-top: 0;
+                }
+              }
+            }
+            &-button {
+              margin-top: 0;
+              &-box {
+                margin-top: rem-calc(320);
+              }
+            }
+          }
+        }
+        &-slider {
+          &__map {
+            display: inline-block;
+            position: relative;
+            width: rem-calc(220);
+            height: rem-calc(220);
+            border-radius: 0;
+            border-width: rem-calc(4);
+            overflow: visible;
+            &-control {
+              position: relative;
+              top:rem-calc(-10);
+              left: rem-calc(40);
+            }
+
+            &-box {
+              text-align: center;
+              top: rem-calc(-340);
+            }
+          }
+          &-thumbs{
+            height: rem-calc(60);
+          }
+        }
+        &-thumbs{
+          max-width: 100%;
+          &-arrow {
+            width: 5%;
+            &:last-child {
+              padding-left: 0!important;
+              padding-right: 0!important;
+            }
+            float: left!important;
+            padding-left: 3px;
+          }
+          &-content{
+            width: 86%;
+          }
+          &__item {
+            //display: none;
+            &:nth-child(3) {
+              //display: block;
+            }
+            &_selected {
+              font-size: rem-calc(24);
+            }
+          }
+          &_prev {
+            &:before {
+              background-position: rem-calc(-44 -229);
+              width: rem-calc(24);
+              height: rem-calc(20);
+            }
+          }
+          &_next {
+            &:before {
+              background-position: rem-calc(-72 -229);
+              width: rem-calc(24);
+              height: rem-calc(20);
+            }
+          }
+        }
+      }
+      &__detail {
+        &-box {
+          height: rem-calc(500);
+          &-bg{
+            &__item{
+              height: rem-calc(500);
+            }
+          }
+        }
+        &-gismeteo {
+          width: rem-calc(130);
+          margin-top: rem-calc(90);
+          padding: rem-calc(10);
+        }
+        &-desc{
+          &-box {
+            width: 100%;
+            .b-gismeteo {
+              &__img {
+                width: 45%;
+                height: rem-calc(30);
+                background-size: contain!important;
+              }
+              &__temp {
+                font-size: rem-calc(21);
+              }
+              &__info {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }

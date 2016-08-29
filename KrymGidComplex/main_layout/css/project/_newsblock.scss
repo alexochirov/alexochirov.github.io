@@ -1,0 +1,85 @@
+.b-newsblock {
+    display: table;
+    width: 100%;
+
+    &__row {
+        display: table-row;
+
+        &-delimiter {
+            display: table-row;
+            height: rem-calc(37);
+        }
+    }
+
+    &-item {
+        display: table-cell;
+        width: 48.5%;
+        padding-bottom: rem-calc(20);
+        border-bottom: rem-calc(1) solid #e0e0e0;
+
+        &-delimiter {
+            display: table-cell;
+            width: 3%;
+        }
+        
+        &__img-wrap {
+            width: 100%;
+            height: rem-calc(255);
+            text-align: center;
+            line-height: rem-calc(248);
+            overflow: hidden;
+            margin-bottom: rem-calc(15);
+        }
+
+        &__img {
+            min-width: 100%;
+            min-height: 100%;
+        }
+
+        &__info {
+            line-height: rem-calc(18);
+            position: relative;
+            margin-bottom: rem-calc(5);
+
+            &-date {
+                font-size: rem-calc(14);
+                color: #424242;
+                display: inline-block;
+                margin-left: rem-calc(5);
+                font-family: "OpenSansBold", Arial, sans-serif;
+                vertical-align: top;
+            }
+        }
+
+        &__title {
+            margin-bottom: rem-calc(5);
+
+            &-link {
+                font-family: "OpenSansBold", Arial, sans-serif;
+                font-size: rem-calc(22);
+                color: #424242;
+                line-height: rem-calc(28);
+                text-decoration: none;
+            }
+        }
+        
+        &__text {
+            font-family: "OpenSansRegular", Arial, sans-serif;
+            font-size: rem-calc(15);
+            color: #424242;
+            line-height: rem-calc(24);
+            margin-bottom: rem-calc(5);
+        }
+
+        &__place {
+            font-family: "OpenSansRegular", Arial, sans-serif;
+            font-size: rem-calc(13);
+            color: #424242;
+            line-height: rem-calc(24);
+
+            &:before {
+                vertical-align: sub;
+            }
+        }
+    }
+}

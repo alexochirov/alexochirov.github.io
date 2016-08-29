@@ -1,0 +1,25 @@
+.b-plan {
+  background-image: url("../i/bg-plan.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: rem-calc(620);
+  margin-bottom: rem-calc(60);
+  text-align: center;
+  color: $white;
+  padding-top: rem-calc(60);
+
+  &__title {
+    font-size: rem-calc(52);
+    color: $white;
+    margin: 0;
+    line-height: rem-calc(52);
+    margin-bottom: rem-calc(30);
+  }
+
+  &__desc {
+    text-transform: uppercase;
+    font-size: rem-calc(14);
+    font-family: $font-family-OpenSansSemiBold;
+  }
+
+}

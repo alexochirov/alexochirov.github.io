@@ -1,0 +1,69 @@
+.b-scroll
+{
+    font-size: .75rem;
+
+    position: fixed;
+    z-index: 1000;
+    right: .625rem;
+    bottom: 6.875rem;
+
+    display: none;
+
+    width: 4.375rem;
+    height: 4.375rem;
+    padding-top: .625rem;
+
+    cursor: pointer;
+    text-align: center;
+    text-transform: lowercase;
+
+    opacity: 1;
+    color: #fff;
+    border-radius: 2.1875rem;
+    background: #73f36b;
+    &:hover
+    {
+        color: #000;
+    }
+    &:focus
+    {
+        color: #000;
+    }
+    &:before
+    {
+        position: absolute;
+
+        width: 1.4375rem;
+        height: 1.5rem;
+        margin-left: 8px;
+
+        content: '';
+
+        background-image: url(../images/up.png);
+        background-repeat: no-repeat;
+    }
+    &__span
+    {
+        display: inline-block;
+
+        margin-top: 30px;
+    }
+}
+@media (max-width:640px)
+{
+    .b-scroll
+    {
+        width: 40px;
+        height: 40px;
+        &:before
+        {
+            right: 9px;
+top: 7px;
+            margin-left: 0;
+        }
+        &__span
+        {
+            display: none;
+        }
+    }
+}

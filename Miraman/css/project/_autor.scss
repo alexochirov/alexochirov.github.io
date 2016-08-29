@@ -1,0 +1,88 @@
+.b-autor
+{
+    float: left;
+
+    padding-right: 5px;
+
+    background: #fff;
+    &__block
+    {
+        float: left;
+
+        padding-top: 20px;
+        padding-bottom: 14px;
+
+        border-bottom: 1px solid #eee;
+    }
+    &__img
+    {
+        float: left;
+
+        padding-right: 20px;
+    }
+    &__name
+    {
+        padding-bottom: 5px;
+        &-link
+        {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22px;
+
+            color: #2c2c2c;
+        }
+    }
+    &__post
+    {
+        font-family: 'PT_Serif_Regular';
+        font-size: 14px;
+        font-style: italic;
+        line-height: 18px;
+
+        color: #979ca4;
+        &-numb
+        {
+            font-family: 'PT_Serif_Regular';
+            font-size: 14px;
+            font-style: italic;
+            line-height: 18px;
+
+            color: #00c3d8;
+        }
+    }
+    &__collection
+    {
+        font-family: 'PT_Serif_Regular';
+        font-size: 14px;
+        font-style: italic;
+        line-height: 18px;
+
+        color: #979ca4;
+        &-numb
+        {
+            font-family: 'PT_Serif_Regular';
+            font-size: 14px;
+            font-style: italic;
+            line-height: 18px;
+
+            color: #00c3d8;
+        }
+    }
+    &__text
+    {
+        float: left;
+
+        width: 100%;
+        padding-top: 11px;
+        padding-left: 10px;
+        &-link
+        {
+            font-family: 'PT_Serif_Regular';
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 21px;
+
+            color: #9a9a9a;
+        }
+    }
+}

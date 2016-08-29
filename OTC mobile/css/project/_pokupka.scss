@@ -1,0 +1,77 @@
+.b-pokupka
+{
+    .b-pokupka__li
+    {
+        padding-bottom: 45px;
+
+        border-bottom: 2px solid #eee;
+    }
+    &__img
+    {
+        margin-top: 55px;
+        padding-left: 0;
+    }
+    &__desc
+    {
+        margin-top: 55px;
+        padding-right: 0;
+    }
+    &__title
+    {
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 1.1;
+
+        padding-bottom: 18px;
+
+        color: #060606;
+    }
+    &__size
+    {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 36px;
+
+        color: #060606;
+    }
+    &__art
+    {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 36px;
+
+        padding-bottom: 14px;
+
+        color: #b0b0b0;
+    }
+    &__numb
+    {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 1.5;
+
+        padding-bottom: 15px;
+
+        color: #010101;
+    }
+    &__price
+    {
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 46px;
+
+        color: #010101;
+    }
+}
+@media (max-width:400px)
+{
+    .b-pokupka
+    {
+        &__desc,
+        &__img
+        {
+            width: 100%;
+            margin-top: 15px;
+        }
+    }
+}

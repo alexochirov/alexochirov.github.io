@@ -1,0 +1,100 @@
+@font-face {
+  font-family: "OpenSansLight";
+  src: url("../css/fonts/OpenSansLight.eot");
+  src: url("../css/fonts/OpenSansLight.eot?#iefix") format("embedded-opentype"),
+  url("../css/fonts/OpenSansLight.woff") format("woff"),
+  url("../css/fonts/OpenSansLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+$font-family-OpenSansLight: "OpenSansLight", Arial, sans-serif;
+@font-face {
+  font-family: "OpenSansLightItalic";
+  src: url("../css/fonts/OpenSansLightItalic.eot");
+  src: url("../css/fonts/OpenSansLightItalic.eot?#iefix") format("embedded-opentype"),
+  url("../css/fonts/OpenSans-LightItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+$font-family-OpenSansLightItalic: "OpenSansLightItalic", Arial, sans-serif;
+
+@font-face {
+  font-family: "OpenSansRegular";
+  src: url("../css/fonts/OpenSansRegular.eot");
+  src: url("../css/fonts/OpenSansRegular.eot?#iefix") format("embedded-opentype"),
+  url("../css/fonts/OpenSansRegular.woff") format("woff"),
+  url("../css/fonts/OpenSansRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+$font-family-OpenSansRegular: "OpenSansRegular", Arial, sans-serif;
+
+@font-face {
+  font-family: "OpenSansBold";
+  src: url("../css/fonts/OpenSansBold.eot");
+  src: url("../css/fonts/OpenSansBold.eot?#iefix") format("embedded-opentype"),
+  url("../css/fonts/OpenSansBold.woff") format("woff"),
+  url("../css/fonts/OpenSansBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+$font-family-OpenSansBold: "OpenSansBold", Arial, sans-serif;
+
+@font-face {
+  font-family: "OpenSansSemiBold";
+  src: url("../css/fonts/OpenSansSemiBold.eot");
+  src: url("../css/fonts/OpenSansSemiBold.eot?#iefix") format("embedded-opentype"),
+  url("../css/fonts/OpenSansSemiBold.woff") format("woff"),
+  url("../css/fonts/OpenSansSemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+$font-family-OpenSansSemiBold: "OpenSansSemiBold", Arial, sans-serif;
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../css/fonts/fontawesome-webfont.eot?v=4.3.0');
+  src: url('../css/fonts/fontawesome-webfont.eot?#iefix&v=4.3.0') format('embedded-opentype'),
+  url('../css/fonts/fontawesome-webfont.woff2?v=4.3.0') format('woff2'),
+  url('../css/fonts/fontawesome-webfont.woff?v=4.3.0') format('woff'),
+  url('../css/fonts/fontawesome-webfont.ttf?v=4.3.0') format('truetype'),
+  url('../css/fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$font-family-FontAwesome: "FontAwesome", Arial, sans-serif;
+
+@font-face {
+  font-family: 'PFAgoraSlabPro-Medium';
+  src: url('../css/fonts/PFAgoraSlabPro-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+//$font-family-PFAgoraSlabPro-Medium: "PFAgoraSlabPro-Medium", Arial, sans-serif;
+$font-family-PFAgoraSlabPro-Medium: $font-family-OpenSansSemiBold;
+
+@font-face {
+  font-family: 'PFAgoraSlabPro-Reg';
+  src: url('../css/fonts/PFAgoraSlabPro-Reg.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+//$font-family-PFAgoraSlabPro-Reg: "PFAgoraSlabPro-Reg", Arial, sans-serif;
+$font-family-PFAgoraSlabPro-Reg: $font-family-OpenSansRegular;
+
+@font-face {
+  font-family: "WeblySleek-UI-Semilight";
+  src: url("../css/fonts/weblysleekuisl.eot?") format("eot"), url("../css/fonts/weblysleekuisl.woff") format("woff"), url("../css/fonts/weblysleekuisl.ttf") format("truetype"), url("../css/fonts/weblysleekuisl.svg#WeblySleekUISemilight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+$font-family-weblysleek-ui-Semilight: "WeblySleek-UI-Semilight", Arial, sans-serif;

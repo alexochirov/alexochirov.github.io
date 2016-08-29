@@ -1,0 +1,42 @@
+.b-tags
+{
+
+    &__category
+    {
+        font-family: $font-family-OpenSans-Semibold;
+        font-size: 10px;
+
+        display: inline-block;
+
+        padding-top: 2px;
+        padding-right: 9px;
+        padding-bottom: 3px;
+        padding-left: 8px;
+
+        color: #fff;
+        background-color: #2b2b2b;
+    }
+    &__tag
+    {
+        font-family: $font-family-OpenSans-Regular;
+        font-size: 11px;
+
+        display: inline-block;
+
+        margin-left: 3px;
+        padding-top: 1px;
+        padding-right: 7px;
+        padding-bottom: 1px;
+        padding-left: 7px;
+
+        text-decoration: none;
+
+        color: #2b2b2b;
+        border: 1px solid #eaeaea;
+        background: #fff;
+        &:hover
+        {
+            color: #00c;
+        }
+    }
+}

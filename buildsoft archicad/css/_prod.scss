@@ -1,0 +1,24 @@
+.b-prod {
+  background-color: #005481;
+}
+.b-prod__title {
+  color: white;
+  font-size: 32px;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 42px;
+  padding-bottom: 22px;
+}
+@media (max-width:640px) {
+  .b-prod__title {
+    padding: 0;
+  }
+}
+.b-prod__postavka {
+  font-size: 18px;
+  font-weight: 300;
+}
+.b-prod__build {
+  font-size: 32px;
+  font-weight: 500;
+}

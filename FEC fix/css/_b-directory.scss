@@ -1,0 +1,152 @@
+.b-directory
+{
+    padding-top: 36px;
+    padding-bottom: 60px;
+    h2
+    {
+        font-family: 'Conv_SegoeUISemiBold';
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 26px;
+
+        margin-bottom: 15px;
+
+        text-transform: uppercase;
+
+        color: #383838;
+    }
+    &-form
+    {
+        padding: 30px 50px;
+
+        background-color: #153f93;
+        &-inp
+        {
+            &-sel
+            {
+                width: 30.7%;
+                padding-right: 18px;
+                select
+                {
+                    font-family: 'Conv_SegoeUIRegular';
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 20px;
+
+                    width: 100%;
+                    height: 46px;
+                    margin-bottom: 0;
+                    padding-left: 13px;
+
+                    color: #a1a1a1;
+                    border: none;
+                    outline: none;
+                    background: #fff url('../images/dn.png') calc(100% - 20px) 20px no-repeat;
+                    box-shadow: none;;
+                }
+            }
+            &-txt
+            {
+                width: 55%;
+                padding-right: 18px;
+                input
+                {
+                    font-family: 'Conv_SegoeUIRegular';
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 20px;
+
+                    width: 100%;
+                    height: 46px;
+                    margin-bottom: 0;
+                    padding-left: 19px;
+
+                    color: #a1a1a1;
+                    border: none;
+                    outline: none;
+                    background-color: white;
+                    box-shadow: none;
+                }
+                input::-moz-placeholder
+                {
+                    opacity: 1;
+                    color: #a1a1a1;
+                }
+                input::-webkit-input-placeholder
+                {
+                    color: #a1a1a1;
+                }
+            }
+            &-btn
+            {
+                width: 14.3%;
+
+                background-color: blue;
+                & .button
+                {
+                    font-family: 'Conv_SegoeUISemiBold';
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 46px;
+
+                    width: 100%;
+                    height: 46px;
+                    margin-bottom: 0;
+                    padding: 0;
+
+                    text-transform: uppercase;
+
+                    color: white;
+                    border-bottom: 3px solid #100f0f;
+                    background-color: #262525;
+                    &:hover
+                    {
+                        background-color: #151515;
+                    }
+                    &:active
+                    {
+                        line-height: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:1200px)
+{
+    .b-directory
+    {
+        padding-top: 20px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}
+@media (max-width:960px)
+{
+    .b-directory
+    {
+        padding-top: 0;
+        padding-bottom: 20px;
+        &-form
+        {
+            padding: 20px;
+            &-inp
+            {
+                &-sel
+                {
+                    width: 37%;
+                }
+                &-btn
+                {
+                    width: 8%;
+                    .button
+                    {
+                        font-size: 0;
+
+                        background: #262525 url(../images/search.png) no-repeat center center;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,9 @@
+.b-topper {
+  background: #fff;
+  height: 10px;
+}
+@media (max-width:780px) {
+  .b-topper {
+    height: 0;
+  }
+}

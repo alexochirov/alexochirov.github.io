@@ -1,0 +1,132 @@
+.b-header
+{
+    .row
+    {
+        position: relative;
+    }
+    &__logo
+    {
+        padding-top: 10px;
+
+        text-align: center;
+    }
+    &__delimiter
+    {
+        height: 2px;
+        margin-top: 25px;
+
+        background-color: #ddd;
+    }
+    &__icons
+    {
+        padding-top: 20px;
+        padding-right: 40px;
+        padding-bottom: 20px;
+        padding-left: 40px;
+        &_bask
+        {
+            padding-right: 20px;
+            padding-left: 15px;
+        }
+    }
+    .js-icon
+    {
+        padding-bottom: 12px;
+
+        border-bottom: 8px solid #43cdd3;
+    }
+    &__menu
+    {
+        display: block;
+
+        width: 50px;
+        height: 48px;
+        margin-top: 29px;
+        padding-bottom: 5px;
+
+        background-image: url('../images/sprite-my.png');
+        background-repeat: no-repeat;
+        background-position: -96px -132px;
+    }
+    &__search
+    {
+        display: block;
+
+        width: 65px;
+        height: 60px;
+        margin-top: 16px;
+
+        background-image: url('../images/sprite-my.png');
+        background-repeat: no-repeat;
+        background-position: -6px -126px;
+    }
+    &__basket
+    {
+        display: block;
+
+        width: 86px;
+        height: 71px;
+        margin-top: 7px;
+
+        background-image: url('../images/sprite-my.png');
+        background-repeat: no-repeat;
+        background-position: -112px -4px;
+        &-count
+        {
+            font-size: 31px;
+            font-weight: 600;
+            line-height: 45px;
+
+            position: relative;
+            top: -10px;
+            left: 50px;
+
+            display: inline-block;
+
+            width: 48px;
+            height: 48px;
+
+            text-align: center;
+            text-transform: uppercase;
+
+            color: black;
+            background-image: url('../images/sprite-my.png');
+            background-repeat: no-repeat;
+            background-position: -240px -126px;
+        }
+    }
+    &__enter
+    {
+        display: block;
+
+        width: 63px;
+        height: 65px;
+        margin-top: 16px;
+
+        background-image: url('../images/sprite-my.png');
+        background-repeat: no-repeat;
+        background-position: -225px -5px;
+    }
+}
+
+@media (max-width:460px)
+{
+    .b-header
+    {
+        &__icons
+        {
+            padding-left: 14px;
+            &_bask
+            {
+                padding-left: 0;
+            }
+        }
+    }
+}
+@media (min-width:640px) {
+    .b-header{
+        &__enter {
+            margin-top: 12px;
+        }
+    }
+}

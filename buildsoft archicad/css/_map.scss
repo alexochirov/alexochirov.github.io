@@ -1,0 +1,93 @@
+.b-map {
+  height: 805px;
+  position: relative;
+}
+.b-map__desc {
+  position: absolute;
+  top: 120px;
+  left: 23%;  
+  width: 466px;
+  height: 300px;
+  background-color: white;
+  border: 10px solid #005481;
+  padding-left: 20px;
+  z-index: 1;
+}
+@media (max-width:650px) {
+  .b-map__desc {
+    width: 300px;
+    left: 0%;
+    top: 15px;
+    height: 280px;
+  }
+  .b-map {
+  height: 600px;
+ } 
+ .b-map__logo {
+  padding-bottom: 5px;
+  padding-top: 4px;
+  width: 140px;
+ }
+}
+.b-map__logo {
+  padding-left: 40px;
+  padding-bottom: 15px;
+  padding-top: 12px;
+}
+.b-map__ico1 {
+  background: url('../imgs/sprites.png') no-repeat -30px -4px;
+  width: 18px;
+  height: 18px;
+  margin-right: 17px;
+  float: left;
+}
+.b-map__ico2 {
+  background: url('../imgs/sprites.png') no-repeat -63px -5px;
+  width: 24px;
+  margin-right: 12px;
+  float: left;
+  height: 19px;
+}
+.b-map__ico3 {
+  background: url('../imgs/sprites.png') no-repeat -108px -4px;
+  width: 13px;
+  float: left;
+  margin-right: 21px;
+  height: 20px;
+}
+.b-map__ico4 {
+  background: url('../imgs/sprites.png') no-repeat -138px -4px;
+  width: 20px;
+  float: left;
+  margin-right: 17px;
+  height: 21px;
+}
+.b-map__tel-link {
+  color: #005481;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "DINPro-Bold";
+  display: block;
+}
+.b-map__zvon {
+  padding-left: 34px;
+}
+.b-map__mail-link {
+  color: #09a6fb;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: underline;
+}
+.b-map__tel {
+  color: #909090;
+  font-size: 14px;
+  font-weight: 300;
+}
+.b-map__tel_city {
+  color: #58585a;
+  font-size: 18px;
+  font-weight: 400;
+}
+.b-map__row {
+  padding-bottom: 9px;
+}

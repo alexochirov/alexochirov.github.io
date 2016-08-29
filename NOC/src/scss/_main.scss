@@ -1,0 +1,51 @@
+.b-main
+{
+    padding-top: 25px;
+    &__img
+    {
+        float: left;
+
+        padding-bottom: 15px;
+    }
+    &__buttons
+    {
+        padding-top: 20px;
+
+        text-align: center;
+    }
+    &__link
+    {
+        font-size: 13px;
+
+        display: inline-block;
+
+        margin-right: 9px;
+        margin-bottom: 10px;
+        margin-left: 9px;
+        padding-top: 9px;
+        padding-right: 30px;
+        padding-bottom: 9px;
+        padding-left: 30px;
+
+        transition: .5s all;
+
+        color: #214496;
+        border: 1px solid #214496;
+        border-radius: 3px;
+        background-color: #fff;
+        &:hover
+        {
+            color: #fff;
+            background: #214496;
+        }
+    }
+    &__review
+    {
+        padding-left: 25px;
+    }
+    &__info
+    {
+        padding-right: 0;
+        padding-left: 15px;
+    }
+}

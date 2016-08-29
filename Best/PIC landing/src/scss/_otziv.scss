@@ -1,0 +1,129 @@
+.b-otziv
+{
+    background: url($imagesPath + '/way.png') repeat-y center top;
+    padding-bottom: 55px;
+    &__name
+    {
+        font-size: 30px;
+        line-height: .67;
+
+        position: relative;
+
+        padding-top: 82px;
+        padding-bottom: 90px;
+
+        text-align: center;
+
+        color: #363636;
+        &:after
+        {
+            position: absolute;
+            bottom: 0;
+            left: calc(50% - 85px);
+
+            display: inline-block;
+
+            width: 170px;
+            height: 2px;
+
+            content: '';
+
+            background-color: #363636;
+        }
+    }
+    &__img
+    {
+        padding-top: 19px;
+
+        text-align: right;
+    }
+    &__info
+    {
+        padding-top: 75px;
+    }
+    &__photo
+    {
+        float: left;
+
+        width: 100px;
+        height: 100px;
+
+        background: url(../images/pho1.png) no-repeat;
+    }
+    &__block
+    {
+      padding-bottom: 7px;
+        &:hover
+        {
+            .b-otziv__photo
+            {
+                background: url(../images/pho2.png) no-repeat;
+            }
+            .b-otziv__dol {
+              color: #363636;
+            }
+            .b-otziv__title {
+              color: #1697d4;
+            }
+        }
+    }
+    &__text
+    {
+        float: left;
+
+        width: calc(100% - 100px);
+        padding-left: 27px;
+        p
+        {
+            font-family: $font-family-Roboto-Regular;
+            font-size: 14px;
+            line-height: 1.43;
+
+            margin-bottom: 18px;
+
+            color: #959595;
+        }
+    }
+    &__title
+    {
+        font-size: 20px;
+        line-height: 1;
+
+        padding-bottom: 5px;
+
+        color: #363636;
+    }
+}
+@media (max-width:960px) {
+  .b-otziv {
+    padding-bottom: 15px;
+    &__img {
+      text-align: center;
+
+    }
+    &__text {
+      padding-left: 10px;
+    }
+    &__name {
+      padding-top: 35px;
+      padding-bottom: 35px;
+      font-size: 24px;
+    }
+    &__info {
+
+    }
+  }
+}
+@media (max-width:640px) {
+  .b-otziv {
+    &__block {
+      margin-bottom: 10px;
+    }
+    &__img {
+        padding-top: 25px;
+    }
+    &__info {
+      padding-top: 15px;
+    }
+  }
+}

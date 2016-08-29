@@ -1,0 +1,84 @@
+.b-group {
+  width: rem-calc(280);
+  /*height: rem-calc(490);*/
+  border: rem-calc(1) solid #e2e2e2;
+  margin-left: rem-calc(15);
+  position: relative;
+  background-color: #fff;
+  float: left !important;
+  margin-bottom: rem-calc(20);
+  overflow: hidden;
+  &:hover {
+    border: rem-calc(1) solid #d9d9d9;
+    box-shadow: 0 rem-calc(2) rem-calc(9) rgba(0, 0, 1, 0.16);
+    cursor: pointer;
+  }
+  &:first-child {
+    margin-left: 0;
+  }
+  &-products {
+    min-height: 270px;
+  }
+  &__img {
+    border-style: solid;
+    border-color: #d9d9d9;
+    border-width: rem-calc(0 1 1 0);
+    float: left;
+    padding: 5%;
+    width: 50%;
+    height: rem-calc(135);
+    &-last {
+      margin-right: 0;
+      /*border-width: rem-calc(0 0 1 0);*/
+    }
+  }
+  &__look {
+    text-align: center;
+    img {
+      margin: rem-calc(15 0);
+    }
+    a {
+      text-transform: uppercase;
+      color: #a1a1a1;
+      font-size: rem-calc(12);
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+  &__price {
+    padding: rem-calc(25 25 0);
+    color: #383838;
+    font-size: rem-calc(14);
+    line-height: rem-calc(22);
+    span {
+      font-weight: bold;
+    }
+    &-add {
+      font-family: 'PTSerifRegular';
+      color: #a1a1a1;
+    }
+    &-econom {
+      font-family: 'PTSerifRegular';
+      color: #a1a1a1;
+      float: right;
+      line-height: rem-calc(28);
+      margin-bottom: rem-calc(15);
+    }
+    &-old {
+      font-family: 'PTSerifRegular';
+      color: #a1a1a1;
+      margin-top: rem-calc(10);
+      text-decoration: line-through;
+    }
+    &-now {
+      color: #ca3034;
+      font-size: rem-calc(22);
+      font-weight: bold;
+      float: left;
+      span {
+        font-size: rem-calc(16);
+      }
+    }
+  }
+}

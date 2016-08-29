@@ -1,0 +1,38 @@
+.b-info-table__wrap {
+  padding-left: 3px;
+  padding-right: 30px;
+}
+.b-info-table {
+  font-family: "Roboto-Medium";
+  border: 0;
+  margin-top: 38px;
+  margin-bottom: 41px;
+}
+.b-info-table .b-info-table__row {
+    background-color: #fff ;
+    border-bottom: 1px solid #eee;
+    &:last-child {
+        border-bottom: 0;
+      }
+}
+.b-info-table__item {
+  color: #535353;
+  font-size: 13px;
+  line-height: 22px;
+  font-weight: 400;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  
+  &:first-child {
+    width: 37%;
+    vertical-align: top;
+  }
+  
+}
+.b-info-table__list {
+  color: #535353;
+  margin: 0;
+  font-size: 13px;
+  line-height: 22px;
+  font-weight: 400;
+}

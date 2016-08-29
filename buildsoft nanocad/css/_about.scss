@@ -1,0 +1,83 @@
+@media (min-width:800px) {
+    .b-about__title {
+        margin: 41px 0 15px;
+    }
+}
+@media (max-width:800px) {
+    .b-about__title {
+        margin: 31px 0 15px;
+    }
+}
+
+.b-about {
+    font-family: 'RobotoCondensed-Regular', sans-serif;
+    background-color: #eee;
+}
+
+.b-about__title {
+    color: #15659d;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0;
+}
+
+.b-about__info {
+    color: #555;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 34px;
+    text-align: center;
+    font-family: 'RobotoCondensed-Light', sans-serif;
+}
+
+.b-about__command {
+    color: black;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34px;
+    padding-top: 33px;
+}
+
+.b-about__comm {
+    padding-top: 30px;
+    padding-bottom: 92px;
+}
+
+.b-about__work {
+    text-align: center;
+}
+
+.b-about__name {
+    color: #1b9bd6;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 34px;
+    border: 2px solid #1b9bd6;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.b-about__work-inf {
+    color: black;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    padding: 0 10px;
+    display: block;
+}
+
+.b-about__link-mail {
+    color: #1b9bd6;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    display: block;
+}
+@media (max-width: 1000px) {
+    .b-about-us {
+        &__work {
+            height: 380px;
+        }
+    }
+}

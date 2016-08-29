@@ -1,0 +1,210 @@
+.b-rest
+{
+    margin-bottom: 15px;
+
+    border-radius: 5px 4px 4px 5px;
+    background-color: #fff;
+    box-shadow: 2px 3.5px 4px rgba(0, 0, 0, .18);
+    &_top
+    {
+        margin-top: 18px;
+    }
+    &__name
+    {
+        font-family: $font-family-Philosopher-Bold;
+        font-size: 32px;
+
+        padding-top: 17px;
+        padding-bottom: 39px;
+        padding-left: 20px;
+
+        color: #212121;
+    }
+    &__slider
+    {
+    }
+    &__slide
+    {
+        position: relative;
+
+        outline: none;
+        &:hover
+        {
+            opacity: .7;
+        }
+    }
+    &__info
+    {
+        position: absolute;
+        bottom: 0;
+
+        width: 100%;
+        padding-bottom: 2px;
+        padding-left: 22px;
+
+        background: url(../images/ri.png);
+        &_dark
+        {
+            background: url(../images/dark.png);
+        }
+    }
+    &__title
+    {
+        font-family: $font-family-Philosopher-Bold;
+        font-size: 19px;
+
+        color: #000;
+        &_white
+        {
+            color: #fff;
+        }
+    }
+    &__date
+    {
+        font-size: 15px;
+
+        padding-bottom: 20px;
+
+        color: #000;
+        &_white
+        {
+            color: #fff;
+        }
+    }
+    &__views
+    {
+        font-family: Arial;
+        font-size: 15px;
+
+        position: absolute;
+        right: 50px;
+        bottom: 9px;
+
+        padding-left: 30px;
+
+        color: #fff;
+        &:before
+        {
+            position: absolute;
+            top: 4px;
+            left: 0;
+
+            display: inline-block;
+
+            width: 23px;
+            height: 13px;
+
+            content: '';
+
+            background: url(../images/eye.png) no-repeat;
+        }
+    }
+    &__circle
+    {
+        position: absolute;
+        right: 7px;
+        bottom: 12px;
+
+        display: inline-block;
+
+        width: 40px;
+        height: 40px;
+
+        background: url(../images/pho.png) no-repeat;
+        &_video
+        {
+            width: 29px;
+            height: 32px;
+
+            background: url(../images/icone_video.png) no-repeat;
+        }
+    }
+    .slick-next
+    {
+        font-size: 0;
+
+        position: absolute;
+        z-index: 10;
+        top: 42%;
+        right: 20px;
+
+        width: 45px;
+        height: 45px;
+
+        outline: none;
+        background: url(../images/next.png) no-repeat;
+    }
+    .slick-prev
+    {
+        font-size: 0;
+
+        position: absolute;
+        z-index: 10;
+        top: 42%;
+        left: 20px;
+
+        width: 45px;
+        height: 45px;
+
+        outline: none;
+        background: url(../images/prev.png) no-repeat;
+    }
+}
+@media (max-width:720px) and (min-width:640px)
+{
+    .b-rest
+    {
+        .slick-next,
+        .slick-prev
+        {
+            top: 15px;
+        }
+        &__title
+        {
+            font-size: 17px;
+        }
+        &__desc
+        {
+            font-size: 14px;
+
+            padding-bottom: 0;
+        }
+    }
+}
+@media (max-width:640px)
+{
+    .b-rest
+    {
+        .slick-next
+        {
+            right: 5px;
+        }
+        .slick-prev
+        {
+            left: 5px;
+        }
+        &__title
+        {
+            line-height: 1.1;
+        }
+        &__desc
+        {
+            padding-bottom: 0;
+        }
+        &__circle
+        {
+            right: 10px;
+            bottom: 2px;
+        }
+        &__views
+        {
+            right: 60px;
+            bottom: 5px;
+        }
+        &__info
+        {
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+    }
+}

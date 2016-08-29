@@ -1,0 +1,88 @@
+$pagination-color-gray: #e0e0e0;
+$pagination-color-link: $gray;
+$pagination-color-orange: $orangelighter;
+
+.b-pagination {
+  display: inline-block;
+  padding: rem-calc(20 0);
+  &__li{
+    list-style: none;
+    float: left;
+    padding: rem-calc(0 7);
+    &-link {
+      font-family: $font-family-OpenSansBold;
+      font-size: rem-calc(15);
+      line-height: rem-calc(20);
+      padding: rem-calc(10 0);
+      color: $pagination-color-link;
+      display: inline-block;
+      min-width: rem-calc(20);
+      &:hover {
+        color: $pagination-color-link;
+      }
+      &:focus {
+        color: $pagination-color-link;
+      }
+      &:active {
+        color: $pagination-color-link;
+      }
+    }
+    &-arrow {
+      width: rem-calc(40);
+      height: rem-calc(40);
+      display: inline-block;
+      border-radius: rem-calc(20);
+      background-color: $pagination-color-orange;
+      color: $white;
+      font-size: rem-calc(20);
+      font-family: $font-family-OpenSansBold;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: inherit;
+      &-prev {
+        background-image: url("../i/pagination/b-pagination__li-arrow-prev.png");
+      }
+      &-next {
+        background-image: url("../i/pagination/b-pagination__li-arrow-next.png");
+      }
+    }
+    &-input {
+      color: $pagination-color-orange!important;
+      font-family: $font-family-OpenSansBold!important;
+      font-size: rem-calc(24)!important;
+      line-height: rem-calc(24)!important;
+      height: rem-calc(40)!important;
+      border-width: rem-calc(1)!important;
+      border-style: solid!important;
+      border-color: $pagination-color-gray!important;
+      border-radius: rem-calc(5)!important;
+      outline: none!important;
+      width: rem-calc(90)!important;
+      text-align: center;
+      transition:none!important;
+      &:focus {
+        box-shadow: none!important;
+        border-color:$pagination-color-gray!important;
+      }
+      &-span {
+        display: none;
+        position: absolute;
+        font-family: $font-family-OpenSansRegular;
+        font-size: rem-calc(12);
+        color: $gray;
+        padding: rem-calc(3 10);
+        border: rem-calc(2) solid #eee;
+        border-radius: rem-calc(5);
+        height: rem-calc(28);
+        line-height: rem-calc(20);
+        margin-top: rem-calc(-14);
+        background-color: $white;
+        margin-left: rem-calc(-135);
+        &_show {
+          display: inline-block;
+        }
+      }
+    }
+  }
+
+}

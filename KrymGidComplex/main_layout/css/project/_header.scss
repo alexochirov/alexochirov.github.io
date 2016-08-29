@@ -1,0 +1,111 @@
+header {
+  z-index: 100;
+  width: 100%;
+}
+
+.b-header {
+  background-color: $white;
+  height: rem-calc(125);
+
+  &__panel {
+    z-index: 102;
+  }
+  &__menu {
+    max-width: $row-width;
+    margin: 0 auto;
+
+    &-link {
+        background-image: url(../i/sprite.png);
+        background-repeat: no-repeat;
+        background-position: rem-calc(-42) 0;
+        width: rem-calc(25);
+        height: rem-calc(14);
+        margin-top: rem-calc(24);
+        cursor: pointer;
+    }
+
+    &-top {
+      max-width: $row-width;
+      margin: 0 auto;
+      padding-left: rem-calc(5);
+      padding-top: rem-calc(10);
+
+      &_hide {
+        display: none;
+      }
+
+      &-section {
+        background-color: $blue;
+        min-height: rem-calc(51);
+        display: inline-block;
+        width: 100%;
+        padding-top:  rem-calc(4);
+        padding-bottom:  rem-calc(4);
+      }
+      &-row {
+        background-image: url(../i/wave.png);
+        background-repeat: repeat-x;
+        background-position: left top;
+        padding-top: rem-calc(12);
+        line-height: rem-calc(12);
+        z-index: 101;
+      }
+
+      &__li {
+        &-separator {
+          height: rem-calc(20);
+          width: rem-calc(10);
+        }
+      }
+
+      &__link {
+        border-radius: rem-calc(6);
+        text-transform: uppercase;
+        &-has-dropdown {
+          &:after {
+            top:  rem-calc(10)!important;
+            margin-right:  rem-calc(6)!important;
+          }
+        }
+      }
+    }
+
+  }
+  &__logo {
+    margin-top: rem-calc(9);
+    margin-left: rem-calc(30);
+    display: inline-block;
+  }
+  &__login {
+      background-image: url(../i/sprite.png);
+      background-repeat: no-repeat;
+      background-position: rem-calc(-20 -72);
+      width: rem-calc(32);
+      height: rem-calc(28);
+      margin-top: rem-calc(20);
+      margin-right: rem-calc(8);
+      display: inline-block;
+      float: left;
+
+    &-link {
+      font-size: rem-calc(14);
+      color: $gray;
+      border-bottom: 1px dotted $gray;
+      position: relative;
+      top: rem-calc(10);
+      margin-right: rem-calc(8);
+    }
+  }
+
+  &__social {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+
+    &-box {
+      float: right;
+      position: relative;
+      top: rem-calc(15);
+    }
+  }
+}

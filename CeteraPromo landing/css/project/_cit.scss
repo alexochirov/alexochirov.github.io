@@ -1,0 +1,71 @@
+.b-cit
+{
+    background: #00bbd3;
+    &__row
+    {
+        background: url(../i/man.png) no-repeat right bottom;
+    }
+    &__text
+    {
+        font-family: 'NotoSerif-Italic';
+        font-size: 20px;
+        line-height: 32px;
+
+        margin-bottom: 59px;
+        padding-top: 82px;
+
+        color: white;
+        &:before
+        {
+            font-size: 60px;
+            line-height: 25px;
+
+            position: absolute;
+            top: 98px;
+            left: -30px;
+
+            content: '”';
+
+            opacity: .85;
+            color: #202020;
+        }
+    }
+    &__autor
+    {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+
+        margin-bottom: 95px;
+
+        color: #282828;
+    }
+    &__art
+    {
+        font-family: 'NotoSerif-Italic';
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 24px;
+
+        color: #282828;
+    }
+}
+@media (max-width:640px)
+{
+    .b-cit
+    {
+        &__row
+        {
+            background: none;
+        }
+        &__text
+        {
+            margin-bottom: 20px;
+            padding-top: 20px;
+        }
+        &__autor
+        {
+            margin-bottom: 20px;
+        }
+    }
+}

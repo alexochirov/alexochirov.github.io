@@ -1,0 +1,538 @@
+.b-main
+{
+    font-family: 'DINPro-Bold';
+
+    position: relative;
+
+    overflow: hidden;
+
+    width: 100%;
+    min-width: 1280px;
+    max-width: 1600px;
+    height: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    &__dobav
+    {
+        position: absolute;
+        z-index: 3;
+        left: -95px;
+
+        width: 450px;
+        height: 99px;
+
+        background: url('../i/baga.png') no-repeat;
+    }
+    &__one-img
+    {
+        position: absolute;
+        top: 24px;
+        left: 286px;
+
+        width: 194px;
+        height: 49px;
+
+        text-indent: -9999px;
+
+        background-image: url(../i/prem.png);
+    }
+    &__one
+    {
+        position: absolute;
+        z-index: 3;
+
+        width: 52.4%;
+        height: 99px;
+
+        background-image: url(../i/recta2.png);
+        background-repeat: no-repeat;
+        background-position: right 0;
+    }
+    &__three
+    {
+        position: absolute;
+        z-index: 2;
+        top: 105px;
+        left: -282px;
+
+        overflow: hidden;
+
+        width: 48.6%;
+        height: 896px;
+
+        -webkit-transition: all 1s ease;
+           -moz-transition: all 1s ease;
+            -ms-transition: all 1s ease;
+             -o-transition: all 1s ease;
+                transition: all 1s ease;
+        -webkit-transform: skew(-31.6deg);
+           -moz-transform: skew(-31.6deg);
+             -o-transform: skew(-31.6deg);
+        &:before
+        {
+            position: absolute;
+            left: 281px;
+
+            width: 792px;
+            height: 896px;
+
+            content: '';
+            -webkit-transition: all 1s ease;
+               -moz-transition: all 1s ease;
+                -ms-transition: all 1s ease;
+                 -o-transition: all 1s ease;
+                    transition: all 1s ease;
+            -webkit-transform: skew(31.6deg);
+               -moz-transform: skew(31.6deg);
+                 -o-transform: skew(31.6deg);
+
+            background: url('../i/three.png')   ;
+            background-repeat: no-repeat;
+            background-position: 00px 0;
+            background-size: 100%;
+        }
+        &-yur
+        {
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 38px;
+
+            position: absolute;
+            z-index: 3;
+            top: 272px;
+            left: 63px;
+
+            width: 480px;
+            height: 71px;
+            padding-top: 40px;
+            padding-right: 27px;
+            padding-left: 60px;
+
+            text-transform: uppercase;
+
+            color: white;
+            background-image: url(../i/shadow.png);
+        }
+    }
+    .act3:before
+    {
+        left: 260px;
+
+        background-size: 110%;
+    }
+    &__four
+    {
+        position: absolute;
+        left: 33.7%;
+
+        overflow: hidden;
+
+        width: 35.5%;
+        height: 1004px;
+
+        -webkit-transition: all 1s ease;
+           -moz-transition: all 1s ease;
+            -ms-transition: all 1s ease;
+             -o-transition: all 1s ease;
+                transition: all 1s ease;
+        -webkit-transform: skew(-31.6deg);
+           -moz-transform: skew(-31.6deg);
+             -o-transform: skew(-31.6deg);
+        &:before
+        {
+            position: absolute;
+            left: -625px;
+
+            width: 1529px;
+            height: 1004px;
+
+            content: '';
+            -webkit-transition: all 1s ease;
+               -moz-transition: all 1s ease;
+                -ms-transition: all 1s ease;
+                 -o-transition: all 1s ease;
+                    transition: all 1s ease;
+            -webkit-transform: skew(31.6deg);
+               -moz-transform: skew(31.6deg);
+                 -o-transform: skew(31.6deg);
+
+            background: url('../i/four.png')   ;
+            background-repeat: no-repeat;
+            background-position: 200px 0;
+            background-size: 86%;
+        }
+        &-part
+        {
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 38px;
+
+            position: absolute;
+            z-index: 3;
+            top: 274px;
+            left: 38.2%;
+
+            width: 495px;
+            height: 71px;
+            padding-top: 40px;
+            padding-left: 130px;
+
+            text-transform: uppercase;
+
+            color: white;
+            background-image: url(../i/shadow.png);
+            background-repeat: no-repeat;
+        }
+    }
+    .act4:before
+    {
+        left: -645px;
+
+        background-size: 92%;
+    }
+    &__five
+    {
+        position: absolute;
+        z-index: 2;
+        left: 72.1%;
+
+        overflow: hidden;
+
+        width: 40%;
+        height: 895px;
+
+        -webkit-transition: all 1s ease;
+           -moz-transition: all 1s ease;
+            -ms-transition: all 1s ease;
+             -o-transition: all 1s ease;
+                transition: all 1s ease;
+        -webkit-transform: skew(-31.6deg);
+           -moz-transform: skew(-31.6deg);
+             -o-transform: skew(-31.6deg);
+        &:before
+        {
+            position: absolute;
+            left: -425px;
+
+            width: 1029px;
+            height: 904px;
+
+            content: '';
+            -webkit-transition: all 1s ease;
+               -moz-transition: all 1s ease;
+                -ms-transition: all 1s ease;
+                 -o-transition: all 1s ease;
+                    transition: all 1s ease;
+            -webkit-transform: skew(31.6deg);
+               -moz-transform: skew(31.6deg);
+                 -o-transform: skew(31.6deg);
+
+            background: url('../i/five.png')   ;
+            background-repeat: no-repeat;
+            background-size: 90%;
+        }
+        &-phys
+        {
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 38px;
+
+            position: absolute;
+            z-index: 3;
+            top: 275px;
+            left: 74.5%;
+
+            width: 495px;
+            height: 71px;
+            padding-top: 40px;
+            padding-left: 60px;
+
+            text-transform: uppercase;
+
+            color: white;
+            background-image: url(../i/shadow.png);
+        }
+    }
+    .act5:before
+    {
+        left: -500px;
+
+        background-size: 100%;
+    }
+    &__six
+    {
+        position: absolute;
+        left: 1300px;
+    }
+    &__seven
+    {
+        position: absolute;
+        z-index: 3;
+        top: 501px;
+        left: 66.2%;
+
+        width: 839px;
+        height: 99px;
+
+        background-image: url(../i/rect.png);
+        background-repeat: no-repeat;
+    }
+    &__tel,
+    {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 30px;
+
+        text-decoration: none;
+        text-transform: uppercase;
+
+        color: white;
+        &:hover
+        {
+            text-decoration: underline;
+        }
+    }
+    &__skype
+    {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 30px;
+
+        text-decoration: none;
+        text-transform: uppercase;
+
+        color: white;
+        &:hover
+        {
+            text-decoration: underline;
+        }
+    }
+    &__tel
+    {
+        display: inline-block;
+
+        margin-top: 38px;
+    }
+    &__ico-skype,
+    &__ico-tel
+    {
+        position: relative;
+        top: 3px;
+
+        margin-right: 17px;
+
+        background-repeat: no-repeat;
+    }
+    &__ico-tel
+    {
+        display: inline-block;
+
+        width: 14px;
+        height: 19px;
+        margin-left: 90px;
+
+        background-image: url(../i/tel.png);
+    }
+    &__ico-skype
+    {
+        display: inline-block;
+
+        width: 20px;
+        height: 20px;
+        margin-left: 45px;
+
+        background-image: url(../i/sky.png);
+    }
+}
+@media (max-width:1600px)
+{
+    .b-main__three-yur,
+    .b-main__four-part,
+    .b-main__five-phys
+    {
+        font-size: 25px;
+    }
+    .b-main__one-img
+    {
+        margin-left: 30px;
+    }
+    .b-main__ico-tel
+    {
+        margin-left: 50px;
+    }
+}
+@media (max-width:1600px) and (min-width:1550px)
+{
+    .b-main__four
+    {
+        left: 33.5%;
+
+        width: 30%;
+        &-part
+        {
+            left: 38%;
+        }
+    }
+    .b-main__five
+    {
+        left: 66.4%;
+
+        width: 37%;
+        &:before
+        {
+            top: -100px;
+            left: -437px;
+        }
+        &-phys
+        {
+            left: 68.8%;
+        }
+    }
+    .b-main__seven
+    {
+        left: 60.3%;
+    }
+}
+@media (max-width:1550px) and (min-width:1480px)
+{
+    .b-main__one {
+        width: 52.6%;
+    }
+    .b-main__four
+    {
+        left: 33%;
+
+        width: 30%;
+        &-part
+        {
+            left: 37.7%;
+        }
+    }
+    .b-main__five
+    {
+        left: 65.9%;
+
+        width: 37%;
+        &:before
+        {
+            top: -100px;
+            left: -437px;
+        }
+        &-phys
+        {
+            left: 68.3%;
+        }
+    }
+    .b-main__seven
+    {
+        left: 59.7%;
+    }
+}
+@media (max-width:1480px) and (min-width:1380px)
+{
+    .b-main__one
+    {
+        width: 52.7%;
+    }
+    .b-main__four
+    {
+        left: 32%;
+
+        width: 30%;
+        &-part
+        {
+            left: 37%;
+        }
+    }
+    .b-main__five
+    {
+        left: 65.4%;
+
+        width: 40%;
+        &:before
+        {
+            top: -100px;
+            left: -437px;
+        }
+        &-phys
+        {
+            left: 68%;
+        }
+    }
+    .b-main__seven
+    {
+        left: 58.8%;
+    }
+}
+@media (max-width:1380px) and (min-width:1280px)
+{
+    .b-main__one
+    {
+        width: 53.2%;
+    }
+    .b-main__four
+    {
+        left: 31%;
+
+        width: 30%;
+        &-part
+        {
+            left: 36.4%;
+        }
+    }
+    .b-main__five
+    {
+        left: 64.6%;
+
+        width: 40%;
+        &:before
+        {
+            top: -100px;
+            left: -437px;
+        }
+        &-phys
+        {
+            left: 67.5%;
+        }
+    }
+    .b-main__seven
+    {
+        left: 57.5%;
+    }
+}
+@media (max-width:1280px)
+{
+    .b-main__one
+    {
+        width: 53.3%;
+    }
+    .b-main__four
+    {
+        left: 30%;
+
+        width: 30%;
+        &-part
+        {
+            left: 35.6%;
+        }
+    }
+    .b-main__five
+    {
+        left: 63.7%;
+
+        width: 40%;
+        &:before
+        {
+            top: -100px;
+            left: -437px;
+        }
+        &-phys
+        {
+            left: 66.6%;
+        }
+    }
+    .b-main__seven
+    {
+        left: 56.2%;
+    }
+}

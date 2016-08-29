@@ -1,0 +1,95 @@
+.expert {
+  padding-top: 14px;
+  border-bottom: 1px solid #e3e3e3;
+  padding-bottom: 18px;
+  &_blog {
+    padding-top: 20px;
+  }
+  &_last {
+    border-bottom: 0;
+  }
+  &__say {
+    position: relative;
+    float: left;
+    font-family: $font-family-OpenSansSemiBold;
+    color: #919090;
+    font-size: 11px;
+    &_ex {
+      margin-left: 23px;
+    }
+
+  }
+  &:hover{
+    .expert__title {
+      text-decoration: underline;
+    }
+  }
+  &__img {
+    padding-right: 17px;
+  }
+  &__block {
+
+  }
+  &__title {
+    color: #1f191a;
+    padding-bottom: 6px;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 1.2;
+    font-family: $font-family-OpenSansBold;
+  }
+  &__text {
+    color: #3f3f3f;
+    font-size: 12px;
+    padding-bottom: 12px;
+    line-height: 1.17;
+    &_cat {
+      color: #8f8e8f;
+      font-size: 12px;
+      line-height: 1.5;
+    }
+  }
+  &__say {
+    padding-left: 23px;
+    position: relative;
+    margin-left: 22px;
+    float: left;
+    color: #919090;
+    font-family: "OpenSansSemiBold", Arial, sans-serif;
+    font-size: 12px;
+    &_cat {
+      color: #8f8e8f;
+    }
+    &:before {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      background: url("../images/sprite-my.png") no-repeat -167px -188px;
+      width: 16px;
+      height: 14px;
+      left: 0;
+    }
+  }
+  &__date {
+    color: #919090;
+    font-size: 11px;
+    float: left;
+    margin-left: 30px;
+    &_ex {
+      margin-left: 0;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .row .expert {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .expert {
+    &__img {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}

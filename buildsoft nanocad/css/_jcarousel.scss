@@ -1,0 +1,153 @@
+.jcarousel {
+    overflow: hidden;
+}
+
+/*
+This is the container of the carousel items.
+You must ensure that the position is relative or absolute and
+that the width is big enough to contain all items.
+*/
+.jcarousel ul {
+    width: 20000em;
+    position: relative;
+
+    /* Optional, required in this case since it's a <ul> element */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+These are the item elements. jCarousel works best, if the items
+have a fixed width and height (but it's not required).
+*/
+.jcarousel li {
+    /* Required only for block elements like <li>'s */
+    float: left;
+}
+.jcarousel-prev {
+    position: relative;
+    top: -295px;
+    background: url('../imgs/sprites.png') no-repeat -75px -197px;
+    width: 34px;
+    height: 112px;
+    left: -116px;
+    display: inline-block;
+}
+.jcarousel-next {
+    position: relative;
+    background: url('../imgs/sprites.png') no-repeat -12px -198px;
+    width: 34px;
+    height: 112px;
+    display: inline-block;
+    top: -294px;
+    right: -770px;
+}
+@media (max-width:1040px) and (min-width:640px) {
+    .jcarousel-next {
+        right: -100%;
+    }
+    .jcarousel-prev {
+        left: -9%;
+    }
+}
+@media (max-width:640px)  {
+    .jcarousel-next {
+        display: none;
+    }
+    .jcarousel-prev {
+        display: none;
+    }
+}
+.jcarousel-prev_otz {
+    position: relative;
+    top: -300px;
+    left: 0px;
+    background: url('../imgs/sprites.png') no-repeat -566px -169px;
+    width: 24px;
+    height: 92px;
+    display: inline-block;
+}
+.jcarousel-next_otz {
+    position: relative;
+    display: inline-block;
+    background: url('../imgs/sprites.png') no-repeat -510px -169px;
+    width: 24px;
+    height: 92px;
+    left: 94%;
+}
+@media (max-width:960px) and (min-width:640px) {
+    .jcarousel-next_otz {
+        left: 90%;
+    }
+    .jcarousel__right-col {
+        padding-left: 0;
+    }
+}
+@media (max-width:640px) {
+    .jcarousel-next_otz, .jcarousel-prev_otz {
+        display: none;
+    }
+}
+.jcarousel-pagination {
+    
+   a {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius:10px;
+    text-indent: -9999px;
+    background: #ccc;
+    margin-left: 15px;
+    &.active {
+        background: #018cd1;
+    }
+    }
+}
+.jcarousel__right-col {
+    width: 74%;
+    float: left;
+    padding-left: 46px;
+}
+.jcarousel__blue-par {
+    font-size: 14px;
+    color: #1b9bd6;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 11px;
+}
+.jcarousel__prgrph {
+    font-size: 14px;
+    color: #464646;
+    margin-bottom: 11px;
+    font-weight: 400;
+}
+.jcarousel__row {
+
+}
+.jcarousel__left-col {
+    width: 26%;
+    float: left;
+    text-align: center;
+}
+.jcarousel__photo {
+
+}
+.jcarousel__name {
+    color: #333;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 18px;
+    text-transform: uppercase;
+    padding-top: 27px;
+    padding-bottom: 11px;
+}
+.jcarousel__dolzhnost {
+    color: #646464;
+    font-size: 14px;
+    font-family: "Helvetica-Light";
+    font-weight: 300;
+    line-height: 18px;
+    text-align: center;
+}

@@ -1,0 +1,77 @@
+.b-why__main {
+    background: #fff;
+    padding-top: 80px;
+}
+
+.b-why__img {
+    padding-left: 0;
+    padding-bottom: 60px;
+}
+
+.b-why__block {
+    padding-left: 0;
+}
+
+.b-why__name {
+    color: #005481;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "DINPro-Bold";
+    padding-bottom: 8px;
+}
+
+.b-why__desc {
+    color: #909090;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    padding-right: 20px;
+
+    p {
+        margin-bottom: 0;
+        padding-top: 10px;
+        color: #909090;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 24px;
+    }
+}
+
+
+.b-why__head {
+    background-color: #005481;
+}
+
+.b-why__title {
+    color: white;
+    font-size: 32px;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+}
+
+.b-why__archicad {
+    font-weight: 700;
+}
+
+.b-why__container {
+    padding-top: 53px;
+    padding-bottom: 45px;
+}
+@media (max-width: 1000px) {
+    .b-why {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+@media (max-width:640px) {
+    .b-why {
+        &__container {
+          padding: 0;
+
+        }
+        &__title {
+          font-size: 25px;
+        }
+    }
+}

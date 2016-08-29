@@ -1,0 +1,55 @@
+.footer
+  .row(data-equalizer)
+    .large-6.small-12.columns.footer__col(data-equalizer-watch)
+      .footer__title Журнал ПЛАС
+      ul.footer__list
+        each val in ['О Журнале','Редакция','Размещение рекламы в журнале','Авторам','Подписка на журнал','Архив']
+          li.footer__li
+            a.footer__li-link= val
+      .footer__title Календарь событий
+      ul.footer__list
+        each val in ['Календарь','Организаторам мероприятий']
+          li.footer__li
+            a.footer__li-link= val
+    .large-6.small-12.columns.footer__col(data-equalizer-watch)
+      .footer__title ПЛАС-daily
+      ul.footer__list
+        each val in ['Новости платежной индустрии','Новости банков','Регуляторы','ДБО','Мобильные платежи','Социальные сети','Prepaid','Технологии и Решения','Инфраструктура обслуживания','МФО']
+          li.footer__li
+            a.footer__li-link= val
+    .large-6.small-12.columns.footer__col(data-equalizer-watch)
+      ul.footer__list.footer__list_top
+        each val in ['Экономика и бизнес','Безопасность','Самообслуживание','Госуслуги и ЖКХ','Наличные','Транспортные Проекты','Ближнее Зарубежье','Исследования','Мероприятия']
+          li.footer__li
+            a.footer__li-link= val
+    .large-6.small-12.columns.footer__col(data-equalizer-watch)
+      .footer__title ПЛАС – словарь
+      ul.footer__list
+          li.footer__li
+            a.footer__li-link 6-е издание
+      .footer__title ПЛАС-сервисы
+      ul.footer__list
+        each val in ['Исследования и обзоры','Бюро переводов','Полиграфия','Интернет-магазин «ПЛАС»','Для рекламодателей','Контакты']
+          li.footer__li
+            a.footer__li-link= val
+  .row
+    .columns.footer__bord
+  .row.bottom
+    .large-6.medium-12.small-24.columns.bottom__col
+      |© 2006-2016
+      a.bottom__link(href="http://www.plusworld.ru/") PLUSworld.ru
+      br
+      |Все права защищены
+    .large-6.medium-12.small-24.columns.bottom__col
+      a.bottom__icon
+      a.bottom__icon.bottom__icon_yo
+      a.bottom__icon.bottom__icon_fb
+      a.bottom__icon.bottom__icon_rs
+    .large-6.medium-12.small-24.columns.bottom__col.bottom__col_form
+      input.bottom__inp(type='email',placeholder='подписаться на рассылку')
+      button.bottom__submit(type='submit')
+    .large-6.medium-12.small-24.columns.bottom__col.bottom__col_cetera
+      | Дизайн и поддержка
+      br
+      |сайта —
+      a.bottom__link(href="http://cetera.ru/") Cetera

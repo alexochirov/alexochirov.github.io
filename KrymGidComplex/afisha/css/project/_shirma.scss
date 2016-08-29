@@ -1,0 +1,15 @@
+.b-shirma
+{
+    padding-bottom: 10px;
+
+    background: url(../images/shirma.png) no-repeat center top;
+    &_eve
+    {
+        padding-bottom: 4px;
+    }
+}
+@media (max-width:640px) {
+  .b-shirma {
+    padding-bottom: 0px;
+  }
+}

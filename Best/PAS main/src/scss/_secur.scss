@@ -1,0 +1,59 @@
+.secur {
+  &__img {
+    position: relative;
+    margin-top: 16px;
+
+    overflow: hidden;
+    img {
+      transition: .5s all;
+    }
+    &:hover {
+      img {
+        transform: scale(1.05);
+      }
+    }
+  }
+  &__theme {
+    color: #fff;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 5px;
+    padding-bottom: 6px;
+    font-size: 12px;
+    text-transform: uppercase;
+    position: absolute;
+    left: 0;
+    top: 0;
+    float: left;
+    background-color: #1f191a;
+    font-family: "OpenSansBold", Arial, sans-serif;
+  }
+  &__title {
+    text-shadow: 0 0 18px rgba(0, 0, 0, 0.35);
+    color: #fff;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-transform: uppercase;
+    font-family: "OpenSansBold", Arial, sans-serif;
+    position: absolute;
+    bottom: 22px;
+  }
+}
+@media (max-width:960px) {
+    .secur {
+      &__title {
+        padding-left: 10px;
+        padding-right: 10px;
+        bottom: 10px;
+        font-size: 17px;
+      }
+    }
+}
+@media (max-width:640px) {
+    .secur {
+      &__title {
+        font-size: 15px;
+      }
+    }
+}

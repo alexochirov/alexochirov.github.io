@@ -1,0 +1,97 @@
+.b-contact
+{
+  margin-bottom: 40px;
+    &__map
+    {
+        padding-top: 30px;
+        padding-right: 5px;
+        padding-left: 0;
+    }
+    &__info
+    {
+    }
+    &__block
+    {
+        padding-top: 21px;
+        padding-bottom: 7px;
+    }
+    &__ico
+    {
+        display: inline-block;
+
+        width: 22px;
+        height: 32px;
+        margin-left: 20px;
+
+        background: url('../i/sprite-my.png') no-repeat -879px -887px;
+        &-2
+        {
+            width: 20px;
+            height: 32px;
+
+            background: url('../i/sprite-my.png') no-repeat -839px -835px;
+        }
+        &-3
+        {
+            width: 32px;
+            height: 32px;
+            margin-left: 15px;
+
+            background: url('../i/sprite-my.png') no-repeat -1126px -1129px;
+        }
+        &-4
+        {
+            width: 32px;
+            height: 30px;
+            margin-left: 12px;
+
+            background: url('../i/sprite-my.png') no-repeat -1074px -1079px;
+        }
+        &-5
+        {
+            width: 32px;
+            height: 24px;
+            margin-left: 12px;
+
+            background: url('../i/sprite-my.png') no-repeat -965px -991px;
+        }
+    }
+    &__text
+    {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 1.2;
+
+        color: #7f7f7f;
+    }
+    &__tel
+    {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 1.2;
+
+        color: #7f7f7f;
+    }
+    &__link
+    {
+        font-size: 24px;
+        font-weight: 400;
+
+        color: #d21531;
+    }
+}
+@media (max-width:960px)
+{
+    .b-contact__map
+    {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+@media (max-width:640px)
+{
+    .b-contact__ico
+    {
+        margin-left: 0;
+    }
+}

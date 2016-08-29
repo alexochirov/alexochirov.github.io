@@ -1,0 +1,35 @@
+.b-tabs
+{
+    background-color: #eee;
+    &__nadpis
+    {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 21px;
+
+        height: 45px;
+        margin-bottom: 9px;
+        padding-top: 11px;
+
+        text-align: center;
+
+        color: white;
+        background-color: #454545;
+        &-ico
+        {
+            display: inline-block;
+
+            width: 16px;
+            height: 16px;
+            margin-right: 13px;
+            margin-bottom: 3px;
+
+            vertical-align: middle;
+
+            background: url('../images/vakans.png') no-repeat;
+        }
+    }
+}
+.tabs-content {
+    background: #fff;
+}

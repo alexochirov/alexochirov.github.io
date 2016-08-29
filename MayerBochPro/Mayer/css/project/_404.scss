@@ -1,0 +1,59 @@
+.b-404
+{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    &__img {
+      padding-top: 10px;
+      text-align: center;
+    }
+    &__title
+    {
+        font-size: 150px;
+        font-weight: 400;text-align: center;
+
+        color: #d21531;
+    }
+    &__zapra
+    {
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 39px;
+
+        padding-bottom: 10px;
+
+        color: #d21531;
+    }
+    &__center
+    {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 33px;
+
+        padding-top: 42px;
+
+        color: #383838;
+    }
+    &__link
+    {
+        font-size: 24px;
+        font-weight: 400;
+
+        text-decoration: underline;
+
+        color: #ffae00;
+        &:hover {
+            color: #000;
+        }
+    }
+}
+@media (max-width:960px)
+{
+    .b-404__title
+    {
+        font-size: 90px;
+    }
+    .b-404__zapra
+    {
+        font-size: 24px;
+    }
+}

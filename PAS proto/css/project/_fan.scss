@@ -1,0 +1,128 @@
+.b-fan
+{
+    margin-top: 28px;
+    padding-left: 27px;
+    &__line
+    {
+        float: left;
+
+        width: 100%;
+        margin-bottom: 10px;
+
+        background-color: #29c5f6;
+        &:hover
+        {
+            & .b-fan__title
+            {
+                color: #0f0;
+            }
+        }
+        &_fb
+        {
+            background-color: #516eab;
+        }
+        &_yo
+        {
+            background-color: #e14e42;
+        }
+    }
+    &__img
+    {
+        position: relative;
+
+        float: left;
+
+        width: 27px;
+        height: 24px;
+        margin-top: 8px;
+        margin-left: 4px;
+
+        background: url('../images/sprite-my.png') no-repeat -558px -568px;
+        &_fb
+        {
+            width: 20px;
+            height: 25px;
+            margin-top: 7px;
+            margin-left: 10px;
+
+            background: url('../images/sprite-my.png') no-repeat -520px -523px;
+        }
+        &_yo
+        {
+            width: 21px;
+            height: 23px;
+            margin-top: 9px;
+            margin-left: 10px;
+
+            background: url('../images/sprite-my.png') no-repeat -479px -480px;
+        }
+        &:after
+        {
+            position: absolute;
+            top: -2px;
+            right: -1px;
+
+            width: 1px;
+            height: 16px;
+
+            content: '';
+
+            background: url(../images/sto.png) no-repeat;
+        }
+    }
+    &__follow
+    {
+        font-family: $font-family-OpenSans-Bold;
+        font-size: 11px;
+
+        float: left;
+
+        padding-top: 7px;
+        padding-left: 10px;
+
+        color: #fff;
+    }
+    &__title
+    {
+        font-family: $font-family-OpenSans-Bold;
+        font-size: 11px;
+
+        position: relative;
+
+        float: right;
+
+        padding-top: 9px;
+        padding-right: 16px;
+        padding-left: 15px;
+
+        color: #fff;
+        &:after
+        {
+            position: absolute;
+            top: 8px;
+            left: -1px;
+
+            width: 1px;
+            height: 16px;
+
+            content: '';
+
+            background: url(../images/sto.png) no-repeat;
+        }
+    }
+}
+@media (max-width:960px) and (min-width:640px)
+{
+    .b-fan
+    {
+        padding-left: 0;
+    }
+}
+@media (max-width:640px)
+{
+    .b-fan
+    {
+        margin-top: 10px;
+        padding-left: 15px;
+    }
+}

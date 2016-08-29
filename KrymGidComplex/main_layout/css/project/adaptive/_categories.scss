@@ -1,0 +1,211 @@
+.b-categories{
+  &__content{
+    &-item {
+      height: 100%;
+    }
+  }
+  &__li1 {
+    &-box{
+      &_border {
+        min-height: 26%;
+        border-bottom: 1px solid #e0e0e0;
+        font-size: rem-calc(14);
+        line-height: rem-calc(15);
+        margin-bottom: 10%;
+      }
+    }
+  }
+  &__link{
+    &-span {
+      max-width: 80%;
+      white-space: nowrap;
+    }
+  }
+}
+  @media only screen and (min-width: #{upper-bound($medium-range)}) and (max-width: rem-calc(1170)) {
+    .b-categories {
+      &__link {
+        font-size: rem-calc(11);
+        &:before {
+          width: rem-calc(6);
+        }
+      }
+      &__li{
+        min-height: inherit;
+        .b-categories {
+          &__li {
+            &1 {
+              &-box {
+                &:last-child {
+                  display: none;
+                }
+                &:first-child {
+                  margin-bottom: 17%;
+                }
+              }
+            }
+          }
+        }
+        &-medium {
+          &-item {
+            .b-categories {
+              &__li{
+                &__box{
+                  &-counter{
+                    width: 100%;
+                  }
+                  &-link{
+                    &_60 {
+                      width: 100%;
+                      text-align: left;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        &2{
+          &3{
+            &-item {
+              .b-categories {
+                &__li{
+                  &__box{
+                    &-counter{
+                      width: 100%;
+                    }
+                    &-link{
+                      &_60 {
+                        width: 100%;
+                        text-align: left;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media #{ $large-down} {
+    .b-categories {
+      padding-bottom: rem-calc(20);
+      &__content {
+        line-height: rem-calc(18);
+        &-item{
+          &-link{
+            &-box {
+              padding-right: 2%;
+              padding-left: 2%;
+            }
+          }
+        }
+      }
+
+      &__link {
+        height: auto;
+        text-align: center;
+        &:before, &:after {
+          display: none;
+        }
+        &-span {
+          padding-left: rem-calc(3);
+          padding-right: rem-calc(3);
+          border-radius: rem-calc(2);
+        }
+      }
+      &__li{
+        &-medium {
+          &-item {
+            .b-categories {
+              &__li{
+                &__box{
+                  &-counter{
+                    width: 100%;
+                  }
+                  &-link{
+                    &_60 {
+                      width: 100%;
+                      text-align: left;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        &2{
+          &3{
+            &-item {
+              .b-categories {
+                &__li{
+                  &__box{
+                    &-counter{
+                      width: 100%;
+                    }
+                    &-link{
+                      &_60 {
+                        width: 100%;
+                        text-align: left;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media #{$medium-only} {
+    .b-categories {
+      &__link {
+        font-size: rem-calc(11);
+      }
+      &__li {
+        min-height: inherit;
+        .b-categories {
+          &__li {
+            &1 {
+              &-box {
+                &:last-child {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media #{$small-only} {
+    .b-categories {
+      &__li{
+        min-height: inherit;
+        &-medium {
+          &-item {
+            .b-categories {
+              &__li{
+                &__box{
+                  &-counter{
+                    width: 35%;
+                  }
+                  &-link{
+                    &_60 {
+                      width: 65%;
+                      text-align: left;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }

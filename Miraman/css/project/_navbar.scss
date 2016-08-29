@@ -1,0 +1,139 @@
+.b-navbar
+{
+    position: fixed;
+
+    width: 68px;
+    left: 0px;
+    z-index: 10;
+    height: 100%;
+
+    background-color: #00c3d8;
+    &__logo
+    {
+        display: block;
+
+        width: 100%;
+        height: 70px;
+
+        background: url('../i/sprite-my.png') no-repeat 5px 0;
+        background-color: #2b2b2b;
+    }
+    &__menu
+    {
+        position: relative;
+
+        display: block;
+
+        width: 100%;
+        height: 76px;
+
+        text-align: center;
+
+        color: #fff;
+        &-ico
+        {
+            display: block;
+
+            width: 36px;
+            height: 32px;
+            margin-top: 15px;
+            margin-left: 18px;
+
+            background: url('../i/sprite-my.png') no-repeat -112px -136px;
+        }
+    }
+    &__search
+    {
+        display: block;
+
+        width: 100%;
+        height: 70px;
+
+        text-align: center;
+
+        color: #fff;
+        &-ico
+        {
+            display: block;
+
+            width: 38px;
+            height: 40px;
+            margin-left: 15px;
+
+            background: url('../i/sprite-my.png') no-repeat -68px -75px;
+        }
+    }
+    &__enter
+    {
+        display: block;
+
+        width: 100%;
+        height: 70px;
+
+        text-align: center;
+
+        color: #fff;
+        margin-top: 16px;
+        &-ico
+        {
+            display: block;
+
+            width: 37px;
+            height: 36px;
+            margin-left: 15px;
+
+            background: url('../i/sprite-my.png') no-repeat 0 -136px;
+        }
+    }
+    &__strelka {
+      display: block;
+      position: relative;
+      background: url('../i/sprite-my.png') no-repeat -147px -62px;
+  width: 40px;
+  height: 41px;
+  margin-left: 15px;
+  top: 150px;
+    }
+    &__insta {
+      display: block;
+      background: url('../i/sprite-my.png') no-repeat -79px 0;
+  width: 48px;
+  height: 44px;
+  margin-left: 12px;
+  position: relative;
+  top: 350px;
+    }
+    &__vk {
+      display: block;
+      background: url('../i/sprite-my.png') no-repeat -147px 0;
+  width: 43px;
+  height: 42px;
+  margin-left: 15px;
+  margin-top: 5px;
+  position: relative;
+  top: 350px;
+    }
+    &__fb {
+      display: block;
+      background: url('../i/sprite-my.png') no-repeat 0 -75px;
+  width: 48px;
+  height: 41px;
+  margin-left: 12px;
+  margin-top: 5px;
+  position: relative;
+  top: 350px;
+    }
+}
+@media (min-width:1450px)
+{
+    .b-navbar
+    {
+    }
+}
+@media (max-width:1050px)
+{
+    .b-navbar
+    {
+        display: none;
+    }
+}

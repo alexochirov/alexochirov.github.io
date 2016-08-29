@@ -1,0 +1,235 @@
+.b-config {
+  font-family: "Roboto-Medium";
+  padding-top: 36px;
+  padding-left: 10px;
+}
+.b-config__form {
+
+}
+input.b-config__inp {
+  margin-top: 7px;
+  color: #535353;
+  font-size: 13px;
+  font-weight: 400;
+  border: 1px solid #bdbdbd;
+}
+input.b-config__inp_tech {
+  width: 81px;
+  height: 30px;
+}
+.b-config__inp_captcha {
+  width: 144px;
+  height: 36px;
+}
+input.b-config__inp_comment {
+  height: 79px;
+}
+input.b-config__inp_send {
+  height: 160px;
+}
+.b-config__lbl {
+  color: #535353;
+  font-size: 13px;
+  font-weight: 400;
+  padding-bottom: 6px;
+}
+.b-config__lbl_pls {
+  padding-top: 28px;
+  padding-bottom: 0;
+}
+.b-config__lbl_send {
+  padding-top: 20px;
+  padding-bottom: 0;
+}
+.b-config__lbl_art {
+  padding-top: 0;
+}
+.b-config__lbl_cont {
+  padding-top: 0;
+}
+.b-config__sel {
+  background: transparent;
+  height: 30px;
+  background: url('../imgs/select.png') no-repeat right;
+  -webkit-appearance: none;
+  width: 268px;
+  color: #535353;
+  font-size: 13px;
+  font-weight: 400;
+  padding-top: 5px;
+  margin-top: 5px;
+}
+.b-config__title {
+  color: #535353;
+  font-size: 13px;
+  font-weight: 400;
+  margin-top: 10px;
+
+}
+.b-config__send-title {
+  color: #03a9f4;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 15px;
+  font-family: "Roboto-Medium";
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-bottom: 18px;
+}
+.b-config__box {
+  padding-left: 24px;
+}
+.b-config__wrap {
+  position: relative;
+input.b-config__inpt {
+  display:none;
+}
+
+label.b-config__chck {
+  color: #3d3d3d;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 14px;
+  margin-top: 8px;
+  margin-left: 19px;
+  &:after {
+    content:'';
+    display:block;
+    height:13px;
+    width:13px;
+    background: url(../imgs/input.png);
+    background-repeat: no-repeat;
+    position:absolute;
+    top: 9px;
+    left:0px;
+    margin-top: 0px;
+  }
+}
+
+label.b-config__chck_send {
+  margin-left: 4px;
+  margin-right: 0;
+  color: #535353;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+}
+.b-config__inpt:checked + label:after{
+  background: url(../imgs/input_chc.png);
+  width:10px;
+  height:11px;
+  }
+}
+.b-config__wrap_send {
+  &:first-child {
+    margin-left: 15px;
+  }
+  padding-right: 0;
+
+}
+.b-config__file {
+  position: relative;
+  overflow: hidden;
+}
+.b-config__btn {
+  float: left;
+  width: 113px;
+  height: 13px;
+  height: 100%;
+  color: #03a9f4;
+  background-color: #fff;
+  font-size: 13px;
+  font-weight: 400;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0;
+  padding-top: 2px;
+}
+.b-config__shd {
+  color: #757575;
+  font-size: 13px;
+  font-weight: 400;
+}
+.b-config__upload {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(20);
+  letter-spacing: 10em;     /* IE 9 fix */
+  -ms-transform: scale(20); /* IE 9 fix */
+  opacity: 0;
+  cursor: pointer
+}
+.b-config__zashit {
+  color: #535353;
+  font-size: 13px;
+  font-weight: 400;
+  padding-right: 0;
+  padding-left: 15px;
+  padding-top: 30px;
+}
+.b-config__zashit_zaya {
+  padding-top: 16px;
+}
+.b-config__captcha {
+  padding-left: 0;
+}
+.b-config__captcha_zaya {
+  padding-top: 17px;
+}
+.b-config__send {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  width: 276px;
+  height: 45px;
+  font-family: "Roboto-Regular";
+  padding-top: 13px;
+  background-color: #03a9f4;
+  margin-bottom: 72px;
+}
+.b-config__send_zaya {
+  width: 326px;
+  margin-top: 8px;
+  margin-bottom: 15px;
+}
+.b-config__zaya-title {
+  color: #03a9f4;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 74px;
+  background: #f5f5f5;
+  padding-left: 54px;
+  padding-top: 7x;
+  padding-bottom: 20px;
+}
+.b-config__zaya-block {
+  background: #fff;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.57);
+  padding-left: 55px;
+  padding-right: 55px;
+  margin-bottom: 54px;
+}
+.b-config__zaya-block_send {
+  box-shadow:none;
+  margin-bottom: 6px;
+}
+.b-config__zaya-row {
+  background: #f5f5f5;
+}
+.b-config__star {
+  color: #03a9f4;
+}
+.b-config__obaz {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  color: #535353;
+  margin-bottom: 22px;
+  font-family: "Roboto-Medium";
+}
+.b-config__obaz_send {
+  padding-top: 9px;
+}

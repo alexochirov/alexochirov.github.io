@@ -1,0 +1,47 @@
+.b-header-print-only {
+  display: none;
+}
+@media print {
+  @page {
+    size: landscape;
+    margin: 20px 120px;
+  }
+  html body div#bx-panel { display: none !important; }
+  h1 {
+    font-size: 1rem;
+  }
+  .b-header { display: none; }
+  .b-header-print-only {
+    display: block !important;
+    width: 100%;
+    border-bottom: 1px solid #e2e2e2;
+    overflow: hidden;
+    padding-bottom: 15px;
+  }
+  .b-lk-content__top {
+    padding-left: 0px;
+  }
+  .b-header-print-logo {
+    float: left;
+  }
+  .b-header-print-contacts {
+    float: right;
+    height: 40px;
+    margin-top: 30px;
+  }
+  .b-header-print-contact {
+    height: 20px;
+    margin-bottom: 10px;
+    & img {
+      margin-right: 10px;
+    }
+  }
+  .b-catalog-breadcrumbs { display: none; }
+  .b-catalog-search { display: none; }
+  .b-catalog-sidebar { display: none; }
+  .b-orders-menu { display: none; }
+  .b-footer { display: none; }
+  .no-print { display: none; }
+  .b-orders-print-only { display: block !important; }
+  .b-orders-total-cost { display: none; }
+}

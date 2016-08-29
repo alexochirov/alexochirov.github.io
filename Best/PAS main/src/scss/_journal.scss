@@ -1,0 +1,149 @@
+.journal {
+  padding-right: 15px;
+  position: relative;
+  &_blog {
+    padding-right: 8px;
+    margin-top: 53px;
+  }
+  &_last {
+    padding-right: 0;
+    padding-left: 15px;
+    padding-bottom: 10px;
+
+  }
+
+  &__bord {
+    height: 1px;
+    float: left;
+    width: calc(100% - 15px);
+    position: absolute;
+    bottom: 0;
+    border-bottom: 1px solid #e3e3e3;
+  }
+  &__cat {
+    position: absolute;
+    color: #fff;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 5px;
+    padding-bottom: 6px;
+    font-size: 12px;
+    text-transform: uppercase;
+    left: 0;
+    top: 0;
+    font-family: $font-family-OpenSansBold;
+    background-color: #1f191a;
+  }
+  &__title {
+    color: #010203;
+    font-size: 26px;
+    line-height: 1.2;
+    padding-bottom: 7px;
+    text-transform: uppercase;
+    font-family: $font-family-OpenSansBold;
+    border-bottom: 5px solid #e3e3e3;
+  }
+  &__list {
+    list-style-type: none;
+    margin: 0;
+    width: 100%;
+    float: left;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+  &__li {
+    margin-right: 23px;
+    float: left;
+    &:last-child {
+      margin-right: 0;
+      float: right;
+    }
+    &-link {
+      color: #474747;
+      font-size: 12px;
+      text-transform: uppercase;
+      font-family: $font-family-OpenSansBold;
+    }
+  }
+  &__name {
+    color: #1f191a;
+    font-size: 20px;
+    line-height: 1.4;
+    text-transform: uppercase;
+    font-family: $font-family-OpenSansBold;
+
+  }
+  &__text {
+    font-size: 12px;
+    line-height: 1.67;
+    color: #3f3f3f;
+    padding-top: 6px;
+    padding-bottom: 15px;
+  }
+  &__read {
+    color: #47a2d8;
+    font-size: 12px;
+    font-family: $font-family-OpenSansBold;
+    float: left;
+    padding-right: 12px;
+    position: relative;
+    &:after {
+      content: '';
+      position: absolute;
+      top: 5px;
+      right: 0;
+      background: url('../images/sprite-my.png') no-repeat 0 0;
+      width: 6px;
+      height: 9px;
+      display: inline-block;
+
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .journal {
+    padding-left: 10px;
+    &_last {
+      padding-left: 0;
+      padding-right: 10px;
+    }
+    &__cat {
+      left: 10px;
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .journal {
+
+    margin-bottom: 10px;
+
+    &_last {
+      padding-left: 10px;
+    }
+    &__bord {
+      padding-top: 14px;
+    }
+
+    &__li:last-child {
+      float: left;
+    }
+    &__name {
+      font-size: 17px;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .journal {
+    padding-right: 10px;
+    padding-bottom: 15px;
+    &_blog {
+      margin-top: 15px;
+    }
+    &__bord {
+      width: calc(100% - 20px);
+    }
+  }
+}

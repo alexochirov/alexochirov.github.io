@@ -1,0 +1,166 @@
+.b-results
+{
+    padding-top: 25px;
+    padding-left: 15px;
+
+    background: #fff;
+    &__block
+    {
+        float: left;
+
+        width: 100%;
+
+        border-bottom: 1px solid #eee;
+        &_last
+        {
+            border-bottom: 0;
+        }
+    }
+    &__date
+    {
+        font-family: 'PT_Serif_Regular';
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+
+        padding-top: 13px;
+        padding-left: 0;
+
+        color: #979ca4;
+    }
+    &__info
+    {
+        padding-top: 12px;
+        padding-bottom: 15px;
+        padding-left: 15px;
+    }
+    &__name
+    {
+        &-link
+        {
+            font-size: 18px;
+            font-weight: 400;
+
+            color: #282828;
+        }
+    }
+    &__grafa
+    {
+        font-family: 'PT_Serif_Regular';
+        font-size: 14px;
+        font-weight: 400;
+
+        padding-top: 7px;
+
+        color: #9a9a9a;
+    }
+    &__place
+    {
+        font-family: 'PT_Serif_Regular';
+        font-size: 14px;
+        font-weight: 400;
+
+        padding-top: 9px;
+        padding-bottom: 25px;
+
+        color: #9a9a9a;
+    }
+    &__more-link
+    {
+        font-family: 'PT_Serif_Italic';
+        font-size: 14px;
+        font-style: italic;
+
+        text-decoration: underline;
+
+        color: #00c3d8;
+    }
+    &__firma
+    {
+        font-family: 'PT_Serif_Regular';
+        font-size: 14px;
+        font-weight: 400;
+
+        color: #454545;
+    }
+    &__price
+    {
+        padding-top: 21px;
+        padding-right: 0;
+        padding-left: 0;
+        &-link
+        {
+            font-family: 'PT_Serif_Regular';
+            font-size: 19px;
+            font-weight: 400;
+            line-height: 32px;
+
+            display: block;
+
+            width: 100%;
+            padding-top: 1px;
+            padding-bottom: 1px;
+
+            text-align: center;
+            text-align: center;
+
+            color: white;
+            border: 1px solid #eee;
+            border-radius: 17px;
+            background-color: #6bbe45;
+        }
+    }
+    &__show-more
+    {
+        padding-right: 0;
+        padding-left: 0;
+        &-link
+        {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+
+            display: block;
+
+            width: 100%;
+            margin-top: 39px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+
+            text-align: center;
+            text-transform: uppercase;
+
+            color: #999;
+            border: 1px solid #999;
+            border-radius: 17px;
+        }
+    }
+}
+@media (max-width:640px)
+{
+    .b-results
+    {
+        padding-right: 7px;
+        &__info
+        {
+            padding-right: 7px;
+            padding-left: 0;
+        }
+        &__price-link
+        {
+            font-size: 14px;
+        }
+        &__price
+        {
+            padding-top: 8px;
+        }
+        &__block
+        {
+
+            &:first-child
+            {
+                border-top: 3px solid #3aa8b4;
+            }
+        }
+    }
+}

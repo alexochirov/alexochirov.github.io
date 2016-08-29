@@ -1,0 +1,76 @@
+.b-social
+{
+    font-family: $font-family-OpenSans-Regular;
+    font-size: 11px;
+
+    position: relative;
+
+    float: left;
+
+    height: 40px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 14px;
+    padding-left: 15px;
+
+    text-decoration: none;
+
+    color: #fff;
+    border-radius: 2px;
+    background-color: #516eab;
+    &:hover
+    {
+        opacity: .85;
+    }
+    & .fa
+    {
+        font-size: 14px;
+        line-height: 1.6;
+
+        padding-right: 15px;
+        &:hover
+        {
+            color: #fff;
+        }
+    }
+    &:before
+    {
+        position: absolute;
+        top: 14px;
+        left: 31px;
+
+        display: block;
+
+        width: 1px;
+        height: 16px;
+
+        content: '';
+
+        background: url(../images/sto.png) no-repeat;
+    }
+    &_blue
+    {
+        background-color: #29c5f6;
+        &:before
+        {
+            left: 36px;
+        }
+    }
+    &_g
+    {
+        width: 40px;
+        padding-right: 0;
+        padding-left: 14px;
+
+        background-color: #e14e42;
+        &:before
+        {
+            display: none;
+        }
+    }
+    &_en
+    {
+        background-color: #c21103;
+    }
+}

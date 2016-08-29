@@ -1,0 +1,28 @@
+.b-tovarnak
+{
+
+    &__lin
+    {
+        padding-right: 12px;
+        position: relative;
+    }
+    &__rin
+    {
+      padding-left: 12px;
+      position: relative;
+    }
+}
+@media (max-width:960px) {
+    .b-tovarnak {
+        &__rin {
+           height: 300px !important;
+        }
+    }
+}
+@media (max-width:640px) {
+    .b-tovarnak {
+        &__rin {
+            height: auto !important;
+        }
+    }
+}

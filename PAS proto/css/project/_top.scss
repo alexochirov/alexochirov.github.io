@@ -1,0 +1,49 @@
+.b-top
+{
+    background-color: #222;
+    &__links
+    {
+    }
+    &__link
+    {
+        font-family: $font-family-PT_Sans-Web-Regular;
+        font-size: 12px;
+
+        display: inline-block;
+
+        margin-right: 24px;
+        padding-bottom: 6px;
+
+        text-decoration: none;
+
+        color: #fff;
+        &:hover
+        {
+            text-decoration: underline;
+        }
+    }
+    &__icons
+    {
+        text-align: right;
+    }
+    &__ico
+    {
+        margin-right: 7px;
+        margin-left: 7px;
+    }
+}
+@media (max-width:640px)
+{
+    .b-top
+    {
+        &__link
+        {
+            margin-right: 10px;
+        }
+        &__ico
+        {
+            margin-right: calc(10% - 10px);
+            margin-left: calc(10% - 10px);
+        }
+    }
+}

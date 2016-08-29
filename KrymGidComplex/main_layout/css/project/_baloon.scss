@@ -1,0 +1,204 @@
+.b-balloon
+{
+    position: absolute;
+    z-index: 10;
+
+    display: inline-block;
+
+    width: rem-calc(383);
+    padding: rem-calc(16);
+
+    border: rem-calc(3) solid #f57c00;
+    border-radius: rem-calc(40);
+    background: $white;
+    .b-baloon__add
+    {
+        font-family: $font-family-OpenSansSemiBold;
+        font-size: rem-calc(13);
+
+        margin: 0 .1875rem 0 .625rem;
+        padding: rem-calc(2 10);
+
+        border-radius: rem-calc(10);
+        background: linear-gradient(to top, $orange, #ffb400);
+        box-shadow: 0 1px 1px 1px #994e00;
+        &:before
+        {
+            display: inline-block;
+
+            margin-right: rem-calc(6);
+
+            content: '+';
+        }
+    }
+    & > ymaps
+    {
+        overflow: auto !important;
+
+        width: auto !important;
+        height: auto !important;
+    }
+    &:after
+    {
+        position: absolute;
+        top: -69px;
+        left: 1px;
+
+        display: block;
+        visibility: visible;
+
+        width: 40px;
+        height: 57px;
+
+        content: '';
+
+        background: url(../i/map-mak-big.png) no-repeat;
+    }
+    &_no
+    {
+        &:after
+        {
+            position: absolute;
+            top: -47px;
+            left: 11px;
+
+            display: block;
+            visibility: visible;
+
+            width: 39px;
+            height: 45px;
+
+            content: '';
+
+            background: url(../i/map-mak-low.png) no-repeat;
+        }
+    }
+    &:before
+    {
+        position: absolute;
+        top: rem-calc(-22);
+        left: rem-calc(20);
+
+        display: block;
+
+        width: rem-calc(43);
+        height: rem-calc(22);
+
+        content: '';
+
+        background: url(../i/b-map-balloon_arrow-fill.png) no-repeat left bottom;
+    }
+    &__info
+    {
+        display: block;
+
+        margin-left: rem-calc(170);
+        &:after
+        {
+            display: table;
+            clear: both;
+
+            content: '';
+        }
+        &-link
+        {
+            font-family: 'OpenSansSemiBold', Arial, sans-serif;
+            font-size: rem-calc(14);
+            line-height: rem-calc(22);
+
+            display: inline-block;
+
+            margin-bottom: rem-calc(25);
+
+            text-decoration: underline;
+
+            color: #424242;
+        }
+        &-place
+        {
+            font-family: 'OpenSansRegular', Arial, sans-serif;
+            font-size: rem-calc(13);
+            line-height: rem-calc(18);
+
+            margin-bottom: rem-calc(33);
+
+            color: #212121;
+            &:before
+            {
+                display: inline-block;
+
+                width: rem-calc(13);
+                height: rem-calc(18);
+                margin-right: rem-calc(5);
+
+                content: '';
+                vertical-align: text-bottom;
+
+                background: url(../i/map-marker-small.png) no-repeat center center;
+            }
+        }
+        &-fallow
+        {
+            line-height: rem-calc(22);
+            .b-place__add
+            {
+                margin: rem-calc(0 3 0 10);
+            }
+        }
+    }
+    &__arrow
+    {
+        position: absolute;
+        z-index: 5;
+        top: 50%;
+
+        display: inline-block;
+
+        width: rem-calc(10);
+        height: rem-calc(20);
+        margin-top: rem-calc(-10);
+
+        background: url(../i/b-map-balloon-rotate_arrow.png) no-repeat rem-calc(100 100);
+        &.b-balloon__arrow_prev
+        {
+            left: rem-calc(5);
+
+            background-position: left top;
+        }
+        &.b-balloon__arrow_next
+        {
+            right: rem-calc(5);
+
+            background-position: right top;
+        }
+    }
+    &__rotate
+    {
+        position: relative;
+
+        display: block;
+        float: left;
+        overflow: hidden;
+
+        width: rem-calc(150);
+        height: rem-calc(150);
+
+        text-align: center;
+    }
+    &__img
+    {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+
+        min-width: 100%;
+        max-width: none;
+        min-height: 100%;
+        max-height: 100%;
+        &.active
+        {
+            z-index: 2;
+        }
+    }
+}

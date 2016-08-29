@@ -1,0 +1,94 @@
+.b-obj
+{
+    margin-bottom: 18px;
+    &__wrapper
+    {
+        float: left;
+
+        width: 100%;
+
+        border-radius: 5px 4px 4px 5px;
+        background-color: #fff;
+        box-shadow: 2px 3.5px 4px rgba(0, 0, 0, .18);
+    }
+    &__img
+    {
+        text-align: center;
+    }
+    &__list
+    {
+        padding-bottom: 23px;
+    }
+    &__title
+    {
+        font-family: $font-family-Philosopher-Bold;
+        font-size: 32px;
+
+        float: left;
+
+        width: 100%;
+        padding-top: 28px;
+        padding-bottom: 17px;
+
+        text-align: center;
+
+        color: #212121;
+    }
+    .b-obj__li
+    {
+        padding-right: 17px;
+        padding-left: 17px;
+        &:first-child
+        {
+            padding-right: 0;
+            padding-left: 34px;
+        }
+        &:last-child
+        {
+            padding-right: 34px;
+            padding-left: 0;
+        }
+    }
+    &__name
+    {
+        font-family: $font-family-Philosopher-Bold;
+        font-size: 19px;
+
+        padding-top: 14px;
+        padding-bottom: 8px;
+
+        color: #212121;
+    }
+    &__desc
+    {
+        font-size: 15px;
+        line-height: 1.5;
+
+        color: #424242;
+    }
+}
+@media (max-width:640px)
+{
+    .b-obj
+    {
+        &__title {
+            font-size: 25px;
+            padding-top: 10px;
+        }
+        .b-obj__li
+        {
+            padding-right: 30px;
+            padding-left: 30px;
+            &:last-child
+            {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+            &:first-child
+            {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+        }
+    }
+}

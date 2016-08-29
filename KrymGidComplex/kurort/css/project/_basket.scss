@@ -1,0 +1,130 @@
+.b-basket
+{
+    &__line
+    {
+        border-bottom: 1px solid #c9c9c9;
+    }
+    &__number
+    {
+        padding-right: 0;
+    }
+    &__tovar
+    {
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+    &__block
+    {
+        width: 100%;
+        margin-top: 20px;
+
+        border-radius: 7px;
+        background-color: #fff;
+        box-shadow: 2px 3.5px 4px rgba(0, 0, 0, .18);
+        .row
+        {
+            margin: 0;
+        }
+    }
+    &__signatures
+    {
+        font-size: 13px;
+
+        padding-top: 15px;
+
+        color: #777;
+    }
+    &__num
+    {
+        font-size: 15px;
+
+        padding-right: 0;
+
+        color: #777;
+        span
+        {
+            line-height: 80px;
+        }
+    }
+    &__quant
+    {
+        padding-right: 10px;
+        padding-left: 0;
+    }
+    &__img
+    {
+        padding-right: 0;
+    }
+    &__title
+    {
+        padding-top: 30px;
+        &-link
+        {
+            font-family: $font-family-Philosopher-Bold;
+            font-size: 16px;
+
+            color: #424242;
+        }
+    }
+    &__price
+    {
+        font-size: 15px;
+
+        padding-top: 30px;
+        padding-right: 10px;
+        padding-left: 0;
+
+        color: #424242;
+    }
+    &__quantity
+    {
+        padding-top: 26px;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    &__sum
+    {
+        font-family: $font-family-Philosopher-Bold;
+        font-size: 16px;
+
+        padding-top: 28px;
+        padding-right: 0;
+
+        color: #424242;
+    }
+    &__pri
+    {
+        padding-left: 0;
+    }
+    &__del
+    {
+        padding-top: 27px;
+        &-link
+        {
+            font-size: 15px;
+
+            color: #777;
+            border-bottom: 1px dotted #777;
+        }
+    }
+}
+
+@media (max-width:640px)
+{
+    .b-basket
+    {
+        &__price
+        {
+            padding-left: 15px;
+        }
+        &__sum
+        {
+            padding-right: 15px;
+            padding-left: 0;
+        }
+        &__del
+        {
+            text-align: center;
+        }
+    }
+}

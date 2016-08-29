@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "OpenSans-Bold";
+  src: url(#{$fontsPath}/OpenSans-Bold.ttf) format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+$font-family-OpenSans-Bold: "OpenSans-Bold", Arial, sans-serif;
+
+@font-face {
+  font-family: "OpenSans-Italic";
+  src: url(#{$fontsPath}/OpenSans-Italic.ttf) format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+$font-family-OpenSans-Italic: "OpenSans-Italic", Arial, sans-serif;
+
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url(#{$fontsPath}/OpenSans-Regular.ttf) format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+$font-family-OpenSans-Regular: "OpenSans-Regular", Arial, sans-serif;
+
+@font-face {
+  font-family: "century-gothic-bold";
+  src: url(#{$fontsPath}/century-gothic-bold.ttf) format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+$font-family-century-gothic-bold: "century-gothic-bold", Arial, sans-serif;
+
+@font-face {
+  font-family: "OpenSans-Semibold";
+  src: url(#{$fontsPath}/OpenSans-Semibold.ttf) format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+$font-family-OpenSans-Semibold: "OpenSans-Semibold", Arial, sans-serif;
+

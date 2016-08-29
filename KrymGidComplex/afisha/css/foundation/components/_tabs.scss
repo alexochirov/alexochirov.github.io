@@ -1,0 +1,189 @@
+// Foundation by ZURB
+// foundation.zurb.com
+// Licensed under MIT Open Source
+
+@import 'global';
+@import 'grid';
+
+//
+// @variables
+//
+
+$include-html-tabs-classes: $include-html-classes !default;
+$tabs-navigation-padding: rem-calc(16) !default;
+$tabs-navigation-bg-color: $silver !default;
+$tabs-navigation-active-bg-color: $white !default;
+$tabs-navigation-hover-bg-color: scale-color($tabs-navigation-bg-color, $lightness: -6%) !default;
+$tabs-navigation-font-color: $jet !default;
+$tabs-navigation-active-font-color: $tabs-navigation-font-color !default;
+$tabs-navigation-font-size: rem-calc(16) !default;
+$tabs-navigation-font-family: $body-font-family !default;
+$tabs-content-margin-bottom: rem-calc(24) !default;
+$tabs-content-padding: ($column-gutter/2) !default;
+$tabs-vertical-navigation-margin-bottom: 1.25rem !default;
+
+@include exports('tab')
+{
+    @if $include-html-tabs-classes
+    {
+        .tabs
+        {
+            margin-bottom: 0 !important;
+            margin-left: 0;
+
+            @include clearfix;
+            dd,
+            .tab-title
+            {
+                position: relative;
+
+                float: $default-float;
+
+                margin-bottom: 0 !important;
+
+                list-style: none;
+                > a
+                {
+                    font-size: 16px;
+
+                    display: block;
+
+                    padding-top: 27px;
+                    padding-right: 10px;
+                    padding-bottom: 28px;
+                    padding-left: 34px;
+
+                    text-transform: uppercase;
+font-family: $font-family-OpenSansSemiBold;
+                    color: #383737;
+                    outline: none;
+                    background-color: $tabs-navigation-bg-color;
+                    background-color: #fff;
+                    &:hover
+                    {
+                      color: #dd249b;
+                    }
+                }
+                &.active a
+                {
+                    color: white;
+                    background-color: #781c55;
+                }
+            }
+            &.radius
+            {
+                dd:first-child,
+                .tab:first-child
+                {
+                    a
+                    {
+                        @include side-radius($default-float, $global-radius);
+                    }
+                }
+                dd:last-child,
+                .tab:last-child
+                {
+                    a
+                    {
+                        @include side-radius($opposite-direction, $global-radius);
+                    }
+                }
+            }
+            &.vertical
+            {
+                dd,
+                .tab-title
+                {
+                    position: inherit;
+                    top: auto;
+
+                    display: block;
+                    float: none;
+                }
+            }
+        }
+        .tabs-content
+        {
+            width: 100%;
+
+            @include clearfix;
+            > .content
+            {
+                display: none;
+                float: $default-float;
+
+                width: 75%;
+                margin-left: 25%;
+                &.active
+                {
+                    display: block;
+                    float: none;
+                }
+                &.contained
+                {
+                    padding: $tabs-content-padding;
+                }
+            }
+            &.vertical
+            {
+                display: block;
+                > .content
+                {
+                    padding: 0 $tabs-content-padding;
+                }
+            }
+        }
+        @media (max-width:640px) {
+            .tabs.vertical .tab-title a {
+                border-bottom: 1px solid #dd249b ;
+                padding-bottom: 12px;
+                padding-top: 12px;
+                font-size: 15px;
+            }
+          .tabs-content {
+             .content.active {
+                width: 100%;
+                margin-left: 0;
+              }
+          }
+        }
+        @media #{$medium-up}
+        {
+            .tabs
+            {
+                &.vertical
+                {
+                    float: $default-float;
+
+                    width: 25%;
+                    max-width: 25%;
+                    margin: 0;
+                    margin-bottom: 0;
+                }
+            }
+
+            .tabs-content
+            {
+
+                &.vertical
+                {
+                    float: $default-float;
+
+                    width: 80%;
+                    max-width: 80%;
+
+                    margin-#{$default-float}: -1px;
+                    padding-#{$default-float}: 1rem;
+                }
+            }
+        }
+        .no-js
+        {
+            .tabs-content > .content
+            {
+                display: block;
+                float: none;
+            }
+        }
+    }
+}

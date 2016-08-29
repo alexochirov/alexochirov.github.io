@@ -1,0 +1,55 @@
+.b-info {
+  font-family: "Roboto-Medium";
+}
+.b-info__back {
+  background-color: #e0e0e0;
+  padding-top: 62px;
+  padding-bottom: 17px;
+}
+.b-info__delimiter {
+  background: url('../imgs/sprites.png') no-repeat -6px -281px;
+  width: 1px;
+  height: 326px;
+  padding-left: 0;
+  padding-right: 0;
+}
+.b-info__contacts {
+  padding-left: 23px;
+  padding-right: 0;
+}
+.b-info__address {
+  color: #3d3d3d;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  padding-bottom: 31px;
+}
+.b-info__address-telephone {
+  color: #3d3d3d;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  padding-bottom: 15px;
+}
+.b-info__contacts-link {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #03a9f4;
+}
+.b-info__list-one {
+  list-style-type: none;
+  margin: -10px 0 0 0;
+  padding-left: 40px;
+  padding-right: 6px;
+}
+.b-info__list-one-item {
+  padding-top: 0px;
+  line-height: 1.5;
+}
+.b-info__list-one-link {
+  color: #3d3d3d;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}

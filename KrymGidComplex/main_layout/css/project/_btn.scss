@@ -1,0 +1,136 @@
+.b-btn
+{
+    font-family: 'OpenSansBold', Arial, sans-serif;
+    font-size: rem-calc(14);
+    line-height: 20px;
+
+    display: inline-block;
+
+    margin-bottom: 0;
+    padding: rem-calc(6 22);
+
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: #fff;
+    border: none;
+    border-radius: rem-calc(20);
+    outline: none;
+    background: linear-gradient(to top, #f57c00, #ffb400);
+    box-shadow: 0 1px 1px 1px #994e00;
+    &:hover,
+    &:focus
+    {
+        color: #fff;
+    }
+    &.b-btn_large
+    {
+        font-size: rem-calc(16);
+
+        padding: rem-calc(11 105);
+
+        border-radius: rem-calc(40);
+    }
+    &.b-btn_small
+    {
+        font-family: 'OpenSansRegular', Arial, sans-serif;
+        font-size: rem-calc(13);
+
+        padding: rem-calc(0 14);
+
+        text-transform: none;
+
+        border-radius: rem-calc(14);
+    }
+    &__wrapper
+    {
+        font-size: 0;
+
+        width: 100%;
+
+        text-align: center;
+    }
+    &.b-btn_margin-bottom
+    {
+        margin-bottom: rem-calc(20);
+    }
+    &.b-btn-padding
+    {
+        &-small
+        {
+            padding-right: rem-calc(27);
+            padding-left: rem-calc(27);
+        }
+    }
+    &__tab
+    {
+        border-radius: 0;
+        
+        &-wrapper
+        {
+            display: inline-block;
+            float: none !important;
+            &:first-child
+            {
+                .b-btn__tab
+                {
+                    border-radius: rem-calc(20 0 0 20);
+                }
+            }
+            &:last-child
+            {
+                .b-btn__tab
+                {
+                    border-radius: rem-calc(0 20 20 0);
+                }
+            }
+            &.active
+            {
+                .b-btn__tab
+                {
+                    font-family: 'OpenSansSemiBold', Arial, sans-serif;
+                    font-size: rem-calc(13);
+                    font-weight: normal;
+
+                    padding: rem-calc(7 22 8);
+
+                    color: #212121 !important;
+                    background: #eaeaea !important;
+                    box-shadow: 1px 1px 2px #a6a6a6 inset;
+                }
+            }
+        }
+    }
+}
+
+.b-btn-upload
+{
+    font-family: 'Open Sans Light', sans-serif;
+    font-size: rem-calc(15);
+
+    display: inline-block;
+
+    margin-bottom: rem-calc(5);
+    padding: rem-calc(12 14);
+
+    text-decoration: none;
+
+    color: #212121;
+    border: rem-calc(1) solid #e0e0e0;
+    border-radius: rem-calc(5);
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ededed+100 */
+    background: #fff; /* Old browsers */
+    background:    -moz-linear-gradient(top, #fff 0%, #ededed 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #fff 0%, #ededed 100%); /* Chrome10-25,Safari5.1-6 */
+    background:         linear-gradient(to bottom, #fff 0%, #ededed 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    box-shadow: none;
+
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed', GradientType=0); /* IE6-9 */
+}
+@media (max-width:640px) {
+  .b-btn.b-btn__tab_plan {
+    font-size: 13px !important;
+    padding: 6px !important;
+  }
+}

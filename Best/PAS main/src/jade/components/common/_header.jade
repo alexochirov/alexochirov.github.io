@@ -1,0 +1,40 @@
+header.header
+  .top
+    .row
+      .large-20.columns.medium-18.small-24.top__menu
+        ul.top__list
+          each val in ['Карта сайта', 'Мобильная версия', 'Личный кабинет', 'бюро переводов','интернет–магазин','плас–форум']
+            li.top__li
+              a.top__li-link= val
+      .large-4.medium-6.columns.hide-for-small-only.top__social
+        a.top__icon.top__icon_rs
+        a.top__icon.top__icon_fb
+        a.top__icon.top__icon_yo
+        a.top__icon.top__icon_tw
+  .header__main
+    .row
+      .large-4.medium-5.columns.hide-for-small-only.header__logo
+        a
+          img(src='./images/logo.png',alt='')
+      .large-11.medium-10.columns.hide-for-small-only.text-center
+        .header__course
+          | курс цб на 28.06:
+          img(src='./images/dollar.png',alt='')
+          .header__money 64,2
+          img(src="./images/euro.png",alt='')
+          .header__money.header__money_up 71,21
+      .large-8.medium-7.small-20.columns.header__form-wrapper
+        form.header__form
+          input.header__input(type='text',placeholder='поиск')
+          button(type='submit').header__submit
+      .large-1.medium-2.small-4.columns
+        span.header__menu
+  .menu
+    .row
+      .columns
+        ul.menu__list
+          each val in ['Журнал','Новости','Форум экспертов','Блогосфера','База знаний','Другие проекты']
+            li.menu__li
+              a(href='#').menu__li-link= val
+
+

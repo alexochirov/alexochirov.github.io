@@ -1,0 +1,38 @@
+.b-centr
+{
+    font-size: 18px;
+    font-weight: 400;
+
+    text-transform: uppercase;
+
+    color: #7f7f7f;
+    background: url('../images/line.png') repeat-x 0  4px;
+    &_mayer
+    {
+        font-size: 26px;
+        line-height: 1.0;
+
+        text-transform: none;
+    }
+    &__centr
+    {
+        z-index: 10;
+
+        display: inline-block;
+
+        padding-right: 10px;
+        padding-left: 10px;
+
+        background: #fff;
+        &_mayer
+        {
+            padding-right: 15px;
+            padding-left: 15px;
+            letter-spacing: -.05em;
+        }
+    }
+    &_price
+    {
+        margin-top: 44px;
+    }
+}

@@ -1,0 +1,241 @@
+.b-buy
+{
+    position: relative;
+
+    float: left;
+
+    margin-right: 24px;
+    &__download-link
+    {
+        font-size: 13px;
+
+        float: left;
+
+        margin-top: 20px;
+        margin-bottom: 10px;
+        padding-top: 8px;
+        padding-right: 20px;
+        padding-bottom: 8px;
+        padding-left: 20px;
+
+        cursor: pointer;
+        transition: .5s;
+
+        color: #214496;
+        border: 1px solid #214496;
+        border-radius: 3px;
+        background-color: #fff;
+        &:hover
+        {
+            color: #fff;
+            background: #214496;
+        }
+    }
+    &__add-stamping
+    {
+        font-size: 13px;
+
+        display: block;
+
+        height: 37px;
+        padding-top: 7px;
+        padding-right: 19px;
+        padding-left: 19px;
+
+        cursor: pointer;
+        transition: .5s;
+
+        color: #214496;
+        border: 1px solid #214496;
+        border-radius: 3px;
+        background-color: #fff;
+        &:hover
+        {
+            color: #fff;
+            background: #214496;
+        }
+    }
+    &_wide
+    {
+        font-size: 13px;
+
+        width: 100%;
+
+        color: #000;
+    }
+    &_big
+    {
+        font-family: $font-family-OpenSans-Bold;
+        font-size: 15px;
+
+        width: 100%;
+    }
+    &_shivka
+    {
+        margin-top: 10px;
+    }
+    &__lyasse
+    {
+        font-size: 13px;
+
+        float: left;
+
+        margin-top: 20px;
+        padding-top: 8px;
+        padding-right: 20px;
+        padding-bottom: 8px;
+        padding-left: 20px;
+
+        cursor: pointer;
+        transition: .5s;
+
+        color: #214496;
+        border: 1px solid #214496;
+        border-radius: 3px;
+        background-color: #fff;
+        &:hover
+        {
+            color: #fff;
+            background: #214496;
+        }
+    }
+    &_color
+    {
+        display: none;
+
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    &_hide,
+    &_hide2,
+    &_forzac,
+    &_nahzac,
+    &_di,
+    &_hide-maket
+    {
+        display: none;
+    }
+    &__legend
+    {
+        font-size: 13px;
+
+        float: left;
+
+        width: 72px;
+        padding-top: 10px;
+
+        color: #000;
+        &_min
+        {
+            width: 140px;
+        }
+        &_inherit
+        {
+            width: inherit;
+            margin-right: 20px;
+        }
+    }
+}
+input.b-buy__inpt
+{
+    display: none;
+}
+
+label.b-buy__chck
+{
+    font-size: 13px;
+
+    position: relative;
+
+    margin-right: 0;
+    margin-bottom: 12px;
+    margin-left: 0;
+    padding-left: 28px;
+
+    color: #999;
+    &:before
+    {
+        display: none!important;
+    }
+    &:after
+    {
+        position: absolute;
+        top: 3px;
+        left: 0;
+
+        display: block;
+
+        width: 16px;
+        height: 16px;
+
+        content: '';
+
+        background: url('../images/none.png') no-repeat ;
+        background-repeat: no-repeat;
+    }
+}
+.b-buy__inpt:disabled + label
+{
+    color: #ddd;
+}
+
+.b-buy__inpt:checked + label
+{
+    color: #000;
+    &:after
+    {
+        width: 16px;
+        height: 16px;
+
+        background: url('../images/one.png') no-repeat ;
+    }
+}
+
+input.b-buy__inpt2
+{
+    display: none;
+}
+
+label.b-buy__chck2
+{
+    font-size: 13px;
+
+    margin-right: 0;
+    margin-bottom: 12px;
+    margin-left: 0;
+    padding-left: 28px;
+
+    color: #999;
+    &:after
+    {
+        position: absolute;
+        top: 3px;
+        left: 0;
+
+        display: block;
+
+        width: 13px;
+        height: 13px;
+
+        content: '';
+
+        background: url('../images/inp.png') no-repeat ;
+    }
+}
+
+
+.b-buy__inpt2:checked + label
+{
+    color: #000;
+    &:after
+    {
+        width: 17px;
+        height: 13px;
+
+        background: url('../images/inp-chc.png') no-repeat ;
+    }
+}
+.b-buy__inpt2:disabled + label
+{
+    color: #ddd;
+}

@@ -1,0 +1,32 @@
+.b-news
+{
+    background: #2f95cd;
+    &__title
+    {
+        font-size: 20px;
+        font-weight: bold;
+
+        text-align: center;
+        text-transform: uppercase;
+
+        color: #fff;
+        &-td
+        {
+          padding-top: 29px;
+          padding-bottom: 7px;
+        }
+    }
+    &__text
+    {
+        font-size: 14px;
+        line-height: 1.29;
+
+        color: #fff;
+        &-td
+        {
+          padding-left: 40px;
+          padding-right: 40px;
+          padding-bottom: 30px;
+        }
+    }
+}

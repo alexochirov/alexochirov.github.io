@@ -1,0 +1,85 @@
+.b-citymenu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: table-row;
+
+    &__inner {
+        display: table;
+        width: 100%;
+        //padding-right: rem-calc(268);
+    }
+
+    &__wrapper {
+        background-color: #d7cab4;
+        width: 100%;
+        min-width: $row-width;
+        height: rem-calc(42);
+        overflow: hidden;
+        display: block;
+        position: relative;
+        z-index: 99;
+    }
+
+    &__item {
+        display: table-cell;
+        white-space: nowrap;
+        float: none !important;
+
+        &.active {
+            .b-citymenu__link {
+                background: #FFFFFF !important;
+                color: #424242;
+                pointer-events: none;
+
+                .b-citymenu__link-span {
+                    border-bottom: rem-calc(2) solid #f57c00;
+                }
+
+                &:before, &:after {
+                    display: inline-block;
+                    content: "";
+                    width: rem-calc(29);
+                    height: rem-calc(42);
+                    position: absolute;
+                    top: 0;
+                }
+
+                &:before {
+                    right: 100%;
+                    background: url(../i/sprite.png) no-repeat rem-calc(4 -158);
+                }
+
+                &:after {
+                    left: 100%;
+                    background: url(../i/sprite.png) no-repeat rem-calc(0 -102);
+                }
+            }
+        }
+    }
+
+    &__link {
+        font-size: rem-calc(14) !important;
+        font-family: "OpenSansBold", Arial, sans-serif !important;
+        display: inline-block !important;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        text-align: center;
+        line-height: rem-calc(42);
+        height: rem-calc(42);
+        text-decoration: none;
+        padding: rem-calc(0 5);
+        position: relative;
+        background-color: transparent !important;
+
+        &:hover, &:focus {
+            color: #FFFFFF;
+            outline: none;
+        }
+
+        &-span {
+            display: inline-block;
+            line-height: rem-calc(20);
+        }
+    }
+}

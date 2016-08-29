@@ -1,0 +1,120 @@
+.row_content, html {
+  min-width: 0;
+}
+.f-topbar-fixed {
+  padding-top: 0;
+}
+.b-header {
+  &__login-link {
+    display: none;
+  }
+  &__menu {
+    &-mobile {
+      background-color: $blue!important;
+      height: rem-calc(55);
+      &-li {
+        left:0;
+        top:0!important;
+        margin-top: rem-calc(6)!important;
+        position: relative!important;
+        float: left;
+        line-height: rem-calc(40);
+        &-title {
+          color: $white;
+          font-size: rem-calc(16);
+          font-family: $font-family-OpenSansSemiBold;
+          position: absolute!important;
+          text-align: center;
+        }
+      }
+      &-link {
+        background-image: url('../i/adaptive/ico-menu.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: rem-calc(48);
+        height: rem-calc(44)!important;
+        margin-left: rem-calc(15);
+      }
+    }
+  }
+}
+
+.b-objects {
+  &__content{
+    &-box{
+      &_11 {
+        width: 32.5%;
+      }
+    }
+  }
+}
+
+.chosen-container-single {
+  width: 100%!important;
+}
+
+@media only screen and (min-width: #{upper-bound($medium-range)}) and (max-width: rem-calc(1170)) {
+  .i-social {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: rem-calc(1170)) {
+  .tooltip {
+    display: none!important;
+  }
+}
+@media #{ $large-down} {
+  .i-show_counter {
+    font-size: rem-calc(12);
+    &:before {
+      margin-right: rem-calc(1);
+    }
+  }
+}
+
+@media #{$small-only} {
+  .scrollup {
+    width: rem-calc(40);
+    height: rem-calc(40);
+    &-span {
+      display: none;
+    }
+  }
+  .expanded .dropdown {
+    max-height: rem-calc(400);
+    overflow-y: scroll!important;
+  }
+  .white-space-nowrap {
+    white-space: normal;
+  }
+  .b-btn {
+    padding: rem-calc(10)!important;
+    width: 100%;
+    font-size: rem-calc(15)!important;
+  }
+  [class*="block-grid-"]>li {
+    padding-bottom: rem-calc(10);
+  }
+
+  ul.pagination li {
+    font-size: rem-calc(16);
+    margin-left: 0;
+  }
+  .b-map-balloon {
+    width: rem-calc(270);
+    padding: rem-calc(10);
+     &-rotate {
+      width: 30%;
+    }
+    &-info {
+      width: 67%;
+      margin-left: 33%;
+    }
+  }
+}
+.bx-composite-btn {
+  display: none!important;
+}
+

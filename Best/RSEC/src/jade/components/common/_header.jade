@@ -1,0 +1,20 @@
+header.header
+  .row
+    .large-6.medium-8.small-17.columns.header__logo
+      a
+        img(src='./images/logo.png',alt='')
+    .small-3.columns.show-for-small-only
+      button.header__toggle
+
+    .large-14.medium-14.columns.header__menu
+      ul.header__list
+        each title in ['Вход для партнеров', 'Учебный центр', 'Пресс-центр', 'Поддержка', 'Партнерам']
+          li.header__li
+            a.header__li-link= title
+    .large-4.medium-2.small-4.columns.header__search
+      input.header__inp.show-for-large(placeholder='Найти',type='text')
+      button.header__submit.show-for-large(type='submit')
+        i.fa.fa-search
+      a.header__search-link.hide-for-large
+        i.fa.fa-search
+  include _menu

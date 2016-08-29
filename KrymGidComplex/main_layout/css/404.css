@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, Verdana, Tahoma, Sans-Serif;
+}
+.b-404 {
+     margin: 7% auto;
+     width: 100%;
+     max-width: 424px;
+    text-align: center;
+}
+.b-404__img {
+    width: 100%;
+}
+.b-404__link {
+    font-size: 18px;
+    text-decoration: none;
+    background-color: #f58321;
+    width: 240px;
+    height: 45px;
+    display: inline-block;
+    text-align: center;
+    line-height: 45px;
+}
+.b-404__link, .b-404__link:hover, .b-404__link:active, .b-404__link:focus {
+    color: #fff;
+}
+.b-404__link-span {
+    border-bottom: 2px solid #fff;
+}

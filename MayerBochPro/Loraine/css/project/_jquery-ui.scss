@@ -1,0 +1,75 @@
+
+.ui-slider
+{
+    position: relative;
+
+    text-align: left;
+}
+.ui-slider .ui-slider-handle
+{
+    position: absolute;
+    z-index: 2;
+
+    width: 11px;
+    height: 21px;
+
+    cursor: pointer;
+
+    outline: none;
+    background: url('../i/sprite-my.png') no-repeat -291px -269px;
+
+    -ms-touch-action: none;
+        touch-action: none;
+    & + .ui-slider-handle
+    {
+        width: 11px;
+        height: 21px;
+
+        background: url('../i/sprite-my.png') no-repeat -322px -310px;
+    }
+}
+.ui-slider .ui-slider-range
+{
+    font-size: .7em;
+
+    position: absolute;
+    z-index: 1;
+
+    display: block;
+
+    border: 0;
+    background-position: 0 0;
+}
+
+/* support: IE8 - See #6727 */
+.ui-slider.ui-state-disabled .ui-slider-handle,
+.ui-slider.ui-state-disabled .ui-slider-range
+{
+    filter: inherit;
+}
+
+.ui-slider-horizontal
+{
+    height: 30px;
+    background: url('../images/slider-range.png') no-repeat;
+}
+.ui-slider-horizontal .ui-slider-handle
+{
+    top: -2px;
+
+    margin-left: -.6em;
+}
+.ui-slider-horizontal .ui-slider-range
+{
+    top: 0px;
+
+    height: 100%;
+}
+.ui-slider-horizontal .ui-slider-range-min
+{
+    left: 0;
+}
+.ui-slider-horizontal .ui-slider-range-max
+{
+    right: 0;
+}

@@ -1,0 +1,200 @@
+.top {
+    position: relative;
+
+    &__slider {
+        .slick-dots {
+            position: absolute;
+            bottom: 0;
+
+            button {
+                width: 13px;
+                height: 13px;
+                margin: 9px;
+                background: url('../images/sprite-my.png') no-repeat 0 0;
+            }
+
+            .slick-active button {
+                width: 13px;
+                height: 13px;
+                background: url('../images/sprite-my.png') no-repeat -33px -33px;
+            }
+        }
+    }
+
+    &__block {
+        position: absolute;
+        bottom: 132px;
+        left: calc(50% + 8px);
+        width: 524px;
+
+        &_left {
+            left: calc(50% - 583px);
+        }
+    }
+
+    &__h1 {
+        font-family: $font-family-OpenSans-Bold;
+        font-size: 42px;
+        line-height: 1.05;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        color: #fff;
+
+        &_business {
+            font-size: 39px;
+        }
+    }
+
+    &__h2 {
+        font-family: $font-family-OpenSans-Bold;
+        font-size: 31px;
+        line-height: 1.42;
+        display: block;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        color: #fff;
+
+        &_big {
+            font-size: 35px;
+            margin-bottom: 0;
+        }
+
+        &_mini {
+            font-size: 25px;
+        }
+
+        &_micro {
+            font-size: 23px;
+        }
+    }
+
+    &__enroll {
+        font-family: $font-family-Din-cyr;
+        font-size: 18px;
+        line-height: 1.44;
+        float: left;
+        width: 54%;
+        padding-top: 17px;
+        padding-bottom: 18px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #bc1e03;
+        border-radius: 3px;
+        background: #fff;
+    }
+
+    &__walk {
+        font-family: $font-family-Din-cyr;
+        font-size: 18px;
+        line-height: 1.44;
+        float: left;
+        width: 40.6%;
+        margin-left: 19px;
+        padding-top: 15px;
+        padding-bottom: 16px;
+        transition: 0.5s;
+        text-align: center;
+        text-transform: uppercase;
+        color: #fff;
+        border: 2px solid #fff;
+        border-radius: 3px;
+
+        &:hover {
+            background: #fff;
+        }
+    }
+}
+@media (max-width:1110px) {
+    .top {
+        &__block {
+            right: 10px;
+            left: auto;
+
+            &_left {
+                left: 10px;
+            }
+        }
+    }
+}
+@media (max-width:960px) {
+    .top {
+        &__slider {
+            .slick-dots {
+                margin-bottom: 0;
+            }
+        }
+
+        &__enroll,
+        &__walk {
+            font-size: 15px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        &__walk {
+            padding-top: 8px;
+            padding-bottom: 8px;
+        }
+
+        &__block {
+            width: 380px;
+            bottom: 50px;
+        }
+
+        &__h1 {
+            font-size: 30px;
+
+            &_business {
+                font-size: 27px;
+            }
+        }
+
+        &__h2 {
+            font-size: 21px;
+
+            &_big {
+                font-size: 23px;
+            }
+
+            &_mini {
+                font-size: 15px;
+            }
+
+            &_micro {
+                font-size: 13px;
+            }
+        }
+    }
+}
+@media (max-width:640px) {
+    .top {
+        top: 60px;
+
+        &__block {
+            width: 300px;
+            bottom: 30px;
+        }
+
+        &__h1 {
+            font-size: 21px;
+        }
+
+        &__h2 {
+            font-size: 15px;
+            margin-bottom: 5px;
+        }
+
+        &__enroll,
+        &__walk {
+            font-size: 12px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+        }
+
+        &__walk {
+            margin-left: 5px;
+            padding-top: 2px;
+            padding-bottom: 2px;
+        }
+    }
+}

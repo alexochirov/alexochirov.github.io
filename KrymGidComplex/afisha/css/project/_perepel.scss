@@ -1,0 +1,14 @@
+.b-perepel
+{
+    position: absolute;
+    left: 0;
+    z-index: 600;
+    transition: .5s all;
+}
+@media (max-width:1550px)
+{
+    .b-perepel
+    {
+        display: none;
+    }
+}

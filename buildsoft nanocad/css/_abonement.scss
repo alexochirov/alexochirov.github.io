@@ -1,0 +1,85 @@
+.b-abonement {
+    background-image: url("../imgs/abonement_back.png");
+}
+
+.b-abonement__row {
+    padding-top: 96px;
+    padding-bottom: 80px;
+}
+
+.b-abonement__left-column {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.b-abonement__title {
+    color: white;
+    font-size: 56px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 18px;
+    text-align: center;
+    padding-bottom: 11px;
+}
+
+.b-abonement__desc {
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20px;
+    font-family: "Helvetica-Roman";
+    text-align: justify;
+
+    p {
+        color: white;
+        font-size: 15px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        line-height: 20px;
+    }
+}
+
+.b-abonement__bonya {
+    height: 113px;
+    color: #0f7cc5;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    background-image: url("../imgs/ticket.png");
+    background-repeat: no-repeat;
+    padding-left: 138px;
+    padding-top: 32px;
+}
+
+.b-abonement__price {
+    color: #0f7cc5;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.b-abonement__rubl {
+    display: inline-block;
+    background: url('../imgs/sprites.png') no-repeat -560px -20px;
+    width: 26px;
+    height: 29px;
+}
+
+.b-abonement__right-column {
+    padding-right: 0;
+    padding-left: 0;
+}
+@media (max-width: 1000px) {
+    .b-abonement {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+@media (max-width:640px) {
+    .b-abonement__row {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}

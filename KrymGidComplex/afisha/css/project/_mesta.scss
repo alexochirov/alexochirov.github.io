@@ -1,0 +1,78 @@
+.b-mesta
+{
+    &__wrapper
+    {
+        margin-bottom: 60px;
+        padding-top: 35px;
+        padding-right: 10px;
+        padding-bottom: 20px;
+        padding-left: 10px;
+
+        background-color: #fff;
+        box-shadow: 1px 1.7px 4px rgba(0, 0, 0, .13);
+    }
+    .b-mesta__li
+    {
+        padding-right: 19px;
+        padding-bottom: 8px;
+        padding-left: 19px;
+    }
+    &__link
+    {
+        font-size: 15px;
+
+        position: relative;
+
+        display: block;
+
+        padding-bottom: 9px;
+        padding-left: 10px;
+
+        transition: .1s all;
+
+        color: #383737;
+        border: 1px solid transparent;
+        border-bottom-color: #e0e0e0;
+        &:hover
+        {
+            color: #383737;
+            border-color: #dd249a;
+            &:before
+            {
+                display: none;
+            }
+        }
+        &:focus
+        {
+            color: #383737;
+            border-color: #dd249a;
+            &:before
+            {
+                display: none;
+            }
+        }
+        &:before
+        {
+            font-size: 0;
+
+            position: absolute;
+            top: 10px;
+            left: 0;
+
+            width: 4px;
+            height: 4px;
+
+            content: '';
+
+            border-radius: 2px;
+            background-color: #dd249a;
+        }
+    }
+}
+@media (max-width:960px) {
+  .b-mesta {
+    &__wrapper {
+      margin-bottom: 10px;
+    }
+  }
+}

@@ -1,0 +1,242 @@
+.b-header
+{
+    z-index: 500;
+
+    width: 100%;
+    padding-top: 21px;
+
+    background: url(../images/wave_violet.png) repeat-x left top;
+    &__row
+    {
+        position: relative;
+    }
+    &__drop
+    {
+        position: absolute;
+        z-index: 300;
+        top: 25px;
+
+        display: none;
+
+        width: 600px;
+        margin: 0;
+
+        list-style-type: none;
+
+        background-color: lighten(#781c55, 5%);
+        &-li
+        {
+            float: left;
+
+            width: 50%;
+            &-link
+            {
+                font-size: 14px;
+
+                display: block;
+
+                padding-left: 10px;
+
+                text-transform: uppercase;
+
+                color: #fff;
+                &:hover
+                {
+                    color: #fff;
+                    background-color: darken(#781c55,5%);
+                }
+            }
+        }
+    }
+    &__nav-toggle
+    {
+        font-size: 17px;
+
+        position: relative;
+        top: 0;
+        left: 20px;
+
+        display: none;
+
+        width: calc(100% - 20px);
+        height: 35px;
+        margin-bottom: 12px;
+
+        color: #fff;
+        &:hover
+        {
+            color: #fff;
+        }
+        &-span
+        {
+            position: absolute;
+            top: 10px;
+            left: 0;
+            &,
+            &:after,
+            &:before
+            {
+                position: absolute;
+
+                display: block;
+
+                width: 35px;
+                height: 5px;
+
+                content: '';
+                cursor: pointer;
+
+                border-radius: 1px;
+                background: white;
+            }
+            &:before
+            {
+                top: -10px;
+            }
+            &:after
+            {
+                bottom: -10px;
+            }
+        }
+    }
+    &__menu
+    {
+        background-color: #781c55;
+    }
+    &__list
+    {
+        font-family: $font-family-OpenSansSemiBold;
+
+        z-index: 500;
+
+        margin: 0;
+        padding-top: 6px;
+        padding-bottom: 12px;
+
+        list-style-type: none;
+
+        background-color: #781c55;
+    }
+    &__li
+    {
+        position: relative;
+
+        float: left;
+        &_city
+        {
+            cursor: pointer;
+        }
+        &:last-child
+        {
+            margin-right: 1px;
+        }
+        &-link
+        {
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 24px;
+
+            display: block;
+
+            padding-top: 3px;
+            padding-right: 7px;
+            padding-bottom: 3px;
+            padding-left: 7px;
+
+            text-transform: uppercase;
+
+            color: white;
+            border-radius: 14px;
+            &_city
+            {
+                padding-right: 15px;
+                &:after
+                {
+                    font-size: 0;
+
+                    position: absolute;
+                    top: 12px;
+                    right: calc(50% - 35px);
+
+                    width: 5px;
+                    height: 3px;
+
+                    content: '1';
+
+                    background: url('../images/sprite-my.png') no-repeat 0 0;
+                }
+            }
+            &_active
+            {
+                color: #fff;
+                background-color: darken(#781c55,5%);
+            }
+            &:focus
+            {
+                color: #fff;
+                background-color: darken(#781c55,5%);
+            }
+            &:hover
+            {
+                color: #fff;
+                background-color: darken(#781c55,5%);
+            }
+            &:active
+            {
+                color: #fff;
+                background-color: darken(#781c55,5%);
+            }
+        }
+    }
+}
+@media (max-width:780px)
+{
+    .b-header
+    {
+        padding-top: 0;
+        &__drop
+        {
+            top: 29px;
+        }
+        &__nav-toggle
+        {
+            display: block;
+
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+        &__list
+        {
+            position: fixed;
+
+            display: none;
+        }
+        &__li
+        {
+            width: 100%;
+
+            text-align: center;
+            &-link
+            {
+                &_city
+                {
+                    pointer-events: none;
+                }
+            }
+        }
+    }
+}
+@media (max-width:610px)
+{
+    .b-header
+    {
+        &__drop
+        {
+            width: 300px;
+            &-li
+            {
+                width: 100%;
+            }
+        }
+    }
+}

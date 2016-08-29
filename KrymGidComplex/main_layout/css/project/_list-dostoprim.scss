@@ -1,0 +1,300 @@
+.b-dostoprim {
+  margin-bottom: rem-calc(90);
+  &__ico {
+       &-map {
+         &:before {
+           background-image: url(../i/sprite-list-dostoprim.png);
+           background-repeat: no-repeat;
+           background-position: 0 0;
+           width: rem-calc(19);
+           height: rem-calc(25);
+         }
+       }
+       &-show_counter {
+         &:before {
+           background-image: url(../i/sprite-list-dostoprim.png);
+           background-repeat: no-repeat;
+           background-position: rem-calc(-19 0);
+           width: rem-calc(22);
+           height: rem-calc(20);
+         }
+       }
+     }
+
+
+  &-vid {
+    font-family: "OpenSansSemiBold", Arial, sans-serif;
+    font-size: rem-calc(13);
+    cursor: pointer;
+    margin-top: rem-calc(20);
+    &__item {
+      width: 50%;
+      float: left;
+      text-transform: uppercase !important;
+      padding: rem-calc(10 14) !important;
+    }
+  }
+  &-select-mesto {
+   /* .chosen-container-single .chosen-single {
+      border-color: #cbcbcb;
+      border-width: 0.0625rem;
+    }*/
+    .chosen-container-single .chosen-single div {
+     // background: linear-gradient(to top, #ededed, #fefefe) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    }
+    .chosen-container-single .chosen-single div b {
+    //  background-image: url("../i/accord-bottom-gray.png");
+    }
+    &__title {
+      color:#cbcbcb;
+      font-size: rem-calc(12);
+      margin-bottom: rem-calc(10);
+    }
+  }
+  &-categories {
+    margin-top: rem-calc(14);
+    &-item {
+      &-link {
+        position: relative;
+      }
+      &__image {
+        display: block;
+        height: rem-calc(64);
+        width: rem-calc(64);
+        border-radius: rem-calc(32);
+        border: none;
+        &_1 { background-image: url("../i/b-dostoprim-categories_1.png"); }
+        &_2 { background-image: url("../i/b-dostoprim-categories_2.png"); }
+        &_3 { background-image: url("../i/b-dostoprim-categories_3.png"); }
+        &_4 { background-image: url("../i/b-dostoprim-categories_4.png"); }
+        &_5 { background-image: url("../i/b-dostoprim-categories_5.png"); }
+        &_6 { background-image: url("../i/b-dostoprim-categories_6.png"); }
+        &_7 { background-image: url("../i/b-dostoprim-categories_7.png"); }
+        &_8 { background-image: url("../i/b-dostoprim-categories_8.png"); }
+        &_9 { background-image: url("../i/b-dostoprim-categories_9.png"); }
+        &_all {
+          background-image: url("../i/ico/all.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: 0 0;
+          &:hover {
+            background-position: rem-calc(-64 0);
+            background-color: $orange;
+          }
+          &-hover {
+            background-position: rem-calc(-64 0);
+            background-color: $orange;
+          }
+        }
+      }
+      &__checked-parrent {
+        border-bottom: 1px dotted $white;
+        font-weight: bold;
+        &_sep {
+          margin-bottom: rem-calc(10);
+        }
+      }
+    }
+    &__second {
+      position: absolute;
+      background: $orange;
+      z-index: 109;
+      border-radius: rem-calc(10);
+      padding: rem-calc(10);
+      width: rem-calc(300);
+      &-li {
+        list-style: none;
+        margin-bottom: rem-calc(5);
+      }
+      &-ul {
+        margin: 0;
+        padding: 0;
+        -webkit-padding-start: 0;
+      }
+      &:before {
+        content: "";
+        display: block;
+        background-position: rem-calc(0 -218);
+        background-repeat: no-repeat;
+        background-image: url('../i/sprite.png');
+        width: rem-calc(13);
+        height: rem-calc(6);
+        margin-top: rem-calc(-15);
+        padding-bottom: rem-calc(13);
+        margin-left: rem-calc(16);
+      }
+      &_close {
+        font-size: rem-calc(13);
+        color: $white;
+        height: 0;
+        position: absolute;
+        top: rem-calc(5);
+        right: rem-calc(10);
+        cursor:pointer;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    &__all {
+      width: 100%;
+      position: absolute;
+      background-color: $orange;
+      padding: rem-calc(10);
+      z-index: 110;
+      margin-top: rem-calc(-15);
+
+      &:before {
+        content: "";
+        display: block;
+        background-position: rem-calc(0 -218);
+        background-repeat: no-repeat;
+        background-image: url('../i/sprite.png');
+        width: rem-calc(13);
+        height: rem-calc(6);
+        margin-top: rem-calc(-15);
+        padding-bottom: rem-calc(13);
+        float: right;
+        margin-right: rem-calc(18);
+      }
+      &-box {
+        margin-left: rem-calc(10);
+      }
+    }
+  }
+  &-map-places {
+    &__link {
+      color: #f57c00;
+      border-bottom: rem-calc(1) dotted;
+      font-weight: bold;
+      &-title {
+          font-size: rem-calc(28);
+
+        &:hover {
+          color: $orangelighter;
+        }
+        &:focus {
+          color: $orangelighter;
+        }
+        &:active {
+          color: $orangelighter;
+        }
+      }
+    }
+    &__close {
+      background-image: url("../i/b-dostoprim-map-places__close.png");
+      display: inline-block;
+      height: rem-calc(17);
+      margin-bottom: rem-calc(5);
+      width: rem-calc(17);
+    }
+  }
+  &-sort-wrapper {
+    background-color: #d6cab4;
+    margin: rem-calc(25) 0 !important;
+    border-radius: 0;
+    padding: rem-calc(20 5 10);
+    .b-sort__label, .b-sort-slider__label {
+      color: #fff;
+      font-family: "OpenSansRegular",Arial,sans-serif;
+    }
+    .b-sort__link_active {
+      border: medium none;
+      padding: rem-calc(5 15);
+      border-radius: rem-calc(20);
+      background-color: #fff;
+      margin: 0;
+    }
+    .b-sort-slider {
+      margin-top: rem-calc(-10);
+    }
+    .b-sort-slider__label_val {
+      color: #000;
+      font-family: "OpenSansRegular",Arial,sans-serif;
+    }
+  }
+  &-items{
+    &__desc {
+      height: 75%;
+    }
+    &-four {
+    margin-bottom: rem-calc(30);
+    &-item {
+      position: relative;
+      max-width: rem-calc(670);
+      float: left;
+      overflow: hidden;
+      width: 25%;
+      box-shadow: rem-calc(-10 0 20 -10);
+      animation-timing-function: ease-in-out;
+      transition-duration: 1000ms;
+      transition-property: width;
+      transition-delay: 100ms;
+      &:first-child {
+        box-shadow: none;
+      }
+      &-bg {
+        display: block;
+        height: rem-calc(520);
+        width: rem-calc(670);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      .b-categories__link {
+        position: absolute;
+        top: rem-calc(15);
+        left: rem-calc(15);
+        min-width: rem-calc(350);
+      }
+      .b-place__add {
+        position: relative;
+      }
+      &-data {
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        padding: rem-calc(15);
+        width: rem-calc(670);
+        &-white {
+          background: none repeat scroll 0 0 rgba(255, 255, 255, 0.75);
+        }
+        &-orange {
+          background: none repeat scroll 0 0 rgba(242, 150, 57, 0.75);
+          color: #fff;
+          a {
+            color: #fff;
+          }
+        }
+        &-blue {
+          background: none repeat scroll 0 0 rgba(47, 74, 117, 0.75);
+          color: #fff;
+          a {
+            color: #fff;
+          }
+        }
+        &__title {
+          font-size: rem-calc(24);
+          font-family: "OpenSansSemiBold", Arial, sans-serif;
+          padding: rem-calc(0 15 10);
+          line-height: rem-calc(30);
+          margin-top: rem-calc(-5);
+        }
+        &__desc {
+          border-left: rem-calc(2) solid;
+          p {
+            font-size: rem-calc(15);
+            padding: rem-calc(0 15 5);
+            margin-top: rem-calc(-5);
+            margin-bottom: rem-calc(-10);
+          }
+        }
+        &__counter {
+          margin-top: rem-calc(7);
+        }
+      }
+    }
+  }
+  }
+}

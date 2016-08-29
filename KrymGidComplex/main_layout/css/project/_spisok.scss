@@ -1,0 +1,473 @@
+.b-spisok
+{
+    padding-bottom: 54px;
+    &_map
+    {
+        margin-top: 60px;
+        padding-bottom: 0;
+    }
+    &__object
+    {
+        padding-top: 14px;
+        &-prev
+        {
+            font-size: 13px;
+
+            position: relative;
+
+            float: left;
+
+            margin-left: 20px;
+            padding-top: 13px;
+
+            color: #f57c00;
+            &:before
+            {
+                position: absolute;
+                top: 4px;
+                left: 13px;
+
+                display: inline-block;
+
+                width: 12px;
+                height: 10px;
+
+                content: '';
+
+                background: url(../i/prev-i.png) no-repeat;
+            }
+        }
+        &-next
+        {
+            font-size: 13px;
+
+            position: relative;
+
+            float: left;
+
+            margin-left: 20px;
+            padding-top: 13px;
+
+            color: #f57c00;
+            &:before
+            {
+                position: absolute;
+                top: 4px;
+                left: 13px;
+
+                display: inline-block;
+
+                width: 12px;
+                height: 10px;
+
+                content: '';
+
+                background: url(../i/next-i.png) no-repeat;
+            }
+        }
+        &-text
+        {
+            font-size: 13px;
+            line-height: 1.38;
+
+            float: left;
+
+            width: 50%;
+
+            color: #424242;
+        }
+    }
+    &__delmarsh
+    {
+        font-size: 13px;
+
+        float: right;
+
+        margin-top: 21px;
+        padding-right: 15px;
+        padding-bottom: 1px;
+        padding-left: 15px;
+
+        color: #fff;
+        border-bottom: 2px solid #994e00;
+        border-radius: 10px;
+        background-color: #f57c00;
+        background-image: linear-gradient(to top, #f57c00 0%, #ffb400 100%);
+    }
+    &__block
+    {
+        padding-top: 20px;
+        padding-bottom: 20px;
+padding-left: 30px;
+        border-bottom: 1px solid #e0e0e0;
+        background: #fff;
+        &:first-child
+        {
+            padding-top: 40px;
+
+            border-top: 1px solid #e0e0e0;
+        }
+    }
+    &__img
+    {
+        padding-right: 18px;
+        padding-left: 0;
+    }
+    &__info
+    {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    &__title
+    {
+        &-link
+        {
+            font-family: $font-family-OpenSansSemiBold;
+            font-size: 14px;
+
+            text-decoration: underline;
+
+            color: #424242;
+            &_map
+            {
+                font-size: 18px;
+                line-height: 1.33;
+
+                text-decoration: underline;
+
+                color: #212121;
+            }
+        }
+    }
+    &__rubr
+    {
+        font-family: $font-family-weblysleekuisb;
+        font-size: 12px;
+
+        position: relative;
+
+        float: left;
+
+        margin-top: 9px;
+        margin-right: 20px;
+        margin-left: 11px;
+        padding-bottom: 0;
+
+        color: #fff;
+        background-color: #f57c00;
+        &:before
+        {
+            position: absolute;
+            left: -12px;
+
+            display: inline-block;
+
+            width: .75rem;
+            height: 18px;
+
+            content: '';
+
+            background-image: url('../i/sprite.png');
+            background-repeat: no-repeat;
+            background-position: -401px 0;
+        }
+        &:after
+        {
+            position: absolute;
+            right: -11px;
+
+            display: inline-block;
+
+            width: .75rem;
+            height: 18px;
+
+            content: '';
+
+            background-image: url('../i/sprite.png');
+            background-repeat: no-repeat;
+            background-position: -389px 0;
+        }
+    }
+    &__address
+    {
+        font-size: 13px;
+
+        float: left;
+
+        margin-right: 15px;
+        padding-top: 9px;
+
+        color: #424242;
+    }
+    &__addr
+    {
+        font-family: $font-family-OpenSansBold;
+        font-size: 12px;
+    }
+    &__time
+    {
+        font-family: $font-family-OpenSansBold;
+        font-size: 12px;
+
+        position: relative;
+
+        float: left;
+
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 7px;
+        padding-left: 25px;
+
+        cursor: pointer;
+
+        color: #424242;
+        &_map
+        {
+            margin-top: 39px;
+            padding-top: 7px;
+            padding-bottom: 11px;
+
+            border-top: 1px solid #e4e4e4;
+            border-bottom: 1px solid #e4e4e4;
+            &:before
+            {
+                top: 7px;
+            }
+        }
+        &-cross
+        {
+            position: relative;
+
+            display: none;
+
+            width: 8px;
+            height: 8px;
+
+            background: url(../i/cross-min.png) no-repeat;
+        }
+        &-span
+        {
+            border-bottom: 1px dotted  #424242;
+            &_vvod
+            {
+                font-family: $font-family-OpenSansRegular;
+                font-size: 13px;
+                line-height: 18px;
+
+                color: #424242;
+            }
+        }
+        &:before
+        {
+            position: absolute;
+            left: 0;
+
+            display: inline-block;
+
+            width: 16px;
+            height: 16px;
+
+            content: '';
+
+            background: url(../i/clocker.png) no-repeat;
+        }
+    }
+    &__plan
+    {
+        font-family: $font-family-OpenSansBold;
+        font-size: 13px;
+        font-size: 12px;
+
+        position: relative;
+
+        float: left;
+
+        width: 100%;
+        margin-top: 10px;
+        padding-left: 25px;
+
+        cursor: pointer;
+
+        color: #424242;
+        color: #424242;
+        &-cross
+        {
+            position: relative;
+
+            display: none;
+
+            width: 8px;
+            height: 8px;
+
+            background: url(../i/cross-min.png) no-repeat;
+        }
+        &-span
+        {
+            position: relative;
+
+            display: inline-block;
+
+            border-bottom: 1px dotted  #424242;
+            &_vvod
+            {
+                font-family: $font-family-OpenSansRegular;
+                font-size: 13px;
+                line-height: 18px;
+
+                color: #424242;
+            }
+        }
+        &:before
+        {
+            position: absolute;
+            left: 0;
+
+            display: inline-block;
+
+            width: 16px;
+            height: 16px;
+
+            content: '';
+
+            background: url(../i/lister.png) no-repeat;
+        }
+    }
+    &__delete
+    {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    &__del
+    {
+        font-size: 13px;
+
+        display: inline-block;
+
+        padding-top: 3px;
+        padding-right: 10px;
+        padding-bottom: 4px;
+        padding-left: 10px;
+
+        color: #fff;
+        border-color: #994e00;
+        border-bottom: 2px solid transparent;
+        border-radius: 12px;
+        background: #fa9a00;
+        &:hover
+        {
+            color: #008cba;
+        }
+    }
+}
+@media (max-width:960px)
+{
+    .b-spisok
+    {
+        padding-right: 10px;
+        padding-left: 10px;
+        &__address
+        {
+            display: inline-block;
+        }
+        &__img
+        {
+            padding-right: 10px;
+        }
+        &__block
+        {
+            padding-left: 15px;
+        }
+    }
+}
+@media (max-width:640px)
+{
+    .b-spisok
+    {
+        &__plan
+        {
+            margin-top: 0;
+            margin-left: 0;
+        }
+        &__object-next,
+        &__object-prev
+        {
+            margin-left: 10px;
+        }
+        &__delmarsh
+        {
+            display: inline-block;
+            float: none;
+
+            margin-right: auto;
+            margin-left: auto;
+        }
+        &__block
+        {
+            padding-top: 10px;
+            padding-bottom: 5px;
+        }
+        &__img
+        {
+        }
+        &__info
+        {
+            text-align: center;
+        }
+        &__rubr
+        {
+            display: inline-block;
+            float: none;
+
+            margin-top: 3px;
+            margin-right: auto;
+            margin-left: auto;
+
+            background: #f57c00;
+            &_map
+            {
+                margin-right: 30px;
+            }
+        }
+        &__title
+        {
+            text-align: center;
+            &-link
+            {
+                &_map
+                {
+                    font-size: 14px;
+                }
+            }
+        }
+        &__delete
+        {
+            padding-top: 3px;
+            padding-left: 0;
+
+            text-align: center;
+        }
+        &__time
+        {
+            display: inline-block;
+
+            margin-top: 0;
+        }
+        &__plan
+        {
+            display: inline-block;
+        }
+    }
+}
+@media (max-width:400px)
+{
+    .b-spisok
+    {
+        &__rubr
+        {
+            &_map
+            {
+                margin-right: 0;
+            }
+        }
+    }
+}

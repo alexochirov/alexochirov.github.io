@@ -1,0 +1,87 @@
+.care {
+  &__block {
+    position: absolute;
+    max-width: 1177px;
+    width: 100%;
+    z-index: 2;
+    height: 100%;
+    top: 0;
+    overflow: hidden;
+    left: calc(50% - 588px);
+  }
+  &__title {
+    color: #fff;
+    line-height: 0.83;
+    font-size: 72px;
+    margin-top: 200px;
+    margin-bottom: 140px;
+  }
+  &__slide {
+    position: relative;
+  }
+  &__more {
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    display: block;
+    background-image: linear-gradient(to top, #00accc 0%, #00c9dc 100%);
+    width: 200px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    border-radius: 2px 3px 3px 2px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), inset 0 2px 0 rgba(0, 172, 204, 0.2);
+  }
+}
+
+@media (max-width: 1500px) {
+  .care {
+    &__title {
+      margin-top: 50px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .care {
+    &__title {
+      margin-bottom: 50px;
+      font-size: 60px;
+    }
+    &__block {
+      padding-left: 15px;
+      left: 0;
+      padding-right: 15px;
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .care {
+    &__more {
+      font-size: 24px;
+    }
+    &__title {
+      margin-bottom: 20px;
+      font-size: 42px;
+      line-height: 1.14;
+      margin-top: 35px;
+    }
+  }
+}
+@media (max-width:640px) {
+    .care {
+      &__title {
+        font-size: 24px;
+        margin-top: 10px;
+        line-height: 1.08;
+        margin-bottom: 10px;
+      }
+      &__more {
+        width: 144px;
+        padding-top: 4px;
+        padding-bottom: 3px;
+        font-size: 17px;
+      }
+    }
+}

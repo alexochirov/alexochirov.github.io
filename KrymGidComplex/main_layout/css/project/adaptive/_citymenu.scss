@@ -1,0 +1,124 @@
+  .b-citymenu__wrapper {
+    min-width: 100%;
+    &-tabs {
+      border-top: 1px solid #ccc;
+    }
+  }
+  .b-citymenu{
+    &__link{
+      &-span {
+        color: #112f67;
+      }
+    }
+    &__item {
+      &.active {
+        .b-citymenu{
+          &__link{
+            &-span {
+              color: $black;
+            }
+          }
+        }
+      }
+    }
+  }
+    @media #{$large-down} {
+      .b-citymenu {
+        &_hide {
+          display: none!important;
+        }
+      }
+    }
+
+    @media #{$medium-only} {
+      .b-citymenu {
+        top:rem-calc(6);
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        &__wrapper {
+          min-width: 100%;
+          max-width: 100%;
+          height: auto;
+        }
+        &__link {
+          width: 100%;
+          line-height: rem-calc(26);
+          height: rem-calc(30);
+          font-size: rem-calc(13)!important;
+          &-span {
+            color: #112f67;
+          }
+          &:after {
+            display: none!important;
+          }
+          &:before {
+            display: none!important;
+          }
+        }
+        &__item {
+          width: 25%;
+          display: inline-block;
+          float: left!important;
+          &_border {
+            border-bottom: 1px solid $white;
+          }
+          &.active {
+            .b-citymenu {
+              &__link {
+                &-span {
+                  color: $black;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    @media #{$small-only} {
+      .b-citymenu {
+        display: inline-block;
+        width: 100%;
+        &__wrapper {
+          min-width: 100%;
+          max-width: 100%;
+          height: auto;
+        }
+        &__inner {
+          display: inline-block;
+        }
+        &__item {
+          width: 100%;
+          display: inline-block;
+          float: left!important;
+        }
+        &__link {
+          width: 100%;
+          height: rem-calc(30);
+          line-height: rem-calc(25);
+          font-size: rem-calc(14)!important;
+          &:after {
+            display: none!important;
+          }
+          &:before {
+            display: none!important;
+          }
+        }
+      }
+      .b-photoupload {
+        padding: rem-calc(15 10);
+      }
+    }
+
+    @media only screen and (min-width: #{upper-bound($medium-range)}) and (max-width: rem-calc(1170)) {
+      .b-citymenu {
+        &__link {
+          &:after {
+            display: none!important;
+          }
+          &:before {
+            display: none!important;
+          }
+        }
+      }
+    }

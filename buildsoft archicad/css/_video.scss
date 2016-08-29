@@ -1,0 +1,52 @@
+.b-video {
+    background: url("../imgs/video_back.png") no-repeat;
+    &__text {
+      padding-left: 0;
+      padding-top: 47px;
+    }
+    &__title {
+      color: #011926;
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 50px;
+      font-family: "DINPro-Bold";
+      padding-bottom: 7px;
+    }
+}
+
+
+.b-video__desc {
+    color: #033d5c;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    padding-right: 0;
+    font-family: "DINPro-Medium";
+}
+
+.b-video__youtube {
+    padding-top: 40px;
+    padding-right: 0;
+    padding-left: 30px;
+
+    .flex-video {
+        & > * {
+            border: 0;
+        }
+    }
+}
+@media (max-width: 1000px) {
+    .b-video {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+@media (max-width:640px) {
+    .b-video__youtube {
+        padding-left: 0;
+    }
+}
+
+.flex-video {
+    margin-bottom: 9px;
+}

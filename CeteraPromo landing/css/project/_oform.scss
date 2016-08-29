@@ -1,0 +1,175 @@
+.b-oform
+{
+    background: #f2f2f2;
+    background: url(../i/slice.png) no-repeat center bottom;
+
+    &__submit
+    {
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 21px;
+
+        width: 240px;
+        height: 50px;
+        margin-top: 80px;
+        margin-bottom: 130px;
+
+        text-align: center;
+        text-transform: uppercase;
+
+        color: white;
+        border-radius: 2px 3px 3px 2px;
+        background-color: #f02849;
+        &:hover
+        {
+            color: #fff;
+            background-color: #e72243;
+        }
+    }
+    &__title
+    {
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 55px;
+
+        margin-top: 86px;
+
+        text-transform: uppercase;
+
+        color: #202020;
+    }
+    &__complex
+    {
+        font-family: 'NotoSerif-Italic';
+        font-size: 20px;
+        line-height: 25px;
+
+        margin-bottom: 80px;
+
+        color: #717171;
+    }
+    &__container
+    {
+        padding-right: 11px;
+        padding-left: 11px;
+    }
+    &__block
+    {
+        border-bottom: 3px solid #202020;
+        &_tarea
+        {
+            margin-top: 67px;
+        }
+    }
+}
+input.b-oform__inp
+{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+
+    margin-bottom: 0;
+
+    color: #646464;
+    border: 0;
+    border-radius: 15px;
+    background: none;
+    background-color: transparent;
+    box-shadow: none;
+    &:focus
+    {
+        background-color: transparent;
+    }
+}
+
+
+.b-oform__inp ::-webkit-input-placeholder
+{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+
+    color: #646464;
+}
+.b-oform__inp :-moz-placeholder
+{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+
+    color: #646464;
+}
+
+.b-oform__inp ::-moz-placeholder
+{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+
+    color: #646464;
+}
+
+.b-oform__inp :-ms-input-placeholder
+{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+
+    color: #646464;
+}
+input[type='text'].with-floating-label + label.floating-label,input[type='email'].with-floating-label + label.floating-label
+{
+    position: relative;
+    top: -30px;
+    left: 8px;
+
+    height: 0;
+
+    cursor: text;
+    transition: top .45s ease-in-out, color .45s ease-in-out, font-size .45s ease-in-out;
+}
+input[type='text'].with-floating-label:focus + label.floating-label, input[type='email'].with-floating-label:focus + label.floating-label
+{
+    font-size: .75rem;
+
+    top: -56px;
+
+    color: #00bcd4;
+}
+input.b-oform__inp_full.b-oform__inp + label.floating-label
+{
+   font-size: .75rem;
+
+    top: -56px;
+
+    color: #00bcd4;
+
+}
+
+@media (max-width:960px)
+{
+    .b-oform
+    {
+        &__title
+        {
+            margin-top: 20px;
+        }
+        &__complex
+        {
+            margin-bottom: 30px;
+        }
+        &__block:first-child
+        {
+            margin-bottom: 20px;
+        }
+        &__block_tarea
+        {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        &__submit
+        {
+            margin-top: 40px;
+        }
+    }
+}

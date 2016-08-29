@@ -1,0 +1,239 @@
+.b-peoples
+{
+    &__show-more
+    {
+        position: relative;
+
+        float: left;
+
+        width: 100%;
+        height: 174px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-top: -85px;
+        padding-top: 90px;
+
+        background-image: linear-gradient(to top, white 0%, white 3%, white 53%, transparent 100%, white 100%);
+        background-position: 0 top;
+        &-link
+        {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+
+            display: block;
+            float: left;
+
+            width: 100%;
+            padding-top: 4px;
+            padding-bottom: 4px;
+
+            text-align: center;
+            text-transform: uppercase;
+
+            color: #999;
+            border: 1px solid #999;
+            border-radius: 17px;
+        }
+    }
+    &__btn-container
+    {
+        margin-bottom: 42px;
+        padding-left: 0;
+    }
+    &__block
+    {
+        float: left;
+
+        width: 100%;
+        padding-top: 40px;
+        padding-bottom: 20px;
+
+        border-bottom: 1px solid #eee;
+        &:first-child
+        {
+            padding-top: 0;
+        }
+        &:last-child
+        {
+            border-bottom: 0;
+        }
+    }
+    &__title
+    {
+        display: inline-block;
+
+        width: inherit;
+        margin-bottom: 26px;
+        padding-left: 16px;
+    }
+    &__h1
+    {
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 36px;
+
+        color: #282828;
+        border-bottom: 2px solid #3ea7b3;
+    }
+    &__btn
+    {
+        font-family: 'PT_Serif_Italic';
+        font-size: 16px;
+        font-style: italic;
+        line-height: 24px;
+
+        margin-right: 31px;
+
+        color: #00c3d8;
+        &_active
+        {
+            padding-top: 5px;
+            padding-right: 17px;
+            padding-bottom: 5px;
+            padding-left: 17px;
+
+            color: white;
+            border-radius: 16px;
+            background-color: #00c3d8;
+        }
+    }
+    &__img
+    {
+        float: left;
+
+        margin-right: 18px;
+    }
+    &__text
+    {
+        font-family: 'PT_Serif_Regular';
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+
+        float: left;
+
+        width: 100%;
+        padding-top: 11px;
+        padding-bottom: 13px;
+        padding-left: 15px;
+
+        color: #999;
+    }
+    &__name
+    {
+        &-link
+        {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+
+            color: #2c2c2c;
+        }
+    }
+    &__post
+    {
+        font-family: 'PT_Serif_Italic';
+        font-size: 14px;
+        font-style: italic;
+        line-height: 18px;
+
+        padding-top: 3px;
+
+        color: #979ca4;
+        &-numb
+        {
+            font-size: 14px;
+            font-style: italic;
+            line-height: 18px;
+
+            color: #00c3d8;
+        }
+    }
+    &__coll
+    {
+        font-family: 'PT_Serif_Italic';
+        font-size: 14px;
+        font-style: italic;
+        line-height: 18px;
+
+        color: #979ca4;
+        &-numb
+        {
+            font-size: 14px;
+            font-style: italic;
+            line-height: 18px;
+
+            color: #00c3d8;
+        }
+    }
+    &__podpis
+    {
+        font-family: 'PT_Serif_Italic';
+
+        float: left;
+
+        width: 150px;
+        height: 32px;
+        padding-top: 2px;
+
+        border: 1px solid #00c3d8;
+        border-radius: 16px;
+        &-link
+        {
+            font-family: 'PT_Serif_Italic';
+            font-size: 14px;
+            font-style: italic;
+            line-height: 21px;
+
+            padding-left: 15px;
+
+            text-decoration: underline;
+
+            color: #00c3d8;
+        }
+        &-num
+        {
+            font-family: 'PT_Serif_Italic';
+            font-size: 12px;
+            font-style: italic;
+            line-height: 21px;
+
+            display: inline-block;
+            float: right;
+
+            width: 24px;
+            height: 24px;
+            margin-top: 1px;
+            margin-right: 4px;
+
+            text-align: center;
+
+            color: #95f5ff;
+            border-radius: 24px;
+            background-color: #00c3d8;
+        }
+    }
+}
+@media (max-width:960px) {
+  .b-peoples {
+    &__title {
+     display: block;
+     padding-top: 15px;
+     text-align: center;
+     width: 80%;
+     margin-left: auto;
+     margin-right: auto;
+    }
+    &__btn-container {
+      padding-left: 15px;
+    }
+  }
+}
+@media (max-width:640px)  {
+  .b-peoples {
+    &__block {
+      padding-top: 10px;
+    }
+   }
+}

@@ -1,0 +1,202 @@
+.news {
+  margin-top: 40px;
+  padding-right: 14px;
+  position: relative;
+  &:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    height: 159px;
+    bottom: 35px;
+    background: url(../images/shadow.png) repeat-x;
+
+  }
+  &_det {
+    margin-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    .row {
+      margin-left: 0;
+      margin-right: 0;
+    }
+    &:after {
+      bottom: 0;
+    }
+    .news__name {
+      padding-right: 0;
+    }
+  }
+  &_cat {
+    &:after {
+      display: none;
+    }
+    margin-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &:hover:after {
+    display: none;
+  }
+  &__post {
+    float: left;
+    font-size: 12px;
+    margin-right: 20px;
+    padding-bottom: 5px;
+  }
+  &__expert {
+    padding-bottom: 5px;
+    float: left;
+    margin-right: 23px;
+    position: relative;
+    font-size: 12px;
+
+  }
+  &__more-link {
+    border: 1px solid #46a3d8;
+    float: left;
+    color: #46a3d8;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: $font-family-OpenSansBold;
+    padding-left: 7px;
+    padding-right: 24px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    position: relative;
+    &:after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      background: url('../images/sprite-my.png') no-repeat 0 0;
+      width: 6px;
+      height: 9px;
+      right: 11px;
+      top: 8px;
+    }
+  }
+
+  &__title {
+    color: #010203;
+    padding-bottom: 7px;
+    font-size: 26px;
+    font-family: $font-family-OpenSansBold;
+    text-transform: uppercase;
+    border-bottom: 5px solid #e3e3e3;
+  }
+  &__img {
+    padding-right: 10px;
+    float: left;
+    width: 27%;
+  }
+  &__text {
+    float: left;
+    width: 73%;
+  }
+  &__block {
+    padding-top: 17px;
+    padding-bottom: 15px;
+    &_bord {
+      border-top: 1px solid #e3e3e3;
+    }
+    &_blue {
+      border-top: 3px solid #46a3d8;
+      border-bottom: 3px solid #46a3d8;
+      .news__name {
+        padding-right: 0;
+      }
+      .news__category {
+        background: #46a3d8;
+
+      }
+    }
+
+  }
+
+  &__category {
+    color: #fff;
+    font-size: 9px;
+    text-transform: uppercase;
+    font-family: $font-family-OpenSansBold;
+    background-color: #1f191a;
+    float: left;
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    &:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
+  &__name {
+    color: #3f3f3f;
+    font-size: 14px;
+    width: 100%;
+    padding-right: 30px;
+    padding-top: 6px;
+    padding-bottom: 7px;
+    float: left;
+
+  }
+  &__date {
+    float: left;
+    color: #919090;
+    font-size: 13px;
+    font-family: $font-family-OpenSansSemiBold;
+  }
+  &__say {
+    padding-left: 23px;
+    position: relative;
+    margin-left: 22px;
+    float: left;
+    color: #919090;
+    font-family: $font-family-OpenSansSemiBold;
+    font-size: 12px;
+    &:before {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      background: url('../images/sprite-my.png') no-repeat -167px -188px;
+      width: 16px;
+      height: 14px;
+      left: 0;
+    }
+
+  }
+}
+
+@media (max-width: 1200px) {
+  .news {
+    padding-left: 10px;
+    &_det {
+      padding-left: 0;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .news {
+    &__title {
+      padding-left: 0;
+      padding-right: 0;
+      font-size: 22px;
+    }
+    padding-left: 20px;
+    padding-right: 20px;
+    &_det {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    &__block {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    &__name {
+      padding-right: 0;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+// Все картинки и шрифты необходимо подключать с использованием этих двух переменных:
+$imagesPath: '../images' !default;
+$fontsPath: '../fonts' !default;
+
+$fa-font-path: $fontsPath;
+@import "slick/slick-theme";
+
+@import "fonts";
+@import "settings";
+@import "external";
+
+@import "common";
+
+@import "header";
+@import "top-menu";
+@import "care";
+@import "advantages";
+@import "line";
+@import "solution";
+@import "stock";
+@import "long-line";
+@import "news";
+@import "vendor";
+@import "rain";
+@import "email";
+@import "footer";
+@import "social";
+@import "breadcrumbs";
+@import "secur";
+@import "stat";
+@import "res";
+@import "info";
+@import "scr";

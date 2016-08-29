@@ -1,0 +1,79 @@
+.b-comment
+{
+  padding-bottom: 10px;
+    &__wrapper
+    {
+        padding-right: 21px;
+        &_rep
+        {
+            padding-left: 50px;
+        }
+    }
+    &__block
+    {
+        float: left;
+
+        padding-top: 26px;
+        padding-bottom: 15px;
+
+        border-top: 1px dashed #f1f1f1;
+        &_first
+        {
+            border: 0;
+        }
+        &_last
+        {
+            border-bottom: 1px dashed #f1f1f1;
+        }
+    }
+    &__img
+    {
+        float: left;
+padding-right: 5px;
+        width: 10%;
+    }
+    &__name
+    {
+        font-family: $font-family-Roboto-Bold;
+        font-size: 14px;
+
+        padding-bottom: 5px;
+
+        color: #222;
+    }
+    &__date
+    {
+        font-size: 12px;
+
+        color: #b4b4b4;
+    }
+    &__text
+    {
+        font-family: Verdana;
+        font-size: 12px;
+        line-height: 1.75;
+
+        float: left;
+
+        width: 100%;
+        padding-top: 14px;
+        padding-bottom: 5px;
+
+        color: #666;
+    }
+    &__reply
+    {
+        font-family: Verdana;
+        font-size: 11px;
+
+        float: left;
+
+        text-decoration: none;
+
+        color: #b4b4b4;
+        &:hover
+        {
+            text-decoration: underline;
+        }
+    }
+}

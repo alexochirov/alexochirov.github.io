@@ -1,0 +1,125 @@
+input.b-input-number
+{
+    font-size: 14px;
+    font-weight: 700;
+
+    float: left;
+
+    width: 90px;
+    height: 29px;
+    margin-top: 4px;
+    margin-left: 5px;
+    padding-top: 0;
+    padding-right: 25px;
+    padding-bottom: 0;
+    padding-left: 25px;
+
+    text-align: center;
+
+    color: #333335;
+    border: 1px solid #ededeb;
+    box-shadow: none;
+    &_pro
+    {
+        margin-top: 8px;
+    }
+}
+.ui-icon
+{
+    display: none;
+}
+.ui-spinner-up,
+.ui-spinner-down
+{
+    position: relative;
+    top: -1px;
+
+    display: inline-block;
+
+    width: 25px;
+    height: 25px;
+
+    cursor: pointer;
+
+    background-color: #d21531;
+}
+.ui-spinner-up
+{
+    left: -27px;
+
+    border-left: 0;
+    background-image: url('../images/plus-inp.png') ;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.ui-spinner-down
+{
+    left: -113px;
+
+    border-right: 0;
+    background-image: url('../images/minus-inp.png') ;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.ui-widget-content
+{
+    position: relative;
+    top: 7px;
+
+    border: 0;
+}
+
+.b-product
+{
+    .ui-spinner-up,
+    .ui-spinner-down
+    {
+        top: 3px;
+
+        background-color: transparent;
+    }
+    .ui-spinner-up
+    {
+        border-left: 1px solid #ededeb;
+        background-image: url('../images/plus.png') ;
+    }
+    .ui-spinner-down
+    {
+        border-right: 1px solid #ededeb;
+        background-image: url('../images/minus.png') ;
+    }
+}
+.b-tovar_vipa
+{
+    .ui-spinner-up,
+    .ui-spinner-down
+    {
+        top: -1px;
+    }
+}
+.b-basket {
+    .b-input-number {
+        margin-bottom: 0;
+    }
+    .ui-spinner-up,
+    .ui-spinner-down
+    {
+        top: -34px;
+    }
+    .ui-spinner-up {
+        left: 38px;
+    }
+    .ui-spinner-down {
+        left: -48px;
+    }
+}
+@media (max-width:960px) {
+    .b-basket {
+        .ui-spinner-up {
+        left: 38px;
+    }
+    .ui-spinner-down {
+        left: -48px;
+    }
+    }
+}

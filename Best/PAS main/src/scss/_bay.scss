@@ -1,0 +1,14 @@
+.bay {
+  margin-top: 50px;
+  padding-left: 36px;
+  &>.row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media (max-width:1200px) {
+    .bay {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+}

@@ -1,0 +1,57 @@
+.b-breadcrumbs
+{
+    &__list
+    {
+        float: left;
+
+        width: 100%;
+        margin: 0;
+        padding-top: 18px;
+        padding-left: 15px;
+
+        list-style-type: none;
+    }
+    &__li
+    {
+        float: left;
+        &:first-child
+        {
+            & .b-breadcrumbs__link:before
+            {
+                display: none;
+            }
+        }
+        &:not(:last-child)
+        {
+            margin-right: 20px;
+        }
+    }
+    &__link
+    {
+        font-family: $font-family-OpenSans-Regular;
+        font-size: 12px;
+
+        position: relative;
+
+        text-decoration: none;
+
+        color: #c3c3c3;
+        &:hover
+        {
+            text-decoration: underline;
+        }
+        &:before
+        {
+            position: absolute;
+            top: 7px;
+            left: -12px;
+
+            width: 3px;
+            height: 5px;
+
+            content: '';
+
+            background: url(../images/bread.png) no-repeat;
+        }
+    }
+}

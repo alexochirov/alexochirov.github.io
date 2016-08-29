@@ -1,0 +1,128 @@
+@media (max-width:920px) {
+  .b-reasons__title  {
+    margin: 31px 0 10px 0;
+    text-decoration: underline overline;
+    text-align: center;
+  }
+  .b-reasons__buy-stark {
+    margin-top: 80px;
+  }
+}
+@media (min-width:920px) {
+  .b-reasons__title  {
+    background: url('../i/sprites.png') no-repeat 0 -673px;
+    margin: 101px 0 0 0;
+  }
+}
+.b-reasons {
+  background-image: url(../i/backk.png);
+  font-family: 'RobotoCondensed-Regular', sans-serif;
+}
+.b-reasons__cloud {
+  background-image: url(../i/cloud.png);
+  background-repeat: no-repeat;
+  background-position: center ;
+}
+.b-reasons__title {
+  color: #15659d;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  height: 40px;
+  padding: 0;
+}
+.b-reasons__buy-stark {
+  padding-top: 30px;
+  font-weight: 700;
+  color: black;
+  font-size: 24px;
+  line-height: 34px;
+  padding-left: 0;
+}
+.b-reasons__pk {
+  color: #15659d;
+  font-size: 24px;
+  line-height: 34px;
+}
+.b-reasons__list {
+  color: black;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 0 0 67px 0;
+
+}
+.b-reasons__ol{
+}
+
+.b-reasons__li{
+  list-style: none;
+  padding-bottom: 24px;
+  &:first-child  {
+  padding-bottom: 36px;
+  }
+}
+.b-reasons__num {
+  color: white;
+  background: url('../i/sprites.png') no-repeat -392px -103px;
+  width: 45px;
+  height: 45px;
+  display: inline-block;
+  text-align: center;
+  margin: 5px 10px;
+  line-height: 40px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.b-reasons__text-li {
+  float: right;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 0;
+  padding-top: 15px;
+}
+.b-reasons__text-li_two {
+
+  position: relative;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 0;
+  padding-top: 13px;
+}
+.b-reasons__text-li_four {
+}
+.b-reasons__text-li_first {
+  padding-top: 15px;
+}
+.b-reasons__bold {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+.b-reasons__added {
+  background: url('../i/gal.png') no-repeat;
+  background-position: left top;
+  font-size: 18px;
+  line-height: 24px;
+  width: 90.7%;
+  float: right;
+  margin-bottom: 0;
+  margin-top: 8px;
+  padding-left: 20px;
+}
+@media (min-width:800px) {
+  .b-reasons__ol {
+    margin-bottom: 67px;
+  } 
+}
+@media (max-width:800px) {
+  .b-reasons__ol {
+    margin: 0;
+  }
+}
+
+.b-reasons__num_two {
+}
+.b-reasons__num_three {
+}
+.b-reasons__num_four {
+}

@@ -1,0 +1,36 @@
+.b-modal
+{
+    width: 700px;
+    min-height: 355px;
+    padding-right: 19px;
+    padding-bottom: 15px;
+    padding-left: 19px;
+display: block !important;
+    border-radius: 4px 5px 5px 4px;
+    background-color: #fff;
+    .close-reveal-modal
+    {
+        font-size: 0;
+
+        right: 8px;
+
+        width: 11px;
+        height: 11px;
+
+        background: url(../i/krestik.png) no-repeat;
+    }
+}
+@media (max-width:960px)
+{
+    .b-modal
+    {
+        width: 610px;
+    }
+}
+@media (max-width:640px)
+{
+    .b-modal
+    {
+        width: 100%;
+    }
+}

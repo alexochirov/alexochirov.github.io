@@ -1,0 +1,154 @@
+.b-suit
+{
+    padding-top: 10px;
+
+    text-align: center;
+    &_first
+    {
+        padding: 0;
+    }
+    &__oran
+    {
+        font-size: 16px;
+        font-weight: bold;
+
+        display: inline-block;
+
+        padding-left: 7px;
+
+        color: #f96f4e;
+    }
+    &__strike
+    {
+        font-size: 12px;
+
+        display: inline-block;
+
+        padding-left: 7px;
+
+        text-decoration: line-through;
+
+        color: #444;
+    }
+    &__man
+    {
+        display: inline-block;
+
+        width: 300px;
+
+        vertical-align: top;
+    }
+    &__title
+    {
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 1.25;
+
+        text-transform: uppercase;
+
+        color: #2f95ce;
+        &-td
+        {
+            padding-top: 35px;
+            padding-right: 36px;
+            padding-left: 36px;
+        }
+    }
+    &__order
+    {
+        &-span
+        {
+            img
+            {
+                display: inline-block;
+            }
+        }
+        &-link
+        {
+            font-size: 14px;
+
+            display: inline-block;
+
+            padding-right: 9px;
+            padding-left: 36px;
+
+            text-decoration: none;
+            text-transform: uppercase;
+
+            color: #fff;
+        }
+    }
+    &__btn
+    {
+        width: 221px;
+        height: 40px;
+
+        border-radius: 4px;
+        background: #2f95ce;
+    }
+    &__lart
+    {
+        font-size: 14px;
+        line-height: 1.43;
+
+        display: inline-block;
+
+        color: #4d4d4d;
+    }
+    &__art
+    {
+        font-size: 14px;
+        line-height: 1.43;
+
+        display: inline-block;
+
+        padding-right: 7px;
+
+        color: #4d4d4d;
+        &_top
+        {
+            line-height: 2.5;
+
+            vertical-align: top;
+        }
+        &-td
+        {
+            padding-right: 15px;
+            padding-left: 36px;
+
+            text-align: left;
+            &_hi
+            {
+                padding-bottom: 10px;
+            }
+            &_high
+            {
+                padding-top: 16px;
+                padding-bottom: 20px;
+            }
+            &_top
+            {
+                padding-bottom: 18px;
+            }
+            img
+            {
+                display: inline-block;
+            }
+        }
+    }
+    &__bold
+    {
+        font-size: 16px;
+        font-weight: bold;
+
+        display: inline-block;
+    }
+    &__price
+    {
+        font-size: 14px;
+
+        display: inline-block;
+
+        color: #444;
+    }
+}

@@ -1,0 +1,160 @@
+.b-footer
+{
+    font-family: $font-family-OpenSansLight;
+    font-size: rem-calc(13);
+    line-height: rem-calc(27);
+
+    width: 100%;
+    padding: rem-calc(38 0 30);
+
+    color: $white;
+    background: #781c55;
+    &__addr {
+        padding-left: 63px;
+    }
+    &__link
+    {
+        color: #fff;
+        &:hover
+        {
+            text-decoration: underline;
+
+            color: #fff;
+        }
+    }
+    &__address
+    {
+        padding-left: rem-calc(18);
+
+        background: url('../images/sprite-my.png') no-repeat -218px -202px;
+    }
+    &__mail
+    {
+        margin-right: rem-calc(17);
+        &:before
+        {
+            position: relative;
+            left: -3px;
+
+            display: inline-block;
+
+            width: rem-calc(14);
+            height: rem-calc(13);
+            margin-right: rem-calc(4);
+
+            content: '';
+            vertical-align: text-bottom;
+
+            background: url('../images/sprite-my.png') no-repeat -150px -143px;
+        }
+    }
+    &__phone
+    {
+        &:before
+        {
+            display: inline-block;
+
+            width: rem-calc(14);
+            height: rem-calc(13);
+            margin-right: rem-calc(3);
+
+            content: '';
+            vertical-align: middle;
+
+            background: url('../images/sprite-my.png') no-repeat -118px -111px;
+        }
+    }
+    &-menu
+    {
+        padding: rem-calc(0 0 0 33);
+        &__link
+        {
+            display: inline-block;
+
+            margin-right: rem-calc(31);
+
+            text-decoration: underline;
+        }
+    }
+    &-subscribe
+    {
+        padding: rem-calc(0 11);
+        &__input,
+        &__input:focus,
+        input,
+        input:focus
+        {
+            display: block;
+            float: left;
+
+            width: calc(100% - 29px);
+            margin: 0;
+
+            border: none;
+            border-radius: rem-calc(5);
+            background: $white;
+            box-shadow: none;
+        }
+        &__btn,
+        &__btn:hover,
+        &__btn:focus
+        {
+            display: inline-block;
+            float: right;
+
+            width: rem-calc(12);
+            height: rem-calc(21);
+            margin: 0;
+            margin-top: rem-calc(5);
+            margin-left: 14px;
+            padding: 0;
+
+            border: none;
+            outline: none;
+            background: url('../images/sprite-my.png') no-repeat -342px -350px;
+            box-shadow: none;
+        }
+        &:after
+        {
+            display: table;
+            clear: both;
+
+            content: '';
+        }
+    }
+}
+@media (max-width:1130px)  {
+    .b-footer {
+        &__addr {
+            padding-left: 15px;
+        }
+        &__txt {
+            padding-right: 0;
+        }
+        &__journals {
+            padding-left: 0;
+        }
+    }
+}
+@media (max-width:640px) {
+    .b-footer {
+        &__addr {
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        &__address {
+            float: left;
+            margin-right: 15px;
+        }
+        &__copyright {
+            float: left;
+            margin-right: 15px;
+        }
+        &__mail {
+            float: left;
+        }
+        &__phone {
+            float: left;
+        }
+    }
+}

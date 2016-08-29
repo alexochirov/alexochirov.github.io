@@ -1,0 +1,51 @@
+.b-art
+{
+    & a
+    {
+        text-decoration: none;
+    }
+    &:last-child
+    {
+        padding-left: 10px;
+    }
+    &:first-child
+    {
+        padding-right: 10px;
+    }
+    &__block
+    {
+        margin-bottom: 25px;
+        &:hover
+        {
+            & .b-art__title
+            {
+                color: #e29c04;
+            }
+        }
+    }
+    &__img
+    {
+    }
+    &__title
+    {
+      padding-top: 5px;
+        font-family: $font-family-Roboto-Medium;
+        font-size: 13px;
+
+        color: #000;
+    }
+}
+@media (max-width:960px) and (min-width:640px)
+{
+    .b-art
+    {
+        &:last-child
+        {
+            padding-left: 15px;
+        }
+        &:first-child
+        {
+            padding-right: 15px;
+        }
+    }
+}

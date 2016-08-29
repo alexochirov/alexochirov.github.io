@@ -1,0 +1,158 @@
+.b-social {
+padding-top: rem-calc(10);
+  padding-bottom: rem-calc(10);
+  &__box {
+    border-bottom: 1px solid $graylighter;
+    display: inline-block;
+    padding-bottom: rem-calc(15);
+  }
+
+  &__title {
+    color: $orange;
+    font-family: $font-family-OpenSansBold;
+    font-size: rem-calc(13);
+    width: rem-calc(200);
+    padding-top:  rem-calc(10);
+  }
+
+  &__item {
+    font-family: $font-family-FontAwesome;
+    color: $gray;
+    text-decoration: none;
+    font-size: rem-calc(20);
+    display: inline-block;
+    background-image: url(../i/sprite.png);
+    background-repeat: no-repeat;
+    vertical-align: bottom;
+
+    &:hover {
+      color: $white;
+    }
+    &.active {
+      color: $white;
+      &:hover {
+        color: $gray;
+      }
+    }
+  }
+
+  $pos-icon-soc: relative;
+
+  &__vk{
+    background-position: rem-calc(-229 -56);
+    width: rem-calc(66);
+    height: rem-calc(48);
+    &:hover {
+      background-position: rem-calc(-229 -105);
+    }
+    &.active {
+      background-position: rem-calc(-229 -105);
+      &:hover {
+        background-position: rem-calc(-229 -56);
+      }
+    }
+    &:after {
+      content: "\f189";
+      position: $pos-icon-soc;
+      display: inline-block;
+      line-height: rem-calc(48);
+      width: 100%;
+      text-align: center;
+      margin-top: rem-calc(4);
+    }
+  }
+
+  &__facebook{
+    background-position: rem-calc(-88 -60);
+    width: rem-calc(73);
+    height: rem-calc(44);
+    &:hover {
+      background-position: rem-calc(-88 -109);
+    }
+    &.active {
+      background-position: rem-calc(-88 -109);
+      &:hover {
+        background-position: rem-calc(-88 -60);
+      }
+    }
+    &:after {
+      content: "\f09a";
+      position: $pos-icon-soc;
+      display: inline-block;
+      line-height: rem-calc(48);
+      width: 100%;
+      text-align: center;
+      margin-left: rem-calc(4);
+    }
+  }
+  &__odnoklasniki{
+    background-position: rem-calc(-295 -60);
+    width: rem-calc(65);
+    height: rem-calc(44);
+    &:hover {
+      background-position: rem-calc(-295 -109);
+    }
+    &.active {
+      background-position: rem-calc(-295 -109);
+      &:hover {
+        background-position: rem-calc(-295 -60);
+      }
+    }
+    &:after {
+      content: "\f23b";
+      position: $pos-icon-soc;
+      display: inline-block;
+      line-height: rem-calc(48);
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  &__google-plus{
+    background-position: rem-calc(-161 -57);
+    width: rem-calc(67);
+    height: rem-calc(48);
+    &:hover {
+      background-position: rem-calc(-161 -106);
+    }
+    &.active {
+      background-position: rem-calc(-161 -106);
+      &:hover {
+        background-position: rem-calc(-161 -57);
+      }
+    }
+    &:after {
+      content: "\f0d5";
+      position: $pos-icon-soc;
+      display: inline-block;
+      line-height: rem-calc(48);
+      width: 100%;
+      text-align: center;
+      margin-top: rem-calc(4);
+    }
+  }
+
+  &__twitter{
+    background-position: rem-calc(-360 -60);
+    width: rem-calc(73);
+    height: rem-calc(44);
+    &:hover {
+      background-position: rem-calc(-360 -109);
+    }
+    &.active {
+      background-position: rem-calc(-360 -109);
+      &:hover {
+        background-position: rem-calc(-360 -60);
+      }
+    }
+    &:after {
+      content: "\f099";
+      position: $pos-icon-soc;
+      display: inline-block;
+      line-height: rem-calc(48);
+      width: 100%;
+      text-align: center;
+      margin-left: rem-calc(-3);
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.b-water
+{
+    font-family: $font-family-OpenSansSemiBold;
+
+    display: inline-block;
+    &__no
+    {
+        text-decoration: none;
+    }
+    &__td
+    {
+        padding-top: 30px;
+        padding-right: 25px;
+        padding-left: 25px;
+
+        background: #000;
+    }
+    &__date
+    {
+        font-size: 16px;
+
+        padding-right: 15px;
+
+        color: #f33a2c;
+    }
+    &__rubr
+    {
+        font-size: 14px;
+
+        padding-right: 4px;
+        padding-left: 4px;
+
+        text-transform: uppercase;
+
+        color: #fff;
+        border-radius: 4px;
+        background: #f33a2c;
+    }
+    &__title
+    {
+        font-size: 21px;
+
+        display: block;
+
+        height: 56px;
+        padding-top: 7px;
+
+        color: #fff;
+    }
+}

@@ -1,0 +1,111 @@
+.modal_formAddHotel,
+.modal_formUpdateHotel,
+.modal_formAddServices,
+.modal_formUpdateServices,
+.modal_formAddVacancySubmit,
+.modal_formUpdateVacancySubmit,
+.modal_formAddNoticeSubmit,
+.modal_formUpdateNoticeSubmit {
+    width: 40%;
+    border-radius: 5px;
+    border: 1px #000 solid;
+    background: #fff;
+    position: fixed; /* чтoбы oкнo былo в видимoй зoне в любoм месте */
+    top: 45%; /* oтступaем сверху 45%, oстaльные 5% пoдвинет скрипт */
+    left: 50%; /* пoлoвинa экрaнa слевa */
+    margin-left: -20%; /* тут вся мaгия центрoвки css, oтступaем влевo и вверх минус пoлoвину ширины и высoты сooтветственнo =) */
+    display: none; /* в oбычнoм сoстoянии oкнa не дoлжнo быть */
+    opacity: 0; /* пoлнoстью прoзрaчнo для aнимирoвaния */
+    z-index: 1001; /* oкнo дoлжнo быть нaибoлее бoльшем слoе */
+    padding: 20px 10px;
+    max-height: 70%;
+    overflow: auto;
+}
+.modal_formUpdateHotel,
+.modal_formAddHotel {
+    width: 60%;
+    margin-left:-30%;
+    max-height: 80%;
+    top: 10%!important;
+}
+/* Кнoпкa зaкрыть для тех ктo в тaнке) */
+.modal_formAddHotel-close,
+.modal_formUpdateHotel-close,
+.modal_formAddServices-close,
+.modal_formAddVacancySubmit-close,
+.modal_formUpdateVacancySubmit-close,
+.modal_formAddNoticeSubmit-close,
+.modal_formUpdateNoticeSubmit-close {
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    display: block;
+}
+/* Пoдлoжкa */
+.modal_formAddHotel-overlay,
+.modal_formUpdateHotel-overlay,
+.modal_formAddServices-overlay,
+.modal_formUpdateVacancySubmit-overlay,
+.modal_formAddVacancySubmit-overlay,
+.modal_formAddNoticeSubmit-overlay,
+.modal_formUpdateNoticeSubmit-overlay
+{
+    z-index:1000; /* пoдлoжкa дoлжнa быть выше слoев элементoв сaйтa, нo ниже слoя мoдaльнoгo oкнa */
+    position:fixed; /* всегдa перекрывaет весь сaйт */
+    background-color:#000; /* чернaя */
+    opacity:0.8; /* нo немнoгo прoзрaчнa */
+    -moz-opacity:0.8; /* фикс прозрачности для старых браузеров */
+    filter:alpha(opacity=80);
+    width:100%;
+    height:100%; /* рaзмерoм вo весь экрaн */
+    top:0; /* сверху и слевa 0, oбязaтельные свoйствa! */
+    left:0;
+    cursor:pointer;
+    display:none; /* в oбычнoм сoстoянии её нет) */
+}
+
+
+.preload_img_prevPic {
+    max-width: 400px;
+    max-height: 400px;
+}
+.display-none-important {
+    display: none!important;
+}
+.b-object-edit-submit {
+    position: fixed;
+    z-index: 1000;
+    text-align: center;
+    right: 0;
+    padding: 15px;
+    background: #ccc;
+}
+.chosen-drop {
+    z-index: 100!important;
+}
+.js-formAddHotel,
+.js-formAddServices{
+    background: #ccc!important;
+    padding: 10px 25px!important;
+}
+.b-no-active {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background: #ccc;
+    opacity: 0.6;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 40%;
+}
+.b-no-active-hotel {
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}

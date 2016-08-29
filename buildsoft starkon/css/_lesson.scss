@@ -1,0 +1,138 @@
+.b-lesson {
+  font-family: 'RobotoCondensed-Regular', sans-serif;
+}
+.b-lesson__title {
+  color: #15659d;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 0;
+  
+}
+.b-lesson__desc {
+  color: black;
+  font-size: 24px;
+  line-height: 34px;
+  text-align: center;
+  padding: 0;
+  font-weight: 700;
+
+}
+.b-lesson__pk-stark {
+  color: #15659d;
+  font-size: 24px;
+  line-height: 34px;
+}
+.b-lesson__ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 29px;
+  margin-left: 0;
+}
+@media (min-width:1024px) {
+ .b-lesson__title {
+    background: url('../i/sprites.png') no-repeat 0 -673px;
+    margin: 101px 0 53px 0;
+ }
+ .b-lesson__form  {
+  margin: 50px 0 79px 0;
+ }
+}
+@media (min-width:640px) and (max-width:1024px) {
+  .b-lesson__title {
+    text-decoration: overline underline;
+
+  margin: 31px 0 53px 0;
+  }
+
+  .b-lesson__ul>li.b-lesson__list-item {
+    margin: 0 ;
+  }
+}
+@media (max-width:640px) { 
+
+  .b-lesson__ul>li.b-lesson__list-item {
+    margin: 0 ;
+  }
+  .b-lesson__img {
+  }
+  .b-lesson__ul {
+    margin-left: 0;
+  }
+  .b-lesson__title {
+    text-decoration: overline underline;
+    margin: 31px 0 13px 0;
+    text-align: center;
+  }
+}
+.b-lessson__num {
+  display: inline-block;
+  background: url('../i/sprites.png') no-repeat -395px -108px;
+  width: 48px;
+  height: 48px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  padding-top: 3px;
+}
+.b-lesson__text {
+  color: black;
+  font-size: 18px;
+  line-height: 24px;
+  padding-right: 0;
+  padding-top: 7px;
+  font-family: 'RobotoCondensed-Medium', sans-serif;
+}
+.b-lesson__img {
+  background: url('../i/sprites.png') no-repeat -376px -374px;
+  width: 90px;
+  display: inline-block;
+  height: 111px;
+}
+.b-lesson__img-rama {
+  display: inline-block;
+  background: url('../i/sprites.png') no-repeat -233px -350px;
+  width: 100px;
+  height: 47px;
+}
+.b-lesson__fast-start {
+  color: #000;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  margin-top: 6px;
+}
+.b-lesson__form {
+  
+  &>.row {
+    margin: 0;
+  }
+}
+input.b-lesson__email {
+  background-color: #f0f0f0;
+  color: #999;
+  font-family: 'RobotoCondensed-Light', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 34px;
+  padding-left: 21px;
+  height: 50px;
+  padding-top: 11px;
+  border:0;
+  width: 94%;
+  float: right;
+}
+.b-lesson__btn {
+  width: 94%;
+  background: url('../i/sprites.png') no-repeat 0 -526px;
+  height: 54px;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 34px;
+  float: right;
+  text-transform: uppercase;
+  padding-top: 9px;
+}

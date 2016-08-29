@@ -1,0 +1,87 @@
+.b-already
+{
+    margin-bottom: 11px;
+    padding-right: 0;
+    padding-left: 0;
+
+    border: 1px solid #bfd506;
+    &__block
+    {
+        float: left;
+
+        width: 20%;
+    }
+    &__img
+    {
+        float: left;
+
+        width: 40%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 19px;
+    }
+    &__info
+    {
+        float: left;
+
+        width: 60%;
+        padding-top: 20px;
+        padding-bottom: 16px;
+        padding-left: 5px;
+    }
+    &__title
+    {
+        line-height: 1.1;
+        &-link
+        {
+            font-size: 14px;
+            font-weight: 400;
+
+            color: #333335;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    &__price
+    {
+        font-size: 24px;
+        font-weight: 400;
+
+        color: #d21531;
+        &-rubl
+        {
+            color: #333335;
+        }
+    }
+}
+@media (max-width:960px)  and (min-width:640px)
+{
+    .b-already
+    {
+        &__block
+        {
+            width: 33.3%;
+        }
+    }
+}
+@media (max-width:640px)
+{
+    .b-already
+    {
+        &__block
+        {
+            width: 50%;
+        }
+    }
+}
+@media (max-width:400px)
+{
+    .b-already
+    {
+        &__block
+        {
+            width: 100%;
+        }
+    }
+}

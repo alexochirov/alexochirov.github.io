@@ -1,0 +1,70 @@
+.b-top-menu
+{
+    padding-right: 0;
+    &__home
+    {
+        float: left ;
+
+        margin-top: 0;
+        margin-right: 10px;
+        margin-bottom: 0;
+        &-link
+        {
+            display: inline-block;
+
+            width: 25px;
+            height: 23px;
+
+            background: url('../i/sprite-my.png') no-repeat -518px -516px;
+            &_mayer {
+                background: url('../images/mayer-home.png') no-repeat;
+            }
+            &_zimber {
+                background: url('../images/home-zimber.png') no-repeat;
+            }
+        }
+    }
+    &__ul
+    {
+        float: left;
+
+        margin-top: 15px;
+        margin-bottom: 15px;
+        margin-left: 0;
+
+        list-style-type: none;
+    }
+    &__li
+    {
+        float: left;
+
+        margin-right: 13px;
+        &-link
+        {
+            font-size: 16px;
+            font-weight: 400;
+
+            color: $myColor;
+            &:hover {
+                color: #000;
+            }
+        }
+    }
+}
+@media (max-width: 1000px) and (min-width: 960px)
+{
+    .b-top-menu__li
+    {
+        margin-right: 7px;
+    }
+}
+@media (max-width:960px)
+{
+    .b-top-menu
+    {
+        &__ul
+        {
+            margin-bottom: 0;
+        }
+    }
+}

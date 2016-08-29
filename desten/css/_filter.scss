@@ -1,0 +1,37 @@
+.b-filter {
+  background-color: #e0e0e0;
+  &>.b-filter__links {
+    margin: 0;
+  }
+
+.b-filter__top {
+  height: 10px;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.4), inset 0.5px 0.9px 1px rgba(1, 1, 1, 0.29);
+}
+.b-filter__bot {
+  height: 10px;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.4), inset 0.5px 0.9px 1px rgba(1, 1, 1, 0.29);
+}
+}
+.b-filter__links {
+  padding-top: 20px;
+  padding-bottom: 22px;
+}
+.b-filter__podobrat-link {
+  color: #303030;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  padding-left: 232px;
+}
+.b-filter__send-link {
+  color: #03a9f4;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  padding-left: 141px;
+}
