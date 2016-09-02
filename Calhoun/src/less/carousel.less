@@ -1,0 +1,79 @@
+.carousel {
+    margin-top: 93px;
+    margin-bottom: 74px;
+
+    .item {
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .carousel-indicators {
+        width: 100%;
+        left: 0;
+        background: #eb1a21;
+        margin: 0;
+        padding-left: ~"calc(50% - 550px)";
+        padding-right: ~"calc(50% - 550px)";
+        bottom: -74px;
+        height: 74px;
+
+        li {
+            width: 212px;
+            border: 0;
+            text-indent: 0;
+            text-align: center;
+            text-transform: uppercase;
+            color: #fff;
+            padding: 30px 10px;
+            font-size: 15px;
+            position: relative;
+
+            &.active {
+                color: #79171e;
+                background: none;
+
+                &:before {
+                    top: -12px;
+                    left: ~"calc(50% - 14px)";
+                    content: "\e072";
+                    font-size: 27px;
+                    transform: rotate(90deg);
+                    font-family: 'Glyphicons Halflings';
+                    display: inline-block;
+                    position: absolute;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1199px) {
+    .carousel {
+        .carousel-indicators {
+            padding-left: 0;
+            padding-right: 0;
+
+            li {
+                margin: 0;
+                width: ~"calc(20% - 3px)";
+            }
+        }
+    }
+}
+@media (max-width: 991px) {
+    .carousel {
+        margin-bottom: 55px;
+        margin-top: 55px;
+    }
+}
+@media (max-width: 767px) {
+    .carousel {
+        margin-bottom: 0;
+
+        .carousel-indicators {
+            display: none;
+        }
+    }
+}

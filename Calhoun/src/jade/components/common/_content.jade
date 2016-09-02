@@ -1,0 +1,119 @@
+.carousel.slide(data-ride="carousel")#carousel
+    ol.carousel-indicators
+        - var i = -1
+        each title in ['Salt & sand','Fertilizer','Commercial','Agriculture','Equine']
+            - i++
+            li(data-target='#carousel',data-slide-to='#{i}')= title
+
+    .carousel-inner(role='listbox')
+        .item.active
+            img(src="../images/1.jpg", alt="")    
+        .item
+            img(src="../images/2.jpg", alt="")    
+        .item
+            img(src="../images/3.jpg", alt="")    
+        .item
+            img(src="../images/4.jpg", alt="")    
+        .item
+            img(src="../images/5.jpg", alt="")    
+.container.expert
+    .row           
+        .col-sm-24.text-center
+            h1.expert__h1 
+                |We became experts in your industry, 
+                br
+                |so we could anticipate your every need. 
+            p.expert__p Calhoun focuses on structural engineering because we believe our strength is in our industry-specific knowledge. We understand your industry, so we can customize our buildings to meet every need or unique request of our customers. We have years of engineering excellence behind every structure.
+.hangar.text-center
+    .hangar__text Ready to build? Let's get started.
+.invest.text-center
+    .container
+        .row
+            .col-sm-24
+                h1.invest__h1 We’ve thought of everything.
+        .row
+            .col-sm-8
+                .invest__img
+                    img(src="../images/img1.png", alt="")
+                .invest__text
+                    |Our highly-trained engineers, designers and detailers have spent years building the strongest and safest structures available specifically for your industry.  
+            .col-sm-8
+                .invest__img
+                    img(src="../images/img2.png", alt="")
+                .invest__text
+                    |We protect our structures from rust and deterioration by hot dip galvanizing every welded truss.
+            .col-sm-8
+                .invest__img
+                    img(src="../images/img3.png", alt="")
+                .invest__text
+                    |Calhoun structures boast low operational and maintenance costs in comparison to traditional buildings, while offering a large, secure, well-ventilated storage solution.
+.case.slide#case.carousel(data-ride="carousel")
+    .carousel-inner(role='listbox')
+        .item.active
+            img(src="../images/11.jpg", alt="")
+            .carousel-caption
+                p CASE STUDY
+                p KNM Group
+                p Toefield, Alberta’s KNM Group needed to protect some large pieces of equipment, which meant Calhoun went to work designing a custom solution to a massive challenge.
+        .item
+            img(src="../images/22.jpg", alt="")    
+            .carousel-caption
+                p CASE STUDY
+                p KNM Group
+                p Toefield, Alberta’s KNM Group needed to protect some large pieces of equipment, which meant
+        .item
+            img(src="../images/33.jpg", alt="")  
+            .carousel-caption
+                p CASE STUDY
+                p Toefield, Alberta’s KNM Group needed to protect some large pieces of equipment, which meant Calhoun went to work designing a custom solution to a massive challenge.  
+    a.left.carousel-control(href="#case",role="button",data-slide="prev")        
+        span.glyphicon.glyphicon-chevron-left(aria-hidden="true")
+        span.sr-only Previous
+    a.right.carousel-control(href="#case",role="button",data-slide="next")        
+        span.glyphicon.glyphicon-chevron-right(aria-hidden="true")
+        span.sr-only Next
+.get.container
+    .row
+        .col-sm-24.text-center
+            h1.get__h1 Let’s get started.
+            p.get__par
+                |Contact a Calhoun representative today. 
+                br
+                |We will connect you with one of our North American dealers or worldwide partners.
+    .row.text-center
+        .col-sm-24.get__tel
+            |1-800-265-3994   |   1-519-934-3037    
+        .col-sm-12.text-center
+            a(href="#",data-toggle="modal",data-target="#myModal").get__contact Contact us today  
+        .col-sm-12.text-center
+            a(href="#",data-toggle="modal",data-target="#myModal").get__contact.get__contact_blue Request a quote
+        .modal.fade#myModal.info(tabindex="-1",role="dialog")    
+            .modal-dialog(role="content")
+                .modal-content
+                    .modal-header
+                        button.close(type='button',data-dismiss="modal",aria-label="Close")
+                            span(aria-hidden='true') &times;
+                    .modal-body
+                        form
+                            .form-group
+                                label(for="fn") First name
+                                input#fn.form-control(placeholder="Your first name",type="text")
+                            .form-group
+                                label(for="ln") Last name
+                                input#ln.form-control(placeholder="Your last name",type="text")
+                            .form-group
+                                label(for="en") Email
+                                input#en.form-control(placeholder="Your mail",type="email")
+                            .form-group
+                                label(for="cn") Company
+                                input#cn.form-control(placeholder="Your company",type="text")
+                            .form-group
+                                label(for="ct") Country
+                                select.form-control#ct
+                                    option Usa
+                                    option Switzerland
+                                    option Canada
+                            .form-group 
+                              label(for="com") Comments
+                              textarea.form-control(row='3',placeholder="Write a good comments only")
+                            button.btn.btn-success.btn-block(type="submit") Submit  
