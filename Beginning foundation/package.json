@@ -1,0 +1,35 @@
+{
+  "name": "cetera-wireframe-boilerplate",
+  "version": "1.0.0",
+  "description": "Шаблон прототипов на фреймворке Foundation в компании Cetera Labs.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp",
+    "minify": "minify"
+  },
+  "author": "Denis Sakharov <d.sakharov@ceteralabs.com> (http://cetera.ru/)",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "browser-sync": "^2.15.0",
+    "font-awesome": "^4.6.3",
+    "foundation-sites": "^6.2.3",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-if": "^2.0.1",
+    "gulp-ignore": "^2.0.1",
+    "gulp-imagemin": "^3.0.3",
+    "gulp-jade": "^1.1.0",
+    "gulp-rimraf": "^0.2.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.0",
+    "gulp-useref": "^3.1.2",
+    "gulp.spritesmith": "^6.2.1",
+    "imagemin-pngquant": "^5.0.0",
+    "jquery": "^3.1.0",
+    "motion-ui": "^1.2.2",
+    "npm-modernizr": "^2.8.3",
+    "slick-carousel": "^1.6.0"
+  },
+  "devDependencies": {}
+}
