@@ -19,10 +19,19 @@ $(document).foundation();
             swipeToSlide: true
         });
 
+        //close youtube video when reveal modal is close
+        (function() {
+            $(window).on('closed.zf.reveal', function() {
+
+                document.getElementById('iframe-my').contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+
+            });
+
+        })();
 
 
 
-   
+
 
     });
 })(jQuery);

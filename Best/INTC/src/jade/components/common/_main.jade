@@ -46,30 +46,7 @@
         h2.top__h1 по русскому языку
         a.top__enroll(href="#") записаться на курс
         a.top__walk(href="#") ПРОЙТИ ТЕСТ  
-  .header
-    .row
-      .top-bar
-        .top-bar-title
-          span(data-responsive-toggle='responsive-menu', data-hide-for='medium')
-            button.menu-icon.dark(type='button', data-toggle='')
-          a(href="#").header__mini-logo.show-for-small-only
-            img(src="./images/logo.png", alt="Logotype")
-        #responsive-menu
-          .header__logo.medium-5.hide-for-small-only.columns
-            a(href="#")
-              img(src="./images/logo.png", alt="Logotype")
-          .top-bar-left.medium-19.columns.text-right
-            ul.dropdown.menu(data-dropdown-menu='')
-              li.header__li
-                a(href="#").header__li-link о нас
-              li.header__li
-                a(href="#").header__li-link новости
-              li.header__li
-                a(href="#").header__li-link услуги
-              li.header__li
-                a(href="#").header__li-link цены
-              li.header__li
-                a(href="#").header__li-link контакты
+  include _header
 .services
   .row
     .columns.text-center.services__title наши услуги
@@ -213,7 +190,7 @@
       a.gallery__video(data-open="exampleModal1")
         img(src="./images/vid.png", alt="")
       #exampleModal1.reveal.gallery__modal(data-reveal='')
-        iframe( src='//www.youtube-nocookie.com/embed/wnXCopXXblE?rel=0', allowfullscreen='')
+        iframe( src='//www.youtube-nocookie.com/embed/wnXCopXXblE?enablejsapi=1', allowfullscreen='')#iframe-my
 .welcome
   .row
     .columns.text-center.welcome__title Добро пожаловать на сайт ИН-ТИ-СИ!
