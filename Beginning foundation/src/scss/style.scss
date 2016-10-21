@@ -5,10 +5,11 @@ $imagesPath: '../images' !default;
 $fontsPath: '../fonts' !default;
 
 $fa-font-path: $fontsPath;
-@import "slick/slick-theme";
+
 
 @import "fonts";
 @import "settings";
+@import "slick/slick-theme";
 @import "external";
 
 @import "common";
