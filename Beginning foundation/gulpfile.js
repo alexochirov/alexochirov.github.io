@@ -12,7 +12,8 @@ var gulp = require('gulp'),
     uglify = require('gulp-uglify'),
     imagemin = require('gulp-imagemin'),
     pngquant = require('imagemin-pngquant'),
-    spritesmith = require('gulp.spritesmith');
+    spritesmith = require('gulp.spritesmith'),
+    inlineCss = require('gulp-inline-css');
 
 var sassPaths = [
     './node_modules/foundation-sites/scss',
@@ -33,7 +34,7 @@ var path = {
         html: 'src/jade/*.jade',
         js: 'src/jade/**/_js.html',
         jsHtml: 'dist/*.html',
-        css: ['src/scss/style.scss'],
+        css: ['src/scss/style.scss'],//, 'src/scss/style-inline.scss'
         images: 'src/images/**/*.*',
         fonts: 'src/fonts/**/*.*',
         awesome: 'node_modules/font-awesome/fonts/**/*.*'
@@ -99,6 +100,12 @@ gulp.task('sprite', function() {
     spriteData.img.pipe(gulp.dest('src'));
 });
 
+gulp.task('inl', function() {
+    return gulp.src(path.dist.html + '*.html')
+        .pipe(inlineCss())
+        .pipe(gulp.dest(path.dist.html));
+});
+
 gulp.task('sass', ['clean-css'], function () {
     return gulp.src(path.src.css)
         .pipe(sass({
@@ -121,11 +128,14 @@ gulp.task('jade', ['clean-html', 'sass'], function() {
             pretty: true,
             cache: true
         }))
-        .pipe(gulp.dest(path.dist.html))
-        .pipe(browserSync.reload({ 
-         stream: true
-        }));
+        .pipe(gulp.dest(path.dist.html));
 });
+gulp.task('jade2', ['jade'], function() {
+    return browserSync.reload({ 
+         stream: true
+        });
+});
+
 
 gulp.task('images', ['clean-images'], function () {
     return gulp.src(path.src.images)
@@ -188,7 +198,7 @@ gulp.task('minify', ['sass', 'jade', 'images', 'fonts', 'js-html', 'js-minify', 
 
 gulp.task('default', ['browserSync','sass', 'jade', 'images', 'fonts', 'js-html', 'js-copy', 'clean-js-copy'], function () {
     gulp.watch([path.watch.css], ['sass']);
-    gulp.watch([path.watch.html], ['jade']);
+    gulp.watch([path.watch.html], ['jade2']);
     gulp.watch([path.watch.images], ['images']);
     gulp.watch([path.watch.fonts], ['fonts']);
     gulp.watch([path.watch.jsHtml], ['js-html']);
