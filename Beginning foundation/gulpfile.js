@@ -3,17 +3,15 @@
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
     jade = require('gulp-jade'),
-    browserSync = require('browser-sync'),
     autoprefixer = require('gulp-autoprefixer'),
     useref = require('gulp-useref'),
+    browserSync = require('browser-sync'),
     gulpif = require('gulp-if'),
     ignore = require('gulp-ignore'),
     rimraf = require('gulp-rimraf'),
     uglify = require('gulp-uglify'),
     imagemin = require('gulp-imagemin'),
-    pngquant = require('imagemin-pngquant'),
-    spritesmith = require('gulp.spritesmith'),
-    inlineCss = require('gulp-inline-css');
+    pngquant = require('imagemin-pngquant');
 
 var sassPaths = [
     './node_modules/foundation-sites/scss',
@@ -82,30 +80,6 @@ gulp.task('clean', function() {
     return gulp.src('dist', {read: false}).pipe(rimraf());
 });
 
-gulp.task('sprite', function() {
-    var spriteData =
-        gulp.src(path.src.images)
-            .pipe(spritesmith({
-                imgName: 'sprite-my.png',
-                cssName: 'sprite.scss',
-                cssFormat: 'scss',
-                algorithm: 'diagonal',
-                padding: 20,
-                //cssTemplate: path.src.spriteTemplate,
-                cssVarMap: function(sprite) {
-                    sprite.name = 's-' + sprite.name
-                }
-            }));
-
-    spriteData.img.pipe(gulp.dest('src'));
-});
-
-gulp.task('inl', function() {
-    return gulp.src(path.dist.html + '*.html')
-        .pipe(inlineCss())
-        .pipe(gulp.dest(path.dist.html));
-});
-
 gulp.task('sass', ['clean-css'], function () {
     return gulp.src(path.src.css)
         .pipe(sass({
@@ -135,7 +109,6 @@ gulp.task('jade2', ['jade'], function() {
          stream: true
         });
 });
-
 
 gulp.task('images', ['clean-images'], function () {
     return gulp.src(path.src.images)
@@ -171,10 +144,7 @@ gulp.task('js-html', ['jade'], function () {
 gulp.task('js-copy', ['clean-js'], function () {
     return gulp.src(path.src.js)
         .pipe(useref())
-        .pipe(gulp.dest(path.dist.html))
-        .pipe(browserSync.reload({ 
-         stream: true
-        }));
+        .pipe(gulp.dest(path.dist.html));
 });
 
 gulp.task('js-minify', ['clean-js', 'jade'], function () {
@@ -183,16 +153,6 @@ gulp.task('js-minify', ['clean-js', 'jade'], function () {
         .pipe(gulpif('*.js', uglify()))
         .pipe(gulp.dest(path.dist.html));
 });
-// Start browserSync server
-gulp.task('browserSync', function() {
-  browserSync({
-    server: {
-      baseDir: 'dist'
-    }
-  })
-});
-
-
 
 gulp.task('minify', ['sass', 'jade', 'images', 'fonts', 'js-html', 'js-minify', 'clean-js-minify']);
 
@@ -204,6 +164,15 @@ gulp.task('default', ['browserSync','sass', 'jade', 'images', 'fonts', 'js-html'
     gulp.watch([path.watch.jsHtml], ['js-html']);
     gulp.watch([path.watch.js], ['js-copy', 'clean-js-copy']);
 });
+// Start browserSync server
+gulp.task('browserSync', function() {
+  browserSync({
+    server: {
+      baseDir: 'dist'
+    }
+  })
+});
+
 
 //https://gist.github.com/Insayt/272c9b81936a03884768
 //https://gist.github.com/Deraen/9488df411b61fbe6c831
