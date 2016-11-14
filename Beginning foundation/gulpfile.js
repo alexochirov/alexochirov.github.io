@@ -144,7 +144,10 @@ gulp.task('js-html', ['jade'], function () {
 gulp.task('js-copy', ['clean-js'], function () {
     return gulp.src(path.src.js)
         .pipe(useref())
-        .pipe(gulp.dest(path.dist.html));
+        .pipe(gulp.dest(path.dist.html))
+        .pipe(browserSync.reload({ 
+         stream: true
+        }));
 });
 
 gulp.task('js-minify', ['clean-js', 'jade'], function () {
