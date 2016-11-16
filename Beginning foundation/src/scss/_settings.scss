@@ -44,7 +44,7 @@
 // ---------
 
 $global-font-size: 14px;
-$global-width: rem-calc(1200);
+$global-width: rem-calc(1186);
 $global-lineheight: 1.5;
 $primary-color: #CA3034;
 $secondary-color: #777;
@@ -63,7 +63,7 @@ $vk-color: #3E709C;
 $odnoklassniki-color: #FC6719;
 $body-background: $white;
 $body-font-color: $black;
-$body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$body-font-family: 'Roboto', sans-serif;
 $body-antialiased: true;
 $global-margin: 1.5rem;
 $global-padding: 1.5rem;
@@ -90,8 +90,8 @@ $breakpoint-classes: (small medium large);
 $grid-row-width: $global-width;
 $grid-column-count: 24;
 $grid-column-responsive-gutter: (
-        small: 1.5rem,
-        medium: 1.5rem,
+        small: rem-calc(16),
+        medium: rem-calc(16),
 );
 $grid-column-align-edge: true;
 $block-grid-max: 8;
@@ -106,7 +106,7 @@ $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
 $header-sizes: (
   small: (
     'h1': 35,
-    'h2': 30,
+    'h2': 26,
     'h3': 20,
     'h4': 18,
     'h5': 16,
@@ -114,7 +114,7 @@ $header-sizes: (
   ),
   medium: (
     'h1': 32,
-    'h2': 28,
+    'h2': 24,
     'h3': 20,
     'h4': 18,
     'h5': 16,
@@ -550,4 +550,3 @@ $topbar-padding: 0.5rem;
 $topbar-background: $light-gray;
 $topbar-title-spacing: 1rem;
 $topbar-input-width: 200px;
-

@@ -1,11 +1,3 @@
-@font-face {
-  font-family: "OpenSansBold";
-  src: url(#{$fontsPath}/OpenSansBold.eot);
-  src: url(#{$fontsPath}/OpenSansBold.eot?#iefix) format("embedded-opentype"),
-  url(#{$fontsPath}/OpenSansBold.woff) format("woff"),
-  url(#{$fontsPath}/OpenSansBold.ttf) format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=cyrillic');
 
-$font-family-OpenSansBold: "OpenSansBold", Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400&subset=cyrillic');
