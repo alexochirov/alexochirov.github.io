@@ -1,0 +1,24 @@
+footer.footer
+  .row
+    .large-5.medium-5.columns.text-center
+      p
+        a(href="#")
+          img(src="./images/logo.png", alt="")   
+    .large-8.medium-13.columns.footer__info
+      .footer__planet «Планета Чемпионов» - уникальный международный проект в сфере массового спорта.
+      |Мы предлагаем спортсменам качественное и недорогое проведение соревнований по игровым и индивидуальным видам спорта.
+      .footer__copy &copy; &nbsp;Планета Чемпионов 2016
+    .large-3.medium-6.columns.text-center.large-text-left
+      ul.upwork.upwork_mini
+        each title in ['Главная', 'О нас','Новости','Медиа','Контакты']
+          li.upwork__item
+            a.upwork__link(href="#")= title
+    .large-6.columns.text-center.large-text-left
+      ul.upwork.upwork_center
+        each title in ['International Hockey League','Массовый футбол','Детский хоккей','Детский футбол','Пляжный волейбол','Уличный баскетбол','Спортивно-тренировочный лагерь «ПЛАНЕТА ЧЕМПИОНОВ»']
+          li.upwork__item
+            a(href="#").upwork__link= title
+    .large-1.columns.end.soc.soc_foot.text-center
+      a.soc__icon(href="#")
+      a.soc__icon.soc__icon_vk(href="#")
+      a.soc__icon.soc__icon_in(href="#")

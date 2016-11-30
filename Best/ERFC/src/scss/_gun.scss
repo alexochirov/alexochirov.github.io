@@ -1,0 +1,24 @@
+.gun {
+    border: 1px solid #e1e1e1;
+    padding: rem-calc(16);
+    margin-top: rem-calc(20);
+
+    &__slide {
+        padding-top: rem-calc(65);
+        padding-bottom: rem-calc(65);
+    }
+
+    img {
+        display: inline-block;
+
+        &:focus {
+            outline: none;
+        }
+    }
+    @include breakpoint(small only) {
+        &__slide {
+            padding-top: rem-calc(20);
+            padding-bottom: rem-calc(20);
+        }
+    }
+}

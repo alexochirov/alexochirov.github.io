@@ -1,0 +1,13 @@
+.content {
+    padding-top: rem-calc(15);
+    background-color: #fff;
+    padding-bottom: rem-calc(20);
+    margin-bottom: rem-calc(30);
+    padding-left: rem-calc(16);
+    padding-right: rem-calc(16);
+    box-shadow: rem-calc(1) rem-calc(1.7) rem-calc(5) rgba(0, 0, 0, 0.04);
+
+    &__form {
+        margin-bottom: rem-calc(10);
+    }
+}

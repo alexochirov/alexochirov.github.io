@@ -1,0 +1,10 @@
+.row.columns.white.text-center
+  ul.dropdown.menu.cat.cat_new(data-dropdown-menu)
+    each title,index in ['Футбол','Хоккей','Баскетбол','Волейбол','Гандбол']
+      li.cat__item
+        a.cat__link(href="#")= title
+        ul.menu
+          li
+            a(href="#") Взрослые
+          li
+            a(href="#") Дети

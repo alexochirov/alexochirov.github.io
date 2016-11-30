@@ -1,0 +1,19 @@
+.blur {
+    h1 {
+        color: #002f90;
+    }
+
+    h1,
+    h3 {
+        font-family: $font-family-futurademicregular;
+    }
+
+    p {
+        font-size: rem-calc(17);
+    }
+    @include breakpoint(small only) {
+        p {
+            font-size: rem-calc(15);
+        }
+    }
+}

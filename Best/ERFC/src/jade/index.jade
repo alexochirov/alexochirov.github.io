@@ -1,0 +1,12 @@
+doctype html
+html.no-js(lang='ru')
+  include components/service/_head
+  body
+    include components/common/_header
+    block inner
+      .row.columns
+        .content
+          include components/common/_main
+
+    include components/common/_footer
+    include components/service/_js.html

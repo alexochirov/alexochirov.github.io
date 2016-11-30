@@ -1,0 +1,128 @@
+.sli {
+    &__item {
+        position: relative;
+    }
+
+    &__date,
+    &__text {
+        float: left;
+        background: url("../images/substrate.png");
+    }
+
+    &__date {
+        margin-right: 4px;
+        color: #001c5e;
+        background: url("../images/substrate.png");
+        text-transform: uppercase;
+        font-size: 60px;
+        line-height: 1.05;
+        padding-bottom: 7px;
+        padding-top: 7px;
+        font-family: $font-family-futurademicregular;
+    }
+
+    &__month {
+        font-size: 24px;
+        line-height: 1.6;
+        padding-left: 23px;
+        padding-right: 23px;
+    }
+
+    &__title {
+        text-transform: uppercase;
+        margin-bottom: 8px;
+        font-family: $font-family-futurademicregular;
+    }
+
+    &__text {
+        line-height: 1;
+        padding-left: 32px;
+        padding-top: 8px;
+        padding-right: 10px;
+        width: 403px;
+        color: #001c5e;
+        font-size: 24px;
+    }
+
+    &__container {
+        z-index: 2;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    .slick-dots {
+        position: absolute;
+        bottom: rem-calc(0);
+        margin-top: rem-calc(0);
+        text-align: left;
+        margin-bottom: rem-calc(25);
+        width: calc(100% - 580px);
+
+        li {
+            &.slick-active {
+                button {
+                    &:after {
+                        content: "\f111";
+                    }
+                }
+            }
+
+            button {
+                background: none;
+                width: rem-calc(20);
+                height: rem-calc(20);
+                margin: rem-calc(0) rem-calc(0) rem-calc(0) rem-calc(26);
+
+                &:after {
+                    content: "\f10c";
+                    font-family: FontAwesome;
+                    display: block;
+                    font-size: rem-calc(20);
+                    width: rem-calc(20);
+                    height: rem-calc(24);
+                    color: #fff;
+                }
+            }
+        }
+    }
+    @include breakpoint(medium only) {
+        .slick-dots {
+            width: calc(100% - 440px);
+        }
+
+        &__text {
+            width: 300px;
+            padding-left: 10px;
+            line-height: 1;
+            font-size: 20px;
+        }
+
+        &__date {
+            font-size: 44px;
+        }
+
+        &__month {
+            font-size: 18px;
+        }
+    }
+    @include breakpoint(small only) {
+        .slick-dots {
+            display: none !important;
+        }
+
+        &__date {
+            display: none;
+        }
+
+        &__container {
+            width: 100%;
+        }
+
+        &__text {
+            width: 100%;
+            padding-left: 10px;
+            font-size: 17px;
+        }
+    }
+}

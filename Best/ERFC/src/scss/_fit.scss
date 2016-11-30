@@ -1,0 +1,8 @@
+.fit {
+    padding-top: rem-calc(19);
+    font-size: rem-calc(13);
+    font-weight: 300;
+    @include breakpoint(small only) {
+      padding-top: rem-calc(10);
+    }
+}

@@ -1,0 +1,44 @@
+doctype html
+html.no-js(lang='ru')
+    include components/service/_head
+    body(style="background-image: url(./images/lego.png);")
+        include components/common/_header
+        
+        include components/mixins/_mixin-slider
+        include components/common/_menu
+        include components/common/_cat
+        
+        +slider('lego-angry.png')
+        .row.brick
+          h2.brick__title.text-center НОВОСТИ
+          .large-22.large-offset-1.end.columns
+            .row.large-up-4.small-up-2.text-center
+              .columns.news
+                p.news__img
+                  a(href="#")
+                    img(src="./images/ho1.png", alt="")
+                h4.text-center.large-text-left.news__name 
+                  |Расписание 
+                  br
+                  |матчей лето’16
+              .columns.news
+                p.news__img
+                  a(href="#")
+                    img(src="./images/ho2.png", alt="")
+                h4.text-center.large-text-left.news__name Российские соревнования
+              .columns.news
+                p.news__img
+                  a(href="#")
+                    img(src="./images/ho3.png", alt="")
+                h4.text-center.large-text-left.news__name Результаты события
+              .columns.news
+                p.news__img
+                  a(href="#")
+                    img(src="./images/ho4.png", alt="")
+                h4.text-center.large-text-left.news__name МЕЖДУНАРОДНЫЙ ТУРНИР 
+
+        include components/common/_photo
+        include components/common/_partners
+        
+        include components/common/_footer
+        include components/service/_js.html

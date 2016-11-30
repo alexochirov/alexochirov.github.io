@@ -1,0 +1,43 @@
+header.header
+  .header__line
+    .row
+      .columns
+        a(href="#").header__logo ANTIQUAROOM
+      .large-4.small-6.columns
+        a.flag.flag_active.text-center(href="#")
+          img(src="./images/britain.png", alt="")
+      .large-20.small-18.columns
+        a.flag.text-center(href="#")
+          img(src="./images/germany.png", alt="")
+        a.flag.text-center(href="#")
+          img(src="./images/france.png", alt="")
+        a.flag.text-center(href="#")
+          img(src="./images/russia.png", alt="")
+        a.flag.text-center(href="#")
+          img(src="./images/italy.png", alt="")
+  .header__black
+    .row
+      .large-19.medium-16.columns
+        span.header__toggle(data-responsive-toggle="responsive-menu" data-hide-for="medium")
+          button.menu-icon(type="button",data-toggle)
+        ul.list#responsive-menu.text-center.medium-text-left
+          each title,index in ['АНТИКВАРИАТ','Нумизматика','ФИЛАТЕЛИЯ','Милитария','O ПРОЕКТЕ']
+            if index==3
+              li.list__item
+                a.list__link(href="#")= title
+                ul.fall.text-center.large-text-left
+                  each title in ['Календарь','Шоу','Аукционные дома','Магазины','Частные дилеры','Ассоциации и клубы','Журналы и газеты','Архив']
+                    li.fall__item
+                      a.fall__link(href="#")= title
+            else
+              li.list__item
+                a.list__link(href="#")= title
+      .large-5.medium-8.columns.text-right
+        .clients.dropdown.menu(data-dropdown-menu)
+          li
+            a.clients__link(href="#")
+              i.fa.fa-user-circle-o
+              |Алексей Воропаев
+            ul.menu
+              li
+                a(href="#") Выйти  

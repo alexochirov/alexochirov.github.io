@@ -1,0 +1,32 @@
+.parameters {
+    @include table-scroll;
+    margin-bottom: rem-calc(20);
+
+    &__table {
+        table-layout: fixed;
+    }
+
+    &__th {
+        font-weight: 300;
+        text-transform: uppercase;
+        border: rem-calc(1) solid #ddd;
+        font-size: rem-calc(11);
+        background-color: whitesmoke;
+    }
+
+    &__td {
+        padding-left: rem-calc(16);
+        padding-right: rem-calc(16);
+        border: rem-calc(1) solid #ddd;
+        background: #fff;
+        padding-top: rem-calc(14);
+        padding-bottom: rem-calc(16);
+        font-size: rem-calc(13);
+        font-weight: 300;
+    }
+    @include breakpoint(small only) {
+        &__table {
+            width: rem-calc(500);
+        }
+    }
+}

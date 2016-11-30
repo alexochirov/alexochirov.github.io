@@ -1,0 +1,71 @@
+.result {
+    background: #fff;
+    padding-top: 20px;
+    padding-bottom: 11px;
+
+    &__drop {
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+    }
+
+    &__news {
+        padding-left: 20px;
+    }
+
+    &__line {
+        color: #000;
+
+        &_grey {
+            background: #f3f3f4;
+        }
+    }
+
+    &__info {
+        font-size: 14px;
+        color: #1a1c27;
+        text-transform: uppercase;
+        line-height: 1.25;
+    }
+
+    &__date {
+        color: #ed1c24;
+        padding-bottom: 4px;
+    }
+
+    &__icon {
+        background-repeat: no-repeat;
+        width: 30px;
+        height: 30px;
+        float: right;
+        margin-left: 10px;
+    }
+
+    &__future {
+        position: relative;
+    }
+    @media (max-width: 1200px) {
+        &__future {
+            padding-right: 0;
+        }
+    }
+    @include breakpoint(small only) {
+      &__future {
+        padding-right: 40px;
+        padding-left: 40px;
+      }
+        &__date,
+        &__info {
+            display: inline-block;
+        }
+
+        &__news {
+            padding-left: 10px;
+            display: none;
+
+            &.js-show {
+                display: block;
+            }
+        }
+    }
+}

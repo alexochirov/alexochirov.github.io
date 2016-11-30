@@ -1,0 +1,37 @@
+.timeline {
+    &_hor {
+        padding: rem-calc(16);
+        position: relative;
+        margin-bottom: rem-calc(21);
+        background: url("../images/rect1.svg") no-repeat;
+        padding-right: rem-calc(45);
+    }
+
+    &__org {
+        font-weight: 300;
+        margin-bottom: rem-calc(3);
+        font-size: rem-calc(13);
+    }
+
+    a {
+        letter-spacing: rem-calc(0.9);
+        font-family: $font-family-AGMelanie-roman;
+    }
+
+    &__link {
+        i {
+            margin-left: rem-calc(5);
+        }
+    }
+    @include breakpoint(small only) {
+        &_hor {
+            padding-right: rem-calc(30);
+        }
+
+        &__link {
+            i {
+                display: none;
+            }
+        }
+    }
+}

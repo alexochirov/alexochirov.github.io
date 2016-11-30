@@ -1,0 +1,105 @@
+doctype html
+html.no-js(lang='ru')
+    include components/service/_head
+    body(style="background-image: url(./images/olymp.png);")
+        include components/common/_header
+        
+        include components/mixins/_mixin-slider
+        include components/common/_menu
+        include components/common/_menu-adult
+        
+        +slider('oly.png')
+        .row.columns.white
+          nav(aria-label='You are here:', role='navigation')
+            ul.breadcrumbs
+              li
+                a(href='#') Главная
+              li
+                span.show-for-sr Current: 
+                |  Спортивно-тренировочные лагеря
+        .row.white.blur
+          h1.text-center   Спортивно-тренировочные лагеря
+          .medium-12.columns
+            h2.text-center Мы поможем Вам Стать сильнее
+            p.text-center Планета Чемпионов &mdash; это не просто тренировочный лагерь,а целое сообщество неравнодушных к спорту людей, профессионалов своего дела.
+          .medium-12.columns
+            .flex-video
+              iframe( height='215', src='https://www.youtube.com/embed/6UIQsiDWeMk',  allowfullscreen='',style="border:0; width:100%;")
+        .row.columns.white.blur
+          h1.text-center Наши преимущества
+          .row.large-up-4.medium-up-3.small-up-1.text-center
+            .columns
+              p
+                img(src="./images/spo1.png", alt="")
+              h3 Специализированная тренировка  
+              p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod amet inventore, enim? Impedit cumque mollitia, voluptatum eaque, laborum veritatis rem! Nemo quod molestias, commodi laboriosam accusantium officiis a eum beatae!
+            .columns
+              p
+                img(src="./images/spo2.png", alt="")
+              h3 Дух и веселье
+              p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod amet inventore, enim? Impedit cumque mollitia, voluptatum eaque, laborum veritatis rem! 
+            .columns
+              p
+                img(src="./images/spo3.png", alt="")
+              h3 Опытные тренеры
+              p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod amet inventore, enim?
+            .columns
+              p
+                img(src="./images/spo4.png", alt="")
+              h3 Отличная атмосфера
+              p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod amet inventore, enim? Impedit cumque mollitia, voluptatum eaque, laborum veritatis rem! Nemo quod molestias, commodi laboriosam accusantium officiis a eum beatae!
+            .columns
+              p
+                img(src="./images/spo5.png", alt="")
+              h3 Профессиональный атлеты
+              p  Nemo quod molestias, commodi laboriosam accusantium officiis a eum beatae!
+            .columns
+              p
+                img(src="./images/spo6.png", alt="")
+              h3 Великолепное исполнение
+              p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod amet inventore, enim? Impedit cumque mollitia, voluptatum eaque, laborum veritatis rem! Nemo quod molestias, commodi laboriosam accusantium officiis a eum beatae!
+            .columns
+              p
+                img(src="./images/spo7.png", alt="")
+              h3 Факультеты
+              p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod amet inventore, enim? Impedit cumque mollitia, voluptatum eaque, laborum veritatis rem! Nemo quod molestias, commodi laboriosam accusantium officiis a eum beatae!
+            .columns
+              p
+                img(src="./images/spo8.png", alt="")
+              h3 Отличная погода
+              p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod amet inventore, enim?
+                  
+  
+        .row.brick
+          h2.brick__title.text-center НОВОСТИ
+          .large-22.large-offset-1.end.columns
+            .row.large-up-4.small-up-2.text-center
+              .columns.news
+                p.news__img
+                  a(href="#")
+                    img(src="./images/ol1.png", alt="")
+                h4.text-center.large-text-left.news__name 
+                  |Расписание 
+                  br
+                  |матчей лето’16
+              .columns.news
+                p.news__img
+                  a(href="#")
+                    img(src="./images/ol2.png", alt="")
+                h4.text-center.large-text-left.news__name Российские соревнования
+              .columns.news
+                p.news__img
+                  a(href="#")
+                    img(src="./images/ol3.png", alt="")
+                h4.text-center.large-text-left.news__name Результаты события
+              .columns.news
+                p.news__img
+                  a(href="#")
+                    img(src="./images/ol4.png", alt="")
+                h4.text-center.large-text-left.news__name МЕЖДУНАРОДНЫЙ ТУРНИР 
+
+        include components/common/_photo
+        include components/common/_partners
+        
+        include components/common/_footer
+        include components/service/_js.html

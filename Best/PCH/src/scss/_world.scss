@@ -1,0 +1,53 @@
+.world {
+    padding-left: 29px;
+    padding-right: 29px;
+    margin-bottom: 21px;
+
+    &:not(:nth-child(4n)) {
+        border-right: 1px solid #99a3b8;
+    }
+
+    &__name {
+        font-family: $font-family-futurademicregular;
+        color: #000;
+        font-size: 14px;
+        margin-bottom: 11px;
+        text-transform: uppercase;
+    }
+
+    &__chapter {
+        margin-bottom: 15px;
+    }
+
+    &__link {
+        font-size: 14px;
+        line-height: 1.2;
+        color: #001c5e;
+    }
+
+    &__time {
+        font-size: 14px;
+        line-height: 1.29;
+        float: left;
+        color: #ca3034;
+        margin-right: 5px;
+        margin-top: 1px;
+    }
+    @include breakpoint(medium down) {
+        padding-right: 10px;
+        padding-left: 10px;
+
+        &:not(:nth-child(4n)) {
+            border-right: 0;
+        }
+
+        &:nth-child(odd) {
+            border-right: 1px solid #99a3b8;
+        }
+    }
+    @include breakpoint(small only) {
+        &:nth-child(odd) {
+            border-right: 0;
+        }
+    }
+}

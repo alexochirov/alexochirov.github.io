@@ -1,0 +1,24 @@
+.docs {
+      font-family:"Merriweather",sans-serif;
+  margin-top: rem-calc(21);
+
+    .pagination-next,
+    .pagination-previous {
+        float: left;
+      margin-left: rem-calc(10);
+      margin-right: rem-calc(10);
+    }
+
+    .pagination-next {
+        float: right;
+    }
+    @include  breakpoint (small only){
+      li {
+      margin-left: rem-calc(5);
+      margin-right: rem-calc(5);
+      }
+      .current,.ellipsis {
+        display: inline-block;
+      }
+    }
+}

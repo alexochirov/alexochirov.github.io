@@ -1,0 +1,28 @@
+.footer {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.91) 0%, rgba(50, 50, 50, 0.91) 4%, rgba(5, 5, 5, 0.91) 87%, rgba(0, 0, 0, 0.91) 100%);
+
+    &__text {
+        color: #fff;
+        padding-top: rem-calc(21);
+        font-size: rem-calc(13);
+        padding-bottom: rem-calc(14);
+    }
+
+    &__cetera {
+        color: #e9354c;
+        font-size: rem-calc(13);
+        display: inline-block;
+        text-decoration: none;
+    }
+
+    &__link {
+        display: block;
+        color: #fff;
+        font-size: rem-calc(13);
+    }
+    @include breakpoint (small only) {
+        &__text {
+            padding-top: rem-calc(0);
+        }
+    }
+}

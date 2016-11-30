@@ -1,0 +1,35 @@
+.lot {
+    position: relative;
+
+    h2 {
+        background: #fff;
+        position: relative;
+        padding-right: rem-calc(10);
+        margin-bottom: rem-calc(9);
+        display: inline-block;
+        z-index: 10;
+    }
+
+    &:after,
+    &:before {
+        content: "";
+        position: absolute;
+        display: block;
+    }
+
+    &:before {
+        background: #dfdfdf;
+        width: calc(100% - 16px);
+        z-index: 0;
+        bottom: rem-calc(18);
+        height: rem-calc(1);
+    }
+
+    &:after {
+        width: rem-calc(10);
+        right: rem-calc(10);
+        bottom: rem-calc(15);
+        height: rem-calc(7);
+        background: url(../images/point.png)no-repeat;
+    }
+}

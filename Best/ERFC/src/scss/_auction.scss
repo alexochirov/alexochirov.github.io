@@ -1,0 +1,40 @@
+.auction {
+    background-color: #f2f2f2;
+    border-radius: rem-calc(4px);
+    padding-top: rem-calc(8);
+    margin-bottom: rem-calc(6);
+    padding-left: rem-calc(16);
+    padding-right: rem-calc(16);
+    border: rem-calc(1) solid transparent;
+
+    &:hover {
+        border-color: #aaa;
+    }
+
+    &__bull {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    &__link {
+        font-family: "Merriweather",sans-serif;
+        font-size: rem-calc(14);
+    }
+
+    &__text {
+        margin-bottom: rem-calc(5);
+        font-size: rem-calc(13);
+    }
+    @include breakpoint(small only) {
+        padding-top: rem-calc(15);
+
+        &__text {
+            margin-bottom: rem-calc(15);
+        }
+    }
+}
+
+.row .auction {
+    margin-left: rem-calc(0);
+    margin-right: rem-calc(0);
+}

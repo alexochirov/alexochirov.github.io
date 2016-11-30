@@ -1,0 +1,58 @@
+body {
+    background: #f0f0f0;
+}
+
+a {
+    text-decoration: underline;
+    font-size: rem-calc(15);
+    color: $black;
+}
+
+p {
+    font-size: rem-calc(13);
+    font-weight: 300;
+    line-height: 1.7;
+    letter-spacing: rem-calc(.6);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: $font-family-AGMelanie-roman;
+}
+
+strong {
+    font-weight: 500;
+    font-size: rem-calc(13);
+}
+
+ol {
+    margin-left: rem-calc(44);
+    margin-top: rem-calc(0);
+    counter-reset: myCounter;
+
+    li {
+        list-style: none;
+        position: relative;
+        margin-bottom: rem-calc(7);
+
+        &:before {
+            counter-increment: myCounter;
+            content: counter(myCounter);
+            position: absolute;
+            display: inline-block;
+            margin-left: rem-calc(-44);
+            margin-right: rem-calc(12);
+            text-align: center;
+            font-size: rem-calc(18);
+            line-height: 30px;
+            top: rem-calc(-7);
+            border: 1px solid #e1e1e1;
+            border-radius: 50%;
+            width: 31px;
+            height: 31px;
+        }
+    }
+}
