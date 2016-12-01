@@ -1,0 +1,19 @@
+.soc {
+    .fa-stack-2x {
+        color: transparent;
+    }
+    &_white {
+      color: #fff;
+    }
+
+
+    &:hover {
+        .fa-stack-2x {
+            color: $blue;
+        }
+
+        .fa-stack-1x {
+            color: #fff;
+        }
+    }
+}

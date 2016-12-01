@@ -1,0 +1,95 @@
+.news {
+    padding-top: rem-calc(17);
+    padding-bottom: rem-calc(7);
+
+    &_single {
+        padding-top: rem-calc(0);
+    }
+
+    &_slider {
+        padding: rem-calc(4) rem-calc(16) rem-calc(7) rem-calc(40) !important;
+
+        .like {
+            display: none;
+        }
+
+        &.active,
+        &:hover {
+            background: url(../images/rect.svg)no-repeat right center;
+            background-size: calc(100% - 8px) 100%;
+            color: #fff;
+
+            .like {
+                display: block;
+
+                &__link {
+                    color: #98a8ba;
+
+                    .fa {
+                        color: #98a8ba;
+                    }
+
+                    &:hover,
+                    &:hover .fa {
+                        color: #fff;
+                    }
+                }
+            }
+
+            .news__title {
+                color: #fff;
+                text-decoration: underline;
+            }
+
+            hr {
+                border-bottom-color: transparent;
+            }
+        }
+    }
+
+    &__text {
+        color: #9c9b9b;
+        font-weight: 300;
+        letter-spacing: rem-calc(.6);
+    }
+
+    &__category {
+        margin-right: rem-calc(10);
+        font-weight: 500;
+        text-transform: uppercase;
+        display: inline-block;
+        font-size: rem-calc(10);
+        border-bottom: rem-calc(2) solid $yellow;
+        margin-bottom: rem-calc(4);
+
+        &:hover {
+            color: $yellow;
+        }
+    }
+
+    &__hr {
+        border-bottom-color: #fff;
+    }
+
+    &__date {
+        padding-bottom: rem-calc(3);
+        display: inline-block;
+        font-weight: 300;
+        font-size: rem-calc(11);
+    }
+
+    &__title {
+        display: block;
+        font-weight: 500;
+        padding-bottom: rem-calc(7);
+
+        &_big {
+            font-size: rem-calc(18);
+        }
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    @include breakpoint(small only) {}
+}

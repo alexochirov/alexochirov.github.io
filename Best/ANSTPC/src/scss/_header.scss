@@ -1,0 +1,121 @@
+.header {
+    font-size: rem-calc(13);
+    padding-top: rem-calc(9);
+
+    &__cloud {
+        font-weight: 300;
+        margin-top: rem-calc(16);
+        font-size: rem-calc(30);
+        line-height: 1;
+
+        i {
+            color: $blue;
+            margin-right: rem-calc(10);
+        }
+    }
+
+    &__block {
+        border-right: rem-calc(1) solid #e7e7e7;
+        padding-top: rem-calc(11);
+        padding-bottom: rem-calc(11);
+
+        &_search {
+            padding-top: rem-calc(20);
+        }
+    }
+
+
+
+    &__enter {
+        margin-left: rem-calc(5);
+        display: inline-block;
+        padding-left: rem-calc(5);
+        padding-right: rem-calc(5);
+
+        i {
+            font-size: rem-calc(16);
+            margin-right: rem-calc(5);
+            color: #cacaca;
+        }
+
+        &:hover {
+            border-radius: rem-calc(2);
+            color: $yellow;
+
+            i {
+                color: $black;
+            }
+        }
+    }
+
+    &__dib {
+        float: left;
+    }
+
+    &__letter {
+        margin-bottom: rem-calc(16);
+        border-bottom: rem-calc(1) solid #e7e7e7;
+    }
+
+    &__register {
+        padding-top: rem-calc(3);
+    }
+
+    &__map {
+        padding-top: rem-calc(3);
+        padding-bottom: rem-calc(6);
+
+        & > .dropdown {
+            float: left;
+
+            & > li > a {
+                padding-top: rem-calc(4);
+                padding-left: rem-calc(4);
+
+                &:after {
+                    border-width: rem-calc(4);
+                    top: rem-calc(5);
+                    right: rem-calc(8);
+                }
+            }
+
+            .first-sub {
+                border-radius: rem-calc(4);
+                padding-top: rem-calc(7);
+                padding-bottom: rem-calc(7);
+            }
+        }
+
+        .fa-map-marker {
+            margin-right: rem-calc(10);
+            font-size: rem-calc(18);
+            color: #cacaca;
+        }
+    }
+    @include breakpoint(medium down) {
+        margin-bottom: rem-calc(10);
+
+        &__block {
+            &_search {
+                border-right: rem-calc(0);
+            }
+        }
+
+      
+    }
+    @include breakpoint(small only) {
+
+
+        &__dib {
+            float: none;
+            top: rem-calc(-9);
+            position: relative;
+            display: inline-block;
+        }
+
+        &__map > .dropdown {
+            float: none;
+            display: inline-block;
+        }
+    }
+}

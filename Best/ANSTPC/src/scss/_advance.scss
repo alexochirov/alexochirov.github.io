@@ -1,0 +1,29 @@
+.advance {
+  margin-bottom: rem-calc(0);
+  margin-top: rem-calc(3);
+  margin-left: rem-calc(0);
+  list-style: none;
+
+    &__item {
+        display: inline-block;
+        position: relative;
+
+        &:not(:last-child):after {
+            width: rem-calc(1);
+            height: rem-calc(13);
+            content:"";
+            position: absolute;
+            right: rem-calc(0);
+            bottom: rem-calc(2);
+            background: #e7e7e7;
+        }
+    }
+
+    &__link {
+        padding-right: rem-calc(10);
+        padding-left: rem-calc(10);
+        font-size: rem-calc(13);
+    }
+      @include breakpoint(medium down) {
+      margin-bottom: rem-calc(10); }
+}

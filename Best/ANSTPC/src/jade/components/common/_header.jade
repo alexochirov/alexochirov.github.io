@@ -1,0 +1,72 @@
+header.header
+  .header__letter
+    .row
+      .large-5.medium-6.columns.header__map.text-center.medium-text-left
+        .header__dib
+          i.fa.fa-map-marker
+          |Город:
+        ul.dropdown.menu(data-dropdown-menu)
+          li
+            a(href="#") Южно-Сахалинск
+            ul.menu
+              li
+                a(href="#") Москва
+              li
+                a(href="#") Ярославль
+      .large-9.medium-10.columns.text-center.medium-text-left
+        ul.advance
+          each title in ['Прислать новость','Реклама','Редакция'] 
+            li.advance__item
+              a(href="#").advance__link= title  
+      .large-6.medium-4.small-13.columns.text-left.large-text-right
+        a(href="#").fa-stack.soc
+          i.fa.fa-square.fa-stack-2x
+          i.fa.fa-vk.fa-stack-1x               
+        a(href="#").fa-stack.soc
+          i.fa.fa-square.fa-stack-2x
+          i.fa.fa-twitter.fa-stack-1x               
+        a(href="#").fa-stack.soc
+          i.fa.fa-square.fa-stack-2x
+          i.fa.fa-facebook.fa-stack-1x               
+        a(href="#").fa-stack.soc
+          i.fa.fa-square.fa-stack-2x
+          i.fa.fa-google-plus.fa-stack-1x               
+        a(href="#").fa-stack.soc
+          i.fa.fa-square.fa-stack-2x
+          i.fa.fa-instagram.fa-stack-1x               
+        a(href="#").fa-stack.soc
+          i.fa.fa-square.fa-stack-2x
+          i.fa.fa-rss.fa-stack-1x 
+      .large-4.medium-4.small-11.columns.text-right.header__register
+        a(href="#").header__enter
+          i.fa.fa-sign-in
+          |Войти
+        a.header__enter Регистрация   
+  .row(data-equalizer,data-equalize-by-row="true")
+    .large-6.medium-10.columns.hide-for-small-only
+      a(href="").logo
+        img(src="./images/logo.svg", alt="")
+        |Сахалин.ру
+    .large-9.columns.medium-14.text-center.medium-text-left
+      ul.cat
+        each title,index in ['Новости','Статьи','Weekly','Проекты']
+          if index== 0
+            li.cat__item.active
+              a(href="#").cat__link= title
+          else
+            li.cat__item
+              a(href="#").cat__link= title    
+    .large-3.medium-6.small-8.columns.header__cloud
+      i.fa.fa-cloud.fa-lg
+      |-5°
+    .large-2.medium-6.columns.header__block.text-center(data-equalizer-watch).hide-for-small-only  
+      |День: +5°
+      br
+      |Ночь: - 5°    
+    .large-2.medium-6.small-8.columns.header__block.text-center(data-equalizer-watch) 
+      |&#36; - 63,42
+      br
+      |&#8364; - 69,34     
+    .large-2.medium-6.small-8.columns.header__block.header__block_search.text-center(data-equalizer-watch)
+      a(href="#")
+        i.fa.fa-search.fa-2x      

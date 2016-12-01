@@ -1,0 +1,22 @@
+.like {
+    float: right;
+
+
+    &__link {
+      margin-left: rem-calc(15);
+        color: #9c9b9b;
+        font-size: rem-calc(11);
+        font-weight: 300;
+
+        i {
+
+            font-size: rem-calc(13);
+            color: #cacaca;
+        }
+        &:hover {
+          i {
+            color: $blue;
+          }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+mixin mini-news(cat)
+  hr
+  .news
+    div
+      a(href="#").news__category= cat
+    .news__date 3 ноября, 2016
+    .like
+      a(href="#").like__link 
+        i.fa.fa-heart.fa-fw
+        |&nbsp;133
+      a(href="#").like__link 
+        i.fa.fa-comments.fa-fw
+        |&nbsp;133
+    a(href="#").news__title Заголовок новости или статьи пару строк
+  

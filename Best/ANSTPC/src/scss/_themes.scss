@@ -1,0 +1,37 @@
+.themes {
+    margin-left: rem-calc(0);
+    margin-bottom: rem-calc(0);
+    list-style-type: none;
+
+    &__item {
+        display: inline-block;
+        padding-top: rem-calc(18);
+        padding-bottom: rem-calc(18);
+
+        &:not(:last-child) {
+            padding-right: rem-calc(25);
+        }
+    }
+
+    &__link {
+        font-weight: 700;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: rem-calc(13);
+        border-bottom: rem-calc(2) solid transparent;
+
+        &:hover {
+            color: #fff;
+            border-bottom-color: $yellow;
+        }
+    }
+    @media (max-width: 1200px) {
+        padding-top: rem-calc(9);
+        padding-bottom: rem-calc(9);
+
+        &__item {
+            padding-top: rem-calc(8);
+            padding-bottom: rem-calc(8);
+        }
+    }
+}
