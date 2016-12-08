@@ -1,0 +1,15 @@
+.plain {
+    font-weight: 300;
+
+    &__title {
+        font-size: rem-calc(14);
+        display: block;
+        color: $black;
+        margin-bottom: rem-calc(5);
+    }
+
+    &__date {
+        color: $grey;
+        font-size: rem-calc(11);
+    }
+}

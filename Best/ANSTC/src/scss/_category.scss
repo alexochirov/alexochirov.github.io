@@ -1,0 +1,32 @@
+.category {
+    margin-left: rem-calc(0);
+    margin-bottom: rem-calc(0);
+
+    &__item {
+        display: inline-block;
+        padding-right: rem-calc(24);
+        padding-left: rem-calc(24);
+        position: relative;
+
+        &:not(:last-child):after {
+            content: '|';
+            font-size: rem-calc(13);
+            color: #d9dcdd;
+            position: absolute;
+            right: rem-calc(-5);
+            top: rem-calc(1);
+            font-family: "Open Sans",sans-serif;
+        }
+    }
+
+    &__link {
+        font-size: rem-calc(11);
+        font-weight: 300;
+    }
+    @include breakpoint(medium down) {
+        &__item {
+            padding-right: rem-calc(10);
+            padding-left: rem-calc(10);
+        }
+    }
+}

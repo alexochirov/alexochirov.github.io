@@ -1,0 +1,27 @@
+.room {
+    position: relative;
+    margin-bottom: rem-calc(36);
+
+    &:after {
+        bottom: rem-calc(-10);
+        height: rem-calc(1);
+        background: #e5e5e5;
+        left: rem-calc(74);
+        width: calc(100% - 74px);
+        content: "";
+        position: absolute;
+    }
+
+    &:before {
+        bottom: rem-calc(-10);
+        height: rem-calc(3);
+        background: $red;
+        left: rem-calc(0);
+        width: rem-calc(64);
+        content: "";
+        position: absolute;
+    }
+    @include breakpoint(small only) {
+        font-size: rem-calc(21);
+    }
+}

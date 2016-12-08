@@ -1,0 +1,19 @@
+mixin news(img)
+  .row.news
+    .large-7.columns
+      p.text-center
+        a(href="#")
+          img(src="./images/#{img}", alt="")
+    .large-17.columns
+      a(href="#").news__title Новогодний бум: почему мы спешим купить жилье перед праздником?
+      .row.columns.news__date
+        |30 ноября 2016 г. /  
+        a.news__live(href="#") ВТОРИЧНОЕ ЖИЛЬЕ, ЭТО ИНТЕРЕСНО!
+        include ../common/_views
+      p В конце года мир сходит с ума. Вернее, его сводят с ума декабрь, мандаринки, праздничные распродажи и Дед Мороз с Санта-Клаусом. Мы подводим итоги, доделываем важные дела, строим планы.  
+      .row.columns
+        a.button.news__btn(href="#") Читать далее
+        .news__soc
+          include ../common/_soc
+    .columns 
+      hr      

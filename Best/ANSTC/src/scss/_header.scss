@@ -1,0 +1,29 @@
+.header {
+    &__toggle {
+        button {
+            width: rem-calc(15);
+            outline: none;
+            margin-top: rem-calc(4);
+            margin-bottom: rem-calc(10);
+
+            &:hover {
+                &:after {
+                    box-shadow: 0 5px 0 $grey,0 10px 0 $grey;
+                    background: $grey;
+                }
+            }
+
+            &:after {
+                box-shadow: 0 5px 0 #fff,0 10px 0 #fff;
+            }
+        }
+    }
+    @include breakpoint(small only) {
+        &__soc {
+            top: rem-calc(10);
+            right: rem-calc(0);
+            width: auto;
+            position: absolute;
+        }
+    }
+}

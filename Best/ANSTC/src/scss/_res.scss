@@ -1,0 +1,40 @@
+.res {
+    width: rem-calc(55);
+    height: rem-calc(55);
+    display: inline-block;
+    border-radius: 50%;
+    background: $black;
+    text-align: center;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1;
+    float: left;
+    margin-right: rem-calc(7);
+
+    &_center {
+      margin-left: calc(50% - 90px);
+      margin-right: calc(50% - 90px);
+    }
+
+    &__num {
+        font-size: rem-calc(26);
+        padding-top: rem-calc(6);
+    }
+
+    &__square {
+      margin-bottom: rem-calc(2);
+        font-size: rem-calc(18);
+        padding-top: rem-calc(12);
+    }
+    &__floor {
+      font-size: rem-calc(14);
+      padding-top: rem-calc(17);
+    }
+
+    &__room {
+        padding-top: rem-calc(4);
+        text-transform: uppercase;
+        font-size: rem-calc(10);
+        font-weight: 300;
+    }
+}

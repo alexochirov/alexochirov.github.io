@@ -1,0 +1,7 @@
+mixin radio(id,text,strong)
+  .check
+    input.check__input(type="radio",id="#{id}",name="lay")
+    label(for="#{id}").check__label 
+      |#{text} 
+      if strong
+        strong= strong

@@ -1,0 +1,36 @@
+.meters {
+    float: left;
+    position: relative;
+    max-width: 50%;
+    width: rem-calc(95);
+    margin-top: rem-calc(5);
+
+    &:nth-child(1) {
+        input {
+            border-right: rem-calc(0);
+        }
+    }
+
+    &__input {
+        padding-top: rem-calc(0);
+        padding-bottom: rem-calc(0);
+        margin-bottom: rem-calc(0);
+        font-size: rem-calc(14);
+        font-weight: 300;
+        border: 1px solid #e5e5e5;
+        height: rem-calc(27);
+        padding-left: rem-calc(12);
+        padding-right: rem-calc(30);
+
+        &:focus {
+            border-color: #e5e5e5;
+        }
+    }
+
+    &__meter {
+        font-weight: 300;
+        position: absolute;
+        right: rem-calc(11);
+        top: rem-calc(1);
+    }
+}

@@ -1,0 +1,53 @@
+.news {
+    margin-bottom: rem-calc(40);
+    font-weight: 300;
+
+    &__live {
+        text-transform: uppercase;
+        color: #4480ac;
+    }
+
+    &__date {
+        line-height: rem-calc(28);
+        color: $grey;
+        font-size: rem-calc(11);
+    }
+
+    p {
+        letter-spacing: rem-calc(.6);
+    }
+
+    &__title {
+        font-weight: 500;
+        display: block;
+        margin-bottom: rem-calc(14);
+        font-size: rem-calc(18);
+    }
+
+    &__btn {
+        text-transform: uppercase;
+        font-size: rem-calc(13);
+        font-weight: 700;
+        width: 100%;
+        max-width: rem-calc(200);
+        background-color: #e3e5e6;
+        color: $black;
+    }
+
+    &__soc {
+        float: right;
+        padding-top: rem-calc(9);
+
+        .soc {
+            i {
+                color: $black;
+            }
+
+            &:hover {
+                i {
+                    color: $red;
+                }
+            }
+        }
+    }
+}

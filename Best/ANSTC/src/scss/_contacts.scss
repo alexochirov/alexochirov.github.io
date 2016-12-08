@@ -1,0 +1,87 @@
+.contacts {
+    padding-top: rem-calc(12);
+
+    &__num {
+        padding-top: rem-calc(10);
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: rem-calc(12);
+    }
+
+    &__tel {
+        font-size: rem-calc(18);
+        text-transform: uppercase;
+        font-weight: 500;
+        margin-top: rem-calc(9);
+        display: inline-block;
+    }
+
+    &__round {
+        width: rem-calc(32);
+        height: rem-calc(32);
+        display: inline-block;
+        border-radius: 50%;
+        text-align: center;
+        padding-top: rem-calc(2);
+        margin-right: rem-calc(10);
+        border: rem-calc(1px) solid #daddde;
+
+        i {
+            color: $red;
+        }
+    }
+
+    &__form {
+        position: relative;
+    }
+
+    &__search {
+        color: $grey;
+        font-weight: 500;
+        font-size: rem-calc(18);
+        border: 0;
+        border-left: rem-calc(1) solid #e5e5e5;
+        padding: rem-calc(18) rem-calc(48) rem-calc(18) rem-calc(18);
+        height: rem-calc(59);
+        margin-bottom: rem-calc(12);
+
+        &:active,
+        &:focus {
+            border: 0;
+            border-left: rem-calc(1) solid #e5e5e5;
+        }
+
+        &::-webkit-input-placeholder {
+            color: #e5e5e5;
+        }
+
+        &::-moz-placeholder {
+            color: #e5e5e5;
+        }
+
+        &:-moz-placeholder {
+            color: #e5e5e5;
+        }
+
+        &:-ms-input-placeholder {
+            color: #e5e5e5;
+        }
+    }
+
+    &__submit {
+        position: absolute;
+        right: rem-calc(26);
+        top: rem-calc(16);
+        font-size: rem-calc(26);
+
+        &:hover {
+            color: $red;
+        }
+    }
+    @include breakpoint(small only) {
+        &__tel {
+            line-height: 1.9;
+            font-size: rem-calc(15);
+        }
+    }
+}

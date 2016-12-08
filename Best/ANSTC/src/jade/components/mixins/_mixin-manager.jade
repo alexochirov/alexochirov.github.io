@@ -1,0 +1,18 @@
+mixin manager(text,absolute)
+  .manager.text-center(class=typeof absolute === "undefined" ? "" : "manager_absolute")
+    div
+      .manager__img
+        img(src="./images/elene.png", alt="")       
+    div
+      br
+      a.manager__link(href="#") Царева Светлана Петровна     
+    p
+      span.manager__know= text
+    p
+      a.manager__tel(href="#") +7 (495) 577-57-57  
+    form(action="#")
+      input(type="text").manager__input
+      label.manager__label Вы можете оставить свой номер телефона, я перезвоню в течении 5&nbsp;минут
+      button(type="submit").manager__submit 
+        i.fa.fa-phone
+        |Перезвоните мне  

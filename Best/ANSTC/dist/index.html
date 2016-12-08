@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+  <head>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="copyright" content="Создание сайтов - Cetera Labs, www.cetera.ru, 2016">
+    <meta name="author" content="Cetera Labs, http://www.cetera.ru/, создание сайтов, поддержка сайтов, продвижение сайтов">
+    <meta name="cmsmagazine" content="f21b68cb09efe1a7161ca2caaacaf749">
+    <title>Cetera Labs WireFrames</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript">window.Modernizr=function(e,t,n){function r(e){b.cssText=e}function o(e,t){return r(S.join(e+";")+(t||""))}function a(e,t){return typeof e===t}function i(e,t){return!!~(""+e).indexOf(t)}function c(e,t){for(var r in e){var o=e[r];if(!i(o,"-")&&b[o]!==n)return"pfx"!=t||o}return!1}function s(e,t,r){for(var o in e){var i=t[e[o]];if(i!==n)return r===!1?e[o]:a(i,"function")?i.bind(r||t):i}return!1}function u(e,t,n){var r=e.charAt(0).toUpperCase()+e.slice(1),o=(e+" "+k.join(r+" ")+r).split(" ");return a(t,"string")||a(t,"undefined")?c(o,t):(o=(e+" "+T.join(r+" ")+r).split(" "),s(o,t,n))}function l(){p.input=function(n){for(var r=0,o=n.length;r<o;r++)j[n[r]]=!!(n[r]in E);return j.list&&(j.list=!(!t.createElement("datalist")||!e.HTMLDataListElement)),j}("autocomplete autofocus list placeholder max min multiple pattern required step".split(" ")),p.inputtypes=function(e){for(var r,o,a,i=0,c=e.length;i<c;i++)E.setAttribute("type",o=e[i]),r="text"!==E.type,r&&(E.value=x,E.style.cssText="position:absolute;visibility:hidden;",/^range$/.test(o)&&E.style.WebkitAppearance!==n?(g.appendChild(E),a=t.defaultView,r=a.getComputedStyle&&"textfield"!==a.getComputedStyle(E,null).WebkitAppearance&&0!==E.offsetHeight,g.removeChild(E)):/^(search|tel)$/.test(o)||(r=/^(url|email)$/.test(o)?E.checkValidity&&E.checkValidity()===!1:E.value!=x)),P[e[i]]=!!r;return P}("search tel url email datetime date month week time datetime-local number range color".split(" "))}var d,f,m="2.8.3",p={},h=!0,g=t.documentElement,v="modernizr",y=t.createElement(v),b=y.style,E=t.createElement("input"),x=":)",w={}.toString,S=" -webkit- -moz- -o- -ms- ".split(" "),C="Webkit Moz O ms",k=C.split(" "),T=C.toLowerCase().split(" "),N={svg:"http://www.w3.org/2000/svg"},M={},P={},j={},$=[],D=$.slice,F=function(e,n,r,o){var a,i,c,s,u=t.createElement("div"),l=t.body,d=l||t.createElement("body");if(parseInt(r,10))for(;r--;)c=t.createElement("div"),c.id=o?o[r]:v+(r+1),u.appendChild(c);return a=["&#173;",'<style id="s',v,'">',e,"</style>"].join(""),u.id=v,(l?u:d).innerHTML+=a,d.appendChild(u),l||(d.style.background="",d.style.overflow="hidden",s=g.style.overflow,g.style.overflow="hidden",g.appendChild(d)),i=n(u,e),l?u.parentNode.removeChild(u):(d.parentNode.removeChild(d),g.style.overflow=s),!!i},z=function(t){var n=e.matchMedia||e.msMatchMedia;if(n)return n(t)&&n(t).matches||!1;var r;return F("@media "+t+" { #"+v+" { position: absolute; } }",function(t){r="absolute"==(e.getComputedStyle?getComputedStyle(t,null):t.currentStyle).position}),r},A=function(){function e(e,o){o=o||t.createElement(r[e]||"div"),e="on"+e;var i=e in o;return i||(o.setAttribute||(o=t.createElement("div")),o.setAttribute&&o.removeAttribute&&(o.setAttribute(e,""),i=a(o[e],"function"),a(o[e],"undefined")||(o[e]=n),o.removeAttribute(e))),o=null,i}var r={select:"input",change:"input",submit:"form",reset:"form",error:"img",load:"img",abort:"img"};return e}(),L={}.hasOwnProperty;f=a(L,"undefined")||a(L.call,"undefined")?function(e,t){return t in e&&a(e.constructor.prototype[t],"undefined")}:function(e,t){return L.call(e,t)},Function.prototype.bind||(Function.prototype.bind=function(e){var t=this;if("function"!=typeof t)throw new TypeError;var n=D.call(arguments,1),r=function(){if(this instanceof r){var o=function(){};o.prototype=t.prototype;var a=new o,i=t.apply(a,n.concat(D.call(arguments)));return Object(i)===i?i:a}return t.apply(e,n.concat(D.call(arguments)))};return r}),M.flexbox=function(){return u("flexWrap")},M.flexboxlegacy=function(){return u("boxDirection")},M.canvas=function(){var e=t.createElement("canvas");return!(!e.getContext||!e.getContext("2d"))},M.canvastext=function(){return!(!p.canvas||!a(t.createElement("canvas").getContext("2d").fillText,"function"))},M.webgl=function(){return!!e.WebGLRenderingContext},M.touch=function(){var n;return"ontouchstart"in e||e.DocumentTouch&&t instanceof DocumentTouch?n=!0:F(["@media (",S.join("touch-enabled),("),v,")","{#modernizr{top:9px;position:absolute}}"].join(""),function(e){n=9===e.offsetTop}),n},M.geolocation=function(){return"geolocation"in navigator},M.postmessage=function(){return!!e.postMessage},M.websqldatabase=function(){return!!e.openDatabase},M.indexedDB=function(){return!!u("indexedDB",e)},M.hashchange=function(){return A("hashchange",e)&&(t.documentMode===n||t.documentMode>7)},M.history=function(){return!(!e.history||!history.pushState)},M.draganddrop=function(){var e=t.createElement("div");return"draggable"in e||"ondragstart"in e&&"ondrop"in e},M.websockets=function(){return"WebSocket"in e||"MozWebSocket"in e},M.rgba=function(){return r("background-color:rgba(150,255,150,.5)"),i(b.backgroundColor,"rgba")},M.hsla=function(){return r("background-color:hsla(120,40%,100%,.5)"),i(b.backgroundColor,"rgba")||i(b.backgroundColor,"hsla")},M.multiplebgs=function(){return r("background:url(https://),url(https://),red url(https://)"),/(url\s*\(.*?){3}/.test(b.background)},M.backgroundsize=function(){return u("backgroundSize")},M.borderimage=function(){return u("borderImage")},M.borderradius=function(){return u("borderRadius")},M.boxshadow=function(){return u("boxShadow")},M.textshadow=function(){return""===t.createElement("div").style.textShadow},M.opacity=function(){return o("opacity:.55"),/^0.55$/.test(b.opacity)},M.cssanimations=function(){return u("animationName")},M.csscolumns=function(){return u("columnCount")},M.cssgradients=function(){var e="background-image:",t="gradient(linear,left top,right bottom,from(#9f9),to(white));",n="linear-gradient(left top,#9f9, white);";return r((e+"-webkit- ".split(" ").join(t+e)+S.join(n+e)).slice(0,-e.length)),i(b.backgroundImage,"gradient")},M.cssreflections=function(){return u("boxReflect")},M.csstransforms=function(){return!!u("transform")},M.csstransforms3d=function(){var e=!!u("perspective");return e&&"webkitPerspective"in g.style&&F("@media (transform-3d),(-webkit-transform-3d){#modernizr{left:9px;position:absolute;height:3px;}}",function(t,n){e=9===t.offsetLeft&&3===t.offsetHeight}),e},M.csstransitions=function(){return u("transition")},M.fontface=function(){var e;return F('@font-face {font-family:"font";src:url("https://")}',function(n,r){var o=t.getElementById("smodernizr"),a=o.sheet||o.styleSheet,i=a?a.cssRules&&a.cssRules[0]?a.cssRules[0].cssText:a.cssText||"":"";e=/src/i.test(i)&&0===i.indexOf(r.split(" ")[0])}),e},M.generatedcontent=function(){var e;return F(["#",v,"{font:0/0 a}#",v,':after{content:"',x,'";visibility:hidden;font:3px/1 a}'].join(""),function(t){e=t.offsetHeight>=3}),e},M.video=function(){var e=t.createElement("video"),n=!1;try{(n=!!e.canPlayType)&&(n=new Boolean(n),n.ogg=e.canPlayType('video/ogg; codecs="theora"').replace(/^no$/,""),n.h264=e.canPlayType('video/mp4; codecs="avc1.42E01E"').replace(/^no$/,""),n.webm=e.canPlayType('video/webm; codecs="vp8, vorbis"').replace(/^no$/,""))}catch(e){}return n},M.audio=function(){var e=t.createElement("audio"),n=!1;try{(n=!!e.canPlayType)&&(n=new Boolean(n),n.ogg=e.canPlayType('audio/ogg; codecs="vorbis"').replace(/^no$/,""),n.mp3=e.canPlayType("audio/mpeg;").replace(/^no$/,""),n.wav=e.canPlayType('audio/wav; codecs="1"').replace(/^no$/,""),n.m4a=(e.canPlayType("audio/x-m4a;")||e.canPlayType("audio/aac;")).replace(/^no$/,""))}catch(e){}return n},M.localstorage=function(){try{return localStorage.setItem(v,v),localStorage.removeItem(v),!0}catch(e){return!1}},M.sessionstorage=function(){try{return sessionStorage.setItem(v,v),sessionStorage.removeItem(v),!0}catch(e){return!1}},M.webworkers=function(){return!!e.Worker},M.applicationcache=function(){return!!e.applicationCache},M.svg=function(){return!!t.createElementNS&&!!t.createElementNS(N.svg,"svg").createSVGRect},M.inlinesvg=function(){var e=t.createElement("div");return e.innerHTML="<svg/>",(e.firstChild&&e.firstChild.namespaceURI)==N.svg},M.smil=function(){return!!t.createElementNS&&/SVGAnimate/.test(w.call(t.createElementNS(N.svg,"animate")))},M.svgclippaths=function(){return!!t.createElementNS&&/SVGClipPath/.test(w.call(t.createElementNS(N.svg,"clipPath")))};for(var H in M)f(M,H)&&(d=H.toLowerCase(),p[d]=M[H](),$.push((p[d]?"":"no-")+d));return p.input||l(),p.addTest=function(e,t){if("object"==typeof e)for(var r in e)f(e,r)&&p.addTest(r,e[r]);else{if(e=e.toLowerCase(),p[e]!==n)return p;t="function"==typeof t?t():t,"undefined"!=typeof h&&h&&(g.className+=" "+(t?"":"no-")+e),p[e]=t}return p},r(""),y=E=null,function(e,t){function n(e,t){var n=e.createElement("p"),r=e.getElementsByTagName("head")[0]||e.documentElement;return n.innerHTML="x<style>"+t+"</style>",r.insertBefore(n.lastChild,r.firstChild)}function r(){var e=y.elements;return"string"==typeof e?e.split(" "):e}function o(e){var t=v[e[h]];return t||(t={},g++,e[h]=g,v[g]=t),t}function a(e,n,r){if(n||(n=t),l)return n.createElement(e);r||(r=o(n));var a;return a=r.cache[e]?r.cache[e].cloneNode():p.test(e)?(r.cache[e]=r.createElem(e)).cloneNode():r.createElem(e),!a.canHaveChildren||m.test(e)||a.tagUrn?a:r.frag.appendChild(a)}function i(e,n){if(e||(e=t),l)return e.createDocumentFragment();n=n||o(e);for(var a=n.frag.cloneNode(),i=0,c=r(),s=c.length;i<s;i++)a.createElement(c[i]);return a}function c(e,t){t.cache||(t.cache={},t.createElem=e.createElement,t.createFrag=e.createDocumentFragment,t.frag=t.createFrag()),e.createElement=function(n){return y.shivMethods?a(n,e,t):t.createElem(n)},e.createDocumentFragment=Function("h,f","return function(){var n=f.cloneNode(),c=n.createElement;h.shivMethods&&("+r().join().replace(/[\w\-]+/g,function(e){return t.createElem(e),t.frag.createElement(e),'c("'+e+'")'})+");return n}")(y,t.frag)}function s(e){e||(e=t);var r=o(e);return!y.shivCSS||u||r.hasCSS||(r.hasCSS=!!n(e,"article,aside,dialog,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}mark{background:#FF0;color:#000}template{display:none}")),l||c(e,r),e}var u,l,d="3.7.0",f=e.html5||{},m=/^<|^(?:button|map|select|textarea|object|iframe|option|optgroup)$/i,p=/^(?:a|b|code|div|fieldset|h1|h2|h3|h4|h5|h6|i|label|li|ol|p|q|span|strong|style|table|tbody|td|th|tr|ul)$/i,h="_html5shiv",g=0,v={};!function(){try{var e=t.createElement("a");e.innerHTML="<xyz></xyz>",u="hidden"in e,l=1==e.childNodes.length||function(){t.createElement("a");var e=t.createDocumentFragment();return"undefined"==typeof e.cloneNode||"undefined"==typeof e.createDocumentFragment||"undefined"==typeof e.createElement}()}catch(e){u=!0,l=!0}}();var y={elements:f.elements||"abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output progress section summary template time video",version:d,shivCSS:f.shivCSS!==!1,supportsUnknownElements:l,shivMethods:f.shivMethods!==!1,type:"default",shivDocument:s,createElement:a,createDocumentFragment:i};e.html5=y,s(t)}(this,t),p._version=m,p._prefixes=S,p._domPrefixes=T,p._cssomPrefixes=k,p.mq=z,p.hasEvent=A,p.testProp=function(e){return c([e])},p.testAllProps=u,p.testStyles=F,p.prefixed=function(e,t,n){return t?u(e,t,n):u(e,"pfx")},g.className=g.className.replace(/(^|\s)no-js(\s|$)/,"$1$2")+(h?" js "+$.join(" "):""),p}(this,this.document);
+    </script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="unit">
+        <div class="row">
+          <div class="medium-5 small-12 columns unit__city"><i class="fa fa-map-marker"></i>Город: 
+            <ul data-dropdown-menu class="dropdown menu">
+              <li><a href="#">Сахалин</a>
+                <ul class="menu">
+                  <li><a href="#">Москва</a></li>
+                  <li><a href="#">Cанкт-Петербург</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="large-14 medium-13 hide-for-small-only columns text-center large-text-left">
+            <ul class="category"> 
+              <li class="category__item"><a href="#" class="category__link">Акции</a></li>
+              <li class="category__item"><a href="#" class="category__link">Услуги</a></li>
+              <li class="category__item"><a href="#" class="category__link">Контакты</a></li>
+              <li class="category__item"><a href="#" class="category__link">Франшиза</a></li>
+              <li class="category__item"><a href="#" class="category__link">Блог</a></li>
+              <li class="category__item"><a href="#" class="category__link">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="large-5 medium-6 small-12 columns text-right"><a href="#" class="unit__user"><i class="fa fa-user"></i>Вход</a><span class="unit__pole">|</span><a href="#" class="unit__user">Регистрация  </a></div>
+        </div>
+      </div>
+      <div class="row contacts">
+        <div class="large-5 medium-8 small-12 columns"><a href="#"><img src="./images/logo.png" alt=""></a></div>
+        <div class="large-5 medium-8 small-12 columns contacts__num text-center">
+          <p>
+             
+            Звоните нам:<br>с 8:00 до 20:00
+          </p>
+        </div>
+        <div class="large-6 medium-8 columns small-14 text-left medium-text-right large-text-left"><a href="#" class="contacts__tel"><span class="contacts__round"> <i class="fa fa-phone"></i></span>8 (3452) 51-22-22  </a></div>
+        <div class="large-8 columns medium-12 small-10 contacts__form">
+          <form action="#">
+            <input type="text" placeholder="Поиск по сайту" class="contacts__search">
+            <button type="submit" class="contacts__submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="cart">
+      <div class="row">
+        <div class="large-20 medium-19 columns"><span data-responsive-toggle="responsive-menu" data-hide-for="medium" class="header__toggle">
+            <button type="button" data-toggle class="menu-icon"></button></span>
+          <ul id="responsive-menu" class="options text-center medium-text-left">
+            <li class="options__item"><a href="#" class="options__link">Вторичное жилье</a></li>
+            <li class="options__item"><a href="#" class="options__link">Новостройки</a></li>
+            <li class="options__item"><a href="#" class="options__link">Загородная</a></li>
+            <li class="options__item"><a href="#" class="options__link">Аренда</a></li>
+            <li class="options__item"><a href="#" class="options__link">Коммерческая</a></li>
+            <li class="options__item"><a href="#" class="options__link">Ипотека</a></li>
+            <li class="options__item"><a href="#" class="options__link">Продавцу</a></li>
+            <li class="options__item"><a href="#" class="options__link">Биржа недвижимости</a></li>
+          </ul>
+        </div>
+        <div class="large-4 medium-5 columns text-right header__soc"><a href="#" class="soc"><i class="fa fa-vk fa-fw"></i></a><a href="#" class="soc"><i class="fa fa-facebook fa-fw"></i></a><a href="#" class="soc"><i class="fa fa-odnoklassniki fa-fw"></i></a><a href="#" class="soc"><i class="fa fa-instagram fa-fw"></i></a></div>
+      </div>
+    </div>
+        <div class="row columns">
+          <h1 class="room">Однокомнатная квартира с ремонтом и мебелью</h1>
+        </div>
+    <div class="row plan">
+      <div class="large-12 medium-12 columns plan__map text-center medium-text-left"><i class="fa fa-map-marker"></i>ул. 30 лет Победы, д. 126 (4,9 км от центра города)</div>
+      <div class="medium-12 columns text-center medium-text-right"><span class="plan__font"><i class="fa fa-bar-chart"></i><a href="#" class="plan__add">К сравнению  </a></span><span class="plan__font"><i class="fa fa-heart"></i><a href="#" class="plan__add">В избранное </a></span><span class="plan__font"> <a href="#" class="plan__offer">Предложить свою цену  </a></span></div>
+    </div>
+    <div class="row columns">
+      <ul data-tabs id="example-tabs" class="tabs">
+        <li class="tabs-title is-active">     <a href="#panel1">Фотографии (12)</a></li>
+        <li class="tabs-title"> <a href="#panel2">Планировка (1)</a></li>
+        <li class="tabs-title"> <a href="#panel3">Карта (1)</a></li>
+      </ul>
+      <div data-tabs-content="example-tabs" class="tabs-content">  
+        <div id="panel1" class="tabs-panel is-active">
+          <div class="row">
+            <div class="large-18 medium-15 columns">
+              <div class="flat">
+                <div class="flat__slide">
+                  <div href="./images/img1.png" class="flat__icon fancybox"></div><a href="./images/img1.png" class="fancybox"><img src="./images/img1.png" alt=""></a>
+                </div>
+                <div class="flat__slide">
+                  <div href="./images/img1.png" class="flat__icon fancybox"></div><a href="./images/img1.png" class="fancybox"><img src="./images/img1.png" alt=""></a>
+                </div>
+                <div class="flat__slide">
+                  <div href="./images/img1.png" class="flat__icon fancybox"></div><a href="./images/img1.png" class="fancybox"><img src="./images/img1.png" alt=""></a>
+                </div>
+                <div class="flat__slide">
+                  <div href="./images/img1.png" class="flat__icon fancybox"></div><a href="./images/img1.png" class="fancybox"><img src="./images/img1.png" alt=""></a>
+                </div>
+                <div class="flat__slide">
+                  <div href="./images/img1.png" class="flat__icon fancybox"></div><a href="./images/img1.png" class="fancybox"><img src="./images/img1.png" alt=""></a>
+                </div>
+                <div class="flat__slide">
+                  <div href="./images/img1.png" class="flat__icon fancybox"></div><a href="./images/img1.png" class="fancybox"><img src="./images/img1.png" alt=""></a>
+                </div>
+                <div class="flat__slide">
+                  <div href="./images/img1.png" class="flat__icon fancybox"></div><a href="./images/img1.png" class="fancybox"><img src="./images/img1.png" alt=""></a>
+                </div>
+                <div class="flat__slide">
+                  <div href="./images/img1.png" class="flat__icon fancybox"></div><a href="./images/img1.png" class="fancybox"><img src="./images/img1.png" alt=""></a>
+                </div>
+                <div class="flat__slide">
+                  <div href="./images/img1.png" class="flat__icon fancybox"></div><a href="./images/img1.png" class="fancybox"><img src="./images/img1.png" alt=""></a>
+                </div>
+                <div class="flat__slide">
+                  <div href="./images/img1.png" class="flat__icon fancybox"></div><a href="./images/img1.png" class="fancybox"><img src="./images/img1.png" alt=""></a>
+                </div>
+                <div class="flat__slide">
+                  <div href="./images/img1.png" class="flat__icon fancybox"></div><a href="./images/img1.png" class="fancybox"><img src="./images/img1.png" alt=""></a>
+                </div>
+                <div class="flat__slide">
+                  <div href="./images/img1.png" class="flat__icon fancybox"></div><a href="./images/img1.png" class="fancybox"><img src="./images/img1.png" alt=""></a>
+                </div>
+              </div>
+            </div>
+            <div class="large-6 medium-9 columns feature">
+              <div class="row columns feature__top">
+                <div class="res"> 
+                  <div class="res__num">2</div>
+                  <div class="res__room">комн</div>
+                </div>
+                <div class="res res_center">
+                  <div class="res__square">165</div>
+                  <div class="res__room">m2</div>
+                </div>
+                <div class="res"> 
+                  <div class="res__floor">10\10</div>
+                  <div class="res__room">этаж</div>
+                </div>
+              </div>
+              <p>Шикарная квартира в центре города, частично мебилированная, во всех комнатах евро ремонт, интернет. Индивидуальное отопление.  </p>
+              <ul class="cont">
+                <li class="cont__item"><span class="cont__span">Код объекта:  </span><span class="cont__page">1362072 </span></li>
+                <li class="cont__item"><span class="cont__span">Высота потолков:  </span><span class="cont__page">2.65 м     </span></li>
+                <li class="cont__item"><span class="cont__span">Серия:  </span><span class="cont__page">ИНД</span></li>
+                <li class="cont__item"><span class="cont__span">Ремонт:  </span><span class="cont__page">Косметический  </span></li>
+                <li class="cont__item"><span class="cont__span">Окна:  </span><span class="cont__page">Пластик  </span></li>
+                <li class="cont__item"><span class="cont__span">Год постройки:  </span><span class="cont__page">1985  </span></li>
+                <li class="cont__item"><span class="cont__span">Цена за м2:  </span><span class="cont__page">999 000 руб.</span></li>
+              </ul><a href="#" class="feature__bank">В ипотеку: &nbsp;&nbsp;&nbsp;14 557 руб./мес</a>
+              <ul class="cont cont_red">
+                <li class="cont__item"><span class="cont__span">Цена  </span><span class="cont__page"><span class="cont__cross">2 999 000 руб.</span><br>2 950 000 руб.</span></li>
+              </ul><a href="#" class="button vision">Записаться на просмотр    </a>
+            </div>
+          </div>
+        </div>
+        <div id="panel2" class="tabs-panel">Планировка</div>
+        <div id="panel3" class="tabs-panel">Карта</div>
+      </div>
+      <div class="large-18 medium-15 columns desc">
+        <h3 class="desc__head">Описание квартиры:</h3>
+        <p>Компания начала работу на рынке телекоммуникаций в 2008 году. Сегодня СолнцеТелеком специализируется на предоставлении услуг доступа в Интернет по выделенным линиям. Главное направление деятельности – развитие собственной волоконно-оптической сети для подключения офисов и жилых домов. Корпоративным клиентам мы предлагаем организацию выделенных интернет-каналов, предоставляем комплекс самых востребованных телекоммуникационных услуг и IT сервисов. В зоне обслуживания мы обеспечиваем оперативное подключение и наиболее экономичные в корпоративном сегменте тарифы.</p>
+        <p>Квартира в 14-ти этажном кирпичном доме. 2 лифта грузовой и пассажирский. Свежий косметический ремонт: все трубы заменены; батареи заменены на евро-радиаторы; два радиатора установили на утепленный балкон с 3-ым пластиковым стекло-пакетом; межкомнатные двери так же новые; линолеум, виниловые обои, натяжные потолки с точечными светильниками. Имеется кладовая в прихожей, которую можно использовать как гардеробную. Остается кухонный гарнитур, плита, шкаф-купе и душевая кабина (новая, на гарантии). В 2009 г. управляющей компанией проводились работы по замене водонагревателя, а в 2011 ремонт кровли. Две парковочные площадки. Отличная транспортная развязка, все рядом.</p>
+        <p>Главное направление деятельности – развитие собственной волоконно-оптической сети для подключения офисов и жилых домов. Корпоративным клиентам мы предлагаем организацию выделенных интернет-каналов, предоставляем комплекс самых востребованных телекоммуникационных услуг и IT сервисов. </p>
+      </div>
+      <div class="large-6 medium-9 columns"> 
+            <div class="manager text-center">
+              <div>
+                <div class="manager__img"><img src="./images/elene.png" alt=""></div>
+              </div>
+              <div><br><a href="#" class="manager__link">Царева Светлана Петровна     </a></div>
+              <p><span class="manager__know">Знает о квартире все</span></p>
+              <p><a href="#" class="manager__tel">+7 (495) 577-57-57  </a></p>
+              <form action="#">
+                <input type="text" class="manager__input">
+                <label class="manager__label">Вы можете оставить свой номер телефона, я перезвоню в течении 5&nbsp;минут</label>
+                <button type="submit" class="manager__submit"> <i class="fa fa-phone"></i>Перезвоните мне  </button>
+              </form>
+            </div>
+      </div>
+    </div>
+        <div class="row columns text-center">
+          <h2 class="calc">Рассчитайте ваш платеж по ипотеке</h2>
+        </div>
+    <div class="deposite">
+      <form action="#">
+        <div class="row">
+          <div class="large-19 columns">
+            <div class="row large-up-4 medium-up-2 small-up-1">
+              <div class="columns">
+                <label for="1" class="deposite__label">Стоимость недвижимости
+                  <input type="text" placeholder="1 950 000" class="deposite__input">
+                  <div class="deposite__rub">руб.</div>
+                </label>
+              </div>
+              <div class="columns">
+                <label for="1" class="deposite__label">Первоначальный взнос *
+                  <input type="text" placeholder="877 500" class="deposite__input deposite__input_mini">
+                  <div class="deposite__rub deposite__rub_else">руб.</div>
+                  <div class="deposite__percent">45%</div>
+                </label>
+              </div>
+              <div class="columns">
+                <label for="1" class="deposite__label">Сумма кредита
+                  <input type="text" placeholder="1 072 000" class="deposite__input">
+                  <div class="deposite__rub">руб.</div>
+                </label>
+              </div>
+              <div class="columns">
+                <label for="1" class="deposite__label">Средний доход в месяц *
+                  <input type="text" placeholder="40 000" class="deposite__input">
+                  <div class="deposite__rub">руб.</div>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="large-2 medium-12 columns">
+            <label for="1" class="deposite__label">Срок *
+              <input type="text" class="deposite__input">
+            </label>
+          </div>
+          <div class="large-3 medium-12 end columns deposite__eval"> <a href="#" class="button vision">Рассчитать</a></div>
+        </div>
+      </form>
+    </div>
+    <div class="row columns program">
+      <p class="program__info text-center">Выберите программу для одобрения:</p>
+      <div class="table-scroll">
+        <table>
+          <tr class="program__head">
+            <th class="program__th program__th_first"><span class="program__link">
+                 
+                Банк<i class="fa fa-caret-down"></i></span></th>
+            <th class="program__th"> <span class="program__link">
+                 
+                Название программы<i class="fa fa-caret-down"></i></span></th>
+            <th class="program__th program__th_count"><span class="program__link">
+                 
+                Ставка <br>банка<i class="fa fa-caret-down"></i></span></th>
+            <th class="program__th program__th_count"><span class="program__link">
+                 
+                Ставка<br>c нами<i class="fa fa-caret-down"></i></span></th>
+            <th class="program__th program__th_profit"><span class="program__link">
+                 
+                Ваша выгода<i class="fa fa-caret-down"></i></span></th>
+            <th class="program__th program__th_last"></th>
+          </tr>
+          <tr class="program__tr">
+            <td class="program__img"><span class="program__logo text-center"><img src="./images/bank1.png" alt=""></span>Альфа Банк </td>
+            <td>Сбербанк. Военная ипотека</td>
+            <td>12,5%</td>
+            <td>12,5%</td>
+            <td>12,5%</td>
+            <td> <a href="#" class="button vision">Подать заявку</a></td>
+          </tr>
+          <tr class="program__tr">
+            <td class="program__img"><span class="program__logo text-center"><img src="./images/bank2.png" alt=""></span>Сбербанк России</td>
+            <td>Ипотечный кредит</td>
+            <td>12,5%</td>
+            <td>12,5%</td>
+            <td>12,5%</td>
+            <td> <a href="#" class="button vision">Подать заявку</a></td>
+          </tr>
+          <tr class="program__tr">
+            <td class="program__img"><span class="program__logo text-center"><img src="./images/bank3.png" alt=""></span>Открытие</td>
+            <td>Опция «Абсолютная ставка»</td>
+            <td>12,5%</td>
+            <td>12,5%</td>
+            <td>12,5%</td>
+            <td> <a href="#" class="button vision">Подать заявку</a></td>
+          </tr>
+          <tr class="program__tr">
+            <td class="program__img"><span class="program__logo text-center"><img src="./images/bank4.png" alt=""></span>Тинькофф Банк</td>
+            <td>Ипотечный кредит</td>
+            <td>12,5%</td>
+            <td>12,5%</td>
+            <td>12,5%</td>
+            <td> <a href="#" class="button vision">Подать заявку</a></td>
+          </tr>
+          <tr class="program__tr">
+            <td class="program__img"><span class="program__logo text-center"><img src="./images/bank5.png" alt=""></span>Банк Таврика</td>
+            <td>Ипотечный кредит</td>
+            <td>12,5%</td>
+            <td>12,5%</td>
+            <td>12,5%</td>
+            <td> <a href="#" class="button vision">Подать заявку</a></td>
+          </tr>
+          <tr class="program__tr">
+            <td class="program__img"><span class="program__logo text-center"><img src="./images/bank6.png" alt=""></span>Бин Банк</td>
+            <td>Ипотечный кредит</td>
+            <td>12,5%</td>
+            <td>12,5%</td>
+            <td>12,5%</td>
+            <td> <a href="#" class="button vision">Подать заявку</a></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+        <div class="row">
+          <div class="large-10 medium-16 columns medium-centered"><a href="#" class="denote text-center"> <i class="fa fa-plus"></i>Показать еще 27 программ</a></div>
+        </div>
+        <div class="row columns text-center">
+          <h2 class="calc">Расположение и инфраструктура</h2>
+        </div>
+    <p>
+      <script type="text/javascript" charset="utf-8" async="" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=6tTSsU2NDjMh9fwfNx1flwj2HH8saMWg&amp;width=100%25&amp;height=451&amp;lang=ru_UA&amp;sourceType=constructor&amp;scroll=false"></script>
+    </p>
+    <div class="row medium-up-6 small-up-3 text-center">
+      <div class="columns marker">
+        <div style="background-image:url(./images/marker1.png)" class="marker__img"></div>
+        <p>Школа</p>
+      </div>
+      <div class="columns marker">
+        <div style="background-image:url(./images/marker2.png)" class="marker__img"></div>
+        <p>Детский сад</p>
+      </div>
+      <div class="columns marker">
+        <div style="background-image:url(./images/marker3.png)" class="marker__img"></div>
+        <p>Театр, музей</p>
+      </div>
+      <div class="columns marker">
+        <div style="background-image:url(./images/marker4.png)" class="marker__img"></div>
+        <p>Кинотеатр</p>
+      </div>
+      <div class="columns marker">
+        <div style="background-image:url(./images/marker5.png)" class="marker__img"></div>
+        <p>Парк, сквер</p>
+      </div>
+      <div class="columns marker">
+        <div style="background-image:url(./images/marker6.png)" class="marker__img"></div>
+        <p>Торговый центр</p>
+      </div>
+    </div>
+        <div class="row columns text-center">
+          <h2 class="calc">Похожие квартиры</h2>
+        </div>
+    <div data-equalizer data-equalize-by-row="true" class="row large-up-3 medium-up-2 small-up-1">
+          <div class="columns">
+            <div data-equalizer-watch class="apartment">
+              <div class="apartment__img text-center"><span class="apartment__lone apartment__lone_credit"><a href="#"><img src="./images/apa1.png" alt=""></a></span></div>
+              <div class="apartment__body">
+                <div class="apartment__signs">
+                  <div class="res"> 
+                    <div class="res__num">2</div>
+                    <div class="res__room">комн</div>
+                  </div>
+                  <div class="res">
+                    <div class="res__square">165</div>
+                    <div class="res__room">m2</div>
+                  </div>
+                  <div class="res"> 
+                    <div class="res__floor">10\10</div>
+                    <div class="res__room">этаж</div>
+                  </div>
+                </div>
+                <div><a href="#" class="apartment__link">Уютная квартира в центре города</a></div>
+                <p>Шикарная квартира в центре города, частично мебилированная, евро ремонт     </p>
+                <ul class="cont">
+                  <li class="cont__item"><span class="cont__span">Ремонт:  </span><span class="cont__page">Евроремонт </span></li>
+                  <li class="cont__item"><span class="cont__span">Окна:  </span><span class="cont__page">Пластик</span></li>
+                  <li class="cont__item"><span class="cont__span">Цена за м2:  </span><span class="cont__page">999 000 руб.</span></li>
+                </ul>
+                <div class="apartment__geo"><i class="fa fa-map-marker"></i>Лесобаза, ул. Домостроителей, д. 36</div>
+                <div class="row columns">
+                  <div class="apartment__price">2 950 000 <span class="apartment__rub">руб.</span></div><a href="#" class="apartment__buy">Купить</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="columns">
+            <div data-equalizer-watch class="apartment">
+              <div class="apartment__img text-center"><span class="apartment__lone"><a href="#"><img src="./images/apa2.png" alt=""></a></span></div>
+              <div class="apartment__body">
+                <div class="apartment__signs">
+                  <div class="res"> 
+                    <div class="res__num">2</div>
+                    <div class="res__room">комн</div>
+                  </div>
+                  <div class="res">
+                    <div class="res__square">165</div>
+                    <div class="res__room">m2</div>
+                  </div>
+                  <div class="res"> 
+                    <div class="res__floor">10\10</div>
+                    <div class="res__room">этаж</div>
+                  </div>
+                </div>
+                <div><a href="#" class="apartment__link">Уютная квартира в центре города</a></div>
+                <p>Шикарная квартира в центре города, частично мебилированная, евро ремонт     </p>
+                <ul class="cont">
+                  <li class="cont__item"><span class="cont__span">Ремонт:  </span><span class="cont__page">Евроремонт </span></li>
+                  <li class="cont__item"><span class="cont__span">Окна:  </span><span class="cont__page">Пластик</span></li>
+                  <li class="cont__item"><span class="cont__span">Цена за м2:  </span><span class="cont__page">999 000 руб.</span></li>
+                </ul>
+                <div class="apartment__geo"><i class="fa fa-map-marker"></i>Лесобаза, ул. Домостроителей, д. 36</div>
+                <div class="row columns">
+                  <div class="apartment__price">2 950 000 <span class="apartment__rub">руб.</span></div><a href="#" class="apartment__buy">Купить</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="columns">
+            <div data-equalizer-watch class="apartment">
+              <div class="apartment__img text-center"><span class="apartment__lone apartment__lone_credit"><a href="#"><img src="./images/apa3.png" alt=""></a></span></div>
+              <div class="apartment__body">
+                <div class="apartment__signs">
+                  <div class="res"> 
+                    <div class="res__num">2</div>
+                    <div class="res__room">комн</div>
+                  </div>
+                  <div class="res">
+                    <div class="res__square">165</div>
+                    <div class="res__room">m2</div>
+                  </div>
+                  <div class="res"> 
+                    <div class="res__floor">10\10</div>
+                    <div class="res__room">этаж</div>
+                  </div>
+                </div>
+                <div><a href="#" class="apartment__link">Уютная квартира в центре города</a></div>
+                <p>Шикарная квартира в центре города, частично мебилированная, евро ремонт     </p>
+                <ul class="cont">
+                  <li class="cont__item"><span class="cont__span">Ремонт:  </span><span class="cont__page">Евроремонт </span></li>
+                  <li class="cont__item"><span class="cont__span">Окна:  </span><span class="cont__page">Пластик</span></li>
+                  <li class="cont__item"><span class="cont__span">Цена за м2:  </span><span class="cont__page">999 000 руб.</span></li>
+                </ul>
+                <div class="apartment__geo"><i class="fa fa-map-marker"></i>Лесобаза, ул. Домостроителей, д. 36</div>
+                <div class="row columns">
+                  <div class="apartment__price">2 950 000 <span class="apartment__rub">руб.</span></div><a href="#" class="apartment__buy">Купить</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="columns">
+            <div data-equalizer-watch class="apartment">
+              <div class="apartment__img text-center"><span class="apartment__lone"><a href="#"><img src="./images/apa4.png" alt=""></a></span></div>
+              <div class="apartment__body">
+                <div class="apartment__signs">
+                  <div class="res"> 
+                    <div class="res__num">2</div>
+                    <div class="res__room">комн</div>
+                  </div>
+                  <div class="res">
+                    <div class="res__square">165</div>
+                    <div class="res__room">m2</div>
+                  </div>
+                  <div class="res"> 
+                    <div class="res__floor">10\10</div>
+                    <div class="res__room">этаж</div>
+                  </div>
+                </div>
+                <div><a href="#" class="apartment__link">Уютная квартира в центре города</a></div>
+                <p>Шикарная квартира в центре города, частично мебилированная, евро ремонт     </p>
+                <ul class="cont">
+                  <li class="cont__item"><span class="cont__span">Ремонт:  </span><span class="cont__page">Евроремонт </span></li>
+                  <li class="cont__item"><span class="cont__span">Окна:  </span><span class="cont__page">Пластик</span></li>
+                  <li class="cont__item"><span class="cont__span">Цена за м2:  </span><span class="cont__page">999 000 руб.</span></li>
+                </ul>
+                <div class="apartment__geo"><i class="fa fa-map-marker"></i>Лесобаза, ул. Домостроителей, д. 36</div>
+                <div class="row columns">
+                  <div class="apartment__price">2 950 000 <span class="apartment__rub">руб.</span></div><a href="#" class="apartment__buy">Купить</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="columns">
+            <div data-equalizer-watch class="apartment">
+              <div class="apartment__img text-center"><span class="apartment__lone"><a href="#"><img src="./images/apa5.png" alt=""></a></span></div>
+              <div class="apartment__body">
+                <div class="apartment__signs">
+                  <div class="res"> 
+                    <div class="res__num">2</div>
+                    <div class="res__room">комн</div>
+                  </div>
+                  <div class="res">
+                    <div class="res__square">165</div>
+                    <div class="res__room">m2</div>
+                  </div>
+                  <div class="res"> 
+                    <div class="res__floor">10\10</div>
+                    <div class="res__room">этаж</div>
+                  </div>
+                </div>
+                <div><a href="#" class="apartment__link">Уютная квартира в центре города</a></div>
+                <p>Шикарная квартира в центре города, частично мебилированная, евро ремонт     </p>
+                <ul class="cont">
+                  <li class="cont__item"><span class="cont__span">Ремонт:  </span><span class="cont__page">Евроремонт </span></li>
+                  <li class="cont__item"><span class="cont__span">Окна:  </span><span class="cont__page">Пластик</span></li>
+                  <li class="cont__item"><span class="cont__span">Цена за м2:  </span><span class="cont__page">999 000 руб.</span></li>
+                </ul>
+                <div class="apartment__geo"><i class="fa fa-map-marker"></i>Лесобаза, ул. Домостроителей, д. 36</div>
+                <div class="row columns">
+                  <div class="apartment__price">2 950 000 <span class="apartment__rub">руб.</span></div><a href="#" class="apartment__buy">Купить</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="columns">
+            <div data-equalizer-watch class="apartment">
+              <div class="apartment__img text-center"><span class="apartment__lone apartment__lone_credit"><a href="#"><img src="./images/apa6.png" alt=""></a></span></div>
+              <div class="apartment__body">
+                <div class="apartment__signs">
+                  <div class="res"> 
+                    <div class="res__num">2</div>
+                    <div class="res__room">комн</div>
+                  </div>
+                  <div class="res">
+                    <div class="res__square">165</div>
+                    <div class="res__room">m2</div>
+                  </div>
+                  <div class="res"> 
+                    <div class="res__floor">10\10</div>
+                    <div class="res__room">этаж</div>
+                  </div>
+                </div>
+                <div><a href="#" class="apartment__link">Уютная квартира в центре города</a></div>
+                <p>Шикарная квартира в центре города, частично мебилированная, евро ремонт     </p>
+                <ul class="cont">
+                  <li class="cont__item"><span class="cont__span">Ремонт:  </span><span class="cont__page">Евроремонт </span></li>
+                  <li class="cont__item"><span class="cont__span">Окна:  </span><span class="cont__page">Пластик</span></li>
+                  <li class="cont__item"><span class="cont__span">Цена за м2:  </span><span class="cont__page">999 000 руб.</span></li>
+                </ul>
+                <div class="apartment__geo"><i class="fa fa-map-marker"></i>Лесобаза, ул. Домостроителей, д. 36</div>
+                <div class="row columns">
+                  <div class="apartment__price">2 950 000 <span class="apartment__rub">руб.</span></div><a href="#" class="apartment__buy">Купить</a>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div class="advantages">
+          <div class="row columns text-center">
+            <h2 class="calc">Наши преимущества</h2>
+          </div>
+      <div class="row large-up-5 medium-up-3 small-up-2 text-center">
+        <div class="columns odds">
+          <p class="odds__circle text-center"><img src="./images/key.svg" alt=""></p>
+          <p>
+             
+            Оформить ипотеку <br>под ключ
+          </p>
+        </div>
+        <div class="columns odds">
+          <p class="odds__circle text-center"><img src="./images/crown.svg" alt=""></p>
+          <p>
+             
+            Лидер на рынке<br>с 2005
+          </p>
+        </div>
+        <div class="columns odds">
+          <p class="odds__circle text-center"><img src="./images/piggy-bank.svg" alt=""></p>
+          <p>
+             
+            Только с нами Вы<br>экономите до 20%
+          </p>
+        </div>
+        <div class="columns odds">
+          <p class="odds__circle text-center"><img src="./images/placeholder.svg" alt=""></p>
+          <p>
+             
+            Работаем в других<br>городах
+          </p>
+        </div>
+        <div class="columns odds">
+          <p class="odds__circle text-center"><img src="./images/car.svg" alt=""></p>
+          <p>
+             
+            Просмотр на транспорте<br>компании
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="row large-up-5 medium-up-3 small-up-2 footer__info">
+        <div class="columns footer__col"><a href="#" class="footer__title">Главная</a>
+          <ul class="franchise">
+            <li class="franchise__item"><a href="#" class="franchise__link">Наши услуги</a></li>
+            <li class="franchise__item"><a href="#" class="franchise__link">Франшиза</a></li>
+            <li class="franchise__item"><a href="#" class="franchise__link">Блог</a></li>
+            <li class="franchise__item"><a href="#" class="franchise__link">Вакансии</a></li>
+            <li class="franchise__item"><a href="#" class="franchise__link">Ипотека</a></li>
+            <li class="franchise__item"><a href="#" class="franchise__link">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="columns footer__col">
+          <div class="footer__block"><a href="#" class="footer__title">Акции и скидки</a>
+            <ul class="franchise">
+              <li class="franchise__item"><a href="#" class="franchise__link">Программа скидок</a></li>
+              <li class="franchise__item"><a href="#" class="franchise__link">Спец. предложения</a></li>
+              <li class="franchise__item"><a href="#" class="franchise__link">Акции</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="columns footer__col">
+          <div class="footer__block"> <a href="#" class="footer__title">Каталог недвижимости</a>
+            <ul class="franchise">
+              <li class="franchise__item"><a href="#" class="franchise__link">Вторичная недвижимость</a></li>
+              <li class="franchise__item"><a href="#" class="franchise__link">Новостройки</a></li>
+              <li class="franchise__item"><a href="#" class="franchise__link">Загородная</a></li>
+              <li class="franchise__item"><a href="#" class="franchise__link">Коммерческая</a></li>
+              <li class="franchise__item"><a href="#" class="franchise__link">Аренда</a></li>
+              <li class="franchise__item"><a href="#" class="franchise__link">Биржа недвижимости</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="columns footer__col">
+          <div class="footer__block">   <a href="#" class="footer__title">Помощь</a>
+            <ul class="franchise">
+              <li class="franchise__item"><a href="#" class="franchise__link">Вопросы и ответы</a></li>
+              <li class="franchise__item"><a href="#" class="franchise__link">Оплата</a></li>
+              <li class="franchise__item"><a href="#" class="franchise__link">Гарантия</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="columns footer__col text-center medium-text-left">
+          <div class="footer__block"><a href="#" class="footer__title">Подписаться на рассылку:     </a>
+            <form action="#">
+              <input type="text" placeholder="Введите ваш E-mail" class="footer__input"><a href="#" class="footer__title">Мы в соц сетях:</a><a href="#" class="ico fa-stack"><i class="fa fa-circle fa-inverse fa-stack-2x"></i><i class="fa fa-vk fa-stack-1x"></i></a><a href="#" class="ico fa-stack"><i class="fa fa-circle fa-inverse fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x"></i></a><a href="#" class="ico fa-stack"><i class="fa fa-circle fa-inverse fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x"></i></a><a href="#" class="ico fa-stack"><i class="fa fa-circle fa-inverse fa-stack-2x"></i><i class="fa fa-google-plus fa-stack-1x"></i></a>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="row">
+          <div class="large-6 medium-6 columns text-center medium-text-left">
+            <p><a href="#"><img src="./images/white-logo.png" alt=""></a></p>
+          </div>
+          <div class="large-8 medium-9 columns large-offset-4 text-center medium-text-left">
+            <p class="footer__portal">
+               
+              &copy;&nbsp; Портал «Солнце Недвижимость», 2016<br>Вся недвижимость Сахалина.
+            </p>
+          </div>
+          <div class="large-6 medium-9 columns text-center medium-text-right">
+            <p class="footer__portal">Создание сайта —&nbsp;<a href="#" class="footer__cetera">Cetera Labs</a><br><a href="#" class="footer__error">Сообщить об ошибке</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+<script src="js/lib.js" type="text/javascript"></script>
+<script src="js/app.js" type="text/javascript"></script>
+
+  </body>
+</html>

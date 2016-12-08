@@ -1,0 +1,15 @@
+.marker {
+    font-weight: 300;
+    color: $grey;
+    margin-bottom: rem-calc(60);
+
+    &__img {
+        height: rem-calc(43);
+        margin-bottom: rem-calc(6);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    @include breakpoint(medium down) {
+        margin-bottom: rem-calc(0);
+    }
+}

@@ -1,0 +1,23 @@
+.check {
+  margin-bottom: rem-calc(7);
+    &__input {
+        display: none;
+
+        &:checked + label {
+            background: url(../images/circle-2.svg)no-repeat left center;
+            &.check__label_ch {
+                background: url(../images/ch2.svg)no-repeat left center;
+            }
+        }
+    }
+
+    &__label {
+      font-weight: 300;
+        padding-left: rem-calc(22);
+        background-size: 500%;
+        background: url(../images/circle.svg)no-repeat left center;
+        &_ch {
+          background: url(../images/ch1.svg)no-repeat left center;
+        }
+    }
+}

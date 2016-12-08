@@ -1,0 +1,19 @@
+.find {
+    font-weight: 500;
+    border: rem-calc(2) solid black;
+    background: #fff;
+    color: $black;
+    padding-left: rem-calc(5);
+    padding-right: rem-calc(5);
+    width: 100%;
+    height: rem-calc(40);
+    padding-top: rem-calc(0);
+    padding-bottom: rem-calc(0);
+    max-width: rem-calc(300);
+
+    &:focus,
+    &:hover {
+        color: #fff;
+        background: black;
+    }
+}

@@ -1,0 +1,113 @@
+.manager {
+    border: rem-calc(1px) solid #e7e7e7;
+    padding: rem-calc(20) rem-calc(16);
+    margin-bottom: rem-calc(48);
+    background: #fff;
+
+    &_absolute {
+        position: absolute;
+        left: calc(50% - 581px);
+        top: rem-calc(60);
+        z-index: 10;
+        max-width: rem-calc(270);
+    }
+
+    &__img {
+        display: inline-block;
+        width: rem-calc(100);
+        height: rem-calc(100);
+
+        img {
+            border-radius: 50%;
+        }
+    }
+
+    &__link {
+        font-weight: 500;
+        text-decoration: underline;
+    }
+
+    &__tel {
+        font-size: rem-calc(18);
+        color: $red;
+        font-weight: 500;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__label {
+        font-weight: 300;
+        color: $grey;
+        margin-bottom: rem-calc(10);
+    }
+
+    &__submit {
+        border: 2px solid #000;
+        display: block;
+        font-weight: 500;
+        width: 100%;
+        padding-top: rem-calc(10);
+        padding-bottom: rem-calc(11);
+
+        i {
+            font-size: rem-calc(16);
+            position: relative;
+            top: rem-calc(1);
+            margin-right: rem-calc(9);
+        }
+        transition: 0.6s all;
+
+        &:hover {
+            background: #000;
+            color: #fff;
+        }
+    }
+
+    &__input {
+        border: rem-calc(1px) solid $grey;
+        box-shadow: inset 0.5px 0.9px 2px rgba(0, 0, 0, 0.1), 1px 1.7px 0 rgba(255, 255, 255, 0.5);
+        background-color: #fff;
+        height: rem-calc(40);
+    }
+
+    &__know {
+        font-weight: 300;
+        padding: rem-calc(1) rem-calc(5);
+        font-size: rem-calc(11);
+        background-color: #e7e7e7;
+        display: inline-block;
+        top: rem-calc(3);
+        position: relative;
+
+        &:after,
+        &:before {
+            content: "";
+            width: rem-calc(11);
+            height: rem-calc(18);
+            left: rem-calc(-11);
+            top: rem-calc(0);
+            background: url(../images/line-grey.png)no-repeat;
+            background-position: left center;
+            position: absolute;
+        }
+
+        &:after {
+            left: auto;
+            right: rem-calc(-11);
+            background-position: right center;
+        }
+    }
+    @media (max-width: 1200px) {
+        &_absolute {
+            left: rem-calc(8);
+        }
+    }
+    @include breakpoint(small only) {
+        &_absolute {
+            top: rem-calc(80);
+        }
+    }
+}

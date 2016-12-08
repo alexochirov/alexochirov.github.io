@@ -1,0 +1,33 @@
+.options {
+    margin-left: rem-calc(-8);
+    padding-bottom: rem-calc(10);
+    margin-bottom: rem-calc(0);
+
+    &__item {
+        display: inline-block;
+        margin-right: rem-calc(18);
+    }
+
+    &__link {
+        font-size: rem-calc(11);
+        text-transform: uppercase;
+        color: #fff;
+        padding-top: rem-calc(2);
+        display: inline-block;
+        padding-left: rem-calc(8);
+        padding-right: rem-calc(8);
+        border-radius: rem-calc(18);
+        transition: 0.6s all;
+
+        &:hover {
+            background: $red;
+            color: #fff;
+        }
+    }
+    @include breakpoint(medium down) {
+      margin-left: rem-calc(0);
+        &__item {
+            margin-bottom: rem-calc(6);
+        }
+    }
+}

@@ -1,0 +1,64 @@
+.footer
+  .row.large-up-5.medium-up-3.small-up-2.footer__info
+    .columns.footer__col
+      a(href="#").footer__title Главная
+      ul.franchise
+        each title in ['Наши услуги','Франшиза','Блог','Вакансии','Ипотека','Контакты']
+          li.franchise__item
+            a.franchise__link(href="#")= title
+    .columns.footer__col
+      .footer__block
+        a(href="#").footer__title Акции и скидки
+        ul.franchise
+          each title in ['Программа скидок','Спец. предложения','Акции']
+            li.franchise__item
+              a.franchise__link(href="#")= title
+    .columns.footer__col
+      .footer__block  
+        a(href="#").footer__title Каталог недвижимости
+        ul.franchise
+          each title in ['Вторичная недвижимость','Новостройки','Загородная','Коммерческая','Аренда','Биржа недвижимости']
+            li.franchise__item
+              a.franchise__link(href="#")= title
+    .columns.footer__col
+      .footer__block    
+        a(href="#").footer__title Помощь
+        ul.franchise
+          each title in ['Вопросы и ответы','Оплата','Гарантия']
+            li.franchise__item
+              a.franchise__link(href="#")= title
+    .columns.footer__col.text-center.medium-text-left
+      .footer__block
+        a.footer__title(href="#") Подписаться на рассылку:     
+        form(action="#")
+          input.footer__input(type="text",placeholder="Введите ваш E-mail")
+          a(href="#").footer__title Мы в соц сетях:
+          a.ico(href="#").fa-stack
+              i.fa.fa-circle.fa-inverse.fa-stack-2x
+              i.fa.fa-vk.fa-stack-1x
+          a.ico(href="#").fa-stack
+              i.fa.fa-circle.fa-inverse.fa-stack-2x
+              i.fa.fa-twitter.fa-stack-1x
+          a.ico(href="#").fa-stack
+              i.fa.fa-circle.fa-inverse.fa-stack-2x
+              i.fa.fa-facebook.fa-stack-1x
+          a.ico(href="#").fa-stack
+              i.fa.fa-circle.fa-inverse.fa-stack-2x
+              i.fa.fa-google-plus.fa-stack-1x
+  .footer__bottom
+    .row
+      .large-6.medium-6.columns.text-center.medium-text-left
+        p
+          a(href="#")
+            img(src="./images/white-logo.png", alt="") 
+      .large-8.medium-9.columns.large-offset-4.text-center.medium-text-left
+        p.footer__portal 
+          |&copy;&nbsp; Портал «Солнце Недвижимость», 2016
+          br
+          |Вся недвижимость Сахалина.
+      .large-6.medium-9.columns.text-center.medium-text-right
+        p.footer__portal
+          |Создание сайта —&nbsp;
+          a.footer__cetera(href="#") Cetera Labs
+          br
+          a.footer__error(href="#") Сообщить об ошибке

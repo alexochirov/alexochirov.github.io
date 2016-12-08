@@ -1,0 +1,206 @@
+include ../mixins/_mixin-calc
+include ../mixins/_mixin-apartment
+include ../mixins/_mixin-show
+include ../mixins/_mixin-manager
+include ../mixins/_mixin-head
++head('Однокомнатная квартира с ремонтом и мебелью')
+.row.plan
+  .large-12.medium-12.columns.plan__map.text-center.medium-text-left
+    i.fa.fa-map-marker
+    |ул. 30 лет Победы, д. 126 (4,9 км от центра города)
+  .medium-12.columns.text-center.medium-text-right
+    span.plan__font
+      i.fa.fa-bar-chart
+      a.plan__add(href="#") К сравнению  
+    span.plan__font
+      i.fa.fa-heart
+      a.plan__add(href="#") В избранное 
+    span.plan__font  
+      a(href="#").plan__offer Предложить свою цену  
+.row.columns
+  ul.tabs(data-tabs id="example-tabs")
+    li.tabs-title.is-active      
+      a(href="#panel1") Фотографии (12)
+    li.tabs-title  
+      a(href="#panel2") Планировка (1)
+    li.tabs-title  
+      a(href="#panel3") Карта (1)
+  .tabs-content(data-tabs-content="example-tabs")   
+    .tabs-panel.is-active#panel1
+      .row
+        .large-18.medium-15.columns
+          .flat
+            - for (var i = 0; i < 12; ++i) {
+              .flat__slide
+                .flat__icon(href="./images/img1.png").fancybox
+                a(href="./images/img1.png").fancybox
+                  img(src="./images/img1.png", alt="")
+            - }
+
+        .large-6.medium-9.columns.feature
+          .row.columns.feature__top
+            .res 
+              .res__num 2
+              .res__room комн
+            .res.res_center
+              .res__square 165
+              .res__room m2
+            .res 
+              .res__floor 10\10
+              .res__room этаж
+          p Шикарная квартира в центре города, частично мебилированная, во всех комнатах евро ремонт, интернет. Индивидуальное отопление.  
+          ul.cont
+            li.cont__item
+              span.cont__span Код объекта:  
+              span.cont__page 1362072 
+            li.cont__item
+              span.cont__span Высота потолков:  
+              span.cont__page 2.65 м     
+            li.cont__item
+              span.cont__span Серия:  
+              span.cont__page ИНД
+            li.cont__item
+              span.cont__span Ремонт:  
+              span.cont__page Косметический  
+            li.cont__item
+              span.cont__span Окна:  
+              span.cont__page Пластик  
+            li.cont__item
+              span.cont__span Год постройки:  
+              span.cont__page 1985  
+            li.cont__item
+              span.cont__span Цена за м2:  
+              span.cont__page 999 000 руб.
+          a(href="#").feature__bank В ипотеку: &nbsp;&nbsp;&nbsp;14 557 руб./мес
+          ul.cont.cont_red
+            li.cont__item
+              span.cont__span Цена  
+              span.cont__page
+                span.cont__cross 2 999 000 руб.
+                br
+                |2 950 000 руб.
+          a.button.vision(href="#") Записаться на просмотр    
+    .tabs-panel#panel2
+      |Планировка
+    .tabs-panel#panel3
+      |Карта
+  .large-18.medium-15.columns.desc
+    h3.desc__head Описание квартиры:
+    p Компания начала работу на рынке телекоммуникаций в 2008 году. Сегодня СолнцеТелеком специализируется на предоставлении услуг доступа в Интернет по выделенным линиям. Главное направление деятельности – развитие собственной волоконно-оптической сети для подключения офисов и жилых домов. Корпоративным клиентам мы предлагаем организацию выделенных интернет-каналов, предоставляем комплекс самых востребованных телекоммуникационных услуг и IT сервисов. В зоне обслуживания мы обеспечиваем оперативное подключение и наиболее экономичные в корпоративном сегменте тарифы.
+
+    p Квартира в 14-ти этажном кирпичном доме. 2 лифта грузовой и пассажирский. Свежий косметический ремонт: все трубы заменены; батареи заменены на евро-радиаторы; два радиатора установили на утепленный балкон с 3-ым пластиковым стекло-пакетом; межкомнатные двери так же новые; линолеум, виниловые обои, натяжные потолки с точечными светильниками. Имеется кладовая в прихожей, которую можно использовать как гардеробную. Остается кухонный гарнитур, плита, шкаф-купе и душевая кабина (новая, на гарантии). В 2009 г. управляющей компанией проводились работы по замене водонагревателя, а в 2011 ремонт кровли. Две парковочные площадки. Отличная транспортная развязка, все рядом.
+
+    p Главное направление деятельности – развитие собственной волоконно-оптической сети для подключения офисов и жилых домов. Корпоративным клиентам мы предлагаем организацию выделенных интернет-каналов, предоставляем комплекс самых востребованных телекоммуникационных услуг и IT сервисов. 
+  .large-6.medium-9.columns 
+    +manager('Знает о квартире все')
++calc('Рассчитайте ваш платеж по ипотеке')
+.deposite
+  form(action="#")
+    .row
+      .large-19.columns
+        .row.large-up-4.medium-up-2.small-up-1
+          .columns
+            label(for="1").deposite__label
+              |Стоимость недвижимости
+              input(type="text",placeholder="1 950 000").deposite__input
+              .deposite__rub руб.
+          .columns
+            label(for="1").deposite__label
+              |Первоначальный взнос *
+              input(type="text",placeholder="877 500").deposite__input.deposite__input_mini
+              .deposite__rub.deposite__rub_else руб.
+              .deposite__percent 45%
+          .columns
+            label(for="1").deposite__label
+              |Сумма кредита
+              input(type="text",placeholder="1 072 000").deposite__input
+              .deposite__rub руб.
+          .columns
+            label(for="1").deposite__label
+              |Средний доход в месяц *
+              input(type="text",placeholder="40 000").deposite__input
+              .deposite__rub руб.
+      .large-2.medium-12.columns
+        label(for="1").deposite__label
+          |Срок *
+          input(type="text").deposite__input
+      .large-3.medium-12.end.columns.deposite__eval 
+        a.button.vision(href="#") Рассчитать
+include _table
++show('Показать еще 27 программ') 
++calc('Расположение и инфраструктура')   
+p
+  script(type='text/javascript', charset='utf-8', async='', src='https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=6tTSsU2NDjMh9fwfNx1flwj2HH8saMWg&width=100%25&height=451&lang=ru_UA&sourceType=constructor&scroll=false')
+
+.row.medium-up-6.small-up-3.text-center
+  .columns.marker
+    .marker__img(style="background-image:url(./images/marker1.png)")
+    p Школа
+  .columns.marker
+    .marker__img(style="background-image:url(./images/marker2.png)")
+    p Детский сад
+  .columns.marker
+    .marker__img(style="background-image:url(./images/marker3.png)")
+    p Театр, музей
+  .columns.marker
+    .marker__img(style="background-image:url(./images/marker4.png)")
+    p Кинотеатр
+  .columns.marker
+    .marker__img(style="background-image:url(./images/marker5.png)")
+    p Парк, сквер
+  .columns.marker
+    .marker__img(style="background-image:url(./images/marker6.png)")
+    p Торговый центр
++calc('Похожие квартиры')      
+.row.large-up-3.medium-up-2.small-up-1(data-equalizer,data-equalize-by-row="true")
+  +apartment('apa1.png',true)
+  +apartment('apa2.png')
+  +apartment('apa3.png',true)
+  +apartment('apa4.png')
+  +apartment('apa5.png')
+  +apartment('apa6.png',true)
+.advantages
+  +calc('Наши преимущества')  
+  .row.large-up-5.medium-up-3.small-up-2.text-center
+    .columns.odds
+      p.odds__circle.text-center
+          img(src="./images/key.svg", alt="")
+      p 
+        |Оформить ипотеку 
+        br
+        |под ключ
+    .columns.odds
+      p.odds__circle.text-center
+          img(src="./images/crown.svg", alt="")
+      p 
+        |Лидер на рынке
+        br
+        |с 2005
+    .columns.odds
+      p.odds__circle.text-center
+          img(src="./images/piggy-bank.svg", alt="")
+      p 
+        |Только с нами Вы
+        br
+        |экономите до 20%
+    .columns.odds
+      p.odds__circle.text-center
+          img(src="./images/placeholder.svg", alt="")
+      p 
+        |Работаем в других
+        br
+        |городах
+    .columns.odds
+      p.odds__circle.text-center
+          img(src="./images/car.svg", alt="")
+      p 
+        |Просмотр на транспорте
+        br
+        |компании
+        
+    
+       
+            
+    
+
+  

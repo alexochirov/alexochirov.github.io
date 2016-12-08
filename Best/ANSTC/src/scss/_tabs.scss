@@ -1,0 +1,31 @@
+.tabs {
+    display: inline-block;
+    border-color: #daddde;
+
+    &-content {
+        margin-top: rem-calc(-6);
+        border: 0;
+        margin-bottom: rem-calc(10);
+    }
+
+    &-title {
+        &:not(:first-child) {
+            border-left: rem-calc(1) solid #daddde;
+        }
+
+        & > a {
+            font-weight: 500;
+            font-size: rem-calc(14);
+        }
+    }
+    @include breakpoint(small only) {
+      width: 100%;
+        &-title {
+          &:not(:first-child) {
+              border-left: 0;
+          }
+            width: 100%;
+            text-align: center;
+        }
+    }
+}

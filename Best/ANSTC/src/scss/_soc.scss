@@ -1,0 +1,15 @@
+.soc {
+    margin-left: rem-calc(12);
+    display: inline-block;
+    margin-bottom: rem-calc(10);
+
+    i {
+        transition: 0.6s;
+        font-size: rem-calc(19);
+        color: #fff;
+    }
+
+    &:hover i {
+        color: $red;
+    }
+}

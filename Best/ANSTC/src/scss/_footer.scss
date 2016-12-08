@@ -1,0 +1,119 @@
+.footer {
+    box-shadow: rem-calc(-4) rem-calc(-4.5) rem-calc(9) rgba(168, 172, 185, 0.75);
+    background: $black;
+    padding-top: rem-calc(30);
+    padding-bottom: rem-calc(10);
+
+    &__bottom {
+        padding-top: rem-calc(24);
+        border-top: rem-calc(1) solid #404040;
+    }
+
+    &__info {
+        padding-bottom: rem-calc(53);
+    }
+
+    &__title {
+        padding-top: rem-calc(10);
+        display: block;
+        margin-bottom: rem-calc(14);
+        text-transform: uppercase;
+        font-weight: 500;
+        color: #fff;
+    }
+
+    &__portal {
+        color: #fff;
+        letter-spacing: rem-calc(.7);
+        font-weight: 300;
+    }
+
+    &__cetera {
+        color: $red;
+        text-decoration: underline;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+
+    &__error {
+        color: #fff;
+        text-decoration: underline;
+    }
+
+    &__col {
+        &:not(:first-child) {
+            border-left: rem-calc(1) solid #3f3f3f;
+        }
+    }
+
+    &__input {
+        font-size: 13px;
+        color: $grey;
+        height: rem-calc(44);
+        box-shadow: none;
+        padding-left: rem-calc(16);
+        padding-right: rem-calc(16);
+
+        ::-webkit-input-placeholder {
+            color: $grey;
+            font-size: rem-calc(13);
+        }
+
+        ::-moz-placeholder {
+            color: $grey;
+            font-size: rem-calc(13);
+        }
+
+        :-moz-placeholder {
+            color: $grey;
+            font-size: rem-calc(13);
+        }
+
+        :-ms-input-placeholder {
+            color: $grey;
+            font-size: rem-calc(13);
+        }
+    }
+
+    &__block {
+        padding-left: rem-calc(20);
+    }
+    @include breakpoint(medium-down) {
+        &__col:nth-child(4) {
+            border-left: rem-calc(0);
+
+            .footer__block {
+                padding-left: rem-calc(0);
+            }
+        }
+    }
+    @include breakpoint(small only) {
+        &__block {
+            padding-left: rem-calc(10);
+        }
+
+        &__col {
+            &:last-child {
+                width: 100%;
+            }
+
+            &:nth-child(4) {
+                border-left: rem-calc(1) solid #3f3f3f;
+
+                .footer__block {
+                    padding-left: rem-calc(10);
+                }
+            }
+
+            &:nth-child(odd) {
+                border-left: rem-calc(0);
+
+                .footer__block {
+                    padding-left: rem-calc(0);
+                }
+            }
+        }
+    }
+}

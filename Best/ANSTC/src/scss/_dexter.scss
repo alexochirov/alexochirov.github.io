@@ -1,0 +1,20 @@
+.dexter {
+    float: right;
+
+    &__share {
+        font-weight: 300;
+        font-size: rem-calc(11);
+    }
+
+    .soc {
+        i {
+            color: $black;
+        }
+
+        &:hover {
+            i {
+                color: $red;
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.desc {
+  font-weight: 300;
+  color: $grey;
+  letter-spacing: rem-calc(.7);
+    &__head {
+        font-weight: 500;
+        font-size: rem-calc(15);
+        color: $black;
+    }
+
+    p {
+        font-weight: 300;
+        color: $grey;
+        letter-spacing: rem-calc(.7);
+    }
+}

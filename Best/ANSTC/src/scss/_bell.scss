@@ -1,0 +1,19 @@
+.bell {
+    &__btn {
+        width: 100%;
+        color: #fff;
+        font-size: rem-calc(18);
+        font-weight: 500;
+        background: $black;
+    }
+    &__col {
+      padding-left: rem-calc(16);
+      padding-right: rem-calc(16);
+    }
+    &__drop {
+      font-weight: 700;
+      color: $black;
+      font-size: rem-calc(13);background-color: #e3e5e6;
+      width: 100%;text-transform: uppercase;
+    }
+}

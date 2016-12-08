@@ -1,0 +1,47 @@
+header.header
+  .unit
+    .row
+      .medium-5.small-12.columns.unit__city
+        i.fa.fa-map-marker
+        |Город: 
+        ul.dropdown.menu(data-dropdown-menu)
+          li
+            a(href="#") Сахалин
+            ul.menu
+              li
+                a(href="#") Москва
+              li
+                a(href="#") Cанкт-Петербург
+      .large-14.medium-13.hide-for-small-only.columns.text-center.large-text-left
+        ul.category 
+          each title in ['Акции','Услуги','Контакты','Франшиза','Блог','Контакты']
+            li.category__item
+              a.category__link(href="#")= title
+      .large-5.medium-6.small-12.columns.text-right
+        a.unit__user(href="#")
+          i.fa.fa-user
+          |Вход
+        span.unit__pole |
+        a.unit__user(href="#") Регистрация  
+  .row.contacts
+    .large-5.medium-8.small-12.columns
+      a(href="#")
+        img(src="./images/logo.png", alt="")
+    .large-5.medium-8.small-12.columns.contacts__num.text-center
+      p 
+        |Звоните нам:
+        br
+        |с 8:00 до 20:00
+    .large-6.medium-8.columns.small-14.text-left.medium-text-right.large-text-left
+      a(href="#").contacts__tel
+        span.contacts__round 
+          i.fa.fa-phone
+        |8 (3452) 51-22-22  
+    .large-8.columns.medium-12.small-10.contacts__form
+      form(action="#")
+        input(type="text",placeholder="Поиск по сайту").contacts__search   
+        button(type="submit").contacts__submit
+          i.fa.fa-search
+  
+    
+                    

@@ -1,0 +1,41 @@
+.obj {
+    font-weight: 100;
+    font-size: rem-calc(24);
+    font-family: "Open Sans",sans-serif;
+    margin-bottom: rem-calc(60);
+
+    &__rect {
+        padding-bottom: rem-calc(15);
+        border: rem-calc(3) solid $red;
+        border-radius: rem-calc(15);
+        padding-top: rem-calc(15);
+        margin-bottom: rem-calc(31);
+        position: relative;
+        &:after {
+          width: rem-calc(36);
+          height: rem-calc(23);
+          background: url(../images/num.png)no-repeat;
+          bottom: rem-calc(-22);
+          left:calc(50% - 18px);
+          content: "";
+          position: absolute;
+        }
+    }
+
+    &__big {
+        font-size: rem-calc(52);
+        font-weight: 700;
+        line-height: 1;
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: rem-calc(15);
+    }
+      @include breakpoint(small only) {
+        font-size: rem-calc(18);
+        margin-bottom: rem-calc(20);
+      &__big {
+        font-size: rem-calc(30);
+      }}
+}

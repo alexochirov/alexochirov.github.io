@@ -1,0 +1,29 @@
+.consul {
+    margin-bottom: rem-calc(50);
+    position: relative;
+    overflow: hidden;
+
+    & > img {
+        width: rem-calc(1920);
+        max-width: none;
+    }
+
+    &__text {
+        position: absolute;
+        top: rem-calc(20);
+        left: calc(50% - 585px);
+        font-size: 52px;
+        font-weight: 100;
+        line-height: 1;
+        font-family: "Open Sans",sans-serif;
+
+        strong {
+            font-weight: 700;
+        }
+    }
+    @media (max-width: 1200px) {
+        &__text {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,90 @@
+.apartment {
+
+    margin-bottom: rem-calc(28);
+    border: 1px solid #e7e7e7;
+
+
+    &__lone {
+      display: inline-block;
+      position: relative;
+      max-width: 100%;
+      &_credit {
+          &:after {
+              position: absolute;
+              content: "";
+              width: rem-calc(64);
+              height: rem-calc(64);
+              background: url("../images/credit.png");
+              right: rem-calc(0);
+              top: rem-calc(0);
+          }
+      }
+    }
+
+    &__body {
+        padding: rem-calc(16);
+    }
+
+    &__price {
+        font-size: rem-calc(18);
+        color: $red;
+        font-weight: 700;
+        float: left;
+        margin-top: rem-calc(6);
+    }
+
+    &__rub {
+        font-size: rem-calc(14);
+    }
+
+    &__buy {
+        border: rem-calc(2) solid #000;
+        padding: rem-calc(7) rem-calc(34) rem-calc(8);
+        font-weight: 500;
+        color: $black;
+        float: right;
+        transition: 0.6s all;
+
+        &:hover {
+            color: #fff;
+            background: $red;
+            border-color: $red;
+            border-bottom-color: #9a1217;
+        }
+    }
+
+    &__geo {
+        margin-bottom: rem-calc(15);
+        font-weight: 300;
+        color: $grey;
+        padding-bottom: rem-calc(6);
+        border-bottom: rem-calc(1) solid #e5e5e5;
+
+        i {
+            color: $black;
+            margin-right: rem-calc(8);
+            font-size: rem-calc(18);
+        }
+    }
+
+    p {
+        font-weight: 300;
+        color: $grey;
+        font-size: rem-calc(14);
+    }
+
+    &__link {
+        margin-bottom: rem-calc(10);
+        display: block;
+        font-size: rem-calc(18);
+        color: $black;
+        text-decoration: underline;
+    }
+
+    &__signs {
+        height: rem-calc(55);
+        position: relative;
+        margin-bottom: rem-calc(16);
+        margin-top: rem-calc(-52);
+    }
+}

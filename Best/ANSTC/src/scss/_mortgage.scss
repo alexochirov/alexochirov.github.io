@@ -1,0 +1,42 @@
+.mortgage {
+    border: rem-calc(1) solid #e7e7e7;
+    border-radius: rem-calc(15);
+    padding: rem-calc(15) rem-calc(16);
+    margin-bottom: rem-calc(30);
+
+    &__info {
+        font-size: rem-calc(36);
+        font-weight: 700;
+        line-height: 1.05;
+        font-family: "Open Sans", sans-serif;
+    }
+
+    &__img {
+        line-height: rem-calc(65);
+
+        img {
+            vertical-align: middle;
+        }
+    }
+
+    &__credit {
+        font-weight: 300;
+        padding-top: rem-calc(10);
+        font-size: rem-calc(14);
+        font-family: "Roboto", sans-serif;
+    }
+
+    &__percent {
+        font-size: rem-calc(18);
+        font-weight: 900;
+    }
+
+    &:hover {
+        border-color: $grey;
+    }
+    @include breakpoint(small only) {
+        &__img {
+            padding-bottom: rem-calc(10);
+        }
+    }
+}

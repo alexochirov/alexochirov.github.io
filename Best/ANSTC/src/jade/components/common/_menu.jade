@@ -1,0 +1,11 @@
+.cart
+  .row
+    .large-20.medium-19.columns
+      span.header__toggle(data-responsive-toggle="responsive-menu" data-hide-for="medium")
+        button.menu-icon(type="button",data-toggle)
+      ul.options#responsive-menu.text-center.medium-text-left
+        each title in ['Вторичное жилье','Новостройки','Загородная','Аренда','Коммерческая','Ипотека','Продавцу','Биржа недвижимости']
+          li.options__item
+            a.options__link(href="#")= title  
+    .large-4.medium-5.columns.text-right.header__soc
+      include _soc

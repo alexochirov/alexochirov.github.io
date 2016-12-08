@@ -1,0 +1,154 @@
+extends index
+include components/mixins/_mixin-calc
+include components/mixins/_mixin-obj
+include components/mixins/_mixin-apartment
+include components/mixins/_mixin-show
+include components/mixins/_mixin-head
+include components/mixins/_mixin-manager
+block content
+  include components/common/_menu
+  include components/common/_region
+  .consul
+    img(src="./images/consul.png", alt="")
+    .consul__text
+      p
+        |А у нас консультация
+        br
+        strong Бесплатно
+    .calling
+      form(action="#")
+        p.calling__title.text-center Оставьте телефон и мы перезвоним вам
+        input.calling__input(type="text",placeholder="Ваше имя")
+        input.calling__input(type="text",placeholder="Ваш номер телефона")
+        button.button.vision Жду звонка
+        .calling__key
+  +calc('Недвижимость в сахалине')   
+  .row
+    .large-20.columns.large-centered
+      ul#example-tabs.tabs.country(data-tabs='')
+        li.tabs-title
+          a(href='#panel1') Квартиры в аренду
+        li.tabs-title.is-active
+          a(href='#panel2',aria-selected='true') Вторичное жилье
+        li.tabs-title
+          a(href='#panel3') Загородная недвижимость
+        li.tabs-title
+          a(href='#panel4') Новостройки
+        li.tabs-title
+          a(href='#panel5') Коммерческая
+  .row.columns
+    .tabs-content.another(data-tabs-content='example-tabs')
+      #panel1.tabs-panel
+        +obj('7 450')
+      #panel2.tabs-panel.is-active
+        +obj('3 450')
+      #panel3.tabs-panel
+        +obj('2 450')
+      #panel4.tabs-panel
+        +obj('3 250')
+      #panel5.tabs-panel
+        +obj('1 450')
+  .row.columns
+    p
+      a(href="#")          
+        img(src="./images/fir-tree.png", alt="")
+  +calc('Недвижимость на карте')    
+  include components/common/_region
+  .sahalin
+    +manager('Знаю все об этом районе',true)
+    script(type='text/javascript', charset='utf-8', async='', src='https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=Q7SDY1oHZ0MOuUiEkLGIv0xRiW-f9Ktk&width=100%25&height=700&lang=ru_UA&sourceType=constructor&scroll=false')
+  +calc('Лучшие предложения по ипотеке')     
+  .row.large-up-3.medium-up-2.small-up-2.text-center.medium-text-left
+    .columns
+      .mortgage
+        .row
+          .medium-14.columns.mortgage__img
+            img(src="./images/cred1.png", alt="")
+          .medium-10.columns
+            .mortgage__info
+              |10,9
+              span.mortgage__percent &nbsp;%
+              br
+              .mortgage__credit Ставка по кредиту
+    .columns
+      .mortgage
+        .row
+          .medium-14.columns.mortgage__img
+            img(src="./images/cred2.png", alt="")
+          .medium-10.columns
+            .mortgage__info
+              |10,9
+              span.mortgage__percent &nbsp;%
+              br
+              .mortgage__credit Ставка по кредиту
+    .columns
+      .mortgage
+        .row
+          .medium-14.columns.mortgage__img
+            img(src="./images/cred3.png", alt="")
+          .medium-10.columns
+            .mortgage__info
+              |10,9
+              span.mortgage__percent &nbsp;%
+              br
+              .mortgage__credit Ставка по кредиту
+    .columns
+      .mortgage
+        .row
+          .medium-14.columns.mortgage__img
+            img(src="./images/cred4.png", alt="")
+          .medium-10.columns
+            .mortgage__info
+              |10,9
+              span.mortgage__percent &nbsp;%
+              br
+              .mortgage__credit Ставка по кредиту
+    .columns
+      .mortgage
+        .row
+          .medium-14.columns.mortgage__img
+            img(src="./images/cred5.png", alt="")
+          .medium-10.columns
+            .mortgage__info
+              |10,9
+              span.mortgage__percent &nbsp;%
+              br
+              .mortgage__credit Ставка по кредиту
+    .columns
+      .mortgage
+        .row
+          .medium-14.columns.mortgage__img
+            img(src="./images/cred6.png", alt="")
+          .medium-10.columns
+            .mortgage__info
+              |10,9
+              span.mortgage__percent &nbsp;%
+              br
+              .mortgage__credit Ставка по кредиту
+  include components/common/_table    
+  +show('Показать еще 27 программ')  
+  +calc('Горячие предложения')      
+  .row.large-up-3.medium-up-2.small-up-1(data-equalizer,data-equalize-by-row="true")
+    +apartment('apa1.png',true)
+    +apartment('apa2.png')
+    +apartment('apa3.png',true)
+    +apartment('apa4.png')
+    +apartment('apa5.png')
+    +apartment('apa6.png',true)  
+  +show('Показать еще 39 объектов') 
+  +head('Недвижимость Сахалина от агентства «Солнце телеком»') 
+  .row
+    .large-18.medium-15.columns.desc
+      p Компания начала работу на рынке телекоммуникаций в 2008 году. Сегодня СолнцеТелеком специализируется на оказании услуг доступа в Интернет по выделенным линиям. Главное направление деятельности – развитие собственной волокно- оптической сети для подключения офисов и жилых домов.Корпоративным клиентам мы предлагаем организацию интернет каналов, предоставляем комплекс самых востребованных телекоммуникационных услуг и IT сервисов. 
+      h3.desc__head Преимущества работы с нами:
+      ol
+        li Корпоративным клиентам мы предлагаем организацию выделенных интернет-каналов, предоставляем комплекс самых востребованных телекоммуникационных услуг и IT сервисов. В зоне обслуживания мы обеспечиваем оперативное подключение и наиболее экономичные в корпоративном сегменте тарифы. А так же другие услуги высокоскоростной связи.
+        li Корпоративным клиентам мы предлагаем организацию выделенных интернет-каналов, предоставляем комплекс самых востребованных телекоммуникационных услуг и IT сервисов. В зоне обслуживания мы обеспечиваем оперативное подключение и наиболее экономичные в корпоративном сегменте тарифы. А так же другие услуги высокоскоростной связи.
+        li А так же другие услуги высокоскоростной связи.
+        li В зоне обслуживания мы обеспечиваем оперативное подключение и наиболее экономичные в корпоративном сегменте тарифы. А так же другие услуги высокоскоростной связи.
+        li Корпоративным клиентам мы предлагаем организацию выделенных интернет-каналов, предоставляем комплекс самых востребованных телекоммуникационных услуг и IT сервисов.
+    .large-6.medium-9.columns  
+      +manager('Звоните по любому вопросу')  
+            
+       
+  

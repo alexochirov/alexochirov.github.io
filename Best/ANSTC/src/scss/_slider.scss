@@ -1,0 +1,21 @@
+.slider {
+    &-handle {
+        outline: none;
+        width: rem-calc(22);
+        height: rem-calc(23);
+        background-color: transparent;
+        background: url(../images/slider1.svg)no-repeat center;
+
+        &:hover {
+            background-color: transparent;
+        }
+
+        &_prev {
+            margin-left: rem-calc(-6);
+        }
+
+        &_next {
+            margin-left: rem-calc(6);
+        }
+    }
+}

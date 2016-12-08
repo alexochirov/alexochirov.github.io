@@ -1,0 +1,12 @@
+.shop {
+    background-color: #fafafa;
+    border: 1px solid #e5e5e5;
+    padding: rem-calc(10) rem-calc(16);
+    font-weight: 300;
+    margin-bottom: rem-calc(20);
+
+    &__title {
+        font-weight: 500;
+        font-size: rem-calc(18);
+    }
+}

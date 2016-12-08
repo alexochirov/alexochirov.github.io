@@ -1,0 +1,38 @@
+mixin apartment(img,credit)
+  .columns
+    .apartment(data-equalizer-watch)
+      .apartment__img.text-center
+        span.apartment__lone(class=typeof credit === "undefined" ? "" : "apartment__lone_credit")
+          a(href="#")
+            img(src="./images/#{img}", alt="")
+      .apartment__body
+        .apartment__signs
+          .res 
+            .res__num 2
+            .res__room комн
+          .res
+            .res__square 165
+            .res__room m2
+          .res 
+            .res__floor 10\10
+            .res__room этаж
+        div
+          a(href="#").apartment__link Уютная квартира в центре города
+        p Шикарная квартира в центре города, частично мебилированная, евро ремонт     
+        ul.cont
+          li.cont__item
+            span.cont__span Ремонт:  
+            span.cont__page Евроремонт 
+          li.cont__item
+            span.cont__span Окна:  
+            span.cont__page Пластик
+          li.cont__item
+            span.cont__span Цена за м2:  
+            span.cont__page 999 000 руб.
+        .apartment__geo
+          i.fa.fa-map-marker
+          |Лесобаза, ул. Домостроителей, д. 36
+        .row.columns
+          .apartment__price 2 950 000 
+            span.apartment__rub руб.
+          a(href="#").apartment__buy Купить

@@ -1,0 +1,21 @@
+.sort {
+    &__select {
+        max-width: 100%;
+        width: rem-calc(163);
+        float: left;
+        height: rem-calc(32);
+        font-weight: 300;
+        padding-top: rem-calc(0);
+        margin-bottom: rem-calc(11);
+        padding-bottom: rem-calc(0);
+        font-size: rem-calc(14);
+    }
+
+    &__label {
+        margin-right: rem-calc(11);
+        float: left;
+        line-height: rem-calc(32);
+        font-weight: 500;
+        margin-bottom: rem-calc(12);
+    }
+}

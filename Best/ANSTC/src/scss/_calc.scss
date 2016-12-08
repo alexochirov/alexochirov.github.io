@@ -1,0 +1,24 @@
+.calc {
+    font-weight: 700;
+    letter-spacing: rem-calc(1.6);
+    position: relative;
+    margin-bottom: rem-calc(40);
+
+    &:after,
+    &:before {
+        content: "";
+        position: absolute;
+        bottom: rem-calc(-9);
+        background: #e5e5e5;
+        height: rem-calc(1);
+        left: rem-calc(0);
+        width: 100%;
+    }
+
+    &:after {
+        width: rem-calc(64);
+        height: rem-calc(3);
+        background: $red;
+        left: calc(50% - 32px);
+    }
+}

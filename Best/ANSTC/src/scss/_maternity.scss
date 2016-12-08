@@ -1,0 +1,20 @@
+.maternity {
+    list-style: none;
+
+    &__item {
+      margin-bottom: rem-calc(20);
+      letter-spacing: rem-calc(.6);
+      font-weight: 300;
+      position: relative;
+      padding-left: rem-calc(16);
+        &:before {
+            color: red;
+            content: "•";
+            position: absolute;
+            line-height: 1;
+            left: rem-calc(0);
+            font-size: rem-calc(22);
+            padding-right: 10px;
+        }
+    }
+}

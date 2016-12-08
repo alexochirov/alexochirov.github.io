@@ -1,0 +1,33 @@
+.attraction {
+    margin-bottom: rem-calc(30);
+
+    .apartment {
+        margin-bottom: rem-calc(0);
+    }
+
+    .slick-arrow {
+        width: rem-calc(45);
+        height: rem-calc(90);
+        text-align: center;
+        line-height: rem-calc(83);
+        padding: rem-calc(0);
+
+        &:hover {
+            background: $red;
+            color: #fff;
+        }
+    }
+
+    .slick-prev {
+        left: rem-calc(-60);
+    }
+
+    .slick-next {
+        right: rem-calc(-60);
+    }
+    @media (max-width: 1320px) {
+        .slick-arrow {
+            display: none !important;
+        }
+    }
+}

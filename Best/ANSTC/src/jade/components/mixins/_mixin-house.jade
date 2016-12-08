@@ -1,0 +1,58 @@
+mixin house(img)
+  .house
+    .row
+      .large-8.columns.house__rel.text-center.large-text-left
+        .house__block
+          span.house__current 1 
+          |из 
+          span.house__all
+        .house__wrap  
+          .curtain
+            .curtain__slide
+              a(href="#")
+                img(src="./images/#{img}", alt="")
+            .curtain__slide
+              a(href="#")
+                img(src="./images/#{img}", alt="")
+            .curtain__slide
+              a(href="#")
+                img(src="./images/#{img}", alt="")
+      .large-16.columns.house__info
+        a(href="#").house__title однокомнатная квартира
+        a(href="#").house__ico
+          i.fa.fa-bar-chart
+        a(href="#").house__ico
+          i.fa.fa-heart  
+        .house__price 
+          |2&nbsp;950&nbsp;000&nbsp;
+          span руб.  
+        .row
+          .small-15.medium-17.columns  
+            .house__marker
+              i.fa.fa-map-marker
+              |ул. 30 лет Победы, д. 126 
+              span (4,9 км от центра города)
+            .row.small-up-1.large-up-2.house__characteristic
+              .columns.house__medium
+                |Площадь: 
+                span.house__light 
+                  |36,6&nbsp;м
+                  sup 2
+              .columns.house__medium.house__medium_green
+                |В ипотеку: 
+                span.house__light 14&nbsp;557&nbsp;руб./мес
+              .columns.house__medium
+                |Цена за м
+                sup 2
+                |:
+                span.house__light  54&nbsp;000&nbsp;руб.
+              .columns.house__medium
+                |Этаж/Этажность: 
+                span.house__light 2/10
+            .house__light Квартира в очень престижном районе города. Район с развитой инфраструктурой, садики и школы в шаговой доступности, детская и взрослая современная поликлиника, ...
+            a.house__more(href="#") Читать полностью    
+                
+          .small-9.medium-7.columns.text-center
+            .house__greens 7.2
+            a(href="#").house__how Как считается рейтинг?
+            button.button.vision.vision_top Подробнее

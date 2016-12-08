@@ -1,0 +1,45 @@
+.page {
+    &__label {
+        font-weight: 500;
+        float: left;
+        line-height: rem-calc(32);
+        margin-bottom: rem-calc(12);
+        margin-right: rem-calc(6);
+    }
+
+
+    &__input {
+        font-size: rem-calc(14);
+        font-weight: 700;
+        color: $red;
+        padding-left: rem-calc(4);
+        padding-right: rem-calc(4);
+        margin-bottom: rem-calc(11);
+        border: 1px solid $grey;
+        width: rem-calc(34);
+        height: rem-calc(32);
+        float: left;
+        margin-right: rem-calc(6);
+    }
+
+    &__arr {
+        background: #fff;
+        display: inline-block;
+        text-align: center;
+        width: rem-calc(36);
+        line-height: rem-calc(32);
+        border: 1px solid $grey;
+        padding-right: rem-calc(3);
+
+        i {
+            vertical-align: middle;
+            font-size: rem-calc(18);
+        }
+
+        &_next {
+            padding-right: rem-calc(0);
+            padding-left: rem-calc(3);
+            border-left: rem-calc(0);
+        }
+    }
+}

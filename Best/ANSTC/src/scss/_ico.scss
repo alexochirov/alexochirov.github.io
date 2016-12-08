@@ -1,0 +1,14 @@
+.ico {
+    margin-right: rem-calc(5);
+
+
+    &:hover {
+        .fa-circle {
+            color: $red;
+        }
+
+        i {
+            color: #fff;
+        }
+    }
+}

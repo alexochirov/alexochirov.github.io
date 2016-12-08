@@ -1,0 +1,25 @@
+.vision {
+    font-weight: 500;
+    font-size: rem-calc(14);
+    background-color: $red;
+    padding-top: rem-calc(11);
+    padding-bottom: rem-calc(11);
+    margin-bottom: rem-calc(10);
+    border: rem-calc(0);
+    display: block;
+    width: 100%;
+    border-bottom: rem-calc(2) solid #9a1217;
+
+    &_top {
+        margin-top: rem-calc(50);
+        border: rem-calc(2) solid $black;
+        color: $black;
+        background: #fff;
+
+        &:hover {
+            border-color: $red;
+            background-color: $red;
+            border-bottom: rem-calc(2) solid #9a1217;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+.denote {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: rem-calc(12);
+    display: block;
+    border-radius: rem-calc(20);
+    padding-top: rem-calc(12);
+    padding-bottom: rem-calc(9);
+    border: rem-calc(1) solid #e6e6e6;
+    transition: 0.6s all;
+    margin-bottom: rem-calc(50);
+
+    i {
+        font-size: rem-calc(15);
+        margin-right: rem-calc(13);
+    }
+
+    &:hover {
+        background: #e6e6e6;
+    }
+}

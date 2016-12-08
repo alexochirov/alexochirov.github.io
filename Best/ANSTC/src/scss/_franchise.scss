@@ -1,0 +1,16 @@
+.franchise {
+    margin-left: rem-calc(0);
+    list-style-type: none;
+    margin-bottom: rem-calc(0);
+
+
+
+    &__item {
+        margin-bottom: rem-calc(16);
+    }
+
+    &__link {
+        font-weight: 300;
+        color: #fff;
+    }
+}

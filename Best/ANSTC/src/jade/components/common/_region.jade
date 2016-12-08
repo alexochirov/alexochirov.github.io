@@ -1,0 +1,36 @@
+.row
+  .large-5.medium-12.columns
+    label.price.price_single(for="2")
+      select.price__select(name="34")
+        option Область, город, район
+        option Страна
+  .large-5.medium-12.columns
+    label.pine(for="#") Комнат:
+    label.apart
+      input#22(type="checkbox",name="maf",checked).apart__input
+      label(for="22").apart__label 1 
+    label.apart
+      input#32(type="checkbox",name="maf").apart__input
+      label(for="32").apart__label 2 
+    label.apart
+      input#42(type="checkbox",name="maf").apart__input
+      label(for="42").apart__label 3 
+    label.apart
+      input#52(type="checkbox",name="maf").apart__input
+      label(for="52").apart__label 4+ 
+  .large-6.medium-12.columns
+    label(for="32").price
+      input.price__input(type="text",placeholder='Цена от ')  
+      div.price__rub руб.
+    label(for="33").price
+      input.price__input(type="text",placeholder='Цена до ')  
+      div.price__rub руб.
+  .large-5.medium-12.columns
+    label(for="3").price
+      input.price__input.price__input_italic(type="text",placeholder='S от')  
+      div.price__rub m2
+    label(for="2").price
+      input.price__input.price__input_italic(type="text",placeholder='S до ')  
+      div.price__rub m2
+  .large-3.columns.text-center
+    button.button.find Найти объекты  

@@ -1,0 +1,246 @@
+extends index
+include components/mixins/_mixin-calc
+include components/mixins/_mixin-obj
+include components/mixins/_mixin-show
+include components/mixins/_mixin-head
+include components/mixins/_mixin-bread
+include components/mixins/_mixin-accordion
+include components/mixins/_mixin-check
+include components/mixins/_mixin-plain
+include components/mixins/_mixin-radio
+include components/mixins/_mixin-house
+include components/mixins/_mixin-news
+block content
+  include components/common/_menu
+  include components/common/_region
+  .consul
+    img(src="./images/1920.png", alt="")
+    .calling
+      form(action="#")
+        p.calling__title.text-center Оставьте телефон и мы перезвоним вам
+        input.calling__input(type="text",placeholder="Ваше имя")
+        input.calling__input(type="text",placeholder="Ваш номер телефона")
+        button.button.vision Жду звонка
+        .calling__key
+  +head('Однокомнатные квартиры') 
+  +bread(['Вторичная','Однокомнатные квартиры'])  
+  .row
+    .large-6.medium-8.columns.bell
+      button.button.bell__btn Расширенный поиск
+      .bell__col
+        ul.accordion(data-accordion='',data-multi-expand="true",data-allow-all-closed="true")
+          li.accordion-item.is-active(data-accordion-item='')
+            a.accordion-title(href='#') Оценка в рейтинге
+            .accordion-content(data-tab-content='')
+              +radio('1','Превосходно','9+')
+              +radio('2','Отлично','8+')
+              +radio('3','Очень хорошо','7+')
+              +radio('4','Хорошо','6+')
+              +radio('5','Прочие')
+          li.accordion-item.is-active(data-accordion-item='')
+            a.accordion-title(href='#') Тип недвижимости
+            .accordion-content(data-tab-content='')
+              +check('11','Квартиры')
+              +check('21','Пансионаты')
+              +check('31','Комнаты')
+              +check('41','Малосемейки')
+              +check('51','Общежития')
+          li.accordion-item.is-active(data-accordion-item='')
+            a.accordion-title(href='#') Площадь
+            .accordion-content(data-tab-content='')
+              .row
+                .columns Общая площадь
+                .columns
+                  label.meters
+                    input#sliderOutput2.meters__input(type='number')
+                    div.meters__meter 
+                      |м
+                      sup 2
+                  label.meters  
+                    input#sliderOutput1.meters__input(type='number')
+                    div.meters__meter 
+                      |м
+                      sup 2
+                .columns  
+                  .slider(data-slider='', data-initial-start='50', data-step='5')
+                    span.slider-handle.slider-handle_prev(data-slider-handle='', role='slider', tabindex='1', aria-controls='sliderOutput2')
+                    span.slider-handle.slider-handle_next(data-slider-handle='', role='slider', tabindex='1', aria-controls='sliderOutput1')
+                    span.slider-fill(data-slider-fill='')
+              .row
+                .columns Площадь кухни
+                .columns
+                  label.meters
+                    input#sliderOutput3.meters__input(type='number')
+                    div.meters__meter 
+                      |м
+                      sup 2
+                  label.meters  
+                    input#sliderOutput4.meters__input(type='number')
+                    div.meters__meter 
+                      |м
+                      sup 2
+                .columns  
+                  .slider(data-slider='', data-initial-start='50', data-step='5')
+                    span.slider-handle.slider-handle_prev(data-slider-handle='', role='slider', tabindex='1', aria-controls='sliderOutput3')
+                    span.slider-handle.slider-handle_next(data-slider-handle='', role='slider', tabindex='1', aria-controls='sliderOutput4')
+                    span.slider-fill(data-slider-fill='')
+          +accordion('Интересные предложения')
+          +accordion('Этажность')
+          +accordion('Отделка')
+          +accordion('Окна')
+          +accordion('Год постройки')
+          +accordion('Медиа')
+        button.button.bell__drop сбросить фильтр    
+        button.button.vision Подобрать
+      p.text-center
+        a(href="#")
+          img(src="./images/270.png", alt="")  
+
+
+    .large-18.medium-16.columns  
+      .grey
+        .row
+          .large-8.columns.sort
+            label.sort__label(for="a") Сортировать:
+            select(name="sel").sort__select
+              option(value="") По умолчанию
+              option(value="") По алфавиту
+          .large-8.columns.sort
+            label.sort__label(for="a") Показать:
+            select(name="sel").sort__select
+              option(value="") За все время (5 988)
+              option(value="") За сегодня
+          .large-8.columns.page    
+            include components/common/_page
+      +house('room1.png')    
+      +house('room2.png')  
+      +house('room3.png')  
+      +house('room4.png')  
+      +house('room5.png')  
+      +house('room6.png')  
+      +house('room7.png')  
+      +house('room8.png')  
+      +house('room1.png')  
+      .grey
+        .row.columns
+          include components/common/_page
+  +calc('Новые поступления в Тюмени')      
+  .row
+    .large-14.columns.large-centered
+      ul#example-tabs.tabs.country(data-tabs='')
+        li.tabs-title.is-active
+          a(href='#panel1') 1-комнатные
+        li.tabs-title
+          a(href='#panel2') 2-комнатные
+        li.tabs-title
+          a(href='#panel3') 3-комнатные
+        li.tabs-title
+          a(href='#panel4') 4 и более комнат
+  .row.columns
+    .tabs-content.another(data-tabs-content='example-tabs')
+      #panel1.tabs-panel.is-active
+        include components/common/_apartment
+      #panel2.tabs-panel
+        include components/common/_apartment
+      #panel3.tabs-panel
+        include components/common/_apartment
+      #panel4.tabs-panel
+        include components/common/_apartment
+  +head('Новости')       
+  +bread(['Новости'])  
+  .row
+    .large-18.medium-16.columns
+      +news('news1.png')
+      +news('news2.png')
+      +news('news3.png')
+      +news('news4.png')
+      +news('news5.png')
+
+      .grey
+        .row.columns
+          include components/common/_page
+    .large-6.medium-8.columns
+      .shop
+        .shop__title.text-center Подпишитесь на новости
+        p.text-center и не пропустите ни одной статьи!
+        input.mail(type="text",placeholder="Введите ваш e-mail")
+        p
+          button.button.vision Подписаться
+        .shop__title Категории  
+        ul.wanted
+          each title in ['Акции','Аналитика','Аренда','Безопасность сделок','Вторичное жилье ','Другое','Загородная недвижимость','Ипотека ','Новости ','Новости компании ','Новостройки ','Социальные программы','Это интересно!'] 
+            li.wanted__item
+              a(href="#").wanted__link
+                |#{title} 
+              span.wanted__num (#{Math.floor(Math.random() * (15 - 13) + 13)})
+        .shop__title Самое читаемое
+        +plain('towel1.png')
+        +plain('towel2.png')
+        +plain('towel3.png')
+  p &nbsp;
+  +bread(['Новости','Социальные программы','Как получить и на что потратить материнский ...'])  
+  .row.columns
+    span.date 30 ноября 2016 г.
+    .dexter 
+      span.dexter__share Поделиться
+      include components/common/_soc
+  .row.columns
+    p
+      a(href="#")
+        img(src="./images/maternity.png", alt="")    
+  +head('Как получить и на что потратить материнский капитал в 2017 году?')      
+  .row.columns
+    p Программа «Материнский капитал» почти 10 лет действует в России и дает возможность семьям с детьми улучшить свое положение. Вы тоже хотите воспользоваться материнским капиталом? Тогда читайте краткие и понятные ответы на самые распространенные вопросы о программе.
+    h3 Что такое материнский капитал?
+    p Материнский (или семейный) капитал — это мера государственной поддержки семей, которая помогает им решить жилищные проблемы, обеспечить достойное образование детям или поддержать женщину, когда она выйдет на пенсию. Капитал предоставляется семьям, в которых воспитываются двое и более детей. При этом второй ребенок должен быть усыновлен или рожден после 1 января 2007 года и не позднее 31 декабря 2018 года.
+    h3 Кто может получить материнский капитал?
+    ul.maternity
+      each title in ['мать, родившая (усыновившая) второго или следующих детей после 1 января 2007 года;','единственный усыновитель второго или следующих детей, если решение суда об усыновлении вступило в силу с 1 января 2007 года;','отец (усыновитель), если мать умерла или лишена родительских прав на ребенка, с рождением (усыновлением) которого возникло право на получение материнского капитала;','несовершеннолетний сирота или ребенок, оставшийся без попечения родителей, имевших право на материнский капитал;','совершеннолетний в возрасте до 23 лет, оставшийся без родительской поддержки и обучающийся в учебном заведении на очном отделении (за исключением случаев освоения программ дополнительного профессионального образования).']
+        li.maternity__item= title
+    h3 На что можно потратить материнский капитал?
+    ol
+      each title in ['Улучшение жилищных условий.','Оплата образования.','Социальная адаптация ребенка-инвалида.','Формирование пенсионных накоплений матери.']    
+        li= title 
+    h3 Какой размер выплаты материнского капитала будет в 2017 году?     
+    p Размер материнского капитала ежегодно индексировался. Начиная с 2007 года его размер вырос в два раза. Однако индексация материнского капитала была отменена с 2016 года, поэтому размер сертификата на 2017-2018 годы по-прежнему составляет 453 026 рублей.
+    h3 Какие условия получения материнского капитала при рождении двойни?
+    p При рождении сразу двух и более детей материнский капитал оформляется так же, как и в обычных случаях.  И размер сертификата равен 453 026 рублям.
+    h3 Имеет ли право семья получит материнский капитал, если первый ребенок умер?
+    p Если первый ребенок родился и было оформлено свидетельство о его рождении, то оформить сертификат на материнский капитал можно. Так как свидетельство о рождении является доказательством того, что в семье родились двое детей, даже когда первого ребенка нет.
+    p Но бывает, что родители не успевают оформить свидетельство о рождении первого ребенка. Поэтому, если в медицинских документах указано, что малыш родился живым и сделал хотя бы один вдох, то семья имеет право на то, чтобы факт его рождения был признан. Это дает право на получение семейного капитала при рождении второго ребенка. Если не получается уладить вопрос выдачи документов о рождении в роддоме и органах ЗАГС, то нужно обращаться в суд, чтобы признать факт рождения первенца и право на получение капитала.
+  +head('О проекте')      
+  +bread(['О проекте'])  
+  .row
+    .large-18.medium-16.columns
+      h1 Заголовок H1
+      h2 Заголовок H2
+      h3 Заголовок Н3
+      p СолнцеТелеком – зарегистрированная торговая марка одного из интернет-провайдеров г. Южно-Сахалинска и всего острова Сахалин. Компания начала работу на рынке телекоммуникаций в 2008 году. Сегодня СолнцеТелеком специализируется на предоставлении услуг доступа в Интернет по выделенным линиям. Главное направление деятельности – развитие собственной волоконно-оптической сети для подключения офисов и жилых домов. Корпоративным клиентам мы предлагаем организацию выделенных интернет-каналов, предоставляем комплекс самых востребованных телекоммуникационных услуг и IT сервисов. В зоне обслуживания мы обеспечиваем оперативное подключение и наиболее экономичные в корпоративном сегменте тарифы. Наша компания достаточно опытна и стабильна, чтобы обеспечивать высокое качество услуг, внедрять современные технические решения, использовать надежное оборудование и своевременно его модернизировать. И достаточно локальна, чтобы уделять максимум внимания обслуживанию каждого клиента – будь то крупная компания или домашний абонент. Наш офис и сервисные подразделения находятся в центре города, и мы оперативно реагируем на каждый вызов. Наша техническая поддержка работает круглосуточно, и до нас очень просто дозвониться. Каждый клиент важен для нас и может рассчитывать на квалифицированный сервис и внимательнее отношение к своим запросам. Так же СолнцеТелеком предоставляет услуги кабельного, цифрового и интерактивного телевидения, телефонии.
+    .large-6.medium-8.columns
+      .shop
+        .shop__title.text-center Заполните заявку
+        input(type="text",placeholder="Фамилия Имя Отчество").mail 
+        input(type="text",placeholder="Контактный телефон").mail 
+        input(type="email",placeholder="E-mail").mail 
+        textarea#123.mail.mail_tarea(name="",  rows="8",placeholder="Дополнительное описание")
+        button.button.vision Подать заявку
+  +head('Контакты') 
+  +bread(['Контакты'])  
+  .row
+    .medium-7.columns.text-center.medium-text-left
+      p
+        a(href="#")
+          img(src="./images/saha.png", alt="")           
+    .medium-17.columns
+      h2 Наш адрес:
+      p Сахалинская область, Южно-Сахалинск, ул. Ленина 123
+      h2 График работы:
+      p Понедельник-пятница 9:00-18:00
+      h2 Телефон:
+      p 8 (4242) 51-55-55
+      h2 E-mail:
+      p
+        a(href="#").dog 128@st65.ru        
+  .row.columns
+    .holiday
+      script(type='text/javascript', charset='utf-8', async='', src='https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=3Fkz6lpqrQOcMbHtoPxW0nN3QvGBSvOe&width=100%25&height=400&lang=ru_UA&sourceType=constructor&scroll=false')

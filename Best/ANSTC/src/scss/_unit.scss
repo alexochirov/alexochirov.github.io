@@ -1,0 +1,71 @@
+.unit {
+    padding-top: rem-calc(12);
+    border-bottom: rem-calc(1) solid #e5e5e5;
+
+    &__user {
+        font-size: rem-calc(11);
+        font-weight: 300;
+
+        i {
+            margin-right: rem-calc(5);
+            font-size: rem-calc(17);
+            position: relative;
+            bottom: rem-calc(-2);
+        }
+    }
+
+    &__pole {
+        font-size: rem-calc(13);
+        color: #d9dcdd;
+        padding-left: rem-calc(7);
+        padding-right: rem-calc(7);
+        font-family: "Open Sans",sans-serif;
+    }
+
+    &__city {
+        color: $grey;
+        padding-bottom: rem-calc(9);
+        font-size: rem-calc(11);
+        font-weight: 300;
+
+        i {
+            color: $black;
+            font-size: rem-calc(18);
+            margin-right: rem-calc(8);
+        }
+
+        .dropdown {
+            display: inline-block;
+            top: rem-calc(3);
+            position: relative;
+
+            .submenu {
+                border-radius: rem-calc(5);
+                padding-top: rem-calc(7);
+                padding-bottom: rem-calc(7);
+            }
+
+            & > li {
+                & > a {
+                    padding-left: rem-calc(0);
+                    margin-left: rem-calc(2);
+                    padding-right: rem-calc(0);
+                    margin-right: rem-calc(5);
+                    color: $black;
+                    border-bottom: rem-calc(1) dashed $black;
+                    padding-top: rem-calc(0);
+                    padding-bottom: rem-calc(0);
+
+                    &:after {
+                        border: 0;
+                        top: rem-calc(-2);
+                        right: rem-calc(-4);
+                        font-size: rem-calc(7);
+                        content: "\f078";
+                        font-family: 'FontAwesome';
+                    }
+                }
+            }
+        }
+    }
+}

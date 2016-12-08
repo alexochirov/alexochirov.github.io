@@ -1,0 +1,5 @@
+mixin check(id,text)
+  .check
+    input.check__input(type="checkbox",id="#{id}")
+    label(for="#{id}").check__label.check__label_ch
+      |#{text}

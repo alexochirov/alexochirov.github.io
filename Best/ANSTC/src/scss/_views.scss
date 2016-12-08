@@ -1,0 +1,21 @@
+.views {
+    float: right;
+
+    &__link {
+        margin-left: rem-calc(15);
+        font-weight: 300;
+        font-size: rem-calc(14);
+        line-height: rem-calc(28);
+
+        i {
+            font-size: rem-calc(18);
+            margin-right: rem-calc(5);
+            color: #e3e5e6;
+        }
+        &:hover {
+          i {
+            color: $red;
+          }
+        }
+    }
+}

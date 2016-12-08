@@ -1,0 +1,131 @@
+.house {
+    border: 2px solid transparent;
+    margin-bottom: rem-calc(12);
+    padding-right: rem-calc(16);
+
+    &:hover {
+        border-color: $red;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    &__info {
+        padding-top: rem-calc(12);
+    }
+
+    &__ico {
+        color: #d6d6d6;
+        font-size: rem-calc(18);
+        margin-right: rem-calc(7);
+    }
+
+    &__price {
+        font-weight: 700;
+        color: $red;
+        font-size: rem-calc(24);
+        float: right;
+        line-height: rem-calc(24);
+        margin-top: rem-calc(-2);
+
+        span {
+            font-size: rem-calc(16);
+        }
+    }
+
+    &__characteristic {
+        margin-bottom: rem-calc(13);
+    }
+
+    &__light {
+        font-weight: 300;
+        letter-spacing: rem-calc(.5);
+    }
+
+    &__medium {
+        letter-spacing: rem-calc(.5);
+        font-weight: 500;
+
+        &_green {
+            color: #3bbe1d;
+        }
+    }
+
+    &__more {
+        color: #4480ac;
+        font-weight: 500;
+        border-bottom: rem-calc(1) dotted #4480ac;
+
+        &:hover {
+            border-bottom-color: $red;
+        }
+    }
+
+    &__greens {
+        width: rem-calc(70);
+        height: rem-calc(70);
+        display: inline-block;
+        background: url(../images/greens.png)no-repeat center;
+        color: #fff;
+        font-weight: 700;
+        line-height: rem-calc(70);
+        margin-bottom: rem-calc(3);
+        margin-top: rem-calc(12);
+        font-size: rem-calc(28);
+    }
+
+    &__how {
+        color: #4480ac;
+        font-size: rem-calc(11);
+        font-weight: 300;
+        display: block;
+    }
+
+    &__marker {
+        font-weight: 300;
+        margin-bottom: rem-calc(12);
+
+        span {
+            color: $grey;
+        }
+
+        i {
+            font-size: rem-calc(18);
+            margin-right: rem-calc(8);
+        }
+    }
+
+    &__rel {
+        position: relative;
+    }
+
+    &__title {
+        font-weight: 500;
+        text-transform: uppercase;
+        padding-right: rem-calc(33);
+    }
+
+    &__block {
+        font-weight: 700;
+        font-size: rem-calc(12);
+        color: #fff;
+        position: absolute;
+        bottom: rem-calc(9);
+        z-index: 2;
+        right: rem-calc(80);
+    }
+    @include breakpoint(medium down) {
+        padding-left: rem-calc(16);
+        &__wrap {
+            display: inline-block;
+            max-width: 268px;
+        }
+
+        &__block {
+            display: none;
+            right: calc(50% - 60px);
+        }
+    }
+    @include breakpoint(small only) {
+
+        padding-bottom: rem-calc(8);
+    }
+}
