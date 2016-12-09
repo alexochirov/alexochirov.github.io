@@ -1,0 +1,100 @@
+include components/mixins/_mixin-purple
+extends main
+block content
+  p &nbsp;
+  .row
+    .large-18.medium-16.columns
+      +purple()
+      +head('Статистика')  
+      .row.columns.about.text-center.medium-text-left
+        p 
+          span.about__caps Всего пользователей: 
+          b 340472
+          br
+          |» девушек: 
+          b 136271
+          br
+          |» мужчин: 
+          b 177718
+          br
+          |» остальных: 
+          b 26483
+    .large-6.medium-8.columns
+      +head('Поиск пользователя')  
+      include components/common/_search
+      +head('Дни рождения') 
+      .fridge.fridge_top
+        ul.company.company_high.text-center.medium-text-left
+          each title in ['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь']
+            li.company__item
+              a(href="#").company__link= title
+      +head('Cтатистика') 
+      .fridge.fridge_top
+        ul.company.company_high.text-center.medium-text-left
+          each title in ['По городам','По возрасту','На форуме']
+            li.company__item
+              a(href="#").company__link= title
+      
+      div
+        a(href="#").link.link_big Букеты
+      div  
+        a(href="#").link.link_big Звездные
+      p  
+      +head('Гороскоп')     
+      include components/common/_horoscope
+      include components/common/_online
+      +head('Случайное фото')    
+      .fridge.fridge_top.text-center
+        div
+          img(src="./images/camera.png", alt="")
+        a(href="#").link Имя пользователя
+      +head('Сейчас на ТВ')      
+      .fridge.fridge_top
+        p
+          b 18:00 
+          | Вечерние новости (с субтитрами) 
+          b.fridge__grey (Первый)
+          br
+          b 17:40 
+          |"Прямой эфир". (16+) 
+          b.fridge__grey (Россия-1)
+          br
+          b 18:00 
+          |Универ. Новая общага - Марина (16+) 
+          b.fridge__grey (АСТВ, ТНТ)
+          br
+          b 18:00 
+          |КВН на бис [16+] 
+          b.fridge__grey (Че)
+          br
+          b 17:00 
+          |СВАТЬИ (16+) Комедия 
+          b.fridge__grey (ОТВ)
+          br
+          b 17:25 
+          |Сериал "Улицы разбитых фонарей" (16+) 
+          b.fridge__grey (НТВ)
+          br
+          b 16:30 
+          |Воронины [16+] 
+          b.fridge__grey (СТС)
+          br
+          b 18:00 
+          |Тайны Чапман (16+)
+          b.fridge__grey (Эхо Сахалина, РЕН ТВ)
+          br
+          b 17:45 
+          |Военная разведка. Западный фронт [16+] 
+          b.fridge__grey (5 канал)
+          br
+          b 17:45 
+          |Хосе Каррерас. Гала-концерт 
+          b.fridge__grey (Россия-К)
+          br
+          b 18:00 
+          |Вести Интервью 
+          b.fridge__grey (Россия-24)
+          br
+        .text-right
+          a(href="#").link Вся телепрограмма 
+          span »

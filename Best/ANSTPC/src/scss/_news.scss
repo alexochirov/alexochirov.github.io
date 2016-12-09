@@ -1,9 +1,13 @@
 .news {
-    padding-top: rem-calc(17);
+    padding-top: rem-calc(16);
     padding-bottom: rem-calc(7);
 
     &_single {
-        padding-top: rem-calc(0);
+        padding-top: rem-calc(1);
+    }
+
+    &_high {
+        padding-bottom: rem-calc(16);
     }
 
     &_slider {
@@ -47,6 +51,10 @@
         }
     }
 
+    &__header {
+        margin-bottom: rem-calc(10);
+    }
+
     &__text {
         color: #9c9b9b;
         font-weight: 300;
@@ -71,11 +79,22 @@
         border-bottom-color: #fff;
     }
 
+    &__genre {
+        color: #9c9b9b;
+        font-weight: 300;
+    }
+
     &__date {
         padding-bottom: rem-calc(3);
         display: inline-block;
         font-weight: 300;
         font-size: rem-calc(11);
+
+        &_right {
+            float: right;
+            padding-bottom: rem-calc(0);
+            margin-top: rem-calc(4);
+        }
     }
 
     &__title {
@@ -86,7 +105,12 @@
         &_big {
             font-size: rem-calc(18);
         }
-
+        &_small {
+          padding-bottom: rem-calc(0);
+        }
+        &_num {
+          display: inline;font-size: rem-calc(18);
+        }
         &:hover {
             text-decoration: underline;
         }

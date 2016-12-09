@@ -1,0 +1,35 @@
+.tags {
+    list-style-type: none;
+    margin-left: rem-calc(0);
+
+    &_pole {
+        margin-bottom: rem-calc(13);
+
+        li {
+            &:not(:last-child):after {
+                content: '|';
+                margin-right: rem-calc(2);
+                margin-left: rem-calc(8);
+            }
+        }
+    }
+
+    &__item {
+        display: inline-block;
+        font-weight: 300;
+        letter-spacing: rem-calc(.6);
+
+        &:not(:last-child):after {
+            content: ",";
+        }
+    }
+
+    &__link {
+        text-decoration: underline;
+        color: $blue;
+
+        &:hover {
+            color: $yellow;
+        }
+    }
+}

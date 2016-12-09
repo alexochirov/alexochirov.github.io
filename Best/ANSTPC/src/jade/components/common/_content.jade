@@ -16,128 +16,85 @@ include ../mixins/_mixin-short-news
           a(href="#").themes__link= title
 .row
   .large-18.medium-16.columns
-    +head('Происшествия')
-    .row(data-equalizer,data-equalize-by-row="true")
-      .large-15.columns
-        .sli
-          .sli__slide
-            a(href="#")
-              img(src="./images/bear.png", alt="")
-          .sli__slide
-            a(href="#")
-              img(src="./images/bear.png", alt="")
-          .sli__slide
-            a(href="#")
-              img(src="./images/bear.png", alt="")
-          .sli__slide
-            a(href="#")
-              img(src="./images/bear.png", alt="")
-      .large-9.columns
-        .grey
-          .row.columns.news.news_slider
-            .news__date 15:35, Сегодня
-            .like
-              a(href="#").like__link 
-                i.fa.fa-heart.fa-fw
-                |&nbsp;133
-              a(href="#").like__link 
-                i.fa.fa-comments.fa-fw
-                |&nbsp;133
-            a(href="#").news__title Заголовок новости или статьи возможно пару строк      
-            hr.news__hr
-          .row.columns.news.news_slider
-            .news__date 15:35, Сегодня
-            .like
-              a(href="#").like__link 
-                i.fa.fa-heart.fa-fw
-                |&nbsp;133
-              a(href="#").like__link 
-                i.fa.fa-comments.fa-fw
-                |&nbsp;133
-            a(href="#").news__title Заголовок новости или статьи возможно пару строк      
-            hr.news__hr
-          .row.columns.news.news_slider
-            .news__date 15:35, Сегодня
-            .like
-              a(href="#").like__link 
-                i.fa.fa-heart.fa-fw
-                |&nbsp;133
-              a(href="#").like__link 
-                i.fa.fa-comments.fa-fw
-                |&nbsp;133
-            a(href="#").news__title Заголовок новости или статьи возможно пару строк      
-            hr.news__hr
-          .row.columns.news.news_slider
-            .news__date 15:35, Сегодня
-            .like
-              a(href="#").like__link 
-                i.fa.fa-heart.fa-fw
-                |&nbsp;133
-              a(href="#").like__link 
-                i.fa.fa-comments.fa-fw
-                |&nbsp;133
-            a(href="#").news__title Заголовок новости или статьи возможно пару строк
-      .large-15.columns
-        .fridge(data-equalizer-watch)
-          .fridge__pad
-            .news
-              .news__date 3 ноября, 2016
-              .like
-                a(href="#").like__link 
-                  i.fa.fa-heart.fa-fw
-                  |&nbsp;133
-                a(href="#").like__link 
-                  i.fa.fa-comments.fa-fw
-                  |&nbsp;133
-              a(href="#").news__title.news__title_big Заголовок новости или статьи пару строк
-              .news__text 
-                p Последняя в этом году прямая линия Sakh.com состоится в Долинске. Жителей города и района с их жилищно-коммунальными и иными проблемами журналисты агентства будут ждать на городской площади перед местной администрацией 23 ноября (среда) с 12 до 14 часов.
+    block main
+      block event
+        +head('Происшествия')
+        .row(data-equalizer,data-equalize-by-row="true")
+          .large-15.columns
+            .sli
+              .sli__slide
+                a(href="#")
+                  img(src="./images/bear.png", alt="")
+              .sli__slide
+                a(href="#")
+                  img(src="./images/bear.png", alt="")
+              .sli__slide
+                a(href="#")
+                  img(src="./images/bear.png", alt="")
+              .sli__slide
+                a(href="#")
+                  img(src="./images/bear.png", alt="")
+          .large-9.columns
+            .grey
+              .row.columns.news.news_slider
+                .news__date 15:35, Сегодня
+                include _like
+                a(href="#").news__title Заголовок новости или статьи возможно пару строк      
+                hr.news__hr
+              .row.columns.news.news_slider
+                .news__date 15:35, Сегодня
+                include _like
+                a(href="#").news__title Заголовок новости или статьи возможно пару строк      
+                hr.news__hr
+              .row.columns.news.news_slider
+                .news__date 15:35, Сегодня
+                include _like
+                a(href="#").news__title Заголовок новости или статьи возможно пару строк      
+                hr.news__hr
+              .row.columns.news.news_slider
+                .news__date 15:35, Сегодня
+                include _like
+                a(href="#").news__title Заголовок новости или статьи возможно пару строк
+          .large-15.columns
+            .fridge(data-equalizer-watch)
+              .news
+                .news__date 3 ноября, 2016
+                include _like
+                a(href="#").news__title.news__title_big Заголовок новости или статьи пару строк
+                .news__text 
+                  p Последняя в этом году прямая линия Sakh.com состоится в Долинске. Жителей города и района с их жилищно-коммунальными и иными проблемами журналисты агентства будут ждать на городской площади перед местной администрацией 23 ноября (среда) с 12 до 14 часов.
 
-                p Те, кто не успеет задать вопрос, смогут сформулировать его на бланке, который нужно положить в специальный ящик. Все темы, которые заинтересуют редакцию, будут отработаны...
-      .large-9.columns    
-        .fridge(data-equalizer-watch)
-          .text-center
-            a(href="#")
-              img(src="./images/laptop.png", alt="") 
-          .fridge__pad    
-            .news
-              .news__date 3 ноября, 2016
-              .like
-                a(href="#").like__link 
-                  i.fa.fa-heart.fa-fw
-                  |&nbsp;133
-                a(href="#").like__link 
-                  i.fa.fa-comments.fa-fw
-                  |&nbsp;133
-              a(href="#").news__title.news__title_big Заголовок новости или статьи пару строк 
-      .columns
-        .fridge
-          .fridge__main
-            .row
-              .large-6.columns.text-center
-                p
-                  a(href="#")
-                    img(src="./images/poly.png", alt="")
-              .large-18.columns
-                .news.news_single
+                  p Те, кто не успеет задать вопрос, смогут сформулировать его на бланке, который нужно положить в специальный ящик. Все темы, которые заинтересуют редакцию, будут отработаны...
+          .large-9.columns    
+            .freezer(data-equalizer-watch)
+              .text-center
+                a(href="#")
+                  img(src="./images/laptop.png", alt="") 
+              .freezer__pad    
+                .news
                   .news__date 3 ноября, 2016
-                  .like
-                    a(href="#").like__link 
-                      i.fa.fa-heart.fa-fw
-                      |&nbsp;133
-                    a(href="#").like__link 
-                      i.fa.fa-comments.fa-fw
-                      |&nbsp;133
-                  a(href="#").news__title.news__title_big Заголовок новости или публикации, в одну строку
-                  .news__text Претензий к Дегтяреву накопилось достаточно, одна из которых — "вечный" ремонт "Полариса". Масла в огонь добавили и последние жалобы курильчан: на встрече с губернатором они заявили о неких  
-    +head('Все новости')              
-    .row.columns
-      .fridge
-        +long-news('Политика')
-        +long-news('Бизнес')
-        +long-news('МЧС')
-        +long-news('Политика')
-        .fridge__main
+                  include _like
+                  a(href="#").news__title.news__title_big Заголовок новости или статьи пару строк 
+      .row.columns
+        .fridge.fridge_top
+          .row
+            .large-6.columns.text-center
+              a(href="#")
+                img(src="./images/poly.png", alt="")
+            .large-18.columns
+              .news.news_single
+                .news__date 3 ноября, 2016
+                include _like
+                a(href="#").news__title.news__title_big Заголовок новости или публикации, в одну строку
+                .news__text Претензий к Дегтяреву накопилось достаточно, одна из которых — "вечный" ремонт "Полариса". Масла в огонь добавили и последние жалобы курильчан: на встрече с губернатором они заявили о неких  
+      +head('Все новости')              
+      .row.columns
+        .fridge
+          +long-news('Политика')
+          +long-news('Бизнес')
+          +long-news('МЧС')
+          +long-news('Политика')
+          p
           .row
             .large-6.columns.text-center
               p
@@ -147,79 +104,26 @@ include ../mixins/_mixin-short-news
               .news.news_single
                 a(href="#").news__category Фото
                 .news__date 3 ноября, 2016
-                .like
-                  a(href="#").like__link 
-                    i.fa.fa-heart.fa-fw
-                    |&nbsp;133
-                  a(href="#").like__link 
-                    i.fa.fa-comments.fa-fw
-                    |&nbsp;133
+                include _like
                 a(href="#").news__title.news__title_big Заголовок новости или публикации, в одну строку
                 .news__text Претензий к Дегтяреву накопилось достаточно, одна из которых — "вечный" ремонт "Полариса". Масла в огонь добавили и последние жалобы курильчан: на встрече с губернатором они заявили о неких  
 
 
 
   .large-6.medium-8.columns          
-    +head('Статьи')
-    .fridge
-      .fridge__pad
-        .news
-          div
-            a(href="#").news__category Бизнес
-          .news__date 3 ноября, 2016
-          .like
-            a(href="#").like__link 
-              i.fa.fa-heart.fa-fw
-              |&nbsp;133
-            a(href="#").like__link 
-              i.fa.fa-comments.fa-fw
-              |&nbsp;133
-          a(href="#").news__title.news__title_big Заголовок новости или статьи пару строк
-          .news__text Компания начала работу на рынке коммуникаций в 2008 г. Сегодня СолнцеТелеком лидер на рынке острова, а так же всего восточного округа
-        +mini-news('Спорт')
-        +mini-news('Политика')
-        +mini-news('Бизнес')
-    .fridge
-      .fridge__main.text-center
-        a(href="#")
-          img(src="./images/sber.png", alt="")         
-    +head('Weekly')
-    .fridge
-      .text-center
-        a(href="#")
-          img(src="./images/laptop.png", alt="")
-      .fridge__pad
-        .news
-          div
-            a(href="#").news__category Бизнес
-          .news__date 3 ноября, 2016
-          .like
-            a(href="#").like__link 
-              i.fa.fa-heart.fa-fw
-              |&nbsp;133
-            a(href="#").like__link 
-              i.fa.fa-comments.fa-fw
-              |&nbsp;133
-          a(href="#").news__title.news__title_big Заголовок новости или статьи пару строк
-          .news__text Компания начала работу на рынке коммуникаций в 2008 г. Сегодня СолнцеТелеком лидер на рынке острова, а так же всего восточного округа
-        +mini-news('Спорт')   
+    include _sber
+       
 .row.large-up-4.medium-up-2.small-up-1(data-equalizer,data-equalize-by-row="true")
   .columns        
     +head('Авто')
-    .fridge(data-equalizer-watch)
+    .freezer(data-equalizer-watch)
       .text-center
         a(href="#")
           img(src="./images/news1.png", alt="")
-      .fridge__pad
+      .freezer__pad    
         .news
           .news__date 3 ноября, 2016
-          .like
-            a(href="#").like__link 
-              i.fa.fa-heart.fa-fw
-              |&nbsp;133
-            a(href="#").like__link 
-              i.fa.fa-comments.fa-fw
-              |&nbsp;133
+          include _like
           a(href="#").news__title.news__title_big Первый электрокар Jaguar появится в 2018 г
         +short-news('ФСБ доложила о задержании очередной группы террористов') 
         +short-news('Заголовок новости или статьи возможно пару строк') 
@@ -227,20 +131,14 @@ include ../mixins/_mixin-short-news
         +short-news('Заголовок новости или статьи возможно пару строк') 
   .columns        
     +head('Политика')
-    .fridge(data-equalizer-watch)
+    .freezer(data-equalizer-watch)
       .text-center
         a(href="#")
           img(src="./images/news2.png", alt="")
-      .fridge__pad
+      .freezer__pad
         .news
           .news__date 3 ноября, 2016
-          .like
-            a(href="#").like__link 
-              i.fa.fa-heart.fa-fw
-              |&nbsp;133
-            a(href="#").like__link 
-              i.fa.fa-comments.fa-fw
-              |&nbsp;133
+          include _like
           a(href="#").news__title.news__title_big Как у Трампа появились «друзья» в России
         +short-news('Заголовок новости или статьи возможно пару строк') 
         +short-news('Улюкаева назвали фигурантом дела о взятке') 
@@ -248,20 +146,14 @@ include ../mixins/_mixin-short-news
         +short-news('Путин провел переговоры с Дональдом Трампом') 
   .columns        
     +head('Спорт')
-    .fridge(data-equalizer-watch)
+    .freezer(data-equalizer-watch)
       .text-center
         a(href="#")
           img(src="./images/news3.png", alt="")
-      .fridge__pad
+      .freezer__pad
         .news
           .news__date 3 ноября, 2016
-          .like
-            a(href="#").like__link 
-              i.fa.fa-heart.fa-fw
-              |&nbsp;133
-            a(href="#").like__link 
-              i.fa.fa-comments.fa-fw
-              |&nbsp;133
+          include _like
           a(href="#").news__title.news__title_big Заголовок новости или статьи пару строк
         +short-news('ВТБ заявил об отсутствии  претензий у «Башнефти»') 
         +short-news('Заголовок новости или статьи возможно пару строк') 
@@ -269,20 +161,14 @@ include ../mixins/_mixin-short-news
         +short-news('Заголовок новости или статьи возможно пару строк') 
   .columns        
     +head('Криминал')
-    .fridge(data-equalizer-watch)
+    .freezer(data-equalizer-watch)
       .text-center
         a(href="#")
           img(src="./images/news4.png", alt="")
-      .fridge__pad
+      .freezer__pad
         .news
           .news__date 3 ноября, 2016
-          .like
-            a(href="#").like__link 
-              i.fa.fa-heart.fa-fw
-              |&nbsp;133
-            a(href="#").like__link 
-              i.fa.fa-comments.fa-fw
-              |&nbsp;133
+          include _like
           a(href="#").news__title.news__title_big Первый электрокар Jaguar появится в 2018 г
         +short-news('Следователь начал допрос министра Улюкаева') 
         +short-news('Заголовок новости или статьи возможно пару строк') 

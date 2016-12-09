@@ -1,0 +1,9 @@
+mixin search(text)
+  .row
+    .large-12.columns
+      label.search
+        input(type="text",placeholder="Поиск #{text}").search__input
+        button(type="submit").search__submit
+          i.fa.fa-search.fa-2x
+    .large-12.columns.large-text-right
+      button.button Добавить #{text}

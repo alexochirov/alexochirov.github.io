@@ -1,0 +1,33 @@
++head('Статьи')
+.fridge
+  .news
+    div
+      a(href="#").news__category Бизнес
+    .news__date 3 ноября, 2016
+    include _like
+    a(href="#").news__title.news__title_big Заголовок новости или статьи пару строк
+    .news__text Компания начала работу на рынке коммуникаций в 2008 г. Сегодня СолнцеТелеком лидер на рынке острова, а так же всего восточного округа
+  hr
+  +mini-news('Спорт')
+  hr
+  +mini-news('Политика')
+  hr
+  +mini-news('Бизнес')
+.fridge.fridge_top.text-center
+  a(href="#")
+    img(src="./images/sber.png", alt="")         
++head('Weekly')
+.freezer
+  .text-center
+    a(href="#")
+      img(src="./images/laptop.png", alt="")
+  .freezer__pad
+    .news
+      div
+        a(href="#").news__category Бизнес
+      .news__date 3 ноября, 2016
+      include _like
+      a(href="#").news__title.news__title_big Заголовок новости или статьи пару строк
+      .news__text Компания начала работу на рынке коммуникаций в 2008 г. Сегодня СолнцеТелеком лидер на рынке острова, а так же всего восточного округа
+    hr
+    +mini-news('Спорт') 

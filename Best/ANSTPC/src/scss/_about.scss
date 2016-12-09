@@ -1,0 +1,20 @@
+.about {
+    a {
+        text-decoration: underline;
+        font-weight: 300;
+        color: $blue;
+
+        &:hover {
+            color: $yellow;
+        }
+    }
+
+    &__caps {
+        text-transform: uppercase;
+    }
+}
+
+a.about__mail {
+    text-decoration: underline;
+    color: $black;
+}

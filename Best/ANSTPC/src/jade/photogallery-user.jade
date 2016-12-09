@@ -1,0 +1,140 @@
+include components/mixins/_mixin-search
+include components/mixins/_mixin-purple
+include components/mixins/_mixin-photo
+extends main
+block content
+  p &nbsp;
+  .row
+    .large-18.medium-16.columns
+      +search('фото')
+      +purple(['Фотогалерея:','andru79'])
+      +head('Фотоальбом: разное')
+      .row.columns.text-right
+        a(href="#").plate
+        a(href="#").plate.plate_line
+      .row.large-up-4.small-up-2
+        +photo('photo1.png') 
+        +photo('photo2.png') 
+        +photo('photo3.png') 
+        +photo('photo4.png')
+      .load
+        .row
+          .columns
+            h3.load__title 20161123_160228
+            .text-center
+              p
+                img(src="./images/beauty.png", alt="")   
+              p
+                i.fa.fa-exclamation-triangle.fa-lg
+                a(href="#").load__alert Сообщить о нарушении
+          .medium-10.columns.text-center.medium-text-left   
+            div
+              |Пользователь: 
+              a(href="#")
+                b Mikhaylovich
+            div
+              |Фотоальбом: 
+              a(href="#") Углегорск.rus
+            div
+              |Категория: 
+              a(href="#") Пейзаж
+            div
+              |Фотограф: 
+              a(href="#") Mikhaylovich
+            p &nbsp;   
+            div
+              |Дата загрузки: 
+              span.load__yellow сегодня 21:42
+            div Просмотров: 0
+            div Комментариев: 0 
+            div
+              a.soc.soc_mini.fa-stack(href="#")
+                i.fa.fa-square.fa-stack-2x
+                i.fa.fa-facebook.fa-stack-1x
+              a.soc.soc_mini.fa-stack(href="#")
+                i.fa.fa-square.fa-stack-2x
+                i.fa.fa-twitter.fa-stack-1x
+              a.soc.soc_mini.fa-stack(href="#")
+                i.fa.fa-square.fa-stack-2x
+                i.fa.fa-instagram.fa-stack-1x
+              a.soc.soc_mini.fa-stack(href="#")
+                i.fa.fa-square.fa-stack-2x
+                i.fa.fa-google-plus.fa-stack-1x
+              a.soc.soc_mini.fa-stack(href="#")
+                i.fa.fa-square.fa-stack-2x
+                i.fa.fa-rss.fa-stack-1x
+              a.soc.soc_mini.fa-stack(href="#")
+                i.fa.fa-square.fa-stack-2x
+                i.fa.fa-vk.fa-stack-1x
+            p
+              a(href="#") Код для вставки на сайт или в блог    
+          .medium-14.columns
+            .row.small-up-2
+              .columns.text-right Время съемки/редактирования:
+              .columns 2016:03:16 | 21:32:35
+              .columns.text-right Фотокамера:
+              .columns
+                a(href="#") FUJIFILM - FinePix S3Pro
+              .columns.text-right Диафрагма:
+              .columns f/6.7
+              .columns.text-right Выдержка:
+              .columns 1/90
+              .columns.text-right Фокусное расстояние:
+              .columns 12 mm
+              .columns 
+                p &nbsp
+              .columns 
+                p &nbsp
+              .columns 
+                p &nbsp
+              .columns
+                p
+                  i.fa.fa-heart.load__grey
+                  a(href="#") Мне нравится
+          p
+            hr  
+      .row.columns      
+        ul.pagination.text-center(role='navigation', aria-label='Pagination')
+          li.pagination-previous
+            a(href='#') << Предыдущая
+          li.current |
+          li.pagination-next
+            a(href='#') Следующая >>
+   
+      +head('Комментарии')  
+      .row.columns
+        p 
+          button.button.button_comment ДОБАВИТЬ КОММЕНТАРИЙ
+          |Для того чтобы добавлять комментарии Вам необходимо 
+          a(href="#").link Войти 
+          | или 
+          a(href="#").link Зарегистрироваться          
+    .large-6.medium-8.columns
+      +head('Мои Фотоальбомы')  
+      .fridge.fridge_top
+        ul.company.company_low
+          each title in ['Личные фото','Моя семья','Отдых']
+            li.company__item
+              a(href="#").company__link
+                i.fa.fa-folder-open
+                | 
+                |#{title}
+      +head('Все категории')            
+      .fridge.fridge_top.text-center  
+        a(href="#")
+          img(src="./images/camera.png", alt="")
+        p
+          a(href="#").link Название альбома        
+        a(href="#")
+          img(src="./images/guelder.png", alt="")
+        p
+          a(href="#").link Название альбома        
+        a(href="#")
+          img(src="./images/camera.png", alt="")
+        p
+          a(href="#").link Название альбома        
+        a(href="#")
+          img(src="./images/guelder.png", alt="")
+        div
+          a(href="#").link Название альбома      
+      include components/common/_img 

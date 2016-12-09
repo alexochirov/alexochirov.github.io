@@ -1,0 +1,33 @@
+.search {
+    position: relative;
+
+    &__input {
+        font-weight: 300;
+        color: $black;
+        padding-left: rem-calc(16);
+        padding-right: rem-calc(16);
+        height: rem-calc(40);
+        padding-top: rem-calc(0);
+        padding-bottom: rem-calc(0);
+        width: rem-calc(243);
+        max-width: 100%;
+        float: left;
+        border: rem-calc(1) solid #e7e7e7;
+    }
+
+    &__submit {
+        height: rem-calc(40);
+        width: rem-calc(40);
+        float: left;
+        border: rem-calc(1) solid #e7e7e7;
+        border-left: rem-calc(0);
+        outline: none;
+        transition: .25s;
+        &:hover {
+          background: $black;
+          i {
+            color: #fff;
+          }
+        }
+    }
+}

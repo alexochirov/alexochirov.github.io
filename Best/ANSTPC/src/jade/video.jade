@@ -1,0 +1,36 @@
+include components/mixins/_mixin-video
+include components/mixins/_mixin-search
+extends main
+block content
+  p &nbsp;
+  .row
+    .large-18.medium-16.columns
+      +search('видео')
+      +head('Новое видео')    
+      .row.large-up-4.small-up-2
+        +video('Модная штучка')
+        +video('Модная штучка')
+        +video('Модная штучка')
+        +video('Модная штучка')
+      +head('Популярное видео')  
+      .row.columns
+        ul.tags.tags_pole
+          each title,index in ['Сегодня','Вчера','За неделю','За месяц','За все время']
+            if index == 1
+              li.tags__item= title
+            else
+              li.tags__item
+                a(href="#").tags__link= title
+      .row.large-up-4.small-up-2
+        +video('Первый полет учебных самолетов Tecnam на Сахалине')
+        +video('Первый полет учебных самолетов Tecnam на Сахалине')
+        +video('Первый полет учебных самолетов Tecnam на Сахалине')
+        +video('Первый полет учебных самолетов Tecnam на Сахалине')   
+      +head('Рекомендуем') 
+      .row.large-up-4.small-up-2
+        +video('Модная штучка')
+        +video('Модная штучка')
+        +video('Модная штучка')
+        +video('Модная штучка')          
+    .large-6.medium-8.columns
+      include components/common/_sber

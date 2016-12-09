@@ -1,0 +1,40 @@
+.plant {
+  position: relative;
+    &__input {
+      color: $black;
+      background: #fff;
+      box-shadow:none;
+      border: rem-calc(0);
+      font-size: rem-calc(14);
+      padding-left: rem-calc(16);
+      padding-right: rem-calc(16);
+      border-left: rem-calc(1) solid #e5e5e5;
+      border-right: rem-calc(1) solid #e5e5e5;
+        &::-webkit-input-placeholder {
+            color: #e5e5e5;
+            font-weight: 500;
+        }
+
+        &::-moz-placeholder {
+            color: #e5e5e5;
+            font-weight: 500;
+        }
+
+        &:-moz-placeholder {
+            color: #e5e5e5;
+            font-weight: 500;
+        }
+
+        &:-ms-input-placeholder {
+            color: #e5e5e5;
+            font-weight: 500;
+        }
+      
+    }
+    &__submit {
+      outline:none;
+      top: rem-calc(13);
+      right: rem-calc(12);
+      position: absolute;
+    }
+}

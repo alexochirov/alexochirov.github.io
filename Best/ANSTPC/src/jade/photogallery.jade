@@ -1,0 +1,62 @@
+include components/mixins/_mixin-search
+include components/mixins/_mixin-purple
+include components/mixins/_mixin-photo
+extends main
+block content
+  p &nbsp;
+  .row
+    .large-18.medium-16.columns
+      +search('фото')
+      +purple()
+      .row.columns
+        include components/common/_pagination
+      +head('Фотогалерея: все категории')
+      .row.large-up-4.small-up-2
+        +photo('photo1.png','Название фотографии 1')
+        +photo('photo2.png','Название фотографии 2 может быть в 2 ряда')
+        +photo('photo3.png','Название фотографии 3')
+        +photo('photo4.png','Название фотографии 4 может быть в 2 ряда')
+        +photo('photo1.png','Название фотографии 1')
+        +photo('photo2.png','Название фотографии 2 может быть в 2 ряда')
+        +photo('photo3.png','Название фотографии 3')
+        +photo('photo4.png','Название фотографии 4 может быть в 2 ряда')
+      .row.columns
+        include components/common/_pagination  
+    .large-6.medium-8.columns
+      +head('Пользователи')
+      .fridge.fridge_top
+        ul.company.company_low.text-center.medium-text-left
+          each title in ['Мужчины','Девушки','Остальные']
+            li.company__item
+              a(href="#").company__link= title
+      +head('Разделы')      
+      .fridge.fridge_top
+        ul.company.company_low.text-center.medium-text-left
+          each title in ['Авто, мото (1)','Архитектура (5)','Встречи, тусовки','Графика, живопись','Демотиваторы','Дети','ДТП','Животные (4)','История','Люди (4)','Макросъёмка','Мобильное фото (1)','Море','Натюрморт (2)','Ню','Пейзаж (12)','Портрет (1)','Праздники','Природа (16)','Разное (61)','Рыбалка, охота','Свадьба (31)','Семья','Спорт (1)','Сюжет (2)','Техника','Туризм, путешествия','Хобби (2)','Цветы','Юмор','','Сахалин глазами сахалинцев','Фотографы','Фотокамеры']
+            li.company__item
+              a(href="#").company__link= title  
+        p
+        ul.company.company_low.text-center.medium-text-left
+          each title in ['<b>Сахалин глазами сахалинцев</b>']
+            li.company__item
+              a(href="#").company__link !{title}
+        p     
+        ul.company.company_low.text-center.medium-text-left
+          each title in [,'Фотографы','Фотокамеры']
+            li.company__item
+              a(href="#").company__link= title  
+      +head('Поиск фото')            
+      include components/common/_search
+      include components/common/_img
+      +head('Гороскоп')  
+      include components/common/_horoscope
+      include components/common/_online   
+      +head('Поиск пользователя')    
+      include components/common/_search  
+      +head('Cлучайное фото')  
+      .fridge.fridge_top
+        .text-center
+          a(href="#")
+            img(src="./images/camera.png", alt="")
+        .text-center
+          a(href="#").link Имя пользователя  

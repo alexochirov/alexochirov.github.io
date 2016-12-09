@@ -1,13 +1,45 @@
 .fridge {
     border: rem-calc(1) solid #e7e7e7;
     margin-bottom: rem-calc(20);
+    padding-left: rem-calc(16);
+    padding-right: rem-calc(16);
+    font-weight: 300;
 
-    &__pad {
-        padding-left: rem-calc(16);
-        padding-right: rem-calc(16);
+    &_top {
+        padding-top: rem-calc(16);
+        padding-bottom: rem-calc(16);
+        line-height: 1.7;
     }
 
-    &__main {
-        padding: rem-calc(16) rem-calc(16);
+    &__right {
+        padding-right: rem-calc(8);
+    }
+
+    &__left {
+        padding-left: rem-calc(8);
+    }
+
+    &__border {
+        border-right: rem-calc(1) solid #e7e7e7;
+    }
+    &__grey {
+      color: #8b8b8b;
+    }
+
+    @include breakpoint(small only) {
+        &__left,
+        &__right {
+            padding-left: rem-calc(0);
+            padding-right: rem-calc(0);
+        }
+
+        &__double {
+            margin-top: rem-calc(0);
+            margin-bottom: rem-calc(0);
+        }
+
+        &__border {
+            border-right: rem-calc(0);
+        }
     }
 }

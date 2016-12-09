@@ -1,0 +1,56 @@
+.accordion {
+    padding-top: rem-calc(15);
+    padding-bottom: rem-calc(15);
+    border: rem-calc(1) solid #e7e7e7;
+
+    &-item {
+        &.is-active {
+            & > a {
+                text-decoration: underline;
+
+                &:before {
+                    color: $yellow;
+                }
+            }
+        }
+    }
+
+    &-content {
+        border-bottom: rem-calc(0);
+        padding-top: rem-calc(0);
+        padding-bottom: rem-calc(0);
+    }
+
+    &-title {
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: rem-calc(14);
+        color: $black;
+        padding-left: rem-calc(37);
+        border-bottom: rem-calc(0);
+        padding-right: rem-calc(16);
+        padding-top: rem-calc(11);
+        padding-bottom: rem-calc(11);
+
+        &:before {
+            right: auto;
+            margin-left: rem-calc(-18);
+        }
+
+        &:focus {
+            color: $black;
+            background: none;
+        }
+
+        &:hover {
+            background: none;
+            text-decoration: underline;
+            color: $yellow;
+        }
+    }
+    @include breakpoint(small only) {
+        &-title {
+            padding-left: rem-calc(16);
+        }
+    }
+}

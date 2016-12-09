@@ -1,11 +1,13 @@
 .franchise {
-  list-style: none;
-  margin-left: rem-calc(0);
-  &__item {
-margin-bottom: rem-calc(13);
-  }
-  &__link {
-font-weight: 300;
-color: #fff;
-  }
+    list-style: none;
+    margin-left: rem-calc(0);
+
+    &__item {
+        margin-bottom: rem-calc(13);
+    }
+
+    &__link {
+        font-weight: 300;
+        color: #fff;
+    }
 }

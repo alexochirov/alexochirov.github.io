@@ -1,0 +1,378 @@
+extends index
+include components/mixins/_mixin-head
+include components/mixins/_mixin-long-news
+include components/mixins/_mixin-mini-news
+include components/mixins/_mixin-link
+block content
+  hr.line
+  .row
+    .large-6.medium-8.columns
+      ul.accordion(data-accordion='').text-center.medium-text-left
+        each title,index in ['Погода','Афиша','Билеты','Авто','Работа','Недвижимость','Объявления','Форум','Бизнес','Карта','Путешествия','Авиабилеты','Видео','Телепрограмма','Доставка еды','Путешествия']
+          if index==1
+            li.accordion-item.is-active(data-accordion-item='')
+              a.accordion-title(href='#')= title
+              .accordion-content(data-tab-content='')
+                include components/common/_events
+          else
+            li.accordion-item(data-accordion-item='')
+              a.accordion-title(href='#')= title
+              .accordion-content(data-tab-content='')
+                include components/common/_events  
+      +head('Города сахалина')              
+      .fridge.fridge_top
+        p
+          each title in ['Александровск-Сахалинский','Анива','Долинск','Корсаков','Курильск','Макаров','Невельск','Ноглики','Оха','Поронайск','Северо-Курильск','Смирных','Томари','Тымовское','Углегорск','Холмск','Южно-Курильск','Южно-Сахалинск']
+            strong 
+              a(href="#")= title
+            |, 
+        hr
+        a.highlighter(href="#") 
+          i.fa.fa-map-marker
+          |Показать на карте  
+      +head('Видео')       
+      .freezer
+        .flex-video.widescreen
+          iframe( height='165', src='https://www.youtube.com/embed/0vrdgDdPApQ', allowfullscreen='', style='width:100%;border:0')
+        .freezer__pad  
+          .news.news_single
+            div
+              a(href="#").news__category Бизнес
+            .news__date 3 ноября, 2016
+            include components/common/_like
+            a(href="#").news__title Заголовок новости или статьи пару строк  
+      +head('Авто')   
+      .fridge.fridge_top
+        .row.car
+          .small-7.columns.car__img
+            a(href="#")
+              img(src="./images/car1.png", alt="")
+          .small-17.columns.car__info
+            a(href="#").car__title Toyota Vanguard, 2011
+            .car__distance Пробег: 8 500 км
+            .car__distance 1 560 000 руб.
+        hr  
+        .row.car
+          .small-7.columns.car__img
+            a(href="#")
+              img(src="./images/car2.png", alt="")
+          .small-17.columns.car__info
+            a(href="#").car__title Toyota Vanguard, 2011
+            .car__distance Пробег: 8 500 км
+            .car__distance 1 560 000 руб.
+        hr  
+        .row.car
+          .small-7.columns.car__img
+            a(href="#")
+              img(src="./images/car3.png", alt="")
+          .small-17.columns.car__info
+            a(href="#").car__title Toyota Vanguard, 2011
+            .car__distance Пробег: 8 500 км
+            .car__distance 1 560 000 руб.
+        hr  
+        .row.car
+          .small-7.columns.car__img
+            a(href="#")
+              img(src="./images/car4.png", alt="")
+          .small-17.columns.car__info
+            a(href="#").car__title Toyota Vanguard, 2011
+            .car__distance Пробег: 8 500 км
+            .car__distance 1 560 000 руб.
+        hr  
+        .row.car
+          .small-7.columns.car__img
+            a(href="#")
+              img(src="./images/car5.png", alt="")
+          .small-17.columns.car__info
+            a(href="#").car__title Toyota Vanguard, 2011
+            .car__distance Пробег: 8 500 км
+            .car__distance 1 560 000 руб.
+          
+      +head('Работа')      
+      .fridge.fridge_top.text-center.medium-text-left
+        +link('Вакансий',true)
+        +link('Резюме',true)
+        +link('Компаний',true)
+      +head('Недвижимость')
+      .fridge.fridge_top.text-center.medium-text-left
+        +link('Продажа')
+        +link('Покупка')
+        +link('Аренда')
+           
+            
+          
+           
+
+    .large-12.medium-16.columns
+      +head('Новости Сахалина и Курил')
+      .row.columns
+        .fridge
+          .news
+            .row
+              .columns.news__header
+                a(href="#").news__category Фото
+                .news__date 3 ноября, 2016
+                include components/common/_like
+              .large-9.columns.text-center
+                p
+                  a(href="#")
+                    img(src="./images/armchair.png", alt="")
+              .large-15.columns
+
+                a(href="#").news__title.news__title_big Заголовок новости или статьи возможно пару строк
+                .news__text Претензий к Дегтяреву накопилось достаточно, одна из которых — "вечный" ремонт "Полариса"&hellip;
+          hr      
+          +long-news('Политика')
+          +long-news('Бизнес')
+          .row
+            .medium-12.columns.fridge__border
+              .fridge__right
+                +mini-news('Спорт')
+                hr
+                +mini-news('Спорт')
+                hr
+                +mini-news('Спорт')
+                hr.show-for-small-only
+            .medium-12.columns
+              .fridge__left
+                +mini-news('Спорт')
+                hr
+                +mini-news('Спорт')
+                hr
+                +mini-news('Спорт')
+      +head('Бизнес')        
+      .row.columns
+        label.plant
+          input(type="text",placeholder="Поиск предприятий").plant__input
+          button(type="submit").plant__submit
+            i.fa.fa-search.fa-lg
+      .fridge.fridge_top
+        .row
+          .small-12.columns      
+            +link('Авиакомпании')
+            +link('Автосервис, автотовары')
+            +link('Банки')
+            +link('Гостиницы')
+            +link('Государство')
+            +link('Для дома и офиса')
+            +link('Интернет')
+            +link('Компьютеры, интернет')
+            +link('Красота, здоровье')
+            +link('Лизинг')
+            +link('Медицина')
+            +link('Наука, образование')
+            +link('Недвижимость')
+          .small-12.columns
+            +link('Нефть, газ')  
+            +link('Отдых, развлечения')  
+            +link('Право')  
+            +link('Пром. обеспечение')  
+            +link('Государство')  
+            +link('Реклама, полиграфия')  
+            +link('Рыбная отрасль')  
+            +link('Семья, дети')  
+            +link('Сотовая связь')  
+            +link('Строительство, ремонт')  
+            +link('Телевидение')  
+            +link('Торговля')  
+        hr    
+        .row
+          .small-12.columns
+            .news
+              a(href="#").news__category Товары
+            +link('1С - продажа, установка')  
+            +link('Аквафор, фильтры для воды')  
+            +link('Аккумуляторы')  
+            +link('Амортизаторы')  
+            +link('Генераторы катерпиллар')  
+            .news.news_single
+              a(href="#").news__category Акции и скидки
+            +link('Black Friday! -30% в SakhJoy')  
+            +link('Аквафор, фильтры для воды')  
+            +link('Аккумуляторы')  
+            +link('Амортизаторы')  
+            +link('Генераторы катерпиллар') 
+          .small-12.columns
+            .news
+              a(href="#").news__category Услуги
+            +link('1С Автоматизация, ЕГАИС')  
+            +link('Аудит, консалтинг, оценка')  
+            +link('Ремонт бытовой техники')  
+            +link('Государство')  
+            +link('Ремонт принтеров и МФУ')     
+            +link('Государство')     
+            +link('Семья, дети')     
+            +link('Строительство')     
+            +link('Телевидение')     
+            +link('Торговля')     
+            +link('Юлы')  
+      +head('Новости компаний')  
+      .row.columns
+        .fridge
+          .news
+            .row
+              .columns.news__header
+                a(href="#").news__category Фото
+                .news__date 3 ноября, 2016
+                include components/common/_like
+              .large-9.columns.text-center
+                p
+                  a(href="#")
+                    img(src="./images/guitar.png", alt="")
+              .large-15.columns
+
+                a(href="#").news__title.news__title_big Заголовок новости или статьи возможно пару строк
+                .news__text Претензий к Дегтяреву накопилось достаточно, одна из которых — "вечный" ремонт "Полариса"&hellip;
+          hr      
+          .row
+            .medium-12.columns.fridge__border
+              .fridge__right
+                +mini-news('Спорт')
+                hr
+                +mini-news('Спорт')
+                hr
+                +mini-news('Спорт')
+                hr.show-for-small-only
+            .medium-12.columns
+              .fridge__left
+                +mini-news('Спорт')
+                hr
+                +mini-news('Спорт')
+                hr
+                +mini-news('Спорт')          
+        
+    .large-6.columns
+      +head('Погода')
+      .calendar.text-center
+        .calendar__head
+          a.calendar__arr(href="#")
+            i.fa.fa-chevron-left
+          a(href="#").calendar__date 3 ноября, 2016
+          a.calendar__arr.calendar__arr_next(href="#")
+            i.fa.fa-chevron-right
+        .row.small-up-4(data-equalizer,data-equalize-by-row="true")
+          .columns.weather(data-equalizer-watch)
+            .weather__time 15:35
+            .weather__img
+              img(src="./images/weather1.png", alt="")    
+            .weather__temp -35°
+            .weather__pressure 0 мм
+            .weather__wind
+              i.fa.fa-long-arrow-right 
+              |2 м/с  
+          .columns.weather(data-equalizer-watch)
+            .weather__time Ночь
+            .weather__img
+              img(src="./images/weather2.png", alt="")    
+            .weather__temp -5°
+            .weather__pressure 0 мм
+            .weather__wind
+              i.fa.fa-long-arrow-right 
+              |2 м/с  
+          .columns.weather(data-equalizer-watch)
+            .weather__time Утро
+            .weather__img
+              img(src="./images/weather3.png", alt="")    
+            .weather__temp +35°
+            .weather__pressure 0 мм
+            .weather__wind
+              i.fa.fa-long-arrow-right 
+              |2 м/с  
+          .columns.weather(data-equalizer-watch)
+            .weather__time День
+            .weather__img
+              img(src="./images/weather4.png", alt="")    
+            .weather__temp +10°
+            .weather__pressure 0 мм
+            .weather__wind
+              i.fa.fa-long-arrow-right 
+              |12 м/с  
+        .text-left    
+          a(href="#").calendar__tides Приливы в заливах Сахалина
+      +head('Курсы валют')  
+      .freezer.freezer_table
+        table.currency
+          tr.currency__tr
+            each title in ['18.11','USD','EURO','CNY']
+             th.currency__th.text-left= title
+          tr.currency__tr
+            td.currency__td ЦБ РФ
+            td 64.92
+            td 59.61
+            td 94.3 
+          tr.currency__tr
+            td.currency__td Покупка
+            td 64.92
+            td 59.61
+            td 94.3 
+          tr.currency__tr
+            td.currency__td Продажа
+            td 64.92
+            td 59.61
+            td 94.3 
+        p
+          a(href="#").freezer__tides Все банки Сахалина
+      .show-for-large
+        +head('Афиша')      
+      .fridge.show-for-large
+        .news
+          a(href="#").news__category Кино
+          .news__date.news__date_right 3-19 ноября, 2016
+          p
+            a(href="#")
+              img(src="./images/bird.png", alt="")
+          a(href="#").news__title.news__title_big Angry Birds в кино
+          .news__genre Жанр: Боевик, триллер
+        hr
+        .news
+          a(href="#").news__category Кино
+          .news__date.news__date_right 5-27 ноября, 2016
+          a(href="#").news__title.news__title_small Пит и его дракон 
+          .news__genre Жанр: Фантастика
+        hr
+        .news
+          a(href="#").news__category Кино
+          .news__date.news__date_right 6-10 ноября, 2016
+          a(href="#").news__title.news__title_small Кубо. Легенда о самурае  
+          .news__genre Жанр: Приключения
+        hr
+        .news
+          a(href="#").news__category Концерт
+          .news__date.news__date_right 3-19 ноября, 2016
+          p
+            a(href="#")
+              img(src="./images/jupiter.png", alt="")
+          a(href="#").news__title.news__title_big Вячеслав Бутусов
+          .news__genre Альбом: Гудгора
+        hr
+        .news
+          a(href="#").news__category Концерт
+          .news__date.news__date_right с 1 декабря, 2016
+          a(href="#").news__title.news__title_small Iron Maiden 
+          .news__genre The Book of Souls
+        hr
+        .news
+          a(href="#").news__category Концерт
+          .news__date.news__date_right с 1 декабря, 2016
+          a(href="#").news__title.news__title_small The Last Shadow Puppets   
+          .news__genre La musicale live
+        hr
+        .news
+          a(href="#").news__category Концерт
+          .news__date.news__date_right с 1 декабря, 2016
+          a(href="#").news__title.news__title_small Петербург. Только по любви  
+          .news__genre Жанр: Мелодрама
+        hr
+        .news
+          a(href="#").news__category Концерт
+          .news__date.news__date_right с 1 декабря, 2016
+          a(href="#").news__title.news__title_small Петербург. Только по любви  
+          .news__genre Жанр: Мелодрама
+        hr
+        .news
+          a(href="#").news__category Концерт
+          .news__date.news__date_right с 1 декабря, 2016
+          a(href="#").news__title.news__title_small Петербург. Только по любви  
+          .news__genre Жанр: Мелодрама
+          
+            

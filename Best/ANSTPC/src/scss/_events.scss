@@ -1,0 +1,25 @@
+.events {
+    list-style: none;
+    margin-left: rem-calc(43);
+
+    &__item {
+        margin-bottom: rem-calc(8);
+    }
+
+    &__link {
+        position: relative;
+
+        &:before {
+            content: "\002D";
+            left: rem-calc(-8);
+            position: absolute;
+        }
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    @include breakpoint(small only) {
+        margin-left: rem-calc(0);
+    }
+}

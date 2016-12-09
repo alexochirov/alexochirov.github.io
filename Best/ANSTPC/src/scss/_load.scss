@@ -1,0 +1,37 @@
+.load {
+    font-weight: 300;
+
+    &__title {
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: rem-calc(18);
+    }
+
+    &__grey {
+        color: #cacaca;
+        margin-right: rem-calc(5);
+    }
+
+    &__alert {
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    &__yellow {
+        color: $yellow;
+    }
+
+    a {
+        color: $blue;
+        text-decoration: underline;
+
+        &:hover {
+            color: $yellow;
+        }
+    }
+
+    .fa-exclamation-triangle {
+        color: $yellow;
+        margin-right: rem-calc(6);
+    }
+}

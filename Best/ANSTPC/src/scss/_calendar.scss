@@ -1,0 +1,39 @@
+.calendar {
+    border: rem-calc(1) solid #e7e7e7;
+    padding-left: rem-calc(16);
+    padding-right: rem-calc(16);
+    margin-bottom: rem-calc(20);
+    padding-top: rem-calc(20);
+    padding-bottom: rem-calc(20);
+
+    &__tides {
+        font-size: rem-calc(13);
+        text-decoration: underline;
+    }
+
+    &__head {
+        position: relative;
+        margin-bottom: rem-calc(20);
+    }
+
+    &__arr {
+        position: absolute;
+        left: rem-calc(0);
+        color: #cacaca;
+
+        &:hover {
+            color: $black
+        }
+
+        &_next {
+            left: auto;
+            right: rem-calc(0);
+        }
+    }
+
+    &__date {
+        letter-spacing: rem-calc(.7);
+        font-weight: 500;
+        text-decoration: underline;
+    }
+}

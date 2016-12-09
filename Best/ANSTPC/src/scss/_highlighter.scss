@@ -1,0 +1,19 @@
+.highlighter {
+    font-size: rem-calc(13);
+    text-decoration: underline;
+    margin-top: rem-calc(10);
+    display: block;
+
+    i {
+        font-size: rem-calc(18);
+        color: #cacaca;
+        position: relative;
+        top: rem-calc(2);
+        margin-right: rem-calc(12);
+    }
+    &:hover {
+      i {
+        color: $blue;
+      }
+    }
+}

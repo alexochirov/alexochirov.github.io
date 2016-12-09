@@ -105,8 +105,8 @@ $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
 $header-sizes: (
   small: (
-    'h1': 35,
-    'h2': 26,
+    'h1': 28,
+    'h2': 24,
     'h3': 20,
     'h4': 18,
     'h5': 16,
@@ -233,9 +233,9 @@ $breadcrumbs-item-slash: true;
 $button-padding: 0.83rem 1rem;
 $button-margin: 0 0 $global-margin 0;
 $button-fill: solid;
-$button-background: $primary-color;
+$button-background: #fff;
 $button-background-hover: scale-color($button-background, $lightness: -15%);
-$button-color: #fff;
+$button-color: $black;
 $button-color-alt: #000;
 $button-radius: $global-radius;
 $button-sizes: (
@@ -410,18 +410,18 @@ $orbit-control-zindex: 10;
 // --------------
 
 $pagination-font-size: rem-calc(14);
-$pagination-margin-bottom: $global-margin;
+$pagination-margin-bottom: rem-calc(29);
 $pagination-item-color: $black;
-$pagination-item-padding: rem-calc(3 10);
-$pagination-item-spacing: rem-calc(1);
+$pagination-item-padding: rem-calc(3 4);
+$pagination-item-spacing: rem-calc(0);
 $pagination-radius: $global-radius;
-$pagination-item-background-hover: $light-gray;
-$pagination-item-background-current: $primary-color;
-$pagination-item-color-current: foreground($pagination-item-background-current);
-$pagination-item-color-disabled: $medium-gray;
+$pagination-item-background-hover: none;
+$pagination-item-background-current: none;
+$pagination-item-color-current: $black;
+$pagination-item-color-disabled: $black;
 $pagination-ellipsis-color: $black;
 $pagination-mobile-items: false;
-$pagination-arrows: true;
+$pagination-arrows: false;
 
 // 26. Progress Bar
 // ----------------
@@ -481,11 +481,11 @@ $switch-paddle-transition: all 0.25s ease-out;
 $table-background: $white;
 $table-color-scale: 5%;
 $table-border: 1px solid smart-scale($table-background, $table-color-scale);
-$table-padding: rem-calc(8 10 10);
+$table-padding: rem-calc(6 3 8);
 $table-hover-scale: 2%;
 $table-row-hover: darken($table-background, $table-hover-scale);
 $table-row-stripe-hover: darken($table-background, $table-color-scale + $table-hover-scale);
-$table-striped-background: smart-scale($table-background, $table-color-scale);
+$table-striped-background: none;
 $table-stripe: even;
 $table-head-background: smart-scale($table-background, $table-color-scale / 2);
 $table-foot-background: smart-scale($table-background, $table-color-scale);

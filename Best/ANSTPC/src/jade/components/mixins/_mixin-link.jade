@@ -1,0 +1,6 @@
+mixin link(text,mark)
+  .vacancy
+    a.vacancy__link(href="#")= text
+    span  (#{Math.floor(Math.random() * (15 - 100) + 100)})
+    if mark==true
+      span.vacancy__mark +#{Math.floor(Math.random() * (15 - 100) + 100)}

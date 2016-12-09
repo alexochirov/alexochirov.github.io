@@ -1,0 +1,24 @@
+.freezer {
+    border: rem-calc(1) solid #e7e7e7;
+    margin-bottom: rem-calc(20);
+
+    &_table {
+        padding: rem-calc(1);
+    }
+
+    &__pad {
+        padding-left: rem-calc(16);
+        padding-right: rem-calc(16);
+    }
+
+    &__main {
+        padding: rem-calc(16);
+    }
+
+    &__tides {
+        padding-left: rem-calc(16);
+        padding-right: rem-calc(16);
+        font-size: rem-calc(13);
+        text-decoration: underline;
+    }
+}

@@ -1,0 +1,19 @@
+.button {
+    &_mini {
+        font-size: rem-calc(12);
+        padding: rem-calc(6) rem-calc(12) rem-calc(7);
+    }
+
+    &_comment {
+        color: #c3c3c3;
+        margin-bottom: rem-calc(0);
+        border-color: #e7e7e7;
+        margin-right: rem-calc(20);
+
+        &:hover {
+            border-color: $black;
+        }
+        font-size: rem-calc(12);
+        padding: rem-calc(6) rem-calc(10) rem-calc(7);
+    }
+}

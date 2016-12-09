@@ -1,0 +1,122 @@
+extends main
+block content
+  p &nbsp;
+  .row
+    .large-18.medium-16.columns
+      +head('Контактная информация'  )   
+      .row.about
+        .large-16.columns
+          p
+            b Телефоны:
+            br
+            |+7 4242 511090 — Билеты, Афиша
+            br
+            |+7 4242 511091 — Авто
+            br
+            |+7 4242 511092 — Недвижимость
+            br
+            |+7 4242 511093 — Работа
+            br
+            |+7 4242 511094 — Маркет
+            br
+            |+7 4242 511095 — Карты
+            br
+            |+7 4242 511096 — Путешествия, Расписания
+            br
+            |+7 4242 511101 — Объявления
+            br
+            |+7 4242 511102 — Реклама
+            br
+            |+7 4242 511103 — Справочник Sakhalin.biz
+            br
+            |+7 4242  511104 — Форум
+            br
+            |+7 4242 511105, 457099 — Новости
+            br
+            |+7 4242 511106, 457090 — Shoppy.ru
+            br
+            |+7 4242 511107 — Еда
+            br
+            |+7 4242 511109 — Факс
+            br
+            |+7 4242 511100, 457000 — Общий
+          p  
+            b Время работы: 
+            br
+            |с 09:00 до 18:00
+            br
+            |сб, вс — выходной
+          p
+            b Адрес: 
+            | г. Южно-Сахалинск, ул. Ленина, 317-Б, 3-й этаж
+          p
+            b Почтовый адрес: 
+            | Россия, 693006, г. Южно-Сахалинск, ул. Ленина, 317-Б
+          p
+            b E-mail:
+            br
+            a(href="#") reklama@sakh.com 
+            | — реклама
+            br
+            a(href="#") news@sakh.com 
+            | — новости
+            br
+            a(href="#") forum@sakh.com 
+            | — администрация форума
+            br
+            a(href="#") info@sakhalin.biz 
+            | — справочник Сахалин.Бизнес
+            br
+            a(href="#") support@sakh.com 
+            | — техподдержка, хостинг
+            br
+            a(href="#") auto@sakh.com 
+            | — техподдержка Авто
+            br
+            a(href="#") dom@sakh.com 
+            | — недвижимость
+            br
+            a(href="#") market@sakh.com 
+            | — маркет
+            br
+            a(href="#") afisha@sakh.com 
+            | — анонсы мероприятий
+            br
+            a(href="#") travel@sakh.com 
+            | — для турагентств
+            br
+            a(href="#") info@sakhalin.name 
+            | — техподдержка Фотогалереи
+            br
+            a(href="#") www@sakh.com 
+            | — предложения, сотрудничество
+            br
+            a(href="#") info@sakh.com 
+            | — общие вопросы
+            br
+        .large-8.columns
+          script(type='text/javascript', charset='utf-8', async='', src='https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=zqiCLMwheWqe_M8vw-_TIv-g3bZCcF2C&width=100%25&height=347&lang=ru_UA&sourceType=constructor&scroll=false')
+      
+        
+    .large-6.medium-8.columns   
+      +head('Документы')   
+      .fridge.fridge_top
+        ul.company
+          each title in ['О компании','Реклама на портале','Хостинг сайтов, домены','Информационная поддержка','Загрузка каналов Sakh.com','Контакты','Реквизиты','Команда','<b>Статистика</b> посещаемости']
+            li.company__item
+              a(href="#").company__link !{title}
+          li.company__item
+            a(href="#").company__link Промоматериалы
+            ul.company
+              li.company__item
+                a(href="#").company__link Информеры
+              li.company__item
+                a(href="#").company__link Наши кнопки
+          li.company__item
+            a(href="#").company__link История
+            ul.company
+              li.company__item
+                a(href="#").company__link 10 лет
+              li.company__item
+                a(href="#").company__link 15 лет
+      

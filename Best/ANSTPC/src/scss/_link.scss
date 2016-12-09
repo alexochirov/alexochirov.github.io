@@ -1,0 +1,14 @@
+.link {
+    color: $blue;
+    text-decoration: underline;
+
+    &_big {
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-left: rem-calc(20);
+    }
+
+    &:hover {
+        color: $yellow;
+    }
+}

@@ -1,0 +1,30 @@
+.currency {
+
+
+    &__th {
+        background-color: #efefef;
+        font-size: rem-calc(13);
+        font-weight: 400;
+
+        &:first-child {
+            padding-left: rem-calc(16);
+        }
+    }
+
+    &__td {
+        padding-left: rem-calc(16);
+        color: #9c9b9b;
+        font-size: rem-calc(13);
+
+    
+    }
+
+    &__tr {
+        border-bottom: rem-calc(1) solid #e5e5e5;
+        &:hover {
+          .currency__td {
+            color: $yellow;
+          }
+        }
+    }
+}

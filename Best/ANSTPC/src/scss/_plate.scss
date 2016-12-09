@@ -1,0 +1,12 @@
+.plate {
+    width: rem-calc(22);
+    height: rem-calc(22);
+    display: inline-block;
+    margin-left: rem-calc(10);
+    margin-bottom: rem-calc(5);
+    background: url(../images/plate.svg)no-repeat;
+
+    &_line {
+        background: url(../images/plate2.svg)no-repeat;
+    }
+}

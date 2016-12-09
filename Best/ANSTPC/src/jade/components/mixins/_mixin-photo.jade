@@ -1,0 +1,10 @@
+mixin photo(img,title)
+  .columns.video.text-center.large-text-left
+    .video__img.text-center
+      .video__wrapper
+        a(href="#")
+          img(src="./images/#{img}", alt="")
+        .video__block
+          include ../common/_like  
+    if title
+      a(href="#").video__title= title  

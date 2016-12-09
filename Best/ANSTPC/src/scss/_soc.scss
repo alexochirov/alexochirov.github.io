@@ -2,10 +2,20 @@
     .fa-stack-2x {
         color: transparent;
     }
+
     &_white {
-      color: #fff;
+        color: #fff;
     }
 
+    &_mini {
+        .fa-stack-1x {
+            color: #fff;
+        }
+
+        .fa-stack-2x {
+            color: #cacaca;
+        }
+    }
 
     &:hover {
         .fa-stack-2x {

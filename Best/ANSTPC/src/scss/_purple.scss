@@ -1,0 +1,16 @@
+.purple {
+    background: $dark-blue;
+    padding: rem-calc(15) rem-calc(16) rem-calc(5);
+    margin-bottom: rem-calc(26);
+
+    &__right {
+        float: right;
+        margin-left: rem-calc(16);
+    }
+    @include breakpoint(medium down) {
+        &__right {
+            margin-left: rem-calc(0);
+            float: none;
+        }
+    }
+}

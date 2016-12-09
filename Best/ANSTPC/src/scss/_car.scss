@@ -1,0 +1,17 @@
+.car {
+    &__img,
+    &__info {
+      margin-top: rem-calc(12);
+        margin-bottom: rem-calc(12);
+    }
+    &__title {
+      display: inline-block;
+      font-weight: 500;
+      text-decoration: underline;
+      margin-bottom: rem-calc(6);
+    }
+    &__distance {
+      font-weight: 300;
+      font-size: rem-calc(11);
+    }
+}

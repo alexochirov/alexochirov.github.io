@@ -1,3 +1,48 @@
 .weather {
-  
+    margin-bottom: rem-calc(20);
+    cursor: pointer;
+    padding-top: rem-calc(5);
+    padding-bottom: rem-calc(6);
+    padding-left: rem-calc(3);
+    padding-right: rem-calc(3);
+
+    &:hover {
+        background: #e7e7e7;
+    }
+
+    &:not(:last-child) {
+        border-right: rem-calc(1) solid #e7e7e7;
+    }
+
+    &__time {
+        margin-bottom: rem-calc(17);
+        font-size: rem-calc(11);
+        font-weight: 300;
+    }
+
+    &__temp {
+        font-size: rem-calc(24);
+    }
+
+    &__pressure,
+    &__wind {
+        font-weight: 300;
+        font-size: rem-calc(11);
+
+        i {
+            color: $blue;
+        }
+    }
+
+    &__pressure {
+        padding-left: rem-calc(9);
+    }
+
+    &__img {
+        line-height: rem-calc(42);
+
+        img {
+            vertical-align: top;
+        }
+    }
 }

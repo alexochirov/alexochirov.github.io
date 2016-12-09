@@ -1,0 +1,17 @@
+.vacancy {
+    font-weight: 500;
+    margin-bottom: rem-calc(12);
+
+    &:hover {
+        color: $blue;
+    }
+
+    &__link {
+        text-decoration: underline;
+    }
+
+    &__mark {
+        color: $yellow;
+        margin-left: rem-calc(5);
+    }
+}

@@ -1,0 +1,108 @@
+include components/mixins/_mixin-search
+include components/mixins/_mixin-purple
+include components/mixins/_mixin-photo
+extends main
+block content
+  p &nbsp;
+  .row
+    .large-18.medium-16.columns
+      +purple()
+      +head('Гороскоп')
+      .row.horoscope
+        .medium-12.columns.text-center.medium-text-left
+          p.horoscope__title Стрелец
+          |(23 ноября - 21 декабря)
+          br
+          p
+            a(href="#").link [запомнить знак]
+        .medium-12.columns.medium-text-right.text-center
+          .horoscope__empty
+          p
+            a(href="#").link Ежедневные гороскопы
+            br
+            a(href="#").link Еженедельные гороскопы
+        .columns
+          p
+            hr
+        .medium-16.columns  
+          p  
+          .row
+            .columns
+              h4.horoscope__daily Ежедневный Общий гороскоп 
+            include components/common/_day-horoscope
+            .columns
+              h4.horoscope__daily Ежедневный Любовный гороскоп 
+            include components/common/_day-horoscope
+            .columns
+              h4.horoscope__daily Ежедневный гороскоп Здоровья
+            include components/common/_day-horoscope
+            .columns
+              h4.horoscope__daily Ежедневный Гастрономический гороскоп 
+            include components/common/_day-horoscope
+            .columns
+              h4.horoscope__daily Ежедневный Бизнес гороскоп
+            include components/common/_day-horoscope
+            .columns
+              h4.horoscope__daily Общая характеристика знака Стрелец (23 ноября - 21 декабря) 
+            .columns
+              p Стрелец любит показать себя, он жаждет свободы и ловит каждое ее мгновение. Долго сохраняет молодость, благодаря интересу к жизни и к людям. Он не создан для драматических и тягостных ситуаций, которых всеми силами избегает. Его оптимизм, душевное и физическое здоровье, чувство юмора обеспечивают ему симпатии других. Стрелец великодушен, когда не покушаются на его священную свободу. Любит окружать себя друзьями и помогать им. Его оптимизм помогает скорее справляться с трудностями, чем это удается другим. У Стрельца здоровое мышление и мощный энергетический потенциал, который надо куда-то девать. Стрельцу не следует переедать и злоупотреблять жирной пищей. Это ведет к утрате оптимизма и хорошего расположения духа.
+              p.text-center
+                | Гороскопы предоставлены: 
+                a(href="#").link Ignio
+        .medium-8.columns    
+          .fridge.fridge_top.text-center.medium-text-left
+            ul.company
+              each sign in [{title: 'Овен',date: '21 марта - 20 апреля'},{title: 'Телец',date: '21 апреля - 20 мая'},{title: 'Близнецы',date: '21 мая - 21 июня'},{title: 'Рак',date: '22 июня - 22 июля'},{title: 'Лев',date: '23 июля - 23 августа'},{title: 'Дева',date: '24 августа - 23 сентября'},{title: 'Весы',date: '24 сентября - 23 октября'},{title: 'Скорпион',date: '24 октября - 22 ноября'},{title: 'Стрелец',date: '23 ноября - 21 декабря'},{title: 'Козерог',date: '22 декабря - 20 января'},{title: 'Водолей',date: '21 января - 20 февраля'},{title: 'Рыбы',date: '21 февраля - 20 марта'},]
+                li.company__item
+                  a(href="#").company__link
+                    b #{sign.title}
+                  p #{sign.date}
+    .medium-8.large-6.columns
+      +head('Поиск пользователя')  
+      include components/common/_search
+      include components/common/_online
+      +head('Случайное фото')
+      .fridge.fridge_top.text-center
+        a(href="#")
+          img(src="./images/camera.png", alt="")
+        .text-center
+          a(href="#").link Имя пользователя  
+      +head('Афиша')
+      .fridge.fridge_top.text-center.medium-text-left
+        div
+          a(href="#").link.link_big  Кино
+        .row.columns
+          ul.company
+            each title in ['Плохой Санта 2 (Перевод Гоблина)','Союзники','Моана','Землетрясение','Эластико','28 панфиловцев','Другой мир: Войны крови','Фантастические твари и где они обитают']
+              li.company__item
+                span.company__blue 
+                  i.fa.fa-film
+                span.company__right  
+                  a(href="#").company__link= title
+        p
+        div
+          a(href="#").link.link_big  Концерты
+        .row.columns
+          ul.company
+            each title in ['Нино Катамадзе & Insight','Лолита','The Gospel People']
+              li.company__item
+                span.company__blue 
+                  i.fa.fa-music
+                span.company__right  
+                  a(href="#").company__link= title
+        p                  
+        div            
+          a(href="#").link.link_big Выставки
+        .row.columns
+          ul.company
+            each title in ['Краски осени']
+              li.company__item
+                span.company__blue 
+                  i.fa.fa-picture-o
+                span.company__right  
+                  a(href="#").company__link= title 
+        p                   
+        .text-right
+          a(href="#").link Все анонсы 
+          span »
+      include components/common/_img

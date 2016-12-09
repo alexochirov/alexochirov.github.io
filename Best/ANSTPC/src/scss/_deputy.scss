@@ -1,0 +1,23 @@
+.deputy {
+    font-weight: 300;
+    letter-spacing: rem-calc(.7);
+
+
+
+
+
+    &__date {
+        margin-bottom: rem-calc(26);
+        font-size: rem-calc(11);
+    }
+
+    &__author {
+        font-weight: 300;
+        text-decoration: underline;
+        color: $blue;
+
+        &:hover {
+            color: $yellow;
+        }
+    }
+}

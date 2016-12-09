@@ -1,0 +1,67 @@
+.company {
+    margin-left: rem-calc(0);
+    list-style: none;
+
+    &_high {
+        margin-bottom: rem-calc(0);
+
+        li {
+            margin-bottom: rem-calc(3);
+
+            &:before {
+                content: '» ';
+            }
+        }
+    }
+
+    &_inline {
+        margin-bottom: rem-calc(0);
+
+        li {
+            display: inline-block;
+            margin-bottom: rem-calc(4);
+
+            &:before {
+                content: '» ';
+            }
+        }
+    }
+
+    &_low {
+        margin-bottom: rem-calc(0);
+
+        li {
+            margin-bottom: rem-calc(0);
+        }
+    }
+
+    &__item {
+        margin-bottom: rem-calc(8);
+
+        & > .company {
+            margin-top: rem-calc(8);
+            margin-left: rem-calc(35);
+        }
+    }
+
+    &__blue {
+        color: $blue;
+        width: rem-calc(18);
+        float: left;
+        margin-right: rem-calc(6);
+    }
+    &__right {
+      float: left;
+      width:calc(100% - 24px);
+    }
+
+    &__link {
+        font-weight: 300;
+        color: $blue;
+        text-decoration: underline;
+
+        &:hover {
+            color: $yellow;
+        }
+    }
+}

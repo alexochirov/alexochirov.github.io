@@ -1,0 +1,31 @@
+.horoscope {
+    font-weight: 300;
+
+    &__title {
+        text-transform: uppercase;
+        font-size: rem-calc(30);
+        line-height: 1.1;
+        font-weight: 700;
+        letter-spacing: rem-calc(.9);
+    }
+
+    &__empty {
+        height: rem-calc(54);
+    }
+
+    &__day {
+        font-style: italic;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    &__daily {
+        font-weight: 700;
+        color: $dark-blue;
+    }
+    @include breakpoint(small only) {
+        &__empty {
+          display:none;;
+        }
+    }
+}

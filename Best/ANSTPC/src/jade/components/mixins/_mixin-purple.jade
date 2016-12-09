@@ -1,0 +1,15 @@
+mixin purple(arr)
+  .row.columns
+    .purple
+      if arr
+        .purple__right.text-center.large-text-right
+          ul.exhibition.exhibition_none
+            each title in arr
+              li.exhibition__item
+                a(href="#").exhibition__link= title
+      ul.exhibition.text-center.large-text-left
+        li.exhibition__item Фотовыставка
+        each title in ['Фотовыставка','Фотогалерея','Пользователи','Гороскопы','Jabber']
+          li.exhibition__item
+            a(href="#").exhibition__link= title
+      
