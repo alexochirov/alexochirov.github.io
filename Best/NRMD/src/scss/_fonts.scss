@@ -1,0 +1,51 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url($fontsPath +'/RobotoLight.woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url($fontsPath +'/RobotoRegular.woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url($fontsPath +'/RobotoBold.woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url($fontsPath +'/RobotoMedium.woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url($fontsPath +'/Roboto-BoldItalic.ttf');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url($fontsPath +'/Open-sans.ttf');
+}
+
+@font-face {
+  font-family: 'RUBDC';
+  src: url($fontsPath +'/RUBDC.otf');
+}
+
+@font-face {
+  font-family: 'HelveticaNeueCyr';
+  src: url($fontsPath +'/HelveticaNeueCyr-Medium.otf');
+  font-weight: 700;
+  font-style: normal;
+}

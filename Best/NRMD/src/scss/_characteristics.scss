@@ -1,0 +1,22 @@
+.characteristics {
+    margin-bottom: rem-calc(0);
+
+    &__td {
+        width: rem-calc(420);
+    }
+
+    &__bod {
+        border-left: rem-calc(1) solid #e8e8e8;
+    }
+    @include breakpoint(medium down) {
+        &__td {
+            width: auto;
+        }
+    }
+    @include breakpoint(small only) {
+        td {
+            padding-left: rem-calc(11);
+            padding-right: rem-calc(11);
+        }
+    }
+}

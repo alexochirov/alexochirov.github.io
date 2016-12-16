@@ -1,0 +1,23 @@
+.menu-line
+    .row
+        .small-12.medium-12.large-8.columns#menu
+            ul.menu-base.large-text-left.dropdown.menu.text-center.medium-text-left(data-dropdown-menu)
+                each title in ['Каталог', 'Акции и скидки', 'Новости', 'Контакты']
+                    li.menu-base__item
+                        a.menu-base__link(href='#')= title
+                            if title == 'Каталог'
+                                | &#160;
+                                i.fa.fa-angle-down.hide-for-small-only
+                        if title == 'Каталог'
+                            ul.menu-base__submenu.menu.hide-for-small-only
+                                li: a(href='#') Производство и технологии
+                                li: a(href='#') Награды и достижения
+                                li: a(href='#') Сертификаты
+                                li: a(href='#') Клиенты
+                                li: a(href='#') Вакансии
+                                li: a(href='#') Новости
+        .small-12.medium-12.large-4.columns.float-right
+            form.search-top
+                input(class="search-top__field", name="search", placeholder="Поиск по сайту")
+                button.search-top__button
+                    i.fa.fa-search.fa-lg

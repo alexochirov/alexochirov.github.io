@@ -1,0 +1,62 @@
+.footer.text-center.medium-text-left
+    .row
+        .small-12.medium-6.large-2.column.footer__box
+            p.footer__title О нас:
+            ul.vertical.menu-bottom
+                each title in ['Как работает магазин?', 'Партнерам', 'Отзывы', 'Вакансии', 'Контакты']
+                    li.menu-bottom__item: a(href="#", class="menu-bottom__link")= title
+
+        .small-12.medium-6.large-3.column.footer__box
+            p.footer__title Акции и скидки:
+            ul.vertical.menu-bottom
+                each title in ['Программа скидок', 'Спец. предложения', 'Акции']
+                    li.menu-bottom__item: a(href="#", class="menu-bottom__link")= title
+
+        .small-12.medium-6.large-2.column.footer__box
+            p.footer__title Помощь:
+            ul.vertical.menu-bottom
+                each title in ['Оплата', 'Доставка', 'Гарантия']
+                    li.menu-bottom__item: a(href="#", class="menu-bottom__link")= title
+
+        .small-12.medium-6.large-2.column.footer__box
+            p.footer__title Подписаться на рассылку:
+            form
+                input(type="email", required, placeholder="Введите ваш E-mail", class="footer__subscribe")
+
+        .small-12.medium-6.large-3.column.footer__box
+            p.footer__title Принимаем к оплате:
+            p.footer__pay
+                img(src='./images/visa.svg', style="width:50px", alt='visa')
+            p.footer__pay
+                img(src='./images/mc.svg', style="width:45px", alt='mastercard')
+            p.footer__pay
+                img(src='./images/webmoney.svg', style="width:27px", alt='webmoney')
+            p.footer__pay-large
+                img(src='./images/Wallet.svg', style="width:30px", alt='cash')
+                | &nbsp;&nbsp;&nbsp;Наличными
+            p.footer__title Рассказать:
+            a(href="#", title="Рассказать в ВК")
+                i(class="fa fa-vk social-icons__item", aria-hidden="true")
+            a(href="#", title="Рассказать в Твиттере")
+                i(class="fa fa-twitter social-icons__item", aria-hidden="true")
+            a(href="#", title="Рассказать в Фейсбуке")
+                i(class="fa fa-facebook social-icons__item", aria-hidden="true")
+            a(href="#", title="Рассказать в G+")
+                i(class="fa fa-google-plus social-icons__item", aria-hidden="true")
+
+    hr.footer__line
+
+    .row.medium-collapse
+        .large-5.columns.show-for-large
+            a(href='#')
+                img.footer__logo(src='./images/neon_white.svg', alt='logo')
+        .medium-6.large-4.columns
+            p.footer__description &copy;&nbsp; Магазин &#171;Neon&#187;, 2016
+                br
+                | Оптовые продажи принтеров и комплектующих
+        .medium-6.large-3.columns.text-center.medium-text-left
+            p.footer__copyright
+                | Создание сайта &mdash;
+                a.footer__link(target='_blank', href='http://cetera.ru/') Cetera Labs
+                br
+                a.footer__link(target='_blank', href='http://www.cetera.ru/support/default.php?project=NRDM&lang=ru') Сообщить об ошибке

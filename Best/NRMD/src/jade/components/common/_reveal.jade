@@ -1,0 +1,15 @@
+include ../mixins/_mixin-ship
+#exampleModal1.reveal(data-reveal='')
+  h2 Вы добавили товар в корзину
+  +ship('item-1.jpg','10 540')
+  +ship('item-2.jpg','12 540')
+  .row.indent
+    .large-4.medium-6.columns
+      button.button.indent__button Продолжить покупки
+    .large-5.medium-6.columns.indent__yellow
+      .indent__total
+        |Итого:
+        .indent__price 23 430 руб.
+      button.button.indent__basket Перейти в корзину  
+  button.close-button(data-close='', aria-label='Close modal', type='button')
+    span(aria-hidden='true')

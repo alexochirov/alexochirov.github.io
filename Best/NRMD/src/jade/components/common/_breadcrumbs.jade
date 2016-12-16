@@ -1,0 +1,9 @@
+.row.column
+  ul.breadcrumbs
+    each title,index in ['Главная','Картриджи','Картриджи HP','Тонер-картридж CB402A, HP LJ CP 4005']
+      if index == 3
+        li.current= title
+      else  
+        li
+          a(href="#")= title
+        

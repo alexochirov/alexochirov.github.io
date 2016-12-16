@@ -1,0 +1,39 @@
+.checkbox-group {
+  position: relative;
+}
+
+.checkbox-group__mark {
+  position: absolute;
+  opacity: 0;
+}
+
+.checkbox-group__item {
+  cursor: pointer;
+  position: relative;
+  padding-left: 1.1rem;
+  margin-top: .5rem;
+  font-weight: 300;
+  &:before {
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    left: -.6rem;
+    top: .5rem;
+    background-color: $white;
+    border: 1px solid $dark-gray;
+    border-radius: 3px;
+
+  }
+}
+
+.checkbox-group__mark:checked + .checkbox-group__item:before {
+  content: "\2713";
+  color: $dark-gray;
+  font-size: 14px;
+  line-height: 13px;
+  font-weight: bold;
+}
+
+

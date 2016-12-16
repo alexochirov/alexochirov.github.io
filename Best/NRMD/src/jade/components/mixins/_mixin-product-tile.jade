@@ -1,0 +1,44 @@
+mixin productTile(title, discount, novel, img, onDemand, inCart)
+    .column&attributes(attributes)
+        .product-tile.text-center.medium-text-left
+            .clearfix(data-equalizer-watch=dataEq)
+                .product-tile__ribbons
+                    if discount
+                        .product-tile__sale Акция
+                    if novel
+                        .product-tile__novel Новинка
+                .product-tile__buttons
+                    a(title='Запомнить' data-open="add-to-favourites-auth-popup" class="product-tile__buttons-item")
+                        i.fa.fa-lg.fa-heart
+                    a(title='Сравнить' data-open="add-to-compare" class="product-tile__buttons-item")
+                            i.fa.fa-lg.fa-bar-chart
+                a(href='#')
+                    p
+                        img(src='./images/'+img alt='Товар')
+                p
+                    a(href='#').product-tile__name
+                        if title
+                            = title
+                        else
+                            | Название товара
+                br
+                .row
+                    .small-12.medium-6.columns
+                        .product-tile__price
+                            if discount
+                                del.product-tile__price-old 4 500&nbsp;руб.
+                            if discount
+                                span.product-tile__price-current 3 270&nbsp;руб.
+                            else
+                                span.product-tile__price-current 123 270&nbsp;руб.
+                    .small-12.medium-6.columns
+                        if onDemand
+                            .product-tile__status Нет в наличии
+                        else
+                            if inCart
+                                a.product-tile__incart(href='#', title='В корзине')
+                                    i.fa.fa-check.fa-lg
+                                    | &nbsp;В корзине
+                            else
+                                .product-tile__status Есть в наличии
+                                    a.product-tile__buy.button.primary Купить

@@ -1,0 +1,16 @@
+.scroll {
+    position: fixed;
+    z-index: 1000;
+    right: 0.625rem;
+    bottom: 6.875rem;
+    display: none;
+    padding-top: 0.625rem;
+    cursor: pointer;
+    text-align: center;
+    text-transform: lowercase;
+    opacity: 1;
+    border-radius: 2.1875rem;
+    width: rem-calc(71);
+    height: rem-calc(71);
+    background: url(../images/3-layers.svg)no-repeat center;
+}

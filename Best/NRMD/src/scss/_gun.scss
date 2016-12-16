@@ -1,0 +1,21 @@
+.gun {
+    margin-bottom: rem-calc(20);
+
+    .slick-arrow {
+        position: absolute;
+        bottom: rem-calc(-97);
+        top: auto;
+        color: $primary-color;
+        background: none;
+        padding: rem-calc(0);
+    }
+
+    .slick-prev {
+        color: #96a4af;
+    }
+    @include breakpoint(medium down) {
+        .slick-arrow {
+            bottom:calc(50% - 29px);
+        }
+    }
+}

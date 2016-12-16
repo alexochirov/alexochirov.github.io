@@ -1,0 +1,29 @@
+.sort-box {
+  float: left;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: 300;
+}
+
+.sort-box__list {
+  background-image: url("../images/arrow-down.svg");
+  background-size: 15px 15px;
+  width: 250px;
+  padding-left: 5rem;
+  border-radius: $global-radius;
+}
+
+.sort-box__pre {
+  position: absolute;
+  left: 2.6rem;
+  top: .7rem;
+  color: $dark-gray;
+}
+
+.sort-box__sign {
+  position: absolute;
+  left: 1rem;
+  top: .8rem;
+  color: $medium-gray;
+}

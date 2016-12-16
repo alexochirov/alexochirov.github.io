@@ -1,0 +1,40 @@
+.search-top {
+  position: relative;
+}
+
+.search-top__field {
+  width: 92%;
+  margin: 1.2rem 0;
+  background-color: $primary-color;
+  border: 0;
+  border-bottom: 1px solid $white;
+  color: $white;
+  font-weight: 300;
+
+  &::-webkit-input-placeholder, & {
+    color: $white;
+  }
+  &::-moz-placeholder {
+    color: $white;
+  }
+  &:-ms-input-placeholder {
+    color: $white;
+  }
+}
+
+.search-top__button {
+  color: $white;
+  position: absolute;
+  right: 1rem;
+  top: 1.2rem;
+}
+
+@media #{$small-only} {
+  .search-top {
+    padding: .5rem;
+  }
+
+  .search-top__button {
+    top: 1.7rem;
+  }
+}

@@ -1,0 +1,22 @@
+doctype html
+html.no-js(lang='ru')
+    include components/service/_head
+    body
+        include components/shop/_top-line
+        include components/shop/_header
+        include components/shop/_menu-line
+
+        block page
+            .row
+                .large-3.column
+                    include components/shop/_sidebar
+                .large-9.column
+                    include components/shop/_carousel-main
+                    include components/shop/_services
+                    hr
+                    block rowan
+                      include components/shop/_product-tiles
+                    include components/shop/_carousel-brands
+        include components/shop/_footer
+        include components/common/_scroll
+        include components/service/_js.html

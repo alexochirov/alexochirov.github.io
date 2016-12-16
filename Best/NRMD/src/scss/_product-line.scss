@@ -1,0 +1,50 @@
+.product-line {
+  position: relative;
+  margin-top: 1rem;
+}
+
+.product-line__name {
+  text-align: left;
+  text-decoration: underline;
+  font-size: 1.2rem;
+  color: $black;
+  font-weight: 300;
+}
+
+.product-line__status {
+  color: $dark-gray;
+  font-weight: 300;
+}
+
+.product-line__buy {
+  padding: 1rem;
+}
+
+.product-lines__price-old {
+  font-weight: 300;
+  color: $dark-gray;
+}
+
+.product-line__button {
+  transition: color 0.2s ease;
+  -webkit-transition: color 0.2s ease;
+}
+
+.product-lines__price-current {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.product-line__sale {
+   background-color: #f7941d;
+  font-weight: 300;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.product-line__novel {
+  background-color: #4caf50;
+  font-weight: 300;
+  font-style: italic;
+  text-transform: uppercase;
+}

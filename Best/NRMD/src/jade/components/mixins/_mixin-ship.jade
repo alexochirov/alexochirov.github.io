@@ -1,0 +1,24 @@
+mixin ship(img,price)
+  .row.text-center.medium-text-left.ship(data-equalizer,data-equalize-by-row="true")
+    .large-3.medium-5.columns.ship__img(data-equalizer-watch)
+      a(href="#").ship__del
+      img(src="./images/#{img}", alt="")  
+    .large-5.medium-7.columns(data-equalizer-watch)
+      a(href="#").ship__title  HP 178 Photo Black (CB317HE)
+      .ship__price 
+        |#{price} 
+        span.ship__rub руб.
+    .large-2.medium-4.columns
+      .input-group
+        .input-group-button
+          button.button –
+        input.input-group-field.text-center.medium-text-left(type='text', value='1')
+        .input-group-button
+          button.button +
+    .large-2.medium-4.columns.ship__sum.text-center.medium-text-right
+      | Сумма
+      .ship__price.ship__price_total
+        |#{price} 
+        span.ship__rub руб.
+      
+      

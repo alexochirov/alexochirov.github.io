@@ -1,0 +1,30 @@
+include ../mixins/_mixin-product-tile
+
+.content
+    .row
+        .small-12.medium-7.columns
+            h2.decorative-title Принтеры струйные
+        .small-12.medium-5.columns.medium-text-right
+            .sort-box
+                i.fa.fa-filter.fa-lg.sort-box__sign
+                span.sort-box__pre по:
+                form
+                    select.sort-box__list
+                        each title in ['Убыванию цены', 'Названию', 'Цене', 'Популярности']
+                            option= title
+            .view-box
+                a(href="index.html", title="Плитки").button.view-box__button.is-active.no-border
+                    i.fa.fa-th-large.fa-lg
+                a(href="index-list.html", title="Список").button.view-box__button
+                    i.fa.fa-th-list.fa-lg
+    block products
+        .row.small-up-1.medium-up-2.large-up-3(data-equalizer)
+            +productTile('Картридж струйный HP178 Photo Black(CB317HE)', true, true, 'item-3.jpg', false, true)
+            +productTile('Картридж струйный HP178 Photo Black(CB317HE)', false, true, 'item-1.jpg', false, false)
+            +productTile('Картридж струйный HP178 Photo Black(CB317HE)', true, false, 'item-3.jpg', false, false)
+            +productTile('Картридж струйный HP178 Photo Black(CB317HE)', false, false, 'item-2.jpg', true, false)
+            +productTile('Картридж струйный HP178 Photo Black(CB317HE)', true, false, 'item-2.jpg', false, false)
+            +productTile('Картридж струйный HP178 Photo Black(CB317HE)', false, false, 'item-3.jpg', true, false)
+            +productTile('Картридж струйный HP178 Photo Black(CB317HE)', true, false, 'item-3.jpg', false, false)
+            +productTile('Картридж струйный HP178 Photo Black(CB317HE)', false, false, 'item-2.jpg', true, false)
+            +productTile('Картридж струйный HP178 Photo Black(CB317HE)', true, false, 'item-3.jpg', false, false)

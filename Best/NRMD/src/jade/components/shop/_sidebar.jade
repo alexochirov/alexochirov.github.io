@@ -1,0 +1,65 @@
+.filter-sidebar
+    .filter-sidebar__name Фильтр по каталогу
+    ul.accordion.filter-sidebar__items(data-accordion data-multi-expand='true' data-allow-all-closed='true')
+        li.accordion-item.filter-sidebar__item.is-active(data-accordion-item)
+            a.accordion-title.filter-sidebar__title(href='#') Категории
+            .accordion-content.filter-sidebar__content.checkbox-group(data-tab-content)
+                input.checkbox-group__mark#checkbox1(type='checkbox')
+                label.checkbox-group__item(for='checkbox1') Лазерные принтеры (97)
+                br
+                input.checkbox-group__mark#checkbox2(type='checkbox')
+                label.checkbox-group__item(for='checkbox2') Лазерные принтеры (97)
+                br
+                input.checkbox-group__mark#checkbox3(type='checkbox')
+                label.checkbox-group__item(for='checkbox3') Цветные лазерные принтеры (31)
+                br
+                input.checkbox-group__mark#checkbox4(type='checkbox')
+                label.checkbox-group__item(for='checkbox4') 3-D принтеры (57)
+        li.accordion-item.filter-sidebar__item(data-accordion-item)
+            a.accordion-title.filter-sidebar__title(href='#') Бренды
+            .accordion-content.filter-sidebar__content.checkbox-group(data-tab-content)
+                input.checkbox-group__mark#checkbox5(type='checkbox')
+                label.checkbox-group__item(for='checkbox5') Canon (97)
+                br
+                input.checkbox-group__mark#checkbox6(type='checkbox')
+                label.checkbox-group__item(for='checkbox6') HP (48)
+        li.accordion-item.filter-sidebar__item(data-accordion-item)
+            a.accordion-title.filter-sidebar__title(href='#') Скорость ч/б печати
+            .accordion-content.filter-sidebar__content.checkbox-group(data-tab-content)
+                input.checkbox-group__mark#checkbox7(type='checkbox')
+                label.checkbox-group__item(for='checkbox7') 50 л/мин
+                br
+                input.checkbox-group__mark#checkbox8(type='checkbox')
+                label.checkbox-group__item(for='checkbox8') 30 л/мин
+        li.accordion-item.filter-sidebar__item(data-accordion-item)
+            a.accordion-title.filter-sidebar__title(href='#') Цвет
+            .accordion-content.filter-sidebar__content.checkbox-group(data-tab-content)
+                input.checkbox-group__mark#checkbox9(type='checkbox')
+                label.checkbox-group__item(for='checkbox9') Белый (97)
+                br
+                input.checkbox-group__mark#checkbox10(type='checkbox')
+                label.checkbox-group__item(for='checkbox10') Серый (48)
+                br
+                input.checkbox-group__mark#checkbox11(type='checkbox')
+                label.checkbox-group__item(for='checkbox11') Черный (31)
+                br
+                input.checkbox-group__mark#checkbox12(type='checkbox')
+                label.checkbox-group__item(for='checkbox12') Другие цвета (57)
+        li.accordion-item.filter-sidebar__item.is-active(data-accordion-item)
+            a.accordion-title.filter-sidebar__title(href='#') Цена
+            .accordion-content(data-tab-content)
+                .slider.price-slider(data-slider data-start="0" data-end="300000" data-step="50" data-decimal="0" data-binding="true")
+                    span.slider-handle.price-slider__handle(data-slider-handle role="slider" tabindex="1" aria-controls="price-min")
+                    span.slider-fill.price-slider__fill(data-slider-fill)
+                    span.slider-handle.price-slider__handle(data-slider-handle role="slider" tabindex="1" aria-controls="price-max")
+                .price-slider__values
+                    span.price-slider__value
+                        input.price-slider__min(type="text" id="price-min")
+                    span.price-slider__value
+                        input.price-slider__max(type="text" id="price-max")
+    .filter-sidebar__buttons
+        a.button.gray.expanded.filter-sidebar__clear Сбросить фильтр
+        a.button.primary.expanded Подобрать товар
+
+p.show-for-large
+    img(src='./images/banner.jpg', alt='banner')

@@ -1,0 +1,24 @@
+.navi {
+    margin-bottom: rem-calc(40);
+
+    &__slide {
+        border: rem-calc(1) solid transparent;
+        background-size: cover;
+        height: rem-calc(80);
+        margin-left: rem-calc(20);
+        margin-right: rem-calc(20);
+        cursor: pointer;
+    }
+
+    .slick-current {
+        border-color: #06437f;
+    }
+    @include breakpoint(medium down) {
+      display:none;
+        &__slide {
+
+            height: rem-calc(30);
+        }
+    }
+
+}

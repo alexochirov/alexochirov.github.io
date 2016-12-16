@@ -1,0 +1,98 @@
+body,
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Roboto';
+    &.is-reveal-open {
+      overflow-y: visible;
+    }
+}
+
+h1 {
+    font-size: rem-calc(38);
+}
+
+h2 {
+    font-size: rem-calc(28);
+}
+
+h3 {
+    font-size: rem-calc(16);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin-bottom: rem-calc(14);
+    font-weight: 700;
+}
+
+p {
+    font-weight: 300;
+}
+
+.button {
+    -webkit-transition: all 0.2s ease;
+}
+
+.button.gray,
+button.gray {
+    background-color: $gray;
+
+    &:hover {
+        background-color: $dark-gray;
+    }
+}
+
+.button.red,
+button.red {
+    background-color: $red;
+    border-bottom: 2px solid #9a1217;
+
+    &:hover {
+        background-color: $dark-red;
+    }
+}
+
+.button.primary,
+button.primary {
+    border-bottom: 2px solid $secondary-color;
+}
+
+.button.no-border,
+button.no-border {
+    border-bottom: none;
+}
+
+.input-group-button button {
+    border-radius: rem-calc(1);
+    width: rem-calc(52);
+    height: rem-calc(52);
+    font-size: rem-calc(18);
+    font-weight: 500;
+}
+
+.input-group-field {
+    height: rem-calc(52);
+    font-weight: 500;
+    font-size: rem-calc(18);
+}
+
+input.input-group-field {
+    width: rem-calc(70);
+}
+
+table {
+    tbody {
+        border: rem-calc(0);
+    }
+    font-weight: 300;
+}
+
+.table-scroll {
+    @include table-scroll;
+}

@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+// Все картинки и шрифты необходимо подключать с использованием этих двух переменных:
+$imagesPath: '../images' !default;
+$fontsPath: '../fonts' !default;
+
+$fa-font-path: $fontsPath;
+
+@import "settings";
+@import "external";
+
+@import "common";
+@import "slick/slick-theme";
+@import "custom-scrollbar/scroll";
+
+@import "carousel/carousel-main";
+@import "carousel/carousel-news";
+@import "carousel/carousel-brands";
+@import "content";
+@import "date";
+@import "footer";
+@import "menu-base";
+@import "menu-top";
+@import "login-top";
+@import "search-top";
+@import "cart-top";
+@import "header";
+@import "menu-line";
+@import "text";
+@import "top-line";
+@import "vertical-bottom";
+@import "filter-sidebar";
+@import "services-box";
+@import "product-tile";
+@import "product-line";
+@import "menu-bottom";
+@import "social-icons";
+@import "price-slider";
+@import "checkbox-group";
+@import "view-box";
+@import "sort-box";
+@import "decorative-title";
+@import "fonts";
+@import "breadcrumbs";
+@import "navi";
+@import "gun";
+@import "fridge";
+@import "rating";
+@import "soc";
+@import "tabs";
+@import "characteristics";
+@import "scope";
+@import "crown";
+@import "goods";
+@import "scroll";
+@import "delivery";
+@import "detective";
+@import "pagination";
+@import "grey";
+@import "novelty";
+@import "about";
+@import "map";
+@import "reveal";
+@import "ship";
+@import "indent";

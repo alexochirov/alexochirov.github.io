@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+  <head>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="copyright" content="Создание сайтов - Cetera Labs, www.cetera.ru, 2016">
+    <meta name="author" content="Cetera Labs, http://www.cetera.ru/, создание сайтов, поддержка сайтов, продвижение сайтов">
+    <meta name="cmsmagazine" content="f21b68cb09efe1a7161ca2caaacaf749">
+    <title>Cetera Labs WireFrames</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript">window.Modernizr=function(e,t,n){function r(e){b.cssText=e}function o(e,t){return r(S.join(e+";")+(t||""))}function a(e,t){return typeof e===t}function i(e,t){return!!~(""+e).indexOf(t)}function c(e,t){for(var r in e){var o=e[r];if(!i(o,"-")&&b[o]!==n)return"pfx"!=t||o}return!1}function s(e,t,r){for(var o in e){var i=t[e[o]];if(i!==n)return r===!1?e[o]:a(i,"function")?i.bind(r||t):i}return!1}function u(e,t,n){var r=e.charAt(0).toUpperCase()+e.slice(1),o=(e+" "+k.join(r+" ")+r).split(" ");return a(t,"string")||a(t,"undefined")?c(o,t):(o=(e+" "+T.join(r+" ")+r).split(" "),s(o,t,n))}function l(){p.input=function(n){for(var r=0,o=n.length;r<o;r++)j[n[r]]=!!(n[r]in E);return j.list&&(j.list=!(!t.createElement("datalist")||!e.HTMLDataListElement)),j}("autocomplete autofocus list placeholder max min multiple pattern required step".split(" ")),p.inputtypes=function(e){for(var r,o,a,i=0,c=e.length;i<c;i++)E.setAttribute("type",o=e[i]),r="text"!==E.type,r&&(E.value=x,E.style.cssText="position:absolute;visibility:hidden;",/^range$/.test(o)&&E.style.WebkitAppearance!==n?(g.appendChild(E),a=t.defaultView,r=a.getComputedStyle&&"textfield"!==a.getComputedStyle(E,null).WebkitAppearance&&0!==E.offsetHeight,g.removeChild(E)):/^(search|tel)$/.test(o)||(r=/^(url|email)$/.test(o)?E.checkValidity&&E.checkValidity()===!1:E.value!=x)),P[e[i]]=!!r;return P}("search tel url email datetime date month week time datetime-local number range color".split(" "))}var d,f,m="2.8.3",p={},h=!0,g=t.documentElement,v="modernizr",y=t.createElement(v),b=y.style,E=t.createElement("input"),x=":)",w={}.toString,S=" -webkit- -moz- -o- -ms- ".split(" "),C="Webkit Moz O ms",k=C.split(" "),T=C.toLowerCase().split(" "),N={svg:"http://www.w3.org/2000/svg"},M={},P={},j={},$=[],D=$.slice,F=function(e,n,r,o){var a,i,c,s,u=t.createElement("div"),l=t.body,d=l||t.createElement("body");if(parseInt(r,10))for(;r--;)c=t.createElement("div"),c.id=o?o[r]:v+(r+1),u.appendChild(c);return a=["&#173;",'<style id="s',v,'">',e,"</style>"].join(""),u.id=v,(l?u:d).innerHTML+=a,d.appendChild(u),l||(d.style.background="",d.style.overflow="hidden",s=g.style.overflow,g.style.overflow="hidden",g.appendChild(d)),i=n(u,e),l?u.parentNode.removeChild(u):(d.parentNode.removeChild(d),g.style.overflow=s),!!i},z=function(t){var n=e.matchMedia||e.msMatchMedia;if(n)return n(t)&&n(t).matches||!1;var r;return F("@media "+t+" { #"+v+" { position: absolute; } }",function(t){r="absolute"==(e.getComputedStyle?getComputedStyle(t,null):t.currentStyle).position}),r},A=function(){function e(e,o){o=o||t.createElement(r[e]||"div"),e="on"+e;var i=e in o;return i||(o.setAttribute||(o=t.createElement("div")),o.setAttribute&&o.removeAttribute&&(o.setAttribute(e,""),i=a(o[e],"function"),a(o[e],"undefined")||(o[e]=n),o.removeAttribute(e))),o=null,i}var r={select:"input",change:"input",submit:"form",reset:"form",error:"img",load:"img",abort:"img"};return e}(),L={}.hasOwnProperty;f=a(L,"undefined")||a(L.call,"undefined")?function(e,t){return t in e&&a(e.constructor.prototype[t],"undefined")}:function(e,t){return L.call(e,t)},Function.prototype.bind||(Function.prototype.bind=function(e){var t=this;if("function"!=typeof t)throw new TypeError;var n=D.call(arguments,1),r=function(){if(this instanceof r){var o=function(){};o.prototype=t.prototype;var a=new o,i=t.apply(a,n.concat(D.call(arguments)));return Object(i)===i?i:a}return t.apply(e,n.concat(D.call(arguments)))};return r}),M.flexbox=function(){return u("flexWrap")},M.flexboxlegacy=function(){return u("boxDirection")},M.canvas=function(){var e=t.createElement("canvas");return!(!e.getContext||!e.getContext("2d"))},M.canvastext=function(){return!(!p.canvas||!a(t.createElement("canvas").getContext("2d").fillText,"function"))},M.webgl=function(){return!!e.WebGLRenderingContext},M.touch=function(){var n;return"ontouchstart"in e||e.DocumentTouch&&t instanceof DocumentTouch?n=!0:F(["@media (",S.join("touch-enabled),("),v,")","{#modernizr{top:9px;position:absolute}}"].join(""),function(e){n=9===e.offsetTop}),n},M.geolocation=function(){return"geolocation"in navigator},M.postmessage=function(){return!!e.postMessage},M.websqldatabase=function(){return!!e.openDatabase},M.indexedDB=function(){return!!u("indexedDB",e)},M.hashchange=function(){return A("hashchange",e)&&(t.documentMode===n||t.documentMode>7)},M.history=function(){return!(!e.history||!history.pushState)},M.draganddrop=function(){var e=t.createElement("div");return"draggable"in e||"ondragstart"in e&&"ondrop"in e},M.websockets=function(){return"WebSocket"in e||"MozWebSocket"in e},M.rgba=function(){return r("background-color:rgba(150,255,150,.5)"),i(b.backgroundColor,"rgba")},M.hsla=function(){return r("background-color:hsla(120,40%,100%,.5)"),i(b.backgroundColor,"rgba")||i(b.backgroundColor,"hsla")},M.multiplebgs=function(){return r("background:url(https://),url(https://),red url(https://)"),/(url\s*\(.*?){3}/.test(b.background)},M.backgroundsize=function(){return u("backgroundSize")},M.borderimage=function(){return u("borderImage")},M.borderradius=function(){return u("borderRadius")},M.boxshadow=function(){return u("boxShadow")},M.textshadow=function(){return""===t.createElement("div").style.textShadow},M.opacity=function(){return o("opacity:.55"),/^0.55$/.test(b.opacity)},M.cssanimations=function(){return u("animationName")},M.csscolumns=function(){return u("columnCount")},M.cssgradients=function(){var e="background-image:",t="gradient(linear,left top,right bottom,from(#9f9),to(white));",n="linear-gradient(left top,#9f9, white);";return r((e+"-webkit- ".split(" ").join(t+e)+S.join(n+e)).slice(0,-e.length)),i(b.backgroundImage,"gradient")},M.cssreflections=function(){return u("boxReflect")},M.csstransforms=function(){return!!u("transform")},M.csstransforms3d=function(){var e=!!u("perspective");return e&&"webkitPerspective"in g.style&&F("@media (transform-3d),(-webkit-transform-3d){#modernizr{left:9px;position:absolute;height:3px;}}",function(t,n){e=9===t.offsetLeft&&3===t.offsetHeight}),e},M.csstransitions=function(){return u("transition")},M.fontface=function(){var e;return F('@font-face {font-family:"font";src:url("https://")}',function(n,r){var o=t.getElementById("smodernizr"),a=o.sheet||o.styleSheet,i=a?a.cssRules&&a.cssRules[0]?a.cssRules[0].cssText:a.cssText||"":"";e=/src/i.test(i)&&0===i.indexOf(r.split(" ")[0])}),e},M.generatedcontent=function(){var e;return F(["#",v,"{font:0/0 a}#",v,':after{content:"',x,'";visibility:hidden;font:3px/1 a}'].join(""),function(t){e=t.offsetHeight>=3}),e},M.video=function(){var e=t.createElement("video"),n=!1;try{(n=!!e.canPlayType)&&(n=new Boolean(n),n.ogg=e.canPlayType('video/ogg; codecs="theora"').replace(/^no$/,""),n.h264=e.canPlayType('video/mp4; codecs="avc1.42E01E"').replace(/^no$/,""),n.webm=e.canPlayType('video/webm; codecs="vp8, vorbis"').replace(/^no$/,""))}catch(e){}return n},M.audio=function(){var e=t.createElement("audio"),n=!1;try{(n=!!e.canPlayType)&&(n=new Boolean(n),n.ogg=e.canPlayType('audio/ogg; codecs="vorbis"').replace(/^no$/,""),n.mp3=e.canPlayType("audio/mpeg;").replace(/^no$/,""),n.wav=e.canPlayType('audio/wav; codecs="1"').replace(/^no$/,""),n.m4a=(e.canPlayType("audio/x-m4a;")||e.canPlayType("audio/aac;")).replace(/^no$/,""))}catch(e){}return n},M.localstorage=function(){try{return localStorage.setItem(v,v),localStorage.removeItem(v),!0}catch(e){return!1}},M.sessionstorage=function(){try{return sessionStorage.setItem(v,v),sessionStorage.removeItem(v),!0}catch(e){return!1}},M.webworkers=function(){return!!e.Worker},M.applicationcache=function(){return!!e.applicationCache},M.svg=function(){return!!t.createElementNS&&!!t.createElementNS(N.svg,"svg").createSVGRect},M.inlinesvg=function(){var e=t.createElement("div");return e.innerHTML="<svg/>",(e.firstChild&&e.firstChild.namespaceURI)==N.svg},M.smil=function(){return!!t.createElementNS&&/SVGAnimate/.test(w.call(t.createElementNS(N.svg,"animate")))},M.svgclippaths=function(){return!!t.createElementNS&&/SVGClipPath/.test(w.call(t.createElementNS(N.svg,"clipPath")))};for(var H in M)f(M,H)&&(d=H.toLowerCase(),p[d]=M[H](),$.push((p[d]?"":"no-")+d));return p.input||l(),p.addTest=function(e,t){if("object"==typeof e)for(var r in e)f(e,r)&&p.addTest(r,e[r]);else{if(e=e.toLowerCase(),p[e]!==n)return p;t="function"==typeof t?t():t,"undefined"!=typeof h&&h&&(g.className+=" "+(t?"":"no-")+e),p[e]=t}return p},r(""),y=E=null,function(e,t){function n(e,t){var n=e.createElement("p"),r=e.getElementsByTagName("head")[0]||e.documentElement;return n.innerHTML="x<style>"+t+"</style>",r.insertBefore(n.lastChild,r.firstChild)}function r(){var e=y.elements;return"string"==typeof e?e.split(" "):e}function o(e){var t=v[e[h]];return t||(t={},g++,e[h]=g,v[g]=t),t}function a(e,n,r){if(n||(n=t),l)return n.createElement(e);r||(r=o(n));var a;return a=r.cache[e]?r.cache[e].cloneNode():p.test(e)?(r.cache[e]=r.createElem(e)).cloneNode():r.createElem(e),!a.canHaveChildren||m.test(e)||a.tagUrn?a:r.frag.appendChild(a)}function i(e,n){if(e||(e=t),l)return e.createDocumentFragment();n=n||o(e);for(var a=n.frag.cloneNode(),i=0,c=r(),s=c.length;i<s;i++)a.createElement(c[i]);return a}function c(e,t){t.cache||(t.cache={},t.createElem=e.createElement,t.createFrag=e.createDocumentFragment,t.frag=t.createFrag()),e.createElement=function(n){return y.shivMethods?a(n,e,t):t.createElem(n)},e.createDocumentFragment=Function("h,f","return function(){var n=f.cloneNode(),c=n.createElement;h.shivMethods&&("+r().join().replace(/[\w\-]+/g,function(e){return t.createElem(e),t.frag.createElement(e),'c("'+e+'")'})+");return n}")(y,t.frag)}function s(e){e||(e=t);var r=o(e);return!y.shivCSS||u||r.hasCSS||(r.hasCSS=!!n(e,"article,aside,dialog,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}mark{background:#FF0;color:#000}template{display:none}")),l||c(e,r),e}var u,l,d="3.7.0",f=e.html5||{},m=/^<|^(?:button|map|select|textarea|object|iframe|option|optgroup)$/i,p=/^(?:a|b|code|div|fieldset|h1|h2|h3|h4|h5|h6|i|label|li|ol|p|q|span|strong|style|table|tbody|td|th|tr|ul)$/i,h="_html5shiv",g=0,v={};!function(){try{var e=t.createElement("a");e.innerHTML="<xyz></xyz>",u="hidden"in e,l=1==e.childNodes.length||function(){t.createElement("a");var e=t.createDocumentFragment();return"undefined"==typeof e.cloneNode||"undefined"==typeof e.createDocumentFragment||"undefined"==typeof e.createElement}()}catch(e){u=!0,l=!0}}();var y={elements:f.elements||"abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output progress section summary template time video",version:d,shivCSS:f.shivCSS!==!1,supportsUnknownElements:l,shivMethods:f.shivMethods!==!1,type:"default",shivDocument:s,createElement:a,createDocumentFragment:i};e.html5=y,s(t)}(this,t),p._version=m,p._prefixes=S,p._domPrefixes=T,p._cssomPrefixes=k,p.mq=z,p.hasEvent=A,p.testProp=function(e){return c([e])},p.testAllProps=u,p.testStyles=F,p.prefixed=function(e,t,n){return t?u(e,t,n):u(e,"pfx")},g.className=g.className.replace(/(^|\s)no-js(\s|$)/,"$1$2")+(h?" js "+$.join(" "):""),p}(this,this.document);
+    </script>
+  </head>
+  <body>
+    <div class="top-line">
+      <div class="row">
+        <div class="small-12 medium-8 large-5 columns show-for-medium">
+          <div class="top-line__menu">
+            <ul class="menu-top">
+              <li class="menu-top__item"><a href="#" class="menu-top__link">О магазине</a></li>
+              <li class="menu-top__item"><a href="#" class="menu-top__link">Доставка и оплата</a></li>
+              <li class="menu-top__item"><a href="#" class="menu-top__link">Гарантия</a></li>
+              <li class="menu-top__item"><a href="#" class="menu-top__link">Помощь</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="small-12 large-5 columns show-for-large">
+          <div class="top-line__description"><i class="fa fa-clock-o fa-lg"></i>&nbsp; Время работы: в будни с 9:00 до 18:00. Выходные - Сб, Вс</div>
+        </div>
+        <div class="small-12 medium-4 large-2 columns">
+          <ul class="login-top text-left medium-text-right">
+            <li class="login-top__item"><a href="#" class="login-top__link"><img src="./images/sign-in.svg" alt="enter" width="15" height="15">&nbsp; Вход</a></li>
+            <li class="login-top__item"><a href="#" class="login-top__link">Регистрация&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="header">
+      <div class="row">
+        <div class="small-12 large-3 columns text-center large-text-left"><a href="#"><img src="./images/neon_color.svg" alt="logo" class="header__logo"></a></div>
+        <div class="small-12 large-9 columns text-center large-text-left header__blocks">
+          <div class="row collapse">
+            <div class="small-12 medium-4 column">
+              <div class="header__item"><span class="header__icon"><i class="fa fa-phone fa-lg"></i></span><span class="header__label">
+                  <p class="header__num">8 (905) 647-73-94</p><a href="#" title="Заказать звонок" class="header__link">Заказать звонок</a></span></div>
+            </div>
+            <div class="small-12 medium-4 column show-for-medium">
+              <div class="header__item"><span class="header__icon"><i class="fa fa-map-marker fa-lg"></i></span><span class="header__label">
+                  <p class="header__text">г. Ярославль, ул. Промышленная д.1 стр. 4 офис 210</p></span></div>
+            </div>
+            <div class="small-12 medium-4 column">
+              <div class="cart-top text-left"><span class="cart-top__icon"><img src="./images/cart.svg" alt="Корзина"></span><span class="cart-top__label">
+                  <p class="cart-top__text">Товаров &nbsp;&nbsp;<span class="cart-top__count">100</span></p>
+                  <p class="cart-top__text">на сумму:&nbsp;<span class="cart-top__price">750 руб.</span></p></span></div>
+            </div>
+          </div>
+        </div>
+        <div data-responsive-toggle="menu" data-hide-for="medium" class="small-12 columns show-for-small-only"><br>
+          <div data-toggle><i class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x menu-base__toggler"></i><i class="fa fa-bars fa-stack-1x fa-inverse"></i></i>&nbsp;Меню</div>
+        </div>
+      </div>
+    </div>
+    <div class="menu-line">
+      <div class="row">
+        <div id="menu" class="small-12 medium-12 large-8 columns">
+          <ul data-dropdown-menu class="menu-base large-text-left dropdown menu text-center medium-text-left">
+            <li class="menu-base__item"><a href="#" class="menu-base__link">Каталог&#160;<i class="fa fa-angle-down hide-for-small-only"></i></a>
+              <ul class="menu-base__submenu menu hide-for-small-only">
+                <li><a href="#">Производство и технологии</a></li>
+                <li><a href="#">Награды и достижения</a></li>
+                <li><a href="#">Сертификаты</a></li>
+                <li><a href="#">Клиенты</a></li>
+                <li><a href="#">Вакансии</a></li>
+                <li><a href="#">Новости</a></li>
+              </ul>
+            </li>
+            <li class="menu-base__item"><a href="#" class="menu-base__link">Акции и скидки</a>
+            </li>
+            <li class="menu-base__item"><a href="#" class="menu-base__link">Новости</a>
+            </li>
+            <li class="menu-base__item"><a href="#" class="menu-base__link">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="small-12 medium-12 large-4 columns float-right">
+          <form class="search-top">
+            <input name="search" placeholder="Поиск по сайту" class="search-top__field">
+            <button class="search-top__button"><i class="fa fa-search fa-lg"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-3 column">
+        <div class="filter-sidebar">
+          <div class="filter-sidebar__name">Фильтр по каталогу</div>
+          <ul data-accordion data-multi-expand="true" data-allow-all-closed="true" class="accordion filter-sidebar__items">
+            <li data-accordion-item class="accordion-item filter-sidebar__item is-active"><a href="#" class="accordion-title filter-sidebar__title">Категории</a>
+              <div data-tab-content class="accordion-content filter-sidebar__content checkbox-group">
+                <input id="checkbox1" type="checkbox" class="checkbox-group__mark">
+                <label for="checkbox1" class="checkbox-group__item">Лазерные принтеры (97)</label><br>
+                <input id="checkbox2" type="checkbox" class="checkbox-group__mark">
+                <label for="checkbox2" class="checkbox-group__item">Лазерные принтеры (97)</label><br>
+                <input id="checkbox3" type="checkbox" class="checkbox-group__mark">
+                <label for="checkbox3" class="checkbox-group__item">Цветные лазерные принтеры (31)</label><br>
+                <input id="checkbox4" type="checkbox" class="checkbox-group__mark">
+                <label for="checkbox4" class="checkbox-group__item">3-D принтеры (57)</label>
+              </div>
+            </li>
+            <li data-accordion-item class="accordion-item filter-sidebar__item"><a href="#" class="accordion-title filter-sidebar__title">Бренды</a>
+              <div data-tab-content class="accordion-content filter-sidebar__content checkbox-group">
+                <input id="checkbox5" type="checkbox" class="checkbox-group__mark">
+                <label for="checkbox5" class="checkbox-group__item">Canon (97)</label><br>
+                <input id="checkbox6" type="checkbox" class="checkbox-group__mark">
+                <label for="checkbox6" class="checkbox-group__item">HP (48)</label>
+              </div>
+            </li>
+            <li data-accordion-item class="accordion-item filter-sidebar__item"><a href="#" class="accordion-title filter-sidebar__title">Скорость ч/б печати</a>
+              <div data-tab-content class="accordion-content filter-sidebar__content checkbox-group">
+                <input id="checkbox7" type="checkbox" class="checkbox-group__mark">
+                <label for="checkbox7" class="checkbox-group__item">50 л/мин</label><br>
+                <input id="checkbox8" type="checkbox" class="checkbox-group__mark">
+                <label for="checkbox8" class="checkbox-group__item">30 л/мин</label>
+              </div>
+            </li>
+            <li data-accordion-item class="accordion-item filter-sidebar__item"><a href="#" class="accordion-title filter-sidebar__title">Цвет</a>
+              <div data-tab-content class="accordion-content filter-sidebar__content checkbox-group">
+                <input id="checkbox9" type="checkbox" class="checkbox-group__mark">
+                <label for="checkbox9" class="checkbox-group__item">Белый (97)</label><br>
+                <input id="checkbox10" type="checkbox" class="checkbox-group__mark">
+                <label for="checkbox10" class="checkbox-group__item">Серый (48)</label><br>
+                <input id="checkbox11" type="checkbox" class="checkbox-group__mark">
+                <label for="checkbox11" class="checkbox-group__item">Черный (31)</label><br>
+                <input id="checkbox12" type="checkbox" class="checkbox-group__mark">
+                <label for="checkbox12" class="checkbox-group__item">Другие цвета (57)</label>
+              </div>
+            </li>
+            <li data-accordion-item class="accordion-item filter-sidebar__item is-active"><a href="#" class="accordion-title filter-sidebar__title">Цена</a>
+              <div data-tab-content class="accordion-content">
+                <div data-slider data-start="0" data-end="300000" data-step="50" data-decimal="0" data-binding="true" class="slider price-slider"><span data-slider-handle role="slider" tabindex="1" aria-controls="price-min" class="slider-handle price-slider__handle"></span><span data-slider-fill class="slider-fill price-slider__fill"></span><span data-slider-handle role="slider" tabindex="1" aria-controls="price-max" class="slider-handle price-slider__handle"></span></div>
+                <div class="price-slider__values"><span class="price-slider__value">
+                    <input type="text" id="price-min" class="price-slider__min"></span><span class="price-slider__value">
+                    <input type="text" id="price-max" class="price-slider__max"></span></div>
+              </div>
+            </li>
+          </ul>
+          <div class="filter-sidebar__buttons"><a class="button gray expanded filter-sidebar__clear">Сбросить фильтр</a><a class="button primary expanded">Подобрать товар</a></div>
+        </div>
+        <p class="show-for-large"><img src="./images/banner.jpg" alt="banner"></p>
+      </div>
+      <div class="large-9 column">
+        <div class="x-carousel-main carousel-main">
+          <div style="background-image: url(&quot;./images/slider-1.jpg&quot;); background-color: #0c75bc; background-size: 100% 100%;" class="carousel-main__item">
+            <div class="vertical-bottom">
+              <p class="text-white"><a href="#" class="button red carousel-main__button">Купить</a></p>
+            </div>
+          </div>
+          <div style="background-image: url(&quot;./images/slider-2.jpg&quot;); background-color: #0c75bc; background-size: 100% 100%;" class="carousel-main__item">
+            <div class="vertical-bottom">
+              <p class="text-white"><a href="#" class="button red carousel-main__button">Купить</a></p>
+            </div>
+          </div>
+          <div style="background-image: url(&quot;./images/slider-1.jpg&quot;); background-color: #0c75bc; background-size: 100% 100%;" class="carousel-main__item">
+            <div class="vertical-bottom">
+              <p class="text-white"><a href="#" class="button red carousel-main__button">Купить</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="row small-up-2 medium-up-4 collapse">
+            <div class="column services-box">
+              <div class="text-center">
+                <p><img src="./images/truck.svg" alt="Сверхскорость" class="services-box__ico"></p>
+                <p class="services-box__text">Доставка бесплатно от 20000 руб</p>
+              </div>
+            </div>
+            <div class="column services-box">
+              <div class="text-center">
+                <p><img src="./images/compass.svg" alt="Компас" class="services-box__ico"></p>
+                <p class="services-box__text">Доставка по всей России</p>
+              </div>
+            </div>
+            <div class="column services-box">
+              <div class="text-center">
+                <p><img src="./images/lock.svg" alt="Замок" class="services-box__ico"></p>
+                <p class="services-box__text">Безопасность платежей</p>
+              </div>
+            </div>
+            <div class="column services-box">
+              <div class="text-center">
+                <p><img src="./images/umbrella.svg" alt="Зонт" class="services-box__ico"></p>
+                <p class="services-box__text">Гарантии и возврат товара</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="content">
+          <div class="row">
+            <div class="small-12 medium-7 columns">
+              <h2 class="decorative-title">Принтеры струйные</h2>
+            </div>
+            <div class="small-12 medium-5 columns medium-text-right">
+              <div class="sort-box"><i class="fa fa-filter fa-lg sort-box__sign"></i><span class="sort-box__pre">по:</span>
+                <form>
+                  <select class="sort-box__list">
+                    <option>Убыванию цены</option>
+                    <option>Названию</option>
+                    <option>Цене</option>
+                    <option>Популярности</option>
+                  </select>
+                </form>
+              </div>
+              <div class="view-box"><a href="index.html" title="Плитки" class="button view-box__button no-border"><i class="fa fa-th-large fa-lg"></i></a><a href="index-list.html" title="Список" class="button view-box__button is-active"><i class="fa fa-th-list fa-lg"></i></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="row columns">
+                  <div class="row product-line">
+                    <div class="column small-4 medium-2">
+                      <p><img src="./images/item-3.jpg" alt="Товар"></p>
+                    </div>
+                    <div class="column small-8 medium-6 large-5"><span class="label product-line__sale">Акция</span>&nbsp;<span class="label product-line__novel">Новинка</span>&nbsp;
+                      <p><a href="#" class="product-line__name">Картридж струйный HP178 Photo Black(CB317HE)</a></p>
+                      <ul class="hide-for-small-only">
+                        <li>Гарантия: 1 год</li>
+                        <li>Цвет: Красный</li>
+                        <li>Страна: Китай</li>
+                      </ul>
+                    </div>
+                    <div class="column small-12 medium-4 large-offset-1">
+                      <div class="row collapse">
+                        <div class="small-7 columns">
+                          <p><span class="product-lines__price-current">1&nbsp;250&nbsp;руб.</span><br>
+                            <del class="product-lines__price-old">1&nbsp;750&nbsp;руб.</del>
+                          </p>
+                        </div>
+                        <div class="small-5 columns"><a href="#" title="В корзине"><span class="dark-gray"><i class="fa fa-check fa-lg"></i>&nbsp;В корзине</span></a>
+                        </div>
+                      </div>
+                      <div class="hide-for-small-only">
+                        <hr><br>
+                        <p><i class="fa fa-truck"></i>&nbsp;Доставим на дом<br><a data-open="add-to-favourites-auth-popup" title="Запомнить" class="product-line__button"><i class="fa fa-heart-o"></i>&nbsp;Запомнить</a>&nbsp;&nbsp;<a href="№" title="Сравнить" class="product-line__button"><i class="fa fa-bar-chart"></i>&nbsp;Сравнить</a></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row product-line">
+                    <div class="column small-4 medium-2">
+                      <p><img src="./images/item-1.jpg" alt="Товар"></p>
+                    </div>
+                    <div class="column small-8 medium-6 large-5"><span class="label product-line__novel">Новинка</span>&nbsp;
+                      <p><a href="#" class="product-line__name">Картридж струйный HP178 Photo Black(CB317HE)</a></p>
+                      <ul class="hide-for-small-only">
+                        <li>Гарантия: 1 год</li>
+                        <li>Цвет: Красный</li>
+                        <li>Страна: Китай</li>
+                      </ul>
+                    </div>
+                    <div class="column small-12 medium-4 large-offset-1">
+                      <div class="row collapse">
+                        <div class="small-7 columns">
+                          <p><span class="product-lines__price-current">1&nbsp;250&nbsp;руб.</span>
+                          </p>
+                        </div>
+                        <div class="small-5 columns"><a href="#" title="Купить" class="button expanded primary">Купить</a>
+                        </div>
+                      </div>
+                      <div class="hide-for-small-only">
+                        <hr><br>
+                        <p><i class="fa fa-truck"></i>&nbsp;Доставим на дом<br><a data-open="add-to-favourites-auth-popup" title="Запомнить" class="product-line__button"><i class="fa fa-heart-o"></i>&nbsp;Запомнить</a>&nbsp;&nbsp;<a href="№" title="Сравнить" class="product-line__button"><i class="fa fa-bar-chart"></i>&nbsp;Сравнить</a></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row product-line">
+                    <div class="column small-4 medium-2">
+                      <p><img src="./images/item-3.jpg" alt="Товар"></p>
+                    </div>
+                    <div class="column small-8 medium-6 large-5"><span class="label product-line__sale">Акция</span>&nbsp;
+                      <p><a href="#" class="product-line__name">Картридж струйный HP178 Photo Black(CB317HE)</a></p>
+                      <ul class="hide-for-small-only">
+                        <li>Гарантия: 1 год</li>
+                        <li>Цвет: Красный</li>
+                        <li>Страна: Китай</li>
+                      </ul>
+                    </div>
+                    <div class="column small-12 medium-4 large-offset-1">
+                      <div class="row collapse">
+                        <div class="small-7 columns">
+                          <p><span class="product-lines__price-current">1&nbsp;250&nbsp;руб.</span><br>
+                            <del class="product-lines__price-old">1&nbsp;750&nbsp;руб.</del>
+                          </p>
+                        </div>
+                        <div class="small-5 columns"><a href="#" title="Купить" class="button expanded primary">Купить</a>
+                        </div>
+                      </div>
+                      <div class="hide-for-small-only">
+                        <hr><br>
+                        <p><i class="fa fa-truck"></i>&nbsp;Доставим на дом<br><a data-open="add-to-favourites-auth-popup" title="Запомнить" class="product-line__button"><i class="fa fa-heart-o"></i>&nbsp;Запомнить</a>&nbsp;&nbsp;<a href="№" title="Сравнить" class="product-line__button"><i class="fa fa-bar-chart"></i>&nbsp;Сравнить</a></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row product-line">
+                    <div class="column small-4 medium-2">
+                      <p><img src="./images/item-2.jpg" alt="Товар"></p>
+                    </div>
+                    <div class="column small-8 medium-6 large-5">
+                      <p><a href="#" class="product-line__name">Картридж струйный HP178 Photo Black(CB317HE)</a></p>
+                      <ul class="hide-for-small-only">
+                        <li>Гарантия: 1 год</li>
+                        <li>Цвет: Красный</li>
+                        <li>Страна: Китай</li>
+                      </ul>
+                    </div>
+                    <div class="column small-12 medium-4 large-offset-1">
+                      <div class="row collapse">
+                        <div class="small-7 columns">
+                          <p><span class="product-lines__price-current">1&nbsp;250&nbsp;руб.</span>
+                          </p>
+                        </div>
+                        <div class="small-5 columns">
+                          <p><span class="product-line__status">Нет в наличии&nbsp;</span></p>
+                        </div>
+                      </div>
+                      <div class="hide-for-small-only">
+                        <hr><br>
+                        <p><i class="fa fa-truck"></i>&nbsp;Доставим на дом<br><a data-open="add-to-favourites-auth-popup" title="Запомнить" class="product-line__button"><i class="fa fa-heart-o"></i>&nbsp;Запомнить</a>&nbsp;&nbsp;<a href="№" title="Сравнить" class="product-line__button"><i class="fa fa-bar-chart"></i>&nbsp;Сравнить</a></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row product-line">
+                    <div class="column small-4 medium-2">
+                      <p><img src="./images/item-2.jpg" alt="Товар"></p>
+                    </div>
+                    <div class="column small-8 medium-6 large-5"><span class="label product-line__sale">Акция</span>&nbsp;
+                      <p><a href="#" class="product-line__name">Картридж струйный HP178 Photo Black(CB317HE)</a></p>
+                      <ul class="hide-for-small-only">
+                        <li>Гарантия: 1 год</li>
+                        <li>Цвет: Красный</li>
+                        <li>Страна: Китай</li>
+                      </ul>
+                    </div>
+                    <div class="column small-12 medium-4 large-offset-1">
+                      <div class="row collapse">
+                        <div class="small-7 columns">
+                          <p><span class="product-lines__price-current">1&nbsp;250&nbsp;руб.</span><br>
+                            <del class="product-lines__price-old">1&nbsp;750&nbsp;руб.</del>
+                          </p>
+                        </div>
+                        <div class="small-5 columns"><a href="#" title="Купить" class="button expanded primary">Купить</a>
+                        </div>
+                      </div>
+                      <div class="hide-for-small-only">
+                        <hr><br>
+                        <p><i class="fa fa-truck"></i>&nbsp;Доставим на дом<br><a data-open="add-to-favourites-auth-popup" title="Запомнить" class="product-line__button"><i class="fa fa-heart-o"></i>&nbsp;Запомнить</a>&nbsp;&nbsp;<a href="№" title="Сравнить" class="product-line__button"><i class="fa fa-bar-chart"></i>&nbsp;Сравнить</a></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row product-line">
+                    <div class="column small-4 medium-2">
+                      <p><img src="./images/item-3.jpg" alt="Товар"></p>
+                    </div>
+                    <div class="column small-8 medium-6 large-5">
+                      <p><a href="#" class="product-line__name">Картридж струйный HP178 Photo Black(CB317HE)</a></p>
+                      <ul class="hide-for-small-only">
+                        <li>Гарантия: 1 год</li>
+                        <li>Цвет: Красный</li>
+                        <li>Страна: Китай</li>
+                      </ul>
+                    </div>
+                    <div class="column small-12 medium-4 large-offset-1">
+                      <div class="row collapse">
+                        <div class="small-7 columns">
+                          <p><span class="product-lines__price-current">1&nbsp;250&nbsp;руб.</span>
+                          </p>
+                        </div>
+                        <div class="small-5 columns">
+                          <p><span class="product-line__status">Нет в наличии&nbsp;</span></p>
+                        </div>
+                      </div>
+                      <div class="hide-for-small-only">
+                        <hr><br>
+                        <p><i class="fa fa-truck"></i>&nbsp;Доставим на дом<br><a data-open="add-to-favourites-auth-popup" title="Запомнить" class="product-line__button"><i class="fa fa-heart-o"></i>&nbsp;Запомнить</a>&nbsp;&nbsp;<a href="№" title="Сравнить" class="product-line__button"><i class="fa fa-bar-chart"></i>&nbsp;Сравнить</a></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row product-line">
+                    <div class="column small-4 medium-2">
+                      <p><img src="./images/item-3.jpg" alt="Товар"></p>
+                    </div>
+                    <div class="column small-8 medium-6 large-5"><span class="label product-line__sale">Акция</span>&nbsp;
+                      <p><a href="#" class="product-line__name">Картридж струйный HP178 Photo Black(CB317HE)</a></p>
+                      <ul class="hide-for-small-only">
+                        <li>Гарантия: 1 год</li>
+                        <li>Цвет: Красный</li>
+                        <li>Страна: Китай</li>
+                      </ul>
+                    </div>
+                    <div class="column small-12 medium-4 large-offset-1">
+                      <div class="row collapse">
+                        <div class="small-7 columns">
+                          <p><span class="product-lines__price-current">1&nbsp;250&nbsp;руб.</span><br>
+                            <del class="product-lines__price-old">1&nbsp;750&nbsp;руб.</del>
+                          </p>
+                        </div>
+                        <div class="small-5 columns"><a href="#" title="Купить" class="button expanded primary">Купить</a>
+                        </div>
+                      </div>
+                      <div class="hide-for-small-only">
+                        <hr><br>
+                        <p><i class="fa fa-truck"></i>&nbsp;Доставим на дом<br><a data-open="add-to-favourites-auth-popup" title="Запомнить" class="product-line__button"><i class="fa fa-heart-o"></i>&nbsp;Запомнить</a>&nbsp;&nbsp;<a href="№" title="Сравнить" class="product-line__button"><i class="fa fa-bar-chart"></i>&nbsp;Сравнить</a></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row product-line">
+                    <div class="column small-4 medium-2">
+                      <p><img src="./images/item-2.jpg" alt="Товар"></p>
+                    </div>
+                    <div class="column small-8 medium-6 large-5">
+                      <p><a href="#" class="product-line__name">Картридж струйный HP178 Photo Black(CB317HE)</a></p>
+                      <ul class="hide-for-small-only">
+                        <li>Гарантия: 1 год</li>
+                        <li>Цвет: Красный</li>
+                        <li>Страна: Китай</li>
+                      </ul>
+                    </div>
+                    <div class="column small-12 medium-4 large-offset-1">
+                      <div class="row collapse">
+                        <div class="small-7 columns">
+                          <p><span class="product-lines__price-current">1&nbsp;250&nbsp;руб.</span>
+                          </p>
+                        </div>
+                        <div class="small-5 columns">
+                          <p><span class="product-line__status">Нет в наличии&nbsp;</span></p>
+                        </div>
+                      </div>
+                      <div class="hide-for-small-only">
+                        <hr><br>
+                        <p><i class="fa fa-truck"></i>&nbsp;Доставим на дом<br><a data-open="add-to-favourites-auth-popup" title="Запомнить" class="product-line__button"><i class="fa fa-heart-o"></i>&nbsp;Запомнить</a>&nbsp;&nbsp;<a href="№" title="Сравнить" class="product-line__button"><i class="fa fa-bar-chart"></i>&nbsp;Сравнить</a></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row product-line">
+                    <div class="column small-4 medium-2">
+                      <p><img src="./images/item-3.jpg" alt="Товар"></p>
+                    </div>
+                    <div class="column small-8 medium-6 large-5"><span class="label product-line__sale">Акция</span>&nbsp;
+                      <p><a href="#" class="product-line__name">Картридж струйный HP178 Photo Black(CB317HE)</a></p>
+                      <ul class="hide-for-small-only">
+                        <li>Гарантия: 1 год</li>
+                        <li>Цвет: Красный</li>
+                        <li>Страна: Китай</li>
+                      </ul>
+                    </div>
+                    <div class="column small-12 medium-4 large-offset-1">
+                      <div class="row collapse">
+                        <div class="small-7 columns">
+                          <p><span class="product-lines__price-current">1&nbsp;250&nbsp;руб.</span><br>
+                            <del class="product-lines__price-old">1&nbsp;750&nbsp;руб.</del>
+                          </p>
+                        </div>
+                        <div class="small-5 columns"><a href="#" title="Купить" class="button expanded primary">Купить</a>
+                        </div>
+                      </div>
+                      <div class="hide-for-small-only">
+                        <hr><br>
+                        <p><i class="fa fa-truck"></i>&nbsp;Доставим на дом<br><a data-open="add-to-favourites-auth-popup" title="Запомнить" class="product-line__button"><i class="fa fa-heart-o"></i>&nbsp;Запомнить</a>&nbsp;&nbsp;<a href="№" title="Сравнить" class="product-line__button"><i class="fa fa-bar-chart"></i>&nbsp;Сравнить</a></p>
+                      </div>
+                    </div>
+                  </div>
+        </div>
+        <div class="content">
+          <div class="row">
+            <div class="column">
+              <h2 class="decorative-title">Наши бренды</h2>
+              <div class="x-carousel-brands carousel-brands">
+                <div class="carousel-brands__item"><img src="./images/brand-can.png" alt="canon"></div>
+                <div class="carousel-brands__item"><img src="./images/brand-hp.png" alt="hp"></div>
+                <div class="carousel-brands__item"><img src="./images/brand-lenovo.png" alt="lenovo"></div>
+                <div class="carousel-brands__item"><img src="./images/brand-pc.png" alt="power-color "></div>
+                <div class="carousel-brands__item"><img src="./images/brand-can.png" alt="canon"></div>
+                <div class="carousel-brands__item"><img src="./images/brand-can.png" alt="canon"></div>
+                <div class="carousel-brands__item"><img src="./images/brand-hp.png" alt="hp"></div>
+                <div class="carousel-brands__item"><img src="./images/brand-lenovo.png" alt="lenovo"></div>
+                <div class="carousel-brands__item"><img src="./images/brand-pc.png" alt="power-color "></div>
+                <div class="carousel-brands__item"><img src="./images/brand-can.png" alt="canon"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer text-center medium-text-left">
+      <div class="row">
+        <div class="small-12 medium-6 large-2 column footer__box">
+          <p class="footer__title">О нас:</p>
+          <ul class="vertical menu-bottom">
+            <li class="menu-bottom__item"><a href="#" class="menu-bottom__link">Как работает магазин?</a></li>
+            <li class="menu-bottom__item"><a href="#" class="menu-bottom__link">Партнерам</a></li>
+            <li class="menu-bottom__item"><a href="#" class="menu-bottom__link">Отзывы</a></li>
+            <li class="menu-bottom__item"><a href="#" class="menu-bottom__link">Вакансии</a></li>
+            <li class="menu-bottom__item"><a href="#" class="menu-bottom__link">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="small-12 medium-6 large-3 column footer__box">
+          <p class="footer__title">Акции и скидки:</p>
+          <ul class="vertical menu-bottom">
+            <li class="menu-bottom__item"><a href="#" class="menu-bottom__link">Программа скидок</a></li>
+            <li class="menu-bottom__item"><a href="#" class="menu-bottom__link">Спец. предложения</a></li>
+            <li class="menu-bottom__item"><a href="#" class="menu-bottom__link">Акции</a></li>
+          </ul>
+        </div>
+        <div class="small-12 medium-6 large-2 column footer__box">
+          <p class="footer__title">Помощь:</p>
+          <ul class="vertical menu-bottom">
+            <li class="menu-bottom__item"><a href="#" class="menu-bottom__link">Оплата</a></li>
+            <li class="menu-bottom__item"><a href="#" class="menu-bottom__link">Доставка</a></li>
+            <li class="menu-bottom__item"><a href="#" class="menu-bottom__link">Гарантия</a></li>
+          </ul>
+        </div>
+        <div class="small-12 medium-6 large-2 column footer__box">
+          <p class="footer__title">Подписаться на рассылку:</p>
+          <form>
+            <input type="email" required placeholder="Введите ваш E-mail" class="footer__subscribe">
+          </form>
+        </div>
+        <div class="small-12 medium-6 large-3 column footer__box">
+          <p class="footer__title">Принимаем к оплате:</p>
+          <p class="footer__pay"><img src="./images/visa.svg" style="width:50px" alt="visa"></p>
+          <p class="footer__pay"><img src="./images/mc.svg" style="width:45px" alt="mastercard"></p>
+          <p class="footer__pay"><img src="./images/webmoney.svg" style="width:27px" alt="webmoney"></p>
+          <p class="footer__pay-large"><img src="./images/Wallet.svg" style="width:30px" alt="cash">&nbsp;&nbsp;&nbsp;Наличными</p>
+          <p class="footer__title">Рассказать:</p><a href="#" title="Рассказать в ВК"><i aria-hidden="true" class="fa fa-vk social-icons__item"></i></a><a href="#" title="Рассказать в Твиттере"><i aria-hidden="true" class="fa fa-twitter social-icons__item"></i></a><a href="#" title="Рассказать в Фейсбуке"><i aria-hidden="true" class="fa fa-facebook social-icons__item"></i></a><a href="#" title="Рассказать в G+"><i aria-hidden="true" class="fa fa-google-plus social-icons__item"></i></a>
+        </div>
+      </div>
+      <hr class="footer__line">
+      <div class="row medium-collapse">
+        <div class="large-5 columns show-for-large"><a href="#"><img src="./images/neon_white.svg" alt="logo" class="footer__logo"></a></div>
+        <div class="medium-6 large-4 columns">
+          <p class="footer__description">&copy;&nbsp; Магазин &#171;Neon&#187;, 2016<br>Оптовые продажи принтеров и комплектующих</p>
+        </div>
+        <div class="medium-6 large-3 columns text-center medium-text-left">
+          <p class="footer__copyright">Создание сайта &mdash;<a target="_blank" href="http://cetera.ru/" class="footer__link">Cetera Labs</a><br><a target="_blank" href="http://www.cetera.ru/support/default.php?project=NRDM&amp;lang=ru" class="footer__link">Сообщить об ошибке</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="scroll"></div>
+<script src="js/lib.js" type="text/javascript"></script>
+<script src="js/app.js" type="text/javascript"></script>
+
+  </body>
+</html>

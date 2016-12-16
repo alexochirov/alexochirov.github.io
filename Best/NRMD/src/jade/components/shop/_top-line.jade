@@ -1,0 +1,20 @@
+.top-line
+    .row
+        .small-12.medium-8.large-5.columns.show-for-medium
+            .top-line__menu
+                ul.menu-top
+                    each title in ['О магазине', 'Доставка и оплата', 'Гарантия', 'Помощь']
+                        li.menu-top__item
+                            a.menu-top__link(href='#')= title
+        .small-12.large-5.columns.show-for-large
+            .top-line__description
+                i.fa.fa-clock-o.fa-lg
+                | &nbsp; Время работы: в будни с 9:00 до 18:00. Выходные - Сб, Вс
+        .small-12.medium-4.large-2.columns
+            ul.login-top.text-left.medium-text-right
+                li.login-top__item
+                    a.login-top__link(href='#')
+                        img(src="./images/sign-in.svg",alt="enter", width='15', height='15')
+                        | &nbsp; Вход
+                li.login-top__item
+                    a.login-top__link(href='#') Регистрация&nbsp;&nbsp;&nbsp;&nbsp;

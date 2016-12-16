@@ -1,0 +1,55 @@
+mixin productLine(title, discount, novel, img, onDemand, inCart)
+    .row.product-line
+        .column.small-4.medium-2
+            p: img(src='./images/'+img alt='Товар')
+        .column.small-8.medium-6.large-5
+            if discount
+                span.label.product-line__sale Акция
+                | &nbsp;
+            if novel
+                span.label.product-line__novel Новинка
+                | &nbsp;
+            p
+                a.product-line__name(href='#'): = title
+            ul.hide-for-small-only
+                li Гарантия: 1 год
+                li Цвет: Красный
+                li Страна: Китай
+
+        .column.small-12.medium-4.large-offset-1
+            .row.collapse
+                .small-7.columns
+                    p
+                        span.product-lines__price-current
+                            | 1&nbsp;250&nbsp;руб.
+                        if discount
+                            br
+                            del.product-lines__price-old
+                                | 1&nbsp;750&nbsp;руб.
+
+                .small-5.columns
+                    if onDemand
+                        p
+                            span.product-line__status Нет в наличии&nbsp;
+                    else
+                        if inCart
+                            a(href='#', title='В корзине')
+                                span.dark-gray
+                                    i.fa.fa-check.fa-lg
+                                    | &nbsp;В корзине
+                        else
+                            a(href='#', title='Купить').button.expanded.primary Купить
+            div.hide-for-small-only
+                hr
+                br
+                p
+                    i.fa.fa-truck
+                    | &nbsp;Доставим на дом
+                    br
+                    a.product-line__button(data-open="add-to-favourites-auth-popup", title='Запомнить' )
+                        i.fa.fa-heart-o
+                        | &nbsp;Запомнить
+                    | &nbsp;&nbsp;
+                    a.product-line__button(href='№', title='Сравнить')
+                        i.fa.fa-bar-chart
+                        | &nbsp;Сравнить

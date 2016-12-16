@@ -1,0 +1,60 @@
+.header {
+  padding: 2.2rem 0;
+  border-top: 1px solid $medium-gray;
+}
+
+.header__blocks {
+  padding-left: 2.2rem;
+}
+
+.header__item {
+  margin-top: 1rem;
+  position: relative;
+}
+
+.header__logo {
+  width: 225px;
+}
+
+.header__icon {
+  border: 1px solid $medium-gray;
+  border-radius: 30px;
+  width: 40px;
+  height: 40px;
+  left: 0;
+  top: 0;
+  padding-top: .5rem;
+  text-align: center;
+  color: $red;
+  position: absolute;
+}
+
+.header__label {
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 4rem;
+
+}
+
+.header__num {
+  margin-bottom: 0;
+  vertical-align: middle;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.header__text {
+  margin: 0;
+}
+
+.header__link {
+  text-decoration: underline;
+}
+
+
+@media #{$small-only} {
+  .header__item {
+    display: table;
+    margin: 2rem auto 0;
+  }
+}

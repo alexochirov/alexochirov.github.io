@@ -1,0 +1,77 @@
+.ship {
+    border-bottom: rem-calc(1) solid #e8e8e8;
+
+    .input-group-button button {
+        width: rem-calc(36);
+        height: rem-calc(36);
+        font-size: rem-calc(13);
+    }
+
+    .input-group {
+        margin-top: rem-calc(60);
+    }
+
+    input.input-group-field {
+        width: 100%;
+        height: rem-calc(36);
+    }
+
+    &__del {
+        width: rem-calc(20);
+        height: rem-calc(20);
+        background: url(../images/del.svg)no-repeat;
+        display: inline-block;
+        left: rem-calc(0);
+        top: rem-calc(34);
+        position: absolute;
+    }
+
+    &__sum {
+        font-size: rem-calc(16);
+        font-weight: 300;
+        padding-top: rem-calc(40);
+    }
+
+    &__title {
+        color: $secondary-color;
+        font-size: rem-calc(16);
+        font-weight: 300;
+        display: block;
+        margin-bottom: rem-calc(10);
+        margin-top: rem-calc(30);
+    }
+
+    &__price {
+        background-color: #fff3b5;
+        display: inline-block;
+        border-radius: rem-calc(5);
+        padding-left: rem-calc(9);
+        padding-right: rem-calc(9);
+        font-weight: 700;
+        font-size: rem-calc(18);
+
+        &_total {
+            background: none;
+            padding-left: rem-calc(0);
+            padding-right: rem-calc(0);
+        }
+    }
+
+    &__rub {
+        font-size: rem-calc(14);
+    }
+
+    &__img {
+        padding-bottom: rem-calc(10);
+        position: relative;
+        padding-left: rem-calc(27);
+    }
+    @include breakpoint(medium down) {
+        .input-group {
+            margin-top: rem-calc(10);
+        }
+        &__sum {
+          padding-top: rem-calc(0);
+        }
+    }
+}

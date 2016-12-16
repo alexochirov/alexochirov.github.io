@@ -1,0 +1,24 @@
+.carousel-brands {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.carousel-brands__item.slick-slide {
+  float: none;
+  display: inline-block;
+  padding: 0 3rem;
+}
+
+.carousel-brands__item img{
+  display: inline-block;
+}
+
+.carousel-brands__prev {
+  left: 0;
+  padding: 0 0.5rem;
+}
+
+.carousel-brands__next {
+  right: 0;
+  padding: 0 0.5rem;
+}

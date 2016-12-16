@@ -1,0 +1,83 @@
+.row.columns
+  .fridge
+    .fridge__inside
+      +head('Сравнение товаров')  
+      .row.large-up-4.medium-up-2.small-up1
+        .columns
+          p.fridge__mark &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Добавлено товаров: 3
+        include _compare
+        include _compare
+        include _compare
+    ul#example.tabs(data-tabs='')
+      li.tabs-title
+        a(href='#panel10') Все характеристики
+      li.tabs-title.is-active
+        a(href='#panel11', aria-selected='true') Отличия
+    .tabs-content(data-tabs-content='example')
+      #panel10.tabs-panel
+      #panel11.tabs-panel.is-active
+        .table-scroll
+          table.characteristics
+            tr
+              td
+                strong Характеристики печати
+              td.characteristics__bod
+              td.characteristics__bod
+              td.characteristics__bod
+            tr
+              td Цвета картриджей      
+              td.characteristics__bod голубой    
+              td.characteristics__bod черный
+              td.characteristics__bod белый
+            tr
+              td Технология печати
+              td.characteristics__bod Лазерная
+              td.characteristics__bod Струйная
+              td.characteristics__bod Струйная
+            tr
+              td Количество страниц (в цвете)
+              td.characteristics__bod 7500 стр.
+              td.characteristics__bod 7200 стр.
+              td.characteristics__bod 7500 стр.
+            tr
+              td Сноска на ресурс печати
+              td.characteristics__bod www.hp.com/go/pageyield
+              td.characteristics__bod www.hp.com/go/pageyield
+              td.characteristics__bod www.hp.com/go/pageyield
+            tr
+              td
+                strong Условия эксплуатации
+              td.characteristics__bod
+              td.characteristics__bod
+              td.characteristics__bod
+            tr
+              td Влажность при эксплуатации
+              td.characteristics__bod 10-70%
+              td.characteristics__bod 10-70%
+              td.characteristics__bod 30-70%
+            tr
+              td Температура хранения
+              td.characteristics__bod От -20 до 40° C
+              td.characteristics__bod От -20 до 30° C
+              td.characteristics__bod От -20 до 30° C
+            tr
+              td
+                strong Размеры/вес/гарантия
+              td.characteristics__bod
+              td.characteristics__bod
+              td.characteristics__bod
+            tr
+              td Влажность при эксплуатации
+              td.characteristics__bod 10-70%
+              td.characteristics__bod 10-70%
+              td.characteristics__bod 30-70%
+            tr
+              td Температура хранения
+              td.characteristics__bod От -20 до 40° C
+              td.characteristics__bod От -20 до 30° C
+              td.characteristics__bod От -20 до 30° C
+            tr
+              td &nbsp;
+              td.characteristics__bod &nbsp;
+              td.characteristics__bod &nbsp;
+              td.characteristics__bod &nbsp;

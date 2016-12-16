@@ -1,0 +1,20 @@
+.view-box {
+  position: relative;
+  display: inline-block;
+}
+
+.view-box__button {
+  margin-left: .7rem;
+  padding: .7rem;
+  background-color: $gray;
+  color: $dark-gray;
+
+  &.is-active {
+    background-color: $red;
+    color: $white;
+  }
+
+  &:hover {
+    background-color: $red;
+  }
+}

@@ -1,0 +1,59 @@
+.filter-sidebar {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.filter-sidebar__items {
+  padding: 0 1rem;
+  margin-bottom: 0;
+}
+
+.is-active>.filter-sidebar__title::before {
+  background-color: $red;
+  color: $white;
+}
+
+.filter-sidebar__item {
+  border-bottom: 1px solid $medium-gray;
+}
+
+.filter-sidebar__title {
+  font-size: 15px;
+  font-weight: 700;
+
+  &:before {
+    background-color: $gray;
+    color: $dark-gray;
+    right: 0rem;
+    top: 44%;
+    width: 1.4rem;
+    height: 1.4rem;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+  }
+}
+
+.filter-sidebar__content {
+  margin-right: -1rem;
+  padding: 0 0 1rem 0;
+}
+
+.filter-sidebar__buttons {
+  background-color: $light-gray;
+  padding: 1rem;
+}
+
+.filter-sidebar__clear {
+  text-transform: uppercase;
+  border-radius: 30px;
+  color: $black;
+}
+
+.filter-sidebar__name {
+  background-color: $gray;
+  padding: 1rem;
+  font-size: 18px;
+  font-weight: 700;
+}

@@ -1,0 +1,32 @@
+.services-box {
+  height: 57px;
+  border-left: 1px solid $medium-gray;
+  margin-bottom: 2rem;
+
+  &:last-child {
+    border-right:1px solid $medium-gray;
+  }
+}
+
+.services-box__ico {
+  margin-top: -1rem;
+  height: 50px;
+}
+
+.services-box__text {
+  margin-top: -1rem;
+  padding: 0 2rem;
+  font-weight: 300;
+}
+
+@media #{$small-only} {
+  .services-box {
+    border: none;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .services-box__text {
+    padding: 0;
+  }
+}

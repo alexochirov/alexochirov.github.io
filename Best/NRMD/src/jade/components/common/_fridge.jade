@@ -1,0 +1,102 @@
+.row.columns
+  .fridge
+    .fridge__inside
+      .row
+        .columns
+          .fridge__title Тонер-картридж CB402A, HP LJ CP 4005
+          .fridge__art Артикул: 1027128
+        .large-6.medium-5.columns
+          .gun.text-center
+            .gun__slide
+              a(href="#")
+                img(src="./images/hp.png", alt="")
+            .gun__slide
+              a(href="#")
+                img(src="./images/test.png", alt="")
+            .gun__slide
+              a(href="#")
+                img(src="./images/hp.png", alt="")
+            .gun__slide
+              a(href="#")
+                img(src="./images/test.png", alt="")
+            .gun__slide
+              a(href="#")
+                img(src="./images/hp.png", alt="")
+          .navi
+        .large-6.medium-7.columns
+          .row
+            .large-8.columns.text-center.medium-text-left
+              .fridge__strike 34 564 руб.
+              .fridge__price 27 150 руб.
+              .fridge__num
+                .input-group
+                  .input-group-button
+                    button.button –
+                  input.input-group-field.text-center.medium-text-left(type='text', value='1')
+                  .input-group-button
+                    button.button +
+
+              a(href='#',data-open="exampleModal1").button.fridge__basket
+                | &nbsp;
+                i.fa.fa-shopping-cart.fa-lg
+                | &nbsp;В корзину
+                | &nbsp;  
+            .large-4.columns.text-center.medium-text-left
+              include _rating
+              p.fridge__mark Оценки (3)
+              .fridge__say Рассказать друзьям  
+              a(href="#").fa-stack.soc
+                i.fa.fa-circle-thin.fa-stack-2x
+                i.fa.fa-vk.fa-stack-1x
+              a(href="#").fa-stack.soc
+                i.fa.fa-circle-thin.fa-stack-2x
+                i.fa.fa-twitter.fa-stack-1x
+              a(href="#").fa-stack.soc
+                i.fa.fa-circle-thin.fa-stack-2x
+                i.fa.fa-facebook.fa-stack-1x
+              a(href="#").fa-stack.soc
+                i.fa.fa-circle-thin.fa-stack-2x
+                i.fa.fa-google-plus.fa-stack-1x
+            .columns.text-center.medium-text-left 
+              p
+                a.fridge__compare(href="#")        
+                  i.fa.fa-bar-chart
+                  |К сравнению
+                a.fridge__compare(href="#")        
+                  i.fa.fa-heart
+                  |Запомнить
+              p &nbsp; 
+              .fridge__delivery Доставка 
+              .fridge__float 
+                strong Самовывоз
+                br
+                |бесплатно
+              .fridge__float 
+                strong Москва и МО
+                br
+                |бесплатно 1-2 дня
+              .fridge__float 
+                strong Россия
+                br
+                |от 500 руб. до 6 дней
+              .fridge__float
+                a(href="#").fridge__link Способы оплаты
+                br
+                |Наличными или картой банка    
+              .fridge__float
+                a(href="#").fridge__link Гарантия и возврат
+                br
+                |Официальная гарантия от производителя
+              br  
+    ul#example-tabs.tabs(data-tabs='')
+      li.tabs-title
+        a(href='#panel1') Описание
+      li.tabs-title.is-active
+        a(href='#panel2', aria-selected='true') Характеристики товара
+      li.tabs-title
+        a(href='#panel3') Отзывы
+    .tabs-content(data-tabs-content='example-tabs')
+      #panel1.tabs-panel
+      #panel2.tabs-panel.is-active
+        include _characteristics
+      #panel3.tabs-panel

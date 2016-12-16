@@ -1,0 +1,26 @@
+.carousel-main {
+  text-align: right;
+}
+
+.carousel-main__item {
+  height: rem-calc(400);
+  background: center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  display: none;
+  padding: 2rem;
+  &:first-child {
+    display: block;
+  }
+}
+
+.carousel-main__button {
+  padding: rem-calc(14) rem-calc(52);
+}
+
+@media #{$small-only} {
+  .carousel-main__item {
+    height: 12rem;
+    padding: 0 2rem;
+  }
+}

@@ -1,0 +1,9 @@
+.vertical-bottom {
+  position: relative;
+  top: 90%;
+  -moz-transform: translateY(-90%);
+  -webkit-transform: translateY(-70%);
+  -o-transform: translateY(-90%);
+  -ms-transform: translateY(-90%);
+  transform: translateY(-70%);
+}

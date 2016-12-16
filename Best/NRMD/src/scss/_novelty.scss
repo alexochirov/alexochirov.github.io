@@ -1,0 +1,30 @@
+.novelty {
+    font-weight: 300;
+    color: #000;
+    border: rem-calc(1) solid #e8e8e8;
+    border-radius: 3px;
+    background-color: #f7f9fa;
+    margin-bottom: rem-calc(20);
+
+    &__info {
+      padding-left: rem-calc(12);
+      padding-right: rem-calc(12);
+      padding-top: rem-calc(10);
+      padding-bottom: rem-calc(7);
+    }
+    &__title {
+        font-weight: 700;
+        font-size: rem-calc(16);
+        text-transform: uppercase;
+        line-height: 1.2;
+        color: #000;
+        margin-bottom: rem-calc(10);
+        display: block;
+
+    }
+
+    &__date {
+        color: #737171;
+        font-size: rem-calc(10);
+    }
+}

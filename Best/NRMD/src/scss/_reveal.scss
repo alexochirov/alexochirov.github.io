@@ -1,0 +1,27 @@
+.reveal {
+    padding-left: rem-calc(42);
+    padding-right: rem-calc(42);
+    max-height: none !important;
+    padding-bottom: rem-calc(40);
+    overflow-y: visible;
+
+    h2 {
+        padding-right: rem-calc(30);
+    }
+
+    .close-button {
+        width: rem-calc(31);
+        height: rem-calc(31);
+        right: rem-calc(13);
+        top: rem-calc(13);
+        background: url(../images/close.svg)no-repeat;
+    }
+    @media (max-width: 1000px) {
+        padding-left: rem-calc(20);
+        padding-right: rem-calc(20);
+        top: rem-calc(0) !important;
+        margin-top: rem-calc(20);
+        width: calc(100% - 20px) !important;
+        left: rem-calc(10) !important;
+    }
+}

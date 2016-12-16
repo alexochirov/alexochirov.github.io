@@ -1,0 +1,18 @@
+.breadcrumbs {
+    a {
+        text-decoration: underline;
+        font-weight: 300;
+        &:hover
+        {
+
+        }
+    }
+
+    li {
+        &:not(:last-child)::after {
+            content: '\f178';
+            font-family: FontAwesome;
+            color: $black;
+        }
+    }
+}

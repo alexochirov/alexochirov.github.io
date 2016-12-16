@@ -1,0 +1,28 @@
+.pagination {
+    i {
+        color: $primary-color;
+    }
+
+    .disabled {
+        i {
+            color: #9b9b9b;
+        }
+    }
+
+    a {
+        font-weight: 300;
+        padding-left: rem-calc(20);
+        padding-right: rem-calc(20);
+        &:hover {
+          color: $secondary-color;
+        
+        }
+    }
+
+    .current {
+        background: none;
+        color: $secondary-color;
+        font-weight: 700;
+    }
+
+}

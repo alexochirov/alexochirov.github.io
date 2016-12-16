@@ -1,0 +1,41 @@
+.header
+    .row
+        .small-12.large-3.columns.text-center.large-text-left
+            a(href='#')
+                img.header__logo(src='./images/neon_color.svg', alt='logo')
+        .small-12.large-9.columns.text-center.large-text-left.header__blocks
+            .row.collapse
+                .small-12.medium-4.column
+                    .header__item
+                        span.header__icon
+                            i.fa.fa-phone.fa-lg
+                        span.header__label
+                            p.header__num 8 (905) 647-73-94
+                            a.header__link(href='#', title="Заказать звонок") Заказать звонок
+                .small-12.medium-4.column.show-for-medium
+                    .header__item
+                        span.header__icon
+                            i.fa.fa-map-marker.fa-lg
+                        span.header__label
+                            p.header__text г. Ярославль, ул. Промышленная д.1 стр. 4 офис 210
+                .small-12.medium-4.column
+                    .cart-top.text-left
+                        span.cart-top__icon
+                            img(src="./images/cart.svg",alt="Корзина")
+                        span.cart-top__label
+                            p.cart-top__text Товаров &nbsp;&nbsp;
+                                span.cart-top__count 100
+                            p.cart-top__text на сумму:&nbsp;
+                                span.cart-top__price 750 руб.
+        .small-12.columns.show-for-small-only(data-responsive-toggle='menu', data-hide-for='medium')
+            br
+            div(data-toggle)
+                i.fa-stack.fa-lg
+                    i.fa.fa-circle.fa-stack-2x.menu-base__toggler
+                    i.fa.fa-bars.fa-stack-1x.fa-inverse
+                | &nbsp;Меню
+
+
+
+
+

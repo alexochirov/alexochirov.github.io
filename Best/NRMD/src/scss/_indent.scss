@@ -1,0 +1,40 @@
+.indent {
+    &__basket {
+        width: 100%;box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.35);
+    }
+
+    &__price {
+        font-weight: 700;
+        font-size: rem-calc(16);
+        float: right;
+    }
+
+    &__yellow {
+        background-color: #fff3b5;
+        padding-left: rem-calc(33);
+        font-weight: 300;
+        font-size: rem-calc(16);
+        padding-right: rem-calc(33);
+    }
+
+    &__total {
+        padding-top: rem-calc(10);
+        padding-bottom: rem-calc(10);
+    }
+
+    &__button {
+        font-weight: 500;
+        font-size: rem-calc(14);
+        color: $primary-color;
+        border-radius: rem-calc(3);
+        text-align: center;
+        padding-left: rem-calc(10);
+        padding-right: rem-calc(10);
+        width: 100%;
+        background: none;
+        border: rem-calc(2) solid $primary-color;
+        padding-top: rem-calc(11);
+        padding-bottom: rem-calc(11);
+        margin-top: rem-calc(40);
+    }
+}

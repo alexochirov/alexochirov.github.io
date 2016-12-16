@@ -1,0 +1,16 @@
+.scope {
+  padding-right: rem-calc(20);
+  padding-left: rem-calc(20);
+    &__button {
+        font-weight: 500;
+        font-size: rem-calc(13);
+        box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.35);
+        margin-bottom: rem-calc(10);
+        padding-top: rem-calc(9);
+    }
+
+    &__text {
+        font-size: rem-calc(16);
+        font-weight: 300;
+    }
+}
