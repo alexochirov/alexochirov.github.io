@@ -6,11 +6,10 @@ $fontsPath: '../fonts' !default;
 
 $fa-font-path: $fontsPath;
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic');
-
+@import "fonts";
 @import "foundation-settings";
 
-@import "fonts";
+
 @import "foundation";
 @import "motion-ui";
 @import "font-awesome";
