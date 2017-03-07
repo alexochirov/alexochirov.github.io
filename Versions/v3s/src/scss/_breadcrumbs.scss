@@ -1,0 +1,5 @@
+.breadcrumbs {
+  @include breakpoint(small only) {
+    margin: $global-margin*2 0 1rem 0;
+  }
+}

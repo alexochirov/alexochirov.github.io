@@ -1,0 +1,39 @@
+extends components/_regular
+
+include components/mixins/_mixin-login-form
+
+block page
+    .content
+        .row
+            .column.small-12.medium-6.large-4.medium-centered
+                ul.tabs#auth-tabs(data-tabs)
+                    li.tabs-title.is-active
+                        a(href='#login-tab', aria-selected='true') Вход
+                    li.tabs-title
+                        a(href='#register-tab') Регистрация
+
+                .tabs-content(data-tabs-content="auth-tabs")
+                    .tabs-panel.is-active#login-tab
+                        +loginForm()
+
+                .tabs-content(data-tabs-content="auth-tabs")
+                    .tabs-panel#register-tab
+                        form
+                            label Ваш email *
+                                span.text-gray &#160; Будет логином на сайт
+                            input(type='email' required)
+
+                            label Придумайте пароль *
+                            input(type='password' required)
+
+                            label Ваше имя &#160;
+                                span.text-gray для сайта
+                            input(type='text')
+
+                            label
+                                input(type='checkbox' checked)
+                                | Подписаться на новости
+
+                            a(href='registration-confirmation.html').button.small-expanded Зарегистрироваться
+            br
+            br

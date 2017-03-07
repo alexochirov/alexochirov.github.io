@@ -1,0 +1,52 @@
+extends user-account
+
+block userAccount
+    -
+        var data = [
+            {
+            'title':'Заказ №4 от 03.06.2014 на сумму 1 250 руб',
+            'statusClass':'success',
+            'status':'Оплачен',
+            'payed':true
+            },
+            {
+            'title':'Заказ №3 от 03.06.2014 на сумму 4 997 руб',
+            'statusClass':'warning',
+            'status':'Оформлен',
+            'payed':false
+            },
+            {
+            'title':'Заказ №2 от 03.06.2014 на сумму 321 руб',
+            'statusClass':'secondary',
+            'status':'Доставлен',
+            'payed':true
+            },
+            {
+            'title':'Заказ №1 от 03.06.2014 на сумму 1 080 руб',
+            'statusClass':'secondary',
+            'status':'Доставлен',
+            'payed':true
+            }
+        ]
+
+    h2 Заказы
+
+    each item in data
+        .row
+            .small-10.large-11.column
+                .row
+                    .small-12.large-6.large-push-2.column
+                        a(href='order.html' title='Подробности заказа')= item.title
+                    .small-12.large-2.large-pull-6.column
+                        span.label(class='#{item.statusClass}')= item.status
+                    .small-12.large-4.column
+                        unless item.payed
+                            | Не оплачен &#160;
+                            a(href="") Оплатить
+            .small-2.large-1.text-center.large-text-left.column
+                a.lead(href="" title='Отменить заказ')
+                    img(src='./images/delete-circle.svg' style='width: 28px; margin-top: -.5em;' alt='&times;')
+            .column
+                br
+                hr.hide-for-large
+                br.hide-for-large

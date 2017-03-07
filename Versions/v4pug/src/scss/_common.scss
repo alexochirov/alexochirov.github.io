@@ -1,0 +1,29 @@
+a {
+    -webkit-transition: color 300ms ease-in-out;
+    -moz-transition: color 300ms ease-in-out;
+    -ms-transition: color 300ms ease-in-out;
+    -o-transition: color 300ms ease-in-out;
+    transition: color 300ms ease-in-out;
+  
+
+
+}
+
+
+[type='color'],
+[type='date'],
+[type='datetime'],
+[type='datetime-local'],
+[type='email'],
+[type='month'],
+[type='number'],
+[type='password'],
+[type='search'],
+[type='tel'],
+[type='text'],
+[type='time'],
+[type='url'],
+[type='week'],
+textarea {
+
+}

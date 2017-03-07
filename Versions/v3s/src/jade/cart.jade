@@ -1,0 +1,102 @@
+extends components/_regular
+
+block page
+    // Data
+    include components/shop/_cart-data
+
+    .row.column
+        .content
+            //-a.float-right(href="") &times; Очистить корзину
+            h1 Корзина
+            //-.clearfix
+
+    each item in data
+        .row
+            .small-8.medium-2.column
+                img.product-tile-thumbnail(src='./images/image.svg' alt='Фото товара')
+            .small-3.small-offset-1.medium-offset-0.medium-2.medium-push-8.column
+                .row
+                    .small-12.medium-6.medium-push-6.column.text-center
+                        p
+                            a(href="" title='Удалить')
+                                img(src='./images/delete-circle.svg' style='width: 28px;')
+                        p.hide-for-medium &#160;
+                    .small-12.medium-6.medium-pull-6.column.text-center
+                        p
+                            a(href="" title='Отложить товар')
+                                i.fa.fa-2x.fa-heart-o
+            .small-12.medium-5.large-3.medium-pull-2.column
+                p
+                    a(href='product.html') #{item.title}
+                    br
+                    = item.description
+                    br
+                    | Размер: #{item.size} &#160; Цвет: #{item.color}
+                    br
+                    span.text-gray Артикул: #{item.sku} &#160; &#160;
+            .small-12.medium-3.large-5.medium-pull-2.column
+                .row
+                    .small-12.medium-12.large-4.column
+                        p #{item.price} руб
+                            if item.discount
+                                span.text-dark-gray &#160;
+                                    del(style='white-space: nowrap') #{item.discount} руб
+                    .small-6.medium-12.large-4.column
+                        .row
+                            .small-12.medium-11.large-12.column
+                                .input-group
+                                    .input-group-button
+                                        button.button –
+                                    input.input-group-field(type='text' value='#{item.qty}' )
+                                    .input-group-button
+                                        button.button +
+                    .small-6.medium-12.large-4.column
+                        p.lead.no-wrap #{item.total} руб
+
+            .column.hide-for-large
+                br.hide-for-large
+                hr
+                br
+                br.hide-for-medium
+
+    .row
+        .column.show-for-medium
+            br
+        .column.small-12.medium-5.large-4.large-offset-3
+            .input-group
+                input.input-group-field(type='text' placeholder='№ купона на скидку')
+                .input-group-button
+                    button.button.hollow(type='submit') Пересчитать
+            br.hide-for-medium
+        .column.small-12.medium-6.large-4
+            table
+                tr
+                    td.text-dark-gray Количество товаров:
+                    td 2 шт.
+                tr
+                    td.text-dark-gray Скидка:
+                    td 100 руб
+                tr
+                    td.text-dark-gray Доставка
+                    td по Москве
+                        = ' — '
+                        span.text-success Бесплатно
+                tr
+                    td(colspan='2')
+                        a(href='#', title='').pseudo-link Рассчитать доставку в другой город
+            br
+
+    .row
+        .column.small-12.medium-6.large-4.medium-offset-6.large-offset-8.text-center
+            p.lead СУММА: &#160;
+                span.stat 6 388 руб
+            p
+                a.button.expanded(href='checkout.html', title='') Оформить заказ
+
+    p &#160;
+
+    .row.column
+        include components/shop/_cart-additional-products
+
+    p &#160;
+

@@ -1,0 +1,17 @@
+extends user-account
+
+block userAccount
+    .callout.medium-float-right
+        a.button.expanded(href='#', title='') Оплатить заказ
+        a.button.expanded.secondary.text-alert(href='#', title='') &times; Отменить заказ
+        a(href='#', title='') Повторить заказ
+        br
+        br
+        hr
+        br
+        a(href='#', title='') Скачать документы
+    p
+        span.success.label Оплачен
+
+    include components/shop/_order
+

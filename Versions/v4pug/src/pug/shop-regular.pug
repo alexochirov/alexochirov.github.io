@@ -1,0 +1,14 @@
+extends index
+
+block page
+
+  include components/common/_breadcrumbs
+  block content
+    .row.column
+      h1 Заголовок страницы h1
+    .content
+      .row
+        .columns.medium-9.large-6
+          include components/common/_sidebar
+        .columns.medium-15.large-18
+          include components/common/_text

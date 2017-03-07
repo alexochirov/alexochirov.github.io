@@ -1,0 +1,43 @@
+h1 {
+  line-height: 1.2;
+  margin-bottom: 0.3rem;
+}
+
+.no-wrap,
+.price {
+  white-space: nowrap;
+}
+
+.table-scroll {
+  overflow-x: auto;
+}
+
+.pseudo-link {
+  border-bottom: 1px dotted $anchor-color;
+}
+
+.accordion-title {
+  font-size: 1rem;
+  line-height: 1.33rem;
+}
+
+.tabs-title > a {
+  font-size: 1rem;
+}
+
+label {
+  line-height: 1.35em;
+  margin-bottom: .3rem;
+}
+
+.small-expanded {
+  @include breakpoint(small only) {
+    @include button-expand(true);
+  }
+}
+
+.medium-float-right {
+  @include breakpoint(medium) {
+    float: right;
+  }
+}

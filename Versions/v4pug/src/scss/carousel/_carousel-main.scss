@@ -1,0 +1,14 @@
+.carousel-main {
+    text-align: center;
+
+    &__item {
+        background: center no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+        display: none;
+
+        &:first-child {
+            display: block;
+        }
+    }
+}

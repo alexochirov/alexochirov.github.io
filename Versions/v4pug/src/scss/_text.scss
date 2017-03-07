@@ -1,0 +1,13 @@
+@each $name, $color in $foundation-palette {
+  .text-#{$name} {
+    color: $color;
+  }
+
+  a.text-#{$name}:hover, a.text-#{$name}:focus {
+    color: scale-color($color, $lightness: -25%);
+  }
+}
+
+.text-uppercase{
+  text-transform: uppercase;
+}

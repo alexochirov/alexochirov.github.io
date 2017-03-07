@@ -1,0 +1,34 @@
+extends shop-regular
+
+block content
+  .row.column
+    h1 Любимые товары
+  .content
+    .row.column
+      +productLine(false, 'onDemand', false, 'inFavourites','stone1.png')
+      hr
+      br
+      +productLine(false, false, 'inCart', 'inFavourites','stone2.png')
+      hr
+      br
+      +productLine('discount', false, false, 'inFavourites','stone3.png')
+      hr
+      br
+      +productLine(false, 'onDemand', false, 'inFavourites','stone4.png')
+      hr
+      br
+      +productLine(false, false, 'inCart', 'inFavourites','stone5.png')
+      hr
+      br
+      +productLine('discount', false, false, 'inFavourites','stone6.png')
+      hr
+      br
+      +productLine(false, 'onDemand', false, 'inFavourites','stone1.png')
+      hr
+      br
+      +productLine(false, false, 'inCart', 'inFavourites','stone2.png')
+      hr
+      br
+      +productLine('discount', false, false, 'inFavourites','stone3.png')
+      p &nbsp;
+      include components/common/_pagination

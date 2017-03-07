@@ -1,0 +1,33 @@
+doctype html
+html.no-js(lang='ru')
+    include components/mixins/_mixin-product-line
+    include components/mixins/_mixin-product-tile
+    include components/mixins/_mixin-product
+    include components/shop/_add-to-favourites-auth-popup
+    include components/service/_head
+    body
+<<<<<<< HEAD
+
+        include components/shop/_header
+
+        block page
+            include components/shop/_content
+
+        include components/shop/_footer
+        include components/service/_js.html
+=======
+        p &nbsp;
+        p &nbsp;
+        .row.column
+            h1 Cetera Labs Wireframes
+        .content
+            .row.column
+                ul.tabs#product-tabs-1(data-tabs)
+                    li.tabs-title.is-active
+                        a(href='#shop') Магазин
+
+                .tabs-content(data-tabs-content="product-tabs-1")
+                    .tabs-panel.is-active#shop
+                        include components/shop/_sitemap
+        include components/service/_js.html
+>>>>>>> 4981f9ff47136f91e264a8fbd62c7e5ab32471f9

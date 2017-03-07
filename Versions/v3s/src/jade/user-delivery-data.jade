@@ -1,0 +1,28 @@
+extends user-account
+
+block userAccount
+    h2 Данные для доставки
+
+    .row
+        .column.small-12.large-8
+            form
+                label Индекс
+                input(type='text')
+
+                label Страна
+                input(type='text')
+
+                label Область
+                input(type='text')
+
+                label Город
+                input(type='text')
+
+                label Улица, дом, помещение
+                input(type='text')
+
+                label Дополнительные комментарии для доставки&#160;
+                    span.text-gray (не обязательно)
+                textarea
+
+                button.button Сохранить

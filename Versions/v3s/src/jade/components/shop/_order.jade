@@ -1,0 +1,61 @@
+h2 Заказ #4 от 11.03.2016
+    br
+    | на сумму 6 388 руб
+
+h3
+    small Информация о покупателе
+p
+    | Физ. лицо
+    br
+    | Иванов Иван Иванович
+    br
+    | i.ivanov@mail.com
+    br
+    | +7 900 456-87-98
+
+h3
+    small Адрес доставки
+p Россия, Московская область, г. Москва, ул. Уличная, д. 11, кв. 42
+
+h3
+    small Способ доставки
+p Самовывоз
+
+h3
+    small Способ оплаты
+p Наличными
+
+h3
+    small Cостав заказа
+
+// Data
+include _cart-data
+
+each item in data
+    .row
+        .column.small-10.small-offset-1.medium-offset-0.medium-2.large-2
+            p
+                img.product-tile-thumbnail(src='./images/image.svg' alt='Фото товара')
+        .column.medium-10.large-10
+            .row
+                .column.small-12.large-5
+                    p
+                        a(href='product.html') #{item.title}
+                        br
+                        = item.description
+                        br
+                        | Размер: #{item.size} &#160; Цвет: #{item.color}
+                        br
+                        span.text-dark-gray Артикул: #{item.sku} &#160; &#160;
+                .column.small-12.large-2
+                    | #{item.price}&nbsp;руб
+                    if item.discount
+                        span.text-dark-gray &#160;
+                            del.no-wrap #{item.discount} руб
+                .column.small-6.large-2
+                    | #{item.qty}&nbsp;шт
+                .column.small-6.large-3
+                    p.lead =&nbsp;#{item.total}&nbsp;руб
+.row.column.text-right
+        p.lead ИТОГО: &#160;
+            b 6 388 руб

@@ -1,0 +1,19 @@
+extends _regular
+
+block accountLinks
+    li
+        a(href='#', title='')
+            span.show-for-large
+                i.fa.fa-sign-out
+                | &#160; Выход
+            span.hide-for-large
+                i.fa.fa-lg.fa-sign-out
+    li
+        a(href='user-account.html')
+            span.show-for-large
+                i.fa.fa-user
+                | &#160; Личный раздел
+            span.hide-for-large
+                i.fa.fa-lg.fa-user
+
+block content

@@ -1,0 +1,15 @@
+doctype html
+html.no-js(lang='en')
+    include service/_head
+    body
+        block body
+            include mixins/_mixin-block
+
+            +stub('Шапка')(style='height: 100px')
+
+            block page
+
+            +stub('Подвал')(style='height: 100px')
+
+        include service/_js.html
+

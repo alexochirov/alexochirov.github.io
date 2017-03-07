@@ -1,0 +1,21 @@
+.header-search-field {
+  @include breakpoint(small only) {
+    background-color: $primary-color;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  @include breakpoint(medium) {
+    padding-top: 1.5rem;
+  }
+}
+
+.header-logo-image {
+  height: 85px;
+  max-width: 400px;
+  width: 100%;
+
+  @include breakpoint(small only) {
+    height: 60px;
+    width: 90%;
+  }
+}
