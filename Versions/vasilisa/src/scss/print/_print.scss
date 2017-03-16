@@ -1,0 +1,8 @@
+@media print {
+  .main-menu, .head__item:not(:first-child) {
+    display: none;
+  }
+  img {
+    width: auto;
+  }
+}

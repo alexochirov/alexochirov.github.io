@@ -1,0 +1,17 @@
+.top-line
+    .row.show-for-medium
+        .medium-8.large-6.column
+            ul.menu
+                li: a(href='#', title='') О магазине
+                li: a(href='#', title='') Партнёрам
+                li: a(href='#', title='') Помощь покупателю
+                li: a(href='#', title='') Контакты
+            br.hide-for-large
+        .medium-4.large-6.text-right.column
+            ul.menu.align-right
+                include _nav-cart-account
+
+    .row.show-for-small-only.text-center.column
+        a(href='tel:+71234567890' title='тел.:')
+            i.fa.fa-phone.fa-lg
+            b &#160; +7 123 456-78-90

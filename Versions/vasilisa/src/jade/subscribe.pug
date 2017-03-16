@@ -1,0 +1,52 @@
+extends shop-regular
+
+block content
+  .row.columns
+    h2 Подписка
+  form(action="#")
+    .row.dinghy(style="background-image:url(./images/girl-sub.jpg);")
+      .large-8.columns
+        .row
+          .large-2.medium-3.columns
+            label
+              | Имя*:
+          .large-10.medium-9.columns
+            input(type="text",placeholder="")
+        .row
+          .large-2.medium-3.columns
+            label
+              | Фамилия:
+          .large-10.medium-9.columns
+            input(type="text",placeholder="")
+        .row
+          .large-2.medium-3.columns
+            label
+              | Е-мейл*:
+          .large-10.medium-9.columns
+            input(type="email",placeholder="")
+        .row
+          .large-2.medium-3.columns
+            label
+              | Дата рождения:
+          .large-10.medium-9.columns
+            input(type="date")
+        .row
+          .large-2.medium-3.columns
+            label
+              | Пол
+          .large-10.medium-9.columns
+            input(type="radio",name="gender",checked)#woman
+            label(for="woman") Женский
+            input(type="radio",name="gender")#man
+            label(for="man") Мужской
+        .row
+          .small-1.columns
+            input(type="checkbox",checked)#advance
+          .small-11.columns
+            label(for="advance") Даю согласие на получение скидок и новостей от vasilisa-shop.ru
+        .row
+          .columns
+            button.button(type="submit") Отправить
+          .columns * поля, обязательные для заполнения
+      .large-4.columns.text-right.show-for-large
+        .dinghy__text Кардиган 1999 р.

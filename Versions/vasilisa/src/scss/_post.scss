@@ -1,0 +1,9 @@
+.post {
+    color: #000;
+    margin-bottom: 3px;
+
+    &__title {
+        font-weight: bold;
+        font-size: rem-calc(22);
+    }
+}

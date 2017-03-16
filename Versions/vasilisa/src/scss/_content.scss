@@ -1,0 +1,16 @@
+.content {
+  background: center no-repeat;
+  background-size: cover;
+  padding: $global-padding 0;
+  position: relative;
+  @include breakpoint(small only) {
+    padding: rem-calc(10 0 0);
+  }
+  @include breakpoint(medium only) {
+    padding: $global-padding 0 0;
+  }
+}
+
+.content-promo {
+  height: rem-calc(400);
+}

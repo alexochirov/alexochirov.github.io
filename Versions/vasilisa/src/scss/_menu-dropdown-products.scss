@@ -1,0 +1,32 @@
+.menu-dropdown-products {
+  background: $white;
+  border: 1px solid $medium-gray;
+  display: none;
+  left: 0;
+  padding: 1.5em;
+  position: absolute;
+  width: 95%;
+  z-index: 9999;
+}
+
+.dropdown > li:hover > .menu-dropdown-products {
+  display: block;
+}
+
+.menu-dropdown-products__item {
+  display: inline-block;
+  margin-bottom: $global-margin;
+  vertical-align: top;
+  width: 95%;
+  @include breakpoint(medium) {
+    width: 33%;
+  }
+  @include breakpoint(large) {
+    width: 23%;
+  }
+}
+
+.menu-dropdown-products__submenu {
+  list-style: none;
+  text-transform: none;
+}

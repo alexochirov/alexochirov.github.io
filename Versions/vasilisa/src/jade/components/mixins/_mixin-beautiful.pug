@@ -1,0 +1,58 @@
+mixin beautiful(title, imageName, discount, dataEq)
+  .column.product-tile.product-tile_my&attributes(attributes)
+    .clearfix
+      .product-tile__abs
+        if discount == 1
+          .label.label_sale.text-center Sale
+        if discount == 2
+          .label.text-center Хит
+        if discount == 3
+          .label.label_new.text-center New!
+        if discount == 4
+          .colors-wrapper
+            span.label-red
+            span.label-blue
+            span.label-green
+            span.label-orange
+            span.label-purple
+
+      .product-tile__sizes
+        span.product-tile__net 1,5 сп.
+        span.product-tile__net 2-х сп.
+        span.product-tile__net Евро
+
+      .product-tile__wrapper-image(data-equalizer-watch)
+        a(href="#")
+          img.thumbnail.product-tile__thumbnail(src='images/goods/'+imageName+'.jpg' alt='')
+
+        ul.product-tile__buttons
+          li(data-tooltip aria-haspopup="true" class="has-tip tip-top" title="В избранное")
+            a(title='Запомнить' data-open="add-to-favourites-auth-popup").button.secondary
+              span.product-tile__heart-icon
+              //img(src='./images/icons/gray-heart.svg', style='height: 19px')
+
+            != ' &#160;'
+          li(data-tooltip aria-haspopup="true" class="has-tip tip-top" title="Быстрый просмотр")
+            a(title='Быстрый просмотр' data-open="quickview-product").button.secondary
+              span.product-tile__eye-icon
+              //img(src='./images/icons/gray-eye.svg', style='height: 19px')
+
+            != ' &#160;'
+      p.text-center
+        span.rating
+          span.rating__star
+          span.rating__star
+          span.rating__star.rating__star-active
+          span.rating__star
+          span.rating__star
+
+      .product-tile__info.product-tile__info_center.text-center
+        a.product-tile__name.product-tile__name_center(href='shop-product.html')
+          if title
+            = title
+          else
+            | Название товара
+      .product-tile__bottom-info.product-tile__bottom-info_center.text-center
+        span.product-tile__price.product-tile__price_center 1 250 руб
+        if discount
+          .product-tile__delete 1 750 руб

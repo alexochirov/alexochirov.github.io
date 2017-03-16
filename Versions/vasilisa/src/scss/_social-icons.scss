@@ -1,0 +1,26 @@
+.fb {
+  background-color: $facebook-color;
+}
+.tw {
+  background-color: $twitter-color;
+}
+.vk {
+  background-color: $vk-color;
+}
+.ins {
+  background-color: $instagram-color;
+}
+
+.soc-icon {
+  border-radius: 18px;
+  display: inline-block;
+  width: 37px;
+  height: 37px;
+  padding: 6px 0;
+  text-align: center;
+  &:hover{
+
+    background-color: #6a1020;
+
+  }
+}

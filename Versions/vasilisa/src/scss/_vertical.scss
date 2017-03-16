@@ -1,0 +1,134 @@
+.vertical {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 24px;
+    z-index: 100;
+    box-shadow: 1px 3px 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+.vertical_2level {
+    padding: 40px 30px 30px;
+    min-height: 350px;
+
+    & > .vertical__list {
+        margin-left: 0;
+    }
+}
+
+.vertical_singlecol {
+    width: 512px;
+
+    .vertical__item {
+        width: 100%;
+    }
+}
+
+.vertical_doublecol {
+    width: 700px;
+}
+
+.vertical_triplecol {
+    width: 860px;
+
+    .vertical__item {
+        width: 28%;
+        padding-right: 3%;
+    }
+}
+
+.vertical_woman {
+    background: #fff url("../images/dir_woman.jpg") no-repeat right bottom;
+}
+
+.vertical_woman_link {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 224px;
+    height: 370px;
+}
+
+.vertical_man {
+    background: #fff url("../images/dir_man.jpg") no-repeat right bottom;
+}
+
+.vertical_man_link {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 305px;
+    height: 310px;
+}
+
+.vertical_household-appliancies-electronics {
+    //�������� �������
+    background: #fff url("../images/dir_tehnika.jpg") no-repeat right bottom;
+    min-height: 300px;
+}
+
+.vertical_house-garden {
+    //�������� �������
+    background: #fff url("../images/dir_household.jpg") no-repeat right bottom;
+}
+
+.vertical_beauty-and-health {
+    //�������� �������
+    background: #fff url("../images/dir_parfum.jpg") no-repeat right bottom;
+}
+
+.vertical_hits {
+    background: #fff url("../images/dir_hits.jpg") no-repeat right bottom;
+}
+
+.vertical__list {
+    list-style: none;
+    margin-left: 0;
+}
+
+.vertical__item {
+    display: inline-block;
+    vertical-align: top;
+    width: 40%;
+    position: relative;
+    z-index: 1;
+}
+
+.vertical__link {
+    color: #000;
+    text-transform: none;
+    display: inline-block;
+    line-height: rem-calc(24);
+
+    &:hover {
+        color: #000;
+        text-decoration: underline;
+    }
+}
+
+.vertical__link-top {
+    @extend .menu-main__link;
+    padding-left: 0;
+    font-size: rem-calc(13);
+    letter-spacing: 0;
+}
+
+.vertical-3level {}
+@media (max-width:1200px) {
+    .vertical {
+        top: 41px;
+    }
+}
+@media (max-width:1100px) {
+    .vertical {
+        top: auto;
+        max-width: 100%;
+    }
+}
+@media (max-width:1100px) and (min-width:750px) {
+    .vertical {
+        &_beauty-and-health {
+            left: 200px;
+        }
+    }
+}

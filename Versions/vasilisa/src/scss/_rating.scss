@@ -1,0 +1,43 @@
+.rating {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+
+    .rating__star-active ~ .rating__star::before,
+    .rating__star-active:before {
+        color: #96172E;
+        content: '★';
+    }
+
+    &_active {
+        .rating__star-active ~ .rating__star::before,
+        .rating__star-active:before {
+            color: #96172E;
+            content: '☆';
+        }
+
+        &:not(:hover) .rating__star-active ~ .rating__star::before,
+        &:not(:hover) .rating__star-active:before,
+        .rating__star:hover ~ .rating__star::before,
+        .rating__star:hover::before {
+            color: #96172E;
+            content: '★';
+        }
+    }
+}
+
+.rating__star {
+    display: inline-block;
+    font-size: rem-calc(18);
+    font-style: normal;
+    font-weight: normal;
+}
+
+.rating__star:hover {
+    cursor: pointer;
+}
+
+.rating__star::before {
+    color: #96172E;
+    content: '☆';
+    padding-right: 3px;
+}

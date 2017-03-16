@@ -1,0 +1,65 @@
+.offer {
+    padding: rem-calc(0);
+
+    &__img {
+        height: rem-calc(550);
+        position: relative;
+
+        img {
+            max-height: 100%;
+        }
+    }
+
+    &__email {
+        position: absolute;
+        bottom: rem-calc(15);
+        font-size: rem-calc(26);
+        right: rem-calc(15);
+    }
+
+    &__comm {
+        display: inline-block;
+        margin-left: rem-calc(10);
+    }
+
+    &__code {
+        font-size: rem-calc(11);
+        padding-top: rem-calc(10);
+        padding-bottom: rem-calc(10);
+    }
+
+    h2 {
+        margin-bottom: rem-calc(0);
+    }
+
+    &__moments {
+        color: $red;
+        font-size: rem-calc(15);
+    }
+
+    &__text {
+        height: rem-calc(550);
+        padding: rem-calc(45 20 30);
+        background: #dfdfdf;
+        overflow-y: auto;
+        border-left: rem-calc(1) solid $black;
+    }
+
+    &__block {
+        width: rem-calc(40);
+        height: rem-calc(6);
+        background: $red;
+    }
+    @include breakpoint(small only) {
+        min-height: 0;
+        height:auto;
+
+        &__text {
+            height: auto;
+        }
+
+        &__img {
+            height: rem-calc(200);
+        }
+    }
+}

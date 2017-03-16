@@ -1,0 +1,71 @@
+.product {
+    position: relative;
+    margin-bottom: rem-calc(15);
+
+    img {
+        display: inline-block;
+    }
+
+    &_new:before {
+        width: rem-calc(54);
+        height: rem-calc(54);
+        display: block;
+        position: absolute;
+        left: rem-calc(10);
+        top: rem-calc(17);
+        z-index: 3;
+        content: "";
+        background: url(../images/sign.png)no-repeat;
+    }
+
+    &__arrow {
+        cursor: pointer;
+        position: absolute;
+        z-index: 3;
+        left: -60px;
+        top: 166px;
+
+        &:hover {
+            path {
+                fill: #000;
+            }
+        }
+
+        &.product__next {
+            right: -60px;
+            left: auto;
+        }
+    }
+
+    .slick-dots {
+        width: 80px;
+        position: absolute;
+        top: 0;
+        left: calc(-40% - 10px);
+
+        li {
+            margin-bottom: 10px;
+            display: block;
+
+            &:nth-child(3) ~li {
+                display: none;
+            }
+
+            button {
+                background: none;
+                width: auto;
+                height: auto;
+                margin: 0;
+            }
+        }
+    }
+    @include breakpoint(medium down) {
+        &__arrow {
+            left: -10px;
+
+            &.product__next {
+                right: -10px;
+            }
+        }
+    }
+}

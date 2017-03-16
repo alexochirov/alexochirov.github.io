@@ -1,0 +1,19 @@
+include ../mixins/_mixin-product-tile
+
+h2.section-header ВАС МОЖЕТ ЗАИНТЕРЕСОВАТЬ
+
+.x-carousel-main.carousel-main.main-slider
+    .carousel-main__item
+            .row.small-up-1.medium-up-3.large-up-5(data-equalizer='stone-samples', data-equalize-by-row='true')
+                +productTile('Зонт-флора','g1')
+                +productTile('Кольцо Сова, Размер 6 ','g2')(class='show-for-medium')
+                +productTile('Женский шарф Джулия','g3')(class='show-for-medium')
+                +productTile('Пончо Лионетта','g4')(class='show-for-large')
+                +productTile('Женский шарф Джери','g5')(class='show-for-large')
+    .carousel-main__item
+            .row.small-up-1.medium-up-3.large-up-5(data-equalizer='stone-samples', data-equalize-by-row='true')
+                +productTile('Зонт-флора','g6')
+                +productTile('Кольцо Сова, Размер 6','g4')(class='show-for-medium')
+                +productTile('Женский шарф Джулия','g3')(class='show-for-medium')
+                +productTile('Пончо Лионетта','g2')(class='show-for-large')
+                +productTile('Женский шарф Джери','g1')(class='show-for-large')

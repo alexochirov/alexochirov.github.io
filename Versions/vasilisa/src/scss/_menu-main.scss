@@ -1,0 +1,136 @@
+#red-line {
+    background: #ffffff;
+}
+
+.menu-main {
+    margin: 0;
+    list-style: none;
+
+    &__item {
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+
+        &:hover .vertical {
+            display: block;
+        }
+        &:nth-child(1) {
+          a {
+            padding-left: 0;
+          }
+        }
+    }
+
+    &__link {
+        @include disable-mouse-outline;
+        color: $black;
+        font-size: rem-calc(12);
+        font-weight: bold;
+        letter-spacing: 1px;
+        position: relative;
+        display: block;
+        padding: 0.25rem 0.75rem;
+
+        &:focus,
+        &:hover {
+            color: $red;
+        }
+    }
+    @media (max-width:1200px) {
+        &__item {
+            display: inline-block;
+        }
+
+        &__link {
+            padding-left: 7px;
+            padding-right: 7px;
+        }
+    }
+    @media (max-width:1100px) {
+        position: relative;
+
+        &__item {
+            position: static;
+        }
+
+        &__link {
+            position: static;
+        }
+    }
+    @include breakpoint(small only) {
+        &__item:hover .vertical {
+            display: none;
+        }
+
+        &__link {
+            padding-top: 7px;
+            padding-bottom: 7px;
+        }
+    }
+}
+
+.menu-base__link-2l {
+    @include disable-mouse-outline;
+    font-size: rem-calc(14) !important;
+    font-weight: bold !important;
+}
+
+.menu-base__link-act {
+    color: $red !important;
+}
+
+.menu-main__link:hover {
+    color: $red;
+}
+
+.menu-main__item:not(:first-child) {
+    border-left: 1px dotted #e0e0e0;
+    transition: 0.3s;
+}
+
+.menu-main__item:hover:not(:first-child) {
+    border-left-style: solid;
+    border-left-color: $red;
+}
+
+.menu-main__link:after {
+    display: none;
+}
+
+.menu-main__ico {
+    margin-right: 10px;
+}
+
+.submenu {
+    border: 0;
+    border-top: 2px solid $red;
+    padding: rem-calc(20) rem-calc(10);
+    margin-top: 14px;
+}
+
+.submenu li[role="menuitem"] {
+    border: 0;
+}
+
+.is-dropdown-submenu {
+    min-width: 220px;
+}
+
+.submenu li[role="menuitem"] a {
+    text-transform: none;
+    font-size: rem-calc(13);
+    font-weight: 400;
+    letter-spacing: normal;
+}
+
+.submenu li[role="menuitem"]:hover a:before {
+    content: "\f054";
+    position: absolute;
+    font: rem-calc(10)/1 'FontAwesome';
+    left: 1px;
+    color: $red;
+}
+
+.submenu li[role="menuitem"]:not(:last-child) {
+    margin-bottom: rem-calc(12);
+}

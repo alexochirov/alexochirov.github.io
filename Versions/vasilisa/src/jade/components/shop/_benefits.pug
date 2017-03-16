@@ -1,0 +1,16 @@
+mixin benefits(image, text)
+    .column.text-center
+        img(src="./images/icons/"+image+".svg",style='width:450px;height:45px;')
+        p= text
+
+
+.section.benefits
+    .row.small-up-2.medium-up-3.large-up-6
+        +benefits('signs','Доставка в любую точку России')
+        +benefits('speed','Доставка за 7 – 10 дней')
+        +benefits('segment-path','Отслеживание посылки на сайте')
+        +benefits('cash','Оплата наличными или картой при получении')
+        +benefits('arrows','Возврат товара в течении 14 дней')
+        +benefits('calendar','Доставка в любой удобный для вас день и время')
+
+
