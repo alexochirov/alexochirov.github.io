@@ -1,0 +1,40 @@
+extends corp-regular
+
+block content
+    //-.row.column
+        h1 Посещённые страны
+    .content
+        .row
+            //-.column.medium-6
+                p.text-right
+                    span.button-group
+                        a.button.light-gray(href='user-map.html'): i.fa.fa-lg.fa-map
+                        a.button.light-gray(href='user-map-list.html'): i.fa.fa-lg.fa-th-list
+
+            .columns.small-12.medium-5.large-4.medium-push-7.large-push-8
+                p Посещено стран: 6 из 252
+                .callout
+                    - var n = 0
+                    while n < 5
+                        - n++
+                        p
+                            a(href='user-map-object-info.html' title='К объекту на карте') Название объекта #{n}
+                            br
+                            span.text-dark-gray г. Ярославль, Россия
+                        p: a(href='') Удалить со своей карты
+
+            .columns.small-12.medium-7.large-8.medium-pull-5.large-pull-4
+                p: a(href='map-share.html') Поделиться картой
+                div(style='background: #eee; display: block; padding: 300px 0; position: relative;')
+                    div.text-center
+                        | Карта стран. На посещённых странах стоят метки. Нажав на страну можно поставить или снять метку посещения
+                        br
+                        a.text-primary(href='user-map-new-object.html') (нажми меня)
+                    a(href='user-map-object-info.html' style='top: 50px; left: 60px; position: absolute;'): i.fa.fa-3x.fa-map-marker
+                    a(href='user-map-object-info.html' style='top: 90px; left: 660px; position: absolute;'): i.fa.fa-3x.fa-map-marker
+                    a(href='user-map-object-info.html' style='top: 120px; left: 200px; position: absolute;'): i.fa.fa-3x.fa-map-marker
+                    a(href='user-map-object-info.html' style='top: 390px; left: 250px; position: absolute;'): i.fa.fa-3x.fa-map-marker
+                    a(href='user-map-object-info.html' style='top: 200px; left: 100px; position: absolute;'): i.fa.fa-3x.fa-map-marker
+                    a(href='user-map-object-info.html' style='top: 490px; left: 600px; position: absolute;'): i.fa.fa-3x.fa-map-marker
+
+                    block map-object-info

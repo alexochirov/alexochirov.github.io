@@ -1,0 +1,22 @@
+.menu {
+    &.nested {
+        margin-left: rem-calc(36);
+        margin-top: rem-calc(12);
+    }
+
+    & > li {
+        &:hover {
+            a {
+                background: $blue;
+                color: $white;
+            }
+        }
+    }
+
+    & > .active {
+        & > a {
+            background: $blue;
+            color: $white;
+        }
+    }
+}

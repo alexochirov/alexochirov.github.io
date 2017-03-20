@@ -1,0 +1,64 @@
+header.header
+  .mango
+    .row
+      .large-12.columns.text-center.large-text-left.mango__phone
+        |НАШ ТЕЛЕФОНЫ В МОСКВЕ:&#160;
+        .mango__block
+          i.fa.fa-phone
+          a(href="tel:74957880658")  (+7&#160;495)&#160;788&#160;06&#160;58
+        |  и
+        a(href="tel:5877163")  587&#160;71&#160;63
+      nav.large-12.columns.show-for-large
+        include _about
+
+
+  div(data-sticky-container)
+    .sticky.header__sticky(data-sticky,data-top-anchor="450",data-margin-top="0",data-sticky-on="small")
+      .row.header__rel
+        .hide-for-large.medium-2.small-4.columns
+          button(data-toggle="offCanvas").header__toggle
+            i.fa.fa-bars.fa-2x
+        .large-5.medium-7.small-16.columns.header__logo.text-center.medium-text-left
+          a(href="#",title="Облик - Профессиональная косметика в Москве и Московской области",rel="home")
+            img(src="./images/logo.png", alt="")
+        .large-10.medium-13.columns.hide-for-small-only.header__main
+          ul.cat
+            li.cat__item
+              a(href="#",data-toggle="sss").cat__link
+                i.fa.fa-search
+              .dropdown-pane#sss(data-dropdown,data-hover="true", data-hover-pane="true")
+                include _search
+
+            li.cat__item
+              a(href="#").cat__link Главная
+            li.cat__item
+              a(href="#",data-toggle="examp").cat__link
+                |Каталог
+                |&#160;
+                i.fa.fa-chevron-down
+              .dropdown-pane.fashion#examp(data-dropdown,data-hover="true", data-hover-pane="true").show-for-large
+                include _menu
+            li.cat__item
+              a(href="#",data-toggle="bbb").cat__link
+                |Бренды
+                |&#160;
+                i.fa.fa-chevron-down
+              .dropdown-pane#bbb.sake(data-dropdown,data-hover="true", data-hover-pane="true")
+                include _top-brand
+            li.cat__item
+              a(href="#").cat__link Контакты
+        .large-9.medium-2.small-4.columns.header__main
+          ul.cat.cat_right
+            li.cat__item.cat__item_border.show-for-large
+              a(href="#").cat__link Авторизация
+            li.cat__item
+              a(href="#",data-toggle="bask").cat__link
+                span.show-for-large Корзина / 1&#160;333 &#8381;
+                .pile
+                  .pile__num 1
+                  .pile__handle
+              .dropdown-pane#bask.archer.archer_big(data-dropdown,data-hover="true", data-hover-pane="true")
+                //-|Корзина пуста
+                include ../blocks/_basket
+  .row.columns
+    hr

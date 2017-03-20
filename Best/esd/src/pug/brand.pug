@@ -1,0 +1,36 @@
+extends index
+block content
+  include components/mixins/_mixin-bread
+  +bread(['Бренды','Estel'])  
+  .row
+    .large-6.medium-8.hide-for-small-only.columns
+      aside
+        h4 Бренды
+        .pencil
+        ul.categories
+          each title,index in ['Estel','Keen','Moroccanoil','Schwarzkopf','Tigi','Wella']
+            if index==0
+              li.categories__item.active
+                a(href="#").categories__link= title
+                span.categories__count (#{Math.floor(Math.random() * (15 - 800) + 800)})
+            else
+              li.categories__item
+                a(href="#").categories__link= title
+                span.categories__count (#{Math.floor(Math.random() * (15 - 800) + 800)})
+
+    .large-18.medium-16.columns
+      p
+        | Российская компания Estel Professional работает в косметической промышленности с января 2000 года. За это время компания завоевала прочные позиции на рынке и стала одним из российских лидеров в производстве средств по окрашиванию волос. Дилерская сеть компании насчитывает около 100 организаций в России, странах СНГ истранах Балтии. Компания располагает солидной научно - производственной базой и использует самые передовые научные и производственные технологии, сырье и оборудование от лучших заводов - производителей.
+        a(href='') Дальше…
+      h3 Always ON-LINE
+      p Стайлинг
+      include components/blocks/_products
+      h3 Ламинирование волос
+      include components/blocks/_products
+      h3 Keratin
+      p Восстановление на основе кератина
+      include components/blocks/_products
+      h3 Curex Classic
+      p Увлажнение и питание для всех типов волос
+      include components/blocks/_products
+      include components/blocks/_pagination

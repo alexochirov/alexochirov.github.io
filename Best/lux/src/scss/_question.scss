@@ -1,0 +1,35 @@
+.question {
+    background: url($imagesPath +"/plate.jpg")no-repeat center;
+    background-attachment: fixed;
+    padding-top: rem-calc(38);
+    height: rem-calc(385);
+    margin-bottom: rem-calc(20);
+
+    &_mini {
+        height: rem-calc(290);
+        padding-top: rem-calc(68);
+    }
+
+    &__tel {
+        font-size: rem-calc(24);
+        font-weight: 700;
+
+        a {
+            color: $black;
+
+            &:hover {
+                color: $blue;
+            }
+        }
+    }
+
+    &__call {
+        font-size: rem-calc(16);
+    }
+
+    &__free {
+        text-transform: uppercase;
+        font-size: rem-calc(18);
+        margin-bottom: rem-calc(12);
+    }
+}

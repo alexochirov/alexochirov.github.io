@@ -1,0 +1,86 @@
+extends index
+include components/mixins/_mixin-product
+block content
+  .row
+    .medium-12.columns
+      +bread(['Каталог','Костюмы','К5163 Костюм мужской'])
+    .large-8.medium-12.columns
+      include components/blocks/_search
+  .row
+    .large-6.medium-8.columns
+      include components/blocks/_filter
+
+      include components/blocks/_menu
+    .large-18.medium-16.columns
+      h1 К5163 Костюм мужской
+      .row
+        .large-12.columns
+          span.rating
+            span.rating__star
+            span.rating__star.rating__star-active
+            span.rating__star
+            span.rating__star
+            span.rating__star
+          p
+          .stripe.stripe_big.text-center Новинка
+          .gun.text-center
+            .gun__slide
+              a(href="#")
+                img(src="./i/tuxedo.jpg", alt="")
+            .gun__slide
+              a(href="#")
+                img(src="./i/tuxedo2.jpg", alt="")
+            .gun__slide
+              a(href="#")
+                img(src="./i/tuxedo.jpg", alt="")
+            .gun__slide
+              a(href="#")
+                img(src="./i/tuxedo2.jpg", alt="")
+            .gun__slide
+              a(href="#")
+                img(src="./i/tuxedo.jpg", alt="")
+          .navi
+        .large-12.columns
+          .size
+            p.size__alert
+              |Скидка на заказ через интернет-магазин составляет&#160;
+              b 2%
+            .size__text Цены видны только зарегистрированным пользователям.
+            .size__block
+              a(href="#").button.expanded Для заказа зарегистрируйтесь
+              br
+              a(href="#").button.hollow.expanded Выбрать размеры
+            .size__characteristics Характеристики модели
+            .row.small-up-2
+              .columns.size__name Стиль
+              .columns.size__name Классический стиль
+              .columns.size__name Силуэт/посадка
+              .columns.size__name Приталенный
+              .columns.size__name Модель
+              .columns.size__name Ку-7
+              .columns.size__name Состав
+              .columns.size__name 9%-wool, 65%-polyester, 26%-viscose
+              .columns.size__name Цветовая гамма
+              .columns.size__name Синий
+              .columns.size__name Сезонность
+              .columns.size__name Демисезон
+              .columns.size__name Специфика
+              .columns.size__name Повседневная
+              .columns.size__name Возрастная группа
+              .columns.size__name 25-49 лет (Современная классика)
+              .columns.size__name Ткань
+              .columns.size__name Т5163
+              .columns.size__name Сетка
+              .columns.size__name костюмная К-4
+              .columns.size__name Торговая марка
+              .columns.size__name STENSER
+      hr
+      p &#160;
+      h2 Похожие товары
+      include components/blocks/_tabs
+      p.hide-for-small-only &#160;
+      .row
+        .large-8.large-centered.columns
+          a(href="#").button.expanded
+            i.fa.fa-caret-left
+            |Вернуться в каталог

@@ -1,0 +1,16 @@
+header.header
+  .row
+    .large-8.medium-5.small-18.columns.header__logo
+      p
+        a(href="#")
+          img(src="./images/logo.svg", alt="")
+          span.header__name Андрей Алексеев
+    .small-6.columns.show-for-small-only.text-right
+      span(data-responsive-toggle='responsive-menu', data-hide-for='medium')
+        button.menu-icon.dark(type='button', data-toggle='').header__toggle
+
+    .large-16.medium-19.columns.text-center.medium-text-right
+      ul.author#responsive-menu
+        each title in ['об авторе','журнал','вопросы и ответы','расписание событий','магазин','контакты']
+          li.author__item
+            a(href="#").author__link= title

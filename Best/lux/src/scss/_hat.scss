@@ -1,0 +1,29 @@
+.hat {
+    border-bottom: rem-calc(1) solid $light-gray;
+    padding-top: rem-calc(6);
+    padding-bottom: rem-calc(7);
+&__row {
+  position: relative;
+}
+    &__link {
+        margin-left: rem-calc(13);
+        display: inline-block;
+        color: $black;
+
+        &:hover {
+            color: $blue;
+        }
+
+        i {
+            font-size: rem-calc(21);
+            position: relative;
+            top: rem-calc(3);
+            margin-right: rem-calc(5);
+        }
+
+        .fa-envelope {
+            font-size: rem-calc(18);
+            top: rem-calc(2);
+        }
+    }
+}

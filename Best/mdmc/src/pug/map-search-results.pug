@@ -1,0 +1,22 @@
+extends map
+
+block map-search-results
+  .filter__main
+    p
+    div
+      a(href='map.html').button.small.primary
+        i.fa.fa-arrow-left
+    p Найдено: 1 675
+    - var n = 0
+    while n < 5
+      - n++
+      p
+        a(href='#' title='К объекту на карте').js-visit-toggle
+          strong Название объекта #{n}
+        br
+        | Название категории объекта
+        br
+        span.text-dark-gray г. Ярославль, Проспект Ленина, дом 25, 6 этаж, офис 606
+
+    p: a.button.hollow.expanded(href='') Ещё…
+    //-p.text-center: a(href='map-search-results.html') Все результаты

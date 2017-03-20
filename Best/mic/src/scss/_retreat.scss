@@ -1,0 +1,24 @@
+.retreat {
+    background-repeat: no-repeat;
+    padding-top: rem-calc(115);
+    background-size: cover;
+    padding-bottom: rem-calc(115);
+    background-position: center;
+
+    &__date {
+        text-transform: uppercase;
+        font-size: rem-calc(11);
+        font-weight: 500;
+    }
+
+    &__title {
+        font-size: rem-calc(50);
+    }
+    @include breakpoint(small only) {
+      padding-top: rem-calc(50);
+      padding-bottom: rem-calc(50);
+        &__title {
+            font-size: rem-calc(30);
+        }
+    }
+}

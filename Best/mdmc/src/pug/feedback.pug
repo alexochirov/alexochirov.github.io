@@ -1,0 +1,33 @@
+extends corp-regular
+
+block content
+    .row.column
+        h1 Обратная связь
+    .content
+        .row
+            .columns.small-12.medium-5.large-4.medium-push-7.large-push-8
+
+            .columns.small-12.medium-7.large-8.medium-pull-5.large-pull-4
+                form(method='post', data-abide='', novalidate='novalidate')
+                    .row
+                        .small-12.medium-4.columns
+                            label Ваше имя
+                        .small-12.medium-8.columns
+                            input(type='text', placeholder='Ваше имя', required='')
+                            p.help-text Поле обязательно для заполнения
+                    .row
+                        .small-12.medium-4.columns
+                            label Email
+                        .small-12.medium-8.columns
+                            input(type='email', placeholder='username@address.com', required='')
+                            p.help-text Введите ваш электронный адрес
+                    .row
+                        .small-12.medium-4.columns
+                            label Чем мы можем помочь?
+                        .small-12.medium-8.columns
+                            textarea(placeholder='Введите ваше сообщение')
+                    .row
+                        .small-12.medium-8.medium-offset-4.columns
+                            button.radius.button(type='submit')
+                                | Отправить сообщение &nbsp;
+                                i.fa.fa-envelope-o.fa-lg

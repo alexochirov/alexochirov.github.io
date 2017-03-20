@@ -1,0 +1,30 @@
+.gun {
+    border-bottom: rem-calc(1) solid $light-gray;
+    padding-bottom: rem-calc(10);
+
+    &__slide {
+        a {
+            height: 470px;
+            display: inline-block;
+        }
+
+        img {
+            max-height: 100%;
+            height: auto;
+        }
+    }
+    @include breakpoint(small only) {
+        border-bottom: rem-calc(0);
+
+        &__slide {
+            height: auto;
+        }
+
+        .slick-arrow {
+            top: calc(50% - 46px);
+            width: rem-calc(29);
+            height: rem-calc(53);
+            opacity: 0.8;
+        }
+    }
+}

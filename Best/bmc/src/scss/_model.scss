@@ -1,0 +1,24 @@
+.model {
+    padding-left: rem-calc(70);
+    padding-right: rem-calc(70);
+    margin-top: rem-calc(20);
+
+    .slick-track {
+        padding-bottom: rem-calc(20);
+    }
+
+    .slick-arrow {
+        width: rem-calc(41);
+        height: rem-calc(75);
+        background-size: 100%;
+        top: calc(50% - 60px);
+    }
+    @include breakpoint(medium down) {
+        padding-left: rem-calc(40);
+        padding-right: rem-calc(40);
+    }
+    @include breakpoint(small only) {
+        padding-left: rem-calc(0);
+        padding-right: rem-calc(0);
+    }
+}

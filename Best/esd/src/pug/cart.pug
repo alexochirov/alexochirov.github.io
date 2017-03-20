@@ -1,0 +1,99 @@
+extends index
+block content
+  include components/mixins/_mixin-num
+  .row.columns
+    h1 Корзина
+  .row
+    .medium-16.columns
+      table.balance
+        tr.balance__head
+          th(colspan="3").balance__title.text-left Товар
+          th.balance__title.show-for-large Цена
+          th.balance__title Количество
+          th.balance__title.text-right.show-for-large Сумма
+        tr.balance
+          td.balance__fir
+            a(href="#").balance__close
+              i.fa.fa-times-circle-o.fa-2x
+          td.balance__sec
+            .hide-for-small-only
+              a(href="#")
+                img(src="./i/axe.jpg", alt="")
+          td.balance__third
+            a(href="#") AIREX. Лак для волос эластичной фикс. 500&#160;мл
+            p.hide-for-large 420&#160;&#8381;
+            .show-for-small-only
+              a(href="#")
+                img(src="./i/axe.jpg", alt="")
+          td.text-center.show-for-large
+            span 420&#160;&#8381;
+          td.balance__fifth
+            +num()
+          td.text-right.show-for-large
+            span 420&#160;&#8381;
+        tr.balance
+          td.balance__fir
+            a(href="#").balance__close
+              i.fa.fa-times-circle-o.fa-2x
+          td.balance__sec
+            .hide-for-small-only
+              a(href="#")
+                img(src="./i/axe2.jpg", alt="")
+          td.balance__third
+            a(href="#") AIREX. Лак для волос эластичной фикс. 500&#160;мл
+            p.hide-for-large 990&#160;&#8381;
+            .show-for-small-only
+              a(href="#")
+                img(src="./i/axe2.jpg", alt="")
+          td.text-center.show-for-large
+            span 990&#160;&#8381;
+          td.balance__fifth
+            +num()
+          td.text-right.show-for-large
+            span 990&#160;&#8381;
+
+
+    .medium-8.columns
+      aside.shop
+        h5 Итог в корзине
+        .pencil
+        .row
+          .small-12.columns.shop__sum Сумма
+          .small-12.columns.shop__all.text-right 3,990&#160;&#8381;
+          .columns
+            hr
+          .small-9.columns.shop__sum.shop__sum_top Доставка
+          .small-15.columns
+            ul.shop__ul
+              li.shop__item
+                input(type="radio",name="ship")#1.shop__input
+                label(for="1").shop__label Самовывоз по адресу: Москва, ул. Лавочкина, д.23 стр. 1. (Бесплатно)
+              li.shop__item
+                input(type="radio",name="ship",checked)#2.shop__input
+                label(for="2").shop__label
+                  |Доставка по Москве и ближнему Подмосковью:
+                  span &#160;200&#160;&#8381;
+              li.shop__item
+                input(type="radio",name="ship")#3.shop__input
+                label(for="3").shop__label
+                  |При удаленности более 30 км от Москвы:
+                  span &#160;400&#160;&#8381;
+              li.shop__item
+                input(type="radio",name="ship")#4.shop__input
+                label(for="4").shop__label
+                  | Дальнее Подмосковье и вся Россия:
+                  span &#160;600&#160;&#8381;
+          .columns
+            hr
+          .small-12.columns.shop__sum Итого
+          .small-12.columns.shop__sum.text-right 3,990&#160;&#8381;
+        .pencil
+        p
+      button.button.expanded Обновить корзину
+      button.button.button_carrot.expanded Перейти к оформлению
+      h5 Купон
+      .pencil
+      p
+      p
+        input(type="text",placeholder="Код купона")
+      button.button.small.expanded Применить купон

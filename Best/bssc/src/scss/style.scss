@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+// Все картинки и шрифты необходимо подключать с использованием этих двух переменных:
+$imagesPath: '../images' !default;
+$fontsPath: '../fonts' !default;
+
+$fa-font-path: $fontsPath;
+
+@import "fonts";
+@import "foundation-settings";
+
+@import "foundation";
+@import "motion-ui";
+@import "font-awesome";
+@import "slick.scss";
+@include foundation-everything;
+
+@import "common";
+@import "slick/slick-theme";
+
+@import "carousel/carousel-main";
+@import "carousel/carousel-news";
+@import "carousel/carousel-services";
+@import "content";
+@import "footer";
+@import "header";
+@import "rating";
+@import "menu-top";
+@import "menu-line";
+@import "search-top";
+@import "sticky-footer";
+@import "text";
+@import "top-line";
+@import "vertical-middle";
+@import "pagination";
+@import "dropdown-pane";
+@import "breadcrumbs";
+@import "input-group-field";
+@import "checkbox-group";
+@import "button";
+@import "soldier";
+@import "shop";
+@import "man";
+@import "wear";
+@import "cloth";
+@import "dress";
+@import "mb60";
+@import "shorts";
+@import "brand";
+@import "contacts";
+@import "news";
+@import "diamond";
+@import "accordion";
+@import "input-group-button";

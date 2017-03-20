@@ -1,0 +1,32 @@
+.pillow {
+    font-size: rem-calc(18);
+&__slide {
+  padding-left: rem-calc(9);
+  padding-right: rem-calc(9);
+}
+    &__info {
+        padding-left: rem-calc(18);
+        padding-right: rem-calc(18);
+    }
+
+    img {
+        display: inline-block;
+    }
+
+    .slick-arrow {
+        top: 25%;
+    }
+
+    .slick-next {
+        right: rem-calc(7);
+    }
+
+    .slick-prev {
+        left: rem-calc(9);
+    }
+
+    &__price {
+        line-height: 1;
+        font-size: rem-calc(24);
+    }
+}

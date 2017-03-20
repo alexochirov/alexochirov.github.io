@@ -1,0 +1,64 @@
+extends user-personal
+
+block personal
+  form.input-group(action='' method='get')
+    input.input-group-field(type='text', value='' placeholder='Найти пользователей')
+    .input-group-button
+      button.button.success.fa.fa-search(type='submit')
+
+  p
+    span.button-group
+      a.button.success(href='#')
+        | Имя&nbsp;
+        i.fa.fa-sort-amount-asc
+      a.button.success(href='#') Ник
+      a.button.success(href='#') Email
+      a.button.success(href='#') Статус
+  .table-scroll
+    table.hover
+      thead
+        tr
+          th Имя
+          th Ник
+          th Email
+          th Статус
+          th
+      tbody
+        tr
+          td Иван
+          td 1van
+          td 1van.i@mail.com
+          td Пользователь
+          td: a(href='') Сделать администратором
+        tr
+          td Петр
+          td pete
+          td petrovich@mail.com
+          td Администратор
+          td: a(href='') Удалить из администраторов
+        tr
+          td Константин
+          td kk
+          td k.konstantinopolskiy@mail.com
+          td Администратор
+          td: a(href='') Удалить из администраторов
+        tr
+          td Иван
+          td 1van
+          td 1van.i@mail.com
+          td Пользователь
+          td: a(href='') Сделать администратором
+        tr
+          td Константин
+          td kk
+          td k.konstantinopolskiy@mail.com
+          td Пользователь
+          td: a(href='') Сделать администратором
+        tr
+          td Петр
+          td pete
+          td petrovich@mail.com
+          td Пользователь
+          td: a(href='') Сделать администратором
+
+  include components/common/_pagination

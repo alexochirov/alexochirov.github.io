@@ -1,0 +1,216 @@
+extends index
+include components/mixins/_mixin-header
+block content
+  include components/mixins/_mixin-pagination
+  include components/blocks/_bread
+  include components/mixins/_mixin-granite
+  p
+  +header('Каталог камня')
+  include components/blocks/_convector
+  .row.columns
+    h2.bow
+      img(src="./i/quarella.jpg", alt="")
+      |Кварцевый камень Quarella
+  .row
+    .large-6.medium-8.columns
+      .acryl
+        ul.diamond
+          each title,index in ['Кварцевый камень','Акриловый камень','Керамика']
+            li.diamond__item(class=index === 0 ? "active" : "")
+              a(href="#").diamond__link= title
+      include components/blocks/_filter
+    .large-18.medium-16.columns
+      .acryl
+        h5
+          strong Quarella
+        | В 1987 году в компании Caesarstone зародилась революционная идея в использовании кварца, одного из наиболее твердых и красивых природных материалов - для создания принципиально новых отделочных поверхностей, отличающихся необыкновенной красотой и невероятными техническими характеристиками.
+      p
+        | Сортировать по&#160;
+        select.string
+          option Новинкам
+          option Дате
+      .row.large-up-3.medium-up-2.text-center
+        +granite('granite1.jpg','Caesarstone Almond Rocca 5130','22&#160;754')
+        +granite('granite2.jpg','Caesarstone Alpine Mist 5129','16&#160;754','sale1')
+        +granite('granite3.jpg','Caesarstone Almond Rocca 5130','20&#160;754','sale2')
+        +granite('granite1.jpg','Caesarstone Almond Rocca 5130','22&#160;754')
+        +granite('granite4.jpg','Caesarstone Alpine Mist 5129','16&#160;754')
+        +granite('granite5.jpg','Caesarstone Almond Rocca 5130','20&#160;754')
+        +granite('granite6.jpg','Caesarstone Almond Rocca 5130','22&#160;754')
+        +granite('granite7.jpg','Caesarstone Alpine Mist 5129','16&#160;754')
+        +granite('granite3.jpg','Caesarstone Almond Rocca 5130','20&#160;754')
+      +pagination()
+  p
+  +header('Caesarstone Desert Limestone')
+  .row.rock
+    .large-10.medium-10.columns
+      .text-center.large-text-left
+        .rock__img
+          img(src="./i/alpine.jpg", alt="")
+          a(href="#").rock__search.text-center
+            i.fa.fa-search.fa-inverse.fa-2x
+      a(href="#").rock__link
+        img(src="./images/save.svg", alt="")
+      a(href="#").rock__link
+        img(src="./images/print.svg", alt="")
+    .large-10.medium-14.columns
+      .rock__block
+        strong Артикул:
+        |  5130
+        .rock__year
+          .sale
+            strong New
+            |  2017&#160;
+            img(src="./images/ellipse.svg", alt="")
+      .rock__block
+        strong Цвет:&#160;
+        img(src="./images/rect1.svg", alt="")
+      p
+        strong Текстура:
+        |  Мраморный узор.
+      p.rock__desc Кварцевый камень Caesarstone Alpine Mist идеальное решение для интерьера Вашего дома. Столешницы из искусственного камня Caesarstone Alpine Mist 5110 и других поверхностей: мойки, подоконники, барные стойки, полы и ступеньки.
+      hr
+      p
+      p.rock__price
+        | Стоимость: от
+        span.rock__num  25&#160;280
+        |  рублей&#160;/ погонный метр
+      .row
+        .large-14.columns
+          a(href="#").button.expanded Рассчитать стоимость
+    .large-4.medium-14.columns
+      .acryl.text-center
+        img(src="./i/brand1.jpg", alt="")
+  .row.columns
+    include components/blocks/_tabs-blue
+  .row.columns
+    p
+      img(src="./i/img1.jpg", alt="")
+  p
+  .row.cartoon.cartoon_opacity
+    .medium-14.large-16.columns.cartoon__block
+      h1 Кухонные столешницы из кварца
+      p
+        strong Благодаря своим замечательным характеристикам Silestone является идеальным материалом для столешницы, это лучший выбор, чтобы превратить вашу кухню или ванную комнату в уникальное пространство.
+      p Кухонные столешницы silestone имеют исключительные свойства, которые способствуют безопасности, уверенности и гигиене, пространству, где мы проводим больше времени. Silestone представлен тысяами столешниц по всему миру, широким спектром цветов и текстур. Создайте фантастическое окружение с Silestone, где вы cможете раскрыть ваш творческий потенциал. Ваша кухня может стать уникальным пространством, гармонично интегрированным и выполненным по индивидуальному заказу, благодаря Silestone.
+      p.text-center
+        a(href="#") Читать подробнее
+    .medium-10.large-8.columns.cartoon__block
+      .sink.text-center
+        .sink__action Акция
+        p
+          a(href="#")
+            img(src="./i/sink.jpg", alt="")
+        p.sink__title
+          span.sink__big Бecплатно
+          |  врезная мойка по акции «Перейди на Камень»!
+        div
+          strong Акция действует до:
+          br
+          |20 февраля 2017 г.
+
+
+  .question.question_mini
+    .row.columns.text-center
+      a(href="#").button Рассчитать стоимость
+      .question__call Или позвоните нам сами
+      .question__tel
+        a(href="tel:74957987427") +7 (495) 798-74-27
+        |,&#160;
+        a(href="tel:79855033333") +7 (985) 503-33-33
+      .question__call с 9:00 до 19:00
+  p
+  +header('Примеры сделанных нами столешниц')
+  .row.columns
+    .pillow
+      .pillow__slide
+        p.text-center.large-text-left
+          a(href="#")
+            img(src="./i/work10.jpg", alt="")
+        .pillow__info
+          .pillow__title Belenco Chakra Beige
+          p
+            span.pillow__price 22&#160;754&#160;
+            |рублей
+      .pillow__slide
+        p.text-center.large-text-left
+          a(href="#")
+            img(src="./i/work11.jpg", alt="")
+        .pillow__info
+          .pillow__title Belenco Chakra Beige
+          p
+            span.pillow__price 22&#160;754&#160;
+            |рублей
+      .pillow__slide
+        p.text-center.large-text-left
+          a(href="#")
+            img(src="./i/work12.jpg", alt="")
+        .pillow__info
+          .pillow__title CaesarStone 9350 Carmel
+          p
+            span.pillow__price 22&#160;754&#160;
+            |рублей
+      .pillow__slide
+        p.text-center.large-text-left
+          a(href="#")
+            img(src="./i/work13.jpg", alt="")
+        .pillow__info
+          .pillow__title SileStone Tigris Sand Volc...
+          p
+            span.pillow__price 22&#160;754&#160;
+            |рублей
+      .pillow__slide
+        p.text-center.large-text-left
+          a(href="#")
+            img(src="./i/work10.jpg", alt="")
+        .pillow__info
+          .pillow__title Belenco Chakra Beige
+          p
+            span.pillow__price 22&#160;754&#160;
+            |рублей
+  p
+  .row.cartoon.cartoon_opacity
+    .medium-12.columns.cartoon__block
+      .ask
+        .ask__img
+          img(src="./images/info.svg", alt="")
+        | Обязательно спросите тех, кто предлагает цену ниже - откуда камень и где он распилен.
+      h3 Советы по уходу
+      ul
+        li На кухонных рабочих поверхностях НЕ ИСПОЛЬЗОВАТЬ обезжиривающие средства, средства для чистки духовых шкафов, отбеливающие средствата.
+        li Пользуйтесь фирменным чистящим средством Q-Action. Оно специально разработанное для глубокой очистки рабочей поверхности кухонного стола.
+        li Не пользуйтесь водооталкивающими средствами или герметиками для придания блеска.
+        li Не используйте средства на основе хлора, например дихлорометан.
+        li Не подвергайте камень длительному воздействию жара, холода, прямыx солнычных лучей, осадков.
+      ol
+        li На кухонных рабочих поверхностях НЕ ИСПОЛЬЗОВАТЬ обезжиривающие средства, средства для чистки духовых шкафов, отбеливающие средствата.
+        li Пользуйтесь фирменным чистящим средством Q-Action. Оно специально разработанное для глубокой очистки рабочей поверхности кухонного стола.
+        li Не пользуйтесь водооталкивающими средствами или герметиками для придания блеска.
+        li Не используйте средства на основе хлора, например дихлорометан.
+        li Не подвергайте камень длительному воздействию жара, холода, прямыx солнычных лучей, осадков.
+      p
+        a(href="#") Ещё об уходе за камнем
+
+    .medium-12.columns.cartoon__block
+      h3 Частые вопросы
+      ul.accordion(data-accordion='',data-allow-all-closed="true")
+        li.accordion-item.is-active(data-accordion-item='')
+          a.accordion-title(href='#') Сколько стоит камень
+          .accordion-content(data-tab-content='')
+            | Стоимость зависит от площади и цвета. Если вы хотите получить смету, свяжитесь с ближайшим от вас дистрибьютором или магазином.
+        li.accordion-item(data-accordion-item='')
+          a.accordion-title(href='#') В чем отличие от гранита
+          .accordion-content(data-tab-content='')
+            | Стоимость зависит от площади и цвета. Если вы хотите получить смету, свяжитесь с ближайшим от вас дистрибьютором или магазином.
+        li.accordion-item(data-accordion-item='')
+          a.accordion-title(href='#') Чем этот камень отличается о мрамора
+          .accordion-content(data-tab-content='')
+            | Стоимость зависит от площади и цвета. Если вы хотите получить смету, свяжитесь с ближайшим от вас дистрибьютором или магазином.
+        li.accordion-item(data-accordion-item='')
+          a.accordion-title(href='#') Как проверить подлинность моего изделия
+          .accordion-content(data-tab-content='')
+            | Стоимость зависит от площади и цвета. Если вы хотите получить смету, свяжитесь с ближайшим от вас дистрибьютором или магазином.
+        li.accordion-item(data-accordion-item='')
+          a.accordion-title(href='#') Возникли проблемы с изделием. Куда обратиться?
+          .accordion-content(data-tab-content='')
+            | Стоимость зависит от площади и цвета. Если вы хотите получить смету, свяжитесь с ближайшим от вас дистрибьютором или магазином.

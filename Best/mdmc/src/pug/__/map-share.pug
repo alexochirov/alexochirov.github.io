@@ -1,0 +1,31 @@
+extends corp-regular
+
+block content
+    .row.column
+        p: a(href='map.html') ← Вернуться на карту
+    .row.column
+        h1 Поделиться своей картой
+    .content
+        .row.column
+            h3 Карта посещённых мест
+            form
+                label Ссылка на интерактивную карту
+                input(type='text' value='https://maxdatmaps.org/maps/-/CZt7YLyr')
+
+                label Ссылка на изображение карты #[a(href='') Скачать изображение]
+                input(type='text' value='https://static.maxdatmaps.org/maps/CZt7YLyr.png')
+
+                label Код для вставки на сайт
+                textarea <iframe src="https://api-maps.maxdatmaps.org/frame/v1/-/CZt7YLyr" width="560" height="400" frameborder="0"></iframe>
+            br
+            br
+            h3 Карта избранных мест
+            form
+                label Ссылка на интерактивную карту
+                input(type='text' value='https://maxdatmaps.org/maps/-/CZt7YLyr')
+
+                label Ссылка на изображение карты #[a(href='') Скачать изображение]
+                input(type='text' value='https://static.maxdatmaps.org/maps/CZt7YLyr.png')
+
+                label Код для вставки на сайт
+                textarea <iframe src="https://api-maps.maxdatmaps.org/frame/v1/-/CZt7YLyr" width="560" height="400" frameborder="0"></iframe>

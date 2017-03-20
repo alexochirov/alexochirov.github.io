@@ -1,0 +1,77 @@
+.filter {
+    box-shadow: 0 0 rem-calc(8) $dark-gray;
+    background: $sky;
+    position: relative;
+    padding-bottom: rem-calc(45);
+
+    &__pack {
+        margin-right: rem-calc(11);
+        margin-top: rem-calc(8);
+    }
+
+    &__input {
+        width: calc(100% - 15px);
+        display: inline-block;
+    }
+
+    &__copy {
+        position: absolute;
+        bottom: rem-calc(26);
+        width: 100%;
+        padding-left: rem-calc(11);
+        padding-right: rem-calc(11);
+    }
+
+    &__mail {
+        font-size: rem-calc(12);
+        text-transform: uppercase;
+        color: $medium-gray;
+    }
+
+    &__main {
+        padding-left: rem-calc(11);
+        padding-right: rem-calc(11);
+    }
+
+    &__menu {
+        & > li {
+            padding-bottom: rem-calc(20);
+        }
+
+        li {
+          &:hover {
+            .filter__arrow {
+              background: none;  color: $black;
+            }
+          }
+            & > a {
+                padding: rem-calc(0);
+
+                &.filter__arrow {
+                    width: rem-calc(15);
+                    height: rem-calc(11);
+                    float: right;
+
+                }
+            }
+        }
+    }
+
+    &__enter {
+        font-size: rem-calc(16);
+        background: $light-gray;
+        text-transform: uppercase;
+        padding-top: rem-calc(9);
+        padding-bottom: rem-calc(9);
+        border-radius: rem-calc(4 0 0 4);
+        display: inline-block;
+        color: $secondary;
+        font-weight: 700;
+        padding-left: rem-calc(33);
+        padding-right: rem-calc(45);
+
+        i {
+            margin-right: rem-calc(16);
+        }
+    }
+}

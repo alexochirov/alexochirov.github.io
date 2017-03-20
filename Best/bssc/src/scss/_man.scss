@@ -1,0 +1,27 @@
+.man {
+    left: auto !important;
+    right: rem-calc(13);
+    top: rem-calc(40) !important;
+    padding-bottom: rem-calc(0);
+
+    &__header {
+        color: $white;
+        outline: none;
+        display: block;
+        margin-bottom: rem-calc(16);
+        text-transform: uppercase;
+        font-size: rem-calc(18);
+
+        i {
+            margin-right: rem-calc(7);
+        }
+    }
+
+    &__hr {
+        margin-bottom: rem-calc(11);
+        border-color: $secondary;
+    }
+    @include breakpoint(medium down) {
+        top: rem-calc(55 )!important;
+    }
+}

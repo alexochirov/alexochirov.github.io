@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+// Все картинки и шрифты необходимо подключать с использованием этих двух переменных:
+$imagesPath: '../images' !default;
+$fontsPath: '../fonts' !default;
+$fancybox-image-url: $imagesPath + '/fancy';
+$fa-font-path: $fontsPath;
+
+
+@import "fonts";
+@import "foundation-settings";
+
+
+@import "foundation";
+@import "motion-ui";
+@import "font-awesome";
+@import "slick.scss";
+@include foundation-everything;
+@import "jquery.fancybox";
+
+@import "common";
+@import "slick/slick-theme";
+
+
+@import "footer";
+@import "header";
+@import "sticky-footer";
+@import "hat";
+@import "recent";
+@import "catalog";
+@import "stone";
+@import "cert";
+@import "question";
+@import "exp";
+@import "scroll";
+@import "floor";
+@import "soc";
+@import "cliff";
+@import "cycle";
+@import "news";
+@import "onyx";
+@import "zebra";
+@import "cartoon";
+@import "pattern";
+@import "tap";
+@import "mini";
+@import "brand";
+@import "bow";
+@import "convector";
+@import "ask";
+@import "acryl";
+@import "diamond";
+@import "hue";
+@import "tracery";
+@import "meters";
+@import "chop";
+@import "string";
+@import "granite";
+@import "sale";
+@import "rock";
+@import "quartz";
+@import "sink";
+@import "pillow";
+@import "palette";

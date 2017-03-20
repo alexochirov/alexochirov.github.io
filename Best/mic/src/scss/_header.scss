@@ -1,0 +1,28 @@
+.header {
+    padding-top: rem-calc(34);
+    margin-bottom: rem-calc(14);
+
+    &__logo {
+        padding-left: rem-calc(35);
+    }
+
+    &__name {
+        display: inline-block;
+        font-size: rem-calc(19);
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    &__toggle {
+        margin-top: rem-calc(30);
+        outline:none;
+    }
+    @include breakpoint(medium down) {
+        &__logo {
+            padding-left: rem-calc(12);
+        }
+    }
+    @include breakpoint(small only) {
+        padding-top: rem-calc(10);
+    }
+}

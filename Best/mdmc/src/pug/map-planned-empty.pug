@@ -1,0 +1,19 @@
+extends map
+
+block enter-user-auto
+block map-search-results
+  .filter__main
+    p
+    .row.columns
+      a(href='map.html').button.small.primary
+        i.fa.fa-arrow-left
+      include components/_enter-user-auto    
+    p.text-center Пока у вас в планах нет мест
+      p.text-center
+        | Чтобы добавить место в свои планы
+        br
+        | выберите статус «#[i.fa.fa-lg.fa-map-o] В планах» в описании объекта
+        br
+        span.text-dark-gray и он появится в списке
+    p &#160;
+    p &#160;

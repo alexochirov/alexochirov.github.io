@@ -1,0 +1,16 @@
+.contacts
+  .row
+    .large-5.medium-11.small-12.columns
+      a(href="tel:+74959791679").contacts__link +7 (495) 979-16-79
+    .large-5.medium-11.small-12.columns
+      a(href="mailto:info@packetville.ru").contacts__mail
+        i.fa.fa-envelope-o
+        | info@packetville.ru
+    .large-2.columns.medium-2.large-push-12.small-4.contacts__search.text-right.hide-for-small-only
+      a(href="#")
+        i.fa.fa-search
+    .large-12.large-pull-2.columns.text-center.large-text-right.hide-for-small-only
+      ul.packetville
+        each title in ['Заказать обратный звонок','Материалы','В помощь клиенту','Публикации']
+          li.packetville__item
+            a(href="#").packetville__link= title

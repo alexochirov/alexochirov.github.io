@@ -1,0 +1,18 @@
+.scroll {
+    position: fixed;
+    z-index: 100;
+    right: 0.625rem;
+    display: none;
+    bottom: 6.875rem;
+    cursor: pointer;
+
+    .fa-stack-2x {
+        color: #000;
+    }
+
+    &:hover {
+        .fa-stack-2x {
+            color: $orange;
+        }
+    }
+}

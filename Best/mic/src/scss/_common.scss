@@ -1,0 +1,37 @@
+a {
+    -webkit-transition: color 300ms ease-in-out;
+    -moz-transition: color 300ms ease-in-out;
+    -ms-transition: color 300ms ease-in-out;
+    -o-transition: color 300ms ease-in-out;
+    transition: color 300ms ease-in-out;
+}
+
+h6 {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+[type='color'],
+[type='date'],
+[type='datetime'],
+[type='datetime-local'],
+[type='email'],
+[type='month'],
+[type='number'],
+[type='password'],
+[type='search'],
+[type='tel'],
+[type='text'],
+[type='time'],
+[type='url'],
+[type='week'],
+textarea,select {
+    height: rem-calc(50);
+}
+
+ol {
+    li {
+        padding-left: rem-calc(20);
+        margin-bottom: rem-calc(14);
+    }
+}

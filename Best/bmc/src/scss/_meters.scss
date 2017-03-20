@@ -1,0 +1,21 @@
+.meters {
+    display: inline-block;
+margin-bottom: rem-calc(5);
+
+    &__meter {
+        display: inline-block;
+        font-weight: 300;
+        margin-right: rem-calc(10);
+    }
+
+    &__input {
+        display: inline-block;
+        margin-bottom: rem-calc(0);
+        margin-right: rem-calc(7);
+
+        width: rem-calc(63);
+        padding-top: rem-calc(0);
+        padding-bottom: rem-calc(0);
+        height: rem-calc(27);
+    }
+}

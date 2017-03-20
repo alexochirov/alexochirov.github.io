@@ -1,0 +1,13 @@
+.accordion {}
+
+.is-accordion-submenu-parent > a::after {
+    font-size: rem-calc(12);
+    color: $dark-gray;
+    content: "\f078";
+    width: rem-calc(12);
+    height: rem-calc(11);
+    font-family: 'FontAwesome';
+    border: rem-calc(0);
+    right: rem-calc(0);
+    top: rem-calc(10);
+}

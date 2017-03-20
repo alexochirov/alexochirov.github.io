@@ -1,0 +1,21 @@
+.aside {
+    background: $white;
+    margin-bottom: rem-calc(30);
+    border: rem-calc(1) solid $light-gray;
+    box-shadow: 0 rem-calc(3) rem-calc(7) rgba(0, 0, 0, 0.25);
+
+    &__head {
+        background-color: #f2f2f2;
+        font-size: rem-calc(16);
+        text-transform: uppercase;
+        padding-top: rem-calc(15);
+        padding-bottom: rem-calc(16);
+        img {
+          margin-right: rem-calc(14);
+        }
+    }
+    &__body {
+      padding-left: rem-calc(20);
+      padding-right: rem-calc(20);
+    }
+}

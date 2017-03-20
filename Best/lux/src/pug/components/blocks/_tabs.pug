@@ -1,0 +1,41 @@
+.row.columns
+  ul#example-tabs.tabs(data-tabs='')
+    li.tabs-title.is-active
+      a(href='#panel1') Кварцевый камень
+    li.tabs-title
+      a(href='#panel2') Акриловый камень
+    li.tabs-title
+      a(href='#panel3') Керамика
+.cartoon.cartoon_straight
+  .row.columns.cartoon__block
+    .tabs-content(data-tabs-content='example-tabs')
+      #panel1.tabs-panel.is-active
+        .row.large-up-4.medium-up-3.small-up-2
+          +pattern('stone1.jpg','RADIANZ')
+          +pattern('stone2.jpg','CaesarStone')
+          +pattern('stone3.jpg','Scorino')
+          +pattern('stone4.jpg','HanStone')
+          +pattern('stone1.jpg','RADIANZ')
+          +pattern('stone2.jpg','CaesarStone')
+          +pattern('stone3.jpg','Scorino')
+          +pattern('stone4.jpg','HanStone')
+      #panel2.tabs-panel
+        .row.large-up-4.medium-up-3.small-up-2
+          +pattern('stone4.jpg','RADIANZ')
+          +pattern('stone3.jpg','CaesarStone')
+          +pattern('stone2.jpg','Scorino')
+          +pattern('stone4.jpg','HanStone')
+          +pattern('stone1.jpg','RADIANZ')
+          +pattern('stone2.jpg','CaesarStone')
+          +pattern('stone3.jpg','Scorino')
+          +pattern('stone4.jpg','HanStone')
+      #panel3.tabs-panel
+        .row.large-up-4.medium-up-3.small-up-2
+          +pattern('stone3.jpg','RADIANZ')
+          +pattern('stone2.jpg','CaesarStone')
+          +pattern('stone4.jpg','Scorino')
+          +pattern('stone4.jpg','HanStone')
+          +pattern('stone1.jpg','RADIANZ')
+          +pattern('stone3.jpg','CaesarStone')
+          +pattern('stone4.jpg','Scorino')
+          +pattern('stone2.jpg','HanStone')

@@ -1,0 +1,214 @@
+a {
+    -webkit-transition: color 300ms ease-in-out;
+    -moz-transition: color 300ms ease-in-out;
+    -ms-transition: color 300ms ease-in-out;
+    -o-transition: color 300ms ease-in-out;
+    transition: color 300ms ease-in-out;
+}
+
+body {
+    overflow-x: hidden;
+    letter-spacing: rem-calc(.4);
+}
+
+.button {
+    font-weight: 400;
+    font-size: rem-calc(14);
+    box-shadow: inset 0 rem-calc(-3) 0 rgba(0, 0, 0, 0.3);
+    margin-bottom: rem-calc(16);
+
+    &.hollow {
+        box-shadow: none;
+        border-width: rem-calc(2);
+
+        &:hover {
+            color: $white;
+            background: $blue;
+            border-color: $blue;
+        }
+    }
+}
+
+.breadcrumbs {
+    font-family: "Roboto",sans-serif;
+}
+
+.text-gray {
+    color: $gray;
+}
+
+ol {
+    margin-left: rem-calc(19);
+    margin-top: rem-calc(0);
+    counter-reset: myCounter;
+
+    li {
+        list-style: none;
+        position: relative;
+
+        &:before {
+            counter-increment: myCounter;
+            content: counter(myCounter);
+            position: absolute;
+            display: inline-block;
+            margin-left: rem-calc(-19);
+            margin-right: rem-calc(10);
+            text-align: center;
+            font-weight: 700;
+            font-size: rem-calc(16);
+            line-height: 30px;
+            top: rem-calc(-2);
+        }
+    }
+}
+
+.tabs {
+    border-bottom: rem-calc(1) solid $light-gray;
+
+    &-title {
+        & > a {
+            text-transform: uppercase;
+            background: #efefef;
+            font-weight: 400;
+            box-shadow: inset 0 rem-calc(2) rem-calc(2) rgba(0, 0, 0, 0.2);
+            border: rem-calc(1) solid transparent;
+            border-bottom: rem-calc(0);
+
+            &:focus,
+            &[aria-selected='true'] {
+                box-shadow: none;
+                border-color: $light-gray;
+            }
+        }
+    }
+
+    &_blue {
+        border-bottom-color: $blue;
+        padding-bottom: rem-calc(1);
+
+        .tabs-title {
+            margin-right: rem-calc(1);
+
+            &.is-active {
+                & > a {
+                    margin-bottom: rem-calc(-4);
+                    margin-top: rem-calc(-2);
+                    padding-top: rem-calc(21);
+                    border-radius: rem-calc(0);
+                    border-color: $blue;
+                    padding-bottom: rem-calc(21);
+                    background: $white;
+                    color: $blue;
+                }
+            }
+
+            & > a {
+                border-radius: rem-calc(2);
+                background: $blue;
+                color: $white;
+            }
+        }
+    }
+
+    &-content {
+        &_blue {
+            font-size: rem-calc(14);
+            padding-left: rem-calc(30);
+            padding-right: rem-calc(30);
+        }
+    }
+}
+.sticky {
+  z-index: 5;
+  &-container {
+      margin-bottom: rem-calc(20);
+  }
+}
+select {
+    background: url($imagesPath +"/tri.svg")no-repeat calc(100% - 12px) center;
+}
+
+.accordion {
+    &-content {
+        font-size: rem-calc(14);
+    }
+
+    &-title {
+        background: url($imagesPath +"/zebra.jpg")no-repeat center;
+
+        &:hover {
+            color: $white;
+            background: $blue;
+        }
+
+        &:before {
+            font-size: rem-calc(21);
+            top: rem-calc(30);
+        }
+    }
+}
+
+.slider {
+    height: rem-calc(4);
+
+    &-handle {
+        width: rem-calc(13);
+        height: rem-calc(13);
+        outline: none;
+        background: url($imagesPath +"/control.svg")no-repeat right top;
+
+        &:hover {
+            background-color: transparent;
+        }
+        &_next {
+          margin-left: rem-calc(1);
+        }
+        &_prev {
+          margin-left: rem-calc(-1);
+        }
+    }
+
+    &-fill {
+        background-color: $blue;
+        height: rem-calc(4);
+    }
+}
+
+.pagination {
+    li {
+        margin-right: rem-calc(3);
+        line-height: 1.4;
+    }
+
+    a {
+        &:hover {
+            color: $white;
+        }
+    }
+}
+@include breakpoint(small only) {
+    .pagination {
+        :nth-child(2) {
+            display: inline-block;
+        }
+    }
+
+    .tabs {
+        &-content {
+            &_blue {
+                padding-left: rem-calc(0);
+                padding-right: rem-calc(0);
+            }
+        }
+
+        &-title {
+            width: 100%;
+            text-align: center;
+
+            & > a {
+                padding-left: rem-calc(9);
+                padding-right: rem-calc(9);
+            }
+        }
+    }
+}

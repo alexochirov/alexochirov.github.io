@@ -1,0 +1,26 @@
+.parachute {
+    .tabs-title {
+        float: none;
+        display: inline-block;
+        &:first-child {
+            a {
+                border-radius: rem-calc(15 0 0 15);
+                margin-right: rem-calc(-4);
+            }
+        }
+    }
+
+    a {
+        border-radius: rem-calc(0 15 15 0);
+        border: rem-calc(2) solid $green;
+
+        &:hover {
+            color: $white;
+            background: $green;
+        }
+    }
+      @include breakpoint(medium down) {
+      .tabs-title {
+
+      } }
+}

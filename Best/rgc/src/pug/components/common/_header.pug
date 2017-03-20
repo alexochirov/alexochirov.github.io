@@ -1,0 +1,12 @@
+header.header
+  .row.columns
+    span.header__toggle(data-responsive-toggle='responsive-menu', data-hide-for='medium')
+      button.menu-icon.header__button(type='button', data-toggle='')
+    ul.map.text-center#responsive-menu
+      each title,index in ['О поселке','генплан','карта','цены','коммуникации','Транспорт','инфраструктура','галерея']
+        if index==0
+          li.map__item.active
+            a(href="#").map__link= title
+        else
+          li.map__item
+            a(href="#").map__link= title

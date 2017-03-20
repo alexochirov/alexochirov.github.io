@@ -1,0 +1,32 @@
+.check {
+    &__input {
+        display: none;
+
+        &+label {
+            margin-bottom: rem-calc(6);
+        }
+
+        &:checked+label {
+            &:before {
+                background: url($imagesPath +"/check-active.svg")no-repeat center;
+            }
+        }
+    }
+
+    &__label {
+        font-weight: 300;
+        padding-left: rem-calc(22);
+        position: relative;
+        color: $gray;
+
+        &:before {
+            width: rem-calc(15);
+            height: rem-calc(15);
+            left: rem-calc(0);
+            position: absolute;
+            top: rem-calc(4);
+            content: '';
+            background: url($imagesPath +"/check.svg")no-repeat center;
+        }
+    }
+}

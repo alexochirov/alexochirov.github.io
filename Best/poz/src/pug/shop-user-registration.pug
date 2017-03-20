@@ -1,0 +1,63 @@
+extends shop-regular
+
+block content
+  .row.column
+    h1 Регистрация
+  .content
+    .row
+      .column.medium-16.large-12.medium-centered
+        .primary.callout
+          h5 Вы были успешно зарегистрированы!
+          p На вашу электронную почту отправлено письмо с подтверждением.
+        .alert.callout
+          h5 При регистрации произошли следующие ошибки:
+          ul
+            li не заполнено поле Email
+            li пароль и его подтверждение не совпадают
+            li введен неверный код
+        form(action='shop-user-personal.html')
+          label
+            | Имя*
+            input(type='text')
+          label
+            | Фамилия*
+            input(type='text')
+          label
+            | Мобильный*
+            input(type='tel')
+          label
+            | Электронная почта*
+            input(type='email')
+          label
+            | Пароль*
+            input(type='password')
+          p.help-text Пароль должен быть не менее 6 символов длиной
+          label
+            | Подтверждение пароля*
+            input(type='password')
+          label
+            | Наименование компании*
+            input(type='text')
+          label
+            | ИНН*
+            input(type='text')
+          .row
+            .column.small-14.medium-16
+              label
+                | Введите код*
+                input(type='password')
+            .column.small-10.medium-8
+              img(src='./i/image.svg' alt='Капча' style='width:100%;height:64px;')
+          .row
+            .column.small-2
+              input#checkbox1(type='checkbox')
+            .column.small-22
+              label(for='checkbox1')
+                | Подписаться на новости и скидки:
+          br
+          button.button.small-expanded
+            | Регистрация &nbsp;
+            i.fa.fa-user-plus.fa-lg
+        p * - Поля, обязательные для заполнения.
+        p
+          a(href='shop-user-login.html' title='') Авторизация

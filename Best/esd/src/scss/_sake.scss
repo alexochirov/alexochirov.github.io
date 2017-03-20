@@ -1,0 +1,7 @@
+.sake {
+    left: auto!important;
+    right: rem-calc(425)!important;
+    @include breakpoint(medium down ) {
+        right: rem-calc(115)!important;
+    }
+}

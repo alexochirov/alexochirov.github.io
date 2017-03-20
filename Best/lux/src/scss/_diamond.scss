@@ -1,0 +1,26 @@
+.diamond {
+    list-style-type: none;
+    margin-bottom: rem-calc(0);
+    margin-left: rem-calc(0);
+
+    &__item {
+        position: relative;
+        padding-left: rem-calc(15);
+
+        &.active,
+        &:hover {
+            &:after {
+                content: "";
+                width: rem-calc(2);
+                height: rem-calc(29);
+                background: $blue;
+                left: rem-calc(0);
+                position: absolute;
+            }
+        }
+    }
+
+    &__link {
+        font-size: rem-calc(14);
+    }
+}

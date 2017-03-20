@@ -1,0 +1,81 @@
+.cliff {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__info {
+        margin-top: rem-calc(280);
+    }
+
+    &__big {
+        font-size: rem-calc(60);
+        color: $white;
+        margin-bottom: rem-calc(103);
+        line-height: 1.08;
+    }
+
+    &__100 {
+        font-size: rem-calc(65);
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $white;
+        margin-right: rem-calc(7);
+    }
+
+    &__question {
+        font-size: rem-calc(14);
+        font-weight: 500;
+        color: $white;
+        text-transform: uppercase;
+        top: rem-calc(-16);
+        position: relative;
+        display: inline-block;
+    }
+
+    &__toggle {
+        margin-top: rem-calc(35);
+        display: block;
+    }
+
+    &__business {
+        font-size: rem-calc(11);
+        font-weight: 500;
+        color: $white;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    &__life {
+        color: $white;
+        text-transform: uppercase;
+        text-decoration: none;
+        display: block;
+        margin-top: rem-calc(40);
+        font-weight: 500;
+        font-size: rem-calc(14);
+
+        i {
+            margin-right: rem-calc(7);
+        }
+    }
+    @include breakpoint(large down) {
+        &__big {
+            font-size: rem-calc(45);
+            margin-bottom: rem-calc(24);
+        }
+    }
+    @include breakpoint(small only) {
+      &__big {
+        font-size: rem-calc(35);
+      }
+      &__info {
+        margin-top: rem-calc(50);
+      }
+        &__100 {
+            font-size: rem-calc(50);
+        }
+
+        &__question {
+            top: rem-calc(-12);
+        }
+    }
+}

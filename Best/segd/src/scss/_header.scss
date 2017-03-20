@@ -1,0 +1,21 @@
+.header {
+    background: rgba(0, 0, 0, 0.83);
+    margin-bottom: rem-calc(20);
+
+    &__logo {
+        padding-top: rem-calc(10);
+        padding-bottom: rem-calc(10);
+    }
+
+    &__toggle {
+        padding-top: rem-calc(23);
+    }
+    @include breakpoint(small only) {
+
+        &__logo {
+            img {
+                height: rem-calc(50);
+            }
+        }
+    }
+}

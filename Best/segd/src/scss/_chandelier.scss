@@ -1,0 +1,30 @@
+.chandelier {
+    position: relative;
+    margin-bottom: rem-calc(40);
+
+    &:last-child {
+        &:after {
+            display: none;
+        }
+    }
+
+    &:after {
+        content: "";
+        height: rem-calc(1);
+        width: calc(100% - 30px);
+        left: rem-calc(40);
+        top: 50%;
+        background: $green;
+        position: absolute;
+    }
+
+    &__num {
+        color: $white;
+        font-weight: 700;
+        width: rem-calc(30);
+        height: rem-calc(30);
+        border-radius: 50%;
+        line-height: rem-calc(30);
+        border: rem-calc(1) solid $green;
+    }
+}

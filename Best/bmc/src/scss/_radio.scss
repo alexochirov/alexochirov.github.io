@@ -1,0 +1,22 @@
+.radio {
+    display: inline-block;
+    margin-bottom: rem-calc(10);
+
+    &__input {
+        display: none;
+
+        &:checked +.radio__label {
+            background: url($imagesPath +"/radio-check.svg")no-repeat left;
+        }
+    }
+
+    label.radio__label {
+        padding-left: rem-calc(31);
+        margin-left: rem-calc(0);
+        text-transform: uppercase;
+        font-size: rem-calc(12);
+        height: rem-calc(23);
+        line-height: 2.1;
+        background: url($imagesPath +"/radio.svg")no-repeat left top;
+    }
+}

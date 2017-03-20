@@ -1,0 +1,26 @@
+.exp {
+    border: rem-calc(1) solid $light-gray;
+    padding: rem-calc(55 20 9);
+    margin-bottom: rem-calc(18);
+
+    &:hover {
+        color: $blue;
+        border-color: $blue;
+    }
+    &__text {
+      font-size: rem-calc(14);
+    }
+
+    &__img {
+        height: rem-calc(107);
+
+        img {
+            max-height: 100%;
+        }
+    }
+
+    &__title {
+        font-size: rem-calc(18);
+        text-transform: uppercase;
+    }
+}

@@ -1,0 +1,25 @@
+extends map
+
+block map-search-results
+  .filter__main
+    p
+    div
+      a(href='map.html').button.small.primary
+        i.fa.fa-arrow-left
+      =" "    
+      a(href='map-share.html#map-share-modal').button.primary Поделиться
+    p В планах 18 мест (7 стран)
+    - var n = 0
+    while n < 3
+      - n++
+      p
+        a(href='' title='Убрать из планов').lily
+          img(src="./images/marker-orange.svg", alt="")
+        | &#160;&#160; &#160;&#160;
+        a.js-visit-toggle(href='#' title='К объекту на карте') Название объекта #{n}
+        br
+        | Название категории объекта
+        br
+        span.text-dark-gray г. Ярославль, Проспект Ленина, дом 25, 6 этаж, офис 606
+    p: a.button.hollow.expanded(href='') Ещё…
+    //-p.text-center: a(href='map-search-results.html') Все результаты

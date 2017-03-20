@@ -1,0 +1,23 @@
+mixin granite(img,title,price,mark)
+  .columns
+    .granite
+      div
+        .granite__img
+          a(href="./i/"+img).fancybox
+            img(src="./i/"+img, alt="")
+          a(href="#").granite__heart
+            i.fa.fa-heart-o
+          if mark=='sale1'
+            .granite__mark
+              .sale
+                strong New
+                |  2017&#160;
+                img(src="./images/ellipse.svg", alt="")
+          if mark=='sale2'
+            .granite__mark
+              .sale.sale_green
+                strong Sale&#160;
+                img(src="./images/ellipse.svg", alt="")
+      a(href="#").granite__title= title
+      p
+        span.granite__price !{price} &#8381;

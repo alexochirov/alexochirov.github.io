@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 60 64">
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <path d="m24.302,8.136,12.501,0" style="stroke-linejoin:miter;stroke:#eec130;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-width:2;fill:none;"/>
+ <path style="stroke-linejoin:miter;stroke:#eec130;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-width:2;fill:none;" d="m15.348,15.496,30.952,0"/>
+ <path d="m15.348,23.096,30.952,0" style="stroke-linejoin:miter;stroke:#eec130;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-width:2;fill:none;"/>
+ <path style="stroke-linejoin:miter;stroke:#eec130;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-width:2;fill:none;" d="m15.348,30.456,30.952,0"/>
+ <rect style="stroke:#eec130;stroke-dasharray:none;stroke-miterlimit:4;stroke-width:2;fill:none;" rx="1.018" ry="1.018" height="61.078" width="46.035" y="1.4751" x="7.5488"/>
+ <rect style="stroke:#eec130;stroke-dasharray:none;stroke-miterlimit:4;stroke-width:2;fill:none;" rx="0.65385" ry="0.26472" height="15.883" width="29.569" y="38.042" x="15.767"/>
+</svg>

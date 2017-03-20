@@ -1,0 +1,17 @@
+mixin pagination()
+  ul.pagination(aria-label='Pagination').text-center
+    li.pagination-previous.hide-for-small-only Страницы:
+    li.pagination-previous.disabled Предыдущая
+    li.current
+      span.show-for-sr You're on page
+      |  1
+    li
+      a(href='#', aria-label='Page 2') 2
+    li
+      a(href='#', aria-label='Page 3') 3
+    li
+      a(href='#', aria-label='Page 4') 4
+    li
+      a(href='#', aria-label='Page 12') 5
+    li.pagination-next
+      a(href='#', aria-label='Next page') Следующая

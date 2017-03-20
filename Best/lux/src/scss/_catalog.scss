@@ -1,0 +1,37 @@
+.catalog {
+    margin: rem-calc(0);
+    list-style-type: none;
+
+    &__item {
+        display: inline-block;
+
+        &.active,
+        &:hover {
+            & > a {
+                border-color: $blue;
+                color: $blue;
+            }
+        }
+    }
+
+    &__link {
+        display: inline-block;
+        font-size: rem-calc(17);
+        border-bottom: rem-calc(3) solid transparent;
+        padding-bottom: rem-calc(0);
+        margin-left: rem-calc(12);
+
+        &_drop {
+            &:after {
+                width: rem-calc(8);
+                height: rem-calc(5);
+                display: inline-block;
+                position: relative;
+                top: rem-calc(-1);
+                margin-left: rem-calc(5);
+                content: "";
+                background: url($imagesPath +"/arrow.svg")no-repeat center;
+            }
+        }
+    }
+}

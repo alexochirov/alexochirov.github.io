@@ -1,0 +1,42 @@
+.stairs {
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    margin-bottom: rem-calc(90);
+
+    &__main {
+        margin-bottom: rem-calc(180);
+    }
+
+    &__title {
+        font-size: rem-calc(72);
+        font-weight: 600;
+        text-transform: uppercase;
+        font-family: $font-proxima;
+        color: $white;
+        margin-top: rem-calc(160);
+        line-height: 1.2;
+    }
+
+    &__architect {
+        font-weight: 600;
+        font-size: rem-calc(20);
+        color: $white;
+        margin-bottom: rem-calc(54);
+    }
+    @include breakpoint(medium down) {
+        &__title {
+            font-size: rem-calc(43);
+            margin-top: rem-calc(60);
+        }
+    }
+    @include breakpoint(small only) {
+      &__title {
+        font-size: rem-calc(30);
+      }
+        &__main {
+            margin-bottom: rem-calc(50);
+        }
+    }
+}

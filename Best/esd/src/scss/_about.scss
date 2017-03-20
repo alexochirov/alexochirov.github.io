@@ -1,0 +1,24 @@
+.about {
+    list-style: none;
+    margin-bottom: rem-calc(0);
+    margin-left: rem-calc(0);
+    float: right;
+    &__link {
+        color: $white;
+
+        &:hover {
+            color: $white;
+            border-bottom: rem-calc(1) solid $white;
+        }
+    }
+
+    &__item {
+        padding-left: rem-calc(10);
+        margin-left: rem-calc(10);
+        float: left;
+
+        &:not(:first-child) {
+            border-left: rem-calc(1) solid rgba(255, 255, 255, 0.2);
+        }
+    }
+}

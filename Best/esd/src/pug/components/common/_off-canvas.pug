@@ -1,0 +1,20 @@
+#offCanvas.off-canvas.position-left(data-off-canvas='',data-transition="overlap").linen
+  .linen__wrapper
+    .linen__search
+      include _search
+    ul.frog
+      li.frog__item
+        a(href="#").frog__link Главная
+      li.frog__item(data-toggler=".js-opened",data-toggle="exp")#exp
+        a(href="#").frog__link Каталог
+        i.fa.fa-chevron-down
+        include _menu
+      li.frog__item
+        a(href="#").frog__link Контакты
+      li.frog__item
+        a(href="#").frog__link Авторизация
+
+    ul.hook
+      each title in ['О компании','Новости и акции','FAQ','Контакты']
+        li.hook__item
+          a(href="#").hook__link= title

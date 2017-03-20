@@ -1,0 +1,14 @@
+extends user-map
+
+block map-object-info
+    .callout(style='position: absolute; top: 155px; left: 270px; width: 300px;')
+        p
+            a.float-right(href='user-map.html'): i.fa.fa-lg.fa-close
+        h3 Название места
+        p Посещено?
+        .switch
+            input.switch-input(type='checkbox', name='visitedSwitch', id='yes')
+            label.switch-paddle(for='yes')
+                span.show-for-sr Посещено?
+                span.switch-active(aria-hidden='true')
+                span.switch-inactive(aria-hidden='true')

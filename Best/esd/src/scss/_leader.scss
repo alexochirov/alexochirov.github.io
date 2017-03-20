@@ -1,0 +1,22 @@
+.leader {
+    position: relative;
+    overflow: hidden;
+
+    &:after {
+        width: calc(100% - 30px);
+        border-bottom: rem-calc(3) solid #EEE;
+        position: absolute;
+        content: "";
+        left: rem-calc(15);
+        top: rem-calc(14);
+    }
+
+    &__h3 {
+        display: inline-block;
+        background: #fff;
+        z-index: 2;
+        position: relative;
+        padding-left: rem-calc(24);
+        padding-right: rem-calc(24);
+    }
+}

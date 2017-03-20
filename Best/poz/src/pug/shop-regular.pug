@@ -1,0 +1,16 @@
+extends index
+
+
+block page
+  include components/common/_breadcrumbs
+  block content
+    .row.column
+      h1 Заголовок страницы h1
+    .content
+      .row
+        .columns.medium-10.large-6
+          include components/common/_sidebar
+        .columns.medium-14.large-18
+          include components/common/_text
+  include ../images/shop/ecommerce-icons.svg
+  include components/shop/_benefits

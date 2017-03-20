@@ -1,0 +1,94 @@
+extends index
+block content
+  include components/blocks/_bread
+  .row
+    .large-20.large-centered.columns
+      h1 О компании
+      p
+        b Московская компания «InteriGroup» была основана в 2007 году, как предприятие по изготовлению стильных предметов интерьера из кварцевого агломерата. С самого начала мы сделали ставку на эксклюзивность, красоту и индивидуальный подход: каждое изделие создается по отдельному проекту и рассчитано на вкусы и предпочтения конкретного заказчика.
+      p Нередко наши клиенты просят изготовить целый «ансамбль» предметов: например, в квартире отлично смотрится сочетание кварцевых столешниц с подоконниками из материала той же расцветки. А в офисе неотразимое впечатление на посетителей производят стойки ресепшн и напольная плитка из «одинакового» кварца.
+
+      p Что именно мы предлагаем своим заказчикам? Как правило, это предметы быта, которые не требуют частой замены и придающие неповторимый шик любому интерьеру: подоконники и лестничные марши, барные стойки и стойки ресепшн, напольная и настенная плитка. И, конечно же, нельзя забывать про такой популярный аксессуар, как кварцевые столешницы, способные замечательно украсить жилой дом, рабочий офис или место отдыха (клуб, салон красоты, ресторан и др.)
+      .row.medium-up-2.text-center
+        .columns
+          p
+            a(href="#")
+              img(src="./i/kitchen1.jpg", alt="")
+        .columns
+          p
+            a(href="#")
+              img(src="./i/kitchen2.jpg", alt="")
+
+      h1.text-center Мы являемся официальным переработчиком камня
+      h3.text-gray.text-center Сертификаты
+      .cert
+        .cert__slide
+          p
+            a(href="#")
+              img(src="./i/certificate1.jpg", alt="")
+        .cert__slide
+          p
+            a(href="#")
+              img(src="./i/certificate2.jpg", alt="")
+        .cert__slide
+          p
+            a(href="#")
+              img(src="./i/certificate3.jpg", alt="")
+        .cert__slide
+          p
+            a(href="#")
+              img(src="./i/certificate1.jpg", alt="")
+  .question
+    .row.columns.text-center
+      h2 Есть вопросы?
+      p &#160;
+      a(href="#").button Заказать обратный звонок
+      .question__free Это бесплатно!
+      .question__call Или позвоните нам сами
+      .question__tel
+        a(href="tel:74957987427") +7 (495) 798-74-27
+        |,&#160;
+        a(href="tel:79855033333") +7 (985) 503-33-33
+      .question__call с 9:00 до 19:00
+  .row.columns.text-center
+    h1 Наши преимущества
+  .row
+    .large-20.large-centered.columns
+      .row.large-up-3.medium-up-2.small-up-1.text-center(data-equalizer,data-equalize-by-row="true")
+        .columns
+          .exp(data-equalizer-watch)
+            p.exp__img
+              img(src="./images/certified.svg", alt="")
+            p.exp__title Качество
+            p.exp__text Неизменно высокое. Проверено временем и одобрено нашими заказчиками.
+        .columns
+          .exp(data-equalizer-watch)
+            p.exp__img
+              img(src="./images/guarantee.svg", alt="")
+            p.exp__title Гарантии
+            p.exp__text Профессионализм, творческий подход к выполнению проектов, точное соблюдение сроков.
+        .columns
+          .exp(data-equalizer-watch)
+            p.exp__img
+              img(src="./images/service.svg", alt="")
+            p.exp__title Сервис
+            p.exp__text Воплощаем ваши мечты в реальность: от обсуждений и эскиза - до транспортировки и монтажа.
+        .columns
+          .exp(data-equalizer-watch)
+            p.exp__img
+              img(src="./images/manager.svg", alt="")
+            p.exp__title Опыт
+            p.exp__text Огромный опыт наших сотрудиков вызывает у клиентов доверие и положительные эмоции.
+        .columns
+          .exp(data-equalizer-watch)
+            p.exp__img
+              img(src="./images/like.svg", alt="")
+            p.exp__title Рекомендации
+            p.exp__text Нас рекомендуют множество клиентов и партнеров! Мы ценим их рекомендации и держим уровень!
+        .columns
+          .exp(data-equalizer-watch)
+            p.exp__img
+              img(src="./images/team.svg", alt="")
+            p.exp__title Без посредников
+            p.exp__text Мы работаем без посредников. Только прямой контакт с клиентом. Минимальные риски.
+  p &#160;

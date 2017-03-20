@@ -1,0 +1,46 @@
+.button {
+    text-transform: uppercase;
+    font-weight: 700;
+    box-shadow: 0 0 rem-calc(8) $medium-gray;
+
+    i {
+        font-size: rem-calc(18);
+        margin-right: rem-calc(5);
+    }
+
+    .fa-sort-amount-asc,.fa-sort-amount-desc {
+        font-size: rem-calc(14);
+    }
+
+    &.expanded {
+        padding-left: rem-calc(3);
+        padding-right: rem-calc(3);
+    }
+
+    &.primary {
+        box-shadow: none;
+        color: $white;
+    }
+
+
+    &.hollow {
+        border-width: rem-calc(2);
+        box-shadow: none;
+
+        &:focus,
+        &:hover {
+            background: $blue;
+            color: $white;
+            border-color: $blue;
+        }
+    }
+
+    &.small {
+        padding-left: rem-calc(10);
+        padding-right: rem-calc(10);
+
+        i {
+            font-size: rem-calc(14);
+        }
+    }
+}

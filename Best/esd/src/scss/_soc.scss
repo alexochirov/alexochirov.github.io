@@ -1,0 +1,51 @@
+.soc {
+    color: $dark-gray;
+    margin-right: rem-calc(5);
+    cursor: pointer;
+
+    &:hover {
+        .fa-stack-2x {
+            color: map-get($foundation-palette, fb);
+        }
+    }
+
+    &_tw {
+        &:hover {
+            .fa-stack-2x {
+                color: map-get($foundation-palette, twi);
+            }
+        }
+    }
+
+    &_g {
+        &:hover {
+            .fa-stack-2x {
+                color: map-get($foundation-palette, gp);
+            }
+        }
+    }
+
+    &_insta {
+        &:hover {
+            .fa-stack-2x {
+                color: map-get($foundation-palette,insta);
+            }
+        }
+    }
+
+    &_vk {
+        &:hover {
+            .fa-stack-2x {
+                color: map-get($foundation-palette,vk);
+            }
+        }
+    }
+
+    &_white {
+        &:hover {
+            .fa-stack-1x {
+                color: $white;
+            }
+        }
+    }
+}

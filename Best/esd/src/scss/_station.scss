@@ -1,0 +1,32 @@
+.station {
+  
+
+    textarea {
+        margin-bottom: rem-calc(20);
+    }
+
+    label {
+        font-weight: 700;
+    }
+
+    input {
+        margin-bottom: rem-calc(20);
+    }
+    &__block {
+      display: inline-block;
+      margin-right: rem-calc(20);
+    }
+
+    &__preserve {
+        list-style: none;
+    }
+
+    &__item {
+        &:before {
+            content: "\2014";
+            margin-right: rem-calc(8);
+        }
+    }
+
+
+}

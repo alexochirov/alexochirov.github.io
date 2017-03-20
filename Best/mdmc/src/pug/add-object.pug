@@ -1,0 +1,204 @@
+extends corp-regular
+
+block content
+    .row.column
+        p: a(href='map.html') ← Вернуться на карту
+    .row.column
+        h1 Объект
+
+    .content
+        .row
+            .columns.small-12.medium-5.large-4.medium-push-7.large-push-8
+            .columns.small-12.medium-7.large-8.medium-pull-5.large-pull-4
+                p Метка объекта
+                p(style='background: #eee; position: relative; padding: 200px 0;').text-center
+                    span.text-dark-gray Карта с меткой объекта. При нажатии, устанавливается метка объекта в месте нажатия.
+                    i.fa.fa-3x.fa-map-marker(style='top: 130px; left: 50%; position: absolute;')
+                form
+                    p Категория объекта
+                    .row
+                        .medium-6.column
+                            ul.menu.vertical
+                                li
+                                    label
+                                        input(type='checkbox')
+                                        | Категория объектов 1
+                                li
+                                    label
+                                        input(type='checkbox')
+                                        | Категория объектов 2
+                                li
+                                    label
+                                        input(type='checkbox')
+                                        | Категория объектов 3
+                                li
+                                    label
+                                        input(type='checkbox')
+                                        | Категория объектов 4
+                                    ul.menu.vertical.nested
+                                        li
+                                            label
+                                                input(type='checkbox')
+                                                | Категория объектов 4.1
+                                        li
+                                            label
+                                                input(type='checkbox')
+                                                | Категория объектов 4.2
+                                        li
+                                            label
+                                                input(type='checkbox')
+                                                | Категория объектов 4.3
+                                li
+                                    label
+                                        input(type='checkbox')
+                                        | Категория объектов 5
+                                li
+                                    label
+                                        input(type='checkbox')
+                                        | Категория объектов 6
+                                    ul.menu.vertical.nested
+                                        li
+                                            label
+                                                input(type='checkbox')
+                                                | Категория объектов 6.1
+                                        li
+                                            label
+                                                input(type='checkbox')
+                                                | Категория объектов 6.2
+                                        li
+                                            label
+                                                input(type='checkbox')
+                                                | Категория объектов 6.3
+                                        li
+                                            label
+                                                input(type='checkbox')
+                                                | Категория объектов 6.4
+                                        li
+                                            label
+                                                input(type='checkbox')
+                                                | Категория объектов 6.5
+                                li
+                                    label
+                                        input(type='checkbox')
+                                        | Категория объектов 7
+                                li
+                                    label
+                                        input(type='checkbox')
+                                        | Категория объектов 8
+                                li
+                                    label
+                                        input(type='checkbox')
+                                        | Категория объектов 9
+                                    ul.menu.vertical.nested
+                                        li
+                                            label
+                                                input(type='checkbox')
+                                                | Категория объектов 9.1
+                                        li
+                                            label
+                                                input(type='checkbox')
+                                                | Категория объектов 9.2
+                                li
+                                    label
+                                        input(type='checkbox')
+                                        | Категория объектов 10
+
+                        .medium-6.column
+                            ul.menu.vertical
+                                li
+                                    label
+                                        input(type='checkbox')
+                                        | Категория объектов 11
+                                li
+                                    label
+                                        input(type='checkbox')
+                                        | Категория объектов 12
+                                li
+                                    label
+                                        input(type='checkbox')
+                                        | Категория объектов 13
+                                    ul.menu.vertical.nested
+                                        li
+                                            label
+                                                input(type='checkbox')
+                                                | Категория объектов 13.1
+                                li
+                                    label
+                                        input(type='checkbox')
+                                        | Категория объектов 14
+                                li
+                                    label
+                                        input(type='checkbox')
+                                        | Категория объектов 15
+                                li
+                                    label
+                                        input(type='checkbox')
+                                        | Категория объектов 16
+                                li
+                                    label
+                                        input(type='checkbox')
+                                        | Категория объектов 17
+                                li
+                                    label
+                                        input(type='checkbox')
+                                        | Категория объектов 18
+                                    ul.menu.vertical.nested
+                                        li
+                                            label
+                                                input(type='checkbox')
+                                                | Категория объектов 18.1
+                                        li
+                                            label
+                                                input(type='checkbox')
+                                                | Категория объектов 18.2
+                                        li
+                                            label
+                                                input(type='checkbox')
+                                                | Категория объектов 18.3
+                                li
+                                    label
+                                        input(type='checkbox')
+                                        | Категория объектов 19
+                    br
+
+                    label Название объекта *
+                    input(type='text')
+
+                    label Название в адресной строке
+                        span.text-dark-gray= ' Будет иметь вид www.maxrest.org/name'
+                    input(type='text')
+
+                    label Время работы
+                    input(type='text')
+
+                    label Контактный телефон
+                    input(type='text')
+
+                    label Сайт
+                    input(type='text')
+
+                    label Краткое описание объекта (200 символов)
+                    textarea(rows='2')
+
+                    label Полное описание объекта
+                    textarea(rows='4')
+
+                    label Приложить фото объекта
+                    input(type='file')
+
+                    br
+                    br
+
+                    //-p
+                        input(type='checkbox')
+                        label #[i.fa.fa-lg.fa-star-o] Избранное
+
+                        input(type='checkbox')
+                        label #[i.fa.fa-lg.fa-map-o] В планах
+
+                        input(type='checkbox')
+                        label #[i.fa.fa-lg.fa-map] Посещённое
+
+                    button.button(type='submit') Сохранить
+                    | &#160; &#160;
+                    a.button.hollow Отменить и вернуться на карту

@@ -1,0 +1,31 @@
+.news {
+    font-size: rem-calc(14);
+    padding-top: rem-calc(30);
+    margin-bottom: rem-calc(30);
+
+    &__date {
+        display: inline-block;
+        background: $light-gray;
+        padding: rem-calc(2) rem-calc(6) rem-calc(3);
+        font-size: rem-calc(12);
+        margin-bottom: rem-calc(12);
+    }
+
+    &__title {
+        font-size: rem-calc(18);
+        color: $blue;
+        margin-bottom: rem-calc(4);
+        text-transform: uppercase;
+    }
+    @include breakpoint(medium down) {
+        margin-bottom: rem-calc(20);
+        padding-top: rem-calc(20);
+
+        &__title {
+            font-size: rem-calc(16);
+        }
+    }
+    @include breakpoint(small only) {
+    margin-bottom: rem-calc(0);
+    }
+}

@@ -1,0 +1,4 @@
+.arrow {
+  @include breakpoint(medium down ) {
+    right: rem-calc(0)!important; }
+}

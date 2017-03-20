@@ -1,0 +1,119 @@
+include ../mixins/_mixin-pattern
+include ../mixins/_mixin-table
+include ../mixins/_mixin-header
+.cliff.text-center
+  .cliff__slide(style="background-image:url(./i/stone.jpg);")
+    .cliff__title Акриловый камень
+    a(href="#").button.cliff__button Рассчитать стоимость
+  .cliff__slide(style="background-image:url(./i/stone.jpg);")
+    .cliff__title Полудрагоценный камень
+    a(href="#").button.cliff__button Рассчитать стоимость
+.row.medium-up-3(data-equalizer,data-equalize-by-row="true")
+  .columns
+    .cycle(data-equalizer-watch)
+      .row
+        .large-8.medium-24.small-8.columns.text-center.large-text-left
+          p.cycle__img
+            img(src="./images/ico1.svg", alt="")
+        .large-16.medium-24.small-16.columns.text-left.medium-text-center.l.large-text-left
+          .cycle__title Полный цикл
+          p Дизайн-проект, обработка камня, изготовление изделий
+  .columns
+    .cycle(data-equalizer-watch)
+      .row
+        .large-8.medium-24.small-8.columns.text-center.large-text-left
+          p.cycle__img
+            img(src="./images/ico2.svg", alt="")
+        .large-16.medium-24.small-16.columns.text-left.medium-text-center.l.large-text-left
+          .cycle__title Сервис
+          p Доставка, монтаж, уход и реставрация
+  .columns
+    .cycle(data-equalizer-watch)
+      .row
+        .large-8.medium-24.small-8.columns.text-center.large-text-left
+          p.cycle__img
+            img(src="./images/ico3.svg", alt="")
+        .large-16.medium-24.small-16.columns.text-left.medium-text-center.l.large-text-left
+          .cycle__title Гарантия
+          p На весь товар и работы
+.onyx
+  .row.medium-up-3
+    .columns.news
+      .news__date 23.05.2016
+      .news__title Обратите внимание на оникс
+      p Предлагаем размещение заказов на изделия из оникса Смеральдо / Smeraldo Onice.
+    .columns.news
+      .news__date 23.05.2016
+      .news__title Новости нашего производства
+      p Производство и установка поверхностей и панелей из оникса и полудрагоценных материалов с подсветкой.
+    .columns.news
+      .news__date 23.05.2016
+      .news__title Новая услуга
+      p Изготовление барельефов, горельефов, фигурная резка камня, гравирование, фрезерование
+.zebra
+  include ../blocks/_tabs
+  p
+
+  .cartoon.cartoon_ico.row.medium-up-3(data-equalizer,data-equalize-by-row="true").text-center
+    .columns.cartoon__block
+      .cycle.cycle_eco(data-equalizer-watch)
+        p.cycle__logo
+          img(src="./images/ico4.svg", alt="")
+        .cycle__title Экологичный
+        p Кварцевый камень не накапливает бактерии и грибки
+    .columns.cartoon__block
+      .cycle.cycle_eco(data-equalizer-watch)
+        p.cycle__logo
+          img(src="./images/ico5.svg", alt="")
+        .cycle__title Прочный и долговечный
+        p Не теряя красоту и практичность камень служит 20-30 лет
+    .columns.cartoon__block
+      .cycle.cycle_eco(data-equalizer-watch)
+        p.cycle__logo
+          img(src="./images/ico6.svg", alt="")
+        .cycle__title Удобен в работе
+        p Кварцевый агломерат даёт мастерам большое возможности для творчества
+  p
+  .row.columns.text-center
+    a(href="#").button.hollow Рассчитать стоимость
+p
++header('Делаем из камня')
+.cartoon.cartoon_ico.row.large-up-4.medium-up-2.small-up-2.text-center.large-text-left
+  +pattern('stone5.jpg','Столешницы',true)
+  +pattern('stone6.jpg','Подоконники',true)
+  +pattern('stone7.jpg','Мойки',true)
+  +pattern('stone8.jpg','Барные стойки и ресепшн',true)
+p
+.row.columns.text-center
+  a(href="#").button.hollow Что мы делаем из камня
++header('Галерея работ')
+.cartoon.cartoon_straight
+  .row.mini.large-collapse.cartoon__block.large-up-4.medium-up-2.small-up-2.text-center
+    +table('work1.jpg','Столешницы')
+    +table('work2.jpg','Столешницы')
+    +table('work3.jpg','Умывальники')
+    +table('work4.jpg','Кухни')
+p
+.row.columns.text-center
+  a(href="#").button.hollow Галерея всех работ
++header('Бренды')
+.row.columns
+  .brand
+    .brand__slide
+      a(href="#")
+        img(src="./i/brand1.jpg", alt="")
+    .brand__slide
+      a(href="#")
+        img(src="./i/brand2.jpg", alt="")
+    .brand__slide
+      a(href="#")
+        img(src="./i/brand3.jpg", alt="")
+    .brand__slide
+      a(href="#")
+        img(src="./i/brand4.jpg", alt="")
+    .brand__slide
+      a(href="#")
+        img(src="./i/brand5.jpg", alt="")
+    .brand__slide
+      a(href="#")
+        img(src="./i/brand3.jpg", alt="")

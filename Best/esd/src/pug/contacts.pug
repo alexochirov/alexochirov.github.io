@@ -1,0 +1,22 @@
+extends index
+include components/mixins/_mixin-service
+block content
+  .stance
+    script(type='text/javascript', charset='utf-8', async='', src='https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=uC0LrgpLiLN4GS8j_yHI5TYR1kdsdu98&width=100%25&height=400&lang=ru_UA&sourceType=constructor&scroll=false')
+    .stance__block
+      h3 РОССИЯ, Москва, ул. Лавочкина, д. 23, стр. 1
+      p Мы открыты с понедельника по пятницу с 10:00 до 18:00
+
+
+  .row
+    .medium-12.columns
+      +service('Часто задаваемые вопросы')
+      p.lead Пожалуйста, прочитите FAQ прежде чем отправлять нам сообщение.
+      include components/blocks/_accordion
+    .medium-12.columns
+      +service('Отправить сообщение')
+      p
+        input(type="email",placeholder="Your email")
+      p
+        textarea(rows="10",placeholder="Your message")
+      a(href="#").button  Send

@@ -1,0 +1,60 @@
+.comment {
+    &.row {
+        margin-left: rem-calc(0);
+        margin-right: rem-calc(0);
+    }
+
+
+
+    &__img {
+        img {
+            display: inline-block;
+            border-radius: 50%;
+        }
+    }
+
+    &__name {
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $black;
+        padding-left: rem-calc(11);
+        padding-right: rem-calc(11);
+    }
+
+    &__place {
+        font-size: rem-calc(12);
+    }
+
+    &__text {
+        font-style: italic;
+        padding-right: rem-calc(45);
+        color: $black;
+        position: relative;
+        line-height: 1.7;
+        padding-top: rem-calc(50);
+
+    }
+
+    &__quota {
+        width: rem-calc(52);
+        height: rem-calc(39);
+        position: absolute;
+        left: rem-calc(10);
+        top: rem-calc(0);
+        background: url($imagesPath +"/quota.svg")no-repeat center;
+    }
+}
+.slick-current {
+  .comment__text {
+    &:after {
+        position: absolute;
+        right: rem-calc(17);
+        content: "";
+        display: block;
+        width: rem-calc(1);
+        height: 100%;
+        top: rem-calc(15);
+        background: linear-gradient(to top, #e9e9e9 0%, #cbcbcb 50%, #e9e9e9 100%);
+    }
+  }
+}

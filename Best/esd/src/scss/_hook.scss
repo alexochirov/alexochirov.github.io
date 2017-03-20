@@ -1,0 +1,27 @@
+.hook {
+    list-style: none;
+    margin-bottom: rem-calc(0);
+    margin-left: rem-calc(0);
+    float: right;
+
+    &__item {
+        float: left;
+        width: 100%;
+        padding: 0 rem-calc(30);
+        margin-left: rem-calc(0);
+        border-bottom: rem-calc(1) solid rgba(0, 0, 0, 0.05);
+    }
+
+    &__link {
+        color: $gray;
+        padding-top: rem-calc(20);
+        padding-bottom: rem-calc(20);
+        font-size: rem-calc(13);
+        display: block;
+
+        &:hover {
+            color: #000;
+            border-bottom: rem-calc(0);
+        }
+    }
+}

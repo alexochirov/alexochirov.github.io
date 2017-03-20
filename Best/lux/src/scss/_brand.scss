@@ -1,0 +1,41 @@
+.brand {
+    margin-bottom: rem-calc(40);
+    padding-left: rem-calc(80);
+    padding-right: rem-calc(80);
+
+    .slick-arrow {
+        top: rem-calc(30);
+    }
+
+    .slick-prev {
+        left: rem-calc(0);
+    }
+
+    .slick-next {
+        right: rem-calc(0);
+    }
+
+    .slick-active {
+        opacity: 1;
+    }
+
+    &__slide {
+        padding-left: rem-calc(9);
+        padding-right: rem-calc(9);
+        transition:linear 1.5s;
+        opacity: 0;
+
+        img {
+            display: inline-block;
+        }
+
+        & > a {
+            display: block;
+            line-height: rem-calc(104);
+        }
+    }
+    @include breakpoint(small only) {
+        padding-left: rem-calc(0);
+        padding-right: rem-calc(0);
+    }
+}

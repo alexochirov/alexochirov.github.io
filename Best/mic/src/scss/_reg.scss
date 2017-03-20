@@ -1,0 +1,9 @@
+.reg {
+    border-bottom: rem-calc(1) solid $medium-gray;
+    text-decoration: none;
+    font-weight: 700;
+    &_norm {
+      font-weight: 400;
+    }
+  
+}

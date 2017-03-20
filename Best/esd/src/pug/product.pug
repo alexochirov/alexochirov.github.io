@@ -1,0 +1,56 @@
+extends index
+block content
+  include components/mixins/_mixin-num
+  .row
+    .large-8.medium-8.columns.why
+      .makeup
+        .makeup__slide
+          a(data-fancybox-group="group1",href="./i/beautiful1.jpg").group-fancy
+            img(src="./i/beautiful1.jpg", alt="")
+        .makeup__slide
+          a(data-fancybox-group="group1",href="./i/beautiful2.jpg").group-fancy
+            img(src="./i/beautiful2.jpg", alt="")
+      a(data-fancybox-group="group1",href="./i/beautiful1.jpg",data-tooltip,aria-haspopup="true",data-disable-hover="false",tabindex="1",title="Zoom").has-tip.top.group-fancy.why__fancy.fa-stack.fa-lg
+        i.fa.fa-circle-thin.fa-stack-2x
+        i.fa.fa-expand.fa-stack-1x
+      include components/blocks/_heart
+    .large-12.medium-16.columns.perfume.text-center.medium-text-left
+      include components/blocks/_product-bread
+      h1 SP MEN Эликсир Увлажняющий 6х2 мл
+      div
+        .line
+      p.perfume__price 655&#160;&#8381;
+      p.perfume__desc SP MEN Эликсир Увлажняющий 6х2 мл
+      p.perfume__stock 1 в наличии
+      form(action="#")
+        button.button Добавить в корзину
+        +num()(class="num_mini")
+      br
+      hr
+      .perfume__art Артикул: 3330005039
+      hr
+      p.perfume__art
+        | Категории:&#160;
+        a(href="#") Специальный уход
+        |,&#160;
+        a(href="#") Уход
+      p.text-center.medium-text-left
+        include components/blocks/_social
+    .large-4.show-for-large.columns.text-right
+      a(href="#",data-toggle="l1").fa-stack.arrow
+        i.fa.fa-circle-thin.fa-stack-2x
+        i.fa.fa-chevron-left.fa-stack-1x
+      .dropdown-pane#l1.cross(data-dropdown,data-hover="true", data-hover-pane="true")
+        a(href="#")
+          img(src="./i/beautiful1.jpg", alt="")
+      a(href="#",data-toggle="r1").fa-stack.arrow
+        i.fa.fa-circle-thin.fa-stack-2x
+        i.fa.fa-chevron-right.fa-stack-1x
+      .dropdown-pane#r1.cross(data-dropdown,data-hover="true", data-hover-pane="true")
+        a(href="#")
+          img(src="./i/beautiful2.jpg", alt="")
+    .columns
+      include components/blocks/_tabs
+  .row.columns
+    h2 Похожие товары
+  include components/common/_spa

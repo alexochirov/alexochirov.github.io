@@ -1,0 +1,54 @@
+include ../mixins/_mixin-palette
+.acryl
+  h5 Бренд
+  select
+    option Quarella
+    option Rocca
+    option Almond
+  h5 Цвет
+  p
+    +palette('',11)
+    +palette('blue',12)
+    +palette('purple',13)
+    +palette('baige',14)
+    +palette('orange',15)
+    +palette('red',16)
+    +palette('black',17)
+    +palette('brown',18)
+    +palette('gray',19)
+    +palette('wolf',21)
+    +palette('pole',22)
+    +palette('meat',23)
+    +palette('white',24)
+
+  h5 Текстура
+  .tracery
+    input(type='checkbox')#100.tracery__input
+    label.tracery__label(for="100") Крупная текстура
+  .tracery
+    input(type='checkbox')#101.tracery__input
+    label.tracery__label(for="101") Мелкая текстура
+  .tracery
+    input(type='checkbox')#102.tracery__input
+    label.tracery__label(for="102") Гранитный узор
+  .tracery
+    input(type='checkbox')#103.tracery__input
+    label.tracery__label(for="103") Мраморный узор
+  .tracery
+    input(type='checkbox')#104.tracery__input
+    label.tracery__label(for="104") Объемный узор
+  .tracery
+    input(type='checkbox')#105.tracery__input
+    label.tracery__label(for="105") Средняя текстура
+  h5 Цена
+  .slider(data-slider='',data-initial-start='3500', data-step='500',data-end="55000",data-initial-end="55000")
+    span.slider-handle.slider-handle_prev(data-slider-handle='', role='slider', tabindex='1', aria-controls='sliderOutput2',aria-valuemax='0',aria-valuenow='0',aria-valuemin='0')
+    span.slider-handle.slider-handle_next(data-slider-handle='', role='slider', tabindex='1', aria-controls='sliderOutput1',aria-valuemax='0',aria-valuenow='0',aria-valuemin='0')
+    span.slider-fill(data-slider-fill='')
+
+  .meters
+    input#sliderOutput2.meters__input(type='text')
+    span.meters__dash
+    input#sliderOutput1.meters__input(type='text')
+  a(href="#").button.expanded Показать
+  a(href="#").chop.text-center [ Сбросить фильтр ]

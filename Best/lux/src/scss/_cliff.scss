@@ -1,0 +1,56 @@
+.cliff {
+  margin-bottom: rem-calc(30);
+    &__slide {
+        padding-top: rem-calc(160);
+        height: rem-calc(476);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    &__button {
+        background: transparent;
+        border: rem-calc(2) solid $white;
+        box-shadow: none;
+
+        &:hover {
+            border-color: $blue;
+        }
+    }
+
+    &__title {
+        margin-bottom: rem-calc(45);
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+        color: $white;
+        text-transform: uppercase;
+        font-size: rem-calc(48);
+        font-family: "Roboto";
+    }
+
+    .slick-next {
+        right: calc(50% - 582px);
+    }
+
+    .slick-prev {
+        left: calc(50% - 582px);
+    }
+    @include breakpoint(large down) {
+        .slick-next {
+            right: rem-calc(16);
+        }
+
+        .slick-prev {
+            left: rem-calc(16);
+        }
+    }
+    @include breakpoint(small only) {
+        &__slide {
+            height: rem-calc(240);
+            padding-top: rem-calc(70);
+
+        }
+
+        &__title {
+            font-size: rem-calc(28);
+        }
+    }
+}

@@ -1,0 +1,52 @@
+.footer {
+    padding-bottom: rem-calc(20);
+    padding-top: rem-calc(30);
+    background: #f9f9f9;
+    border-top: rem-calc(1) solid $light-gray;
+
+    &__info {
+        line-height: 1.4;
+        font-size: rem-calc(14);
+    }
+
+    &__img {
+        img {
+            height: rem-calc(52);
+        }
+    }
+
+    &__tel {
+        font-size: rem-calc(18);
+        line-height: 1.8;color: $black;
+        &:hover {
+          color: $blue;
+        }
+    }
+
+    &__cetera {
+
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__share {
+        display: block;
+      
+        margin-bottom: rem-calc(64);
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__copy {
+        font-size: rem-calc(14);
+    }
+    @include breakpoint(small only) {
+        &__share {
+            margin-bottom: rem-calc(20);
+        }
+    }
+}

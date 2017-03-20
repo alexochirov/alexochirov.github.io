@@ -1,0 +1,18 @@
+.meters {
+  margin-bottom: rem-calc(12);
+    &__input {
+        display: inline-block;
+        width: rem-calc(75);
+    }
+
+    &__dash {
+        width: rem-calc(25);
+        margin-left: rem-calc(14);
+        margin-right: rem-calc(14);
+        top: rem-calc(-2);
+        position: relative;
+        height: rem-calc(1);
+        background: $black;
+        display: inline-block;
+    }
+}

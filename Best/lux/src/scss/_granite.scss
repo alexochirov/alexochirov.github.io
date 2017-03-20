@@ -1,0 +1,50 @@
+.granite {
+    font-size: rem-calc(14);
+
+    &:hover {
+        .granite__heart {
+            opacity: 1;
+        }
+
+        .granite__mark {
+            opacity: 0;
+        }
+    }
+
+    &__title {
+        color: $black;
+
+        &:hover {
+            color: $blue;
+        }
+    }
+
+    &__mark {
+        position: absolute;
+        right: rem-calc(0);
+        top: rem-calc(0);
+    
+        transition: 0.5s;
+    }
+
+    &__price {
+        font-size: rem-calc(24);
+        color: $blue;
+    }
+
+    &__img {
+        margin-bottom: rem-calc(11);
+        display: inline-block;
+        position: relative;
+    }
+
+    &__heart {
+        position: absolute;
+        right: rem-calc(18);
+        transition: 0.5s;
+        top: rem-calc(18);
+        opacity: 0;
+        z-index: rem-calc(5);
+        font-size: rem-calc(19);
+    }
+}

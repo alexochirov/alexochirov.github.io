@@ -1,0 +1,23 @@
+.rule {
+    list-style-type: none;
+    margin-left: rem-calc(0);
+
+    &_bottom {
+        margin-bottom: rem-calc(97);
+    }
+
+    &__item {
+        margin-bottom: rem-calc(9);
+    }
+
+    &__link {
+        color: $white;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    @include breakpoint(medium down) {
+        &_bottom {
+            margin-bottom: rem-calc(20);
+        }
+    }
+}

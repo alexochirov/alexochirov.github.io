@@ -1,0 +1,75 @@
+.dress {
+    position: relative;
+    margin-bottom: rem-calc(26);
+
+    &:hover {
+        &:after {
+            background: rgba(222, 141, 89, .87);
+        }
+    }
+
+    & > img {
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+    }
+
+    &:after {
+        height: 100%;
+        position: absolute;
+        content: '';
+        width: 100%;
+        background: rgba(0, 0, 0, .87);
+        left: rem-calc(0);
+        top: rem-calc(0);
+    }
+
+    .button {
+        border-color: $white;
+        color: $white;
+    }
+
+    &__block {
+        position: absolute;
+        display: block;
+        position: absolute;
+        padding-top: rem-calc(23);
+        top: rem-calc(0);
+        left: rem-calc(0);
+        z-index: 3;
+        width: 100%;
+        padding-left: rem-calc(30);
+        padding-right: rem-calc(30);
+    }
+
+    &__title {
+        font-size: rem-calc(30);
+        margin-bottom: rem-calc(6);
+        text-transform: uppercase;
+        color: $white;
+    }
+
+    &__text {
+        color: $white;
+    }
+    @include breakpoint(medium down) {
+        &__title {
+            font-size: rem-calc(18);
+        }
+
+        .button {
+            padding-left: rem-calc(25);
+            padding-right: rem-calc(25);
+        }
+    }
+    @include breakpoint(small only) {
+        &__title {
+            font-size: rem-calc(25);
+        }
+
+        .button {
+            padding-left: rem-calc(55);
+            padding-right: rem-calc(55);
+        }
+    }
+}

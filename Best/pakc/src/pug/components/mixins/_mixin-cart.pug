@@ -1,0 +1,12 @@
+mixin cart(img,title)
+  .columns
+    a(href="#").cart
+      .cart__img.text-center
+        img(src="./i/" + img, alt="")
+        .cart__date.text-center
+          .cart__day 12
+          | апреля
+      .cart__main(data-equalizer-watch)
+        .cart__title= title
+        .cart__text Законопроект разработан с целью сохранения  чистоты территории республики...
+        .cart__more Подробнее →

@@ -1,0 +1,25 @@
+extends index
+include components/mixins/_mixin-article
+block content
+  .row
+    .large-18.medium-16.columns
+      +article('Акция на продукцию Эстель','При покупке продукции Эстель от 1500 руб — подарок каждому покупателю!','Новинки магазина')
+      +article('Акция на продукцию Keen','При покупке продукции Keen от 3000 руб — скидка 5%.','Акции и конкурсы')
+      +article('Акция на продукцию Wella','При покупке продукции Wella от 3000 руб — скидка 5%.','Новинки магазина')
+    .large-6.medium-8.columns
+      h4 Разделы
+      .line
+      ul.nameless
+        each title in ['Акции и конкурсы','Новинки магазина']
+          li
+            a(href="#")
+              |#{title}
+              span &#160;(2)
+      h4 Свежие записи
+      .line
+      ul.nameless
+        each title in ['Акция на продукцию Эстель','Акция на продукцию Wella','Акция на продукцию Keen']
+          li
+            a(href="#")= title
+      h4 Свежие комментарии
+      .line

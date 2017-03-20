@@ -1,0 +1,52 @@
+a {
+    -webkit-transition: color 300ms ease-in-out;
+    -moz-transition: color 300ms ease-in-out;
+    -ms-transition: color 300ms ease-in-out;
+    -o-transition: color 300ms ease-in-out;
+    transition: color 300ms ease-in-out;
+    color: $black;
+
+    &:after {
+        color: $black;
+    }
+}
+
+h1,
+h2,h3{
+    text-transform: uppercase;
+}
+
+
+
+form {
+    border-radius: rem-calc(7);
+    background: $secondary;
+    padding: rem-calc(20);
+    margin-bottom: rem-calc(20);
+}
+
+[type='color'],
+[type='date'],
+[type='datetime'],
+[type='datetime-local'],
+[type='email'],
+[type='month'],
+[type='number'],
+[type='password'],
+[type='search'],
+[type='tel'],
+[type='text'],
+[type='time'],
+[type='url'],
+[type='week'],
+textarea {
+    border-right-color:  $medium-gray;
+    border-bottom-color:  $medium-gray;
+    &:hover {
+      box-shadow:0 0 rem-calc(20) $primary;
+    }
+    &:focus {
+      border-right-color:  $medium-gray;
+      border-bottom-color:  $medium-gray;
+    }
+}

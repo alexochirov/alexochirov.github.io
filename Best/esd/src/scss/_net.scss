@@ -1,0 +1,19 @@
+.net {
+    position: absolute;
+    right: rem-calc(20);
+    opacity: 0;
+    transition: 0.5s;
+    top: rem-calc(10);
+
+    &__love {
+        cursor: pointer;
+        color: $gray;
+
+        &:hover {
+            color: $primary-color;
+        }
+    }
+    @include breakpoint(small only) {
+        opacity: 1;
+    }
+}

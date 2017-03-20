@@ -1,0 +1,10 @@
+.quest {
+    font-size: rem-calc(12);
+    border-width: rem-calc(2);
+    float: left;
+    border-right: rem-calc(0);
+    width: calc(100% - 40px);
+    &:focus {
+          border-width: rem-calc(2);
+    }
+}

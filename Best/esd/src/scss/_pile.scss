@@ -1,0 +1,25 @@
+.pile {
+    display: inline-block;
+    position: relative;
+    margin-left: rem-calc(16);
+
+    &__num {
+        font-weight: 700;
+        transition: 0.3s;
+        color: $orange;
+        border: 2px solid $orange;
+        padding: rem-calc(2) rem-calc(8);
+    }
+
+    &__handle {
+        border: rem-calc(2) solid $orange;
+        border-bottom: 0;
+        right: calc(50% - 7px);
+        top: rem-calc(-6);
+        height: rem-calc(8);  transition: 0.3s;
+        border-top-left-radius: rem-calc(99);
+        border-top-right-radius: rem-calc(99);
+        width: rem-calc(15);
+        position: absolute;
+    }
+}

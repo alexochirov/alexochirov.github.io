@@ -1,0 +1,25 @@
+.tracery {
+    &__input {
+        display: none;
+
+        &:checked+label {
+            &:before {
+                content: "\f024";
+                font-family: FontAwesome;
+                color: $blue;
+                position: absolute;
+                left: rem-calc(9);
+                top: rem-calc(-8);
+                font-size: rem-calc(18);
+            }
+        }
+    }
+
+    .tracery__label {
+        position: relative;
+        margin-bottom: rem-calc(8);
+        padding-top: rem-calc(4);
+        padding-left: rem-calc(34);
+        background: url($imagesPath +"/check-active.svg")no-repeat left center;
+    }
+}

@@ -1,0 +1,11 @@
+.info {
+    background: url($imagesPath +"/dog.png")no-repeat center bottom;
+    padding-top: rem-calc(70);
+    padding-bottom: rem-calc(208);
+    @include breakpoint(medium down) {
+        padding-bottom: rem-calc(50);
+    }
+    @include breakpoint(small only) {
+        padding-top: rem-calc(10);
+    }
+}

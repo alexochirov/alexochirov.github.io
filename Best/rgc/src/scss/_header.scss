@@ -1,0 +1,15 @@
+.header {
+    background: $blue;
+    border-bottom: rem-calc(1) solid #0774be;
+    margin-bottom: rem-calc(20);
+
+    &__button {
+        outline: none;
+        height: rem-calc(26);
+    }
+
+    &__toggle {
+        display: inline-block;
+        margin-top: rem-calc(8);
+    }
+}

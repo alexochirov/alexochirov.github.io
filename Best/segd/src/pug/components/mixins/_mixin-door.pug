@@ -1,0 +1,6 @@
+mixin door(text,img,price)
+  .door.columns
+    a(href="#").door__img
+      img(src="./i/"+ img, alt="")
+    .door__text= text
+    p.door__price !{price}    

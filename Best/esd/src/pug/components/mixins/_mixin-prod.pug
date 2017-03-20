@@ -1,0 +1,10 @@
+mixin prod(img,category,title)
+  .product.columns
+    .product__img
+      include ../blocks/_heart
+      a(href="#")
+        img(src="./i/"+img, alt="")
+    h5.product__h5
+      a(href="#1").product__cat= category
+    a(href="#").product__title= title
+    .product__price 2,260&#160;&#8381;

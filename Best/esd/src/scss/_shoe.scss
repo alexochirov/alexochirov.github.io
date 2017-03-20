@@ -1,0 +1,39 @@
+.shoe {
+    list-style: none;
+    margin-left: rem-calc(0);
+    float: left;
+    margin-bottom: rem-calc(4);
+    border-bottom: rem-calc(1) solid $dark-gray;
+
+    &__link {
+        color: $dark-gray;
+        text-transform: uppercase;
+        font-size: rem-calc(12);
+        border-bottom: rem-calc(0);
+
+        &:hover {
+            color: $white;
+        }
+    }
+
+    &__item {
+        padding-left: rem-calc(10);
+        margin-left: rem-calc(10);
+        border-left: rem-calc(0);
+        margin-bottom: rem-calc(5);
+        display: inline-block;
+
+        &:first-child {
+            margin-left: rem-calc(0);
+            padding-left: rem-calc(0);
+        }
+    }
+    @include breakpoint(small only) {
+        width: 100%;
+
+        &__item {
+            margin-left: rem-calc(0);
+            padding-right: rem-calc(10);
+        }
+    }
+}

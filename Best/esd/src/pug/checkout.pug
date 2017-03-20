@@ -1,0 +1,160 @@
+extends index
+block content
+  include components/blocks/_check
+  .row.columns
+    p
+      |У вас есть купон?&#160;
+      a(href="#") Нажмите здесь для введения кода
+      br
+      |Уже покупали?&#160;
+      a(href="#") Нажмите для авторизации
+  .row
+    .large-14.medium-14.columns.station
+      .pencil
+      h3.bee
+        i.fa.fa-chevron-down
+        |&#160;Оплата и доставка
+      hr
+      p
+      form(action="#").station__form
+        div
+          .station__block Купить как *
+          .station__block
+            input(type="checkbox",name="how",checked)#10
+            label(for="10") Физ. лицо
+          .station__block
+            input(type="checkbox",name="how")#11
+            label(for="11") Салон
+          .station__block
+            input(type="checkbox",name="how")#12
+            label(for="12") Магазин
+        p
+        block extra
+        .row.small-up-2
+          .columns
+            label
+              |Имя&#160;
+              abbr.required(title='обязательно') *
+              input(type="text")
+          .columns
+            label
+              |Фамилия&#160;
+              abbr.required(title='обязательно') *
+              input(type="text")
+          .columns
+            label
+              |Email-адрес&#160;
+              abbr.required(title='обязательно') *
+              input(type="email")
+          .columns
+            label
+              |Телефон&#160;
+              abbr.required(title='обязательно') *
+              input(type="tel")
+          .columns
+            label
+              |Страна&#160;
+              abbr.required(title='обязательно') *
+              select
+                option Россия
+                option Казахстан
+
+        label
+          | Адрес&#160;
+          abbr.required(title='обязательно') *
+          input(type="text",placeholder="Улица и т.д.")
+        input(type="text",placeholder="Подъезд, этаж и т.п. (необязательно)")
+        label
+          |Населенный пункт&#160;
+          abbr.required(title='обязательно') *
+          input(type="text")
+        label
+          |Область/регион&#160;
+          abbr.required(title='обязательно') *
+          input(type="text")
+        label
+          |Почтовый индекс&#160;
+          abbr.required(title='обязательно') *
+          input(type="text")
+        div
+          input(type="checkbox",name="save")#20
+          label(for="20") Сохранить данные на сайте?
+        ul.station__preserve
+          li.station__item Будет автозаполнение формы при повторных покупках
+          li.station__item Сохраняется список заказов
+        .pencil
+        h3.bee
+          i.fa.fa-chevron-down
+          |&#160;Свойства
+        hr
+        p
+        label(for="order-comments") Примечание к заказу
+        textarea#order-comments(placeholder="Примечания к вашему заказу, например, особые пожелания отделу доставки.")
+
+    .large-10.medium-10.columns
+      aside.shop.shop_orange
+        h3.bee
+          i.fa.fa-chevron-down
+          |&#160;Ваш заказ
+        .row
+          .small-12.columns.shop__sum ТОВАР
+          .small-12.columns.shop__sum.text-right ИТОГО
+          .columns
+            .pencil
+          .small-14.columns.shop__all
+            |AIREX .Лак для волос эластичной фикс. 500 мл&#160;
+            strong.product-quantity × 1
+          .small-10.columns.shop__flask.text-right 200&#160;&#8381;
+          .columns
+            hr
+          .small-14.columns.shop__all
+            |SP Баланс Balance scalp лосьон д/чувствит. кожи (125)&#160;
+            strong.product-quantity × 2
+          .small-10.columns.shop__flask.text-right 1,970&#160;&#8381;
+          .columns
+            hr
+          .small-12.columns.shop__sum СУММА
+          .small-12.columns.shop__sum.text-right 2,390&#160;&#8381;
+          .columns
+            hr
+          .small-9.large-9.medium-24.columns.shop__sum.shop__sum_top.text-center.large-text-left ДОСТАВКА
+          .small-15.large-15.medium-24.columns
+            ul.shop__ul
+              li.shop__item
+                input(type="radio",name="ship")#1.shop__input
+                label(for="1").shop__label Самовывоз по адресу: Москва, ул. Лавочкина, д.23 стр. 1. (Бесплатно)
+              li.shop__item
+                input(type="radio",name="ship",checked)#2.shop__input
+                label(for="2").shop__label
+                  |Доставка по Москве и ближнему Подмосковью:
+                  span &#160;200&#160;&#8381;
+              li.shop__item
+                input(type="radio",name="ship")#3.shop__input
+                label(for="3").shop__label
+                  |При удаленности более 30 км от Москвы:
+                  span &#160;400&#160;&#8381;
+              li.shop__item
+                input(type="radio",name="ship")#4.shop__input
+                label(for="4").shop__label
+                  | Дальнее Подмосковье и вся Россия:
+                  span &#160;600&#160;&#8381;
+          .columns
+            hr
+          .small-12.columns.shop__sum ИТОГО
+          .small-12.columns.shop__all.text-right
+            b 2,590&#160;&#8381;
+        .pencil
+        .shop__help
+          label.shop__operator(for="30")
+            input(type="radio",name="help")#30
+            |Мне нужна помощь оператора по оплате — свяжитесь со мной
+          p С вами свяжется оператор и поможет с выбором оплаты
+          hr
+        .shop__help
+          label.shop__operator(for="31")
+            input(type="radio",name="help")#31
+            |Оплата наличными (ТОЛЬКО самовывоз и доставке по Москве)
+          p Вы можете оплатить выбранные вами покупки наличными при доставке заказа курьером.
+          hr
+          p
+        button.button.expanded Подтвердить заказ

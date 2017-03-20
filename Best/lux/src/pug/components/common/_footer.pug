@@ -1,0 +1,33 @@
+.footer
+  .row(data-equalizer,data-equalize-by-row="true")
+    .large-8.medium-12.columns.text-center.medium-text-left(data-equalizer-watch).footer__img
+      p
+        a(href="#")
+          img(src="./images/logo-gray.svg", alt="")
+      p.text-gray.footer__info
+        |117556, г. Москва, Чонгарский бульвар,
+        br
+        |д. 4, корп. 2, офис 9
+        br
+        |с 09:00 до 19:00
+        br
+        i Перед приездом обязательно позвоните!
+    .large-6.medium-12.columns.text-center.medium-text-left(data-equalizer-watch)
+      ul.floor
+        each title in ['Столешницы','Мойки','Подоконники','Барные стойки, ресепшн','Облицовка каминов','Элементы интерьера','Облицовка лестниц'  ]
+          li.floor__item
+            a(href="#").floor__link= title
+    .large-5.medium-12.columns.text-center.medium-text-left(data-equalizer-watch).footer__copy
+      a(href="tel:+74957987427").footer__tel +7 (495) 798-74-27
+      br
+      a(href="tel:+79855033333").footer__tel +7 (985) 503-33-33
+      p
+        a(href="mailto:info@interigroup.ru").footer__cetera info@interigroup.ru
+      a(href="#").button Рассчитать стоимость
+    .large-5.medium-12.columns.text-center.medium-text-left.large-text-right(data-equalizer-watch).footer__copy
+      include ../blocks/_social
+      br
+      a(href="#").footer__share Поделиться ссылкой
+
+      |Создание сайта - &copy;&#160;
+      a(href="https://cetera.ru").footer__cetera Cetera Labs

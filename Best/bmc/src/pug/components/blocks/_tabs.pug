@@ -1,0 +1,14 @@
+ul#example-tabs.tabs(data-tabs='')
+  li.tabs-title.is-active
+    a(href='#panel1', aria-selected='true') По модели
+  li.tabs-title
+    a(href='#panel2') По цвету
+  li.tabs-title
+    a(href='#panel3') По ткани
+.tabs-content(data-tabs-content='example-tabs')
+  #panel1.tabs-panel.is-active
+    include _model
+  #panel2.tabs-panel
+    include _model
+  #panel3.tabs-panel
+    include _model

@@ -1,0 +1,13 @@
+.cross {
+    padding: rem-calc(0);
+    width: auto;
+
+    img {
+        max-width: rem-calc(114);
+        max-height: rem-calc(130);
+    }
+    @media (max-width: 1300px) {
+        left: auto!important;
+        right: rem-calc(15)!important;
+    }
+}

@@ -1,0 +1,14 @@
+aside.aside
+  .row.columns
+    ul.cat
+      each title,index in ['Каталог','Управление заказами','Личный кабинет','Гид по моделям','Справочные материалы','Дополнительные услуги','Акции','О доставке','Об оплате','Рекламные материалы','Помощь','Вопросы и ответы','Обратная связь','О компании']
+        if index==3
+          li.cat__item.cat__item_drop.active
+            a(href="#").cat__link= title
+            ul.jacket
+              each title in ['Костюмы','Пиджаки','Брюки','Жилеты','Рубашки','Трикотаж']
+                li.jacket__item
+                  a(href="#").jacket__link= title
+        else
+          li.cat__item
+            a(href="#").cat__link= title

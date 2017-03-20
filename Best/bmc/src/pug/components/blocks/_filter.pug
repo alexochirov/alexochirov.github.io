@@ -1,0 +1,78 @@
+aside.aside
+  .aside__head.text-center
+    img(src="./images/filter.svg", alt="")
+    |Фильтр
+  ul.accordion(data-accordion='',data-multi-expand="true", data-allow-all-closed="true")
+    li.accordion-item(data-accordion-item='')
+      a.accordion-title(href='#') Цена
+      .accordion-content(data-tab-content='')
+        label.meters
+          span.meters__meter от
+          input#sliderOutput2.meters__input(type='text')
+        label.meters.meters_right
+          span.meters__meter до
+          input#sliderOutput1.meters__input(type='text')
+          span.meters__meter руб
+        .slider(data-slider='',data-initial-start='6', data-step='10',data-end="750")
+          span.slider-handle.slider-handle_prev(data-slider-handle='', role='slider', tabindex='1', aria-controls='sliderOutput2')
+          span.slider-handle.slider-handle_next(data-slider-handle='', role='slider', tabindex='1', aria-controls='sliderOutput1')
+          span.slider-fill(data-slider-fill='')
+    li.accordion-item(data-accordion-item='')
+      a.accordion-title(href='#') Стиль
+      .accordion-content(data-tab-content='')
+        .check
+          input.check__input(type="checkbox")#class1
+          label(for="class1").check__label Классический стиль
+        .check
+          input.check__input(type="checkbox")#class2
+          label(for="class2").check__label Повседневный стиль
+    li.accordion-item(data-accordion-item='')
+      a.accordion-title(href='#') Силуэт/Посадка
+      .accordion-content(data-tab-content='')
+        .check
+          input.check__input(type="checkbox")#class3
+          label(for="class3").check__label Прямой
+        .check
+          input.check__input(type="checkbox")#class4
+          label(for="class4").check__label Приталенный
+        .check
+          input.check__input(type="checkbox")#class5
+          label(for="class5").check__label Полуприталенный
+    li.accordion-item(data-accordion-item='')
+      a.accordion-title(href='#') Цвет
+      .accordion-content(data-tab-content='')
+        a(href="#").palette
+          img(src="./images/pal1.svg", alt="")
+        a(href="#").palette
+          img(src="./images/pal2.svg", alt="")
+        a(href="#").palette
+          img(src="./images/pal3.svg", alt="")
+        a(href="#").palette
+          img(src="./images/pal4.svg", alt="")
+        a(href="#").palette
+          img(src="./images/pal5.svg", alt="")
+        a(href="#").palette
+          img(src="./images/pal6.svg", alt="")
+        a(href="#").palette
+          img(src="./images/pal7.svg", alt="")
+        a(href="#").palette
+          img(src="./images/pal8.svg", alt="")
+        a(href="#").palette
+          img(src="./images/pal9.svg", alt="")
+        a(href="#").palette
+          img(src="./images/pal10.svg", alt="")
+    li.accordion-item(data-accordion-item='')
+      a.accordion-title(href='#') Сезон
+      .accordion-content(data-tab-content='')
+        .check
+          input.check__input(type="checkbox")#class6
+          label(for="class6").check__label Зима
+        .check
+          input.check__input(type="checkbox")#class7
+          label(for="class7").check__label Лето
+        .check
+          input.check__input(type="checkbox")#class8
+          label(for="class8").check__label Демисезон
+  .aside__body
+    button.button.expanded.secondary Сбросить фильтр
+    button.button.expanded Сбросить фильтр

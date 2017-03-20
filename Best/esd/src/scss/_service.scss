@@ -1,0 +1,31 @@
+.service {
+    position: relative;
+    overflow: hidden;
+
+    &:after {
+        width: calc(100% - 30px);
+        border-bottom: rem-calc(3) solid $light-gray;
+        position: absolute;
+        content: "";
+        left: rem-calc(15);
+        bottom: rem-calc(24);
+    }
+
+    &__h3 {
+        display: inline-block;
+        position: relative;
+        margin-bottom: rem-calc(24);
+        padding-bottom: rem-calc(10);
+        border-bottom: rem-calc(3) solid $gray;
+        &:after {
+          height: rem-calc(3);
+          content:"";
+          background: $medium-gray;
+          position: absolute;
+          z-index: 3;
+          bottom: rem-calc(-3);
+          width: 100%;
+          left: rem-calc(0);
+        }
+    }
+}

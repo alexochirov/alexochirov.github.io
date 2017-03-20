@@ -1,0 +1,56 @@
+a {
+    -webkit-transition: color 300ms ease-in-out;
+    -moz-transition: color 300ms ease-in-out;
+    -ms-transition: color 300ms ease-in-out;
+    -o-transition: color 300ms ease-in-out;
+    transition: color 300ms ease-in-out;
+}
+
+.button {
+    border-bottom: rem-calc(3) solid #007d27;
+    font-weight: 700;
+
+    &.hollow {
+        border-color: $green;
+        color: $green;
+        border-width: rem-calc(2);
+
+        &:hover {
+            color: $white;
+            background: $green;
+            border-color: $green;
+        }
+    }
+
+    &.small {
+        padding-top: rem-calc(9);
+        padding-bottom: rem-calc(9);
+    }
+}
+
+h1,
+h2,
+h3 {
+    text-transform: uppercase;
+}
+
+[type='color'],
+[type='date'],
+[type='datetime'],
+[type='datetime-local'],
+[type='email'],
+[type='month'],
+[type='number'],
+[type='password'],
+[type='search'],
+[type='tel'],
+[type='text'],
+[type='time'],
+[type='url'],
+[type='week'],
+textarea {
+    padding-left: rem-calc(30);
+    padding-right: rem-calc(30);
+    height: rem-calc(60);
+    margin-bottom: rem-calc(30);
+}

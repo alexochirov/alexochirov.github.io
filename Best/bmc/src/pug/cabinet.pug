@@ -1,0 +1,143 @@
+extends index
+block content
+  +bread(['Каталог','Личный кабинет'])
+  .row
+    .large-6.medium-8.columns
+      include components/blocks/_menu
+    .large-18.medium-16.columns
+      h1 Личный кабинет
+      ul#tabs.tabs.tabs_min(data-tabs='')
+        li.tabs-title.tabs-title_min.is-active
+          a(href='#panel1', aria-selected='true') Персональные данные
+        li.tabs-title.tabs-title_min
+          a(href='#panel2') мои условия
+      .tabs-content(data-tabs-content='tabs')
+        #panel1.tabs-panel.is-active
+          form.pattern(action="#")
+            .row
+              .large-12.columns
+                label.pattern__title Тип пользователя
+                .radio
+                  input(type="radio",name="face")#1.radio__input
+                  label(for="1").radio__label юридическое лицо
+                .radio
+                  input(type="radio",name="face")#2.radio__input
+                  label(for="2").radio__label физическое лицо
+                .radio
+                  input(type="radio",name="face")#3.radio__input
+                  label(for="3").radio__label индивидуальный предприниматель
+                p
+                label Пожалуйста загрузите
+                ol.pattern__docs.pattern__docs_law
+                  li копия ИНН
+                  li копия ОГРН
+                  li копия Устава: 1я страница, последняя страница, страница об учредителях, страница о назначении и сроках полномочий директора;
+                  li Копия положения о назначении директора;
+                ol.pattern__docs.pattern__docs_indi
+                  li копия ОГРНИП
+                  li копия ИНН
+                  li копия паспорта ( 1 страница + страница прописки);
+                ol.pattern__docs.pattern__docs_physical
+                  li копия паспорта
+                  li копия ИНН
+                include components/blocks/_file
+                label.pattern__title Реквизиты
+                label.pattern__label
+                  |Полное наименование
+                  sup *
+                  input.pattern__input(type="text",value='ООО "казаков"')
+                label.pattern__label
+                  |Сокращенное наименование
+                  input.pattern__input(type="text",value='7701399210')
+                label.pattern__label
+                  |Юридический адрес
+                  input.pattern__input(type="text",value='125364, Москва, ул. Свободы, 50, офис 16')
+                label.pattern__label
+                  |Фактический адрес (адреса магазинов)
+                  input.pattern__input(type="text",value='125364, Москва, ул. Свободы, 50, офис 16')
+                label.pattern__label
+                  |ОГРН
+                  input.pattern__input(type="text")
+                label.pattern__label
+                  |ИНН
+                  input.pattern__input(type="text")
+                label.pattern__label
+                  |КПП
+                  input.pattern__input(type="text")
+                label.pattern__label
+                  |ОКПО
+                  input.pattern__input(type="text")
+                label.pattern__label
+                  |Расчетный счет
+                  input.pattern__input(type="text")
+                label.pattern__label
+                  |Корреспондентский счет
+                  input.pattern__input(type="text")
+                label.pattern__label
+                  |БИК
+                  input.pattern__input(type="text")
+                label.pattern__label
+                  |Наименование банка
+                  input.pattern__input(type="tel")
+                label.pattern__label
+                  |Руководитель
+                  input.pattern__input(type="tel")
+                label.pattern__label
+                  |Контактные телефоны: сотовый и домашний (или два сотовых)
+                  input.pattern__input(type="tel")
+                label.pattern__label
+                  |e-mail
+                  input.pattern__input(type="email",value='support@prospero.ru')
+                label.pattern__label
+                  |контактное лицо
+                  input.pattern__input(type="text",value='Казаков Виктор Константинович')
+                p.pattern__attention
+                  sup *
+                  |поле обязательно к заполнению
+                p.pattern__attention
+                  span.pattern__red Внимание!&#160;
+                  | Для изменения реквизитов необходимо отправить официальный запрос на электронную почту компании
+                  a(href="mailto:info@biznes-moda.ru").pattern__mail  info@biznes-moda.ru
+              .large-12.columns
+                label.pattern__title адрес доставки
+                label.pattern__label
+                  |страна
+                  input.pattern__input(type="text",value='россия')
+                label.pattern__label
+                  |регион
+                  input.pattern__input(type="text",value='московская обл.')
+                label.pattern__label
+                  |город
+                  input.pattern__input(type="text",value='москва')
+                label.pattern__label
+                  |индекс
+                  input.pattern__input(type="text",value='125364')
+                label.pattern__label
+                  |улица
+                  input.pattern__input(type="text",value='свободы')
+                label.pattern__label
+                  |дом/корпус
+                  input.pattern__input(type="text",value='50')
+                p
+                label.pattern__title смена пароля
+                label.pattern__label
+                  |текущий пароль
+                  input.pattern__input(type="text")
+                label.pattern__label
+                  |новый пароль
+                  input.pattern__input(type="text")
+                label.pattern__label
+                  |повторите новый пароль
+                  input.pattern__input(type="text")
+                p
+            .row
+              .large-8.large-offset-4.columns.text-right
+                a(href="#").button.hollow.expanded отменить изменения
+              .large-8.end.columns
+                a(href="#").button.expanded сохранить
+
+        #panel2.tabs-panel
+          form.pattern(action="#")
+            .row
+              .large-12.columns
+                label.pattern__title Здесь будут условия

@@ -1,0 +1,16 @@
+.cockpit {
+    color: $green;
+    position: relative;
+    border-bottom: rem-calc(1) solid $light-gray;
+    padding-bottom: rem-calc(4);
+    margin-bottom: rem-calc(30);
+
+    &:before {
+        content: "";
+        background: $green;
+        position: absolute;
+        bottom: rem-calc(-2);
+        width: rem-calc(40);
+        height: rem-calc(3);
+    }
+}

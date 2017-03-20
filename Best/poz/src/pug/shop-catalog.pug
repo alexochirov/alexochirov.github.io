@@ -1,0 +1,72 @@
+extends shop-regular
+
+block content
+  .row.column
+    h1 Каталог
+  .content
+    .row
+      .columns.small-24.medium-8.large-6
+        a.button.expanded(href='shop-compare.html')
+          i.fa.fa-lg.fa-balance-scale
+          | &nbsp;Сравнить: 5
+      .columns.small-24.medium-12.large-14.text-center.medium-text-left
+        p
+          span.button-group
+            a.button(href='#')
+              | Цена&nbsp;
+              i.fa.fa-sort-amount-desc
+            a.button(href='#')
+              | Цена&nbsp;
+              i.fa.fa-sort-amount-asc
+            a.button(href='#') Новинки
+            a.button(href='#') Популярные
+      .columns.small-24.medium-4.large-4.medium-text-right.text-center
+        p
+          span.button-group
+            a.button(href='shop-catalog.html'): i.fa.fa-lg.fa-th
+            a.button(href='shop-catalog-lines.html'): i.fa.fa-lg.fa-th-list
+
+    .row
+      .columns.small-24.medium-8.large-6
+        include components/shop/_sidebar
+      .columns.small-24.medium-16.large-18
+        block products
+          .row.small-up-1.medium-up-2.large-up-4(data-equalizer data-equalize-by-row="true")
+            +productTile('Комби-перфоратор Metabo KHE 2650', false,'toy-my3.jpeg')
+            +productTile('Дрель-шуруповёрт RYOBI R18DDP-LL13G', false,'toy-my2.jpeg')
+            +productTile('Лобзик Metabo STEB 65 Quick', false,'toy-my1.jpeg')
+            +productTile('Торцовочная пила Ryobi EMS254L', true,'toy-my2.jpeg')
+            +productTile('Дрель-шуруповёрт RYOBI R18DDP-LL13G', false,'toy-my3.jpeg')
+            +productTile('Лобзик Metabo STEB 65 Quick', false,'toy-my4.jpeg')
+            +productTile('Комби-перфоратор Metabo KHE 2650', false,'toy-my5.jpeg')
+            +productTile('Дрель-шуруповёрт RYOBI R18DDP-LL13G', false,'toy-my6.jpeg')
+            +productTile('Лобзик Metabo STEB 65 Quick', false,'toy-my3.jpeg')
+            +productTile('Торцовочная пила Ryobi EMS254L', true,'toy-my3.jpeg')
+            +productTile('Дрель-шуруповёрт RYOBI R18DDP-LL13G', false,'toy-my3.jpeg')
+            +productTile('Лобзик Metabo STEB 65 Quick', false,'toy-my2.jpeg')
+            +productTile('Комби-перфоратор Metabo KHE 2650', false,'toy-my1.jpeg')
+            +productTile('Дрель-шуруповёрт RYOBI R18DDP-LL13G', false,'toy-my3.jpeg')
+            +productTile('Лобзик Metabo STEB 65 Quick', false,'toy-my3.jpeg')
+            +productTile('Торцовочная пила Ryobi EMS254L', true,'toy-my3.jpeg')
+            +productTile('Дрель-шуруповёрт RYOBI R18DDP-LL13G', false,'toy-my1.jpeg')
+            +productTile('Лобзик Metabo STEB 65 Quick', false,'toy-my2.jpeg')
+            +productTile('Комби-перфоратор Metabo KHE 2650', false,'toy-my6.jpeg')
+            +productTile('Дрель-шуруповёрт RYOBI R18DDP-LL13G', false,'toy-my3.jpeg')
+            +productTile('Лобзик Metabo STEB 65 Quick', false,'toy-my2.jpeg')
+            +productTile('Торцовочная пила Ryobi EMS254L', true,'toy-my3.jpeg')
+            +productTile('Дрель-шуруповёрт RYOBI R18DDP-LL13G', false,'toy-my3.jpeg')
+            +productTile('Лобзик Metabo STEB 65 Quick', false,'toy-my3.jpeg')
+        p &nbsp;
+        include components/common/_pagination
+
+  .row.column: hr
+  .content
+    .row.column
+      h2 Вы смотрели
+    .row.small-up-1.medium-up-3.large-up-6(data-equalizer data-equalize-by-row="true")
+      +productTile('Комби-перфоратор Metabo KHE 2650', false,'toy-my6.jpeg')
+      +productTile('Дрель-шуруповёрт RYOBI R18DDP-LL13G', false,'toy-my1.jpeg')
+      +productTile('Лобзик Metabo STEB 65 Quick', false,'toy-my2.jpeg')
+      +productTile('Торцовочная пила Ryobi EMS254L', true,'toy-my3.jpeg')
+      +productTile('Дрель-шуруповёрт RYOBI R18DDP-LL13G', false,'toy-my3.jpeg')
+      +productTile('Лобзик Metabo STEB 65 Quick', false,'toy-my5.jpeg')

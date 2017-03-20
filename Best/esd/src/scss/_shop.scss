@@ -1,0 +1,88 @@
+.shop {
+    position: relative;
+    margin-bottom: rem-calc(30);
+
+    &:after {
+        height: 100%;
+        border-left: rem-calc(1) solid $medium-gray;
+        display: block;
+        position: absolute;
+        content: "";
+        top: rem-calc(0);
+        left: rem-calc(-15);
+    }
+
+    &_orange {
+        padding: rem-calc(15);
+        border: rem-calc(3) solid $orange;
+
+        &:after {
+            width: 100%;
+            left: rem-calc(0);
+            background: $white;
+            opacity: 0.6;
+        }
+    }
+
+    label.shop__label {
+        margin-left: rem-calc(5);
+        display: inline;
+        font-size: rem-calc(12);
+        word-wrap: break-word;
+        line-height: 1.3;
+    }
+
+    &__item {
+        padding-top: rem-calc(5);
+        font-size: rem-calc(12);
+        padding-bottom: rem-calc(5);
+        line-height: 1;
+    }
+
+    input.shop__input {
+        outline: none;
+        display: inline;
+        margin-bottom: rem-calc(0);
+    }
+
+    &__ul {
+        list-style: none;
+        margin: rem-calc(0);
+        padding-top: rem-calc(5);
+        padding-bottom: rem-calc(5);
+    }
+
+    &__sum {
+        font-size: rem-calc(14);
+        font-weight: 700;
+        padding-top: rem-calc(3);
+        padding-bottom: rem-calc(3);
+
+        &_top {
+            padding-top: rem-calc(70);
+        }
+    }
+
+    &__operator {
+        line-height: 1;
+        margin-bottom: rem-calc(10);
+    }
+
+    &__help {
+        padding-top: rem-calc(10);
+        font-size: rem-calc(14);
+        line-height: 1;
+    }
+
+    &__all {
+        font-size: rem-calc(14);
+        padding-top: rem-calc(3);
+        padding-bottom: rem-calc(3);
+    }
+
+    &__flask {
+        font-size: rem-calc(14);
+        padding-top: 1rem;
+        padding-bottom: rem-calc(3);
+    }
+}

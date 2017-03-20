@@ -1,0 +1,60 @@
+div(data-sticky-container)
+  header.header.sticky(data-sticky,data-margin-top="0",data-sticky-on="small")
+    .hat
+      .row.hat__row
+        .large-10.medium-12.columns.text-center.medium-text-left.hide-for-small-only.hat__scene
+          ul.recent
+            each title in ['Частые вопросы','Уход и обслуживание','Гарантия']
+              li.recent__item
+                a(href="#").recent__link= title
+        .large-14.medium-12.columns.text-center.medium-text-right.hat__pillow
+          a(href="tel:+74957987427").hat__link
+            i.fa.fa-phone
+            |+7 (495)&#160;
+            b 798-74-27
+          |&#160;&#160;&#160;|
+          a(href="tel:+79855033333").hat__link
+            |+7 (985)&#160;
+            b 503-33-33
+          a(href="mailto:info@interigroup.ru").hat__link
+            i.fa.fa-envelope
+            span.hat__soap info@interigroup.ru
+    .row
+      .large-8.medium-5.columns.header__logo
+        a(href="#")
+          img(src="./images/logo.svg", alt="")
+        span(data-responsive-toggle='responsive-menu', data-hide-for='medium').header__toggle
+          button.menu-icon.dark(type='button', data-toggle='')
+
+      .large-16.medium-19.columns.header__info
+        .row
+          .large-12.medium-9.columns.text-right.hide-for-small-only.header__cockpit
+            a(href="#").button Рассчитать стоимость
+          .large-5.medium-7.columns.header__gray.hide-for-small-only с 09:00 до 19:00
+          .large-7.medium-8.columns.header__form.hide-for-small-only
+            form(action="#")
+              input(type="text",placeholder="Поиск...").header__input
+              button(type="submit").header__submit
+                i.fa.fa-search
+          .columns.text-center.medium-text-right#responsive-menu.header__scene
+            ul.catalog
+              li.catalog__item
+                a(href="#",data-toggle="stone").catalog__link.catalog__link_drop Каталог камня
+                .dropdown-pane#stone(data-dropdown,data-hover="true", data-hover-pane="true")
+                  include ../blocks/_menu
+              li.catalog__item
+                a(href="#",data-toggle="prod").catalog__link.catalog__link_drop Продукция
+                .dropdown-pane#prod(data-dropdown,data-hover="true", data-hover-pane="true")
+                  include ../blocks/_menu
+              li.catalog__item
+                a(href="#",data-toggle="gallery").catalog__link.catalog__link_drop Галерея работ
+                .dropdown-pane#gallery(data-dropdown,data-hover="true", data-hover-pane="true")
+                  include ../blocks/_menu
+              li.catalog__item
+                a(href="#").catalog__link Акции
+              li.catalog__item
+                a(href="#").catalog__link Новости
+              li.catalog__item
+                a(href="#").catalog__link О компании
+              li.catalog__item
+                a(href="#").catalog__link Контакты

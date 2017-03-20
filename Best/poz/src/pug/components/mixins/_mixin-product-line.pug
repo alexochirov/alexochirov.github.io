@@ -1,0 +1,67 @@
+mixin productLine(discount, onDemand, inCart, inFavourites,img)
+  .row
+    .column.small-8.medium-4
+      p: img(src='./i/'+img alt='Товар')
+    .column.small-16.medium-12.large-10
+      h5
+        if discount
+          span.label.success
+            i.fa.fa-star-o
+            | &nbsp;Акция
+          | &nbsp;
+        a.text-dark(href='shop-product.html') Картридж совместимый SuperFine (SF-CN048AE) 951XL Magenta
+      ul.hide-for-small-only
+        li Гарантия: 1 год
+        li Мощность: 1000W
+        li Цвет: Красный
+        li Страна: Китай
+
+    .column.small-24.medium-8.large-offset-2
+      if onDemand
+        p
+          span.text-dark-gray: em Нет в наличии&nbsp;
+          br
+          a(href='#' title=''): strong Заказать
+      else
+        .row.collapse
+          .small-14.columns
+            p
+              span.stat
+                | 1&nbsp;250&nbsp;
+                i.fa.fa-rub
+              if discount
+                br
+                del.text-dark-gray
+                  | 1&nbsp;750&nbsp;
+                  i.fa.fa-rub
+          .small-10.columns
+            if inCart
+              a(href='shop-cart.html' title='')
+                span.dark-gray
+                  i.fa.fa-check.fa-lg
+                  | &nbsp;В корзине
+            else
+              a(href='shop-cart.html' title='').button.small.hollow.expanded Купить
+      div.hide-for-small-only
+        hr
+        br
+        p
+          i.fa.fa-credit-card
+          | &nbsp;Купить в кредит
+          br
+          i.fa.fa-truck
+          | &nbsp;Доставим на дом
+          br
+          if !inFavourites
+            a(data-open="add-to-favourites-auth-popup")
+              i.fa.fa-heart-o
+              | &nbsp;Запомнить
+
+          else
+            a(href='' title='')
+              i.fa.fa-times
+              | &nbsp;Удалить из списка
+          | &nbsp;&nbsp;
+          a(href='shop-compare.html' title='')
+            i.fa.fa-balance-scale
+            | &nbsp;Сравнить

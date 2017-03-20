@@ -1,0 +1,129 @@
+include ../mixins/_mixin-dress
+include ../mixins/_mixin-shorts
+include ../mixins/_mixin-news
+.row.medium-up-3.small-up-1.text-center.medium-text-left(data-equalizer,data-equalize-by-row="true")
+  +dress('Мужская одежда','dress1.png','Одежда от лучших брендов для настоящих мужчин ')
+  +dress('Женская одежда','dress2.png','Одежда для женщин от лучших производителей')
+  +dress('Универсальная','dress3.png','Универсальная одежда для любых климатических условий')
+.mb60
++head('Коллекция 2016-2017')
+.row
+  .medium-12.columns
+    p
+      a(href="#")
+        img(src="./i/ano1.png", alt="")
+  .medium-12.columns
+    .row.small-up-2
+      .columns
+        p
+          a(href="#")
+            img(src="./i/ano2.png", alt="")
+      .columns
+        p
+          a(href="#")
+            img(src="./i/ano3.png", alt="")
+      .columns
+        p
+          a(href="#")
+            img(src="./i/ano4.png", alt="")
+      .columns
+        p
+          a(href="#")
+            img(src="./i/ano5.png", alt="")
+.row.medium-up-3.small-up-1(data-equalizer,data-equalize-by-row="true")
+  +shorts('shorts1.png','Classic military shorts (US ARMY)','Мужские шорты классический камуфляж')
+  +shorts('shorts2.png','Helikon CPU Jacket','Куртка мужская квадратный камуфляж')
+  +shorts('shorts3.png','DURAFLEX Furniture','Сумка для снаряжения светлый камуфляж')
+.mb60
+.row
+  .medium-12.columns
+    h2 Бренды
+  .medium-12.columns.text-center.medium-text-right
+    a(href="#").button.hollow Все бренды »
+p
+.row.large-up-6.medium-up-3.small-up-2
+  .columns
+    p.brand
+      a(href="#")
+        img(src="./i/brand1.png", alt="")
+  .columns
+    p.brand
+      a(href="#")
+        img(src="./i/brand2.png", alt="")
+  .columns
+    p.brand
+      a(href="#")
+        img(src="./i/brand3.png", alt="")
+  .columns
+    p.brand
+      a(href="#")
+        img(src="./i/brand4.png", alt="")
+  .columns
+    p.brand
+      a(href="#")
+        img(src="./i/brand5.png", alt="")
+  .columns
+    p.brand
+      a(href="#")
+        img(src="./i/brand6.png", alt="")
+.mb60
+hr
+.mb60
++head('О магазине')
+.row
+  .medium-13.columns
+    p
+      strong Black Soldier Showroom
+      =" "
+      | — это шоурум качественной одежды и обуви от известных casual и outdoor брендов. В ассортименте представлены б/у и новые вещи, прошедшие тщательный отбор.
+
+    p В нашем магазине вы можете купить одежду от Tommy Hilfiger, Levi`s, Burberry, Ralph Lauren, Nike и многих других знаменитых брендов. В каталоге найдутся вещи на любой вкус — от лёгких рубашек, футболок и поло до джинсовых брюк и верхней одежды. В продаже есть и женские, и мужские модели различных размеров. Все вещи отличаются высоким качеством и идеальным состоянием.
+    p Вы можете примерить любую понравившуюся вам вещь в нашем магазине или заказать её по почте - доставим в любую точку мира. А если у вас есть какие-либо пожелания по ассортименту, можно оставить их в нашей группе VK.
+  .medium-11.columns
+    .contacts
+      h2 Контакты
+      .row.contacts__row
+        .large-2.medium-4.small-3.columns
+          i.fa.fa-map-marker.fa-2x
+        .large-22.medium-20.small-21.columns
+          strong 150040, г.&#160;Ярославль, проспект&#160;Ленина&#160;25, этаж&#160;6, офис&#160;606
+      .row.contacts__row
+        .large-2.medium-4.small-3.columns
+          i.fa.fa-mobile.fa-2x
+        .large-22.medium-20.small-21.columns
+          a(href="tel:+88007755293").contacts__tel 8 (800) 775-52-93
+          br
+          a(href="mailto:welcome@cetera.ru")  welcome@cetera.ru
+.mb60
++head('Новости магазина')
+.row.large-up-4.medium-up-2.small-up-1.text-center.medium-text-left
+  +news('20.02.2016')
+  +news('20.02.2016')
+  +news('20.02.2016')
+  +news('20.02.2016')
+p
+.row.columns.text-center
+  a(href="#").button.hollow Еще новости
+.mb60
+.row.large-up-4.medium-up-2.small-up-2.text-center
+  .columns
+    p
+      img(src="./images/truck.svg", alt="")
+    p
+      strong.text-black Доставка по всей России
+  .columns
+    p
+      img(src="./images/clock.svg", alt="")
+    p
+      strong.text-black Доставка от 3 до 10 дней
+  .columns
+    p
+      img(src="./images/shield.svg", alt="")
+    p
+      strong.text-black Защищённый платёж
+  .columns
+    p
+      img(src="./images/t-shirt.svg", alt="")
+    p
+      strong.text-black Можно примерить перед оплатой
+.mb60

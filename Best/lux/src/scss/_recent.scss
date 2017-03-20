@@ -1,0 +1,22 @@
+.recent {
+    margin: rem-calc(0);
+    list-style-type: none;
+
+
+    &__item {
+        display: inline-block;
+
+        &:not(:last-child) {
+            &:after {
+                content: '|';
+                color: $gray;
+                margin-left: rem-calc(12);
+                margin-right: rem-calc(5);
+            }
+        }
+    }
+
+    &__link {
+      color: $gray;
+    }
+}

@@ -1,0 +1,22 @@
+.sale {
+    font-size: rem-calc(11);
+    color: $white;
+    width: rem-calc(85);
+    text-transform: uppercase;
+    height: rem-calc(18);
+    position: relative;
+    display: block;
+    padding-right: rem-calc(14);
+    padding-left: rem-calc(11);
+    background: url($imagesPath +"/sale1.svg") no-repeat left top;
+
+    img {
+        right: rem-calc(7);
+        top: rem-calc(6);
+        position: absolute;
+    }
+
+    &_green {
+        background: url($imagesPath +"/sale2.svg") no-repeat left top;
+    }
+}

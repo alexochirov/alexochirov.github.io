@@ -1,0 +1,7 @@
+.zebra {
+    background: url($imagesPath +"/zebra.jpg") no-repeat center;
+    padding-top: rem-calc(60);
+    @include breakpoint(small only) {
+        padding-top: rem-calc(20);
+    }
+}

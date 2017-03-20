@@ -1,0 +1,66 @@
+.order {
+    border: rem-calc(2) solid $secondary;
+    letter-spacing: rem-calc(.9);
+    margin-bottom: rem-calc(16);
+    line-height: 1.6;
+
+    &__title {
+        font-weight: 700;
+        font-size: rem-calc(20);
+        color: #fff;
+        text-transform: uppercase;
+        text-decoration: underline;
+    }
+
+    &__body,
+    &__head {
+        padding-left: rem-calc(16);
+        padding-right: rem-calc(16);
+        font-size: rem-calc(12);
+    }
+
+    &__name {
+        margin-bottom: rem-calc(5);
+    }
+
+    &__head {
+        padding-top: rem-calc(16);
+        padding-bottom: rem-calc(10);
+        background: $secondary;
+        color: #fff;
+
+        img {
+            position: relative;
+            top: rem-calc(-3);
+            margin-right: rem-calc(15);
+            width: rem-calc(38);
+        }
+    }
+
+    &__link {
+        text-transform: none;
+        color: $blue;
+        font-size: rem-calc(14);
+        font-weight: 300;
+    }
+
+    &__body {
+        padding-top: rem-calc(25);
+        padding-bottom: rem-calc(15);
+        text-transform: uppercase;
+    }
+
+    &__blue {
+        margin-bottom: rem-calc(5);
+        color: $blue;
+    }
+
+    &__indent {
+        padding-left: rem-calc(20);
+    }
+
+    &__contract {
+        padding-left: rem-calc(20);
+        font-weight: 300;
+    }
+}

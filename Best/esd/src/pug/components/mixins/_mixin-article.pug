@@ -1,0 +1,24 @@
+mixin article(title,text,category)
+  article.article.text-center
+    h2.article__title
+      a(href="#")= title
+    .line
+    p
+      | Posted on
+      a(href='#')  10.09.2015
+      |  by
+      a(href="#")  bpxF5Lae
+    .article__rel
+      p
+        img(src="./i/1.jpg", alt="")
+      .article__date.text-center
+        .article__day 16
+        .article__month Янв
+    p.text-left.article__post При покупке продукции Эстель от 1500 руб — подарок каждому покупателю!
+    hr.article__hr
+    .row.small-up-2
+      .columns.text-left
+        |Posted in&#160;
+        a(href="#")= category
+      .columns.text-right
+        a(href="#") Leave a comment

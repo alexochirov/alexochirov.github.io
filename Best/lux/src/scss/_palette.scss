@@ -1,0 +1,69 @@
+.palette {
+    display: inline-block;
+
+    &__input {
+        display: none;
+
+        &:checked+.palette__label {
+            border-color: $black;
+        }
+    }
+
+    .palette__label {
+        background: #b3cd24;
+        margin-right: rem-calc(2);
+        margin-left: rem-calc(0);
+        width: rem-calc(42);
+        height: rem-calc(18);
+        margin-bottom: rem-calc(6);
+        border: rem-calc(1) solid $medium-gray;
+
+        &_blue {
+            background: #2a526c;
+        }
+
+        &_purple {
+            background: #551472;
+        }
+
+        &_baige {
+            background: #bd9691;
+        }
+
+        &_orange {
+            background: #f16518;
+        }
+
+        &_red {
+            background: #c51e25;
+        }
+
+        &_black {
+            background: #021010;
+        }
+
+        &_brown {
+            background: #3d2217;
+        }
+
+        &_gray {
+            background: #434345;
+        }
+
+        &_wolf {
+            background: #a0a2a1;
+        }
+
+        &_pole {
+            background: #c6bcb0;
+        }
+
+        &_meat {
+            background: #f5e6c7;
+        }
+
+        &_white {
+            background: $white;
+        }
+    }
+}

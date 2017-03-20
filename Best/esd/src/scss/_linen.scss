@@ -1,0 +1,18 @@
+.linen {
+    padding-top: rem-calc(30);
+    padding-bottom: rem-calc(30);
+    overflow: hidden;
+
+    &__search {
+        padding-left: rem-calc(30);
+        padding-right: rem-calc(30);
+        padding-bottom: rem-calc(15);
+    }
+
+    &__wrapper {
+        width: calc(100% + 17px);
+        overflow-y: scroll;
+        height: 100%;
+    }
+
+}

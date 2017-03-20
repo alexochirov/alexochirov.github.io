@@ -1,0 +1,45 @@
+.article {
+    font-size: rem-calc(14);
+    border-bottom: rem-calc(2) solid $medium-gray;
+    padding-bottom: rem-calc(11);
+    margin-bottom: rem-calc(50);
+
+    &__hr {
+        margin-bottom: rem-calc(10);
+    }
+
+    &__title {
+        text-transform: none;
+    }
+
+    &__post {
+        font-size: rem-calc(16);
+    }
+
+    &__rel {
+        position: relative;
+    }
+
+    &__date {
+        width: rem-calc(55);
+        height: rem-calc(55);
+        position: absolute;
+        color: $orange;
+        left: rem-calc(-10);
+        background: $white;
+        top: rem-calc(40);
+        line-height: 1;
+        border: rem-calc(2) solid $orange;
+        padding: rem-calc(11 3 2);
+    }
+
+    &__day {
+        font-size: rem-calc(17);
+        font-weight: 700;
+    }
+
+    &__month {
+        text-transform: uppercase;
+        font-size: rem-calc(14);
+    }
+}

@@ -1,0 +1,67 @@
+include ../mixins/_mixin-head
+include ../mixins/_mixin-service
+.row.columns
+  .estel
+    .estel__slide
+      a(href="#")
+        img(src="./i/1.jpg", alt="")
+      .estel__info.text-center
+        .estel__text
+          h3.estel__h3 Акция!
+          .text-center
+            span.estel__line
+          h2.estel__h2 При покупке продукции Эстель от 1500 руб — подарок.
+          p.text-center
+            span.estel__line
+        a.button(href='/shop/') В магазин!
+
+    .estel__slide
+      a(href="#")
+        img(src="./i/2.jpg", alt="")
+      .estel__info.text-center
+        .estel__text
+          h3.estel__h3 Акция!
+          .text-center
+            span.estel__line
+          h2.estel__h2 При покупке продукции Keen от 3000 руб — скидка 5%.
+          p.text-center
+            span.estel__line
+        a.button(href='/shop/') В магазин!
+    .estel__slide
+      a(href="#")
+        img(src="./i/3.jpg", alt="")
+      .estel__info.text-center
+        .estel__text
+          h3.estel__h3 Акция!
+          .text-center
+            span.estel__line
+          h2.estel__h2 При покупке продукции Wella от 3000 руб — скидка 5%.
+          p.text-center
+            span.estel__line
+        a.button(href='/shop/') В магазин!
++head('Лидеры продаж')
+include _spa
+.row.medium-up-3.small-up-1.text-center
+  .columns
+    p
+      i.fa.fa-info-circle.fa-4x
+    h4  Моментальный сервис
+    p Только сертифицированная продукция мировых и отечественных производителей.
+  .columns
+    p
+      i.fa.fa-life-ring.fa-4x
+    h4  ПРОФЕССИОНАЛЬНАЯ ПОДДЕРЖКА
+    p Профессиональная консультация специалистов.
+
+  .columns
+    p
+      i.fa.fa-briefcase.fa-4x
+    h4  БЕЗУПРЕЧНАЯ РАБОТА
+    p Удобная форма сотрудничества для всех партнёров.
++service('Все категории каталога')
+include _accessoires
+.row.columns.text-center
+  p.lead Наша компания существует более 20 лет. Мы являемся официальными дистрибьютерами профессиональной косметики в Москве и Московской области. Мы работаем с салонами красоты, парикмахерскими и профессиональными магазинами. Также мы предоставляем обучение для парикмахеров в нашей студии. Обучение проводят аккредитованные технологи.
+  p.lead Теперь вам не надо тратить время для посещения магазинов, так как теперь вы можете совершать покупки профессиональной косметики у себя дома или на работе и наши курьеры доставят вам все необходимые товары в удобное для вас время.
+  p.lead В нашем интернет-магазине осуществляется продажа профессиональных красок и косметики, шампуней, бальзамов, спреев и сопутствующих товаров для волос.
+  p

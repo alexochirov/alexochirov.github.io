@@ -1,0 +1,15 @@
+.come {
+    margin-bottom: rem-calc(30);
+
+    &__text {
+        text-transform: uppercase;
+        font-size: rem-calc(18);
+        font-family: $font-proxima;
+        color: $black;
+    }
+    @include breakpoint(small only) {
+        &__text {
+            font-size: rem-calc(16);
+        }
+    }
+}

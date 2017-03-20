@@ -1,0 +1,28 @@
+.stance {
+    position: relative;
+    margin-bottom: rem-calc(20);
+
+    &__block {
+        display: none;
+        position: absolute;
+        width: rem-calc(330);
+        background: $white;
+        right: calc(50% - 526px);
+        bottom: rem-calc(30);
+        padding: rem-calc(16);
+    }
+    @include breakpoint(large down) {
+        &__block {
+            right: rem-calc(16);
+        }
+    }
+    @include breakpoint(small only) {
+        &__block {
+            width: rem-calc(260);
+        }
+    }
+}
+
+ymaps+.stance__block {
+    display: block;
+}

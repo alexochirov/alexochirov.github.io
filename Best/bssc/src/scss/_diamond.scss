@@ -1,0 +1,16 @@
+.diamond {
+    position: relative;
+
+    &:hover {
+        .diamond__link {
+            opacity: 1;
+        }
+    }
+
+    &__link {
+        opacity: 0;
+        position: absolute;
+        right: rem-calc(10);
+        top: rem-calc(10);
+    }
+}

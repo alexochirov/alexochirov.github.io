@@ -1,0 +1,48 @@
+.header {
+    margin-bottom: rem-calc(30);
+
+    &__logo {
+        padding-top: rem-calc(20);
+    }
+
+    &__toggle {
+        color: $orange;
+        cursor: pointer;
+        outline: none;
+        display: inline-block;
+        padding-top: rem-calc(54);
+    }
+
+    &__rel {
+        position: relative;
+    }
+
+    &__sticky {
+        width: 100%;
+        z-index: 50;
+
+        &.is-stuck {
+            box-shadow: 0 1px 15px 0 rgba(0, 0, 0, 0.2);
+            opacity: 0.95;
+            background: #fff;
+
+            .header__logo {
+                padding-top: rem-calc(0);
+
+                img {
+                    max-height: rem-calc(60);
+                }
+            }
+
+            .header__toggle {
+                padding-top: rem-calc(14);
+            }
+
+            .header__main {
+                & > .cat {
+                    margin-top: rem-calc(18);
+                }
+            }
+        }
+    }
+}

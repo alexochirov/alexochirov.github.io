@@ -1,0 +1,33 @@
+.quartz {
+    padding-left: rem-calc(70);
+    padding-right: rem-calc(70);
+
+    &__slide {
+        margin-right: rem-calc(9);
+        margin-left: rem-calc(9);
+    }
+
+    &__img {
+        border: rem-calc(1) solid $light-gray;
+        padding: rem-calc(9);
+        margin-bottom: rem-calc(9);
+
+        img {
+            display: inline-block;
+        }
+    }
+.slick-arrow {
+  top: 30%;
+}
+    .slick-prev {
+        left: rem-calc(-29);
+    }
+
+    .slick-next {
+        right: rem-calc(-29);
+    }
+    @include breakpoint(medium down) {
+        padding-left: rem-calc(0);
+        padding-right: rem-calc(0);
+    }
+}

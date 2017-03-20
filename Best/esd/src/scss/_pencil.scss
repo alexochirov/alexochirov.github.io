@@ -1,0 +1,6 @@
+.pencil {
+  border-bottom: rem-calc(3) solid $light-gray;
+  &_low {
+    margin-bottom: rem-calc(15);
+  }
+}

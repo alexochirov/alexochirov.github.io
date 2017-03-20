@@ -1,0 +1,12 @@
+.soc {
+  margin-left: rem-calc(2);
+  margin-bottom: rem-calc(19);
+  .fa-stack-2x {
+    color: $gray;
+  }
+  &:hover {
+    .fa-stack-2x {
+      color: $blue;
+    }
+  }
+}

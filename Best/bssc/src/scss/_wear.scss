@@ -1,0 +1,12 @@
+.wear {
+    margin: rem-calc(0);
+    list-style-type: none;
+
+    &__item {
+        margin-bottom: rem-calc(11);
+    }
+
+    &__link {
+        color: $white;
+    }
+}

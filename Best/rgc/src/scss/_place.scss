@@ -1,0 +1,59 @@
+.place {
+    background: url($imagesPath +"/place.jpg")no-repeat center top;
+    padding-top: rem-calc(130);
+    padding-bottom: rem-calc(185);
+
+    &__title {
+        font-size: rem-calc(90);
+        color: $white;
+        text-shadow: 0 0 rem-calc(16) #3575d0;
+        font-family: 'El Messiri';
+        line-height: 1;
+        display: inline-block;
+        overflow: hidden;
+        margin-bottom: rem-calc(250);
+    }
+
+    &__group {
+        font-size: rem-calc(40);
+        position: relative;
+
+        &:after,
+        &:before {
+            position: absolute;
+            content: "";
+            background: $white;
+            width: 100%;
+            box-shadow: 0 0 rem-calc(16) #3575d0;
+            left: calc(50% + 290px);
+            height: rem-calc(3);
+            top: rem-calc(20);
+        }
+
+        &:before {
+            left: auto;
+            right: calc(50% + 290px);
+        }
+    }
+    @include breakpoint(medium down) {
+        padding-top: rem-calc(20);
+        padding-bottom: rem-calc(100);
+
+        &__title {
+            font-size: rem-calc(60);
+            margin-bottom: rem-calc(50);
+        }
+    }
+    @include breakpoint(small only) {
+        padding-bottom: rem-calc(30);
+
+        &__title {
+            font-size: rem-calc(32);
+            margin-bottom: rem-calc(30);
+        }
+
+        &__group {
+            font-size: rem-calc(22);
+        }
+    }
+}

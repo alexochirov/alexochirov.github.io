@@ -1,0 +1,25 @@
+.ask {
+    background: url($imagesPath +"/zebra.jpg")no-repeat center;
+    border: rem-calc(1) solid $light-gray;
+    padding-left: rem-calc(70);
+    padding-right: rem-calc(70);
+    font-size: rem-calc(14);
+    padding-top: rem-calc(25);
+    padding-bottom: rem-calc(25);
+    margin-bottom: rem-calc(20);
+
+    &__img {
+        float: left;
+        margin-top: rem-calc(4);
+
+        img {
+            width: rem-calc(32);
+            height: rem-calc(32);
+            margin-right: rem-calc(15);
+        }
+    }
+    @include breakpoint(medium down) {
+        padding-left: rem-calc(18);
+        padding-right: rem-calc(18);
+    }
+}

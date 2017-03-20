@@ -1,0 +1,71 @@
+extends index
+block content
+  include components/mixins/_mixin-bread
+  include components/mixins/_mixin-prod.pug
+  +bread(['Магазин','Аксессуары, техника','Аксессуары для парикмахерских работ'])
+  .row
+    .large-18.medium-16.columns.text-center.medium-text-right.bear Показано 1–12 из 65 результатов
+    .large-6.medium-8.columns
+      select.orderby(name='orderby')
+        option(selected='selected') Сортировка по умолчанию
+        option() По популярности
+        option() По новизне
+        option() По цене: по возрастанию
+        option() По цене: по убыванию
+  .row
+    .large-6.medium-8.columns
+      aside
+        h4 Категории товаров
+        .pencil
+        ul.categories
+          each title,index in ['Аксессуары, техника','Краска для бровей и ресниц','Наборы','Окрашивание волос','Перманентная завивка','Стайлинг','Уход','Уход за телом']
+            if index==0
+              li.categories__item.open
+                a(href="#").categories__link= title
+                span.categories__count (#{Math.floor(Math.random() * (15 - 800) + 800)})
+                ul.categories
+                  each title,index in ['Аксессуары для парикмахерских работ','Одноразовая продукция','Полотенца']
+                    if index==0
+                      li.categories__item.active
+                        a(href="#").categories__link= title
+                        span.categories__count (#{Math.floor(Math.random() * (15 - 800) + 800)})
+                    else
+                      li.categories__item
+                        a(href="#").categories__link= title
+                        span.categories__count (#{Math.floor(Math.random() * (15 - 800) + 800)})
+            else
+              li.categories__item
+                a(href="#").categories__link= title
+                span.categories__count (#{Math.floor(Math.random() * (15 - 800) + 800)})
+
+        h4 Производители
+        .pencil.pencil_low
+        p
+          select
+            option Любой Производитель
+            option Estel
+            option KEEN
+        h4 Торговые марки
+        .pencil.pencil_low
+        p
+          select
+            option Любой Бренд
+            option Estel Airex
+            option KEEN
+
+    .large-18.medium-16.columns
+      .row.large-up-3.medium-up-2.small-up-1.text-center
+        +prod('theatre.png','Аксессуары для парикмахерских работ','Nioxin Маска д/глуб. восстан. волос (500 мл)')
+        +prod('beautiful2.jpg','Аксессуары для парикмахерских работ','Nioxin Маска д/глуб. восстан. волос (500 мл)')
+        +prod('nioxin.jpg','Очищение, шампуни','Nioxin Маска д/глуб. восстан. волос (500 мл)')
+        +prod('theatre.png','Аксессуары для парикмахерских работ','Nioxin Маска д/глуб. восстан. волос (500 мл)')
+        +prod('theatre.png','Аксессуары для парикмахерских работ','Nioxin Маска д/глуб. восстан. волос (500 мл)')
+        +prod('theatre.png','Аксессуары для парикмахерских работ','Nioxin Маска д/глуб. восстан. волос (500 мл)')
+        +prod('nioxin.jpg','Аксессуары для парикмахерских работ','Nioxin Маска д/глуб. восстан. волос (500 мл)')
+        +prod('theatre.png','Аксессуары для парикмахерских работ','Nioxin Маска д/глуб. восстан. волос (500 мл)')
+        +prod('theatre.png','Аксессуары для парикмахерских работ','Nioxin Маска д/глуб. восстан. волос (500 мл)')
+        +prod('theatre.png','Аксессуары для парикмахерских работ','Nioxin Маска д/глуб. восстан. волос (500 мл)')
+        +prod('nioxin.jpg','Аксессуары для парикмахерских работ','Nioxin Маска д/глуб. восстан. волос (500 мл)')
+        +prod('theatre.png','Аксессуары для парикмахерских работ','Nioxin Маска д/глуб. восстан. волос (500 мл)')
+      .row.columns
+        include components/blocks/_pagination

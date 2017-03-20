@@ -1,0 +1,27 @@
+.pack {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: rem-calc(100);
+    margin-bottom: rem-calc(26);
+
+    &__title {
+        font-size: rem-calc(72);
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: 700;
+        line-height: 1;
+        padding-top: rem-calc(100);
+    }
+    @include breakpoint(medium down) {
+        &__title {
+            font-size: rem-calc(50);
+        }
+    }
+    @include breakpoint(small only) {
+      padding-bottom: rem-calc(40);
+        &__title {
+            font-size: rem-calc(30);
+            padding-top: rem-calc(40);
+        }
+    }
+}

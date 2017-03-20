@@ -1,0 +1,53 @@
+.shorts {
+    border: rem-calc(2) solid $medium-gray;
+    padding-left: rem-calc(30);
+    padding-right: rem-calc(30);
+    display: block;
+    padding-bottom: rem-calc(7);
+    padding-top: rem-calc(22);
+    margin-bottom: rem-calc(26);
+
+    &:hover {
+        border-color: $orange;
+    }
+
+    &__img {
+        p {
+            line-height: rem-calc(190);
+        }
+    }
+
+    &__title {
+        font-size: rem-calc(18);
+        margin-bottom: rem-calc(3);
+        font-weight: 700;
+        font-family: $font-gotham;
+        text-transform: uppercase;
+        color: $black;
+    }
+
+    &__text {
+        font-family: "Open Sans",sans-serif;
+        font-weight: 400;
+        font-size: rem-calc(14);
+        margin-bottom: rem-calc(14);
+        color: $secondary;
+    }
+
+    &__price {
+        color: $secondary;
+        margin-bottom: rem-calc(14);
+        font-size: rem-calc(30);
+        font-family: $font-gotham;
+    }
+    @include breakpoint(large down) {
+        .button {
+            padding-left: rem-calc(30);
+            padding-right: rem-calc(30);
+        }
+    }
+      @include breakpoint(small only) { .button {
+        padding-left: rem-calc(23);
+        padding-right: rem-calc(23);
+      } }
+}

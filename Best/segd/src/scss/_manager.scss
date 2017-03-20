@@ -1,0 +1,12 @@
+.manager {
+    background-position: calc(50% + 300px) bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    @include breakpoint(large down) {
+        background-position: right bottom;
+    }
+    @include breakpoint(small only) {
+        background-position: 600px;
+    }
+}

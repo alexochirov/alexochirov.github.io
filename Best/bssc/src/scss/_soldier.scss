@@ -1,0 +1,12 @@
+.soldier {
+    position: relative;
+    min-height: rem-calc(265);
+    margin-bottom: rem-calc(26);
+
+    &__top {
+        z-index: 5;
+        position: absolute;
+        top: rem-calc(0);
+        width: 100%;
+    }
+}

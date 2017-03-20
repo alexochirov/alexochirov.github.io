@@ -1,0 +1,33 @@
+.rating {
+    direction: rtl;
+    font-size: 1.25rem;
+    unicode-bidi: bidi-override;
+    &_mini {
+      font-size: rem-calc(14);
+    }
+}
+
+.rating__star {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.rating__star:hover {
+    cursor: pointer;
+}
+
+.rating__star::before {
+    color: #fe6f21;
+    content: $fa-var-star-o;
+    padding-right: 5px;
+}
+
+.rating:not(:hover) .rating__star-active ~ .rating__star::before,
+.rating:not(:hover) .rating__star-active:before,
+.rating__star:hover ~ .rating__star::before,
+.rating__star:hover::before {
+    color: #fe6f21;
+    content: $fa-var-star;
+}

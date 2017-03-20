@@ -1,0 +1,49 @@
+.balance {
+    border-bottom: rem-calc(1) solid $medium-gray;
+
+
+    &__head {
+        border-bottom: rem-calc(3) solid $medium-gray;
+    }
+
+    &__title {
+        font-weight: 700;
+        padding-bottom: rem-calc(6);
+        font-size: rem-calc(14);
+        color: $black;
+        padding-left: rem-calc(0);
+        padding-right: rem-calc(0);
+        text-transform: uppercase;
+    }
+
+    &__close {
+        color: $medium-gray;
+        top: calc(50% - 16px);
+
+        &:hover {
+            color: #000;
+        }
+    }
+
+    &__fir {
+        width: rem-calc(35);
+        padding-left: rem-calc(0);
+    }
+
+    &__sec {
+        width: rem-calc(90);
+    }
+
+    &__fifth {
+        width: rem-calc(130);
+    }
+
+
+
+    @include breakpoint(small only) {
+        &__sec {
+            width: rem-calc(1);
+            padding: rem-calc(0);
+        }
+    }
+}

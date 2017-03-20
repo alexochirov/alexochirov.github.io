@@ -1,0 +1,47 @@
+.project {
+    background: $white;
+
+    &__think {
+        font-size: rem-calc(25);
+    }
+
+    &__part {
+        color: $secondary;
+        font-size: rem-calc(32);
+    }
+
+    &__action {
+        background: #eee8ec;
+    }
+
+    &__cite {
+        font-size: rem-calc(25);
+        margin-bottom: rem-calc(12);
+        position: relative;
+
+        &:before {
+            left: rem-calc(-46);
+            top: rem-calc(-5);
+            content: "«";
+            line-height: 1.0;
+            font-size: rem-calc(42);
+            font-weight: 700;
+            position: absolute;
+        }
+    }
+
+    &__say {
+        font-size: rem-calc(15);
+    }
+    &__img {
+      img {
+        border-radius: 50%;
+        width: rem-calc(60);
+        height: rem-calc(60);
+        overflow: hidden;
+      }
+    }
+      @include breakpoint(small only) { &__part {
+        font-size: rem-calc(24);
+      } }
+}

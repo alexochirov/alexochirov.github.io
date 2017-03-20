@@ -1,0 +1,14 @@
+header.header
+  .row
+    .large-5.medium-5.small-18.columns.header__logo
+      p
+        a(href="#")
+          img(src="./images/logo.svg", alt="")
+    .small-6.columns.show-for-small-only.text-right
+      span(data-responsive-toggle='responsive-menu', data-hide-for='medium').header__toggle
+        button.menu-icon.dark(type='button', data-toggle='')
+    .large-19.medium-19.columns.text-center.medium-text-right#responsive-menu
+      ul.cat
+        each title,index in ['Продукция','Портфолио',' FAQ',' Отзывы','Доставка','Способы оплаты','Контакты']
+          li.cat__item(class=index==1 ? "active": "")
+            a(href="#").cat__link= title

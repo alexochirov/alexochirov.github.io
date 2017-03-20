@@ -1,0 +1,33 @@
+.checkout {
+    margin-left: rem-calc(0);
+    list-style: none;
+
+    &__item {
+        display: inline-block;
+        text-transform: uppercase;
+        color: $medium-gray;
+        font-size: rem-calc(24);
+        padding-right: rem-calc(15);
+        padding-left: rem-calc(15);
+
+        &:not(:last-child)::after {
+            content: "\f054";
+            font-family: "FontAwesome";
+      
+            top: rem-calc(-1);
+            right: rem-calc(-15);
+            position: relative;
+            color: $medium-gray;
+        }
+
+        &.active {
+            font-weight: 700;
+            color: #000;
+        }
+    }
+    @include breakpoint(medium down) {
+        &__item {
+            font-size: rem-calc(19);
+        }
+    }
+}

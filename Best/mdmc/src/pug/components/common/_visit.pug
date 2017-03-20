@@ -1,0 +1,52 @@
+.visit(data-toggler=".visit_collapse")#visit
+  .row.collapse
+    .small-6.columns
+      .visit__already
+        i.fa.fa-check.fa-lg
+        | посещено
+    .small-6.columns.text-right
+      .visit__icons
+        a(href="#").text-light-gray
+          i.fa.fa-star
+        a(href="#",data-toggle="visit").text-light-gray
+          i.fa.fa-minus
+        a(href="#").text-light-gray.js-visit-toggle
+          i.fa.fa-times
+  .visit__main
+    .row.small-up-2
+      .columns.visit__title Шерегеш
+      .columns.visit__title.text-right
+        span.visit__gray (14 119)
+        | 4,7
+    ul.cont
+      li.cont__item
+        span.cont__span Страна:
+        span.cont__page.text-right Россия
+      li.cont__item
+        span.cont__span Регион:
+        span.cont__page.text-right Кемеровская обл.
+      li.cont__item
+        span.cont__span Адрес:
+        span.cont__page.text-right ул. Ленина, 1
+      li.cont__item
+        span.cont__span Тел.: 
+        span.cont__page.text-right
+          strong (343) 333-33-33
+      li.cont__item
+        span.cont__span Сайт:
+        span.cont__page.text-right
+          a(href="#") 
+            strong www.gesh.com 
+  p
+  p
+    a(href="#")
+      img(src="./i/snow.png", alt="")
+  .visit__main
+    .row
+      .columns
+        p.visit__category Категории: сноуборд, горные лыжи, снегоходы
+    .row.small-up-2
+      .column
+        a(href="#").visit__link Подробнее
+      .column.text-right
+        a(href="#").text-light-gray.visit__link Нашли ошибку?

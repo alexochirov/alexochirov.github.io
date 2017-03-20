@@ -1,0 +1,59 @@
+.pattern {
+    background: #f6f6f6;
+    margin-bottom: rem-calc(20);
+    padding: rem-calc(30) rem-calc(16) rem-calc(20);
+
+    &__title {
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: rem-calc(8);
+    }
+
+    &__label {
+        text-transform: uppercase;
+        font-size: rem-calc(12);
+        color: $dark-gray;
+    }
+
+    &__mail {
+        color: $secondary;
+    }
+
+    &__input {
+        text-transform: uppercase;
+        margin-top: rem-calc(4);
+        margin-bottom: rem-calc(11);
+        height: rem-calc(44);
+        font-weight: 500;
+        padding-left: rem-calc(16);
+        padding-right: rem-calc(16);
+
+        &::-webkit-input-placeholder {
+            color: $black;
+        }
+
+        &::-moz-placeholder {
+            color: $black;
+        }
+
+        &:-moz-placeholder {
+            color: $black;
+        }
+
+        &:-ms-input-placeholder {
+            color: $black;
+        }
+    }
+
+    &__docs {
+        display: none;
+    }
+
+    &__attention {
+        font-size: rem-calc(12);
+    }
+
+    &__red {
+        color: get-color(alert);
+    }
+}

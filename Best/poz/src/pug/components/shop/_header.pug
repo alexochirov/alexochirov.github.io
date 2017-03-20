@@ -1,0 +1,26 @@
+.header
+  .row
+    .small-10.medium-6.large-6.columns.text-center.large-text-left.header__logo
+      a(href='#' title='')
+        img(src='./images/logo.svg', alt='logo')
+
+    .small-14.columns.text-right.show-for-small-only(data-responsive-toggle='menu', data-hide-for='medium')
+      div(data-toggle)
+        i.fa-stack.fa-lg
+          i.fa.fa-circle.fa-stack-2x
+          i.fa.fa-bars.fa-stack-1x.fa-inverse
+        |  Меню
+    .large-18.medium-18.columns#menu
+      ul.menu-base.text-center.medium-text-left.large-text-right
+        li.menu-base__item
+          a.menu-base__link(href='#')
+            img(src="./images/largegoods.svg", alt="")
+            | Крупногабаритные товары
+        li.menu-base__item
+          a.menu-base__link(href='#')
+            img(src="./images/toys.svg", alt="")
+            | Игрушки
+        li.menu-base__item
+          a.menu-base__link(href='#')
+            img(src="./images/clothes.svg", alt="")
+            | Текстиль и одежда

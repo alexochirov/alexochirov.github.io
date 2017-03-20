@@ -1,0 +1,17 @@
+.scroll {
+    position: fixed;
+    width:auto;
+    z-index: 100;
+    right: 0.625rem;
+    bottom: 6.875rem;
+    display: none;
+    cursor: pointer;
+width: rem-calc(52);
+height: rem-calc(52);
+background: url($imagesPath +"/right-arrow-gray.svg")no-repeat center;
+transform:rotate(-90deg);
+    &:hover {
+background: url($imagesPath +"/right-arrow.svg")no-repeat center;
+    }
+
+}

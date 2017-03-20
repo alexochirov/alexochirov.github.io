@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="21" height="21" viewBox="-2 -2 23 23">
+  <defs>
+    <style>
+
+      .cls-2 {
+        fill: #ffffff;
+        stroke: #cccccc;
+        stroke-width: 1px;
+        filter: url(#inner-glow-1);
+      }
+    </style>
+
+    <filter id="inner-glow-1" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="1.333" in="SourceAlpha" result="innerGlowBlur"/>
+      <feFlood flood-color="#dedede" flood-opacity="0.75"/>
+      <feComposite operator="out" in2="innerGlowBlur"/>
+      <feComposite operator="in" in2="SourceAlpha"/>
+      <feBlend mode="normal" in2="SourceGraphic" result="innerGlow"/>
+    </filter>
+  </defs>
+  <circle id="circle-1" class="cls-2" cx="10" cy="10" r="10"/>
+</svg>

@@ -1,0 +1,27 @@
+doctype html
+html.no-js(lang='ru')
+  include components/mixins/_mixin-product-line
+  include components/mixins/_mixin-product-tile
+  include components/mixins/_mixin-product
+  include components/mixins/_mixin-head
+  include components/mixins/_mixin-product
+  include components/service/_head
+
+  body
+    include components/shop/_add-to-favourites-auth-popup
+    block top-place
+      .soldier
+        .soldier__top
+          include components/shop/_header
+        .cloth
+          include components/common/_cloth
+          include components/common/_cloth
+          include components/common/_cloth
+          include components/common/_cloth
+          include components/common/_cloth
+
+    block page
+      include components/shop/_content
+
+    include components/shop/_footer
+    include components/service/_js.html

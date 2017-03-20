@@ -1,0 +1,22 @@
+.news {
+    margin-bottom: rem-calc(26);
+
+    &:not(:last-child) {
+        border-right: rem-calc(1) solid $medium-gray;
+    }
+    @include breakpoint(medium down) {
+        &:not(:last-child) {
+            border-right: rem-calc(0);
+        }
+
+        &:nth-child(odd) {
+            border-right: rem-calc(1) solid $medium-gray;
+        }
+    }
+    @include breakpoint(small only) {
+        &:nth-child(odd) {
+            border-right: 0;
+        }
+
+    }
+}

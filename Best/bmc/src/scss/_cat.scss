@@ -1,0 +1,46 @@
+.cat {
+    margin: rem-calc(15 0);
+    list-style-type: none;
+
+
+    &__item {
+        position: relative;
+        margin-bottom: rem-calc(3);
+
+        &_drop {
+            &:after {
+                position: absolute;
+                right: rem-calc(16);
+                top: rem-calc(17);
+                content: "";
+                width: 0;
+                height: 0;
+                border-left: 7px solid transparent;
+                border-right: 7px solid transparent;
+                border-top: 7px solid $black;
+                transition: 0.3s all;
+            }
+        }
+
+        &.active {
+            & > a {
+                background: $secondary;
+                color: $white;
+            }
+
+            &:after {
+                border-top-color: $white;
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    &__link {
+        padding: rem-calc(10) rem-calc(33) rem-calc(10) rem-calc(16);
+        display: block;
+        font-weight: 900;
+        font-size: rem-calc(12);
+      
+        text-transform: uppercase;
+    }
+}

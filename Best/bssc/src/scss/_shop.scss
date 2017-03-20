@@ -1,0 +1,41 @@
+.shop {
+    list-style-type: none;
+    margin: rem-calc(0);
+
+    &__item {
+        display: inline-block;
+        border-bottom: rem-calc(4) solid transparent;
+
+        &:not(:last-child) {
+            margin-right: rem-calc(30);
+        }
+
+        &.active,
+        &:hover {
+            border-bottom-color: $black;
+        }
+    }
+
+    &__link {
+        display: block;
+        padding-top: rem-calc(12);
+        padding-bottom: rem-calc(13);
+        color: $black;
+    }
+    @include breakpoint(small only) {
+      
+      &__link {
+        padding-top: rem-calc(4);
+        padding-bottom: rem-calc(4);
+      }
+        &__item {
+            margin-right: rem-calc(6);
+            margin-left: rem-calc(6);
+
+            &:not(:last-child) {
+                margin-right: rem-calc(6);
+                margin-left: rem-calc(6);
+            }
+        }
+    }
+}

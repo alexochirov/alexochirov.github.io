@@ -1,0 +1,49 @@
+.num {
+    float: left;
+    width: 100%;
+
+    &_mini {
+        float: none;
+        @include clearfix;
+        display: inline-block;
+        width: auto;
+        position: relative;
+        top: rem-calc(18);
+
+        .num__input,
+        .num__minus,
+        .num__plus {
+            height: rem-calc(50);
+        }
+    }
+
+    &__input {
+        padding: 0 rem-calc(5);
+        width: rem-calc(50);
+        height: rem-calc(41);
+        text-align: center;
+        float: left;
+    }
+
+    &__minus,
+    &__plus {
+        float: left;
+        padding: rem-calc(7) rem-calc(10);
+        height: rem-calc(41);
+        cursor: pointer;
+        color: $white;
+        background-color: $orange;
+    }
+
+    &__minus {
+        border-top-left-radius: rem-calc(5);
+        border-bottom-left-radius: rem-calc(5);
+        border-right: rem-calc(0);
+    }
+
+    &__plus {
+        border-top-right-radius: rem-calc(5);
+        border-bottom-right-radius: rem-calc(5);
+        border-left: rem-calc(0);
+    }
+}

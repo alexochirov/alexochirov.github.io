@@ -1,0 +1,23 @@
+.footer {
+    background: $gray;
+    padding-top: rem-calc(30);
+    color: $light-gray;
+
+    h5 {
+        color: #fff;
+    }
+
+    &__main {
+        margin-bottom: rem-calc(40);
+    }
+
+    &__input {
+        margin-bottom: rem-calc(17);
+    }
+
+    &__submit {
+        background: $carrot;
+    }
+
+  
+}

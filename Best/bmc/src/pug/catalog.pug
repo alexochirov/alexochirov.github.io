@@ -1,0 +1,49 @@
+extends index
+include components/mixins/_mixin-product
+block content
+  +bread(['Каталог','Костюмы'])
+  .row
+    .large-6.medium-8.columns
+      include components/blocks/_filter
+
+      include components/blocks/_menu
+    .large-18.medium-16.columns
+      h1 Костюмы
+      .row
+        .large-7.medium-14.columns
+          .sort Сортировка
+          select.choose
+            option по обновлению
+            option по цене
+        .large-5.medium-10.columns
+          .sort Показать по
+          select.choose
+            option 16
+            option 32
+        .large-5.medium-9.small-11.columns
+          .sort Вид
+          button.button.strainer
+            i.fa.fa-th-large
+          button.button.secondary.strainer
+            i.fa.fa-th-list
+        .large-7.medium-15.small-13.columns
+          include components/blocks/_search
+      .row.large-up-4.medium-up-2.small-up-2
+        +product('prod1.jpg','К5152 КОСТЮМ МУЖСКОЙ',4,['new'])
+        +product('prod2.jpg','К735 КОСТЮМ МУЖСКОЙ',5,['leader','new'])
+        +product('prod3.jpg','К5152 КОСТЮМ МУЖСКОЙ',3,['action'])
+        +product('prod4.jpg','К5152 КОСТЮМ МУЖСКОЙ',4,['sale'])
+        +product('prod5.jpg','К5152 КОСТЮМ МУЖСКОЙ',4,['sale'])
+        +product('prod4.jpg','К735 КОСТЮМ МУЖСКОЙ',5,['new','leader'])
+        +product('prod3.jpg','К5152 КОСТЮМ МУЖСКОЙ',3,['action'])
+        +product('prod4.jpg','К5152 КОСТЮМ МУЖСКОЙ',4,['new'])
+        +product('prod1.jpg','К5152 КОСТЮМ МУЖСКОЙ',4,['new'])
+        +product('prod2.jpg','К735 КОСТЮМ МУЖСКОЙ',5,['leader','new'])
+        +product('prod3.jpg','К5152 КОСТЮМ МУЖСКОЙ',3,['action'])
+        +product('prod4.jpg','К5152 КОСТЮМ МУЖСКОЙ',4,['sale'])
+        +product('prod5.jpg','К5152 КОСТЮМ МУЖСКОЙ',4,['sale'])
+        +product('prod4.jpg','К735 КОСТЮМ МУЖСКОЙ',5,['new','leader'])
+        +product('prod3.jpg','К5152 КОСТЮМ МУЖСКОЙ',3,['action'])
+        +product('prod4.jpg','К5152 КОСТЮМ МУЖСКОЙ',4,['new'])
+      p
+      include components/blocks/_pagination

@@ -1,0 +1,42 @@
+.cycle {
+    margin-bottom: rem-calc(30);
+    padding-right: rem-calc(18);
+    border-right: rem-calc(1) solid $light-gray;
+    font-size: rem-calc(14);
+
+    &__logo {
+        height: rem-calc(80);
+
+        img {
+            max-height: 100%;
+        }
+    }
+
+    &__title {
+        font-size: rem-calc(18);
+        text-transform: uppercase;
+        margin-bottom: rem-calc(8);
+    }
+
+    &__img {
+        width: rem-calc(100);
+        height: rem-calc(100);
+        border: rem-calc(1) solid $blue;
+        display: inline-block;
+        padding: rem-calc(12);
+
+        img {
+            max-height: 100%;
+        }
+    }
+    @include breakpoint(small only) {
+        border-right: rem-calc(0);
+&_eco {
+  padding-right: rem-calc(0);
+}
+        &__img {
+            width: rem-calc(80);
+            height: rem-calc(80);
+        }
+    }
+}

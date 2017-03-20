@@ -1,0 +1,4 @@
+.polygon {
+  padding-right: rem-calc(45);
+    @include breakpoint(medium down) { padding-right: rem-calc(0); }
+}

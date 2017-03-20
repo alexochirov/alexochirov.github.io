@@ -1,0 +1,44 @@
+.freight {
+    list-style-type: none;
+    margin-left: rem-calc(0);
+    padding-top: rem-calc(45);
+    padding-bottom: rem-calc(35);
+    margin-bottom: rem-calc(0);
+
+    &__item {
+        display: inline-block;
+        margin-bottom: rem-calc(10);
+
+        &:not(:first-child) {
+            margin-left: rem-calc(26);
+        }
+
+        &.active {
+            a {
+                color: $green;
+            }
+        }
+    }
+
+    &__link {
+        text-transform: uppercase;
+        font-size: rem-calc(16);
+        font-weight: 700;
+    }
+    @include breakpoint(large down) {
+        &__item {
+            &:not(:first-child) {
+                margin-left: rem-calc(14);
+            }
+        }
+    }
+    @media (max-width: 1080px) {
+        padding-top: rem-calc(20);
+        padding-bottom: rem-calc(0);
+
+        &__item {
+            margin-bottom: rem-calc(14);
+        }
+    }
+    @include breakpoint(medium down) {}
+}

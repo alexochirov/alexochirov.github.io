@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+// Все картинки и шрифты необходимо подключать с использованием этих двух переменных:
+$imagesPath: '../images' !default;
+$fontsPath: '../fonts' !default;
+
+$fancybox-image-url: $imagesPath + '/fancy';
+$fa-font-path: $fontsPath;
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic');
+$orange:#f68a1f;
+$blue: #627f9a;
+$gray:#777;
+$carrot: #d26e4b;
+
+@import "foundation-settings";
+
+@import "foundation";
+@import "motion-ui";
+@import "font-awesome";
+@import "slick.scss";
+@include foundation-everything;
+@import "jquery.fancybox";
+
+@import "common";
+@import "slick/slick-theme";
+
+
+@import "footer";
+@import "header";
+@import "sticky-footer";
+@import "mango";
+@import "about";
+@import "cat";
+@import "pile";
+@import "linen";
+@import "fashion";
+@import "carrot";
+@import "archer";
+@import "why";
+@import "estel";
+@import "frog";
+@import "leader";
+@import "spa";
+@import "service";
+@import "soc";
+@import "action";
+@import "shoe";
+@import "copy";
+@import "scroll";
+@import "hook";
+@import "categories";
+@import "pencil";
+@import "product";
+@import "sake";
+@import "cart";
+@import "balance";
+@import "another";
+@import "shop";
+@import "checkout";
+@import "perfume";
+@import "station";
+@import "bee";
+@import "net";
+@import "line";
+@import "cross";
+@import "arrow";
+@import "num";
+@import "developer";
+@import "review";
+@import "dummy";
+@import "manager";
+@import "window";
+@import "bear";
+@import "nameless";
+@import "article";
+@import "stance";

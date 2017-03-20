@@ -1,0 +1,45 @@
+.contacts {
+    font-family: "Roboto Condensed",sans-serif;
+    color: $medium-gray;
+    background: $black;
+
+    &__search {
+        padding-top: rem-calc(7);
+        padding-bottom: rem-calc(7);
+    }
+
+    &__link {
+        color: $medium-gray;
+        font-size: rem-calc(16);
+        text-transform: uppercase;
+        font-weight: 400;
+        text-decoration: none;
+        display: inline-block;
+        padding-top: rem-calc(7);
+        padding-bottom: rem-calc(7);
+    }
+
+    &__mail {
+        color: $medium-gray;
+        font-weight: 400;
+        text-decoration: none;
+        font-size: rem-calc(14);
+        display: inline-block;
+        padding-top: rem-calc(8);
+        padding-bottom: rem-calc(9);
+
+        i {
+            font-size: rem-calc(16);
+            margin-right: rem-calc(8);
+        }
+    }
+    @include breakpoint(small only) {
+        &__link {
+            font-size: rem-calc(14);
+        }
+
+        &__mail {
+            font-size: rem-calc(12);
+        }
+    }
+}

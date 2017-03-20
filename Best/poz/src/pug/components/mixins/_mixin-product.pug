@@ -1,0 +1,11 @@
+mixin product(img,text)
+  .column
+    .product
+      .product__img
+        a(href="#")
+          img(src='./i/' + img, alt='')
+      .product__desc(data-equalizer-watch)= text
+      .product__price 2&#160;000&#160;&#8381;
+      a(href="#").button.product__btn
+        | В корзину
+        i.fa.fa-heart.fa-inverse

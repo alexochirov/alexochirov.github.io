@@ -1,0 +1,54 @@
+.map {
+    list-style-type: none;
+    margin-bottom: rem-calc(0);
+    margin-left: rem-calc(0);
+    padding-top: rem-calc(10);
+    padding-bottom: rem-calc(10);
+
+    &__item {
+        display: inline-block;
+        padding: rem-calc(10) rem-calc(29) rem-calc(11);
+        border-left: rem-calc(1) solid rgba(255, 255, 255, .17);
+
+        &:first-child {
+            border-left: 0;
+            padding-left: rem-calc(0);
+        }
+
+        &:last-child {
+            padding-right: rem-calc(0);
+        }
+
+        &.active {
+            & > a {
+                border-bottom-color: $white;
+            }
+        }
+    }
+
+    &__link {
+        letter-spacing: rem-calc(.8);
+        color: $white;
+        font-weight: 700;
+        text-transform: uppercase;
+        border-bottom: rem-calc(2) solid transparent;
+
+        &:hover {
+            color: $white;
+            border-bottom-color: $white;
+        }
+    }
+    @include breakpoint(xlarge down) {
+        &__item {
+            padding-left: rem-calc(20);
+            padding-right: rem-calc(20);
+        }
+    }
+    @include breakpoint(large down) {
+        &__item {
+            border-left: rem-calc(0);
+            padding-left: rem-calc(15);
+            padding-right: rem-calc(15);
+        }
+    }
+}

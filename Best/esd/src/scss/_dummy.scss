@@ -1,0 +1,15 @@
+.dummy {
+    height: rem-calc(300);
+    background: url($imagesPath +"/back.png")center;
+    margin-bottom: rem-calc(15);
+    padding-top: rem-calc(76);
+
+    h1 {
+        color: #fff;
+        font-size: rem-calc(56);
+    }
+
+    .fa-stack-1x {
+        color: #fff;
+    }
+}

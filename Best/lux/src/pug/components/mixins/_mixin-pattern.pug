@@ -1,0 +1,17 @@
+mixin pattern(img,title,animate)
+  if animate==true
+    .columns.cartoon__block
+      a(href="#").pattern
+        .pattern__img
+          img(src="./i/"+img, alt="")
+        .pattern__title= title
+        .pattern__square.text-center
+          img(src="./images/ico-search.svg", alt="")
+  else
+    .columns
+      a(href="#").pattern
+        .pattern__img
+          img(src="./i/"+img, alt="")
+        .pattern__title= title
+        .pattern__square.text-center
+          img(src="./images/ico-search.svg", alt="")

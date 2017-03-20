@@ -1,0 +1,7 @@
+.bg-white {
+    background-color: $white;
+    &_bord {
+      border-top: rem-calc(4) solid $medium-gray;
+      border-bottom: rem-calc(4) solid $medium-gray;
+    }
+}

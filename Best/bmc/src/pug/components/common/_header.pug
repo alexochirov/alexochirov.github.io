@@ -1,0 +1,32 @@
+header.header
+  .row
+    .large-6.medium-8.columns.text-center.medium-text-left.header__logo
+      a(href="#")
+        img(src="./images/logo.svg", alt="")
+    .large-18.medium-16.columns.header__main
+      .row.large-up-4.medium-up-2
+        .columns.text-center.medium-text-left
+          a.header__drop(href="#", data-toggle="dropdown-1") ООО “Казаков”
+          #dropdown-1.dropdown-pane(data-dropdown='', data-hover='true', data-hover-pane='true')
+            ul.archer.text-center
+              each title in ['ООО “Казаков”','ООО “Бородин”','ООО “Норбек”']
+                li.archer__item
+                  a(href="#").archer__link= title
+        .columns.text-center.medium-text-right.large-text-left
+          a.header__drop(href="#",data-toggle="dropdown-2") Договор : Б1 WEB
+          #dropdown-2.dropdown-pane(data-dropdown='', data-hover='true', data-hover-pane='true').arrow
+            ul.archer.text-center
+              each title in ['Договор : Б2 WEB','Договор : Б3 WEB','Договор : Б4 WEB']
+                li.archer__item
+                  a(href="#").archer__link= title
+        .columns.text-center.medium-text-left
+          a.header__drop(href="#",data-toggle="dropdown-3") Склад : Центральный
+          #dropdown-3.dropdown-pane(data-dropdown='', data-hover='true', data-hover-pane='true')
+            ul.archer.text-center
+              each title in ['Склад : №1','Склад : №2','Склад : №3']
+                li.archer__item
+                  a(href="#").archer__link= title
+        .columns.text-center.medium-text-right
+          a.header__basket(href="#")
+            i.fa.fa-shopping-cart
+            |корзина: 9 450 руб.

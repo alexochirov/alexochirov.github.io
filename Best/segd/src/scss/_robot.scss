@@ -1,0 +1,22 @@
+.robot {
+  background-position: center top;
+  background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: rem-calc(100);
+    padding-bottom: rem-calc(100);
+
+    &__tabs {
+        margin-top: rem-calc(-60);
+        margin-bottom: rem-calc(62);
+    }
+    @include breakpoint(medium down) {
+        &__tabs {
+            margin-top: rem-calc(0);
+            margin-bottom: rem-calc(20);
+        }
+    }
+    @include breakpoint(small only) {
+        padding-top: rem-calc(50);
+        padding-bottom: rem-calc(50);
+    }
+}

@@ -1,0 +1,21 @@
+.perfume {
+  .button {
+    margin-bottom: rem-calc(5);
+  }
+    &__price {
+        font-weight: 700;
+        font-size: rem-calc(19);
+        color: #000;
+    }
+
+    &__stock {
+        font-weight: 700;
+        font-size: rem-calc(16);
+    }
+
+    &__art {
+        padding-top: rem-calc(4);
+        padding-bottom: rem-calc(4);
+        font-size: rem-calc(13);
+    }
+}

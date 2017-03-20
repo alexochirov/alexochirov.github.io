@@ -1,0 +1,30 @@
+.town {
+    height: rem-calc(430);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    position: relative;
+
+    &__text {
+        position: absolute;
+        bottom: rem-calc(40);
+        left: rem-calc(50);
+        font-size: rem-calc(30);
+        color: $white;
+        text-transform: uppercase;
+    }
+    @include breakpoint(xlarge down) {
+        &__text {
+            left: rem-calc(20);
+            font-size: rem-calc(23);
+        }
+    }
+    @include breakpoint(small only) {
+        height: rem-calc(200);
+
+        &__text {
+            left: rem-calc(8);
+            font-size: rem-calc(16);
+        }
+    }
+}

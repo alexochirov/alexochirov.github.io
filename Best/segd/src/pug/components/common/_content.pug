@@ -1,0 +1,202 @@
+include ../mixins/_mixin-head
+include ../mixins/_mixin-build
+include ../mixins/_mixin-door
++head('Преимущества работы с нами','Наша компания имеет солидный опыт изготовления монолитных бетонных лестниц различной конфигурации. Качество нашей работы проверено временем. Кроме того, наши цены являются одними из наиболее доступных на рынке монолитных конструкций.')
+.row.columns
+  p
+    strong «СтройЭкоГарант»
+    |  - строительная компания, известная на рынке благодаря качественной и надёжной работе. Наши бетонные лестницы прослужат долго и не будут поддаваться атмосферным воздействиям. Мы работаем как с крупными московскими организациями, так и с частными заказчиками.
+  p Строительство - сложный и многогранный процесс, мы понимаем всю глубину проблемы выбора нового подрядчика для строителтсва, поэтому предлагаем широкий спектр услуг в данной сфере, ценим и любим своих постоянных заказчиков, поэтому постоянно организуем специальные акции и спецпредложения со скидками и подарками для клиентов.
+  .pole
+.row.large-up-5.medium-up-3.small-up-2.text-center
+  .columns.come
+    p
+      img(src="./images/settings.svg", alt="")
+    .come__text Комплексный подход
+  .columns.come
+    p
+      img(src="./images/screen.svg", alt="")
+    .come__text Архитектурные разработки и дизайн
+  .columns.come
+    p
+      img(src="./images/desk.svg", alt="")
+    .come__text Конструкторские расчеты
+  .columns.come
+    p
+      img(src="./images/sharing-archives.svg", alt="")
+    .come__text Проектно-сметная документация
+  .columns.come.hide-for-small-only
+    p
+      img(src="./images/transfer.svg", alt="")
+    .come__text Решение смежных задач
+.pole
+.robot(style="background-image:url(./i/dark.png);")
+  +head('Наши работы','Несколько работ из нашей галереи. <br /> То чем мы гордимся, проекты говорят сами за себя.')
+  .row.columns.robot__tabs
+    ul#example-tabs.tabs(data-tabs='').parachute.text-center.large-text-right
+      li.tabs-title.is-active
+        a(href='#panel1') Без облицовки
+      li.tabs-title
+        a(href='#panel2') С облицовкой
+
+  .row.columns
+    .tabs-content(data-tabs-content='example-tabs')
+      #panel1.tabs-panel.is-active
+        .row.large-up-3.medium-up-2.small-up-1.text-center
+          +build('bu1.jpg')
+          +build('bu2.jpg')
+          +build('bu3.jpg')
+          +build('bu4.jpg')
+          +build('bu5.jpg')
+          +build('bu6.jpg')
+      #panel2.tabs-panel
+        .row.large-up-3.medium-up-2.small-up-1.text-center
+          +build('bu3.jpg')
+          +build('bu6.jpg')
+          +build('bu3.jpg')
+          +build('bu4.jpg')
+          +build('bu1.jpg')
+          +build('bu6.jpg')
+    .text-center
+      .pole
+      a(href="#").button.hollow.small Еще работы
+.flight(style="background-image:url(./i/flight.png);")
+  +head('Процесс создания лестницы ','Пошаговое описание процесса создания лестницы, даст <br /> наиболее полное понятие о нашей работе.',true)
+  p &#160;
+  .row.large-up-5.text-center.show-for-large
+    .columns.chandelier
+      .chandelier__num 1
+    .columns.chandelier
+      .chandelier__num 2
+    .columns.chandelier
+      .chandelier__num 3
+    .columns.chandelier
+      .chandelier__num 4
+    .columns.chandelier
+      .chandelier__num 5
+  .row.large-up-5.medium-up-3.small-up-2
+    .columns.pencil
+      p.pencil__img
+        img(src="./images/smartphone.svg", alt="")
+      p.pencil__text Прием звонка от потенциального заказчика. Консультация по телефону и при желании клиента согласуется день и время выезда к нему нашего инженера
+    .columns.pencil
+      p.pencil__img
+        img(src="./images/drawing.svg", alt="")
+      p.pencil__text Выезд инженера на объект. Снимаются точные размеры помещения, уровни будущих чистовых полов по этажам, определяется материал отделки ступеней лестницы и пр. Определяется стоимость изделия и озвучивается заказчику
+    .columns.pencil
+      p.pencil__img
+        img(src="./images/analytics.svg", alt="")
+      p.pencil__text На основании данных замера мы формируем 3D отрисовку (вариант архитектурного решения) лестницы в интерьере заказчика и отправляем заказчику на почту для согласования. Если необходимо проработать 2-3 различных вариант то мы это делам и бесплатно предоставляем заказчику на выбор
+    .columns.pencil
+      p.pencil__img
+        img(src="./images/list.svg", alt="")
+      p.pencil__text Если заказчик соглашается на один из вариантов, то мы готовим договор на выполнение работ и приложения к нему (локальная смета и проект серии КЖ). Проект КЖ (конструкции железобетонные) формируем либо мы, либо предоставляет заказчик если есть
+    .columns.pencil
+      p.pencil__img
+        img(src="./images/handshake.svg", alt="")
+      p.pencil__text После подписания договора, приложения и авансирования мы начинаем выполнение работ.
+.pole
++head('Варианты бетонных лестниц','Мы изготавливаем бетонные лестницы различных типов. <br /> Также можно сделать индивидуальный проект под заказ.')
+p &#160;
+.row.columns
+  .hall
+    +door('Двухмаршевые','f2.png','От <strong>30&#160;000&#160;</strong>р. за м<sup>2</sup>')
+    +door('г-образные','f3.png','От <strong>35&#160;000&#160;</strong>р. за м<sup>2</sup>')
+    +door('т-образные','f4.png','От <strong>38&#160;000&#160;</strong>р. за м<sup>2</sup>')
+    +door('винтовые','f5.png','От <strong>45&#160;000&#160;</strong>р. за м<sup>2</sup>')
+    +door('Двухмаршевые','f2.png','От <strong>55&#160;000&#160;</strong>р. за м<sup>2</sup>')
+    +door('винтовые','f5.png','От <strong>45&#160;000&#160;</strong>р. за м<sup>2</sup>')
+  .text-center
+    a(href="#").button Заказать лестницу
+  .pole
+.clients(style="background-image:url(./i/client.png);")
+  +head('Отзывы наших клиентов','Наши клиенты пишут о качестве нашей работы, все отзывы <br /> настоящие и правдивые.')
+
+  .row.columns
+    p &#160;
+    .entrepreneur
+      .entrepreneur__slide
+        .row.comment
+          .medium-8.columns.text-center
+            p.comment__img
+              img(src="./i/ent1.png", alt="")
+            .comment__name Александр Иванов
+            .comment__place ООО “СтройспецМонтаж”
+          .medium-16.columns.comment__text
+            .comment__quota
+            | С компанией “СтройЭкоГарант” работаем уже не больше не меньше 10 лет. Сделано по спецзаказам более 1000 лестниц для наших проектов. Что могу сказать... Всегда работа выполняется день в день по сроку. За качество товара компания всегда отвечает, и ни разу нас не подводила, и это ключевой момент в нашем сотрудничестве.
+            br
+            | Рекомендую как строитель!
+      .entrepreneur__slide
+        .row.comment
+          .medium-8.columns.text-center
+            p.comment__img
+              img(src="./i/ent2.png", alt="")
+            .comment__name Константин Петровский
+            .comment__place Предприниматель
+          .medium-16.columns.comment__text
+            .comment__quota
+            | Заказал бетонную винтовую лестницу в офис, так как старая железная очень неудобная да и уже отслужила свое... Ребята приехали, сделали все замеры очень оперативно, в общем уже через неделю мы поднимались и спускались по новой лестнице. Очень удобно и приятно!
+            br
+            | Спасибо за хорошо сделанную работу!
+      .entrepreneur__slide
+        .row.comment
+          .medium-8.columns.text-center
+            p.comment__img
+              img(src="./i/ent1.png", alt="")
+            .comment__name Александр Иванов
+            .comment__place ООО “СтройспецМонтаж”
+          .medium-16.columns.comment__text
+            .comment__quota
+            | С компанией “СтройЭкоГарант” работаем уже не больше не меньше 10 лет. Сделано по спецзаказам более 1000 лестниц для наших проектов. Что могу сказать... Всегда работа выполняется день в день по сроку. За качество товара компания всегда отвечает, и ни разу нас не подводила, и это ключевой момент в нашем сотрудничестве.
+            br
+            | Рекомендую как строитель!
+      .entrepreneur__slide
+        .row.comment
+          .medium-8.columns.text-center
+            p.comment__img
+              img(src="./i/ent2.png", alt="")
+            .comment__name Константин Петровский
+            .comment__place Предприниматель
+          .medium-16.columns.comment__text
+            .comment__quota
+            | Заказал бетонную винтовую лестницу в офис, так как старая железная очень неудобная да и уже отслужила свое... Ребята приехали, сделали все замеры очень оперативно, в общем уже через неделю мы поднимались и спускались по новой лестнице. Очень удобно и приятно!
+            br
+            | Спасибо за хорошо сделанную работу!
+.pole
++head('Наши клиенты и партнеры','Компании и организации с которыми мы сотрудничаем.')
+p &#160;
+.row.large-up-6.medium-up-3.small-up-2.text-center
+  .columns
+    p.donate
+      img(src="./i/sp1.png", alt="")
+  .columns
+    p.donate
+      img(src="./i/sp2.png", alt="")
+  .columns
+    p.donate
+      img(src="./i/sp3.png", alt="")
+  .columns
+    p.donate
+      img(src="./i/sp4.png", alt="")
+  .columns
+    p.donate
+      img(src="./i/sp5.png", alt="")
+  .columns
+    p.donate
+      img(src="./i/sp6.png", alt="")
+.pole
+hr
+.pole
+.manager(style="background-image:url(./i/manager.png);")
+  +head('Свяжитесь с нами','Остались вопросы? Напишите нам, или мы сами Вам <br /> перезвоним. Заполните форму и отправьте нам, звонок от нас <br /> поступит в самое ближайшее время.')
+  p &#160;
+  form(action="#")
+    .row
+      .medium-10.columns
+        input(type="text",placeholder="Имя")
+        input(type="tel",placeholder="Телефон*")
+        input(type="text",placeholder="Тема")
+        button.button(type="submit") Отправить
+  .pole
+  include _footer

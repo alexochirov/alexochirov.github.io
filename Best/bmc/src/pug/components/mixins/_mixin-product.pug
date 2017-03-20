@@ -1,0 +1,32 @@
+mixin product(img,title,mark,stripe)
+  .columns
+    .product
+      .product__img.text-center
+        a(href="#")
+          img(src="./i/"+img, alt="")
+        if stripe
+          .product__special
+            each obj in stripe
+              if obj=='action'
+                .stripe.stripe_action Акция
+              if obj=='sale'
+                .stripe.stripe_sale Распродажа
+              if obj=='leader'
+                .stripe.stripe_leader Лидер продаж
+              if obj=='new'
+                .stripe Новинка
+        a(href="#",title="В избранное").product__heart
+          i.fa.fa-heart
+        a(href="#",title="Сравнить").product__compare
+          i.fa.fa-bar-chart
+      a(href="#").product__title= title
+      div
+        span.rating
+          each val in [5,4,3,2,1]
+            if val==mark
+              span.rating__star.rating__star-active
+            else
+              span.rating__star
+      .product__price 1 250
+        span.product__rub &#160;руб.
+      a(href="#").button.small.product__button Купить

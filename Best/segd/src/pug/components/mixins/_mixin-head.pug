@@ -1,0 +1,12 @@
+mixin head(title,text,color)
+  .row.columns
+    if color
+      h2.plate= title
+      p
+        img(src="./images/plate-w.svg", alt="")
+      p.plate !{text}
+    else
+      h2= title
+      p
+        img(src="./images/plate.svg", alt="")
+      p !{text}

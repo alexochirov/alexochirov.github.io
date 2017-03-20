@@ -1,0 +1,20 @@
+.button {
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: none;
+
+    &.expanded {
+        padding-left: rem-calc(3);
+        padding-right: rem-calc(3);
+    }
+
+    &.hollow {
+        border-color: $black;
+        color: $black;
+        &:hover {
+          border-color: $black;
+          background: $black;
+          color: $white;
+        }
+    }
+}

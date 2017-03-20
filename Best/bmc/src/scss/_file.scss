@@ -1,0 +1,33 @@
+.file {
+    border-radius: 2px;
+    display: inline-block;
+    cursor: pointer;
+    margin-bottom: rem-calc(26);
+
+    &:hover {
+        .file__button {
+            background: $black;
+        }
+    }
+
+    &__button {
+        width: 100px;
+        border-radius: rem-calc(3);
+        line-height: 30px;
+        text-align: center;
+        margin-right: rem-calc(5);
+        background: $blue;
+        transition: background 0.2s;
+        border: 1px solid rgba(0,0,0,0.1);
+        color: #fff;
+        display: inline-block;
+    }
+
+    &__block {
+        display: inline-block;
+    }
+
+    &__input {
+        display: none;
+    }
+}

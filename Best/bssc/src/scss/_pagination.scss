@@ -1,0 +1,12 @@
+.pagination {
+    li {
+        margin-bottom: rem-calc(10);
+    }
+
+    a {
+      transition: none;
+        &:hover {
+            color: $white;
+        }
+    }
+}

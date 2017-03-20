@@ -1,0 +1,31 @@
+.joy {
+    background: rgba(255,255,255,.2);
+    padding: rem-calc(16);
+    margin-bottom: rem-calc(20);
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+
+    &__main {
+        padding: rem-calc(16);
+        font-size: rem-calc(22);
+        color: $white;
+        height: rem-calc(196);
+        width: 100%;
+        display: table-cell;
+        vertical-align: middle;
+        text-shadow: 0 0 rem-calc(13) #1b3f5a;
+        text-transform: uppercase;
+
+        border: rem-calc(3) solid rgba(255,255,255,.7);
+        &:hover {
+          color: $white;
+        }
+    }
+    @include breakpoint(small only) {
+        &__main {
+            height: rem-calc(120);
+
+        }
+    }
+}

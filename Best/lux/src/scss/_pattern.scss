@@ -1,0 +1,45 @@
+.pattern {
+    display:inline-block;
+    margin-bottom: rem-calc(18);
+    position: relative;
+
+    &:hover {
+        .pattern__square {
+            opacity: 1;
+        }
+
+        .pattern__title {
+            z-index: 1;
+            position: relative;
+            color: $white;
+        }
+    }
+
+    &__title {
+        font-size: rem-calc(18);
+        padding: rem-calc(13) rem-calc(24) rem-calc(14);
+    }
+
+    &__square {
+        opacity: 0;
+        transition: 0.3s;
+        padding-top: rem-calc(80);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: rem-calc(0);
+        top: rem-calc(0);
+        background-color: rgba(76, 86, 181, .9);
+    }
+    @include breakpoint(small only) {
+        &__title {
+            padding-left: rem-calc(9);
+            font-size: rem-calc(16);
+            padding-right: rem-calc(9);
+        }
+
+        &__square {
+            padding-top: calc(50% - 43px);
+        }
+    }
+}

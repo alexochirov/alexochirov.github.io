@@ -1,0 +1,99 @@
+.product {
+    margin-bottom: rem-calc(30);
+
+    &:hover {
+        .net {
+            opacity: 1;
+        }
+
+        .product__block {
+            background: $orange;
+        }
+
+        .product__desc,
+        .product__smallest {
+            color: #fff;
+        }
+    }
+
+    &__cat {
+        font-size: rem-calc(11);
+        text-transform: uppercase;
+        font-weight: 700;
+        position: relative;
+        display: block;
+
+        &:after {
+            content: "";
+            position: absolute;
+            width: rem-calc(20);
+            height: rem-calc(3);
+            bottom: rem-calc(-8);
+            background: $gray;
+            display: inline-block;
+            left: calc(50% - 10px);
+        }
+    }
+
+    &__title {
+        font-size: rem-calc(14);
+        line-height: 1.2;
+    }
+
+    &__price {
+        color: #000;
+        font-size: rem-calc(19);
+        font-weight: 700;
+    }
+
+    &__h5 {
+        margin-bottom: rem-calc(13);
+    }
+
+    &__img {
+        height: rem-calc(240);
+        position: relative;
+        margin-bottom: rem-calc(5);
+        display: inline-block;
+
+        img {
+            max-height: 100%;
+        }
+    }
+
+    &__desc {
+        margin-bottom: rem-calc(0);
+        font-size: rem-calc(18);
+    }
+
+    &__smallest {
+        margin-bottom: rem-calc(10);
+        font-size: rem-calc(10);
+        text-transform: uppercase;
+        color: $gray;
+    }
+
+    &__block {
+        position: absolute;
+        bottom: rem-calc(40);
+        transition: 0.3s;
+        width: 100%;
+        padding-top: rem-calc(11);
+        padding-bottom: rem-calc(8);
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+    @include breakpoint(small only) {
+        &__img {
+            height: auto;
+        }
+
+        .product__block {
+            background: $orange;
+        }
+
+        .product__desc,
+        .product__smallest {
+            color: #fff;
+        }
+    }
+}

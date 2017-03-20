@@ -1,0 +1,44 @@
+.action {
+    margin-bottom: rem-calc(10);
+
+    hr {
+        border-color: $dark-gray;
+    }
+
+    &__title {
+        color: #fff;
+        display: block;
+        padding-bottom: rem-calc(3);
+line-height: 1.2;
+        &:hover {
+            color: $medium-gray;
+        }
+    }
+
+    &__comment {
+        font-size: rem-calc(13);
+        display: block;
+        color: #fff;
+        padding-bottom: rem-calc(10);
+
+        &:hover {
+            color: $medium-gray;
+        }
+    }
+
+    &__month {
+        font-size: rem-calc(9);
+        font-weight: 400;
+    }
+
+    &__block {
+      margin-top: rem-calc(5);
+        text-transform: uppercase;
+        width: rem-calc(30);
+        padding: rem-calc(3);
+        font-size: rem-calc(11);
+        line-height: 1.2;
+        font-weight: 700;
+        border: rem-calc(2) solid $medium-gray;
+    }
+}

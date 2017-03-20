@@ -1,0 +1,38 @@
+.button {
+    font-weight: 700;
+
+    .fa-sort-amount-asc,
+    .fa-sort-amount-desc {
+        font-size: rem-calc(15);
+    }
+
+    &.large {
+        padding: rem-calc(29 93);
+    }
+
+    &.small {
+        padding-left: rem-calc(18);
+        padding-right: rem-calc(18);
+    }
+
+    &.tiny {
+        padding-top: rem-calc(12);
+        padding-bottom: rem-calc(13);
+    }
+
+    &.expanded {
+        padding-left: rem-calc(3);
+        padding-right: rem-calc(3);
+    }
+
+    &.hollow {
+        border-color: $black;
+        color: $black;
+
+        &:hover {
+            background-color: $orange;
+            border-color: $orange;
+            color: $white;
+        }
+    }
+}

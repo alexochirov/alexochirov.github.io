@@ -1,0 +1,29 @@
+.convector {
+    &__brands {
+        img {
+            margin-right: rem-calc(10);
+            max-height: rem-calc(23);
+        }
+    }
+
+    &__info {
+        padding-left: rem-calc(18);
+        padding-right: rem-calc(18);
+        margin-bottom: rem-calc(15);
+        font-size: rem-calc(14);
+    }
+
+    &__title {
+        margin-bottom: rem-calc(12);
+        display: block;
+        font-size: rem-calc(18);
+        text-decoration: underline;
+        color: $blue;
+    }
+    @include breakpoint(small only) {
+        &__info {
+            padding-left: rem-calc(0);
+            padding-right: rem-calc(0);
+        }
+    }
+}

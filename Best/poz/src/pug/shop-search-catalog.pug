@@ -1,0 +1,51 @@
+extends index
+
+block page
+  include components/common/_breadcrumbs
+  block content
+    .row.column
+      h1 Поиск
+    .content
+      .row.column
+        form(action='#' method='get')
+          .row
+            .small-16.medium-18.large-20.columns
+              label: input(type='text', placeholder='Введите строку для поиска')
+            .small-8.medium-6.large-4.columns.end
+              input.button.expanded(type='submit', value='Искать')
+        p Результаты поиска 1-5 из 200
+        hr
+        p
+        .row.small-up-1.medium-up-3.large-up-5(data-equalizer data-equalize-by-row="true")
+          +productTile('Комби-перфоратор Metabo KHE 2650', false,'toy-my3.jpeg')
+          +productTile('Комби-перфоратор Metabo KHE 2650', false,'toy-my1.jpeg')
+          +productTile('Комби-перфоратор Metabo KHE 2650', false,'toy-my2.jpeg')
+          +productTile('Комби-перфоратор Metabo KHE 2650', false,'toy-my5.jpeg')
+          +productTile('Комби-перфоратор Metabo KHE 2650', false,'toy-my1.jpeg')
+          +productTile('Комби-перфоратор Metabo KHE 2650', false,'toy-my2.jpeg')
+          +productTile('Комби-перфоратор Metabo KHE 2650', false,'toy-my3.jpeg')
+          +productTile('Комби-перфоратор Metabo KHE 2650', false,'toy-my1.jpeg')
+          +productTile('Комби-перфоратор Metabo KHE 2650', false,'toy-my2.jpeg')
+          +productTile('Комби-перфоратор Metabo KHE 2650', false,'toy-my5.jpeg')
+          +productTile('Комби-перфоратор Metabo KHE 2650', false,'toy-my1.jpeg')
+          +productTile('Комби-перфоратор Metabo KHE 2650', false,'toy-my2.jpeg')
+          +productTile('Комби-перфоратор Metabo KHE 2650', false,'toy-my3.jpeg')
+          +productTile('Комби-перфоратор Metabo KHE 2650', false,'toy-my1.jpeg')
+          +productTile('Комби-перфоратор Metabo KHE 2650', false,'toy-my2.jpeg')
+          +productTile('Комби-перфоратор Metabo KHE 2650', false,'toy-my5.jpeg')
+          +productTile('Комби-перфоратор Metabo KHE 2650', false,'toy-my1.jpeg')
+          +productTile('Комби-перфоратор Metabo KHE 2650', false,'toy-my2.jpeg')
+          +productTile('Комби-перфоратор Metabo KHE 2650', false,'toy-my3.jpeg')
+          +productTile('Комби-перфоратор Metabo KHE 2650', false,'toy-my1.jpeg')
+          +productTile('Комби-перфоратор Metabo KHE 2650', false,'toy-my2.jpeg')
+          +productTile('Комби-перфоратор Metabo KHE 2650', false,'toy-my5.jpeg')
+          +productTile('Комби-перфоратор Metabo KHE 2650', false,'toy-my1.jpeg')
+          +productTile('Комби-перфоратор Metabo KHE 2650', false,'toy-my2.jpeg')
+          +productTile('Комби-перфоратор Metabo KHE 2650', false,'toy-my1.jpeg')
+          +productTile('Комби-перфоратор Metabo KHE 2650', false,'toy-my3.jpeg')
+          +productTile('Комби-перфоратор Metabo KHE 2650', false,'toy-my1.jpeg')
+          +productTile('Комби-перфоратор Metabo KHE 2650', false,'toy-my2.jpeg')
+          +productTile('Комби-перфоратор Metabo KHE 2650', false,'toy-my5.jpeg')
+          +productTile('Комби-перфоратор Metabo KHE 2650', false,'toy-my1.jpeg')
+        p &nbsp;
+        include ./components/common/_pagination

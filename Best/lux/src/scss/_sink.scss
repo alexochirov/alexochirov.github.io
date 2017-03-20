@@ -1,0 +1,38 @@
+.sink {
+    background: url($imagesPath +"/zebra.jpg")no-repeat center;
+    border: rem-calc(1) solid $light-gray;
+    padding: rem-calc(40);
+    margin-bottom: rem-calc(45);
+    position: relative;
+    margin-top: rem-calc(20);
+    font-size: rem-calc(14);
+
+    &__action {
+        position: absolute;
+        background-color: #ec003d;
+        right: rem-calc(0);
+        top: rem-calc(-21);
+        height: rem-calc(20);
+        font-size: rem-calc(11);
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $white;
+        padding-left: rem-calc(16);
+        padding-right: rem-calc(16);
+        line-height: 1.9;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    }
+
+    &__big {
+        font-weight: 700;
+    }
+
+    &__title {
+        text-transform: uppercase;
+        font-size: rem-calc(18);
+        color: $blue;
+    }
+    @include breakpoint(medium down) {
+      padding: rem-calc(18);
+    }
+}

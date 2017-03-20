@@ -1,0 +1,9 @@
+.restaurant {
+    padding-left: rem-calc(91);
+    padding-right: rem-calc(91);
+    padding-top: rem-calc(37);
+    @include breakpoint(medium down) {
+        padding-left: rem-calc(12);
+        padding-right: rem-calc(12);
+    }
+}

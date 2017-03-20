@@ -1,0 +1,8 @@
+.onyx {
+    background: url($imagesPath +"/back.jpg")no-repeat center top;
+    border-top: rem-calc(1) solid $light-gray;
+    border-bottom: rem-calc(1) solid $light-gray;
+    @include breakpoint(medium down) {
+        background: none;
+    }
+}

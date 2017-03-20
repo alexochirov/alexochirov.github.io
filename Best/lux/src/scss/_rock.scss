@@ -1,0 +1,65 @@
+.rock {
+    font-size: rem-calc(14);
+
+    &__search {
+        position: absolute;
+        left: rem-calc(0);
+        top: rem-calc(0);
+        padding-top: rem-calc(140);
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+    }
+
+    &__price {
+        font-size: rem-calc(18);
+    }
+
+    &__num {
+        color: $blue;
+        font-size: rem-calc(30);
+    }
+
+    &__desc {
+        font-size: rem-calc(12);
+    }
+
+    &__block {
+        margin-bottom: rem-calc(10);
+    }
+
+    &__year {
+        display: inline-block;
+        margin-left: rem-calc(10);
+        height: rem-calc(18);
+        line-height: 1.5;
+    }
+
+    &__link {
+        margin-right: rem-calc(15);
+        display: inline-block;
+        margin-bottom: rem-calc(15);
+
+        img {
+            width: rem-calc(30);
+            height: rem-calc(30);
+        }
+    }
+
+    &__img {
+        display: inline-block;
+        margin-bottom: rem-calc(20);
+        position: relative;
+
+        &:hover {
+            .rock__search {
+                opacity: 1;
+            }
+        }
+    }
+    @include breakpoint(small only) {
+        &__search {
+            padding-top: rem-calc(100);
+        }
+    }
+}

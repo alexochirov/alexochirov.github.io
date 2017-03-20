@@ -1,0 +1,16 @@
+.mango {
+    background: $orange;
+    padding: rem-calc(7) 0;
+    font-size: rem-calc(15);
+
+    &__phone {
+        color: $white;
+
+        a {
+            color: $white;
+        }
+    }
+    &__block {
+      display: inline-block;
+    }
+}

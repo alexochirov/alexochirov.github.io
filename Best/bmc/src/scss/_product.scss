@@ -1,0 +1,106 @@
+.product {
+    border: rem-calc(1) solid $light-gray;
+    padding: rem-calc(0) rem-calc(16) rem-calc(16);
+    margin-bottom: rem-calc(16);
+
+    &:hover {
+        box-shadow: rem-calc(10) rem-calc(17) rem-calc(40) rgba(168, 172, 185, 0.62);
+
+        .product__button,
+        .product__compare,
+        .product__heart {
+            visibility: visible;
+        }
+    }
+
+    &__special {
+        position: absolute;
+        left: rem-calc(-16);
+        line-height: 2.0;
+        top: rem-calc(12);
+    }
+
+    &__title {
+        font-size: rem-calc(13);
+        font-weight: 500;
+        text-decoration: underline;
+        text-transform: uppercase;
+
+        &_mini {
+            font-size: rem-calc(11);
+        }
+    }
+
+    &__compare,
+    &__heart {
+        position: absolute;
+        color: $light-gray;
+        right: rem-calc(0);
+        top: rem-calc(12);
+        font-size: rem-calc(16);
+        visibility: hidden;
+    }
+
+    &__heart {
+        right: rem-calc(29);
+    }
+
+    &__price {
+        font-weight: 700;
+        margin-right: rem-calc(7);
+        font-size: rem-calc(18);
+        margin-bottom: rem-calc(5);
+        display: inline-block;
+    }
+
+    &__rub {
+        font-size: rem-calc(14);
+    }
+
+    &__button {
+        padding-left: rem-calc(22);
+        padding-right: rem-calc(22);
+        margin-bottom: rem-calc(0);
+        visibility: hidden;
+        padding-top: rem-calc(10);
+        padding-bottom: rem-calc(10);
+    }
+
+    &__img {
+        position: relative;
+        margin-bottom: rem-calc(30);
+        height: rem-calc(230);
+        padding-top: rem-calc(60);
+
+        img {
+            max-height: 100%;
+        }
+
+        &_mini {
+            margin-bottom: rem-calc(0);
+            padding-top: rem-calc(50);
+            height: rem-calc(210);
+        }
+    }
+    @include breakpoint(small only) {
+        &__img {
+            height: auto;
+            margin-bottom: rem-calc(10);
+        }
+
+        &__compare {
+            right: rem-calc(-9);
+        }
+
+        &__heart {
+            right: rem-calc(-7);
+            top: rem-calc(35);
+        }
+
+        &__button,
+        &__compare,
+        &__heart {
+            visibility: visible;
+        }
+    }
+}

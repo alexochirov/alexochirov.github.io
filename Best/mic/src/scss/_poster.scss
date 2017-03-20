@@ -1,0 +1,9 @@
+.poster {
+  position: relative;
+  &__text {
+    position: absolute;
+    bottom: rem-calc(30);
+    left: rem-calc(40);
+    
+  }
+}

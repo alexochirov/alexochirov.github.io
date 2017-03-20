@@ -1,0 +1,41 @@
+.size {
+    background: #f6f6f6;
+    padding-left: rem-calc(16);
+    padding-right: rem-calc(16);
+    font-weight: 300;
+    padding-bottom: rem-calc(23);
+    padding-top: rem-calc(23);
+    margin-bottom: rem-calc(20);
+
+    &__alert {
+        color: get-color(alert);
+    }
+
+    &__text {
+        margin-bottom: rem-calc(7);
+    }
+
+
+
+    &__block {
+        padding-left: rem-calc(28);
+        padding-right: rem-calc(28);
+    }
+
+    &__characteristics {
+        font-size: rem-calc(12);
+        margin-bottom: rem-calc(15);
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+
+    &__name {
+        margin-bottom: rem-calc(8);
+    }
+    @include breakpoint(medium down) {
+        &__block {
+            padding-left: rem-calc(0);
+            padding-right: rem-calc(0);
+        }
+    }
+}

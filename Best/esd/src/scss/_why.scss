@@ -1,0 +1,17 @@
+.why {
+    position: relative;
+    margin-bottom: rem-calc(20);
+
+    &:hover {
+        .net {
+            opacity: 1;
+        }
+    }
+
+    &__fancy {
+        position: absolute;
+        bottom: rem-calc(15);
+        left: rem-calc(30);
+        color: $black;
+    }
+}

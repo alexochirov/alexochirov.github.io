@@ -1,0 +1,16 @@
+.manager {
+    &__upper {
+        text-transform: uppercase;
+    }
+
+    &__img {
+        img {
+            width: rem-calc(170);
+            border-radius: 50%;
+        }
+    }
+
+    &__text {
+        font-size: rem-calc(14);
+    }
+}

@@ -1,0 +1,7 @@
+extends object
+block menu-object
+  li: a(href='object.html') Описание
+  li.active: a(href='object-comments.html') Отзывы (3)
+  li: a(href='object-discussion.html') Обсуждение (3)
+block object-content
+    include components/shop/_product-tab-comments

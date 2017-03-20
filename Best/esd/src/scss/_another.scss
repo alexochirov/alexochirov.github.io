@@ -1,0 +1,14 @@
+.another {
+  a {
+    font-weight: 700;
+    font-size: rem-calc(13);
+  }
+  li
+   {
+     &:not(:last-child)::after {
+       margin-left: rem-calc(4);
+       margin-right: rem-calc(4);
+       font-size: rem-calc(14);font-weight: 700;
+     }
+   }
+}

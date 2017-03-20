@@ -1,0 +1,25 @@
+mixin model(img,mark,stripe)
+  .columns
+    .product
+      .product__img.product__img_mini.text-center
+        a(href="#")
+          img(src="./i/"+img, alt="")
+        if stripe
+          .product__special
+            each obj in stripe
+              if obj=='action'
+                .stripe.stripe_action Акция
+              if obj=='sale'
+                .stripe.stripe_sale Распродажа
+              if obj=='leader'
+                .stripe.stripe_leader Лидер продаж
+              if obj=='new'
+                .stripe Новинка
+      a(href="#").product__title.product__title_mini К5152 КОСТЮМ МУЖСКОЙ
+      div
+        span.rating.rating_mini
+          each val in [5,4,3,2,1]
+            if val==mark
+              span.rating__star.rating__star-active
+            else
+              span.rating__star

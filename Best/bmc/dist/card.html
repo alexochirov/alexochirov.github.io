@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+  <head>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="copyright" content="Создание сайтов - Cetera Labs, www.cetera.ru, 2016">
+    <meta name="author" content="Cetera Labs, http://www.cetera.ru/, создание сайтов, поддержка сайтов, продвижение сайтов">
+    <meta name="cmsmagazine" content="f21b68cb09efe1a7161ca2caaacaf749">
+    <title>Cetera Labs WireFrames</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="row">
+        <div class="large-6 medium-8 columns text-center medium-text-left header__logo"><a href="#"><img src="./images/logo.svg" alt=""></a></div>
+        <div class="large-18 medium-16 columns header__main">
+          <div class="row large-up-4 medium-up-2">
+            <div class="columns text-center medium-text-left"><a class="header__drop" href="#" data-toggle="dropdown-1">ООО “Казаков”</a>
+              <div class="dropdown-pane" id="dropdown-1" data-dropdown="" data-hover="true" data-hover-pane="true">
+                <ul class="archer text-center">
+                  <li class="archer__item"><a class="archer__link" href="#">ООО “Казаков”</a></li>
+                  <li class="archer__item"><a class="archer__link" href="#">ООО “Бородин”</a></li>
+                  <li class="archer__item"><a class="archer__link" href="#">ООО “Норбек”</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="columns text-center medium-text-right large-text-left"><a class="header__drop" href="#" data-toggle="dropdown-2">Договор : Б1 WEB</a>
+              <div class="dropdown-pane arrow" id="dropdown-2" data-dropdown="" data-hover="true" data-hover-pane="true">
+                <ul class="archer text-center">
+                  <li class="archer__item"><a class="archer__link" href="#">Договор : Б2 WEB</a></li>
+                  <li class="archer__item"><a class="archer__link" href="#">Договор : Б3 WEB</a></li>
+                  <li class="archer__item"><a class="archer__link" href="#">Договор : Б4 WEB</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="columns text-center medium-text-left"><a class="header__drop" href="#" data-toggle="dropdown-3">Склад : Центральный</a>
+              <div class="dropdown-pane" id="dropdown-3" data-dropdown="" data-hover="true" data-hover-pane="true">
+                <ul class="archer text-center">
+                  <li class="archer__item"><a class="archer__link" href="#">Склад : №1</a></li>
+                  <li class="archer__item"><a class="archer__link" href="#">Склад : №2</a></li>
+                  <li class="archer__item"><a class="archer__link" href="#">Склад : №3</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="columns text-center medium-text-right"><a class="header__basket" href="#"><i class="fa fa-shopping-cart"></i>корзина: 9 450 руб.</a></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="row">
+      <div class="medium-12 columns">
+            <div class="row columns">
+              <nav>
+                <ul class="breadcrumbs">
+                  <li><a href="#">Главная</a></li>
+                  <li><a href="#">Каталог</a></li>
+                  <li><a href="#">Костюмы</a></li>
+                  <li>К5163 Костюм мужской</li>
+                </ul>
+              </nav>
+            </div>
+      </div>
+      <div class="large-8 medium-12 columns">
+        <input class="quest" type="search">
+        <button class="button ask" type="submit"><i class="fa fa-search"></i></button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-6 medium-8 columns">
+        <aside class="aside">
+          <div class="aside__head text-center"><img src="./images/filter.svg" alt="">Фильтр</div>
+          <ul class="accordion" data-accordion="" data-multi-expand="true" data-allow-all-closed="true">
+            <li class="accordion-item" data-accordion-item=""><a class="accordion-title" href="#">Цена</a>
+              <div class="accordion-content" data-tab-content="">
+                <label class="meters"><span class="meters__meter">от</span>
+                  <input class="meters__input" id="sliderOutput2" type="text">
+                </label>
+                <label class="meters meters_right"><span class="meters__meter">до</span>
+                  <input class="meters__input" id="sliderOutput1" type="text"><span class="meters__meter">руб</span>
+                </label>
+                <div class="slider" data-slider="" data-initial-start="6" data-step="10" data-end="750"><span class="slider-handle slider-handle_prev" data-slider-handle="" role="slider" tabindex="1" aria-controls="sliderOutput2"></span><span class="slider-handle slider-handle_next" data-slider-handle="" role="slider" tabindex="1" aria-controls="sliderOutput1"></span><span class="slider-fill" data-slider-fill=""></span></div>
+              </div>
+            </li>
+            <li class="accordion-item" data-accordion-item=""><a class="accordion-title" href="#">Стиль</a>
+              <div class="accordion-content" data-tab-content="">
+                <div class="check">
+                  <input class="check__input" type="checkbox" id="class1">
+                  <label class="check__label" for="class1">Классический стиль</label>
+                </div>
+                <div class="check">
+                  <input class="check__input" type="checkbox" id="class2">
+                  <label class="check__label" for="class2">Повседневный стиль</label>
+                </div>
+              </div>
+            </li>
+            <li class="accordion-item" data-accordion-item=""><a class="accordion-title" href="#">Силуэт/Посадка</a>
+              <div class="accordion-content" data-tab-content="">
+                <div class="check">
+                  <input class="check__input" type="checkbox" id="class3">
+                  <label class="check__label" for="class3">Прямой</label>
+                </div>
+                <div class="check">
+                  <input class="check__input" type="checkbox" id="class4">
+                  <label class="check__label" for="class4">Приталенный</label>
+                </div>
+                <div class="check">
+                  <input class="check__input" type="checkbox" id="class5">
+                  <label class="check__label" for="class5">Полуприталенный</label>
+                </div>
+              </div>
+            </li>
+            <li class="accordion-item" data-accordion-item=""><a class="accordion-title" href="#">Цвет</a>
+              <div class="accordion-content" data-tab-content=""><a class="palette" href="#"><img src="./images/pal1.svg" alt=""></a><a class="palette" href="#"><img src="./images/pal2.svg" alt=""></a><a class="palette" href="#"><img src="./images/pal3.svg" alt=""></a><a class="palette" href="#"><img src="./images/pal4.svg" alt=""></a><a class="palette" href="#"><img src="./images/pal5.svg" alt=""></a><a class="palette" href="#"><img src="./images/pal6.svg" alt=""></a><a class="palette" href="#"><img src="./images/pal7.svg" alt=""></a><a class="palette" href="#"><img src="./images/pal8.svg" alt=""></a><a class="palette" href="#"><img src="./images/pal9.svg" alt=""></a><a class="palette" href="#"><img src="./images/pal10.svg" alt=""></a></div>
+            </li>
+            <li class="accordion-item" data-accordion-item=""><a class="accordion-title" href="#">Сезон</a>
+              <div class="accordion-content" data-tab-content="">
+                <div class="check">
+                  <input class="check__input" type="checkbox" id="class6">
+                  <label class="check__label" for="class6">Зима</label>
+                </div>
+                <div class="check">
+                  <input class="check__input" type="checkbox" id="class7">
+                  <label class="check__label" for="class7">Лето</label>
+                </div>
+                <div class="check">
+                  <input class="check__input" type="checkbox" id="class8">
+                  <label class="check__label" for="class8">Демисезон</label>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="aside__body">
+            <button class="button expanded secondary">Сбросить фильтр</button>
+            <button class="button expanded">Сбросить фильтр</button>
+          </div>
+        </aside>
+        <aside class="aside">
+          <div class="row columns">
+            <ul class="cat">
+              <li class="cat__item"><a class="cat__link" href="#">Каталог</a></li>
+              <li class="cat__item"><a class="cat__link" href="#">Управление заказами</a></li>
+              <li class="cat__item"><a class="cat__link" href="#">Личный кабинет</a></li>
+              <li class="cat__item cat__item_drop active"><a class="cat__link" href="#">Гид по моделям</a>
+                <ul class="jacket">
+                  <li class="jacket__item"><a class="jacket__link" href="#">Костюмы</a></li>
+                  <li class="jacket__item"><a class="jacket__link" href="#">Пиджаки</a></li>
+                  <li class="jacket__item"><a class="jacket__link" href="#">Брюки</a></li>
+                  <li class="jacket__item"><a class="jacket__link" href="#">Жилеты</a></li>
+                  <li class="jacket__item"><a class="jacket__link" href="#">Рубашки</a></li>
+                  <li class="jacket__item"><a class="jacket__link" href="#">Трикотаж</a></li>
+                </ul>
+              </li>
+              <li class="cat__item"><a class="cat__link" href="#">Справочные материалы</a></li>
+              <li class="cat__item"><a class="cat__link" href="#">Дополнительные услуги</a></li>
+              <li class="cat__item"><a class="cat__link" href="#">Акции</a></li>
+              <li class="cat__item"><a class="cat__link" href="#">О доставке</a></li>
+              <li class="cat__item"><a class="cat__link" href="#">Об оплате</a></li>
+              <li class="cat__item"><a class="cat__link" href="#">Рекламные материалы</a></li>
+              <li class="cat__item"><a class="cat__link" href="#">Помощь</a></li>
+              <li class="cat__item"><a class="cat__link" href="#">Вопросы и ответы</a></li>
+              <li class="cat__item"><a class="cat__link" href="#">Обратная связь</a></li>
+              <li class="cat__item"><a class="cat__link" href="#">О компании</a></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+      <div class="large-18 medium-16 columns">
+        <h1>К5163 Костюм мужской</h1>
+        <div class="row">
+          <div class="large-12 columns"><span class="rating"><span class="rating__star"></span><span class="rating__star rating__star-active"></span><span class="rating__star"></span><span class="rating__star"></span><span class="rating__star"></span></span>
+            <p></p>
+            <div class="stripe stripe_big text-center">Новинка</div>
+            <div class="gun text-center">
+              <div class="gun__slide"><a href="#"><img src="./i/tuxedo.jpg" alt=""></a></div>
+              <div class="gun__slide"><a href="#"><img src="./i/tuxedo2.jpg" alt=""></a></div>
+              <div class="gun__slide"><a href="#"><img src="./i/tuxedo.jpg" alt=""></a></div>
+              <div class="gun__slide"><a href="#"><img src="./i/tuxedo2.jpg" alt=""></a></div>
+              <div class="gun__slide"><a href="#"><img src="./i/tuxedo.jpg" alt=""></a></div>
+            </div>
+            <div class="navi"></div>
+          </div>
+          <div class="large-12 columns">
+            <div class="size">
+              <p class="size__alert">Скидка на заказ через интернет-магазин составляет&#160;<b>2%</b></p>
+              <div class="size__text">Цены видны только зарегистрированным пользователям.</div>
+              <div class="size__block"><a class="button expanded" href="#">Для заказа зарегистрируйтесь</a><br><a class="button hollow expanded" href="#">Выбрать размеры</a></div>
+              <div class="size__characteristics">Характеристики модели</div>
+              <div class="row small-up-2">
+                <div class="columns size__name">Стиль</div>
+                <div class="columns size__name">Классический стиль</div>
+                <div class="columns size__name">Силуэт/посадка</div>
+                <div class="columns size__name">Приталенный</div>
+                <div class="columns size__name">Модель</div>
+                <div class="columns size__name">Ку-7</div>
+                <div class="columns size__name">Состав</div>
+                <div class="columns size__name">9%-wool, 65%-polyester, 26%-viscose</div>
+                <div class="columns size__name">Цветовая гамма</div>
+                <div class="columns size__name">Синий</div>
+                <div class="columns size__name">Сезонность</div>
+                <div class="columns size__name">Демисезон</div>
+                <div class="columns size__name">Специфика</div>
+                <div class="columns size__name">Повседневная</div>
+                <div class="columns size__name">Возрастная группа</div>
+                <div class="columns size__name">25-49 лет (Современная классика)</div>
+                <div class="columns size__name">Ткань</div>
+                <div class="columns size__name">Т5163</div>
+                <div class="columns size__name">Сетка</div>
+                <div class="columns size__name">костюмная К-4</div>
+                <div class="columns size__name">Торговая марка</div>
+                <div class="columns size__name">STENSER</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <p>&#160;</p>
+        <h2>Похожие товары</h2>
+        <ul class="tabs" id="example-tabs" data-tabs="">
+          <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">По модели</a></li>
+          <li class="tabs-title"><a href="#panel2">По цвету</a></li>
+          <li class="tabs-title"><a href="#panel3">По ткани</a></li>
+        </ul>
+        <div class="tabs-content" data-tabs-content="example-tabs">
+          <div class="tabs-panel is-active" id="panel1">
+            <div class="model">
+              <div class="model__slide">
+                            <div class="columns">
+                              <div class="product">
+                                <div class="product__img product__img_mini text-center"><a href="#"><img src="./i/prod1.jpg" alt=""></a>
+                                  <div class="product__special">
+                                    <div class="stripe">Новинка</div>
+                                  </div>
+                                </div><a class="product__title product__title_mini" href="#">К5152 КОСТЮМ МУЖСКОЙ</a>
+                                <div><span class="rating rating_mini"><span class="rating__star"></span><span class="rating__star rating__star-active"></span><span class="rating__star"></span><span class="rating__star"></span><span class="rating__star"></span></span></div>
+                              </div>
+                            </div>
+              </div>
+              <div class="model__slide">
+                            <div class="columns">
+                              <div class="product">
+                                <div class="product__img product__img_mini text-center"><a href="#"><img src="./i/prod2.jpg" alt=""></a>
+                                  <div class="product__special">
+                                    <div class="stripe stripe_leader">Лидер продаж</div>
+                                  </div>
+                                </div><a class="product__title product__title_mini" href="#">К5152 КОСТЮМ МУЖСКОЙ</a>
+                                <div><span class="rating rating_mini"><span class="rating__star"></span><span class="rating__star"></span><span class="rating__star"></span><span class="rating__star"></span><span class="rating__star rating__star-active"></span></span></div>
+                              </div>
+                            </div>
+              </div>
+              <div class="model__slide">
+                            <div class="columns">
+                              <div class="product">
+                                <div class="product__img product__img_mini text-center"><a href="#"><img src="./i/prod3.jpg" alt=""></a>
+                                  <div class="product__special">
+                                    <div class="stripe stripe_sale">Распродажа</div>
+                                  </div>
+                                </div><a class="product__title product__title_mini" href="#">К5152 КОСТЮМ МУЖСКОЙ</a>
+                                <div><span class="rating rating_mini"><span class="rating__star rating__star-active"></span><span class="rating__star"></span><span class="rating__star"></span><span class="rating__star"></span><span class="rating__star"></span></span></div>
+                              </div>
+                            </div>
+              </div>
+              <div class="model__slide">
+                            <div class="columns">
+                              <div class="product">
+                                <div class="product__img product__img_mini text-center"><a href="#"><img src="./i/prod4.jpg" alt=""></a>
+                                  <div class="product__special">
+                                    <div class="stripe">Новинка</div>
+                                    <div class="stripe stripe_leader">Лидер продаж</div>
+                                  </div>
+                                </div><a class="product__title product__title_mini" href="#">К5152 КОСТЮМ МУЖСКОЙ</a>
+                                <div><span class="rating rating_mini"><span class="rating__star"></span><span class="rating__star"></span><span class="rating__star"></span><span class="rating__star rating__star-active"></span><span class="rating__star"></span></span></div>
+                              </div>
+                            </div>
+              </div>
+              <div class="model__slide">
+                            <div class="columns">
+                              <div class="product">
+                                <div class="product__img product__img_mini text-center"><a href="#"><img src="./i/prod5.jpg" alt=""></a>
+                                  <div class="product__special">
+                                    <div class="stripe">Новинка</div>
+                                  </div>
+                                </div><a class="product__title product__title_mini" href="#">К5152 КОСТЮМ МУЖСКОЙ</a>
+                                <div><span class="rating rating_mini"><span class="rating__star"></span><span class="rating__star rating__star-active"></span><span class="rating__star"></span><span class="rating__star"></span><span class="rating__star"></span></span></div>
+                              </div>
+                            </div>
+              </div>
+            </div>
+          </div>
+          <div class="tabs-panel" id="panel2">
+            <div class="model">
+              <div class="model__slide">
+                            <div class="columns">
+                              <div class="product">
+                                <div class="product__img product__img_mini text-center"><a href="#"><img src="./i/prod1.jpg" alt=""></a>
+                                  <div class="product__special">
+                                    <div class="stripe">Новинка</div>
+                                  </div>
+                                </div><a class="product__title product__title_mini" href="#">К5152 КОСТЮМ МУЖСКОЙ</a>
+                                <div><span class="rating rating_mini"><span class="rating__star"></span><span class="rating__star rating__star-active"></span><span class="rating__star"></span><span class="rating__star"></span><span class="rating__star"></span></span></div>
+                              </div>
+                            </div>
+              </div>
+              <div class="model__slide">
+                            <div class="columns">
+                              <div class="product">
+                                <div class="product__img product__img_mini text-center"><a href="#"><img src="./i/prod2.jpg" alt=""></a>
+                                  <div class="product__special">
+                                    <div class="stripe stripe_leader">Лидер продаж</div>
+                                  </div>
+                                </div><a class="product__title product__title_mini" href="#">К5152 КОСТЮМ МУЖСКОЙ</a>
+                                <div><span class="rating rating_mini"><span class="rating__star"></span><span class="rating__star"></span><span class="rating__star"></span><span class="rating__star"></span><span class="rating__star rating__star-active"></span></span></div>
+                              </div>
+                            </div>
+              </div>
+              <div class="model__slide">
+                            <div class="columns">
+                              <div class="product">
+                                <div class="product__img product__img_mini text-center"><a href="#"><img src="./i/prod3.jpg" alt=""></a>
+                                  <div class="product__special">
+                                    <div class="stripe stripe_sale">Распродажа</div>
+                                  </div>
+                                </div><a class="product__title product__title_mini" href="#">К5152 КОСТЮМ МУЖСКОЙ</a>
+                                <div><span class="rating rating_mini"><span class="rating__star rating__star-active"></span><span class="rating__star"></span><span class="rating__star"></span><span class="rating__star"></span><span class="rating__star"></span></span></div>
+                              </div>
+                            </div>
+              </div>
+              <div class="model__slide">
+                            <div class="columns">
+                              <div class="product">
+                                <div class="product__img product__img_mini text-center"><a href="#"><img src="./i/prod4.jpg" alt=""></a>
+                                  <div class="product__special">
+                                    <div class="stripe">Новинка</div>
+                                    <div class="stripe stripe_leader">Лидер продаж</div>
+                                  </div>
+                                </div><a class="product__title product__title_mini" href="#">К5152 КОСТЮМ МУЖСКОЙ</a>
+                                <div><span class="rating rating_mini"><span class="rating__star"></span><span class="rating__star"></span><span class="rating__star"></span><span class="rating__star rating__star-active"></span><span class="rating__star"></span></span></div>
+                              </div>
+                            </div>
+              </div>
+              <div class="model__slide">
+                            <div class="columns">
+                              <div class="product">
+                                <div class="product__img product__img_mini text-center"><a href="#"><img src="./i/prod5.jpg" alt=""></a>
+                                  <div class="product__special">
+                                    <div class="stripe">Новинка</div>
+                                  </div>
+                                </div><a class="product__title product__title_mini" href="#">К5152 КОСТЮМ МУЖСКОЙ</a>
+                                <div><span class="rating rating_mini"><span class="rating__star"></span><span class="rating__star rating__star-active"></span><span class="rating__star"></span><span class="rating__star"></span><span class="rating__star"></span></span></div>
+                              </div>
+                            </div>
+              </div>
+            </div>
+          </div>
+          <div class="tabs-panel" id="panel3">
+            <div class="model">
+              <div class="model__slide">
+                            <div class="columns">
+                              <div class="product">
+                                <div class="product__img product__img_mini text-center"><a href="#"><img src="./i/prod1.jpg" alt=""></a>
+                                  <div class="product__special">
+                                    <div class="stripe">Новинка</div>
+                                  </div>
+                                </div><a class="product__title product__title_mini" href="#">К5152 КОСТЮМ МУЖСКОЙ</a>
+                                <div><span class="rating rating_mini"><span class="rating__star"></span><span class="rating__star rating__star-active"></span><span class="rating__star"></span><span class="rating__star"></span><span class="rating__star"></span></span></div>
+                              </div>
+                            </div>
+              </div>
+              <div class="model__slide">
+                            <div class="columns">
+                              <div class="product">
+                                <div class="product__img product__img_mini text-center"><a href="#"><img src="./i/prod2.jpg" alt=""></a>
+                                  <div class="product__special">
+                                    <div class="stripe stripe_leader">Лидер продаж</div>
+                                  </div>
+                                </div><a class="product__title product__title_mini" href="#">К5152 КОСТЮМ МУЖСКОЙ</a>
+                                <div><span class="rating rating_mini"><span class="rating__star"></span><span class="rating__star"></span><span class="rating__star"></span><span class="rating__star"></span><span class="rating__star rating__star-active"></span></span></div>
+                              </div>
+                            </div>
+              </div>
+              <div class="model__slide">
+                            <div class="columns">
+                              <div class="product">
+                                <div class="product__img product__img_mini text-center"><a href="#"><img src="./i/prod3.jpg" alt=""></a>
+                                  <div class="product__special">
+                                    <div class="stripe stripe_sale">Распродажа</div>
+                                  </div>
+                                </div><a class="product__title product__title_mini" href="#">К5152 КОСТЮМ МУЖСКОЙ</a>
+                                <div><span class="rating rating_mini"><span class="rating__star rating__star-active"></span><span class="rating__star"></span><span class="rating__star"></span><span class="rating__star"></span><span class="rating__star"></span></span></div>
+                              </div>
+                            </div>
+              </div>
+              <div class="model__slide">
+                            <div class="columns">
+                              <div class="product">
+                                <div class="product__img product__img_mini text-center"><a href="#"><img src="./i/prod4.jpg" alt=""></a>
+                                  <div class="product__special">
+                                    <div class="stripe">Новинка</div>
+                                    <div class="stripe stripe_leader">Лидер продаж</div>
+                                  </div>
+                                </div><a class="product__title product__title_mini" href="#">К5152 КОСТЮМ МУЖСКОЙ</a>
+                                <div><span class="rating rating_mini"><span class="rating__star"></span><span class="rating__star"></span><span class="rating__star"></span><span class="rating__star rating__star-active"></span><span class="rating__star"></span></span></div>
+                              </div>
+                            </div>
+              </div>
+              <div class="model__slide">
+                            <div class="columns">
+                              <div class="product">
+                                <div class="product__img product__img_mini text-center"><a href="#"><img src="./i/prod5.jpg" alt=""></a>
+                                  <div class="product__special">
+                                    <div class="stripe">Новинка</div>
+                                  </div>
+                                </div><a class="product__title product__title_mini" href="#">К5152 КОСТЮМ МУЖСКОЙ</a>
+                                <div><span class="rating rating_mini"><span class="rating__star"></span><span class="rating__star rating__star-active"></span><span class="rating__star"></span><span class="rating__star"></span><span class="rating__star"></span></span></div>
+                              </div>
+                            </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="hide-for-small-only">&#160;</p>
+        <div class="row">
+          <div class="large-8 large-centered columns"><a class="button expanded" href="#"><i class="fa fa-caret-left"></i>Вернуться в каталог</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="row large-up-4 medium-up-2 small-up-1 text-center medium-text-left" data-equalizer data-equalize-by-row="true">
+        <div class="columns footer__block" data-equalizer-watch>
+          <div class="footer__info">
+            <p class="footer__copy">© «Бизнесмода»</p>
+            <p class="footer__copy"><a class="footer__tel" href="tel:71234567890">+7 123 456-78-90</a><br>Пн-Пт 8:00—20:00</p>
+            <p><a class="soc" href="#"><i class="fa fa-vk"></i></a><a class="soc" href="#"><i class="fa fa-twitter"></i></a><a class="soc" href="#"><i class="fa fa-facebook"></i></a></p>
+          </div>
+        </div>
+        <div class="columns footer__block" data-equalizer-watch>
+          <ul class="action">
+            <li class="action__item"><a class="action__link" href="#">Каталог</a></li>
+            <li class="action__item"><a class="action__link" href="#">Акции</a></li>
+            <li class="action__item"><a class="action__link" href="#">Заказы</a></li>
+            <li class="action__item"><a class="action__link" href="#">Гид по моделям</a></li>
+            <li class="action__item"><a class="action__link" href="#">Справочные материалы</a></li>
+            <li class="action__item"><a class="action__link" href="#">Личный раздел</a></li>
+          </ul>
+        </div>
+        <div class="columns footer__block" data-equalizer-watch>
+          <ul class="action">
+            <li class="action__item"><a class="action__link" href="#">дополнительные услуги</a></li>
+            <li class="action__item"><a class="action__link" href="#">рекламные материалы</a></li>
+            <li class="action__item"><a class="action__link" href="#">о доставке</a></li>
+            <li class="action__item"><a class="action__link" href="#">об оплате</a></li>
+            <li class="action__item"><a class="action__link" href="#">вопросы и отзывы</a></li>
+            <li class="action__item"><a class="action__link" href="#">обратная связь</a></li>
+            <li class="action__item"><a class="action__link" href="#">о компании</a></li>
+          </ul>
+        </div>
+        <div class="columns" data-equalizer-watch>
+          <p class="footer__copy"><span class="footer__create">Создание сайта —&#160;</span><a class="footer__cetera" href="https://cetera.ru/">Cetera Labs</a></p>
+        </div>
+      </div>
+    </div>
+<script src="js/lib.js" type="text/javascript"></script>
+<script src="js/app.js" type="text/javascript"></script>
+  </body>
+</html>

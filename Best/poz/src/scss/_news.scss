@@ -1,0 +1,11 @@
+.news {
+  margin-bottom: rem-calc(30);
+    &__date {
+        font-weight: 700;
+        color: $secondary;
+        font-size: rem-calc(12);
+    }
+    img {
+      width: rem-calc(60);
+    }
+}

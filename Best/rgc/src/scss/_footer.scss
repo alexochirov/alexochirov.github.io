@@ -1,0 +1,20 @@
+.footer {
+    background: #191919;
+    text-transform: uppercase;
+    padding-top: rem-calc(43);
+    padding-bottom: rem-calc(44);
+    font-size: rem-calc(14);
+    color: $secondary;
+
+    &__link {
+        color: $secondary;
+    }
+
+    &__cetera {
+        color: $white;
+    }
+      @include breakpoint(small only) { &__link {
+        margin-bottom: rem-calc(10);
+        display: inline-block;
+      } }
+}

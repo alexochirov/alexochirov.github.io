@@ -1,0 +1,13 @@
+header.header
+  .row
+    .large-5.medium-4.small-12.columns.header__logo
+      a(href="#")
+        img(src="./images/logo.svg", alt="")
+    .small-12.columns.show-for-small-only.text-right.header__toggle
+      span(data-responsive-toggle='responsive', data-hide-for='medium')
+        button.menu-icon(type='button', data-toggle='')
+    .large-19.medium-20.columns.text-center.medium-text-right#responsive
+      ul.freight
+        each title,index in ['преимущества','наши работы','процесс создания','варианты и цены','отзывы','связь']
+          li.freight__item(class= index == '0' ? "active":"")
+            a(href="#").freight__link= title

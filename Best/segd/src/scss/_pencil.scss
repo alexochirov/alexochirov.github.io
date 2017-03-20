@@ -1,0 +1,12 @@
+.pencil {
+    &__text {
+        color: $white;
+        font-size: rem-calc(12);
+        padding-right: rem-calc(40);
+    }
+    @include breakpoint(small only) {
+        &__text {
+            padding-right: rem-calc(0);
+        }
+    }
+}

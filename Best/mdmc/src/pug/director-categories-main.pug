@@ -1,0 +1,29 @@
+extends user-personal
+
+block personal
+    h3 Добавить категорию
+
+    form(action='director-categories-sort.html')
+        label Название категории
+        input(type='text')
+
+        label Цвет
+        .checkbox-group
+            input.checkbox-group__item(type='radio' id='color1' name='color')
+            label.checkbox-group__label(for='color1' style='background-color: #FEF143;') &nbsp;
+            input.checkbox-group__item(type='radio' id='color2' name='color')
+            label.checkbox-group__label(for='color2' style='background-color: #578b93;') &nbsp;
+            input.checkbox-group__item(type='radio' id='color3' name='color')
+            label.checkbox-group__label(for='color3' style='background-color: #28b;') &nbsp;
+            input.checkbox-group__item(type='radio' id='color4' name='color')
+            label.checkbox-group__label(for='color4' style='background-color: #60b;') &nbsp;
+            input.checkbox-group__item(type='radio' id='color5' name='color')
+            label.checkbox-group__label(for='color5' style='background-color: #f8f8f8;') &nbsp;
+            input.checkbox-group__item(type='radio' id='color6' name='color')
+            label.checkbox-group__label(for='color6' style='background-color: #aaa;') &nbsp;
+            input.checkbox-group__item(type='radio' id='color7' name='color')
+            label.checkbox-group__label(for='color7' style='background-color: #deb887;') &nbsp;
+            input.checkbox-group__item(type='radio' id='color8' name='color')
+            label.checkbox-group__label(for='color8' style='background-color: #111;') &nbsp;
+
+        button.button(type='submit') Сохранить

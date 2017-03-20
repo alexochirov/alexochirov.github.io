@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="copyright" content="Создание сайтов - Cetera Labs, www.cetera.ru, 2016">
+    <meta name="author" content="Cetera Labs, http://www.cetera.ru/, создание сайтов, поддержка сайтов, продвижение сайтов">
+    <meta name="cmsmagazine" content="f21b68cb09efe1a7161ca2caaacaf749">
+    <title>Cetera Labs WireFrames</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="reveal" id="enter-login-modal" data-reveal>
+      <ul class="tabs registration text-center" id="example-tabs" data-tabs="">
+        <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Вход</a></li>
+        <li class="tabs-title"><a href="#panel2">Регистрация</a></li>
+      </ul>
+      <div class="tabs-content" data-tabs-content="example-tabs">
+        <div class="tabs-panel is-active" id="panel1">
+          <h3 class="text-center"><strong>Пожалуйста, авторизуйтесь:</strong></h3>
+          <form action="#">
+            <label>Ваш email
+              <input type="email">
+            </label>
+            <label>Пароль
+              <input type="password">
+            </label>
+                <div class="object">
+                  <input class="object__input" type="checkbox" id="c1">
+                  <label class="object__label" for="c1">Запомнить меня на этом компьютере</label>
+                </div><br>
+            <button class="button small-expanded success" type="submit" data-toggle="enter-login menu-another enter-user">Войти &nbsp;<i class="fa fa-sign-in fa-lg"></i></button>
+          </form>
+          <p><a href="user-recover.html" title="">Забыли пароль?</a></p>
+          <p><em>Если вы впервые на сайте, заполните, пожалуйста, регистрационную форму.</em></p>
+          <p>Войти через: &nbsp;<a class="fa-stack fa-lg text-vk" href="#" title=""><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-vk fa-stack-1x fa-inverse"></i></a>  <a class="fa-stack fa-lg text-twi" href="#" title=""><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></a>  <a class="fa-stack fa-lg text-fb" href="#" title=""><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></a>  <a class="fa-stack fa-lg text-gp" href="#" title=""><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-google-plus fa-stack-1x fa-inverse"></i></a>
+          </p>
+        </div>
+        <div class="tabs-panel" id="panel2">
+          <h3 class="text-center"><strong>Регистрация пользователя</strong></h3>
+          <form action="#">
+            <label>Логин
+              <input type="text">
+            </label>
+            <label>Email
+              <input type="email">
+            </label>
+            <label>Ваше имя
+              <input type="text">
+            </label>
+            <label>Придумайте пароль
+              <input type="password">
+            </label>
+            <label>Повторите пароль
+              <input type="password">
+            </label>
+            <div class="row columns">
+              <div class="object">
+                <input class="object__input" type="checkbox" id="id1">
+                <label class="object__label" for="id1">Я ознакомлен и принимаю условия &nbsp;<a href="corp-regular.html" title="">Соглашения об использовании сайта</a>, в том числе в части обработки и использования моих персональных данных</label>
+              </div>
+            </div>
+            <p></p>
+            <button class="button small-expanded success">Регистрация &nbsp;<i class="fa fa-user-plus fa-lg">     </i></button>
+          </form>
+        </div>
+      </div>
+      <button class="close-button" data-close aria-label="Закрыть"><span aria-hidden="true">&times;</span></button>
+    </div>
+    <div class="row expanded collapse" data-equalizer data-equalize-by-row="true">
+      <div class="column large-10 medium-8 globus" style="background-image:url(./i/map.png);" data-equalizer-watch>
+        <div class="globus__top">
+          <div class="row expanded">
+            <div class="large-2 medium-3 columns text-center medium-text-left">
+              <p><a href="#"><img src="./images/logo-maxrest.svg" alt=""></a></p>
+            </div>
+            <div class="large-6 medium-9 end columns">
+              <form class="input-group" action="map-search-results.html" method="get">
+                <input class="input-group-field globus__input" type="text" value="" placeholder="Места и организации">
+                <div class="input-group-button">
+                  <button class="button black" type="submit"><i class="fa text-white fa fa-search"></i></button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="globus__country"><a class="js-country-toggle" href="#">(что будет если нажать на страну)</a></div><a class="marker js-visit-toggle" href="#" style="top: 250px; left: 260px;"><img src="./images/marker-green.svg" alt=""></a><a class="marker js-visit-toggle" href="#" style="top: 150px; left: 260px;"><img src="./images/marker-blue.svg" alt=""></a><a class="marker js-visit-toggle" href="#" style="top: 350px; left: 260px;"><img src="./images/marker-dark-blue.svg" alt=""></a><a class="marker js-visit-toggle" href="#" style="top: 350px; left: 560px;"><img src="./images/marker-orange.svg" alt=""></a><a class="marker js-visit-toggle" href="#" style="top: 50px; left: 560px;"><img src="./images/marker-purple.svg" alt=""></a><a class="marker js-visit-toggle" href="#" style="top: 300px; left: 560px;"><img src="./images/marker-red.svg" alt=""></a><a class="marker js-visit-toggle" href="#" style="top: 390px; left: 460px;"><img src="./images/marker-yellow.svg" alt=""></a><a class="flag js-visit-toggle" href="#" style="top: 290px; left: 260px;"><img src="./images/flag-blue.svg" alt=""></a><a class="flag js-visit-toggle" href="#" style="top: 490px; left: 460px;"><img src="./images/flag-dark-blue.svg" alt=""></a><a class="flag js-visit-toggle" href="#" style="top: 290px; left: 260px;"><img src="./images/flag-green.svg" alt=""></a><a class="flag js-visit-toggle" href="#" style="top: 190px; left: 160px;"><img src="./images/flag-orange.svg" alt=""></a><a class="flag js-visit-toggle" href="#" style="top: 290px; left: 260px;"><img src="./images/flag-purple.svg" alt=""></a><a class="flag js-visit-toggle" href="#" style="top: 590px; left: 760px;"><img src="./images/flag-red.svg" alt=""></a><a class="flag js-visit-toggle" href="#" style="top: 290px; left: 960px;"><img src="./images/flag-yellow.svg" alt=""></a>
+        <div class="visit" data-toggler=".visit_collapse" id="visit">
+          <div class="row collapse">
+            <div class="small-6 columns">
+              <div class="visit__already"><i class="fa fa-check fa-lg"></i>посещено</div>
+            </div>
+            <div class="small-6 columns text-right">
+              <div class="visit__icons"><a class="text-light-gray" href="#"><i class="fa fa-star"></i></a><a class="text-light-gray" href="#" data-toggle="visit"><i class="fa fa-minus"></i></a><a class="text-light-gray js-visit-toggle" href="#"><i class="fa fa-times"></i></a></div>
+            </div>
+          </div>
+          <div class="visit__main">
+            <div class="row small-up-2">
+              <div class="columns visit__title">Шерегеш</div>
+              <div class="columns visit__title text-right"><span class="visit__gray">(14 119)</span>4,7</div>
+            </div>
+            <ul class="cont">
+              <li class="cont__item"><span class="cont__span">Страна:</span><span class="cont__page text-right">Россия</span></li>
+              <li class="cont__item"><span class="cont__span">Регион:</span><span class="cont__page text-right">Кемеровская обл.</span></li>
+              <li class="cont__item"><span class="cont__span">Адрес:</span><span class="cont__page text-right">ул. Ленина, 1</span></li>
+              <li class="cont__item"><span class="cont__span">Тел.: </span><span class="cont__page text-right"><strong>(343) 333-33-33</strong></span></li>
+              <li class="cont__item"><span class="cont__span">Сайт:</span><span class="cont__page text-right"><a href="#"> <strong>www.gesh.com </strong></a></span></li>
+            </ul>
+          </div>
+          <p></p>
+          <p><a href="#"><img src="./i/snow.png" alt=""></a></p>
+          <div class="visit__main">
+            <div class="row">
+              <div class="columns">
+                <p class="visit__category">Категории: сноуборд, горные лыжи, снегоходы</p>
+              </div>
+            </div>
+            <div class="row small-up-2">
+              <div class="column"><a class="visit__link" href="#">Подробнее</a></div>
+              <div class="column text-right"><a class="text-light-gray visit__link" href="#">Нашли ошибку?</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="visit hide" data-toggler=".hide" id="country">
+          <div class="row collapse">
+            <div class="small-12 columns text-right"></div>
+          </div>
+          <div class="visit__main">
+            <div class="row">
+              <div class="small-6 columns visit__title"><img src="./i/Flag_of_Russia.svg" alt="">Россия</div>
+              <div class="small-4 columns visit__title text-right"><span class="visit__gray">(14 119)</span></div>
+              <div class="small-2 columns text-right">
+                <div class="visit__icons visit__icons_country"><a class="text-light-gray" href="#" data-toggle="country"><i class="fa fa-times"> </i></a></div>
+              </div>
+            </div>
+          </div>
+          <p></p>
+          <div class="visit__main">
+            <div class="row">
+              <div class="column"><a class="visit__link" href="#">Подробнее</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="callout" style="position: absolute; top: 220px; left: 340px; width: 300px;" data-closable>
+          <button class="button hollow success" type="button" data-toggle="object-status-dropdown"><i class="fa fa-lg fa-map"></i> Посещено
+          </button>
+          <div class="dropdown-pane" id="object-status-dropdown" data-dropdown data-auto-focus="true">
+            <ul class="menu vertical">
+              <li><a href=""><i class="fa fa-lg fa-map-o"></i> В планах</a></li>
+              <li><a class="text-dark-gray" href=""><i class="fa fa-lg fa-map-o"></i> Не посещено</a></li>
+            </ul>
+          </div>
+          <h3><img src="./i/Flag_of_Russia.svg" alt="" style="height: 18px; 1px solid #ddd;"> Россия</h3>
+          <p>46.96453, 142.75133</p>
+          <button class="close-button" type="button" data-close aria-label="Закрыть"><span aria-hidden="true">&times;</span></button>
+        </div><br>
+        <div class="globus__btn"><a class="button" href="#"><i class="fa fa-thumb-tack"></i> Мои метки</a><a class="button" data-toggle="map-marks-dropdown"><i class="fa fa-eye-slash"></i> Скрыть свои метки</a><a class="button" href="add-object.html"><i class="fa fa-map-marker"></i> Добавить объект</a><a class="button" href="map-share.html#map-share-modal"><i class="fa fa-share-alt"></i> Поделиться картой</a></div>
+        <div class="dropdown-pane top" id="map-marks-dropdown" data-dropdown style="width: 100px;"><a><img src="./images/flag-green.svg" alt=""></a><br><a><img src="./images/flag-red.svg" alt=""></a><br><a><img src="./images/marker-red.svg" alt=""></a><br></div>
+      </div>
+      <div class="column medium-4 large-2 filter" data-equalizer-watch>
+        <p></p>
+        <div class="row columns text-right">
+          <div class="float-right" id="enter-user" data-toggler=".hide"><a class="filter__enter" href="#" data-toggle="enter-login-modal"><i class="fa fa-sign-in fa-lg"></i>войти</a></div>
+          <div class="hide float-right filter__pack" id="menu-another" data-toggler=".hide"><a class="text-black" data-toggle="menu"><i class="fa fa-bars fa-2x"></i> </a>
+            <div class="dropdown-pane right plant" id="menu" data-dropdown>
+              <ul class="entrance text-left">
+                <li class="entrance__item"><a class="entrance__link" href="./map.html">Карта</a></li>
+                <li class="entrance__item"><a class="entrance__link" href="./user-personal.html">Личный кабинет</a></li>
+                <li class="entrance__item"><a class="entrance__link" href="./feedback.html">Обратная связь</a></li>
+                <li class="entrance__item"><a class="entrance__link" href="#" data-toggle="menu-another enter-user">Выход  </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <p>&#160;</p>
+        <div class="filter__main">
+          <ul class="menu vertical filter__menu" data-accordion-menu>
+            <li>
+              <div class="filter__input">
+                <div class="object">
+                  <input class="object__input" type="checkbox" id="obj1">
+                  <label class="object__label" for="obj1"><i class="fa fa-star"></i>Избранные</label>
+                </div>
+              </div><a class="text-dark-gray filter__arrow" href="map-favourites.html" title="Список объектов"><i class="fa fa-bars"></i></a>
+            </li>
+            <li>
+              <div class="filter__input">
+                <div class="object">
+                  <input class="object__input" type="checkbox" id="obj3">
+                  <label class="object__label" for="obj3"><i class="fa fa-check"></i>посещенные</label>
+                </div>
+              </div><a class="text-dark-gray filter__arrow" href="map-visited.html" title="Список объектов"><i class="fa fa-bars"></i></a>
+            </li>
+            <li>
+              <div class="filter__input">
+                <div class="object">
+                  <input class="object__input" type="checkbox" id="obj2">
+                  <label class="object__label" for="obj2"><i class="fa fa-globe"></i>в планах</label>
+                </div>
+              </div><a class="text-dark-gray filter__arrow" href="map-planned.html" title="Список объектов"><i class="fa fa-bars"></i></a>
+            </li>
+            <li>
+                  <div class="object">
+                    <input class="object__input" type="checkbox" id="1">
+                    <label class="object__label" for="1">Категория объектов 1</label>
+                  </div>
+            </li>
+            <li>
+              <div class="filter__input">
+                    <div class="object">
+                      <input class="object__input" type="checkbox" id="2">
+                      <label class="object__label" for="2">Категория объектов 2</label>
+                    </div>
+              </div><a class="filter__arrow" href="" title=""></a>
+              <ul class="menu vertical nested">
+                <li>
+                      <div class="object">
+                        <input class="object__input" type="checkbox" id="3">
+                        <label class="object__label" for="3">Объект 1</label>
+                      </div>
+                </li>
+              </ul>
+            </li>
+            <li>
+                  <div class="object">
+                    <input class="object__input" type="checkbox" id="a3">
+                    <label class="object__label" for="a3">Категория объектов 3</label>
+                  </div>
+            </li>
+            <li>
+                  <div class="object">
+                    <input class="object__input" type="checkbox" id="a4">
+                    <label class="object__label" for="a4">Категория объектов 4</label>
+                  </div>
+            </li>
+            <li>
+              <div class="filter__input">
+                    <div class="object">
+                      <input class="object__input" type="checkbox" id="a5">
+                      <label class="object__label" for="a5">Категория объектов 5</label>
+                    </div>
+              </div><a class="filter__arrow" href="" title=""></a>
+              <ul class="menu vertical nested">
+                <li>
+                      <div class="object">
+                        <input class="object__input" type="checkbox" id="13">
+                        <label class="object__label" for="13">Объект 11</label>
+                      </div>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div class="filter__input">
+                    <div class="object">
+                      <input class="object__input" type="checkbox" id="a6">
+                      <label class="object__label" for="a6">Категория объектов 6</label>
+                    </div>
+              </div><a class="filter__arrow" href="" title=""></a>
+              <ul class="menu vertical nested">
+                <li>
+                      <div class="object">
+                        <input class="object__input" type="checkbox" id="a7">
+                        <label class="object__label" for="a7">Объект 3</label>
+                      </div>
+                </li>
+              </ul>
+            </li>
+            <li>
+                  <div class="object">
+                    <input class="object__input" type="checkbox" id="a8">
+                    <label class="object__label" for="a8">Категория объектов 7</label>
+                  </div>
+            </li>
+          </ul>
+        </div>
+        <div class="filter__copy"><a class="filter__mail" href="mailto:support@maxrest.org">support@maxrest.org</a></div>
+      </div>
+    </div>
+<script src="js/lib.js" type="text/javascript"></script>
+<script src="js/app.js" type="text/javascript"></script>
+
+  </body>
+</html>

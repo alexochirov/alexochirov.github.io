@@ -1,0 +1,20 @@
+.contacts {
+    border: rem-calc(1) solid $medium-gray;
+    padding: rem-calc(29) rem-calc(45) rem-calc(10);
+
+    &__row {
+        margin-bottom: rem-calc(22);
+    }
+
+    &__tel {
+        font-size: rem-calc(24);
+        margin-bottom: rem-calc(6);
+        display: inline-block;
+        font-weight: 700;
+        color: $secondary;
+    }
+    @include breakpoint(small only) {
+        padding-left: rem-calc(26);
+        padding-right: rem-calc(26);
+    }
+}

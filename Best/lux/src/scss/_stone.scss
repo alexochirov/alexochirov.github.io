@@ -1,0 +1,16 @@
+.stone {
+    list-style: none;
+    margin-left: rem-calc(0);
+
+    &__item {
+        background: #f9f9f9;
+        margin-bottom: rem-calc(3);
+    }
+
+    &__link {
+
+        font-size: rem-calc(16);
+
+      
+    }
+}

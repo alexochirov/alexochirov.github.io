@@ -1,0 +1,14 @@
+.arrow {
+    color: $medium-gray;
+    display: inline-block;
+
+    &:hover {
+        .fa-stack-2x {
+            color: $orange;
+        }
+
+        .fa-stack-1x {
+            color: $white;
+        }
+    }
+}

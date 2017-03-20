@@ -1,0 +1,23 @@
+.footer {
+    background: $secondary;
+    padding-top: rem-calc(40);
+    color: $white;
+
+    &__logo {
+        margin-bottom: rem-calc(18);
+    }
+
+    &__link {
+        margin-bottom: rem-calc(15);
+        display: inline-block;
+    }
+
+    &__line {
+        border-right: rem-calc(1) solid $medium-gray;
+    }
+    @include breakpoint(medium down) {
+        &__line {
+            border-right: 0;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.footer
+  .row.large-up-4.medium-up-2.small-up-1(data-equalizer,data-equalize-by-row="true").text-center.medium-text-left
+    .columns(data-equalizer-watch).footer__block
+      .footer__info
+        p.footer__copy © «Бизнесмода»
+        p.footer__copy
+          a(href="tel:71234567890").footer__tel +7 123 456-78-90
+          br
+          |Пн-Пт 8:00—20:00
+        p
+          a(href="#").soc
+            i.fa.fa-vk
+          a(href="#").soc
+            i.fa.fa-twitter
+          a(href="#").soc
+            i.fa.fa-facebook
+    .columns(data-equalizer-watch).footer__block
+      ul.action
+        each title in ['Каталог','Акции','Заказы','Гид по моделям','Справочные материалы','Личный раздел']
+          li.action__item
+            a(href="#").action__link= title
+    .columns(data-equalizer-watch).footer__block
+      ul.action
+        each title in ['дополнительные услуги','рекламные материалы','о доставке','об оплате','вопросы и отзывы','обратная связь','о компании']
+          li.action__item
+            a(href="#").action__link= title
+    .columns(data-equalizer-watch)
+      p.footer__copy
+        span.footer__create Создание сайта —&#160;
+        a(href="https://cetera.ru/").footer__cetera Cetera Labs

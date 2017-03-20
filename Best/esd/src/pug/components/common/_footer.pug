@@ -1,0 +1,83 @@
+footer.footer
+  .row.large-up-4.medium-up-2.small-up-1.footer__main
+    .columns
+      h5 О компании
+      .line
+      p Наш магазин один из крупнейших онлайн магазинов косметики не только в Москве и Московской области, но и в России.
+      .line
+      div.text-center.medium-text-left
+        a.fa-stack.fa-lg.soc.has-tip.top(href="#3",data-tooltip,aria-haspopup="true",data-disable-hover="false",tabindex="1",title="Follow us on Facebook")
+          i.fa.fa-circle-thin.fa-stack-2x
+          i.fa.fa-facebook.fa-stack-1x.fa-inverse
+        a.fa-stack.fa-lg.soc.soc_tw.has-tip.top(href="#3",data-tooltip,aria-haspopup="true",data-disable-hover="false",tabindex="1",title="Follow us on Twitter")
+          i.fa.fa-circle-thin.fa-stack-2x
+          i.fa.fa-twitter.fa-stack-1x.fa-inverse
+        a.fa-stack.fa-lg.soc.soc_g.has-tip.top(href="#3",data-tooltip,aria-haspopup="true",data-disable-hover="false",tabindex="1",title="Follow us on Google+")
+          i.fa.fa-circle-thin.fa-stack-2x
+          i.fa.fa-google-plus.fa-stack-1x.fa-inverse
+        a.fa-stack.fa-lg.soc.soc_insta.has-tip.top(href="#3",data-tooltip,aria-haspopup="true",data-disable-hover="false",tabindex="1",title="Follow us on Instagram")
+          i.fa.fa-circle-thin.fa-stack-2x
+          i.fa.fa-instagram.fa-stack-1x.fa-inverse
+        a.fa-stack.fa-lg.soc.soc_vk.has-tip.top(href="#3",data-tooltip,aria-haspopup="true",data-disable-hover="false",tabindex="1",title="Follow us on VKontakte")
+          i.fa.fa-circle-thin.fa-stack-2x
+          i.fa.fa-vk.fa-stack-1x.fa-inverse
+    .columns
+      h5 Наши новости
+      .line
+      .row.action
+        .medium-4.small-3.columns
+          .action__block.text-center
+            div 16
+            .action__month Янв
+        .medium-20.small-21.columns
+          a(href="#").action__title Акция на продукцию Эстель
+          a(href="#").action__comment Leave a comment
+        .columns
+          hr
+      .row.action
+        .medium-4.small-3.columns
+          .action__block.text-center
+            div 16
+            .action__month Янв
+        .medium-20.small-21.columns
+          a(href="#").action__title Акция на продукцию Keen
+          a(href="#").action__comment Leave a comment
+        .columns
+          hr
+      .row.action
+        .medium-4.small-3.columns
+          .action__block.text-center
+            div 16
+            .action__month Янв
+        .medium-20.small-21.columns
+          a(href="#").action__title Акция на продукцию Wella
+          a(href="#").action__comment Leave a comment
+    .columns
+      h5 Как покупать
+      .line
+      p Оплатить выбранные товары вы можете или прямо на сайте (разными способами оплаты) или (после согласования с оператором) по безналу или наличными курьеру.
+    .columns
+      h5 Рассылка
+      .line
+      p Форма подписки на новостную рассылку сайта.
+      form(action="#")
+        input(type="email",placeholder="Ваш е-мейл *").footer__input
+        .text-center.medium-text-left
+          button.button(type="submit").footer__submit Подписаться
+  .copy
+    .row
+      .large-12.medium-15.columns.text-center.medium-text-left
+        .row.columns
+          ul.shoe
+            each title in ['О компании','Новости и акции','FAQ','Контакты']
+              li.shoe__item
+                a(href="#").shoe__link= title
+
+        p
+          |2015 &copy;&#160;
+          strong Облик.москва
+          |  (ООО "ЭСТЕЛЬ-М")
+      .large-12.medium-9.columns.text-center.medium-text-right
+        p
+          a(href="#")
+            img(src="./images/card1.png", alt="")

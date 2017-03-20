@@ -1,0 +1,50 @@
+.menu-top {
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+    width: 100%;
+
+    &__hamburger {
+        margin: rem-calc(16 0 16);
+    }
+
+    &__item {
+        float: right;
+        padding: 0 2rem;
+        border-left: rem-calc(1) solid #4a8dc7;
+
+        &:last-child {
+            border: 0;
+            padding-left: 0;
+        }
+
+        &:first-child {
+            padding-right: rem-calc(0);
+        }
+    }
+
+    &__link {
+        padding: 0;
+        font-size: rem-calc(12);
+        text-transform: uppercase;
+        display: inline-block;
+        @include disable-mouse-outline;
+        color: $white;
+
+        i {
+            font-size: rem-calc(19);
+        }
+        .fa-shopping-cart {
+          margin-right: rem-calc(7);
+        }
+
+        &:hover {
+            color: $medium-gray;
+        }
+
+        &_red {
+            color: $primary-color;
+        }
+    }
+
+}

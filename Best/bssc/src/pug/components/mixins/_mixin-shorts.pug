@@ -1,0 +1,12 @@
+mixin shorts(img,title,text)
+  .columns
+    a.shorts(data-equalizer-watch,href="#")
+      .row
+        .large-10.columns.medium-24.small-10.shorts__img
+          p
+            img(src="./i/"+img, alt="")
+        .large-14.columns.medium-24.small-14
+          .shorts__title= title
+          .shorts__text= text
+          .shorts__price 2500&#160;Р.
+          .button.hollow В корзину
