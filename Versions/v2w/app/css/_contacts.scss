@@ -1,0 +1,132 @@
+.b-contacts {
+  &__top {
+    position: relative;
+    .b-header {
+      position: absolute;
+      z-index: 10;
+      width: 100%;
+      top: -1px;
+    }
+    .b-nav__menu {
+      background: #fff;
+      //border: none;
+    }
+  }
+  &__map {
+    background: url("../images/map.jpg") center/cover no-repeat;
+    width: 100%;
+    max-width: rem-calc(1440);
+    margin: 0 auto;
+	max-height: 650px;
+    min-height: 400px;
+  }
+  &__text {
+    color: #505050;
+    font-family: CirceRounded;
+    font-size: 2.375rem;
+    line-height: 2.5rem;
+    font-weight: 300;
+    display: block;
+    margin-top:rem-calc(77);
+    margin-bottom:rem-calc(25);
+    &-2 {
+      color: #505050;
+      font-family: CirceRounded;
+      font-size: 5rem;
+      font-weight: 300;
+      text-transform: uppercase;
+      display: block;
+      line-height:5rem;
+      margin-bottom:rem-calc(17);
+    }
+    &-3 {
+      color: #505050;
+      font-family: Circe;
+      font-size: 1.5rem;
+      font-weight: 300;
+      display: block;
+      line-height: 2rem;
+      letter-spacing:-.7px;
+      margin-bottom:rem-calc(30);
+    }
+    &-4 {
+      color: #505050;
+      font-family: Circe;
+      font-size: 1.375rem;
+      font-weight: 300;
+      line-height: 2.25rem;
+      display: block;
+      letter-spacing:-.8px;
+    }
+  }
+  &__button {
+    color: white !important;
+    font-family: Circe;
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 4.375rem;
+    text-transform: uppercase;
+    width: 20rem;
+    height: 4.375rem;
+    background-color: #0c0;
+    border-radius: 2.188rem;
+    display: inline-block;
+    letter-spacing:1.9px;
+    margin-bottom:rem-calc(52);
+  }
+  &__widget {
+    margin: 0 10px 20px;
+    display: inline-block;
+    width: 100%;
+    max-width: rem-calc(311);
+    &s {
+      margin-top:rem-calc(18);
+      padding-bottom:rem-calc(100);
+    }
+  }
+}
+
+@media screen and (max-width: 54.9375em) {
+  .b-contacts__top {
+    padding-top:rem-calc(40);
+    & .b-nav {
+      & > .row {
+        max-width: 100%;
+      }
+    }
+    & .b-nav__menu {
+      background: white;
+      border-bottom: 1px solid #3c0 !important;
+      &-link {
+        color: #0c0 !important;
+      }
+    }
+  }
+}
+
+@include breakpoint(medium down) {
+  .b-contacts {
+    &__text {
+      &-2 {
+        font-size: 4rem;
+      }
+    }
+  }
+}
+
+@include breakpoint(small only) {
+  .b-contacts {
+    &__text {
+      &-2 {
+        font-size: 2rem;
+      }
+    }
+    &__button {
+      width: 16rem;
+      letter-spacing: 0;
+    }
+    &__widget {
+      max-width: rem-calc(250);
+    }
+  }
+}

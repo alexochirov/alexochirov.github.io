@@ -1,0 +1,132 @@
+.b-legend__items {
+  position: relative;
+  padding: 10px;
+}
+
+.b-legend__item {
+  display: inline-block;
+  margin-right: -5px;
+}
+
+.b-legend__item-title {
+  line-height: 21px;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.b-legend__terms-title {
+  text-transform: uppercase;
+  font-size: 11px;
+  bottom: 25px;
+  left: 25px;
+  width: 100%;
+  font-weight: 500;
+  overflow: hidden;
+}
+
+.b-legend__terms-subtitle {
+  font-size: 12px;
+  line-height: 10px;
+  font-weight: 500;
+}
+
+.b-legend__terms-item {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 10px;
+  padding-left: 67px;
+  padding-top: 15px;
+  margin-top: 15px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.b-legend__item-img {
+  width: 40px;
+  margin-left: 25px;
+  height: auto;
+}
+
+.b-legend__item-text {
+  font-size: 14px;
+  font-weight: 500;
+  display: inline-block;
+  color: #505050;
+  line-height: 14px;
+  vertical-align: middle;
+}
+
+.b-legend__close {
+  display: none;
+  position: absolute;
+  left: 20px;
+  top: 45px;
+  color: black;
+  width: 30px;
+  height: 30px;
+  background: url(/local/templates/main/css/../images/x.png) center no-repeat;
+  filter: invert(10%);
+  background-size: 100% 100%;
+  z-index: 15;
+}
+
+@media screen and (max-width: 879px) {
+  .b-legend {
+
+    &__item {
+      min-height: 140px;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .b-legend {
+
+    &__items {
+      margin-top: 60px;
+    }
+
+    &__close {
+      display: block;
+    }
+
+    &__item {
+      display: block;
+      min-height: 70px;
+      margin-bottom: 10px;
+
+      &:first-child {
+        min-height: initial;
+      }
+    }
+
+    &__item-title {
+      display: inline-block;
+      line-height: 11px;
+      font-size: 14px;
+      text-transform: initial;
+    }
+
+    &__item-img {
+      margin-left: 0;
+    }
+
+    &__terms-item {
+      display: inline-block;
+      margin-top: 0;
+      padding-left: 0;
+      float: right;
+      border-top: none;
+    }
+
+    &__terms-title {
+      display: none;
+    }
+
+    &__terms-subtitle {
+      display: inline-block;
+      float: right;
+    }
+
+  }
+}

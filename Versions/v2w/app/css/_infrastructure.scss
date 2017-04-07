@@ -1,0 +1,139 @@
+.b-infrastructure {
+  padding-bottom: rem-calc(135);
+  &__title {color:#505050;
+  font-family:CirceRounded;
+  font-size:2.8rem;
+  font-weight:300;
+  line-height:2.813rem;
+  letter-spacing:-1.5px;
+  margin-top:1rem;
+  padding-bottom:1rem;
+  }
+  &__title2 {
+  color:#505050;
+  font-family:CirceRounded;
+  font-size:3rem;
+  font-weight:300;
+  line-height:2.813rem;
+  letter-spacing:-1.5px;
+  margin-top:3rem;
+  }
+  &__text {
+  margin-top:2rem;
+  color:#505050;
+  font-family:Circe;
+  font-size:1.25rem;
+  font-weight:300;
+  line-height:1.75rem;
+  letter-spacing:0.1px;
+  }
+  &__text2 {
+  color:#505050;
+  font-family:CirceRounded;
+  font-size:2rem;
+  font-weight:300;
+  line-height:2.5rem;
+  letter-spacing:-0.7px;
+  margin-top:0;
+  }
+  &__box-quote {
+    color: #505050;
+    font-family: CirceRounded;
+    font-size: rem-calc(24);
+    font-weight: 300;
+    line-height: rem-calc(37);
+    letter-spacing: -2px;
+    margin-top: rem-calc(37);
+  }
+  &__box {
+    &-title {
+      color:#505050;
+  font-family:CirceRounded;
+  font-size:2.175rem;
+  font-weight:300;
+  line-height:2.375rem;
+  margin-top:3.625rem;
+  margin-bottom:1.25rem;
+  letter-spacing:-1.8px;
+    }
+    &-text {
+    margin-top:2rem;
+    color:#505050;
+    font-family:Circe;
+    font-size:1.25rem;
+    font-weight:300;
+    line-height:1.75rem;
+    letter-spacing:0.1px;
+      &_icon {
+    max-width:115.625rem;
+    margin-top:1rem;
+    color:#505050;
+    font-family:Circe;
+    font-size:1.20rem;
+    font-weight:600;
+    line-height:1.75rem;
+    display:block;
+    text-align:center;
+    }
+      &_icon2 {
+      margin-top:1rem;
+      color:#505050;
+      font-family:Circe;
+      font-size:1.25rem;
+      font-weight:600;
+      line-height:1.75rem;
+      display:block;
+      text-align:center;
+    }
+    }
+    &-icon {
+    margin-top:3rem;
+    padding-bottom:1rem;
+    }
+    &-icon2 {
+    position:relative;
+    display:inline-block;
+    vertical-align:top;
+    margin-right:30px;
+    width:127px;
+    top:2;
+      &:last-of-type {
+         &:after {
+         display: none;
+    }
+    }
+    }
+  }
+  &__ul {
+  list-style-image: url(/i/infr-i-01.jpg);
+  line-height:2.75rem;
+  }
+  &__li {
+  padding-left: 1rem;
+  }
+}
+@media all and (max-width: 880px){
+	.b-infrastructure {
+		&__title, &__title2 {
+			font-size: rem-calc(35);
+			margin-top: rem-calc(40);
+		}
+
+		&__box {
+			&-text_icon {
+				max-width: 18.625rem;
+			}
+			&-title {
+				margin-top: rem-calc(36);
+			}
+		}
+		&__box {
+			&-text_icon {
+				max-width: 100%;
+			}
+			&-icon {
+				padding: 0 !important;
+			}
+		}
+	}
+}

@@ -31,8 +31,8 @@ var path = {
     src: {
         html: 'app/*.html',
         js: 'app/js/*.js',
-        style: 'app/aspro_mshop/styles.scss',
-        stylepapka: 'app/aspro_mshop',
+        style: 'app/css/style.scss',
+        stylepapka: 'app/css',
         img: 'app/i/*.*',
         spriteTemplate: 'app/css/sass.template.mustache',
         imgs: 'app/images/',
@@ -64,7 +64,6 @@ gulp.task('sass', function (done) {
         }).on('error', function (error) {
             done(error);
         }))
-        .pipe(postcss(processors))
         //.pipe(sourcemaps.write('./'))
         .pipe(gulp.dest(path.src.stylepapka)) // Outputs it in the css folder
         .on('end', function () {

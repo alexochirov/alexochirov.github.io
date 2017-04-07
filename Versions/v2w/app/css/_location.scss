@@ -1,0 +1,73 @@
+.b-loc {
+  &__title {
+    color: #505050;
+    font-family: CirceRounded;
+    font-size:2.85rem;
+    font-weight: 300;
+    line-height:3.275rem;
+    letter-spacing:-1.8px;
+    margin-top:1.625rem;
+    margin-bottom:1.25rem;
+    }
+  &__text {
+    color:#505050;
+    font-family:CirceRounded;
+    font-size:2rem;
+    font-weight:300;
+    line-height:2.213rem;
+    letter-spacing:-0.7px;
+    }
+    &__text2 {
+    color:#505050;
+    font-family:CirceRounded;
+    font-size:2.2rem;
+    font-weight:300;
+    line-height:2.353rem;
+    letter-spacing:-0.7px;
+    margin-bottom:1.875rem;
+    }
+  &__box {
+     &-text {
+      color: #505050;
+      font-family: Circe;
+      font-size:1.2rem;
+      font-weight: 300;
+      line-height: 1.75rem;
+      letter-spacing: 0;
+      }
+      &-title {
+      color:#505050;
+      font-family:CirceRounded;
+      font-size:2.85rem;
+      font-weight:300;
+      line-height:3.275rem;
+      letter-spacing:-1.8px;
+      margin-top:3rem;
+      margin-bottom:1.25rem;
+      }
+    }
+  &__img {
+    margin-bottom:1.5rem;
+    width: 100%;
+    }
+  }
+@include breakpoint(small only) {
+  .b-loc {
+	  &__title {
+		  font-size: 2rem;
+	  }
+	  &__text2 {
+		font-size:1.8rem;
+	}
+	  &__box {
+		  &-title {
+		  font-size:2rem;
+		  }
+		}
+	}
+}
+@media all and  (max-width: 500px){
+  .b-infrastructure #map {
+		height: 400px !important;
+	}
+}

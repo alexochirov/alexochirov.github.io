@@ -1,0 +1,58 @@
+.b-contractor {
+  margin-bottom:4rem;
+  &__title {
+    color: #505050;
+    font-family: CirceRounded;
+    font-size: 2.65rem;
+    font-weight: 300;
+    line-height: 2.813rem;
+    letter-spacing: -0.7px;
+    margin-top:rem-calc(30);
+    margin-bottom:rem-calc(30);
+  }
+  &__text {
+    color: #505050;
+    font-family: CirceRounded;
+    font-size: 2.77rem;
+    font-weight: 300;
+    line-height: 2.813rem;
+    letter-spacing: -0.7px;
+    margin-bottom: 2.875rem;
+  }
+  &__box {
+    &-title {
+    color: #505050;
+    font-family: CirceRounded;
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 2.375rem;
+    letter-spacing: -1.8px;
+    margin-top: 3rem;
+    margin-bottom: 1.25rem;
+  }
+  &-text {
+      margin-top: rem-calc(16);
+      color: #505050;
+      font-family: Circe;
+      font-size: 1.225rem;
+      font-weight: 300;
+      line-height: 1.75rem;
+      letter-spacing: 0;
+    }
+  }
+}
+@media all and  (max-width: 880px){
+  .b-contractor {
+		&__title {
+			font-size: 2.5rem;
+		}
+		&__box {
+			&-title {
+				font-size: 2.5rem;
+			}
+		}
+		&__text {
+			font-size:2rem;
+		}
+	}
+}

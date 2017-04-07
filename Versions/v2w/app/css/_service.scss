@@ -1,0 +1,10 @@
+.service {
+    font-size: rem-calc(31);
+    color: #898989;
+    font-weight: 400;
+margin-right: rem-calc(30);
+    &_active {
+        color: #010000;
+        text-decoration: underline;
+    }
+}

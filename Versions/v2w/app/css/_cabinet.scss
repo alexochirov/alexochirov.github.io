@@ -1,0 +1,38 @@
+.cabinet {
+    font-family: 'MyriadPro-Regular';
+
+    &__label {
+        font-size: rem-calc(18);
+    }
+
+    &__input {
+        margin-bottom: rem-calc(6);
+        height: rem-calc(50);
+    }
+
+    &__recover {
+        text-decoration: underline;
+        font-size: rem-calc(18);
+        color: #000000;
+    }
+
+    &__btn {
+        margin-top: rem-calc(40);
+        color: #538d31;
+        font-size: rem-calc(21);
+        border-radius: rem-calc(18);
+        padding: rem-calc(5) rem-calc(50) rem-calc(6);
+        border: rem-calc(2) solid #88b170;
+        transition: 0.3s;
+
+        &:hover {
+            color: $white;
+            background: #88b170;
+        }
+    }
+    @include breakpoint(small only) {
+        &__btn {
+            margin-top: rem-calc(10);
+        }
+    }
+}

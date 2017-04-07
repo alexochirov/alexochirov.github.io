@@ -1,0 +1,19 @@
+body {
+    color: #505050;
+    font-family: Circe;
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 1.75rem;
+    letter-spacing: -.4px;
+}
+.pagen {
+	a {
+	color: #505050 !important;
+	}
+}
+.clarification:before {
+  content: "*";
+  font-size: 1.1rem;
+  color: inherit;
+  font-family: monospace;
+}

@@ -1,0 +1,83 @@
+#sign-up {
+  outline: none;
+  padding: 0;
+  box-shadow: 0 2.5rem 2.5rem rgba(1, 0, 0, 0.2);
+  border: none;
+  width: 100%;
+  max-width: 840px;
+  border-radius: 25px;
+}
+.sign-up {
+  &__top {
+    background: #0c0;
+    margin-bottom:rem-calc(45);
+    & .close-button {
+      background: url("../images/rx.png");
+      width: rem-calc(40);
+      height: rem-calc(34);
+      background-size: 100% 100%;
+      top: rem-calc(12);
+      right: rem-calc(9);
+      outline: none;
+    }
+  }
+  &__title {
+    color: white;
+    font-family: CirceRounded;
+    font-size: 3.688rem;
+    font-weight: 300;
+    line-height: 2.813rem;
+    letter-spacing: -3px;
+    margin-top:rem-calc(38);
+    margin-bottom:rem-calc(44);
+  }
+  &__label {
+    color: #666;
+    font-family: Circe;
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 2.25rem;
+    margin-bottom:rem-calc(2);
+  }
+  &__input {
+    max-width: 31.875rem;
+    height: 3.75rem;
+    border: 0.063rem solid rgba(153, 153, 153, 0.6);
+    margin: 0 auto;
+    border-radius: rem-calc(5);
+    margin-bottom:rem-calc(25);
+  }
+  &__textarea {
+    max-width: 44.375rem;
+    height: 10rem;
+    border: 0.063rem solid rgba(153, 153, 153, 0.6);
+    margin: 0 auto;
+    border-radius: rem-calc(5);
+  }
+  &__submit {
+    color: white;
+    font-family: Circe;
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 2.875rem;
+    text-transform: uppercase;
+    width: 15rem;
+    height: 3.75rem;
+    background-color: #0c0;
+    border-radius: 1.875rem;
+    border: none;
+    box-shadow: none;
+    margin: rem-calc(40) 0;
+    outline: none;
+  }
+}
+.reveal-overlay {
+  background: #fff;
+  opacity: .8;
+}
+
+@include breakpoint(small only) {
+  #sign-up {
+    border-radius: 0;
+  }
+}
