@@ -1,0 +1,70 @@
+.clients {
+    padding-top: rem-calc(17);
+    margin-bottom: rem-calc(10);
+
+    & > li {
+        float: right;
+
+        &.is-active {
+            background: #0e0e0e;
+            border-radius: rem-calc(5) rem-calc(5) 0 0;
+        }
+
+        a {
+            font-size: rem-calc(13);
+            color: #fff;
+            text-decoration: none;
+            padding-right: rem-calc(15);
+
+          
+        }
+    }
+
+    .first-sub {
+        min-width: 0 !important;
+        width: 100%;
+        left: auto !important;
+        border-radius: 0 0 rem-calc(5) rem-calc(5);
+        right: rem-calc(0) !important;
+    }
+
+    &__link {
+        position: relative;
+        color: #fff;
+        font-size: rem-calc(13);
+        text-decoration: none;
+
+        &:hover {
+            &:after {
+                transform: rotate(180deg);
+            }
+        }
+
+        i {
+            position: relative;
+            top: rem-calc(-3);
+            font-size: rem-calc(24);
+            margin-right: rem-calc(9);
+        }
+
+        &:after {
+            transition: 0.5s all;
+            font-family: "FontAwesome";
+            content: '\f078';
+            display: block;
+            font-size: rem-calc(6);
+            position: absolute;
+            right: rem-calc(3);
+            top: rem-calc(14);
+        }
+    }
+    @include breakpoint(medium down) {
+        padding-top: rem-calc(24);
+    }
+    @include breakpoint(small only) {
+        padding-top: rem-calc(12);
+        position: absolute;
+        right: rem-calc(15);
+        top: rem-calc(-3);
+    }
+}

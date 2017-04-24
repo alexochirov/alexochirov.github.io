@@ -1,0 +1,406 @@
+extends index
+include components/mixins/_mixin-bread
+include components/mixins/_mixin-lot
+block inner
+  .row.columns
+    .content
+      .row.columns
+        +bread(['Главная','Название раздела','Название подраздела'])
+      .row
+        .large-19.medium-18.columns
+          .tim Аукцион Timeline Auctions Nat. Hist & Coins
+          .row.timeline
+            .large-4.medium-5.columns  
+              p
+                img(src="./images/heritage.png", alt="")
+            .large-20.medium-19.columns
+              .timeline__org Организатор
+              p 
+                a(href="#") Heritage Realty & Auction Co. Inc.   
+          
+          .pivot
+            p Baldwin’s, based in Central London, is one of the world’s oldest and largest numismatic dealerships. It was founded in 1872, and their current team of specialists has over 300 years combined experience in all areas of numismatics, including British and foreign coins, commemorative medals, Ancient coins, military decorations, banknotes, stamps and autographs.
+
+            p Their dedicated auction department opened in 1993, and hosts eighteen prestigious international auctions per year in London, Hong Kong and New York, and their current team of specialists has over 300 years combined experience in all areas of numismatics, including  British and foreign coins
+            div.cite 
+              p Their dedicated auction department opened in 1993, and hosts eighteen prestigious international auctions per year in London, Hong Kong and New York, and their current team of specialists has over 300 years combined experience in all areas of numismatics, including British and foreign coins.
+              p.text-right.cite__author Albert Einstein
+            p Baldwin’s, based in Central London, is one of the world’s oldest and largest numismatic dealerships. It was founded in 1872, and their current team of specialists has over 300 years combined experience in all areas of numismatics, including British and foreign coins, commemorative medals, Ancient coins, military decorations, banknotes, stamps and autographs.
+            p Their dedicated auction department opened in 1993, and hosts eighteen prestigious international auctions per year in London, Hong Kong and New York, and their current team of specialists has over 300 years combined experience in all areas of numismatics, including
+          +lot('Лоты аукциона')
+
+          include components/common/_lots
+          include components/common/_lead        
+          include components/common/_table
+          .row
+            .medium-11.columns.frame
+              .frame__img
+                img(src="./images/vi.jpg", alt="")
+              iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.2338574066102!2d-0.14646488389512827!3d51.50892547963534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876052970c372eb%3A0x2fcf3fee41555e02!2sFlight+Centre+Berkeley+Street%2C+Mayfair!5e0!3m2!1sru!2sua!4v1479119646138",height="400",style="width:100%;border:0",allowfullscreen)
+            .medium-12.medium-offset-1.columns
+              h2 Отделение в Великобритании
+              strong Даты проведения:
+              p 28 Августа—3 Сентября
+              strong Страна проведения:
+              p Великобритания
+              strong Город проведения:
+              p Лондон
+              strong Адрес:
+              p 24 Berkeley Square, Mayfair, London W1J 6EJ, United Kingdom
+              strong Телефон:
+              p 0044 208 761 2522
+              strong Электронная почта:
+              p 
+                a(href="#").action auctions@roseberys.co.uk
+          +lot('Заголовок h2')
+          .row.columns
+            p Baldwin’s, based in Central London, is one of the world’s oldest and largest numismatic dealerships. It was founded in 1872, and their current team of specialists has over 300 years combined experience in all areas of numismatics, including British and foreign coins, commemorative medals, Ancient coins, military decorations, banknotes, stamps and autographs.
+
+            p Their dedicated auction department opened in 1993, and hosts eighteen prestigious international auctions per year in London, Hong Kong and New York, and their current team of specialists has over 300 years combined experience in all areas of numismatics, including 
+          include components/common/_parameters    
+
+
+        .large-5.medium-6.columns.hide-for-small-only
+          .ticket 
+            strong Даты проведения:
+            p 28 Августа—3 Сентября
+            strong Страна проведения:
+            p Великобритания
+            strong Город проведения:
+            p Лондон
+            strong Адрес:
+            p 24 Berkeley Square, Mayfair, London W1J 6EJ, United Kingdom
+            strong Телефон:
+            p 0044 208 761 2522
+            strong Электронная почта:
+            p 
+              a(href="#").action auctions@roseberys.co.uk
+            strong Сайт аукциона:
+            p 
+              a(href="#").action www.bloomsburyauctions.com/auctions/a123
+          include components/common/_banner   
+  .row.columns
+    .content
+      .row
+        .large-2.show-for-large.columns
+          .navi
+            .navi__slide
+            .navi__slide
+            .navi__slide
+            .navi__slide
+            .navi__slide
+
+        .medium-10.columns
+          .gun.text-center
+            .gun__slide
+              a(href="#")
+                img(src="./images/gun.png", alt="")
+            .gun__slide
+              a(href="#")
+                img(src="./images/gun.png", alt="")
+            .gun__slide
+              a(href="#")
+                img(src="./images/gun.png", alt="")
+            .gun__slide
+              a(href="#")
+                img(src="./images/gun.png", alt="")
+            .gun__slide
+              a(href="#")
+                img(src="./images/gun.png", alt="")
+
+
+        .large-12.medium-14.columns.info
+          .row
+            .small-12.columns.info__lot лот № 753567
+            .small-12.columns.info__remember.text-right
+              a(href="#") 
+                |Запомнить лот
+              i.fa.fa-heart-o
+            .columns
+              h1 Celtic Iron Age Early Uninscribed
+              p Baldwin’s, based in Central London, is one of the world’s oldest and largest numismatic dealerships. It was founded in 1872, and their current team of specialists has over 300 years combined experience in all areas of numismatics.
+              p 
+                strong Оценка
+                |: 15 000 $
+              p
+                strong Стартовая цена
+                |: 15 000 $
+          .row.columns
+            
+            .timeline.timeline_hor
+              .row
+                .large-7.medium-9.columns  
+                  p
+                    img(src="./images/heritage.png", alt="")
+                .large-17.medium-15.columns
+                  .timeline__org Организатор
+                  p 
+                    a(href="#") Heritage Realty & Auction Co. Inc.
+              .row.columns
+                p
+                  strong Аукцион:
+                  |&nbsp;Auction 281, 27–28 September 2016
+                p
+                  strong Ставки принимаются до:
+                  |&nbsp;27 September 2016 10:00 CEST (Session 1) 28 September 2016 10:00 CEST (Session 2)  
+                a(href="#").timeline__link
+                  |Перейти на сайт аукциона           
+                  i.fa.fa-long-arrow-right
+          .row          
+            .columns
+              p
+                strong Поделиться:&nbsp;&nbsp;
+                a.info__soc.fa-stack.fa-lg(href="#")
+                  i.fa.fa-circle-thin.fa-stack-2x
+                  i.fa.fa-vk.fa-stack-1x           
+                a.info__soc.fa-stack.fa-lg(href="#")
+                  i.fa.fa-circle-thin.fa-stack-2x
+                  i.fa.fa-facebook.fa-stack-1x           
+                a.info__soc.fa-stack.fa-lg(href="#")
+                  i.fa.fa-circle-thin.fa-stack-2x
+                  i.fa.fa-pinterest.fa-stack-1x           
+                a.info__soc.fa-stack.fa-lg(href="#")
+                  i.fa.fa-circle-thin.fa-stack-2x
+                  i.fa.fa-google-plus.fa-stack-1x  
+      +lot('Подробное описание')  
+      .row
+        .columns
+          p Baldwin’s, based in Central London, is one of the world’s oldest and largest numismatic dealerships. It was founded in 1872, and their current team of specialists has over 300 years combined experience in all areas of numismatics, including British and foreign coins, commemorative medals, Ancient coins, military decorations, banknotes, stamps and autographs areas of numismatics.
+
+          p Their dedicated auction department opened in 1993, and hosts eighteen prestigious international auctions per year in London, Hong Kong and New York, and their current team of specialists has over 300 years combined experience in all areas of numismatics, including British and foreign coins 
+        .medium-12.columns
+          p.info__med Нумерованный список
+          ol
+            li Baldwin’s, based in Central London, is one of the world’s oldest and largest numismatic dealerships. It was founded in 1872, and their current team of specialists has over 300 years combined experience
+
+            li Baldwin’s, based in Central London, is one of the world’s oldest and largest numismatic dealerships. It was founded in 1872, and their current team of specialists has over 300 years combined experience
+
+            li Baldwin’s, based in Central London, is one of the world’s oldest and largest numismatic dealerships. It was founded in 1872, and their current team of specialists has over 300 years combined experience       
+        .medium-12.columns
+          p.info__med Маркированный список
+          ul
+            li Baldwin’s, based in Central London, is one of the world’s oldest and largest numismatic dealerships. It was founded in 1872, and their current team of specialists has over 300 years combined experience
+
+            li Baldwin’s, based in Central London, is one of the world’s oldest and largest numismatic dealerships. It was founded in 1872, and their current team of specialists has over 300 years combined experience
+
+            li Baldwin’s, based in Central London, is one of the world’s oldest and largest numismatic dealerships. It was founded in 1872, and their current team of specialists has over 300 years combined experience       
+  .row.columns
+    .content
+      .row.columns
+        +bread(['Главная','Название раздела','Название подраздела'])
+      .row.columns
+        .tim Результаты поиска «поисковый запрос»  
+      .row
+        .large-19.medium-18.columns
+          include components/common/_news
+          include components/common/_news
+          include components/common/_news
+
+        .large-5.medium-6.columns  
+          form(action="#")  
+            .ticket 
+              div.ticket__rel
+                input#checkbox1(type="checkbox")
+                label(for="checkbox1") Все (455)
+              div.ticket__rel
+                input#checkbox2(type="checkbox")
+                label(for="checkbox2") Аукционы (175)
+              div.ticket__rel
+                input#checkbox3(type="checkbox")
+                label(for="checkbox3") Шоу (30)
+              div.ticket__rel
+                input#checkbox4(type="checkbox")
+                label(for="checkbox4") Выставки (120)
+              .show-for-large.text-right
+                span.text-center.has-tip.cross(data-tooltip='', aria-haspopup='true', data-disable-hover='false', tabindex='1', title='Сбросить фильтр') 
+                  i.fa.fa-times
+              p.strainer
+                label.strainer__label
+                  |Страна
+                  input(type="text").strainer__input    
+              p.strainer
+                label.strainer__label
+                  |Город
+                  input(type="text").strainer__input    
+              p.strainer
+                label.strainer__label
+                  |Событие
+                  input(type="text").strainer__input    
+              p.strainer
+                label.strainer__label
+                  |Рубрика
+                  input(type="text").strainer__input   
+              .text-center
+                button.ticket__submit(type="submit") Найти   
+  .row.columns
+    .content
+      .row.columns
+        +bread(['Главная','Название раздела','Название подраздела'])
+      .row
+        .large-6.columns
+          .tim Лоты аукциона
+        .large-12.medium-18.small-15.columns.fit
+          |Сортировать по:&nbsp;&nbsp;
+          .sort.dropdown.menu(data-dropdown-menu)
+            li
+              a(href="#")
+                |Цене
+                i.fa.fa-caret-down
+              ul.menu
+                li
+                  a(href="#") От дешевых к дорогим
+                li
+                  a(href="#") От дорогих к дешевым
+          .sort.dropdown.menu(data-dropdown-menu)
+            li
+              a(href="#").sort__dark
+                |Названию
+                i.fa.fa-caret-down
+              ul.menu
+                li
+                  a(href="#") От A до Я
+                li
+                  a(href="#") От Я до А
+        .large-6.medium-6.small-9.columns.text-right
+          a.tile(href="#")
+          a.tile.tile_menu(href="#")
+      .row
+        .large-19.medium-18.columns    
+          include components/common/_lots   
+          include components/common/_lead   
+        .large-5.medium-6.columns.text-center.medium-text-left
+          .ticket
+            ul.accordion(data-accordion='')
+              li.accordion-item.is-active(data-accordion-item='')
+                a.accordion-title(href='#') Античность
+                .accordion-content(data-tab-content='')
+                  ul.accordion__cat
+                    li
+                      a.accordion__art(href="#") Все (455)
+                    li
+                      a.accordion__art(href="#") Аукционы (175)
+                    li
+                      a.accordion__art(href="#") Шоу (30)
+                    li
+                      a.accordion__art(href="#") Выставки (120)
+              li.accordion-item(data-accordion-item='')
+                a.accordion-title(href='#') Средние века
+                .accordion-content(data-tab-content='')
+                  ul.accordion__cat
+                    li
+                      a.accordion__art(href="#") Все (455)
+                    li
+                      a.accordion__art(href="#") Аукционы (175)
+                    li
+                      a.accordion__art(href="#") Шоу (30)
+                    li
+                      a.accordion__art(href="#") Выставки (120)
+              li.accordion-item(data-accordion-item='')
+                a.accordion-title(href='#') Оружие
+                .accordion-content(data-tab-content='')
+                  ul.accordion__cat
+                    li
+                      a.accordion__art(href="#") Все (455)
+                    li
+                      a.accordion__art(href="#") Аукционы (175)
+                    li
+                      a.accordion__art(href="#") Шоу (30)
+                    li
+                      a.accordion__art(href="#") Выставки (120)
+              li.accordion-item(data-accordion-item='')
+                a.accordion-title(href='#') Объекты исскуства
+                .accordion-content(data-tab-content='')
+                  ul.accordion__cat
+                    li
+                      a.accordion__art(href="#") Все (455)
+                    li
+                      a.accordion__art(href="#") Аукционы (175)
+                    li
+                      a.accordion__art(href="#") Шоу (30)
+                    li
+                      a.accordion__art(href="#") Выставки (120)
+          img(src="./images/rituels.png", alt="")     
+  .row.columns
+    .content
+      .row.columns
+        +bread(['Главная','Название раздела','Название подраздела'])    
+        .tim Ассоциации
+      .row
+        .large-19.medium-18.columns
+          form(action="#")
+            .row
+              .medium-20.large-22.columns.content__form
+                .row.large-up-4.medium-up-2.small-up-1
+                  .columns.strainer
+                    label.strainer__label
+                      |Страна
+                      input(type="text").strainer__input
+                  .columns.strainer
+                    label.strainer__label
+                      |Город
+                      input(type="text").strainer__input
+                  .columns.strainer
+                    label.strainer__label
+                      |Рубрика
+                      input(type="text").strainer__input
+                  .columns.strainer
+                    label.strainer__label
+                      |Ключевое слово
+                      input(type="text").strainer__input.strainer__input_active
+              .medium-4.large-2.columns
+                button.search(type="submit")
+                  i.fa.fa-search
+          .row
+            .columns
+              ul.alphabet.text-center.medium-text-left     
+                each title in ['0 - 9','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
+                  li.alphabet__item
+                    a.alphabet__link(href="#")= title
+            .columns
+              ul.alphabet.text-center.medium-text-left     
+                each title in ['А','Б','В','Г','Д','Е','Ж','З','И','К','Л','М','Н','О','П','Р','С','Т','У','Ф','Х','Ц','Ч','Ш','Щ','Э','Ю','Я']
+                  li.alphabet__item
+                    a.alphabet__link(href="#")= title
+            .columns.text-center.medium-text-left
+              h2 0-9
+          .row.large-up-3.medium-up-2.text-center.medium-text-left
+            .columns
+              a(href="#").line
+                img(src="./images/germany.png", alt="")
+                |1st GmbH&Co. KG       
+            .columns
+              a(href="#").line
+                img(src="./images/germany.png", alt="")  
+                |25 Blythe Road       
+            .columns
+              a(href="#").line
+                img(src="./images/germany.png", alt="")
+                |1st GmbH&Co. KG       
+            .columns
+              a(href="#").line
+                img(src="./images/germany.png", alt="")  
+                |25 Blythe Road       
+            .columns
+              a(href="#").line
+                img(src="./images/germany.png", alt="")
+                |1st GmbH&Co. KG       
+            .columns
+              a(href="#").line
+                img(src="./images/germany.png", alt="")  
+                |25 Blythe Road       
+            
+                
+        .large-5.medium-6.columns.text-center
+          img(src="./images/rituels.png", alt="")
+  .row.columns
+    .content
+      .row
+        .large-19.columns
+          .reg
+            |Если пользователь с таким email у нас зарегистрирован, на электронную почту высланы инструкции по восстановлению пароля. Это может занять несколько минут. 
+          a(href="#")
+            i.fa.fa-long-arrow-left
+            | &nbsp;Вернуться
+          
+          
+              

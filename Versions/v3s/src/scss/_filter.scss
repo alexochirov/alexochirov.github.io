@@ -1,0 +1,85 @@
+.filter {
+    &__btn {
+        height: rem-calc(21);
+        background-color: #fff;
+        border: rem-calc(1) solid #e1e1e1;
+        border-radius: rem-calc(5px);
+        color: $black;
+        font-size: rem-calc(12);
+        width: 100%;
+        padding-bottom: rem-calc(1);
+        float: right;
+        outline: none;
+        margin-bottom: rem-calc(11);
+        padding-left: rem-calc(30);
+        padding-right: rem-calc(5);
+        position: relative;
+
+        i {
+            position: absolute;
+            left: rem-calc(13);color:$black;
+            top: rem-calc(1);
+            font-size: rem-calc(15);
+        }
+
+        &:hover {
+            border-color: #afafaf;
+        }
+    }
+
+    &__input {
+        text-transform: uppercase;
+        height: rem-calc(21);
+        border-radius: rem-calc(5px);
+        background-color: #afafaf;
+        padding-top: rem-calc(7);
+        padding-left: rem-calc(10);
+        padding-right: rem-calc(10);
+        color: #fff;
+        padding-top: rem-calc(1);
+        padding-bottom: 0;
+        margin-bottom: rem-calc(11);
+        font-size: rem-calc(12);
+        font-weight: bold;
+
+        &:focus {
+            background-color: #afafaf;
+            color: #fff;
+        }
+
+        &_mini {
+            padding-top: rem-calc(2);
+            margin-top: rem-calc(6);
+        }
+
+        &::-webkit-input-placeholder {
+            color: #fff;
+            font-size: rem-calc(12);
+            font-weight: bold;
+        }
+
+        &::-moz-placeholder {
+            color: #f ff;
+            font-size: rem-calc(12);
+            font-weight: bold;
+        }
+
+        &:-moz-placeholder {
+            color: #fff;
+            font-size: rem-calc(12);
+            font-weight: bold;
+        }
+
+        &:-ms-input-placeholder {
+            color: #fff;
+            font-size: rem-calc(12);
+            font-weight: bold;
+        }
+    }
+    @include breakpoint(small only) {
+        &__btn,
+        &__input {
+            margin-bottom: rem-calc(15);
+        }
+    }
+}

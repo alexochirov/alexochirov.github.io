@@ -1,56 +1,70 @@
-;$(document).foundation();
+;
+$(document).foundation();
 
-(function ($) {
+(function($) {
     "use strict";
-    $(function () {
+    $(function() {
 
-        $(".x-carousel-main").slick({
-            infinite: true,
-            dots: false,
-            arrows: true,
-            slidesPerRow: 1,
+
+        var arr = [];
+        (function() {
+
+            $('.gun__slide').each(function(i) {
+                arr[i] = $(this).find('img').attr('src');
+            });
+
+
+        })();
+
+        $('.gun').slick({
             slidesToShow: 1,
             slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 5000,
-            autoplayHoverPause: true,
-            fade: true,
-            swipeToSlide: true,
-            prevArrow: '<i class="slick-prev fa fa-angle-left fa-3x"> </i>',
-            nextArrow: '<i class="slick-next fa fa-angle-right fa-3x"> </i>'
+            arrows: false,
+            fade: false,
+            asNavFor: '.navi',
+            vertical: true,
+            verticalSwiping: true
         });
-
-        $(".x-carousel-services").slick({
-            infinite: true,
+        $('.navi').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            asNavFor: '.gun',
             dots: true,
-            arrows: false,
-            slidesPerRow: 1,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 5000,
-            autoplayHoverPause: true
+            centerMode: true,
+            focusOnSelect: true,
+            prevArrow: '<i class="slick-prev fa fa-chevron-up "> </i>',
+            nextArrow: '<i class="slick-next fa fa-chevron-down "> </i>'
         });
 
-        $(".x-carousel-news").slick({
-            infinite: true,
-            arrows: false,
-            slidesPerRow: 1,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            fade: true,
-            swipeToSlide: true,
-            autoplay: true,
-            autoplaySpeed: 7000,
-            autoplayHoverPause: true
-        });
-        $('.x-carousel-news-link').on('click', function(e){
 
-            e.preventDefault();
-            var $this = $(this),
-                index = $this.closest('.x-carousel-news-links').find('.x-carousel-news-link').index($this);
-            $('.x-carousel-news').slick('slickGoTo', index);
+        (function() {
+
+            $('.navi .slick-dots li button').each(function(i) {
+                $(this).html('<img src="' + arr[i] + '" alt="" />');
+
+            });
+
+        })();
+        $(document).on("show.zf.dropdownmenu", function(ev, $el) {
+            $el.prev().addClass('js-open');
         });
+        $(document).on("hide.zf.dropdownmenu", function(ev, $el) {
+            $el.find('a').removeClass('js-open');
+        });
+
+
+        $(window).bind("load resize", function () {
+            var footer = $("footer");
+            var pos = footer.position();
+            var height = $(window).height();
+            height = height - pos.top - footer.height();
+            if (height > 0) {
+                footer.css({
+                    'margin-top': height + 'px'
+                });
+            }
+        });
+
 
     });
 })(jQuery);

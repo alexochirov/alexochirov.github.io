@@ -1,0 +1,23 @@
+.search {
+    width: 100%;
+    float: right;
+    height: rem-calc(32);
+    background-color: $red;
+    transition: 0.5s;
+
+    &:hover {
+        background: #ca3034;
+    }
+
+    i {
+        color: #fff;
+        font-size: rem-calc(17);
+    }
+    @include breakpoint(medium down) {
+        width: 100%;
+    }
+    @include breakpoint(small only) {
+        margin-top: rem-calc(0);
+        margin-bottom: rem-calc(15);
+    }
+}

@@ -1,0 +1,17 @@
+.alphabet {
+    list-style-type: none;
+    margin-left: rem-calc(0);
+    margin-bottom: rem-calc(4);
+
+    &__item {
+      display: inline-block;
+        margin-right: rem-calc(12);
+    }
+
+    &__link {
+        text-transform: uppercase;
+        font-size: rem-calc(15);
+        text-decoration: none;
+        font-family: $font-family-AGMelanie-roman;
+    }
+}

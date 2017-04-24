@@ -1,0 +1,27 @@
+.strainer {
+    &__label {
+        color: #000;
+        font-size: rem-calc(12);
+        text-transform: uppercase;
+        font-family: $font-family-AGMelanie-roman;
+    }
+
+    &__input {
+        background-color: #f2f2f2;
+        border: rem-calc(1) solid $red;
+        margin-bottom: rem-calc(5);
+        height: rem-calc(32);
+        color: #000;
+
+        &:focus,
+        &_active {
+            color: #fff;
+            background-color: $red;
+        }
+    }
+    @include breakpoint(small only) {
+        &__label {
+            font-size: rem-calc(11);
+        }
+    }
+}

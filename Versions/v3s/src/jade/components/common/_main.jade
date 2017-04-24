@@ -1,0 +1,108 @@
+include ../mixins/_mixin-news
+form(action="#")
+  .row
+    .medium-18.large-19.columns.content__form
+      .row.large-up-5.medium-up-3.small-up-2
+        .columns.strainer
+          label.strainer__label
+            |Страна
+            input(type="text").strainer__input
+        .columns.strainer
+          label.strainer__label
+            |Город
+            input(type="text").strainer__input
+        .columns.strainer
+          label.strainer__label
+            |Событие
+            input(type="text").strainer__input
+        .columns.strainer
+          label.strainer__label
+            |Дата
+            input(type="text").strainer__input
+        .columns.strainer
+          label.strainer__label
+            |Рубрика
+            input(type="text").strainer__input
+
+    .medium-6.large-5.columns.strainer
+      label.strainer__label
+        |Ключевое слово
+      .row
+        .large-18.medium-17.small-19.columns  
+          input(type="text").strainer__input.strainer__input_active    
+        .large-6.medium-7.small-5.columns  
+          button.search(type="submit")
+            i.fa.fa-search
+.row
+  .large-19.medium-18.columns
+    .row.medium-up-3.small-up-1.text-center
+      .columns
+        p
+          a(href="#")
+            img(src="./images/red1.png", alt="")
+      .columns
+        p
+          a(href="#")
+            img(src="./images/red2.png", alt="")
+      .columns
+        p
+          a(href="#")
+            img(src="./images/red3.png", alt="")
+    form(action="#")
+      .row.filter
+        .large-19.medium-16.columns
+          input(type="text",placeholder="2 января 2016").filter__input.text-center.medium-text-left
+        .large-5.medium-8.columns
+          button.text-center(type="submit").filter__btn 
+            |Сбросить фильтр
+            i.fa.fa-times
+    +news('a1','britain')
+    +news('a2','germany')
+    +news('a3','france')
+    +news('a4','russia')
+    +news('a5','italy')
+    +news('a6','france')
+    .row
+      .columns.filter
+        .filter__input.filter__input_mini 1 ЯНВАРЯ 2016
+    +news('a2','germany')
+    +news('a3','france')
+    +news('a4','russia')
+    +news('a5','italy')
+    +news('a6','france')
+    +news('a1','britain')
+    +news('a2','germany')
+    +news('a3','france')
+    +news('a4','russia')
+    +news('a5','italy')
+    +news('a6','france')
+    +news('a1','britain')
+    +news('a2','germany')
+    +news('a3','france')
+    +news('a4','russia')
+    +news('a5','italy')
+    +news('a6','france')
+    .row.columns
+      ul.pagination.text-center.docs(role="navigation" aria-label="Pagination")
+        li.pagination-previous
+          a(href="#",aria-label="Prev page")
+            img(src="./images/left-arr.svg", alt="")
+        li
+          a(href="#",aria-label="Page 1") 1
+        li.ellipsis
+        li.hide-for-medium
+          a(href="#",aria-label="Page 14") 14
+        li.current
+          span 15
+        li.hide-for-medium
+          a(href="#",aria-label="Page 16") 16
+        li.ellipsis
+        li
+          a(href="#",aria-label="Page 34") 34
+        li.pagination-next
+          a(href="#",aria-label="Next page")
+            img(src="./images/right-arr.svg", alt="")
+
+
+  .large-5.medium-6.columns.text-right.hide-for-small-only
+    include _banner

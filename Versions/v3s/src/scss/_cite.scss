@@ -1,0 +1,30 @@
+.cite {
+    font-size: rem-calc(14);
+    color: $red;
+    font-family: "Merriweather";
+    font-style: italic;
+    position: relative;
+    padding-left: rem-calc(30);
+    letter-spacing: rem-calc(.7);
+
+    &:before {
+        display: inline-block;
+        content: "“";
+        width: rem-calc(17);
+        height: rem-calc(13);
+        font-size: rem-calc(48);
+        left: rem-calc(-3);
+        font-style: normal;
+        font-family: $font-family-AGMelanie-roman;
+        top: rem-calc(-16);
+        position: absolute;
+    }
+
+    &__author {
+        color: $black;
+        font-style: normal;
+        margin-top: rem-calc(13);
+        font-family: $font-family-AGMelanie-roman;
+        font-size: rem-calc(15);
+    }
+}

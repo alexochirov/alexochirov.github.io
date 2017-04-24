@@ -6,32 +6,51 @@ $fontsPath: '../fonts' !default;
 
 $fa-font-path: $fontsPath;
 
+
+@import "fonts";
 @import "settings";
+//@import "slick/slick-theme";
 @import "external";
 
+$red :#461010;
+
 @import "common";
-@import "slick/slick-theme";
-
-@import "carousel/carousel-main";
-@import "carousel/carousel-news";
-@import "carousel/carousel-services";
-@import "content";
-@import "date";
-@import "footer";
 @import "header";
-@import "incremental-list";
-@import "menu-base";
-@import "menu-catalog";
-@import "menu-dropdown-products";
-@import "menu-top";
-@import "product-page";
-@import "product-tiles";
-@import "red-line";
-@import "social-icons";
-@import "stub";
-@import "text";
-@import "top-line";
-@import "vertical-middle";
-
-@import "checkout";
-@import "user-account";
+@import "flag";
+@import "footer";
+@import "list";
+@import "fall";
+@import "clients";
+@import "content";
+@import "strainer";
+@import "search";
+@import "filter";
+@import "auction";
+@import "docs";
+@import "docs";
+@import "breadcrumbs";
+@import "timeline";
+@import "ticket";
+@import "cite";
+@import "lot";
+@import "product";
+@import "lead";
+@import "sheet";
+@import "frame";
+@import "action";
+@import "gun";
+@import "navi";
+@import "parameters";
+@import "info";
+@import "tim";
+@import "news";
+@import "inline";
+@import "cross";
+@import "sort";
+@import "fit";
+@import "tile";
+@import "line";
+@import "accordion";
+@import "alphabet";
+@import "reg";
+@import "pivot";

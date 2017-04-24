@@ -1,0 +1,69 @@
+.ticket {
+    padding-left: rem-calc(16);
+    padding-right: rem-calc(16);
+    font-size: rem-calc(13);
+    word-break: break-all;
+    padding-top: rem-calc(24);
+    position: relative;
+    border: rem-calc(3) solid #dedede;
+    border-bottom: 0;
+    margin-bottom: rem-calc(90);
+    padding-bottom: rem-calc(30);
+
+    &:after {
+        position: absolute;
+        content: "";
+        left: rem-calc(-3);
+        bottom: rem-calc(0);
+        width: calc(100% + 6px);
+        height: rem-calc(50);
+        bottom: rem-calc(-50);
+        background: url("../images/arr1.png") no-repeat center bottom;
+        background-size: cover;
+    }
+
+    &__rel {
+        position: relative;
+    }
+
+    &__submit {
+        text-transform: uppercase;
+        font-size: rem-calc(11);
+        border-radius: rem-calc(3);
+        background: $red;
+        padding-top: rem-calc(11);
+        padding-bottom: rem-calc(11);
+        color: #fff;
+        padding-left: rem-calc(10);
+        padding-right: rem-calc(10);
+        width: rem-calc(125);
+        max-width: 100%;
+        transition: 0.6s all;
+
+        &:hover {
+            color: #f40a0a;
+        }
+    }
+
+    [type='checkbox'] {
+        margin-bottom: rem-calc(0);
+        position: absolute;
+        top: rem-calc(5);
+    }
+
+    [type='checkbox']+label,
+    [type='radio']+label {
+        margin-right: rem-calc(0);
+        margin-left: rem-calc(20);
+        margin-bottom: rem-calc(12);
+    }
+    @include breakpoint (medium down) {
+        border: rem-calc(3) solid #dedede;
+        padding-left: rem-calc(8);
+        padding-right: rem-calc(8);
+
+        &:after {
+            display: none;
+        }
+    }
+}

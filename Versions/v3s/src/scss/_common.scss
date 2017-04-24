@@ -1,43 +1,58 @@
-h1 {
-  line-height: 1.2;
-  margin-bottom: 0.3rem;
+body {
+    background: #f0f0f0;
 }
 
-.no-wrap,
-.price {
-  white-space: nowrap;
+a {
+    text-decoration: underline;
+    font-size: rem-calc(15);
+    color: $black;
 }
 
-.table-scroll {
-  overflow-x: auto;
+p {
+    font-size: rem-calc(13);
+    font-weight: 300;
+    line-height: 1.7;
+    letter-spacing: rem-calc(.6);
 }
 
-.pseudo-link {
-  border-bottom: 1px dotted $anchor-color;
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: $font-family-AGMelanie-roman;
 }
 
-.accordion-title {
-  font-size: 1rem;
-  line-height: 1.33rem;
+strong {
+    font-weight: 500;
+    font-size: rem-calc(13);
 }
 
-.tabs-title > a {
-  font-size: 1rem;
-}
+ol {
+    margin-left: rem-calc(44);
+    margin-top: rem-calc(0);
+    counter-reset: myCounter;
 
-label {
-  line-height: 1.35em;
-  margin-bottom: .3rem;
-}
+    li {
+        list-style: none;
+        position: relative;
+        margin-bottom: rem-calc(7);
 
-.small-expanded {
-  @include breakpoint(small only) {
-    @include button-expand(true);
-  }
-}
-
-.medium-float-right {
-  @include breakpoint(medium) {
-    float: right;
-  }
+        &:before {
+            counter-increment: myCounter;
+            content: counter(myCounter);
+            position: absolute;
+            display: inline-block;
+            margin-left: rem-calc(-44);
+            margin-right: rem-calc(12);
+            text-align: center;
+            font-size: rem-calc(18);
+            line-height: 30px;
+            top: rem-calc(-7);
+            border: 1px solid #e1e1e1;
+            border-radius: 50%;
+            width: 31px;
+            height: 31px;
+        }
+    }
 }

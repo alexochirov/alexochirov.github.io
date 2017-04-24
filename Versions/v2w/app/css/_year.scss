@@ -1,0 +1,37 @@
+.year {
+  width: rem-calc(600);
+  position: absolute;
+  top: calc(100% + 10px);
+  left: rem-calc(-1);
+  z-index: 10;
+  background: $white;
+
+  &_long {
+    width: rem-calc(760);
+  }
+
+  &_calendar {}
+
+  &__title {
+    border-bottom: rem-calc(2) dotted #d1d5df;
+    font-size: rem-calc(14);
+    line-height: 1.4;
+    display: inline-block;
+    padding-top: rem-calc(10);
+    margin-left: rem-calc(10);
+    margin-right: rem-calc(10);
+    color: $black;
+    text-transform: uppercase;
+  }
+  @media (max-width: 830px) {
+    width: rem-calc(600);
+
+    &_calendar {
+      left: rem-calc(-180);
+    }
+  }
+  @media (max-width: 700px) {
+    left: rem-calc(-1);
+    width: 100%;
+  }
+}

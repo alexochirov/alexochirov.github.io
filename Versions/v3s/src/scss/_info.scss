@@ -1,0 +1,37 @@
+.info {
+    padding-top: rem-calc(20);
+
+    &__remember {
+        color: #9b9b9b;
+        font-weight: 300;
+
+        a {
+            padding-right: rem-calc(9);
+            text-decoration: none;
+            font-size: rem-calc(13);
+        }
+
+        i {
+            color: $red;
+        }
+    }
+
+    &__lot {
+        color: #9b9b9b;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: rem-calc(11);
+    }
+
+    &__soc {
+        margin-right: rem-calc(8);
+
+        .fa-circle-thin {
+            color: #e1e1e1;
+        }
+    }
+
+    &__med {
+        font-weight: 500;
+    }
+}

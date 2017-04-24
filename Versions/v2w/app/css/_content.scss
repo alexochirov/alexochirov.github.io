@@ -1,9 +1,0 @@
-.b-content {
-  width: 80%;
-}
-
-@include breakpoint(large down) {
-  .b-content {
-    width: 100%;
-  }
-}
