@@ -70,8 +70,12 @@ $today-color: $color !default;
 			border: rem-calc(1) solid $red;
 			border-radius: 50%;
 
-			&.pmu-selected {
-				border-radius: 50% !important;
+			&.pmu-selected {}
+
+			&.js-first-date,
+			&.js-first-hover {
+				border-radius: 50% 0 0 50%;
+				border-color: transparent;
 			}
 		}
 
@@ -308,8 +312,7 @@ $today-color: $color !default;
 		}
 	}
 }
-@media (max-width: 600px)
-{
+@media (max-width: 600px) {
 	.pickmeup {
 		margin-left: rem-calc(0);
 		margin-right: rem-calc(0);

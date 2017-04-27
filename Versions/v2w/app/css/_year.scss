@@ -10,7 +10,28 @@
     width: rem-calc(760);
   }
 
-  &_calendar {}
+  &_room {
+    width: rem-calc(474);
+    padding: rem-calc(20);
+  }
+
+  &__button {
+    cursor: pointer;
+    margin-top: rem-calc(10);
+    color: $red;
+    padding-top: rem-calc(5);
+    padding-bottom: rem-calc(5);
+    font-size: rem-calc(15);
+    background: none;
+    width: 100%;
+    border-radius: rem-calc(2);
+    border: rem-calc(1) solid $red;
+
+    &:hover {
+      color: $white;
+      background: $red;
+    }
+  }
 
   &__title {
     border-bottom: rem-calc(2) dotted #d1d5df;
@@ -25,6 +46,10 @@
   }
   @media (max-width: 830px) {
     width: rem-calc(600);
+
+    &_room {
+      width: rem-calc(474);
+    }
 
     &_calendar {
       left: rem-calc(-180);

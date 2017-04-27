@@ -61,10 +61,12 @@
     &:hover {
       border-color: $white;
     }
-&_way {
-  padding-left: rem-calc(23);
-  padding-right: rem-calc(23);
-}
+
+    &_way {
+      padding-left: rem-calc(23);
+      padding-right: rem-calc(23);
+    }
+
     &_big {
       width: calc(34% - 23px);
     }
@@ -131,6 +133,7 @@
     &__block {
       margin-bottom: rem-calc(3);
     }
+
     &__button,
     &__submit {
       width: 100%;

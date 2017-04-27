@@ -28,9 +28,9 @@ $(function() {
     pickmeup.defaults.locales['ru'] = arrayDate;
     document.getElementsByClassName('calendar')[0].addEventListener('pickmeup-fill', function(e) {
 
-      hoverBeauty();
       fillPmuHelper();
       dateGet();
+      hoverBeauty();
 
     });
     pickmeup('.calendar', {
@@ -76,7 +76,7 @@ $(function() {
           });
 
         }
-        if (hoverDate < firstSelectedDate) {
+        if (hoverDate <= firstSelectedDate) {
           $(this).addClass('js-first-hover');
           $('.pmu-days .pmu-button:not(.pmu-disabled)').each(function() {
             if (getMyDate($(this)) <= firstSelectedDate && getMyDate($(this)) >= hoverDate) {
@@ -109,8 +109,13 @@ $(function() {
     var lastSelectedDate;
 
     function dateGet() {
+
+
       $('.pmu-days .pmu-selected.pmu-button').first().addClass('js-first-date');
+
       $('.pmu-days .pmu-selected.pmu-button').last().addClass('js-last-date');
+
+
       $('.pmu-days .pmu-button:not(.pmu-disabled)').click(function() {
         var dateFromCalendar;
 
@@ -135,6 +140,7 @@ $(function() {
           var checkOutTime = '<span class="rest__weekday">' + weekDayLastSelectedDate + '</span>' + dayLastSelectedDate + ' ' + monthLastSelectedDate + '.';
           if (checkOutTime != checkInTime) {
             $('.rest__check-out').html(checkOutTime);
+            $('.year_calendar').addClass('hide');
           } else {
             $('.rest__check-out').html('Дата выезда');
           }
@@ -203,6 +209,171 @@ $(function() {
     $(this).closest('.year').toggleClass('hide');
   });
   //end of choose way .garage__link
+  //begin of .room count and other
+  function reloadCountRoomAndPeople() {
+    var $visibleRooms = $(".room:not(.hide)");
+    var numRooms = $visibleRooms.length;
+    var numGuests = 0;
+    var arrayRooms = ['1 номер', '2 номера', '3 номера', '4 номера'];
+    var arrayGuests = ['1 гость', '2 гостя', '3 гостя', '4 гостя', '5 гостей', '6 гостей', '7 гостей', '8 гостей', '9 гостей', '10 гостей', '11 гостей', '12 гостей', '13 гостей', '14 гостей', '15 гостей', '16 гостей', '17 гостей', '18 гостей', '19 гостей', '20 гостей', '21 гость', '22 гостя', '23 гостя', '24 гостя', '25 гостей', '26 гостей', '27 гостей', '28 гостей', '29 гостей', '30 гостей', '31 гость', '32 гостя', '33 гостя', '34 гостя', '35 гостей', '36 гостей', '37 гостей', '38 гостей', '39 гостей', '40 гостей', '41 гость', '42 гостя', '43 гостя', '44 гостя', '45 гостей', '46 гостей', '47 гостей', '48 гостей'];
+    $visibleRooms.each(function(i) {
+      $(this).find('.room__digit').text(i + 1);
+      numGuests += +$(this).find('.room__adults input').val();
+      numGuests += +$(this).find('.room__children input').val();
+
+    });
+    $visibleRooms.first().addClass('room_first');
+    $('.rest__room').text(arrayRooms[numRooms - 1]);
+    $('.rest__guest').text(arrayGuests[numGuests - 1]);
+
+
+  }
+  reloadCountRoomAndPeople();
+
+  function showAndHideRemoveButton() {
+    var $visibleRooms = $(".room:not(.hide)");
+    var numRooms = $visibleRooms.length;
+
+    if (numRooms > 1) {
+      $visibleRooms.find('.room__remove').removeClass('hide');
+    } else {
+      $visibleRooms.find('.room__remove').addClass('hide');
+    }
+  }
+  $('.room__adults .room__more').click(function() {
+    var currentInput = $(this).closest('.room__adults').find('input');
+    var numCurrent = +currentInput.val();
+    if (numCurrent < 8) {
+      currentInput.val(numCurrent + 1);
+    }
+    reloadCountRoomAndPeople();
+
+  });
+  $('.room__adults .room__less').click(function() {
+    var currentInput = $(this).closest('.room__adults').find('input');
+    var numCurrent = +currentInput.val();
+    if (numCurrent > 1) {
+      currentInput.val(numCurrent - 1);
+    }
+    reloadCountRoomAndPeople();
+
+  });
+  $('.room__adults input').change(function() {
+    var numCurrent = +$(this).val();
+    var minNum = 1;
+    var maxNum = 8;
+
+    if (numCurrent >= maxNum) {
+      $(this).val(maxNum);
+    } else {
+      if (numCurrent <= minNum) {
+        $(this).val(minNum);
+      } else {
+        if (numCurrent < maxNum && numCurrent > minNum) {
+          $(this).val(numCurrent);
+
+        } else {
+
+          $(this).val(minNum);
+
+        }
+      }
+    }
+    reloadCountRoomAndPeople();
+  });
+  $('.room__children input').change(function() {
+    var numCurrent = +$(this).val();
+    var minNum = 0;
+    var maxNum = 4;
+
+    if (numCurrent >= maxNum) {
+      $(this).val(maxNum);
+    } else {
+      if (numCurrent <= minNum) {
+        $(this).val(minNum);
+      } else {
+        if (numCurrent < maxNum && numCurrent > minNum) {
+          $(this).val(numCurrent);
+
+        } else {
+
+          $(this).val(minNum);
+
+        }
+      }
+    }
+    agesFunction($(this));
+
+    reloadCountRoomAndPeople();
+  });
+
+  function agesFunction(obj) {
+
+    var numCurrent = +obj.val();
+    if (numCurrent > 0) {
+      obj.closest('.room').find('.room__age').removeClass('hide');
+      if (numCurrent == 1) {
+        obj.closest('.room').find('.room__line').removeClass('room__up-2 room__up-3 room__up-4').addClass('room__up-1').find('input').addClass('hide');
+        obj.closest('.room').find('.room__line input.hide').first().removeClass('hide');
+      }
+      if (numCurrent == 2) {
+        obj.closest('.room').find('.room__line').removeClass('room__up-1 room__up-3 room__up-4').addClass('room__up-2').find('input').addClass('hide');
+        obj.closest('.room').find('.room__line input.hide').first().removeClass('hide');
+        obj.closest('.room').find('.room__line input.hide').first().removeClass('hide');
+      }
+      if (numCurrent == 3) {
+        obj.closest('.room').find('.room__line').removeClass('room__up-1 room__up-2 room__up-4').addClass('room__up-3').find('input').addClass('hide');
+        obj.closest('.room').find('.room__line input.hide').first().removeClass('hide');
+        obj.closest('.room').find('.room__line input.hide').first().removeClass('hide');
+        obj.closest('.room').find('.room__line input.hide').first().removeClass('hide');
+      }
+      if (numCurrent == 4) {
+        obj.closest('.room').find('.room__line').removeClass('room__up-1 room__up-2 room__up-3').addClass('room__up-4').find('input').removeClass('hide');
+      }
+    } else {
+      obj.closest('.room').find('.room__age').addClass('hide');
+    }
+  }
+  $('.room__children .room__more').click(function() {
+    var currentInput = $(this).closest('.room__children').find('input');
+    var numCurrent = +currentInput.val();
+    if (numCurrent < 4) {
+      currentInput.val(numCurrent + 1);
+    }
+    reloadCountRoomAndPeople();
+    agesFunction($(this).closest('.room__children').find('input'));
+
+  });
+  $('.room__children .room__less').click(function() {
+    var currentInput = $(this).closest('.room__children').find('input');
+    var numCurrent = +currentInput.val();
+    if (numCurrent > 0) {
+      currentInput.val(numCurrent - 1);
+    }
+    reloadCountRoomAndPeople();
+    agesFunction($(this).closest('.room__children').find('input'));
+  });
+
+  $('.room__remove').click(function() {
+    $(this).closest('.room').addClass('hide');
+    showAndHideRemoveButton();
+    reloadCountRoomAndPeople();
+    if ($('.room.hide').length != 0) {
+      $('.year__button').removeClass('hide');
+    }
+  });
+  $('.year__button').click(function() {
+
+
+    $('.room.hide').first().removeClass('hide');
+    reloadCountRoomAndPeople();
+    if ($('.room.hide').length == 0) {
+      $(this).addClass('hide');
+    }
+    showAndHideRemoveButton();
+
+  });
+  //end of .room count and other
 
 
 
