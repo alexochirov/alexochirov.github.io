@@ -1,14 +1,20 @@
 .dinghy {
-    background-repeat: no-repeat;
-    background-position: right top;
-    background-size: contain;
     @include breakpoint(medium down) {
         background-image: none!important;
     }
-    &__text {
-      font-size: rem-calc(28);
-      padding-top: rem-calc(220);
-      padding-right: rem-calc(30);
+
+    &__img {
+        position: relative;
+    }
+
+    &__price {
+        font-size: rem-calc(18);
         font-family: 'PTSerif', serif;
+    }
+
+    &__text {
+        position: absolute;
+        left: rem-calc(-100);
+        bottom: rem-calc(0);
     }
 }

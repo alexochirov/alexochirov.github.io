@@ -1,3 +1,33 @@
 .bandage {
   display: inline-block;
 }
+
+.bandage__alternative {
+  display: inline-block;
+  cursor: pointer;
+  margin-right: .3rem;
+  padding: 0 .5rem;
+}
+
+.bandage__alternative.active {
+  background: #a52468;
+  color: white;
+  border-radius: 5px;
+
+  & .bandage__arrow-down {
+    filter: invert(1);
+  }
+}
+
+.bandage__wrapper {
+  margin-bottom: 1rem;
+}
+
+.bandage__arrow-down {
+  background: url(../img/sprites.png) no-repeat;
+  background-position: -85px -183px;
+  width: 12px;
+  height: 8px;
+  display: inline-block;
+  border: none;
+}

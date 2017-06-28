@@ -1,13 +1,15 @@
 .breadcrumbs {
-    font-weight: 300;
+    background: transparent;
+    padding-left: 0;
+    padding-right: rem-calc(10);
+    margin-bottom: rem-calc(10);
 
-    a {
-        font-size: rem-calc(13);
-        text-decoration: none;
-    }
+    li {
+        margin-top: 6px;
+        margin-bottom: 7px;
 
-    li:not(:last-child):after {
-        content: "\005C";
-        color: #e1e1e1;
+        &:not(:last-child)::after {
+            color: #555;
+        }
     }
 }

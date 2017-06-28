@@ -60,3 +60,12 @@
     color: $dark-gray;
   }
 }
+.text-asphalt {
+  color: $asphalt;
+  &:hover, &:focus {
+    color: $asphalt;
+  }
+}
+.text-uppercase {
+  text-transform: uppercase;
+}

@@ -1,107 +1,70 @@
 .product {
-    border: 1px solid #e1e1e1;
     position: relative;
-    padding: rem-calc(16);
-    margin-bottom: rem-calc(23);
-    transition: 0.6s all;
+    margin-bottom: rem-calc(15);
 
-    &_action {
-        &:before {
-            content: "";
-            left: rem-calc(0);
-            top: rem-calc(0);
-            position: absolute;
-            display: block;
-            width: rem-calc(78);
-            height: rem-calc(78);
-            background: url(../images/action.png)no-repeat;
-        }
-    }
-
-    &__img {
-        height: rem-calc(235);
-        vertical-align: middle;
-        width: 100%;
-        margin-bottom: rem-calc(15);
-
-        a {
-            line-height: rem-calc(235);
-        }
-
-        img {
-            max-height: 100%;
-        }
-    }
-
-    &__title {
-        letter-spacing: rem-calc(.6);
-        padding-bottom: rem-calc(3);
-        font-family: $font-family-AGMelanie-roman;
-    }
-
-    &__price {
-        font-size: rem-calc(24);
+    img {
         display: inline-block;
-        font-family: $font-family-AGMelanie-Bold;
-        padding-right: rem-calc(3);
-
-        &:hover {
-            color: $red;
-        }
     }
 
-    &__cross {
-        color: #9b9b9b;
-        display: inline-block;
-        text-decoration: line-through;
-        font-family: $font-family-AGMelanie-roman;
-        font-size: rem-calc(15);
-    }
-
-    &__info {
-        padding-right: rem-calc(50);
-    }
-
-    &__basket {
-        border-left: 1px solid #e1e1e1;
-        border-top: 1px solid #e1e1e1;
-        width: rem-calc(52);
-        height: rem-calc(52);
+    &_new:before {
+        width: rem-calc(54);
+        height: rem-calc(54);
+        display: block;
         position: absolute;
-        right: rem-calc(0);
-        bottom: rem-calc(0);
-        padding-top: rem-calc(13);
-        transition: 0.6s all;
-        background: #fff;
+        left: rem-calc(10);
+        top: rem-calc(17);
+        z-index: 3;
+        content: "";
+        background: url(../images/sign.png)no-repeat;
+    }
+
+    &__arrow {
+        cursor: pointer;
+        position: absolute;
+        z-index: 3;
+        left: -60px;
+        top: 166px;
 
         &:hover {
-            background: $red;
-
-            i {
-                color: #fff;
+            path {
+                fill: #000;
             }
         }
 
-        i {
-            font-size: rem-calc(26);
+        &.product__next {
+            right: -60px;
+            left: auto;
         }
     }
-    @media (max-width: 400px) {
-        &__info {
-            padding-right: rem-calc(0);
-            margin-bottom: rem-calc(40);
+
+    .slick-dots {
+        width: 80px;
+        position: absolute;
+        top: 0;
+        left: calc(-40% - 10px);
+
+        li {
+            margin-bottom: 10px;
+            display: block;
+
+            &:nth-child(3) ~li {
+                display: none;
+            }
+
+            button {
+                background: none;
+                width: auto;
+                height: auto;
+                margin: 0;
+            }
         }
+    }
+    @include breakpoint(medium down) {
+        &__arrow {
+            left: -10px;
 
-        &__basket {
-            width: 100%;
-            border-left: 0;
-        }
-
-        &__img {
-            height: rem-calc(140);
-
-            a {
-                line-height: rem-calc(140);
+            &.product__next {
+                right: -10px;
             }
         }
     }

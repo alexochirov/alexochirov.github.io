@@ -1,58 +1,266 @@
-body {
-    background: #f0f0f0;
+$red: #a52468;
+$black: #303030;
+$grey: #a5a5a5;
+$primary-color: $red;
+@font-face {
+    font-family: 'Merriweather';
+    src: url($fontsPath + '/Merriweather-Regular.eot');
+    src: url($fontsPath + '/Merriweather-Regular.eot?#iefix') format('embedded-opentype'), url($fontsPath + '/Merriweather-Regular.woff') format('woff'), url($fontsPath + 'Merriweather-Regular.ttf') format('truetype'), url($fontsPath + 'Merriweather-Regular.svg#Merriweather-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Merriweather';
+    src: url($fontsPath + 'Merriweather-Bold.eot');
+    src: url($fontsPath + 'Merriweather-Bold.eot?#iefix') format('embedded-opentype'), url($fontsPath + 'Merriweather-Bold.woff') format('woff'), url($fontsPath + 'Merriweather-Bold.ttf') format('truetype'), url($fontsPath + 'Merriweather-Bold.svg#Merriweather-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
 }
 
-a {
-    text-decoration: underline;
-    font-size: rem-calc(15);
-    color: $black;
-}
-
-p {
-    font-size: rem-calc(13);
-    font-weight: 300;
-    line-height: 1.7;
-    letter-spacing: rem-calc(.6);
+h1 {
+    line-height: 1.2;
+    margin-bottom: 0.3rem;
 }
 
 h1,
 h2,
-h3,
-h4,
-h5 {
-    font-family: $font-family-AGMelanie-roman;
+h3 {
+    font-family: 'PTSerif', serif;
+    //font-family: 'Merriweather', serif;
+    font-weight: normal;
 }
 
-strong {
-    font-weight: 500;
-    font-size: rem-calc(13);
+body {
+    font-family: 'Open Sans', sans-serif;
 }
 
-ol {
-    margin-left: rem-calc(44);
-    margin-top: rem-calc(0);
-    counter-reset: myCounter;
+a {
+    transition: 0.3s;
+}
 
-    li {
-        list-style: none;
-        position: relative;
-        margin-bottom: rem-calc(7);
+.js-reset-filter {
+    transition: none;
+}
 
-        &:before {
-            counter-increment: myCounter;
-            content: counter(myCounter);
-            position: absolute;
-            display: inline-block;
-            margin-left: rem-calc(-44);
-            margin-right: rem-calc(12);
-            text-align: center;
-            font-size: rem-calc(18);
-            line-height: 30px;
-            top: rem-calc(-7);
-            border: 1px solid #e1e1e1;
-            border-radius: 50%;
-            width: 31px;
-            height: 31px;
+.right {
+    float: right;
+}
+
+.button {
+    background: $red;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background: darken($red, 10);
+    }
+}
+
+.button.to-cart {
+    color: $red;
+    margin-top: 15px;
+    background: transparent;
+    border: 1px solid #ed8c9d;
+    float: right;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.brands .button {
+    margin-top: 2.85714rem;
+    border: 1px solid $red;
+    color: $red;
+    background: transparent;
+
+    &:hover {
+        background: #96172e;
+        color: white;
+    }
+}
+
+.button .badge {
+    margin-left: rem-calc(7);
+    font-size: rem-calc(14);
+}
+
+.no-wrap,
+.price {
+    white-space: nowrap;
+}
+
+.table-scroll {
+    overflow-x: auto;
+}
+
+.pseudo-link {
+    border-bottom: rem-calc(1) dotted $anchor-color;
+}
+
+.accordion-title {
+    font-size: 1rem;
+    line-height: 1.33rem;
+}
+
+.is-active > .accordion-title::before {
+  content: "\2013";
+}
+
+.tabs-title > a {
+    font-size: 1rem;
+}
+
+label {
+    line-height: 1.35em;
+    margin-bottom: 0.3rem;
+}
+
+.small-expanded {
+    @include breakpoint(small only) {
+         @include button-expand(true);
+    }
+}
+
+.medium-float-right {
+    @include breakpoint(medium) {
+        float: right;
+    }
+}
+
+span.counter {
+    width: rem-calc(24);
+    height: rem-calc(24);
+    background: $red;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 2.15;
+    //margin-left: rem-calc(14);
+    font-size: 0.85rem;
+}
+
+.menu-icon {
+    display: block;
+    position: relative;
+    height: rem-calc(30);
+    @include breakpoint(small) {
+        margin-top: rem-calc(45);
+        padding-bottom: rem-calc(25);
+        padding-left: rem-calc(5);
+    }
+
+    span {
+        &:after {
+            box-shadow: 0 0 0 2px $red, 0 9px 0 2px $red, 0 18px 0 2px $red;
+            content: " ";
+            display: block;
+            height: 0;
+            width: rem-calc(24);
         }
     }
+}
+
+.copyright {
+    display: block;
+    margin-bottom: 1.2em;
+}
+
+figure {
+    margin: 0;
+    overflow: hidden;
+
+    h2 {
+        font-size: 2.3vh;
+    }
+}
+
+.light-text {
+    font-weight: 300;
+}
+
+.label {
+    margin-bottom: rem-calc(3);
+    height: rem-calc(40);
+    width: rem-calc(40);
+    line-height: rem-calc(40);
+    border-radius: 50%;
+    padding: rem-calc(0);
+    background: $blue;
+    text-transform: uppercase;
+
+    &_sale {
+        background: $red;
+    }
+
+    &_new {
+        background: $green2;
+    }
+}
+
+.orbit-previous {
+    background: rgba(0, 0, 0, 0.2) url("../images/chevron-left.svg") no-repeat scroll center center / 30px auto;
+    height: 42px;
+    width: 42px;
+}
+
+.orbit-previous:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.orbit-next {
+    background: rgba(0, 0, 0, 0.2) url("../images/chevron-right.svg") no-repeat scroll center center / 30px auto;
+    height: 42px;
+    width: 42px;
+}
+
+.orbit-next:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.reveal {
+    @include breakpoint(medium down) {
+        width: 100%;
+    }
+}
+
+.cybermonday {
+    background: url("../images/cybermonday/cmonday_back.jpg") no-repeat center top;
+}
+
+.backpage {
+    background: url("../images/back.png") no-repeat left top;
+    border-radius: 1000px;
+    height: 68px;
+    width: 68px;
+    position: fixed;
+    left: 50px;
+    bottom: 100px;
+    color: #e0e0e0;
+    font-size: 22px;
+    line-height: 68px;
+    vertical-align: middle;
+    text-indent: -9999px;
+    text-decoration: none;
+    -webkit-transition: width 0.2s;
+    /* Safari */
+    transition: width 0.2s;
+    box-sizing: content-box;
+}
+
+.backpage:hover {
+    width: 100px;
+    text-indent: 0;
+    padding-left: 62px;
+    color: #e0e0e0;
+}
+
+.backtotop {
+    display: none;
+    position: absolute;
+    bottom: 100px;
+    position: fixed;
+    right: 50px;
+    width: 70px;
+    height: 70px;
+    background-image: url('../images/backtotop.png');
 }

@@ -1,75 +1,41 @@
-//  Foundation for Sites Settings
-//  -----------------------------
-//
-//  Table of Contents:
-//
-//   1. Global
-//   2. Breakpoints
-//   3. The Grid
-//   4. Base Typography
-//   5. Typography Helpers
-//   6. Abide
-//   7. Accordion
-//   8. Accordion Menu
-//   9. Badge
-//  10. Breadcrumbs
-//  11. Button
-//  12. Button Group
-//  13. Callout
-//  14. Close Button
-//  15. Drilldown
-//  16. Dropdown
-//  17. Dropdown Menu
-//  18. Flex Video
-//  19. Forms
-//  20. Label
-//  21. Media Object
-//  22. Menu
-//  23. Off-canvas
-//  24. Orbit
-//  25. Pagination
-//  26. Progress Bar
-//  27. Reveal
-//  28. Slider
-//  29. Switch
-//  30. Table
-//  31. Tabs
-//  32. Thumbnail
-//  33. Title Bar
-//  34. Tooltip
-//  35. Top Bar
 @import 'util/util';
 
 // 1. Global
 // ---------
 
 $global-font-size: 14px;
-$global-width: rem-calc(1180);
+$global-width: rem-calc(1200);
 $global-lineheight: 1.5;
-$primary-color: #CA3034;
-$secondary-color: #777;
-$success-color: #36B6AD;
+$blue: #2080b0; //#3082ca
+$primary-color: #a52468;
+$secondary-color: #000;
+$success-color: #36B6AD; //00caa7 #17be7d #30ca78 #30cac5 #36B6AD
 $warning-color: #FEF143;
-$alert-color: #CA3034;
-$light-gray: #e6e6e6;
+$alert-color: $primary-color;
+$light-gray: #eaeaea;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
-$black: #303030;
+$black: #333;
 $white: #fff;
+$orange: #fc9106;
 // Social networks colours
 $facebook-color: #3F619C;
 $twitter-color: #2FA4CC;
 $vk-color: #3E709C;
 $odnoklassniki-color: #FC6719;
+$instagram-color: #b1936f;
+$green1: #97B43F;
+$green2: #5A7700;
+$pink1: #B13E52;
 $body-background: $white;
 $body-font-color: $black;
-$body-font-family:'Roboto', sans-serif;
+$body-font-family: 'Open Sans', Helvetica, Roboto, Arial, sans-serif;
 $body-antialiased: true;
 $global-margin: 1.5rem;
 $global-padding: 1.5rem;
 $global-weight-normal: normal;
 $global-weight-bold: bold;
-$global-radius: 0;
+$global-radius: 2px;
 $global-text-direction: ltr;
 
 // 2. Breakpoints
@@ -78,7 +44,7 @@ $global-text-direction: ltr;
 $breakpoints: (
         small: 0,
         medium: 640px,
-        large: 1024px,
+        large: 960px,
         xlarge: 1200px,
         xxlarge: 1440px,
 );
@@ -88,9 +54,10 @@ $breakpoint-classes: (small medium large);
 // -----------
 
 $grid-row-width: $global-width;
-$grid-column-count: 24;
-$grid-column-responsive-gutter: (
-        small: rem-calc(16)
+$grid-column-count: 12;
+$grid-column-gutter: (
+        small: 1.5rem,
+        medium: 1.5rem,
 );
 $grid-column-align-edge: true;
 $block-grid-max: 8;
@@ -104,8 +71,8 @@ $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
 $header-sizes: (
   small: (
-    'h1': 32,
-    'h2': 24,
+    'h1': 35,
+    'h2': 30,
     'h3': 20,
     'h4': 18,
     'h5': 16,
@@ -113,7 +80,7 @@ $header-sizes: (
   ),
   medium: (
     'h1': 32,
-    'h2': 24,
+    'h2': 28,
     'h3': 20,
     'h4': 18,
     'h5': 16,
@@ -190,13 +157,13 @@ $input-error-font-weight: $global-weight-bold;
 // ------------
 
 $accordion-background: $white;
-$accordion-plusminus: false;
+$accordion-plusminus: true;
 $accordion-item-color: foreground($accordion-background, $primary-color);
-$accordion-item-background-hover: $white;
-$accordion-item-padding: rem-calc(10) 1rem;
-$accordion-content-background: $white;
-$accordion-content-border: 0px solid $light-gray;
-$accordion-content-color: foreground($accordion-background, $primary-color);
+$accordion-item-background-hover: $light-gray;
+$accordion-item-padding: 1rem 2.5rem 1rem 1rem;
+$accordion-content-background: $white; //#f9f9f9;
+$accordion-content-border: 1px solid $light-gray;
+$accordion-content-color: foreground($accordion-background, $body-font-color);
 $accordion-content-padding: 1rem;
 
 // 8. Accordion Menu
@@ -217,13 +184,13 @@ $badge-font-size: 0.6rem;
 // 10. Breadcrumbs
 // ---------------
 
-$breadcrumbs-margin:0 0 rem-calc(25) 0;
-$breadcrumbs-item-font-size: rem-calc(13);
-$breadcrumbs-item-color: #303030;
+$breadcrumbs-margin: 0;
+$breadcrumbs-item-font-size: rem-calc(12);
+$breadcrumbs-item-color: $primary-color;
 $breadcrumbs-item-color-current: $black;
 $breadcrumbs-item-color-disabled: $medium-gray;
 $breadcrumbs-item-margin: 0.75rem;
-$breadcrumbs-item-uppercase: false;
+$breadcrumbs-item-uppercase: true;
 $breadcrumbs-item-slash: true;
 
 // 11. Button
@@ -302,11 +269,11 @@ $dropdown-sizes: (
 // 17. Dropdown Menu
 // -----------------
 
-$dropdownmenu-arrows: false;
+$dropdownmenu-arrows: true;
 $dropdownmenu-arrow-color: $anchor-color;
 $dropdownmenu-min-width: 200px;
-$dropdownmenu-background: #0e0e0e;
-$dropdownmenu-border: 1px solid #0e0e0e;
+$dropdownmenu-background: $white;
+$dropdownmenu-border: 1px solid $medium-gray;
 
 // 18. Flex Video
 // --------------
@@ -410,17 +377,17 @@ $orbit-control-zindex: 10;
 
 $pagination-font-size: rem-calc(14);
 $pagination-margin-bottom: $global-margin;
-$pagination-item-color: #303030;
-$pagination-item-padding: rem-calc(6 5);
-$pagination-item-spacing: rem-calc(20);
+$pagination-item-color: $black;
+$pagination-item-padding: rem-calc(3 10);
+$pagination-item-spacing: rem-calc(1);
 $pagination-radius: $global-radius;
-$pagination-item-background-current:#461010;
-$pagination-item-background-hover:$medium-gray;
+$pagination-item-background-hover: $light-gray;
+$pagination-item-background-current: $primary-color;
 $pagination-item-color-current: foreground($pagination-item-background-current);
 $pagination-item-color-disabled: $medium-gray;
-$pagination-ellipsis-color: #303030;
+$pagination-ellipsis-color: $black;
 $pagination-mobile-items: false;
-$pagination-arrows:false;
+$pagination-arrows: true;
 
 // 26. Progress Bar
 // ----------------
@@ -435,14 +402,14 @@ $progress-radius: $global-radius;
 // ----------
 
 $reveal-background: $white;
-$reveal-width: 600px;
+$reveal-width: 880px;
 $reveal-max-width: $global-width;
 $reveal-offset: rem-calc(100);
-$reveal-padding: $global-padding;
+$reveal-padding: rem-calc(20) rem-calc(10);
 $reveal-border: 1px solid $medium-gray;
-$reveal-radius: $global-radius;
+$reveal-radius: 1rem;
 $reveal-zindex: 1005;
-$reveal-overlay-background: rgba($black, 0.45);
+$reveal-overlay-background: rgba($black, 0.65);
 
 // 28. Slider
 // ----------
@@ -495,7 +462,7 @@ $show-header-for-stacked: false;
 // --------
 
 $tab-margin: 0;
-$tab-background: $white;
+$tab-background: #f9f9f9; //$white;
 $tab-background-active: $light-gray;
 $tab-border: $light-gray;
 $tab-item-color: foreground($tab-background, $primary-color);
@@ -504,7 +471,7 @@ $tab-item-padding: 1.25rem 1.5rem;
 $tab-expand-max: 6;
 $tab-content-background: $white;
 $tab-content-border: $light-gray;
-$tab-content-color: foreground($tab-background, $primary-color);
+$tab-content-color: foreground($tab-content-background, $body-font-color);
 $tab-content-padding: 1rem;
 
 // 32. Thumbnail
@@ -531,7 +498,7 @@ $titlebar-icon-spacing: 0.25rem;
 // 34. Tooltip
 // -----------
 
-$has-tip-font-weight: $global-weight-bold;
+$has-tip-font-weight: $global-weight-normal;
 $has-tip-border-bottom: dotted 1px $dark-gray;
 $tooltip-background-color: $black;
 $tooltip-color: $white;

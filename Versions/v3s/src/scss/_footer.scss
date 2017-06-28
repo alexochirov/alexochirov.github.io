@@ -1,28 +1,34 @@
 .footer {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.91) 0%, rgba(50, 50, 50, 0.91) 4%, rgba(5, 5, 5, 0.91) 87%, rgba(0, 0, 0, 0.91) 100%);
-
-    &__text {
-        color: #fff;
-        padding-top: rem-calc(21);
-        font-size: rem-calc(13);
-        padding-bottom: rem-calc(14);
+  background: #f6f6f6;
+  padding-top: 2rem;
+  border-top: 1px solid #d8d8d8;
+  margin-top: 2rem;
+  a {
+    color: #96172e;
+    &:hover {
+      color: #6a1020;
     }
-
-    &__cetera {
-        color: #e9354c;
-        font-size: rem-calc(13);
-        display: inline-block;
-        text-decoration: none;
+  }
+  .bottom-menu {
+    margin: 0;
+    padding: 0;
+    @include breakpoint(small only) {
+      margin: 0 auto;
     }
-
-    &__link {
+    li {
+      display: block;
+      &:first-child {
+        font-weight: 700;
+        margin-bottom: 1.6rem;
+      }
+      a {
         display: block;
-        color: #fff;
-        font-size: rem-calc(13);
-    }
-    @include breakpoint (small only) {
-        &__text {
-            padding-top: rem-calc(0);
+        line-height: 1;
+        padding: 0 2rem 1.2rem 0;
+        @include breakpoint(small) {
+          padding: 0 0 1.2rem;
         }
+      }
     }
+  }
 }

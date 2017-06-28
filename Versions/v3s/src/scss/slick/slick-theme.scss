@@ -33,13 +33,16 @@ $slick-dot-color-active: rgba(0, 0, 0, 0.2) !default;
   z-index: 1;
   display: block;
   position: absolute;
-  top: 50%;
+  top: 45%;
   cursor: pointer;
   color: $slick-arrow-color;
-  background: $slick-background-color;
+  background: transparent;
   padding: 0.25rem 0.5rem;
-  border: none;
+ // border: none;
   outline: none;
+  background: rgba(0,0,0,0) url("../images/icons/angle-left.svg") no-repeat center top / 43px;
+  width: 29px;
+  height: 43px;
 
   -webkit-border-radius: rem-calc(5);
   -moz-border-radius: rem-calc(5);
@@ -52,32 +55,41 @@ $slick-dot-color-active: rgba(0, 0, 0, 0.2) !default;
   &:hover, &:focus {
     outline: none;
     color: $slick-arrow-color-hover;
-    background: $slick-background-color-hover;
+    //background: $slick-background-color-hover;
   }
 
   &.slick-disabled {
     color: $slick-arrow-color-disabled;
-    background: $slick-background-color-disabled;
+    background-color: $slick-background-color-disabled;
   }
 }
 
 .slick-prev {
-  left: 1rem;
+  left: 0;
   [dir="rtl"] & {
     left: auto;
     right: 1rem;
   }
+  background: rgba(0,0,0,0.1) url(../images/icons/angle-left.svg) no-repeat center top/43px;
+  &:hover, &:focus {
+    background: $slick-background-color-hover url(../images/icons/angle-left.svg) no-repeat center top/43px;
+  }
 }
 
 .slick-next {
-  right: 1rem;
+  background: rgba(0,0,0,0) url("../images/icons/angle-right.svg") no-repeat center top / 43px;
+  right: 0;
   [dir="rtl"] & {
     left: 1rem;
     right: auto;
   }
+  background: rgba(0,0,0,0.1) url(../images/icons/angle-right.svg) no-repeat center top/43px;
+  &:hover, &:focus {
+    background: $slick-background-color-hover url(../images/icons/angle-right.svg) no-repeat center top/43px;
+  }
 }
 
-@media #{$small-only} {
+@include breakpoint(small only)  {
   .slick-prev, .slick-next {
     display: none !important;
   }
