@@ -1,0 +1,76 @@
+.cyberweek {
+
+  &__form {
+    background: url('../images/cyberweek-form-bg.jpg') no-repeat center top;
+    padding-top: 350px;
+    padding-bottom: 50px;
+    margin-bottom: rem-calc(80);
+
+    &-title {
+      font-family: "Open Sans";
+      font-size: 22px;
+      text-transform: uppercase;
+      color: #303030;
+      margin-bottom: rem-calc(20);
+      position: relative;
+      padding-right: 90px;
+    }
+
+    &-discount {
+      display: block;
+      width: 85px;
+      height: 85px;
+      background: url('../images/cyberweek-discount.png') no-repeat;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+
+    &-button {
+      width: 100%;
+      background-color: #c11f6a;
+      margin: rem-calc(10) 0;
+    }
+  }
+
+  &__advantages {
+    margin-top: rem-calc(70);
+
+    &-title {
+      margin-bottom: rem-calc(50);
+    }
+
+    &-text {
+      font-family: "Open Sans";
+      font-style: italic;
+      font-size: 14px;
+      color: #333333;
+      margin: rem-calc(10) 0;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .cyberweek {
+
+    &__form {
+      background-size: cover;
+
+      &-wrapper {
+        min-width: 45%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .cyberweek__form {
+    padding-top: 400px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .cyberweek__form-wrapper {
+    width: 100%;
+  }
+}

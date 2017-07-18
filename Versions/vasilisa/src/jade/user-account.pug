@@ -1,0 +1,52 @@
+extends components/_authorized
+
+block content
+    .row
+        .column.small-12.medium-4.large-3
+            .hide-for-medium.button.red-hollow-button(data-toggle='menu-section')
+                i.fa.fa-bars &#160;
+                | Меню личного раздела
+            .show-for-medium#menu-section(data-toggler='show-for-medium')
+                include components/account/_nav-account
+        .column.small-12.medium-8.large-9
+            block userAccount
+                .callout.text-center
+                    p.lead
+                        = 'Ваш '
+                        a(href='#') заказ №123 от 30.06.2016
+                        = ' подтверждён'
+
+                    a.button(href='#', title='') Оплатить заказ
+
+                .row
+                    .small-12.medium-4.column
+                        .callout.text-center
+                            br
+                            br
+                            a(href='cart.html', title='').lead Корзина
+                            br
+                            br
+                            br
+                    .small-12.medium-4.column
+                        .callout.text-center
+                            br
+                            br
+                            a(href='wishlist.html', title='').lead Любимые товары
+                            br
+                            br
+                            br
+                    .small-12.medium-4.column
+                        .callout.text-center
+                            br
+                            br
+                            a(href='orders.html', title='').lead Заказы
+                            br
+                            br
+                            br
+
+        //-.hide-for-medium.column
+            br
+            .text-dark-gray МЕНЮ ЛИЧНОГО РАЗДЕЛА
+            include components/account/_nav-account
+
+        p &#160;

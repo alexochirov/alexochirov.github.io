@@ -1,0 +1,41 @@
+.b-opt-short-info {
+  margin-left: rem-calc(20);
+  background: #153f93;
+  color: #fff;
+  font-size: rem-calc(14);
+  padding: rem-calc(0 2);
+  margin-bottom: rem-calc(30);
+
+  &__block {
+    padding: rem-calc(20 30 10 30);
+    text-align: center;
+    border-bottom: 1px solid #2753ab;
+
+    p {
+      text-transform: uppercase;
+      font-weight: bold;
+      padding: 0;
+      margin: rem-calc(0 0 10 0);
+
+      button {
+        margin: 0;
+      }
+      button[disabled] {
+        background-color: #7c3862;
+        border-color: #622e58;
+      }
+    }
+  }
+
+  &__price {
+    color: #ca3034;
+    font-size: rem-calc(18);
+  }
+
+  &.fix-opt-panel {
+    position: fixed;
+    top: 0;
+
+  }
+}
+

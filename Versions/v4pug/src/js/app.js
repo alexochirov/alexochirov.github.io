@@ -1,67 +1,118 @@
-;
-$(document).foundation();
+;$(document).foundation();
 
-(function($) {
+(function ($) {
     "use strict";
-    $(function() {
+    $(function () {
 
+      //begin of .vert vertical slick slider
+      $(".vert").slick({
+          vertical:true,
+          verticalSwiping:true,
+          infinite: true,
+          dots: true,
+          arrows: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 5000,
+          autoplayHoverPause: true,
+          fade: false,
+          swipeToSlide: true,
+          prevArrow: '<i class="slick-prev fa fa-angle-left fa-3x"> </i>',
+          nextArrow: '<i class="slick-next fa fa-angle-right fa-3x"> </i>',
+          responsive: [
+    {
+      breakpoint: 640,
+      settings: {
+        vertical:false,
+        verticalSwiping:false,
+      }
+    }
+  ]
+      });
+       //end of .vert vertical slick slider
 
-        $(".piano").slick({
+        /**
+         * Разные карусели
+         */
+        $(".x-carousel-main").slick({
             infinite: true,
-            slidesToShow: 4,
+            dots: false,
+            arrows: true,
+            slidesPerRow: 1,
+            slidesToShow: 1,
             slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            autoplayHoverPause: true,
+            fade: true,
+            swipeToSlide: true,
             prevArrow: '<i class="slick-prev fa fa-angle-left fa-3x"> </i>',
-            nextArrow: '<i class="slick-next fa fa-angle-right fa-3x"> </i>',
-            responsive: [
-
-
-                {
-                    breakpoint: 1200,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 1,
-
-                    }
-                },
-                {
-                    breakpoint: 960,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1,
-
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
-                }
-            ]
+            nextArrow: '<i class="slick-next fa fa-angle-right fa-3x"> </i>'
         });
-        //begin of sticky information in header
-        var $infoBlock = $('.js-info');
-        if ($infoBlock.length > 0) {
-            $(window).scroll(function() {
 
-                var posAnchor = $infoBlock.offset().top;
-                var scrollTop = window.pageYOffset;
-                if (scrollTop > posAnchor) {
-                    $('.sticky').addClass('js-information');
-                    $('.header__info').removeClass('hide');
-                } else {
-                    $('.sticky').removeClass('js-information');
-                    $('.header__info').addClass('hide');
+        $(".x-carousel-services").slick({
+            infinite: true,
+            dots: true,
+            arrows: false,
+            slidesPerRow: 1,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            autoplayHoverPause: true
+        });
+
+        $(".x-carousel-news").slick({
+            infinite: true,
+            arrows: false,
+            slidesPerRow: 1,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            fade: true,
+            swipeToSlide: true,
+            autoplay: true,
+            autoplaySpeed: 7000,
+            autoplayHoverPause: true
+        });
+        $('.x-carousel-news-link').on('click', function(e){
+
+            e.preventDefault();
+            var $this = $(this),
+                index = $this.closest('.x-carousel-news-links').find('.x-carousel-news-link').index($this);
+            $('.x-carousel-news').slick('slickGoTo', index);
+        });
+
+        /**
+         * Показ любого блока по наведению на другой
+         */
+        var toggleLeaveTimer;
+        $('[data-toggle-hover-dd]').on('mouseenter mouseleave', function(e) {
+            var selector = '#' + $(this).data('toggle-hover-dd');
+            if ($(selector).length > 0)
+            {
+                var $toggler = $(selector);
+                var className = $toggler.data('toggler-hover-dd');
+                if (e.type == 'mouseenter' && !$toggler.hasClass(className))
+                {
+                    $toggler.addClass(className)
                 }
-            });
+                if (e.type == 'mouseleave' && $toggler.hasClass(className))
+                {
+                    toggleLeaveTimer = setTimeout(function () {$toggler.removeClass(className)}, 300);
+                }
+            }
+        });
+        $('[data-toggler-hover-dd]').on('mouseenter', function () {
+            clearTimeout(toggleLeaveTimer);
+        }).on('mouseleave', function () {
+            var $toggler = $(this);
+            var className = $toggler.data('toggler-hover-dd');
+            if ($toggler.hasClass(className))
+            {
+                toggleLeaveTimer = setTimeout(function () {$toggler.removeClass(className)}, 300);
+            }
+        });
 
-        } else {
-            $('.sticky').addClass('js-information');
-            $('.header__info').removeClass('hide');
-        }
-
-
-        //end of sticky information in header
     });
 })(jQuery);

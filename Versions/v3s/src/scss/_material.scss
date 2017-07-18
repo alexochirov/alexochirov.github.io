@@ -1,0 +1,46 @@
+.button.material.hollow {
+    margin-right: rem-calc(5);
+    transition: none;
+    font-size: rem-calc(13);
+    padding-top: rem-calc(6);
+    padding-bottom: rem-calc(6);
+    border: rem-calc(1)solid #777;
+    color: #777;
+    background: #fff;
+
+    &:hover {
+        background: #fff;
+        color: #777;
+    }
+
+    &.js-check {
+        padding-top: rem-calc(8);
+        padding-bottom: rem-calc(7);
+    }
+
+    &.js-close {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    &.close {
+        color: #96172e;
+        border-color: #96172e;
+    }
+    &.close:hover {
+        background: #eeeeee;
+    }
+
+    .badge {
+        margin-left: rem-calc(7);
+        font-size: rem-calc(13);
+        background: none;
+        color: $black;
+        padding-top: rem-calc(5);
+        padding-bottom: rem-calc(5);
+
+        &:not(.js-active) {
+            padding: rem-calc(0);
+            min-width: rem-calc(0);
+        }
+    }
+}

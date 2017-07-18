@@ -1,0 +1,14 @@
+mixin casual(title, imageName)
+  .text-center
+    a(href="#")
+      figure
+        p
+          img(src="./images/"+imageName+".jpg")
+
+mixin casual-4x(title, imageName)
+  .stub.stub-photo.casual
+    a(href="#")
+      figure.casual__figure
+        img(src="./images/"+imageName+".jpg")
+        figcaption.casual__figcaption
+          h2= title

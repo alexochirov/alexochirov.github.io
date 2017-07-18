@@ -1,0 +1,31 @@
+include ../mixins/_mixin-comment-author
+
+h3.text-dark-gray Комментарии (3)
+
++commentAuthor
+p Приходите, будет весело =) В программе мероприятия запланированы сюрпризы, о которых вы вряд ли догадываетесь
+br
+
++commentAuthor
+p Обязательно придём!!!
+br
+
++commentAuthor
+p Приходите, будет весело =) В программе мероприятия запланированы сюрпризы, о которых вы вряд ли догадываетесь
+br
+
+hr
+br
+
+h3 Добавить комментарий
+form(action='' method='post', data-abide='', novalidate='novalidate')
+    .row.column
+        input(type='text', placeholder='Представьтесь *', required='')
+        p.help-text Ваше имя для комментария
+    .row.column
+        input(type='email', placeholder='Ваша электронная почта', required='')
+    .row.column
+        textarea(placeholder='Текст комментария')
+    .row.column
+        button.button(type='submit') Отправить сообщение &nbsp;
+            i.fa.fa-envelope-o.fa-lg

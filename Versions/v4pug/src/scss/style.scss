@@ -6,7 +6,6 @@ $fontsPath: '../fonts' !default;
 
 $fa-font-path: $fontsPath;
 
-@import "fonts";
 @import "foundation-settings";
 
 @import "foundation";
@@ -21,19 +20,19 @@ $fa-font-path: $fontsPath;
 @import "carousel/carousel-main";
 @import "carousel/carousel-news";
 @import "carousel/carousel-services";
+@import "carousel/vert";
+@import "checkbox-group";
 @import "content";
 @import "footer";
 @import "header";
-@import "rating";
+@import "dd";
+@import "menu-base";
 @import "menu-top";
 @import "menu-line";
+@import "rating";
 @import "search-top";
 @import "sticky-footer";
 @import "text";
 @import "top-line";
 @import "vertical-middle";
-@import "pagination";
-@import "breadcrumbs";
-@import "input-group-field";
-@import "checkbox-group";
-@import "button";
+@import "review";

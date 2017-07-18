@@ -1,0 +1,334 @@
+.b-partnership {
+  margin-bottom: -20px;
+
+  &__header {
+    border-bottom: 1px solid #e0e0e0;
+
+    &-title {
+      background: url("../images/partnership_man.jpg") top right/contain no-repeat, linear-gradient(to bottom, #C7C8CC 0%, #C8C9CD 51%, #C4C8CB 75%, #BEC1C6 100%);
+      padding: 1px 480px 0 50px;
+      margin: 25px 0 20px 0;
+      height: 360px;
+    }
+
+    &-menu {
+
+      &-link {
+        border: 1px solid #4566A9;
+        border-radius: 2px;
+        margin-right: 20px;
+        min-height: 210px;
+        padding: 40px 45px;
+        text-transform: uppercase;
+        transition: background .2s, color .2s;
+        display: block;
+        color: #153F93;
+
+        &:hover {
+          background: #153F93;
+          color: white;
+        }
+
+        &-text {
+          flex: 1;
+          font-size: 20px;
+          font-weight: bold;
+          letter-spacing: 1px;
+          line-height: 1.2em;
+
+          &_small {
+            font-weight: normal;
+            font-size: 14px;
+            text-transform: none;
+          }
+        }
+
+        &_last {
+          margin-right: 0;
+        }
+      }
+    }
+
+    &-note {
+      margin: 100px 20px;
+
+      &-title {
+        font-size: rem-calc(20px);
+        font-weight: bold;
+      }
+
+      &-text {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  &__features {
+    margin: 100px 0 50px;
+
+    &-header {
+      margin: 50px 0;
+    }
+
+    &-list {
+      margin: 50px 0;
+
+      &-item {
+        padding: 50px 20px;
+
+        &-pic {
+          margin-bottom: 3rem;
+
+          & svg {
+            height: 70px;
+            width: 100%;
+          }
+        }
+
+        &-title {
+          font-weight: bold;
+          text-transform: uppercase;
+          color: #383838;
+          margin-bottom: .5rem;
+          margin-top: .5rem;
+          text-rendering: optimizeLegibility;
+          font-size: rem-calc(18px);
+        }
+
+        &-text {
+          color: #858585;
+        }
+      }
+    }
+  }
+
+  &__become {
+    background-image: url("../images/partnership2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: multiply;
+
+    &-inner {
+      text-align: center;
+      padding: 4rem 0;
+
+      &-button {
+        background: rgba(0,0,0,.1);
+        border: 2px solid white;
+        font-weight: bold;
+        letter-spacing: 1px;
+        padding: 1rem 4rem;
+        text-transform: uppercase;
+        transition: background .2s, color .2s;
+        display: inline-block;
+        color: white;
+
+        &:hover {
+          background: white;
+          color: #222;
+        }
+      }
+    }
+  }
+
+  &__about {
+
+    &-item {
+      border-bottom: 1px solid #e0e0e0;
+
+      &-text {
+        padding: rem-calc(100px) rem-calc(40px);
+      }
+
+      &-picture {
+        padding: rem-calc(100px) rem-calc(40px);
+      }
+
+      &:last-child {
+        border: none;
+      }
+    }
+  }
+
+  &__title {
+    border: 1px solid #153f93;
+    padding: 50px 100px;
+    margin-bottom: 2rem;
+
+    &-text {
+      color: #153f93;
+      margin: 0;
+      font-size: 18px;
+    }
+  }
+
+  &__video {
+    background-color: #1d1d1d;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  &__content {
+
+    &-item {
+      border-bottom: 1px solid #e0e0e0;
+      margin-top: 60px;
+      padding-bottom: 30px;
+
+      &:last-child {
+        border: none;
+      }
+
+      &-header {
+        font-size: 34px;
+        color: #1d1d1d;
+        padding-bottom: 30px;
+        margin: 0;
+      }
+
+      &-inner {
+
+        &_left {
+          margin-left: 20px;
+          margin-right: 40px;
+        }
+
+        &_right {
+          margin-left: 40px;
+          margin-right: 20px;
+        }
+
+        &-title {
+          font-weight: bold;
+          margin-bottom: 1rem;
+        }
+
+        &-list {
+
+          &-item {
+            margin-bottom: 30px;
+            font-size: 16px;
+            line-height: 30px;
+            color: #1d1d1d;
+          }
+
+          &_no_margin {
+
+            & .b-partnership__content-item-inner-list-item {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+
+      &-form {
+        width: 480px;
+        margin: 0 auto 30px;
+        border: 1px solid #e0e0e0;
+        background-color: #f8f8f8;
+        padding: 40px;
+        position: relative;
+
+        &-loading {
+          width: 32px;
+          height: 32px;
+          background: url("../images/loading.gif");
+          position: absolute;
+          top: 5px;
+          right: 5px;
+          display: none;
+        }
+
+        &-header {
+          border-bottom: 1px solid #e0e0e0;
+          padding-bottom: 20px;
+
+          & label {
+            margin-bottom: 5px;
+          }
+
+          &-note {
+            color: #a1a1a1;
+          }
+        }
+
+        &-footer {
+          padding-top: 20px;
+
+          & input {
+            color: #b4282a !important;
+            font-weight: bold !important;
+          }
+        }
+      }
+    }
+  }
+
+  &__start {
+    background-image: url("../images/partnership.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 30px 0;
+
+    &_main {
+      background-image: url("../images/partnership2.jpg");
+      background-color: rgba(0, 0, 0, 0.6);
+      background-blend-mode: multiply;
+    }
+
+    &-title {
+      color: white;
+      font-size: 34px;
+      margin: 30px 0;
+    }
+
+    &-form {
+      margin: 0 50px 30px;
+
+      &-input {
+        margin-right: 20px;
+
+        & input[type="text"] {
+          font-family: 'Conv_SegoeUIRegular';
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 20px;
+          width: 100%;
+          height: 46px;
+          margin-bottom: 0;
+          padding-left: 19px;
+          color: #a1a1a1;
+          border: none;
+        }
+
+        & input[type="submit"] {
+          font-family: 'Conv_SegoeUISemiBold';
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 46px;
+          width: 100%;
+          height: 46px;
+          margin-bottom: 0;
+          padding: 0;
+          text-transform: uppercase;
+          color: white;
+          border: none;
+          border-bottom: 3px solid #100f0f;
+          background-color: #262525;
+        }
+      }
+
+      &-notification p {
+        background-color: rgba(0, 0, 0, 0.75);
+        margin-right: 20px;
+        padding: 20px;
+        border-radius: 5px;
+        text-align: center;
+      }
+    }
+  }
+}
+

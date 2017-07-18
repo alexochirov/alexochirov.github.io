@@ -1,0 +1,14 @@
+.register {}
+.register__checkbox {
+    margin-bottom: $form-spacing;
+}
+.register__checkbox-input {
+    margin-bottom: 0;
+}
+.register__checkbox-confirm {
+    margin-right: 0 !important;
+}
+.register__checkbox-error {
+    display: block;
+    margin-top: 10px;
+}

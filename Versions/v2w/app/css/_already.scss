@@ -1,0 +1,52 @@
+.already {
+    background-color: #f8f8f8;
+    border: rem-calc(1) solid #e2e2e2;
+    border-top: rem-calc(0);
+    color: #4c4c4c;
+    padding: rem-calc(25) rem-calc(0) rem-calc(10);
+
+    &__col {
+        padding-left: rem-calc(10);
+        padding-right: rem-calc(10);
+    }
+
+    &__title {
+        font-size: rem-calc(14);
+        font-weight: 700;
+        margin-bottom: rem-calc(20);
+        padding-left: rem-calc(10);
+        padding-right: rem-calc(10);
+    }
+
+    &__vote {
+        border: 1px solid #ccc;
+        color: #a1a1a1;
+        font-size: rem-calc(14);
+        padding: rem-calc(7) rem-calc(15);
+        margin-bottom: rem-calc(20);
+        background: #fff url(../images/sum.png)no-repeat left center;
+    }
+
+    &__btn,
+    &__subtract {
+        padding-top: rem-calc(9);
+        float: left;
+        padding-bottom: rem-calc(9);
+        font-size: rem-calc(14);
+        font-weight: 600;
+        padding-left: rem-calc(24);
+        padding-right: rem-calc(24);
+    }
+
+    &__btn {
+        color: #4c4c4c;
+        text-transform: uppercase;
+        background-color: #ddd;
+        margin-right: rem-calc(10);
+    }
+
+    &__subtract {
+        background: #fff;
+        color: #a1a1a1;
+    }
+}

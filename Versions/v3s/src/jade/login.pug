@@ -1,0 +1,54 @@
+extends components/_regular
+
+include components/mixins/_mixin-login-form
+
+block page
+    .content
+        .row
+            .column.small-12.medium-6.large-4.medium-centered
+                ul.tabs#auth-tabs(data-tabs)
+                    li.tabs-title.is-active
+                        a(href='#login-tab', aria-selected='true') Вход
+                    li.tabs-title
+                        a(href='#register-tab') Регистрация
+
+                .tabs-content(data-tabs-content="auth-tabs")
+                    .tabs-panel.is-active#login-tab
+                        +loginForm()
+
+                .tabs-content(data-tabs-content="auth-tabs")
+                    .tabs-panel#register-tab
+                        form
+                            label Ваш email *
+                                span.text-gray &#160; Будет логином на сайт
+                            input(type='email' required)
+
+                            label Придумайте пароль *
+                            input(type='password' required)
+
+                            label Ваше имя &#160;
+                                span.text-gray для сайта
+                            input(type='text')
+
+                            button.button.small-expanded Зарегистрироваться
+
+                            hr
+                            br
+                            p.text-center.social-login Войти через: &#160;
+                                a(href='#', title='').fa-stack.fa-lg.vk
+                                    i.fa.fa-circle.fa-stack-2x
+                                    i.fa.fa-vk.fa-stack-1x.fa-inverse
+                                = '  '
+                                a(href='#', title='').fa-stack.fa-lg.tw
+                                    i.fa.fa-circle.fa-stack-2x
+                                    i.fa.fa-twitter.fa-stack-1x.fa-inverse
+                                = '  '
+                                a(href='#', title='').fa-stack.fa-lg.fb
+                                    i.fa.fa-circle.fa-stack-2x
+                                    i.fa.fa-facebook.fa-stack-1x.fa-inverse
+                                = '  '
+                                a(href='#', title='').fa-stack.fa-lg.gp
+                                    i.fa.fa-circle.fa-stack-2x
+                                    i.fa.fa-google-plus.fa-stack-1x.fa-inverse
+            br
+            br

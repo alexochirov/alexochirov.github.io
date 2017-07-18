@@ -1,0 +1,25 @@
+.package {
+  margin-bottom: rem-calc(21);
+  &__icon {
+    width: rem-calc(128);
+    height: rem-calc(128);
+    border-radius: 50%;
+    background: $primary-color;
+    box-shadow: rem-calc(6) rem-calc(6) 0 rgba(0, 0, 0, 0.17), inset rem-calc(1) rem-calc(1) 0 rgba(255, 255, 255, 0.27);
+    line-height: rem-calc(128);
+    display: inline-block;
+    margin-bottom: rem-calc(25);
+
+    img {
+      max-height: rem-calc(128);
+      width: rem-calc(80);
+    }
+  }
+
+  &__text {
+    line-height: 1.3;
+    font-size: rem-calc(16);
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}

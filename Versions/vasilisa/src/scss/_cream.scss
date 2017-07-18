@@ -1,0 +1,34 @@
+.cream {
+  position: relative;
+  display: block;
+  margin-bottom: rem-calc(21);
+
+  &__text {
+    position: absolute;
+    width: rem-calc(360);
+    max-width: 100%;
+    left: calc(50% - 180px);
+    bottom: rem-calc(64);
+    text-transform: uppercase;
+    color: $white;
+    font-size: rem-calc(24);
+    padding-top: rem-calc(23);
+    padding-bottom: rem-calc(23);
+    font-weight: 700;
+    background: rgba(#000,.5);
+  }
+  @include breakpoint(large down) {
+    &__text {
+      width: rem-calc(290);
+      left: calc(50% - 145px);
+    }
+  }
+  @include breakpoint(medium down) {
+    &__text {
+      padding-top: rem-calc(10);
+      padding-bottom: rem-calc(10);
+      font-size: rem-calc(21);
+      bottom: rem-calc(10);
+    }
+  }
+}

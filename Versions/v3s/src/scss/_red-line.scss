@@ -1,0 +1,14 @@
+.red-line {
+  background: $secondary-color;
+  padding: 1rem 0;
+    @include breakpoint(medium down) {
+      padding-top: 0;
+    }
+}
+
+.red-line_menu-cart-account a {
+  color: $white;
+}
+#red-line {
+  background: #ffffff;
+}

@@ -1,0 +1,66 @@
+extends shop-regular
+
+block content
+    include components/mixins/_mixin-product-tile
+    include components/shop/_quickview-product
+    include components/shop/_add-to-favourites-auth-popup
+
+    .row.column.show-for-small-only
+        h1.section-header Поиск
+        br
+        form(method='post', data-abide='', novalidate='novalidate')
+            .row
+                .small-12.medium-9.large-10.column
+                    input(type='text', value='Поисковый запрос', required='')
+                .small-12.medium-3.large-2.column
+                    button.button.expanded(type='submit', name='Найти')
+                        i.fa.fa-search.fa-inverse
+                        | &#160;Найти
+        div Результатов поиска:
+            b &#160;&#160; 445
+
+    .content.search-page
+        .row
+            .small-12.medium-4.large-3.columns
+                include components/shop/_nav-search-toggle
+                include components/shop/_nav-search
+            .small-12.medium-8.large-9.columns
+                .row
+                    .small-12.medium-12.large-12.column.search-results
+                        h2 Товары по запросу «платье»
+                #search-filter.show-for-medium(data-toggler='show-for-medium')
+                    include components/shop/_filter-catalog
+                .row
+                    .small-12.medium-9.large-10.column
+                        include components/shop/_filter-selected-items
+                    .small-12.medium-3.large-2.column
+                        include components/shop/_catalog-sort
+                br
+                .row.small-up-1.medium-up-2.large-up-4(data-eualizer="cat-page")
+                    +productTile('Платье Vis-a-vis','g1', '1','cat-page')
+                    +productTile('Брюки спортивные Pucci','g2','2','cat-page')
+                    +productTile('Топ Rachel Rachel Roy','g3','3','cat-page')
+                    +productTile('Брюки спортивные','g1','4','cat-page')
+                    +productTile('Бриджи Tommy Hilfinger','g5','5','cat-page')
+                    +productTile('Шорты Mohinto','g6','cat-page')
+                    +productTile('Платье MARIA COCA','g7','cat-page')
+                    +productTile('Платье Петербургский Швейный Дом','g8',false,'discount','cat-page')
+                    +productTile('Топ Karen Millen','g9','cat-page')
+                    +productTile('Платье Karen Millen','g10','cat-page')
+                    +productTile('Топ Rachel Rachel Roy','g11','discount','cat-page')
+                    +productTile('Брюки Dolce&Gabbana','g12','cat-page')
+                .row.column.text-center
+                    a.button.show-more(href="#") Показать еще
+
+        //-.row
+            .small-12.medium-3.columns
+                include components/shop/_filter-catalog
+            .small-12.medium-9.columns
+                .row.column
+                    span.float-right Найдено: 445
+                    p
+                        span.text-dark-gray Сначала: &#160;&#160;
+                        span популярные &#160;&#160;
+                        a(href='#', title='') дешевые &#160;&#160;
+                        a(href='#', title='') дорогие &#160;
+

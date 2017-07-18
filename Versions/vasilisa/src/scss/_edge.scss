@@ -1,0 +1,22 @@
+.edge {
+  position: relative;
+  margin-bottom: rem-calc(16);
+top: rem-calc(-14);
+  &:before {
+    content: "";
+    border-bottom: rem-calc(1) solid $light-gray;
+    width: calc(100% - 88px);
+    position: absolute;
+    top: rem-calc(0);
+    right: rem-calc(0);
+  }
+
+  &:after {
+    content: "";
+    border-bottom: rem-calc(6) solid $primary-color;
+    width: rem-calc(80);
+    position: absolute;
+bottom: rem-calc(0);
+    left: rem-calc(0);
+  }
+}

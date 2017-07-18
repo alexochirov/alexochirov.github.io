@@ -1,0 +1,37 @@
+extends shop-regular
+
+block content
+  include components/mixins/_mixin-casual
+
+  .row
+    .small-12.medium-5.column
+      +casual('','trend1')
+    .small-12.medium-7.column
+      .row
+        .small-12.medium-11.medium-offset-1.column
+          .row.columns.section-header
+            h2 Офисный стиль
+          p.light-text Абсолютный хит сезона юбка из натуральной или искусственной кожи. Для создания яркого образа подберите блузку свободного кроя и туфли из замши.
+          .row.small-up-2.medium-up-2.collapse.section-4x
+            .column: +casual-4x('Блузка','office1')
+            .column: +casual-4x('Браслет','office2')
+            .column: +casual-4x('Туфли','office3')
+            .column: +casual-4x('Юбка','office4')
+  p
+  .row
+    .small-12.medium-5.column
+      +casual('','bnr-big1')
+    .small-12.medium-7.column
+      .row
+        .small-12.medium-11.medium-offset-1.column
+          .row.columns.section-header
+            h2 Элегантный Casual
+          p.light-text Насторящий тренд сеозна — цвет бордо, особенно если речь идёт о новых джегинсах в этом цвете. Сочетай как в формате тотал лук или добавляй небольшие акценты в небесных оттенках.
+          .row.small-up-2.medium-up-2.collapse.section-4x
+            .column: +casual-4x('Название товара','4x1')
+            .column: +casual-4x('Название товара','4x2')
+            .column: +casual-4x('Название товара','4x3')
+            .column: +casual-4x('Название товара','4x4')
+  p
+  .row.column.text-center
+    a.button.show-more(href="#") Показать еще

@@ -1,0 +1,92 @@
+extends components/_regular
+
+block page
+  // Data
+  include components/shop/_cart-data
+  include components/shop/_reveal-spec
+
+  .row.column
+    .content
+      //-a.float-right(href="") &times; Очистить корзину
+      h1.section-header Корзина
+      //-.clearfix
+
+  each item in data
+    .row.cart-item(data-equalizer)
+      .small-5.medium-2.column(data-equalizer-watch)
+        img.product-tile-thumbnail(src='./images/goods/g1.jpg' alt='Фото товара')
+      .small-7.medium-offset-0.medium-2.medium-push-8.column(data-equalizer-watch).text-right
+        p
+          a.button.hollow(href="#",title="Удалить") Удалить
+
+      .small-6.medium-5.large-3.medium-pull-2.column
+
+        a.cart-item__title(href='product.html') #{item.title}
+        p.cart-item__description= item.description
+        p.cart-item__size Размер: #{item.size} &#160; &#160; Цвет: #{item.color}
+        .cart-item__sku Артикул: #{item.sku};
+      .small-6.medium-3.large-5.medium-pull-2.column
+        .row
+          .small-12.medium-12.large-4.column
+            span.cart-item__label Цена:
+            p.cart-item__price #{item.price} руб
+              if item.discount
+                span.cart-item__discount &#160;
+                  del(style='white-space: nowrap') #{item.discount} руб
+          .small-12.medium-12.large-4.column
+            .row
+              .small-12.medium-11.large-12.column
+                span.cart-item__label Количество
+                .input-group
+                  .input-group-button
+                    button.button –
+                  input.input-group-field(type='text' value='12' )
+                  .input-group-button
+                    button.button +
+          .small-12.medium-12.large-4.column
+            span.cart-item__label На сумму
+            .lead.no-wrap.cart-item__total-cost #{item.total} руб
+
+  .row.columns
+    include components/shop/_special
+    include components/shop/_special
+
+  .row
+    .column
+      include components/shop/_retail-rocket-additional
+    .column.show-for-medium
+      br
+    .column.small-12.medium-6.medium-centered
+      .input-group
+        input.input-group-field(type='text' placeholder='Промо-код')
+        .input-group-button
+          button.button.hollow(type='submit') Применить
+      br.hide-for-medium
+    .column.small-12.medium-6.medium-centered
+      table
+        tr
+          td.text-dark-gray Количество товаров:
+          td 2 шт.
+        tr
+          td.text-dark-gray Скидка:
+          td 100 руб
+
+
+      br
+
+  .row
+    .column.small-12.medium-6.medium-centered.text-center
+      p.lead СУММА: &#160;
+        span.stat 6 388 руб
+      p
+        a.button.expanded(href='checkout.html', title='') Оформить заказ
+
+  p &#160;
+
+  .row.column
+    //-include components/shop/_cart-additional-products
+    br
+    br
+    include components/shop/_retail-rocket
+
+  p &#160;

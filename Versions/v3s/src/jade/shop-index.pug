@@ -1,0 +1,88 @@
+extends components/_index
+
+block page
+    include components/mixins/_mixin-block
+    include components/mixins/_mixin-product-tile
+    include components/mixins/_mixin-tile
+    include components/shop/_quickview-product
+    include components/shop/_add-to-favourites-auth-popup
+
+
+    include components/shop/_carousel-main
+    section.main-sections-banners
+        include components/shop/_banners-main
+
+    .row.column.subscribe
+        br
+        include components/common/_subscribe-form
+        br
+    .row
+        .small-12.medium-6.column
+            a(href='#')
+                img(src='./images/new_year.jpg', alt='новый год')
+        .small-12.medium-6.column
+            a(href='#')
+                img(src='./images/winter.jpg', alt='зима')
+    //-.row.column
+        include components/shop/_benefits
+        hr
+    .content
+        .row.column
+            .row.column.section-header
+                h2 ВАША ВЫГОДА / Лучшие предложения
+
+            .row.small-up-1.medium-up-3.large-up-5
+                +productTile('Зонт-флора','zont')
+                +productTile('Кольцо Сова, Размер 6','ring', discount)
+                +productTile('Женский шарф Джулия название длиннее одной строки','scarf')
+                +productTile('Пончо Лионетта','poncho')
+                +productTile('Женский шарф Джери','scarf')
+            br
+
+            //.row.column.section-header
+                h2 Стиль и мода. Тренды осени
+
+            //.row.small-up-1.medium-up-3.large-up-5.looks-collection
+                .column: +stub('Название образа', 'img1')(class='stub-photo')
+                .column: +stub('Название образа','img2')(class='stub-photo show-for-medium')
+                .column: +stub('Название образа','img3')(class='stub-photo show-for-medium')
+                .column: +stub('Название образа','img4')(class='stub-photo show-for-large')
+                .column: +stub('Название образа','img5')(class='stub-photo show-for-large')
+            //br
+
+
+            .row.column.section-header
+                h2 Подбери свой образ по типу фигуры
+
+            .row.small-up-1.medium-up-3.large-up-5.looks-collection
+                .column: +stub('Песочные часы', 'fig1')(class='stub-photo')
+                .column: +stub('Груша','fig2')(class='stub-photo')
+                .column: +stub('Треугольник','fig3')(class='stub-photo')
+                .column: +stub('Прямоугольник','fig4')(class='stub-photo')
+                .column: +stub('Овал','fig5')(class='stub-photo')
+
+
+            br
+
+            .row.column.section-header
+                h2 Товары специально для вас
+
+            .row.small-up-1.medium-up-3.large-up-5(data-equalizer='stone-samples', data-equalize-by-row='true')
+                +productTile('Зонт-флора', 'zont')
+                +productTile('Кольцо Сова, Размер 6', 'ring')
+                +productTile('Женский шарф Джулия название длиннее одной строки', 'scarf')
+                +productTile('Пончо Лионетта', 'poncho')
+                +productTile('Женский шарф Джери', 'scarf')
+    section.content.brands
+        .row.column
+            include components/shop/_brands-preview
+            br
+
+
+    include ../images/ecommerce-icons.svg
+    br
+
+    br
+    include components/common/_seo-text
+    br
+    include components/shop/_benefits

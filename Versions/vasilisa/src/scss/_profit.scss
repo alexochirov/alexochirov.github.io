@@ -1,0 +1,17 @@
+.profit {
+  font-size: rem-calc(24);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: rem-calc(34);
+  font-family: "Open Sans",sans-serif;
+  position: relative;
+  &:after {
+    width: rem-calc(80);
+    height: rem-calc(4);
+    background: $primary-color;
+    content:"";
+    position: absolute;
+    left:calc(50% - 40px);
+    bottom: rem-calc(-13);
+  }
+}

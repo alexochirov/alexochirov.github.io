@@ -1,0 +1,11 @@
+.checkout-form__delivery-pickpoints {
+  display: none;
+}
+
+.show-pickpoints .checkout-form__delivery-pickpoints {
+  display: block;
+}
+
+.show-pickpoints .checkout-form__delivery-address {
+  display: none;
+}

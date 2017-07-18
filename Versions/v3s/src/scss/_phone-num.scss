@@ -1,0 +1,22 @@
+.phone-num {
+    @include breakpoint(small only) {
+        margin-bottom: rem-calc(10);
+    }
+}
+span.phone-num__top-text {
+    font-size: 13px;
+    line-height: 1;
+    color: #6e6e6e;
+    display: block;
+}
+.phone-num__link {
+    display: block;
+    font-size: 1.28571rem;
+    white-space: nowrap;
+}
+span.phone-num__bottom-text {
+    font-size: 13px;
+    line-height: 1;
+    color: #6e6e6e;
+    display: block;
+}

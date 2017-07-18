@@ -1,0 +1,16 @@
+extends ../shop-index
+
+block page
+    include common/_breadcrumbs
+
+    block content
+    //-
+        .row.column
+            h1 Заголовок страницы h1
+        .content
+            .row
+                .columns.small-12.medium-7.large-8
+                    include common/_text
+                .columns.small-12.medium-5.large-4
+                    include corporate/_sidebar
+    p &#160;

@@ -1,0 +1,152 @@
+.b-tips
+{
+    &__item
+    {
+        padding-top: 33px;
+        padding-bottom: 30px;
+        padding-left: 55px;
+        a
+        {
+            position: relative;
+            h3
+            {
+                font-family: 'Conv_SegoeUIBold';
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 20px;
+
+                margin-bottom: -2px;
+
+                text-transform: uppercase;
+
+                color: #383838;
+            }
+            span
+            {
+                font-family: 'Conv_SegoeUIRegular';
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 20px;
+
+                color: #a1a1a1;
+            }
+            &:before
+            {
+                position: absolute;
+
+                display: block;
+
+                content: '';
+            }
+        }
+        &_1 a:before
+        {
+            top: 6px;
+            left: -56px;
+
+            width: 35px;
+            height: 31px;
+
+            background: url('../images/b-tips__item%20b-tips__item_1.png');
+        }
+        &_2 a:before
+        {
+            top: 6px;
+            left: -54px;
+
+            width: 35px;
+            height: 31px;
+
+            background: url('../images/b-tips__item%20b-tips__item_2.png');
+        }
+        &_3 a:before
+        {
+            top: 6px;
+            left: -53px;
+
+            width: 26px;
+            height: 31px;
+
+            background: url('../images/b-tips__item%20b-tips__item_3.png');
+        }
+        &_4 a:before
+        {
+            top: 8px;
+            left: -54px;
+
+            width: 40px;
+            height: 28px;
+
+            background: url('../images/b-tips__item%20b-tips__item_4.png');
+        }
+    }
+}
+@media (max-width:1200px)
+{
+    .b-tips
+    {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}
+@media (max-width:960px)
+{
+    .b-tips
+    {
+        &__item
+        {
+            padding-right: 10px;
+            h3
+            {
+                padding-top: 8px;
+            }
+            span
+            {
+                display: none;
+            }
+        }
+    }
+}
+@media (max-width:640px)
+{
+    .b-tips
+    {
+
+        background: #f8f8f8;
+        .row
+        {
+            border: 1px solid #e2e2e2;
+            background: #fff;
+        }
+        &__item
+        {
+            padding-top: 40px;
+            padding-right: 0;
+            padding-bottom: 0;
+            padding-bottom: 14px;
+            padding-left: 0;
+            &:not(:last-child)
+            {
+                border-right: 1px solid #e2e2e2;
+            }
+            a
+            {
+                display: block;
+
+                text-align: center;
+                h3
+                {
+                    font-size: 12px;
+
+                    padding-right: 2px;
+                    padding-left: 2px;
+                }
+                &:before
+                {
+                    top: -30px;
+                    left: calc(50% - 15px);
+                }
+            }
+        }
+    }
+}

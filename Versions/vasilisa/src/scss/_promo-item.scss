@@ -1,0 +1,29 @@
+.promo-item {
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 50px;
+
+  &__img {
+    border: 1px solid #e0e0e0;
+    height: 200px;
+    display: block;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__date {
+    text-align: right;
+    color: #6e6e6e;
+  }
+
+  &__title {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  &__more {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+  }
+}

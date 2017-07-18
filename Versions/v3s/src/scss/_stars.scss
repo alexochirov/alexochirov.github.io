@@ -1,0 +1,24 @@
+.stars {
+  display: inline-block;
+}
+
+.stars__item {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  padding-right: 6px;
+  margin-right:0;
+  background: transparent url("../images/icons/star_gray.svg") no-repeat left top;
+}
+
+.stars__item_hover {
+  background: transparent url("../images/icons/star_active.svg") no-repeat left top;
+}
+
+.stars__item_active {
+  background: transparent url("../images/icons/star_active.svg") no-repeat left top;
+}
+
+.stars__item_empty {
+  background: transparent url("../images/icons/star_empty.svg") no-repeat left top;
+}

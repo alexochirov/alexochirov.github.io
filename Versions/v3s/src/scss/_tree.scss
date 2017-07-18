@@ -1,0 +1,19 @@
+.tree {
+    .tabs-title {
+        & > a:hover,
+        & > a[aria-selected='true'] {
+            color: #fff;
+            background: $red;
+        }
+    }
+
+    a {
+        color: $black;
+        background: #fff;
+    }
+    @include breakpoint(small only) {
+        .tabs-title {
+            width: 100%;
+        }
+    }
+}

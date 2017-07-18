@@ -1,0 +1,54 @@
+extends components/_index
+
+block page
+    .content
+        .row.column
+
+            br
+            h1.section-header 404: Страница не найдена
+            br
+        .row.columns
+            .error__wrapper
+                .error__text
+                    b Запрашиваемая страница не найдена
+                    p
+                    p Возможно страница была удалена,
+                        br
+                        | либо временно недоступна.
+                    p
+                    b Пожалуйста, попробуйте следующие варианты действий:
+                    p — Исправьте адрес страницы
+                        br
+                        | — Нажмите «Назад» в окне браузера
+                        br
+                        | — Воспользуйтесь поиском на этой странице
+                    p.lead
+                        a(href='#', title='') ← Вернуться на главную страницу
+                        br
+                        br
+                .error__product.text-center.medium-text-left
+                    a(href='#')
+                        img(src='./images/goods/g3.jpg')
+                    .error__product-text
+                        p Топ Rachel Rachel Roy
+                            br
+                            b.error__price 1250 руб
+        br
+        br
+        .row.text-center.error__links
+            | Посмотрите в разделах каталога:
+            br
+            a(href='#', title='') Женщинам
+            span.text-gray &#160; • &#160;
+            a(href='#', title='') Мужчинам
+            span.text-gray &#160; • &#160;
+            a(href='#', title='') Красота и здоровье
+            span.text-gray &#160; • &#160;
+            a(href='#', title='') Для дома
+
+        .row.column
+
+            br
+            br
+            br
+            include components/shop/_retail-rocket

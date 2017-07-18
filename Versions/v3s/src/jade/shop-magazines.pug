@@ -1,0 +1,48 @@
+extends components/_regular
+
+block content
+  .row.column
+    h1.section-header Каталоги
+  .content
+    include components/shop/_reveal
+    .row.columns
+      .hit
+        .hit__block
+          a(href="#").hit__prev
+            img(src="./images/arrow-circle-left.svg", alt="")
+          .hit__num
+            span.js-leftPageCat 1
+            |&#160;-&#160;
+            span.js-rightPageCat 2
+            |&#160;из&#160;
+            span.js-allPageCat
+          a(href="#").hit__next
+            img(src="./images/arrow-circle-right.svg", alt="")
+          .hit__text Перейти на страницу
+          input.hit__input(type="text")
+
+      .corrector
+        .corrector__slide
+          a(href="#", data-open="exampleModal1")
+            img(src="./images/a1.jpg", alt="")
+        .corrector__slide
+          a(href="#", data-open="exampleModal1")
+            img(src="./images/a2.jpg", alt="")
+        .corrector__slide
+          a(href="#", data-open="exampleModal1")
+            img(data-lazy="./images/a3.jpg", alt="")
+        .corrector__slide
+          a(href="#", data-open="exampleModal1")
+            img(data-lazy="./images/a4.jpg", alt="")
+        .corrector__slide
+          a(href="#", data-open="exampleModal1")
+            img(data-lazy="./images/a5.jpg", alt="")
+        .corrector__slide
+          a(href="#", data-open="exampleModal1")
+            img(data-lazy="./images/a6.jpg", alt="")
+        .corrector__slide
+          a(href="#", data-open="exampleModal1")
+            img(data-lazy="./images/a7.jpg", alt="")
+        .corrector__slide
+          a(href="#", data-open="exampleModal1")
+            img(data-lazy="./images/a8.jpg", alt="")

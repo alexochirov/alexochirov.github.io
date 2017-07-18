@@ -1,0 +1,61 @@
+extends user-account
+
+block userAccount
+  -
+    var data = [
+      {
+      'title':'Заказ №4 на сумму 1&#160;250&#160;руб',
+      'statusClass':'success',
+      'status':'Оплачен',
+      'data':'03.06.2014'
+      },
+      {
+      'title':'Заказ №3 на сумму 4&#160;997&#160;руб',
+      'statusClass':'warning',
+      'status':'Оформлен',
+      'data':'03.06.2014'
+      },
+      {
+      'title':'Заказ №2 на сумму 321&#160;руб',
+      'statusClass':'secondary',
+      'status':'Доставлен',
+      'data':'03.06.2014'
+      },
+      {
+      'title':'Заказ №1 на сумму 1&#160;080&#160;руб',
+      'statusClass':'secondary',
+      'status':'Доставлен',
+      'data':'03.06.2014'
+      }
+    ]
+
+  h2.section-header Мои заказы
+
+  section.orders
+    .row.order-line
+      .small-10.large-11.column
+        .row
+          .small-12.large-2.column.show-for-large
+            b Статус
+          .small-12.large-3.medium-3.column.show-for-medium
+            b Дата
+          .small-12.large-7.medium-9.column.text-center.medium-text-left
+            b Заказ
+
+      .small-2.large-1.text-center.large-text-left.column
+      .column
+    each item in data
+      .row.order-line
+        .small-10.large-11.column
+          .row
+            .small-6.medium-3.large-2.medium-push-3.large-push-0.column.orders__date
+              span.label= item.status
+            .small-6.large-3.medium-3.medium-pull-3.large-pull-0.column.orders__date= item.data
+            .small-12.large-7.medium-6.column
+              a.order-title(href='order.html' title='Подробности заказа') !{item.title}
+
+        .small-2.large-1.column
+          a.lead.has-tip(href="",data-tooltip aria-haspopup="true",data-options="disable_for_touch:false",title="Повторить заказ")
+            img(src='./images/icons/repeat.svg' style='width: 28px; margin-top: -.5em;' alt='&times;')
+        .column
+          br

@@ -1,0 +1,119 @@
+extends components/_authorized
+
+block content
+  .admit(style="background-image:url(./images/helen.png);")
+    .row
+      .large-5.large-offset-6.columns.text-center
+        .admit__title 
+          | Елена
+          =" "
+          span.text-primary Бирюкова
+          .admit__actress.text-left актриса театра и кино
+        .admit__rec рекомендует
+        form(action="#").shopping
+          .shopping__head
+            | Подпишись
+            br
+            | и получи
+            =" "
+            span.shopping__alert 500&#160;&#8381;
+            =" "
+            | на шопинг!*
+          .shopping__main.text-left  
+            .row
+              .small-4.columns  
+                label.shopping__label
+                  | Имя
+                  span.shopping__red *
+                  | :
+              .small-8.columns  
+                input(type="text",placeholder="")
+            .row
+              .small-4.columns  
+                label.shopping__label
+                  | Фамилия
+                  span.shopping__red *
+                  | :
+              .small-8.columns  
+                input(type="text",placeholder="")
+            .row
+              .small-4.columns  
+                label.shopping__label
+                  | E-mail
+                  span.shopping__red *
+                  | :
+              .small-8.columns  
+                input(type="email",placeholder="")
+            .row
+              .small-4.columns  
+                label.shopping__label
+                  | Дата рождения:
+              .small-8.columns  
+                input(type="date")
+            .row
+              .small-4.columns  
+                label.shopping__label
+                  | Пол:
+              .small-8.columns 
+                .shopping__block
+                  input(type="radio",name="gender",checked)#woman
+                  label(for="woman") Женский
+                .shopping__block
+                  input(type="radio",name="gender")#man
+                  label(for="man") Мужской
+            .row
+              .small-1.columns
+                input(type="checkbox",checked)#advance
+              .small-11.columns
+                label(for="advance") Даю согласие на получение скидок и новостей от domalina.ru 
+              .columns.text-center
+                p
+                button.button.shopping__button Отправить 
+              .columns
+                span.shopping__red *
+                |  поля, обязательные для заполнения 
+      .large-7.columns.text-center.medium-text-right.admit__discount
+        | *Для получения скидки необходимо подписаться. Скидка может быть применена только один раз.
+        br
+        | Срок действия - в течение 30 дней со дня получения. Промокод действителен только при покупке от 2999 Р.              
+  .row.columns.text-center
+    h2.profit Выгодные предложения
+  .row(data-equalizer,data-equalize-by-row="true")
+    .large-8.columns.text-center
+      a.cream(href="#",data-equalizer-watch)
+        img(src="./images/girl1.png", alt="") 
+        .cream__text.text-center Одежда 
+    .large-4.medium-6.columns.text-center
+      a.cream(href="#",data-equalizer-watch)
+        img(src="./images/girl2.png", alt="")  
+        .cream__text.text-center Бытовая техника
+    .large-4.medium-6.columns.text-center
+      a.cream(href="#",data-equalizer-watch)
+        img(src="./images/girl3.png", alt="")  
+        .cream__text.text-center Для красоты
+    .large-8.columns.text-center
+      a.cream(href="#",data-equalizer-watch)
+        img(src="./images/girl4.png", alt="")
+        .cream__text.text-center Домашний текстиль 
+  .mb70  
+  .row.columns.text-center
+    h2.profit Наши преимущества
+  .row
+    .large-10.columns.large-centered  
+      .row.medium-up-3.text-center
+        .columns
+          .package
+            .package__icon
+              img(src="./images/pack1.svg", alt="")  
+            .package__text Доставка курьером или Почтой России  
+        .columns
+          .package
+            .package__icon
+              img(src="./images/pack2.svg", alt="")  
+            .package__text Оплата наличными или картой при получении
+        .columns
+          .package
+            .package__icon
+              img(src="./images/pack3.svg", alt="")  
+            .package__text Доставка в любой удобный для вас день и время
+  

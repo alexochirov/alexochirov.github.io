@@ -1,14 +1,15 @@
 .carousel-main {
-    text-align: center;
+  text-align: center;
+}
 
-    &__item {
-        background: center no-repeat;
-        -webkit-background-size: cover;
-        background-size: cover;
-        display: none;
-
-        &:first-child {
-            display: block;
-        }
-    }
+.carousel-main__item {
+  height: rem-calc(400);
+  background: center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  display: none;
+  padding: 2rem;
+  &:first-child {
+    display: block;
+  }
 }

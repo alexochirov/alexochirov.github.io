@@ -1,0 +1,47 @@
+.admit {
+  background-size: cover;
+  padding-top: rem-calc(50);
+  padding-bottom: rem-calc(100);
+  margin-bottom: rem-calc(40);
+  background-position: center top;
+
+  &__discount {
+    font-size: rem-calc(12);
+  }
+
+  &__title {
+    margin-bottom: rem-calc(9);
+    display: inline-block;
+    padding-right: rem-calc(9);
+    padding-left: rem-calc(9);
+    font-size: rem-calc(32);
+    background: url($imagesPath +"/tetris.svg")no-repeat center;
+    font-weight: 700;
+    line-height: 1.2;
+    background-size: contain;
+    text-transform: uppercase;
+  }
+
+  &__actress {
+    padding-left: rem-calc(4);
+    font-size: rem-calc(15);
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__rec {
+    font-size: rem-calc(20);
+    margin-bottom: rem-calc(30);
+    text-transform: uppercase;
+  }
+  @include breakpoint(medium down) {
+  
+  }
+  @include breakpoint(small only) {
+
+
+    &__title {
+      font-size: rem-calc(26);
+    }
+  }
+}

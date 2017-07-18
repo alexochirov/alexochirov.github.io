@@ -1,10 +1,7 @@
-p.text-center
-  img(src='./i/neck.png' alt='товар')
+p: img(src='./i/image.svg' alt='товар')
 .row.small-up-3.medium-up-4.large-up-6
-  - n = 0
-  while n < 6
-    - n++
-    .column
-      p
-        a(href="#")
-          img(src='./i/stone'+ n + '.png' alt=n)
+    - n = 0
+    while n < 6
+        - n++
+        .column
+            p: img(src='./i/image.svg' alt=n)
