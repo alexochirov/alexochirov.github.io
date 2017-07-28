@@ -1,4 +1,79 @@
-.subscribe {}
+.subscribe {
+  background-color: #f6f6f6;
+
+  &__trust {
+    margin-bottom: rem-calc(20);
+  }
+
+  &_homepage {
+    margin-bottom: rem-calc(24);
+    padding-top: rem-calc(25);
+    padding-bottom: rem-calc(15);
+
+    form {
+      background: #f6f6f6;
+    }
+
+    label {
+      font-weight: 300;
+      font-size: rem-calc(24);
+    }
+  }
+  @include breakpoint(large down) {
+    &_homepage {
+      .subscribe__trust {
+        font-size: rem-calc(22);
+      }
+    }
+  }
+  @include breakpoint(medium down) {
+    &_homepage {
+      padding-top: rem-calc(17);
+      padding-bottom: rem-calc(5);
+
+      .input-group-field {
+        height: rem-calc(25);
+        font-size: rem-calc(12);
+      }
+
+      .input-group-button {
+        .button {
+          font-size: rem-calc(12);
+          padding-top: rem-calc(6);
+          padding-bottom: rem-calc(6);
+        }
+      }
+
+      .subscribe__trust {
+        font-size: rem-calc(14);
+        margin-bottom: rem-calc(17);
+      }
+    }
+  }
+  @include breakpoint(small only) {
+    &_homepage {
+      border-top: rem-calc(1) solid #d8d8d8;
+      border-bottom: rem-calc(1) solid #d8d8d8;
+      .input-group-field {
+        height: rem-calc(34);
+        padding-left: rem-calc(12);
+        padding-right: rem-calc(12);
+        font-size: rem-calc(14);
+      }
+      .input-group-button {
+        .button {
+          font-size: rem-calc(14);
+          padding-top: rem-calc(9);
+          padding-bottom: rem-calc(9);
+        }
+      }
+      .subscribe__trust {
+        font-size: rem-calc(18);
+      }
+    }
+  }
+}
+
 .subscribe_cmonday {
   background: #724180 url("../images/cybermonday/cmonday_subscribe.jpg") no-repeat center top;
   width: 100%;
@@ -11,23 +86,12 @@
     animation: subscribe__blink 2s step-start 0s infinite;
   }
 }
-
 @keyframes subscribe__blink {
-  50% { background: #F9A300; }
-}
-
-.subscribe_homepage {
-  form {
-    background: #f6f6f6;
-  }
-
-  label {
-    font-weight: 300;
-    font-size: rem-calc(24);
+  50% {
+    background: #F9A300;
   }
 }
 
-//replaced from common
 .subscribe__title {
   text-transform: uppercase;
   font-size: 19px;
@@ -36,12 +100,15 @@
   color: #fff;
   margin-bottom: 10px;
 }
+
 .subscribe__yellow {
   color: #f7b700;
 }
+
 .subscribe__red {
   color: #e4082e;
 }
+
 .subscribe__button {
   text-transform: uppercase;
   color: #fff;

@@ -48,20 +48,27 @@
       border-radius: 0 5px 5px 0;
     }
     &-button button {
-      background: #96172e;
+      background: $red;
     }
     &-field {
       border-color: #f7f7f7;
       text-align: center;
     }
   }
-  a[title="Удалить"] {
-    margin-top: 1.6rem;
-    color: #96172e;
-    border-color: #96172e;
+  &__btn {
+    color: $red !important;
+    border-color: $red !important;
     &:hover {
-      color: darken(#96172e, 10);
-      border-color: darken(#96172e, 10);
+      color: darken($red, 10) !important;
+      border-color: darken($red, 10) !important;
     }
   }
+  &__deletelink {
+    margin-top: 1.6rem;
+  }
+}
+
+.cart-footer {}
+.cart-footer__btn {
+  @extend .cart-item__btn;
 }

@@ -1,0 +1,12 @@
+.content
+    .grid-container: .grid-x.grid-padding-x: .cell
+        h2 Новости магазина
+    .grid-container: .grid-x.grid-padding-x.small-up-2.medium-up-4
+        - var n = 0
+        while n < 4
+            .cell
+                .margin-bottom-6
+                    a(href='#', title='') Изменение в графике работы магазина в праздничные дни
+                    br
+                    span.text-medium-gray 20.02.2016
+            - n++

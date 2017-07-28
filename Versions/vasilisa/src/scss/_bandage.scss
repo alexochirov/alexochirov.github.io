@@ -2,32 +2,27 @@
   display: inline-block;
 }
 
-.bandage__alternative {
-  display: inline-block;
-  cursor: pointer;
-  margin-right: .3rem;
-  padding: 0 .5rem;
-}
-
-.bandage__alternative.active {
-  background: #a52468;
-  color: white;
-  border-radius: 5px;
-
-  & .bandage__arrow-down {
-    filter: invert(1);
-  }
-}
-
 .bandage__wrapper {
   margin-bottom: 1rem;
 }
 
-.bandage__arrow-down {
-  background: url(../img/sprites.png) no-repeat;
-  background-position: -85px -183px;
-  width: 12px;
-  height: 8px;
+.bandage__last-size {
+  color: #a52468;
+  margin: 0 1rem;
   display: inline-block;
-  border: none;
+  vertical-align: middle;
+  cursor: pointer;
+  font-family: "Open Sans";
+  font-size: 13px;
+  color: #777;
+
+  &:hover {
+    color: #a52468;
+  }
+
+  & input {
+    vertical-align: sub;
+    margin-bottom: 1.5rem;
+  }
 }
+

@@ -5,8 +5,14 @@
     top: 24px;
     z-index: 100;
     box-shadow: 1px 3px 3px 0 rgba(0, 0, 0, 0.2);
+    background: #fff;
 }
-
+.vertical_zhenskie-slabosti {
+	background: #fff url($imagesPath + "/dir_ww.jpg") no-repeat right bottom;
+	background-size: 230px;
+	min-height: 220px;
+	width:450px;
+}
 .vertical_2level {
     padding: 40px 30px 30px;
     min-height: 350px;
@@ -37,19 +43,61 @@
     }
 }
 
+.vertical__item-heart:before {
+     content: "";
+     position: absolute;
+     background: url("../images/valentines-heart.svg");
+     background-size: 12px;
+     background-repeat: no-repeat;
+     width: 20px;
+     height: 20px;
+     left: -19px;
+     top: 6px;
+}
+
+.vertical__item-sea {
+    & a, & a:hover {
+        color: #0267b1;
+
+    }
+    &:before {
+        content: "";
+        position: absolute;
+        background: url("../images/sea-theme-icon.svg");
+        background-size: 23px;
+        background-repeat: no-repeat;
+        width: 30px;
+        height: 30px;
+        left: -27px;
+        top: 0px;
+    }
+}
+
+.vertical__pic {
+    position: absolute;
+    right: -45px;
+    bottom: 13px;
+}
+
+/*
+
 .vertical_woman-clothes {
-    background: #fff url("../images/vertical_woman_link.jpg") no-repeat right bottom;
-    background-size: 200px;
+    background: #fff url("../images/vertical_woman_link-05-17.jpg") no-repeat right bottom;
+    background-size: 255px;
+    min-height: 330px;
+    background-position-x: 103%;
 }
 
 .vertical_woman-shoes {
-    background: #fff url("../images/dir-woman-shoes.jpg") no-repeat right bottom;
+    background: #fff url("../images/dir-woman-shoes-05-17.jpg") no-repeat right bottom;
+    min-height: 270px;
 }
 
 .vertical_woman-acsessorize {
-    background: #fff url("../images/dir-woman-acsessorize.jpg") no-repeat right bottom;
+    background: #fff url("../images/dir-woman-acsessorize-05-17.jpg") no-repeat right bottom;
+    min-height: 270px;
 }
-
+*/
 .vertical_woman_link {
     position: absolute;
     right: 0;
@@ -57,7 +105,7 @@
     width: 224px;
     height: 370px;
 }
-
+/*
 .vertical_man {
     background: #fff url("../images/dir_man.jpg") no-repeat right bottom;
 }
@@ -71,25 +119,31 @@
 }
 
 .vertical_household-appliancies-electronics {
-    //�������� �������
-    background: #fff url("../images/dir_tehnika.jpg") no-repeat right bottom;
-    min-height: 300px;
+    background: #fff url("../images/dir_tehnika-05-17.jpg") no-repeat right bottom;
+    min-height: 280px;
+	width: 420px;
 }
 
 .vertical_house-garden {
-    //�������� �������
-    background: #fff url("../images/dir_household.jpg") no-repeat right bottom;
+    background: #fff url("../images/dir_household-05-17.jpg") no-repeat right bottom;
 }
 
 .vertical_beauty-and-health {
-    //�������� �������
-    background: #fff url("../images/dir_parfum.jpg") no-repeat right bottom;
+    background: #fff url("../images/dir_parfum-05-17.jpg") no-repeat right bottom;
+    background-size: 230px;
+    min-height: 270px;
 }
 
 .vertical_hits {
     background: #fff url("../images/dir_hits.jpg") no-repeat right bottom;
 }
-
+*/
+ .vertical_beauty-and-health{
+   background: #fff url($imagesPath + '/dir_parfum-07-17.jpg') no-repeat right bottom ;
+    background-size: 230px ;
+    width: 512px ;
+    min-height: 290px;
+ }
 .vertical__list {
     list-style: none;
     margin-left: 0;
@@ -117,7 +171,7 @@
 
 .vertical__link-top {
     @extend .menu-main__link;
-    padding-left: 0;
+  padding: 0.25rem 0.25rem;
     font-size: rem-calc(13);
     letter-spacing: 0;
 }
@@ -141,3 +195,9 @@
         }
     }
 }
+  @include breakpoint(medium down) {
+  .vertical {
+    &__pic {
+      right: rem-calc(0);
+    }
+  } }

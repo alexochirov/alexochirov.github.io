@@ -1,8 +1,10 @@
 // Заголовки разделов
+
 .section-header {
   text-align: center;
   margin-bottom: rem-calc(30);
   position: relative;
+
   &:after {
     content: "";
     position: absolute;
@@ -13,6 +15,11 @@
     bottom: -15px;
     left: calc(50% - 40px);
   }
+
+  &__uppercase {
+    text-transform: uppercase;
+  }
+
   h2 {
     font-size: rem-calc(22);
     position: relative;
@@ -22,6 +29,7 @@
       &:before {
         left: -140px;
       }
+
       &:after {
         right: -140px;
       }
@@ -30,18 +38,20 @@
       &:before {
         left: -70px;
       }
+
       &:after {
         right: -70px;
       }
     }
-
   }
 }
-.section-header h2:before, .section-header h2:after {
+
+.section-header h2:after,
+.section-header h2:before {
   @include breakpoint(medium up) {
     content: "";
-    position:absolute;
-    display:block;
+    position: absolute;
+    display: block;
     height: 1px;
     width: 120px;
     background: lighten($grey, 20);
@@ -49,5 +59,37 @@
   }
   @include breakpoint(medium only) {
     width: 50px;
+  }
+}
+
+.section-header__link {
+  color: #000;
+
+  &:hover {
+    color: $redHover;
+  }
+}
+
+.section-header {
+  @include breakpoint(medium down) {
+    &:after {
+      width: rem-calc(68);
+      left: calc(50% - 34px);
+    }
+
+    h2 {
+      padding-left: rem-calc(14);
+      padding-right: rem-calc(14);
+      font-size: rem-calc(18);
+    }
+  }
+  @include breakpoint(small only) {
+    &:after {
+      display:none;
+    }
+    h2 {
+
+      font-size: rem-calc(17);
+    }
   }
 }

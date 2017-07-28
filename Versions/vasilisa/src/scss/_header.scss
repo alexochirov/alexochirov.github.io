@@ -11,8 +11,17 @@
 
 .header-logo-image {
   margin: rem-calc(25 0 0 0);
- /* @include breakpoint(medium only) {
-    margin: rem-calc(25 0 0);
-  }*/
+}
 
+
+@include breakpoint(large down) {
+  .header-logo-image {
+    width: rem-calc(215);
+  }
+}
+@include breakpoint(small only) {
+  .header-logo-image {
+    margin: rem-calc(12 0 0 0);
+    width: rem-calc(112);
+  }
 }

@@ -1,9 +1,47 @@
 .looks-collection {
   @extend .main-sections-banners;
 
-}
-.looks-collection figcaption {
-  h2 {
-    font-size: rem-calc(17);
+   figure {
+    text-align: center;
+
+     img {
+      width: auto;
+      //max-height: 270px;
+      transform: scale3d(0.95238095, 0.95238095, 1);
+      position: relative;
+      top: -6px;
+    }
   }
+
+  figcaption {
+    h2 {
+      font-size: rem-calc(17);
+    }
+  }
+  @include breakpoint(large down) {
+    figcaption {
+      h2 {
+        font-size: rem-calc(17);
+      }
+    }
+  }
+  @include breakpoint(medium down) {
+    .stub {
+    margin-bottom: rem-calc(0);  
+    }
+    figure {
+      img {
+        max-height: rem-calc(150);
+      }
+    }
+    figcaption {
+      h2 {
+        font-size: rem-calc(13);
+      }
+    }
+  }
+}
+
+.style-and-fashion-img-wrapper {
+  max-height: 270px;
 }

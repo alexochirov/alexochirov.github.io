@@ -22,3 +22,11 @@
 .stars__item_empty {
   background: transparent url("../images/icons/star_empty.svg") no-repeat left top;
 }
+  @include breakpoint(medium down) {
+  .stars {
+    &__item {
+      width: rem-calc(13);
+      height: rem-calc(12);
+      background-size: contain;
+    }
+  } }

@@ -23,8 +23,8 @@
         border-bottom-right-radius: 0;
     }
     &.close {
-        color: #96172e;
-        border-color: #96172e;
+        color: $red;
+        border-color: $red;
     }
     &.close:hover {
         background: #eeeeee;

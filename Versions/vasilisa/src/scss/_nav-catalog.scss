@@ -3,6 +3,15 @@
     font-size: rem-calc(13);
 }
 
+.left_menu__line {
+    border-top: 1px dashed rgba(51,51,51,0.25);
+    margin: 1rem 0;
+}
+
+.left_menu__title {
+    line-height: 31px;
+    font-size: 24px;
+}
 /*#menu-catalog,*/
 #menu-search {
 
@@ -79,10 +88,16 @@
 .aside-menu__nested {
      margin-left: 0.5rem;
  }
+.aside-menu__sub {
+    margin-left: 1.5rem;
+}
 .aside-menu__item {
     line-height: 1.4;
     color: $black;
     padding-left: 0;
+}
+.aside-menu__text {
+    padding: 0.5rem 1rem 0.5em 0;
 }
 .aside-menu__link {
     display: block;
@@ -100,7 +115,11 @@
 
     }
     &_active {
-        color: #c21e3c;
+        color: $red;
+    }
+    &:hover {
+        text-decoration: underline;
+        color: $redHover;
     }
 }
 

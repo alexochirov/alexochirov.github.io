@@ -1,17 +1,10 @@
 .carousel-main {
   text-align: center;
 }
-
-/*
-.carousel-main__item {
-  height: rem-calc(400);
-  background: center no-repeat;
-  -webkit-background-size: cover;
-  background-size: cover;
-  display: none;
-  padding: 2rem;
-  &:first-child {
-    display: block;
+@include breakpoint(large down) {
+  .carousel-main .slick-slide img {
+    max-width: 160%;
+    left: -30%;
+    position: relative;
   }
-
-}*/
+}

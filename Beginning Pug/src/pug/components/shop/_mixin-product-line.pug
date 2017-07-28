@@ -1,0 +1,67 @@
+mixin productLine(discount, onDemand, inCart, inFavourites)
+    .grid-x.grid-padding-x
+        .cell.small-4.medium-3
+            .margin-bottom-6: img(src='./i/image.svg' alt='Товар')
+        .cell.small-8.medium-9
+            .grid-x.grid-padding-x
+                .cell.small-12.medium-7
+                    h5.margin-bottom-0
+                        if discount
+                            span.label.success
+                                i.fa.fa-star-o
+                                | &nbsp;Акция
+                            | &nbsp;
+                        a(href='shop-product.html') Картридж совместимый SuperFine (SF-CN048AE) 951XL Magenta
+                    .margin-bottom-3: a.text-dark-gray.text-size-small(href='shop-catalog.html') Шуроповерты
+                .cell.small-12.medium-5.large-4.large-offset-1
+                    if onDemand
+                        .margin-bottom-6
+                            span.text-dark-gray: em Нет в наличии&nbsp;
+                    else
+                        .margin-bottom-6
+                            strong.text-size-xlarge
+                                | 1&nbsp;250&nbsp;
+                                i.fa.fa-rub
+                            if discount
+                                br
+                                del.text-dark-gray
+                                    | 1&nbsp;750&nbsp;
+                                    i.fa.fa-rub
+            .grid-x.grid-padding-x
+                .cell.small-12.medium-7.align-self-middle
+                    ul.margin-bottom-3.hide-for-small-only
+                        li Гарантия: 1 год
+                        li Мощность: 1000W
+                        li Цвет: Красный
+                        li Страна: Китай
+                    .margin-bottom-6
+                        if !inFavourites
+                            a.text-dark-gray(data-open="add-to-favourites-auth-popup")
+                                i.fa.fa-heart-o
+                                | &nbsp;Запомнить
+
+                        else
+                            a.text-dark-gray(href='' title='Удалить из запомненных')
+                                i.fa.fa-heart
+                                | &nbsp;Запомнено
+                        | &nbsp;&nbsp;
+                        a.text-dark-gray(href='shop-compare.html' title='')
+                            i.fa.fa-balance-scale
+                            | &nbsp;Сравнить
+                .cell.small-12.medium-5.large-4.large-offset-1.align-self-bottom
+                    if onDemand
+                        .margin-bottom-6
+                            a(href='#' title='')
+                                i.fa.fa-bell-o
+                                | &nbsp;Заказать
+                    else
+                        .margin-bottom-6
+                            if inCart
+                                a(href='shop-cart.html' title='')
+                                    span.dark-gray
+                                        i.fa.fa-check.fa-lg
+                                        | &nbsp;В корзине
+                            else
+                                a(href='shop-cart.html' title='').button.hollow.margin-bottom-0
+                                    i.fa.fa-shopping-basket
+                                    | &nbsp;Купить

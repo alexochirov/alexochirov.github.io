@@ -21,6 +21,7 @@ $fa-font-path: $fontsPath;
 @import "date";
 @import "footer";
 @import "header";
+@import "button";
 @import "incremental-list";
 @import "menu-base";
 @import "menu-main";
@@ -43,9 +44,13 @@ $fa-font-path: $fontsPath;
 @import "search-box";
 @import "main-sections-banners";
 @import "section-header";
+@import "section-header";
 @import "looks-collection";
 @import "section-4x";
 @import "vendors";
+@import "preview-product";
+@import "decorative-title";
+@import "info";
 
 @import "breadcrumbs";
 @import "product";
@@ -77,15 +82,15 @@ $fa-font-path: $fontsPath;
 @import "offer";
 @import "rubber";
 @import "crossbow";
+@import "head-personal";
 @import "dinghy";
 @import "novel";
-@import "mb20";
+
 @import "plate";
 @import "edge";
 @import "leg";
 @import "bat";
-
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400i,700|PT+Serif&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400i,500,600,700|PT+Serif&subset=cyrillic');
 
 @import "nav-catalog";
 @import "shape-type";
@@ -96,7 +101,8 @@ $fa-font-path: $fontsPath;
 @import "error";
 @import "banner";
 @import "subscribe";
-
+//@import "welcome";
+@import "subscribe-popup";
 @import "placeholder";
 @import url('https://fonts.googleapis.com/css?family=El+Messiri:600');
 
@@ -106,5 +112,18 @@ $fa-font-path: $fontsPath;
 @import "shopping";
 @import "profit";
 @import "cream";
+
 @import "mb70";
+@import "mb22";
+@import "mb20";
+@import "mt5";
+
 @import "package";
+@import "vote";
+@import "top-timer";
+@import "menu-icon";
+@import "invertor";
+@import "trust";
+@import "orbit";
+
+@import "benefit";

@@ -1,0 +1,34 @@
+mixin readCommentTile(title)
+    .callout
+        .clearfix(data-equalizer-watch='readCommentTile')
+            img.margin-bottom-6(src='./i/image.svg', alt='Статья', style='background:#4dc7a0;width:100%;height:220px;')
+            h4.margin-bottom-3
+                if title
+                    a(href='#')= title
+                else
+                    a(href='#') Приняли на комплексное обслуживание новый сайт
+            block
+        a(href='#') Читать &nbsp;
+            i.fa.fa-long-arrow-right
+
+.content
+    .grid-x.grid-padding-x(data-equalizer='readCommentTile', data-equalize-by-row='true')
+        .small-12.medium-6.cell
+            h2 Сейчас читают
+            +readCommentTile()
+                .margin-bottom-6
+                    i.fa.fa-eye &nbsp;
+                    span.text-dark-gray Читают: 50
+                .margin-bottom-6 Приняли на комплексное обслуживание компанию «СантехОпт». Разработаем несколько интернет-магазинов по продаже сантехники. Проект будет развиваться по методологии «Быстрый старт».
+
+        .small-12.medium-6.cell
+            h2 Сейчас комментируют
+            +readCommentTile('Разработаем несколько интернет-магазинов по продаже сантехники')
+                .margin-bottom-6
+                    i.fa.fa-comments &nbsp;
+                    span.text-dark-gray Комментариев: 50
+                .margin-bottom-6 Приняли на комплексное обслуживание компанию «СантехОпт». Проект будет развиваться по методологии «Быстрый старт».
+
+
+
+

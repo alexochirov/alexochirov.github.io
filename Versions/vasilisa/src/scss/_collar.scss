@@ -37,6 +37,7 @@
         height: 35px;
         margin-top: rem-calc(12);
         background-color: #60a2fc;
+		border: 1px solid black;
 
         &_yellow {
             background-color: #fceb60;
@@ -73,7 +74,7 @@
         color: white;
 
         &:hover {
-            background: #6a1020;
+            background: $redHover;
             color: #fff;
         }
         &:focus {

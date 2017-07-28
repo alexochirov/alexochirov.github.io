@@ -121,10 +121,12 @@ $slick-dot-color-active: rgba(0, 0, 0, 0.2) !default;
       font-size: 0;
       margin: 1rem;
       padding: 0;
-
-      -webkit-border-radius: 50%;
-      -moz-border-radius: 50%;
-      border-radius: 50%;
+      img {
+        width: 100%;
+      }
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      border-radius: 0;
       &:hover, &:focus {
         outline: none;
       }
@@ -134,3 +136,5 @@ $slick-dot-color-active: rgba(0, 0, 0, 0.2) !default;
     }
   }
 }
+
+/* для карусели на главной только */

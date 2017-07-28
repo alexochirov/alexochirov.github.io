@@ -106,7 +106,7 @@ gulp.task('sass', ['clean-css'], function () {
             browsers: ['last 2 versions', 'ie >= 9']
         }))
         .pipe(gulp.dest(path.dist.css))
-        .pipe(browserSync.reload({ 
+        .pipe(browserSync.reload({
          stream: true
         }));
 });
@@ -120,7 +120,7 @@ gulp.task('jade', ['clean-html', 'sass'], function() {
         .pipe(gulp.dest(path.dist.html));
 });
 gulp.task('jade2', ['jade'], function() {
-    return browserSync.reload({ 
+    return browserSync.reload({
          stream: true
         });
 });
@@ -128,20 +128,15 @@ gulp.task('jade2', ['jade'], function() {
 
 gulp.task('images', ['clean-images'], function () {
     return gulp.src(path.src.images)
-        .pipe(imagemin({
-            progressive: true,
-            svgoPlugins: [{removeViewBox: false}],
-            use: [pngquant()],
-            interlaced: true
-        }))
-        .pipe(gulp.dest(path.dist.images)).pipe(browserSync.reload({ 
+      
+        .pipe(gulp.dest(path.dist.images)).pipe(browserSync.reload({
          stream: true
         }));
 });
 
 gulp.task('fonts', ['clean-fonts'], function() {
     return gulp.src([path.src.fonts, path.src.awesome])
-        .pipe(gulp.dest(path.dist.fonts)).pipe(browserSync.reload({ 
+        .pipe(gulp.dest(path.dist.fonts)).pipe(browserSync.reload({
          stream: true
         }));
 });
@@ -149,7 +144,7 @@ gulp.task('fonts', ['clean-fonts'], function() {
 gulp.task('js-html', ['jade'], function () {
     return gulp.src(path.src.jsHtml)
         .pipe(useref({noAssets: true}))
-        .pipe(gulp.dest(path.dist.html)).pipe(browserSync.reload({ 
+        .pipe(gulp.dest(path.dist.html)).pipe(browserSync.reload({
          stream: true
         }));
 });
@@ -157,7 +152,7 @@ gulp.task('js-html', ['jade'], function () {
 gulp.task('js-copy', ['clean-js'], function () {
     return gulp.src(path.src.js)
         .pipe(useref())
-        .pipe(gulp.dest(path.dist.html)).pipe(browserSync.reload({ 
+        .pipe(gulp.dest(path.dist.html)).pipe(browserSync.reload({
          stream: true
         }));
 });

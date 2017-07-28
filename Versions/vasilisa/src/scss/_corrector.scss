@@ -1,9 +1,21 @@
 .corrector {
 
     .slick-next {
-        background: rgba(150,23,46,0.9)  url("../images/icons/angle-right.svg") no-repeat center top/43px;
+        background: rgba(0,0,0,0.2) url(../images/chevron-right.svg) no-repeat scroll center center/30px auto;
+        height: 42px;
+        width: 42px;
+        border-radius: 3px;
+        &:hover {
+            background-color: rgba(0,0,0,0.5);
+        }
     }
     .slick-prev {
-        background: rgba(150,23,46,0.9)  url("../images/icons/angle-left.svg") no-repeat center top/43px;
+        background: rgba(0,0,0,0.2) url(../images/chevron-left.svg) no-repeat scroll center center/30px auto;
+        height: 42px;
+        width: 42px;
+        border-radius: 3px;
+        &:hover {
+            background-color: rgba(0,0,0,0.5);
+        }
     }
 }

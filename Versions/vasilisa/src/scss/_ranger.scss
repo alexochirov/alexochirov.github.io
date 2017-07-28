@@ -25,7 +25,10 @@
     &__sign {
         margin-bottom: rem-calc(0);
     }
-
+    &__more {
+        font-size: rem-calc(17);
+        margin-bottom: rem-calc(16);
+    }
     &__list {
         margin: rem-calc(0);
         position: absolute;

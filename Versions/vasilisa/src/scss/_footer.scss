@@ -1,32 +1,74 @@
 .footer {
   background: #f6f6f6;
   padding-top: 2rem;
+  padding-bottom: rem-calc(20);
   border-top: 1px solid #d8d8d8;
   margin-top: 2rem;
+
   a {
-    color: #96172e;
+    color: $red;
+
     &:hover {
-      color: #6a1020;
+      color: $redHover;
     }
   }
+
   .bottom-menu {
     margin: 0;
     padding: 0;
     @include breakpoint(small only) {
       margin: 0 auto;
     }
+
     li {
       display: block;
+
       &:first-child {
         font-weight: 700;
         margin-bottom: 1.6rem;
       }
+
       a {
         display: block;
         line-height: 1;
         padding: 0 2rem 1.2rem 0;
         @include breakpoint(small) {
           padding: 0 0 1.2rem;
+        }
+      }
+    }
+  }
+  @include breakpoint(medium down) {
+    font-size: rem-calc(12);
+
+    .bottom-menu {
+      li {
+        a {
+          line-height: 1.2;
+          padding-bottom: rem-calc(10);
+        }
+      }
+    }
+  }
+  @include breakpoint(small only) {
+    padding-top: rem-calc(13);
+    font-size: rem-calc(13);
+    padding-bottom: rem-calc(0);
+
+    &__white {
+      background: $white;
+    }
+
+    &__order {
+      width: 100%;
+    }
+
+    .bottom-menu {
+      li {
+        a {
+          border-bottom: rem-calc(1) solid #d8d8d8;
+          padding-top: rem-calc(17);
+          padding-bottom: rem-calc(18);
         }
       }
     }

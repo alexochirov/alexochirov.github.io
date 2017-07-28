@@ -1,149 +1,256 @@
 .red-line.show-for-medium#red-line(data-toggler='show-for-medium')
-    .row
-        .column.small-12.large-10
-            #main-menu
-                //- .hide-for-medium
-                //-     br
-                //-     ul.menu.expanded.red-line_menu-cart-account
-                //-         include _nav-cart-account
-                //-     br
+  .row
+    .column.small-12.large-10
+      #main-menu
+        ul.menu-base.menu-main
+          li.menu-main__item
+            
+            a.menu-main__link(href='/woman/clothes')
+              .menu-main__icon.show-for-small-only
+                img(src="./images/dress.svg", alt="")
+              span.menu-main__info Одежда
+            .vertical.vertical_2level.vertical_woman-clothes.vertical_triplecol(role='menuitem')
+              ul.vertical__list
+                li.vertical__item
+                  a.triplecol.vertical__link(href='/woman/clothes/blouses') Блузки
+                li.vertical__item
+                  a.triplecol.vertical__link(href='/woman/clothes/trousers') Брюки
+                li.vertical__item
+                  a.triplecol.vertical__link(href='/woman/clothes/outerwear') Верхняя одежда
+                li.vertical__item
+                  a.triplecol.vertical__link(href='/woman/clothes/homewear') Домашняя одежда
+                li.vertical__item.vertical__item-heart
+                  a.triplecol.vertical__link(href='/woman/clothes/tunicdress') Платья, сарафаны
+                li.vertical__item
+                  a.triplecol.vertical__link(href='/woman/clothes/tunic') Туники
+                li.vertical__item
+                  a.triplecol.vertical__link(href='/woman/clothes/slim') Нижнее белье
+                li.vertical__item
+                  a.triplecol.vertical__link(href='/woman/clothes/cardigans') Кардиганы
+                li.vertical__item
+                  a.triplecol.vertical__link(href='/woman/clothes/knitwear') Трикотаж
+                li.vertical__item
+                  a.triplecol.vertical__link(href='/woman/clothes/tops') Топы и футболки
+                li.vertical__item
+                  a.triplecol.vertical__link(href='/woman/clothes/socks') Колготки, носки и гольфы
+                li.vertical__item
+                  a.triplecol.vertical__link(href='/woman/clothes/skirt') Юбки
+                li.vertical__item.vertical__item-sea
+                  a.triplecol.vertical__link(href='/woman/clothes/sea') Морская тема
+              a.menu-main__picture-box-link(href='/sale/woman/clothes/', title='Просмотр товара')
+                .menu-main__picture-box
+                  | Платье                                
+                  .menu-main__picture-box-name «Корсика»
+                  .menu-main__picture-box-price
+                    del.text-gray 2 999 руб.
+                    |  2 399 руб.
+              img.vertical__pic(alt='pic', src='./images/vertical_woman_link-07-17.png')
+          li.menu-main__item
+            a.menu-main__link(href='/woman/shoes') 
+              .menu-main__icon.show-for-small-only
+                img(src="./images/women-high-heel.svg", alt="")
+              span.menu-main__info Обувь
+            .vertical.vertical_2level.vertical_woman-shoes.vertical_triplecol(role='menuitem')
+              ul.vertical__list
+                li.vertical__item
+                  a.triplecol.vertical__link(href='/woman/shoes/balets') Балетки
+                li.vertical__item
+                  a.triplecol.vertical__link(href='/woman/shoes/sandals') Босоножки, сандалии
+                li.vertical__item
+                  a.triplecol.vertical__link(href='/woman/shoes/boots') Ботинки
+                li.vertical__item
+                  a.triplecol.vertical__link(href='/woman/shoes/slippers') Домашние тапочки
+                li.vertical__item
+                  a.triplecol.vertical__link(href='/woman/shoes/moccasins') Мокасины
+                li.vertical__item
+                  a.triplecol.vertical__link(href='/woman/shoes/gums') Резиновые сапоги
+                li.vertical__item
+                  a.triplecol.vertical__link(href='/woman/shoes/step') Сабо, шлепанцы
+                li.vertical__item
+                  a.triplecol.vertical__link(href='/woman/shoes/hightboots') Сапоги
+                li.vertical__item
+                  a.triplecol.vertical__link(href='/woman/shoes/hills') Туфли
+              a.menu-main__picture-box-link(href='/sale/woman/shoes/', title='Просмотр товара')
+                .menu-main__picture-box
+                  | Сандалии                                
+                  .menu-main__picture-box-name Mon Ami
+                  .menu-main__picture-box-price
+                    del.text-gray 699 руб.
+                    |  599 руб.
+              img.vertical__pic(alt='pic', src='./images/dir-woman-shoes-07-17.png')
+          li.menu-main__item
+            a.menu-main__link(href='/woman/acsessorize')
+              .menu-main__icon.show-for-small-only
+                img(src="./images/handbag.svg", alt="")
+              span.menu-main__info Аксессуары
+            .vertical.vertical_2level.vertical_woman-acsessorize.vertical_singlecol(role='menuitem')
+              ul.vertical__list
+                li.vertical__item
+                  a.singlecol.vertical__link(href='/woman/acsessorize/biju') Бижутерия
+                li.vertical__item
+                  a.singlecol.vertical__link(href='/woman/acsessorize/bags') Сумки
+                li.vertical__item
+                  a.singlecol.vertical__link(href='/woman/acsessorize/belts') Кошельки, зонты, ремни
+                li.vertical__item
+                  a.singlecol.vertical__link(href='/woman/acsessorize/hats') Шарфы, шапки, перчатки
+                li.vertical__item
+                  a.singlecol.vertical__link(href='/woman/acsessorize/platki') Платки
+              a.menu-main__picture-box-link(href='/woman/acsessorize', title='Просмотр товара')
+                .menu-main__picture-box
+                  .menu-main__picture-box-name Часы
+                  .menu-main__picture-box-price 899 руб.
+              img.vertical__pic(alt='pic', src='./images/dir-woman-acsessorize-07-17.png')
+          li.menu-main__item
+            a.menu-main__link(href='/house-garden')
+              .menu-main__icon.show-for-small-only
+                img(src="./images/home.svg", alt="")
+              span.menu-main__info Дом и сад
+            .vertical.vertical_2level.vertical_house-garden.vertical_triplecol(role='menuitem')
+              ul.vertical__list
+                li.vertical__item
+                  a.triplecol.vertical__link-top(href='/house-garden/all-for-the-economy') Все для хозяйства
+                  ul.vertical__list.vertical-3level
+                    li
+                      a.vertical__link(href='/house-garden/all-for-the-economy/country-house') Дача, сад и огород
+                    li
+                      a.vertical__link(href='/house-garden/all-for-the-economy/decoration') Декор
+                    li
+                      a.vertical__link(href='/house-garden/all-for-the-economy/hand-tool') Ручной инструмент
+                    li
+                      a.vertical__link(href='/house-garden/all-for-the-economy/car-goods') Товары для автомобиля
+                    li
+                      a.vertical__link(href='/house-garden/all-for-the-economy/goods-for-bathroom') Товары для ванной комнаты
+                    li
+                      a.vertical__link(href='/house-garden/all-for-the-economy/products-for-cleaning-house') Товары для уборки дома
+                    li
+                      a.vertical__link(href='/house-garden/all-for-the-economy/goods-storage') Товары для хранения
+                li.vertical__item
+                  a.triplecol.vertical__link-top(href='/house-garden/products-for-the-kitchen') Товары для кухни
+                  ul.vertical__list.vertical-3level
+                    li
+                      a.vertical__link(href='/house-garden/products-for-the-kitchen/tableware') Сервировка стола
+                    li
+                      a.vertical__link(href='/house-garden/products-for-the-kitchen/kitchen-tools') Кухонный инвентарь
+                    li
+                      a.vertical__link(href='/house-garden/products-for-the-kitchen/knives') Ножи
+                    li
+                      a.vertical__link(href='/house-garden/products-for-the-kitchen/vegetable-cutters') Овощерезки, терки
+                    li
+                      a.vertical__link(href='/house-garden/products-for-the-kitchen/utensils-for-cooking') Посуда для приготовления
+                    li
+                      a.vertical__link(href='/house-garden/products-for-the-kitchen/storage-products') Хранение продуктов
+                li.vertical__item
+                  a.triplecol.vertical__link-top(href='/house-garden/home-textiles') Домашний текстиль
+                  ul.vertical__list.vertical-3level
+                    li
+                      a.vertical__link(href='/house-garden/home-textiles/home-textiles/komplekty-postelnogo-belya') Постельное белье
+                    li
+                      a.vertical__link(href='/house-garden/home-textiles/home-textiles/makhrovye-polotentsa') Махровые полотенца
+                    li
+                      a.vertical__link(href='/house-garden/home-textiles/home-textiles/odeyala') Одеяла
+                    li
+                      a.vertical__link(href='/house-garden/home-textiles/home-textiles/pledy-pokryvala') Пледы, покрывала
+                    li
+                      a.vertical__link(href='/house-garden/home-textiles/home-textiles/podushki') Подушки
+                    li
+                      a.vertical__link(href='/house-garden/home-textiles/home-textiles/shtory-i-tyul') Шторы и тюль
+                    li
+                      a.vertical__link(href='/house-garden/home-textiles/kitchen-textiles') Текстиль для кухни
+              a.menu-main__picture-box-link(href='/house-garden/products-for-the-kitchen', title='Просмотр товара')
+                .menu-main__picture-box
+                  .menu-main__picture-box-name Сервиз «Орнамент»
+                  .menu-main__picture-box-price
+                    del.text-gray 2 246 руб.
+                    |  1 999 руб.
+              img.vertical__pic(alt='pic', src='./images/dir_household-07-17.png')
+          li.menu-main__item
+            a.menu-main__link(href='/household-appliancies-electronics') 
+              .menu-main__icon.show-for-small-only
+                img(src="./images/coffee-machine.svg", alt="")
+              span.menu-main__info Бытовая техника
+            .vertical.vertical_2level.vertical_household-appliancies-electronics.vertical_singlecol(role='menuitem')
+              ul.vertical__list
+                li.vertical__item
+                  a.singlecol.vertical__link(href='/household-appliancies-electronics/equipment-for-beauty') Техника для красоты 
+                li.vertical__item
+                  a.singlecol.vertical__link(href='/household-appliancies-electronics/kitchen-appliances') Техника для кухни
+                li.vertical__item
+                  a.singlecol.vertical__link(href='/household-appliancies-electronics/technique-for-cleaning') Техника для уборки
+              a.menu-main__picture-box-link(href='/household-appliancies-electronics/kitchen-appliances', title='Просмотр товара')
+                .menu-main__picture-box
+                  .menu-main__picture-box-name Кофеварка Vigor
+                  .menu-main__picture-box-price
+                    del.text-gray 2 999 руб.
+                    |  1 999 руб.
+              img.vertical__pic(alt='pic', src='./images/dir_tehnika-07-17.png')
+          li.menu-main__item
+            a.menu-main__link(href='/beauty-and-health')
+              .menu-main__icon.show-for-small-only
+                img(src="./images/perfume-bottle-with-cover.svg", alt="")
+              span.menu-main__info Красота и здоровье
+            .vertical.vertical_2level.vertical_beauty-and-health.vertical_singlecol(role='menuitem')
+              ul.vertical__list
+                li.vertical__item
+                  a.singlecol.vertical__link(href='/beauty-and-health/balms') Бальзамы и масла для здоровья
+                li.vertical__item
+                  a.singlecol.vertical__link(href='/beauty-and-health/medical-cosmetics') Лечебная косметика
+                li.vertical__item
+                  a.singlecol.vertical__link(href='/beauty-and-health/care-for-hands-and-feet') Уход за руками и ногами
+                li.vertical__item
+                  a.singlecol.vertical__link(href='/beauty-and-health/food-supplements') Продукты питания и БАДы
+                li.vertical__item
+                  a.singlecol.vertical__link(href='/beauty-and-health/care-cosmetics') Косметика по уходу
+                li.vertical__item
+                  a.singlecol.vertical__link(href='/beauty-and-health/health-products') Товары для здоровья
+                li.vertical__item
+                  a.singlecol.vertical__link(href='/beauty-and-health/perfumery') Парфюмерия
+              a.menu-main__picture-box-link(href='/beauty-and-health', title='Просмотр товара')
+                .menu-main__picture-box
+                  .menu-main__picture-box-name
+                    | Набор кремов
+                    br
+                    | Hirudo Derm
+                  .menu-main__picture-box-price
+                    del.text-gray 1 497 руб.
+                    |  1 299 руб.
+          li.menu-main__item
+            a.menu-main__link(href='/zhenskie-slabosti')
+              .menu-main__icon.show-for-small-only
+                img(src="./images/heart.svg", alt="")
+              span.menu-main__info Женские слабости
+            .vertical.vertical_2level.vertical_zhenskie-slabosti.vertical_singlecol(role='menuitem')
+              ul.vertical__list
+                li.vertical__item
+                  a.singlecol.vertical__link(href='/zhenskie-slabosti/yuvelirnye-ukrasheniya') Ювелирные украшения
+                li.vertical__item
+                  a.singlecol.vertical__link(href='/zhenskie-slabosti/sladosti-chay-kofe') Сладости, чай, кофе
+              a.menu-main__picture-box-link(href='/zhenskie-slabosti', title='Просмотр товара')
+                .menu-main__picture-box
+                  .menu-main__picture-box-name
+                    | Серьги и кольцо
+                    br
+                    | из серебра
+                  .menu-main__picture-box-price
+                    del.text-gray 2 298 руб.
+                    |  1 999 руб.
+              a.menu-main__picture-box-link(href='/zhenskie-slabosti/yuvelirnye-ukrasheniya', title='Просмотр товара')
+                .menu-main__picture-box
+            
+              img.vertical__pic(alt='pic', src='./images/dir_ww-07-17.png')
+          li.menu-main__item.hide-for-small-only
+            a.menu-main__link.menu-main__sale(href='/sale') Распродажа
+          li.menu-main__item.show-for-medium-only
+            a(href="#").button.menu-main__search
+              svg(width='13', height='13', viewbox='0 0 1792 1792', xmlns='http://www.w3.org/2000/svg')
+                path(d='M1216 832q0-185-131.5-316.5t-316.5-131.5-316.5 131.5-131.5 316.5 131.5 316.5 316.5 131.5 316.5-131.5 131.5-316.5zm512 832q0 52-38 90t-90 38q-54 0-90-38l-343-342q-179 124-399 124-143 0-273.5-55.5t-225-150-150-225-55.5-273.5 55.5-273.5 150-225 225-150 273.5-55.5 273.5 55.5 225 150 150 225 55.5 273.5q0 220-124 399l343 343q37 37 37 90z')
 
-                ul.menu-base.menu-main.text-center.large-text-left
-                    li.menu-main__item
-                        a.menu-main__link(href='#') Женщинам
-                        div.vertical.vertical_2level.vertical_woman.vertical_triplecol(role="menuitem")
-                            ul.vertical__list
-                                li.vertical__item
-                                    a.vertical__link-top(href='#') Одежда
-                                    ul.vertical__list.vertical-3level
-                                        li: a.vertical__link(href='#') Блузки
-                                        li: a.vertical__link(href='#') Брюки
-                                        li: a.vertical__link(href='#') Верхняя одежда
-                                        li: a.vertical__link(href='#') Для спорта и отдыха
-                                        li: a.vertical__link(href='#') Платья, сарафаны
-                                        li: a.vertical__link(href='#') Туники
-                                        li: a.vertical__link(href='#') Нижнее белье и утяжка
-                                        li: a.vertical__link(href='#') Кардиганы
-                                        li: a.vertical__link(href='#') Трикотаж
-                                        li: a.vertical__link(href='#') Топы и футболки
-                                        li: a.vertical__link(href='#') Колготки, носки и гольфы
-                                        li: a.vertical__link(href='#') Шерстяные изделия
-                                        li: a.vertical__link(href='#') Юбки
-                                li.vertical__item
-                                    a.vertical__link-top(href='#') Обувь
-                                    ul.vertical__list.vertical-3level
-                                        li: a.vertical__link(href='#') Туфли
-                                        li: a.vertical__link(href='#') Домашние тапочки
-                                        li: a.vertical__link(href='#') Валенки, угги
-                                        li: a.vertical__link(href='#') Сабо, шлепанцы
-                                        li: a.vertical__link(href='#') Мокасины
-                                        li: a.vertical__link(href='#') Ботинки
-                                        li: a.vertical__link(href='#') Балетки
-                                        li: a.vertical__link(href='#') Кроссовки и кеды
-                                        li: a.vertical__link(href='#') Босоножки, сандалии
-                                        li: a.vertical__link(href='#') Сапоги
-                                li.vertical__item
-                                    a.vertical__link-top(href='#') Аксессуары
-                                    ul.vertical__list.vertical-3level
-                                        li: a.vertical__link(href='#') Бижутерия
-                                        li: a.vertical__link(href='#') Сумки
-                                        li: a.vertical__link(href='#') Платки
-                    li.menu-main__item
-                        a.menu-main__link(href='#') Мужчинам
-                        div.vertical.vertical_2level.vertical_man.vertical_triplecol
-                            ul.vertical__list
-                                li.vertical__item
-                                    a.vertical__link-top(href='#') Одежда
-                                    ul.vertical__list.vertical-3level
-                                        li: a.vertical__link(href='#') Блузки
-                                        li: a.vertical__link(href='#') Брюки
-                                        li: a.vertical__link(href='#') Верхняя одежда
-                                        li: a.vertical__link(href='#') Для спорта и отдыха
-                                        li: a.vertical__link(href='#') Платья, сарафаны
-                                        li: a.vertical__link(href='#') Туники
-                                        li: a.vertical__link(href='#') Нижнее белье и утяжка
-                                        li: a.vertical__link(href='#') Кардиганы
-                                        li: a.vertical__link(href='#') Трикотаж
-                                        li: a.vertical__link(href='#') Топы и футболки
-                                        li: a.vertical__link(href='#') Колготки, носки и гольфы
-                                        li: a.vertical__link(href='#') Шерстяные изделия
-                                        li: a.vertical__link(href='#') Юбки
-                                li.vertical__item
-                                    a.vertical__link-top(href='#') Обувь
-                                    ul.vertical__list.vertical-3level
-                                        li: a.vertical__link(href='#') Туфли
-                                        li: a.vertical__link(href='#') Домашние тапочки
-                                        li: a.vertical__link(href='#') Валенки, угги
-                                        li: a.vertical__link(href='#') Сабо, шлепанцы
-                                        li: a.vertical__link(href='#') Мокасины
-                                        li: a.vertical__link(href='#') Ботинки
-                                        li: a.vertical__link(href='#') Балетки
-                                        li: a.vertical__link(href='#') Кроссовки и кеды
-                                        li: a.vertical__link(href='#') Босоножки, сандалии
-                                        li: a.vertical__link(href='#') Сапоги
-                    li.menu-main__item
-                        a.menu-main__link(href='#') Дом и сад
-                        div.vertical.vertical_2level.vertical_household-appliancies-electronics.vertical_triplecol
-                            ul.vertical__list
-                                li.vertical__item
-                                    a.vertical__link-top(href='#') Всё для хозяйства
-                                    ul.vertical__list.vertical-3level
-                                        li: a.vertical__link(href='#') Платья и сарафаны
-                                        li: a.vertical__link(href='#') Платья
-                                        li: a.vertical__link(href='#') сарафаны
-                                li.vertical__item
-                                    a.vertical__link-top(href='#') Домашний текстиль
-                                    ul.vertical__list.vertical-3level
-                                        li: a.vertical__link(href='#') Товары для кухни
-                                        li: a.vertical__link(href='#') Сервировка стола
-                                        li: a.vertical__link(href='#') Ножи
-                                        li: a.vertical__link(href='#') Хранение продуктов
-                                        li: a.vertical__link(href='#') Посуда для приготовления
-                                        li: a.vertical__link(href='#') Кухонный инвентарь
-                                        li: a.vertical__link(href='#') Овощерезки, терки
-                                li.vertical__item
-                                    a.vertical__link-top(href='#') Товары для кухни
-                                    ul.vertical__list.vertical-3level
-                                        li: a.vertical__link(href='#') Товары для кухни
-                                        li: a.vertical__link(href='#') Сервировка стола
-                                        li: a.vertical__link(href='#') Ножи
-                                        li: a.vertical__link(href='#') Хранение продуктов
-                                        li: a.vertical__link(href='#') Посуда для приготовления
-                                        li: a.vertical__link(href='#') Кухонный инвентарь
-                                        li: a.vertical__link(href='#') Овощерезки, терки
-                    li.menu-main__item
-                        a.menu-main__link(href='#') Бытовая техника, электроника
-                        div.vertical.vertical_2level.vertical_household-appliancies-electronics.vertical_singlecol
-                            ul.vertical__list
-                                li.vertical__item
-                                    a.vertical__link-top(href='#') Техника для кухни
-                                li.vertical__item
-                                    a.vertical__link-top(href='#') Техника для уборки
-                    li.menu-main__item
-                        a.menu-main__link(href='#') Красота и здоровье
-                        div.menu.vertical.vertical_2level.vertical_beauty-and-health.vertical_singlecol
-                            ul.vertical__list
-                                li.vertical__item
-                                    a.vertical__link-top(href='#') Сумки
-                                li.vertical__item
-                                    a.vertical__link-top(href='#') Украшения и бижутерия
-                                li.vertical__item
-                                    a.vertical__link-top(href='#') Очки
-                                li.vertical__item
-                                    a.vertical__link-top(href='#') Кошельки и косметички
-                                li.vertical__item
-                                    a.vertical__link-top(href='#') Перчатки и варежки
-                                li.vertical__item
-                                    a.vertical__link-top(href='#') Палантины и Шарфы
-                    li.menu-main__item
-                        a.menu-main__link.menu-main__link-act(href='#')
-                            img.menu-main__ico(src="images/hit.png")
-                            | Хиты продаж
-        .column.hide-for-small-only.medium-6.medium-offset-2.large-offset-0.end.large-2.text-center.large-text-left
-            .search-box.top-bar-right
-                ul.menu
-                    li
-                        input(type="search",placeholder="Искать на сайте")
-                    li
-                        button.button(type="button")
-                            i.fa.fa-search
+  
+    .column.show-for-large.medium-6.medium-offset-2.large-offset-0.end.large-2.text-center.large-text-left
+      .search-box.top-bar-right
+        ul.menu
+          li
+            input(type="search",placeholder="Искать на сайте")
+          li
+            button.button(type="button")
+              svg(width='13', height='13', viewbox='0 0 1792 1792', xmlns='http://www.w3.org/2000/svg')
+                path(d='M1216 832q0-185-131.5-316.5t-316.5-131.5-316.5 131.5-131.5 316.5 131.5 316.5 316.5 131.5 316.5-131.5 131.5-316.5zm512 832q0 52-38 90t-90 38q-54 0-90-38l-343-342q-179 124-399 124-143 0-273.5-55.5t-225-150-150-225-55.5-273.5 55.5-273.5 150-225 225-150 273.5-55.5 273.5 55.5 225 150 150 225 55.5 273.5q0 220-124 399l343 343q37 37 37 90z')

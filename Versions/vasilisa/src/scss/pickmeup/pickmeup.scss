@@ -8,9 +8,9 @@
  */
 $border-radius						: 0 0.3em 0 0.3em;
 $background							: #fff;
-$color								: #96172e;
+$color								: $red;
 $background-hover					: #eee;
-$color-hover						: #6a1020;
+$color-hover						: $redHover;
 $nav-color							: $color;
 $nav-color-hover					: $color-hover;
 $not-in-month						: #ddd;

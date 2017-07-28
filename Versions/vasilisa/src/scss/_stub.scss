@@ -2,10 +2,9 @@
   /*background: #ccc url('../images/image.svg') 0 0 / 100% 100% no-repeat;*/
   position: relative;
   background: transparent none repeat scroll 0 0;
-
   max-width: 280px;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto;  margin-bottom: rem-calc(30);
 }
 
 .stub-photo {
@@ -19,7 +18,6 @@
   top: 50%;
   transform: translate(-50%, -50%);
 }
-
 /* Вместе с предыдущим, следующие стили даёт нужные соотношение размеров блока, т.к. padding наследует ширину родителя */
 
 .stub::after {
@@ -30,13 +28,11 @@
 .stub-square::after {
   padding-bottom: 100%;
 }
-
 /* 4:3 */
-.stub-three-quater::after,
-.stub-photo::after {
+.stub-photo::after,
+.stub-three-quater::after {
   padding-bottom: 15%;
 }
-
 /* 16:10 */
 .stub-golden-ratio::after,
 .stub-video::after {
@@ -55,12 +51,10 @@
   margin-left: -14px;
   z-index: 3;
 }
-
 /* 2:1 */
 .stub-half::after {
   padding-bottom: 50%;
 }
-
 /* 2.414:1 (silver ratio) */
 .stub-silver-ratio::after,
 .stub-widescreen::after {

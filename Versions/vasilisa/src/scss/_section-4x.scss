@@ -24,7 +24,8 @@
     -moz-transform: scale(1.05);
     -ms-transform: scale(1.05);
     -o-transform: scale(1.05);
-    transform: scale(1.05);
+    //transform: scale(1.05);
+	transform: scale3d(1.05,1.05,1);
     transition: all 0.3s ease 0s;
   }
 

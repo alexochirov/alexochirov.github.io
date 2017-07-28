@@ -1,4 +1,5 @@
 $red: #a52468;
+$redHover: #A6246A;
 $black: #303030;
 $grey: #a5a5a5;
 $primary-color: $red;
@@ -16,6 +17,16 @@ $primary-color: $red;
     font-weight: bold;
     font-style: normal;
 }
+@font-face {
+    font-family: 'GothamPro';
+    src: url($fontsPath + '/GothamProBold.eot');
+    src: url($fontsPath + '/GothamProBold.eot?#iefix') format('embedded-opentype'),
+    url($fontsPath + '/GothamProBold.woff') format('woff'),
+    url($fontsPath + '/GothamProBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
 
 h1 {
     line-height: 1.2;
@@ -59,7 +70,7 @@ a {
     color: $red;
     margin-top: 15px;
     background: transparent;
-    border: 1px solid #ed8c9d;
+    border: 1px solid $redHover;
     float: right;
 
     &:hover {
@@ -67,17 +78,6 @@ a {
     }
 }
 
-.brands .button {
-    margin-top: 2.85714rem;
-    border: 1px solid $red;
-    color: $red;
-    background: transparent;
-
-    &:hover {
-        background: #96172e;
-        color: white;
-    }
-}
 
 .button .badge {
     margin-left: rem-calc(7);
@@ -155,7 +155,8 @@ span.counter {
             content: " ";
             display: block;
             height: 0;
-            width: rem-calc(24);
+            width: rem-calc(28);
+            margin-top:rem-calc(10);
         }
     }
 }
@@ -222,6 +223,20 @@ figure {
         width: 100%;
     }
 }
+.reveal_checkout {
+    border: none;
+    border-radius: 0;
+}
+
+.dropdown-pane {
+    * {
+        -webkit-transition: none;
+        -moz-transition: none;
+        -ms-transition: none;
+        -o-transition: none;
+        transition: none;
+    }
+}
 
 .cybermonday {
     background: url("../images/cybermonday/cmonday_back.jpg") no-repeat center top;
@@ -263,4 +278,45 @@ figure {
     width: 70px;
     height: 70px;
     background-image: url('../images/backtotop.png');
+}
+
+.text-small {
+    font-size: 12px;
+}
+
+.color-pink {
+    color: #a52468;
+}
+
+.text-italic {
+    font-style: italic;
+}
+
+
+table .counter {
+    padding: .2rem .6rem;
+    font-weight: bold;
+}
+
+table tbody tr {
+    background-color: #fff;
+    color: #9b9b9b;
+    border-bottom: 1px solid #f4f4f4;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #fff;
+}
+
+table tbody td {
+    padding: 2rem .5rem;
+}
+
+table thead tr {
+    background-color: #f4f4f4;
+    color: #888888;
+}
+
+table .description {
+    background-color: #f4f4f4;
 }
