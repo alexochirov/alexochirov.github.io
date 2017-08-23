@@ -1,26 +1,86 @@
-.footer
-    .row.column
-        ul.menu-base
-            each title in ['Сайт', 'Магазин', 'Интернет-СМИ', 'Реклама', 'Мобильные', 'Обучение', 'Конверсия']
-                li.menu-base__item
-                    a.menu-base__link(href='#')= title
-    .row.column
-        br
-        hr
-        br
-    .row.text-dark-gray
+footer.footer
+    .row.footer__top-row(data-equalizer,data-equalize-on="medium")
+        .small-12.medium-3.large-2.column.footer__top-row__container(data-equalizer-watch)
+            p.hide-for-small-only: h4: br
+            ul.footer__top-row__menu
+                li.footer__top-row__menu__item
+                    a(href="#") КОНТАКТЫ
 
-        .small-12.medium-8.columns
-            p
-                | &copy;&nbsp;
-                a.text-light-gray(href='#') Cetera Labs
-                |, 2002–2016
+        .small-12.medium-8.large-8.column(data-equalizer-watch)
+            p: h4.text-center Подпишитесь на новости и акции
+            form.subscribe-form
+                .row.collapse
+                    .small-12.medium-5.column
+                        input.site-search__query.subscribe-form__name(placeholder="Ваше имя")
+                    .small-12.medium-5.column
+                         input.site-search__query.subscribe-form__email(placeholder="Ваш e-mail")
+                    .small-12.medium-2.column
+                        a.button.send-subscription.green-button(href="#") Отправить
+
+        .small-12.large-2.column(data-equalizer-watch)
+            p.hide-for-small-only: h4: br
+            .social-icons
+                a(href="#")
+                    i.fa.fa-vk
+                a(href="#")
+                    i.fa.fa-twitter
+                a(href="#")
+                    i.fa.fa-facebook
+                a(href="#")
+                    i.fa.fa-google-plus
+                a(href="#")
+                    i.fa.fa-instagram
+                a(href="#")
+                    i.fa.fa-rss
+    .grey-line
+    .row.footer__bottom-row
+        .small-12.large-6.column
+            p.copyright-text ©
+                =" "
+                b 2017 Just2Trade Online Ltd
+            p Just2Trade Online Ltd сертифицирована и регулируется Кипрской Комиссией по ценным бумагам и биржам в соответствии с лицензией No.281/15 от 25/09/2015.
                 br
-                | Создание сайта &mdash;
-                a.text-light-gray(target='_blank', href='http://cetera.ru/') Cetera Labs
-                | &nbsp;&nbsp;&nbsp;&nbsp;
-                a.text-light-gray(target='_blank', href='http://www.cetera.ru/support/default.php?project=CCD&lang=ru&page=http://wireframes.cetera.ru/boilerplate/') Сообщить об ошибке
-        .small-12.medium-4.columns.text-center.medium-text-right
+                b Регистрационный номер:
+                | &nbsp;HE 341520
             p
-                a(href='#')
-                    img(src='./i/image.svg', style='width: 300px; height: 50px; background: #8a8a8a', alt='logo')
+                b Адрес:&nbsp;
+                | Just2Trade Online Ltd 10 Chrysanthou Mylona, MAGNUM HOUSE
+                br
+                | 3030 Limassol, Cyprus
+            p
+                b Заявление об ограничении ответственности:
+                br
+                | Вся информация и материалы, размещенные на сайте компании могут использоваться исключительно с разрешения компании. Для получения дополнительной информации обратитесь к представителям компании.
+                a(href="http://www.finam.eu") www.finam.eu
+                =" "
+                | и
+                a(href="http://www.finam.com.cy") www.finam.com.cy
+                =" "
+                | принадлежат&nbsp;
+                b Just2Trade Online Ltd.
+        .small-12.medium-6.large-3.column
+            h4.footer__bottom-row__header Предупреждение о рисках:
+            p Торговля финансовыми инструментами может повлечь за собой существенный риск. Стоимость инвестиций может, как увеличиваться, так и уменьшаться, и инвесторы могут потерять свой капитал. В случае маржинальной торговли потери могут значительно превышать изначально инвестированный капитал. С подробной информацией о рисках, связанных с торговлей на финансовых рисках, можно ознакомиться в разделе
+                =" "
+                a(href="#") Полное предупреждение о рисках.
+        .small-12.medium-6.large-3.column.footer__bottom-row__last-col
+            p.footer__bottom-row__phone Тел: + 357 25 344 563
+            p E-mail:
+                =" "
+                a(href="mailto:info@just2trade.online ") info@just2trade.online
+            ul.menu.vertical.bottom-row__ageements
+                li: a(href="#") Политика конфиденциальности
+
+                li: a(href="#") Правила и условия
+
+                li: a(href="#") Ограничения
+
+                li: a(href="#") Политика AML
+
+                li: a(href="#") О компании
+            .row.small-up-3.payments-icons
+                .column: img(src="./i/visa.png",width="70",height="44",alt="visa")
+                .column: img(src="./i/master-card.png",width="70",height="44",alt="master card")
+                .column: img(src="./i/union-pay.png",width="70",height="44",alt="union-pay")
+
+

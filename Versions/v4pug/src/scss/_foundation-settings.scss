@@ -1,56 +1,14 @@
-//  Foundation for Sites Settings
-//  -----------------------------
-//
-//  Table of Contents:
-//
-//   1. Global
-//   2. Breakpoints
-//   3. The Grid
-//   4. Base Typography
-//   5. Typography Helpers
-//   6. Abide
-//   7. Accordion
-//   8. Accordion Menu
-//   9. Badge
-//  10. Breadcrumbs
-//  11. Button
-//  12. Button Group
-//  13. Callout
-//  14. Card
-//  15. Close Button
-//  16. Drilldown
-//  17. Dropdown
-//  18. Dropdown Menu
-//  19. Forms
-//  20. Label
-//  21. Media Object
-//  22. Menu
-//  23. Meter
-//  24. Off-canvas
-//  25. Orbit
-//  26. Pagination
-//  27. Progress Bar
-//  28. Responsive Embed
-//  29. Reveal
-//  30. Slider
-//  31. Switch
-//  32. Table
-//  33. Tabs
-//  34. Thumbnail
-//  35. Title Bar
-//  36. Tooltip
-//  37. Top Bar
 
 @import 'util/util';
 
 // 1. Global
 // ---------
 
-$global-font-size: 15px;
+$global-font-size: 14px;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: #CA3034,
+  primary: #00a2ff,
   secondary: #777,
   success: #3a9b92,
   warning: #ffae00,
@@ -72,10 +30,9 @@ $medium-gray: map-get($foundation-palette, medium-gray);
 $dark-gray: map-get($foundation-palette, dark-gray);
 $black: map-get($foundation-palette, black);
 $white: map-get($foundation-palette, white);
-$primary: map-get($foundation-palette, primary);
 $body-background: $white;
 $body-font-color: $black;
-$body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$body-font-family: 'Roboto', Helvetica, Arial, sans-serif;
 $body-antialiased: true;
 $global-margin: 1.5rem;
 $global-padding: 1.5rem;
@@ -88,6 +45,7 @@ $print-transparent-backgrounds: true;
 
 @include add-foundation-colors;
 
+
 // 2. Breakpoints
 // --------------
 
@@ -96,10 +54,10 @@ $breakpoints: (
   medium: 640px,
   large: 960px,
   xlarge: 1200px,
-  xxlarge: 1440px,
+  xxlarge: 1280px,
 );
 $print-breakpoint: large;
-$breakpoint-classes: (small medium large);
+$breakpoint-classes: (small medium large xxlarge);
 
 // 3. The Grid
 // -----------
@@ -107,8 +65,8 @@ $breakpoint-classes: (small medium large);
 $grid-row-width: $global-width;
 $grid-column-count: 12;
 $grid-column-gutter: (
-  small: 1.5rem,
-  medium: 1.5rem,
+  small: 2.143rem,
+  medium: 2.143rem,
 );
 $grid-column-align-edge: true;
 $block-grid-max: 8;
@@ -125,16 +83,16 @@ $header-lineheight: 1.4;
 $header-margin-bottom: $global-margin;
 $header-styles: (
   small: (
-    'h1': ('font-size': 32, 'margin-bottom': 0),
-    'h2': ('font-size': 28),
+    'h1': ('font-size': 54, 'margin-bottom': 0),
+    'h2': ('font-size': 48),
     'h3': ('font-size': 20),
     'h4': ('font-size': 18),
     'h5': ('font-size': 16),
     'h6': ('font-size': 14),
   ),
   medium: (
-    'h1': ('font-size': 35),
-    'h2': ('font-size': 30),
+    'h1': ('font-size': 54),
+    'h2': ('font-size': 48),
     'h3': ('font-size': 20),
     'h4': ('font-size': 18),
     'h5': ('font-size': 16),
@@ -144,7 +102,7 @@ $header-styles: (
 $header-text-rendering: optimizeLegibility;
 $small-font-size: 80%;
 $header-small-font-color: $medium-gray;
-$paragraph-lineheight: 1.5;
+$paragraph-lineheight: 1.62;
 $paragraph-margin-bottom: $global-margin;
 $paragraph-text-rendering: optimizeLegibility;
 $code-color: $black;
@@ -159,7 +117,7 @@ $anchor-text-decoration: none;
 $anchor-text-decoration-hover: none;
 $hr-width: $global-width;
 $hr-border: 1px solid $light-gray;
-$hr-margin: 0 auto;
+$hr-margin: 0 auto rem-calc(30) auto;
 $list-lineheight: $paragraph-lineheight;
 $list-margin-bottom: $paragraph-margin-bottom;
 $list-style-type: disc;
@@ -186,7 +144,7 @@ $abbr-underline: 1px dotted $black;
 // ---------------------
 
 $lead-font-size: $global-font-size * 1.25;
-$lead-lineheight: 1.6;
+$lead-lineheight: 1.62;
 $subheader-lineheight: 1.4;
 $subheader-color: $dark-gray;
 $subheader-font-weight: $global-weight-normal;
@@ -208,14 +166,13 @@ $input-error-font-weight: $global-weight-bold;
 // 7. Accordion
 // ------------
 
-$accordion-background: $light-gray;
+$accordion-background: transparent;
 $accordion-plusminus: true;
 $accordion-title-font-size: rem-calc(12);
 $accordion-item-color: $primary-color;
-$accordion-item-background-hover: $light-gray;
 $accordion-item-padding: 1.25rem 1rem;
-$accordion-content-background: $white;
-$accordion-content-border: 1px solid $light-gray;
+$accordion-content-background: transparent;
+$accordion-content-border: 0;
 $accordion-content-color: $body-font-color;
 $accordion-content-padding: 1rem;
 
@@ -574,16 +531,16 @@ $show-header-for-stacked: false;
 // --------
 
 $tab-margin: 0;
-$tab-background: $white;
-$tab-color: $primary-color;
-$tab-background-active: $light-gray;
-$tab-active-color: $primary-color;
-$tab-item-font-size: rem-calc(12);
-$tab-item-background-hover: $white;
+$tab-background: transparent;
+$tab-color: $white;
+$tab-background-active: transparent;
+$tab-active-color: $success-color;
+$tab-item-font-size: rem-calc(14);
+$tab-item-background-hover: transparent;
 $tab-item-padding: 1.25rem 1.5rem;
 $tab-expand-max: 6;
-$tab-content-background: $white;
-$tab-content-border: $light-gray;
+$tab-content-background: transparent;
+$tab-content-border: none;
 $tab-content-color: $body-font-color;
 $tab-content-padding: 1rem;
 
@@ -613,12 +570,12 @@ $titlebar-icon-spacing: 0.25rem;
 
 $has-tip-font-weight: $global-weight-bold;
 $has-tip-border-bottom: dotted 1px $dark-gray;
-$tooltip-background-color: $black;
-$tooltip-color: $white;
-$tooltip-padding: 0.75rem;
+$tooltip-background-color: $white;
+$tooltip-color: $black;
+$tooltip-padding: 0;
 $tooltip-font-size: $small-font-size;
-$tooltip-pip-width: 0.75rem;
-$tooltip-pip-height: $tooltip-pip-width * 0.866;
+$tooltip-pip-width: 0;
+$tooltip-pip-height:0;
 $tooltip-radius: $global-radius;
 
 // 37. Top Bar

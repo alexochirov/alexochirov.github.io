@@ -1,0 +1,188 @@
+section.rating-pamm
+    .row.column
+        form.rating-pamm__form.hide-for-small-only(action="", method="", data-equalizer='', data-equalize-on='medium')
+          #rating-pamm-filter__open-btn.text-right.rating-pamm-filter_none(data-toggler='.rating-pamm-filter_none')
+            button.rating-pamm-filter__close-btn(type="button" data-toggle="rating-pamm-filter rating-pamm-filter__open-btn") Открыть фильтр
+          .rating-pamm-filter.clearfix#rating-pamm-filter(data-toggler='.rating-pamm-filter_none')
+              .rating-pamm-filter__col.columns.large-3.medium-6(data-equalizer-watch='')
+                  h4.rating-pamm-filter__title Доходность
+                  .slider.rating-pamm-filter__slider-yield(data-slider='', data-start='0', data-end='19838', data-initial-start='0', data-initial-end='500')
+                      span.slider-handle.rating-pamm__slider-handle.rating-pamm__slider-handle-left(data-slider-handle='', role='slider', tabindex='1' aria-controls="sliderOutput-1")
+                          span.rating-pamm__slider-handle-left-inner
+                      span.slider-fill.rating-pamm__slider-fill(data-slider-fill='')
+                      span.slider-handle.rating-pamm__slider-handle.rating-pamm__slider-handle-right(data-slider-handle='', role='slider', tabindex='1' aria-controls="sliderOutput-2")
+                          span.rating-pamm__slider-handle-right-inner
+                  .rating-pamm__slider-input-group
+                    .row.column.large-collapse
+                      .columns.large-5.medium-5.collapse
+                        input.rating-pamm__slider-input-left#sliderOutput-1(type='text')
+                      .columns.large-2.medium-2.collapse.text-center
+                        | &mdash;
+                      .columns.large-5.medium-5.collapse
+                        input.rating-pamm__slider-input-right#sliderOutput-2(type='text')
+                  .rating-pamm-filter__radio-group.text-right
+                      input#rating-pamm-filter__input-total(type='radio', name='rating-filter-radio', checked='')
+                      label#rating-pamm-filter__label-total(for='rating-pamm-filter__input-total', title='Всего') Всего
+                      input#rating-pamm-filter__input-month(type='radio', name='rating-filter-radio')
+                      label#rating-pamm-filter__label-month(for='rating-pamm-filter__input-month', title='В месяц') В месяц
+              .rating-pamm-filter__col.columns.large-3.medium-6(data-equalizer-watch='')
+                  h4.rating-pamm-filter__title Просадка
+                  .slider.rating-pamm-filter__slider-drawdown(data-slider='', data-start='-100', data-end='0', data-initial-start='-50', data-initial-end='0')
+                      span.slider-handle.rating-pamm__slider-handle.rating-pamm__slider-handle-left(data-slider-handle='', role='slider', tabindex='2' aria-controls="sliderOutput-3")
+                          span.rating-pamm__slider-handle-left-inner
+                      span.slider-fill.rating-pamm__slider-fill(data-slider-fill='')
+                      span.slider-handle.rating-pamm__slider-handle.rating-pamm__slider-handle-right(data-slider-handle='', role='slider', tabindex='2' aria-controls="sliderOutput-4")
+                          span.rating-pamm__slider-handle-right-inner
+                  .rating-pamm__slider-input-group
+                    .row.column.large-collapse
+                      .columns.large-5.medium-5.collapse
+                        input.rating-pamm__slider-input-left#sliderOutput-3(type='text')
+                      .columns.large-2.medium-2.collapse.text-center
+                        | &mdash;
+                      .columns.large-5.medium-5.collapse
+                        input.rating-pamm__slider-input-right#sliderOutput-4(type='text')
+              .rating-pamm-filter__col.columns.large-3.medium-6(data-equalizer-watch='')
+                  h4.rating-pamm-filter__title Возраст стратегии
+                  .slider.rating-pamm-filter__slider-strategy(data-slider='', data-start='0', data-end='9685', data-initial-start='0', data-initial-end='9685')
+                      span.slider-handle.rating-pamm__slider-handle.rating-pamm__slider-handle-left(data-slider-handle='', role='slider', tabindex='3' aria-controls="sliderOutput-5")
+                          span.rating-pamm__slider-handle-left-inner
+                      span.slider-fill.rating-pamm__slider-fill(data-slider-fill='')
+                      span.slider-handle.rating-pamm__slider-handle.rating-pamm__slider-handle-right(data-slider-handle='', role='slider', tabindex='3' aria-controls="sliderOutput-6")
+                          span.rating-pamm__slider-handle-right-inner
+                  .rating-pamm__slider-input-group
+                    .row.column.large-collapse
+                      .columns.large-5.medium-5.collapse
+                        input.rating-pamm__slider-input-left#sliderOutput-5(type='text')
+                      .columns.large-2.medium-2.collapse.text-center
+                        | &mdash;
+                      .columns.large-5.medium-5.collapse
+                        input.rating-pamm__slider-input-right#sliderOutput-6(type='text')
+              .rating-pamm-filter__col.columns.large-3.medium-6(data-equalizer-watch='')
+                  h4.rating-pamm-filter__title Комиссия управляющего
+                  .slider.rating-pamm-filter__slider-commission(data-slider='', data-start='0', data-end='100', data-initial-start='0', data-initial-end='100')
+                      span.slider-handle.rating-pamm__slider-handle.rating-pamm__slider-handle-left(data-slider-handle='', role='slider', tabindex='4' aria-controls="sliderOutput-7")
+                          span.rating-pamm__slider-handle-left-inner
+                      span.slider-fill.rating-pamm__slider-fill(data-slider-fill='')
+                      span.slider-handle.rating-pamm__slider-handle.rating-pamm__slider-handle-right(data-slider-handle='', role='slider', tabindex='4' aria-controls="sliderOutput-8")
+                          span.rating-pamm__slider-handle-right-inner
+                  .rating-pamm__slider-input-group
+                    .row.column.large-collapse
+                      .columns.large-5.medium-5.collapse
+                        input.rating-pamm__slider-input-left#sliderOutput-7(type='text')
+                      .columns.large-2.medium-2.collapse.text-center
+                        | &mdash;
+                      .columns.large-5.medium-5.collapse
+                        input.rating-pamm__slider-input-right#sliderOutput-8(type='text')
+              .rating-pamm-filter__col.columns.large-3.medium-6(data-equalizer-watch='')
+                  h4.rating-pamm-filter__title Средства в управлении
+                  .slider.rating-pamm-filter__slider-funds-management(data-slider='', data-start='0', data-end='3200000', data-initial-start='0', data-initial-end='2500000')
+                      span.slider-handle.rating-pamm__slider-handle.rating-pamm__slider-handle-left(data-slider-handle='', role='slider', tabindex='5' aria-controls="sliderOutput-9")
+                        span.rating-pamm__slider-handle-left-inner
+                      span.slider-fill.rating-pamm__slider-fill(data-slider-fill='')
+                      span.slider-handle.rating-pamm__slider-handle.rating-pamm__slider-handle-right(data-slider-handle='', role='slider', tabindex='5' aria-controls="sliderOutput-10")
+                        span.rating-pamm__slider-handle-right-inner
+                  .rating-pamm__slider-input-group
+                    .row.column.large-collapse
+                      .columns.large-5.medium-5.collapse
+                        input.rating-pamm__slider-input-left#sliderOutput-9(type='text')
+                      .columns.large-2.medium-2.collapse.text-center
+                        | &mdash;
+                      .columns.large-5.medium-5.collapse
+                        input.rating-pamm__slider-input-right#sliderOutput-10(type='text')
+              .rating-pamm-filter__col.columns.large-5.medium-12.text-right(data-equalizer-watch='')
+                  input.rating-pamm-filter__checkbox#rating-pamm-filter__checkbox(type='checkbox' checked)
+                  label.rating-pamm-filter__label#rating-pamm-filter__label(for='rating-pamm-filter__checkbox') Открытые стратегии для инвестирования
+                  button.rating-pamm-filter__close-btn(type="button" data-toggle="rating-pamm-filter rating-pamm-filter__open-btn") Скрыть фильтр
+    .row.column
+        .table-scroll
+            table.rating-pamm-table.focus-highlight
+                caption.rating-pamm-table__caption.hide-for-small-only [ Доходность ]
+                thead.rating-pamm-table__thead
+                  tr.rating-pamm-table__row
+                      each item, index in ['Стратегия', 'График доходности', 'Всего', 'В месяц', 'Максимальная просадка', 'Средства', 'Возраст, дней', 'Комиссия']
+                        //- if index > 1 
+                        //-   th.rating-pamm-table__th= item
+                        //- else
+                        //-   th.rating-pamm-table__th.sorter-false= item
+                        th.rating-pamm-table__th= item
+                      th.rating-pamm-table__th
+                          //- a(href="#").rating-pamm-table__btn-search
+                          //-     i.fa.fa-search(aria-hidden='true')
+                          //- a(href="#").rating-pamm-table__btn-question
+                          //-     i.fa.fa-question(aria-hidden='true')
+                tbody.rating-pamm-table__tbody
+                  tr.rating-pamm-table__row
+                      td.rating-pamm-table__cell
+                          span.text-blue.text-bold Red Dragon
+                          br
+                          |USD
+                      td.rating-pamm-table__cell
+                          img(src='i/schedule-red-dragon.svg' alt="")
+                      td.rating-pamm-table__cell
+                          |+15%
+                      td.rating-pamm-table__cell.text-green
+                          |+1572%
+                      each item in ['23.3%', '130700', '18', '25%']
+                          td.rating-pamm-table__cell= item
+                      td.rating-pamm-table__cell
+                          a(href="#").button.button_no-margin.hollow.green-hollow.text-green.rating-pamm-table__btn Инвенстировать
+                  tr.rating-pamm-table__row
+                      td.rating-pamm-table__cell
+                          span.text-blue.text-bold Poseidon
+                          br
+                          |USD
+                      td.rating-pamm-table__cell
+                          img(src='i/schedule-poseidon.svg' alt="")
+                      td.rating-pamm-table__cell
+                          |+11%
+                      td.rating-pamm-table__cell.text-green
+                          |+1012%
+                      each item in ['22.1%', '120500', '12', '25%']
+                          td.rating-pamm-table__cell= item
+                      td.rating-pamm-table__cell
+                          a(href="#").button.button_no-margin.hollow.green-hollow.text-green.rating-pamm-table__btn Инвенстировать
+                  tr.rating-pamm-table__row
+                      td.rating-pamm-table__cell
+                          span.text-blue.text-bold Ascent
+                          br
+                          |USD
+                      td.rating-pamm-table__cell
+                          img(src='i/schedule-ascent.svg' alt="")
+                      td.rating-pamm-table__cell
+                          |+18%
+                      td.rating-pamm-table__cell.text-green
+                          |+852%
+                      each item in ['20.0%', '120320', '11', '25%']
+                          td.rating-pamm-table__cell= item
+                      td.rating-pamm-table__cell
+                          a(href="#").button.button_no-margin.hollow.green-hollow.text-green.rating-pamm-table__btn Инвенстировать
+                  tr.rating-pamm-table__row
+                      td.rating-pamm-table__cell
+                          span.text-blue.text-bold Forex Empire
+                          br
+                          |USD
+                      td.rating-pamm-table__cell
+                          img(src='i/schedule-forex-empire.svg' alt="")
+                      td.rating-pamm-table__cell
+                          |+14%
+                      td.rating-pamm-table__cell.text-green
+                          |+1252%
+                      each item in ['21.0%', '128320', '10', '25%']
+                          td.rating-pamm-table__cell= item
+                      td.rating-pamm-table__cell
+                          a(href="#").button.button_no-margin.hollow.green-hollow.text-green.rating-pamm-table__btn Инвенстировать
+                  tr.rating-pamm-table__row
+                      td.rating-pamm-table__cell
+                          span.text-blue.text-bold Neural network signals
+                          br
+                          |USD
+                      td.rating-pamm-table__cell
+                          img(src='i/schedule-neural-network-signals.svg' alt="")
+                      td.rating-pamm-table__cell
+                          |+11%
+                      td.rating-pamm-table__cell.text-green
+                          |+1050%
+                      each item in ['20.0%', '110320', '8', '25%']
+                          td.rating-pamm-table__cell= item
+                      td.rating-pamm-table__cell
+                          a(href="#").button.button_no-margin.hollow.green-hollow.text-green.rating-pamm-table__btn Инвенстировать

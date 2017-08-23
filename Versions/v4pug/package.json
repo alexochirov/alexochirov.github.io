@@ -30,6 +30,10 @@
     "jquery": "^2.2.4",
     "jstransformer-uglify-js": "^1.1.1",
     "motion-ui": "~1.2.2",
-    "slick-carousel": "~1.6.0"
+    "slick-carousel": "~1.6.0",
+    "tablesorter": "^2.28.15"
+  },
+  "devDependencies": {
+    "webticker": "^3.0.0"
   }
 }

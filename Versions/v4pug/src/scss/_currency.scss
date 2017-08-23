@@ -1,0 +1,78 @@
+
+.currency {
+  border-collapse: collapse;
+  margin-bottom: rem-calc(50);
+
+  tbody {
+    border: rem-calc(0);
+  }
+
+  &__th {
+    font-weight: 300;
+    padding-bottom: rem-calc(14);
+    padding-top: rem-calc(15);
+  }
+
+  &__tr {
+     :first-child {
+      border-left: rem-calc(0);
+    }
+
+    :last-child {
+      border-right: rem-calc(0);
+    }
+  }
+
+  &__td {
+    padding-left: rem-calc(30);
+    padding-right: rem-calc(30);
+    border: rem-calc(1) solid $light-grey;
+    padding-top: rem-calc(14);
+    padding-bottom: rem-calc(15);
+    &_metal {
+      padding-top: rem-calc(12);
+      padding-bottom: rem-calc(12);
+    }
+  }
+
+  &__text {
+    float: left;
+    &_metal {
+      padding-top: rem-calc(4);
+    }
+  }
+
+  &__flags {
+    float: left;
+    margin-right: rem-calc(30);
+
+
+    img {
+      margin-right: rem-calc(5);
+      width: rem-calc(16);
+      max-height: rem-calc(11);
+    }
+    &_metal {
+      img {
+        width: rem-calc(44);
+        max-height: rem-calc(27);
+      }
+    }
+  }
+  @include breakpoint(medium down) {
+    &__td {
+      padding-left: rem-calc(10);
+      padding-right: rem-calc(10);
+    }
+  }
+  @include breakpoint(small only) {
+    margin-bottom: rem-calc(0);
+    &__flags {
+      margin-right: rem-calc(10);
+    }
+    &__td {
+      padding-top: rem-calc(5);
+      padding-bottom: rem-calc(5);
+    }
+  }
+}

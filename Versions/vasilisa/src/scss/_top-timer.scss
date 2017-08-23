@@ -1,0 +1,83 @@
+.top-timer__wrapper {
+  position: relative;
+}
+
+.top-timer {
+  font-family: 'GothamPro';
+  position: absolute;
+  font-size: 60px;
+  font-weight: bold;
+  right: 14px;
+  top: 15px;
+  color: #fff;
+}
+
+.top-timer__day {
+  display: inline-block;
+  position: relative;
+}
+
+.top-timer__day-text {
+  font-size: 12px;
+  text-align: center;
+  position: absolute;
+  bottom: -17px;
+  left: 19px;
+  font-weight: 100;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+}
+
+.top-timer__time {
+  display: inline-block;
+  position: relative;
+  width: 275px;
+}
+
+.top-timer__time-text {
+  font-size: 12px;
+  position: absolute;
+  top: 6px;
+  left: 0;
+  font-weight: 100;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+}
+
+.top-timer__time-number {
+  margin-left: -15px;
+}
+
+@media (max-width: 1150px) {
+  .top-timer {
+    font-size: 5vw;
+  }
+}
+
+@media (max-width: 1000px) {
+  .top-timer__time-text {
+    top: 0;
+    font-size: 1vw;
+  }
+  .top-timer__day-text {
+    left: 10px;
+    font-size: 1vw;
+    bottom: -20px;
+  }
+  .top-timer__time-number {
+    margin-left: -8px;
+  }
+  .top-timer {
+    right: 0;
+  }
+  .top-timer__time {
+    width: initial;
+  }
+}
+
+@media (max-width: 500px) {
+  .top-timer__day-text {
+    left: 6px;
+    font-size: 1vw;
+  }
+}

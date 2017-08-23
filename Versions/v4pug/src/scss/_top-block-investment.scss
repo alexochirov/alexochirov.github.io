@@ -1,0 +1,54 @@
+.top-block-investment {
+    @extend .top-block;
+    background-image: url(../images/bg-investment.jpg);
+    background-position: 50%;
+    height: auto;
+    padding-bottom: rem-calc(30);
+    min-height: rem-calc(370);
+    padding-top: 0;
+    &__line {
+      padding-top: rem-calc(30);
+      margin-bottom: rem-calc(40);
+    }
+    &__title {
+      color: white;
+      font-size: rem-calc(34);
+      line-height: rem-calc(50);
+      font-family: 'Lato', sans-serif;
+      text-transform: uppercase;
+    }
+    &__desc {
+      color: white;
+      font-size: rem-calc(20);
+      line-height: rem-calc(30);
+    }
+    &__btn {
+      @extend .account-type-column_btn;
+      display: inline-block;
+      color: white;
+      margin-bottom: rem-calc(20);
+      width: 81%;
+      font-size:  rem-calc(18);
+      line-height:  rem-calc(22);
+      @include breakpoint(small only) {
+        width: 100%;
+      }
+    }
+    &__btn_green {
+      // @extend .account-type-column_btn__green;
+      background-color: #2db54a;
+      border-color: #2db54a;
+    }
+    &__btn_orange {
+      background-color: #ff7800;
+      border-color: #ff7800;
+    }
+    &__btn_strategy {
+      @extend .top-block-investment__btn_green;
+      width: rem-calc(260);
+      font-size: rem-calc(13);
+      margin-top: rem-calc(45);
+      margin-left: 50%;
+      transform: translateX(-50%);
+    }
+  }

@@ -1,0 +1,9 @@
+.sun {
+  position: static;
+  top: rem-calc(0);
+  padding-top: rem-calc(23);
+  .tabs-panel {
+    padding-left: rem-calc(0);
+    padding-right: rem-calc(0);
+  }
+}

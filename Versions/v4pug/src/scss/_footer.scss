@@ -1,4 +1,169 @@
 .footer {
-  background: $black;
-  padding: 2rem 0 1rem;
+  border-top: 1px solid #c2c2c2;
+  background: #e0e0e0;
+  padding: rem-calc(26) 0 1rem;
+}
+.footer__top-row {
+
+}
+.site-search {
+   position: relative;
+  &__query {
+    width: 100%;
+    padding: 1rem;
+    border: 0;
+    box-shadow: none;
+    background: #f9f9f9;
+    transition: 0.2s ease;
+    font-size: rem-calc(18);
+    &::placeholder {
+      color: #8e8e8e;
+      line-height: 1;
+      font-weight: 300;
+    }
+    &:active, &:focus {
+      background: #ffffff;
+    }
+  }
+  &__submit {
+    position: absolute;
+    width: 50px;
+    background: transparent url('../i/icons/magn.svg') no-repeat 50% 50%;
+    background-size: 50%;
+
+    top: 0;
+    right: 0;
+    height: 100%;
+    padding: 1rem;
+  }
+ }
+.footer__top-row__menu {
+  padding-top: 0.5rem;
+  list-style: none;
+  @include breakpoint(medium down) {
+    padding-bottom: 1rem;
+    display: inline-block;
+    text-align: center;
+  }
+}
+
+.footer__top-row__container {
+  @include breakpoint(small only) {
+    text-align: center;
+  }
+}
+
+.footer__top-row__menu__item {
+  vertical-align: middle;
+}
+.footer__top-row__menu__item:first-child {
+  position: relative;
+
+  @include breakpoint(medium only) {
+    padding-right: 1rem;
+  }
+}
+.footer__top-row__menu__item>a {
+    font-size: rem-calc(16);
+    color: $black;
+    padding: 0.65rem 1rem 0.65rem 0.5rem !important;
+    display: inline-block;
+    position: relative;
+    padding-left: 40px;
+    &:before {
+      position: absolute;
+      content: " ";
+      width: 20px;
+      height: 20px;
+      left: -20px;
+      top: 10px;
+      background: url('../i/icons/envelope.svg') no-repeat center;
+      background-size: 100%;
+    }
+
+    &:hover {
+      color: $accent;
+    }
+  @include breakpoint(small only) {
+    padding-left: 0;
+    &:before {
+      display: none;
+    }
+  }
+
+}
+
+.item_icon {
+  display: inline-block;
+  float: left;
+  padding-top: 5px;
+}
+.social-icons {
+  text-align:right;
+  line-height: 3.6;
+  @include breakpoint(medium down) {
+    text-align: center;
+    padding-top: 1rem;
+  }
+  a{
+    margin-right: rem-calc(14);
+    color: $black;
+    &:hover {
+      color: $accent;
+    }
+  }
+}
+
+.footer__top-row {
+  padding-bottom: rem-calc(26);
+}
+
+.grey-line {
+  border-top: 1px solid #c2c2c2;
+
+}
+.footer__bottom-row {
+  padding: rem-calc(62) 0 0 0;
+  color: #818181;
+  p {
+    font-size: rem-calc(12);
+    line-height: 2;
+  }
+  &__header {
+    font-size: rem-calc(14);
+    font-weight: 700;
+    margin-bottom: 0;
+    line-height: 2;
+  }
+  &__last-col {
+    @include breakpoint(medium large) {
+      text-align: right;
+      padding-left: rem-calc(40);
+    }
+  }
+}
+
+p.footer__bottom-row__phone {
+  font-size: rem-calc(18) !important;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 0;
+}
+p.copyright-text {
+  font-size: rem-calc(18);
+  margin-bottom: 0;
+}
+
+.bottom-row__ageements {
+  li>a {
+    padding-left: 0;
+    padding-right: 0;
+    font-size:rem-calc(12);
+  }
+}
+.payments-icons {
+
+  .column {
+    padding: rem-calc(20) rem-calc(13);
+  }
 }

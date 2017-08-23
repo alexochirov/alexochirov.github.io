@@ -1,0 +1,38 @@
+.opening-individual-accounts {
+  &__title {
+    @extend .account-opening_title;
+  }
+  &__desc {
+    @extend .advantages_desc;
+    margin-bottom: 2.14286rem;
+    &_padding {
+      padding-left: rem-calc(90);
+      margin-bottom: rem-calc(70);
+    }
+  }
+}
+.text_24s {
+  font-size: rem-calc(24);
+}
+.advantages__img-wrap_pos {
+  position: absolute;
+}
+.w100 {
+  width: 100%;
+}
+.mb0 {
+  margin-bottom: 0;
+}
+.mb110 {
+  margin-bottom: rem-calc(110);
+}
+input:checked ~ .account-type-column.w100 {
+  border-color: transparent;
+  outline: 4px solid #2db54a;
+}
+.button_next {
+  font-size: rem-calc(18);
+  line-height: rem-calc(30);
+  margin-top: rem-calc(30);
+  width: rem-calc(261);
+}

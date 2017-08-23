@@ -1,4 +1,14 @@
 .menu-line {
-  background: $primary-color;
-  padding: 1.5rem 0;
+  padding: rem-calc(40) 0;
+  padding-bottom: 0;
+  background: transparent;
+  @include breakpoint(1279 down) {
+    background: $menu-background;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid $menu-border;
+  }
+}
+.main-logo {
+  display: block;
+  padding-top: rem-calc(10);
 }

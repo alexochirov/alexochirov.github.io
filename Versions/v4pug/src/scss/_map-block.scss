@@ -1,0 +1,51 @@
+.map-block {
+  background: url('../i/map-bg.jpg') no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  padding-bottom: 1rem;
+}
+.block-image {
+  width: 100%;
+  height: auto;
+  margin: 2rem auto;
+}
+.block-container {
+  position: relative;
+}
+.city-pin {
+  position: absolute;
+  display: block;
+  width: 25px;
+  height: 37px;
+  background: transparent url(../i/map-pin.svg)no-repeat center;
+  border-bottom: 0;
+
+}
+.tooltip {
+  background: transparent;
+  padding: 0;
+  left: -20px;
+}
+.city-name {
+  display: inline-block;
+  padding: 4px;
+  background: #ffffff;
+  left: 5px;
+  top: 0;
+  font-weight: bold;
+  color: dodgerblue;
+  line-height: 1.2;
+  position: absolute;
+  left: -15px;
+  top: -30px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.15);
+
+
+}
+
+.city-country {
+  display: block;
+  color: $black;
+  font-weight: 400;
+  font-size: rem-calc(10);
+}

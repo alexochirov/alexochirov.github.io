@@ -1,0 +1,30 @@
+.advantages {
+  @include grey-block;
+}
+
+.advantage {
+  margin-bottom: rem-calc(40);
+  &__image {
+    display: block;
+    width: 84px;
+    height: 84px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    margin: 0 0 rem-calc(18) rem-calc(18);
+    position: relative;
+    &:before {
+      position: absolute;
+      content: "";
+      dispaly: block;
+      width: 3px;
+      height: 42px;
+      background-color: #d7d7d7;
+      bottom: 0;
+      left: -18px;
+    }
+  }
+  &__header {
+    margin-bottom: 8px;
+  }
+}

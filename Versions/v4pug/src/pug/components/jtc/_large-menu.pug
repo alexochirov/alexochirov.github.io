@@ -1,0 +1,23 @@
+.show-for-large-only#large-show
+    .small-4.large-2.columns
+        a.main-logo(href='#' title='')
+            img(src='./i/logo.svg', style='width: 127px; height: 20px', alt='logo')
+    .small-8.column.hide-for-xxlarge
+        .mobile-icon(data-responsive-toggle='large-menu', data-hide-for='xxlarge')
+            .text-white(data-toggle)
+                i.fa.fa-bars.fa-2x
+    #large-menu.small-12.large-7.columns.end
+        ul.tabs.main-menu#main-menu(data-responsive-accordion-tabs="tabs small-accordion medium-tabs",data-active-collapse="true")
+            li.tabs-title.main-menu__item: a.main-menu__link(href="#traders") Трейдерам
+            li.tabs-title.main-menu__item: a.main-menu__link(href="#investors") Инвесторам
+            li.tabs-title.main-menu__item: a.main-menu__link(href="#organization") Организациям
+            li.tabs-title.main-menu__item: a.main-menu__link(href="#about") О компании
+        .tabs-content(data-tabs-content="main-menu")
+            #traders.tabs-panel.main-menu__tabs-panel
+                include ../jtc/_tab-menu-inner
+            #investors.tabs-panel.main-menu__tabs-panel
+                include ../jtc/_tab-menu-inner
+            #organization.tabs-panel.main-menu__tabs-panel
+                include ../jtc/_tab-menu-inner
+            #about.tabs-panel.main-menu__tabs-panel
+                include ../jtc/_tab-menu-inner

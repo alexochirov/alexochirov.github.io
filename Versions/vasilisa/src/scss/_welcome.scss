@@ -1,0 +1,33 @@
+.welcome {
+    background: url("../images/domalina_modal.jpg") no-repeat left top;
+    -webkit-background-size:contain;
+    background-size:contain;
+    border-radius: 0;
+}
+@include breakpoint(large up) {
+    .welcome {
+        width: 900px;
+        height: 520px;
+        -webkit-background-size:auto;
+        background-size:auto;
+    }
+}
+.welcome__start {
+    @extend .button;
+    color: #fff;
+    font-size: 14px;
+    line-height: 14px;
+    position: absolute;
+    left: 92px;
+    top: 412px;
+
+    height: 39px;
+    width: 190px;
+    &:hover {
+        color: #fff;
+    }
+}
+.welcome__close {
+    font-size: rem-calc(40);
+    color: #000;
+}

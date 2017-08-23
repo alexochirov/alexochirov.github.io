@@ -1,0 +1,40 @@
+.head-personal {
+  width: 150px;
+  border-color: #fff;
+  box-shadow: 1px 3px 3px 0 rgba(0,0,0,0.2);
+  background-color: #fff;
+  border-radius: 2px;
+  display: block;
+  font-size: 1rem;
+  padding: 1rem;
+  position: absolute;
+  z-index: 10;
+  margin-top: -2rem;
+  display: none;
+}
+
+.head-personal__list {
+  text-align: left;
+  list-style: none;
+  margin-left: 0;
+}
+
+.head-personal__link {
+  border-bottom: .07143rem dashed #303030;
+  &:hover {
+    border-color: #a52468;
+    color: #a52468;
+  }
+}
+
+.head-personal__list-item {
+  margin-bottom: .3rem;
+}
+
+.personal-link:hover ~ .head-personal {
+  display: block;
+}
+
+.head-personal:hover {
+  display: block;
+}

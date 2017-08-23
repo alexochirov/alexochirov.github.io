@@ -1,0 +1,18 @@
+.top-block-account-opening {
+  @extend .top-block-forex;
+  background-image: url(../images/bg-account-opening.jpg);
+  min-height: rem-calc(300);
+  color: white;
+  padding-top: 0;
+  &-header {
+    &__title {
+      @extend .license-info__title;
+    }
+    &__desc {
+      @extend .license-info__desc;
+    }
+  }
+}
+.top-block-account-opening__line {
+  @extend .top-block-forex__line;
+}

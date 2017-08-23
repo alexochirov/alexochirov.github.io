@@ -1,0 +1,129 @@
+.top-block {
+  padding-top: 0;
+  height: 100vh;
+  width: 100%;
+  background: #4c5e7a url(../i/1bg.jpg) no-repeat;
+  background-size: cover;
+  padding-top: 187px;
+  @include breakpoint(large xxlarge) {
+    min-height: 1020px;
+  }
+
+}
+.info-block {
+  color: #ffffff;
+  height: 100%;
+  margin-top: 80px;
+
+  &__inner {
+    position: relative;
+    bottom: 0;
+  }
+  &__header {
+    font-size: 50px;
+    line-height: 1.62;
+    text-transform: uppercase;
+    margin-bottom: rem-calc(54);
+    font-weight: 900;
+  }
+  &__subheader {
+    font-weight: 300;
+    line-height: 1.62;
+    font-size: rem-calc(30);
+  }
+  &__buttons {
+    margin-top: rem-calc(50);
+    font-size: rem-calc(18);
+    margin-bottom: rem-calc(90);
+    .button-large {
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+  }
+  &__desc {
+    h3 {
+      font-size:rem-calc(30);
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: rem-calc(14);
+      line-height: 1.7;
+    }
+  }
+  @include breakpoint(large down) {
+    margin-top: 60px;
+  }
+ }
+.brands-logo {
+  list-style: none;
+  display: block;
+  text-align:center;
+  margin: 0;
+  li {
+    display: inline-block;
+    vertical-align: bottom;
+  }
+  li:not(:last-child) {
+    margin-right: 80px;
+  }
+}
+
+@include breakpoint(small only) {
+  .top-block {
+    height: auto;
+    padding-bottom: 2rem;
+  }
+  .info-block {
+    &__header {
+      font-size: rem-calc(30);
+      margin-bottom: 1.2rem;
+      line-height: 1.25;
+    }
+    &__subheader {
+      font-size: 1.6rem;
+    }
+    &__buttons {
+      margin-top: 2rem;
+      margin-bottom: 3rem;
+    }
+  }
+  .brands-logo {
+    margin: 2rem 0 0 0;
+
+    li {
+      display: block;
+      text-align: center;
+      margin-left: 0;
+      &:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 2rem;
+      }
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.single-row {
+  @extend .row;
+  @exteng .column;
+}
+
+@include breakpoint(medium only) {
+  .top-block {
+    height: auto;
+    padding-bottom: 2rem;
+  }
+  .info-block {
+    &__header {
+      line-height: 1.25;
+      margin-bottom: 2rem;
+    }
+    &__buttons {
+      margin-top: 2rem;
+      margin-bottom: 3rem;
+    }
+  }
+}

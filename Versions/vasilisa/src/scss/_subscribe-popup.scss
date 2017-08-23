@@ -1,0 +1,240 @@
+.subscribe-popup {
+  border-radius: 0;
+  padding: 0;
+  overflow: visible;
+  background-color: #fff2f9;
+  height: 520px;
+  width: 900px;
+}
+
+.subscribe-popup__title {
+  font-family: "Open Sans";
+  text-align: center;
+  margin: 3.3rem 3rem 1.5rem 5rem;
+  line-height: 36px;
+  letter-spacing: 1px;
+}
+
+.subscribe-popup__title-bold {
+  text-transform: uppercase;
+  color: #c52b2b;
+  font-weight: 600;
+  font-size: 33px;
+}
+
+.subscribe-popup__labels {
+  padding: 0 1rem;
+  margin-bottom: 1.1rem;
+}
+
+.subscribe-popup__labels-bold {
+  color: #c52b2b;
+  font-weight: 700;
+}
+
+.subscribe-popup__labels-text {
+  font-weight: 600;
+  margin-top: 1rem;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 0;
+  color: #1f1f1f;
+}
+
+.subscribe-popup__close {
+  right: .6rem;
+  top: 0;
+  font-size: 2.7em;
+  color: inherit;
+}
+
+.subscribe-popup__data-box {
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  padding: .3rem .5em;
+  width: 44%;
+  display: initial;
+  height: initial;
+  font-size: 15px;
+}
+
+.subscribe-popup__buttons {
+  margin-top: 1.2rem;
+  padding-left: 2rem;
+}
+
+.subscribe-popup__buttons-refuse {
+  border: 1px solid #827f7f;
+  padding: .5rem .6rem .9rem .6rem;
+  border-radius: 4px;
+  font-size: 15px;
+  color: #333;
+  &:hover, &:focus, &:visited, &:active {
+    color: black;
+  }
+}
+
+
+.subscribe-popup__buttons-accept {
+  padding: .6rem 3.6rem .9rem 3.6rem;
+  border-radius: 4px;
+  background: #c52b7c;
+  color: white;
+  letter-spacing: .3px;
+  &:hover, &:focus, &:visited, &:active {
+    color: white;
+  }
+}
+
+.subscribe-popup__picture {
+  height: 519px;
+  width: 400px;
+  position: absolute;
+}
+
+.subscribe-popup__drop {
+  width: 240px;
+  text-align: left;
+  font-size: 12px;
+  padding: .4rem;
+  margin-top: .5rem;
+}
+
+.row.subscribe-popup__labels>.subscribe-popup__labels-box {
+  padding-left: 2rem;
+}
+
+.row.subscribe-popup__labels>.subscribe-popup__labels-box:last-child {
+  padding-left: 1rem;
+}
+
+.subscribe-popup__drop-bold {
+  color: #c52b2b;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.subscribe-popup__drop-accept {
+  border-radius: 4px;
+  background: #c52b7c;
+  color: white;
+  padding: .2rem 1.4rem;
+  &:hover, &:focus, &:visited, &:active {
+    color: white;
+  }
+}
+
+.subscribe-popup__drop-refuse {
+  color: black;
+  border: 1px solid black;
+  padding: .1rem 1.4rem;
+  border-radius: 4px;
+  background: white;
+  &:hover, &:focus, &:visited, &:active {
+    color: black;
+  }
+}
+
+.subscribe-popup__drop-buttons {
+  margin-top: .5rem;
+}
+
+.subscribe-popup__buttons-text {
+  margin-top: .5rem;
+}
+
+.subscribe-popup__drop:before {
+  border: inset 6px;
+  content: "";
+  display: block;
+  height: 0;
+  width: 0;
+  border-color: transparent transparent #e6e6e6 transparent;
+  border-bottom-style: solid;
+  position: absolute;
+  top: -12px;
+  left: 10px;
+  z-index: 89;
+}
+
+.subscribe-popup__data {
+  padding-left: 1.8rem;
+}
+
+@media (max-width: 960px) {
+  .subscribe-popup {
+    height: auto;
+    width: auto;
+  }
+
+  .subscribe-popup__title {
+    margin: 2rem 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .subscribe-popup {
+    max-height: 500px;
+    min-height: 450px;
+    margin-top: 2rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  .subscribe-popup__title-bold {
+    font-size: 24px;
+  }
+
+  .subscribe-popup__labels-pic {
+    width: 50px;
+  }
+
+  .subscribe-popup__title {
+    font-size: 20px;
+  }
+
+  .subscribe-popup__labels-text {
+    font-size: 12px;
+    width: auto;
+  }
+}
+
+@media (max-width: 440px) {
+  .subscribe-popup__buttons-accept {
+    display: block;
+    width: 80%;
+    margin: .5rem auto;
+  }
+
+  .subscribe-popup__buttons-refuse {
+    display: block;
+    width: 80%;
+    margin: .5rem auto;
+  }
+
+  .row.subscribe-popup__labels>.subscribe-popup__labels-box {
+    padding-left: 0;
+  }
+
+  .row.subscribe-popup__labels>.subscribe-popup__labels-box:last-child {
+    padding-left: 0;
+  }
+
+  .subscribe-popup__data {
+    padding-left: 0;
+  }
+
+  .subscribe-popup__data-box {
+    width: auto;
+    width: 80%;
+    margin: .5rem auto;
+  }
+
+  .subscribe-popup__buttons {
+    padding-left: 0;
+  }
+
+  .subscribe-popup__buttons-text {
+    padding: 0 1rem;
+  }
+}

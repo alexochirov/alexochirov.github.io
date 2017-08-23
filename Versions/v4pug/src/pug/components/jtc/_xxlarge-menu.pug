@@ -1,0 +1,75 @@
+
+.row.collapse.hide-for-medium.alter-row
+    .small-6.column
+        a.main-logo(href='#' title='')
+            img(src='./i/logo.svg', style='width: 127px; height: 20px', alt='mobile-logo')
+    .small-6.column
+        span.service-buttons.float-right
+            a.round-button.button-headphones(href="#")
+            a.round-button.button-flag(href="#")
+            a.round-button.button-exit(href="#")
+
+.small-4.medium-3.large-2.columns.show-for-medium
+    a.main-logo(href='#' title='')
+        img(src='./i/logo.svg', style='width: 127px; height: 20px', alt='logo')
+.small-1.medium-1.column.hide-for-xxlarge
+    .mobile-icon(data-responsive-toggle='menu', data-hide-for='xxlarge')
+        .sandwich(data-toggle)
+            i.fa.fa-bars.fa-2x
+#menu.small-12.large-12.xxlarge-6.columns.menu-block
+    ul.tabs.main-menu#main-menu(data-responsive-accordion-tabs="tabs small-accordion medium-tabs",data-allow-all-closed="true")
+        li.tabs-title.main-menu__item: a.main-menu__link(href="#traders") Трейдерам
+        li.tabs-title.main-menu__item: a.main-menu__link(href="#investors") Инвесторам
+        li.tabs-title.main-menu__item: a.main-menu__link(href="#organization") Организациям
+        li.tabs-title.main-menu__item: a.main-menu__link(href="#about") О компании
+        .tabs-content(data-tabs-content="main-menu")
+            #traders.tabs-panel.main-menu__tabs-panel
+                include ../jtc/_tab-menu-inner
+            #investors.tabs-panel.main-menu__tabs-panel
+                include ../jtc/_ivestors-tab-menu
+            #organization.tabs-panel.main-menu__tabs-panel
+            #about.tabs-panel.main-menu__tabs-panel
+                include ../jtc/_about-tab-menu
+.small-10.medium-8.large-5.xxlarge-4.column
+    span.service-buttons.float-right.ml32.show-for-medium
+        a.round-button.button-headphones(href="#")
+        a.round-button.button-flag(href="#",data-toggle="lang-selection")
+        a.round-button.button-exit(href="#")
+    span.service-buttons.float-right
+        a.button.hollow.blue-hollow.mr8(href="#") Открыть счет
+        a.button.hollow.green-hollow(href="#") Демо
+#lang-selection.dropdown-pane.lang-panel(data-dropdown,data-hover="true",data-hover-pane="true")
+        .row
+            .small-12.medium-6.column
+                span.lang-panel__item
+                    .flag-set.float-left
+                        img(src="./i/icons/RUS.png",width="30",height="30",alt="")
+                    a.lang-panel__link(href="#") Русский
+
+            .small-12.medium-6.column
+                span.lang-panel__item
+                    .flag-set.float-left
+                        img(src="./i/icons/ENG.png",width="30",height="30",alt="")
+                    a.lang-panel__link(href="#") Английский
+        .row
+            .small-12.medium-6.column
+                span.lang-panel__item
+                    .flag-set.float-left
+                        img(src="./i/icons/china.png",width="30",height="30",alt="")
+                    a.lang-panel__link(href="#") Китайский
+
+            .small-12.medium-6.column
+                span.lang-panel__item
+                    .flag-set.float-left
+                        img(src="./i/icons/arab.png",width="30",height="30",alt="")
+                    a.lang-panel__link(href="#") Арабский
+        .row
+            .small-12.medium-6.column.end
+                span.lang-panel__item
+                    .flag-set.float-left
+                        img(src="./i/icons/spain.png",width="30",height="30",alt="")
+                    a.lang-panel__link(href="#") Испанский
+
+
+
+

@@ -1,0 +1,24 @@
+.feature {
+  font-size: rem-calc(18);
+  @include clearfix;
+
+  img {
+    float: left;
+    width: rem-calc(27);
+    margin-right: rem-calc(22);
+    margin-top: rem-calc(9);
+  }
+
+  &__text {
+    line-height: 2.6;
+    width: calc(100% - 50px);
+    float: left;
+  }
+  @include breakpoint(small only) {
+    font-size: rem-calc(14);
+
+    img {
+      margin-top: rem-calc(3);
+    }
+  }
+}

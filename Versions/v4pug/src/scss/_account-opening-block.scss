@@ -1,0 +1,201 @@
+.account-opening {
+    padding-top: rem-calc(90);
+    padding-bottom: rem-calc(96);
+      @include breakpoint(small only) {
+      &_form {
+        &>.float-left {
+          width: 100%;
+          margin-right: rem-calc(0);
+        }
+      } }
+    &_form-logo {
+      &-img {
+        margin-right: 1.266%;
+        margin-bottom: 2.14286rem;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+    &_title {
+        font-size: rem-calc(48);
+        line-height: rem-calc(60);
+        font-weight: bold;
+        font-family: 'Lato','Roboto', sans-serif;
+        text-transform: uppercase;
+        margin-bottom: rem-calc(55);
+        @include breakpoint(small only) {
+            font-size: 2rem;
+            line-height: rem-calc(38);
+        }
+    }
+    &_input {
+        height: rem-calc(50);
+        margin-bottom: rem-calc(30);
+        &::placeholder {
+            color: black;
+        }
+    }
+    &_label {
+        font-size: 0;
+    }
+    &_checkbox {
+        display: none;
+    }
+    &_btn {
+padding-left: rem-calc(41);
+padding-right: rem-calc(41);
+        font-size: rem-calc(18);
+        font-weight: 300;
+    padding-top: rem-calc(16);
+    padding-bottom: rem-calc(15);
+    }
+    &_required {
+        line-height: rem-calc(30);
+        margin-bottom: rem-calc(27);
+    }
+    &_input-sms, &_get-sms {
+        width: 50%;
+        display: inline-block;
+        vertical-align: top;
+    }
+    &_get-sms {
+        font-size: rem-calc(14);
+        background-color: #32B7F3;
+        height: rem-calc(50);
+        color: white;
+        cursor: pointer;
+    }
+}
+#account-opening{
+    &_label {
+    font-size: rem-calc(18);
+    line-height: rem-calc(30);
+    margin-left: rem-calc(45);
+    margin-bottom: rem-calc(20);
+    position: relative;
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: rem-calc(-45);
+        width: rem-calc(30);
+        height: rem-calc(30);
+        background-image: url('../images/icons/account-opening-checkbox.svg');
+        }
+    }
+    &_real, &_demo, &_real2, &_demo2 {
+        display: none;
+    }
+    &_btn-real, &_btn-demo, &_btn-real2, &_btn-demo2 {
+        padding: 0.89rem;
+        border: 1px solid #c2c2c2;
+        margin: 0;
+        min-width: 85px;
+        text-align: center;
+    }
+    &_btn-real, &_btn-real2 {
+        border-right: none;
+    }
+    &_btn-demo, &_btn-demo2 {
+        border-left: none;
+        margin-left: -3px;
+    }
+}
+#account-opening_demo:checked + #account-opening_btn-demo,
+#account-opening_real:checked + #account-opening_btn-real,
+#account-opening_demo2:checked + #account-opening_btn-demo2,
+#account-opening_real2:checked + #account-opening_btn-real2 {
+    background-color: #232323;
+    color: white;
+    border: 1px solid #232323;
+}
+#account-opening_checkbox:checked + .account-opening_label:before {
+    background-image: url('../images/icons/account-opening-checkbox-cheked.svg');
+}
+
+
+/* Базовый контейнер табов */
+.tabs {
+    // min-width: 320px;
+    // max-width: 800px;
+    // padding: 0px;
+    // margin: 0 auto;
+}
+/* Стили секций с содержанием */
+.tabs.column>div {
+    display: none;
+    padding-top: rem-calc(30);
+    // padding: 15px;
+    // background: #fff;
+    // border: 1px solid #ddd;
+}
+.tabs>.content-tab {
+  display: none;
+  padding-top: 2.14286rem;
+}
+.tabs>div>p {
+    margin: 0 0 5px;
+    line-height: 1.5;
+    color: #383838;
+    /* прикрутим анимацию */
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+/* Описываем анимацию свойства opacity */
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* Прячем чекбоксы */
+.tabs>input {
+    display: none;
+    position: absolute;
+}
+/* Стили переключателей вкладок (табов) */
+.tabs>label {
+    display: inline-block;
+    // margin: 0 0 -1px;
+    // padding: 15px 25px;
+    // font-weight: 600;
+    // text-align: center;
+    // color: #aaa;
+    // border: 0px solid #ddd;
+    // border-width: 1px 1px 1px 1px;
+    // background: #f1f1f1;
+    // border-radius: 3px 3px 0 0;
+}
+
+.tabs>label:hover {
+    color: #888;
+    cursor: pointer;
+}
+/* Активация секций с помощью псевдокласса :checked */
+#tab1:checked~#content-tab1,
+#tab2:checked~#content-tab2,
+#account-opening_real:checked~#content-tab1,
+#account-opening_demo:checked~#content-tab2,
+#tab1:checked~#content-tab3,
+#tab2:checked~#content-tab4,
+#account-opening_real2:checked~#content-tab3,
+#account-opening_demo2:checked~#content-tab4 {
+    display: block;
+}

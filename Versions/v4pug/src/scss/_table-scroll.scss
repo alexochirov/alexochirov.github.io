@@ -1,0 +1,10 @@
+.table-scroll  {
+.currency {
+  width: 100%;
+  @include breakpoint(small only) {
+    width: auto;
+  }
+}
+
+
+}

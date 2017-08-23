@@ -1,0 +1,37 @@
+.tools-block {
+  padding: rem-calc(112) 0;
+  background: url('../i/2bg.jpg')no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  &__header,
+  &__subheader {
+    color: #ffffff;
+    margin-top: 0;
+  }
+  &__advantage {
+    background: transparent;
+    border: 0;
+    padding: 0;
+    color: #ffffff;
+    &__name {
+      display: block;
+      border: 3px solid #ffffff;
+      text-align: center;
+      padding: rem-calc(20) 0;
+      font-size: rem-calc(18);
+      text-transform: uppercase;
+      margin-bottom: rem-calc(30);
+
+    }
+    &__list {
+      li {
+        margin-bottom: rem-calc(10);
+        line-height: 1.25;
+      }
+    }
+
+  }
+  @include breakpoint(small only) {
+    padding: 3rem 0;
+  }
+}

@@ -1,0 +1,9 @@
+.grid-container.padding-vertical-6
+  .large-6.cell
+    p
+      img(src="./images/logo.png", alt="")
+  .large-6.cell
+    ul.art
+      each item in ['О продукте','Статьи','Где купить']
+        li.art__item
+          a(href="#").art__link= item

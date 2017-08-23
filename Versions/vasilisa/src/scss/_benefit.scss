@@ -1,0 +1,11 @@
+.benefit {
+  @include breakpoint(medium down) {
+    &__img {
+      margin-bottom: rem-calc(13);
+    }
+
+    &__text {
+      font-size: rem-calc(12);
+    }
+  }
+}

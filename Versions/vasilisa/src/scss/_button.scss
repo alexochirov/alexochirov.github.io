@@ -1,0 +1,9 @@
+.button {
+  @include breakpoint(medium down) {
+    &_brand {
+      font-size: rem-calc(12);
+      padding-bottom: rem-calc(6);
+      padding-top: rem-calc(6);
+    }
+  }
+}

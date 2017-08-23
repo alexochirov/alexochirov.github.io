@@ -1,0 +1,30 @@
+.lang-panel {
+  background: $menu-background;
+  border: 1px solid $menu-border;
+  color: #ffffff;
+  padding-top: 1rem;
+  text-align: left;
+  top: 90px !important;
+  right: 20px !important;
+  @include breakpoint(medium up) {
+    width: 360px;
+    left: auto !important;
+    right: 10px !important;
+  }
+  .row {
+    margin-top: 1rem;
+    .end {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__item {
+    display: inline-block;
+    @extend .tabs-menu__item;
+  }
+  &__link {
+    @extend .tabs-menu__link;
+    margin-left: 0.5rem;
+    transition: none;
+  }
+}

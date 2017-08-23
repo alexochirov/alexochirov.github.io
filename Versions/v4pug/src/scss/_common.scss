@@ -1,7 +1,123 @@
+body {
+  overflow-x: hidden;
+}
 a {
-  -webkit-transition: color 300ms ease-in-out;
-  -moz-transition: color 300ms ease-in-out;
-  -ms-transition: color 300ms ease-in-out;
-  -o-transition: color 300ms ease-in-out;
-  transition: color 300ms ease-in-out;
+  transition: 270ms ease;
+}
+
+@mixin grey-block {
+  border-top: 1px solid darken($background-grey, 10);
+  border-bottom: 1px solid darken($background-grey, 10);
+  background: $background-grey;
+}
+
+a {
+  color: $accent;
+  &:hover {
+    color: darken($accent,10);
+  }
+}
+
+.button {
+  text-transform: uppercase;
+  border-radius: 3px;
+}
+
+.button-large {
+  font-size: rem-calc(18);
+  line-height: 1;
+  padding: rem-calc(18) rem-calc(35);
+}
+
+.small-centered {
+  @include breakpoint(small only) {
+    text-align: center;
+  }
+}
+
+section {
+  padding: rem-calc(80) 0;
+
+  @include breakpoint(small only) {
+    padding: 3rem 0;
+  }
+}
+
+.mb0 {
+  margin-bottom: 0;
+}
+.mb25 {
+  margin-bottom: rem-calc(25);
+}
+.mb55 {
+  margin-bottom: rem-calc(55);
+}
+.mr8 {
+  margin-right: 0.5rem;
+}
+.mr27   {
+  margin-right: rem-calc(27);
+}
+.ml32 {
+  margin-left: 2rem;
+}
+.pb0 {
+  padding-bottom: rem-calc(0);
+}
+.centered-content {
+  margin: 0 auto;
+}
+.button.hollow {
+  border-radius: 0;
+  color: #ffffff;
+  border-width: 2px;
+  font-weight: 700;
+  &.blue-hollow {
+    border-color: #00a2ff;
+    &:hover, &:focus {
+      background: #00a2ff;
+      color: #ffffff;
+    }
+  }
+  &.green-hollow {
+    border-color: $green;
+    &:hover {
+      background: $green;
+      color: #ffffff;
+    }
+  }
+}
+
+.service-buttons {
+  display: inline-block;
+}
+.round-button {
+  display: inline-block;
+  height: 37px;
+  width: 37px;
+  border-radius: 10em;
+  border: 2px solid #ffffff;
+  &:not(:last-child) {
+    margin-right: 0.5rem;
+  }
+  &:hover, &:focus {
+    border-color: $green;
+  }
+}
+.button-headphones {
+  background: transparent url('../i/icons/headphones.svg') no-repeat 50% 50%;
+  background-size: 50%;
+}
+.button-flag {
+  background: transparent url('../i/icons/RUS.png') no-repeat 50% 50%;
+  background-size: cover;
+}
+.button-exit {
+  background: transparent url('../i/icons/exit.svg') no-repeat 50% 50%;
+  background-size: 50%;
+}
+
+button, input, optgroup, select, textarea
+{
+  font-family: 'Roboto',sans-serif;
 }

@@ -1,0 +1,26 @@
+.subscribe-form {
+  .button {
+    height: 100%;
+    padding: 1.15rem;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    @extend .expanded;
+  }
+  @include breakpoint(medium up) {
+    &__name {
+      border-right: 1px solid $light-gray;
+      border-radius: 5px 0 0 5px;
+    }
+  }
+  @include breakpoint(small only) {
+    border-bottom: 1px solid $light-gray;
+  }
+}
+.green-button {
+  background: $green;
+  &:hover {
+    background: darken($green,10);
+  }
+}

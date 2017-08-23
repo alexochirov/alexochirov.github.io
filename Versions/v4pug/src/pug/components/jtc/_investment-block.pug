@@ -1,0 +1,193 @@
+section.investment-account
+  .row.column
+    h3.investment-account__title Преимущества 
+      br.hide-for-small-only
+      | инвестиционного счета
+    .tabs.tabs_padding.column(data-equalizer data-equalize-on="medium")
+      input#account-opening_real(type='radio', name='tabs')
+      label#account-opening_btn-real(for='account-opening_real', title='Real') для инвесторов
+      input#account-opening_demo(type='radio', name='tabs', checked='')
+      label#account-opening_btn-demo(for='account-opening_demo', title='Demo') для управляющих
+      #content-tab1
+        //- .row.row_margin.text-center
+        .row.text-center
+          .investment-account__col.columns.small-6.medium-3(data-equalizer-watch)
+            img.investment-account__img(src='images/icons/icon-investment-12.svg' alt='')
+            p:span.text-bold Профессиональные
+              br
+              | управляющие
+          .investment-account__col.columns.small-6.medium-3(data-equalizer-watch)
+            img.investment-account__img(src='images/icons/icon-investment-11.svg' alt='')
+            p:span.text-bold Не требует 
+              | специального
+              br
+              | образования
+          .investment-account__col.columns.small-6.medium-3(data-equalizer-watch)
+            img.investment-account__img(src='images/icons/icon-investment-10.svg' alt='')
+            p Вы платите комиссии 
+              br
+              span.text-bold только за результат
+          .investment-account__col.columns.small-6.medium-3(data-equalizer-watch)
+            img.investment-account__img(src='images/icons/icon-investment-9.svg' alt='')
+            p:span.text-bold Доступность: 
+            | Минимальная
+            br 
+            | сумма 100$/100 евро
+            //- .row.text-center
+          .investment-account__col.columns.small-6.medium-4(data-equalizer-watch)
+            img.investment-account__img(src='images/icons/icon-investment-8.svg' alt='')
+            p:span.text-bold Высокая 
+            | доходность
+          .investment-account__col.columns.small-6.medium-4(data-equalizer-watch)
+            img.investment-account__img(src='images/icons/icon-investment-7.svg' alt='')
+            p:span.text-bold Надежность
+          .investment-account__col.columns.small-12.medium-4(data-equalizer-watch)
+            img.investment-account__img(src='images/icons/icon-investment-6.svg' alt='')
+            p:span.text-bold Экономия  
+            | времени
+      #content-tab2
+        //- .row.row_margin.text-center
+        .row.text-center
+          .investment-account__col.columns.small-6.medium-4(data-equalizer-watch)
+            img.investment-account__img(src='images/icons/icon-investment-1.svg' alt='')
+            p:span.text-bold Неограниченное
+            br
+            | количество инвесторов
+          .investment-account__col.columns.small-6.medium-4(data-equalizer-watch)
+            img.investment-account__img(src='images/icons/icon-investment-2.svg' alt='')
+            p Полная 
+              br
+              span.text-bold прозрачность 
+              | сервиса
+          .investment-account__col.columns.small-6.medium-4(data-equalizer-watch)
+            img.investment-account__img(src='images/icons/icon-investment-3.svg' alt='')
+            p:span.text-bold Увеличение капитала 
+            br
+            | в любое время
+            //- .row.text-center
+          .investment-account__col.columns.small-6.medium-5.medium-push-1(data-equalizer-watch)
+            img.investment-account__img(src='images/icons/icon-investment-4.svg' alt='')
+            p:span.text-bold Неограниченная 
+            br
+            | прибыль
+          .investment-account__col.columns.small-12.medium-5.medium-pull-1(data-equalizer-watch)
+            img.investment-account__img(src='images/icons/icon-investment-5.svg' alt='')
+            p Полная 
+              br
+              span.text-bold автоматизированность
+          
+section.investment-scheme-top
+  .row.column
+    h3.investment-scheme-top__title Как это работает
+    p.investment-scheme-top__desc Инвестиционный счет дает возможность инвесторам зарабатывать, 
+      br.hide-for-small-only
+      | торгуя самостоятельно, а управляющим - получать дополнительную прибыль
+      br.hide-for-small-only
+      | управление средствами инвесторов
+    .gradient-line.gradient-line_gray.show-for-xxlarge
+    .columns.small-centered.medium-10.large-8
+      img.hide-for-small-only(src='images/scheme-top.jpg' alt='Схема прибыли инвестора')
+      img.hide-for-medium(src='images/scheme-top-mobile.jpg' alt='Схема прибыли инвестора')
+    .columns.small-centered.medium-10.large-8
+      p.investment-scheme-top__desc.text-center Управляющий продолжает торговать на счете, используя свои собственные средства и средства инвесторов. Чем успешнее деятельность управляющего - тем выше его счет в общем 
+        a(href='') рейтинге счетов.
+    .columns.small-centered.medium-8.large-6
+      img(src='images/scheme-rating.png' alt='Схема прибыли инвестора')
+section.investment-scheme-bottom
+  .row.column
+    .columns.small-centered.large-8.large-centered
+      img.hide-for-small-only(src='images/scheme-bottom.jpg' alt='Схема прибыли управляющего')
+      img.hide-for-medium(src='images/scheme-bottom-mobile.jpg' alt='Схема прибыли управляющего')
+section.investment-strategy
+  .row.column
+    h3.investment-strategy__title Топ 5 стратегий
+    p.investment-strategy__desc Предлагаем 5 самых популярных стратегий
+      br.hide-for-small-only
+      | которые помогут Вам сделать выбор
+    .table-scroll
+      .rating-pamm-table 
+          .rating-pamm-table__caption.hide-for-small-only [ Доходность ]
+          .rating-pamm-table__row
+              each item in ['Стратегия', 'График доходности', 'Всего', 'В месяц', 'Максимальная просадка', 'Средства', 'Возраст, дней', 'Комиссия']
+                  .rating-pamm-table__th= item
+              .rating-pamm-table__th
+                  //- a(href="#").rating-pamm-table__btn-search
+                  //-     i.fa.fa-search(aria-hidden='true')
+                  //- a(href="#").rating-pamm-table__btn-question
+                  //-     i.fa.fa-question(aria-hidden='true')
+          .rating-pamm-table__row
+              .rating-pamm-table__cell
+                  span.text-blue.text-bold Red Dragon
+                  br
+                  |USD
+              .rating-pamm-table__cell
+                  img(src='i/schedule-red-dragon.svg' alt="")
+              .rating-pamm-table__cell
+                  |+15%
+              .rating-pamm-table__cell.text-green
+                  |+1572%
+              each item in ['23.3%', '130700', '18', '25%']
+                  .rating-pamm-table__cell= item
+              .rating-pamm-table__cell
+                  a(href="#").button.button_no-margin.hollow.green-hollow.text-green.rating-pamm-table__btn Инвенстировать
+          .rating-pamm-table__row
+              .rating-pamm-table__cell
+                  span.text-blue.text-bold Poseidon
+                  br
+                  |USD
+              .rating-pamm-table__cell
+                  img(src='i/schedule-poseidon.svg' alt="")
+              .rating-pamm-table__cell
+                  |+11%
+              .rating-pamm-table__cell.text-green
+                  |+1012%
+              each item in ['22.1%', '120500', '12', '25%']
+                  .rating-pamm-table__cell= item
+              .rating-pamm-table__cell
+                  a(href="#").button.button_no-margin.hollow.green-hollow.text-green.rating-pamm-table__btn Инвенстировать
+          .rating-pamm-table__row
+              .rating-pamm-table__cell
+                  span.text-blue.text-bold Ascent
+                  br
+                  |USD
+              .rating-pamm-table__cell
+                  img(src='i/schedule-ascent.svg' alt="")
+              .rating-pamm-table__cell
+                  |+18%
+              .rating-pamm-table__cell.text-green
+                  |+852%
+              each item in ['20.0%', '120320', '11', '25%']
+                  .rating-pamm-table__cell= item
+              .rating-pamm-table__cell
+                  a(href="#").button.button_no-margin.hollow.green-hollow.text-green.rating-pamm-table__btn Инвенстировать
+          .rating-pamm-table__row
+              .rating-pamm-table__cell
+                  span.text-blue.text-bold Forex Empire
+                  br
+                  |USD
+              .rating-pamm-table__cell
+                  img(src='i/schedule-forex-empire.svg' alt="")
+              .rating-pamm-table__cell
+                  |+14%
+              .rating-pamm-table__cell.text-green
+                  |+1252%
+              each item in ['21.0%', '128320', '10', '25%']
+                  .rating-pamm-table__cell= item
+              .rating-pamm-table__cell
+                  a(href="#").button.button_no-margin.hollow.green-hollow.text-green.rating-pamm-table__btn Инвенстировать
+          .rating-pamm-table__row
+              .rating-pamm-table__cell
+                  span.text-blue.text-bold Neural network signals
+                  br
+                  |USD
+              .rating-pamm-table__cell
+                  img(src='i/schedule-neural-network-signals.svg' alt="")
+              .rating-pamm-table__cell
+                  |+11%
+              .rating-pamm-table__cell.text-green
+                  |+1050%
+              each item in ['20.0%', '110320', '8', '25%']
+                  .rating-pamm-table__cell= item
+              .rating-pamm-table__cell
+                  a(href="#").button.button_no-margin.hollow.green-hollow.text-green.rating-pamm-table__btn Инвенстировать
+    a(href='#').top-block-investment__btn.top-block-investment__btn_strategy Посмотреть все стратегии
