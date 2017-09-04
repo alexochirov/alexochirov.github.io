@@ -131,7 +131,7 @@ $(document).foundation();
             $('.x-carousel-news').slick('slickGoTo', index);
         });
 
-        //пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ RetailRocket
+        //клик по гиперссылке RetailRocket
         $(document).on("mousedown", ".js-rrlink", function(e) {
             var item_id = $(this).data("item_id");
             var method_name = $(this).data("method_name");
@@ -141,7 +141,7 @@ $(document).foundation();
             return true;
         });
 
-        //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+        //добавление в корзину
         $(document).on("click", ".js-add2cart", function(e) {
             e.preventDefault();
             var date = new Date(), timestamp = date.getTime();
@@ -159,7 +159,7 @@ $(document).foundation();
                 }
             }).done(function(data){
                 if (data){
-                    $pThis.text("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
+                    $pThis.text("Добавлено");
                 }
             });
         });
@@ -170,7 +170,7 @@ $(document).foundation();
             return false;
         });
 
-        //***********пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ***********************************
+        //***********Плавная прокрутка***********************************
         $(window).scroll(function (){
             if ($(this).scrollTop() > 160){
                 $(".backtotop").fadeIn();
@@ -184,7 +184,7 @@ $(document).foundation();
         });
         //**********************************************
 
-        //пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+        //показ альтернативного изображения в разделах каталога
         $(document).on("mouseenter", ".product-tile", function() {
             if ($(this).find(".js-altimage").size()>0) {
                 $(this).find(".thumbnail").addClass("hide");
@@ -197,8 +197,32 @@ $(document).foundation();
             }
         });
 
-        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+        // стартовое окошко
         var $pWelcome = $(".welcome[data-reveal]");
         if ( $pWelcome.size() > 0 ) $pWelcome.foundation("open");
-    });
+        // for landing-bag.pug
+          var clock;
+          clock = $(".clock").FlipClock({
+            aautoStart: false, // автозапуск
+            language: 'ru-ru'
+          });
+
+      		var target = $(".clock").attr("data-day"); //Дата до которой нужен таймер
+      		var targetDate = Date.parse(target); //Переводим в мил. секунды
+      		var nowDate = Date.now(); //Текущая дата и время в мил. секундах
+      		var time = (targetDate - nowDate) / 1000; //Получаем секунды
+          clock.setTime(time); //Устанавливаем нужное время в секундах
+          clock.setCountdown(true); //Устанавливаем отсчет назад
+          clock.start(); //Запускаем отсчет
+
+          $(".clock").find('a').on('click', function(event) {
+            event.preventDefault();
+            /* Act on the event */
+          });
+
+          });
+          $('.landing-btn-order').on('click', function(event) {
+            event.preventDefault();
+            $(this).text("Оформить заказ");
+          });
 })(jQuery);

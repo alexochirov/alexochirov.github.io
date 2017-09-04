@@ -18,6 +18,15 @@
       font-weight: 300;
       font-size: rem-calc(24);
     }
+
+    &-title {
+      font-weight: 300;
+      font-size: 1.71429rem;
+    }
+
+    &-social {
+      margin-bottom: rem-calc(16);
+    }
   }
   @include breakpoint(large down) {
     &_homepage {

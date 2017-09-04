@@ -27,6 +27,15 @@ $primary-color: $red;
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Open Sans ExtraBold';
+    src: url($fontsPath + '/OpenSansExtraBold.eot');
+    src: url($fontsPath + '/OpenSansExtraBold.eot?#iefix') format('embedded-opentype'),
+    url($fontsPath + '/OpenSansExtraBold.woff') format('woff'),
+    url($fontsPath + '/OpenSansExtraBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
 
 h1 {
     line-height: 1.2;
@@ -291,6 +300,23 @@ figure {
 .text-italic {
     font-style: italic;
 }
+.text {
+  &-line-through {
+    text-decoration: line-through;
+  }
+  &-white {
+    color: white;
+  }
+  &-thin {
+    font-weight: 100;
+  }
+  &-bold {
+    font-weight: bold;
+  }
+  &-upper {
+    text-transform: uppercase;
+  }
+}
 
 
 table .counter {
@@ -319,4 +345,16 @@ table thead tr {
 
 table .description {
     background-color: #f4f4f4;
+}
+.mb0 {
+  margin-bottom: rem-calc(0);
+}
+.mb35 {
+  margin-bottom: rem-calc(35);
+}
+.mb40 {
+  margin-bottom: rem-calc(40);
+}
+.mb45 {
+  margin-bottom: rem-calc(45);
 }

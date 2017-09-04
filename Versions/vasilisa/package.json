@@ -5,7 +5,7 @@
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp",
-    "minify": "minify"
+    "minify": "gulp minify"
   },
   "author": "Denis Sakharov <d.sakharov@ceteralabs.com> (http://cetera.ru/)",
   "license": "UNLICENSED",
@@ -13,6 +13,7 @@
   "dependencies": {
     "browser-sync": "^2.17.5",
     "del": "^2.2.2",
+    "flipclock": "^0.7.8",
     "font-awesome": "~4.5.0",
     "foundation-sites": "~6.2.3",
     "gulp": "^3.9.0",

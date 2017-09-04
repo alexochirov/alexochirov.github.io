@@ -104,6 +104,25 @@
   display: block;
 }
 
+.vote__clothe-cnt {
+  background: white;
+  border: 1px solid #dedede;
+  border-radius: 20px;
+  color: #a52468;
+  font-weight: bold;
+  position: absolute;
+  right: 28px;
+  top: 210px;
+  width: 25px;
+  height: 25px;
+  padding-top: .18rem;
+  z-index: 1;
+}
+
+.vote__clothe-box:hover .vote__clothe-cnt{
+  visibility: hidden;
+}
+
 .vote__title-strong {
   font-size: 33px;
 }
@@ -162,6 +181,7 @@
   background-color: #fff;
   border: 1px solid #e2dddd;
   border-radius: 3px;
+  z-index: 1;
 }
 
 .vote__checkbox:checked + .vote__checkbox-info:before {
@@ -203,5 +223,11 @@
 
   .vote__proposal {
     width: 100%;
+  }
+}
+
+@media (max-width: 730px) {
+  .vote__clothe-cnt {
+    top: 190px;
   }
 }

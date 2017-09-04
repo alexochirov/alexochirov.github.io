@@ -35,7 +35,10 @@
 
   &:hover {
     border: 1px solid $red;
-
+    .product-tile__images
+    {
+      display: block;
+    }
     .product-tile__measure,
     .product-tile__sizes {
       display: block;
@@ -172,6 +175,25 @@
         background-position: center;
       }
     }
+  }
+}
+
+.product-tile__images{
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  left: -49px;
+  width: 49px;
+  border:1px solid #a52468;
+  border-right: 0;
+  padding: 5px 3px 3px 4px;
+  background: #fff;
+  z-index: 5;
+  display: none;
+  ul
+  {
+    list-style-type: none;
+    margin-left: 0;
   }
 }
 

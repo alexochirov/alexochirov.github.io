@@ -7,12 +7,7 @@
     box-shadow: 1px 3px 3px 0 rgba(0, 0, 0, 0.2);
     background: #fff;
 }
-.vertical_zhenskie-slabosti {
-	background: #fff url($imagesPath + "/dir_ww.jpg") no-repeat right bottom;
-	background-size: 230px;
-	min-height: 220px;
-	width:450px;
-}
+
 .vertical_2level {
     padding: 40px 30px 30px;
     min-height: 350px;
@@ -23,7 +18,7 @@
 }
 
 .vertical_singlecol {
-    width: 512px;
+    width: 350px;
 
     .vertical__item {
         width: 100%;
@@ -35,7 +30,7 @@
 }
 
 .vertical_triplecol {
-    width: 860px;
+    width: 660px;
 
     .vertical__item {
         width: 28%;
@@ -79,25 +74,6 @@
     bottom: 13px;
 }
 
-/*
-
-.vertical_woman-clothes {
-    background: #fff url("../images/vertical_woman_link-05-17.jpg") no-repeat right bottom;
-    background-size: 255px;
-    min-height: 330px;
-    background-position-x: 103%;
-}
-
-.vertical_woman-shoes {
-    background: #fff url("../images/dir-woman-shoes-05-17.jpg") no-repeat right bottom;
-    min-height: 270px;
-}
-
-.vertical_woman-acsessorize {
-    background: #fff url("../images/dir-woman-acsessorize-05-17.jpg") no-repeat right bottom;
-    min-height: 270px;
-}
-*/
 .vertical_woman_link {
     position: absolute;
     right: 0;
@@ -105,41 +81,8 @@
     width: 224px;
     height: 370px;
 }
-/*
-.vertical_man {
-    background: #fff url("../images/dir_man.jpg") no-repeat right bottom;
-}
 
-.vertical_man_link {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 305px;
-    height: 310px;
-}
-
-.vertical_household-appliancies-electronics {
-    background: #fff url("../images/dir_tehnika-05-17.jpg") no-repeat right bottom;
-    min-height: 280px;
-	width: 420px;
-}
-
-.vertical_house-garden {
-    background: #fff url("../images/dir_household-05-17.jpg") no-repeat right bottom;
-}
-
-.vertical_beauty-and-health {
-    background: #fff url("../images/dir_parfum-05-17.jpg") no-repeat right bottom;
-    background-size: 230px;
-    min-height: 270px;
-}
-
-.vertical_hits {
-    background: #fff url("../images/dir_hits.jpg") no-repeat right bottom;
-}
-*/
  .vertical_beauty-and-health{
-   background: #fff url($imagesPath + '/dir_parfum-07-17.jpg') no-repeat right bottom ;
     background-size: 230px ;
     width: 512px ;
     min-height: 290px;
@@ -174,6 +117,76 @@
   padding: 0.25rem 0.25rem;
     font-size: rem-calc(13);
     letter-spacing: 0;
+}
+
+.vertical_woman-clothes .menu-main__picture-box {
+  right:8rem
+}
+
+.vertical_woman-shoes .menu-main__picture-box{
+  right:10rem
+}
+
+.vertical_household-appliancies-electronics .menu-main__picture-box{
+  right:13rem
+}
+
+.vertical_house-garden .menu-main__picture-box{
+  right:15rem
+}
+
+.vertical_zhenskie-slabosti .menu-main__picture-box {
+  right: 9rem;
+}
+
+.vertical_zhenskie-slabosti {
+  width: 330px;
+  min-height: 250px;
+}
+
+.vertical_beauty-and-health .vertical__pic {
+  right: -30px;
+  bottom: 80px;
+}
+
+.vertical_beauty-and-health .menu-main__picture-box {
+  right: 14rem;
+  bottom: 3rem;
+}
+
+.vertical_household-appliancies-electronics {
+  min-height: 250px;
+}
+
+.vertical_woman-acsessorize .vertical__pic {
+  right: -90px;
+}
+
+.vertical_woman-acsessorize {
+  min-height: 300px;
+}
+
+.vertical_woman-shoes {
+  min-height: 250px;
+  width: 760px;
+}
+
+.vertical_woman-shoes .vertical__pic {
+  right: -30px;
+  bottom: 45px;
+}
+
+.vertical_woman-clothes .vertical__pic {
+  bottom: 0px;
+}
+
+.vertical_house-garden {
+  width: 880px;
+}
+
+.vertical_woman-shoes .vertical__item {
+  width: 32%;
+  padding-right: 4%;
 }
 
 .vertical-3level {}
