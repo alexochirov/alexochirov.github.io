@@ -7,12 +7,10 @@
         /**
          * Разные карусели
          */
-
-        $(".x-carousel-main").slick({
+        $(".advance").slick({
             infinite: true,
             dots: false,
             arrows: true,
-            slidesPerRow: 1,
             slidesToShow: 1,
             slidesToScroll: 1,
             autoplay: true,
@@ -20,8 +18,8 @@
             autoplayHoverPause: true,
             fade: true,
             swipeToSlide: true,
-            prevArrow: '<i class="slick-prev fa fa-angle-left fa-3x"> </i>',
-            nextArrow: '<i class="slick-next fa fa-angle-right fa-3x"> </i>'
+            prevArrow: '<i class="slick-prev  "> </i>',
+            nextArrow: '<i class="slick-next  "> </i>'
         });
 
         $(".x-carousel-services").slick({

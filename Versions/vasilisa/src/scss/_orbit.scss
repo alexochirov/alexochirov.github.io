@@ -2,6 +2,7 @@
   &-bullets {
     margin-bottom: rem-calc(37);
   }
+
   @include breakpoint(medium down) {
     &-container {
       height: rem-calc(290) !important;
@@ -13,6 +14,9 @@
     }
   }
   @include breakpoint(small only) {
+    &-bullets {
+      display:none;
+    }
     &-container {
       height: rem-calc(285) !important;
     }

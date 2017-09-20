@@ -1,7 +1,7 @@
 .checkout_form {}
 
 .checkout_form__notice {
-  font-size:12px;
+font-size: rem-calc(12);
 }
 
 .checkout-form__delivery-pickpoints {
@@ -15,3 +15,7 @@
 .show-pickpoints .checkout-form__delivery-address {
   display: none;
 }
+  @include breakpoint(medium down) {
+    .checkout_form__notice {
+      font-size: rem-calc(11);
+    } }

@@ -1,45 +1,40 @@
 .orders {
-    padding-top: 2rem;
+  padding-top: 2rem;
+
+  &__date {
+    margin-bottom: rem-calc(7);
+  }
+
+
+  @include breakpoint(small only) {
+    padding-top: rem-calc(0);
+
+    &__address {
+      margin-bottom: rem-calc(8);
+    }
+
+    &__buyer {
+      color: $black;
+    }
 
     &__date {
-        margin-bottom: rem-calc(7);
-    }
-}
-
-.order-line {
-    border-bottom: 1px solid #f2f2f2;
-    margin-bottom: 1rem;
-
-    &:hover {
-        border-bottom-color: $red;
-
-        .label {
-            color: #fff;
-            background: $red;
-        }
+      margin-bottom: rem-calc(0);
     }
 
-    .order-title {
-        color: $black;
-
-        &:hover {
-            color: $red;
-            text-decoration: underline;
-        }
+    &__arrow {
+      &:before {
+        content: "";
+        position: absolute;
+        width: rem-calc(16);
+        margin-top: rem-calc(9);
+        right: rem-calc(0);
+        top: rem-calc(30);
+        height: rem-calc(15);
+        display: inline-block;
+        transform: rotate(180deg);
+        background: url($imagesPath +"/chevron-red.svg")no-repeat center;
+        background-size: contain;
+      }
     }
-
-    a.pay-in {
-        padding-bottom: 2px;
-        border-bottom: 1px dotted $red;
-    }
-
-    .label {
-        color: $red;
-        border: 1px solid $red;
-        background: transparent;
-    }
-}
-
-a.has-tip {
-    cursor: pointer;
+  }
 }

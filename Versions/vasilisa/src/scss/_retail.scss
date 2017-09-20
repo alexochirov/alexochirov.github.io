@@ -1,0 +1,21 @@
+.retail {
+  display: flex;
+  flex-flow: row wrap;
+
+  &__sum {
+    width: 100%;
+    margin-bottom: rem-calc(30);
+  }
+
+  &__info {
+    width: 100%;
+  }
+  @include breakpoint(small only) {
+    &__sum {
+      margin-bottom: rem-calc(14);
+    }
+    &__info {
+      order: 1;
+    }
+  }
+}

@@ -184,6 +184,19 @@
           display: none;
         }
       }
+
+      &_clothes {
+        margin-bottom: rem-calc(0);
+        border-bottom: rem-calc(1) solid #d98db5;
+
+      }
+      &_trade {
+        &:hover {
+          .vertical {
+            display: block;
+          }
+        }
+      }
     }
 
     &__icon {
@@ -195,6 +208,14 @@
         max-width: rem-calc(35);
         max-height: rem-calc(65);
       }
+
+      &_clothes {
+        line-height: rem-calc(60);
+
+        & > img {
+          margin-left: rem-calc(12);
+        }
+      }
     }
 
     &__info {
@@ -203,12 +224,24 @@
       padding-top: rem-calc(18);
       padding-bottom: rem-calc(22);
       width: calc(100% - 57px);
+
+      &_clothes {
+        border-bottom: rem-calc(0);
+        color: $white;
+      }
     }
 
     &__link {
       padding-left: rem-calc(0);
       padding-right: rem-calc(0);
       font-size: rem-calc(16);
+
+      &_clothes {
+        padding-top: rem-calc(0);
+        display: block;
+        height: rem-calc(65);
+        padding-bottom: rem-calc(0);
+      }
     }
   }
 }

@@ -67,7 +67,7 @@ $code-padding: rem-calc(2) rem-calc(5) rem-calc(1) !default;
 // We use these to style anchors
 $anchor-text-decoration: none !default;
 $anchor-text-decoration-hover: none !default;
-$anchor-font-color: #153f93;//$primary-color !default;
+$anchor-font-color: $primary-color !default;
 $anchor-font-color-hover: scale-color($anchor-font-color, $lightness: -14%) !default;
 
 // We use these to style the <hr> element
@@ -123,6 +123,9 @@ $microformat-abbr-padding: rem-calc(0 1) !default;
 // We use this to control abbr font styles
 $microformat-abbr-font-weight: $font-weight-bold !default;
 $microformat-abbr-font-decoration: none !default;
+
+// Controls the page margin when printing the website
+$print-margin: 0.34in !default;
 
 // Text alignment class names
 $align-class-names:
@@ -215,7 +218,7 @@ $align-class-breakpoints:
 
     /* Default Link Styles */
     a {
-      /*color: #525252;*/
+      color: $anchor-font-color;
       line-height: inherit;
       text-decoration: $anchor-text-decoration;
 
@@ -463,5 +466,60 @@ $align-class-breakpoints:
       h5 { font-size: $h5-font-size; }
       h6 { font-size: $h6-font-size; }
     }
+
+    // Only include these styles if you want them.
+    @if $include-print-styles {
+      /*
+       * Print styles.
+       *
+       * Inlined to avoid required HTTP connection: www.phpied.com/delay-loading-your-print-css/
+       * Credit to Paul Irish and HTML5 Boilerplate (html5boilerplate.com)
+      */
+      @media print {
+        * {
+          background: transparent !important;
+          color: $black !important; /* Black prints faster: h5bp.com/s */
+          box-shadow: none !important;
+          text-shadow: none !important;
+        }
+
+        a,
+        a:visited { text-decoration: underline;}
+        a[href]:after { content: " (" attr(href) ")"; }
+
+        abbr[title]:after { content: " (" attr(title) ")"; }
+
+        // Don't show links for images, or javascript/internal links
+        .ir a:after,
+        a[href^="javascript:"]:after,
+        a[href^="#"]:after { content: ""; }
+
+        pre,
+        blockquote {
+          border: 1px solid $aluminum;
+          page-break-inside: avoid;
+        }
+
+        thead { display: table-header-group; /* h5bp.com/t */ }
+
+        tr,
+        img { page-break-inside: avoid; }
+
+        img { max-width: 100% !important; }
+
+        @page { margin: $print-margin; }
+
+        p,
+        h2,
+        h3 {
+          orphans: 3;
+          widows: 3;
+        }
+
+        h2,
+        h3 { page-break-after: avoid; }
+      }
+    }
+
   }
 }

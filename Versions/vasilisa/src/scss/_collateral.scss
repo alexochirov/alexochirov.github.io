@@ -1,0 +1,33 @@
+.collateral {
+  background-color: #f1f3f5;
+  padding-top: rem-calc(50);
+  padding-bottom: rem-calc(50);
+
+  &_white {
+    background: $white;
+  }
+
+  &__want {
+    font-size: rem-calc(30);
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: rem-calc(16);
+  }
+
+  &__unique {
+    margin-bottom: rem-calc(33);
+    font-size: rem-calc(23);
+    font-weight: 300;
+    letter-spacing: rem-calc(1.2);
+  }
+  @include breakpoint(small only) {
+    padding-top: rem-calc(30);
+    padding-bottom: rem-calc(30);
+    &__unique {
+      font-size: rem-calc(19);
+    }
+    &__want {
+      font-size: rem-calc(24);
+    }
+  }
+}

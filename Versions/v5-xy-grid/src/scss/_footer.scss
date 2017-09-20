@@ -1,0 +1,39 @@
+.footer {
+  color: $white;
+
+  &__text {
+    font-size: rem-calc(18);
+    margin-bottom: rem-calc(20);
+    font-weight: 300;
+  }
+
+  &__top {
+    position: relative;
+    margin-bottom: rem-calc(10);
+    padding-left: rem-calc(12);
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: rem-calc(0);
+      top: rem-calc(3);
+      width: rem-calc(2);
+      height: rem-calc(28);
+      background: $white;
+    }
+  }
+  @include breakpoint(small only) {
+    &__text {
+      font-size: rem-calc(15);
+      margin-bottom: rem-calc(20);
+    }
+
+    &__top {
+      padding-left: rem-calc(0);
+
+      &:before {
+        display: none;
+      }
+    }
+  }
+}

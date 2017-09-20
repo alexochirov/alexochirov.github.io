@@ -1,0 +1,60 @@
+.way {
+  background: url($imagesPath +"/way.svg")no-repeat center rem-calc(164);
+  color: $white;
+  margin-bottom: rem-calc(25);
+
+  &__item {
+    padding-top: rem-calc(70);
+    padding-bottom: rem-calc(90);
+
+    &_active {
+      color: $primary-color;
+      position: relative;
+
+      &:after {
+        content: "";
+        right: rem-calc(-40);
+        top: rem-calc(0);
+        width: 100%;
+        height: 95%;
+        background: url($imagesPath +"/triangle.svg")no-repeat center;
+        background-size: contain;
+        position: absolute;
+      }
+
+      .way__round {
+        width: rem-calc(22);
+        height: rem-calc(22);
+        margin-top: rem-calc(-2);
+        background: $primary-color;
+      }
+    }
+  }
+
+  &__letter {
+    font-size: rem-calc(60);
+    margin-bottom: rem-calc(10);
+    font-weight: 700;
+  }
+
+  &__round {
+    width: rem-calc(18);
+    height: rem-calc(18);
+    margin-bottom: rem-calc(17);
+    border-radius: 50%;
+    display: inline-block;
+    background: $white;
+  }
+
+  &__name {
+    font-size: rem-calc(18);
+  }
+    @include breakpoint(medium down) {
+    &__item {
+      &_active {
+        &:after {
+          display:none;
+        }
+      }
+    } }
+}

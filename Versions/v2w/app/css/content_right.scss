@@ -1,0 +1,31 @@
+/* right col */
+
+.b-manuf-item__link {
+  display: block;
+  border: 1px solid $cGray;
+  border-radius: 5px;
+  text-align: center;
+  height: 50px;
+  line-height: 65px;
+  vertical-align: middle;
+  margin: 10px 0;
+  padding: 5px;
+}
+.b-side__link-block {
+  color: $cWhite;
+  display: block;
+  background-color: $cRed;
+  padding: 10px;
+  text-decoration: none;
+  font-family: "Franklin Gothic Medium Cond" $baseFF;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 5px;
+  margin: 15px 0;
+}
+.b-side__link-important {
+  font-size: 36px;
+}
+
+/* end right col */

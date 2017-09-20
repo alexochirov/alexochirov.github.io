@@ -1,0 +1,86 @@
+.bit {
+  margin-bottom: rem-calc(60);
+
+  .slick-arrow {
+    width: rem-calc(14);
+    height: rem-calc(96);
+    background: url($imagesPath +"/arr-short-dark.svg")no-repeat center;
+  }
+
+  .slick-prev {
+    left: rem-calc(-30);
+  }
+
+  .slick-next {
+    right: rem-calc(-30);
+    background: url($imagesPath +"/arr-short-red.svg")no-repeat center;
+  }
+
+  &__slide {
+    padding-left: rem-calc(14);
+    padding-right: rem-calc(14);
+  }
+
+  &__text {
+    font-style: italic;
+    font-size: rem-calc(19);
+    background: $white;
+    position: relative;
+    padding: rem-calc(37) rem-calc(25) rem-calc(40);
+    margin-bottom: rem-calc(30);
+    height: rem-calc(155);
+
+    &:after {
+      content: "";
+      position: absolute;
+      display: block;
+      bottom: rem-calc(-14);
+      transform: rotate(-45deg);
+      left: rem-calc(-10);
+      width: 0;
+      height: 0;
+      border-left: rem-calc(16) solid transparent;
+      border-right: rem-calc(16) solid transparent;
+      border-bottom: rem-calc(16) solid $white;
+    }
+  }
+
+  &__name {
+    margin-bottom: rem-calc(5);
+    font-size: rem-calc(22);
+    font-weight: 600;
+  }
+
+  &__age {
+    text-transform: uppercase;
+    color: $dark-gray;
+    font-size: rem-calc(13);
+  }
+  @media (max-width: 1300px) {
+    padding-left: rem-calc(10);
+    padding-right: rem-calc(10);
+
+    .slick-prev {
+      left: rem-calc(0);
+    }
+
+    .slick-next {
+      right: rem-calc(0);
+    }
+  }
+  @include breakpoint(large down) {
+    &__text {
+      padding-top: rem-calc(10);
+    }
+  }
+  @include breakpoint(medium down) {
+    &__text {
+      height: auto;
+    }
+  }
+  @include breakpoint(small only) {
+    padding-left: rem-calc(0);
+    padding-right: rem-calc(0);
+    margin-bottom: rem-calc(10);
+  }
+}

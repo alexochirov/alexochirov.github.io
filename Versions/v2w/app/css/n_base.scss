@@ -1,0 +1,32 @@
+/* ================================ BASE  */
+
+$baseFF: Arial, Helvetica, Tahoma, sans-serif;
+
+$cWhite: #fff;
+$cRed: #ec3d3f;
+$cDarkRed: #950709;
+$cBlack: #2f2f36;
+$cGray: #c0c0c0;
+$cGrayLine: #d6d6d6;
+$cGreen: #3a9c39;
+$cGrayFont: #999999;
+
+
+
+
+
+@mixin liRedMarker {
+  list-style-image:url('../images/list-marker-red.png');
+  margin-left:16px;
+}
+
+.bmy_outline{
+  //outline: 1px solid $cGrayFont;
+}
+@mixin bmy_outline{
+   //outline: 1px solid $cGrayFont;
+   outline: 1px solid #fff;
+}
+
+
+/* ================================ END BASE  */

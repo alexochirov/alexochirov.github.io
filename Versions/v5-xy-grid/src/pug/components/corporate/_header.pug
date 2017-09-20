@@ -1,15 +1,32 @@
-.background-primary.padding-vertical-6
-    .grid-container: .grid-x.grid-padding-x
-        .cell.auto.text-center.large-text-left
-            a(href='#' title='')
-                img(src='./i/image.svg', style='width: 400px; height: 70px', alt='logo')
-        .small-2.cell.hide-for-medium.align-self-middle.text-center
-            div(data-responsive-toggle='menu', data-hide-for='medium')
-                .text-white(data-toggle)
-                    i.fa.fa-bars.fa-2x
-        .small-12.large-9.cell.align-self-middle#menu
-            .margin-bottom-6.hide-for-large
-            ul.menu-base
-                each title in ['Сайт', 'Магазин', 'СМИ', 'Реклама', 'Мобильные', 'Обучение', 'Конверсия', 'Видеонаблюдение']
-                    li.menu-base__item
-                        a.menu-base__link(href='#')= title
+header.header
+  .grid-container: .grid-x.grid-padding-x
+    .cell.large-2.medium-3.small-6.text-center.large-text-left
+      a(href='#' title='').header__logo
+        img(src='./images/logo.png', alt='logo')
+    .cell.large-3.medium-7.show-for-medium-only.text-center
+      a(href="tel:+74956686394").header__tel.button
+        img(src="./images/phone.png", alt="")
+        | 8 (495) 
+        =" "
+        strong 668-63-94 
+    .small-6.medium-2.cell.hide-for-large.align-self-middle.text-right
+      div(data-responsive-toggle='menu', data-hide-for='large')
+        .header__toggle.text-white(data-toggle)
+          i.fa.fa-bars.fa-2x
+    .cell.large-10
+      .grid-x.grid-padding-x        
+        .small-12.large-9.medium-12.cell.align-self-middle#menu
+          a(href="#").header__search
+            i.fa.fa-search.fa-lg
+          ul.menu-base.text-center.large-text-left
+            each title,index in ['Наши решения', 'Создаем', 'Поддерживаем', 'Развиваем', 'Продвигаем']
+              li.menu-base__item(class=index==0? "active":"")
+                a.menu-base__link(href='#')= title
+          
+        .cell.large-3.medium-7.show-for-large
+          a(href="tel:+74956686394").header__tel.button
+            img(src="./images/phone.png", alt="")
+            | 8 (495) 
+            =" "
+            strong 668-63-94 
+        

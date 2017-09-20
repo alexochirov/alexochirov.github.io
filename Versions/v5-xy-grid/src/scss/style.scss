@@ -14,7 +14,7 @@ $minify: false !default;
   $fontsPath: './fonts';
   $fa-font-path: $fontsPath;
 }
-
+@import "fonts";
 @import "foundation-settings";
 
 @import "font-awesome";
@@ -40,3 +40,11 @@ $minify: false !default;
 @import "sticky-footer";
 @import "text";
 @import "text-size";
+@import "back";
+@import "header";
+@import "button";
+@import "advance";
+@import "way";
+@import "company";
+@import "footer";
+@import "soc";

@@ -78,6 +78,15 @@
   margin-right: rem-calc(5);
 }
 
+.head__item-description {
+  margin-top:5px;
+  margin-bottom: 0;
+  font-size: 11px;
+  line-height: 1;
+  color: #6e6e6e;
+  display: block;
+}
+
 .head__link {
   margin-right: rem-calc(14);
   border-bottom: rem-calc(1) dashed $black;

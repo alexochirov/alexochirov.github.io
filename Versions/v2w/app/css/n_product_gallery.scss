@@ -1,0 +1,288 @@
+/* ================================ PRODCUT GALLERY */
+
+
+
+
+$cWhite: #fff;
+
+$wDetPic:420px;
+$hDetPic:340px;
+
+$whPrevPic: 60px;
+
+
+$wPrevVideo:75px;
+$hPrevVideo:55px;
+
+
+
+
+.n_b-product-image-wrapp {
+  position: relative;
+  //background: darken($cWhite, 10%);
+
+  .n_b-product-image {
+    //background: darken($cWhite, 20%);
+    width: $wDetPic;
+    min-height: $hDetPic;
+    margin-left: $whPrevPic + 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .b-present-image img {
+      max-width: 70px;
+      max-height: 70px;
+      overflow: hidden;
+    }
+    .n_b-product__main_img {
+      cursor: pointer;
+      max-width: $wDetPic - 25px;
+      max-height: $hDetPic;
+    }
+    .b-product_item__status_text{
+      display: none;
+    }
+    .n_b-product_item__status_info{
+      display: none;
+    }
+  }
+
+  //prev img
+  .n_b-product-all-images_center > .slick-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .n_b-product-all-images {
+    position: absolute;
+    left: 0;
+    top: 20px;
+    width: $whPrevPic;
+
+
+    .b-slick-product-images__rotator {
+      margin: 5px 0;
+      outline:none;
+      width: $whPrevPic;
+      height: $whPrevPic;
+      padding: 2px;
+      background: #fff;
+      cursor: pointer;
+      border: 1px solid $cGray;
+      -webkit-border-radius:5px;
+      -moz-border-radius:5px;
+      border-radius:5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .b-slick-rotator__items {
+        img{
+          max-width:$whPrevPic - 3px;
+          max-height:$whPrevPic - 3px;
+
+        }
+      }
+
+    }
+    .b-slick-product-images__rotator.slick_current_main{
+      outline: none;
+      border: 1px solid $cLightBlue !important;
+    }
+
+  }
+  .n_b-product-all-images ~ .b_btn-prev {
+    position: absolute;
+    top: 0;
+    left: 12px;
+    background: url(../images/arrows_slick.png) no-repeat;
+    height: 25px;
+    width: 48px;
+    text-indent: -9999px;
+    overflow: hidden;
+    z-index: 0;
+  }
+  .n_b-product-all-images ~ .b_btn-next {
+    position: absolute;
+    bottom: 0;
+    left: 12px;
+    background: url(../images/arrows_slick.png) no-repeat 0px -25px;
+    height: 25px;
+    width: 48px;
+    text-indent: -9999px;
+    overflow: hidden;
+    z-index: 0;
+  }
+}
+
+//скидка в галерее
+.b-product-image-discount {
+  background: none;
+  width: 90%;
+  height: 60px;
+  padding-top: 30px;
+  position: absolute;
+  top: 232px;
+  left: 52px;
+  z-index: 2;
+
+  .discount_tape{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ec3d3f+20,ec3d3f+80,ffffff+100&0+0,1+10,1+90,0+100 */
+    background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(246,158,159,1) 10%, rgba(236,61,63,1) 20%, rgba(236,61,63,1) 80%, rgba(246,158,159,1) 90%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(246,158,159,1) 10%,rgba(236,61,63,1) 20%,rgba(236,61,63,1) 80%,rgba(246,158,159,1) 90%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(246,158,159,1) 10%,rgba(236,61,63,1) 20%,rgba(236,61,63,1) 80%,rgba(246,158,159,1) 90%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+    height: 3px;
+  }
+
+  .b-product-image-discount-text {
+    -webkit-transform: none;
+    -moz-transform: none;
+    -o-transform: none;
+    -ms-transform: none;
+    transform: none;
+    margin: 0px 0px 0px 0px;
+    color:  $cRed;
+    text-align: center;
+    font-weight: bold;
+    font-size: 36px;
+    width: 100%;
+    background: #fff;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+//prev video
+.b-product-video{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+
+  .n_b-product-all-video_center > .slick-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .n_b-product-all-video{
+    width: 90%;
+
+    .b-slick-product-video__rotator{
+      width: $wPrevVideo + 6px;
+      padding: 0 6px;
+      background: #fff;
+      //display: flex;
+      //justify-content: center;
+      //align-items: center;
+      display: inline-block;
+
+      .b-slick-rotator-video__items{
+        position: relative;
+        .b-slick-rotator-video__play{
+          position: absolute;
+          top: 25%;
+          left: 30%;
+          background: url(../images/product_play.png) no-repeat;
+          height: 30px;
+          width: 30px;
+          text-indent: -9999px;
+          overflow: hidden;
+          z-index: 0;
+          opacity: 0.8;
+          cursor: pointer;
+        }
+        img{
+          max-width:$wPrevVideo;
+          max-height:$hPrevVideo;
+          border-radius: 0;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .n_b-product-all-video ~ .b_btn-prev {
+    position: absolute;
+    top: 6px;
+    left: 0;
+    background: url(../images/arrows_slick.png) no-repeat 0px -57px;
+    height: 45px;
+    width: 20px;
+    text-indent: -9999px;
+    overflow: hidden;
+    z-index: 0;
+  }
+  .n_b-product-all-video ~ .b_btn-next {
+    position: absolute;
+    top: 6px;
+    right: 0;
+    background: url(../images/arrows_slick.png) no-repeat 0px -110px;
+    height: 45px;
+    width: 20px;
+    text-indent: -9999px;
+    overflow: hidden;
+    z-index: 0;
+  }
+}
+
+
+
+
+
+
+/* ================================ END PRODCUT GALLERY */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

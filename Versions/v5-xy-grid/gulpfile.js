@@ -40,7 +40,7 @@ var path = {
         awesome: 'node_modules/font-awesome/fonts/**/*.*'
     },
     watch: {
-        html: ['src/pug/**/*.pug', 'src/pug/**/*.html'],//, 'src/scss/**/*.scss'
+        html: ['src/pug/**/*.pug'],
         js: ['src/js/**/*.js'],
         css: 'src/scss/**/*.scss',
         images: 'src/images/**/*.*',
@@ -92,21 +92,9 @@ var sassFunc = function (minify) {
         }));
 };
 
-// Start browserSync server
-gulp.task('browserSync', function() {
-  browserSync({
-    server: {
-      baseDir: 'dist'
-    }
-  })
-});
-
-
-
-
 gulp.task('sass', ['clean-css'], function () { return sassFunc(false); });
+gulp.task('sassWatch', function () { return sassFunc(false); });
 gulp.task('sassMinify', ['clean-css'], function () { return sassFunc(true); });
-
 
 var pugFunc = function(minify) {
     return gulp.src(path.src.html)
@@ -121,8 +109,17 @@ var pugFunc = function(minify) {
          stream: true
         }));
 };
+// Start browserSync server
+gulp.task('browserSync', function() {
+  browserSync({
+    server: {
+      baseDir: 'dist'
+    }
+  })
+});
 
-gulp.task('pug', ['clean-html'], function () { return pugFunc(false); });
+gulp.task('pug', ['sass', 'clean-html'], function () { return pugFunc(false); });
+gulp.task('pugWatch', function () { return pugFunc(false); });
 gulp.task('pugMinify', ['clean-html', 'sassMinify'], function () { return pugFunc(true); });
 
 gulp.task('images', ['clean-images'], function () {
@@ -139,7 +136,6 @@ gulp.task('images', ['clean-images'], function () {
         }));
 });
 
-
 gulp.task('i', ['clean-i'], function() {
     return gulp.src(path.src.i)
         .pipe(gulp.dest(path.dist.i))
@@ -150,7 +146,10 @@ gulp.task('i', ['clean-i'], function() {
 
 gulp.task('fonts', ['clean-fonts'], function() {
     return gulp.src([path.src.fonts, path.src.awesome])
-        .pipe(gulp.dest(path.dist.fonts));
+        .pipe(gulp.dest(path.dist.fonts))
+        .pipe(browserSync.reload({
+         stream: true
+        }));
 });
 
 gulp.task('js-lib', ['clean-js'], function () {
@@ -179,12 +178,11 @@ gulp.task('js-app-minify', ['clean-js'], function () {
         .pipe(gulp.dest(path.dist.js));
 });
 
-
 gulp.task('minify', ['sassMinify', 'pugMinify', 'images', 'i', 'fonts', 'js-lib', 'js-app-minify']);
 
-gulp.task('default', ['browserSync','sass', 'pug', 'images', 'i', 'fonts', 'js-lib', 'js-app-init'], function () {
-    gulp.watch([path.watch.css], ['sass']);
-    gulp.watch([path.watch.html], ['pug']);
+gulp.task('default', ['sass', 'pug', 'images', 'i', 'fonts', 'js-lib', 'js-app-init','browserSync'], function () {
+    gulp.watch([path.watch.css], ['sassWatch']);
+    gulp.watch([path.watch.html], ['pugWatch']);
     gulp.watch([path.watch.images], ['images']);
     gulp.watch([path.watch.i], ['i']);
     gulp.watch([path.watch.fonts], ['fonts']);

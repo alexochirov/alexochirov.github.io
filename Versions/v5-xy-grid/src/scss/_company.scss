@@ -1,0 +1,31 @@
+.company {
+  color: $white;
+  list-style-type: none;
+  margin-left: rem-calc(0);
+
+  &__item {
+    display: inline-block;
+    margin-right: rem-calc(30);
+    &.active {
+      a {
+  color: $primary-color;
+      }
+    }
+  }
+
+  &__link {
+    font-size: rem-calc(18);
+    font-weight: 700;
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: $primary-color;
+    }
+  }
+    @include breakpoint(medium down) {
+    &__item {
+      margin-right: rem-calc(10);
+      margin-left: rem-calc(10);
+    } }
+}

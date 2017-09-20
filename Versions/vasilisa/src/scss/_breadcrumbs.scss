@@ -1,15 +1,47 @@
 .breadcrumbs {
-    background: transparent;
-    padding-left: 0;
-    padding-right: rem-calc(10);
-    margin-bottom: rem-calc(10);
+  background: transparent;
+  padding-left: 0;
+  padding-right: rem-calc(10);
+  margin-bottom: rem-calc(10);
+
+  li {
+    margin-top: 6px;
+    margin-bottom: 7px;
+
+    &:not(:last-child)::after {
+      color: #555;
+    }
+  }
+  @include breakpoint(small only) {
+    margin-top: rem-calc(5);
+    margin-bottom: rem-calc(5);
+
+    &:before {
+      content: "";
+      position: relative;
+      width: rem-calc(16);
+      margin-top: rem-calc(9);
+      height: rem-calc(15);
+      display: inline-block;
+      float: left;
+      margin-right: rem-calc(14);
+      background: url($imagesPath +"/chevron-red.svg")no-repeat center;
+      background-size: contain;
+    }
 
     li {
-        margin-top: 6px;
-        margin-bottom: 7px;
+      margin-top: rem-calc(3);
+      margin-bottom: rem-calc(3);
+      text-transform: none;
+    
 
-        &:not(:last-child)::after {
-            color: #555;
-        }
+      &:after {
+            font-size: rem-calc(16);
+      }
     }
+
+    a {
+      font-size: rem-calc(16);
+    }
+  }
 }

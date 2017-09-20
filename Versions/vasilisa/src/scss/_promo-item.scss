@@ -1,18 +1,18 @@
 .promo-item {
-  margin-bottom: 20px;
+  margin-bottom: rem-calc(20);
   position: relative;
-  padding-bottom: 50px;
+  padding-bottom: rem-calc(50);
 
   &__img {
-    border: 1px solid #e0e0e0;
-    height: 200px;
+    border: rem-calc(1) solid #e0e0e0;
+    height: rem-calc(200);
     display: block;
+    margin-bottom: rem-calc(21);
     background-size: cover;
     background-position: center;
   }
 
   &__date {
-    text-align: right;
     color: #6e6e6e;
   }
 
@@ -23,7 +23,72 @@
 
   &__more {
     position: absolute;
-    bottom: 5px;
-    right: 5px;
+    bottom: rem-calc(5);
+    right: rem-calc(5);
+  }
+  @include breakpoint(large down) {
+    padding-bottom: rem-calc(30);
+    margin-bottom: rem-calc(0);
+
+    &__img {
+      margin-bottom: rem-calc(11);
+    }
+
+    &__title {
+      margin-bottom: rem-calc(10);
+    }
+
+    &__date {
+      margin-bottom: rem-calc(16);
+      font-size: rem-calc(12);
+    }
+  }
+  @include breakpoint(medium down) {
+    &__more {
+      text-decoration: underline;
+      font-size: rem-calc(13);
+    }
+
+    &__text {
+      font-size: rem-calc(13);
+    }
+
+    &__title {
+      margin-bottom: rem-calc(7);
+      font-size: rem-calc(13);
+    }
+
+    &__date {
+      margin-bottom: rem-calc(13);
+      font-size: rem-calc(11);
+    }
+  }
+  @include breakpoint(small only) {
+padding-bottom: rem-calc(10);
+    &__more {
+      display: none;
+    }
+
+    &__text {
+      color: #000;
+    }
+
+    &__date {
+      font-size: rem-calc(12);
+      margin-bottom: rem-calc(7);
+    }
+
+    &__title {
+      font-size: rem-calc(16);
+      text-transform: uppercase;
+      margin-bottom: rem-calc(9);
+      text-decoration: underline;
+    }
+
+    &__img {
+      margin-left: rem-calc(-10.5);
+      margin-right: rem-calc(-10.5);
+      border: rem-calc(0);
+    }
   }
 }

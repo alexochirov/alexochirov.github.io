@@ -1,44 +1,86 @@
 .special {
-    padding: rem-calc(10);
-    margin-bottom: rem-calc(15);
-    border: rem-calc(1) solid #ccc;
-    @include clearfix;
-    box-shadow: 0 0 rem-calc(10) #ddd;
+  padding: rem-calc(10);
+  margin-bottom: rem-calc(15);
+  border: rem-calc(1) solid #ccc;
+  @include clearfix;
+  box-shadow: 0 0 rem-calc(10) #ddd;
 
-    &:hover {
-        border-color: $red;
+  &:hover {
+    border-color: $red;
+  }
+
+  &__title {
+    color: $red;
+    font-weight: 700;
+  }
+
+  &__img {
+    display: block;
+    max-height: rem-calc(135);
+
+    img {
+      max-height: inherit;
     }
+  }
 
-    &__title {
-        color: $red;
-      font-weight: 700;
+  &__price {
+    font-size: rem-calc(19);
+    font-weight: 700;
+  }
+
+  &__add {
+    i {
+      margin-left: rem-calc(10);
+    }
+  }
+
+  &__more {
+    text-decoration: underline;
+  }
+
+  &__price-old {
+    text-decoration: line-through;
+  }
+  @include breakpoint(large down) {
+    &__add {
+      img {
+        margin-left: rem-calc(5);
+        width: rem-calc(20) !important;
+      }
+    }
+  }
+  @include breakpoint(medium down) {
+    &__add {
+    img {
+      display:none;
+    }
+    }
+  }
+  @include breakpoint(small only) {
+    margin-left: rem-calc(-10.5);
+    padding-bottom: rem-calc(0);
+    margin-right: rem-calc(-10.5);
+    box-shadow: none;
+    border: rem-calc(0);
+    
+
+    &__more {
+      font-size: rem-calc(13);
     }
 
     &__img {
-        display: block;
-        max-height: rem-calc(135);
-
-        img {
-            max-height: inherit;
-        }
-    }
-
-    &__price {
-        font-size: rem-calc(19);
-        font-weight: 700;
+      margin-bottom: rem-calc(19);
     }
 
     &__add {
-        i {
-            margin-left: rem-calc(10);
-        }
+      margin-bottom: rem-calc(3);
+      font-size: rem-calc(12);
+      padding: rem-calc(7) rem-calc(5);
+
     }
 
-    &__more {
-        text-decoration: underline;
+    &__title {
+      font-size: rem-calc(16);
     }
-
-    &__price-old {
-        text-decoration: line-through;
-    }
+  }
 }

@@ -1,0 +1,157 @@
+/* ================================ BEGIN Catalog section  */
+
+
+
+
+
+
+  .product-item_inner_block {
+    border-radius: 6px;
+    padding: 5px 20px 15px 20px
+  }
+
+  @media (min-width: 481px) {
+    .product-item_inner_block {
+      min-height: 400px;
+    }
+  }
+
+  .b-catalog-image-discount {
+    @extend .b-product-image-discount;
+    height: 30px;
+    position: absolute;
+    top: 104px;
+    left: 13px;
+    .b-catalog-image-discount-text {
+      @extend .b-product-image-discount-text;
+      font-size: 14px;
+    }
+  }
+
+
+
+  .b-product-list__accessories {
+    padding: 0;
+
+    .b-product-item__name {
+      font-size: 18px;
+      font-weight: bold;
+      height: 73px;
+      line-height: 18px;
+      width: 110%;
+      margin-left: -10px;
+      margin-top: -10px;
+    }
+    .b-product-item__prices {
+      margin: 10px 0;
+      font-size: 27px;
+      font-weight: bold;
+      height: 55px;
+    }
+    .b-product-item__buy {
+      height: 50px;
+    }
+  }
+
+
+  .b-product-item__buy_button {
+    float: none;
+    width: 100%;
+
+  }
+
+
+
+
+
+
+
+
+
+
+  //добавить к заказу
+  .b-product-item__buy_button {
+    margin: 0px 0px;
+
+    .b-button_buy__add {
+      position: relative;
+      background: transparent;
+      border: none;
+      box-shadow: none;
+      border-radius: 500px;
+      width: 100%;
+      padding: 16px 0px 16px 0px;
+
+      &:before {
+        background: $cRed;
+        border-radius: 500px;
+        content: "";
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 99%;
+        transition: all .2s ease;
+      }
+      &:hover:before {
+        -webkit-transform: scale(1.07);
+        -moz-transform: scale(1.07);
+        -ms-transform: scale(1.07);
+        -o-transform: scale(1.07);
+        transform: scale(1.07);
+      }
+      &:disabled{
+        height: 100%;
+      }
+      &:disabled:before {
+        background: none;
+      }
+      span {
+
+        position: relative;
+        z-index: 1;
+        font-size: 18px;
+        line-height: 18px;
+        padding: 0;
+        background: none;
+
+        text-align: center;
+        display: inline-block;
+        white-space: normal;
+      }
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================================ END Catalog section  */

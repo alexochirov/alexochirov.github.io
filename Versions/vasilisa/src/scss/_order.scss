@@ -9,7 +9,6 @@
 }
 
 .accordion-title {
-
   &:before {
     font-size: rem-calc(1.6rem);
   }
@@ -29,11 +28,13 @@
   .accordion-content {
     border-color: $red;
     background: transparent;
+
     &:last-child {
       border-bottom: 1px solid $red;
     }
   }
 }
+
 .is-active {
   .accordion-title {
     background: $red;
@@ -44,15 +45,15 @@
 .order-header {
   margin-bottom: 0.62rem;
   font-weight: 700;
-
 }
+
 .order-cost {
   font-size: rem-calc(16);
   margin-bottom: 2rem;
   display: inline-block;
   font-weight: 700;
-
 }
+
 .subheader {
   color: $black;
   font-family: 'Open Sans', sans-serif;
@@ -61,14 +62,116 @@
 }
 
 .order__status {
-  border: 1px solid #a52468;
-  color: #a52468;
+  border: 1px solid $primary-color;
+  color: $primary-color;
   border-radius: 10px;
-  padding: .5rem;
+  padding: 0.5rem;
+
+  &:hover {
+    border: rem-calc(1) solid $primary-color;
+    color: #fff;
+    background-color: $primary-color;
+  }
+  @include breakpoint(small only) {
+    border: rem-calc(0);
+    padding: rem-calc(0);
+
+    &:hover {
+      background: none;
+      border: rem-calc(0);
+      color: $primary-color;
+    }
+  }
 }
 
-.order__status:hover {
-  border: 1px solid #a52468;
-  color: #fff;
-  background-color: #a52468;
+.order-line {
+  border-bottom: 1px solid #f2f2f2;
+  margin-bottom: 1rem;
+  padding-bottom: rem-calc(21);
+
+  &_first {
+    padding-bottom: rem-calc(0);
+  }
+
+  &:hover {
+    border-bottom-color: $red;
+
+    .label {
+      color: #fff;
+      background: $red;
+    }
+  }
+
+  .order-title {
+    color: $black;
+
+    &:hover {
+      color: $red;
+      text-decoration: underline;
+    }
+  }
+
+  a.pay-in {
+    padding-bottom: 2px;
+    border-bottom: 1px dotted $red;
+  }
+
+  .label {
+    color: $red;
+    border: 1px solid $red;
+    background: transparent;
+  }
+  @include breakpoint(small only) {
+    line-height: 1.7;
+    font-size: rem-calc(13);
+    color: $dark-gray;
+    border-bottom: rem-calc(0);
+    padding-bottom: rem-calc(0);
+    margin-bottom: rem-calc(12);
+  }
+}
+
+.order-title {
+  @include breakpoint(small only) {
+    display: block;
+    margin-bottom: rem-calc(10);
+    position: relative;
+    padding-right: rem-calc(15);
+    border-bottom: rem-calc(1) solid $dirt;
+
+    &:last-child {
+      border-bottom: rem-calc(0);
+    }
+  }
+}
+
+.order {
+  &__cargo {
+    line-height: 1.6;
+    font-size: rem-calc(17);
+  }
+
+  &__stat {
+    font-size: rem-calc(35);
+    line-height: 1;
+    margin-left: rem-calc(10);
+  }
+  @include breakpoint(medium down) {
+    &__stat {
+      font-size: rem-calc(33);
+    }
+  }
+  @include breakpoint(small only) {
+    &__acc {
+      margin-bottom: rem-calc(13);
+    }
+    &__stat {
+      font-size: rem-calc(18);
+    }
+
+    &__cargo {
+      font-size: rem-calc(18);
+      margin-bottom: rem-calc(8);
+    }
+  }
 }

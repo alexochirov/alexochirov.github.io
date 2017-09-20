@@ -1,0 +1,10 @@
+.pillow {
+  @include breakpoint(medium down) {
+    font-size: rem-calc(13);
+  }
+  @include breakpoint(small only) {
+    &__no {
+      margin-bottom: rem-calc(0);
+    }
+  }
+}

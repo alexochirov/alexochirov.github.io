@@ -1,0 +1,631 @@
+#search-filter.show-for-medium(data-toggler='show-for-medium')
+  .bandage.show-for-small-only
+    .button.secondary.hollow.material(data-toggle='catalog-filter-dropdown-sorting')
+      | Сортировка
+    #bandage-sort.bandage__info.show-for-small-only.text-right по возрастанию цены  
+  .bandage
+    .button.secondary.hollow.material(data-toggle='catalog-filter-dropdown-price')
+      | Цена
+    .bandage__info.show-for-small-only.text-right 1  
+  .bandage
+    .button.secondary.hollow.material(data-toggle='catalog-filter-dropdown-size', data-array='Размер,размера,размера,размера,размеров')
+      | Размер
+    .bandage__info.bandage__info_count.show-for-small-only.text-right
+  .bandage
+    .button.secondary.hollow.material(data-toggle='catalog-filter-dropdown-brand', data-array='Бренд,бренда,бренда,бренда,брендов')
+      | Бренд
+    .bandage__info.bandage__info_count.show-for-small-only.text-right
+  .bandage
+    .button.secondary.hollow.material(data-toggle='catalog-filter-dropdown-material', data-array='Материал,материала,материала,материала,материалов')
+      | Материал
+    .bandage__info.bandage__info_count.show-for-small-only.text-right
+  .bandage
+    .button.secondary.hollow.material(data-toggle='catalog-filter-dropdown-color', data-array='Цвет,цвета,цвета,цвета,цветов')
+      | Цвет
+    .bandage__info.bandage__info_count.show-for-small-only.text-right
+  .bandage
+    .button.secondary.hollow.material(data-toggle='catalog-filter-dropdown-origin', data-array='Сезон,сезона,сезона,сезона,сезонов')
+      | Сезон
+    .bandage__info.bandage__info_count.show-for-small-only.text-right
+  .bandage
+    .button.secondary.hollow.material(data-toggle='catalog-filter-dropdown-pattern', data-array='Узор,узора,узора,узора,узоров')
+      | Узор
+    .bandage__info.bandage__info_count.show-for-small-only.text-right
+  .bandage.js-filter-form.bandage_last
+    label.bandage__last-size.hide-for-small-only
+      input.js-apply-filter(value='1', type='checkbox', name='last_size')
+      | Последний размер -40%
+    .grip.show-for-small-only
+      input.grip__input#grip(type="checkbox")
+      label.grip__label(for="grip") Последний размер
+  .row.small-up-2.show-for-small-only
+    .columns
+      a(href="#").button.expanded.dry Сбросить фильтр    
+    .columns
+      a(href="#").button.expanded Применить
+  .row
+    .pole.pole_thin.show-for-small-only    
+      
+  form.js-filter-form(action='')
+    // скрытые блоки фильтрации
+    #catalog-filter-dropdown-price.dropdown-pane(data-dropdown='', data-hover='true', data-hover-pane='true', data-hover-delay='20')
+      .slider(data-slider='', data-start='199', data-end='6799', data-initial-start='199', data-initial-end='6799')
+        span.slider-handle(data-slider-handle='', role='slider', tabindex='1', aria-controls='sliderOutputStart')
+        span.slider-fill(data-slider-fill='')
+        span.slider-handle(data-slider-handle='', role='slider', tabindex='1', aria-controls='sliderOutputEnd')
+      .row.collapse
+        .small-5.column
+          input#sliderOutputStart(type='number', value='199')
+        .small-2.column.text-center —
+        .small-5.column
+          input#sliderOutputEnd(type='number', value='6799')
+      a.button.expanded.js-apply-filter(href='#') Применить
+    #catalog-filter-dropdown-sorting.text-right.dropdown-pane.dropdown-pane_cut(data-dropdown='', data-hover='true', data-hover-pane='true', data-hover-delay='20')
+      .dropdown-pane__info.dropdown-pane__info_active по возрастанию цены
+      .dropdown-pane__info по убыванию цены
+      .dropdown-pane__info по популярности
+      .dropdown-pane__info по новинкам
+    #catalog-filter-dropdown-size.dropdown-pane(data-dropdown='', data-hover='true', data-hover-pane='true', data-hover-delay='20')
+      .crossbow
+        a.rubber.js-reset-checkbox(href='#', title='Сбросить этот фильтр') Снять выделение
+        label
+          input#size-chbx-0(value='100C', type='checkbox', name='size')
+          | 100C
+        label
+          input#size-chbx-1(value='100D', type='checkbox', name='size')
+          | 100D
+        label
+          input#size-chbx-2(value='100E', type='checkbox', name='size')
+          | 100E
+        label
+          input#size-chbx-3(value='105C', type='checkbox', name='size')
+          | 105C
+        label
+          input#size-chbx-4(value='105D', type='checkbox', name='size')
+          | 105D
+        label
+          input#size-chbx-5(value='2', type='checkbox', name='size')
+          | 2
+        label
+          input#size-chbx-6(value='23-25', type='checkbox', name='size')
+          | 23-25
+        label
+          input#size-chbx-7(value='3', type='checkbox', name='size')
+          | 3
+        label
+          input#size-chbx-8(value='31', type='checkbox', name='size')
+          | 31
+        label
+          input#size-chbx-9(value='35-36', type='checkbox', name='size')
+          | 35-36
+        label
+          input#size-chbx-10(value='36-37', type='checkbox', name='size')
+          | 36-37
+        label
+          input#size-chbx-11(value='37-38', type='checkbox', name='size')
+          | 37-38
+        label
+          input#size-chbx-12(value='38-39', type='checkbox', name='size')
+          | 38-39
+        label
+          input#size-chbx-13(value='39-40', type='checkbox', name='size')
+          | 39-40
+        label
+          input#size-chbx-14(value='4', type='checkbox', name='size')
+          | 4
+        label
+          input#size-chbx-15(value='41-42', type='checkbox', name='size')
+          | 41-42
+        label
+          input#size-chbx-16(value='41-43', type='checkbox', name='size')
+          | 41-43
+        label
+          input#size-chbx-17(value='42', type='checkbox', name='size')
+          | 42
+        label
+          input#size-chbx-18(value='44', type='checkbox', name='size')
+          | 44
+        label
+          input#size-chbx-19(value='44-48', type='checkbox', name='size')
+          | 44-48
+        label
+          input#size-chbx-20(value='46', type='checkbox', name='size')
+          | 46
+        label
+          input#size-chbx-21(value='46-48', type='checkbox', name='size')
+          | 46-48
+        label
+          input#size-chbx-22(value='46-52', type='checkbox', name='size')
+          | 46-52
+        label
+          input#size-chbx-23(value='46-56', type='checkbox', name='size')
+          | 46-56
+        label
+          input#size-chbx-24(value='48', type='checkbox', name='size')
+          | 48
+        label
+          input#size-chbx-25(value='48-50', type='checkbox', name='size')
+          | 48-50
+        label
+          input#size-chbx-26(value='5', type='checkbox', name='size')
+          | 5
+        label
+          input#size-chbx-27(value='50', type='checkbox', name='size')
+          | 50
+        label
+          input#size-chbx-28(value='50-52', type='checkbox', name='size')
+          | 50-52
+        label
+          input#size-chbx-29(value='50-54', type='checkbox', name='size')
+          | 50-54
+        label
+          input#size-chbx-30(value='52', type='checkbox', name='size')
+          | 52
+        label
+          input#size-chbx-31(value='52-54', type='checkbox', name='size')
+          | 52-54
+        label
+          input#size-chbx-32(value='52-56', type='checkbox', name='size')
+          | 52-56
+        label
+          input#size-chbx-33(value='54', type='checkbox', name='size')
+          | 54
+        label
+          input#size-chbx-34(value='54-56', type='checkbox', name='size')
+          | 54-56
+        label
+          input#size-chbx-35(value='56', type='checkbox', name='size')
+          | 56
+        label
+          input#size-chbx-36(value='56-58', type='checkbox', name='size')
+          | 56-58
+        label
+          input#size-chbx-37(value='56-60', type='checkbox', name='size')
+          | 56-60
+        label
+          input#size-chbx-38(value='58', type='checkbox', name='size')
+          | 58
+        label
+          input#size-chbx-39(value='58-60', type='checkbox', name='size')
+          | 58-60
+        label
+          input#size-chbx-40(value='6', type='checkbox', name='size')
+          | 6
+        label
+          input#size-chbx-41(value='60', type='checkbox', name='size')
+          | 60
+        label
+          input#size-chbx-42(value='62', type='checkbox', name='size')
+          | 62
+        label
+          input#size-chbx-43(value='64', type='checkbox', name='size')
+          | 64
+        label
+          input#size-chbx-44(value='66', type='checkbox', name='size')
+          | 66
+        label
+          input#size-chbx-45(value='68', type='checkbox', name='size')
+          | 68
+        label
+          input#size-chbx-46(value='7', type='checkbox', name='size')
+          | 7
+        label
+          input#size-chbx-47(value='70', type='checkbox', name='size')
+          | 70
+        label
+          input#size-chbx-48(value='70D', type='checkbox', name='size')
+          | 70D
+        label
+          input#size-chbx-49(value='75E', type='checkbox', name='size')
+          | 75E
+        label
+          input#size-chbx-50(value='75F', type='checkbox', name='size')
+          | 75F
+        label
+          input#size-chbx-51(value='80C', type='checkbox', name='size')
+          | 80C
+        label
+          input#size-chbx-52(value='80D', type='checkbox', name='size')
+          | 80D
+        label
+          input#size-chbx-53(value='80E', type='checkbox', name='size')
+          | 80E
+        label
+          input#size-chbx-54(value='80F', type='checkbox', name='size')
+          | 80F
+        label
+          input#size-chbx-55(value='80G', type='checkbox', name='size')
+          | 80G
+        label
+          input#size-chbx-56(value='80H', type='checkbox', name='size')
+          | 80H
+        label
+          input#size-chbx-57(value='80I', type='checkbox', name='size')
+          | 80I
+        label
+          input#size-chbx-58(value='80J', type='checkbox', name='size')
+          | 80J
+        label
+          input#size-chbx-59(value='85C', type='checkbox', name='size')
+          | 85C
+        label
+          input#size-chbx-60(value='85D', type='checkbox', name='size')
+          | 85D
+        label
+          input#size-chbx-61(value='85E', type='checkbox', name='size')
+          | 85E
+        label
+          input#size-chbx-62(value='85F', type='checkbox', name='size')
+          | 85F
+        label
+          input#size-chbx-63(value='85G', type='checkbox', name='size')
+          | 85G
+        label
+          input#size-chbx-64(value='85H', type='checkbox', name='size')
+          | 85H
+        label
+          input#size-chbx-65(value='85I', type='checkbox', name='size')
+          | 85I
+        label
+          input#size-chbx-66(value='85J', type='checkbox', name='size')
+          | 85J
+        label
+          input#size-chbx-67(value='90C', type='checkbox', name='size')
+          | 90C
+        label
+          input#size-chbx-68(value='90D', type='checkbox', name='size')
+          | 90D
+        label
+          input#size-chbx-69(value='90E', type='checkbox', name='size')
+          | 90E
+        label
+          input#size-chbx-70(value='90F', type='checkbox', name='size')
+          | 90F
+        label
+          input#size-chbx-71(value='90G', type='checkbox', name='size')
+          | 90G
+        label
+          input#size-chbx-72(value='90H', type='checkbox', name='size')
+          | 90H
+        label
+          input#size-chbx-73(value='90I', type='checkbox', name='size')
+          | 90I
+        label
+          input#size-chbx-74(value='90J', type='checkbox', name='size')
+          | 90J
+        label
+          input#size-chbx-75(value='95C', type='checkbox', name='size')
+          | 95C
+        label
+          input#size-chbx-76(value='95D', type='checkbox', name='size')
+          | 95D
+        label
+          input#size-chbx-77(value='95E', type='checkbox', name='size')
+          | 95E
+        label
+          input#size-chbx-78(value='95F', type='checkbox', name='size')
+          | 95F
+        label
+          input#size-chbx-79(value='95G', type='checkbox', name='size')
+          | 95G
+        label
+          input#size-chbx-80(value='95H', type='checkbox', name='size')
+          | 95H
+        label
+          input#size-chbx-81(value='95I', type='checkbox', name='size')
+          | 95I
+        label
+          input#size-chbx-82(value='L/XL', type='checkbox', name='size')
+          | L/XL
+        label
+          input#size-chbx-83(value='M-L', type='checkbox', name='size')
+          | M-L
+      a.button.expanded.js-apply-filter(href='#') Применить
+    #catalog-filter-dropdown-brand.dropdown-pane(data-dropdown='', data-hover='true', data-hover-pane='true', data-hover-delay='20')
+      input.js-filter-autocomplete(type='text', placeholder='Искать по названию')
+      .crossbow
+        a.rubber.js-reset-checkbox(href='#', title='Сбросить этот фильтр') Снять выделение
+        label(for='color-chbx-809053', data-query='Alona')
+          input#color-chbx-809053(value='809053', type='checkbox', name='brand')
+          |                                                         Alona
+        label(for='color-chbx-810396', data-query='Bazalini')
+          input#color-chbx-810396(value='810396', type='checkbox', name='brand')
+          |                                                         Bazalini
+        label(for='color-chbx-807878', data-query='Calista')
+          input#color-chbx-807878(value='807878', type='checkbox', name='brand')
+          |                                                         Calista
+        label(for='color-chbx-798726', data-query='Conte')
+          input#color-chbx-798726(value='798726', type='checkbox', name='brand')
+          |                                                         Conte
+        label(for='color-chbx-811330', data-query='Conte elegant')
+          input#color-chbx-811330(value='811330', type='checkbox', name='brand')
+          |                                                         Conte elegant
+        label(for='color-chbx-809786', data-query='DEA MIA')
+          input#color-chbx-809786(value='809786', type='checkbox', name='brand')
+          |                                                         DEA MIA
+        label(for='color-chbx-809064', data-query='Dinoel')
+          input#color-chbx-809064(value='809064', type='checkbox', name='brand')
+          |                                                         Dinoel
+        label(for='color-chbx-814800', data-query='Eliseeva Olesya')
+          input#color-chbx-814800(value='814800', type='checkbox', name='brand')
+          |                                                         Eliseeva Olesya
+        label(for='color-chbx-809146', data-query='ELLADA')
+          input#color-chbx-809146(value='809146', type='checkbox', name='brand')
+          |                                                         ELLADA
+        label(for='color-chbx-810413', data-query='Elza')
+          input#color-chbx-810413(value='810413', type='checkbox', name='brand')
+          |                                                         Elza
+        label(for='color-chbx-811428', data-query='Endea')
+          input#color-chbx-811428(value='811428', type='checkbox', name='brand')
+          |                                                         Endea
+        label(for='color-chbx-807493', data-query='FAIBIS')
+          input#color-chbx-807493(value='807493', type='checkbox', name='brand')
+          |                                                         FAIBIS
+        label(for='color-chbx-807488', data-query='FAIBIS zab')
+          input#color-chbx-807488(value='807488', type='checkbox', name='brand')
+          |                                                         FAIBIS zab
+        label(for='color-chbx-807356', data-query='Golden Valley')
+          input#color-chbx-807356(value='807356', type='checkbox', name='brand')
+          |                                                         Golden Valley
+        label(for='color-chbx-810325', data-query='Horosha')
+          input#color-chbx-810325(value='810325', type='checkbox', name='brand')
+          |                                                         Horosha
+        label(for='color-chbx-800018', data-query='Lavira')
+          input#color-chbx-800018(value='800018', type='checkbox', name='brand')
+          |                                                         Lavira
+        label(for='color-chbx-792364', data-query='Lina')
+          input#color-chbx-792364(value='792364', type='checkbox', name='brand')
+          |                                                         Lina
+        label(for='color-chbx-810014', data-query='MILANA')
+          input#color-chbx-810014(value='810014', type='checkbox', name='brand')
+          |                                                         MILANA
+        label(for='color-chbx-792363', data-query='Milana Style')
+          input#color-chbx-792363(value='792363', type='checkbox', name='brand')
+          |                                                         Milana Style
+        label(for='color-chbx-810049', data-query='MILANIKA')
+          input#color-chbx-810049(value='810049', type='checkbox', name='brand')
+          |                                                         MILANIKA
+        label(for='color-chbx-815137', data-query='MISSTYLE')
+          input#color-chbx-815137(value='815137', type='checkbox', name='brand')
+          |                                                         MISSTYLE
+        label(for='color-chbx-800037', data-query='Mondigo Rush')
+          input#color-chbx-800037(value='800037', type='checkbox', name='brand')
+          |                                                         Mondigo Rush
+        label(for='color-chbx-815743', data-query='Palada')
+          input#color-chbx-815743(value='815743', type='checkbox', name='brand')
+          |                                                         Palada
+        label(for='color-chbx-792359', data-query='Palla')
+          input#color-chbx-792359(value='792359', type='checkbox', name='brand')
+          |                                                         Palla
+        label(for='color-chbx-810027', data-query='Pettli Collection')
+          input#color-chbx-810027(value='810027', type='checkbox', name='brand')
+          |                                                         Pettli Collection
+        label(for='color-chbx-815062', data-query='VALERIA')
+          input#color-chbx-815062(value='815062', type='checkbox', name='brand')
+          |                                                         VALERIA
+        label(for='color-chbx-815285', data-query='VERALLY')
+          input#color-chbx-815285(value='815285', type='checkbox', name='brand')
+          |                                                         VERALLY
+        label(for='color-chbx-807934', data-query='Wisell')
+          input#color-chbx-807934(value='807934', type='checkbox', name='brand')
+          |                                                         Wisell
+        label(for='color-chbx-801496', data-query='Анатек')
+          input#color-chbx-801496(value='801496', type='checkbox', name='brand')
+          |                                                         Анатек
+        label(for='color-chbx-808680', data-query='Кариба')
+          input#color-chbx-808680(value='808680', type='checkbox', name='brand')
+          |                                                         Кариба
+        label(for='color-chbx-810518', data-query='Кондра')
+          input#color-chbx-810518(value='810518', type='checkbox', name='brand')
+          |                                                         Кондра
+        label(for='color-chbx-807664', data-query='Лала Стайл')
+          input#color-chbx-807664(value='807664', type='checkbox', name='brand')
+          |                                                         Лала Стайл
+        label(for='color-chbx-809828', data-query='Лори')
+          input#color-chbx-809828(value='809828', type='checkbox', name='brand')
+          |                                                         Лори
+        label(for='color-chbx-814818', data-query='Мария')
+          input#color-chbx-814818(value='814818', type='checkbox', name='brand')
+          |                                                         Мария
+      a.button.expanded.js-apply-filter(href='#') Применить
+    #catalog-filter-dropdown-material.dropdown-pane(data-dropdown='', data-hover='true', data-hover-pane='true', data-hover-delay='20')
+      input.js-filter-autocomplete(type='text', placeholder='Искать по названию')
+      .crossbow
+        a.rubber.js-reset-checkbox(href='#', title='Сбросить этот фильтр') Снять выделение
+        label(for='material-chbx-0', data-query='Акрил')
+          input#material-chbx-0(value='Акрил', type='checkbox', name='material')
+          |                                                         Акрил
+        label(for='material-chbx-1', data-query='Бамбук')
+          input#material-chbx-1(value='Бамбук', type='checkbox', name='material')
+          |                                                         Бамбук
+        label(for='material-chbx-2', data-query='Верблюжья шерсть')
+          input#material-chbx-2(value='Верблюжья шерсть', type='checkbox', name='material')
+          |                                                         Верблюжья шерсть
+        label(for='material-chbx-3', data-query='Вискоза')
+          input#material-chbx-3(value='Вискоза', type='checkbox', name='material')
+          |                                                         Вискоза
+        label(for='material-chbx-4', data-query='Лайкра')
+          input#material-chbx-4(value='Лайкра', type='checkbox', name='material')
+          |                                                         Лайкра
+        label(for='material-chbx-5', data-query='Лен')
+          input#material-chbx-5(value='Лен', type='checkbox', name='material')
+          |                                                         Лен
+        label(for='material-chbx-6', data-query='Мериносная шерсть')
+          input#material-chbx-6(value='Мериносная шерсть', type='checkbox', name='material')
+          |                                                         Мериносная шерсть
+        label(for='material-chbx-7', data-query='Нейлон')
+          input#material-chbx-7(value='Нейлон', type='checkbox', name='material')
+          |                                                         Нейлон
+        label(for='material-chbx-8', data-query='Овечья шерсть')
+          input#material-chbx-8(value='Овечья шерсть', type='checkbox', name='material')
+          |                                                         Овечья шерсть
+        label(for='material-chbx-9', data-query='Пан')
+          input#material-chbx-9(value='Пан', type='checkbox', name='material')
+          |                                                         Пан
+        label(for='material-chbx-10', data-query='Полиакрил')
+          input#material-chbx-10(value='Полиакрил', type='checkbox', name='material')
+          |                                                         Полиакрил
+        label(for='material-chbx-11', data-query='Полиамид')
+          input#material-chbx-11(value='Полиамид', type='checkbox', name='material')
+          |                                                         Полиамид
+        label(for='material-chbx-12', data-query='Полиэстер')
+          input#material-chbx-12(value='Полиэстер', type='checkbox', name='material')
+          |                                                         Полиэстер
+        label(for='material-chbx-13', data-query='Проластан')
+          input#material-chbx-13(value='Проластан', type='checkbox', name='material')
+          |                                                         Проластан
+        label(for='material-chbx-14', data-query='Спандекс')
+          input#material-chbx-14(value='Спандекс', type='checkbox', name='material')
+          |                                                         Спандекс
+        label(for='material-chbx-15', data-query='Хлопок')
+          input#material-chbx-15(value='Хлопок', type='checkbox', name='material')
+          |                                                         Хлопок
+        label(for='material-chbx-16', data-query='Шерсть')
+          input#material-chbx-16(value='Шерсть', type='checkbox', name='material')
+          |                                                         Шерсть
+        label(for='material-chbx-17', data-query='Эластан')
+          input#material-chbx-17(value='Эластан', type='checkbox', name='material')
+          |                                                         Эластан
+      a.button.expanded.js-apply-filter(href='#') Применить
+    #catalog-filter-dropdown-color.dropdown-pane(data-dropdown='', data-hover='true', data-hover-pane='true', data-hover-delay='20')
+      .crossbow
+        a.rubber.js-reset-checkbox(href='#', title='Сбросить этот фильтр') Снять выделение
+        label(for='color-chbx-789612')
+          input#color-chbx-789612(value='789612', type='checkbox', name='color')
+          |                                                         бежевый
+        label(for='color-chbx-789613')
+          input#color-chbx-789613(value='789613', type='checkbox', name='color')
+          |                                                         белый
+        label(for='color-chbx-789637')
+          input#color-chbx-789637(value='789637', type='checkbox', name='color')
+          |                                                         бирюзовый
+        label(for='color-chbx-789627')
+          input#color-chbx-789627(value='789627', type='checkbox', name='color')
+          |                                                         бордовый
+        label(for='color-chbx-811318')
+          input#color-chbx-811318(value='811318', type='checkbox', name='color')
+          |                                                         бронзовый
+        label(for='color-chbx-811321')
+          input#color-chbx-811321(value='811321', type='checkbox', name='color')
+          |                                                         вишня
+        label(for='color-chbx-789614')
+          input#color-chbx-789614(value='789614', type='checkbox', name='color')
+          |                                                         голубой
+        label(for='color-chbx-816039')
+          input#color-chbx-816039(value='816039', type='checkbox', name='color')
+          |                                                         горчичный
+        label(for='color-chbx-789628')
+          input#color-chbx-789628(value='789628', type='checkbox', name='color')
+          |                                                         желтый
+        label(for='color-chbx-789615')
+          input#color-chbx-789615(value='789615', type='checkbox', name='color')
+          |                                                         зеленый
+        label(for='color-chbx-811316')
+          input#color-chbx-811316(value='811316', type='checkbox', name='color')
+          |                                                         коралловый
+        label(for='color-chbx-789616')
+          input#color-chbx-789616(value='789616', type='checkbox', name='color')
+          |                                                         коричневый
+        label(for='color-chbx-811319')
+          input#color-chbx-811319(value='811319', type='checkbox', name='color')
+          |                                                         кофейный
+        label(for='color-chbx-789617')
+          input#color-chbx-789617(value='789617', type='checkbox', name='color')
+          |                                                         красный
+        label(for='color-chbx-798478')
+          input#color-chbx-798478(value='798478', type='checkbox', name='color')
+          |                                                         мятный
+        label(for='color-chbx-789629')
+          input#color-chbx-789629(value='789629', type='checkbox', name='color')
+          |                                                         оранжевый
+        label(for='color-chbx-789619')
+          input#color-chbx-789619(value='789619', type='checkbox', name='color')
+          |                                                         разноцветный
+        label(for='color-chbx-789620')
+          input#color-chbx-789620(value='789620', type='checkbox', name='color')
+          |                                                         розовый
+        label(for='color-chbx-811323')
+          input#color-chbx-811323(value='811323', type='checkbox', name='color')
+          |                                                         салатовый
+        label(for='color-chbx-789621')
+          input#color-chbx-789621(value='789621', type='checkbox', name='color')
+          |                                                         серый
+        label(for='color-chbx-789622')
+          input#color-chbx-789622(value='789622', type='checkbox', name='color')
+          |                                                         синий
+        label(for='color-chbx-811315')
+          input#color-chbx-811315(value='811315', type='checkbox', name='color')
+          |                                                         сиреневый
+        label(for='color-chbx-811320')
+          input#color-chbx-811320(value='811320', type='checkbox', name='color')
+          |                                                         сливовый
+        label(for='color-chbx-811317')
+          input#color-chbx-811317(value='811317', type='checkbox', name='color')
+          |                                                         терракотовый
+        label(for='color-chbx-789624')
+          input#color-chbx-789624(value='789624', type='checkbox', name='color')
+          |                                                         фиолетовый
+        label(for='color-chbx-811314')
+          input#color-chbx-811314(value='811314', type='checkbox', name='color')
+          |                                                         фуксия
+        label(for='color-chbx-811322')
+          input#color-chbx-811322(value='811322', type='checkbox', name='color')
+          |                                                         хаки
+        label(for='color-chbx-789625')
+          input#color-chbx-789625(value='789625', type='checkbox', name='color')
+          |                                                         черный
+      a.button.expanded.js-apply-filter(href='#') Применить
+    #catalog-filter-dropdown-origin.dropdown-pane(data-dropdown='', data-hover='true', data-hover-pane='true', data-hover-delay='20')
+      .crossbow
+        a.rubber.js-reset-checkbox(href='#', title='Сбросить этот фильтр') Снять выделение
+        label(for='base-chbx-12230')
+          input#base-chbx-12230(value='12230', type='checkbox', name='base')
+          |                                                         Лето
+        label(for='base-chbx-12232')
+          input#base-chbx-12232(value='12232', type='checkbox', name='base')
+          |                                                         Демисезон
+        label(for='base-chbx-12253')
+          input#base-chbx-12253(value='12253', type='checkbox', name='base')
+          |                                                         Всесезон
+        label(for='base-chbx-12231')
+          input#base-chbx-12231(value='12231', type='checkbox', name='base')
+          |                                                         Зима
+      a.button.expanded.js-apply-filter(href='#') Применить
+    #catalog-filter-dropdown-pattern.dropdown-pane(data-dropdown='', data-hover='true', data-hover-pane='true', data-hover-delay='20')
+      input.js-filter-autocomplete(type='text', placeholder='Искать по названию')
+      .crossbow
+        a.rubber.js-reset-checkbox(href='#', title='Сбросить этот фильтр') Снять выделение
+        label(for='color-chbx-813339', data-query='Геометрия')
+          input#color-chbx-813339(value='813339', type='checkbox', name='pattern')
+          |                                                                 Геометрия
+        label(for='color-chbx-813343', data-query='Горох')
+          input#color-chbx-813343(value='813343', type='checkbox', name='pattern')
+          |                                                                 Горох
+        label(for='color-chbx-813341', data-query='Другой')
+          input#color-chbx-813341(value='813341', type='checkbox', name='pattern')
+          |                                                                 Другой
+        label(for='color-chbx-813344', data-query='Животные')
+          input#color-chbx-813344(value='813344', type='checkbox', name='pattern')
+          |                                                                 Животные
+        label(for='color-chbx-813345', data-query='Клетка')
+          input#color-chbx-813345(value='813345', type='checkbox', name='pattern')
+          |                                                                 Клетка
+        label(for='color-chbx-813336', data-query='Леопардовый')
+          input#color-chbx-813336(value='813336', type='checkbox', name='pattern')
+          |                                                                 Леопардовый
+        label(for='color-chbx-813337', data-query='Однотонный')
+          input#color-chbx-813337(value='813337', type='checkbox', name='pattern')
+          |                                                                 Однотонный
+        label(for='color-chbx-813340', data-query='Полоска')
+          input#color-chbx-813340(value='813340', type='checkbox', name='pattern')
+          |                                                                 Полоска
+        label(for='color-chbx-813342', data-query='Рисунки и надписи')
+          input#color-chbx-813342(value='813342', type='checkbox', name='pattern')
+          |                                                                 Рисунки и надписи
+        label(for='color-chbx-813985', data-query='Рисунки и принты')
+          input#color-chbx-813985(value='813985', type='checkbox', name='pattern')
+          |                                                                 Рисунки и принты
+        label(for='color-chbx-813338', data-query='Цветочный')
+          input#color-chbx-813338(value='813338', type='checkbox', name='pattern')
+          |                                                                 Цветочный
+      a.button.expanded.js-apply-filter(href='#') Применить

@@ -59,9 +59,11 @@
     padding-top: rem-calc(13);
     font-size: rem-calc(13);
     padding-bottom: rem-calc(0);
+    margin-top: rem-calc(0);
 
     &__white {
       background: $white;
+      border-top: rem-calc(1) solid $dirt;
     }
 
     &__order {

@@ -1,0 +1,32 @@
+doctype html
+html.no-js(lang='ru')
+    include components/service/_head
+    body
+      .back(style="background-image:url(./i/back.png);")
+        include components/corporate/_header
+        include components/common/_advance
+        .grid-container.hide-for-small-only
+          .way
+            .grid-x.grid-padding-x.medium-up-3.text-center
+              .cell.way__item
+                .way__letter K
+                div
+                  .way__round
+                .way__name Компания
+              .cell.way__item.way__item_active
+                .way__letter K
+                div
+                  .way__round
+                .way__name Кейсы и проекты
+              .cell.way__item
+                .way__letter K
+                div
+                  .way__round
+                .way__name Как мы разрабатываем
+            
+        
+        block page
+          
+          
+        include components/corporate/_footer
+        include components/service/_js

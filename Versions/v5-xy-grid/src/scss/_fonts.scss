@@ -1,0 +1,34 @@
+
+@font-face {
+	font-family: 'Proxima Nova';
+	src: url($fontsPath + '/ProximaNova-Light.eot');
+	src: url($fontsPath + '/ProximaNova-Light.eot?#iefix') format('embedded-opentype'),
+		url($fontsPath + '/ProximaNova-Light.woff') format('woff'),
+		url($fontsPath + '/ProximaNova-Light.ttf') format('truetype'),
+		url($fontsPath + '/ProximaNova-Light.svg#ProximaNova-Light') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+font-family: 'Proxima Nova';
+	src: url($fontsPath + '/ProximaNova-Bold.eot');
+	src: url($fontsPath + '/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+		url($fontsPath + '/ProximaNova-Bold.woff') format('woff'),
+		url($fontsPath + '/ProximaNova-Bold.ttf') format('truetype'),
+		url($fontsPath + '/ProximaNova-Bold.svg#ProximaNova-Bold') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima Nova';
+	src: url($fontsPath + '/ProximaNova-Regular.eot');
+	src: url($fontsPath + '/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+		url($fontsPath + '/ProximaNova-Regular.woff') format('woff'),
+		url($fontsPath + '/ProximaNova-Regular.ttf') format('truetype'),
+		url($fontsPath + '/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+$font-proxima: 'Proxima Nova',sans-serif;

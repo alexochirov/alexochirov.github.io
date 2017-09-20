@@ -1,40 +1,11 @@
 .top-line {
-  border-bottom: 1px solid #ddd;
-  font-size: rem-calc(13);
-  padding: .5rem 0;
-  margin-bottom: 1rem;
+
+  @include breakpoint(small only) {
+
+      &-menu{
+        border-bottom: rem-calc(1) solid #d8d8d8;
+      }
+    }
+
+
 }
-
-.top-line__humburger {
-  display: block;
-  padding: 0 0 0.5rem;
-}
-
-.top-line__menu {
-  display: none;
-  padding: 0;
-}
-
-.top-line__contacts {
-  padding: 0;
-  margin: 0;
-  //padding: 1rem 0 0;
-}
-
-@include breakpoint(medium) {
-  .top-line__humburger {
-    display: none;
-  }
-
-  .top-line__menu {
-    margin-top: 0;
-    display: block;
-  }
-}
-
-//@media screen and #{breakpoint(large)} {
-//  .top-line__contacts {
-//    padding: 0;
-//    margin: 0;
-//  }
-//}

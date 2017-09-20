@@ -1,0 +1,258 @@
+
+
+//карточка
+
+
+
+
+@media only screen and (max-width: 490px){
+
+    .b_only_product_cart {
+
+      .b-product-image-col {
+        width: 100% !important;
+
+        .n_b-product-image {
+          width: 80% !important;
+          min-height: 270px !important;
+
+          .n_b-product__main_img{
+            max-width: 100% !important;
+            max-height: 270px !important;
+          }
+        }
+
+
+        .b-product-video {
+          //display: none !important;
+        }
+
+      }
+
+    }
+}
+
+
+
+
+//блок купить
+@media only screen and (max-width: 761px){
+  .i-product_page{
+    .b_only_product_cart {
+      .b-product-buy-col {
+        width: 100% !important;
+
+      }
+    }
+
+  }
+}
+
+
+@media only screen and (max-width: 680px){
+  .b_only_product_cart {
+
+    .b-product__tabs{
+
+      .b-product__tabs_items{
+        .b-product-item__kit_wrapp,
+        .b-product-item__delivery_wrapp,
+        .b-product-item__certificates_wrapp{
+          display: block !important;
+
+        }
+        .b-product-item__certificates {
+          text-align: left !important;
+        }
+      }
+    }
+
+
+  }
+}
+
+
+//баннеры в карточке
+@media only screen and (max-width: 768px) {
+  .b_only_product_cart {
+    .b-product-cart__banners_wrapp{
+      .b-product-cart_banner1, .b-product-cart_banner2{
+        width: 100% !important;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .b_only_product_cart {
+    .b-product-cart__banners_wrapp{
+      .b-product-cart_banner1, .b-product-cart_banner2{
+        a{
+          img{
+            top: 38%  !important;
+            left: 8%  !important;
+            -webkit-transform: scale(0.7) !important;
+            -moz-transform: scale(0.7) !important;
+            -ms-transform: scale(0.7) !important;
+            -o-transform: scale(0.7) !important;
+            transform: scale(0.7) !important;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 560px) and (max-width: 768px) {
+  .b_only_product_cart {
+    .b-product-cart__banners_wrapp{
+      .b-product-cart_banner1, .b-product-cart_banner2{
+        a{
+          img{
+            top: 46%  !important;
+            left: 8%  !important;
+            -webkit-transform: scale(0.9) !important;
+            -moz-transform: scale(0.9) !important;
+            -ms-transform: scale(0.9) !important;
+            -o-transform: scale(0.9) !important;
+            transform: scale(0.9) !important;
+
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 420px) and (max-width: 559px) {
+  .b_only_product_cart {
+    .b-product-cart__banners_wrapp{
+      .b-product-cart_banner1, .b-product-cart_banner2{
+        a{
+          img{
+            top: 36%  !important;
+            left: 3%  !important;
+            -webkit-transform: scale(0.6) !important;
+            -moz-transform: scale(0.6) !important;
+            -ms-transform: scale(0.6) !important;
+            -o-transform: scale(0.6) !important;
+            transform: scale(0.6) !important;
+
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 419px) {
+  .b_only_product_cart {
+    .b-product-cart__banners_wrapp{
+      .b-product-cart_banner1, .b-product-cart_banner2{
+        width: 100% !important;
+        a{
+          img{
+            top: 26% !important;
+            left: 1% !important;
+            -webkit-transform: scale(0.5) !important;
+            -moz-transform: scale(0.5) !important;
+            -ms-transform: scale(0.5) !important;
+            -o-transform: scale(0.5) !important;
+            transform: scale(0.5) !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1000px) {
+    .i-product_page:not(.i-product_popup) .product_title_properties_wrapper {
+      padding: 0 !important;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 958px) and (max-width: 1260px) {
+
+  .b_only_product_cart {
+
+
+
+
+  }
+
+}
+
+
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+
+}

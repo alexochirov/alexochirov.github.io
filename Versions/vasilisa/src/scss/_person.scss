@@ -1,0 +1,49 @@
+.person {
+  &__title {
+    font-size: rem-calc(24);
+    line-height: 1.3;
+  }
+  @include breakpoint(small only) {
+    margin-left: rem-calc(-10.5);
+    margin-right: rem-calc(-10.5);
+    padding-left: rem-calc(0);
+    padding-top: rem-calc(0);
+    padding-bottom: rem-calc(0);
+    border: rem-calc(0);
+    padding-right: rem-calc(0);
+    margin-bottom: rem-calc(38);
+
+    &__title {
+      font-size: rem-calc(17);
+      display: inline-block;
+      background: $white;
+      position: relative;
+      padding-left: rem-calc(12);
+      margin-bottom: rem-calc(8);
+      padding-right: rem-calc(12);
+    }
+
+    &__tel {
+      font-size: rem-calc(16);
+    }
+
+    &__wrapper {
+      padding-left: rem-calc(15);
+      padding-right: rem-calc(15);
+    }
+
+    &__back {
+      position: relative;
+      overflow: hidden;
+
+      &:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        display: block;
+        top: calc(50% - 4px);
+        border-bottom: rem-calc(1) solid $dirt;
+      }
+    }
+  }
+}

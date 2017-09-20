@@ -8,25 +8,25 @@
   height: 24px;
   padding-right: 6px;
   margin-right:0;
-  background: transparent url("../images/icons/star_gray.svg") no-repeat left top;
+  background: transparent url($imagesPath + "/icons/star_gray.svg") no-repeat left top;
 }
 
 .stars__item_hover {
-  background: transparent url("../images/icons/star_active.svg") no-repeat left top;
+  background: transparent url($imagesPath + "/icons/star_active.svg") no-repeat left top;
 }
 
 .stars__item_active {
-  background: transparent url("../images/icons/star_active.svg") no-repeat left top;
+  background: transparent url($imagesPath + "/icons/star_active.svg") no-repeat left top;
 }
 
 .stars__item_empty {
-  background: transparent url("../images/icons/star_empty.svg") no-repeat left top;
+  background: transparent url($imagesPath + "/icons/star_empty.svg") no-repeat left top;
 }
   @include breakpoint(medium down) {
   .stars {
     &__item {
-      width: rem-calc(13);
-      height: rem-calc(12);
+      width: rem-calc(15);
+      height: rem-calc(15);
       background-size: contain;
     }
   } }

@@ -1,22 +1,25 @@
 doctype html
 html.no-js(lang='en')
   include service/_head
-  body
-    block body
-      include mixins/_mixin-block
+  body(data-toggler='js-open')#real-body
+    .body-wrapper(data-toggler='js-open')#body
+      block body
+        include mixins/_mixin-block
 
-      //-include components/shop/_top-line
-      section.top-line-menu
-        include shop/_header
-      .invertor
-        section.main-menu.invertor__menu
-          include shop/_red-line
-        block slider-main  
-          .invertor__slider  
-            include shop/_carousel-main
-      block page
+        //-include components/shop/_top-line
+        block hat
+          section.top-line-menu
+            include shop/_header
+        .invertor
+          section.main-menu.invertor__menu
+            block red-line
+              include shop/_red-line
+          block slider-main  
+            .invertor__slider  
+              include shop/_carousel-main
+        block page
 
 
-      include shop/_footer
+        include shop/_footer
 
     include service/_js.html

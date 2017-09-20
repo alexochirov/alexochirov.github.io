@@ -1,0 +1,114 @@
+/* ================================ FANCYBOX FORM  */
+.b-reg-form{
+	margin-top:20px;
+	width:469px;
+}
+.b-auth-form{
+	width:436px;
+}
+.b-reg-form_line,
+.b-reg-form_line__check{
+	margin-bottom:15px;
+}
+.b-reg-form__title,
+.b-reg-form h2{
+	@include h2Style;
+	color: $cRed;
+	margin-bottom: 30px;
+}
+.b-reg-form h3{
+	font-size:16px;
+	font-weight:bold;
+	margin-top:7px;
+}
+.b-reg-form_left{
+	float: left;
+	text-align: right;
+	width: 113px;
+	margin-right:15px;
+}
+.b-reg-form h3.m-t_0{
+	margin-top:0px;
+}
+.b-reg-form_right{
+	float: left;
+}
+.b-reg__input{
+  @include regTextInput;
+}
+.b-reg__input-descr{
+	margin-top:2px;
+	font-size:11px;
+}
+.b-reg-form_line__check .b-reg-form_left{
+	width:13px;
+	margin-right:5px;
+}
+.b-reg-form_line__check .b-reg-form_left input{
+	margin: 1px 0 0 0;
+}
+.b-reg-form-button{
+	text-align: right;
+	margin-right:15px;
+}
+
+.b-auth-form_left{
+	width:75px;
+}
+p.b-auth__input-descr_link{
+	text-align:right;
+	margin:10px 0 0 0;
+}
+.m-b_5{
+	margin-bottom:5px;
+}
+p.m-0{
+	margin:0px;
+}
+.m-b_10{
+	margin-bottom:10px;
+}
+.b-auth-form_line__check .b-reg-form_left{
+	width:105px;
+}
+.b-button_auth,
+.b-button_reg{
+	padding-top:8px;
+	padding-bottom:8px;
+}
+.b-button_auth{
+	padding-left:21px;
+	padding-right:21px;
+	margin-bottom:10px;
+}
+.b-auth-form-button{
+	margin-right: 20px;
+	margin-top: 20px;
+	margin-bottom: 45px;
+}
+.b-callback__textarea{
+	@include regTextInput;
+	height:185px;
+	resize: none;
+	padding-top:5px;
+}
+.b-callback-form{
+	input[type=text]{
+		@include regTextInput;
+	}
+	textarea{
+		@include regTextInput;
+		height:185px;
+		resize: none;
+		padding-top:5px;
+	}
+}
+.b-button-registration-p {
+	position: relative;
+	left: 0px;
+	top: 8px;
+}
+.registration_p {
+	float: right;
+}
+/* ================================ END FANCYBOX FORM  */

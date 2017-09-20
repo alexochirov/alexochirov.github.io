@@ -37,14 +37,14 @@ html.no-js(lang='en')
 
             #panel2.tabs-panel.is-active.js-usual
               ul#example.tabs.sea(data-tabs='')
-                li.tabs-title.is-active
-                  a(href='#panel11',aria-selected='true') Форекс
+                li.tabs-title
+                  a(href='#panel11') Форекс
                 li.tabs-title
                   a(data-tabs-target='#panel12', href='#panel12') Криптовалюты 
                 li.tabs-title
                   a(data-tabs-target='#panel13', href='#panel13') Металлы
-                li.tabs-title
-                  a(data-tabs-target='#panel14', href='#panel14') CFD на Акции
+                li.tabs-title.is-active
+                  a(data-tabs-target='#panel14', href='#panel14',aria-selected='true') CFD на Акции
                 li.tabs-title
                   a(data-tabs-target='#panel15', href='#panel15') CFD на нефть
                 li.tabs-title
@@ -122,6 +122,16 @@ html.no-js(lang='en')
                   p.coin.mb0
                     strong Рынок драгоценных металлов
                     |  является высокодинамичным и ликвидным, что предоставляет оптимальные условия для получения прибыли. Спрос на благородные металлы обеспечивает не только их промышленное применение, но и использование их инвесторами как инструмента хеджирования риска ослабления доллара. В то же время, рост цен на золото и серебро не создаёт рисков замедления мировой экономики в такой степени, как рост цен на нефть. Это делает вложения в данный вид активов ещё и высоконадёжными. Операции с контрактами на золото и серебро гораздо удобнее, чем непосредственно покупка металла в виде слитков или ювелирных изделий, при этом издержки инвестора значительно ниже, чем даже при вложении в обезличенные металлические счета (ОМС).  
+                #panel14.tabs-panel.js-usual
+                  h3.europe
+                    strong СFD
+                    |  на акции
+                    .country
+                      input.country__input(type="radio",id='z1')
+                      label.country__label(for='z1')
+                        img(src="./images/flag4.svg", alt="")
+                        span.country__name Россия
+  
                     
     include components/jtc/_account-opening_block
 

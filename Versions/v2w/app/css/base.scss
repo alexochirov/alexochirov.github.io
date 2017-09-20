@@ -1,0 +1,271 @@
+/* ================================ BASE  */
+$baseFF: Arial, Helvetica, Tahoma, sans-serif;
+
+$cWhite: #fff;
+$cRed: #ec3d3f;
+$cDarkRed: #950709;
+$cBlack: #2f2f36;
+$cGray: #c0c0c0;
+$cGrayLine: #d6d6d6;
+$cGreen: #3a9c39;
+$cGrayFont: #999999;
+
+@mixin liRedMarker {
+		list-style-image:url('../images/list-marker-red.png');
+		margin-left:16px;
+}
+.b-side-menu__item__link {
+	-webkit-user-select: none;
+	-webkit-touch-callout: none;        
+}
+.b-side-menu__item__link:hover, .b-side-menu__item__link.hover_effect {
+  rule:properties;
+}
+
+body {
+  background: url(../images/logo_girl_birthday_left_bg.png) repeat-y 0 0, url(../images/logo_girl_birthday_right_bg.png) repeat-y right top;
+  background-color: $cWhite;
+  font-family: $baseFF;
+  font-size: 12px;
+  color: $cBlack;
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: underline;
+  color: $cRed;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+table {
+  width: 100%;
+}
+
+textarea{
+	font-family: Arial;
+}
+
+strong, b {
+  font-weight: bold;
+}
+
+input, button {
+  font-family: $baseFF;
+}
+
+
+
+button, input[type="submit"], input[type="button"], input[type="reset"] {
+  cursor: pointer;
+}
+
+hr {
+  border:none;
+  width: 100%;
+  height: 1px;
+  background-color: $cGray;
+  margin: 20px 0 10px 0;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clear {
+  clear: both;
+}
+
+.b-icon {
+  text-indent: -9999px;
+  display: inline-block;
+}
+
+.b-uppercase {
+  text-transform: uppercase;
+}
+
+.b-red {
+  color: $cRed;
+}
+.b-gray {
+  color: $cGray;
+}
+.b-required{
+	color:$cRed;
+}
+.b-required22{
+	font-size:22px;
+	line-height: 12px;
+  vertical-align: bottom;
+}
+.b-mt_7{
+	margin-top:7px;
+}
+.b-mt_4{
+	margin-top:4px;
+}
+
+.hidden,
+.b-hidden{
+	display:none;
+}
+.b-msg_status {
+  background-color: #cdebc6;
+  font-size: 14px;
+  padding: 15px 10px;
+	font-weight:bold;
+  margin: 0 0 10px;
+}
+
+.b-msg_error {
+  background-color: #fd949c;
+  font-size: 14px;
+  padding: 15px 10px;
+  margin: 0 0 10px;
+}
+
+.b-msg_notice {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.b-msg_notice__red {
+  color: #ff1019;
+}
+.b-bank-logos{
+	text-align:center;
+}
+.b-credit-notice{
+	width:410px;
+}
+.b-bank-logos{
+	text-algin:center;
+	.otp{
+		margin-bottom:12px;
+	}
+	.hc{
+		margin-bottom:7px;
+	}
+}
+.b-notice-credit__text{
+	width:410px;
+	p{
+		margin:5px 0;
+	}
+}
+.b-notice-credit__buttons{
+	text-align:center;
+	margin:10px 0;
+}
+.b-spacer_50{
+	height:50px;
+}
+
+/* buttons */
+.b-button {
+  background: $cRed;
+  border-radius: 5px;
+  border: medium none;
+  color: $cWhite;
+  font-size: 14px;
+  padding: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+
+  &:hover {
+    box-shadow: none;
+  }
+  &:active {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6) inset;
+  }
+  &:disabled {
+    background: $cGray;
+    box-shadow: none;
+    cursor: default;
+		padding-left:5px;
+		min-width:95px;
+  }
+}
+.b-button-gray{
+	background: $cGray;
+}
+.b-title-link{
+	color:$cBlack;
+	text-decoration:none;
+	&:hover{
+		color:$cRed;
+	}
+}
+.b-up-btn {
+  display: none;
+  position: fixed;
+  right: 60px;
+  bottom: 90px;
+  width: 60px;
+  height: 75px;
+  background: url('/bitrix/templates/smks_common/images/up.png') center center no-repeat;
+  opacity: .7;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+/*====================== FIXED SEARCH AND CATALOG */
+.b-menu.b-fixed-top-menu {
+  position: fixed;
+  top: 25px;
+  left: 0px;
+  width: 100%;
+  z-index: 100;
+  border-radius: 0px;
+  padding: 12px 0px;
+
+  .b-menu__items {
+    width: 980px;
+    margin: 0px auto;
+  }
+  .b-menu__item {
+    display: none;
+  }
+  .b-search {
+    width: 100%;
+
+    .b-search__input {
+      width: 94.3%;
+    }
+  }
+
+  &.b-fixed-top-menu-second {
+    .b-search {
+      width: 77%;
+
+      .b-search__input {
+        width: 92.7%;
+      }
+    }
+  }
+}
+
+.b-left-col.b-fixed-left-col {
+  .b-side-title {
+    position: fixed;
+    top: 56px;
+    z-index: 110;
+
+    a {
+      color: #ffffff;
+    }
+  }
+}
+
+/* ================================ END BASE  */

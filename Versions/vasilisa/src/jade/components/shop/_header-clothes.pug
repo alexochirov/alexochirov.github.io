@@ -1,0 +1,52 @@
+.row#header.head
+  .small-12.columns.text-center.show-for-small-only
+    a(href='shop-index.html').header__logo
+      img(src='./images/logo.svg' alt='Логотип')
+    .row
+      hr.pole.pole_thin
+  .small-7.hide-for-medium.column
+    a(href='#' title='Меню' data-toggle='body real-body icon-top icon-open', class='menu-icon')
+      img(src="./images/menu-new-icon.svg", alt="",data-toggler="hide")#icon-top
+      img(src="./images/robin.svg", alt="",data-toggler="hide").hide#icon-open
+      .header__cat Одежда      
+  .small-5.medium-3.large-3.column.hide-for-small-only
+    a(href='shop-index.html')
+      img.header-logo-image(src='./images/logo.svg' alt='Логотип')
+    
+    
+      
+  
+  .medium-9.large-9.small-5.column.text-center.medium-text-right.large-text-left.head__wrap
+    ul.head__list.text-left.medium-text-center
+      li.head__item.show-for-small-only.head__item_another
+        a(href="#") 
+          svg(width='16', height='16', viewbox='0 0 1792 1792', xmlns='http://www.w3.org/2000/svg')
+            path(d='M1216 832q0-185-131.5-316.5t-316.5-131.5-316.5 131.5-131.5 316.5 131.5 316.5 316.5 131.5 316.5-131.5 131.5-316.5zm512 832q0 52-38 90t-90 38q-54 0-90-38l-343-342q-179 124-399 124-143 0-273.5-55.5t-225-150-150-225-55.5-273.5 55.5-273.5 150-225 225-150 273.5-55.5 273.5 55.5 225 150 150 225 55.5 273.5q0 220-124 399l343 343q37 37 37 90z')
+
+      li.head__item.hide-for-small-only
+        .phone-num.text-center
+          span.phone-num__top-text с 9 до 20 (МСК)
+          a(href="phone:88002507737").phone-num__link
+            img.head__item-big-icon(src='./images/icons/phone.svg', alt='телефон')
+            |8 (800) 250 77 37
+          span.phone-num__bottom-text Бесплатно для всей России
+      li.head__item
+        .head__vert-middle
+
+          a(href="#")
+            img.head__item-icon(src='./images/icons/black-heart.svg', alt='избранное')
+            span.head__link.hide-for-small-only.hide-for-medium-only Избранное
+            span.counter.hide-for-small-only 5
+      li.head__item
+        .head__vert-middle
+
+          a(href="#")
+            img.head__item-icon(src='./images/icons/shopping-bag.svg', alt='корзина')
+            span.head__link.show-for-large Корзина
+            span.counter.hide-for-small-only 10
+      li.head__item
+        .head__vert-middle
+
+          a(href="#")
+            img.head__item-icon(src='./images/icons/sign-in.svg', alt='корзина')
+            span.head__link.hide-for-small-only Личный кабинет

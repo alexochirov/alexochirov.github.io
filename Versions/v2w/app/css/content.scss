@@ -1,0 +1,142 @@
+/*================================ CONTENT*/
+$centerColWidth: 590px;
+$centerColMargins: 25px;
+$leftColWidth: 200px;
+$rightColWidth: 140px;
+@mixin redArrow {
+	display: inline-block;
+	width: 7px;
+	height: 5px;
+	z-index:200;
+	position:relative;
+}
+@mixin plusIcon {
+	background: url("../images/icons_sprite.png") no-repeat scroll 0 -419px transparent;
+  position: absolute;
+  width: 11px;
+  height: 11px;
+}
+@mixin h2Style {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+@mixin h1Style {
+  font-size: 24px;
+	font-weight: bold;
+	margin: 10px 0;
+}
+@mixin regTextInput {
+	width:316px;
+	height:33px;
+	border:1px solid #FFFFFF;
+	background: #F2F2F2;
+	border-top: 1px solid #B1B1B1;
+	border-radius:7px;
+	padding: 0 5px;
+	font-size:16px;
+}
+.b-red-title{
+		color: $cRed;
+	}
+.b-center-col {
+  float: left;
+  margin: 0 $centerColMargins 40px $leftColWidth + $centerColMargins;
+  width: $centerColWidth;
+  h1 {
+    @include h1Style;
+  }
+  h2 {
+    @include h2Style;
+  }
+  h3 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  h4 {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 7px 0;
+  }
+  p {
+    margin: 15px 0;
+  }
+  ul {
+    margin: 10px 0 10px 15px;
+    li {
+			@include liRedMarker;
+			margin:5px 0px;
+    }
+		li.b-breadcrumb__item{
+			margin:0px 0px;
+		}
+  }
+
+  ol {
+    margin: 10px 0 10px 25px;
+    li {
+      list-style: decimal;
+    }
+  }
+	.b-breadcrumb{
+		ul{
+			margin-left:0px;
+		}
+	}
+
+}
+.b-breadcrumb_chain{
+	position:relative;
+	padding-right:110px;
+}
+.b-breadcrumb__print{
+	display:inline-block;
+	background: url("../images/icons_sprite.png") no-repeat scroll 0px -1075px transparent;
+	padding-left:25px;
+	position:absolute;
+	top:0px;
+	right:0px;
+	height:20px;
+}
+.b-breadcrumb__print_link{
+	color:#9AA3A8;
+}
+
+.b-breadcrumb__item{
+	display: inline-block;
+	padding-right:1px;
+	font-size:11px;
+	color: $cBlack;
+	text-transform:lowercase;
+	font-size:12px;
+}
+.b-breadcrumb__link{
+	color: $cBlack;
+	text-transform:lowercase;
+	font-size:12px;
+	padding-right:1px;
+}
+.b-left-col {
+  float: left;
+  width: $leftColWidth;
+  margin-left: -($centerColWidth + $leftColWidth + $centerColMargins * 2);
+}
+
+.b-right-col {
+  float: right;
+  width: $rightColWidth;
+}
+
+
+
+@import 'content_center';
+
+@import 'content_left';
+
+@import 'content_right';
+
+@import 'content_contacts';
+
+
+
+/*================================ END CONTENT*/

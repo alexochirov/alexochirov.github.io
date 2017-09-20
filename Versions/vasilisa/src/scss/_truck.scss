@@ -1,0 +1,19 @@
+.truck {
+  @include breakpoint(small only) {
+    margin-bottom: rem-calc(0);
+    tbody {
+      border: rem-calc(0);
+    }
+    tr
+    {
+      border-bottom: rem-calc(0);
+    }
+
+
+    &__td {
+padding-left: rem-calc(0);
+padding-bottom: rem-calc(0);
+padding-top: rem-calc(0);
+    }
+  }
+}

@@ -19,7 +19,23 @@ $(document).foundation();
             prevArrow: '<i class="slick-prev"> </i>',
             nextArrow: '<i class="slick-next"> </i>'
         });
-
+        //begin of .bit slider
+        $(".bit").slick({
+            infinite: true,
+            dots: false,
+            arrows: true,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            autoplay: false,
+            autoplaySpeed: 5000,
+            autoplayHoverPause: true,
+            fade: false,
+            swipeToSlide: true,
+            prevArrow: '<div class="slick-prev"> </div>',
+            nextArrow: '<div class="slick-next"> </div>',
+            responsive: [ { breakpoint: 960, settings: { slidesToShow: 1 } }  ]
+        });
+        //end of .bit slider
         //begin of corrector page count (block .hit)
         var allPageCat = $('.corrector__slide').length;
         $('.js-allPageCat').text(allPageCat);
@@ -131,7 +147,7 @@ $(document).foundation();
             $('.x-carousel-news').slick('slickGoTo', index);
         });
 
-        //клик по гиперссылке RetailRocket
+        //пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ RetailRocket
         $(document).on("mousedown", ".js-rrlink", function(e) {
             var item_id = $(this).data("item_id");
             var method_name = $(this).data("method_name");
@@ -141,7 +157,7 @@ $(document).foundation();
             return true;
         });
 
-        //добавление в корзину
+        //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         $(document).on("click", ".js-add2cart", function(e) {
             e.preventDefault();
             var date = new Date(), timestamp = date.getTime();
@@ -159,7 +175,7 @@ $(document).foundation();
                 }
             }).done(function(data){
                 if (data){
-                    $pThis.text("Добавлено");
+                    $pThis.text("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
                 }
             });
         });
@@ -170,7 +186,7 @@ $(document).foundation();
             return false;
         });
 
-        //***********Плавная прокрутка***********************************
+        //***********пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ***********************************
         $(window).scroll(function (){
             if ($(this).scrollTop() > 160){
                 $(".backtotop").fadeIn();
@@ -183,8 +199,52 @@ $(document).foundation();
             return false;
         });
         //**********************************************
+        //begin of .dropdown-pane__info click function - change info and close pane
+        $('.dropdown-pane__info').click(function() {
+          var textCurrent = $(this).text();
+          $('#bandage-sort').text(textCurrent);
 
-        //показ альтернативного изображения в разделах каталога
+          $('.dropdown-pane__info_active').removeClass('dropdown-pane__info_active');
+          $(this).addClass('dropdown-pane__info_active');
+          $(this).closest('.dropdown-pane').foundation('close');
+        });
+         //end of .dropdown-pane__info click function - change info and close pane
+
+        //begin of .sked__btn toggle on click
+        $(".sked__btn_filter").click(function() {
+
+          $(this).toggleClass('js-opened');
+          $(".sked__btn_catalog").removeClass('js-opened');
+          $('#menu-catalog').addClass('hide-for-small-only');
+        });
+
+        $(".sked__btn_catalog").click(function() {
+
+          $(this).toggleClass('js-opened');
+            $(".sked__btn_filter").removeClass('js-opened');
+          $('#search-filter').addClass('show-for-medium');
+        });
+
+         //end of .sked__btn toggle on click
+         //begin of closing pane when .js-apply-filter was clicked and change info on mobile
+         $('.js-apply-filter').click(function() {
+           var $pane = $(this).closest('.dropdown-pane');
+           var idPane = $pane.prop('id');
+           var countCheckbox = $pane.find('input[type="checkbox"]:checked').length;
+           $pane.foundation('close');
+           if (countCheckbox==0) {
+             $('[data-toggle='+ idPane + ']').closest('.bandage').find('.bandage__info_count').text('');
+           }
+           else {
+              $('[data-toggle='+ idPane + ']').closest('.bandage').find('.bandage__info_count').text(countCheckbox);
+           }
+
+
+
+           console.log(idPane);
+         });
+          //end of closing pane when .js-apply-filter was clicked and change info on mobile
+        //пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         $(document).on("mouseenter", ".product-tile", function() {
             if ($(this).find(".js-altimage").size()>0) {
                 $(this).find(".thumbnail").addClass("hide");
@@ -197,23 +257,23 @@ $(document).foundation();
             }
         });
 
-        // стартовое окошко
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
         var $pWelcome = $(".welcome[data-reveal]");
         if ( $pWelcome.size() > 0 ) $pWelcome.foundation("open");
         // for landing-bag.pug
           var clock;
           clock = $(".clock").FlipClock({
-            aautoStart: false, // автозапуск
+            autoStart: false, // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
             language: 'ru-ru'
           });
 
-      		var target = $(".clock").attr("data-day"); //Дата до которой нужен таймер
-      		var targetDate = Date.parse(target); //Переводим в мил. секунды
-      		var nowDate = Date.now(); //Текущая дата и время в мил. секундах
-      		var time = (targetDate - nowDate) / 1000; //Получаем секунды
-          clock.setTime(time); //Устанавливаем нужное время в секундах
-          clock.setCountdown(true); //Устанавливаем отсчет назад
-          clock.start(); //Запускаем отсчет
+      		var target = $(".clock").attr("data-day"); //пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+      		var targetDate = Date.parse(target); //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅ. пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+      		var nowDate = Date.now(); //пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅ. пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+      		var time = (targetDate - nowDate) / 1000; //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+          clock.setTime(time); //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+          clock.setCountdown(true); //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+          clock.start(); //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
           $(".clock").find('a').on('click', function(event) {
             event.preventDefault();
@@ -223,6 +283,6 @@ $(document).foundation();
           });
           $('.landing-btn-order').on('click', function(event) {
             event.preventDefault();
-            $(this).text("Оформить заказ");
+            $(this).text("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ");
           });
 })(jQuery);

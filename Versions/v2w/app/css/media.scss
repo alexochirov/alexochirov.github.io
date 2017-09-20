@@ -1,0 +1,393 @@
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+  body {
+    background: $cWhite;
+  }
+  .b-offer-bar__order {
+    border-radius: 3px;
+    &:after {
+      border: none;
+    }
+  }
+  .b-head__logo {
+    background-size: 100%;
+    width: 40%;
+  }
+  .b-head__icon {
+    display: none;
+  }
+  .b-head__info {
+    max-width: 190px;
+  }
+  .b-head__left {
+    border: none;
+    padding-right: 15px;
+    width: 25%;
+  }
+  .b-head__right {
+    float: left;
+    width: 25%;
+  }
+  .b-phone__code,
+  .b-phone__number {
+    display: inline;
+  }
+  .b-search {
+    width: 32px;
+  }
+  .b-search__input {
+    display: none;
+  }
+  .b-wrapper {
+    width: 100%;
+  }
+  .i-content {
+    padding: 0 5px;
+  }
+  .b-right-col {
+    float: none;
+    width: 100%;
+  }
+  .b-manuf-item__link {
+    display: inline-block;
+    margin-right: 5px;
+  }
+  .b-footer_external {
+    display: none;
+  }
+  .i-footer {
+    overflow: hidden;
+    border-radius: 7px;
+    background: $cBlack;
+  }
+  .b-under-footer {
+    margin: 20px 5px 10px;
+  }
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .b-head__left {
+    margin-left: 15px;
+  }
+  .b-head__right {
+    margin-left: 15px;
+    float: right;
+  }
+	.i-product_page{
+		.b-product-title{
+			width:424px;
+		}
+		.b-product__tabs_head__item_wrap{
+			width:148px;
+		}
+		.b-product-cart__similar_manuf,
+		.b-product-cart__similar_category{
+			width:430px;
+		}
+		.b-product__tabs_head__item_tab{
+			padding:8px 15px;
+		}
+	}
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+
+  .b-menu__item {
+    &:hover {
+      border-radius: 3px;
+      &:after {
+        border: none;
+
+      }
+    }
+  }
+
+  .b-head__left {
+    margin-left: 10px;
+    padding: 0;
+  }
+  .b-head__right {
+    margin-left: 10px;
+    float: right;
+  }
+  .b-center-col {
+    float: none;
+    width: 100%;
+    padding: 0 5px;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .b-rotator_arrows__left {
+    left: 5px;
+  }
+  .b-rotator_arrows__right {
+    right: 5px;
+  }
+  .b-product-list {
+    text-align: center;
+  }
+  .b-product-item {
+    text-align: left;
+  }
+  .b-left-col {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+  }
+  .b-side-menu__item:hover .b-side-menu__item__link {
+    width: 400px;
+  }
+  .b-side-menu__drop-down__menu {
+    padding-top: 50px;
+  }
+
+  .b-news-item img {
+    display: none;
+  }
+  .b-side__link {
+    display: block;
+  }
+  .b-banner__link {
+    margin-right: -5%;
+    img {
+      width: 70%;
+    }
+  }
+  .b-footer_nav_expand {
+    width: 100%;
+    margin: 15px;
+
+    td {
+      vertical-align: top;
+      display: inline-block;
+    }
+  }
+}
+
+@mixin b-search {
+  .b-search {
+    width: 100%;
+    text-align: center;
+    position: relative;
+  }
+  .b-search__input {
+    display: inline;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .b-icon_search {
+    position: absolute;
+    right: 0;
+    top: -2px;
+  }
+	.i-product_page{
+		.b-product__tabs_head__item_wrap-active{
+			background:none;
+		}
+		.b-product__tabs_head__item_wrap:first-child .b-product__tabs_head__item{
+			border-radius:0px;
+			margin-left:0px;
+		}
+		.b-product__tabs_head__item_wrap:last-child .b-product__tabs_head__item{
+			border-radius:0px;
+			margin-right:0px;
+		}
+		.b-product__tabs_head__item{
+			margin:0px;
+		}
+		.b-product__tabs_head__item_wrap{
+		}
+		.b-product__tabs_subhead_line{
+			display:none;
+		}
+		.b-product__tabs_head__item_tab{
+			width:115px;
+		}
+	}
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  $bigRotatorWidth: 460px;
+
+  @include b-search;
+
+  .i-top-toolbar {
+    position: static;
+  }
+  .b-top-toolbar__delim {
+    display: none;
+  }
+  .b-offer-bar__sect_sum {
+    display: none;
+  }
+  .i-head {
+    margin-top: 5px;
+  }
+
+  .b-menu__items .b-menu__item:first-child,
+  .b-menu__item:hover + .b-menu__item {
+    border-left-color: $cRed;
+  }
+  .b-menu__item {
+    max-width: 100%;
+    border-left: none;
+    border: 1px solid $cRed;
+    border-radius: 3px;
+    margin-bottom: 5px;
+  }
+  .b-menu__link {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .b-rotator__wrap {
+    width: $bigRotatorWidth;
+    height: 257px;
+  }
+  .b-rotator__item {
+    width: $bigRotatorWidth;
+    & img {
+      width: $bigRotatorWidth;
+    }
+  }
+  .b-side-menu__drop-down {
+    width: 270px;
+  }
+  .b-side-menu__drop-down__product {
+    display: none;
+  }
+  .b-side-menu__drop-down__menu {
+    border-color: $cGray;
+    border-radius: 3px;
+    padding: 50px 15px 15px;
+  }
+  .b-rotator_small {
+    display: none;
+  }
+	.b-reg-form_left{
+		text-align: left;
+		margin-bottom: 2px;
+	}
+
+/*  .b-footer_nav_expand {
+    td:nth-child(n + 4) {
+      display: none;
+    }
+  }*/
+
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+  @include b-search;
+
+  body {
+    min-width: 400px;
+  }
+  .i-top-toolbar {
+    position: static;
+    height: auto;
+    padding: 5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .b-menu {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .b-head__left {
+    width: 45%;
+  }
+  .b-head__right {
+    float: left;
+    width: 45%;
+  }
+  .b-icon_cart {
+    display: none;
+  }
+  .b-user-bar, .b-offer-bar {
+    float: none;
+    height: auto;
+    width: 100%;
+  }
+  .b-top-toolbar__delim {
+    display: none;
+  }
+  .i-head {
+    margin-top: 5px;
+  }
+
+  .b-head__logo {
+    width: 90%;
+  }
+  .b-icon_actions_iconized {
+    padding-left: 15px;
+  }
+  .b-icon_actions {
+    display: none;
+  }
+  .b-menu__items .b-menu__item:first-child,
+  .b-menu__item:hover + .b-menu__item {
+    border-left-color: $cRed;
+  }
+  .b-menu__item {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    border-left: none;
+    border: 1px solid $cRed;
+    border-radius: 3px;
+    margin-bottom: 5px;
+  }
+  .b-menu__link {
+    display: block;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .b-rotator {
+    display: none;
+  }
+  .b-product-item {
+    width: 170px;
+  }
+  .b-product-item__image {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .b-side-menu__item {
+    &:hover {
+      width: auto;
+      .b-side-menu__drop-down {
+        display: none;
+      }
+    }
+  }
+  .b-side-menu__drop-down__product {
+    display: none;
+  }
+	.b-reg-form_left{
+		text-align: left;
+		margin-bottom: 2px;
+	}
+/*  .b-footer_nav_expand {
+    td:nth-child(n + 3) {
+      display: none;
+    }
+  }*/
+
+}

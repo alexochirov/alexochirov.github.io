@@ -35,10 +35,11 @@
 
   &:hover {
     border: 1px solid $red;
-    .product-tile__images
-    {
+
+    .product-tile__images {
       display: block;
     }
+
     .product-tile__measure,
     .product-tile__sizes {
       display: block;
@@ -118,6 +119,8 @@
   margin-bottom: 1rem;
   overflow: hidden;
   border-bottom: 1px solid transparent;
+  height: 290px;
+  line-height: 20;
 }
 
 .product-tile__buttons {
@@ -178,20 +181,20 @@
   }
 }
 
-.product-tile__images{
+.product-tile__images {
   position: absolute;
   top: -1px;
   bottom: -1px;
   left: -49px;
   width: 49px;
-  border:1px solid #a52468;
+  border: 1px solid #a52468;
   border-right: 0;
   padding: 5px 3px 3px 4px;
   background: #fff;
   z-index: 5;
   display: none;
-  ul
-  {
+
+  ul {
     list-style-type: none;
     margin-left: 0;
   }
@@ -289,18 +292,53 @@
     }
   }
 }
+@include breakpoint(large down) {
+  .product-tile {
+    margin-bottom: rem-calc(25);
+
+    &__wrapper-image {
+      height: rem-calc(250);
+    }
+
+    &__girl {
+      display: block;
+      line-height: rem-calc(0);
+    }
+  }
+}
 @include breakpoint(medium down) {
   .product-tile {
+    &:hover {
+      border-color: transparent;
+    }
+
+    .stars__item {
+      width: rem-calc(17);
+      height: rem-calc(17);
+    }
+
+    &__wrapper-image {
+      border-bottom: rem-calc(0);
+      margin-bottom: rem-calc(6);
+      height: rem-calc(190);
+    }
+
+    &__delete {
+      display: none;
+    }
+
     &__info {
       line-height: 1.25;
+      padding-left: rem-calc(0);
+      padding-right: rem-calc(0);
     }
 
     &__price {
-      font-size: rem-calc(15);
+      font-size: rem-calc(18);
     }
 
     &__name {
-      font-size: rem-calc(12);
+      font-size: rem-calc(14);
     }
 
     &:hover {
@@ -312,16 +350,35 @@
 }
 @include breakpoint(small only) {
   .product-tile {
-  margin-bottom: rem-calc(50);
-    &__wrapper-image {
-      margin-bottom: rem-calc(30);
+
+    margin-bottom: rem-calc(25);
+
+    &:hover {
+      .product-tile__abs,
+      .product-tile__sizes {
+        display: none;
+      }
     }
+
+    &__wrapper-image {
+      margin-bottom: rem-calc(10);
+      height: auto;
+      line-height: initial;
+    }
+&__price {
+  font-size: rem-calc(15);
+}
+    &__abs,
+    &__sizes {
+      display: none;
+    }
+
     &__name {
       font-size: rem-calc(13);
     }
 
     &__thumbnail {
-      max-height: rem-calc(152);
+      max-height: rem-calc(170);
       width: auto;
       display: inline-block;
     }
