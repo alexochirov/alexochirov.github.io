@@ -1,0 +1,33 @@
+.sponsors-club {
+  &__title {
+    color: #808080;
+    background-color: #dcdcdc;
+    text-align: center;
+    padding: rem-calc(9 0 8 0);
+    margin: 0;
+  }
+  &__responsive-embed {
+    margin-bottom: 0;
+    padding-bottom: 50%;
+    @include breakpoint(medium){
+      padding-bottom: 100%;
+    }
+  }
+  &__cell {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width:100%;
+    height: 100%;
+    overflow: hidden;
+    border-right: rem-calc(1) solid #dcdcdc;
+    border-bottom: rem-calc(1) solid #dcdcdc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  & img{
+	height: 90px;
+	width: 100%;
+  }
+}

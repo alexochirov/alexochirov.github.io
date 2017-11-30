@@ -1,17 +1,81 @@
+//  Foundation for Sites Settings
+//  -----------------------------
+//
+//  Table of Contents:
+//
+//   1. Global
+//   2. Breakpoints
+//   3. The Grid
+//   4. Base Typography
+//   5. Typography Helpers
+//   6. Abide
+//   7. Accordion
+//   8. Accordion Menu
+//   9. Badge
+//  10. Breadcrumbs
+//  11. Button
+//  12. Button Group
+//  13. Callout
+//  14. Card
+//  15. Close Button
+//  16. Drilldown
+//  17. Dropdown
+//  18. Dropdown Menu
+//  19. Flexbox Utilities
+//  20. Forms
+//  21. Label
+//  22. Media Object
+//  23. Menu
+//  24. Meter
+//  25. Off-canvas
+//  26. Orbit
+//  27. Pagination
+//  28. Progress Bar
+//  29. Prototype Arrow
+//  30. Prototype Border-Box
+//  31. Prototype Border-None
+//  32. Prototype Bordered
+//  33. Prototype Display
+//  34. Prototype Font-Styling
+//  35. Prototype List-Style-Type
+//  36. Prototype Overflow
+//  37. Prototype Position
+//  38. Prototype Rounded
+//  39. Prototype Separator
+//  40. Prototype Shadow
+//  41. Prototype Sizing
+//  42. Prototype Spacing
+//  43. Prototype Text-Decoration
+//  44. Prototype Text-Transformation
+//  45. Prototype Text-Utilities
+//  46. Responsive Embed
+//  47. Reveal
+//  48. Slider
+//  49. Switch
+//  50. Table
+//  51. Tabs
+//  52. Thumbnail
+//  53. Title Bar
+//  54. Tooltip
+//  55. Top Bar
+//  56. Xy Grid
+
 @import 'util/util';
 
 // 1. Global
 // ---------
 
 $global-font-size: 14px;
-$global-width: rem-calc(1158);
-$global-lineheight: 1.333;
+$global-width: rem-calc(1421);
+$global-lineheight: 1.5;
 $foundation-palette: (
-  primary:  #f04124,
+  primary: #002e54,
+  accent: #ff0000,
+  dark-accent: #9d231f,
   secondary: #777,
   success: #389188,
   warning: #ffae00,
-  alert: #cc4b37,
+  alert: #ff0000,
   light-gray: #e6e6e6,
   medium-gray: #cacaca,
   dark-gray: #8a8a8a,
@@ -22,7 +86,12 @@ $foundation-palette: (
   twi: #2FA4CC,
   ok: #FC6719,
   insta: #000000,
-  gp: #DB4437
+  gp: #DB4437,
+  hk: #eeeeee,
+  blue: #002e54,
+  red: #ff0000,
+  dark-red: #e34a2c,
+  dark-red2: #a93f2a
 );
 $light-gray: map-get($foundation-palette, light-gray);
 $medium-gray: map-get($foundation-palette, medium-gray);
@@ -31,7 +100,8 @@ $black: map-get($foundation-palette, black);
 $white: map-get($foundation-palette, white);
 $body-background: $white;
 $body-font-color: $black;
-$body-font-family: $font-proxima;
+// $body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$body-font-family: $font-pt-sans-regular;
 $body-antialiased: true;
 $global-margin: 0.25rem;
 $global-padding: 0.25rem;
@@ -44,7 +114,6 @@ $global-menu-nested-margin: 1rem;
 $global-text-direction: ltr;
 $global-flexbox: true;
 $global-prototype-breakpoints: false;
-$global-button-cursor: auto;
 $global-color-pick-contrast-tolerance: 0;
 $print-transparent-backgrounds: true;
 
@@ -61,7 +130,7 @@ $breakpoints: (
   xxlarge: 1440px,
 );
 $print-breakpoint: large;
-$breakpoint-classes: (small medium large);
+$breakpoint-classes: (small medium large xlarge xxlarge);
 
 // 3. The Grid
 // -----------
@@ -69,8 +138,8 @@ $breakpoint-classes: (small medium large);
 $grid-row-width: $global-width;
 $grid-column-count: 12;
 $grid-column-gutter: (
-  small: rem-calc(20),
-  medium: rem-calc(20),
+  small: 1.5rem,
+  medium: 1.5rem,
 );
 $grid-column-align-edge: true;
 $grid-column-alias: 'columns';
@@ -88,17 +157,17 @@ $header-lineheight: 1.4;
 $header-margin-bottom: 6 * $global-margin;
 $header-styles: (
   small: (
-    'h1': ('font-size': 32),
-    'h2': ('font-size': 28),
-    'h3': ('font-size': 20),
+    'h1': ('font-size': 32, 'margin-bottom': 0),
+    'h2': ('font-size': 24),
+    'h3': ('font-size': 18),
     'h4': ('font-size': 18),
     'h5': ('font-size': 16),
     'h6': ('font-size': 14),
   ),
   medium: (
-    'h1': ('font-size': 35),
-    'h2': ('font-size': 30),
-    'h3': ('font-size': 20),
+    'h1': ('font-size': 35, 'margin-bottom': 28),
+    'h2': ('font-size': 24, 'margin-bottom': 27),
+    'h3': ('font-size': 18, 'margin-bottom': 32),
     'h4': ('font-size': 18),
     'h5': ('font-size': 16),
     'h6': ('font-size': 14),
@@ -107,8 +176,8 @@ $header-styles: (
 $header-text-rendering: optimizeLegibility;
 $small-font-size: 80%;
 $header-small-font-color: $medium-gray;
-$paragraph-lineheight: $global-lineheight;
-$paragraph-margin-bottom: 6 * $global-margin;
+$paragraph-lineheight: 1.14;
+$paragraph-margin-bottom: 8.56 * $global-margin;
 $paragraph-text-rendering: optimizeLegibility;
 $code-color: $black;
 $code-font-family: $font-family-monospace;
@@ -116,7 +185,7 @@ $code-font-weight: $global-weight-normal;
 $code-background: $light-gray;
 $code-border: 1px solid $medium-gray;
 $code-padding: rem-calc(2 5 1);
-$anchor-color: $white;
+$anchor-color: $primary-color;
 $anchor-color-hover: scale-color($anchor-color, $lightness: -30%);
 $anchor-text-decoration: none;
 $anchor-text-decoration-hover: none;
@@ -132,9 +201,9 @@ $list-nested-side-margin: 1.25rem;
 $defnlist-margin-bottom: 6 * $global-margin;
 $defnlist-term-weight: $global-weight-bold;
 $defnlist-term-margin-bottom: 0.3rem;
-$blockquote-color: $dark-gray;
+$blockquote-color: #b3b3b3;
 $blockquote-padding: 0 1rem;
-$blockquote-border: rem-calc(2) solid map-get($foundation-palette, primary);
+$blockquote-border: rem-calc(2) solid #b3b3b3;
 $cite-font-size: rem-calc(13);
 $cite-color: $dark-gray;
 $cite-pseudo-content: '\2014 \0020';
@@ -220,7 +289,7 @@ $breadcrumbs-item-color-disabled: $medium-gray;
 $breadcrumbs-item-margin: 0.75rem;
 $breadcrumbs-item-uppercase: true;
 $breadcrumbs-item-separator: true;
-$breadcrumbs-item-separator-item: '/';
+$breadcrumbs-item-separator-item: '|';
 $breadcrumbs-item-separator-item-rtl: '\\';
 $breadcrumbs-item-separator-color: $medium-gray;
 
@@ -228,20 +297,20 @@ $breadcrumbs-item-separator-color: $medium-gray;
 // ----------
 
 $button-font-family: inherit;
-$button-padding: rem-calc(15 25 16);
+$button-padding: 0.83rem;
 $button-margin: 0 0 6 * $global-margin 0;
 $button-fill: solid;
 $button-background: $primary-color;
 $button-background-hover: scale-color($button-background, $lightness: -15%);
 $button-color: $white;
 $button-color-alt: $black;
-$button-radius: rem-calc(25);
-$button-hollow-border-width: 2px;
+$button-radius: $global-radius;
+$button-hollow-border-width: 1px;
 $button-sizes: (
   tiny: 0.6rem,
   small: 0.75rem,
-  default: rem-calc(18),
-  large: rem-calc(30),
+  default: 0.9rem,
+  large: 1.25rem,
 );
 $button-palette: $foundation-palette;
 $button-opacity-disabled: 0.25;
@@ -335,18 +404,20 @@ $dropdown-sizes: (
 // -----------------
 
 $dropdownmenu-arrows: true;
-$dropdownmenu-arrow-color: $anchor-color;
-$dropdownmenu-arrow-size: 6px;
+$dropdownmenu-arrow-color: get-color(white);
+$dropdownmenu-arrow-size: 0;
 $dropdownmenu-arrow-padding: 1.5rem;
-$dropdownmenu-min-width: 200px;
+$dropdownmenu-min-width: rem-calc(240);
 $dropdownmenu-background: $white;
-$dropdownmenu-submenu-background: $dropdownmenu-background;
-$dropdownmenu-padding: $global-menu-padding;
+$dropdownmenu-submenu-background: #003478;
+$dropdownmenu-padding: rem-calc(32 15 32 15);
 $dropdownmenu-nested-margin: 0;
-$dropdownmenu-submenu-padding: $dropdownmenu-padding;
-$dropdownmenu-border: 1px solid $medium-gray;
-$dropdown-menu-item-color-active: get-color(primary);
-$dropdown-menu-item-background-active: transparent;
+$dropdownmenu-submenu-padding: rem-calc(0 21 0 21);
+$dropdownmenu-border: none;
+// $dropdown-menu-item-color-active: get-color(primary);
+$dropdown-menu-item-color-active: get-color(white);
+// $dropdown-menu-item-background-active: transparent;
+$dropdown-menu-item-background-active:  map-get($foundation-palette, red);
 
 // 19. Flexbox Utilities
 // ---------------------
@@ -427,7 +498,6 @@ $menu-icon-spacing: 0.25rem;
 $menu-item-background-hover: $light-gray;
 $menu-state-back-compat: true;
 $menu-centered-back-compat: true;
-$menu-icons-back-compat: true;
 
 // 24. Meter
 // ---------
@@ -442,12 +512,8 @@ $meter-fill-bad: $alert-color;
 // 25. Off-canvas
 // --------------
 
-$offcanvas-sizes: (
-  small: 250px,
-);
-$offcanvas-vertical-sizes: (
-  small: 250px,
-);
+$offcanvas-size: 250px;
+$offcanvas-vertical-size: 250px;
 $offcanvas-background: $light-gray;
 $offcanvas-shadow: 0 0 10px rgba($black, 0.7);
 $offcanvas-inner-shadow-size: 20px;
@@ -722,7 +788,8 @@ $switch-paddle-transition: all 0.25s ease-out;
 $table-background: $white;
 $table-color-scale: 5%;
 $table-border: 1px solid smart-scale($table-background, $table-color-scale);
-$table-padding: rem-calc(8 10 10);
+// $table-padding: rem-calc(8 10 10);
+$table-padding: 0;
 $table-hover-scale: 2%;
 $table-row-hover: darken($table-background, $table-hover-scale);
 $table-row-stripe-hover: darken($table-background, $table-color-scale + $table-hover-scale);
@@ -748,7 +815,7 @@ $tab-background-active: $light-gray;
 $tab-active-color: $primary-color;
 $tab-item-font-size: rem-calc(12);
 $tab-item-background-hover: $white;
-$tab-item-padding: 1.25rem 1.5rem;
+$tab-item-padding: 1.25rem 1.25rem;
 $tab-expand-max: 6;
 $tab-content-background: $white;
 $tab-content-border: $light-gray;
@@ -814,4 +881,4 @@ $grid-margin-gutters: (
 $grid-padding-gutters: $grid-margin-gutters;
 $grid-container-padding: $grid-padding-gutters;
 $grid-container-max: $global-width;
-$xy-block-grid-max: 8;
+$block-grid-max: 8;

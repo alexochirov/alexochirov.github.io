@@ -1,0 +1,205 @@
+@highdensity: ~'only screen and (-webkit-min-device-pixel-ratio: 2)',
+	~'only screen and (-moz-min-device-pixel-ratio: 2)',
+	~'only screen and (-o-min-device-pixel-ratio: 2)',
+	~'only screen and (min-device-pixel-ratio: 2)';
+
+@tablet : ~'screen and (min-width: 640px)';
+@desktop: ~'screen and (min-width: 980px)';
+@desktop-big: ~'screen and (min-width: 1150px)';
+
+
+.popup-transition-in {
+	-webkit-transition: -webkit-transform 0.3s ease 0s, opacity 0.3s ease 0s, visibility 0s linear 0.3s;
+	-ms-transition: -ms-transform 0.3s ease 0s, opacity 0.3s ease 0s, visibility 0s linear 0.3s;;
+	-o-transition: -o-transform 0.3s ease 0s, opacity 0.3s ease 0s, visibility 0s linear 0.3s;
+	transition: transform 0.3s ease 0s, opacity 0.3s ease 0s, visibility 0s linear 0.3s;
+}
+.popup-transition-out {
+	-webkit-transition: -webkit-transform 0.3s ease 0s, opacity 0.3s ease 0s, visibility 0s linear 0s;
+	-ms-transition: -ms-transform 0.3s ease 0s, opacity 0.3s ease 0s, visibility 0s linear 0s;;
+	-o-transition: -o-transform 0.3s ease 0s, opacity 0.3s ease 0s, visibility 0s linear 0s;
+	transition: transform 0.3s ease 0s, opacity 0.3s ease 0s, visibility 0s linear 0s;
+}
+
+.border-radius(@radius) {
+	-webkit-border-radius: @radius;
+	-khtml-border-radius: @radius;
+	-moz-border-radius: @radius;
+	border-radius: @radius;
+}
+
+.box-shadow(@value) {
+	-webkit-box-shadow: @value;
+	-khtml-box-shadow: @value;
+	-moz-box-shadow: @value;
+	box-shadow: @value;
+}
+.transition(@value) {
+	-webkit-transition: @value;
+	-o-transition: @value;
+	transition: @value;
+}
+.transform-transition(@value1, @value2) {
+	-webkit-transition: -webkit-transform @value1, @value2;
+	-o-transition: -o-transform @value1, @value2;
+	-ms-transition: -ms-transform @value1, @value2;
+	transition: transform @value1, @value2;
+}
+.transform(@value) {
+	-webkit-transform: @value;
+	-ms-transform: @value;
+	-o-transform: @value;
+	transform: @value;
+}
+.transform-origin(@value) {
+	-webkit-transform-origin: @value;
+	-ms-transform-origin: @value;
+	-o-transform-origin: @value;
+	transform-origin: @value;
+}
+.composite-layer() {
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.cubic-bezier {
+	-webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+	transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: 0 none;
+	border: none;
+}
+html, body {
+	border: 0 none;
+}
+html {
+	height: 100%;
+	-webkit-text-size-adjust: none;
+}
+
+body.prevent-scroll {
+	overflow: hidden;
+}
+
+li {
+	list-style: none outside none;
+}
+
+.clear {
+	clear: both;
+}
+.show320 {
+	display: block;
+	@media @tablet {
+		display: none;
+	}
+
+	&.show-inline {
+		display: inline-block;
+		@media @tablet {
+			display: none;
+		}
+	}
+}
+.show640 {
+	display: none;
+	@media @tablet {
+		display: block;
+	}
+	@media @desktop {
+		display: none;
+	}
+
+	&.show-inline {
+		display: none;
+		@media @tablet {
+			display: inline-block;
+		}
+		@media @desktop {
+			display: none;
+		}
+	}
+}
+.show1000 {
+	display: none;
+	@media @desktop {
+		display: block;
+	}
+
+	&.show-inline {
+		display: none;
+		@media @desktop {
+			display: inline-block;
+		}
+	}
+}
+.show320.show640 {
+	display: block;
+	@media @desktop {
+		display: none;
+	}
+
+	&.show-inline {
+		display: inline-block;
+		@media @desktop {
+			display: none;
+		}
+	}
+}
+.show320.show1000 {
+	display: block;
+	@media @tablet {
+		display: none;
+	}
+	@media @desktop {
+		display: block;
+	}
+
+	&.show-inline {
+		display: inline-block;
+		@media @tablet {
+			display: none;
+		}
+		@media @desktop {
+			display: inline-block;
+		}
+	}
+}
+.show640.show1000 {
+	display: none;
+	@media @tablet {
+		display: block;
+	}
+
+	&.show-inline {
+		display: none;
+		@media @tablet {
+			display: inline-block;
+		}
+	}
+}
+span.show320.show1000 {
+	display: inline;
+	@media @tablet {
+		display: none;
+	}
+	@media @desktop {
+		display: inline;
+	}
+}
+
+.absolute-center() {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}

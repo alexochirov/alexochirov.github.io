@@ -1,0 +1,31 @@
+.point {
+  background-color: map-get($foundation-palette, red);
+  border-bottom: rem-calc(3) solid map-get($foundation-palette, dark-red);
+  // height: rem-calc(155);
+  height: rem-calc(100);
+  margin-bottom: rem-calc(20);
+  position: relative;
+  &:before {
+    position: absolute;
+    content: '';
+    background-color: rgba(255, 255, 255, 0.1);
+    height: rem-calc(1);
+    margin: auto;
+    top: rem-calc(20);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    }
+  &_border {
+    border-left: rem-calc(1) solid #ae9fa4;
+    border-right: rem-calc(1) solid #ae9fa4;
+  }
+  &-num {
+    // font-size: rem-calc(110);
+    font-size: rem-calc(70);
+  }
+  &-team {
+    font-size: rem-calc(13);
+    font-family: $font-pt-sans-regular;
+  }
+}

@@ -1,39 +1,23 @@
-.footer {
-  color: $white;
-
-  &__text {
-    font-size: rem-calc(18);
-    margin-bottom: rem-calc(20);
-    font-weight: 300;
+footer {
+  background-color: white;
+  color: #555555;
+  padding-top: rem-calc(60);
+  margin-top: rem-calc(10);
+  padding-left: rem-calc(15);
+  padding-right: rem-calc(15);
+  @include breakpoint(medium) {
+    padding-left: rem-calc(90);
+    padding-right: rem-calc(90);
   }
+}
 
-  &__top {
-    position: relative;
-    margin-bottom: rem-calc(10);
-    padding-left: rem-calc(12);
-
-    &:before {
-      content: "";
-      position: absolute;
-      left: rem-calc(0);
-      top: rem-calc(3);
-      width: rem-calc(2);
-      height: rem-calc(28);
-      background: $white;
-    }
-  }
-  @include breakpoint(small only) {
-    &__text {
-      font-size: rem-calc(15);
-      margin-bottom: rem-calc(20);
-    }
-
-    &__top {
-      padding-left: rem-calc(0);
-
-      &:before {
-        display: none;
-      }
-    }
+.press, .develop {
+  margin-top: 2rem;
+  display: inline-block;
+}
+.develop {
+  margin-top: 2rem;
+  @include breakpoint(medium) {
+    margin-top: 4rem;
   }
 }

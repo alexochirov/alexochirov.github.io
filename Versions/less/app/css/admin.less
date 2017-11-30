@@ -1,0 +1,86 @@
+.transition(@value) {
+  -webkit-transition: @value;
+  -o-transition: @value;
+  transition: @value;
+}
+.transform(@value) {
+  -webkit-transform: @value;
+  -ms-transform: @value;
+  -o-transform: @value;
+  transform: @value;
+}
+
+.admin-panel {
+  position: fixed;
+  z-index: 999999;
+  top: 50px;
+  left: 0;
+
+  .admin-button {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #f5f5f5;
+    border-bottom: 1px solid #d3d3d3;
+    cursor: pointer;
+
+    &:hover {
+      &:after {
+        opacity: 1;
+      }
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 6px;
+      left: 6px;
+      width: 18px;
+      height: 18px;
+      background-image: url(/styles/skins/modern/design/img/icons/icons_small.png);
+      background-repeat: no-repeat;
+      vertical-align: middle;
+      opacity: 0.3;
+      .transition(opacity 0.2s);
+    }
+  }
+
+  .admin-button-list {
+    &:hover {
+      border-right: 1px solid #eee;
+
+      .list {
+        display: block;
+      }
+    }
+
+    .list {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 100%;
+      margin-left: 1px;
+
+      a {
+        display: block;
+        height: 30px;
+        line-height: 30px;
+        padding-left: 8px;
+        padding-right: 8px;
+        background: #f5f5f5;
+        border-bottom: 1px solid #d3d3d3;
+        cursor: pointer;
+        font-size: 14px;
+        color: #666;
+
+        &:hover {
+          color: #000;
+        }
+      }
+    }
+  }
+
+  .ico-edit:after {background-position: -108px 0}
+  .ico-user:after {background-image: url(../images/admin/user.png)}
+}

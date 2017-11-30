@@ -1,11 +1,16 @@
 /*
 Error: File to import not found or unreadable: util/util.
-        on line 42 of _settings.scss
+        on line 2 of _settings.scss
         from line 9 of style.scss
         from line 4 of style-inline.scss
 
+1: $imagesPath: './images';
+2: $fontsPath: './fonts';
+3: $fa-font-path: $fontsPath;
+4: @import "style";
+
 Backtrace:
-_settings.scss:42
+_settings.scss:2
 style.scss:9
 style-inline.scss:4
 C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:67:in `rescue in import'
@@ -76,4 +81,4 @@ C:/Ruby23-x64/bin/scss:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: util/util.\A         on line 42 of _settings.scss\A         from line 9 of style.scss\A         from line 4 of style-inline.scss"; }
+  content: "Error: File to import not found or unreadable: util/util.\A         on line 2 of _settings.scss\A         from line 9 of style.scss\A         from line 4 of style-inline.scss\A \A 1: $imagesPath: './images';\A 2: $fontsPath: './fonts';\A 3: $fa-font-path: $fontsPath;\A 4: @import \"style\";"; }

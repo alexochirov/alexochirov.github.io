@@ -1,80 +1,136 @@
-.padding-vertical-6
-    .grid-container: .grid-x.grid-padding-x
-        .small-10.large-3.cell.text-center.large-text-left
-            .margin-bottom-6
-                a(href='#' title='')
-                    img(src='./i/image.svg', style='width: 400px; height: 60px', alt='logo')
-        .small-2.large-1.cell.text-center
-            .margin-bottom-6.text-age-rating.stat: strong 18+
-        .small-12.large-5.large-offset-3.cell
-            form(action='' method='post' data-abide='', novalidate='novalidate')
-                .input-group
-                    input.input-group-field(type='text', placeholder='Поиск')
-                    .input-group-button
-                        button.button.secondary(type='submit', name='Найти')
-                            i.fa.fa-search.fa-inverse
-    .grid-container: .grid-x.grid-padding-x: .cell
-        hr.margin-bottom-6
-    .grid-container: .grid-x.grid-padding-x
-        .cell.small-12.medium-6.large-3.text-dark-gray
-            span.fa-stack.text-dark-gray
-                i.fa.fa-square.fa-stack-2x
-                i.fa.fa-calendar.fa-stack-1x.fa-inverse
-            strong &nbsp; 10:10 14.15.2016
-            .margin-bottom-2.hide-for-large
-        .cell.small-12.medium-6.large-3.text-dark-gray
-            span.fa-stack.text-dark-gray
-                i.fa.fa-square.fa-stack-2x
-                i.fa.fa-dollar.fa-stack-1x.fa-inverse
-            span.text-alert
-                | &nbsp;77.05&nbsp;
-                i.fa.fa-long-arrow-down
-            | &nbsp;&nbsp;&nbsp;
-            span.fa-stack.text-dark-gray
-                i.fa.fa-square.fa-stack-2x
-                i.fa.fa-euro.fa-stack-1x.fa-inverse
-            span.text-success
-                | &nbsp;88.20&nbsp;
-                i.fa.fa-long-arrow-up
-            .margin-bottom-2.hide-for-large
-        .cell.small-12.medium-6.large-3.text-dark-gray
-            span.fa-stack.text-dark-gray
-                i.fa.fa-square.fa-stack-2x
-                i.fa.fa-thermometer-half.fa-stack-1x.fa-inverse
-            | &nbsp;-1&deg;C, снег
-            .margin-bottom-2.hide-for-large
-        .cell.small-12.medium-6.large-3.text-dark-gray
-            span.fa-stack.text-dark-gray
-                i.fa.fa-square.fa-stack-2x
-                i.fa.fa-flag.fa-stack-1x.fa-inverse
-            | &nbsp;Локомотив&nbsp;
-            span.label: strong 1:3
-            | &nbsp;Медвешчак
-            .margin-bottom-2.hide-for-large
-.background-primary.padding-vertical-6
-    .grid-container: .grid-x.grid-padding-x
-        .small-12.cell
-            .show-for-small-only(data-responsive-toggle='menu', data-hide-for='medium')
+.panel-khl.hide-for-small-only
+  
+.grid-container: .grid-x
+  .cell.medium-6.medium-offset-3
+    .gen-sponsor.hide-for-small-only
+      img(src="images/gen-sponsor.svg", alt="Генеральный спонсор - Нижнекамскнефтехим")
+
+.background-primary
+    .grid-container: .grid-x
+        .small-12.medium-2.xxlarge-shrink.hide-for-small-only.logo-wrap
+          a.logo-wrap__inner(href='smi-index.html' title='На главную страницу')
+              img.logo(src='./images/logo.svg', style='width: 202px; height: 136px', alt='Хоккейный клуб «Нефтехимик» г. Нижнекамск')
+        .cell.small-12.medium-10.xxlarge-11.xxlarge-offset-1
+            .menu-toggle.show-for-small-only(data-responsive-toggle='menu', data-hide-for='medium')
                 .text-white(data-toggle)
                     i.fa.fa-bars.fa-lg
                     | &nbsp;Меню
             div#menu
-                .margin-bottom-6.show-for-small-only
-                ul.menu-base
-                    li.menu-base__item: a.menu-base__link(href='#') Экономика
-                    li.menu-base__item: a.menu-base__link(href='#') Финансы
-                    li.menu-base__item: a.menu-base__link(href='#') ТЭК
-                    li.menu-base__item: a.menu-base__link(href='#') Интернет
-                    li.menu-base__item: a.menu-base__link(href='#') Промышленность
-                    li.menu-base__item: a.menu-base__link(href='#') Транспорт
-                    li.menu-base__item: a.menu-base__link(href='#') Наука
-                    li.menu-base__item: a.menu-base__link(href='#') ИТ и Медиа
-                    li.menu-base__item: a.menu-base__link(href='#') Потребительские рынки
-                    li.menu-base__item: a.menu-base__link(href='#') ВПК
-                    li.menu-base__item: a.menu-base__link(href='#') Бренды
-                    li.menu-base__item: a.menu-base__link(href='#') Спорт
-                    li.menu-base__item: a.menu-base__link(href='#') Видео
-                    li.menu-base__item: a.menu-base__link(href='#') Интервью
-                    li.menu-base__item: a.menu-base__link(href='#') Пресс-релизы
-                    li.menu-base__item: a.menu-base__link(href='#') Отставки и назначения
-                    li.menu-base__item: a.menu-base__link(href='#') Мнения
+              
+                ul.menu.dropdown(data-dropdown-menu)
+                    li.menu__li
+                      a.menu__link.menu__link_arrow(href='tickets-online.html') Билеты
+                      ul.menu
+                        li.menu__item: a(href='#') Правила поведения
+                        li.menu__item: a(href='#') Абонементы
+                        li.menu__item: a(href='#') Купить билет on-line
+                        li.menu__item: a(href='#') План зала
+                          
+                    li.menu__li
+                      a.menu__link.menu__link_arrow(href='club.html') Клуб
+                      ul.menu
+                        li.menu__item: a(href='history.html') История клуба
+                        li.menu__item: a(href='staff.html') Руководство
+                        li.menu__item: a(href='#') Партнеры
+                        li.menu__item: a(href='contacts.html') Контакты
+                        li.menu__item
+                          a(href='#') Закупки
+                          ul.menu
+                            li.menu__item: a(href='#') Игроки
+                            li.menu__item: a(href='#') Тренерский состав
+                            li.menu__item: a(href='#') Персонал
+                            li.menu__item: a(href='#') Недвижимость
+                            li.menu__item: a(href='#') Экипировка
+                            li.menu__item: a(href='#') Инвентарь
+                            li.menu__item: a(href='#') Атрибутика
+                            
+                        li.menu__item: a(href='#') Символика клуба
+                        li.menu__item: a(href='staff.html') Персонал
+
+
+                    li.menu__li
+                      a.menu__link.menu__link_arrow(href='team.html') «Реактор»
+                      ul.menu
+                        li.menu__item: a(href='club.html') Визитная карточка
+                        li.menu__item: a(href='team.html') Состав
+                        li.menu__item: a(href='coaches.html') Тренерский штаб
+                        li.menu__item: a(href='staff.html') Персонал
+                        li.menu__item: a(href='stats.html') Статистика
+                        li.menu__item: a(href='achievemets.html') Достижения
+                        li.menu__item: a(href='#') Игровая форма
+                                
+                    li.menu__li
+                      a.menu__link.menu__link_arrow(href='teams-standings.html') Турнирные таблицы
+                      ul.menu
+                        li.menu__item: a(href='teams-standings.html') «Реактор»
+                        li.menu__item: a(href='teams-standings.html') «Нефтехимик»
+                              
+                    li.menu__li
+                      a.menu__link.menu__link_arrow(href='news.html') Новости
+                      ul.menu
+                        li.menu__item: a(href='news.html') Клубная жизнь
+                        li.menu__item: a(href='news-smi.html') Пресса о хоккее
+                        li.menu__item: a(href='#') Предсезонные турниры
+                        li.menu__item: a(href='#') Послематчивые пресс-конференции
+                              
+                    li.menu__li
+                      a.menu__link.menu__link_arrow(href='#') Фан-зона
+                      ul.menu
+                        li.menu__item: a(href='#') Группа поддержки
+                                
+                    li.menu__li
+                      a.menu__link.menu__link_arrow(href='#') ДЮСШ
+                      ul.menu
+                        li.menu__item: a(href='#') О школе
+                        li.menu__item: a(href='#') Расписание занятий
+                        li.menu__item: a(href='#') Команда
+                        li.menu__item: a(href='#') Тренерский штаб
+                                
+                    li.menu__li
+                      a.menu__link.menu__link_arrow(href='#') Медиа
+                      ul.menu
+                        li.menu__item: a(href='#') Фото
+                        li.menu__item: a(href='#') Видео
+
+                    li.menu__li
+                      form.search-form(action='' method='post' data-abide='', novalidate='novalidate')
+                          .input-group.search-form__group
+                              input.input-group-field.search-form__input(type='text', placeholder='Поиск')
+                              .input-group-button
+                                  button.button.search-form__buttom(type='submit', name='Найти')
+                                      i.fa.fa-search.fa-inverse
+
+.grid-container
+  .cell.text-right
+    a.change-language(href="#") English version 
+
+.grid-container
+  .margin-bottom-10
+  
+.grid-container.show-for-xxlarge
+  .cell.social-wrap
+    ul.social
+      li.social__item.social__item_vk: a(href='#' target='_blank')
+        span.social__icon.social__icon_vk
+        span.social__text Vkontakte
+      li.social__item.social__item_fb: a(href='#' target='_blank')
+        span.social__icon.social__icon_fb
+        span.social__text Facebook
+      li.social__item.social__item_tw: a(href='#' target='_blank')
+        span.social__icon.social__icon_tw
+        span.social__text Twitter
+      li.social__item.social__item_ytb: a(href='#' target='_blank')
+        span.social__icon.social__icon_ytb
+        span.social__text Youtube
+      li.social__item.social__item_int: a(href='#' target='_blank')
+        span.social__icon.social__icon_int
+        span.social__text Instagram
+        
+.grid-container: .grid-x
+  .cell.banners
+    .banner-left
+      img(src='http://via.placeholder.com/240x285')
+      .margin-bottom-3
+      img(src='http://via.placeholder.com/240x285')
+    .banner-right
+      img(src='http://via.placeholder.com/240x500')

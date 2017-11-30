@@ -6,41 +6,272 @@ p
     | Непрерывная функция накладывает интеграл Дирихле, что несомненно приведет нас к истине. Сумма ряда, следовательно, переворачивает многомерный график функции, как и предполагалось. Очевидно проверяется, что огибающая позиционирует абстрактный интеграл от функции, обращающейся в бесконечность вдоль линии, что несомненно приведет нас к истине. Постоянная величина специфицирует разрыв функции, дальнейшие выкладки оставим студентам в качестве несложной домашней работы.
 blockquote
     | Отсюда естественно следует, что первообразная функция очевидна не для всех. Лист Мёбиуса, как следует из вышесказанного, продуцирует график функции многих переменных, таким образом сбылась мечта идиота - утверждение полностью доказано. Векторное поле, общеизвестно, однородно поддерживает экстремум функции, как и предполагалось. Детерминант правомочен. Частная производная трансформирует интеграл от функции комплексной переменной, что и требовалось доказать. Криволинейный интеграл упорядочивает критерий сходимости Коши, что известно даже школьникам.
-p
-    | Функция выпуклая книзу очевидна не для всех. Отсюда естественно следует, что сумма ряда по-прежнему востребована. Подмножество, не вдаваясь в подробности, искажает критерий сходимости Коши, откуда следует доказываемое равенство.
-h3 Нумерованный список:
-ol
-    li Непрерывная функция.
-    li Сумма ряда.
-    li Достаточное условие
-h3 Маркированный список:
-ul
-    li Непрерывная функция
-    li Сумма ряда
-    li Достаточное условие
-h2 О выборе хостинга
-table
-    thead
-        tr
-            th Table Header
-            th Table Header
-            th Table Header
-            th Table Header
-    tbody
-        tr
-            td Content Goes Here
-            td This is longer content Donec id elit non mi porta gravida at eget metus.
-            td Content Goes Here
-            td Content Goes Here
-        tr
-            td Content Goes Here
-            td
-                | This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.
-            td Content Goes Here
-            td Content Goes Here
-        tr
-            td Content Goes Here
-            td
-                | This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.
-            td Content Goes Here
-            td Content Goes Here
+
+
+.grid-x
+  .cell.medium-3
+    ol.ol-list
+      li.ol-list__item Динамо Мск
+      li.ol-list__item Донбасс
+      li.ol-list__item Локомотив
+      li.ol-list__item Нефтехимик
+      li.ol-list__item Северсталь
+      li.ol-list__item Спартак
+      li.ol-list__item Витязь Подмосковье
+  .cell.medium-3
+    ul.ul-list
+      li.ul-list__item Динамо Мск
+      li.ul-list__item Донбасс
+      li.ul-list__item Локомотив
+      li.ul-list__item Нефтехимик
+      li.ul-list__item Северсталь
+      li.ul-list__item Спартак
+      li.ul-list__item Витязь Подмосковье
+    
+.table-scroll
+  table.table
+      thead.table__thead 
+          tr
+              th.table__th Table Header
+              th.table__th Table Header
+              th.table__th Table Header
+              th.table__th Table Header
+      tbody.table__tbody
+          tr
+              td.table__td Content Goes Here
+              td.table__td This is longer content Donec id elit non mi porta gravida at eget metus.
+              td.table__td Content Goes Here
+              td.table__td Content Goes Here
+          tr
+              td.table__td Content Goes Here
+              td.table__td
+                  | This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.
+              td.table__td Content Goes Here
+              td.table__td Content Goes Here
+          tr
+              td.table__td Content Goes Here
+              td.table__td
+                  | This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.
+              td.table__td Content Goes Here
+              td.table__td Content Goes Here
+          tr
+              td.table__td Content Goes Here
+              td.table__td
+                  | This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.
+              td.table__td Content Goes Here
+              td.table__td Content Goes Here
+
+.grid-x
+  .cell.large-6
+    h1.margin-bottom-0 Купить билет On-Line
+  .cell.large-2.large-offset-2
+    ul.menu.dropdown(data-dropdown-menu)
+        li
+            span.change-season(href='') Сезон: 2017-2018
+            ul.menu
+                li.active: a(href='') 2017-2018
+                li: a(href='') 2016-2017
+                li: a(href='') 2015-2016
+                li: a(href='') 2014-2015
+                li: a(href='') 2013-2014
+                li: a(href='') 2012-2013
+                li: a(href='') 2011-2012
+                li: a(href='') 2010-2011
+.table-scroll
+  include ../neftehimik/_calendar-for-regular
+  
+  
+//-матч
+include ../neftehimik/_match
+          
+          
+//- турнирная таблица
+ul.tabs.tabs_border-flstart#teams-standings-tabs(data-tabs)
+    li.tabs-title.tabs__title-border.is-active: a(href='#teams-standings-tab1' aria-selected="true") По конференциям
+    li.tabs-title.tabs__title-border: a(href='#teams-standings-tab2') По дивизаонам
+    li.tabs-title.tabs__title-border: a(href='#teams-standings-tab3') Чемпионат
+
+.tabs-content.tabs__content(data-tabs-content="teams-standings-tabs")
+    .tabs-panel.tabs__panel-pdlr.is-active#teams-standings-tab1
+        //-Конференции
+        include ../smi/_teams-standings-by-conference-tab
+
+    .tabs-panel.tabs__panel-pdlr#teams-standings-tab2
+        //-Дивизионы
+        include ../smi/_teams-standings-by-division-tab
+
+    .tabs-panel.tabs__panel-pdlr#teams-standings-tab3
+        //-Чемпионат
+        include ../smi/_teams-standings-championship-tab
+
+
+
+
+
+//- игрок
+.grid-x.grid-margin-x.margin-bottom-8
+    .cell.medium-5.large-4
+        img(src='i/photo-player.jpg' alt='Фото игрока' style='width:100%;')
+    .cell.auto
+        h3 Станислав Крицюк
+        p: b #[span.badge.badge_big 88] Россия
+        ul.player-characteristics
+            li.player-characteristics__item Амплуа:
+              b.player-characteristics__tbold  вратарь
+            li.player-characteristics__item Возраст:
+              b.player-characteristics__tbold  26 лет
+            li.player-characteristics__item Рост:
+              b.player-characteristics__tbold  182 см
+            li.player-characteristics__item Вес:
+              b.player-characteristics__tbold  84 кг
+            li.player-characteristics__item Хват:
+              b.player-characteristics__tbold  правый
+            li.player-characteristics__item День рождения:
+              b.player-characteristics__tbold  29.04.1991
+            li.player-characteristics__item В команде:
+              b.player-characteristics__tbold  с 20.01.2016
+
+ul.tabs.tabs_border-flstart#player-info-tabs(data-tabs)
+    li.tabs-title.tabs__title-border.is-active: a(href='#player-info-tab1' aria-selected="true") Статистика
+    li.tabs-title.tabs__title-border: a(href='#player-info-tab6') Игры
+    li.tabs-title.tabs__title-border: a(href='#player-info-tab2') Карьера
+    li.tabs-title.tabs__title-border: a(href='#player-info-tab3') Новости
+    li.tabs-title.tabs__title-border: a(href='#player-info-tab4') Фото
+    li.tabs-title.tabs__title-border: a(href='#player-info-tab5') Видео
+
+.tabs-content.tabs__content(data-tabs-content="player-info-tabs")
+    .tabs-panel.tabs__panel-pdlr.is-active#player-info-tab1
+        //-Статистика
+        include ../smi/_player-stats-tab
+
+    .tabs-panel.tabs__panel-pdlr#player-info-tab6
+        //-Игры
+        include ../smi/_player-games-tab
+
+    .tabs-panel.tabs__panel-pdlr#player-info-tab2
+        //-Карьера
+        include ../smi/_player-career-tab
+
+    .tabs-panel.tabs__panel-pdlr#player-info-tab3
+        //-Новости
+        include ../smi/_player-news-tab
+
+    .tabs-panel.tabs__panel-pdlr#player-info-tab4
+        //-Фото
+        include ../smi/_player-photo-tab
+
+    .tabs-panel.tabs__panel-pdlr#player-info-tab5
+        //-Видео
+        include ../smi/_player-video-tab
+        
+        
+        
+//-новости
+.grid-x.grid-margin-x.small-up-1.medium-up-2.xlarge-up-3.card-wrap(data-equalizer='recent-news', data-equalize-by-row='true')
+    .cell
+        .card(data-equalizer-watch='recent-news')
+            .card-image
+                img(src='i/photo-news.jpg', alt='Фото' style='width:100%;')
+            .card-section
+                h4.text-center
+                  a(href='news-article.html') Соперник – Клуб 
+                  br
+                  span.card__score-match 0:1
+                p Армейцы добились победы в первом матче раунда плей-офф Лиги чемпионов.
+                p.text-medium-gray= '15.08.2017 • '
+                    a(href='news.html') On road
+    .cell
+        .card(data-equalizer-watch='recent-news')
+            .card-image
+                img(src='i/photo-news.jpg', alt='Фото' style='width:100%;')
+            .card-section
+                h4.text-center
+                  a(href='news-article.html') Соперник — Клуб
+                  br
+                  | стартовые составы
+                p Предлагаем вашему вниманию стартовые составы на первый матч раунда плей-офф Лиги чемпионов со швейцарским «Янг Бойз».
+                p.text-medium-gray= '15.08.2017 • '
+                    a(href='news.html') События
+    .cell
+        .card(data-equalizer-watch='recent-news')
+            .card-image
+                img(src='i/photo-news.jpg', alt='Фото' style='width:100%;')
+            .card-section
+                h4.text-center
+                  a(href='news-article.html') Соперник — Клуб
+                  br
+                  | Представляем главного судью матча
+                p Главный судья: Давид Фернандес Борбалан (Испания)
+                p.text-medium-gray= '15.08.2017 • '
+                    a(href='news.html') Матчи
+                                    
+//-состав команды
+include ../mixins/_mixin-player
+
+.grid-x
+  .cell.large-6
+    h1.margin-bottom-0 Состав команды
+  .cell.large-2.large-offset-2
+    ul.menu.dropdown(data-dropdown-menu)
+        li
+            span.change-season(href='') Сезон: 2017-2018
+            ul.menu
+                li.active: a(href='') 2017-2018
+                li: a(href='') 2016-2017
+                li: a(href='') 2015-2016
+                li: a(href='') 2014-2015
+                li: a(href='') 2013-2014
+                li: a(href='') 2012-2013
+                li: a(href='') 2011-2012
+                li: a(href='') 2010-2011
+                li: a(href='') 2009-2010
+                li: a(href='') 2008-2009
+                li: a(href='') 2007-2008
+                li: a(href='') 2006-2007
+                li: a(href='') 2005-2006
+                li: a(href='') 2004-2005
+                li: a(href='') 2003-2004
+                li: a(href='') 2002-2003
+                li: a(href='') 2001-2002
+                li: a(href='') 2000-2001
+                li: a(href='') 1999-2000
+                li: a(href='') 1998-1999
+                li: a(href='') 1997-1998
+                li: a(href='') 1996-1997
+                li: a(href='') 1995-1996
+
+ul.menu.margin-bottom-3
+    li.menu__dash: a.menu__link-team(href='#players-1' title='') Вратари #[span »]
+    li.menu__dash: a.menu__link-team(href='#players-2' title='') Защитники #[span »]
+    li.menu__dash: a.menu__link-team(href='#players-3' title='') Полузащитники #[span »]
+    li.menu__dash: a.menu__link-team(href='#players-4' title='') Нападающие #[span »]
+    li.menu__dash: a.menu__link-team(href='#players-photo' title='') Команда #[span »]
+
+h2 Вратари
+.grid-x.grid-margin-x.small-up-1.medium-up-2.xlarge-up-3(data-equalizer='players', data-equalize-by-row='true')
+    +player('1','primary','Станислав Крицюк','Россия', 'photo-player-v.jpg')
+    +player('88','primary','Андрей Синицин','Россия', 'photo-player-v.jpg')
+
+h2 Защитники
+.grid-x.grid-margin-x.small-up-1.medium-up-2.xlarge-up-3(data-equalizer='players', data-equalize-by-row='true')
+    +player('5','success','Александр Жиров','Россия', 'photo-player-z1.jpg')
+    +player('4','success','Александр Мартынович','Беларусь', 'photo-player-z2.jpg')
+    +player('6','success','Андреас Гранквист','Швеция', 'photo-player-z3.jpg')
+
+h2 Полузащитники
+.grid-x.grid-margin-x.small-up-1.medium-up-2.xlarge-up-3(data-equalizer='players', data-equalize-by-row='true')
+    +player('5','warning','Александр Жиров','Россия', 'photo-player-z1.jpg')
+    +player('4','warning','Александр Мартынович','Беларусь', 'photo-player-z2.jpg')
+    +player('6','warning','Андреас Гранквист','Швеция', 'photo-player-z3.jpg')
+
+h2 Нападающие
+.grid-x.grid-margin-x.small-up-1.medium-up-2.xlarge-up-3(data-equalizer='players', data-equalize-by-row='true')
+    +player('5','alert','Александр Жиров','Россия', 'photo-player-z1.jpg')
+    +player('4','alert','Александр Мартынович','Беларусь', 'photo-player-z2.jpg')
+    +player('6','alert','Андреас Гранквист','Швеция', 'photo-player-z3.jpg')
+
+h3 Команда
+p.margin-bottom-16: img(src='./i/team.jpg' alt='Фото команды')
+  
+//-тренера
+include ../neftehimik/_trainers

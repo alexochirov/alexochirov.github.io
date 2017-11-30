@@ -1,10 +1,105 @@
 ul
-    li: a(href='smi-index.html') Главная
-    li: a(href='smi-article.html') Статья
-    li: a(href='smi-regular.html') Рядовая
-    li: a(href='smi-search.html') Результаты поиска
-    li: a(href='smi-error.html') Страница ошибки
-    li: a(href='smi-sitemap.html') Карта сайта
-    li: a(href='smi-category.html') Рубрика 1
-    li: a(href='smi-category-type.html') Рубрика 2
-    li: a(href='smi-date.html') Дата
+    li: a(href='smi-index.html') Главная страница
+    li: a(href='regular.html') Рядовая страница
+
+    li: a(href='club.html') Клуб
+    li: a(href='history.html') История
+    li: a(href='achievemets.html') Достижения
+    li: a(href='club-jersey.html') Игровая форма
+    li: a(href='contacts.html') Контакты
+    li: a(href='floor-plan.html') Плана зала
+    li: a(href='tickets-online.html') Купить билет онлайн
+    li: a(href='tickets-online.html#upcomingGameModal') Купить билет онлайн—матч
+    li: a(href='tickets-online-list.html') Купить билет онлайн списком
+    li: a(href='tickets-online-sectors.html') Купить билет онлайн—выбрать сектор
+    li: a(href='season-ticket.html') Абонмент
+    li: a(href='regulations.html') Правила подведения
+
+    li: a(href='games-calendar.html') Календарь игр
+    li: a(href='games-list.html') Календарь игр списком
+    li: a(href='games-calendar.html#recentGameModal') Прошедшая игра в календаре игр
+    li: a(href='games-calendar.html#upcomingGameModal') Будущая игра в календаре игр
+    li: a(href='teams-standings.html') Турнирные таблицы
+    li: a(href='stats.html') Статистика
+    li: a(href='team.html') Команда
+    li: a(href='player.html') Игрок
+    li: a(href='transfers.html') Трансферы
+    li: a(href='coaches.html') Тренеры
+    li: a(href='staff.html') Персонал
+    li: a(href='person.html') Сотрудник
+
+    li: a(href='news.html') Новости
+    li: a(href='news-smi.html') Пресса о хоккее
+    li: a(href='news-referee.html') Назначения судей
+    li: a(href='news-article.html') Статья
+    li: a(href='news-article-comments.html') Комментарии к статье
+    li: a(href='photos.html') Фото
+    li: a(href='photo-album.html') Фото альбом
+    li: a(href='photo-album.html#photoModal') Фотография
+    li: a(href='videos.html') Видео
+    li: a(href='video.html') Видео ролик
+
+    li: a(href='search.html') Результаты поиска
+    li: a(href='error.html') Страница ошибки
+    li: a(href='sitemap.html') Карта сайта
+
+h2 Соответствие страниц прототипа карте сайта
+ul
+    li: b Билеты
+    ul
+        li Правила поведения (#[a(href='regulations.html') regulations.html])
+        li Абонементы (#[a(href='season-ticket.html') season-ticket.html])
+        li Купить билет On-Line (#[a(href='tickets-online.html') tickets-online.html])
+        li План зала (#[a(href='floor-plan.html') floor-plan.html])
+ul
+    li: b Клуб
+    ul
+        li Визитная карточка (#[a(href='club.html') club.html])
+        li История клуба (#[a(href='history.html') history.html])
+        li Руководство (#[a(href='staff.html') staff.html])
+        li Персонал (#[a(href='staff.html') staff.html])
+        li Контакты (#[a(href='contacts.html') contacts.html])
+        li Брендбук
+        li Игровая форма (#[a(href='club-jersey.html') club-jersey.html])
+ul
+    li: b «Нефтехимик»
+    ul
+        li Состав (#[a(href='team.html') team.html])
+        li Тренерский штаб (#[a(href='coaches.html') coaches.html])
+        li Персонал (#[a(href='staff.html') staff.html])
+        li Календарь (#[a(href='games-calendar.html') games-calendar.html])
+        li Статистика (#[a(href='stats.html') stats.html])
+        li Трансферы (#[a(href='transfers.html') transfers.html])
+        li Все тренеры (#[a(href='coaches.html') coaches.html])
+        li Игроки с 1995 года (#[a(href='team.html') team.html])
+ul
+    li: b «Реактор»
+    ul
+        li Визитная карточка (#[a(href='regular.html') regular.html])
+        li Состав (#[a(href='team.html') team.html])
+        li Тренерский штаб (#[a(href='coaches.html') coaches.html])
+        li Персонал (#[a(href='staff.html') staff.html])
+        li Календарь (#[a(href='games-calendar.html') games-calendar.html])
+        li Статистика (#[a(href='stats.html') stats.html])
+        li Достижения (#[a(href='achievements.html') achievements.html])
+ul
+    li: b Турнирные таблицы (#[a(href='teams-standings.html') teams-standings.html])
+    ul
+        li «Нефтехимик»
+        li «Реактор»
+ul
+    li: b Новости (#[a(href='news.html') news.html], #[a(href='news-article.html') news-article.html], #[a(href='news-article-comments.html') news-article-comments.html])
+    ul
+        li Клубная жизнь
+        li Пресса о хоккее (#[a(href='news-smi.html') news-smi.html])
+        li Назначение судей (#[a(href='news-referee.html') news-referee.html])
+ul
+    li: b Фото (#[a(href='photos.html') photos.html], #[a(href='photo-album.html') photo-album.html])
+    ul
+        li Список фотоальбомов
+        li Последние снимки
+ul
+    li: b Видео (#[a(href='videos.html') videos.html], #[a(href='video.html') video.html])
+
+
+

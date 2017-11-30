@@ -1,10 +1,28 @@
 .content {
-  background: center no-repeat;
+  background-color: white;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  padding: 12 * $global-padding 0 6 * $global-padding;
-  position: relative;
+  // padding: 12 * $global-padding 0 6 * $global-padding;
+  // position: relative;
+  &_pd {
+    padding: rem-calc(59 15 115 15);
+    @media (min-width: 40em) {
+      padding: rem-calc(59 28 115 50);
+    }
+  }
 }
 
 .content__promo {
   height: rem-calc(400);
+}
+
+.content_pd {
+    padding: 4.21429rem 1.07143rem 2.07429rem 1.07143rem;
+	height: 100%;
+}
+@media (min-width: 40em){
+	.content_pd {
+		padding: 4.21429rem 2rem 2.07429rem 3.57143rem;
+	}
 }

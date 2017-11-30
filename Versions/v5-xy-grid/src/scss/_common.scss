@@ -5,7 +5,21 @@ a {
   -o-transition: color 300ms ease-in-out;
   transition: color 300ms ease-in-out;
 }
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  font-family: $font-helvetica-neue-condensed-bold;
+}
 
-table {
-  margin-bottom: 6 * $global-margin;
+.bg-white {
+	position: relative;
+	&:before {
+		position: absolute;
+		content: '';
+		top: rem-calc(100);
+		bottom: 0;
+		left: 0;
+		right: rem-calc(1);
+		background-color: white;
+		z-index: -1;
+	}
 }

@@ -1,0 +1,32 @@
+.logo {
+
+  @media (min-width: 640px) {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  @media (min-width: 90em) {
+    transform: translateY(-20%);
+  }
+  @media (min-width: 1760px) {
+    position: absolute;
+    top: 50%;
+    left: -9rem;
+    transform: translateY(-20%);
+  }
+  &-wrap {
+    position: relative;
+    &__inner {
+      @media (min-width: 90em) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 9rem;
+      }
+      @media (min-width: 1760px) {
+        width: rem-calc(202);
+      }
+    }
+  }
+
+}

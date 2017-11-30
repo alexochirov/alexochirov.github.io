@@ -1,0 +1,82 @@
+extends components/_regular
+
+block slider-main 
+  
+block content
+  .row.column.section-bump
+    h1.section-header Как сделать заказ
+  .inner.row
+    
+    .small-12.medium-9.large-10.columns.medium-push-3.large-push-2
+      .pillow
+        p
+          | Любой товар Вы можете заказать по телефонам горячей линии ежедневно с 9:00 до 20:00:
+          br
+          br.show-for-small-only
+          strong 8-800-250-77-37
+          |  (бесплатный звонок для всей России),
+          br
+          br.show-for-small-only
+          strong 8-495-640-72-27
+          |  (для Москвы).
+      .choose
+        img(src='./images/16-layers.png', alt='Информационный блок').hide-for-small-only
+        .choose__zero Вы также можете оформить заказ на сайте самостоятельно. Как это сделать?
+        .row
+          .small-3.columns.show-for-small-only
+            img(src="./images/how1.svg", alt="")
+          .small-9.columns
+            .choose__one
+              strong Выберите товар.
+              br
+              |         Воспользуйтесь для выбора товара поисковой формой или каталогом тематических разделов сайта, расположенным в верхней части экрана.
+        .row
+          .small-3.columns.show-for-small-only
+            img(src="./images/how2.svg", alt="")
+          .small-9.columns
+            .choose__two.text-left.medium-text-right
+              strong Добавьте выбранный товар или товары в Корзину
+              br
+              |         Нажмите кнопку "Купить", расположенную рядом с изображением каждого товара на странице описания товара.
+        .row
+          .small-3.columns.show-for-small-only
+            img(src="./images/how3.svg", alt="")
+          .small-9.columns  
+            .choose__three
+              strong Завершите оформление заказа.
+              br
+              |         Для оформления заказа перейдите в Вашу Корзину, расположенную в правом верхнем углу экрана. В Корзине нажмите на кнопку "Оформить заказ". Все возможные способы оплаты и доставки заказа, а также расчет стоимости товаров в заказе, стоимости доставки и общей стоимости заказа будут показаны при оформлении заказа.
+        .choose__four.text-center поздравляем с новой покупкой! 
+      .pillow  
+        p.pillow__no
+          strong После оформления заказа:
+        p
+          | Вы получите письмо об успешном оформлении заказа на электронный адрес, указанный Вами при регистрации в интернет-магазине domalina.ru.
+          br
+          br.show-for-small-only
+          |     Узнать о статусе исполнения Вашего заказа Вы можете, позвонив по телефонам горячей линии
+          br
+          a(href='/', target='_blank') domalina.ru
+          |  ежедневно с 9:00 до 20:00:
+          br
+          br.show-for-small-only
+          strong 8-800-250-77-37
+          |  (бесплатный звонок для всей России)
+          br
+          br.show-for-small-only
+          strong 8-495-640-72-72
+          |  (для Москвы)
+          br
+          br.show-for-small-only
+          | или по электронной почте
+          =" "
+          span.blue info@domalina.ru
+        p
+        p
+          | Желаем Вам приятных покупок на 
+          a(href='/', target='_blank') domalina.ru
+          | !
+        .clear
+    .small-12.medium-pull-9.large-pull-10.medium-3.large-2.columns
+      include components/common/_left-menu
+  hr.pole.show-for-small-only        

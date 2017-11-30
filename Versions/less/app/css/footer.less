@@ -1,0 +1,436 @@
+#vk_groups,
+#vk_groups iframe {
+	width: 100% !important;
+}
+footer {
+	position: relative;
+	margin-top: 90px;
+	background: @grey1;
+	border-top: 3px solid @red;
+	font-size: 15px;
+
+	&:after {
+		position: absolute;
+		content: "";
+		top: -3px;
+		left: 50%;
+		right: 0;
+		border-top: 3px solid @blue;
+	}
+	.footer-lines {
+		position: relative;
+
+		&:before,
+		&:after {
+			position: absolute;
+			z-index: 1;
+			content: "";
+			top: -3px;
+		}
+		&:before {
+			right: 50%;
+			left: 25%;
+			border-top: 3px solid @green2;
+		}
+		&:after {
+			left: 50%;
+			right: 25%;
+			border-top: 3px solid @yellow;
+		}
+	}
+	.pageup {
+		// +  /*position: absolute;*/
+		position: fixed;
+		z-index: 1000;
+		/*top: -70px;*/
+		bottom: 50px;
+		right: 0;
+		left: 0;
+		margin: 0 auto;
+		background: url(../images/x1/up.png) no-repeat 50% 50%;
+		width: 60px;
+		height: 40px;
+		cursor: pointer;
+	}
+	.wrapper {
+		padding-top: 1px;
+	}
+	.blocks {
+		margin: 30px 0 0;
+		font-size: 14px;
+		color: #666;
+		a {
+			color: #666;
+		}
+	}
+	.block {
+		margin-top: 20px;
+		.t {
+			font-family: 'Roboto', sans-serif;
+			font-size: 18px;
+			font-weight: 500;
+		}
+
+		.choose {
+			// height: 0;
+			overflow: hidden;
+
+			.t {
+				margin-top: 10px;
+			}
+		}
+	}
+	.menu-wrap {
+		margin: 25px -10% 0 0;
+		overflow: hidden;
+	}
+	.menu {
+		width: 110%;
+		overflow: hidden;
+		font-size: 14px;
+		li {
+			float: left;
+			width: 50%;
+			margin-bottom: 8px;
+		}
+		a {
+			border-bottom: none;
+		}
+	}
+
+	.letter-outer {
+		position: relative;
+		margin: 24px 0 0;
+		background: @bg;
+
+		&:before,
+		&:after {
+			position: absolute;
+			// z-index: 1;
+			content: "";
+			left: 0;
+			right: 0;
+			height: 5px;
+			background: url(../images/x1/letter-1.png) 43% 50%;
+		}
+		&:before {
+			top: 0;
+		}
+		&:after {
+			bottom: 0;
+		}
+	}
+	.letter {
+		position: relative;
+		padding: 16px 0 30px;
+
+		&:before,
+		&:after {
+			position: absolute;
+			// z-index: 2;
+			content: "";
+			top: 0;
+			bottom: 0;
+			width: 5px;
+			background: url(../images/x1/letter-2.png) 50% -40px;
+		}
+		&:before {
+			left: 0;
+		}
+		&:after {
+			right: 0;
+		}
+	}
+	.subscribe {
+		.input {
+			position: relative;
+
+			input {
+				display: block;
+				width: 100%;
+				font-family: 'PT Serif', serif;
+				font-size: 18px;
+				line-height: 34px;
+				color: @grey2;
+				background: none;
+				border-bottom: 1px solid #d1d1d1;
+			}
+
+			&:before {
+				position: absolute;
+				content: "";
+				top: 0;
+				left: -10px;
+				width: 4px;
+				bottom: 0;
+				transition: 0.3s;
+			}
+
+			&.error {
+				&:before {
+					background-color: @error;
+				}
+			}
+		}
+		.submit {
+			margin: 19px 0 0;
+		}
+		.desc {
+			margin: 12px 0 0;
+			color: #a9a9a9;
+		}
+		.likes {
+			display: table;
+			margin: 28px 0;
+			overflow: hidden;
+
+			.item {
+				float: left;
+				height: 30px;
+				padding-left: 20px;
+
+				&:first-child {
+					padding-left: 0;
+				}
+			}
+			.fb-like {
+				top: -6px;
+			}
+		}
+	}
+	.socgroup {
+		margin-top: 20px;
+		height: 370px;
+	}
+	.copy {
+		white-space: nowrap;
+		
+		.logo {
+			width: 152px;
+			height: 39px;
+			margin: 40px auto 0;
+			background: url(../images/x1/logo-640.png) 100% 0;
+
+			.domain-forum & {
+				background: url(../images/x1/logo-forum-640.png) 100% 0;
+			}
+		}
+		.text {
+			display: block;
+			padding: 20px 0;
+			font-family: 'Roboto', sans-serif;
+			font-size: 11px;
+			font-weight: 400;
+			color: #ccc;
+			text-align: center;
+		}
+	}
+	.wifi {
+		display: none;
+	}
+
+	&.city-tula {
+		.wifi {
+			display: block;
+
+			.logo {
+				width: 91px;
+				height: 40px;
+				margin: 0 auto 40px;
+				background: url(../images/x1/rostelekom.png) 100% 0;
+				border: 0;
+			}
+			.text {
+				display: block;
+				padding: 20px 0;
+				font-family: 'Roboto', sans-serif;
+				font-size: 11px;
+				font-weight: 400;
+				color: #ccc;
+				text-align: center;
+			}
+		}
+	}
+
+	@media @tablet {
+		.pageup {
+			top: -85px;
+			background-image: url(../images/x1/up-tablet.png);
+			width: 70px;
+			height: 50px;
+		}
+		.wrapper {
+			width: 94%;
+		}
+		.col-1 {width: 36% !important}
+		.col-2 {width: 32% !important}
+		.col-3 {width: auto !important}
+		.blocks {
+			margin: 10px 0 0;
+			font-size: 13px;
+		}
+		.block {
+			float: left;
+			.t {
+				font-size: 16px;
+			}
+		}
+		.menu-wrap {
+			margin-right: 0;
+		}
+		.menu {
+			width: 100%;
+			li {
+			}
+			.cl {
+				clear: left;
+			}
+		}
+		.letter-outer {
+			position: relative;
+			margin: 29px 0 0;
+		}
+		.letter {
+			padding: 32px 0 30px;
+		}
+		.subscribe {
+			.input {
+				input {
+					font-size: 28px;
+				}
+			}
+			.submit {
+				float: left;
+				margin: 30px 0 0;
+			}
+			.desc {
+				margin: 25px 0 0 270px;
+			}
+			.likes {
+				display: table;
+
+				.item {
+					display: table-cell;
+					float: none;
+				}
+			}
+		}
+		.socgroup {
+			height: 300px;
+		}
+		.copy {
+			position: relative;
+			height: 120px;
+
+			.logo {
+				position: absolute;
+				top: 0;
+				right: 50%;
+				margin-right: 15px;
+			}
+			.text {
+				position: absolute;
+				top: 0;
+				left: 50%;
+				width: 152px;
+				margin-left: 15px;
+				padding: 40px 0 0;
+				font-size: 14px;
+				text-align: left;
+			}
+		}
+	}
+	@media @desktop {
+		.no-footer-margin + & {
+			margin-top: 0;
+		}
+		
+		.pageup {
+			display: none;
+		}
+		.wrapper {
+			width: 98%;
+		}
+		.col-1 {width: 27% !important}
+		.col-2 {width: 27% !important}
+		.blocks {
+			float: left;
+			width: 230px;
+			margin-top: 25px;
+		}
+		.block {
+			float: none;
+			width: auto !important;
+			margin-top: 16px;
+		}
+		.menu-wrap {
+			margin-top: 42px;
+		}
+		.letter-outer {
+			margin: 41px 0 0;
+		}
+		.subscribe {
+			.input {
+				float: left;
+				width: 70%;
+			}
+			.submit {
+				float: right;
+				margin: -2px 0 0;
+			}
+			.desc {
+				float: left;
+				margin: 0;
+				padding: 12px 0 0;
+			}
+			.likes {
+				float: right;
+				margin: 19px 0 10px;
+			}
+		}
+		.socgroups {
+			margin: 0 -10px 0 -30px;
+		}
+		.socgroup {
+			float: left;
+			width: 50%;
+
+			.in {
+				margin: 0 0 0 20px;
+			}
+		}
+
+		&.city-tula {
+			.copy {
+				.logo {
+					right: auto;
+					left: 0;
+				}
+				.text {
+					left: 167px;
+				}
+			}
+
+			.wifi {
+				position: relative;
+
+				.cont {
+					position: absolute;
+					top: -101px;
+					left: 42%;
+				}
+				.text {
+					width: 220px;
+					text-align: left;
+					font-size: 14px;
+				}
+				.logo {
+					position: absolute;
+					top: 23px;
+					left: 100%;
+					margin-left: 8px;
+				}
+			}
+		}
+	}
+}

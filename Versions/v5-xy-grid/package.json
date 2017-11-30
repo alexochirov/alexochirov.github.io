@@ -11,6 +11,7 @@
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
+      "flickity": "^2.0.10",
     "browser-sync": "^2.18.13",
     "font-awesome": "~4.7.0",
     "foundation-sites": "~6.4.3",

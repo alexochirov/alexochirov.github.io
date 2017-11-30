@@ -1,0 +1,13 @@
+.time-to-match {
+  background-color:  map-get($foundation-palette, blue);
+  padding: rem-calc(0 20 0 20);
+  color: white;
+  display: inline-flex;
+  font-size: rem-calc(14);
+  line-height: rem-calc(49);
+  margin-right: rem-calc(1);
+  margin-bottom: rem-calc(1);
+  &__hourse, &__minus {
+    font-family: $font-pt-sans-regular;
+  }
+}

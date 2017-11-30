@@ -1,0 +1,14 @@
+body {
+  background-color: get-color(primary);
+  @include breakpoint(medium) {
+    background-image: url($imagesPath+'/body-bg10.png'), url($imagesPath+'/body-bg_2.png');
+    background-repeat: no-repeat;
+    background-position: center 0px, center 0px;
+  }
+  @media (min-width: 1065px) {
+    background-position: center 45px, center 45px;
+  }
+  @media (min-width: 120em) {
+  }
+}
+
