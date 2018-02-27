@@ -1,0 +1,57 @@
+.br-theme-fontawesome-stars {
+
+}
+.br-theme-fontawesome-stars .br-widget {
+  height: 28px;
+  white-space: nowrap;
+    margin-bottom: 1.5625rem;
+    margin-left: 0.9375rem;
+}
+.br-theme-fontawesome-stars .br-widget a {
+  font: normal normal normal 18px/1 FontAwesome;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  text-decoration: none;
+  margin-right: 2px;
+  display: inline-block;
+  height: 1.8125rem;
+  width: 1.875rem;
+}
+.br-theme-fontawesome-stars .br-widget a:after {
+  content: '';
+    background-image: url("/local/templates/fec_common/i/star-big.png");
+    background-repeat: no-repeat;
+    display: block;
+    float: left;
+    height: 1.8125rem;
+    width: 1.875rem;
+    margin-left: 0.3125rem;
+}
+.br-theme-fontawesome-stars .br-widget a.br-active:after {
+    background-image: url("/local/templates/fec_common/i/star-big-active.png");
+}
+.br-theme-fontawesome-stars .br-widget a.br-selected:after {
+    background-image: url("/local/templates/fec_common/i/star-big-active.png");
+}
+.br-theme-fontawesome-stars .br-widget .br-current-rating {
+  display: none;
+}
+@media print {
+  .br-theme-fontawesome-stars .br-widget a:after {
+    content: '';
+    color: black;
+      background-image: url("/local/templates/fec_common/i/star-big.png");
+      background-repeat: no-repeat;
+      display: block;
+      float: left;
+      height: 1.8125rem;
+      width: 1.875rem;
+      margin-left: 0.3125rem;
+  }
+  .br-theme-fontawesome-stars .br-widget a.br-active:after,
+  .br-theme-fontawesome-stars .br-widget a.br-selected:after {
+    content: '';
+    color: black;
+      background-image: url("/local/templates/fec_common/i/star-big-active.png");
+  }
+}

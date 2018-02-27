@@ -15,15 +15,12 @@ var imagemin = require('gulp-imagemin');
 var spritesmith = require('gulp.spritesmith');
 var pxtorem = require('postcss-pxtorem');
 var postcss = require('gulp-postcss');
+var  wait = require('gulp-wait2');
 
 var processors = [
     autoprefixer({
         browsers: ['last 2 versions', 'ie >= 9'],
         remove: false
-    }),
-    pxtorem({
-        propWhiteList: ['font', 'font-size', 'margin-bottom', 'padding-top', 'padding-bottom', 'margin-top', 'margin', 'padding', 'padding-left', 'padding-right'],
-        replace: true
     })
 ];
 var path = {
@@ -69,7 +66,7 @@ gulp.task('sass', function (done) {
         .on('end', function () {
             done();
         })
-
+.pipe(wait(200))
         .pipe(browserSync.reload({
             stream: true
         }));
@@ -99,7 +96,6 @@ gulp.task('watch', function () {
     gulp.watch(path.src.img, browserSync.reload);
     gulp.watch(path.src.imgs, browserSync.reload);
     //gulp.watch('app', browserSync.reload);
-    gulp.watch('app/bitrix/templates/ligafoto/*.css', browserSync.reload);
 });
 
 // Optimization Tasks
@@ -124,24 +120,6 @@ gulp.task('img', function () {
 });
 
 
-gulp.task('sprite', function () {
-    var spriteData =
-        gulp.src(path.src.spriteimg)
-            .pipe(spritesmith({
-                imgName: 'sprite-my.png',
-                cssName: 'sprite.scss',
-                cssFormat: 'scss',
-                algorithm: 'diagonal',
-                padding: 20,
-                //cssTemplate: path.src.spriteTemplate,
-                cssVarMap: function (sprite) {
-                    sprite.name = 's-' + sprite.name;
-                }
-            }));
-
-    spriteData.img.pipe(gulp.dest(path.src.images));
-    //spriteData.css.pipe(gulp.dest(path.src.stylesPartials));
-});
 
 
 // Build Sequences

@@ -1,0 +1,315 @@
+.glyphicon
+{
+    position: relative;
+    top: 5px;
+
+    display: inline-block;
+
+    padding-right: 10px;
+}
+
+.glyphicon-mark::before
+{
+    content: url('../images/glyphicon-mark.png');
+}
+
+.glyphicon-money::before
+{
+    content: url('../images/glyphicon-money.png');
+}
+
+.glyphicon-car::before
+{
+    content: url('../images/glyphicon-car.png');
+}
+
+.glyphicon-badge::before
+{
+    content: url('../images/glyphicon-badge.png');
+}
+
+.glyphicon-question::before
+{
+    content: url('../images/glyphicon-question.png');
+}
+
+.glyphicon-number
+{
+    font-size: .7em;
+    font-weight: bold;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+
+    text-align: center;
+    vertical-align: middle;
+
+    border-radius: 50%;
+    background: rgba(34, 34, 34, .3);
+}
+
+.card
+{
+    display: inline-block;
+
+    margin-bottom: 30px;
+    padding: 2rem;
+
+    border: 1px dashed #dfdfdf;
+    background: #fafafa;
+}
+
+.card li
+{
+    display: block;
+
+    margin: 0;
+}
+
+.line
+{
+    margin-bottom: 30px !important;
+    padding-bottom: 30px !important;
+
+    border-bottom: 1px dashed #dfdfdf;
+}
+
+.preview
+{
+    float: right;
+
+    max-width: 500px;
+    margin: 0 auto;
+    padding-bottom: 15px;
+    padding-left: 50px;
+
+            filter: brightness(90%);
+    -webkit-filter: brightness(90%);
+}
+
+.customer
+{
+    display: block;
+
+    width: 30rem;
+    height: 30rem;
+    margin: 0 auto;
+    margin-left: 2rem;
+
+    border: 5px solid #e5e5e5;
+    border-radius: 50%;
+    background: url('../images/customer.png') no-repeat center center;
+    background-size: cover;
+}
+
+.text-flow
+{
+    font-size: 1.5em;
+
+    padding-top: 15rem;
+
+    text-align: right;
+}
+
+.pay
+{
+    height: 398px;
+    margin-bottom: 30px !important;
+}
+
+.pay li
+{
+    height: 102%;
+
+    color: #fff;
+}
+
+.pay-card-1
+{
+    overflow: hidden;
+
+    padding: 20px;
+
+    border-bottom: 5px solid rgba(170, 56, 66, .5);
+    border-left: 5px solid rgba(170, 56, 66, .5);
+    background-color: #e94e5c;
+}
+
+.pay-card-1:hover,
+.pay-card-2:hover,
+.pay-card-3:hover
+{
+    position: relative;
+    z-index: 1;
+
+    width: 500px;
+    /*height: inherit;*/
+    margin-right: -500px;
+}
+
+.pay-card-2
+{
+    overflow: hidden;
+
+    padding: 20px;
+
+    border-bottom: 5px solid rgba(50, 79, 119, .5);
+    border-left: 5px solid rgba(50, 79, 119, .5);
+    background-color: #466ca6;
+}
+
+.pay-card-3
+{
+    overflow: hidden;
+
+    padding: 20px;
+
+    border-bottom: 5px solid rgba(176, 83, 22, .5);
+    border-left: 5px solid rgba(176, 83, 22, .5);
+    background-color: #f3731e;
+}
+
+.pay-card-4
+{
+    overflow: hidden;
+
+    padding: 20px;
+
+    border-bottom: 5px solid rgba(90, 59, 108, .5);
+    border-left: 5px solid rgba(90, 59, 108, .5);
+    background-color: #7d4f97;
+}
+
+.pay-card-4:hover
+{
+    position: relative;
+    z-index: 1;
+
+    width: 500px;
+    /*height: inherit;*/
+    margin-left: -500px;
+}
+
+
+.question
+{
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.zoom
+{
+    position: absolute;
+    right: 20px;
+    bottom: 40px;
+
+    display: block;
+    clear: right;
+}
+@media (max-width:1200px)
+{
+    .preview
+    {
+        max-width: 100%;
+        padding-bottom: 0;
+        padding-left: 10px;
+    }
+    .text-flow
+    {
+        padding-top: 100px;
+    }
+}
+@media (max-width:960px)
+{
+    .pay-card-2:hover
+    {
+        width: 450px;
+    }
+    .pay-card-3:hover
+    {
+        width: 300px;
+    }
+    .customer
+    {
+        margin-right: calc(50% - 235px);
+        margin-left: calc(50% - 235px);
+    }
+    .text-flow
+    {
+        text-align: center;
+    }
+    .card
+    {
+        padding: 10px;
+    }
+}
+@media (max-width:640px)
+{
+    .pay-card-1:hover,
+    .pay-card-2:hover,
+    .pay-card-3:hover,
+    .pay-card-4:hover
+    {
+        width: 100%;
+        margin: 0;
+    }
+    .pay-card-1,
+    .pay-card-2,
+    .pay-card-3,
+    .pay-card-4
+    {
+        padding: 10px;
+
+        text-align: justify;
+    }
+    .pay li
+    {
+        height: auto !important;
+    }
+    #pay-card-full-1,
+    #pay-card-full-2,
+    #pay-card-full-3,
+    #pay-card-full-4
+    {
+        display: none !important;
+    }
+    .text-flow
+    {
+        font-size: 16px;
+    }
+    .question
+    {
+        font-size: 19px;
+
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .customer
+    {
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .preview
+    {
+        padding-left: 0;
+        &_desc
+        {
+            float: right;
+
+            width: 100%;
+
+            text-align: center;
+        }
+    }
+}
+@media (max-width:450px)
+{
+    .customer
+    {
+        height: 300px;
+    }
+}

@@ -1,0 +1,56 @@
+.fill {
+    border: rem-calc(1) solid #e2e2e2;
+    background-color: #f8f8f8;
+    padding-top: rem-calc(20);
+
+    &__col {
+        padding-left: rem-calc(30);
+        padding-right: rem-calc(10);
+    }
+
+    &__battery {
+        border: 1px solid #ccc;
+        padding: 0;
+        margin-bottom: rem-calc(20);
+        position: relative;
+        height: rem-calc(37);
+
+        &__title {
+          position: absolute;
+          left: rem-calc(20);
+          top: rem-calc(7);
+          z-index: 100;
+          font-size: rem-calc(14);
+          color: #a1a1a1;
+        }
+
+        &__progress {
+          background: #fff url(../images/battery.png) repeat-x;
+          height: rem-calc(37);
+        }
+
+    }
+
+    &__btn {
+      padding-top: rem-calc(9);
+      padding-bottom: rem-calc(9);
+        color: #1c479d;
+        font-weight: 700;
+        text-align: center;
+        padding-left: rem-calc(0);
+        padding-right: rem-calc(0);
+        font-size: rem-calc(14);
+        width: 100%;
+        background: none;
+
+    }
+    @media (max-width: 640px)
+    {
+      &__btn {
+        margin-top: rem-calc(20);
+      }
+      &__col {
+        padding-left: rem-calc(10);
+      }
+    }
+}

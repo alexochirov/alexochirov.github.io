@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js ie lt-ie9 lt-ie8 lt-ie7" lang="en"><![endif]-->
+<!--[if IE 7]><html class="no-js ie ie7 lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js ie ie8 lt-ie9" lang="en"><![endif]-->
+<!--[if IE 9]><html class="no-js ie ie9" lang="en"><![endif]-->
+<!--[if !IE]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Главная страница</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="copyright" content="Создание сайтов - Cetera Labs, www.cetera.ru, 2015" />
+    <meta name="author" content="Cetera Labs, http://www.cetera.ru/, создание сайтов, поддержка сайтов, продвижение сайтов" />
+    <meta name="cmsmagazine" content="f21b68cb09efe1a7161ca2caaacaf749" />
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="http://yastatic.net/jquery/1.11.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <script src="js/jquery-ui.js"></script>
+
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="position:absolute; width:0; height:0;">
+  <defs>
+    <symbol id="truck" viewBox="0 0 185 94">
+      <circle cx="48.56" cy="81.07" r="11.43" style="stroke-linejoin:round;color-rendering:auto;color:#000000;shape-rendering:auto;solid-color:#000000;stroke:#000000;stroke-linecap:round;stroke-width:3;fill:none;mix-blend-mode:normal;image-rendering:auto;isolation:auto"></circle>
+      <circle r="11.43" style="stroke-linejoin:round;color-rendering:auto;color:#000000;shape-rendering:auto;solid-color:#000000;stroke:#000000;stroke-linecap:round;stroke-width:3;fill:none;mix-blend-mode:normal;image-rendering:auto;isolation:auto" cx="107.8" cy="81.07"></circle>
+      <path d="m96.48 81.09h-36.24m-23.11 0h-22.02l-1.342-0.017c-1.103 0-1.991-0.888-1.991-1.991v-46.9m0-20.81v-4.919c0-1.103 0.888-1.991 1.991-1.991h71.02c1.103 0 1.991 0.888 1.991 1.991v42.12s28.07 0.041 42.1 0.041c4.009 0.063 5.141 2.457 5.816 4.37l5.47 23.17c0.3268 2.045-2.217 4.938-4.837 4.938h-15.87" style="stroke-linejoin:round;color-rendering:auto;color:#000000;shape-rendering:auto;solid-color:#000000;stroke:#000000;stroke-linecap:round;stroke-width:3;fill:none;mix-blend-mode:normal;image-rendering:auto;isolation:auto"></path>
+      <path d="m86.63 28.03h16.67l20.71 20.71" style="stroke:#000000;stroke-width:3;fill:none"></path>
+      <path d="m5.562 18.29h25.8" style="stroke-linejoin:round;stroke:#000000;stroke-linecap:round;stroke-width:3;fill:none"></path>
+      <path d="m1.521 25.03h16.67" style="stroke-linejoin:round;stroke:#000000;stroke-linecap:round;stroke-width:3;fill:none"></path>
+    </symbol>
+
+    <symbol id="speaker" viewBox="0 0 185 94">
+      <path d="m93.42 27.09s12.63 6.674 12.63 20.94-13.38 22.49-13.38 22.49" style="stroke-linejoin:round;stroke:#000000;stroke-linecap:round;stroke-width:3;fill:none"></path>
+      <path style="stroke-linejoin:round;stroke:#000000;stroke-linecap:round;stroke-width:3;fill:none" d="m106.3 11.24s19.27 12.77 19.27 36.57-20.42 38.58-20.42 38.58"></path>
+      <path d="m77.57 40.22c4.882 0 8.839 3.957 8.839 8.839s-3.957 8.839-8.839 8.839z" style="fill:#000000;color-rendering:auto;color:#000000;isolation:auto;mix-blend-mode:normal;fill-rule:evenodd;shape-rendering:auto;solid-color:#000000;image-rendering:auto"></path>
+      <path d="m77.77 89.22v-79.55s-18.69 27.32-48.99 27.32h-22.38c-3.315-0.2-4.9 1.38-4.9 4.53v17.41c0 2.225 1.942 3.522 4.446 3.522h22.54c30.3 0 49.29 26.77 49.29 26.77z" style="stroke-linejoin:round;stroke:#000000;stroke-linecap:round;stroke-width:3;fill:none"></path>
+      <path d="m6.677 62.95v4.924s4.798 6.819 5.682 10.35c0.8839 3.536 1.768 9.723 1.768 9.723s0.6313 4.546 4.041 4.546c3.409 0 7.576-0.1263 9.47-0.1263s5.065-0.733 4.167-4.798c-0.9-4.05-4.74-3.12-9.6-12.99-1.64-4.42-2.91-11.49-2.91-11.49z" style="stroke:#000000;stroke-width:3;fill:none"></path>
+      <path d="m20.73 70.85h4.457s1.278-0.1645 0.8561-1.382c-0.7589-2.191-0.9682-5.999-0.9682-5.999l-5.7-0.1024z" style="fill-rule:evenodd;fill:#000000"></path>
+      <path d="m31.84 37.63v24.24" style="stroke-linejoin:round;stroke:#000000;stroke-linecap:round;stroke-width:3;fill:none"></path>
+    </symbol>
+
+    <symbol id="catalog" viewBox="0 0 185 94">
+      <path d="m104.7 21.73h6.214c1.108 0 2 0.892 2 2v64.75c0 1.108-0.892 2-2 2h-107.4c-1.108 0-2-0.892-2-2v-64.75c0-1.108 0.892-2 2-2h7.107" style="stroke-linejoin:round;color-rendering:auto;color:#000000;shape-rendering:auto;solid-color:#000000;stroke:#000000;stroke-linecap:round;stroke-width:3;fill:none;mix-blend-mode:normal;image-rendering:auto;isolation:auto"></path>
+      <path d="m10.79 83.34v-72.32s7.679-4.643 22.14-4.643 25 4.821 25 4.821 7.679-5.179 22.86-5.179 23.93 4.821 23.93 4.821v72.5s-8.393-4.107-22.86-4.107c-14.46 0-24.29 4.286-24.29 4.286s-10.18-4.643-23.21-4.643c-13.04 0-23.57 4.464-23.57 4.464z" style="stroke:#000000;stroke-width:3;fill:none"></path>
+      <path d="m57.62 11.02v72.14" style="stroke:#000000;stroke-width:3;fill:none"></path>
+      <path d="m46.68 21.2h-18.75" style="stroke-linejoin:round;stroke:#000000;stroke-linecap:round;stroke-width:3;fill:none"></path>
+      <path style="stroke-linejoin:round;stroke:#000000;stroke-linecap:round;stroke-width:3;fill:none" d="m22.97 21.2h-2.231"></path>
+      <path style="stroke-linejoin:round;stroke:#000000;stroke-linecap:round;stroke-width:3;fill:none" d="m46.68 29.2h-18.75"></path>
+      <path d="m22.97 29.2h-2.231" style="stroke-linejoin:round;stroke:#000000;stroke-linecap:round;stroke-width:3;fill:none"></path>
+      <path d="m46.68 37.2h-18.75" style="stroke-linejoin:round;stroke:#000000;stroke-linecap:round;stroke-width:3;fill:none"></path>
+      <path style="stroke-linejoin:round;stroke:#000000;stroke-linecap:round;stroke-width:3;fill:none" d="m22.97 37.2h-2.231"></path>
+      <path style="stroke-linejoin:round;stroke:#000000;stroke-linecap:round;stroke-width:3;fill:none" d="m46.68 45.2h-18.75"></path>
+      <path d="m22.97 45.2h-2.231" style="stroke-linejoin:round;stroke:#000000;stroke-linecap:round;stroke-width:3;fill:none"></path>
+      <path d="m46.68 53.2h-18.75" style="stroke-linejoin:round;stroke:#000000;stroke-linecap:round;stroke-width:3;fill:none"></path>
+      <path style="stroke-linejoin:round;stroke:#000000;stroke-linecap:round;stroke-width:3;fill:none" d="m22.97 53.2h-2.231"></path>
+      <path style="stroke-linejoin:round;stroke:#000000;stroke-linecap:round;stroke-width:3;fill:none" d="m46.68 61.2h-18.75"></path>
+      <path d="m22.97 61.2h-2.231" style="stroke-linejoin:round;stroke:#000000;stroke-linecap:round;stroke-width:3;fill:none"></path>
+      <path style="stroke-linejoin:round;stroke:#000000;stroke-linecap:round;stroke-width:3;fill:none" d="m94.68 21.2h-18.75"></path>
+      <path d="m70.97 21.2h-2.231" style="stroke-linejoin:round;stroke:#000000;stroke-linecap:round;stroke-width:3;fill:none"></path>
+      <path d="m94.68 29.2h-18.75" style="stroke-linejoin:round;stroke:#000000;stroke-linecap:round;stroke-width:3;fill:none"></path>
+      <path style="stroke-linejoin:round;stroke:#000000;stroke-linecap:round;stroke-width:3;fill:none" d="m70.97 29.2h-2.231"></path>
+      <path style="stroke-linejoin:round;stroke:#000000;stroke-linecap:round;stroke-width:3;fill:none" d="m94.68 37.2h-18.75"></path>
+      <path d="m70.97 37.2h-2.231" style="stroke-linejoin:round;stroke:#000000;stroke-linecap:round;stroke-width:3;fill:none"></path>
+      <path d="m94.68 45.2h-18.75" style="stroke-linejoin:round;stroke:#000000;stroke-linecap:round;stroke-width:3;fill:none"></path>
+      <path style="stroke-linejoin:round;stroke:#000000;stroke-linecap:round;stroke-width:3;fill:none" d="m70.97 45.2h-2.231"></path>
+      <path style="stroke-linejoin:round;stroke:#000000;stroke-linecap:round;stroke-width:3;fill:none" d="m94.68 53.2h-18.75"></path>
+      <path d="m70.97 53.2h-2.231" style="stroke-linejoin:round;stroke:#000000;stroke-linecap:round;stroke-width:3;fill:none"></path>
+      <path d="m94.68 61.2h-18.75" style="stroke-linejoin:round;stroke:#000000;stroke-linecap:round;stroke-width:3;fill:none"></path>
+      <path style="stroke-linejoin:round;stroke:#000000;stroke-linecap:round;stroke-width:3;fill:none" d="m70.97 61.2h-2.231"></path>
+      <path d="m46.68 69.2h-18.75" style="stroke-linejoin:round;stroke:#000000;stroke-linecap:round;stroke-width:3;fill:none"></path>
+      <path style="stroke-linejoin:round;stroke:#000000;stroke-linecap:round;stroke-width:3;fill:none" d="m22.97 69.2h-2.231"></path>
+      <path style="stroke-linejoin:round;stroke:#000000;stroke-linecap:round;stroke-width:3;fill:none" d="m94.68 69.2h-18.75"></path>
+      <path d="m70.97 69.2h-2.231" style="stroke-linejoin:round;stroke:#000000;stroke-linecap:round;stroke-width:3;fill:none"></path>
+      <ellipse style="fill:#000000;color-rendering:auto;color:#000000;isolation:auto;mix-blend-mode:normal;fill-rule:evenodd;shape-rendering:auto;solid-color:#000000;image-rendering:auto" rx="2.778" ry="2.336" cy="91.66" cx="57.64"></ellipse>
+    </symbol>
+
+    <symbol id="shield" viewBox="0 0 185 94">
+      <path d="m24.73 43.76 13.64 10.86 18.94-25.51" style="stroke-linejoin:round;stroke:#000000;stroke-linecap:round;stroke-width:3;fill:none"></path>
+      <path d="m1.5 14.47s15.4-12.63 36.62-12.63c21.21 0 36.87 12.37 36.87 12.37 0 9.491-0.0171 16.63 0.0499 24.92 0.2525 31.22-16.17 38.9-36.67 53.37-22.86-15.31-36.87-21.64-36.87-55.56z" style="stroke-linejoin:round;stroke:#000000;stroke-linecap:round;stroke-width:3;fill:none"></path>
+    </symbol>
+
+    <symbol id="billboard" viewBox="0 0 185 94">
+      <path d="m117.3 30.09h52.98c3.23-0.1822 4.606 0.3975 4.573 3.475l-0.0799 6.687 8.178 13.56s-4.275-3.91-7.934-3.91-6.564 4-10.22 4c-3.659 0-6.564-4-10.22-4-3.659 0-6.564 4-10.22 4-3.659 0-6.564-4-10.22-4-3.659 0-6.564 4-10.22 4-3.659 0-6.564-4-10.22-4-3.659 0-7.955 3.91-7.955 3.91l8.157-13.56-0.0798-7.314c0.102-2.967 1.835-2.85 3.5-2.848z" style="color-rendering:auto;color:#000000;shape-rendering:auto;solid-color:#000000;stroke:#000000;stroke-width:3;fill:none;mix-blend-mode:normal;image-rendering:auto;isolation:auto"></path>
+      <path d="m114.6 40.08h6.742" style="stroke-linejoin:round;color-rendering:auto;color:#000000;shape-rendering:auto;solid-color:#000000;stroke:#000000;stroke-linecap:round;stroke-width:3;fill:none;mix-blend-mode:normal;image-rendering:auto;isolation:auto"></path>
+      <path d="m167 40.08h6.973" style="stroke-linejoin:round;color-rendering:auto;color:#000000;shape-rendering:auto;solid-color:#000000;stroke:#000000;stroke-linecap:round;stroke-width:3;fill:none;mix-blend-mode:normal;image-rendering:auto;isolation:auto"></path>
+      <path d="m115.1 50.97v36.96c-0.3429 4.774-0.0165 4.464 4.464 4.464h32.68v-25.45h11.79v25.45h6.071c4.577 0.3734 4.107-0.2138 4.107-4.464v-36.79" style="stroke:#000000;stroke-width:3;fill:none"></path>
+      <rect style="color-rendering:auto;color:#000000;shape-rendering:auto;solid-color:#000000;stroke:#000000;stroke-width:3;fill:none;mix-blend-mode:normal;image-rendering:auto;isolation:auto" height="13.39" width="16.25" y="67.05" x="125.4"></rect>
+      <path d="m31.68 92.05 31.79 0.1786" style="stroke:#000000;stroke-width:3;fill:none"></path>
+      <path d="m38.82 60.26 0.5357 31.25" style="stroke:#000000;stroke-width:3;fill:none"></path>
+      <path d="m54.82 60.26 0.5357 31.25" style="stroke:#000000;stroke-width:3;fill:none"></path>
+      <rect style="color-rendering:auto;color:#000000;shape-rendering:auto;solid-color:#000000;stroke:#000000;stroke-width:3;fill:none;mix-blend-mode:normal;image-rendering:auto;isolation:auto" ry="2" height="53.57" width="92.14" y="6.153" x="1.5"></rect>
+      <path d="m13.46 19.55 46.61 17.32-1.429-12.68 23.82 20.37-31.5 6.955 7.5-9.286-49.82-3.571 8.214-8.571z" style="stroke:#000000;stroke-linecap:round;stroke-width:3;fill:none"></path>
+      <path d="m76.52 13.11h-7.411l3.304-6.607 1.071 0.0893z" style="fill-rule:evenodd;fill:#000000"></path>
+      <path style="fill-rule:evenodd;fill:#000000" d="m50.95 13.11h-7.411l3.304-6.607 1.071 0.0893z"></path>
+      <path d="m25.51 13.11h-7.411l3.304-6.607 1.071 0.0893z" style="fill-rule:evenodd;fill:#000000"></path>
+    </symbol>
+
+    <symbol id="zoom" viewBox="0 0 185 94">
+      <path d="m62.41 23.22c2.563 4.645 4.021 9.984 4.021 15.66 0 17.93-14.54 32.47-32.47 32.47-17.92 0-32.46-14.53-32.46-32.46 0-17.94 14.54-32.47 32.47-32.47 6.431 0 12.42 1.87 17.47 5.095" style="stroke-linejoin:round;color-rendering:auto;color:#000000;shape-rendering:auto;solid-color:#000000;stroke:#000000;stroke-linecap:round;stroke-width:3;fill:none;mix-blend-mode:normal;image-rendering:auto;isolation:auto"></path>
+      <path d="m58.25 63.53 28.39 27.95" style="stroke-linejoin:round;stroke:#000000;stroke-linecap:round;stroke-width:5;fill:none"></path>
+      <path style="stroke-linejoin:round;stroke:#000000;stroke-linecap:round;stroke-width:3;fill:none" d="m17.73 28.76 19.31 15.38 26.83-36.12"></path>
+    </symbol>
+
+    <symbol id="working-hours" viewBox="0 0 463 463">
+      <g>
+      <path d="m106.072,260.335c16.898-7.568 37.928-16.987 37.928-44.335 0-22.056-17.944-40-40-40s-40,17.944-40,40c0,4.143 3.358,7.5 7.5,7.5s7.5-3.357 7.5-7.5c0-13.785 11.215-25 25-25s25,11.215 25,25c0,16.778-11.042,22.576-29.06,30.646-16.012,7.171-35.94,16.097-35.94,40.854 0,4.143 3.358,7.5 7.5,7.5h65c4.142,0 7.5-3.357 7.5-7.5s-3.358-7.5-7.5-7.5h-56.324c3.139-8.997 12.42-13.63 25.896-19.665z"></path>
+      <path d="M439.233,368.786l-30.829,12.052C443.751,339.139,463,286.883,463,231.5c0-61.836-24.08-119.971-67.805-163.695   S293.336,0,231.5,0S111.529,24.08,67.805,67.805S0,169.664,0,231.5s24.08,119.971,67.805,163.695S169.664,463,231.5,463   c47.622,0,93.367-14.35,132.288-41.497c3.397-2.369,4.23-7.045,1.861-10.442c-2.369-3.396-7.044-4.23-10.442-1.86   C318.815,434.583,276.038,448,231.5,448c-57.829,0-112.197-22.52-153.089-63.411C37.52,343.697,15,289.329,15,231.5   S37.52,119.303,78.411,78.411C119.303,37.52,173.671,15,231.5,15s112.197,22.52,153.089,63.411   C425.48,119.303,448,173.671,448,231.5c0,53.638-19.306,104.142-54.647,143.791l6.21-38.519c0.659-4.089-2.121-7.938-6.21-8.598   c-4.09-0.66-7.939,2.121-8.598,6.211l-8.037,49.854c-0.896,5.56,1.185,10.991,5.567,14.528c2.827,2.281,6.221,3.461,9.683,3.461   c1.906-0.001,3.833-0.358,5.696-1.086l47.032-18.387c3.857-1.509,5.762-5.858,4.254-9.716   C447.441,369.184,443.092,367.277,439.233,368.786z"></path>
+      <path d="m296.385,157.128l-48,144c-1.31,3.93 0.814,8.178 4.744,9.487 0.787,0.262 1.586,0.387 2.373,0.387 3.14,0 6.066-1.987 7.114-5.13l48-144c1.31-3.93-0.814-8.178-4.744-9.487-3.928-1.307-8.177,0.813-9.487,4.743z"></path>
+      <path d="m331.944,294.104c1.131,0.609 2.349,0.898 3.549,0.897 2.67,0 5.255-1.43 6.61-3.945l56-104c1.251-2.324 1.189-5.136-0.165-7.401-1.354-2.267-3.799-3.654-6.439-3.654h-64c-4.142,0-7.5,3.357-7.5,7.5s3.358,7.5 7.5,7.5h51.443l-50.047,92.944c-1.962,3.646-0.598,8.195 3.049,10.159z"></path>
+      <path d="m215.5,295c4.142,0 7.5-3.357 7.5-7.5v-16.5h8.5c4.142,0 7.5-3.357 7.5-7.5s-3.358-7.5-7.5-7.5h-8.5v-72.5c0-4.143-3.358-7.5-7.5-7.5s-7.5,3.357-7.5,7.5v72.5h-38.42l21.103-70.345c1.19-3.968-1.061-8.148-5.028-9.339-3.966-1.19-8.148,1.061-9.339,5.028l-23.97,79.899c-0.007,0.022-0.013,0.044-0.02,0.066l-.01,.035c-0.013,0.044-0.02,0.088-0.032,0.132-0.053,0.189-0.103,0.379-0.141,0.574-0.024,0.119-0.037,0.238-0.054,0.356-0.018,0.123-0.04,0.244-0.052,0.368-0.019,0.195-0.026,0.388-0.029,0.582-0.001,0.048-0.007,0.094-0.007,0.143 0,0.006 0.001,0.011 0.001,0.017 0,0.225 0.013,0.449 0.034,0.672 0.003,0.028 0.002,0.057 0.005,0.086 0.021,0.199 0.054,0.395 0.09,0.59 0.01,0.052 0.014,0.105 0.025,0.156 0.02,0.097 0.05,0.192 0.074,0.288 0.203,0.817 0.535,1.581 0.981,2.268 0.021,0.033 0.039,0.068 0.061,0.1 0.073,0.109 0.155,0.211 0.234,0.316 0.068,0.091 0.131,0.184 0.203,0.271 0.038,0.046 0.08,0.087 0.119,0.132 0.509,0.591 1.114,1.103 1.8,1.517 0.103,0.062 0.202,0.128 0.308,0.186 0.037,0.02 0.077,0.036 0.115,0.055 0.185,0.096 0.373,0.188 0.566,0.269 0.021,0.009 0.044,0.015 0.065,0.024 0.212,0.086 0.427,0.164 0.648,0.231 0.005,0.001 0.01,0.004 0.015,0.005 0.014,0.004 0.028,0.005 0.042,0.009 0.294,0.086 0.596,0.151 0.904,0.201 0.084,0.014 0.167,0.028 0.251,0.038 0.289,0.037 0.581,0.061 0.879,0.064 0.027,0 0.054,0.006 0.081,0.006 0.008,0 0.016-0.002 0.024-0.002h48.474v16.5c0,4.145 3.358,7.502 7.5,7.502z"></path>
+      </g>
+  </symbol>
+  </defs>
+</svg>
+</head>
+<body>
+<div class="b-header">
+    <div class="b-top-menu hide-for-small">
+        <div class="row">
+            <div class="b-top-menu-container clearfix">
+                <div class="b-top-menu-container__item left">
+                    <a class="b-top-menu__item" href="#">Каталог товаров</a>
+                    <a class="b-top-menu__item b-top-menu__item_med" href="#">Каталог услуг</a>
+                    <a class="b-top-menu__item" href="#">Новости</a>
+                    <a class="b-top-menu__item" href="#">Форум</a>
+                </div>
+                <div class="b-top-menu-container__item right">
+                    <a class="b-top-menu__item b-top-menu__item_med" href="#">О компании</a>
+                    <a class="b-top-menu__item" href="#">Помощь</a>
+                    <a class="b-top-menu__item" href="#">Контакты</a>
+                    <a class="b-top-menu__item b-top-menu-right__item_auth" href="#">Авторизация</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="b-main-menu hide-for-small">
+        <div class="row">
+            <div class="b-main-menu-container clearfix">
+                <div class="b-main-menu-container__item b-main-menu-container__item_left left">
+                    <a class="b-main-menu__item b-main-menu__item_first" href="#">Горячие покупки</a>
+                    <a class="b-main-menu__item" href="#">Сток</a>
+                    <a class="b-main-menu__item" href="#">Молл</a>
+                </div>
+                <div class="b-main-menu-center left">
+                    <div class="b-main-menu__logo">
+                        <a class="b-main-menu__logo__link" href="#1">
+                            <img class="b-main-menu__logo__link__img" src="i/logo.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="b-main-menu-container__item b-main-menu-container__item_right right">
+                    <a class="b-main-menu__item b-main-menu__item_basket" href="#">
+                        <span class="b-main-menu__item_basket__ico"></span>
+                        <span class="b-main-menu__item_basket__text">0</span>
+                    </a>
+                    <a class="b-main-menu__item b-main-menu__item_mod" href="#">
+                        <span class="b-main-menu__item_my__ico"></span>
+                        <span class="b-main-menu__item_my__text"></span>
+                    </a>
+                    <form class="b-main-menu__item b-main-menu__item_form" action="#">
+              <span class="b-main-menu__item_form__search">
+                <input type="submit" class="b-search__submit">
+                <input type="text" name="" id="form__search" placeholder="поиск...">
+                <button type="reset" class="btn"></button>
+              </span>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="top-bar b-bar show-for-small-only " data-topbar role="navigation">
+        <ul class="title-area">
+            <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+            <li class="b-bar__text"><a href="#" class="b-bar__text-link">Сменить пароль</a></li>
+            <li class="b-bar__basket"><a href="#" class="b-bar__basket-link"><span class="b-bar__circle">12</span></a></li>
+            <li class="b-bar__search"><input type="submit" class="b-bar__submit"></li>
+        </ul>
+        <section class="top-bar-section">
+            <ul class="left">
+                <li><a href="#">Каталог товаров</a></li>
+                <li><a href="#">Каталог услуг</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Форум</a></li>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Помощь</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Авторизация</a></li>
+            </ul>
+        </section>
+    </nav>
+</div>
+<div class="b-partnership">
+    <div class="row">
+        <div class="columns large-12 medium-12 hide-for-small b-catalog-breadcrumbs">
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Стать партнером Russianshop.org</a></li>
+                <li>Совместные покупки на сайте интернет-магазина Russianshop.org</li>
+            </ul>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="large-12 columns">
+            <div class="b-partnership__header">
+                <div class="row">
+                    <div class="large-11 large-centered column">
+                        <div class="b-partnership__header-title">
+                            <h1>Стать партнером Russianshop.org</h1>
+                        </div>
+                        <div class="b-partnership__header-menu">
+                            <div class="row">
+                                <div class="large-6 columns">
+                                    <a href="partnership_sp.html" class="b-partnership__header-menu-link">
+                                        <div class="b-partnership__header-menu-link-text">Организаторам<br /> совместных покупок</div>
+                                    </a>
+                                </div>
+                                <div class="large-6 columns">
+                                    <a href="partnership_shop.html" class="b-partnership__header-menu-link b-partnership__header-menu-link_last">
+                                        <div class="b-partnership__header-menu-link-text">Владельцам<br /> интернет-магазинов<br /></div>
+                                        <div class="b-partnership__header-menu-link-text b-partnership__header-menu-link-text_small">И тем кто хочет его открыть</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="b-partnership__header-note text-center">
+                            <p class="b-partnership__header-note-title">Вашему магазину нужны новые покупатели и продажи?</p>
+                            <p class="b-partnership__header-note-text">Предлагаем торговую площадку Russianshop.org – онлайн-гипермаркет, где можно разместить неограниченное количество товаров, которые каждый день и час ищут Ваши покупатели.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="large-12 columns">
+            <div class="b-partnership__features">
+                <h2 class="b-partnership__features-header text-center">Уникальное предложение от Russianshop.org</h2>
+                <div class="b-partnership__features-list">
+                    <div class="row">
+                        <div class="large-3 columns">
+                            <div class="b-partnership__features-list-item">
+                                <div class="b-partnership__features-list-item-pic b-partnership__features-list-item-pic_ads">
+                                    <svg>
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#billboard"></use>
+                                    </svg>
+                                </div>
+                                <div class="b-partnership__features-list-item-title">НАША РЕКЛАМА</div>
+                                <div class="b-partnership__features-list-item-text">привлекает посетителей, которые увидят ваши товары. Вы не тратите время на настройку рекламы в Яндекс и Google. Вы только выделяете реламный бюджет</div>
+                            </div>
+                        </div>
+                        <div class="large-3 columns">
+                            <div class="b-partnership__features-list-item">
+                                <div class="b-partnership__features-list-item-pic b-partnership__features-list-item-pic_ergonomics">
+                                    <svg>
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#zoom"></use>
+                                    </svg>
+                                </div>
+                                <div class="b-partnership__features-list-item-title">ЭРГОНОМИКА ПЛОЩАДКИ</div>
+                                <div class="b-partnership__features-list-item-text">Russianshop.org делает для покупателя поиск, сортировку и выбор товаров непринужденным и интуитивным</div>
+                            </div>
+                        </div>
+                        <div class="large-3 columns">
+                            <div class="b-partnership__features-list-item">
+                                <div class="b-partnership__features-list-item-pic b-partnership__features-list-item-pic_delivery">
+                                    <svg>
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#truck"></use>
+                                    </svg>
+                                </div>
+                                <div class="b-partnership__features-list-item-title">ДОСТАВКА ТОВАРОВ</div>
+                                <div class="b-partnership__features-list-item-text">получателю — не проблема. В нашей системе автоматически рассчитывается стоимость и сроки доставки по всем городам России</div>
+                            </div>
+                        </div>
+                        <div class="large-3 columns">
+                            <div class="b-partnership__features-list-item">
+                                <div class="b-partnership__features-list-item-pic b-partnership__features-list-item-pic_news">
+                                    <svg>
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#speaker"></use>
+                                    </svg>
+                                </div>
+                                <div class="b-partnership__features-list-item-title">НАШИ НОВОСТИ</div>
+                                <div class="b-partnership__features-list-item-text">расскажут покупателям об акциях, новых поступлениях и выгодных покупках в вашем магазине</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="row">
+                            <div class="large-10 large-centered column">
+                                <div class="row">
+                                    <div class="large-4 columns">
+                                        <div class="b-partnership__features-list-item">
+                                            <div class="b-partnership__features-list-item-pic b-partnership__features-list-item-pic_companies">
+                                                <svg>
+                                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#catalog"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="b-partnership__features-list-item-title">КАТАЛОГ ОРГАНИЗАЦИЙ</div>
+                                            <div class="b-partnership__features-list-item-text">нашей площадки позволяет вам разместить подробную информацию о вашей компании: адреса и карту офиса, ссылки на сайт и страницы в соц. сетях, отзывы клиентов</div>
+                                        </div>
+                                    </div>
+                                    <div class="large-4 columns">
+                                        <div class="b-partnership__features-list-item">
+                                            <div class="b-partnership__features-list-item-pic b-partnership__features-list-item-pic_security">
+                                                <svg>
+                                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shield"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="b-partnership__features-list-item-title">ЗАЩИТА ИНФОРМАЦИИ</div>
+                                            <div class="b-partnership__features-list-item-text">Мы ответственно относимся к конфиденциальности информации и гарантируем ее сохранность, а также защиту Вашей информации от несанкционированного доступа</div>
+                                        </div>
+                                    </div>
+                                    <div class="large-4 columns">
+                                        <div class="b-partnership__features-list-item">
+                                            <div class="b-partnership__features-list-item-pic b-partnership__features-list-item-pic_safety">
+                                                <svg>
+                                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#working-hours"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="b-partnership__features-list-item-title">НАДЁЖНОСТЬ</div>
+                                            <div class="b-partnership__features-list-item-text">Наши сервера обеспечивают надежное соединение и быструю работу даже при большом наплыве посетителей</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="b-partnership__become">
+        <div class="row">
+            <div class="large-12 columns text-center">
+                <div class="b-partnership__become-inner">
+                    <a href="#partnership" class="b-partnership__become-inner-button">Стать партнёром</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="b-partnership__about">
+        <div class="b-partnership__about-item">
+            <div class="row">
+                <div class="large-6 columns">
+                    <div class="b-partnership__about-item-text">
+                        <p><b>Продавайте через Интернет легко и много</b></p>
+                        <p>Воспользовавшись нашими сервисами, Вы сможете наладить успешные продажи в Интернете без открытия своего интернет-магазина. Всех партнёров консультируем онлайн и по телефону.</p>
+                        <p>У нас нет обязательных платежей, в качестве оплаты за наши услуги, мы берем небольшую оплату – 1% от Вашего оборота на нашей площадке.</p>
+                        <p><span style="font-size: 5rem; line-height: 1;">1%</span></p>
+                    </div>
+                </div>
+                <div class="large-6 columns">
+                    <div class="b-partnership__about-item-picture">
+                        <img src="images/partnership_about_1.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="b-partnership__about-item">
+            <div class="row">
+                <div class="large-6 columns">
+                    <div class="b-partnership__about-item-picture">
+                        <img src="images/partnership_about_2.jpg" alt="" />
+                    </div>
+                </div>
+                <div class="large-6 columns">
+                    <div class="b-partnership__about-item-text">
+                        <p><b>Приводим покупателей Ваших товаров</b></p>
+                        <p>Сайт Russianshop.org активно набирает обороты в социальных сетях, медиа, мы постоянно создаем новости для наших подписчиков и привлекаем их различными акциями в наш большой интернет-магазин. Разместив товары у нас, Вы увеличиваете точки своих продаж, что несомненно скажется на вашей прибыли.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="b-partnership__about-item">
+            <div class="row">
+                <div class="large-6 columns">
+                    <div class="b-partnership__about-item-text">
+                        <p><b>Займите самые лучшие места в нашем гипермаркете сейчас</b></p>
+                        <p>У нас всегда есть покупатели и многие хотят то, что продаёты Вы. Мы всегда найдем предложение для Вас и подойдем индивидуально к Вашему бизнесу. С нашей электронной площадкой Russianshop.org Вы получите выгодное преимущество среди своих конкурентов.</p>
+                    </div>
+                </div>
+                <div class="large-6 columns">
+                    <div class="b-partnership__about-item-picture">
+                        <img src="images/partnership_about_3.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="b-partnership__start b-partnership__start_main" id="partnership">
+        <div class="row">
+            <div class="large-12 columns">
+                <h2 class="b-partnership__start-title text-center">Начать сотрудничество</h2>
+                <div class="b-partnership__start-form">
+                    <form>
+                        <div class="row">
+                            <div class="medium-6 columns">
+                                <div class="b-partnership__start-form-input">
+                                    <input type="text" placeholder="Представьтесь" required>
+                                </div>
+                            </div>
+                            <div class="medium-3 columns">
+                                <div class="b-partnership__start-form-input">
+                                    <input type="text" placeholder="Контактный телефон" required>
+                                </div>
+                            </div>
+                            <div class="medium-3 columns">
+                                <div class="b-partnership__start-form-input">
+                                    <input type="submit" value="Стать партнером">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="b-footer">
+    <div class="b-footer-links hide-for-small">
+        <div class="row" data-equalizer>
+
+            <div class="b-footer-links__item b-footer-links__item_1" data-equalizer-watch>
+                <h3>О магазине</h3>
+                <ul>
+                    <li><a class="b-footer-links__item__link" href="#">Контактная информация</a></li>
+                    <li><a class="b-footer-links__item__link" href="#">Реквизиты</a></li>
+                    <li><a class="b-footer-links__item__link" href="#">Обратная связь</a></li>
+                    <li><a class="b-footer-links__item__link" href="#">Карта сайта</a></li>
+                </ul>
+                <div class="show-for-medium-only">
+                    <h3>Форум</h3>
+                    <ul>
+                        <li><a class="b-footer-links__item__link" href="#">Справочник организаций</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="b-footer-links__item b-footer-links__item_2" data-equalizer-watch>
+                <h3>Новости и справочники</h3>
+                <ul>
+                    <li><a class="b-footer-links__item__link" href="#">Новости</a></li>
+                    <li><a class="b-footer-links__item__link" href="#">Справочники</a></li>
+                    <li><a class="b-footer-links__item__link" href="#">Добавить рецензию</a></li>
+                </ul>
+            </div>
+            <div class="b-footer-links__item b-footer-links__item_3" data-equalizer-watch>
+                <h3>Личный кабинет</h3>
+                <ul>
+                    <li><a class="b-footer-links__item__link" href="#">Корзина</a></li>
+                    <li><a class="b-footer-links__item__link" href="#">Корзина групповых покупок</a></li>
+                    <li><a class="b-footer-links__item__link" href="#">Руководство пользователя</a></li>
+                    <li><a class="b-footer-links__item__link" href="#">«Страничка-магазин» Список желаний</a></li>
+                    <li><a class="b-footer-links__item__link" href="#">Личные данные</a></li>
+                    <li><a class="b-footer-links__item__link" href="#">Стать продавцом</a></li>
+                </ul>
+            </div>
+            <div class="b-footer-links__item b-footer-links__item_4" data-equalizer-watch>
+                <h3>Помощь</h3>
+                <ul>
+                    <li><a class="b-footer-links__item__link" href="#">Обычная покупка</a></li>
+                    <li><a class="b-footer-links__item__link" href="#">Групповая покупка</a></li>
+                    <li><a class="b-footer-links__item__link" href="#">Как заказать</a></li>
+                    <li><a class="b-footer-links__item__link" href="#">Как оплатить</a></li>
+                    <li><a class="b-footer-links__item__link" href="#">О доставке</a></li>
+                    <li><a class="b-footer-links__item__link" href="#">Возврат товара</a></li>
+                    <li><a class="b-footer-links__item__link" href="#">Гарантии и сервис</a></li>
+                    <li><a class="b-footer-links__item__link" href="#">Законодательство</a></li>
+                    <li><a class="b-footer-links__item__link" href="#">Частые вопросы</a></li>
+                </ul>
+            </div>
+            <div class="b-footer-links__item b-footer-links__item_5 " data-equalizer-watch>
+                <h3>Форум</h3>
+                <ul>
+                    <li><a class="b-footer-links__item__link" href="#">Справочник организаций</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="b-footer-bottom">
+        <div class="row">
+            <div class="b-footer-bottom__copyright columns show-for-small-only">
+                <p>&copy; 2013-2015 <a href="#" class="b-footer-bottom__copyright-link">RussianShop</a>. Все права защищены </p>
+                <p>Создание сайта - <a href="#" class="b-footer-bottom__copyright-link">Cetera Labs</a></p>
+            </div>
+            <div class="b-footer-bottom__item b-footer-bottom__item_1 hide-for-small-only">
+                <a href="#"><img src="./images/footer-logo.png" alt=""></a>
+            </div>
+            <div class="b-footer-bottom__item b-footer-bottom__item_2 hide-for-small-only">
+                <a href="http://cetera.ru/support/default.php?project=FEC&lang=ru">Сообщить об ошибке</a>
+            </div>
+            <div class="b-footer-bottom__item b-footer-bottom__item_3">
+            </div>
+            <div class="b-footer-bottom__item b-footer-bottom__item_4 hide-for-small-only">
+                создание сайта — <a href="http://cetera.ru/">cetera labs</a>
+            </div>
+            <div class="b-footer-bottom__item b-footer-bottom__item_5 ">
+                <a class="b-footer-bottom__item__link_vk" href="#"></a>
+            </div>
+            <div class="b-footer-bottom__item b-footer-bottom__item_6">
+                <a class="b-footer-bottom__item__link_fb" href="#"></a>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script src="//yastatic.net/modernizr/2.7.1/modernizr.min.js"></script>
+<script type="text/javascript" src="js/foundation.min.js"></script>
+<script type="text/javascript" src="js/foundation/foundation.topbar.js"></script>
+<script type="text/javascript" src="js/foundation/foundation.tab.js"></script>
+<script type="text/javascript" src="js/foundation/foundation.equalizer.js"></script>
+<script src="js/common.js"></script>
+<script src="js/filter.js"></script>
+<script src="js/vendor/jQueryRotate.js"></script>
+<script src="js/vendor/jquery.cookie.js"></script>
+<script src="js/jquery.formstyler.min.js"></script>
+<script src="js/jquery.checkbox.js"></script>
+<script src="js/jquery.jcarousel.min.js"></script>
+</body>
+</html>

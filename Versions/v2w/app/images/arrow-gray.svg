@@ -1,0 +1,1098 @@
+<svg id="ПОДВАЛ" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11" height="7" viewBox="0 0 11 7">
+  <defs>
+    <style>
+      .cls-1, .cls-10, .cls-14, .cls-20, .cls-29, .cls-32, .cls-35, .cls-38, .cls-42, .cls-43, .cls-44, .cls-45, .cls-46, .cls-47, .cls-50, .cls-51, .cls-52, .cls-53, .cls-54, .cls-55, .cls-56, .cls-57, .cls-58, .cls-75, .cls-99 {
+        fill: #e2e2e2;
+      }
+
+      .cls-1 {
+        filter: url(#filter);
+      }
+
+      .cls-11, .cls-12, .cls-2, .cls-78, .cls-80, .cls-81, .cls-95 {
+        font-size: 12px;
+      }
+
+      .cls-11, .cls-13, .cls-2 {
+        fill: #535353;
+      }
+
+      .cls-11, .cls-12, .cls-17, .cls-18, .cls-19, .cls-2, .cls-21, .cls-26, .cls-27, .cls-28, .cls-31, .cls-34, .cls-37, .cls-39, .cls-59, .cls-63, .cls-67, .cls-68, .cls-73, .cls-77, .cls-78, .cls-80, .cls-81, .cls-82, .cls-84, .cls-95 {
+        font-family: "Segoe UI";
+      }
+
+      .cls-17, .cls-19, .cls-2, .cls-39, .cls-62, .cls-63, .cls-68, .cls-73, .cls-78, .cls-80, .cls-81, .cls-82, .cls-84, .cls-95 {
+        text-transform: uppercase;
+      }
+
+      .cls-16, .cls-17, .cls-24, .cls-3, .cls-4, .cls-40, .cls-5, .cls-6, .cls-67, .cls-68, .cls-69, .cls-7, .cls-71, .cls-72, .cls-76, .cls-8, .cls-84, .cls-85, .cls-86, .cls-87, .cls-88, .cls-89, .cls-9, .cls-90, .cls-91, .cls-92, .cls-93, .cls-94, .cls-95, .cls-96, .cls-97 {
+        fill: #fff;
+      }
+
+      .cls-14, .cls-20, .cls-25, .cls-29, .cls-30, .cls-32, .cls-33, .cls-35, .cls-36, .cls-38, .cls-4, .cls-46, .cls-47, .cls-5, .cls-54, .cls-55, .cls-57, .cls-58, .cls-6, .cls-7, .cls-74, .cls-75, .cls-76, .cls-79, .cls-8, .cls-83, .cls-85, .cls-86, .cls-87, .cls-88, .cls-89, .cls-9, .cls-90, .cls-91, .cls-92, .cls-93, .cls-94, .cls-99 {
+        fill-rule: evenodd;
+      }
+
+      .cls-4 {
+        filter: url(#filter-2);
+      }
+
+      .cls-5 {
+        filter: url(#filter-3);
+      }
+
+      .cls-6 {
+        filter: url(#filter-4);
+      }
+
+      .cls-7 {
+        filter: url(#filter-5);
+      }
+
+      .cls-8 {
+        filter: url(#filter-6);
+      }
+
+      .cls-9 {
+        filter: url(#filter-7);
+      }
+
+      .cls-10, .cls-24, .cls-48, .cls-56, .cls-64, .cls-76 {
+        stroke: #e2e2e2;
+      }
+
+      .cls-10, .cls-24, .cls-25, .cls-26, .cls-30, .cls-31, .cls-33, .cls-34, .cls-36, .cls-37, .cls-56, .cls-64, .cls-76, .cls-91, .cls-96 {
+        stroke-linejoin: round;
+      }
+
+      .cls-10, .cls-24, .cls-40, .cls-48, .cls-56, .cls-64, .cls-76, .cls-96, .cls-97 {
+        stroke-width: 1px;
+      }
+
+      .cls-10 {
+        filter: url(#filter-8);
+      }
+
+      .cls-12, .cls-23, .cls-26, .cls-28, .cls-31, .cls-34, .cls-37, .cls-39, .cls-73, .cls-80 {
+        fill: #153f93;
+      }
+
+      .cls-101, .cls-15, .cls-22, .cls-25, .cls-30, .cls-33, .cls-36, .cls-59, .cls-74 {
+        fill: #ca3034;
+      }
+
+      .cls-15 {
+        filter: url(#filter-9);
+      }
+
+      .cls-16 {
+        filter: url(#filter-10);
+      }
+
+      .cls-17, .cls-18, .cls-26, .cls-27, .cls-31, .cls-34, .cls-37, .cls-61 {
+        font-size: 16px;
+      }
+
+      .cls-17, .cls-19, .cls-39, .cls-78 {
+        font-weight: 600;
+      }
+
+      .cls-18, .cls-82, .cls-83 {
+        fill: #a1a1a1;
+      }
+
+      .cls-19, .cls-39, .cls-60 {
+        font-size: 20px;
+      }
+
+      .cls-100, .cls-19, .cls-21, .cls-27, .cls-63, .cls-78, .cls-81 {
+        fill: #383838;
+      }
+
+      .cls-20 {
+        filter: url(#filter-11);
+      }
+
+      .cls-21, .cls-28, .cls-63, .cls-67, .cls-73, .cls-77, .cls-84 {
+        font-size: 14px;
+      }
+
+      .cls-25, .cls-26, .cls-30, .cls-31, .cls-33, .cls-34, .cls-36, .cls-37 {
+        stroke: #383838;
+        stroke-width: 2px;
+      }
+
+      .cls-25 {
+        filter: url(#filter-12);
+      }
+
+      .cls-26 {
+        filter: url(#filter-13);
+      }
+
+      .cls-29 {
+        filter: url(#filter-14);
+      }
+
+      .cls-30 {
+        filter: url(#filter-15);
+      }
+
+      .cls-31 {
+        filter: url(#filter-16);
+      }
+
+      .cls-32 {
+        filter: url(#filter-17);
+      }
+
+      .cls-33 {
+        filter: url(#filter-18);
+      }
+
+      .cls-34 {
+        filter: url(#filter-19);
+      }
+
+      .cls-35 {
+        filter: url(#filter-20);
+      }
+
+      .cls-36 {
+        filter: url(#filter-21);
+      }
+
+      .cls-37 {
+        filter: url(#filter-22);
+      }
+
+      .cls-38 {
+        filter: url(#filter-23);
+      }
+
+      .cls-40 {
+        stroke: #e8e8e8;
+      }
+
+      .cls-41, .cls-59, .cls-62, .cls-68, .cls-73 {
+        font-weight: 700;
+      }
+
+      .cls-42 {
+        filter: url(#filter-24);
+      }
+
+      .cls-43 {
+        filter: url(#filter-25);
+      }
+
+      .cls-44 {
+        filter: url(#filter-26);
+      }
+
+      .cls-45 {
+        filter: url(#filter-27);
+      }
+
+      .cls-46 {
+        filter: url(#filter-28);
+      }
+
+      .cls-47 {
+        filter: url(#filter-29);
+      }
+
+      .cls-48 {
+        fill: none;
+      }
+
+      .cls-49 {
+        fill: #1cb272;
+      }
+
+      .cls-50 {
+        filter: url(#filter-30);
+      }
+
+      .cls-51 {
+        filter: url(#filter-31);
+      }
+
+      .cls-52 {
+        filter: url(#filter-32);
+      }
+
+      .cls-53 {
+        filter: url(#filter-33);
+      }
+
+      .cls-54 {
+        filter: url(#filter-34);
+      }
+
+      .cls-55 {
+        filter: url(#filter-35);
+      }
+
+      .cls-56 {
+        filter: url(#filter-36);
+      }
+
+      .cls-57 {
+        filter: url(#filter-37);
+      }
+
+      .cls-58 {
+        filter: url(#filter-38);
+      }
+
+      .cls-59 {
+        font-size: 22px;
+      }
+
+      .cls-64, .cls-65 {
+        fill: #e4e4e4;
+      }
+
+      .cls-64 {
+        filter: url(#filter-41);
+      }
+
+      .cls-66, .cls-70 {
+        fill: #1b1c1c;
+      }
+
+      .cls-66 {
+        opacity: 0.45;
+      }
+
+      .cls-68 {
+        font-size: 31px;
+      }
+
+      .cls-69 {
+        filter: url(#filter-42);
+      }
+
+      .cls-70 {
+        opacity: 0.46;
+      }
+
+      .cls-71 {
+        filter: url(#filter-43);
+      }
+
+      .cls-72 {
+        filter: url(#filter-44);
+      }
+
+      .cls-74 {
+        filter: url(#filter-45);
+      }
+
+      .cls-75 {
+        filter: url(#filter-46);
+      }
+
+      .cls-77 {
+        fill: #7f7e7e;
+      }
+
+      .cls-79 {
+        fill: #ddd;
+      }
+
+      .cls-82 {
+        font-size: 11px;
+      }
+
+      .cls-85, .cls-86, .cls-87, .cls-88, .cls-89, .cls-90, .cls-92, .cls-93 {
+        opacity: 0.4;
+      }
+
+      .cls-85 {
+        filter: url(#filter-47);
+      }
+
+      .cls-86 {
+        filter: url(#filter-48);
+      }
+
+      .cls-87 {
+        filter: url(#filter-49);
+      }
+
+      .cls-88 {
+        filter: url(#filter-50);
+      }
+
+      .cls-89 {
+        filter: url(#filter-51);
+      }
+
+      .cls-90 {
+        filter: url(#filter-52);
+      }
+
+      .cls-91 {
+        fill-opacity: 0;
+        stroke: #fff;
+        stroke-width: 3px;
+      }
+
+      .cls-92 {
+        filter: url(#filter-53);
+      }
+
+      .cls-93 {
+        filter: url(#filter-54);
+      }
+
+      .cls-96 {
+        stroke: #d9d9d9;
+        filter: url(#filter-55);
+      }
+
+      .cls-97 {
+        stroke: #ccc;
+        filter: url(#filter-56);
+      }
+
+      .cls-98 {
+        fill: #262525;
+        filter: url(#filter-57);
+      }
+
+      .cls-99 {
+        filter: url(#filter-58);
+      }
+
+      .cls-101 {
+        opacity: 0.41;
+      }
+    </style>
+    <filter id="filter" x="-311" y="3309" width="1307" height="101" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#1b1c1c"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-2" x="-108" y="3309" width="1" height="101" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#2e3030"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-3" x="113" y="3309" width="1" height="101" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#2e3030"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-4" x="441" y="3309" width="1" height="101" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#2e3030"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-5" x="822" y="3309" width="1" height="101" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#2e3030"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-6" x="721" y="3309" width="1" height="101" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#2e3030"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-7" x="923" y="3309" width="1" height="101" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#2e3030"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-8" x="-355" y="2960" width="1356" height="354" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#f8f8f8"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-9" x="-242" y="2794" width="1166" height="106" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#153f93"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-10" x="722" y="2824" width="152" height="46" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#262525"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-11" x="85" y="2844" width="11" height="7" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#383838"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-12" x="659" y="2470" width="62" height="77" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#fff"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-13" x="671" y="2501" width="40" height="13" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#fff"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-14" x="896" y="2668" width="7" height="11" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#153f93"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-15" x="363" y="2470" width="62" height="77" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#fff"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-16" x="375" y="2501" width="38" height="13" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#fff"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-17" x="600" y="2668" width="7" height="11" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#153f93"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-18" x="68" y="2228" width="62" height="77" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#fff"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-19" x="80" y="2259" width="40" height="13" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#fff"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-20" x="305" y="2668" width="7" height="11" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#153f93"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-21" x="-228" y="2228" width="62" height="77" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#fff"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-22" x="-216" y="2259" width="38" height="13" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#fff"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-23" x="9" y="2668" width="7" height="11" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#153f93"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-24" x="-212" y="2045" width="220" height="50" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#e23131"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+      <feGaussianBlur result="blur" in="SourceAlpha"/>
+      <feFlood result="flood-2" flood-color="#caafaf" flood-opacity="0.75"/>
+      <feComposite result="composite-2" operator="out" in2="blur"/>
+      <feOffset result="offset" dy="-3"/>
+      <feComposite result="composite-3" operator="in" in2="SourceAlpha"/>
+      <feBlend result="blend-2" mode="multiply" in2="blend"/>
+    </filter>
+    <filter id="filter-25" x="83" y="2045" width="220" height="50" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#e23131"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+      <feGaussianBlur result="blur" in="SourceAlpha"/>
+      <feFlood result="flood-2" flood-color="#caafaf" flood-opacity="0.75"/>
+      <feComposite result="composite-2" operator="out" in2="blur"/>
+      <feOffset result="offset" dy="-3"/>
+      <feComposite result="composite-3" operator="in" in2="SourceAlpha"/>
+      <feBlend result="blend-2" mode="multiply" in2="blend"/>
+    </filter>
+    <filter id="filter-26" x="379" y="2045" width="220" height="50" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#e23131"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+      <feGaussianBlur result="blur" in="SourceAlpha"/>
+      <feFlood result="flood-2" flood-color="#caafaf" flood-opacity="0.75"/>
+      <feComposite result="composite-2" operator="out" in2="blur"/>
+      <feOffset result="offset" dy="-3"/>
+      <feComposite result="composite-3" operator="in" in2="SourceAlpha"/>
+      <feBlend result="blend-2" mode="multiply" in2="blend"/>
+    </filter>
+    <filter id="filter-27" x="674" y="2045" width="220" height="50" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#e23131"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+      <feGaussianBlur result="blur" in="SourceAlpha"/>
+      <feFlood result="flood-2" flood-color="#caafaf" flood-opacity="0.75"/>
+      <feComposite result="composite-2" operator="out" in2="blur"/>
+      <feOffset result="offset" dy="-3"/>
+      <feComposite result="composite-3" operator="in" in2="SourceAlpha"/>
+      <feBlend result="blend-2" mode="multiply" in2="blend"/>
+    </filter>
+    <filter id="filter-28" x="902" y="1787" width="7" height="11" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#153f93"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-29" x="865" y="1787" width="7" height="11" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#d8d5d5"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-30" x="-212" y="1624" width="220" height="50" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#e23131"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+      <feGaussianBlur result="blur" in="SourceAlpha"/>
+      <feFlood result="flood-2" flood-color="#caafaf" flood-opacity="0.75"/>
+      <feComposite result="composite-2" operator="out" in2="blur"/>
+      <feOffset result="offset" dy="-3"/>
+      <feComposite result="composite-3" operator="in" in2="SourceAlpha"/>
+      <feBlend result="blend-2" mode="multiply" in2="blend"/>
+    </filter>
+    <filter id="filter-31" x="83" y="1624" width="220" height="50" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#e23131"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+      <feGaussianBlur result="blur" in="SourceAlpha"/>
+      <feFlood result="flood-2" flood-color="#caafaf" flood-opacity="0.75"/>
+      <feComposite result="composite-2" operator="out" in2="blur"/>
+      <feOffset result="offset" dy="-3"/>
+      <feComposite result="composite-3" operator="in" in2="SourceAlpha"/>
+      <feBlend result="blend-2" mode="multiply" in2="blend"/>
+    </filter>
+    <filter id="filter-32" x="379" y="1624" width="220" height="50" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#e23131"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+      <feGaussianBlur result="blur" in="SourceAlpha"/>
+      <feFlood result="flood-2" flood-color="#caafaf" flood-opacity="0.75"/>
+      <feComposite result="composite-2" operator="out" in2="blur"/>
+      <feOffset result="offset" dy="-3"/>
+      <feComposite result="composite-3" operator="in" in2="SourceAlpha"/>
+      <feBlend result="blend-2" mode="multiply" in2="blend"/>
+    </filter>
+    <filter id="filter-33" x="674" y="1624" width="220" height="50" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#e23131"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+      <feGaussianBlur result="blur" in="SourceAlpha"/>
+      <feFlood result="flood-2" flood-color="#caafaf" flood-opacity="0.75"/>
+      <feComposite result="composite-2" operator="out" in2="blur"/>
+      <feOffset result="offset" dy="-3"/>
+      <feComposite result="composite-3" operator="in" in2="SourceAlpha"/>
+      <feBlend result="blend-2" mode="multiply" in2="blend"/>
+    </filter>
+    <filter id="filter-34" x="902" y="1327" width="7" height="11" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#153f93"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-35" x="865" y="1327" width="7" height="11" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#d8d5d5"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-36" x="-325" y="716" width="1356" height="544.59" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#f8f8f8"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-37" x="902" y="783" width="7" height="11" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#153f93"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-38" x="865" y="783" width="7" height="11" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#d8d5d5"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-41" x="-385" y="154" width="1428" height="455" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#f8f8f8"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-42" x="879" y="336" width="14" height="14" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#153f93"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-43" x="879" y="567" width="14" height="14" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#153f93"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-44" x="553" y="567" width="14" height="14" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#153f93"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-45" x="-242" y="201" width="211" height="1" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#153f93"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-46" x="-57" y="175" width="7" height="11" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#153f93"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-47" x="548" y="33" width="1" height="121" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#2753ab"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-48" x="673" y="33" width="1" height="121" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#2753ab"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-49" x="798" y="33" width="1" height="121" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#2753ab"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-50" x="-242" y="33" width="1" height="121" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#2753ab"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-51" x="-9" y="33" width="1" height="121" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#2753ab"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-52" x="923" y="33" width="1" height="121" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#2753ab"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-53" x="254" y="33" width="1" height="121" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#2753ab"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-54" x="426" y="33" width="1" height="121" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#2753ab"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-55" x="-19" y="27" width="721" height="449" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dy="2" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="3"/>
+      <feFlood result="flood" flood-color="#000001" flood-opacity="0.4"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+    <filter id="filter-56" x="39" y="377" width="603" height="37" filterUnits="userSpaceOnUse">
+      <feGaussianBlur result="blur" stdDeviation="2.646" in="SourceAlpha"/>
+      <feFlood result="flood" flood-color="#121212" flood-opacity="0.1"/>
+      <feComposite result="composite" operator="out" in2="blur"/>
+      <feOffset result="offset" dy="-3"/>
+      <feComposite result="composite-2" operator="in" in2="SourceAlpha"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-57" x="580" y="377" width="62" height="37" filterUnits="userSpaceOnUse">
+      <feGaussianBlur result="blur" in="SourceAlpha"/>
+      <feFlood result="flood" flood-color="#010101" flood-opacity="0.45"/>
+      <feComposite result="composite" operator="out" in2="blur"/>
+      <feOffset result="offset" dy="-3"/>
+      <feComposite result="composite-2" operator="in" in2="SourceAlpha"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-58" x="668" y="47" width="12" height="11" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#d8d5d5"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="_2_уровень" data-name="2 уровень">
+    <rect class="cls-1" x="-311" y="3309" width="1307" height="101"/>
+    <text id="сообщить_об_ошибке" data-name="сообщить об ошибке" class="cls-2" x="-68" y="3363.997">сообщить об ошибке</text>
+    <text id="создание_сайта_cetera_labs" data-name="создание сайта — cetera labs" class="cls-2" x="482" y="3363.997">создание сайта — <tspan class="cls-3">cetera labs</tspan></text>
+    <path class="cls-4" d="M-108,3309h1v101h-1V3309"/>
+    <path id="Shape_7_copy" data-name="Shape 7 copy" class="cls-5" d="M113,3309h1v101h-1V3309"/>
+    <path id="Shape_7_copy_2" data-name="Shape 7 copy 2" class="cls-6" d="M441,3309h1v101h-1V3309"/>
+    <path id="Shape_7_copy_5" data-name="Shape 7 copy 5" class="cls-7" d="M822,3309h1v101h-1V3309"/>
+    <path id="Shape_7_copy_6" data-name="Shape 7 copy 6" class="cls-8" d="M721,3309h1v101h-1V3309"/>
+    <path id="Shape_7_copy_4" data-name="Shape 7 copy 4" class="cls-9" d="M923,3309h1v101h-1V3309"/>
+    <image id="Vector_Smart_Object_copy_4" data-name="Vector Smart Object copy 4" x="765" y="3351" width="14" height="15" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAPCAMAAADjyg5GAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAflBMVEUAAABTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1MAAADnbsJZAAAAKHRSTlMA8uu5WgGgLIAIK9BRiJAgQtyjA/6OwIvbfhb77PcVhd5zkwL62Z03lZ0ilQAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAABjSURBVAjXVc5HEoAgDEDR2LEX7L3L/U+oYZQx2fDfgkxAvKPphmkBiN/YlMKRZOB6PkbwEiDE8CSjOE7S583I35AT5gWXLBmraoxGrWq7J3pFPmB9HCeMmV61EK6b4n6cF8AN+YsZuYA7aEYAAAAASUVORK5CYII="/>
+    <image id="Vector_Smart_Object_copy_6" data-name="Vector Smart Object copy 6" x="868" y="3347" width="10" height="20" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAUCAMAAACDMFxkAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAV1BMVEUAAABTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1MAAADmC2+6AAAAG3RSTlMASLny83H+G/rwZL9XUEt9SoBA0Ojc+e2guIxNWqqXAAAAAWJLR0QAiAUdSAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAE9JREFUCNetzEcOgDAQQ9Ghhw4xZWDuf0+cSAgJiR1/47eyCEvSzCwPKixUUpWLrMmG23b9QI7kJLGZ9C8CC7kCELvbHu6iCu6hen48/MkL+qQLTpRtqaIAAAAASUVORK5CYII="/>
+  </g>
+  <g id="_1_уровень" data-name="1 уровень">
+    <g style="fill: #e2e2e2; filter: url(#filter-8)">
+      <rect id="Rectangle_9_copy" data-name="Rectangle 9 copy" class="cls-10" x="-355" y="2960" width="1356" height="354" style="stroke: inherit; filter: none; fill: inherit"/>
+    </g>
+    <use xlink:href="#Rectangle_9_copy" style="stroke: #e2e2e2; filter: none; fill: none"/>
+    <text id="О_магазине" data-name="О магазине" class="cls-2" x="-242" y="3020.003">О магазине</text>
+    <text id="Контактная_информация_Реквизиты_Обратная_связь_Карта_сайта" data-name="Контактная информация Реквизиты Обратная связь  Карта сайта" class="cls-11" x="-242" y="3054.002">Контактная информация<tspan x="-242" dy="15.996">Реквизиты</tspan><tspan x="-242" dy="15.996">Обратная связь</tspan><tspan x="-242" dy="31.992">Карта сайта</tspan></text>
+    <text id="новости_и_справочники" data-name="новости и справочники" class="cls-2" x="-9" y="3020.003">новости и справочники</text>
+    <text id="Новости_Справочники_Добавить_рецензию" data-name="Новости Справочники Добавить рецензию" class="cls-11" x="-9" y="3054.002">Новости<tspan x="-9" dy="15.996">Справочники</tspan><tspan x="-9" dy="15.996">Добавить рецензию</tspan></text>
+    <text id="личный_кабинет" data-name="личный кабинет" class="cls-2" x="225" y="3020.003">личный кабинет</text>
+    <text id="Корзина_Корзина_групповых_покупок_Руководство_пользователя_Стр" data-name="Корзина Корзина групповых покупок Руководство пользователя «Стр" class="cls-12" x="224.125" y="3045">Корзина<tspan class="cls-13" x="224.125" dy="15.996">Корзина групповых покупок</tspan><tspan class="cls-13" x="224.125" dy="15.996">Руководство пользователя</tspan><tspan class="cls-13" x="224.125" dy="15.996">«Страничка-магазин» Список желаний</tspan><tspan class="cls-13" x="224.125" dy="15.996">Личные данные</tspan><tspan class="cls-13" x="224.125" dy="15.996">Стать продавцом</tspan></text>
+    <text id="помощь" class="cls-2" x="458" y="3020.003">помощь</text>
+    <text id="Обычная_покупка_Групповая_покупка_Как_заказать_Как_оплатить_О_д" data-name="Обычная покупка Групповая покупка Как заказать Как оплатить О д" class="cls-11" x="457.125" y="3045">Обычная покупка<tspan x="457.125" dy="15.996">Групповая покупка</tspan><tspan x="457.125" dy="15.996">Как заказать</tspan><tspan x="457.125" dy="15.996">Как оплатить</tspan><tspan x="457.125" dy="15.996">О доставке</tspan><tspan x="457.125" dy="15.996">Возврат товара</tspan><tspan x="457.125" dy="15.996">Гарантии и сервис</tspan><tspan x="457.125" dy="15.996">Законодательство</tspan><tspan x="457.125" dy="15.996">Частые вопросы</tspan></text>
+    <text id="форум" class="cls-2" x="689" y="3020.003">форум</text>
+    <text id="Справочник_организаций" data-name="Справочник организаций" class="cls-11" x="688.125" y="3045">Справочник организаций</text>
+    <path class="cls-14" d="M-40,2961h1v348h-1V2961"/>
+    <path id="Shape_8_copy" data-name="Shape 8 copy" class="cls-14" d="M194,2961h1v348h-1V2961"/>
+    <path id="Shape_8_copy_2" data-name="Shape 8 copy 2" class="cls-14" d="M427,2961h1v348h-1V2961"/>
+    <path id="Shape_8_copy_3" data-name="Shape 8 copy 3" class="cls-14" d="M658,2961h1v348h-1V2961"/>
+  </g>
+  <rect class="cls-15" x="-242" y="2794" width="1166" height="106"/>
+  <rect class="cls-3" x="-192" y="2824" width="307" height="46"/>
+  <rect id="Rectangle_13_copy" data-name="Rectangle 13 copy" class="cls-3" x="135" y="2824" width="566" height="46"/>
+  <g id="Кнопка">
+    <g id="Обычное">
+      <rect id="Rectangle_13_copy_2" data-name="Rectangle 13 copy 2" class="cls-16" x="722" y="2824" width="152" height="46"/>
+      <text id="найти" class="cls-17" x="768" y="2852.003">найти</text>
+    </g>
+  </g>
+  <text id="Город" class="cls-18" x="-174" y="2852.003">Город</text>
+  <text id="Название_организации_или_услуга" data-name="Название организации или услуга" class="cls-18" x="154" y="2852.003">Название организации или услуга</text>
+  <text id="Справочник_организаций-2" data-name="Справочник организаций" class="cls-19" x="-243" y="2774.002">Справочник организаций</text>
+  <path id="Shape_4_copy_7" data-name="Shape 4 copy 7" class="cls-20" d="M84.989,2844l5.5,4.51,5.5-4.51v2.49l-5.5,4.51-5.5-4.51V2844Z"/>
+  <text id="Новости-2" data-name="Новости" class="cls-19" x="-244" y="2199.001">Новости</text>
+  <text id="Также_следите_за_нами_в_Вконтакте_и_Facebook" data-name="Также следите за нами в Вконтакте и Facebook" class="cls-21" x="605" y="2199.001">Также следите за нами в<tspan class="cls-22"> <tspan class="cls-23">Вконтакте</tspan> </tspan>и<tspan> <tspan class="cls-23">Facebook</tspan></tspan></text>
+  <path id="Shape_5_copy" data-name="Shape 5 copy" class="cls-14" d="M-242,2215v-1H924v1H-242"/>
+  <g id="баннер">
+    <rect id="Rectangle_7_copy_7" data-name="Rectangle 7 copy 7" class="cls-24" x="348" y="2230" width="575" height="228"/>
+  </g>
+  <g id="_4" data-name="4">
+    <rect id="Rectangle_7_copy_6" data-name="Rectangle 7 copy 6" class="cls-24" x="644" y="2472" width="280" height="228"/>
+    <g style="fill: #ca3034; filter: url(#filter-12)">
+      <path id="Rectangle_10_copy" data-name="Rectangle 10 copy" class="cls-25" d="M659,2470h62v64s-28.753,13-30.05,13c-1.031,0-31.95-13-31.95-13v-64Z" style="stroke: inherit; filter: none; fill: inherit"/>
+    </g>
+    <use xlink:href="#Rectangle_10_copy" style="stroke: #383838; filter: none; fill: none"/>
+    <g style="fill: #153f93; filter: url(#filter-13)">
+      <text id="_01_09" data-name="01/09" class="cls-26" x="671" y="2511.999" style="stroke: inherit; filter: none; fill: inherit">01/09</text>
+    </g>
+    <use xlink:href="#_01_09" style="stroke: #383838; filter: none; fill: none"/>
+    <text id="Посуда_из_Италии_Не_упусти_шанс" data-name="Посуда из Италии! Не упусти шанс" class="cls-27" x="738" y="2513">Посуда из Италии!<tspan x="738" dy="20">Не упусти шанс</tspan></text>
+    <text id="Подробнее" class="cls-28" x="815" y="2677.003">Подробнее</text>
+    <path id="Shape_4_copy_6" data-name="Shape 4 copy 6" class="cls-29" d="M896,2679l4.517-5.5L896,2668h2.49l4.518,5.5-4.518,5.5H896Z"/>
+  </g>
+  <g id="_3" data-name="3">
+    <rect id="Rectangle_7_copy_5" data-name="Rectangle 7 copy 5" class="cls-24" x="348" y="2472" width="280" height="228"/>
+    <g style="fill: #ca3034; filter: url(#filter-15)">
+      <path id="path" class="cls-30" d="M363,2470h62v64s-28.753,13-30.05,13c-1.031,0-31.95-13-31.95-13v-64Z" style="stroke: inherit; filter: none; fill: inherit"/>
+    </g>
+    <use xlink:href="#path" style="stroke: #383838; filter: none; fill: none"/>
+    <g style="fill: #153f93; filter: url(#filter-16)">
+      <text id="_27_09" data-name="27/09" class="cls-31" x="375" y="2511.999" style="stroke: inherit; filter: none; fill: inherit">27/09</text>
+    </g>
+    <use xlink:href="#_27_09" style="stroke: #383838; filter: none; fill: none"/>
+    <text id="Платья_из_Франции_Писк_моды_этого_лета" data-name="Платья из Франции! Писк моды этого лета" class="cls-27" x="442" y="2513">Платья из Франции!<tspan x="442" dy="20">Писк моды этого лета</tspan></text>
+    <text id="Подробнее-2" data-name="Подробнее" class="cls-28" x="519" y="2677.003">Подробнее</text>
+    <path id="Shape_4_copy_5" data-name="Shape 4 copy 5" class="cls-32" d="M600,2679l4.517-5.5L600,2668h2.49l4.518,5.5-4.518,5.5H600Z"/>
+  </g>
+  <g id="_2" data-name="2">
+    <rect id="Rectangle_7_copy_9" data-name="Rectangle 7 copy 9" class="cls-24" x="53" y="2230" width="280" height="470"/>
+    <g style="fill: #ca3034; filter: url(#filter-18)">
+      <path id="Rectangle_10_copy_3" data-name="Rectangle 10 copy 3" class="cls-33" d="M68,2228h62v64s-28.753,13-30.05,13c-1.031,0-31.95-13-31.95-13v-64Z" style="stroke: inherit; filter: none; fill: inherit"/>
+    </g>
+    <use xlink:href="#Rectangle_10_copy_3" style="stroke: #383838; filter: none; fill: none"/>
+    <g style="fill: #153f93; filter: url(#filter-19)">
+      <text id="_01_09-2" data-name="01/09" class="cls-34" x="80" y="2270.002" style="stroke: inherit; filter: none; fill: inherit">01/09</text>
+    </g>
+    <use xlink:href="#_01_09-2" style="stroke: #383838; filter: none; fill: none"/>
+    <text id="Посуда_из_Италии_Не_упусти_шанс-2" data-name="Посуда из Италии! Не упусти шанс" class="cls-27" x="147" y="2271.003">Посуда из Италии!<tspan x="147" dy="20">Не упусти шанс</tspan></text>
+    <text id="Подробнее-3" data-name="Подробнее" class="cls-28" x="224" y="2677.003">Подробнее</text>
+    <path id="Shape_4_copy_9" data-name="Shape 4 copy 9" class="cls-35" d="M305,2679l4.517-5.5L305,2668h2.49l4.518,5.5-4.518,5.5H305Z"/>
+  </g>
+  <g id="_1" data-name="1">
+    <rect id="Rectangle_7_copy_8" data-name="Rectangle 7 copy 8" class="cls-24" x="-243" y="2230" width="280" height="470"/>
+    <g style="fill: #ca3034; filter: url(#filter-21)">
+      <path id="Rectangle_10_copy_2" data-name="Rectangle 10 copy 2" class="cls-36" d="M-228,2228h62v64s-28.753,13-30.05,13c-1.031,0-31.95-13-31.95-13v-64Z" style="stroke: inherit; filter: none; fill: inherit"/>
+    </g>
+    <use xlink:href="#Rectangle_10_copy_2" style="stroke: #383838; filter: none; fill: none"/>
+    <g style="fill: #153f93; filter: url(#filter-22)">
+      <text id="_27_09-2" data-name="27/09" class="cls-37" x="-216" y="2270.002" style="stroke: inherit; filter: none; fill: inherit">27/09</text>
+    </g>
+    <use xlink:href="#_27_09-2" style="stroke: #383838; filter: none; fill: none"/>
+    <text id="Платья_из_Франции_Писк_моды_этого_лета_copy" data-name="Платья из Франции! Писк моды этого лета copy" class="cls-27" x="-149" y="2271.003">Платья из Франции!<tspan x="-149" dy="20">Писк моды этого лета</tspan></text>
+    <text id="Подробнее-4" data-name="Подробнее" class="cls-28" x="-72" y="2677.003">Подробнее</text>
+    <path id="Shape_4_copy_8" data-name="Shape 4 copy 8" class="cls-38" d="M9,2679l4.517-5.5L9,2668h2.49L16,2673.5l-4.518,5.5H9Z"/>
+  </g>
+  <text id="Товары_оптом-2" data-name="Товары оптом" class="cls-39" x="-244" y="1795.003">Товары оптом</text>
+  <path class="cls-14" d="M-242,1811v-1H924v1H-242"/>
+  <g id="_1-2" data-name="1">
+    <rect id="Rectangle_7_copy_4" data-name="Rectangle 7 copy 4" class="cls-24" x="-242" y="1825" width="280" height="300"/>
+    <rect id="_3-2" data-name="3" class="cls-40" x="-242" y="1825" width="94" height="130"/>
+    <rect id="_3_копия" data-name="3 копия" class="cls-40" x="-149" y="1825" width="94" height="130"/>
+    <rect id="_3_копия_2" data-name="3 копия 2" class="cls-40" x="-56" y="1825" width="94" height="130"/>
+    <text id="Оптовая_покупка_1" data-name="Оптовая покупка №1" class="cls-27" x="-212" y="1995">Оптовая покупка №1</text>
+    <text id="Минимальная_сумма:_25000_руб." data-name="Минимальная сумма: 25000 руб." class="cls-21" x="-212" y="2009">Минимальная сумма: <tspan class="cls-41">25000 руб.</tspan></text>
+    <rect id="Rectangle_23_copy_2" data-name="Rectangle 23 copy 2" class="cls-42" x="-212" y="2045" width="220" height="50"/>
+    <text id="посмотреть_товары" data-name="посмотреть товары" class="cls-17" x="-194" y="2075.997">посмотреть товары</text>
+  </g>
+  <g id="_2-2" data-name="2">
+    <rect id="Rectangle_7_copy_4-2" data-name="Rectangle 7 copy 4" class="cls-24" x="53" y="1825" width="280" height="300"/>
+    <rect id="_3-3" data-name="3" class="cls-40" x="53" y="1825" width="94" height="130"/>
+    <rect id="_3_копия-2" data-name="3 копия" class="cls-40" x="146" y="1825" width="94" height="130"/>
+    <rect id="_3_копия_2-2" data-name="3 копия 2" class="cls-40" x="239" y="1825" width="94" height="130"/>
+    <text id="Оптовая_покупка_2" data-name="Оптовая покупка №2" class="cls-27" x="83" y="1995">Оптовая покупка №2</text>
+    <text id="Минимальная_сумма:_25000_руб.-2" data-name="Минимальная сумма: 25000 руб." class="cls-21" x="83" y="2010.001">Минимальная сумма: <tspan class="cls-41">25000 руб.</tspan></text>
+    <rect id="Rectangle_23_copy_2-2" data-name="Rectangle 23 copy 2" class="cls-43" x="83" y="2045" width="220" height="50"/>
+    <text id="посмотреть_товары-2" data-name="посмотреть товары" class="cls-17" x="101" y="2075.997">посмотреть товары</text>
+  </g>
+  <g id="_3-4" data-name="3">
+    <rect id="Rectangle_7_copy_4-3" data-name="Rectangle 7 copy 4" class="cls-24" x="349" y="1825" width="280" height="300"/>
+    <rect id="_3-5" data-name="3" class="cls-40" x="349" y="1825" width="94" height="130"/>
+    <rect id="_3_копия-3" data-name="3 копия" class="cls-40" x="442" y="1825" width="94" height="130"/>
+    <rect id="_3_копия_2-3" data-name="3 копия 2" class="cls-40" x="535" y="1825" width="94" height="130"/>
+    <text id="Оптовая_покупка_3" data-name="Оптовая покупка №3" class="cls-27" x="378.999" y="1995">Оптовая покупка №3</text>
+    <text id="Минимальная_сумма:_25000_руб.-3" data-name="Минимальная сумма: 25000 руб." class="cls-21" x="378.999" y="2010.001">Минимальная сумма: <tspan class="cls-41">25000 руб.</tspan></text>
+    <rect id="Rectangle_23_copy_2-3" data-name="Rectangle 23 copy 2" class="cls-44" x="379" y="2045" width="220" height="50"/>
+    <text id="посмотреть_товары-3" data-name="посмотреть товары" class="cls-17" x="397" y="2075.997">посмотреть товары</text>
+  </g>
+  <g id="_4-2" data-name="4">
+    <rect id="Rectangle_7_copy_4-4" data-name="Rectangle 7 copy 4" class="cls-24" x="644" y="1825" width="280" height="300"/>
+    <rect id="_3-6" data-name="3" class="cls-40" x="644" y="1825" width="94" height="130"/>
+    <rect id="_3_копия-4" data-name="3 копия" class="cls-40" x="737" y="1825" width="94" height="130"/>
+    <rect id="_3_копия_2-4" data-name="3 копия 2" class="cls-40" x="830" y="1825" width="94" height="130"/>
+    <text id="Оптовая_покупка_4" data-name="Оптовая покупка №4" class="cls-27" x="674" y="1995">Оптовая покупка №4</text>
+    <text id="Минимальная_сумма:_25000_руб.-4" data-name="Минимальная сумма: 25000 руб." class="cls-21" x="674" y="2010.001">Минимальная сумма: <tspan class="cls-41">25000 руб.</tspan></text>
+    <rect id="Rectangle_23_copy_2-4" data-name="Rectangle 23 copy 2" class="cls-45" x="674" y="2045" width="220" height="50"/>
+    <text id="посмотреть_товары-4" data-name="посмотреть товары" class="cls-17" x="692" y="2075.997">посмотреть товары</text>
+  </g>
+  <g id="Листалки">
+    <rect class="cls-24" x="886" y="1773" width="38" height="38"/>
+    <rect id="Rectangle_8_copy" data-name="Rectangle 8 copy" class="cls-24" x="849" y="1773" width="38" height="38"/>
+    <path class="cls-46" d="M902,1798l4.517-5.5L902,1787h2.49l4.518,5.5-4.518,5.5H902Z"/>
+    <path id="Shape_4_copy" data-name="Shape 4 copy" class="cls-47" d="M872,1798l-4.517-5.5L872,1787h-2.49L865,1792.5l4.518,5.5H872Z"/>
+  </g>
+  <text id="совместные_покупки-2" data-name="совместные покупки" class="cls-39" x="-244" y="1334.998">совместные покупки</text>
+  <path class="cls-14" d="M-242,1351v-1H924v1H-242"/>
+  <g id="_1-3" data-name="1">
+    <rect id="Rectangle_7_copy_4-5" data-name="Rectangle 7 copy 4" class="cls-24" x="-242" y="1365" width="280" height="339"/>
+    <rect id="Прямоугольник_1" data-name="Прямоугольник 1" class="cls-48" x="-211" y="1559" width="218" height="20"/>
+    <rect id="Прямоугольник_2" data-name="Прямоугольник 2" class="cls-49" x="-210" y="1560" width="72" height="18"/>
+    <rect id="_3-7" data-name="3" class="cls-40" x="-242" y="1365" width="94" height="130"/>
+    <rect id="_3_копия-5" data-name="3 копия" class="cls-40" x="-149" y="1365" width="94" height="130"/>
+    <rect id="_3_копия_2-5" data-name="3 копия 2" class="cls-40" x="-56" y="1365" width="94" height="130"/>
+    <text id="Совместная_покупка_1" data-name="Совместная покупка №1" class="cls-27" x="-212" y="1535.002">Совместная покупка №1</text>
+    <rect id="Rectangle_23_copy_2-5" data-name="Rectangle 23 copy 2" class="cls-50" x="-212" y="1624" width="220" height="50"/>
+    <text id="посмотреть_товары-5" data-name="посмотреть товары" class="cls-17" x="-194" y="1655.003">посмотреть товары</text>
+  </g>
+  <g id="_2-3" data-name="2">
+    <rect id="Rectangle_7_copy_4-6" data-name="Rectangle 7 copy 4" class="cls-24" x="53" y="1365" width="280" height="339"/>
+    <rect id="Прямоугольник_1-2" data-name="Прямоугольник 1" class="cls-48" x="84" y="1559" width="218" height="20"/>
+    <rect id="Прямоугольник_2-2" data-name="Прямоугольник 2" class="cls-49" x="85" y="1560" width="126" height="18"/>
+    <rect id="_3-8" data-name="3" class="cls-40" x="53" y="1365" width="94" height="130"/>
+    <rect id="_3_копия-6" data-name="3 копия" class="cls-40" x="146" y="1365" width="94" height="130"/>
+    <rect id="_3_копия_2-6" data-name="3 копия 2" class="cls-40" x="239" y="1365" width="94" height="130"/>
+    <text id="Совместная_покупка_2" data-name="Совместная покупка №2" class="cls-27" x="83" y="1535.002">Совместная покупка №2</text>
+    <rect id="Rectangle_23_copy_2-6" data-name="Rectangle 23 copy 2" class="cls-51" x="83" y="1624" width="220" height="50"/>
+    <text id="посмотреть_товары-6" data-name="посмотреть товары" class="cls-17" x="101" y="1655.003">посмотреть товары</text>
+  </g>
+  <g id="_3-9" data-name="3">
+    <rect id="Rectangle_7_copy_4-7" data-name="Rectangle 7 copy 4" class="cls-24" x="349" y="1365" width="280" height="339"/>
+    <rect id="Прямоугольник_1-3" data-name="Прямоугольник 1" class="cls-48" x="380" y="1559" width="218" height="20"/>
+    <rect id="Прямоугольник_2-3" data-name="Прямоугольник 2" class="cls-49" x="381" y="1560" width="72" height="18"/>
+    <rect id="_3-10" data-name="3" class="cls-40" x="349" y="1365" width="94" height="130"/>
+    <rect id="_3_копия-7" data-name="3 копия" class="cls-40" x="442" y="1365" width="94" height="130"/>
+    <rect id="_3_копия_2-7" data-name="3 копия 2" class="cls-40" x="535" y="1365" width="94" height="130"/>
+    <text id="Совместная_покупка_3" data-name="Совместная покупка №3" class="cls-27" x="378.999" y="1535.002">Совместная покупка №3</text>
+    <rect id="Rectangle_23_copy_2-7" data-name="Rectangle 23 copy 2" class="cls-52" x="379" y="1624" width="220" height="50"/>
+    <text id="посмотреть_товары-7" data-name="посмотреть товары" class="cls-17" x="397" y="1655.003">посмотреть товары</text>
+  </g>
+  <g id="_4-3" data-name="4">
+    <rect id="Rectangle_7_copy_4-8" data-name="Rectangle 7 copy 4" class="cls-24" x="644" y="1365" width="280" height="339"/>
+    <rect id="Прямоугольник_1-4" data-name="Прямоугольник 1" class="cls-48" x="675" y="1559" width="218" height="20"/>
+    <rect id="Прямоугольник_2-4" data-name="Прямоугольник 2" class="cls-49" x="676" y="1560" width="72" height="18"/>
+    <rect id="_3-11" data-name="3" class="cls-40" x="644" y="1365" width="94" height="130"/>
+    <rect id="_3_копия-8" data-name="3 копия" class="cls-40" x="737" y="1365" width="94" height="130"/>
+    <rect id="_3_копия_2-8" data-name="3 копия 2" class="cls-40" x="830" y="1365" width="94" height="130"/>
+    <text id="Совместная_покупка_4" data-name="Совместная покупка №4" class="cls-27" x="674" y="1535.002">Совместная покупка №4</text>
+    <rect id="Rectangle_23_copy_2-8" data-name="Rectangle 23 copy 2" class="cls-53" x="674" y="1624" width="220" height="50"/>
+    <text id="посмотреть_товары-8" data-name="посмотреть товары" class="cls-17" x="692" y="1655.003">посмотреть товары</text>
+  </g>
+  <g id="Листалки-2" data-name="Листалки">
+    <rect class="cls-24" x="886" y="1313" width="38" height="38"/>
+    <rect id="Rectangle_8_copy-2" data-name="Rectangle 8 copy" class="cls-24" x="849" y="1313" width="38" height="38"/>
+    <path class="cls-54" d="M902,1338l4.517-5.5L902,1327h2.49l4.518,5.5-4.518,5.5H902Z"/>
+    <path id="Shape_4_copy-2" data-name="Shape 4 copy" class="cls-55" d="M872,1338l-4.517-5.5L872,1327h-2.49L865,1332.5l4.518,5.5H872Z"/>
+  </g>
+  <g style="fill: #e2e2e2; filter: url(#filter-36)">
+    <rect id="rect-2" class="cls-56" x="-325" y="716" width="1356" height="544.59" style="stroke: inherit; filter: none; fill: inherit"/>
+  </g>
+  <use xlink:href="#rect-2" style="stroke: #e2e2e2; filter: none; fill: none"/>
+  <text id="Интернет-магазин-2" data-name="Интернет-магазин" class="cls-39" x="-244" y="792.001">Интернет-магазин</text>
+  <g id="Листалки-3" data-name="Листалки">
+    <rect class="cls-24" x="886" y="769" width="38" height="38"/>
+    <rect id="Rectangle_8_copy-3" data-name="Rectangle 8 copy" class="cls-24" x="849" y="769" width="38" height="38"/>
+    <path class="cls-57" d="M902,794l4.517-5.5L902,783h2.49L909,788.5l-4.518,5.5H902Z"/>
+    <path id="Shape_4_copy-3" data-name="Shape 4 copy" class="cls-58" d="M872,794l-4.517-5.5L872,783h-2.49L865,788.5l4.518,5.5H872Z"/>
+  </g>
+  <path class="cls-14" d="M-243,807v-1H924v1H-243"/>
+  <g id="_4-4" data-name="4">
+    <rect id="Rectangle_7_copy_3" data-name="Rectangle 7 copy 3" class="cls-24" x="644" y="823" width="280" height="379"/>
+    <text id="Спортивные_кроссовки" data-name="Спортивные кроссовки" class="cls-27" x="673" y="1114.001">Спортивные кроссовки</text>
+    <text id="_22_000_руб." data-name="22 000 руб." class="cls-59" x="673" y="1170.001">22 000<tspan class="cls-60"> <tspan class="cls-61">руб.</tspan></tspan></text>
+  </g>
+  <g id="_3-12" data-name="3">
+    <rect id="Rectangle_7_copy_2" data-name="Rectangle 7 copy 2" class="cls-24" x="349" y="823" width="280" height="379"/>
+    <text id="Набор_кисточек_" data-name="Набор кисточек " class="cls-27" x="378.999" y="1114.001">Набор кисточек </text>
+    <text id="_1_800_руб." data-name="1 800 руб." class="cls-59" x="378.999" y="1170.001">1 800<tspan class="cls-60"> <tspan class="cls-61">руб.</tspan></tspan></text>
+  </g>
+  <g id="_2-4" data-name="2">
+    <rect id="Rectangle_7_copy" data-name="Rectangle 7 copy" class="cls-24" x="53" y="823" width="280" height="379"/>
+    <text id="Чехол_для_телефона" data-name="Чехол для телефона" class="cls-27" x="83" y="1114.001">Чехол для телефона</text>
+    <text id="_600_руб." data-name="600 руб." class="cls-59" x="83" y="1170.001">600<tspan class="cls-60"> <tspan class="cls-61">руб.</tspan></tspan></text>
+  </g>
+  <g id="_1-4" data-name="1">
+    <rect class="cls-24" x="-242" y="823" width="280" height="379"/>
+    <text id="Солнцезащитные_очки" data-name="Солнцезащитные очки" class="cls-27" x="-212" y="1114.001">Солнцезащитные очки</text>
+    <text id="_200_руб." data-name="200 руб." class="cls-59" x="-212" y="1170.001">200<tspan class="cls-60"> <tspan class="cls-61">руб.</tspan></tspan></text>
+  </g>
+  <g id="Листалки-4" data-name="Листалки">
+    <rect class="cls-24" x="886" y="769" width="38" height="38"/>
+    <rect id="Rectangle_8_copy-4" data-name="Rectangle 8 copy" class="cls-24" x="849" y="769" width="38" height="38"/>
+    <path class="cls-57" d="M902,794l4.517-5.5L902,783h2.49L909,788.5l-4.518,5.5H902Z"/>
+    <path id="Shape_4_copy-4" data-name="Shape 4 copy" class="cls-58" d="M872,794l-4.517-5.5L872,783h-2.49L865,788.5l4.518,5.5H872Z"/>
+  </g>
+  <text id="большой_выбор_1_000_000_товаров_в_каталоге" data-name="большой выбор 1 000 000 товаров в каталоге" class="cls-21" transform="translate(-187.987 659)"><tspan class="cls-62">большой выбор</tspan><tspan x="0" dy="20.006">1 000 000 товаров в каталоге</tspan></text>
+  <text id="покупать_легко_visa_maestro_mastercard" data-name="покупать легко visa, maestro, mastercard" class="cls-63" transform="translate(105.085 659)"><tspan class="cls-41">покупать легко</tspan><tspan x="0" dy="20.006">visa, maestro, mastercard</tspan></text>
+  <text id="доставка_340_городов_России" data-name="доставка 340 городов России" class="cls-21" transform="translate(694.231 659)"><tspan class="cls-62">доставка</tspan><tspan x="0" dy="20.006">340 городов России</tspan></text>
+  <image id="Vector_Smart_Object" data-name="Vector Smart Object" x="-242" y="647" width="35" height="31" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAfCAMAAABav4S9AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAB9VBMVEUAAAA4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODgAAADiexrhAAAApXRSTlMAAY7485IGD6Pyd1T6XlzrhqTgbzfKgc3sZL2sPS3GoapK/iOzuDsvTPwh1JUoRK+715Nh9hSbzyZG9RPmfRdbmtIH6Hx46gmE4gQW91176QgQ9GhtnqBzg6Km+WWP7vCluQ4KwNgC+1gfbAN58SAFiA1AVRlJKxKJxeWc1UvdgF923xUxaZSnriwqYu8wilkdOI1xjDQbkcJODBGZULWpYLbEf0FqtRPUAAAAAWJLR0QAiAUdSAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAftJREFUOMuFk/1fS1Ecx98zZlokT7WxcKOaEOlBGAohi1l1hbGstduaRESlzPNTkuc85fn8n87afc2929Lnh+/5fs59n9f9nHPvAV2WBdaFi2y6WWy3LskjS478pcsKluumcIVjpViVxay2w5oi3RQ7wbU2E1kn3FCyXneuDbBRKc1gNm2GMlGuuwrPFiyVW83INmU7VO1Ib2BnNeyqqTUxdfWwW2lIe+eevdj2eY3IfusBONhoSU80HToMR5qPGphjx1s44Ws1zJw85ed0oC1lbO0damHgDHQGzqr/dO58EC5cVNWOdhtqqEu9JMJ0F5eoRkV6orhFldoVUtF6Iab0xS/3h027uOJpHbgauAa9GmJQTvRpmtKWcWKdQqu5LsdBkWK4MZR5qHBz6BYpxhfk/wr6GNZGRusj9pyPb0fGGke0YRj33ilKOHMydxPNLu/4bHvv/lzveZBKK/VQlM7BOKx+vYsWPJqDeRxJt0+eyjLwTJbamCzP5WJLeVR2lYk0M/EiDglRJv/YEEyKlzAlJoxx4JV4DeVv5MeYegvd797Dh+mYMY5Uj3e+OFD9cXbwJ3+y5NJ46qIZ4sCn/M+yfun/CjPKDHwbtWCOA2FPhaxN33+A+6e8RHl15tOZ1a/p+eLA77EcjClO8vo1TGbqjykOtHhEthQ9zl8bCYes6BbX9AAAAABJRU5ErkJggg=="/>
+  <image id="Vector_Smart_Object-2" data-name="Vector Smart Object" x="633" y="650" width="40" height="28" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAcCAMAAAAkyw3kAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABm1BMVEUAAAA4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODgAAACbJiDrAAAAh3RSTlMAVO3xY+u0YKr3BVAgd927IplEZhHW0Lo/rKDO/F/uBqb9VQP6QAfDJYgU39gQM2mekKOMUW/74+Dp5eRkubeF6BkjSgIaCwQbCQHye2yxHHiowqt1pVNw3g+JmlLRktz+DPWTKPl2gjVlLerzDqkwvdKyH9XwNG0TRVm8a4rPs2qR79fsjgof5Q/AAAAAAWJLR0QAiAUdSAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAZVJREFUOMu9kddawkAQhdeKUZMsEVGKEbBXxAqIigUV7L2i2LD33rvz2mZDSYxRufJcTGZO/m9ndwYlJYOKUlKRUmnpGhVlUJlKEDRIRVmQ/W8gzQCLSZIBv4NaDrOs8OXgD1BQjoDoGG0UzNXr9Xn5qiDNCAezXBQ0GI1Gk7lABdTxNOJ4zMlaF1qstu8guSKTg+QgKjIUlyhBLaNDtsj+sPSY0jK+/CtYwXMYI4yxjXDSqyurqmvkYK14FCfOh9R2qHNEVF9c7Who/HEzTc0tzqhcbmcreH4CFWprTxDs8CYIJkFnYmAXdMvAHl+v4n9fvz+SBAYGJXDIBdbhERkWGOWheaxSzMcn4uAkTE3PeGfnJHAeFhZpPlhI8qVlFLKL7srqmhDXN8JxrtO8KcSt0LY4VytiKXGsXtghRrs7NmfnLviIY9ojBcWi/bC4qQM4JPbRsSOmEzglTvCMFOH9WCP/uSWA0IX5Mt76iloS4jXcKEbhgdu7+70Hv+TQ8Pj0TI33fZt+EF4WauSO5hXe3j+ixScMJWxO/teoTAAAAABJRU5ErkJggg=="/>
+  <image id="Vector_Smart_Object-3" data-name="Vector Smart Object" x="343" y="647" width="26" height="31" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAfCAMAAADOWS1PAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABcVBMVEUAAAA4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODgAAABEZq/yAAAAeXRSTlMABkN+stXx6MeaXhkBQaTy/tKbdFVHQElhhLa/WQVU0b0VBEWi+eECPsb8nScXj/rIP+LWKSVg8FD2SnWxOGYP3qunEQ4z/TxLeSb0f2NiCs3DA8x8Oh2N76yc7lOFCcvAPSSYXSK7K/WIUYOf6c8oHPh4cCOwr0bsoZW32QAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAFgSURBVCjPdZBnQ4JQGEZfW5RpYqHZLhuUDQpKxLaVTUvDLC0t997z/vvMhSE+Hy7nvYfxcAEakQ0MDg2PIISw0TH5OHSiUE6ocPXkFKHRTutmZlX43PxCUywu4cu6FeFO/era+oacBNjcMmzvgCi7e9T+AdDMIUjkiKEBM4JkjBiwJmllYoHrpzhAZmllRoC04s3jk79VK6FODWd91PnFJfRRFvqqozQNur5p/Y71tgkaBCzRoDv8XlG/PDw+tZ4mWKBtTXymLC8gszteW8pGA+9s8Rtmd71/uNrfdPLg9rQHF/+Jvjp1PG7wqjuT7/tHaKr2gh8FpM4pgPygYIJSKsjUC4eocK8JU6H6SvIRUmzICN/Yi8biYhWPRZuQsCb/m6Q10UaCSvkE4UtRhDAp05lsm7OZtLL7FTlHvqD/A30h78iJOhW5jB/An+GKPX2hVEaVCiqXpA4AqrVatWv8BZcrQA9iYPVNAAAAAElFTkSuQmCC"/>
+  <image id="Vector_Smart_Object-4" data-name="Vector Smart Object" x="50" y="647" width="35" height="31" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAfCAMAAABav4S9AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABoVBMVEUAAAA4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODgAAABsNaXrAAAAiXRSTlMAAmvQDTLL9+udDpH9tiJEThcvMCpV5eaS6RXV4AnYr4GTNBAUevYz+2FUPtbxbH7yILiogBkEysD0O0YncEBMI8zu8POU+lZQbtreGDhKNQyeicX8XqBDYo6FyfmcpugrOnTiBhHb7L8Bg9kIeQpIQeq3sLUTapDI3++Muqu7gnsHp1+8PazjHIN4v/cAAAABYktHRACIBR1IAAAACXBIWXMAAAsSAAALEgHS3X78AAABZ0lEQVQ4y2NgwAIYmZhZGPADVjZ2Dk68Kri4eXj5+DsF0IQFhYTBQATIFhUTFwVSEpJSyCpEpTuhQIaBj5eHmwskKCsnj6REgUdRSUoZDFRU1djUocJKGppwJfydWjCmto6uHiNcQt/AEMY0MoaxTDqNTZHMNzO3gGmwhBtjZY3qExu4ZZ22dniAvQNYDX7gCFZjhy9ATSxop0bT3MkZGbhIukqhqeF2k3D3QAGeXt4+KGp8O/2AEewfgJIMdAJR1AQFA6MvpNPFHVlRqDOKmrAwhvDOCNNIdkEkNXad6GqiooExFSOAW01sHINnfABDQmcikppwVDVJySmpyWmc6RmZSGqyslHUSDkH5phGyufmISnJZ2dCDZ8Cp8KiYmRQIt3pmokWzqVlkeXIoKJSncj4qgrFp6a6BkTW1uFRklNZD6KE3RpwKmlsqoKEeLNGSzPWtMzvKefUClXN2qaLPS23K3aAFQAARPyEpybvZM4AAAAASUVORK5CYII="/>
+  <text id="безопасность_Платежи_гарантии_отзывы" data-name="безопасность Платежи, гарантии, отзывы" class="cls-21" transform="translate(388.155 659)"><tspan class="cls-62">безопасность</tspan><tspan x="0" dy="20.006">Платежи, гарантии, отзывы</tspan></text>
+  <g style="fill: #e4e4e4; filter: url(#filter-41)">
+    <rect id="rect" class="cls-64" x="-385" y="154" width="1428" height="455" style="stroke: inherit; filter: none; fill: inherit"/>
+  </g>
+  <use xlink:href="#rect" style="stroke: #e2e2e2; filter: none; fill: none"/>
+  <g id="Сток">
+    <rect class="cls-65" x="633" y="154" width="291" height="227"/>
+    <rect class="cls-66" x="626" y="147" width="300" height="237"/>
+    <text id="модные_очки" data-name="модные очки" class="cls-67" x="662" y="236">модные очки</text>
+    <text id="сток-2" data-name="сток" class="cls-68" x="662" y="216">сток</text>
+    <circle id="Ellipse_1_copy_5" data-name="Ellipse 1 copy 5" class="cls-69" cx="886" cy="343" r="7"/>
+    <circle id="Ellipse_1_copy_5-2" data-name="Ellipse 1 copy 5" class="cls-3" cx="819" cy="343" r="7"/>
+    <circle id="Ellipse_1_copy_5-3" data-name="Ellipse 1 copy 5" class="cls-3" cx="852" cy="343" r="7"/>
+  </g>
+  <g id="Молл">
+    <rect id="Rectangle_5_copy" data-name="Rectangle 5 copy" class="cls-65" x="633" y="381" width="291" height="228"/>
+    <rect id="Rectangle_15_copy" data-name="Rectangle 15 copy" class="cls-70" x="626" y="377" width="300" height="237"/>
+    <text id="часы_от_Apple" data-name="часы от Apple" class="cls-67" x="663" y="463">часы от Apple</text>
+    <circle id="Ellipse_1_copy_4" data-name="Ellipse 1 copy 4" class="cls-71" cx="886" cy="574" r="7"/>
+    <circle id="Ellipse_1_copy_4-2" data-name="Ellipse 1 copy 4" class="cls-3" cx="819" cy="574" r="7"/>
+    <circle id="Ellipse_1_copy_4-3" data-name="Ellipse 1 copy 4" class="cls-3" cx="852" cy="574" r="7"/>
+    <text id="молл-2" data-name="молл" class="cls-68" x="662" y="443">молл</text>
+  </g>
+  <g id="Горячие_покупки" data-name="Горячие покупки">
+    <rect class="cls-65" x="-11" y="154" width="644" height="455"/>
+    <circle class="cls-3" cx="594" cy="574" r="7"/>
+    <circle id="Ellipse_1_copy" data-name="Ellipse 1 copy" class="cls-72" cx="560" cy="574" r="7"/>
+    <circle id="Ellipse_1_copy_3" data-name="Ellipse 1 copy 3" class="cls-3" cx="493" cy="574" r="7"/>
+    <circle id="Ellipse_1_copy_3-2" data-name="Ellipse 1 copy 3" class="cls-3" cx="459" cy="574" r="7"/>
+    <circle id="Ellipse_1_copy_2" data-name="Ellipse 1 copy 2" class="cls-3" cx="526" cy="574" r="7"/>
+    <text id="ШИКАРНЫЕ_платья" data-name="ШИКАРНЫЕ платья" class="cls-68" x="37" y="226">ШИКАРНЫЕ<tspan x="37" dy="37.2">платья</tspan></text>
+  </g>
+  <text id="Весь_каталог_товаров" data-name="Весь каталог товаров" class="cls-73" x="-243" y="186">Весь каталог товаров</text>
+  <path class="cls-14" d="M-243,243v-1H-53v1H-243"/>
+  <path id="Shape_6_copy" data-name="Shape 6 copy" class="cls-14" d="M-243,363v-1H-33v1H-243"/>
+  <path id="Shape_6_copy_копия" data-name="Shape 6 copy копия" class="cls-14" d="M-243,323v-1H-33v1H-243"/>
+  <path id="Shape_6_copy_копия_2" data-name="Shape 6 copy копия 2" class="cls-14" d="M-243,284v-1H-33v1H-243"/>
+  <path id="Shape_6_copy_2" data-name="Shape 6 copy 2" class="cls-14" d="M-243,403v-1H-33v1H-243"/>
+  <path id="Shape_6_copy_3" data-name="Shape 6 copy 3" class="cls-14" d="M-243,443v-1H-33v1H-243"/>
+  <path id="Shape_6_copy_4" data-name="Shape 6 copy 4" class="cls-14" d="M-243,483v-1H-33v1H-243"/>
+  <path id="Shape_6_copy_5" data-name="Shape 6 copy 5" class="cls-14" d="M-243,523v-1H-33v1H-243"/>
+  <path id="Shape_6_copy_6" data-name="Shape 6 copy 6" class="cls-14" d="M-243,563v-1H-33v1H-243"/>
+  <path class="cls-74" d="M-242,202v-1H-31v1H-242"/>
+  <path id="Shape_4_copy_2" data-name="Shape 4 copy 2" class="cls-75" d="M-57,186l4.517-5.5L-57,175h2.49L-50,180.5l-4.518,5.5H-57Z"/>
+  <g id="Одежда">
+    <path class="cls-76" d="M-12,154H924V609H-12V154Zm-261,48H6v42H-273V202Z"/>
+    <g id="Спецодежда">
+      <text id="Комбинезоны_брюки_Костюмы_халаты_Куртки_ватники_Фартуки_" data-name="Комбинезоны, брюки  Костюмы, халаты Куртки, ватники   Фартуки, " class="cls-77" x="233" y="463">Комбинезоны, брюки	<tspan x="233" dy="30.002">Костюмы, халаты</tspan><tspan x="233" dy="30.002">Куртки, ватники		</tspan><tspan x="233" dy="30.002">Фартуки, нарукавники</tspan></text>
+      <text id="Спецодежда-2" data-name="Спецодежда" class="cls-78" x="233" y="403.5">Спецодежда</text>
+      <path id="Shape_9_copy_3" data-name="Shape 9 copy 3" class="cls-79" d="M231,433v-1H391v1H231"/>
+    </g>
+    <g id="Праздничная">
+      <text id="Праздничная_одежда" data-name="Праздничная одежда" class="cls-78" x="19" y="403.5">Праздничная одежда</text>
+      <text id="Вечерние_платья_Косплей_костюмы_Платья_для_выпускных_Свадебные_" data-name="Вечерние платья Косплей костюмы Платья для выпускных Свадебные " class="cls-77" x="18" y="463">Вечерние платья<tspan x="18" dy="30.002">Косплей костюмы</tspan><tspan x="18" dy="30.002">Платья для выпускных</tspan><tspan x="18" dy="30.002">Свадебные платья</tspan></text>
+      <path id="Shape_9_copy_3-2" data-name="Shape 9 copy 3" class="cls-79" d="M17,433v-1H177v1H17"/>
+    </g>
+    <g id="Мужская">
+      <text id="Мужская_одежда" data-name="Мужская одежда" class="cls-78" x="665" y="196.5">Мужская одежда</text>
+      <text id="Спортивная_одежда_Дубленки_куртки_шубы_Жакеты_жилеты_Пиджа" data-name="Спортивная одежда Дубленки, куртки, шубы  Жакеты, жилеты  Пиджа" class="cls-77" x="664" y="253">Спортивная одежда<tspan x="664" dy="30.002">Дубленки, куртки, шубы </tspan><tspan x="664" dy="30.002">Жакеты, жилеты	</tspan><tspan x="664" dy="30.002">Пиджаки и костюмы</tspan></text>
+      <path id="Shape_9_copy_2_копия" data-name="Shape 9 copy 2 копия" class="cls-79" d="M663,223v-1H823v1H663"/>
+    </g>
+    <g id="Женская">
+      <text id="Женская_одежда" data-name="Женская одежда" class="cls-78" x="449" y="196.5">Женская одежда</text>
+      <text id="Брюки_джинсы_шорты_Комплекты_белья_Платья_и_сарафаны_Топы_и" data-name="Брюки, джинсы, шорты  Комплекты белья  Платья и сарафаны Топы и" class="cls-77" x="448" y="253">Брюки, джинсы, шорты	<tspan x="448" dy="30.002">Комплекты белья	</tspan><tspan x="448" dy="30.002">Платья и сарафаны</tspan><tspan x="448" dy="30.002">Топы и футболки</tspan></text>
+      <path id="Shape_9_copy_2" data-name="Shape 9 copy 2" class="cls-79" d="M447,223v-1H607v1H447"/>
+    </g>
+    <g id="Детская">
+      <text id="Детская_одежда" data-name="Детская одежда" class="cls-78" x="233" y="196.5">Детская одежда</text>
+      <text id="Спортивная_одежда_Блузки_рубашки_Пижамы_халаты_Юбки" data-name="Спортивная одежда   Блузки, рубашки  Пижамы, халаты Юбки" class="cls-77" x="232" y="253">Спортивная одежда		<tspan x="232" dy="30.002">Блузки, рубашки	</tspan><tspan x="232" dy="30.002">Пижамы, халаты</tspan><tspan x="232" dy="30.002">Юбки</tspan></text>
+      <path id="Shape_9_copy" data-name="Shape 9 copy" class="cls-79" d="M231,223v-1H391v1H231"/>
+    </g>
+    <g id="Аксессуары">
+      <text id="Аксессуары-2" data-name="Аксессуары" class="cls-78" x="19" y="196.5">Аксессуары</text>
+      <text id="Палантины_шали_платки_Пояса_ремни_Теплые_головные_уборы_Шар" data-name="Палантины, шали, платки  Пояса, ремни Теплые головные уборы Шар" class="cls-77" x="18" y="253">Палантины, шали, платки	<tspan x="18" dy="30.002">Пояса, ремни</tspan><tspan x="18" dy="30.002">Теплые головные уборы</tspan><tspan x="18" dy="30.002">Шарфы</tspan></text>
+      <path class="cls-79" d="M17,223v-1H177v1H17"/>
+    </g>
+    <text id="Одежда_и_аксессуары" data-name="Одежда и аксессуары" class="cls-80" x="-243" y="227">Одежда и аксессуары</text>
+    <text id="Сумки_и_обувь_Здоровье_и_красота_Компьютеры_и_телефоны_Бытовая_" data-name="Сумки и обувь Здоровье и красота Компьютеры и телефоны Бытовая " class="cls-81" x="-243" y="267">Сумки и обувь<tspan x="-243" dy="39.996">Здоровье и красота</tspan><tspan x="-243" dy="39.996">Компьютеры и телефоны</tspan><tspan x="-243" dy="39.996">Бытовая техника и электроника </tspan><tspan x="-243" dy="39.996">Дом, мебель, интерьер</tspan><tspan x="-243" dy="39.996">автотовары</tspan><tspan x="-243" dy="39.996">Развлечения, хобби и спорт</tspan><tspan x="-243" dy="39.996">Инструменты и материалы</tspan><tspan x="-243" dy="39.996">Продукты питания</tspan></text>
+  </g>
+  <g id="Доп_меню" data-name="Доп меню">
+    <text id="ваш_город_нижний_новгород" data-name="ваш город — нижний новгород" class="cls-82" x="-205" y="8">ваш город — нижний новгород</text>
+    <text id="пункты_самовывоза_16_шт_" data-name="пункты самовывоза (16 шт)" class="cls-82" x="43" y="8">пункты самовывоза (16 шт)</text>
+    <text id="помощь-2" data-name="помощь" class="cls-82" x="630" y="8">помощь</text>
+    <text id="контакты" class="cls-82" x="493" y="8">контакты</text>
+    <text id="личный_кабинет_вход" data-name="личный кабинет/вход" class="cls-82" x="765" y="8">личный кабинет<tspan class="cls-3">/вход</tspan></text>
+    <path id="Shape_4_copy_2_копия" data-name="Shape 4 copy 2 копия" class="cls-83" d="M0,0L5.5,4.513,11,0v2.49L5.5,7,0,2.486V0Z"/>
+  </g>
+  <g id="Основное_меню" data-name="Основное меню">
+    <rect class="cls-23" x="-332" y="33.375" width="1332" height="120.625"/>
+    <image id="Vector_Smart_Object-5" data-name="Vector Smart Object" x="456" y="80" width="34" height="27" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAbCAMAAAAu7K2VAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABEVBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8AAAD3mUG1AAAAWXRSTlMAqHT52VmusPbzBSIwUBGZQFVRh3f+DvvQCW+AvsAYg115YNUQJ7kB6O0DeGigOckZWBvGE/1sx70jEvzSN6FfgbEvv7Tfgrgc90VNpoluckaUF9sH5Ecfy5CC5WwAAAABYktHRACIBR1IAAAACXBIWXMAAAsSAAALEgHS3X78AAABF0lEQVQoz7WT11bCQBRFExWCil0Eib1BYomFiIoKKnawt/3/P+KkgElm9M3zcs9J9kzuyp3RdHz1aL+rN0D6/kBSacMwMvQPeGEwK2loOOBGYFSUMRTKBMg4TIgyqUJyATKVpyDKdNFMSGw/E3Y0C3OqTudhIbSLsKRClsmvhDYLuoJYhbWOL5WxbBlZh41u2IQtGXHIbXfDDpgSsQt7P6ni4kjIfnx2VdxKEjmAw0g0IZUgjmocR/MJnCaQOjSi2bYol+LIGZzHHoizdWFE1XS5jK+5Ukz5Oo7c3EpE7U77J9232sH/sx/0R1tFPInvV33XEK6tQp69Hl88VxDmVYUUxQvLvy1p4Zoq5K3lvn/47tPhqzPBb69hTXAA4DLOAAAAAElFTkSuQmCC"/>
+    <text id="_12" data-name="12" class="cls-84" x="502" y="99">12</text>
+    <text id="_23" data-name="23" class="cls-84" x="625" y="99">23</text>
+    <path class="cls-85" d="M548,33h1V154h-1V33"/>
+    <path id="Shape_2_copy_2" data-name="Shape 2 copy 2" class="cls-86" d="M673,33h1V154h-1V33"/>
+    <path id="Shape_2_copy_2_копия" data-name="Shape 2 copy 2 копия" class="cls-87" d="M798,33h1V154h-1V33"/>
+    <path id="Shape_2_copy_8" data-name="Shape 2 copy 8" class="cls-88" d="M-242,33h1V154h-1V33"/>
+    <path id="Shape_2_copy_7" data-name="Shape 2 copy 7" class="cls-89" d="M-9,33h1V154H-9V33"/>
+    <path id="Shape_2_copy" data-name="Shape 2 copy" class="cls-90" d="M923,33h1V154h-1V33"/>
+    <path class="cls-91" d="M597.075,106s-19.755-14.238-9.551-22.716c5.127-3.371,9.464,1.944,9.464,1.944s4.337-5.315,9.463-1.944C617.182,91.764,597.075,106,597.075,106"/>
+    <text id="каталог_товаров" data-name="каталог товаров" class="cls-17" x="-203" y="99">каталог товаров</text>
+    <text id="_8_920_111-22-33" data-name="8 (920) 111-22-33" class="cls-17" x="76" y="99">8 (920) 111-22-33</text>
+    <circle class="cls-23" cx="340" cy="63" r="90"/>
+    <path id="Shape_2_copy_4" data-name="Shape 2 copy 4" class="cls-92" d="M254,33h1V154h-1V33"/>
+    <path id="Shape_2_copy_5" data-name="Shape 2 copy 5" class="cls-93" d="M426,33h1V154h-1V33"/>
+    <g id="Поиск">
+      <g id="Обычное_состояние" data-name="Обычное состояние">
+        <rect class="cls-23" x="674" y="37" width="244" height="109"/>
+        <image id="Vector_Smart_Object-6" data-name="Vector Smart Object" x="705" y="80" width="22" height="27" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAbCAMAAABP9I/XAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABSlBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8AAABmzwuPAAAAbHRSTlMAQ5re/u+5ag8nxe5kQvH1sIR4l9+VASvzlBRX6YPKYx7gNEwx/bOq9xKk5LVOS4omZ4klaOexrfYQnxVSjSz8uALQWRjbOjAOUO2LSPClcNYELs9x6PjD6vkvCj0JlshNI+sZX6hu4T/sa1gNVHjUAAAAAWJLR0QAiAUdSAAAAAlwSFlzAAALEgAACxIB0t1+/AAAARRJREFUKM9l0WdbwkAMB/BTK24U1HNPrAMEt1IVFbe4wL0Hbv1//9cmV+rd4+VN0l/vkjytEBxl5RUOKkNV1cKImlqUoq5ea0MYaGyKRJtb6EWrLGlbO9DRyZXs6gZ6fJW9QF9wsX8AzqCqYnRWNxxyMayKEYyOGePjcNVjAuPmVkkgxRmYMHkSmPJ52uQZYJbzHOZNTgExzgtIewYvwlnivAxktK6sYk0V2XVgI9DNLWDbL3fSNHVXlXs5YD84ckB+eBQ9zuTpUyUKfw1PTqHjTA/KJuPnwMXlFfH1jbmvuPWkuHPJ8/fif0S4zYPFhUf2J8uf6Veh+GL5Kx8PScvf2N8t9j6IcxaLT9ryy2bxHS7+/AKKUkZB7ceJ1gAAAABJRU5ErkJggg=="/>
+        <path class="cls-94" d="M748,106v-1H894v1H748"/>
+        <text id="поиск_по_сайту" data-name="поиск по сайту" class="cls-95" x="747" y="97">поиск по сайту</text>
+      </g>
+    </g>
+    <g id="Телефон">
+      <image id="phone-call_4_копия" data-name="phone-call (4) копия" x="32" y="80" width="29" height="28" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAcCAMAAACqEUSYAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABwlBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8AAADVW3MpAAAAlHRSTlMAA5/9/vbZjTQJBZm9OyhwrNODAS66DV3D3MReY/CbGYsbTkEKRvpoC6uhdga10j5+7CHeKmpFcen8ew7BfIKBhssMFI9f3xGMeBDha1ruGNs4Uq5Pqne5aR3vPaOYr5eF7TIt0GWS5kcXVnoptuRioNcPQ89gt/FI+G81uIhX9MYkAt3rFS8m9yLOOrKeefKUBAi0BAPh0QAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAG4SURBVCjPdZL7X0xhEMafnLNFili5VhKWJLZVsVYiklubDaulkOQSQi5FLlHud75/sDlnT59Pp8/u/PLOzDPv884870gLrWSJ40ZKy5YuUyErXx7Bs4rKgrBWrKxa5VWsjqqIrak2uGptEK1bv2HjphBeUwt1/u3N1f5T9X56S8PWbd65PQY77NzZCLW7XGiyYHezQ2zPXvPi0JKwKtjXqjaItEvR/QeSxnNQSh2CDukwdFrtETja5XEeO+5At9SQdE/06CScsuTpM3A231KvQzqhvnOQUT+c93IXbIig44uQlS7BgHKX3cgVqWsQhgK0G65K1+C61GF+iSph+EaAjiTdm9Io3JJyt3Hv6G62PjOvRXQsbkOl2u7dtyALD4qqqtw49BZF9RDSI8XhR/B4IvBb42VPwmjqKTTmG3o2DM7zMFNi3B/OejCVTenJgRA89cI+1LapZ6ji5fQrK3kdmuLNW5h5F2xXk31o9v1CeHoW5qbmdyPmzvaFyD80G+Hgx3zQ4sx9WjRYpxF+rvti3hh8nViE6tt3u57+0f/zF9QU0CXjraAtB7//FJLtb/u/SdcpHS33o/9E3IFG6ggbBQAAAABJRU5ErkJggg=="/>
+    </g>
+  </g>
+  <g style="fill: #fff; filter: url(#filter-55)">
+    <rect id="Rectangle_7_copy-2" data-name="Rectangle 7 copy" class="cls-96" x="-11" y="33" width="704" height="432" style="stroke: inherit; filter: none; fill: inherit"/>
+  </g>
+  <use xlink:href="#Rectangle_7_copy-2" style="stroke: #d9d9d9; filter: none; fill: none"/>
+  <g style="fill: #fff; filter: url(#filter-56)">
+    <rect id="Прямоугольник_3" data-name="Прямоугольник 3" class="cls-97" x="39" y="377" width="603" height="37" style="stroke: inherit; filter: none; fill: inherit"/>
+  </g>
+  <use xlink:href="#Прямоугольник_3" style="stroke: #ccc; filter: none; fill: none"/>
+  <rect id="Прямоугольник_4" data-name="Прямоугольник 4" class="cls-98" x="580" y="377" width="62" height="37"/>
+  <text id="ок" class="cls-17" x="599.611" y="388">ок</text>
+  <text id="Выберите_свой_город" data-name="Выберите свой город" class="cls-19" x="37" y="82">Выберите свой город</text>
+  <rect id="Rectangle_8_copy-5" data-name="Rectangle 8 copy" class="cls-24" x="655" y="33" width="38" height="38"/>
+  <path id="Shape_4_copy_2-2" data-name="Shape 4 copy 2" class="cls-99" d="M680,58l-4.517-5.5L680,47h-2.49L673,52.5l4.518,5.5H680ZM668,58l4.517-5.5L668,47h2.49L675,52.5,670.486,58H668Z"/>
+  <text id="Москва_Санкт-Петербург_Новосибирск_Екатеринбург_Нижний_Новгород" data-name="Москва Санкт-Петербург Новосибирск Екатеринбург Нижний Новгород" class="cls-21" x="38" y="147">Москва<tspan x="38" dy="30.002">Санкт-Петербург</tspan><tspan x="38" dy="30.002">Новосибирск</tspan><tspan x="38" dy="30.002">Екатеринбург</tspan><tspan class="cls-23" x="38" dy="16.8">Нижний Новгород<tspan class="cls-100">	</tspan></tspan><tspan x="38" dy="30.002">Казань</tspan></text>
+  <text id="Челябинск_Омск_Самара_Ростов-на-Дону_Уфа_Красноярск" data-name="Челябинск Омск Самара Ростов-на-Дону Уфа Красноярск" class="cls-21" x="232" y="147">Челябинск<tspan x="232" dy="30.002">Омск</tspan><tspan x="232" dy="30.002">Самара</tspan><tspan x="232" dy="30.002">Ростов-на-Дону</tspan><tspan x="232" dy="30.002">Уфа</tspan><tspan x="232" dy="30.002">Красноярск</tspan></text>
+  <text id="Или_введите_другой_населенный_пункт_России" data-name="Или введите другой населенный пункт России" class="cls-77" x="38" y="357">Или введите другой населенный пункт России</text>
+  <text id="Пермь_Воронеж_Волгоград_Краснодар_Саратов_Тюмень" data-name="Пермь Воронеж Волгоград Краснодар Саратов Тюмень" class="cls-21" x="448" y="147">Пермь<tspan x="448" dy="30.002">Воронеж</tspan><tspan x="448" dy="30.002">Волгоград</tspan><tspan x="448" dy="30.002">Краснодар</tspan><tspan x="448" dy="30.002">Саратов</tspan><tspan x="448" dy="30.002">Тюмень</tspan></text>
+  <rect class="cls-101" x="-211" y="2429" width="218" height="218"/>
+</svg>

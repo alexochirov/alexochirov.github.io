@@ -1,0 +1,42 @@
+.claymore {
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+    padding: rem-calc(10);
+
+    &__up {
+        margin-top: rem-calc(-31);
+    }
+
+    &__list {
+        list-style: none;
+        height: rem-calc(130);
+        overflow-y: auto;
+        border: 1px solid #ccc;
+        margin: 1rem 0 1rem 0;
+        padding: 0;
+    }
+
+    &__item {
+        padding-left: rem-calc(10);
+        padding-right: rem-calc(10);
+        background: #fff;
+        padding-top: rem-calc(5);
+        padding-bottom: rem-calc(5);
+        font-size: 1rem;
+        line-height: 1.6;
+
+        &:hover {
+            background: #2753ab;
+            color: #fff;
+        }
+
+        &:not(:last-child) {
+            border-bottom: 1px solid #ccc;
+        }
+    }
+    @media (max-width: 640px) {
+      &__up {
+        margin-bottom: rem-calc(10);
+      }
+    }
+}

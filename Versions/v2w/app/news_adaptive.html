@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js ie lt-ie9 lt-ie8 lt-ie7" lang="en"><![endif]-->
+<!--[if IE 7]><html class="no-js ie ie7 lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js ie ie8 lt-ie9" lang="en"><![endif]-->
+<!--[if IE 9]><html class="no-js ie ie9" lang="en"><![endif]-->
+<!--[if !IE]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Мой магазин (товары)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="copyright" content="Создание сайтов - Cetera Labs, www.cetera.ru, 2015" />
+  <meta name="author" content="Cetera Labs, http://www.cetera.ru/, создание сайтов, поддержка сайтов, продвижение сайтов" />
+  <meta name="cmsmagazine" content="f21b68cb09efe1a7161ca2caaacaf749" />
+  <link rel="stylesheet" href="fonts/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="http://yastatic.net/jquery/1.11.2/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <script src="js/jquery-ui.js"></script>
+</head>
+
+<body>
+
+  <div class="b-header">
+    <div class="b-top-menu hide-for-small">
+      <div class="row">
+        <div class="b-top-menu-container clearfix">
+          <div class="b-top-menu-container__item left">
+            <a class="b-top-menu__item" href="#">Каталог товаров</a>
+            <a class="b-top-menu__item b-top-menu__item_med" href="#">Каталог услуг</a>
+            <a class="b-top-menu__item" href="#">Новости</a>
+            <a class="b-top-menu__item" href="#">Форум</a>
+          </div>
+          <div class="b-top-menu-container__item right">
+            <a class="b-top-menu__item b-top-menu__item_med" href="#">О компании</a>
+            <a class="b-top-menu__item" href="#">Помощь</a>
+            <a class="b-top-menu__item" href="#">Контакты</a>
+            <a class="b-top-menu__item b-top-menu-right__item_auth" href="#">Авторизация</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="b-main-menu hide-for-small">
+      <div class="row">
+        <div class="b-main-menu-container clearfix">
+          <div class="b-main-menu-container__item b-main-menu-container__item_left left">
+            <a class="b-main-menu__item b-main-menu__item_first" href="#">Горячие покупки</a>
+            <a class="b-main-menu__item" href="#">Сток</a>
+            <a class="b-main-menu__item" href="#">Молл</a>
+          </div>
+          <div class="b-main-menu-center left">
+            <div class="b-main-menu__logo">
+              <a class="b-main-menu__logo__link" href="#1">
+                <img class="b-main-menu__logo__link__img" src="i/logo.png" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="b-main-menu-container__item b-main-menu-container__item_right right">
+            <a class="b-main-menu__item b-main-menu__item_basket" href="#">
+              <span class="b-main-menu__item_basket__ico"></span>
+              <span class="b-main-menu__item_basket__text">0</span>
+            </a>
+            <a class="b-main-menu__item b-main-menu__item_mod" href="#">
+              <span class="b-main-menu__item_my__ico"></span>
+              <span class="b-main-menu__item_my__text"></span>
+            </a>
+            <form class="b-main-menu__item b-main-menu__item_form" action="#">
+              <span class="b-main-menu__item_form__search">
+                                <input type="submit" class="b-search__submit">
+                                <input type="text" name="" id="form__search" placeholder="поиск...">
+                                <button type="reset" class="btn"></button>
+                            </span>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="top-bar b-bar show-for-small-only " data-topbar role="navigation">
+      <ul class="title-area">
+        <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+        <li class="b-bar__text">
+          <a href="#" class="b-bar__text-link"><img src="./images/i/logo-mobile.png" alt=""></a>
+        </li>
+        <li class="b-bar__basket"><a href="#" class="b-bar__basket-link"><span class="b-bar__circle">12</span></a></li>
+        <li class="b-bar__search"><input type="submit" class="b-bar__submit"></li>
+      </ul>
+      <section class="top-bar-section">
+        <ul class="left">
+          <li><a href="#">Каталог товаров</a></li>
+          <li><a href="#">Каталог услуг</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="#">Форум</a></li>
+          <li><a href="#">О компании</a></li>
+          <li><a href="#">Помощь</a></li>
+          <li><a href="#">Контакты</a></li>
+          <li><a href="#">Авторизация</a></li>
+        </ul>
+      </section>
+    </nav>
+  </div>
+
+
+
+
+  <div class="row">
+    <div class="columns large-12 medium-12 small-12 b-catalog-breadcrumbs">
+      <ul>
+        <li><a>Главная</a></li>
+        <li><a>Личный кабинет</a></li>
+      </ul>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+  <div class="b-news ">
+    <div class="row">
+      <div class="b-news-header clearfix">
+        <h2 class="left">Новости</h2>
+        <span class="b-news-header-links right">
+                                                          Также следите за нами в <a href="#">Вконтакте</a> и <a href="#">Facebook</a>
+                                                      </span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-6 medium-12  columns b-news-container-left ">
+        <div class="row" data-equalizer>
+          <div class="small-12 medium-6 columns b-news-item-container-left b-news-item-container-first">
+            <div class="b-news-item b-news-item_big" data-equalizer-watch>
+              <div class="b-news-item__head">
+                <div class="b-news-item__head__date">27/09</div>
+                <h3>Платья из Франции! Писк моды этого лета</h3>
+              </div>
+              <div class="b-news-item__text">
+                <p>Успей принять участие в совместной закупке легендарных вещей и сумок от ведущих дизайнеров столицы моды! Скидка более 60% на всю продукцию. </p>
+              </div>
+              <div class="b-news-item__img">
+                <img src="i/13.jpg" alt="">
+              </div>
+              <div class="b-news-item__link">
+                <a href="#">Подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="small-12 medium-6 columns b-news-item-container-right">
+            <div class="b-news-item  b-news-item_big" data-equalizer-watch>
+              <div class="b-news-item__head">
+                <div class="b-news-item__head__date">01/09</div>
+                <h3>Посуда из Италии! Не упусти шанс</h3>
+              </div>
+              <div class="b-news-item__text">
+                <p>Лучшая посуда, одобренная шеф- поворами Италии. Блины больше не будут сгорать, а суп станет еще вкуснее благодаря наивысшему качеству эмали. </p>
+              </div>
+              <div class="b-news-item__img">
+                <img src="i/14.jpg" alt="">
+              </div>
+              <div class="b-news-item__link">
+                <a href="#">Подробнее</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="large-6 medium-12 columns b-news-container-right">
+        <div class="row">
+          <div class="small-12 columns b-news-banner">
+            <a href="#"><img src="i/banner.jpg" alt=""></a>
+          </div>
+        </div>
+        <div class="row" data-equalizer>
+          <div class="large-6  medium-6 columns b-news-item-container-left">
+            <div class="b-news-item b-news-item_small" data-equalizer-watch>
+              <div class="b-news-item__head">
+                <div class="b-news-item__head__date">27/09</div>
+                <h3>Платья из Франции! Писк моды этого лета</h3>
+              </div>
+              <div class="b-news-item__text">
+                <p>Успей принять участие в совместной закупке легендарных вещей и сумок от ведущих дизайнеров столицы моды! Скидка более 60% на всю продукцию. </p>
+              </div>
+              <div class="b-news-item__link">
+                <a href="#">Подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="large-6  medium-6 columns  b-news-item-container-right">
+            <div class="b-news-item b-news-item_small" data-equalizer-watch>
+              <div class="b-news-item__head">
+                <div class="b-news-item__head__date">01/09</div>
+                <h3>Посуда из Италии! Не упусти шанс</h3>
+              </div>
+              <div class="b-news-item__text">
+                <p>Лучшая посуда, одобренная шеф- поворами Италии. Блины больше не будут сгорать, а суп станет еще вкуснее благодаря наивысшему качеству эмали. </p>
+              </div>
+              <div class="b-news-item__link">
+                <a href="#">Подробнее</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="b-news">
+    <div class="row">
+      <div class="large-6 medium-12  columns b-news-container-left ">
+        <div class="row" data-equalizer>
+          <div class="small-12 medium-6 columns b-news-item-container-left b-news-item-container-first">
+            <div class="b-news-item b-news-item_big" data-equalizer-watch>
+              <div class="b-news-item__head">
+                <div class="b-news-item__head__date">27/09</div>
+                <h3>Платья из Франции! Писк моды этого лета</h3>
+              </div>
+              <div class="b-news-item__text">
+                <p>Успей принять участие в совместной закупке легендарных вещей и сумок от ведущих дизайнеров столицы моды! Скидка более 60% на всю продукцию. </p>
+              </div>
+              <div class="b-news-item__img">
+                <img src="i/13.jpg" alt="">
+              </div>
+              <div class="b-news-item__link">
+                <a href="#">Подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="small-12 medium-6 columns b-news-item-container-right">
+            <div class="b-news-item  b-news-item_big" data-equalizer-watch>
+              <div class="b-news-item__head">
+                <div class="b-news-item__head__date">01/09</div>
+                <h3>Посуда из Италии! Не упусти шанс</h3>
+              </div>
+              <div class="b-news-item__text">
+                <p>Лучшая посуда, одобренная шеф- поворами Италии. Блины больше не будут сгорать, а суп станет еще вкуснее благодаря наивысшему качеству эмали. </p>
+              </div>
+              <div class="b-news-item__img">
+                <img src="i/14.jpg" alt="">
+              </div>
+              <div class="b-news-item__link">
+                <a href="#">Подробнее</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="large-6 medium-12  columns b-news-container-left b-news-container-left_fifth ">
+        <div class="row" data-equalizer>
+          <div class="small-12 medium-6 columns b-news-item-container-left b-news-item-container-third">
+            <div class="b-news-item b-news-item_big" data-equalizer-watch>
+              <div class="b-news-item__head">
+                <div class="b-news-item__head__date">27/09</div>
+                <h3>Платья из Франции! Писк моды этого лета</h3>
+              </div>
+              <div class="b-news-item__text">
+                <p>Успей принять участие в совместной закупке легендарных вещей и сумок от ведущих дизайнеров столицы моды! Скидка более 60% на всю продукцию. </p>
+              </div>
+              <div class="b-news-item__img">
+                <img src="i/13.jpg" alt="">
+              </div>
+              <div class="b-news-item__link">
+                <a href="#">Подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="small-12 medium-6 columns b-news-item-container-right b-news-item-container-fourth">
+            <div class="b-news-item  b-news-item_big" data-equalizer-watch>
+              <div class="b-news-item__head">
+                <div class="b-news-item__head__date">01/09</div>
+                <h3>Посуда из Италии! Не упусти шанс</h3>
+              </div>
+              <div class="b-news-item__text">
+                <p>Лучшая посуда, одобренная шеф- поворами Италии. Блины больше не будут сгорать, а суп станет еще вкуснее благодаря наивысшему качеству эмали. </p>
+              </div>
+              <div class="b-news-item__img">
+                <img src="i/14.jpg" alt="">
+              </div>
+              <div class="b-news-item__link">
+                <a href="#">Подробнее</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="columns small-12">
+
+
+
+
+      <div class="b-catalog-main-pages">
+
+
+
+
+        <a class="b-catalog-main-pages__left"></a>
+
+
+        <a class="b-catalog-main-pages__active">1</a>
+
+        <a href="/catalog/?PAGEN_1=2">2</a>
+
+        <a href="/catalog/?PAGEN_1=3">3</a>
+
+        <a href="/catalog/?PAGEN_1=4">4</a>
+
+        <a href="/catalog/?PAGEN_1=5">5</a>
+
+        <span>...</span>
+        <a href="/catalog/?PAGEN_1=72">72</a>
+        <a href="/catalog/?PAGEN_1=2" class="b-catalog-main-pages__right active"></a>
+        <!--<a href="/catalog/?PAGEN_1=2">След.</a>&nbsp;|
+		<a href="/catalog/?PAGEN_1=72">Конец</a>
+	    -->
+
+      </div>
+
+
+    </div>
+  </div>
+
+  <div class="b-footer">
+    <div class="b-footer-links">
+      <div class="row" data-equalizer>
+
+        <div class="b-footer-links__item b-footer-links__item_1" data-equalizer-watch>
+          <h3>О магазине</h3>
+          <ul>
+            <li><a class="b-footer-links__item__link" href="#">Контактная информация</a></li>
+            <li><a class="b-footer-links__item__link" href="#">Реквизиты</a></li>
+            <li><a class="b-footer-links__item__link" href="#">Обратная связь</a></li>
+            <li><a class="b-footer-links__item__link" href="#">Карта сайта</a></li>
+          </ul>
+          <div class="show-for-medium-only">
+            <h3>Форум</h3>
+            <ul>
+              <li><a class="b-footer-links__item__link" href="#">Справочник организаций</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="b-footer-links__item b-footer-links__item_2" data-equalizer-watch>
+          <h3>Новости и справочники</h3>
+          <ul>
+            <li><a class="b-footer-links__item__link" href="#">Новости</a></li>
+            <li><a class="b-footer-links__item__link" href="#">Справочники</a></li>
+            <li><a class="b-footer-links__item__link" href="#">Добавить рецензию</a></li>
+          </ul>
+        </div>
+        <div class="b-footer-links__item b-footer-links__item_3" data-equalizer-watch>
+          <h3>Личный кабинет</h3>
+          <ul>
+            <li><a class="b-footer-links__item__link" href="#">Корзина</a></li>
+            <li><a class="b-footer-links__item__link" href="#">Корзина групповых покупок</a></li>
+            <li><a class="b-footer-links__item__link" href="#">Руководство пользователя</a></li>
+            <li><a class="b-footer-links__item__link" href="#">«Страничка-магазин» Список желаний</a></li>
+            <li><a class="b-footer-links__item__link" href="#">Личные данные</a></li>
+            <li><a class="b-footer-links__item__link" href="#">Стать продавцом</a></li>
+          </ul>
+        </div>
+        <div class="b-footer-links__item b-footer-links__item_4" data-equalizer-watch>
+          <h3>Помощь</h3>
+          <ul>
+            <li><a class="b-footer-links__item__link" href="#">Обычная покупка</a></li>
+            <li><a class="b-footer-links__item__link" href="#">Групповая покупка</a></li>
+            <li><a class="b-footer-links__item__link" href="#">Как заказать</a></li>
+            <li><a class="b-footer-links__item__link" href="#">Как оплатить</a></li>
+            <li><a class="b-footer-links__item__link" href="#">О доставке</a></li>
+            <li><a class="b-footer-links__item__link" href="#">Возврат товара</a></li>
+            <li><a class="b-footer-links__item__link" href="#">Гарантии и сервис</a></li>
+            <li><a class="b-footer-links__item__link" href="#">Законодательство</a></li>
+            <li><a class="b-footer-links__item__link" href="#">Частые вопросы</a></li>
+          </ul>
+        </div>
+        <div class="b-footer-links__item b-footer-links__item_5 " data-equalizer-watch>
+          <h3>Форум</h3>
+          <ul>
+            <li><a class="b-footer-links__item__link" href="#">Справочник организаций</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="b-footer-bottom">
+      <div class="row">
+        <div class="b-footer-bottom__copyright columns show-for-small-only">
+          <p>&copy; 2013-2015 <a href="#" class="b-footer-bottom__copyright-link">RussianShop</a>. Все права защищены </p>
+          <p>Создание сайта - <a href="#" class="b-footer-bottom__copyright-link">Cetera Labs</a></p>
+        </div>
+        <div class="b-footer-bottom__item b-footer-bottom__item_1 hide-for-small-only">
+          <a href="#"><img src="./images/footer-logo.png" alt=""></a>
+        </div>
+        <div class="b-footer-bottom__item b-footer-bottom__item_2 hide-for-small-only">
+          <a href="http://cetera.ru/support/default.php?project=FEC&lang=ru">Сообщить об ошибке</a>
+        </div>
+        <div class="b-footer-bottom__item b-footer-bottom__item_3">
+        </div>
+        <div class="b-footer-bottom__item b-footer-bottom__item_4 hide-for-small-only">
+          создание сайта — <a href="http://cetera.ru/">cetera labs</a>
+        </div>
+        <div class="b-footer-bottom__item b-footer-bottom__item_5 ">
+          <a class="b-footer-bottom__item__link_vk" href="#"></a>
+        </div>
+        <div class="b-footer-bottom__item b-footer-bottom__item_6">
+          <a class="b-footer-bottom__item__link_fb" href="#"></a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="/js/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+  <!-- Add fancyBox -->
+  <link rel="stylesheet" href="/js/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+  <script type="text/javascript" src="/js/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  <script type="text/javascript" src="/js/fancybox/source/jquery.fancybox.js"></script>
+  <!-- Optionally add helpers - button, thumbnail and/or media -->
+  <link rel="stylesheet" href="/js/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+  <script type="text/javascript" src="/js/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+  <script type="text/javascript" src="/js/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+  <link rel="stylesheet" href="/js/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+  <script type="text/javascript" src="/js/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+
+  <script src="//yastatic.net/modernizr/2.7.1/modernizr.min.js"></script>
+  <script type="text/javascript" src="js/foundation.min.js"></script>
+  <script type="text/javascript" src="js/foundation/foundation.topbar.js"></script>
+  <script type="text/javascript" src="js/foundation/foundation.tab.js"></script>
+  <script type="text/javascript" src="js/foundation/foundation.equalizer.js"></script>
+  <script type="text/javascript" src="js/croppic/croppic.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/filter.js"></script>
+  <script src="js/vendor/jQueryRotate.js"></script>
+  <script src="js/vendor/jquery.cookie.js"></script>
+  <script src="js/jquery.formstyler.min.js"></script>
+  <script src="js/jquery.checkbox.js"></script>
+  <script src="js/jquery.jcarousel.min.js"></script>
+  <script>
+    $('#myModal').on('opened', function() {
+      $(window).trigger('resize');
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js ie lt-ie9 lt-ie8 lt-ie7" lang="en"><![endif]-->
+<!--[if IE 7]><html class="no-js ie ie7 lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js ie ie8 lt-ie9" lang="en"><![endif]-->
+<!--[if IE 9]><html class="no-js ie ie9" lang="en"><![endif]-->
+<!--[if !IE]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Мой магазин (товары)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="copyright" content="Создание сайтов - Cetera Labs, www.cetera.ru, 2015" />
+  <meta name="author" content="Cetera Labs, http://www.cetera.ru/, создание сайтов, поддержка сайтов, продвижение сайтов" />
+  <meta name="cmsmagazine" content="f21b68cb09efe1a7161ca2caaacaf749" />
+  <link rel="stylesheet" href="fonts/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="http://yastatic.net/jquery/1.11.2/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <script src="js/jquery-ui.js"></script>
+</head>
+
+<body>
+  <div class="b-header">
+    <div class="b-top-menu hide-for-small">
+      <div class="row">
+        <div class="b-top-menu-container clearfix">
+          <div class="b-top-menu-container__item left">
+
+            <a class="b-top-menu__item " href="/companies/">Каталог организаций</a>
+            <a class="b-top-menu__item " href="/news/">Новости</a>
+            <a class="b-top-menu__item " href="/forum/">Форум</a>
+          </div>
+          <div class="b-top-menu-container__item right">
+
+            <a class="b-top-menu__item " href="/partnership/">Стать партнером</a>
+            <a class="b-top-menu__item " href="/user-manual/">Помощь</a>
+            <a class="b-top-menu__item b-top-menu-right__item_auth" href="/login/">Вход</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="b-main-menu hide-for-small">
+      <div class="row">
+        <div class="b-main-menu-container clearfix">
+          <div class="b-main-menu-container__item b-main-menu-container__item_left left">
+            <a class="b-main-menu__item" href="/hotoffers/">Горячие покупки</a>
+            <a class="b-main-menu__item" href="/catalog/">Каталог товаров</a>
+          </div>
+          <div class="b-main-menu-center left">
+            <div class="b-main-menu__logo">
+              <a class="b-main-menu__logo__link" href="/">
+                <img class="b-main-menu__logo__link__img" src="./i/logo_new2.png" alt="">
+                <span class="b-main-menu__logo__link__title"></span>
+              </a>
+            </div>
+          </div>
+          <div class="b-main-menu-container__item b-main-menu-container__item_right right">
+            <a class="b-main-menu__item b-main-menu__item_basket" href="/personal/basket/">
+              <span class="b-main-menu__item_basket__ico"></span>
+              <span class="b-main-menu__item_basket__text">2</span>
+            </a>
+            <a class="b-main-menu__item b-main-menu__item_my" href="/personal/favourites/">
+              <span class="b-main-menu__item_my__ico"></span>
+              <span class="b-main-menu__item_my__text"></span>
+            </a>
+            <form class="b-main-menu__item b-main-menu__item_form" action="/search/index.php">
+
+              <span class="b-main-menu__item_form__search">
+      <input type="submit" class="b-search__submit" value="">
+        <input type="text" name="q" value="" id="form__search" placeholder="поиск по сайту...">
+      <button class="btn b-search__close" name="s" type="button"></button>
+</span>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="top-bar b-bar show-for-small-only" data-topbar="" role="navigation">
+      <ul class="title-area">
+        <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+        <li class="b-bar__text">
+          <a href="/" class="b-bar__text-link"><img src="./images/i/logo-mobile.png" alt=""></a>
+        </li>
+        <li class="b-bar__basket"><a href="/personal/basket/" class="b-bar__basket-link"><span class="b-bar__circle">2</span></a></li>
+        <li class="b-bar__search">
+          <form action="/search/"><input type="submit" class="b-bar__submit"></form>
+        </li>
+      </ul>
+
+      <section class="top-bar-section">
+        <ul class="left">
+          <li><a href="/catalog/">Каталог товаров</a></li>
+          <li><a href="/companies/">Каталог организаций</a></li>
+          <li><a href="/personal/shop/groups/">Совместные покупки</a></li>
+          <li><a href="/personal/favourites/">Избранные товары</a></li>
+          <li><a href="/login/">Вход</a></li>
+        </ul>
+      </section>
+    </nav>
+
+
+  </div>
+  <div class="b-header-print-only">
+    <div class="b-header-print-logo">
+      <img src="./images/print-logo.png" alt="">
+    </div>
+    <div class="b-header-print-contacts">
+      <div class="b-header-print-contact">
+        <img src="./images/phone-print-icon.png" alt="">
+        <span><b>+7 (495) 369-19-56</b></span>
+      </div>
+      <div class="b-header-print-contact">
+        <img src="./images/skype-print-icon.png" alt="">
+        <span><b>russianshop.org</b></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="b-catalog">
+
+    <div class="row">
+      <div class="columns large-12 medium-12 hide-for-small b-catalog-breadcrumbs">
+        <link href="#" type="text/css" rel="stylesheet">
+        <ul>
+          <li id="bx_breadcrumb_0" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+            <a href="/" title="Главная" itemprop="url">
+              <span itemprop="title">Форум</span>
+            </a>
+          </li>
+          <li>Мои записи</li>
+        </ul>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="small-12 columns">
+        <h1 class="b-catalog__dealer">мои записи на форуме RUSSIANSHOP.ORG</h1>
+      </div>
+    </div>
+    <div class="row fort leveler">
+      <div class="large-2 medium-3 columns text-center fort__tab active" >
+        <a href="#" class="fort__link">
+          <img src="./images/note.png" alt="">Мои записи
+        </a>
+      </div>
+      <div class="large-2 medium-3 columns text-center fort__tab">
+        <a href="#" class="fort__link">
+          <img src="./images/closed-envelope.png" alt="">Сообщения
+        </a>
+      </div>
+      <div class="large-2 medium-3 columns text-center fort__tab">
+        <a href="#" class="fort__link ">
+          <img src="./images/new.png" alt="">Обновления тем
+        </a>
+      </div>
+      <div class="large-2 medium-3 columns text-center fort__tab">
+        <a href="#" class="fort__link">
+          <img src="./images/avatar.png" alt="">Мой профиль
+        </a>
+      </div>
+      <div class="large-4 columns">
+        <form class="#" action="" method="post">
+          <input type="text" name="" placeholder="Поиск на форуме" class="fort__input">
+          <button type="button" name="button" class="fort__btn fort__btn_edit"></button>
+          <button class="fort__btn" type="submit" name="button"></button>
+
+
+        </form>
+
+      </div>
+    </div>
+
+    <div class="row leveler">
+      <div class="rule text-center">форумы</div>
+      <div class="columns bowl">
+        <div class="row bowl__row bowl__row_head text-center medium-text-left" data-equalizer>
+          <div class="columns bowl__main" data-equalizer-watch>Главный раздел</div>
+          <div class="columns bowl__theme text-center" data-equalizer-watch>Темы</div>
+          <div class="columns bowl__message text-center" data-equalizer-watch>Сообщения</div>
+          <div class="columns bowl__update" data-equalizer-watch>Обновление</div>
+        </div>
+
+        <div class="row bowl__row" data-equalizer>
+          <div class="columns bowl__icon text-center" data-equalizer-watch></div>
+          <div class="columns bowl__td" data-equalizer-watch><a href="#" class="bowl__link">Обсуждение товаров</a></div>
+          <div class="columns bowl__theme bowl__reg text-center">548</div>
+          <div class="columns bowl__message bowl__reg text-center" data-equalizer-watch>12448</div>
+          <div class="columns bowl__update bowl__update_reg" data-equalizer-watch><a href="#" class="bowl__link">[25.10.2016] - Детские товары</a></div>
+        </div>
+
+
+
+      </div>
+      <div class="columns bowl">
+        <div class="row bowl__row bowl__row_head text-center medium-text-left" data-equalizer>
+          <div class="columns bowl__main" data-equalizer-watch>Технический раздел</div>
+          <div class="columns bowl__theme text-center" data-equalizer-watch>Темы</div>
+          <div class="columns bowl__message text-center" data-equalizer-watch>Сообщения</div>
+          <div class="columns bowl__update" data-equalizer-watch>Обновление</div>
+        </div>
+
+
+
+        <div class="row bowl__row" data-equalizer>
+          <div class="columns bowl__icon bowl__icon_eye text-center" data-equalizer-watch></div>
+          <div class="columns bowl__td" data-equalizer-watch><a href="#" class="bowl__link">Предложения</a></div>
+          <div class="columns bowl__theme bowl__reg text-center">133</div>
+          <div class="columns bowl__message bowl__reg text-center" data-equalizer-watch>48</div>
+          <div class="columns bowl__update bowl__update_reg" data-equalizer-watch><a href="#" class="bowl__link">[25.10.2016] - Добавьте новый...</a></div>
+        </div>
+
+      </div>
+      <div class="columns bowl">
+        <div class="row bowl__row bowl__row_head text-center medium-text-left" data-equalizer>
+          <div class="columns bowl__main" data-equalizer-watch>Общение</div>
+          <div class="columns bowl__theme text-center" data-equalizer-watch>Темы</div>
+          <div class="columns bowl__message text-center" data-equalizer-watch>Сообщения</div>
+          <div class="columns bowl__update" data-equalizer-watch>Обновление</div>
+        </div>
+
+        <div class="row bowl__row" data-equalizer>
+          <div class="columns bowl__icon text-center" data-equalizer-watch></div>
+          <div class="columns bowl__td" data-equalizer-watch><a href="#" class="bowl__link">Отзывы и тест длинного заголовка</a></div>
+          <div class="columns bowl__theme bowl__reg text-center">548</div>
+          <div class="columns bowl__message bowl__reg text-center" data-equalizer-watch>12448</div>
+          <div class="columns bowl__update bowl__update_reg" data-equalizer-watch><a href="#" class="bowl__link">[25.10.2016] - Навигация по...</a></div>
+        </div>
+
+
+
+      </div>
+
+    </div>
+    <div class="row leveler ">
+      <div class="specify">
+
+        <div class="medium-4 columns specify__block text-center">
+          <a href="#" class="specify__link">Подписаться на новые темы</a>
+        </div>
+        <div class="medium-4 columns specify__block text-center">
+          <a href="#" class="specify__link specify__link_eye">Отметить форумы прочитанными</a>
+        </div>
+        <div class="medium-4 columns specify__block text-center">
+          <a href="#" class="specify__link specify__link_list">Правила форума</a>
+        </div>
+
+      </div>
+    </div>
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <div class="b-footer">
+    <script type="text/javascript" src="./ButtonUp/totop.js"></script>
+    <div class="scrollup_wrapper">
+      <div class="scrollup" id="scrollup" style="display: block;"><img alt="Наверх" src="./ButtonUp/img/up.png"></div>
+    </div>
+    <div class="b-footer-links">
+      <div class="row" data-equalizer="">
+
+        <div class="b-footer-links__item b-footer-links__item_1" data-equalizer-watch="" style="height: 296px;">
+          <h3>О магазине</h3>
+          <ul>
+            <li><a class="b-footer-links__item__link" href="/about/">О компании</a></li>
+            <li><a class="b-footer-links__item__link" href="/contacts/">Контактная информация</a></li>
+            <li><a class="b-footer-links__item__link" href="/partnership/">Стать партнером Russianshop.org</a></li>
+            <li><a class="b-footer-links__item__link" href="/mission/">Миссия</a></li>
+            <li><a class="b-footer-links__item__link" href=" /smi-o-nas/">СМИ о нас</a></li>
+            <li><a class="b-footer-links__item__link" href="/about/vacancy/">Вакансии</a></li>
+            <li><a class="b-footer-links__item__link" href="/sitemap/">Карта сайта</a></li>
+          </ul>
+          <div class="show-for-medium-only">
+            <h3>Форум</h3>
+            <ul>
+              <!--  -->
+            </ul>
+          </div>
+        </div>
+        <div class="b-footer-links__item b-footer-links__item_2" data-equalizer-watch="" style="height: 296px;">
+          <h3>Новости и справочники</h3>
+          <ul>
+            <li><a class="b-footer-links__item__link" href=" /news/">Новости</a></li>
+            <li><a class="b-footer-links__item__link" href="/companies/">Справочник организаций</a></li>
+            <li><a class="b-footer-links__item__link" href="/catalog/)">Каталог товаров</a></li>
+          </ul>
+        </div>
+        <div class="b-footer-links__item b-footer-links__item_3" data-equalizer-watch="" style="height: 296px;">
+          <h3>Личный кабинет</h3>
+          <ul>
+            <li><a class="b-footer-links__item__link" href="/personal/basket/">Корзина</a></li>
+            <li><a class="b-footer-links__item__link" href="/personal/history/">История заказов</a></li>
+            <li><a class="b-footer-links__item__link" href="/personal/favourites/">Избранное</a></li>
+            <li><a class="b-footer-links__item__link" href="/user-manual/">Руководство пользователя</a></li>
+            <li><a class="b-footer-links__item__link" href="/personal/info/">Личные данные</a></li>
+            <li><a class="b-footer-links__item__link" href="/personal/trade-on/">Стать продавцом</a></li>
+            <li><a class="b-footer-links__item__link" href="/personal/for-organizers/">Стать организатором</a></li>
+          </ul>
+        </div>
+        <div class="b-footer-links__item b-footer-links__item_4" data-equalizer-watch="" style="height: 296px;">
+          <h3>Помощь</h3>
+          <ul>
+            <li><a class="b-footer-links__item__link" href="/user-manual/#how-to-buy">Как сделать заказ</a></li>
+            <li><a class="b-footer-links__item__link" href="/user-manual/#how-to-pay">Как оплатить товар</a></li>
+            <li><a class="b-footer-links__item__link" href="/user-manual/#delivery">Доставка товаров</a></li>
+            <li><a class="b-footer-links__item__link" href="/user-manual/#guarantees">Гарантии</a></li>
+            <li><a class="b-footer-links__item__link" href="/about/faq/">Часто задаваемые вопросы</a></li>
+            <li><a class="b-footer-links__item__link" href="/user_agreement/">Пользовательское соглашение</a></li>
+            <li><a class="b-footer-links__item__link" href="/oferta/">Оферта</a></li>
+            <li><a class="b-footer-links__item__link" href="/forum/">Форум</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="b-footer-bottom">
+      <div class="row">
+        <div class="b-footer-bottom__copyright columns show-for-small-only">
+          <p>© 2014-2016 <a href="/" class="b-footer-bottom__copyright-link">RussianShop</a>. Все права защищены </p>
+          <p>Создание сайта - <a href="http://cetera.ru/" class="b-footer-bottom__copyright-link">Cetera Labs</a></p>
+        </div>
+        <div class="b-footer-bottom__item b-footer-bottom__item_1 hide-for-small-only">
+          <a href="#"><img src="./images/footer-logo.png" alt=""></a>
+        </div>
+        <div class="b-footer-bottom__item b-footer-bottom__item_2 hide-for-small-only">
+          <a href="http://cetera.ru/support/default.php?project=FEC&amp;lang=ru">Сообщить об ошибке</a>
+        </div>
+        <div class="b-footer-bottom__item b-footer-bottom__item_3">
+        </div>
+        <div class="b-footer-bottom__item b-footer-bottom__item_4 hide-for-small-only">
+          создание сайта — <a href="http://cetera.ru/">cetera labs</a>
+        </div>
+        <div class="b-footer-bottom__item b-footer-bottom__item_5 ">
+          <a class="b-footer-bottom__item__link_vk" href="https://vk.com/russianshop_goods" target="_blank"></a>
+        </div>
+        <div class="b-footer-bottom__item b-footer-bottom__item_6">
+          <a class="b-footer-bottom__item__link_fb" href="javascript: alert('Страница находится в разработке.');"></a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script src="//yastatic.net/modernizr/2.7.1/modernizr.min.js"></script>
+  <script type="text/javascript" src="js/foundation.min.js"></script>
+  <script type="text/javascript" src="js/foundation/foundation.topbar.js"></script>
+  <script type="text/javascript" src="js/foundation/foundation.tab.js"></script>
+  <script type="text/javascript" src="js/foundation/foundation.equalizer.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/filter.js"></script>
+  <script src="js/vendor/jQueryRotate.js"></script>
+  <script src="js/vendor/jquery.cookie.js"></script>
+  <script src="js/jquery.formstyler.min.js"></script>
+  <script src="js/jquery.checkbox.js"></script>
+  <script src="js/jquery.jcarousel.min.js"></script>
+  <script src="js/croppic/croppic.js"></script>
+  <script src="js/select2.full.min.js"></script>
+  <script src="js/fancybox/source/jquery.fancybox.js"></script>
+  <script>
+    $('#myModal').on('opened', function() {
+      $(window).trigger('resize');
+    });
+  </script>
+</body>
+
+</html>

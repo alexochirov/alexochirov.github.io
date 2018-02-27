@@ -1,0 +1,259 @@
+.b-product
+{
+    position: relative;
+
+    width: 280px;
+    height: 420px;
+    margin-left: 0px;
+    padding: 15px;
+
+    border: 1px solid #e2e2e2;
+    background-color: white;
+    margin-bottom: 5px;
+
+    &-images {
+      overflow: hidden;
+      &__img {
+        float: left;
+        width: 33.33333%;
+        height: 8.4375rem;
+        background-position: center;
+        background-size: contain;
+        border-top: 1px solid #e8e8e8;
+        border-bottom: 1px solid #e8e8e8;
+        border-right: 1px solid #e8e8e8;
+        background-repeat: no-repeat;
+
+        &:nth-child(3) {
+          border-right: none;
+        }
+      }
+    }
+
+    &_new {
+        margin-left: 15px;
+    }
+    &_hack
+    {
+        height: inherit;
+        margin-left: 0;
+        padding-bottom: 0;
+        .b-product__img
+        {
+
+            max-height: 218px;
+            overflow: hidden;
+        }
+    }
+    &:hover
+    {
+        cursor: pointer;
+
+        border: 1px solid #d9d9d9;
+        box-shadow: 0 2px 9px rgba(0, 0, 1, .16);
+    }
+    &:first-child
+    {
+        margin-left: 0;
+    }
+    &__img
+    {
+        width: 218px;
+        margin: 0 auto 5px auto;
+        height: auto;
+        text-align: center;
+
+        img
+        {
+            max-width: 100%;
+            max-height: 218px;
+        }
+    }
+    &__name
+    {
+        font-family: 'Conv_SegoeUIRegular';
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.4;
+
+        margin-bottom: -5px;
+
+        color: #383838;
+        & a
+        {
+            color: #383838;
+        }
+    }
+    &__brand
+    {
+        font-family: 'Conv_PTSerif';
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 26px;
+
+        min-height: 26px;
+        margin-bottom: 6px;
+
+        color: #a1a1a1;
+    }
+    &__price
+    {
+        font-family: 'Conv_SegoeUIBold';
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 26px;
+
+        padding-right: 40px;
+
+        color: #ca3034;
+        &_group
+        {
+            display: inline-block;
+
+            padding-right: 5px;
+        }
+        & span
+        {
+            font-size: 16px;
+        }
+    }
+  &-content {
+    padding: rem-calc(30);
+  }
+
+  &__group-cnt {
+    color: #383838;
+    font-size: rem-calc(14);
+    margin: rem-calc(15 0 25 0);
+    span {
+      font-weight: bold;
+    }
+  }
+}
+
+.b-product_main-group {
+  padding: 0;
+  cursor: auto;
+}
+
+.b-section-white {
+  padding-top: rem-calc(50);
+  padding-bottom: rem-calc(30);
+}
+
+.main-opt-groups {
+  margin-top: rem-calc(50);
+}
+
+@media (max-width:1200px)
+{
+    .b-product
+    {
+        width: 100%;
+        &__img
+        {
+            width: 100%;
+        }
+        &_new
+        {
+            width: calc(25% - 15px);
+            &:first-child
+            {
+                width: 25%;
+            }
+        }
+    }
+}
+@media (max-width:1024px)
+{
+    .b-product
+    {
+        &_new
+        {
+            width: calc(33.333% - 15px);
+            padding: 15px;
+            &:first-child
+            {
+                width: 33.333%;
+            }
+        }
+    }
+}
+@media (max-width:790px)
+{
+    .b-product
+    {
+        &_new
+        {
+            
+        }
+        &_main
+        {
+            padding-right: 18px;
+            padding-left: 18px;
+
+        }
+    }
+}
+@media (max-width:640px)
+{
+    .b-product
+    {
+        height: auto;
+        &_new
+        {
+            width: 50%;
+            margin-left: 0;
+            padding: 10px;
+            &:first-child
+            {
+                width: 50%;
+
+                border-bottom: 0;
+            }
+            &:nth-child(2)
+            {
+                border-bottom: 0;
+            }
+            &:nth-child(even)
+            {
+                border-left: 0;
+            }
+        }
+        &_main
+        {
+           padding: 10px;
+        }
+        &__price
+        {
+            padding-right: 30px;
+        }
+        &__brand
+        {
+            padding-right: 50px;
+        }
+        &_hack
+        {
+            height:inherit;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+    }
+}
+@media (max-width:400px)
+{
+    .b-product
+    {
+        &_main,
+        &_new
+        {
+            .b-product__img
+            {
+            }
+        }
+        &__price
+        {
+            padding-right: 0;
+        }
+    }
+}
