@@ -2,97 +2,16 @@
 
 // Все картинки и шрифты необходимо подключать с использованием этих двух переменных:
 $imagesPath: '../images' !default;
-$fontsPath: '../fonts' !default;
+$fontsPath: './fonts' !default;
 
 $fa-font-path: $fontsPath;
 
-@import "settings";
-@import "external";
+@import "fonts";
 
 @import "common";
-@import "slick/slick-theme";
-@import "pickmeup/pickmeup";
-@import "print/print";
-
-@import "carousel/carousel-main";
-@import "carousel/carousel-news";
-@import "carousel/carousel-services";
-@import "content";
-@import "date";
+@import "main";
+@import "news";
+@import "col";
 @import "footer";
-@import "header";
-@import "incremental-list";
-@import "menu-base";
-@import "menu-main";
-@import "menu-catalog";
-@import "menu-dropdown-products";
-@import "menu-top";
-@import "product-page";
-@import "product-tiles";
-@import "red-line";
-@import "social-icons";
-@import "stub";
-@import "text";
-//@import "top-line";
-@import "vertical-middle";
-@import "vertical";
-@import "checkout";
-@import "user-account";
-@import "head";
-@import "phone-num";
-@import "search-box";
-@import "main-sections-banners";
-@import "section-header";
-@import "looks-collection";
-@import "section-4x";
-@import "vendors";
-
-@import "breadcrumbs";
-@import "product";
-@import "collar";
-@import "usual";
-@import "rec";
-@import "dress";
-@import "post";
-@import "poetry";
-@import "stars";
-@import "brands";
-@import "archer";
-@import "register";
-@import "additional";
-@import "ranger";
-@import "special";
-@import "corrector";
-@import "hit";
-@import "shampoo";
-@import "casual";
-@import "razor";
-@import "tree";
-@import "material";
-@import "rage";
-@import "bandage";
-@import "filter-tree";
-@import "sections";
-@import "rating";
-@import "offer";
-@import "rubber";
-@import "crossbow";
-@import "dinghy";
-
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400i,700|PT+Serif&subset=cyrillic');
-
-@import "nav-catalog";
-@import "shape-type";
-@import "cart";
-@import "user-account";
-@import "orders";
-@import "order";
-@import "error";
-@import "banner";
-@import "subscribe";
-
-@import "placeholder";
-@import url('https://fonts.googleapis.com/css?family=El+Messiri:600');
-
-@import "promo-item";
-@import "cyberweek";
+@import "now";
+@import "water";

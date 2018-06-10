@@ -134,8 +134,12 @@
 {
     .b-footer-links
     {
+
         &__item
         {
+          .footer-links-head {
+            width: 100%;
+          }
             &_1
             {
                 padding-left: 15px;

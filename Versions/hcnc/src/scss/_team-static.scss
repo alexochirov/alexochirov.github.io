@@ -1,0 +1,93 @@
+.team-static {
+  &__header {
+    padding: rem-calc(23 0 0 0);
+  }
+  &__title, &__title-link {
+    font-size: rem-calc(18);
+    font-family: $font-helvetica-neue-condensed-bold;
+    text-transform: uppercase;
+  }
+  &__title-link {
+    color: map-get($foundation-palette, blue);
+  }
+  &__panel-switcher {
+    @media(min-width: 90em) {
+      padding: 0;
+    }
+  }
+  &__panel-switcher {
+    font-family: $font-helvetica-neue-condensed-bold;
+  }
+}
+
+.hockey-player{
+  &-team {
+    padding: rem-calc(0 50);
+    margin-top: rem-calc(-47);
+    @include breakpoint (xxlarge) {
+      margin-top: rem-calc(-53);
+    }
+    &__num {
+      font-size: rem-calc(150);
+      color: #eeeeee;
+      font-family: $font-quadon-medium;
+      text-align: right;
+      position: relative;
+      margin-bottom: rem-calc(-100);
+      display: block;
+      &:not(:first-of-type) {
+        display: none;
+      }
+    }
+    &__img {
+      position: relative;
+      &:not(:first-of-type) {
+        display: none;
+      }
+      &_visible {
+        display: block;
+      }
+    }
+  }
+  &-cell {
+    border-right: rem-calc(1) solid #dcdcdc;
+    border-top: rem-calc(1) solid #dcdcdc;
+    border-bottom: rem-calc(1) solid #dcdcdc;
+    margin-bottom: 0;
+    padding-bottom: 63%;
+    margin-right: rem-calc(-1);
+    &__inner {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 11%;
+      right: 11%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    &__item {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      &-name {
+        color: map-get($foundation-palette, blue);
+        font-size: rem-calc(13);
+        line-height: rem-calc(22);
+        position: relative;
+        &_select {
+          color: black;
+          &:before {
+            content: '>';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            left: rem-calc(-10);
+          }
+        }
+      }
+    }
+  }
+}

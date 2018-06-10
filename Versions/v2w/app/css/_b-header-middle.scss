@@ -2,7 +2,9 @@
   border-bottom: 1px solid #e2e2e2;
   background-color: #f8f8f8;
   padding-bottom: rem-calc(35);
-
+&_new {
+  padding-bottom: rem-calc(0);
+}
   &__row {
     position: relative;
   }

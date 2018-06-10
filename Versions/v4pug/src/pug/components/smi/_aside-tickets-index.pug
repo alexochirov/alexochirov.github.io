@@ -1,0 +1,13 @@
+.content
+    .margin-bottom-6.show-for-small-only(data-responsive-toggle='menu-left', data-hide-for='medium')
+        span.button.light-gray.expanded(data-toggle)
+        i.fa.fa-lg.fa-bars
+        | &nbsp;Навигация
+    .card#menu-left
+        ul.menu.vertical
+            li.active: a(href='tickets-online.html' title='') Купить билеты on-line
+            li: a(href='season-ticket.html' title='') Абонементы
+            li: a(href='floor-plan.html' title='') План зала
+            li: a(href='regulations.html' title='') Правила поведения
+hr
+include _aside-index

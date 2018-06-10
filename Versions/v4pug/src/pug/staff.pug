@@ -1,0 +1,36 @@
+extends regular
+
+include components/mixins/_mixin-person.pug
+
+block content
+    .grid-container: .grid-x.grid-padding-x: .cell
+        h1#title Персонал
+    .grid-container: .grid-x.grid-padding-x
+        aside.cell.small-12.medium-5.large-4.medium-order-2
+            include components/smi/_aside-team-index
+
+        .cell.small-12.medium-7.large-8.medium-order-1
+            .content
+                ul.menu
+                    li: a(href='#group-1' title='') Администрация
+                    li: a(href='#group-2' title='') Мед. персонал
+                br
+
+                h2#group-1.grid-x
+                    span.cell.auto Администрация
+                    a.cell.auto.shrink.text-medium-gray(href='#title' title='Наверх'): i.fa.fa-angle-up
+                .grid-x.grid-padding-x.small-up-2.medium-up-3(data-equalizer='people', data-equalize-by-row='true')
+                    +person('Сергей Тозик', 'Начальник команды')
+                    +person('Юрий Кузьменков', 'Тренер по научно-методической работе')
+                    +person('Борис Король', 'Тренер-администратор видеозаписи')
+                    +person('Павел Головацкий', 'Тренер-администратор')
+                    +person('Дмитрий Пшенцов', 'Тренер-администратор')
+
+                h2#group-2.grid-x
+                    span.cell.auto Медицинский персонал
+                    a.cell.auto.shrink.text-medium-gray(href='#title' title='Наверх'): i.fa.fa-angle-up
+                .grid-x.grid-padding-x.small-up-2.medium-up-3(data-equalizer='people', data-equalize-by-row='true')
+                    +person('Борис Лабкович', 'Тренер-врач')
+                    +person('Павел Гончаренко', 'Тренер-врач')
+                    +person('Дмитрий Слив', 'Тренер-массажист')
+                    +person('Виталий Кяпсня', 'Тренер-массажист')

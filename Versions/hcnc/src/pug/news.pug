@@ -1,0 +1,108 @@
+extends regular
+
+block content
+    .grid-container: .grid-x.grid-padding-x: .cell
+        h1 Новости
+    .grid-container: .grid-x.grid-padding-x
+        .cell.small-12.medium-7.large-8
+
+            .content
+                .grid-x.grid-padding-x.small-up-1.medium-up-2(data-equalizer='news', data-equalize-by-row='true')
+                    .cell
+                        .card(data-equalizer-watch='news')
+                            .card-image
+                                img(src='http://via.placeholder.com/140x100', alt='Фото' style='width:100%;')
+                            .card-section
+                                h4: a(href='news-article.html') Соперник – Клуб — 0:1
+                                p Армейцы добились победы в первом матче раунда плей-офф Лиги чемпионов.
+                                p.text-medium-gray= '15.08.2017 • '
+                                    a(href='news.html') On road
+                    .cell
+                        .card(data-equalizer-watch='news')
+                            .card-image
+                                img(src='http://via.placeholder.com/140x100', alt='Фото' style='width:100%;')
+                            .card-section
+                                h4: a(href='news-article.html') Соперник — Клуб: стартовые составы
+                                p Предлагаем вашему вниманию стартовые составы на первый матч раунда плей-офф Лиги чемпионов со швейцарским «Янг Бойз».
+                                p.text-medium-gray= '15.08.2017 • '
+                                    a(href='news.html') События
+                    .cell
+                        .card(data-equalizer-watch='news')
+                            .card-image
+                                img(src='http://via.placeholder.com/140x100', alt='Фото' style='width:100%;')
+                            .card-section
+                                h4: a(href='news-article.html') Матч Соперник—Клуб. Представляем главного судью матча
+                                p Главный судья: Давид Фернандес Борбалан (Испания)
+                                p.text-medium-gray= '15.08.2017 • '
+                                    a(href='news.html') Матчи
+                    .cell
+                        .card(data-equalizer-watch='news')
+                            .card-image
+                                img(src='http://via.placeholder.com/140x100', alt='Фото' style='width:100%;')
+                            .card-section
+                                h4: a(href='news-article.html') Предматчевая тренировка на Stade de Suisse
+                                p 14 августа команда ПФК ЦСКА, разместившись в одном из отелей Берна, провела предматчевую тренировку на стадионе, где завтра состоится первая игра раунда плей-офф Лиги чемпионов с «Янг Бойз».
+                                p.text-medium-gray= '15.08.2017 • '
+                                    a(href='news.html') Матчи
+                    .cell
+                        .card(data-equalizer-watch='news')
+                            .card-image
+                                img(src='http://via.placeholder.com/140x100', alt='Фото' style='width:100%;')
+                            .card-section
+                                h4: a(href='news-article.html') Виктор Ганчаренко: Дома Янг Бойз играет сильнее, чем на выезде
+                                p Главный тренер ПФК ЦСКА накануне матча с «Янг Бойз» отметил особенности игрового стиля швейцарцев.
+                                p.text-medium-gray= '14.08.2017 • '
+                                    a(href='') Интервью
+                    .cell
+                        .card(data-equalizer-watch='news')
+                            .card-image
+                                img(src='http://via.placeholder.com/140x100', alt='Фото' style='width:100%;')
+                            .card-section
+                                h4: a(href='news-article.html') Виктор Васин: Искусственное поле не станет проблемой
+                                P Защитник армейцев ответил на вопросы журналистов на пресс-конференции, предваряющей гостевой матч с «Янг Бойз».
+                                p.text-medium-gray= '14.08.2017 • '
+                                    a(href='news.html') Интервью
+                    .cell
+                        .card(data-equalizer-watch='news')
+                            .card-image
+                                img(src='http://via.placeholder.com/140x100', alt='Фото' style='width:100%;')
+                            .card-section
+                                h4: a(href='news-article.html') Армейцы вылетели в Швейцарию
+                                P Сегодня в 9:40 из аэропорта «Шереметьево» столичные армейцы вылетели в Швейцарию, где завтра (в 21:45 мск) проведут первый матч раунда плей-офф Лиги чемпионов-2017/18 с «Янг Бойз».
+                                p.text-medium-gray= '14.08.2017 • '
+                                    a(href='news.html') On road
+                    .cell
+                        .card(data-equalizer-watch='news')
+                            .card-image
+                                img(src='http://via.placeholder.com/140x100', alt='Фото' style='width:100%;')
+                            .card-section
+                                h4: a(href='news-article.html') Витиньо: Неистовая поддержка позволила уничтожить соперника
+                                P Бразильский нападающий в интервью CSKA TV рассказал, что не сомневался в том, что армейцы забьют в ворота «Спартака», когда счёт был в пользу соперника.
+                                p.text-medium-gray= '13.08.2017 • '
+                                    a(href='news.html') Матчи
+                    .cell
+                        .card(data-equalizer-watch='news')
+                            .card-image
+                                img(src='http://via.placeholder.com/140x100', alt='Фото' style='width:100%;')
+                            .card-section
+                                h4: a(href='news-article.html') Георгий Щенников: Безумно счастлив!
+                                P Защитник ПФК ЦСКА, забивший первый гол в ворота «Спартака» в домашнем дерби, ответил на вопросы CSKA TV после матча.
+                                p.text-medium-gray= '13.08.2017 • '
+                                    a(href='news.html') Интервью
+                    .cell
+                        .card(data-equalizer-watch='news')
+                            .card-image
+                                img(src='http://via.placeholder.com/140x100', alt='Фото' style='width:100%;')
+                            .card-section
+                                h4: a(href='news-article.html') Цифры и факты: московское дерби
+                                P Представляем вашему вниманию традиционную статистику и итоги матча Клуб — Соперник (2:1).
+                                p.text-medium-gray= '13.08.2017 • '
+                                    a(href='news.html') Матчи
+
+            include components/common/_pagination
+
+            .content
+                include components/smi/_subscribe
+
+        aside.cell.small-12.medium-5.large-4
+            include components/smi/_aside-news-index

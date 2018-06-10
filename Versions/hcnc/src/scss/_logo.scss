@@ -1,0 +1,42 @@
+.logo {
+
+  @media (min-width: 640px) {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  @media (min-width: 1440px) {
+    transform: translateY(-5%);
+  }
+  @media (min-width: 1500px) {
+    transform: translateY(-20%);
+  }
+  &-wrap {
+    position: relative;
+    &__inner {
+      @media (min-width: 1440px) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 9rem;
+      }
+      @media (min-width: 1500px) {
+        left: rem-calc(-50);
+        width: 12rem;
+      }
+      @media (min-width: 1600px) {
+        left: rem-calc(-80);
+        width: 14rem;
+      }
+      @media (min-width: 1700px) {
+        left: rem-calc(-100);
+        width: 15rem;
+      }
+      @media (min-width: 1760px) {
+        left: rem-calc(-100);
+        width: 15rem;
+      }
+    }
+  }
+
+}

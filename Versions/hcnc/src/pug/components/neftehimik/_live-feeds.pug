@@ -1,0 +1,89 @@
+.live-feeds
+  .grid-x.live-feeds-header
+    .cell.xxlarge-3.text-center
+      h3.margin-bottom-0 Живая лента
+    .cell.xxlarge-9
+      .grid-x
+        .cell.small-6.xlarge-3
+          .aside-games-panel-switcher.text-center.live-feeds-header__panel-switcher
+            input.aside-games-panel-switcher__input-live-feeds(type='checkbox' id='live-feeds__switcher' checked)
+            label.aside-games-panel-switcher__label.live-feeds-panel-switcher__label(for='live-feeds__switcher')
+              span.aside-games-panel-switcher__span.live-feeds-panel-switcher__span Новости клуба
+        .cell.small-6.xlarge-3
+          .aside-games-panel-switcher.text-center.live-feeds-header__panel-switcher
+            input.aside-games-panel-switcher__input-live-feeds(type='checkbox' id='live-feeds__switcher2' checked)
+            label.aside-games-panel-switcher__label.live-feeds-panel-switcher__label(for='live-feeds__switcher2')
+              span.aside-games-panel-switcher__span.live-feeds-panel-switcher__span Видео
+        .cell.small-6.xlarge-3
+          .aside-games-panel-switcher.text-center.live-feeds-header__panel-switcher
+            input.aside-games-panel-switcher__input-live-feeds(type='checkbox' id='live-feeds__switcher3' checked)
+            label.aside-games-panel-switcher__label.live-feeds-panel-switcher__label(for='live-feeds__switcher3')
+              span.aside-games-panel-switcher__span.live-feeds-panel-switcher__span Фото
+        .cell.small-6.xlarge-3
+          .aside-games-panel-switcher.text-center.live-feeds-header__panel-switcher
+            input.aside-games-panel-switcher__input-live-feeds(type='checkbox' id='live-feeds__switcher4')
+            label.aside-games-panel-switcher__label.live-feeds-panel-switcher__label(for='live-feeds__switcher4')
+              span.aside-games-panel-switcher__span.live-feeds-panel-switcher__span История
+  
+  .grid-x.live-feeds-news.switch-content-news
+    .cell.xlarge-3.live-feeds-news__date
+      span.live-feeds-news__number 15
+      span.live-feeds-news__month Августа
+    .cell.xlarge-9.live-feeds-news__desc
+      .grid-x
+        .cell.xlarge-3.live-feeds-news__col.show-for-medium
+          img(src='i/post-foto.jpg')
+        .cell.xlarge-9.live-feeds-news__col
+          a(href='#').live-feeds-news__title-paragraph «Нефтехимик» расторг контракт с Никитой Квартальновым
+          p.live-feeds-news__paragraph По инициативе клуба, расторгнут контракт с нападающим Никитой Квартальновым. В прошлом сезоне игрок провел за нашу команду 27 игр и набрал 4(2+2) очка. Всего в КХЛ  Н. Квартальнов  в 131  матчах набрал  11(7+4) очков.
+          a.live-feeds-news__write-comment оставить комментарий
+  
+  .grid-x.live-feeds-news.switch-content-photo
+    .cell.xlarge-3.live-feeds-news__date
+      span.live-feeds-news__number 13
+      span.live-feeds-news__month Августа
+    .cell.xlarge-9.live-feeds-news__desc
+      .grid-x
+        .cell 
+          a(href='#').live-feeds-news__title-paragraph.live-feeds-news__title-paragraph_pt Участие в полумарафоне в честь 50-летия ПАО "Нижнекамскнефтехим"
+        .cell.large-9
+          .grid-x
+            .cell.small-4.medium-4.live-feeds-news__col
+              img(src='i/post-foto2.jpg')
+            .cell.small-4.medium-4.live-feeds-news__col
+              img(src='i/post-foto3.jpg')
+            .cell.small-4.medium-4.live-feeds-news__col
+              img(src='i/post-foto4.jpg')
+            //- .cell
+            //-   hr
+        .cell.large-3.live-feeds-news__col.live-feeds-news__col_inner-link
+          a.live-feeds-news__link-multimedia(href='') Еще 68 фото
+  
+  .grid-x.live-feeds-news.switch-content-history
+    .cell.xlarge-3.live-feeds-news__date
+      span.live-feeds-news__number 27
+      span.live-feeds-news__month Августа
+    .cell.xlarge-9.live-feeds-news__desc
+      .grid-x
+        .cell.xlarge-3.live-feeds-news__col.show-for-medium
+          img(src='i/post-foto5.jpg')
+        .cell.xlarge-9.live-feeds-news__col
+          a(href='#').live-feeds-news__title-paragraph День рождения Александра Шевченко
+          p.live-feeds-news__paragraph Президент ФХР, находящийся в Цюрихе, в интервью «СЭ» прокомментировал итоги заседания совета ИИХФ и рассказал, когда сборная России обретет нового главного тренера.
+  
+  .grid-x.live-feeds-news.switch-content-video
+    .cell.xlarge-3.live-feeds-news__date
+      span.live-feeds-news__number 29
+      span.live-feeds-news__month Августа
+    .cell.xlarge-9.live-feeds-news__desc
+      .grid-x
+        .cell.xlarge-3.live-feeds-news__col.show-for-medium
+          .archive-video__wrap-video
+            video(poster="i/post-foto6.jpg").archive-video__video
+              source(src='video/video.mp4', type='video/mp4')
+        .cell.xlarge-9.live-feeds-news__col
+          a(href='#').live-feeds-news__title-paragraph Послематчевая пресс-конференция
+          p.live-feeds-news__paragraph Президент ФХР, находящийся в Цюрихе, в интервью «СЭ» прокомментировал итоги заседания совета ИИХФ и рассказал, когда сборная России обретет нового главного тренера.
+  
+  
+  

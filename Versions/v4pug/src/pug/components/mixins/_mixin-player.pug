@@ -1,0 +1,30 @@
+mixin player(number, type, name, country, img)
+    .cell
+        a(href='player.html')
+            .card.player-card(data-equalizer-watch='players')
+                .card-image.player-card-image
+                    img(src='i/' + img alt='Фото игрока' style='width: 100%;')
+                    .player-card-description
+                      ul.player-characteristics
+                          li.player-characteristics__item Возраст:
+                            b.player-characteristics__tbold  26 лет
+                          li.player-characteristics__item Рост:
+                            b.player-characteristics__tbold  182 см
+                          li.player-characteristics__item Вес:
+                            b.player-characteristics__tbold  84 кг
+                          li.player-characteristics__item Хват:
+                            b.player-characteristics__tbold  правый
+                          li.player-characteristics__item День рождения:
+                            b.player-characteristics__tbold  29.04.1991
+                      .button.player-card-description__btn Профиль игрока
+                .card-section
+                  .grid-x
+                    .cell.small-5
+                      .player-card__name 
+                        = name
+                    .cell.small-5.small-offset-2.text-center
+                      b 
+                          span.badge.badge_big(class=type)= number
+                          = ' '
+                          br
+                          = country

@@ -1,0 +1,8 @@
+.card {
+  &-wrap {
+    margin-bottom: rem-calc(20);
+  }
+  &__score-match {
+    font-size: rem-calc(30);
+  }
+}

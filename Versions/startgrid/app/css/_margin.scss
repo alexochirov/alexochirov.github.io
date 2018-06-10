@@ -1,0 +1,19 @@
+.margin-bottom {
+  &-12 {
+    margin-bottom: rem-calc(12);
+  }
+
+  &-20 {
+    margin-bottom: rem-calc(20);
+  }
+
+  &-40 {
+    margin-bottom: rem-calc(40);
+  }
+}
+
+.margin-right {
+  &-27 {
+    margin-right: rem-calc(27);
+  }
+}

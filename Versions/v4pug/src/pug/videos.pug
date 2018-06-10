@@ -1,0 +1,95 @@
+extends regular
+
+block content
+    .grid-container: .grid-x.grid-padding-x: .cell
+        h1 Видео
+    .grid-container: .grid-x.grid-padding-x
+        .cell.small-12.medium-7.large-8
+
+            .content
+                .grid-x.grid-padding-x.small-up-1.medium-up-2(data-equalizer='news', data-equalize-by-row='true')
+                    .cell
+                        .card(data-equalizer-watch='news')
+                            .card-image
+                                img(src='http://via.placeholder.com/480x300', alt='Видео' style='width:100%;')
+                            .card-section
+                                h4: a(href='video.html') Соперник – Клуб — 0:1
+                                p #[span.label 03:12] &#160; #[span.text-medium-gray 15.08.2017 • ]
+                                    a(href='videos.html') On road
+                    .cell
+                        .card(data-equalizer-watch='news')
+                            .card-image
+                                img(src='http://via.placeholder.com/480x300', alt='Видео' style='width:100%;')
+                            .card-section
+                                h4: a(href='video.html') Соперник — Клуб: стартовые составы
+                                p #[span.label 02:09] &#160; #[span.text-medium-gray 15.08.2017 • ]
+                                    a(href='videos.html') События
+                    .cell
+                        .card(data-equalizer-watch='news')
+                            .card-image
+                                img(src='http://via.placeholder.com/480x300', alt='Видео' style='width:100%;')
+                            .card-section
+                                h4: a(href='video.html') Матч Соперник—Клуб. Представляем главного судью матча
+                                p #[span.label 01:17] &#160; #[span.text-medium-gray 15.08.2017 • ]
+                                    a(href='videos.html') Матчи
+                    .cell
+                        .card(data-equalizer-watch='news')
+                            .card-image
+                                img(src='http://via.placeholder.com/480x300', alt='Видео' style='width:100%;')
+                            .card-section
+                                h4: a(href='video.html') Предматчевая тренировка на Stade de Suisse
+                                p #[span.label 09:16] &#160; #[span.text-medium-gray 15.08.2017 • ]
+                                    a(href='videos.html') Матчи
+                    .cell
+                        .card(data-equalizer-watch='news')
+                            .card-image
+                                img(src='http://via.placeholder.com/480x300', alt='Видео' style='width:100%;')
+                            .card-section
+                                h4: a(href='video.html') Виктор Ганчаренко: Дома Янг Бойз играет сильнее, чем на выезде
+                                p #[span.label 02:34] &#160; #[span.text-medium-gray 14.08.2017 • ]
+                                    a(href='videos.html') Интервью
+                    .cell
+                        .card(data-equalizer-watch='news')
+                            .card-image
+                                img(src='http://via.placeholder.com/480x300', alt='Видео' style='width:100%;')
+                            .card-section
+                                h4: a(href='video.html') Виктор Васин: Искусственное поле не станет проблемой
+                                p #[span.label 01:15] &#160; #[span.text-medium-gray 14.08.2017 • ]
+                                    a(href='videos.html') Интервью
+                    .cell
+                        .card(data-equalizer-watch='news')
+                            .card-image
+                                img(src='http://via.placeholder.com/480x300', alt='Видео' style='width:100%;')
+                            .card-section
+                                h4: a(href='video.html') Армейцы вылетели в Швейцарию
+                                p #[span.label 02:05] &#160; #[span.text-medium-gray 14.08.2017 • ]
+                                    a(href='videos.html') On road
+                    .cell
+                        .card(data-equalizer-watch='news')
+                            .card-image
+                                img(src='http://via.placeholder.com/480x300', alt='Видео' style='width:100%;')
+                            .card-section
+                                h4: a(href='video.html') Витиньо: Неистовая поддержка позволила уничтожить соперника
+                                p #[span.label 03:12] &#160; #[span.text-medium-gray 13.08.2017 • ]
+                                    a(href='videos.html') Матчи
+                    .cell
+                        .card(data-equalizer-watch='news')
+                            .card-image
+                                img(src='http://via.placeholder.com/480x300', alt='Видео' style='width:100%;')
+                            .card-section
+                                h4: a(href='video.html') Георгий Щенников: Безумно счастлив!
+                                p #[span.label 02:09] &#160; #[span.text-medium-gray 13.08.2017 • ]
+                                    a(href='videos.html') Интервью
+                    .cell
+                        .card(data-equalizer-watch='news')
+                            .card-image
+                                img(src='http://via.placeholder.com/480x300', alt='Видео' style='width:100%;')
+                            .card-section
+                                h4: a(href='video.html') Цифры и факты: московское дерби
+                                p #[span.label 01:17] &#160; #[span.text-medium-gray 13.08.2017 • ]
+                                    a(href='videos.html') Матчи
+
+            include components/common/_pagination
+
+        aside.cell.small-12.medium-5.large-4
+            include components/smi/_aside-photos-index

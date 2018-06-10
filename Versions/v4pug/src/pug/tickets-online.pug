@@ -1,0 +1,100 @@
+extends regular
+
+block content
+    .grid-container: .grid-x.grid-padding-x: .cell
+        h1 Купить билет On-Line
+    .grid-container: .grid-x.grid-padding-x
+        aside.cell.small-12.medium-5.large-4.medium-order-2
+            include components/smi/_aside-tickets-index
+
+        .cell.small-12.medium-7.large-8.medium-order-1
+            .content
+                p: b Выберите матч
+
+                ul.menu.margin-bottom-6
+                    li.active: a(href='tickets-online.html' title='Календарём'): i.fa.fa-lg.fa-calendar
+                    li: a(href='tickets-online-list.html' title='Списком'): i.fa.fa-lg.fa-list
+
+                table(data-equalizer='games-calendar-table-cells')
+                    thead
+                        tr
+                            td.text-dark-gray(colspan='2') #[i.fa.fa-lg.fa-arrow-left] Июль 2017
+                            th(colspan='3').text-center Август 2017
+                            td(colspan='2').text-right
+                                a(href='#' title='Сентябрь 2017')
+                                    | Сентябрь 2017 #[i.fa.fa-lg.fa-arrow-right]
+                        tr
+                            td Пн
+                            td Вт
+                            td Ср
+                            td Чт
+                            td Пт
+                            td Сб
+                            td Вс
+                    tbody
+                        tr.text-dark-gray
+                            td(data-equalizer-watch='games-calendar-table-cells').text-medium-gray 31
+                            td(data-equalizer-watch='games-calendar-table-cells') 1
+                            td(data-equalizer-watch='games-calendar-table-cells') 2
+                            td(data-equalizer-watch='games-calendar-table-cells') 3
+                            td(data-equalizer-watch='games-calendar-table-cells') 4
+                            td(data-equalizer-watch='games-calendar-table-cells') 5
+                            td(data-equalizer-watch='games-calendar-table-cells') 6
+                        tr.text-dark-gray
+                            td(data-equalizer-watch='games-calendar-table-cells') 7
+                            td(data-equalizer-watch='games-calendar-table-cells') 8
+                            td(data-equalizer-watch='games-calendar-table-cells') 9
+                            td(data-equalizer-watch='games-calendar-table-cells') 10
+                            td(data-equalizer-watch='games-calendar-table-cells') 11
+                            td(data-equalizer-watch='games-calendar-table-cells')
+                                | 12
+                                br
+                                i.fa.fa-2x.fa-chrome(title='Логотип команды-соперника')
+                            td(data-equalizer-watch='games-calendar-table-cells') 13
+                        tr.text-dark-gray
+                            td(data-equalizer-watch='games-calendar-table-cells') 14
+
+                            td(data-equalizer-watch='games-calendar-table-cells') 15
+                            td(data-equalizer-watch='games-calendar-table-cells')
+                                | 16
+                                br
+                                i.fa.fa-2x.fa-chrome(title='Логотип команды-соперника')
+                            td(data-equalizer-watch='games-calendar-table-cells')
+                                | 17
+                                br
+                                i.fa.fa-2x.fa-chrome(title='Логотип команды-соперника')
+                            td(data-equalizer-watch='games-calendar-table-cells') 18
+                            td(data-equalizer-watch='games-calendar-table-cells') 19
+                            td(data-equalizer-watch='games-calendar-table-cells') 20
+                        tr
+                            td.text-dark-gray(data-equalizer-watch='games-calendar-table-cells') 21
+                            td(data-equalizer-watch='games-calendar-table-cells') 22
+                            td(data-equalizer-watch='games-calendar-table-cells' data-toggle='upcomingGameModal')
+                                | 23 — #[i.fa.fa-home]
+                                br
+                                i.fa.fa-2x.fa-chrome(title='Логотип команды-соперника')
+                            td(data-equalizer-watch='games-calendar-table-cells') 24
+                            td(data-equalizer-watch='games-calendar-table-cells' data-toggle='upcomingGameModal')
+                                | 25 — #[i.fa.fa-home]
+                                br
+                                i.fa.fa-2x.fa-chrome(title='Логотип команды-соперника')
+                            td(data-equalizer-watch='games-calendar-table-cells') 26
+                            td(data-equalizer-watch='games-calendar-table-cells') 27
+                        tr
+                            td(data-equalizer-watch='games-calendar-table-cells') 28
+                            td(data-equalizer-watch='games-calendar-table-cells') 29
+                            td(data-equalizer-watch='games-calendar-table-cells' data-toggle='upcomingGameModal')
+                                | 30
+                                br
+                                i.fa.fa-2x.fa-chrome(title='Логотип команды-соперника')
+                            td(data-equalizer-watch='games-calendar-table-cells') 31
+                            td(data-equalizer-watch='games-calendar-table-cells').text-medium-gray 1
+                            td(data-equalizer-watch='games-calendar-table-cells').text-medium-gray 2
+                            td(data-equalizer-watch='games-calendar-table-cells').text-medium-gray 3
+
+                p #[i.fa.fa-home] — Домашний матч
+
+            .reveal(id='upcomingGameModal' data-reveal data-deep-link='true')
+                include components/smi/_upcoming-game
+                button.close-button(data-close aria-label='Закрыть' type='button')
+                    span(aria-hidden='true') &times;

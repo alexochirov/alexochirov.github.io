@@ -1,0 +1,28 @@
+.callout {
+  margin: 0;
+  border: none;
+  border-left: rem-calc(1) solid #e1e1e1;
+  border-bottom: rem-calc(1) solid #e1e1e1;
+  padding-top: rem-calc(26);
+  padding-bottom: rem-calc(26);
+  padding-left: rem-calc(20);
+  padding-right: rem-calc(20);
+  @media(min-width: 60em) {
+    padding-left: rem-calc(41);
+    padding-right: rem-calc(41);
+  }
+  &__title {
+    font-size: rem-calc(30);
+    // font-family: $font-helveticaNeueltstd;
+    font-family: $font-helvetica-neue-condensed-bold;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  &_npd {
+    padding: rem-calc(26 0 26 0);
+    @media (min-width: 40em) {
+      // padding: rem-calc(26 0 0 0);
+      padding: 0;
+    }
+  }
+}

@@ -6,9 +6,15 @@
     border-top: 1px solid #e2e2e2;
     border-bottom: 1px solid #e2e2e2;
     background-color: #f8f8f8;
+    &_mini {
+      border-top: rem-calc(0);
+    }
     &__row
     {
         max-width: 1180px;
+        &_big {
+          margin-bottom: rem-calc(60);
+        }
     }
     &-header
     {

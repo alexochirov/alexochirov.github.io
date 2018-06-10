@@ -1,0 +1,55 @@
+/* ==========================================================================
+   ICONS */
+/* ========================================================================== */
+
+
+	.icon {
+		// Основные стили для иконок
+		display: inline-block;
+		overflow: hidden;
+		width: 20px;
+		height: 20px;
+		font-style: normal;
+		vertical-align: text-top;
+		background: url(@allIconsUrl) 0 0 no-repeat;
+		.bg-image-retina;
+
+		&-register,
+		&-user {
+			width: 26px;
+			height: 24px;
+			background-position: 0 0;
+		} //.icon-register, .icon-user
+
+		&-user {
+			background-position: -30px 0;
+		} //.icon-user
+
+		&-cart-big {
+			width: 24px;
+			height: 24px;
+			background-position: 0 -80px;
+		} //.icon-cart-big
+
+		&-cross {
+			background-image: none !important;
+			position: relative;
+			&:after {
+				position: absolute;
+				top: 0;
+				left:0;
+				width: 20px;
+				height: 20px;
+				content: '\0274c';
+				font-size: 12px;
+				line-height: 20px;				
+			}
+		} //.icon-cross
+
+		&-search {
+			background-position: 0 -140px;
+		} //.icon-search
+
+	} //.icon
+
+

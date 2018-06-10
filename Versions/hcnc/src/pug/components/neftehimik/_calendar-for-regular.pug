@@ -1,0 +1,91 @@
+table.calendar(data-equalizer='games-calendar-table-cells')
+    thead
+        tr
+            td.text-center Пн
+            td.text-center Вт
+            td.text-center Ср
+            td.text-center Чт
+            td.text-center Пт
+            td.text-center Сб
+            td.text-center Вс
+            td
+        tr
+            td.calendar-td(data-equalizer-watch='games-calendar-table-cells')
+            td.calendar-td(data-equalizer-watch='games-calendar-table-cells') 1
+            td.calendar-td(data-equalizer-watch='games-calendar-table-cells') 2
+            td.calendar-td(data-equalizer-watch='games-calendar-table-cells') 3
+            td.calendar-exit-game-select(data-equalizer-watch='games-calendar-table-cells' data-toggle='recentGameModal')
+              | 4
+              br
+              .text-center
+                img(src='i/logo-calendar-1.svg')
+            td.calendar-weekend(data-equalizer-watch='games-calendar-table-cells') 5
+            td.calendar-weekend(data-equalizer-watch='games-calendar-table-cells') 6
+            td.calendar-months(rowspan='4')
+              .text-center.text-black Сентябрь
+              .calendar-months-links
+                a.calendar-months-link(href='#' title='Июль 2017')
+                  | #[i.fa.fa-lg.fa-angle-left] Июль
+                span.calendar-months-separator |
+                a.calendar-months-link(href='#' title='Сентябрь 2017')
+                  | Сентябрь #[i.fa.fa-lg.fa-angle-right]
+        tr
+            td.calendar-td(data-equalizer-watch='games-calendar-table-cells') 7
+            td.calendar-td(data-equalizer-watch='games-calendar-table-cells') 8
+            td.calendar-td(data-equalizer-watch='games-calendar-table-cells') 9
+            td.calendar-td(data-equalizer-watch='games-calendar-table-cells') 10
+            td.calendar-td(data-equalizer-watch='games-calendar-table-cells') 11
+            td.calendar-weekend(data-equalizer-watch='games-calendar-table-cells')
+                | 12
+                br
+            td.calendar-weekend(data-equalizer-watch='games-calendar-table-cells') 13
+        tr
+            td.calendar-td(data-equalizer-watch='games-calendar-table-cells') 14
+
+            td.calendar-td(data-equalizer-watch='games-calendar-table-cells') 15
+            td.calendar-home-game-select(data-equalizer-watch='games-calendar-table-cells' data-toggle='recentGameModal')
+                | 16
+                br
+                .text-center
+                  img(src='i/logo-calendar-2.svg')
+            td.calendar-td(data-equalizer-watch='games-calendar-table-cells' data-toggle='recentGameModal')
+                | 17
+                br
+            td.calendar-td(data-equalizer-watch='games-calendar-table-cells') 18
+            td.calendar-weekend(data-equalizer-watch='games-calendar-table-cells') 19
+            td.calendar-weekend(data-equalizer-watch='games-calendar-table-cells') 20
+        tr
+            td.calendar-td(data-equalizer-watch='games-calendar-table-cells') 21
+            td.calendar-td(data-equalizer-watch='games-calendar-table-cells') 22
+            td.calendar-td(data-equalizer-watch='games-calendar-table-cells' data-toggle='upcomingGameModal')
+                | 23 
+                br
+            td.calendar-td(data-equalizer-watch='games-calendar-table-cells') 24
+            td.calendar-td(data-equalizer-watch='games-calendar-table-cells' data-toggle='upcomingGameModal')
+                | 25
+                br
+            td.calendar-weekend(data-equalizer-watch='games-calendar-table-cells') 26
+            td.calendar-weekend(data-equalizer-watch='games-calendar-table-cells') 27
+        tr
+            td.calendar-td(data-equalizer-watch='games-calendar-table-cells') 28
+            td.calendar-td(data-equalizer-watch='games-calendar-table-cells') 29
+            td.calendar-td(data-equalizer-watch='games-calendar-table-cells' data-toggle='upcomingGameModal')
+                | 30
+                br
+            td.calendar-td(data-equalizer-watch='games-calendar-table-cells') 31
+            td.calendar-td(data-equalizer-watch='games-calendar-table-cells')
+            td.calendar-weekend(data-equalizer-watch='games-calendar-table-cells')
+            td.calendar-weekend(data-equalizer-watch='games-calendar-table-cells')
+            td(data-equalizer-watch='games-calendar-table-cells' style="vertical-align: middle;").text-center
+              span.calendar-exit-game Выездная игра
+              br
+              span.calendar-home-game Домашняя игра
+.reveal(id='recentGameModal' data-reveal data-deep-link='true')
+    include ../smi/_recent-game
+    button.close-button(data-close aria-label='Закрыть' type='button')
+        span(aria-hidden='true') &times;
+
+.reveal(id='upcomingGameModal' data-reveal data-deep-link='true')
+    include ../smi/_upcoming-game
+    button.close-button(data-close aria-label='Закрыть' type='button')
+        span(aria-hidden='true') &times;

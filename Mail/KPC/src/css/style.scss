@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+$imagesPath:'http://kosmetika-proff.beta3.ceteralabs.com/working-mail/images';
+
+$orange:#ff7116;
+$black:#484646;
+$white:#ffffff;
+$gray:#999999;
+$green:#95be00;
+$dark-gray:#666666;
+
+@import "common";
+@import "text";
+@import "fonts";
+@import "main";
+@import "info";
+@import "content";
+@import "prod";
+@import "footer";
+@import "padding";
+@import "header";
+@import "flag";
+@import "product";

@@ -1,0 +1,48 @@
+.content {
+  width: 100%;
+
+  &__sum {
+    color: $orange;
+    font-size: 19px;
+  }
+
+  &__pay {
+    padding-top: 22px;
+    padding-bottom: 32px;
+  }
+
+  &__site {
+    text-transform: uppercase;
+  }
+
+
+
+  &__hello {
+    display: block;
+    color: $orange;
+    font-size: 19px;
+  }
+
+
+
+  &__line {
+    height: 32px;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 32px;
+  }
+
+  &__dark {
+    background-color: #f2f2f2;
+    width: 100%;
+  }
+  &__p {
+    padding-bottom: 20px;
+  }
+  &__par {
+    padding-bottom: 10px;
+  }
+  &__last {
+    padding-bottom: 37px;
+  }
+}

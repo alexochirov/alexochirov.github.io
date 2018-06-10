@@ -1,0 +1,21 @@
+.shipment {
+  margin-bottom: rem-calc(33);
+  border: rem-calc(2) solid #e1e1e1;
+
+  &__slide {
+    height: rem-calc(650);
+
+    figure {
+      max-height:rem-calc(650);
+    }
+  }
+@media (max-width: 640px)
+{
+  &__slide {
+    height: rem-calc(296);
+    figure {
+      max-height: rem-calc(296);
+    }
+  }
+}
+}

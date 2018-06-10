@@ -5,6 +5,7 @@ var sourcemaps = require('gulp-sourcemaps');
 var browserSync = require('browser-sync');
 var useref = require('gulp-useref');
 var uglify = require('gulp-uglify');
+var wait = require('gulp-wait2');
 var gulpIf = require('gulp-if');
 var minifyCSS = require('gulp-minify-css');
 var less = require('gulp-less');
@@ -34,7 +35,7 @@ var path = {
     src: {
         html: 'app/*.html',
         js: 'app/js/*.js',
-        style: 'app/css/styles.less',
+        style: 'app/css/template_styles.less',
         stylepapka: 'app/css/',
         img: 'app/i/*.*',
         spriteTemplate: 'app/css/sass.template.mustache',
@@ -69,36 +70,35 @@ gulp.task('sass', function (done) {
         ).on('error', function (error) {
             done(error);
         }))
-        .pipe(rename("/styles_1491838381.css"))
-        .pipe(gulp.dest(path.src.stylepapka)) // Outputs it in the css folder
-        .on('end', function () {
-            done();
-        })
+        // .pipe(rename("/styles_1491838390.css"))
+        // .pipe(gulp.dest(path.src.stylepapka))
+        // .pipe(rename("/styles.css"))
+        .pipe(gulp.dest(path.src.stylepapka))
 
+        .pipe(wait(1000))
         .pipe(browserSync.reload({
             stream: true
         }));
 });
 
-gulp.task('sassmy', function (done) {
+gulp.task('sass-2', function (done) {
+
+
+
     return gulp.src(path.src.style)
-        .pipe(sass().on('error', function (error) {
-            done(error);
-        }))
-        .pipe(gulp.dest(path.src.stylepapka)) // Outputs it in the css folder
-        .on('end', function () {
-            done();
-        })
-
+    .pipe(wait(400))
         .pipe(browserSync.reload({
             stream: true
         }));
 });
+
+
 
 
 // Watchers
 gulp.task('watch', function () {
-    gulp.watch(path.src.stylepapka + '/**/*.less', ['sass']);
+    gulp.watch(path.src.stylepapka + '/**/*.less', ['sass','sass-2']);
+
     gulp.watch(path.src.html, browserSync.reload);
     gulp.watch(path.src.js, browserSync.reload);
     gulp.watch(path.src.img, browserSync.reload);

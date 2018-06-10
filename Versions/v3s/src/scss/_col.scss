@@ -1,0 +1,146 @@
+.b-col
+{
+    width: 33%;
+
+    vertical-align: top;
+    &__span {
+        width: 355px;
+        display: inline-block;
+    }
+    &__addr
+    {
+        img
+        {
+            display: inline-block;
+        }
+    }
+    &__no
+    {
+        text-decoration: none;
+    }
+    &__address
+    {
+        font-size: 13px;
+
+        vertical-align: text-top;
+
+        color: #000;
+    }
+    &__img
+    {
+        padding-bottom: 50px;
+    }
+    &__super
+    {
+        font-size: 14px;
+
+        padding-top: 17px;
+
+        color: #303030;
+    }
+    &__sup
+    {
+        font-size: 14px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+
+        color: #303030;
+    }
+    &__row
+    {
+        padding-top: 20px;
+    }
+    &__date
+    {
+        font-family: $font-family-OpenSansSemiBold;
+        font-size: 13px;
+
+        margin-left: 19px;
+
+        color: #f33a2c;
+    }
+    &__td {
+        padding-bottom: 3px;
+    }
+    &__rubr
+    {
+        font-family: $font-family-OpenSansSemiBold;
+        font-size: 11px;
+
+        margin-left: 10px;
+        padding-right: 4px;
+        padding-left: 4px;
+
+        text-transform: uppercase;
+
+        color: #fff;
+        border-radius: 4px;
+        background: #dd249a;
+    }
+    &__name
+    {
+        font-size: 15px;
+
+        margin-left: 19px;
+
+        color: #000;
+    }
+    &__afi
+    {
+        font-size: 18px;
+
+        display: inline-block;
+
+        min-width: 121px;
+        padding-top: 5px;
+        padding-right: 4px;
+        padding-bottom: 5px;
+        padding-left: 4px;
+
+        text-align: center;
+        text-decoration: none;
+
+        color: #fff;
+        background: #85be46;
+        &:hover
+        {
+            text-decoration: underline;
+        }
+        &_brown
+        {
+            background: #603711;
+        }
+        &_red
+        {
+            background: #f33a2c;
+        }
+    }
+    &__line
+    {
+        height: 3px;
+
+        background: #85be46;
+        &_brown
+        {
+            background: #603711;
+        }
+        &_red
+        {
+            background: #f33a2c;
+        }
+    }
+}
+@media only screen and (max-width:960px)
+{
+    .b-col
+    {
+        &__afi
+        {
+            font-size: 13px;
+        }
+        &__super
+        {
+            font-size: 13px;
+        }
+    }
+}

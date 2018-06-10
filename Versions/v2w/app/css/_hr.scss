@@ -1,0 +1,20 @@
+.hr {
+  margin-top: rem-calc(0);
+  margin-bottom: rem-calc(30);
+
+  &_other {
+    margin-bottom: rem-calc(10);
+    border-bottom-color: #e1e1e1;
+  }
+&_head {
+  margin-bottom: rem-calc(20);
+}
+  &_new {
+    margin-bottom: rem-calc(35);
+    border-bottom-color: #e1e1e1;
+  }
+
+  &_no-margin {
+    margin-bottom: rem-calc(0);
+  }
+}

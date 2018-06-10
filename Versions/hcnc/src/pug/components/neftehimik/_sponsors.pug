@@ -1,0 +1,25 @@
+.sponsors.text-center
+  .grid-container: .grid-x.grid-padding-x: .cell
+    h6.sponsors__title Спонсоры Чемпионата КХЛ сезона 2017-2018:
+  .grid-container: .grid-x.grid-padding-x.small-up-2.medium-up-4.large-up-5
+    each sponsors in [{'img':'sogaz-logo', 'text':'Генеральный партнер'},{'img':'mastercard', 'text':'Официальный партнер'},{'img':'rt', 'text':'Партнер'},{'img':'MegaFon', 'text':'Партнер'},{'img':'eriell', 'text':'Партнер'}]
+      .cell
+        img(src='images/sponsors/' + sponsors.img + '.svg')
+        p= sponsors.text
+        
+    each sponsors in [{'img':'coca-logo', 'text':'Партнер'},{'img':'haier', 'text':'Поставщик'},{'img':'ey', 'text':'Поставщик'},{'img':'champion', 'text':'Интернет-партнер'},{'img':'hankook-logo', 'text':'Поставщик'}]
+      .cell
+        img(src='images/sponsors/' + sponsors.img + '.svg')
+        p= sponsors.text
+  .grid-container: .grid-x.grid-padding-x: .cell
+    h6.sponsors__title Спонсоры Чемпионата МХЛ сезона 2017-2018:
+  .grid-container: .grid-x.grid-padding-x
+    each sponsors, index in [{'img':'mastercard', 'text':'Официальный партнер'},{'img':'rt', 'text':'Партнер'},{'img':'eriell', 'text':'Партнер'},{'img':'haier', 'text':'Поставщик'}]
+      if (index > 0)
+        .cell.small-6.medium-2
+          img(src='images/sponsors/' + sponsors.img + '.svg')
+          p= sponsors.text
+      else
+        .cell.small-6.medium-2.medium-offset-2
+          img(src='images/sponsors/' + sponsors.img + '.svg')
+          p= sponsors.text

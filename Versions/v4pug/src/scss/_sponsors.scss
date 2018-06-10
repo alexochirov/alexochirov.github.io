@@ -1,0 +1,18 @@
+.sponsors {
+  color: #555555;
+  background-color:#fff;
+  margin-top: rem-calc(10);
+  width: 100%; //fix ie11
+  &__title {
+    font-size: rem-calc(13);
+    margin-top: rem-calc(26);
+    margin-bottom: rem-calc(26);
+  }
+  & img {
+  	height: 45px;
+  }
+  & p{
+    padding-top: 8px;
+    margin-bottom: rem-calc(26);
+  }
+}

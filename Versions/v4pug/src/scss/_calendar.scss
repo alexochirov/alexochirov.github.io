@@ -1,0 +1,169 @@
+.calendar {
+  // table-layout: fixed;
+  background-color: white;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-bottom: 0;
+  &-wrap {
+    position: relative;
+    top: rem-calc(150);
+    right: 0;
+    z-index: 2;
+    width: rem-calc(1089);
+    left: rem-calc(-623);
+    margin-bottom: rem-calc(-35);
+    @media (min-width: 1040px) {
+      top: 0;
+    }
+  }
+  &__bordered
+  {
+    border: rem-calc(1) solid #e5e5e5;
+  }
+  & thead, & tr:nth-child(2n) {
+    background-color: transparent;
+  }
+  & thead {
+    border: none;
+  }
+  & td {
+    width: rem-calc(137);
+    height: rem-calc(105);
+    vertical-align: top;
+    color: black;
+  }
+  & thead td {
+    vertical-align: top;
+  }
+  & td, & th {
+    padding: rem-calc(8 10 10);
+  }
+  &-td {
+    border: rem-calc(1) solid #e5e5e5;
+    vertical-align: top;
+  }
+  &-months {
+    min-width: rem-calc(180) !important;
+    font-size: rem-calc(30);
+    text-transform: uppercase;
+    font-family: $font-helvetica-neue-condensed-bold;
+    vertical-align: top !important;
+    &-link {
+      font-size: rem-calc(14);
+      color: #ffa100;
+      &s {
+        text-align: center;
+      }
+    }
+    &-separator {
+      color: #dcdcdc;
+      margin: rem-calc(0 10);
+      font-size: 1.1rem;
+    }
+  }
+  &-weekend{
+    background-color: #eeeeee;
+    border-left: rem-calc(1) solid #eeeeee;
+    border-top: rem-calc(1) solid #e5e5e5;
+    border-bottom: rem-calc(1) solid #e5e5e5;
+    &:last-child {
+      border-right: rem-calc(1) solid #e5e5e5;
+    }
+  }
+  &-exit-game, &-home-game {
+    font-size: rem-calc(12);
+    position: relative;
+    display: inline-block;
+    padding-left: rem-calc(15);
+    width: rem-calc(100);
+    text-align: left;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      left: 0;
+      border-radius: 50%;
+      height: rem-calc(8);
+      width: rem-calc(8);
+    }
+  }
+  &-exit-game {
+    &-select {
+      border: rem-calc(1) solid #ffa100 !important;
+      cursor: pointer;
+    }
+  }
+  &-home-game {
+    &-select {
+      border: rem-calc(1) solid #003478 !important;
+      cursor: pointer;
+    }
+  }
+
+  &-day-element
+  {
+    padding: 0 !important;
+  }
+
+  &-daynum-home
+  {
+    position: absolute;
+    top:0;
+    right:0;
+    background-color: #003478;
+    color:white;
+    font-weight:300;
+    width: 1.5em;
+    height: 1.5em;
+  }
+  &-daynum-road
+  {
+    position: absolute;
+    top:0;
+    right:0;
+    background-color: #ffa100;
+    color:white;
+    font-weight:300;
+    width: 1.5em;
+    height: 1.5em;
+  }
+
+  &-team-card-home
+  {
+    padding-top:1em;
+    padding-left:1em;
+  }
+  &-team-card-road
+  {
+    padding-left:1em;
+  }
+
+  &-team-logo
+  {
+    height: 2.2em;
+    width:auto;
+  }
+  &-team-score
+  {
+    font-weight:600;
+    line-height:2.4em;
+    font-size:1.2em
+  }
+
+
+  &-exit-game:before {
+    background-color: #ffa100;
+  }
+  &-home-game:before {
+    background-color: #003478;
+  }
+}
+
+.wrap-panel-switcher {
+  position: absolute;
+  top: rem-calc(20);
+  right: rem-calc(20);
+  width: 9.78571rem;
+}

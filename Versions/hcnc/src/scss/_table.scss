@@ -1,0 +1,21 @@
+table {
+  margin-bottom: 8.2 * $global-margin;
+}
+
+.table {
+  @media (min-width: 40em) {
+    width: 100% !important;
+  }
+  &__thead {
+    background-color: transparent;
+    border: none;
+    text-transform: uppercase;
+    font-family: $font-helvetica-neue-condensed-bold;
+  }
+  &__tbody {
+    border: none
+  }
+  &__th, &__td {
+    padding: rem-calc(8 10 10);
+  }
+}

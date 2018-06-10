@@ -1,0 +1,32 @@
+.search-form {
+  //padding-top: 1.35rem;
+  padding-top: 0;
+  @media (min-width: 40em) and (max-width: 1860px) {
+    //padding-left: rem-calc(18);
+    padding-left: 0;
+  }
+  @media (min-width: 1860px) {
+    position: absolute;
+    right: -16.5rem;
+    top: 0;
+    width: rem-calc(230); //fix ms
+  }
+  &__input {
+    background-color: #0d4c75;
+    border-color: #0d4c75;
+    color: white;
+    height: rem-calc(42); //fix ie
+    padding: 24px 8px;
+    &:focus {
+      color: white;
+    }
+  }
+  &__buttom {
+    background-color: transparent;
+  }
+  &__group {
+    background-color: #0d4c75;
+    //margin-bottom: rem-calc(19);
+    margin-bottom: 0;
+  }
+}

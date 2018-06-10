@@ -1,0 +1,54 @@
+.b-now
+{
+    font-family: $font-family-OpenSansSemiBold;
+
+    display: inline-block;
+
+    width: 281px;
+
+    background: #fff;
+    &__mark
+    {
+        color: #564d4d;
+        font-size: 13px;
+        margin-left: 10px;
+    }
+    &__td
+    {
+        padding-top: 19px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    &__date
+    {
+        font-size: 13px;
+
+        padding-right: 7px;
+
+        color: #f33a2c;
+    }
+    &__rubr
+    {
+        font-size: 11px;
+
+        padding-right: 4px;
+        padding-left: 4px;
+
+        text-transform: uppercase;
+
+        color: #fff;
+        border-radius: 4px;
+        background: #f33a2c;
+    }
+    &__title
+    {
+        font-size: 14px;
+
+        display: block;
+
+        height: 94px;
+        padding-top: 7px;
+
+        color: #000;
+    }
+}

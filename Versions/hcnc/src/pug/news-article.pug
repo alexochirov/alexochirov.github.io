@@ -1,0 +1,118 @@
+extends regular
+
+include components/mixins/_mixin-news-tile
+
+block content
+    .grid-container
+        .grid-x.grid-padding-x: .cell
+            .text-medium-gray= '15.08.2017 • '
+                a(href='') Матчи
+            h1 Александр Матерухин: думаю, мы выглядели лучше
+        .grid-x.grid-padding-x
+            .cell.small-12.medium-7.large-8
+
+                .content
+                    p.lead Реализовавший большинство в поединке с «Локомотивом» Александр Матерухин отметил, что динамовцы должны были побеждать.
+
+                    p: img(src='http://via.placeholder.com/800x500', alt='Фото' style='width:100%;')
+
+                    p В качестве главного арбитра команды на поле выведет 39-летний Гедиминас Мажейка. Родился он 24 марта 1978 года в Каунасе, статус рефери ФИФА получил в 2008 году. С тех пор возглавлял бригаду в 2-х поединках Лиги Чемпионов УЕФА и 33-х матчах различных стадий Кубка УЕФА и Лиги Европы УЕФА.
+
+                    p В прошлом сезоне Гедиминас Мажейка со своей бригадой обслуживал домашний матч «Краснодара» с албанским «Партизани» в том же самом раунде плей-офф Лиги Европы УЕФА. Та встреча завершилась уверенной победой нашей команды со счетом 4:0. Кроме того, литовский рефери неоднократно обслуживал товарищеские матчи с участием нашей команды на зимних сборах в Турции. Что касается официальных встреч других российских команд, то таковых в карьере рефери из Литвы насчитывается четыре. В них наши соотечественники по одному разу выиграли и проиграли, а еще дважды разошлись с соперниками миром. А вот матчи с участием «Црвены Звезды» и каких-либо других клубов из Сербии Мажейка никогда ранее не судил.
+
+                    p Помогать Гедиминасу Мажейке 17 августа на стадионе ФК «Краснодар» будут те же самые ассистенты, что работали на игре год назад – Витаутас Шимкус и Витенис Казлаускас. Резервный судья – Юрий Пашковский. Судейский наблюдатель Мариан Ружбарски представляет Словакию. Делегатом УЕФА назначен Артур Азарян из Армении.
+
+                    p.text-medium-gray Источник: #[a(href='') «Спорт Экспресс»]
+
+                    .callout.text-center
+                        span.show-for-large.text-medium-gray Поделиться в соц. сетях: &#160;
+                        a(href='#', title='').fa-stack.fa-lg.text-vk
+                            i.fa.fa-circle.fa-stack-2x
+                            i.fa.fa-vk.fa-stack-1x.fa-inverse
+                        | &nbsp;
+                        a(href='#', title='').fa-stack.fa-lg.text-twi
+                            i.fa.fa-circle.fa-stack-2x
+                            i.fa.fa-twitter.fa-stack-1x.fa-inverse
+                        | &nbsp;
+                        a(href='#', title='').fa-stack.fa-lg.text-fb
+                            i.fa.fa-circle.fa-stack-2x
+                            i.fa.fa-facebook.fa-stack-1x.fa-inverse
+                        | &nbsp;
+                        a(href='#', title='').fa-stack.fa-lg.text-ok
+                            i.fa.fa-circle.fa-stack-2x
+                            i.fa.fa-odnoklassniki.fa-stack-1x.fa-inverse
+                        | &nbsp;
+                        a(href='#', title='').fa-stack.fa-lg.text-insta
+                            i.fa.fa-circle.fa-stack-2x
+                            i.fa.fa-instagram.fa-stack-1x.fa-inverse
+                        | &nbsp;
+                        a(href='#', title='').fa-stack.fa-lg.text-gp
+                            i.fa.fa-circle.fa-stack-2x
+                            i.fa.fa-google-plus.fa-stack-1x.fa-inverse
+
+                    .callout.text-center
+                        h3
+                            a(href='news-article-comments.html') Обсудить #[span.badge 7] #[small комментариев]
+
+                a.button.hollow(href='news.html') #[i.fa.fa-chevron-left] К списку новостей
+
+                .content
+                    h3.text-dark-gray Похожие новости
+                    .grid-x.grid-padding-x.small-up-1.medium-up-2(data-equalizer='similar-news', data-equalize-by-row='true')
+                        .cell
+                            .card(data-equalizer-watch='similar-news')
+                                .card-image
+                                    img(src='http://via.placeholder.com/140x100', alt='Фото' style='width:100%;')
+                                .card-section
+                                    h4: a(href='news-article.html') Матч Соперник—Клуб. Представляем главного судью матча
+                                    p Главный судья: Давид Фернандес Борбалан (Испания)
+                                    p.text-medium-gray= '15.08.2017 • '
+                                        a(href='news.html') Матчи
+                        .cell
+                            .card(data-equalizer-watch='similar-news')
+                                .card-image
+                                    img(src='http://via.placeholder.com/140x100', alt='Фото' style='width:100%;')
+                                .card-section
+                                    h4: a(href='news-article.html') Соперник — Клуб: стартовые составы
+                                    p Предлагаем вашему вниманию стартовые составы на первый матч раунда плей-офф Лиги чемпионов со швейцарским «Янг Бойз».
+                                    p.text-medium-gray= '15.08.2017 • '
+                                        a(href='news.html') Матчи
+
+                hr
+                .content
+                    h3.text-dark-gray Свежие новости
+                    .grid-x.grid-padding-x.small-up-1.medium-up-3(data-equalizer='recent-news', data-equalize-by-row='true')
+                        .cell
+                            .card(data-equalizer-watch='recent-news')
+                                .card-image
+                                    img(src='http://via.placeholder.com/140x100', alt='Фото' style='width:100%;')
+                                .card-section
+                                    h4: a(href='news-article.html') Соперник – Клуб — 0:1
+                                    p Армейцы добились победы в первом матче раунда плей-офф Лиги чемпионов.
+                                    p.text-medium-gray= '15.08.2017 • '
+                                        a(href='news.html') On road
+                        .cell
+                            .card(data-equalizer-watch='recent-news')
+                                .card-image
+                                    img(src='http://via.placeholder.com/140x100', alt='Фото' style='width:100%;')
+                                .card-section
+                                    h4: a(href='news-article.html') Соперник — Клуб: стартовые составы
+                                    p Предлагаем вашему вниманию стартовые составы на первый матч раунда плей-офф Лиги чемпионов со швейцарским «Янг Бойз».
+                                    p.text-medium-gray= '15.08.2017 • '
+                                        a(href='news.html') События
+                        .cell
+                            .card(data-equalizer-watch='recent-news')
+                                .card-image
+                                    img(src='http://via.placeholder.com/140x100', alt='Фото' style='width:100%;')
+                                .card-section
+                                    h4: a(href='news-article.html') Матч Соперник—Клуб. Представляем главного судью матча
+                                    p Главный судья: Давид Фернандес Борбалан (Испания)
+                                    p.text-medium-gray= '15.08.2017 • '
+                                        a(href='news.html') Матчи
+
+                hr
+                .content
+                    include components/smi/_subscribe
+
+            .cell.small-12.medium-5.large-4
+                include components/smi/_aside-news-index
