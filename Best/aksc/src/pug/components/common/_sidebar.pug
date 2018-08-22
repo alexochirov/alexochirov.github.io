@@ -1,0 +1,9 @@
+
+p.show-for-small-only(data-responsive-toggle='menu-left', data-hide-for='medium'): span.button.expanded(data-toggle)
+  i.fa.fa-lg.fa-bars
+  | &nbsp;Навигация
+aside.aside#menu-left.mt13
+  ul.solvent
+    li.solvent__item.active: a.solvent__link(href='#' title='') О магазине
+    each title in ['Новости', 'Доставка', 'Как купить', 'Контакты', 'Частые вопросы', 'Пользовательское соглашение']
+      li.solvent__item: a.solvent__link(href='#' title='')= title

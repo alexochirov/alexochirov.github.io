@@ -1,0 +1,17 @@
+.mall {
+  list-style-type: none;
+  margin-left: rem-calc(0);
+  margin-bottom: rem-calc(0);
+
+  &__item {
+    margin-bottom: rem-calc(9);
+  }
+
+  &__link {
+    text-transform: uppercase;
+
+    &:hover {
+      color: $orange;
+    }
+  }
+}

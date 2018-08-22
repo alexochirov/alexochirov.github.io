@@ -1,0 +1,7 @@
+p: img(src='./i/img1.jpg' alt='товар')
+.row.small-up-3.medium-up-4.large-up-6.text-center
+    - n = 0
+    while n < 6
+        - n++
+        .column
+            p.board: img(src='./i/img'+ n + '.jpg' alt=n)

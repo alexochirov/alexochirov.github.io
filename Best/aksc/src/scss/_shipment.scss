@@ -1,0 +1,16 @@
+.shipment {
+  &__img {
+    margin-bottom: rem-calc(15);
+  }
+
+  &__main {
+    line-height: rem-calc(200);
+    display: block;
+    height: rem-calc(200);
+    margin-bottom: rem-calc(15);
+
+    img {
+      max-height: rem-calc(200);
+    }
+  }
+}

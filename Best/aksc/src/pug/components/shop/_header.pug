@@ -1,0 +1,50 @@
+header.header
+  .row
+    .large-3.medium-4.columns.header__car
+      a(href="#").header__logo
+        img(src="./images/logo.svg", alt="")
+        span.header__desc  
+          span.header__inet Интернет-магазин
+          br
+          span.header__paint Автокрасок  
+          br
+          span.header__site Автокраска.рус
+      span(data-responsive-toggle='responsive-menu', data-hide-for='medium').header__toggle
+        button.menu-icon.dark.header__bar(type='button', data-toggle='responsive-menu')
+      .header__time
+        | Время работы:
+        =" "
+        strong 8:00 - 19:00
+        =" "
+        | ежедневно    
+    #responsive-menu    
+      .large-4.medium-6.columns
+        .header__info
+          a(href="#").button.header__catalog Каталог
+          ul.buy
+            each title in ['Как купить','Контакты']
+              li.buy__item
+                a(href="#").buy__link= title
+        .header__form        
+          input(type="text",placeholder="").header__input
+          button(type="submit").header__submit
+            i.fa.fa-search
+      .large-3.medium-2.columns.text-center
+        a.header__basket(href="#") 5
+        .header__text
+          | Товаров на сумму:
+          =" "
+          strong 35&#160;899
+      .large-2.columns.large-text-right.text-center
+        .header__cabinet
+          a.header__enter
+            i.fa.fa-sign-in.text-black
+            | Вход
+          span.header__pole |
+          a.header__enter Регистрация 
+        a(href="tel:+74951182030").header__tel
+          i.fa.fa-phone
+          | +7 (495) 118-20-30
+        a(href="#").button.hollow.header__call Заказать звонок  
+    .columns
+      hr      

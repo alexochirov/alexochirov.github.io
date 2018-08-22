@@ -1,0 +1,77 @@
+.solvent {
+  list-style-type: none;
+  margin-left: rem-calc(0);
+  margin-bottom: rem-calc(30);
+
+  &_inside {
+    left: 100%;
+    display: none;
+    top: rem-calc(0);
+    z-index: 4;
+    width: rem-calc(250);
+    position: absolute;
+  }
+
+  &__item {
+    position: relative;
+
+    &:hover {
+      & > .solvent {
+        display: block;
+      }
+    }
+
+    &.active {
+      & > a {
+        color: $white;
+        background: $black;
+      }
+    }
+  }
+
+  &__link {
+    padding: rem-calc(13) rem-calc(35) rem-calc(13) rem-calc(18);
+    display: block;
+    text-transform: uppercase;
+    color: $white;
+    background: #e17000;
+    border-bottom: rem-calc(1) solid $orange;
+    position: relative;
+
+    &:after {
+      content: "";
+      background-image: url($imagesPath +"/arrow-solvent.svg");
+      position: absolute;
+      width: rem-calc(10);
+      height: rem-calc(11);
+      right: rem-calc(18);
+      top: rem-calc(18);
+    }
+    &_last {
+      padding-right: rem-calc(18);
+      &:after {
+        display:none;
+      }
+    }
+
+    &:focus,
+    &:hover {
+      color: $white;
+      background: $black;
+    }
+  }
+  @include breakpoint(medium down) {
+    &_inside {
+      width: rem-calc(200);
+    }
+  }
+  @include breakpoint(small only) {
+    &__item {
+      &:hover {
+        & > .solvent {
+          display: none;
+        }
+      }
+    }
+  }
+}

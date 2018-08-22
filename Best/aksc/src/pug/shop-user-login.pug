@@ -1,0 +1,34 @@
+extends shop-regular
+
+block content
+    .row.column
+        .content &#160;
+
+    .reveal(id="login-modal" data-reveal data-deep-link='true')
+        h1.text-center Авторизация
+
+        form(action='shop-user-account.html')
+            label
+                | Телефон или email
+                input(type='text')
+
+            label
+                | Пароль
+                input(type='password')
+
+            p.text-right: a(href='shop-user-recover.html#recover-modal') Забыли пароль?
+
+            input#checkbox1(type='checkbox')
+            label(for='checkbox1') Запомнить меня
+
+            br
+            button.button.small-expanded
+                | Войти &nbsp;
+                i.fa.fa-sign-in.fa-lg
+
+        p
+            a(href='shop-user-registration.html#registration-modal', title='') Зарегистрироваться
+        
+
+        button.close-button(type="button" data-close aria-label="Закрыть")
+            span(aria-hidden="true") &times;

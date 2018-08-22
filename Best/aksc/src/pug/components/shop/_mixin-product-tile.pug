@@ -1,0 +1,22 @@
+mixin productTile(title, discount)
+  .column
+    .product
+      .product__label
+        .label Хит продаж
+      .product__img
+        a(data-open="product-quickview") 
+          img(src="./i/pro"  + Math.floor(Math.random() * (6 - 11) + 6) + '.png', alt="")    
+      a(href="#").product__title= title
+      .product__hr
+      .product__false
+        if discount
+          | 1&#160;925&#160;
+          span.product__rub рублей
+      .product__price
+        | 925&#160;
+        span.product__rub рублей
+      .product__hr  
+      a(href='shop-cart.html').button Купить  
+
+        
+  

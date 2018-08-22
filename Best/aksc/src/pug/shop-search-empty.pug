@@ -1,0 +1,18 @@
+extends shop-index
+
+block page
+  include components/common/_breadcrumbs
+  block content
+    .row.column
+      h1.text-center Поиск
+    .content
+      .row.column
+        form(action='#' method='get')
+          .row
+            .small-8.medium-9.large-10.columns
+              label: input.quest(type='text' placeholder='Введите строку для поиска' value='суперкосмический')
+            .small-4.medium-3.large-2.columns.end
+              input.button.expanded(type='submit', value='Искать')
+        p
+          b К сожалению, мы не смогли найти «суперкосмический»
+        p Попробуйте нам позвонить #[a(href='tel:+74951182030') +7(495) 118-20-30] или написать #[a(href='mailto:shop@avtokraska-shop.ru') shop@avtokraska-shop.ru] — возможно, мы знаем, где это найти.

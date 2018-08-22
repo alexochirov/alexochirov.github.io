@@ -1,0 +1,16 @@
+.cash {
+  position: relative;
+
+  &__less,
+  &__more {
+    position: absolute;
+    top: rem-calc(5);
+    cursor: pointer;
+    right: rem-calc(10);
+    height: rem-calc(10);
+  }
+
+  &__less {
+    top: rem-calc(21);
+  }
+}

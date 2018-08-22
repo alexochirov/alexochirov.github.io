@@ -1,0 +1,9 @@
+.accordion {
+  &-title
+   {
+     transition: 0s;
+     &:hover,&:focus {
+       color: $white;
+     }
+   }
+}

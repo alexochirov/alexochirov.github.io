@@ -1,0 +1,41 @@
+extends shop-regular
+
+block content
+  .row.column
+    
+  .content
+    
+        
+
+    .row
+      .columns.small-12.medium-4.large-3
+        a.button.expanded(href='shop-compare.html')
+          i.fa.fa-lg.fa-balance-scale
+          | &nbsp;Сравнить: 5
+        include components/shop/_menu-catalog
+
+      .columns.small-12.medium-8.large-9
+        h1.text-center Задача: Закрасить скол краски
+        p.text-right
+          span.button-group
+            a.button.primary(href='shop-catalog.html'): i.fa.fa-lg.fa-th
+            a.button(href='shop-catalog-lines.html'): i.fa.fa-lg.fa-th-list
+        block products
+          .row.small-up-1.medium-up-2.large-up-3(data-equalizer data-equalize-by-row="true").text-center
+            +productTile('Грунт Cromax 3,5л', false)
+            +productTile('Грунт Body 970 1л', false)
+            +productTile('Грунт по пластику Reoflex(спрей)', false)
+            +productTile('Грунт Car Fit 1K', true)
+            +productTile('Грунт Glasurit 283-150 бежевый', false)
+            +productTile('Грунт Mobihel 3:1 0,75л', false)
+            +productTile('Изолятор Reoflex Barrier primer', false)
+            +productTile('Грунт по пластику Reoflex', false)
+            +productTile('Грунт Reoflex 4+1', false)
+            +productTile('Грунт Body 635 5+1 1л', true)
+            +productTile('Однокомпонетный порозаполняющий грунт Standox 1K Primer filler', false)
+            +productTile('Однокомпонентный первичный грунт Sikkens Washprimer 1K 1л', false)
+        
+
+  +recentlyViewedItems
+
+  +seoText

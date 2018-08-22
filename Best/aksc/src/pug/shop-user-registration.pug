@@ -1,0 +1,89 @@
+extends shop-regular
+
+block content
+    .row.column
+        .content &#160;
+
+
+    .reveal(id="registration-modal" data-reveal data-deep-link='true')
+        h1.text-center Регистрация
+
+        .alert.callout
+            h5 При регистрации произошли следующие ошибки:
+            ul
+                li не заполнено поле Email
+                li пароль и его подтверждение не совпадают
+                li введен неверный код
+        form(action='shop-user-personal.html')
+            label
+                | Ваше имя #[span.text-dark-gray (не обязательно)]
+                input(type='text')
+            label
+                | Телефон или email
+                input(type='text')
+            p.help-text Придёт sms или email с подтверждением регистрации
+            label
+                | Пароль
+                input(type='password')
+            p.help-text Не менее 6 символов
+            label
+                | Подтверждение пароля
+                input(type='password')
+            .row
+                .column.small-1
+                    input#checkbox1(type='checkbox')
+                .column.small-11
+                    label(for='checkbox1')
+                        | Я ознакомлен и принимаю условия &nbsp;
+                        a(href='shop-regular.html' title='') Соглашения об использовании сайта
+                        | , в том числе в части обработки и использования моих персональных данных
+                    br
+            .row.mb25
+                .column.small-7.medium-8
+                    label
+                        | Введите текст с картинки
+                        input(type='text')
+                .column.small-5.medium-4
+                    img(src='./i/image.svg' alt='Капча' style='width:100%;height:64px;')
+
+            button.button.small-expanded Зарегистрироваться
+        p
+            a(href='shop-user-login.html#login-modal' title='') Авторизация
+
+        button.close-button(type="button" data-close aria-label="Закрыть")
+            span(aria-hidden="true") &times;
+
+
+    .reveal(id="registration-confirm-modal" data-reveal data-deep-link='true')
+        h1.text-center Регистрация
+
+        form(action='shop-user-login.html#login-modal')
+            label
+                | Мы отправили email или смс с кодом подтверждения. Пожалуйста, введите его в это поле:
+                input(type='text' placeholder='Код подтверждения')
+
+            p: span.stat 00:00
+
+            button.button.small-expanded Подтвердить
+            span.hide-for-small &#160; &#160;
+            button.button.secondary.small-expanded Выслать код ещё раз
+
+        button.close-button(type="button" data-close aria-label="Закрыть")
+            span(aria-hidden="true") &times;
+
+
+    .reveal(id="registration-success-modal" data-reveal data-deep-link='true')
+        h1.text-center Регистрация
+
+        .success.callout
+            p Вы успешно зарегистрированы! Для Вас активирована скидочная карта:
+            .callout.text-center 0000000002509
+
+        p Теперь все цены на сайте отображаются с учетом Вашей скидки. #[a(href='') Подробнее о скидках]
+
+        a(href='shop-catalog.html').button.small-expanded В каталог
+        span.hide-for-small &#160; &#160;
+        a(href='shop-user-personal.html').button.secondary.small-expanded В свой кабинет
+
+        button.close-button(type="button" data-close aria-label="Закрыть")
+            span(aria-hidden="true") &times;

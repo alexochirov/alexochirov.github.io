@@ -1,0 +1,80 @@
+extends shop-regular
+
+block content
+  .content
+    .row
+      .small-12.medium-6.column.medium-push-6
+        p
+          span.label.success Новинка
+          | &#160;
+          span.label.alert Хит продаж
+          | &#160;
+          span.label.warning Рекомендуем
+          | &#160;
+
+        h1.text-center Акриловый грунт Novol 4+1&nbsp;MS
+
+        p
+          span.text-warning
+            i.fa.fa-star.fa-lg
+            i.fa.fa-star.fa-lg
+            i.fa.fa-star.fa-lg
+          i.fa.fa-star-o.fa-lg
+          i.fa.fa-star-o.fa-lg
+
+          a(href='#product-tab-comments') &nbsp; отзывов 2
+
+        include components/shop/_product-stock-delivery-info
+        hr.mb25
+        include components/shop/_product-base-info
+        hr.mb25
+        include components/shop/_product-share-links
+
+      .small-12.medium-6.column.medium-pull-6
+        include components/shop/_product-images
+
+  .content
+    .row.column
+      ul.tabs#product-tabs-1(data-tabs)
+        li.tabs-title.is-active
+          a(href='#product-tab-spec' title='') Характеристики
+        li.tabs-title
+          a(href='#product-tab-description' title='') Описание
+        li.tabs-title
+          a(href='#product-tab-video' title='') #[i.fa.fa-lg.fa-youtube-play] Видео о товаре
+        li.tabs-title
+          a(href='#product-tab-comments' title='') Отзывы (2)
+
+      .tabs-content(data-tabs-content="product-tabs-1")
+        .tabs-panel.is-active#product-tab-spec
+          include components/shop/_product-tab-spec
+        .tabs-panel#product-tab-description
+          include components/shop/_product-tab-description
+        .tabs-panel#product-tab-video
+          include components/shop/_product-tab-video
+        .tabs-panel#product-tab-comments
+          include components/shop/_product-tab-comments
+
+  .row.column: hr
+  .content
+    .row.column
+      h2.text-center С этим товаром рекомендуем
+    .row.small-up-1.medium-up-3.large-up-5(data-equalizer data-equalize-by-row="true")
+      +productTile('Растворитель Body acryl 740', false)
+      +productTile('Разбавитель Р-12 "Полихим"', false)
+      +productTile('Разбавитель Brulex 2К 5л. ', false)
+      +productTile('Разбавитель Р-12 Pro Sto ', true)
+      +productTile('Растворитель Р-12 Иваново ', false)
+
+  .row.column: hr
+  .content
+    .row.column
+      h2.text-center Похожие товары
+    .row.small-up-1.medium-up-3.large-up-5(data-equalizer data-equalize-by-row="true")
+      +productTile('Грунт Standox U7540 3,5л. ', false)
+      +productTile('Грунт Glasurit 283-150 ', false)
+      +productTile('Грунт Otrix 27', false)
+      +productTile('Бесцветный акриловый лак Dyna 3000 ', true)
+      +productTile('Разбавитель базы Reoflex ', false)
+
+  +recentlyViewedItems

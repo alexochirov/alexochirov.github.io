@@ -1,0 +1,26 @@
+extends shop-regular
+
+block content
+    .row.column
+        h1.text-center Любимые товары
+    .content
+        .row.column
+            +productLine(false, 'onDemand', false, 'inFavourites')
+            hr.mb25
+            +productLine(false, false, 'inCart', 'inFavourites')
+            hr.mb25
+            +productLine('discount', false, false, 'inFavourites')
+            hr.mb25
+            +productLine(false, 'onDemand', false, 'inFavourites')
+            hr.mb25
+            +productLine(false, false, 'inCart', 'inFavourites')
+            hr.mb25
+            +productLine('discount', false, false, 'inFavourites')
+            hr.mb25
+            +productLine(false, 'onDemand', false, 'inFavourites')
+            hr.mb25
+            +productLine(false, false, 'inCart', 'inFavourites')
+            hr.mb25
+            +productLine('discount', false, false, 'inFavourites')
+            .mb25
+            include components/common/_pagination

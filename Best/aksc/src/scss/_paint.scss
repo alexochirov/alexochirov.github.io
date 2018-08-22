@@ -1,0 +1,19 @@
+.paint {
+  &__slide {
+    height: rem-calc(800);
+    background-size: cover;
+    background-position: center;
+  }
+  @include breakpoint(medium down) {
+    &__slide {
+      height: rem-calc(650);
+      padding-top: rem-calc(370);
+    }
+  }
+  @include breakpoint(small only) {
+    &__slide {
+      padding-top: rem-calc(190);
+      height: rem-calc(300);
+    }
+  }
+}

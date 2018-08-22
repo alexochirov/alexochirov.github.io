@@ -1,0 +1,222 @@
+.header {
+  padding-top: rem-calc(24);
+  background: $sky;
+  margin-bottom: rem-calc(40) !important;
+
+  &__time {
+    margin-bottom: rem-calc(35);
+  }
+
+  &__pole {
+    color: #c6c6c6;
+    font-weight: 100;
+    margin-left: rem-calc(6);
+    margin-right: rem-calc(6);
+  }
+
+  &__enter {
+    i {
+      margin-right: rem-calc(5);
+    }
+  }
+
+  &__inet {
+    font-size: rem-calc(20);
+    color: $orange;
+    line-height: 1;
+  }
+
+  &__paint {
+    font-size: rem-calc(26);
+    text-transform: uppercase;
+    color: $orange;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  &__site {
+    color: $secondary;
+  }
+
+  &__tel {
+    font-size: rem-calc(17);
+    color: $black;
+    margin-bottom: rem-calc(10);
+    display: block;
+
+    i {
+      margin-right: rem-calc(8);
+      position: relative;
+      top: rem-calc(2);
+    }
+  }
+
+  &__logo {
+    margin-bottom: rem-calc(9);
+    display: block;
+    @include clearfix;
+
+    img {
+      float: left;
+      margin-right: rem-calc(5);
+      width: rem-calc(67);
+    }
+  }
+
+  &__form {
+    position: relative;
+  }
+
+  &__cabinet {
+    margin-bottom: rem-calc(7);
+  }
+
+  &__basket {
+    margin-bottom: rem-calc(17);
+    font-size: rem-calc(11);
+    color: $sky;
+    margin-top: rem-calc(23);
+    padding-top: rem-calc(30);
+    width: rem-calc(69);
+    height: rem-calc(69);
+    border: rem-calc(2) solid $orange;
+    border-radius: 50%;
+    display: inline-block;
+    background: $white url($imagesPath +"/ico/shopping-bag.svg")no-repeat center;
+
+    &:hover {
+      color: $white;
+    }
+  }
+
+  &__text {
+    font-size: rem-calc(12);
+  }
+
+  &__input {
+    padding-left: rem-calc(30);
+  }
+
+  &__desc {
+    float: left;
+  }
+
+  &__info {
+    @include clearfix;
+    margin-top: rem-calc(23);
+  }
+
+  &__submit {
+    position: absolute;
+    left: rem-calc(14);
+    top: rem-calc(10);
+    cursor: pointer;
+  }
+
+  &__car {
+    position: relative;
+    margin-top: rem-calc(23);
+  }
+
+  &__bar {
+    outline: none;
+  }
+
+  &__toggle {
+    position: absolute;
+    top: rem-calc(10);
+    right: rem-calc(14);
+  }
+
+  &__catalog {
+    font-weight: 300;
+    color: $blue;
+    margin-bottom: rem-calc(24);
+    float: left;
+    border: rem-calc(2) solid $blue;
+    padding-right: rem-calc(43);
+    position: relative;
+  background-color: transparent;
+    &:after {
+      position: absolute;
+      background-image: url($imagesPath +"/book.svg");
+      background-position: center;
+      width: rem-calc(15);
+      height: rem-calc(13);
+      content: "";
+      right: rem-calc(19);
+    }
+
+    &:focus,
+    &:hover {
+      background-color: transparent;
+      background: $blue;
+
+      &:after {
+        background-image: url($imagesPath +"/book-white.svg");
+      }
+    }
+  }
+  @include breakpoint(large down) {
+    &__inet {
+      font-size: rem-calc(14);
+    }
+
+    &__paint {
+      font-size: rem-calc(18);
+    }
+
+    &__site {
+      font-size: rem-calc(13);
+    }
+
+    &__tel {
+      font-size: rem-calc(14);
+    }
+  }
+  @include breakpoint(medium down) {
+    padding-top: rem-calc(0);
+
+    &__catalog {
+      margin-bottom: rem-calc(10);
+    }
+
+    &__call {
+      margin-bottom: rem-calc(5);
+    }
+
+    &__time {
+      margin-bottom: rem-calc(10);
+      float: left;
+    }
+
+    &__cabinet,
+    &__tel {
+      margin-left: rem-calc(13);
+      margin-right: rem-calc(13);
+      display: inline-block;
+    }
+  }
+  @include breakpoint(small only) {
+    &__logo {
+      padding-right: rem-calc(25);
+    }
+
+    &__desc {
+      margin-right: rem-calc(5);
+    }
+
+    &__call {
+      margin-bottom: rem-calc(20);
+    }
+
+    &__text {
+      display: inline-block;
+      margin-left: rem-calc(10);
+    }
+
+    &__basket {
+      margin-top: rem-calc(0);
+    }
+  }
+}

@@ -1,0 +1,22 @@
+p.show-for-small-only(data-responsive-toggle='menu-left', data-hide-for='medium'): span.button.expanded(data-toggle)
+    i.fa.fa-lg.fa-bars
+    | &nbsp;Навигация
+aside.aside#menu-left
+  .aside__title.text-center Каталог товаров
+  ul.solvent
+    each title in ['Автокраски','Абразивные материалы','Антикор','Герметики','Грунты','Для полировки','Инструмент','Лаки','Отвердители','Разбавители']
+      li.solvent__item
+        a(href="#").solvent__link= title
+        ul.solvent.solvent_inside
+          each title in ['Автокраски','Абразивные материалы','Антикор']
+            li.solvent__item
+              a(href="#").solvent__link= title
+              ul.solvent.solvent_inside
+                each title in ['Автокраски','Абразивные материалы','Антикор']
+                  li.solvent__item
+                    a(href="#").solvent__link.solvent__link_last= title
+  h4.text-center.text-warning Популярное
+  ul.flight
+    each title in ['Закрасить скол краски','Заделать протечку','Провести ровную линию краски']
+      li.flight__item
+        a(href="#").flight__link= title

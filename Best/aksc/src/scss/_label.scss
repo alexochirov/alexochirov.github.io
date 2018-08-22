@@ -1,0 +1,89 @@
+.label {
+  min-width: rem-calc(105);
+  height: rem-calc(33);
+  text-align: center;
+  font-size: rem-calc(10);
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $white;
+  padding-top: rem-calc(0);
+  padding-bottom: rem-calc(0);
+  line-height: rem-calc(33);
+  background: $red;
+  position: relative;
+  transition: background-color 0.25s ease-out,color 0.25s ease-out;
+  margin-right: rem-calc(5);
+  @keyframes slideme {
+    0% {
+      left: 0;
+      opacity: 1;
+      margin-left: rem-calc(0);
+    }
+
+    100% {
+      opacity: 0;
+      left: 100%;
+      margin-left: rem-calc(-5);
+    }
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    right: rem-calc(-5);
+    top: rem-calc(0);
+    width: rem-calc(6);
+    height: rem-calc(36);
+    background: url($imagesPath +"/label-red.svg")no-repeat center;
+    background-size: 100% 100%;
+  }
+
+  &:after {
+    margin-left: 0;
+    content: " ";
+    width: rem-calc(6);
+    height: rem-calc(33);
+    background: #fff;
+    animation-delay: 0.005s;
+    position: absolute;
+    left: -45px;
+    top: 0;
+    animation-timing-function: ease;
+    transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+    -o-transition: all 0.1s;
+    -khtml-transition: all 0.1s;
+    -ms-transition: all 0.1s;
+    animation-name: slideme;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    transform: skewX(-45deg);
+  }
+
+  &.success {
+    background: $success;
+    color: $white;
+
+    &:before {
+      background: url($imagesPath +"/label-green.svg")no-repeat center;
+      background-size: 100% 100%;
+    }
+  }
+&.light-gray {
+
+
+  &:before {
+    background: url($imagesPath +"/label-light-gray.svg")no-repeat center;
+    background-size: 100% 100%;
+  }
+}
+  &.warning {
+    color: $white;
+
+    &:before {
+      background: url($imagesPath +"/label-orange.svg")no-repeat center;
+      background-size: 100% 100%;
+    }
+  }
+}

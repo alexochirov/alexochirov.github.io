@@ -1,0 +1,66 @@
+.product {
+  position: relative;
+  border: rem-calc(1) solid #d0d0d0;
+  padding-left: rem-calc(14);
+  padding-right: rem-calc(14);
+  background: $white;
+  padding-top: rem-calc(20);
+  margin-top: rem-calc(20);
+  margin-bottom: rem-calc(28);
+  min-height: rem-calc(452);
+
+  &__hr {
+    height: rem-calc(1);
+    background: url($imagesPath +"/pro-hr.svg")no-repeat center;
+    margin-bottom: rem-calc(19);
+  }
+
+  &__img {
+    height: rem-calc(156);
+    line-height: rem-calc(156);
+    margin-bottom: rem-calc(10);
+
+    img {
+      display: inline-block;
+      max-height: rem-calc(156);
+    }
+  }
+  &__list-img {
+    img {
+      height: rem-calc(95);
+    }
+  }
+
+  &__title {
+    display: block;
+    margin-bottom: rem-calc(24);
+    height: rem-calc(46);
+    overflow: hidden;
+  }
+
+  &__price {
+    margin-bottom: rem-calc(12);
+    line-height: 1.3;
+    font-size: rem-calc(36);
+    font-weight: 700;
+  }
+
+  &__rub {
+    font-weight: 300;
+    font-size: rem-calc(18);
+  }
+
+  &__false {
+    color: $secondary;
+    height: rem-calc(30);
+    font-weight: 700;
+    text-decoration: line-through;
+    font-size: rem-calc(18);
+  }
+
+  &__label {
+    position: absolute;
+    right: rem-calc(-2);
+    top: rem-calc(-16);
+  }
+}

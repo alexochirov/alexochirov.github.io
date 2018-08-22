@@ -1,0 +1,70 @@
+extends shop-regular
+
+block content
+    .row.column
+        h1.text-center Контакты
+    .content
+        .row
+            .column.medium-12.large-12.end
+                p #[b Доставка товаров по всей России!] #[a(href='shop-how-to-buy.html') Подробнее о доставке]. Обращаем Ваше внимание, что по акции до 1 марта 2017 года, доставка заказов на сумму более 2000р., в пределах Центрального федерального округа - бесплатная. По Москве доставляем на следующий день.
+
+                p
+                    b Адрес магазина автокрасок avtokraska-shop.ru:
+                    br
+                    | Россия, г. Москва, Кунцевский авторынок (55км. МКАД), северная сторона, центральное торговое здание Авто молл, модуль №41.
+
+                p
+                    b Координаты для навигатора:
+                    br
+                    | Широта: 55°43′26.82″N (55.724118)
+                    br
+                    | Долгота: 37°22′37.92″E (37.3772)
+
+                p
+                    b 8 (495) 118-20-30
+                    br
+                    | #[b Часы работы]: ежедневно 8:00 - 19:00
+                    a(href='mailto:shop@avtokraska-shop.ru' title='адрес электронной почты магазина') shop@avtokraska-shop.ru
+
+                iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6344.32377020446!2d37.57639787499114!3d55.79224500973831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b549f0c1269c0b%3A0x4236b28a4521323!2z0YPQuy4g0J3QuNC20L3Rj9GPINCc0LDRgdC70L7QstC60LAsIDgsINCc0L7RgdC60LLQsCwgMTI3MjIw!5e0!3m2!1sru!2sru!4v1467010638187"  height="350" style="width:100%; border:0" allowfullscreen)
+                br
+                br
+
+                h2.text-center Как пройти до магазина
+
+                p Въезд на рынок осуществляется через автоматический шлагбаум.
+                p Стоянка платная: до 15 минут бесплатно, первый час 50 рублей, каждый последующий час 20 рублей.
+                p Припарковавшись на стоянке Вы увидите линию двухэтажных магазинов. Наш комплекс находится за этими магазинами (на фото границы показаны красными стрелками). Синими стрелками показаны проходы между двухэтажных павильонов.
+                p
+                    img(src='./i/image.svg' alt='фото как идти по рынку' style='width: 100%; height: 400px;')
+
+                p Необходимо двигаться прямо в проход. Прямо перед Вами и есть Центральное торговое здание. В нем справа 3 входа. Необходимо обойти здание справа и дойти до последнего входа. Необходимо пройти до последнего входа в здание. Это вход в наш ряд. Над входом наша вывеска и номер модуля 41 (год начала войны, чтобы проще запомнить). Заходите в торговый комплекс и по правую руку третий магазин и есть наш. Над входом вывеска: ПЛЕНКА, КРАСКА.
+
+                p
+                    img(src='./i/image.svg' alt='фото витрины магазина' style='width: 100%; height: 400px;')
+
+                h2.text-center Мы на связи
+                .row
+                    .small-12.large-9.columns.end
+                        form(method='post', data-abide='', novalidate='novalidate')
+                            .row
+                                .small-12.medium-4.columns
+                                    label Представьтесь *
+                                .small-12.medium-8.columns
+                                    input(type='text' required)
+                            .row
+                                .small-12.medium-4.columns
+                                    label Телефон или email *
+                                .small-12.medium-8.columns
+                                    input(type='text' required)
+                                    p.help-text Чтобы вам ответить
+                            .row
+                                .small-12.medium-4.columns
+                                    label Чем мы можем помочь? *
+                                .small-12.medium-8.columns
+                                    textarea(placeholder='Ваше сообщение')
+                            .row
+                                .small-12.medium-8.medium-offset-4.columns
+                                    button.radius.button(type='submit')
+                                        | Отправить сообщение &nbsp;
+                                        i.fa.fa-envelope-o.fa-lg

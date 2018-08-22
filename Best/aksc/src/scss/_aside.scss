@@ -1,0 +1,14 @@
+.aside {
+
+  margin-bottom: rem-calc(32);
+  &__title {  background: $orange;
+    text-transform: uppercase;
+    color: $white;
+    font-size: rem-calc(20);
+    padding-left: rem-calc(14);
+    padding-right: rem-calc(14);
+    font-weight: 700;
+    padding-top: rem-calc(15);
+    padding-bottom: rem-calc(15);
+  }
+}

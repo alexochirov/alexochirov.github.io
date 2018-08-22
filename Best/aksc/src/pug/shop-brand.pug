@@ -1,0 +1,48 @@
+extends shop-regular
+
+block content
+
+  .content
+  
+    .row
+      .columns.small-12.medium-4.large-3
+        p
+          a(href='#') #[i.fa.fa-lg.fa-download] Скачать прайс-лист в формате Excel
+        include components/shop/_sidebar
+      .columns.small-12.medium-8.large-9
+        h1.text-center.cargo
+          img(src='./i/v1.png' alt='Логотип бренда Novol')
+          | &#160;Vika
+        include components/shop/_top-button-new
+        block products
+          .row.small-up-1.medium-up-2.large-up-3(data-equalizer data-equalize-by-row="true").text-center
+            +productTile('Грунт Cromax 3,5л', false)
+            +productTile('Грунт Body 970 1л', false)
+            +productTile('Грунт по пластику Reoflex(спрей)', false)
+            +productTile('Грунт Car Fit 1K', true)
+            +productTile('Грунт Glasurit 283-150 бежевый', false)
+            +productTile('Грунт Mobihel 3:1 0,75л', false)
+            +productTile('Изолятор Reoflex Barrier primer', false)
+            +productTile('Грунт по пластику Reoflex', false)
+            +productTile('Грунт Reoflex 4+1', false)
+            +productTile('Грунт Body 635 5+1 1л', true)
+            +productTile('Однокомпонетный порозаполняющий грунт Standox 1K Primer filler', false)
+            +productTile('Однокомпонентный первичный грунт Sikkens Washprimer 1K 1л', false)
+            +productTile('Двухкомпонетный порозаполняющий грунт Standox vok pro - fuller 1л', false)
+            +productTile('Грунт Dupli - color 600мл', false)
+            +productTile('Двухкомпонентный порозаполнитель Reoflex 3+1', false)
+            +productTile('Двухкомпонентный грунт Spies hecker 3300 1л', true)
+            +productTile('Однокомпонентный грунт по пластику Solid по пластику 0,5л', false)
+            +productTile('Грунт Sikkens', false)
+            +productTile('Однокомпонентный грунт по пластику Sikkens 1K Plastic primer', false)
+            +productTile('Однокомпонетный грунт Spies hecker 4085 (спрей)', false)
+            +productTile('Грунт по пластику Spies hecker 3410 (аэрозоль)', false)
+            +productTile('Первичный грунт Боди 960 (спрей)', true)
+            +productTile('Грунт для стекла Liqui Moly', false)
+            +productTile('Двухкомпонетный порозаполняющий грунт CAR FIT 4+1', false)
+        p &nbsp;
+        include components/common/_pagination
+
+  +recentlyViewedItems
+
+  +seoText

@@ -1,0 +1,264 @@
+a {
+  -webkit-transition: color 300ms ease-in-out;
+  -moz-transition: color 300ms ease-in-out;
+  -ms-transition: color 300ms ease-in-out;
+  -o-transition: color 300ms ease-in-out;
+  transition: color 300ms ease-in-out;
+}
+
+h1 {
+  text-transform: uppercase;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: calc(50% - 54px);
+    bottom: rem-calc(-15);
+    width: rem-calc(108);
+    border-top: rem-calc(8) solid #dbdbdb;
+  }
+}
+
+h1,
+h2 {
+  position: relative;
+  margin-bottom: rem-calc(50);
+}
+
+h4 {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: rem-calc(10);
+}
+
+hr {
+  height: rem-calc(1);
+  border: rem-calc(0);
+  background: url($imagesPath +"/var-hr.png")no-repeat center;
+  background-size: cover;
+}
+
+select {
+  height: rem-calc(46);
+  padding-left: rem-calc(14);
+  font-size: rem-calc(16);
+  padding-right: rem-calc(20);
+  background-position: right rem-calc(-5) center;
+}
+
+[type='color'],
+[type='date'],
+[type='datetime'],
+[type='datetime-local'],
+[type='email'],
+[type='month'],
+[type='number'],
+[type='password'],
+[type='search'],
+[type='tel'],
+[type='text'],
+[type='time'],
+[type='url'],
+[type='week'],
+textarea {
+  padding-left: rem-calc(19);
+  padding-right: rem-calc(19);
+  height: rem-calc(36);
+}
+.fa-rub {
+  display: inline;
+}
+
+#refresh_captcha{
+  color: #ff7f00;
+  font-weight:500;
+  span{
+    img{
+      max-width: 13%;
+    }
+  }
+}
+
+.alert{
+  border:none;
+  margin-bottom:0px;
+}
+
+.input-group-field{
+  .product-item-detail-info-container{
+    text-align: right;
+    label{
+      float: left;
+    }
+    .product-item-scu-container{
+      display:inline-block;
+      margin-left:15px;
+    }
+  }
+}
+
+.product-item-detail-info-container{
+  label{
+    float: left;
+  }
+  .product-item-scu-container{
+    display:inline-block;
+    margin-left:15px;
+  }
+}
+
+div[data-entity="sku-line-block"]{
+  label{
+    float: left;
+  }
+  .product-item-scu-item-list{
+    display: inline-block;
+    margin-left:15px;
+  }
+}
+
+.popup-window-content-white{
+  position: fixed !important;
+  width:25%;
+  margin: 0 auto;
+  top: 35% !important;
+  left: 38% !important;
+}
+
+.dropdown-fade2white{
+  background: none !important;
+}
+.bx-sls{
+  .bx-ui-sls-clear{
+    background: url(/bitrix/panel/main/images/bx-admin-sprite-small.png) 6px -3390px no-repeat scroll;
+
+    &:hover{
+      background-position: 6px -3422px;
+    }
+  }
+}
+
+.arrow_down{
+  &::after{
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+}
+
+.tooltip{
+  background-color: transparent;
+  min-width: 100%;
+
+  &:before {
+    display: none !important;
+  }
+
+}
+
+.tooltip-inner{
+  border-radius: 0;
+  background-color: #f33 !important;
+  color: #fff !important;
+  font-size: 14px;
+  min-width: 100%;
+  padding: 23px 8px;
+}
+
+.tooltip-arrow{
+  display: none;
+}
+
+.alert-danger{
+  background-color: red !important;
+  color:#fff !important;
+  font-size: 14px !important;
+}
+
+.bx-soa-coupon{
+  display: none;
+}
+
+#bx-soa-basket{
+  .bx-soa-section-content{
+    .bx-soa-cart-total-line-total{
+      border-top: 0;
+    }
+  }
+}
+
+.terms_of_use {
+  .oferta{
+    text-align: center;
+  }
+  h3{
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .requisites{
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  ul.customer{
+    list-style: none;
+
+    li{
+      &:before{
+        content: "-";
+        position: relative;
+        left: -5px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 650px) and (max-width: 1366px){
+  header{
+    margin-bottom:0px !important;
+  }
+  .paint__slide{
+    height: 400px !important;
+    padding-top:0px !important;
+    margin-bottom: 30px;
+  }
+
+
+}
+
+@media screen and (min-width:639px){
+  .product-item-detail-slider-images-container{
+    height: 700px;
+  }
+}
+
+@media screen and (max-width:649px){
+  .slick-slider{
+    display: none;
+  }
+}
+
+#coupons_block{
+  opacity: 0;
+}
+
+.product-item-detail-slider-images-container{
+  img{
+    height: 100%;
+  }
+}
+
+.all_brands{
+  padding: 25px 20px;
+  border: 3px solid #fff;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 12pt;
+  
+  &:hover{
+    color: #fff;
+  }
+}

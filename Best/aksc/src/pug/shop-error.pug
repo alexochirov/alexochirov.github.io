@@ -1,0 +1,13 @@
+extends shop-index
+
+block page
+    include components/common/_breadcrumbs
+    block content
+        .row.column
+            h1.text-center 404 Ошибка
+            h2.text-center К сожалению, такой страницы здесь нет.
+        .content
+            .row
+                .columns.text-center
+                    p.lead Попробуйте #[a(href='shop-search-catalog.html') найти товары] или перейдите #[a(href='shop-index.html') на главную страницу] или #[a(href='shop-catalog.html') в каталог товаров].
+                    p.lead Или позвоните нам по номеру #[a(href='tel:+74951182030') +7(495)118-20-30], мы постараемся Вам помочь.

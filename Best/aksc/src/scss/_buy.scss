@@ -1,0 +1,30 @@
+.buy {
+  float: left;
+  list-style-type: none;
+  margin-top: rem-calc(12);
+  margin-bottom: rem-calc(15);
+  margin-left: rem-calc(0);
+
+  &__item {
+    display: inline-block;
+    margin-left: rem-calc(20);
+  }
+
+  &__link {
+    color: $orange;
+    text-transform: uppercase;
+
+    &:hover {
+      color: $blue;
+    }
+  }
+  @include breakpoint(small only) {
+    &__link {
+      font-size: rem-calc(12);
+    }
+
+    &__item {
+      margin-left: rem-calc(10);
+    }
+  }
+}

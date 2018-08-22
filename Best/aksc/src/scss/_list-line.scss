@@ -1,0 +1,40 @@
+.list-line_left {
+	display: inline-block;
+	width: 40%;
+	height: rem-calc(120);
+}
+
+.list-line_right {
+	display: inline-block;
+	width: 40%;
+	height: rem-calc(120);
+	float: right;
+}
+
+.list-line_img {
+	display: inline-block;
+	width: 25%;
+	float: left;
+	height: 100%;
+	width: rem-calc(64);
+}
+
+.list-line_text {
+	display: inline-block;
+	width: 72%;
+	height: 100%;
+	margin: rem-calc(7);
+	text-align: left;
+}
+  @include breakpoint(small only) {
+		.list-line_left {
+			display: block;
+			width: 100%;
+			margin-bottom: rem-calc(10);
+		}
+
+		.list-line_right {
+			float: none;
+			display: block;
+			width: 100%;
+		} }

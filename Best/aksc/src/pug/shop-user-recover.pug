@@ -1,0 +1,40 @@
+extends shop-regular
+
+block content
+    .row.column(class="min-height: 80vh;")
+
+
+    .reveal(id="recover-modal" data-reveal data-deep-link='true')
+        h1.text-center Восстановление пароля
+
+        form(action='shop-user-recover.html#recover-confirm-modal')
+            label
+                | Если вы забыли пароль, введите телефон или e-mail:
+                input(type='text')
+            button.button.small-expanded
+                | Выслать код восстановления &nbsp;
+                i.fa.fa-envelope-o.fa-lg
+
+        p
+            a(href='shop-user-login.html#login-modal', title='') Авторизация
+
+        button.close-button(type="button" data-close aria-label="Закрыть")
+            span(aria-hidden="true") &times;
+
+
+    .reveal(id="recover-confirm-modal" data-reveal data-deep-link='true')
+        h1.text-center Восстановление пароля
+
+        form(action='shop-user-login.html#login-modal')
+            label
+                | Мы отправили email или смс с кодом подтверждения. Пожалуйста, введите его в это поле:
+                input(type='text' placeholder='Код подтверждения')
+
+            p: span.stat 00:00
+
+            button.button.small-expanded Подтвердить
+            span.hide-for-small &#160; &#160;
+            button.button.secondary.small-expanded Выслать код ещё раз
+
+        button.close-button(type="button" data-close aria-label="Закрыть")
+            span(aria-hidden="true") &times;

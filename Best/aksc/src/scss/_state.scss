@@ -1,0 +1,51 @@
+.state {
+  background: rgba($black,.9);
+  padding-left: rem-calc(40);
+  padding-right: rem-calc(32);
+  border-right: rem-calc(7) solid $orange;
+  padding-top: rem-calc(32);
+  padding-bottom: rem-calc(15);
+  margin-bottom: rem-calc(10);
+
+  &__rub {
+    font-size: rem-calc(24);
+    color: $sky;
+  }
+
+  &__false {
+    color: $sky;
+    font-weight: 700;
+    text-decoration: line-through;
+    font-size: rem-calc(24);
+    display: inline-block;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-size: rem-calc(24);
+    line-height: 1.5;
+    color: $sky;
+  }
+
+  &__hr {
+    margin-bottom: rem-calc(20);
+    background: none;
+    border-top: rem-calc(1) solid #686868;
+  }
+
+  &__price {
+    display: inline-block;
+    margin-right: rem-calc(15);
+    font-weight: 700;
+    line-height: 1.4;
+    font-size: rem-calc(60);
+    color: $orange;
+  }
+  @include breakpoint(small only) {
+    padding-top: rem-calc(15);
+
+    &__title {
+      font-size: rem-calc(15);
+    }
+  }
+}

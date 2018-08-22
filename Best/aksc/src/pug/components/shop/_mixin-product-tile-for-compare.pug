@@ -1,0 +1,20 @@
+mixin productTileForCompare(instock, incart)
+  p
+    a.text-alert.no-wrap(href="#" title='')
+      i.fa.fa-lg.fa-times-circle-o
+      | &nbsp;Убрать
+  p: a(href="shop-product.html" title='').comparator.text-center: img(src='./i/pro'  + Math.floor(Math.random() * (6 - 11) + 6) + '.png' alt='Товар')
+  p: a(href='shop-product.html' title='') Грунт Standox U7540 3,5л.
+  p: strong
+    | 73&nbsp;250&nbsp;
+    i.fa.fa-rub
+  p
+    if instock
+      if incart
+        a(href='shop-cart.html' title='Перейти в корзину')
+          i.fa.fa-check &#160;
+          | В корзине: 2
+      unless incart
+        a(href='shop-cart.html' title='Положить в корхину').button.hollow Купить
+    unless instock
+      span.text-dark-gray Нет в наличии

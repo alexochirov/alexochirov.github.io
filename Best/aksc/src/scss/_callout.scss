@@ -1,0 +1,11 @@
+.callout {
+  &.alert {
+    border-color: $red;
+  }
+  &.success {
+    background: #b9efc0;
+  }
+}
+.callout p font.errortext {
+    color: #fff;
+}

@@ -1,0 +1,24 @@
+.flight {
+  margin-left: rem-calc(0);
+  list-style-type: none;
+
+  &__link {
+    padding-left: rem-calc(18);
+    display: block;
+    padding-top: rem-calc(19);
+    padding-bottom: rem-calc(9);
+    position: relative;
+    overflow: hidden;
+
+    &:after {
+      content: "";
+      background-image: url($imagesPath +"/line.svg");
+      background-repeat: no-repeat;
+      position: absolute;
+      top: rem-calc(0);
+      left: calc(50% - 320px);
+      width: rem-calc(640);
+      height: rem-calc(3);
+    }
+  }
+}

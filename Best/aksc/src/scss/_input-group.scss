@@ -1,0 +1,9 @@
+.input-group {
+  &-field {
+    height: rem-calc(46);
+
+  }
+  input {
+    padding-left: rem-calc(10);
+  }
+}

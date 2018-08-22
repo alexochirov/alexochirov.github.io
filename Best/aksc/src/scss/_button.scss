@@ -1,0 +1,61 @@
+.button {
+  text-transform: uppercase;
+  font-weight: 700;
+
+  &:hover {
+    background: $blue;
+  }
+
+  .fa-sort-amount-asc {
+    font-size: rem-calc(13);
+  }
+  .fa-sort-amount-desc {
+    font-size: rem-calc(13);
+  }
+
+  &.large {
+    font-weight: 300;
+  }
+
+  &.hollow {
+    font-weight: 300;
+    padding-top: rem-calc(14);
+    padding-bottom: rem-calc(14);
+    text-transform: none;
+    border: rem-calc(2) solid $orange;
+    color: $orange;
+
+    &:hover {
+      background: $orange;
+      color: $white;
+      border-color: $orange;
+    }
+
+    &.alert {
+      border-width: rem-calc(2);
+
+      &:hover {
+        color: $white;
+        background: $red;
+        border-color: $red;
+      }
+    }
+
+    &.primary {
+      text-transform: uppercase;
+      font-weight: 700;
+      border: rem-calc(2) solid $blue;
+
+      &:hover {
+        background: $blue;
+        color: $white;
+        border-color: $blue;
+      }
+    }
+  }
+
+  &.expanded {
+    padding-left: rem-calc(5);
+    padding-right: rem-calc(5);
+  }
+}

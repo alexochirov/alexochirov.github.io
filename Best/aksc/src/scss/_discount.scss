@@ -1,0 +1,49 @@
+.discount {
+  background-size: cover;
+  background-position: center;
+  padding-top: rem-calc(65);
+  padding-bottom: rem-calc(65);
+
+  &__text {
+    font-size: rem-calc(36);
+
+    text-transform: uppercase;
+    color: $sky;
+    margin-bottom: rem-calc(20);
+          line-height: 1.55;
+
+  }
+
+  &__input {
+    margin-bottom: rem-calc(20);
+    text-transform: uppercase;
+    background: rgba($white,.3);
+    height: rem-calc(45);
+    color: $sky;
+
+    &::-webkit-input-placeholder {
+      color: $sky;
+    }
+
+    &::-moz-placeholder {
+      color: $sky;
+    }
+
+    &:-moz-placeholder {
+      color: $sky;
+    }
+
+    &:-ms-input-placeholder {
+      color: $sky;
+    }
+
+    &:focus {
+      background: rgba($white,.4);
+      color: $sky;
+    }
+  }
+    @include breakpoint(medium down) {
+    &__text {
+      font-size: rem-calc(28);
+    } }
+}

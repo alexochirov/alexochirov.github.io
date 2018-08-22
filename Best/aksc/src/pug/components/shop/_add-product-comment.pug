@@ -1,0 +1,22 @@
+#add-product-comment.reveal(data-reveal)
+    h2 Добавьте свой отзыв
+
+    form
+        p.callout.warning Только для авторизованных пользователей. Если пользователь не авторизован, вместо этого окна, будет форма авторизации.
+
+        label Ваша оценка товара
+        p
+            span.rating
+                span.rating__star
+                span.rating__star
+                span.rating__star
+                span.rating__star
+                span.rating__star
+
+        label Текст отзыва *
+        textarea(rows='3')
+
+        button.button Отправить отзыв
+
+    button.close-button(data-close aria-label="Закрыть")
+        span(aria-hidden="true") &times;

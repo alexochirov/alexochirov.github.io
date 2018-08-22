@@ -1,0 +1,47 @@
+label Выберите цвет:
+select
+  option Novol 4+1 MS Белый
+  option.background-medium-gray Novol 4+1 MS Серый
+  option.background-alert Novol 4+1 MS Красный
+  option.background-black Novol 4+1 MS Черный
+
+p
+  span.text-dark-gray Нет нужного цвета?
+  | &#160;
+  a(href='#') Сообщим о появлении
+
+br
+
+.row
+  .small-12.large-6.column
+    p
+      span.stat
+        | 2 580&nbsp;
+        i.fa.fa-rub
+      br
+      del.text-dark-gray
+        | 2 715 &nbsp;
+        i.fa.fa-rub
+      | &nbsp;&nbsp;
+      span.label.warning Ваша скидка 145 р
+  .small-12.large-6.column
+    .input-group.cash
+      .cash
+        .cash__more
+          i.fa.fa-caret-up        
+        .cash__less
+          i.fa.fa-caret-down
+        input.input-group-field(type="text",value="1")
+      .input-group-field
+        a(href='shop-cart.html' title="Товар добавлен в корзину").button
+          | &#160; #[i.fa.fa-shopping-basket.fa-lg] &#160;Купить &#160;
+
+
+p
+  a(href='shop-compare.html' title="Товар добавлен к сравнению.")
+    i.fa.fa-lg.fa-balance-scale
+    | &nbsp;К сравнению
+  | &nbsp; &nbsp;
+  a(data-open="add-to-favourites-auth-popup")
+    i.fa.fa-lg.fa-heart-o
+    | &nbsp;Запомнить
