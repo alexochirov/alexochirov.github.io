@@ -1,0 +1,46 @@
+.prod {
+  width: 100%;
+&__par {
+  padding-bottom: 13px;
+}
+  &__title {
+    color: $black;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+  }
+
+  &__tr {
+    border-bottom: 3px dotted #e6e6e6;
+  }
+
+  &__num {
+    color: $gray;
+  }
+
+  &__digit {
+    color: $dark-gray;
+  }
+
+  &__price {
+    width: 110px;display: inline-block;
+    color: $orange;
+  }
+
+  &__img {
+    width: 75px;
+    height:100px;
+    display: inline-block;
+  }
+
+  &__view {
+    display: inline-block;
+  }
+
+  &__td {
+    width: 206px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+}
