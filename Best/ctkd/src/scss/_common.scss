@@ -1,0 +1,90 @@
+a {
+  -webkit-transition: color 300ms ease-in-out;
+  -moz-transition: color 300ms ease-in-out;
+  -ms-transition: color 300ms ease-in-out;
+  -o-transition: color 300ms ease-in-out;
+  transition: color 300ms ease-in-out;
+}
+
+table {
+  margin-bottom: 6 * $global-margin;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+}
+
+h1 {
+  letter-spacing: rem-calc(1.8);
+}
+
+h5 {
+  margin-bottom: rem-calc(15);
+}
+
+h6 {
+  font-weight: 400;
+}
+
+[type='text'],
+[type='password'],
+[type='date'],
+[type='datetime'],
+[type='datetime-local'],
+[type='month'],
+[type='week'],
+[type='email'],
+[type='number'],
+[type='search'],
+[type='tel'],
+[type='time'],
+[type='url'],
+[type='color'],
+textarea {
+  text-transform: uppercase;
+  padding-left: rem-calc(28);
+  padding-right: rem-calc(28);
+  height: rem-calc(42);
+}
+
+ul {
+  margin-left: rem-calc(0);
+  margin-bottom: rem-calc(35);
+
+  li {
+    list-style-type: none;
+    margin-bottom: rem-calc(7);
+
+    &:before {
+      color: $primary-color;
+      content: "●";
+      padding-right: rem-calc(15);
+    }
+  }
+}
+
+label {
+  text-transform: uppercase;
+}
+
+select {
+  text-transform: uppercase;
+  padding-left: rem-calc(28);
+  padding-right: rem-calc(36);
+  height: rem-calc(42);
+  background-image:  url($imagesPath +"/select.svg");
+  background-size: rem-calc(14 11);
+  background-position: right -1.3rem center;
+
+}
+
+textarea {
+  height: rem-calc(85);
+  margin-bottom: rem-calc(32);
+
+}

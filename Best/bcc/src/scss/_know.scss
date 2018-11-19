@@ -1,0 +1,32 @@
+.know {
+    background: url( "../i/cloud_bg.png")no-repeat center top;
+    background-size: cover;
+    padding-top: rem-calc(70);
+    padding-bottom: rem-calc(77);
+
+    &__text {
+        font-size: rem-calc(18);
+    }
+
+    &__more {
+        position: relative;
+        padding-left: rem-calc(20);
+
+        &:before {
+            content: '';
+            background: url($imagesPath +"/arrow.svg")no-repeat center;
+            height: rem-calc(10);
+            width: rem-calc(6);
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            position: absolute;
+        }
+    }
+
+    &__link {
+      line-height: 1.4;
+        font-size: rem-calc(18);
+    }
+}

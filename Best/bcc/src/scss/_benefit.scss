@@ -1,0 +1,12 @@
+.benefit {
+  margin-bottom: rem-calc(28);
+  &__text {
+    font-size: rem-calc(16);
+    font-weight: 700;line-height: 1.4;
+  }
+  &__img {
+  img {
+      width: rem-calc(32);
+  }
+  }
+}

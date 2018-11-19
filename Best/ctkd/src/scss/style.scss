@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+// Все картинки и шрифты необходимо подключать с использованием этих двух переменных:
+$imagesPath: '../images' !default;
+$fontsPath: '../fonts' !default;
+
+$textSizes: (tiny: 0.7rem, xsmall: 0.8rem, small: 0.86rem, default: 1rem, large: 1.25rem, xlarge: 1.5rem, xxlarge: 2rem) !default;
+
+$fa-font-path: $fontsPath;
+
+$minify: false !default;
+@if $minify {
+  $imagesPath: './images';
+  $fontsPath: './fonts';
+  $fa-font-path: $fontsPath;
+}
+
+@import "fonts";
+@import "foundation-settings";
+
+@import "font-awesome";
+@import "slick.scss";
+@import "foundation";
+@import "motion-ui";
+@include foundation-everything(true, true);
+
+@import "common";
+@import "slick/slick-theme";
+
+@import "carousel/carousel-main";
+@import "carousel/carousel-news";
+@import "carousel/carousel-services";
+@import "background";
+@import "checkbox-group";
+@import "content";
+@import "button";
+@import "dd";
+@import "menu-base";
+@import "menu-top";
+@import "rating";
+@import "tabs";
+@import "accordion";
+@import "search-top";
+@import "separator";
+@import "sticky-footer";
+@import "footer";
+@import "input-group";
+@import "breadcrumbs";
+@import "text";
+@import "text-size";
+@import "header";
+@import "offer";
+@import "catchword";
+@import "calculator";
+@import "lift";
+@import "grade";
+@import "car";
+@import "automobile";
+@import "rent";
+@import "roster";
+@import "landscape";
+@import "rest";
+@import "soc";
+@import "order";
+@import "calendar";
+@import "check";
+@import "num";
+@import "hr";
+@import "leasing";
+@import "chosen";

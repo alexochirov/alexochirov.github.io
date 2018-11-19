@@ -1,0 +1,54 @@
+.package {
+  line-height: 1.4;
+margin-bottom: rem-calc(17);
+  &__img {
+    img {
+      margin-right: rem-calc(5);
+    }
+  }
+
+  &__button {
+    font-size: rem-calc(14);
+    text-transform: none;
+  }
+
+  &__text {
+    margin-bottom: rem-calc(16);
+    height: rem-calc(127);
+    overflow: hidden;
+  }
+
+  &__name {
+    font-size: rem-calc(16);
+    font-weight: 700;
+    margin-bottom: rem-calc(10);
+  }
+
+  &__title {
+    font-size: rem-calc(24);
+    font-weight: 700;
+    color: $secondary;
+    margin-bottom: rem-calc(14);
+  }
+
+  &__desc {
+    font-size: rem-calc(14);
+    font-weight: 700;
+  padding-bottom: rem-calc(23);
+    text-transform: uppercase;
+    color: $insta;
+  }
+
+  &__sum {
+    display: inline-block;
+    padding-top: rem-calc(6);
+    padding-bottom: rem-calc(6);
+    margin-bottom: rem-calc(23);
+    padding-left: rem-calc(10);
+    padding-right: rem-calc(10);
+    border-radius: rem-calc(30);
+    border: rem-calc(1) solid $blood;
+    color: $blood;
+    font-weight: 700;
+  }
+}

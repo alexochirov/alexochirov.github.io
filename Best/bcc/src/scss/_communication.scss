@@ -1,0 +1,10 @@
+.communication {
+  padding-top: rem-calc(30);
+  padding-bottom: rem-calc(30);
+  border-bottom: rem-calc(1) solid $light-gray;
+  &__link {
+    font-size: rem-calc(16);
+    font-weight: 700;
+    text-decoration: none;
+  }
+}

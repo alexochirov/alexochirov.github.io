@@ -1,0 +1,22 @@
+.rest {
+  margin-bottom: rem-calc(50);
+
+  &__info {
+    padding-top: rem-calc(17);
+    margin-bottom: rem-calc(20);
+  }
+
+  &__img {
+    margin-bottom: rem-calc(20);
+
+    img {
+      width: rem-calc(110);
+      border-radius: 50%;
+    }
+  }
+  @include breakpoint(medium down) {
+    &__info {
+      padding-top: rem-calc(0);
+    }
+  }
+}

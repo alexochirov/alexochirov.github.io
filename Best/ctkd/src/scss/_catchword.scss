@@ -1,0 +1,8 @@
+.catchword {
+  font-size: rem-calc(31);
+  letter-spacing: rem-calc(.5);
+  display: block;
+  @include breakpoint(small only) {
+    font-size: rem-calc(17);
+  }
+}

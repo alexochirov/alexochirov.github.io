@@ -1,0 +1,9 @@
+.order {
+  border: rem-calc(0);
+  border-bottom: rem-calc(2) solid $light-gray;
+background: none;
+  &:focus {
+    border: rem-calc(0);
+    border-bottom: rem-calc(2) solid $medium-gray;
+  }
+}

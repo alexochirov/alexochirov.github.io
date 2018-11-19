@@ -1,0 +1,67 @@
+extends index
+block top
+  .world
+    .world__header
+      include components/common/_header-promo
+    .platform(style="background-image:url(./i/bg-promo-news.jpg);")
+      .row
+        .medium-12.columns
+          h1
+            strong Специальное предложение
+            br
+            | для партнеров Bento Cloud
+          p.lead.lead_big
+            strong Зарегистрируйтесь 
+            | на платформе Bento Cloud и получите первые
+            br
+            strong 30 дней в подарок 
+            | на все продукты Microsoft Office 365 по программе CSP
+          p.lead.lead_medium Для всех новых подписок, для всех новых пользователей, размещенных на срок не менее 12 месяцев.
+        .medium-12.columns
+          form(action="#").reg.reg_shadow
+            .reg__error
+              div Введите название компании
+              div Введите название сайта
+              div Введите номер телефона
+              div Введите корректный адрес e-mail
+            h3 Зарегистрироваться
+            p Предложение действует с 05.06 по 15.08 2017 г.
+            input(type="text",placeholder="Название компании").reg__input
+            input(type="text",placeholder="Сайт").reg__input
+            input(type="tel",placeholder="Телефон").reg__input
+            input(type="email",placeholder="Корпоративный e-mail").reg__input
+            input(type="text",placeholder="ФИО контактного лица").reg__input
+            input(type="text",placeholder="Должность").reg__input
+            input(type="text",placeholder="Город").reg__input
+            .mb70
+            button(type="submit").button.button_width Зарегистрироваться
+      .mb70
+      .row.large-up-4.medium-up-4.text-center(data-equalizer data-equalize-by-row="true")
+        .columns(data-equalizer-watch)
+          img(src='images/office-365.png', alt='')
+        .columns(data-equalizer-watch)
+          img(src='images/dynamics-365.png', alt='')
+        .columns(data-equalizer-watch)
+          img(src='images/enterprise-mobile-suite.png', alt='')
+        .columns.brend_col(data-equalizer-watch)
+          img(src='images/win10.png', alt='')
+      .mb70
+block content
+  .cloud
+    .row.columns
+      h2.text-center Условия и положения программы
+    .row.large-up-3.medium-up-3
+      .column.box
+        p.box__dot В программе принимают участие только подписки для SMB заказчиков, по классификации Microsoft. 
+      .column.box
+        p.box__dot В программе принимают участие только подписки, оплачиваемые на ежемесячной основе. 
+      .column.box
+        p.box__dot В акции не участвуют новые подписки для присутствующих на платформе Bento Cloud заказчиков. 
+      .column.box
+        p.box__dot Для участия в программе, регистрация на платформе Bento Cloud обязательна. 
+      .column.box
+        p.box__dot Срок размещения подписок на платформе Bento Cloud не менее 12 месяцев. Размещенные подписки сроком менее 12 месяцев участия в программе не принимают и не учитываются. 
+      .column.box
+        p.box__dot 30 дней бесплатного использования, будет учтено выпущенным Bento Cloud Кредитовым Авизо. 
+    .row.columns.text-center
+      p В случае преждевременного отключения подписки бесплатный период не учитывается, и будет произведен перерасчет стоимости. 

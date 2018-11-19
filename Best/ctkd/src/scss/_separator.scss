@@ -1,0 +1,17 @@
+.separator {
+  &-left {
+    &_small {
+      &:after {
+        width: rem-calc(37);
+      }
+    }
+  }
+  &-center {
+    &_black {
+      &:after {
+        width: rem-calc(169);
+        border-bottom-color: $black;
+      }
+    }
+  }
+}

@@ -1,0 +1,93 @@
+extends index
+block top
+  .world
+    .world__header
+      include components/common/_header
+    .platform(style="background-image:url(./i/news.jpg);")
+      .row.columns.hide-for-small-only
+        .platform__title 
+          | Семинары,
+          br
+          | вебинары и
+          br
+          | учебные курсы от
+          br
+          strong Bento Cloud
+block content
+  .cloud.cloud_no
+    .row.columns
+      p.lead.lead_mini.text-center
+        | Наши новости расскажут Вам о предстоящих 
+        strong семинарах
+        | , 
+        strong вебинарах
+        |  и 
+        strong учебных курсах
+        | ,
+        br
+        | 		в которых Вы и Ваши коллеги, сможете принять участие
+  .mb30      
+  +bread(['О проекте','Новости'])  
+  .mb30  
+  .row.columns
+    h1.article Новости Bento Cloud  
+     
+  #exampleModal1.reveal.large(data-reveal='')
+    button.close-button.reveal__close-button(data-close='', aria-label='Close modal', type='button')
+      span(aria-hidden='true') × 
+    include components/common/_news-detail
+      
+  .row.large-up-4.medium-up-3.small-up-1
+    .columns.news(data-open="exampleModal1")
+      .news__img(data-equalizer-watch)
+        img(src="./i/news4.png", alt="")
+      .news__date 10 мая | 2017
+      h4.news__title Подборка полезных материалов по Azure
+      p.news__text У нас накопилось много бесплатных материалов по работе с облаком, поэтому мы решили поделиться с вами самыми последними из них. Под катом вы найдёте описание 6 ...
+    .columns.news(data-open="exampleModal1")
+      .news__img(data-equalizer-watch)
+        img(src="./i/news5.jpg", alt="")
+      .news__date 05 мая | 2017
+      h4.news__title Интервью Исполнительного директора RRC Group, Михаила Косилова, телеканалу ПРО БИЗНЕС
+      p.news__text Как заработать миллионы на ИТ-дистрибуции, как управлять  "облаками" с помощью Bento Cloud...
+    .columns.news(data-open="exampleModal1")
+      .news__img(data-equalizer-watch)
+        img(src="./i/news6.png", alt="")
+      .news__date 04 мая | 2017
+      h4.news__title Microsoft Windows 10 E3/E5 – новый сервис на платформе Bento Cloud
+      p.news__text Познакомьтесь с функциональными возможностями платформы Bento Cloud, которые помогут расширить Ваши коммерческие предложения для Заказчиков и увеличить продажи ...
+    .columns.news(data-open="exampleModal1")
+      .news__img(data-equalizer-watch)
+        img(src="./i/news6.png", alt="")
+      .news__date 04 мая | 2017
+      h4.news__title Microsoft Azure и платформа Bento Cloud – просто о сложном
+      p.news__text Возможности платформы Bento Cloud при предоставлении такого сервиса как Microsoft Azure....
+    .columns.news(data-open="exampleModal1")
+      .news__img(data-equalizer-watch)
+        img(src="./i/news6.png", alt="")
+      .news__date 04 мая | 2017
+      h4.news__title Microsoft Windows 10 E3/E5 – новый сервис на платформе Bento Cloud
+      p.news__text Новые возможности для увеличения Вашего бизнеса с Microsoft Windows 10 E3/E5...
+    .columns.news(data-open="exampleModal1")
+      .news__img(data-equalizer-watch)
+        img(src="./i/news2.png", alt="")
+      .news__date 29 марта | 2017
+      h4.news__title Показ платформы Bento Cloud
+      p.news__text Хотите узнать больше об облачной платформе Bento Cloud? Зарегистрируйтесь на показ платформы 30-го марта!...
+    .columns.news(data-open="exampleModal1")
+      .news__img(data-equalizer-watch)
+        img(src="./i/news3.png", alt="")
+      .news__date 29 марта | 2017
+      h4.news__title Новые технологии — новые каналы?
+      p.news__text Развитие облачных вычислений приведет к большей специализации. Облака повлияют на модель потребления ИТ....
+    .columns.news(data-open="exampleModal1")
+      .news__img(data-equalizer-watch)
+        img(src="./i/news2.png", alt="")
+      .news__date 22 марта | 2017
+      h4.news__title Показ облачной платформы Bento Cloud
+      p.news__text Хотите узнать больше об облачной платформе Bento Cloud? Зарегистрируйтесь на показ платформы 24-го марта!...
+  .mb30    
+  .row.columns.text-center
+    a(href="#").button.magnifier все новости
+  .mb30  
+   

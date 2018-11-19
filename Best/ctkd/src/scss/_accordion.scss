@@ -1,0 +1,10 @@
+.accordion {
+  &-title {
+    font-weight: 700;text-transform: uppercase;
+  }
+  &-item {
+    &:before {
+      display:none;
+    }
+  }
+}

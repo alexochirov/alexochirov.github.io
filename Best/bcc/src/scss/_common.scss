@@ -1,0 +1,40 @@
+a {
+    -webkit-transition: color 300ms ease-in-out;
+    -moz-transition: color 300ms ease-in-out;
+    -ms-transition: color 300ms ease-in-out;
+    -o-transition: color 300ms ease-in-out;
+    transition: color 300ms ease-in-out;
+    &:visited {
+      color: $white;
+    }
+    &:active {
+      color: $dark-blue;
+    }
+
+}
+
+h1 {
+    color: $dark-blue;
+    text-transform: uppercase;
+    line-height: 1.29;
+}
+
+h2 {
+    text-transform: uppercase;
+    line-height: 1.29;
+    margin-bottom: rem-calc(40);
+}
+
+h3 {
+    line-height: 1.5;
+}
+
+h4 {
+    line-height: 2;
+    
+}
+
+h5 {
+    font-weight: 700;
+    line-height: 1.31;
+}

@@ -1,0 +1,22 @@
+.check {
+  display: inline-block;
+  margin-bottom: rem-calc(12);
+
+  &__input {
+    display: none;
+
+    &:checked + .check__label {
+      background: url($imagesPath +"/check-active.svg")no-repeat left top;
+    }
+  }
+
+  .check__label {
+    text-transform: none;
+    margin-left: rem-calc(0);
+    margin-right: rem-calc(10);
+    padding-left: rem-calc(40);
+    line-height: 1.3;
+    padding-top: rem-calc(4);
+    background: url($imagesPath +"/check.svg")no-repeat left top;
+  }
+}

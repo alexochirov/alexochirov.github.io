@@ -1,0 +1,16 @@
+.offer {
+  background-size: cover;
+  padding-top: rem-calc(128);
+  padding-bottom: rem-calc(200);
+  background-position: center top;
+
+  &_small {
+    background-position: center;
+    padding-top: rem-calc(45);
+    padding-bottom: rem-calc(50);
+  }
+  @include breakpoint(small only) {
+    padding-top: rem-calc(70);
+    padding-bottom: rem-calc(70);
+  }
+}

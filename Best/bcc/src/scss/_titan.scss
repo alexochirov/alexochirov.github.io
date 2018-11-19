@@ -1,0 +1,13 @@
+.titan {
+  background: url($imagesPath +"/titan-back.png")no-repeat center;
+  background-size: cover;
+  color: $white;
+  padding-bottom: rem-calc(38);
+  font-size: rem-calc(18);
+  line-height: 1.66;
+  padding-top: rem-calc(35);
+  letter-spacing: rem-calc(.45);
+  @include breakpoint(small only) {
+    font-size: rem-calc(15);
+  }
+}

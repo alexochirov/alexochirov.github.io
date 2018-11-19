@@ -1,0 +1,45 @@
+extends index
+block top
+  .world
+    .world__header
+      include components/common/_header
+    .platform(style="background-image:url(./i/bg_abstract.jpg);")
+      .row.columns.hide-for-small-only
+        .platform__title 
+          | Программы для 
+          br
+          | производителей
+          br
+          | облачных сервисов
+block content
+  .cloud.cloud_no
+    .mb30
+    .row.columns
+        p.lead Одной из задач, стоящих перед нами – это обеспечение доступа заказчикам наших партнеров, к достойному и широкому выбору популярных и передовых облачных сервисов, которые помогут решать возникающие бизнес задачи. BentoCloud приглашает к сотрудничеству и партнерству отечественных и зарубежных компаний Производителей - продуктовый портфель платформы BentoCloud открыт для новых сервисов и предложений.
+    .mb30 
+  .additional
+    .row.medium-up-3.text-center
+      .columns
+        .training
+          .training__img
+            p
+              img(src="./images/structure.svg", alt="")
+          .training__title 
+          p.training__text Огромная сеть Партнеров
+      .columns
+        .training
+          .training__img
+            p
+              img(src="./images/earth.svg", alt="")
+          .training__title 
+          p.training__text Широкое географическое присутствие
+      .columns
+        .training
+          .training__img
+            p
+              img(src="./images/shield.svg", alt="")
+          .training__title 
+          p.training__text Надежность и профессионализм
+    .mb70
+    .row.columns.text-center
+        a(href="#").button.large Связаться с нами

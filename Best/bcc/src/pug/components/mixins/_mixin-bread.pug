@@ -1,0 +1,13 @@
+mixin bread(arr)
+  .row.columns
+    nav
+      ul.breadcrumbs
+        li
+          a(href='#') Главная
+        each title,index in Object(arr)
+          if index < Object(arr).length - 1
+            li
+              a(href="#")= title
+          else  
+            li= title
+  

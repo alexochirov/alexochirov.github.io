@@ -1,0 +1,110 @@
+.news-detail {
+  padding-top: rem-calc(29.5);
+  position: relative;
+  // border: 1px solid #e1e1e1;
+  &:before {
+    position: absolute;
+    content: "";
+    display: block;
+    top: rem-calc(24);
+    left: rem-calc(1);
+    height: rem-calc(5);
+    width: rem-calc(101);
+    background-color: #316699;
+  }
+  &__header {
+    @extend .news__date;
+  }
+  &__line {
+    width: 100%;
+    height: 2px;
+    background-image: linear-gradient(-90deg, rgba(76,94,122,0) 10%, #e3e3e3 35%, #e3e3e3 50%, #e3e3e3 65%, rgba(76,94,122,0) 90%);
+    margin-top: rem-calc(40);
+    margin-bottom: rem-calc(40);
+  }
+  &__title {
+    font-size: rem-calc(40);
+    line-height: rem-calc(48);
+  }
+  &__title-similar-theme {
+    font-size: rem-calc(30);
+    line-height: rem-calc(24);
+  }
+  &__slider {
+    margin-bottom: rem-calc(85);
+  }
+  &__slider-text-box {
+    position: relative;
+  }
+  &__slider-img {
+    width: 100%;
+  }
+  &__slider-desc-wrap {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    padding-top: rem-calc(20);
+    padding-left: rem-calc(20);
+    padding-right: rem-calc(20);
+    @include breakpoint(small only) {
+      top: 0;
+      margin: auto;
+      overflow: hidden;
+    }
+  }
+  &__footer {
+    font-weight: bold;
+  }
+}
+.news-detail__slider-dots {
+  margin:  0;
+  list-style: none;
+  display: block;
+  position: absolute;
+  bottom: rem-calc(-45);
+  text-align: center;
+  padding: 0;
+  width: 100%;
+  & li {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    transform: translateX(26px);
+    &:first-child:before {
+      cursor: default;
+      position: absolute;
+      content: "Фото:";
+      left: rem-calc(-50);
+      font-size: rem-calc(18);
+      line-height: rem-calc(40);
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+    & button {
+      border: rem-calc(1) solid transparent;
+      background-color: #282528;
+      display: block;
+      cursor: pointer;
+      height: rem-calc(30);
+      width: rem-calc(30);
+      outline: none;
+      line-height: 0;
+      color: white;
+      margin: rem-calc(5);
+      padding: 0;
+      font-size: rem-calc(18);
+      line-height: rem-calc(30);;
+      &:hover, &:focus {
+        outline: none;
+      }
+    }
+    &.slick-active button {
+      background-color: #316699;
+    }
+  }
+}

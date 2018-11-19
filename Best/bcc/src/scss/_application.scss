@@ -1,0 +1,19 @@
+.application {
+  font-size: rem-calc(46);
+  line-height: 1;
+
+  &__num {
+    font-size: rem-calc(280);
+    font-weight: 700;
+  }
+
+  &__text {
+    font-size: rem-calc(18);
+    line-height: 2;
+  }
+  @include breakpoint(small only) {
+    &__num {
+      font-size: rem-calc(150);
+    }
+  }
+}

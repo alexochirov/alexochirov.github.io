@@ -1,0 +1,8 @@
+.cap {
+  color: $primary-color;
+  margin-bottom: rem-calc(40);
+
+  &_high {
+    margin-bottom: rem-calc(100);
+  }
+}

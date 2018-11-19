@@ -1,0 +1,7 @@
+.calendar {
+  background-image: url($imagesPath +"/calendar.svg");
+  background-repeat: no-repeat;
+  background-size: rem-calc(26 24);
+  background-position: right +1.4rem center;
+  padding-right: rem-calc(50);
+}

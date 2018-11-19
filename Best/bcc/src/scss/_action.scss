@@ -1,0 +1,27 @@
+.action {
+  color: $black;
+  line-height: 1.4;display: block;
+  margin-bottom: rem-calc(50);
+
+  &:hover {
+    color: $black;
+  }
+&__date {
+color: $secondary;
+margin-bottom: rem-calc(15);
+}
+&__img {
+  margin-bottom: rem-calc(10);
+}
+
+&__text {
+  line-height: 1.4;
+}
+  &__title {
+    margin-bottom: rem-calc(9);
+    font-size: rem-calc(16);
+    font-weight: 700;
+    color: $black;
+  }
+
+}

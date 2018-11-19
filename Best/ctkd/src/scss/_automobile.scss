@@ -1,0 +1,31 @@
+.automobile {
+  text-transform: uppercase;
+
+  &__info {
+    margin-left: rem-calc(7);
+    margin-right: rem-calc(7);
+    display: inline-block;
+    color: $dark-gray;
+    img {
+      float: left;
+    }
+  }
+
+  &__cap {
+    float: left;
+    padding-top: rem-calc(2);
+  }
+
+  &__book {
+    padding-left: rem-calc(44);
+    padding-right: rem-calc(44);
+  }
+
+  &__img {
+    margin-bottom: rem-calc(18);
+
+    img {
+      max-height: rem-calc(216);
+    }
+  }
+}

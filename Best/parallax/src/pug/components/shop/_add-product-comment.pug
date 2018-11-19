@@ -1,0 +1,44 @@
+#add-product-comment.reveal(data-reveal data-deep-link="true")
+  h2 Добавить свой отзыв
+
+  form
+    label 
+      span.picture Представьтесь
+      span.reveal__anon или автор комментария будет «аноним»
+    input(type='text')
+
+    label
+      span.picture Ваш email
+      span.reveal__anon если хотите узнавать о новых комментариях к этому товару
+    input(type='email')
+
+    label Ваша оценка товара
+    .sect
+      span.rating
+        input.rating__input#rating15(type="radio" name="rating")
+        label.rating__star(for="rating15")
+          i.far.fa-star.rating__solid
+          i.fas.fa-star.rating__regular
+        input.rating__input#rating14(type="radio" name="rating")
+        label.rating__star(for="rating14")
+          i.far.fa-star.rating__solid
+          i.fas.fa-star.rating__regular
+        input.rating__input#rating13(type="radio" name="rating")
+        label.rating__star(for="rating13")
+          i.far.fa-star.rating__solid
+          i.fas.fa-star.rating__regular
+        input.rating__input#rating12(type="radio" name="rating")
+        label.rating__star(for="rating12")
+          i.far.fa-star.rating__solid
+          i.fas.fa-star.rating__regular
+        input.rating__input#rating11(type="radio" name="rating")
+        label.rating__star(for="rating11")
+          i.far.fa-star.rating__solid
+          i.fas.fa-star.rating__regular
+
+    label Текст отзыва *
+    textarea(rows='3')
+
+    button.button.button_secondary Отправить отзыв
+
+  include ../common/_close

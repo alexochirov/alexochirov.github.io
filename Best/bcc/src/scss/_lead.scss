@@ -1,0 +1,25 @@
+.lead {
+  margin-bottom: rem-calc(67);
+  &_big {
+    font-size: rem-calc(24);
+    line-height: rem-calc(36);
+    margin-bottom: rem-calc(18);
+  }
+  &_medium {
+    margin-bottom: rem-calc(18);
+  }
+  &_mini {
+    margin-bottom: rem-calc(10);
+  }
+  &_brand {
+    margin-bottom: rem-calc(0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    @include breakpoint(small only) {
+      width: rem-calc(250);
+    }
+  }
+}

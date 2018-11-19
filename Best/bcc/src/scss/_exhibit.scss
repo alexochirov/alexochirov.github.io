@@ -1,0 +1,119 @@
+.exhibit {
+  display: inline-block;
+  margin-bottom: rem-calc(16);
+  width: rem-calc(234);
+  font-size: rem-calc(14);
+
+  &__th {
+    background: $water;
+    border-radius: rem-calc(10) rem-calc(10) 0 0;
+    position: relative;
+    padding-left: rem-calc(30);
+    padding-right: rem-calc(30);
+    line-height: 2.3;
+  }
+
+  &__date {
+    color: $white;
+  }
+
+  &__weekday {
+    background: $black;
+    color: $white;
+    border: rem-calc(1) solid #adb2b8;
+
+    &:last-child {
+      position: relative;
+
+      &:after {
+        content:"";
+        background: $black;
+        right: rem-calc(-1);
+        position: absolute;
+        width: rem-calc(1);
+        height: 100%;
+      }
+    }
+  }
+
+  &__day {
+    margin-left: rem-calc(1);
+    float: left;
+    height: rem-calc(32);
+    line-height: rem-calc(32);
+    width: calc(100% - 1px);
+    margin-top: rem-calc(1);
+    border: rem-calc(1) solid #83a1b3;
+
+    &_future {
+      background: $water;
+      color: $white;
+      cursor: pointer;
+    }
+
+    &_important {
+      background: #d0127d;
+      color: $white;
+      cursor: pointer;
+    }
+
+    &_past {
+      background: $dark-gray;
+      color: $white;
+      cursor: pointer;
+    }
+  }
+
+  &__main {
+    & :last-child {
+      .exhibit__day {
+        border-radius: 0 0 rem-calc(10) 0;
+      }
+    }
+
+    & :nth-last-child(7) {
+      .exhibit__day {
+        border-radius: 0 0 0 rem-calc(10);
+      }
+    }
+  }
+
+  &__month {
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+    padding-right: rem-calc(8);
+    margin-right: rem-calc(4);
+
+    &:after {
+      content: "";
+      width: rem-calc(1);
+      position: absolute;
+      right: rem-calc(0);
+      top: rem-calc(10);
+      height: rem-calc(14);
+      background: #a0c2d3;
+    }
+  }
+
+  &__year {
+    display: inline-block;
+  }
+
+  &__arrow {
+    left: rem-calc(8);
+    line-height: 1;
+    position: absolute;  transform: rotate(180deg);
+    top: rem-calc(7);
+    img {
+      width: rem-calc(18);
+
+    }
+
+    &_right {
+  transform:none;
+      left: auto;
+      right: rem-calc(8);
+    }
+  }
+}

@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+// Все картинки и шрифты необходимо подключать с использованием этих двух переменных:
+$imagesPath: '../images' !default;
+$fontsPath: '../fonts' !default;
+
+$textSizes: (tiny: 0.7rem, xsmall: 0.8rem, small: 0.9rem, default: 1rem, large: 1.23rem, xlarge: 1.5rem, xxlarge: 2rem) !default;
+
+$fa-font-path: $fontsPath;
+
+@import "fonts";
+@import "foundation-settings";
+
+
+@import "foundation";
+@import "motion-ui";
+@import "font-awesome";
+@import "slick.scss";
+@include foundation-everything;
+
+@import "common";
+@import "slick/slick-theme";
+
+@import "button";
+@import "breadcrumbs";
+@import "footer";
+@import "header";
+@import "sticky-footer";
+@import "text";
+@import "world";
+@import "bento";
+@import "social";
+@import "decision";
+@import "project";
+@import "infra";
+@import "cloud";
+@import "control";
+@import "lead";
+@import "feature";
+@import "additional";
+@import "shop";
+@import "know";
+@import "calendar";
+@import "month";
+@import "reverse";
+@import "events";
+@import "download";
+@import "gradient";
+@import "news";
+@import "close-button";
+@import "reveal";
+@import "testimonials";
+@import "chief";
+@import "vendors";
+@import "solution";
+@import "support";
+@import "platform";
+@import "boss";
+@import "mb70";
+@import "mb45";
+@import "mb30";
+@import "mb0";
+@import "mr10";
+@import "article";
+@import "magnifier";
+@import "action";
+@import "success";
+@import "service";
+@import "benefit";
+@import "reg";
+@import "training";
+@import "gift";
+@import "product";
+@import "price";
+@import "plane";
+@import "rocket";
+@import "package";
+@import "auth";
+@import "brend";
+@import "port";
+@import "excel";
+@import "application";
+@import "communication";
+@import "exhibit";
+@import "news-detail";
+@import "pop";
+@import "box";
+@import "acronis";
+@import "presentation";
+@import "plant";
+@import "mac";
+@import "responsive-embed";
+@import "report";
+@import "feedback";
+@import "umbrella";
+@import "date";
+@import "award";
+@import "text-size";
+@import "pole";
+@import "conference";
+@import "metro";
+@import "meeting";
+@import "web";
+@import "titan";
+@import "key";
+@import "padding-top-60";

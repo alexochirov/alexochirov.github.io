@@ -1,0 +1,86 @@
+.meeting {
+  position: relative;
+  display: block;
+  padding-top: rem-calc(67);
+  border: rem-calc(1) solid $visit;
+  letter-spacing: rem-calc(.3);
+  padding-left: rem-calc(27);
+  margin-bottom: rem-calc(30);
+  padding-right: rem-calc(27);
+  padding-bottom: rem-calc(5);
+  text-decoration: none;
+transition: .3s;
+  &:visited {
+    color: $black;
+  }
+
+
+  &:active,
+  &:focus,
+  &:hover,
+  &_active {
+    text-decoration: none;
+    color: $black;
+    border-color: $raspberry;
+
+    .meeting__date {
+      background: $raspberry;
+    }
+
+    .meeting__button {
+      border-color: $raspberry;
+      color: $raspberry;
+    }
+
+    .meeting__title {
+      color: $raspberry;
+    }
+  }
+
+  &__button {
+    font-size: rem-calc(12);
+    font-weight: 700;
+    border: rem-calc(3) solid $water;
+    background: $white;
+    color: $water;
+    padding: rem-calc(11 32);
+
+  &:hover {
+    background: $white;
+  }
+  }
+
+  &__date {
+    letter-spacing: rem-calc(.4);
+    font-size: rem-calc(16);
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $white;
+    background: $water;
+    position: absolute;
+    left: rem-calc(0);
+    top: rem-calc(0);
+    padding: rem-calc(7) rem-calc(16);
+  }
+
+  &__time {
+    font-size: rem-calc(13);
+    position: absolute;
+    right: rem-calc(13);
+    top: rem-calc(14);
+    color: $water;
+  }
+
+  &__text {
+    font-size: rem-calc(13);
+    line-height: 1.38;
+    margin-bottom: rem-calc(32);
+  }
+
+  &__title {
+    color: $water;
+    margin-bottom: rem-calc(22);
+    font-size: rem-calc(16);
+    line-height: 1.5;
+  }
+}

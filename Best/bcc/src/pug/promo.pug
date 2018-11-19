@@ -1,0 +1,70 @@
+extends index
+block top
+  .world
+    .world__header
+      include components/common/_header
+    .platform(style="background-image:url(./i/promo.jpg);")
+      .row.columns.hide-for-small-only
+        .platform__title 
+          | Промо-программы
+          br
+          | и акции от
+          br
+          strong Bento Cloud
+block content
+  .cloud.cloud_no
+    .row.columns
+      p.lead.lead_mini.text-center
+        | Наши новости расскажут Вам о предстоящих 
+        strong семинарах
+        | , 
+        strong вебинарах
+        |  и 
+        strong учебных курсах
+        | ,
+        br
+        | 		в которых Вы и Ваши коллеги, сможете принять участие
+  .mb30      
+  +bread(['О проекте','Промо-программы'])  
+  .mb30  
+  .row.columns
+    h1.article Последние акции от Bento Cloud
+    
+  #exampleModal1.reveal(data-reveal='')
+    h2 Iframe
+    button.close-button(data-close='', aria-label='Close modal', type='button')
+      span(aria-hidden='true') ×  
+      
+  .row.large-up-2.medium-up-2
+    .columns
+      a(href="#").action
+        .row
+          .small-7.columns
+            .action__img
+              img(src="./i/ship.png", alt="")
+            .action__date 18&#160;апреля | 2017
+          .small-17.columns
+            .action__title «Призы за соточку! Поездка за триста!»
+            p.action__text RRC объявляет старт новой промо программы&hellip;
+    .columns
+      a(href="#").action
+        .row
+          .small-7.columns
+            .action__img
+              img(src="./i/earth.jpg", alt="")
+            .action__date 21&#160;февраля | 2017
+          .small-17.columns
+            .action__title Программа для Партнеров
+            p.action__text Программа для партнеров Bento Cloud&hellip; 
+    .columns
+      a(href="#").action
+        .row
+          .small-7.columns
+            .action__img
+              img(src="./i/star.jpg", alt="")
+            .action__date 20&#160;февраля | 2017
+          .small-17.columns
+            .action__title  ProAzure 
+            p.action__text Пакеты Proazure разработаны для обеспечения партнеров не сложными&hellip;
+            
+              

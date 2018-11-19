@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="111" viewBox="0 0 106 134">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #4b90d1;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 8px;
+        fill: none;
+        -webkit-transform: translateX(-4px);
+        -ms-transform: translateX(-4px);
+        -o-transform: translateX(-4px);
+        transform: translateX(-4px);
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #4b90d1;
+      }
+
+      .cls-3 {
+        fill: #4b90d1;
+      }
+
+      .cls-4 {
+        fill: #71acc4;
+      }
+
+      .cls-5 {
+        fill: #83a1b3;
+      }
+
+      .cls-6 {
+        fill: #a0c2d3;
+      }
+    </style>
+  </defs>
+  <g>
+    <path d="M22.000,12.000 L97.000,12.000 C102.523,12.000 107.000,16.477 107.000,22.000 L107.000,120.000 C107.000,125.523 102.523,130.000 97.000,130.000 L22.000,130.000 C16.477,130.000 12.000,125.523 12.000,120.000 L12.000,22.000 C12.000,16.477 16.477,12.000 22.000,12.000 Z" class="cls-1"/>
+    <path d="M62.938,84.889 L20.750,84.889 L20.750,93.334 L62.938,93.334 L62.938,84.889 ZM46.063,25.778 L20.750,25.778 L20.750,59.556 L46.063,59.556 L46.063,25.778 ZM37.625,68.000 L20.750,68.000 L20.750,76.445 L37.625,76.445 L37.625,68.000 ZM88.250,101.777 L20.750,101.777 L20.750,110.222 L88.250,110.222 L88.250,101.777 Z" class="cls-2"/>
+    <path d="M55.500,42.666 L89.250,42.666 L89.250,25.778 L55.500,25.778 L55.500,42.666 Z" class="cls-3"/>
+    <path d="M71.375,93.334 L88.250,93.334 L88.250,84.889 L71.375,84.889 L71.375,93.334 Z" class="cls-4"/>
+    <path d="M89.250,49.111 L55.500,49.111 L55.500,57.555 L89.250,57.555 L89.250,49.111 Z" class="cls-5"/>
+    <path d="M88.250,68.111 L44.500,68.111 L44.500,76.556 L88.250,76.556 L88.250,68.111 Z" class="cls-6"/>
+  </g>
+</svg>

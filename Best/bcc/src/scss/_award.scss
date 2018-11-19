@@ -1,0 +1,71 @@
+.award {
+  margin-bottom: rem-calc(80);
+
+  .slick-arrow {
+    width: rem-calc(47);
+    height: rem-calc(47);
+    background-size: contain;
+  }
+
+  .slick-next {
+    right: rem-calc(26);
+  }
+
+  .slick-prev {
+    left: rem-calc(26);
+  }
+
+  &__slide {
+    position: relative;
+  }
+  &__info
+
+  {
+    background: rgba($black,.8);
+    padding: rem-calc(21 28);
+    position: absolute;
+    right: rem-calc(0);
+    bottom: rem-calc(0);
+    color: $white;
+    width: rem-calc(384);
+    max-width: 100%;
+    letter-spacing: rem-calc(.33);
+    font-size: rem-calc(12);
+    font-weight: 400;
+  }
+  &__text {
+    line-height: 1.5;
+  }
+
+
+  .slick-dots {
+    bottom: rem-calc(-48);
+
+    &:before {
+      content: "Фото:";
+      font-size: rem-calc(18);
+      color: $black;
+      margin-right: rem-calc(10);
+      letter-spacing: rem-calc(.45);
+    }
+
+    .slick-active {
+      button {
+        background: $water;
+      }
+    }
+
+    li {
+      button {
+        border: rem-calc(0);
+        width: rem-calc(30);
+        height: rem-calc(30);
+        border-radius: rem-calc(0);
+        font-size: rem-calc(18);
+        color: $white;
+        background: $black;
+        font-weight: 400;
+      }
+    }
+  }
+}

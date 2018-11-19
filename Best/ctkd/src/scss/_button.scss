@@ -1,0 +1,23 @@
+.button {
+  text-transform: uppercase;
+  font-weight: 700;
+  &.expanded {
+    padding-left: rem-calc(5);
+    padding-right: rem-calc(5);
+  }
+  &.hollow {
+    &:focus,&:hover {
+      color: $white;
+      background: $primary-color;
+      border-color: $primary-color;
+    }
+    &.medium-gray {
+        border-color: $light-gray;
+      &:focus,&:hover {
+        color: $white;
+        background: $medium-gray;
+        border-color: $medium-gray;
+      }
+    }
+  }
+}

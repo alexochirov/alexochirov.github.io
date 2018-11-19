@@ -1,0 +1,57 @@
+extends index
+block top
+  .world
+    .world__header
+      include components/common/_header
+    .platform(style="background-image:url(./i/azure.jpg);")
+      .row.columns.hide-for-small-only
+        .platform__title 
+          | Платформа
+          br
+          | Microsoft Azure для
+          br
+          | общедоступных
+          br
+          | облаков
+block content
+  .cloud.cloud_no
+    .mb30
+    .row
+      .medium-16.columns
+        p.lead Платформа Microsoft Azure для общедоступных облаков — это один из трех столпов, составляющих основу концепции облачной ОС от Майкрософт, которая преобразует традиционные центры обработки данных, помогает компаниям выявлять тенденции в любых массивах данных, способствует разработке широкого спектра современных бизнес-приложений, а также позволяет пользователям работать с любых устройств в едином защищенном ИТ-окружении.		
+      .columns.large-6.large-offset-2.medium-8
+        .download
+          img(src="./images/pdf_light.svg", alt="").download__pdf
+          span.download__info.download__info_azure
+            .download__line PDF
+            .download__size 1,4 МБ
+        p
+          h4
+            a(href="#").text-white Презентация Microsoft Azure
+      .columns.text-center
+        a(href="./partnership.html").button.large Зарегистрироваться и узнать цены
+    .mb30 
+  .additional
+    .row.medium-up-3.text-center
+      .columns
+        .training
+          .training__img
+            p
+              img(src="./images/code.svg", alt="")
+          .training__title Открытая
+          p.training__text Windows Azure предоставляет ряд облачных служб, с помощью которых можно создавать и развертывать облачные приложения средствами практически любого языка программирования, структуры или инструмента.
+      .columns
+        .training
+          .training__img
+            p
+              img(src="./images/arrow_in_cloud.svg", alt="")
+          .training__title Гибкая
+          p.training__text  Windows Azure включает в себя множество облачных служб для любых задач — от хостинга веб-сайта компании до работы с большими базами данных SQL в облаке. Кроме того, в этой платформе есть функции, которые обеспечивают высокую производительность и низкую задержку в сети для облачных приложений.
+      .columns
+        .training
+          .training__img
+            p
+              img(src="./images/puzle.svg", alt="")
+          .training__title Совместимая
+          p.training__text Облачные приложения в Windows Azure можно легко интегрировать с локальными ИТ-средами, работающими на базе Microsoft Windows Server.
+    .mb70  

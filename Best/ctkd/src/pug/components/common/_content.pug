@@ -1,0 +1,266 @@
+.offer(style="background-image:url(./i/offer.png)")
+  .grid-container
+    h1
+      | Автопрокат
+      span.catchword по бездорожью крымских красот
+.grid-container.lift
+  .calculator
+    form(action="#").grid-x.grid-padding-x
+      .cell.margin-bottom-3
+        h6.separator-left Быстрый заказ
+    
+      .cell.large-4.medium-6.padding-top-1
+        input(type="text",placeholder="Ваше имя").order
+      .cell.large-4.medium-6.padding-top-1
+        input(type="tel",placeholder="Телефон").order
+    
+      .cell.large-4.text-center.xlarge-text-right
+        button.button.margin-right-1 отправить
+        a(href="#").button.medium-gray.hollow Калькулятор
+.grid-container        
+  ul.grade.text-center
+    each title,index in ['Эконом','Компакт-класс','Средний класс','Минивэн','Стандарт-класс','4x4']
+      if index==2
+        li.grade__item
+          a(href="#").grade__link.grade__link_active= title
+      else    
+        li.grade__item
+          a(href="#").grade__link= title
+  .grid-x.grid-margin-x.margin-bottom-9
+    .cell.large-4.car.medium-6
+      .car__title.text-center
+        | Volkswagen Golf VII 1,4 TSI
+        |
+        span.text-medium-gray (2006)
+      .grid-x.grid-padding-x
+        .cell.small-6.padding-bottom-3 1-2 суток
+        .cell.small-6.text-right.padding-bottom-3.text-primary.font-bold 1490 р/сут
+        .cell
+          hr.margin-bottom-3  
+        .cell.small-6.padding-bottom-3 3-7 суток
+        .cell.small-6.text-right.padding-bottom-3.text-primary.font-bold 1350 р/сут
+        .cell
+          hr.margin-bottom-3  
+        .cell.small-6.padding-bottom-3 8-15 суток
+        .cell.small-6.text-right.padding-bottom-3.text-primary.font-bold 1250 р/сут
+        .cell
+          hr.margin-bottom-3  
+        .cell.small-6.padding-bottom-3 16-30 суток
+        .cell.small-6.text-right.padding-bottom-3.text-primary.font-bold 1150 р/сут
+        .cell
+          hr.margin-bottom-3  
+        .cell.small-6.padding-bottom-3 Более 30 суток
+        .cell.small-6.text-right.padding-bottom-3.text-primary.font-bold 1050 р/сут
+        .cell
+          hr.margin-bottom-3  
+        .cell.small-6.margin-bottom-3.padding-bottom-3 Залог
+        .cell.small-6.margin-bottom-3.text-right.padding-bottom-3.text-primary.font-bold 5000 р
+        .cell
+          a(href="#").button.expanded забронировать
+    .cell.large-4.automobile.text-center.medium-6
+      .automobile__img
+        a(href="#") 
+          img(src="./i/auto1.png", alt="")
+      .margin-bottom-3
+        | Skoda Octavia 1.4 TSI (AT)
+        |
+        span.text-medium-gray (2010)
+      .text-size-small.margin-bottom-6
+        .automobile__info
+          img(src="./images/gear1.svg", alt="").margin-right-2       
+          span.automobile__cap Авто
+        .automobile__info
+          img(src="./images/gear2.svg", alt="").margin-right-2       
+          span.automobile__cap 5
+        .automobile__info
+          img(src="./images/gear3.svg", alt="").margin-right-2       
+          span.automobile__cap 5
+        .automobile__info
+          img(src="./images/gear4.svg", alt="").margin-right-2       
+          span.automobile__cap 4
+        .automobile__info
+          img(src="./images/gear5.svg", alt="").margin-right-2       
+          span.automobile__cap 99 л.с.	
+        .automobile__info
+          img(src="./images/gear6.svg", alt="")
+      
+      div.margin-bottom-4.text-center
+        strong.text-primary от 2900 / сутки    
+      .text-center.automobile__book
+        a(href="#").button.hollow.medium-gray.expanded Забронировать  
+    .cell.large-4.automobile.text-center.medium-6.medium-offset-6.large-offset-0
+      .automobile__img
+        a(href="#") 
+          img(src="./i/auto2.png", alt="")
+      .margin-bottom-3
+        | Audi A3 Sportback 1.2 TFSI (AT)
+        |
+        span.text-medium-gray (2010)
+      .text-size-small.margin-bottom-6
+        .automobile__info
+          img(src="./images/gear1.svg", alt="").margin-right-2       
+          span.automobile__cap Авто
+        .automobile__info
+          img(src="./images/gear2.svg", alt="").margin-right-2       
+          span.automobile__cap 5
+        .automobile__info
+          img(src="./images/gear3.svg", alt="").margin-right-2       
+          span.automobile__cap 5
+        .automobile__info
+          img(src="./images/gear4.svg", alt="").margin-right-2       
+          span.automobile__cap 4
+        .automobile__info
+          img(src="./images/gear5.svg", alt="").margin-right-2       
+          span.automobile__cap 99 л.с.	
+        .automobile__info
+          img(src="./images/gear6.svg", alt="")
+      
+      div.margin-bottom-4.text-center
+        strong.text-primary от 2900 / сутки    
+      .text-center.automobile__book
+        a(href="#").button.hollow.medium-gray.expanded Забронировать  
+.grid-x.rent
+  .cell.medium-6.rent__img(style="background-image:url(./i/rest.png)")
+  .cell.medium-6.background-warning
+    .rent__main
+      h2.separator-left.rent__separator.text-black Автопрокат в Крыму
+      p Что может быть хуже, чем поездка в долгожданный отдых с помощью общественного транспорта? Много людей, душно в салоне и еще достаточно много минус станут на пути вашей долгожданной поездки. Но этого всего можно с лёгкостью избежать.
+      p Основные положительные аспекты прокат машин cartravel:
+      ul.roster
+        li.roster__item Общественный транспорт больше не станет для вас страшным сном;
+        li.roster__item Экскурсии в различные места в удобное для вас время;
+        li.roster__item Ваш багаж находится в безопасности и не причинит вам неудобств;
+        li.roster__item Свободное путешествие по всему Крыму, с возможностью посетить самые глубины полуострова.
+.background-sky.padding-vertical-20
+  .grid-container
+    ul#example-tabs.tabs(data-responsive-accordion-tabs='tabs small-accordion medium-tabs')
+      li.tabs-title.tabs-title_three
+        a(href='#panel1') Способ аренды машины в Крыму
+      li.tabs-title.tabs-title_three
+        a(href='#panel2') Автопарк машин на прокат
+      li.tabs-title.is-active.tabs-title_three
+        a(href='#panel3', aria-selected='true') Цены на аренду машин
+    .tabs-content(data-tabs-content='example-tabs')
+      #panel1.tabs-panel
+        p one
+        p Check me out! I'm a super cool Tab panel with text content!
+      #panel2.tabs-panel
+        p two
+      #panel3.tabs-panel.is-active
+        .margin-bottom-10 
+          | Расценки у Cartravel достаточно демократичны, и являются дешёвыми в 2017. Например, цена которую вы заплатите за сутки пользования машиной начинается с 999 руб. Узнать цены на 2017 год можно на
+          |
+          a(href="#") странице с ценами
+          | .
+        p Беря авто на прокат, вы так же получите:
+        ul
+          li Страховка от КАСКО;
+          li Все взыски которые могут понадобиться;
+          li Пробег машины без лимита;
+          li Безграничная поездка по всему полуострову Крым. 
+        p Так же, CarTravel предоставляет еще несколько дополнительных услуг:
+        ul
+          li
+            | Если вы путешествуете с ребёнком, тогда вам будет предоставлено специальное
+            |
+            a(href="#") детское кресло
+            | , которое является обязательным в таких случаях;
+          li
+            | Машины оснащены
+            |
+            a(href="#") GPS-навигатором
+            | . Это очень удобно, если вы не знаете местности. С его помощью вы будете себя чувствовать гораздо уверенней;
+          li
+            | Если вы путешествуете компанией, и среди вас не один человек, который имеет права, то можно его
+            |
+            a(href="#") дополнительно
+            |  внести в контракт, для того что бы он так же мог управлять транспортным средством, дав вам отдохнуть;
+          li
+            a(href="#") Доставка машины
+            |
+            | в любое место полуострова Крым. Будет очень полезно, если вы находитесь не в Симферополе.
+        p
+          | Ваше
+          |
+          a(href="#") путешествие
+          |  превратится в замечательное событие!
+        p С помощью Сartravel вы сможете с легкостью позабыть о невзрачной рутины, от бесконечных серых будней. С помощью данной услуги вы с комфортом проведёте свой отпуск и наберётесь массой положительных эмоций. Вы сможете посетить любые места которые вашей душе захочется, все достопримечательности Крым открыты пред вами.
+        p Беря машину на прокат с помощью CarTravel, вы сможете ощутить полную свободу действий, и почувствуете все удобства и плюсы данного способа отдыха.
+.grid-x.margin-bottom-20
+  .cell.large-2.medium-4.show-for-medium
+    .landscape(style="background-image:url(./i/la1.png)")
+    .landscape.landscape_high(style="background-image:url(./i/la2.png)")
+  .cell.large-2.show-for-large
+    .landscape.landscape_medium(style="background-image:url(./i/la3.png)")
+    .landscape.landscape_another(style="background-image:url(./i/la4.png)")
+  .cell.large-5.medium-8
+    .grid-x
+      .cell.small-6
+        .landscape.landscape_text.text-center
+          div
+            .landscape__title комфорт
+            div вместе с нами
+      .cell.small-6
+        .landscape(style="background-image:url(./i/la5.png)")
+      .cell.small-4
+        .landscape.landscape_tall(style="background-image:url(./i/la6.png)")
+      .cell.small-8
+        .landscape.landscape_tall(style="background-image:url(./i/la7.png)")
+      .cell.small-5.medium-3
+        .landscape.landscape_logo
+          img(src="./images/logo-new.png", alt="")
+      .cell.small-7.medium-6
+        .landscape.landscape_small(style="background-image:url(./i/la8.png)")
+      .cell.small-3.hide-for-small-only
+        .landscape.landscape_small(style="background-image:url(./i/la9.png)")
+  .cell.large-3.show-for-large
+    .landscape.landscape_another(style="background-image:url(./i/la10.png)")
+    .landscape.landscape_medium(style="background-image:url(./i/la11.png)")
+.grid-container.padding-top-8.margin-bottom-20
+  h2.separator-center.separator-center_black.margin-bottom-17 Отзывы
+  .grid-x.grid-padding-x
+    .cell.medium-6.large-5
+      .grid-x.grid-padding-x.rest
+        .cell.small-3.rest__img
+          img(src="./i/rest1.png", alt="")
+        .cell.small-9.rest__info
+          .text-uppercase.margin-bottom-1 Андрей Вертиль
+          .separator-left
+            .text-dark-gray Отдыхающий (г. Свердловск) 
+            .text-dark-gray май 2017
+        .cell.font-italic.text-dark-gray
+          p Заказал VW Polo, забрал в аэропорту,  машина 2013г, очень хорошее состояние, технически за неделю ни разу не подвела, проехали чуть больше 1000км. Ценник адекватный, всё оперативно, залог вернули полностью, рекомендую.  
+      .grid-x.grid-padding-x.rest
+        .cell.small-3.rest__img
+          img(src="./i/rest2.png", alt="")
+        .cell.small-9.rest__info
+          .text-uppercase.margin-bottom-1 Александр Михайловский
+          .separator-left
+            .text-dark-gray Постоянный клиент (г. Москва)
+            .text-dark-gray октябрь 2016
+        .cell.font-italic.text-dark-gray
+          p
+            | Рекомендую эту компанию по следующим причинам:
+        
+          ol
+            li Приветливые, вежливые сотрудники; 
+            li Оперативное обслуживание; 
+            li Качественный автопарк; 
+            li ЧЕСТНОСТЬ !!!
+          p
+            | Неоднократно обслуживался в CarTravel, как до 2014 г., так и после. В 2017 г. собираюсь опять в свой любимый Крым и авто буду брать у них.
+            br
+            | Спасибо собственникам и сотрудникам компании за их работу!
+    .cell.medium-6.large-offset-1.large-5
+      .grid-x.grid-padding-x.rest
+        .cell.small-3.rest__img
+          img(src="./i/rest3.png", alt="")
+        .cell.small-9.rest__info
+          .text-uppercase.margin-bottom-1 Сафонов Владимир
+          .separator-left
+            .text-dark-gray Генеральный директор 
+            .text-dark-gray ООО "Лайк Флэт" (июль 2017)
+        .cell.font-italic.text-dark-gray
+          p Первый раз были в Крыму и первый раз брали машину напрокат в "CarTravel". Оставили заявку на сайте, созвонились, попросили счет и договор для оплаты по безналу.  Все было сделано оперативно. По прилету внесли депозит наличными, машину получили в течение 5 минут. Белый Кио-Рио с автоматической коробкой, 2016 года выпуска, пробег около 21000 км. Машина чистая, с чистым салоном, с полным баком. Оплачивали на 8 суток, по факту получилось 11 суток. Согласовали продление по телефону, деньги отправили позже так же по безналу. Обратный билет взяли на ночной рейс с вылетом из Симферополя в 02:10ч. Нам разрешили вернуть машину в 00:30ч. Сотрудник специально приехал в аэропорт, чтобы принять авто. Все так же быстро за 5 минут.  Могу всем рекомендовать данный прокат. Сервис на высоте, машины новые, сотрудники компетентные, ориентированы на клиентов. Крым понравился, еще приедем и обязательно воспользуемся авто именно здесь.
+        
+    

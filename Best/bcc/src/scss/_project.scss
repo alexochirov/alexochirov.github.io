@@ -1,0 +1,51 @@
+.project {
+    width: 100%;
+    color: $white;
+    left: rem-calc(0) !important;
+
+    & > .row {
+        max-width: rem-calc(1000) !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__block {
+        margin-bottom: rem-calc(10);
+        padding-bottom: rem-calc(10);
+        border-bottom: rem-calc(1) solid $dark-gray;
+    }
+
+    &__title {
+        font-size: rem-calc(16);
+        font-weight: 700;
+        color: $white;
+        text-decoration: none;
+        &:visited {
+          color: $white;
+        }
+        &:hover {
+          text-decoration: underline;
+          color: $white;
+        }
+    }
+
+    &__img {
+        padding-top: rem-calc(25);
+        padding-bottom: rem-calc(25);
+
+        img {
+            width: rem-calc(28);
+        }
+    }
+
+    &__info {
+        padding-top: rem-calc(8);
+    }
+
+    &__link {
+        color: $white;
+        &:hover {
+          color: $white;
+        }
+    }
+}

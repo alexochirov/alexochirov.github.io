@@ -1,0 +1,15 @@
+.box {
+	position: relative;
+	&_white {
+		background-color: white;
+		color: #05376c;
+		padding-left: rem-calc(30);
+	}
+	&__dot:before {
+		content: "•";
+		position: absolute;
+		top: 0;
+		left: rem-calc(-10);
+		color: #fff;
+	}
+}

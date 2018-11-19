@@ -1,0 +1,16 @@
+doctype html
+html.no-js(lang='ru')
+  include components/service/_head
+  body
+    include components/shop/_header
+
+    include components/mixins/_mixin-check
+    include components/shop/_mixin-product-tile
+    include components/shop/_mixin-product-line
+    include components/shop/_add-to-favourites-auth-popup
+
+    block page
+      include components/common/_content     
+    
+    include components/shop/_footer
+    include components/service/_js

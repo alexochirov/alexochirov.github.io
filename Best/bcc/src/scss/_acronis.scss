@@ -1,0 +1,12 @@
+.acronis {
+  background-image: url(../images/acronis-back.jpg);
+  background-size: cover;
+  padding: rem-calc(80 30);
+  &__title {
+    padding-bottom: rem-calc(110);
+    text-align: center;
+    color: #05376c;
+    font-weight: bold;
+    line-height: 2;
+  }
+}

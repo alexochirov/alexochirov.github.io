@@ -1,0 +1,137 @@
+extends index
+block top
+  .world
+    .world__header
+      include components/common/_header
+    .platform(style="background-image:url(./i/kb.jpg);")
+      .row.columns.hide-for-small-only
+        .platform__title 
+          | База знаний
+          br
+          strong Bento Cloud
+block content
+  .cloud
+    .row.columns.text-center
+      .control 
+        h2.control__main Самое интересное от Bento Cloud
+      p.lead Мы представляем Вам полезную информацию об облачном бизнесе и примерах применения,  которая поможет принять правильное решение и сделать обоснованный выбор. 
+  .success
+    .row.columns
+      .control.text-center#stories(data-magellan-target="stories")
+        h2.control__main Истории успеха
+    .row.columns
+      p
+        img(src="./i/365.png", alt="")  
+      .success__head Примеры использования  
+    .row.medium-up-2
+      .columns
+        .success__block
+          a(href="#").success__link Новый Посад сокращает затраты на покупку оборудования благодаря внедрению Office&#160;365
+      .columns
+        .success__block
+          a(href="#").success__link Аптечные провизоры «Формулы здоровья» перешли на «облака» Microsoft Office&#160;365
+    .mb45      
+    .row.columns    
+      p
+        img(src="./i/azure.png", alt="")  
+      .success__head Примеры использования  
+    .row.medium-up-2
+      .columns
+        .success__block
+          a(href="#").success__link Компания FORTRENT переносит ИТ-инфраструктуру в облако Microsoft Azure с использованием Office&#160;365
+      .columns
+        .success__block
+          a(href="#").success__link В Финансовом университете используют облако Azure для внедрения новых образовательных технологий
+    .mb45      
+    .row.columns    
+      p
+        img(src="./i/suite.jpg", alt="")  
+      .success__head Примеры использования  
+    .row.medium-up-2
+      .columns
+        .success__block
+          a(href="#").success__link Решение Microsoft для управления мобильными устройствами, идентификацией и доступом на основе политик с одновременной защитой корпоративных данных и приложений
+    .mb45
+  .gradient.gradient_normal
+    .row.columns.text-center
+      .control
+        h2.control__main Новости
+    .row.medium-up-3(data-equalizer,data-equalize-by-row="true")
+      .columns.news(data-open="exampleModal1")
+        .news__img(data-equalizer-watch)
+          img(src="./i/news4.png", alt="")
+        .news__date 10&#160;мая | 2017
+        h4.news__title Подборка полезных материалов по Azure  
+        p.news__text У нас накопилось много бесплатных материалов по работе с облаком, поэтому мы решили поделиться с вами самыми последними из них. Под катом вы найдёте описание 6 курсов и 12 книг/гайдов по обучению работе с Azure....
+        
+        #exampleModal1.reveal(data-reveal='')
+          h2 Iframe
+          button.close-button(data-close='', aria-label='Close modal', type='button')
+            span(aria-hidden='true') ×
+      .columns.news(data-open="exampleModal1")
+        .news__img(data-equalizer-watch)
+          img(src="./i/news5.jpg", alt="")
+        .news__date 05&#160;мая | 2017
+        h4.news__title Интервью Исполнительного директора RRC Group, Михаила Косилова, телеканалу ПРО БИЗНЕС
+        p.news__text Как заработать миллионы на ИТ-дистрибуции, как управлять  "облаками" с помощью Bento Cloud...
+      .columns.news(data-open="exampleModal1")
+        .news__img(data-equalizer-watch)
+          img(src="./i/news6.png", alt="")
+        .news__date 04&#160;мая | 2017
+        h4.news__title Microsoft Windows 10 E3/E5 – новый сервис на платформе Bento Cloud
+        p.news__text Познакомьтесь с функциональными возможностями платформы Bento Cloud, которые помогут расширить Ваши коммерческие предложения для Заказчиков и увеличить продажи облачных сервисов....
+  .row.columns.text-center
+    .mb45
+    .control#info(data-magellan-target="info")
+      h2.control__main Информация о сервисах
+  .row.medium-up-2
+    .columns.service
+      p
+        img(src="./i/azure.svg", alt="")    
+      .service__block
+        p
+          a(href="#").service__link Все популярные материалы Azure
+        p
+          a(href="#").service__link Службы Microsoft Azure
+    .columns.service
+      p
+        img(src="./i/office.png", alt="")    
+      .service__block
+        p
+          a(href="#").service__link Листовка для заказчиков
+        p
+          a(href="#").service__link Руководство по развертыванию Office365
+        p
+          a(href="#").service__link Пример письма заказчику Office365 для Бизнеса (краткое)
+        p
+          a(href="#").service__link Облачные сервисы Microsoft
+        p
+          a(href="#").service__link Апгрейды сервисных планов
+    .columns.service
+      p
+        img(src="./i/ems.png", alt="")    
+      .service__block
+        p
+          a(href="#").service__link Ресурсы по Enterprise Mobility Suite
+    .columns.service
+      p
+        img(src="./i/project.svg", alt="")    
+      .service__block
+        p
+          a(href="#").service__link Документация TechNet по Project Server
+    .columns.service
+      p
+        img(src="./i/sharepoint.png", alt="")    
+      .service__block
+        p
+          a(href="#").service__link Информация о Microsoft SharePoint на портале TechNet
+    .columns.service
+      p
+        img(src="./i/skype.png", alt="")    
+      .service__block
+        p
+          a(href="#").service__link Инструкции по ключевым функциям Skype для бизнеса
+        p
+          a(href="#").service__link Skype для бизнеса в розничной торговле
+        p
+          a(href="#").service__link Skype для бизнеса — Webcast

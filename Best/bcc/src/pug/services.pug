@@ -1,0 +1,62 @@
+extends index
+block top
+  .world
+    .world__header
+      include components/common/_header
+    .platform(style="background-image:url(./i/slide5.jpg);")
+      .row.columns.hide-for-small-only
+        .platform__title 
+          | Решения
+          br
+          strong Bento Cloud
+block content
+  .row.columns.text-center
+    .mb70
+    .callout.primary
+      h2 Инфраструктура
+      .mb70
+      .row.medium-up-2
+        .columns
+          p
+            a(href="./proazure.html").gift ProAzure 
+        .columns
+          p
+            a(href="./azure.html").gift
+              img(src="./images/azure.svg", alt="")
+    .callout.water
+      h2 Сервисы
+      .mb70
+      .row.medium-up-2
+        .columns
+          a(href="./exchange-online.html").gift
+            img(src="./images/exchange.svg", alt="")
+        .columns
+          a(href="./visio.html").gift
+            img(src="./images/visio.svg", alt="")
+        .columns
+          a(href="./ms-one-drive.html").gift
+            img(src="./images/OneDrive_white.svg", alt="")
+        .columns
+          a(href="./ms-crm.html").gift
+            img(src="./images/dynamics_hor.svg", alt="")
+    .callout.whale
+      h2 Бизнес-приложения
+      .mb70
+      .row.medium-up-2
+        .columns
+          a(href="./ms-windows.html").gift Microsoft Windows 10
+        .columns
+          a(href="./ms-project.html").gift
+            img(src="./images/project.svg", alt="")
+      .row.columns
+        a(href="./o365.html").gift
+          img(src="./images/office_365.svg", alt="")
+    .callout.medium-blue
+      h2.text-white Коммуникации
+      .mb70
+      .row.columns
+        a(href="./skype.html").gift
+          img(src="./images/skype.svg", alt="")
+  .mb45          
+  include components/common/_vendors          
+      

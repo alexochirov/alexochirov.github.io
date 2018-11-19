@@ -1,0 +1,7 @@
+.gradient {
+background: linear-gradient(to bottom, #dfebf2, #f9f9f9);
+padding-top: rem-calc(46);
+&_normal {
+  background: #e1edf3;
+}
+}

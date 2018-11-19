@@ -1,0 +1,40 @@
+.feedback {
+  position: fixed;
+  width: rem-calc(80);
+  height: rem-calc(80);
+  padding: rem-calc(15);
+  right: rem-calc(0);
+  bottom: 40%;
+  cursor: pointer;
+  background: $blue url($imagesPath +"/comments-o.svg")no-repeat center;
+  background-size: 50% 50%;
+  transition: 0.3s;
+  line-height: 1.2;
+  z-index: 10;
+  border-radius: rem-calc(12 0 0 12);
+
+  &:hover {
+    width: rem-calc(120);
+    height: rem-calc(140);
+    box-shadow: 0 0 rem-calc(8) 0 #23c3ff;
+    background-position: center bottom;
+
+    .feedback__text {
+      opacity: 1;
+    }
+  }
+
+  &__text {
+    color: #82d9fa;
+    opacity: 0;
+    font-size: rem-calc(11);
+    transition: 0.2s;
+  }
+
+  &__head {
+    line-height: 1.3;
+    font-size: rem-calc(11);
+    color: $white;
+    margin-bottom: rem-calc(5);
+  }
+}

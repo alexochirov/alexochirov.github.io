@@ -1,0 +1,18 @@
+include ../mixins/_mixin-news-tile
+
+.content
+    .grid-x.grid-padding-x
+        .small-12.medium-8.cell
+            h2 Свежие статьи
+        .small-12.medium-4.cell.medium-text-right
+            a.button(href='#') Все материалы &nbsp;
+                i.fa.fa-long-arrow-right
+
+    .grid-x.grid-padding-x.small-up-1.medium-up-2.large-up-3(data-equalizer='articles', data-equalize-by-row='true')
+        +newsTile(false, 'articles')
+        +newsTile(false, 'articles')
+        +newsTile(false, 'articles')
+        +newsTile(false, 'articles')
+        +newsTile('Разработаем несколько интернет-магазинов по продаже сантехники', 'articles')
+            | Приняли на комплексное обслуживание компанию «СантехОпт». Проект будет развиваться по методологии «Быстрый старт».
+        +newsTile(false, 'articles')

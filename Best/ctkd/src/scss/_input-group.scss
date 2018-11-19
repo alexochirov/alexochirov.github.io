@@ -1,0 +1,13 @@
+.input-group {
+&-field {
+    font-weight: 700;
+}
+  &-button {
+    button {
+
+      padding-left: rem-calc(10);
+      padding-right: rem-calc(10);
+      font-size: rem-calc(20);
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.testimonials {
+  position: relative;
+  padding-top: rem-calc(170);
+  padding-bottom: rem-calc(110);
+  &:before {
+    content: '�';
+    font-size: rem-calc(240);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    color: $white;
+  }
+}

@@ -1,0 +1,17 @@
+.feature {
+  margin-bottom: rem-calc(45);
+  padding-top: rem-calc(14);
+  border-radius: rem-calc(15);
+
+  &:hover {
+    background: rgba(255,255,255,0.15);
+    box-shadow: 0 0 0 rem-calc(10) rgba(255,255,255,0.15);
+  }
+
+  &__img {
+    img {
+      width: rem-calc(30);
+    }
+  }
+
+}

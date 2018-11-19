@@ -1,0 +1,38 @@
+.product {
+  background: #042c56;
+  line-height: 1.4;
+  padding-top: rem-calc(45);
+  padding-bottom: rem-calc(25);
+
+  &__text {
+    font-size: rem-calc(18);
+    line-height: 1.4;
+    color: $white;
+  }
+
+  &__present {
+    font-size: rem-calc(14);
+    color: $white;
+    line-height: 1;
+    text-decoration: none;
+
+
+    img {
+      padding-top: rem-calc(5);
+      float: left;
+      width: rem-calc(28);
+      margin-right: rem-calc(10);
+    }
+  }
+
+  &__title {
+    color: $white;
+    font-size: rem-calc(30);
+  }
+    @include breakpoint(small only) { &__present {
+      img {
+        display: inline-block;
+        float: none;
+      }
+    } }
+}

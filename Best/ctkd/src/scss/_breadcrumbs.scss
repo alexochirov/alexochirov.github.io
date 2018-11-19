@@ -1,0 +1,10 @@
+.breadcrumbs {
+  a {
+    font-weight: 700;
+  }
+  li {    font-weight: 700;
+    &:before {
+      display:none;
+    }
+  }
+}

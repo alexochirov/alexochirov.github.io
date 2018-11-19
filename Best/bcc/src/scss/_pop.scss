@@ -1,0 +1,30 @@
+.pop-fade, .pop-fade-partnership{position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(40,37,40,0.25);display: none;
+  z-index: 10;
+}
+.pop-up, .pop-up-partnership{background: #fff;display: none;}
+.pop-up[data-pop="form-success"], .pop-up-partnership, .pop-up[data-pop="partnership-success"] {
+  width: 310px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 40px 30px;text-align: center;margin-left: -155px;-webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);font-size: 13px;line-height: 24px;
+  z-index: 15;
+}
+.pop-up-in{ color: #000; z-index: 10;}
+.pop-up .h{text-transform: uppercase;
+  font-size: 28px;
+  color: #282528;margin-bottom: 35px;line-height: 1.3;}
+.pop-up p{margin-bottom: 25px;}
+.pop-up p:last-child{margin-bottom:0px;}
+.pop-close{}

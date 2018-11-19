@@ -1,0 +1,22 @@
+header.header
+  .grid-container
+    .grid-x.grid-padding-x
+      .cell.large-3.medium-3.small-5
+        a(href="#").header__logo
+          img(src="./images/logo.svg", alt="")
+      .cell.small-4.text-right.show-for-small-only.small-order-3
+        div(data-responsive-toggle='responsive-menu', data-hide-for='medium')
+          button.menu-icon.dark.header__toggle(type='button', data-toggle='responsive-menu')
+
+      .cell.large-8.large-text-right.medium-8.text-center#responsive-menu.small-order-4.medium-order-3
+        ul.menu-top
+          each title,index in ['Главная','Каталог','Доп. услуги','информация','О нас']
+            if index==0
+              li.menu-top__item
+                a(href="#").menu-top__link.menu-top__link_active= title
+            else    
+              li.menu-top__item
+                a(href="#").menu-top__link= title
+      .cell.large-1.text-right.medium-1.small-order-2.medium-order-4.small-3
+        a(href="#").header__phone
+          img(src="./images/telephone.svg", alt="")

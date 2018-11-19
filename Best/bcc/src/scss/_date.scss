@@ -1,0 +1,37 @@
+.date {
+  letter-spacing: rem-calc(.3);
+  font-size: rem-calc(12);
+  position: relative;
+  color: $secondary;
+  padding-top: rem-calc(8);
+
+  a {
+    color: $secondary;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &_line {
+    &:before {
+      content: "";
+      position: absolute;
+      left: rem-calc(0);
+      top: rem-calc(0);
+      height: rem-calc(5);
+      width: rem-calc(101);
+      background: $water;
+    }
+  }
+  @include breakpoint(medium down) {
+    margin-bottom: rem-calc(10);
+  }
+    @include breakpoint(small only) {
+    &_line {
+      &:before {
+        left:calc(50% - 50px);
+      }
+    } }
+}

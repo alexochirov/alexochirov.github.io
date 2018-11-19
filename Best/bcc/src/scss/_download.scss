@@ -1,0 +1,40 @@
+.download {
+  margin-bottom: rem-calc(52);
+  @include clearfix;
+
+
+  &__info {
+    background: $fb;
+    color: $white;
+    display: inline-block;
+    border-radius: rem-calc(0 10 10 0);
+    padding: rem-calc(10 17);
+    width: rem-calc(72);
+    margin-top: rem-calc(30);
+    float: left;
+    &_azure {
+      background: $blue;
+    }
+  }
+
+  &__pdf {
+    width: calc(100% - 72px);
+    float: left;
+    max-width: rem-calc(117);
+  }
+
+  &__text {
+    margin-bottom: rem-calc(5);
+    padding-bottom: rem-calc(5);
+  }
+
+  &__line {
+    font-size: rem-calc(19);
+    border-bottom: rem-calc(1) solid $white;
+    font-weight: 700;
+  }
+
+  &__size {
+    font-size: rem-calc(12);
+  }
+}

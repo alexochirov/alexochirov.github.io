@@ -1,0 +1,19 @@
+.magnifier {
+  font-size: rem-calc(18);
+  font-weight: 700;
+  background: $white;
+  border: rem-calc(3) solid $blue;
+  color: $blue;
+  text-transform: none;
+  padding-top: rem-calc(10);
+  padding-bottom: rem-calc(10);
+
+  &:visited {
+    color: $blue;
+  }
+
+  &:focus,
+  &:hover {
+    color: $white;
+  }
+}

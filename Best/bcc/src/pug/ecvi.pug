@@ -1,0 +1,82 @@
+extends index
+block top
+  .world
+    .world__header
+      include components/common/_header
+    .platform(style="background-image:url(./i/3-layers.png);")
+      .row.columns.hide-for-small-only
+        .platform__logo
+          img(src="./images/ecvi/ecvi.svg", alt="")
+        .platform__text
+          strong.text-water Hotel Manager Assistance Ecvi –
+          br
+          | Облачная система управления
+          br
+          | для отелей и хостелов с прямой
+          br
+          | стыковкой с
+          =" "
+          a(href="#").platform__link BOOKING.COM
+block content
+  .cloud.cloud_new
+    .row.columns.text-center
+      .control 
+        h2.control__main Hotel Manager Assistance Ecvi
+      p.lead.lead_medium HMA Ecvi – это система управления, которая служит для автоматизации процессов обслуживания гостей и решения ряда задач управленческого учета на предприятиях индустрии гостеприимства, к которым относятся гостиницы, санатории, пансионаты, базы отдыха, мотели, хостелы и др.
+      p
+        img(src="./images/shape-1.svg", alt="")
+    .row
+      .medium-10.columns
+        .mb70
+        ul.plant
+          li.plant__item Менеджмент отеля
+          li.plant__item Отдел бронирования
+          li.plant__item Отдел продаж
+          li.plant__item Служба приема и размещения
+          li.plant__item Служба горничных
+      .medium-11.columns.text-center
+        h3.text-uppercase.text-strong Презентация   
+        .mac
+          .responsive-embed.widescreen
+            iframe( src='https://www.youtube.com/embed/WUgvvPRH7Oc',allowfullscreen='')
+  .mb45
+  .row.columns.text-center
+    h2
+      | Пакеты
+      =" "
+      strong ECVI
+      br
+      | ждут Вашего выбора:
+  .mb15    
+  .row.medium-up-3.text-center
+    .columns
+      .report
+        .report__img
+          img(src="./images/ecvi/paper-plane.svg", alt="")             
+        .report__title
+          | Пакет Ecvi
+          =" "
+          span.text-medium-gray LIGHT  
+        .report__text Базовый набор пакета Ecvi LIGHT, включает в себя основные модули: Бронирование, Горничные, Журнал, Заявки, Клиенты, Конфигуратор, Отчеты, Сообщения, Статистика, Счета
+        a(href="#").button Узнать больше  
+    .columns
+      .report
+        .report__img
+          img(src="./images/ecvi/lamp.svg", alt="")             
+        .report__title
+          | Пакет Ecvi
+          =" "
+          span.text-primary OPTIMUM
+        .report__text Расширенные возможности пакета Ecvi OPTIMUM включают в себя функции пакета Ecvi LIGHT и дополнительные модули: Выгрузка в УФМС, Фискальный регистратор, Бронирование с сайта, Интеграция с каналом продаж
+        a(href="#").button Узнать больше  
+    .columns
+      .report
+        .report__img
+          img(src="./images/ecvi/diamond.svg", alt="")             
+        .report__title
+          | Пакет Ecvi
+          =" "
+          span.text-insta PREMIUM
+        .report__text Самый полный по содержанию и функционалу пакет Ecvi  PREMIUM содержит опции пакета Ecvi OPTIMUM и дополнительный модуль Интеграция с Рестораном
+        a(href="#").button Узнать больше  
+  .mb30    

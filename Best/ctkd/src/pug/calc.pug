@@ -1,0 +1,107 @@
+extends shop-index
+block page
+  .offer.offer_small(style="background-image:url(./i/offer.png)")
+    .grid-container
+      h1
+        | Калькулятор
+        span.catchword стоимости аренды автомобиля
+      a(href="#").button Перейти на быстрый заказ  
+  include components/common/_breadcrumbs
+  .content
+    .grid-container
+      .grid-x.grid-padding-x
+        .cell.large-5.medium-6
+          h5.text-primary Информация об автомобиле    
+          label
+            | Марка автомобиля
+            select.chosen
+              option Audi Q5 2.0 TFSI (AT)
+              option Volvo
+          label
+            | Автомобиль Вы забираете в городе
+            select.chosen
+              option Алушта
+              option Ялта
+          label
+            | Автомобиль Вы сдаете в городе
+            select.chosen
+              option Керчь
+              option Симферополь
+          .grid-x.grid-padding-x
+            .cell.large-6
+              label
+                | Дата аренды авто
+                input(type="text",placeholder="31.08.2017").calendar
+              label
+                | Время аренды авто
+                input(type="text",placeholder="10:00")
+            
+            .cell.large-6
+              label
+                | Дата возврата авто
+                input(type="text",placeholder="31.08.2017").calendar
+              label
+                | Время возврата авто
+                input(type="text",placeholder="12:00")
+          label
+            | Дополнительные услуги
+          .grid-x.grid-padding-x  
+            .cell.large-6
+          
+              div  
+                +check('Доп водитель')
+                input(type="text",placeholder="1").num
+              div  
+                +check('GPS навигация')
+            .cell.large-6
+              div  
+                +check('Детское кресло')
+                input(type="text",placeholder="1").num
+        .cell.large-5.medium-6.large-offset-1
+          h5.text-primary Ваши данные
+          label
+            | Ваше ФИО
+            input(type="text",placeholder="Иван иванович иванов")
+          .grid-x.grid-padding-x
+            .cell.small-6   
+              label
+                | Телефон
+                input(type="tel",placeholder="+7 (902) 11 - 22 - 333") 
+            .cell.small-6   
+              label
+                | Номер рейса
+                input(type="text",placeholder="11212") 
+          label
+            | E-mail
+            input(type="email",placeholder="ivanivanov@yandex.ru")
+          .grid-x.grid-padding-x
+            .cell.large-6   
+              label
+                | Возраст водителя
+                input(type="text",placeholder="34") 
+            .cell.large-6   
+              label
+                | Стаж водителя
+                input(type="text",placeholder="18") 
+          label
+            | Примечание
+            textarea
+          hr.hr
+          .grid-x.grid-padding-x
+            .cell.large-5  
+              .leasing
+                .leasing__text Сумма
+                .leasing__val 
+                  | 10500
+                  |
+                  span.text-size-default Р.
+              .leasing
+                .leasing__text Залог
+                .leasing__val 
+                  | 40000
+                  |
+                  span.text-size-default Р.
+            .cell.large-7.padding-top-2
+              a(href="#").button.expanded Отправить заявку    
+          
+        

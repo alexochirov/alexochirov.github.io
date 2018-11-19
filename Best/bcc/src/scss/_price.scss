@@ -1,0 +1,21 @@
+.price {
+  font-size: rem-calc(18);
+  font-weight: 700;
+  border: rem-calc(3) solid $white;
+  color: $white;
+  background: none;
+  text-transform: none;
+  padding-top: rem-calc(10);
+  padding-bottom: rem-calc(10);
+
+  &:visited {
+    color: $white;
+  }
+
+  &:focus,
+  &:hover {
+    color: $blue;
+    background: $white;
+    
+  }
+}

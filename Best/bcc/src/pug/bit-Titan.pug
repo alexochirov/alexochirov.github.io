@@ -1,0 +1,122 @@
+extends index
+block top
+  .world
+    .world__header
+      include components/common/_header-white
+    .platform(style="background-image:url(./i/bit.png);")
+      .row.columns.hide-for-small-only
+        .platform__title.platform__title_big 
+          .platform__titan
+            img(src="./i/titan.svg", alt="")
+          .text-center.platform__tech
+            span.text-light Технология незаметна. Компания эффективна.
+            br
+            | Сотрудники довольны
+          .text-center
+            a(href="#").button.platform__button Узнать больше
+block content
+  .titan
+    .row.columns.text-center
+      .control
+        h2.control__main.control__main_normal BitTitan
+      div
+        strong BitTitan
+        =" "
+        | - мировой лидер в области автоматизации управляемых услуг, помогая поставщикам сервисов становиться более технологичными и эффективными на быстро меняющемся рынке облачных технологий. Платформа
+        =" " 
+        strong MSPComplete®
+        |  от
+        =" "
+        strong BitTitan
+        |  позволяет организациям реализовать свой максимальный потенциал благодаря автоматизации бизнес-процессов  
+  .padding-top-60
+    .row
+      .large-23.columns.large-centered(data-equalizer="bar",data-equalize-by-row="true")
+        .row.large-up-3.medium-up-2.text-center(data-equalizer="foo",data-equalize-by-row="true")
+          .columns.key
+            .key__container(data-equalizer-watch="foo")
+              .key__subscribe Подписка на
+              .key__img
+                img(src="./i/titan-complete.svg", alt="")
+              .key__title
+                | End User Subscription - 
+                br
+                span.text-medium-gray срок
+                =" "
+                span.text-echo 1 год
+            .key__text.text-left(data-equalizer-watch="bar")
+              strong BitTitan MSPComplete
+              br
+              | стандартизирует оказание услуг, повышает рентабельность и оптимизацию ресурсов, защищает IP, охватывая Ваши уникальные бизнес- процессы. Платформа включает технологии MigrationWiz и библиотеки управляемых услуг "под ключ".
+            div
+              a(href="#").button.key__button Узнать больше  
+          .columns.key
+            .key__container(data-equalizer-watch="foo")
+              .key__img
+                img(src="./i/titan-black.svg", alt="")
+              .key__title
+                | Virtual Machine
+                br
+                | Migration  
+            .key__text.text-left(data-equalizer-watch="bar")
+              strong BitTitan VM Migration
+              br
+              | переносит виртуальные машины из VMware в Azure, автоматизируя задачи от развёртывания до переключения с платформой MSPComplete
+            div
+              a(href="#").button.key__button Узнать больше  
+          .columns.key
+            .key__container(data-equalizer-watch="foo")
+              .key__img
+                img(src="./i/titan-black.svg", alt="")
+              .key__title 
+                | MigrationWiz -
+                br
+                | Mailbox 
+            .key__text.text-left(data-equalizer-watch="bar")
+              strong BitTitan MigrationWiz
+              br
+              | быстро и легко переносит данные Ваших почтовых ящиков, с нулевым временем простоя пользователей. MigrationWiz масштабируется для проектов любого размера, от небольших стартапов до крупных предприятий.
+            div
+              a(href="#").button.key__button Узнать больше  
+          .columns.key
+            .key__container(data-equalizer-watch="foo")
+              .key__img
+                img(src="./i/titan-black.svg", alt="")
+              .key__title 
+                | UserActivation for
+                br
+                | Self-Service
+            .key__text.text-left(data-equalizer-watch="bar")
+              strong UserActivation
+              =" "
+              | - это полная сквозная миграции для Microsoft Office 365. В результате ваши конечные пользователи будут работать в разы быстрее. Вам не нужно быть экспертом по миграции, чтобы её осуществить. 
+            div
+              a(href="#").button.key__button Узнать больше  
+          .columns.key
+            .key__container(data-equalizer-watch="foo")
+              .key__img
+                img(src="./i/titan-black.svg", alt="")
+              .key__title
+                | Health Check for
+                br
+                | Azure
+            .key__text.text-left(data-equalizer-watch="bar")
+              strong Azure HealthCheck
+              =" "
+              | позволяет партнерам продавать Microsoft Azure, сканируя локальные виртуальные машины и определяя рабочие нагрузки так, чтобы Заказчик смог быстро и легко перейти в среду Microsoft Azure.
+            div
+              a(href="#").button.key__button Узнать больше  
+          .columns.key
+            .key__container(data-equalizer-watch="foo")
+              .key__img
+                img(src="./i/titan-black.svg", alt="")
+              .key__title
+                | MigrationWiz -
+                br
+                | PublicFolder
+            .key__text.text-left(data-equalizer-watch="bar")
+              strong BitTitan MigrationWiz PublicFolder
+              br
+              | быстро и легко переносит данные Ваших общедоступных папок, с нулевым временем простоя пользователей.
+            div
+              a(href="#").button.key__button Узнать больше  

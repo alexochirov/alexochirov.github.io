@@ -1,0 +1,202 @@
+extends index
+block top
+  .world
+    .world__header
+      include components/common/_header
+    .bento
+
+      a.bento__slide(href="#",style="background-image:url(./i/slide3.jpg);") 
+        button.hide-for-small-only.button.bento__azure Узнать больше 
+
+block content
+  .product
+    .row
+      .large-6.columns.medium-8.text-center.medium-text-left
+        .mb30
+        p
+          img(src="./images/icons/azure.svg", alt="")
+        p
+          a(href="#").product__present
+            img(src="./images/icons/pdf.svg", alt="")    
+            | Скачать презентацию в PDF
+
+      .large-12.medium-16.end.columns
+        .product__title ProAzure -
+        p.product__text Это эксклюзивное предложение от Bento Cloud и Microsoft, предоставляющее универсальную возможность для партнеров компании RRC выбрать предварительно сформированный пакет наиболее популярных и пользующихся спросом решений Microsoft Azure для быстрого развертывания и коммерческого использования.
+        a(href="./partnership.html").button.price подробнее о продукте и ценах
+  .cloud.cloud_dark
+    .row.columns.text-center
+      .control 
+        h2.control__main Сила ProAzure в простоте
+      .mb30  
+      p.lead Каждый пакет состоит из 3-х вариантов предварительно сформированных решений, предназначенных для разного уровня использования, учитывающих как стандартные, так и индивидуальные настройки Заказчика 
+    .row.medium-up-3
+      .columns
+        .plane
+          .row
+            .small-8.columns  
+              p
+                img(src="./images/icons/plane2.svg", alt="")
+            .small-16.columns.plane__title
+              div ProAzure
+              strong Standart
+          .plane__text Данный пакет предлагает только необходимые ресурсы и сервисные услуги, без больших начальных финансовых инвестиций, которые позволят создать надежную производственную среду.
+      .columns
+        .plane
+          .row
+            .small-8.columns  
+              p
+                img(src="./images/icons/plane.svg", alt="")
+            .small-16.columns.plane__title
+              div ProAzure
+              strong Premium
+          .plane__text Пакет предлагает повышенную производительность и расширенные начальные настройки Microsoft Azure. Предназначен для опытных пользователей и идеально подходит для решения широкого круга задач.
+      .columns
+        .plane
+          .row
+            .small-8.columns  
+              p
+                img(src="./images/icons/rocket.svg", alt="")
+            .small-16.columns.plane__title
+              div ProAzure
+              strong Pro
+          .plane__text Пакет предлагает уникальную возможность по реализации и учету индивидуальных требований и конфигураций заказчика. Способствует обеспечению коммерческой выгоды, а также активному и полному сотрудничеству между Партнером и Заказчиком.
+  .mb30
+  .row
+    .columns
+      p При выборе и заказе любого пакета Вы получаете от нас полное сопровождение по настройке и реализации Вашего проекта, которое включает пошаговые инструкции, консультации и видео уроки.
+    .medium-12.columns
+      h3.text-uppercase
+        | Пакеты 
+        strong PROAZURE
+        br
+        | ждут Вашего выбора
+  
+    .medium-12.columns  
+      .rocket
+        .row.small-up-2.text-center 
+          .columns Доступны для пакетов:
+          .columns
+            img(src="./images/icons/planes-3.svg", alt="")
+  .mb45            
+  div(data-equalizer="bar",data-equalize-by-row="true")
+    .row.medium-up-2.large-up-3(data-equalizer="foo",data-equalize-by-row="true")
+      .columns
+        .package
+          .row.collapse
+            .package__img.small-6.columns  
+              p
+                img(src="./images/icons/db1.svg", alt="")
+            .small-18.columns
+              div(data-equalizer-watch="foo")  
+                .package__title ProAzure
+                .package__desc Аварийное восстановление данных
+              .text-right
+                .package__sum от 1000 руб / сервер / месяц
+          .package__name(data-equalizer-watch="bar")  Простое и надежное автоматическое предотвращение потери данных
+          .package__text Включает в себя: точные копии синхронизированных удаленных сервисов, автоматическое восстановление данных, восстановление данных после тестовых испытаний, услуги мониторинга....    
+          a(href="./partnership.html").button.package__button Подробнее
+      .columns
+        .package
+          .row.collapse
+            .package__img.small-6.columns  
+              p
+                img(src="./images/icons/db2.svg", alt="")
+            .small-18.columns
+              div(data-equalizer-watch="foo")  
+                .package__title ProAzure
+                .package__desc Базы данных SQL
+              .text-right
+                .package__sum от 315 руб / месяц
+          .package__name(data-equalizer-watch="bar")  Масштабируемая и гибкая облачная база данных SQL
+          .package__text Выполняет обслуживание и управление Базой Данных и отвечает за целостность и сохранность данных, а также обеспечивает операции ввода-вывода при доступе клиента к информации. Эффективная возможность по мере использования.... 
+          a(href="./partnership.html").button.package__button Подробнее
+      .columns
+        .package
+          .row.collapse
+            .package__img.small-6.columns  
+              p
+                img(src="./images/icons/db3.svg", alt="")
+            .small-18.columns
+              div(data-equalizer-watch="foo")  
+                .package__title ProAzure
+                .package__desc Backup (Сохранение данных)
+              .text-right
+                .package__sum от 400 руб/ 50GB / месяц
+          .package__name(data-equalizer-watch="bar") Безопасное резервное копирование, интеграция и настройка
+          .package__text Обеспечивает единое и автоматизированное решение для защиты данных. Обеспечивает шифрование данных при хранении и транспортировке. Позволяет автоматизировать восстановление и отчетность....
+          a(href="./partnership.html").button.package__button Подробнее
+      .columns
+        .package
+          .row.collapse
+            .package__img.small-6.columns  
+              p
+                img(src="./images/icons/db4.svg", alt="")
+            .small-18.columns
+              div(data-equalizer-watch="foo")  
+                .package__title ProAzure
+                .package__desc File server
+              .text-right
+                .package__sum от 80 руб/ 50GB / месяц
+          .package__name(data-equalizer-watch="bar") Хранилище данных с доступом из любой точки мира
+          .package__text Windows файловый сервер, с интеграцией в локальную инфраструктуру, с доступом по сети и увеличением объема памяти по мере необходимости....  
+          a(href="./partnership.html").button.package__button Подробнее
+      .columns
+        .package
+          .row.collapse
+            .package__img.small-6.columns  
+              p
+                img(src="./images/icons/db5.svg", alt="")
+            .small-18.columns
+              div(data-equalizer-watch="foo")  
+                .package__title ProAzure
+                .package__desc Active Directory
+              .text-right
+                .package__sum от 1650 руб / месяц *
+          .package__name(data-equalizer-watch="bar") Управление пользователями и возможностью доступа к ресурсам
+          .package__text 
+            | Решение для аутентификации локальных пользователей, управления мобильными устройствами с возможностью полной интеграции облачной и локальной среды. 
+            br
+            | * C использованием доменных служб....
+          a(href="./partnership.html").button.package__button Подробнее
+      .columns
+        .package
+          .row.collapse
+            .package__img.small-6.columns  
+              p
+                img(src="./images/icons/db6.svg", alt="")
+            .small-18.columns
+              div(data-equalizer-watch="foo")  
+                .package__title ProAzure
+                .package__desc WEB SERVER
+              .text-right
+                .package__sum От 917 руб / месяц
+          .package__name(data-equalizer-watch="bar") Набор веб-приложений, полностью готовых к использованию
+          .package__text Готовые для эксплуатации: операционная система (Windows), веб сервер (Apache или IIS), база данных (SQL Server Developer) и разработка интерфейсов (PHP, Pyton и др.)...
+          a(href="./partnership.html").button.package__button Подробнее
+  .auth
+    .row.columns.text-center
+      .auth__title Хотите получить подробное описание каждого решения и узнать цену каждого пакета?
+      .auth__reg Зарегистрируйтесь и узнайте больше!
+      a(href="./partnership.html").button.price зарегистрироваться сейчас    
+  .mb70    
+  .row.large-up-4.medium-up-4.text-center.medium-text-left
+    .columns.brend
+      img(src="./images/icons/microsoft.svg", alt="")        
+    .columns.brend
+      img(src="./images/logo.svg", alt="")        
+    .columns.brend
+      img(src="./images/icons/rrc.svg", alt="")        
+    .columns.text-center.medium-text-right.brend
+      .brend__block
+        a(href='mailto:bentocloud@rrc.ru') bentocloud@rrc.ru
+      .brend__block
+        a(href='http://www.bentocloud.ru/', target='_blank') www.bentocloud.ru
+      .brend__block
+        a(href='http://www.rrc.ru/', target='_blank') www.rrc.ru
+  .mb45      
+  .row.columns
+    p * Цены на предлагаемые решения могут варьироваться и изменяться без предварительного уведомления. Акция может быть прекращена в любой момент. В соответствии с условиями использования сервиса Microsoft Azure, предусмотренными производителем, компания RRC и BentoCloud не несет ответственности за потерю данных, косвенный ущерб или упущенную выгоду при использовании услуг, предлагаемых при продвижении программы «ProAzure». Ознакомьтесь с условиями в момент заказа каждого сервиса.
+  .mb30  
+			      
+           

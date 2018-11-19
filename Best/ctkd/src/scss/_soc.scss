@@ -1,0 +1,8 @@
+.soc {
+  margin-bottom: rem-calc(17);
+  font-size: rem-calc(21);
+  display: inline-block;
+  margin-right: rem-calc(34);
+    @include breakpoint(large down) {
+    margin-right: rem-calc(14); }
+}

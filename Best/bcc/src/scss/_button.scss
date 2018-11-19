@@ -1,0 +1,35 @@
+.button {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+
+    &:visited {
+        color: $white;
+    }
+
+    &:active {
+        background: $dark-blue;
+    }
+
+    &.hollow {
+        &.large {
+            padding: rem-calc(21) rem-calc(72);
+            border-radius: rem-calc(33);
+            border-width: rem-calc(3);
+
+            &:hover {
+                color: $blue;
+                border-color: $blue;
+            }
+        }
+    }
+    &.large {
+      text-transform: none;
+      font-weight: 400;border-radius: rem-calc(10);
+      padding-top: rem-calc(24);
+      padding-bottom: rem-calc(24);
+    }
+  &_width {
+    width: 100%;
+  }
+}

@@ -1,0 +1,67 @@
+.landscape {
+  background-size: cover;
+  background-position: center top;
+  height: rem-calc(182);
+  color: $white;
+  background-color: $primary-color;
+  font-size: rem-calc(26);
+  font-weight: 800;
+  line-height: 1;
+  text-transform: uppercase;
+
+  &_small {
+    height: rem-calc(163);
+  }
+
+  &_logo {
+    height: rem-calc(163);
+    background: $warning-color;
+    display: flex;
+    align-items: center;
+    padding-left: rem-calc(17);
+    padding-right: rem-calc(17);
+    justify-content: center;
+  }
+
+  &_another {
+    height: rem-calc(243);
+  }
+
+  &_tall {
+    height: rem-calc(282);
+  }
+
+  &_medium {
+    height: rem-calc(384);
+  }
+
+  &_high {
+    height: rem-calc(445);
+  }
+
+  &_text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  &__vertical {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__title {
+    line-height: 1;
+    font-size: rem-calc(42);
+
+  }
+  @include breakpoint(large down) {
+    font-size: rem-calc(16);
+
+    &__title {
+      font-size: rem-calc(25);
+    }
+  }
+}

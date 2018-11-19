@@ -1,0 +1,21 @@
+.background-primary.padding-vertical-6
+    .grid-container: .grid-x.grid-padding-x
+        .cell.auto.text-center.large-text-left
+            a(href='#' title='')
+                img(src='./i/image.svg', style='width: 400px; height: 70px', alt='logo')
+        .small-2.cell.hide-for-medium.align-self-middle.text-center
+            div(data-responsive-toggle='menu', data-hide-for='medium')
+                .text-white(data-toggle)
+                    i.fa.fa-bars.fa-2x
+        .small-12.large-9.cell.align-self-middle#menu
+            .margin-bottom-6.hide-for-large
+            ul.menu-base
+                li.menu-base__item
+                    a.menu-base__link(href='#') Сайт
+                    ul.menu-base
+                        each title in ['Создание сайтов', 'Развитие сайтов', 'Техническая поддержка сайтов', 'Cetera CMS — управление сайтом', 'Fastsite — бесплатный конструктор сайтов', 'Портфолио', 'Исполнение 152-ФЗ «О персональных данных»', 'Посмотрите прототип', 'Вопросы и ответы']
+                            li.menu-base__item
+                                a.menu-base__link(href='#')= title
+                each title in ['Магазин', 'СМИ', 'Реклама', 'Мобильные', 'Обучение', 'Конверсия', 'Видеонаблюдение']
+                    li.menu-base__item
+                        a.menu-base__link(href='#')= title

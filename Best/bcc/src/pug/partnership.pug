@@ -1,0 +1,76 @@
+extends index
+block top
+  .world
+    .world__header
+      include components/common/_header
+    .platform(style="background-image:url(./i/partnership.jpg);")
+      .row.columns.hide-for-small-only
+        .platform__title 
+          | Преимущества
+          br
+          | от совместной
+          br
+          | работы
+          br
+          | c
+          strong  Bento Cloud
+block content
+  .cloud.cloud_mix
+    .row
+      .medium-12.large-10.columns
+        .benefit
+          .row
+            .small-4.columns.benefit__img
+              img(src="./images/funnel.svg", alt="")
+            .small-20.columns.benefit__text Полное и самостоятельное управление всем циклом продаж
+        .benefit
+          .row
+            .small-4.columns.benefit__img
+              img(src="./images/goals.svg", alt="")
+            .small-20.columns.benefit__text Самостоятельная настройка тарифных планов и цен
+        .benefit
+          .row
+            .small-4.columns.benefit__img
+              img(src="./images/browser.svg", alt="")
+            .small-20.columns.benefit__text Готовый он-лайн магазин с Вашим логотипом
+        .benefit
+          .row
+            .small-4.columns.benefit__img
+              img(src="./images/parirus.svg", alt="")
+            .small-20.columns.benefit__text Самостоятельное формирование документооборота в соответствии с Российским законодательством
+        .benefit
+          .row
+            .small-4.columns.benefit__img
+              img(src="./images/code.svg", alt="")
+            .small-20.columns.benefit__text Возможность интеграции платформы с 1С
+        .benefit
+          .row
+            .small-4.columns.benefit__img
+              img(src="./images/documents.svg", alt="")
+            .small-20.columns.benefit__text Полный пакет юридических документов
+        .benefit
+          .row
+            .small-4.columns.benefit__img
+              img(src="./images/knowledge.svg", alt="")
+            .small-20.columns.benefit__text Техническая поддержка и обучение
+        .benefit
+          .row
+            .small-4.columns.benefit__img
+              img(src="./images/megaphone.svg", alt="")
+            .small-20.columns.benefit__text Техническая поддержка и обучение
+      .medium-12.columns
+        form(action="#").reg
+          .reg__error
+            div Введите название компании
+            div Введите название сайта
+            div Введите номер телефона
+            div Введите корректный адрес e-mail
+          input(type="text",placeholder="Название компании").reg__input
+          input(type="text",placeholder="Сайт").reg__input
+          input(type="tel",placeholder="Телефон").reg__input
+          input(type="email",placeholder="Корпоративный e-mail").reg__input
+          input(type="text",placeholder="ФИО контактного лица").reg__input
+          input(type="text",placeholder="Должность").reg__input
+          input(type="text",placeholder="Город").reg__input
+          .mb70
+          button(type="submit").reg__submit Зарегистрироваться

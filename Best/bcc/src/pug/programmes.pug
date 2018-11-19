@@ -1,0 +1,45 @@
+extends index
+block top
+  .world
+    .world__header
+      include components/common/_header
+    .platform(style="background-image:url(./i/bg_abstract.jpg);")
+      .row.columns.hide-for-small-only
+        .platform__title 
+          | Программы для
+          br
+          | партнеров
+          br
+          strong Bento Cloud
+block content
+  .cloud.cloud_no
+    .mb30
+    .row.columns
+        p.lead Приглашая к сотрудничеству в качестве Партнера, мы вместе с Вами сможем найти приемлемый и удобный вариант совместного взаимодействия, который соответствует бизнес модели Вашей компании на текущий момент. А эко-система BentoCloud сможет обеспечить положительный результат и вывести Ваш бизнес на новый уровень.
+    .mb30 
+  .additional
+    .row.medium-up-3.text-center
+      .columns
+        .training
+          .training__img
+            p
+              img(src="./images/user.svg", alt="")
+          .training__title Cloud Sales Beginner (CSB)
+          p.training__text Программа для тех, кто только начинает работать с облачными приложениями и сервисами.
+      .columns
+        .training
+          .training__img
+            p
+              img(src="./images/icn-gear.svg", alt="")
+          .training__title Cloud Service Provider (CSP)
+          p.training__text Программа для тех, кто видит потенциал в развитии Облачных технологий, и понимает, что переход в облака неизбежен.
+      .columns
+        .training
+          .training__img
+            p
+              img(src="./images/earth.svg", alt="")
+          .training__title Cloud Sales Agent (CSA)
+          p.training__text Программа для реселеров и торговых агентов BentoCloud.
+    .mb70
+    .row.columns.text-center
+        a(href="#").button.large Узнать больше

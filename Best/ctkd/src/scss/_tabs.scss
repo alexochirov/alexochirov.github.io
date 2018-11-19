@@ -1,0 +1,30 @@
+.tabs {
+  &-content {
+    margin-bottom: rem-calc(30);
+  }
+
+  &-title {
+    text-align: center;
+
+    &:before {
+      display: none;
+    }
+
+    &_three {
+      width: 33.3%;
+    }
+
+    & > a {
+      outline: none;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+  }
+  @include breakpoint(small only) {
+    &-title {
+      &_three {
+        width: unset;
+      }
+    }
+  }
+}

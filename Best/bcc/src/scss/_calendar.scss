@@ -1,0 +1,42 @@
+.calendar {
+    padding-top: rem-calc(7);
+
+    &__title {
+        font-size: rem-calc(16);
+        margin-bottom: rem-calc(14);
+        font-weight: 700;
+        background: url($imagesPath +"/icons/calendar.svg")no-repeat rem-calc(216) rem-calc(5);
+    }
+
+
+
+    &__legend {
+        margin-bottom: rem-calc(20);
+    }
+
+    &__square {
+        background: $dark-gray;
+        width: rem-calc(18);
+        height: rem-calc(18);
+        position: relative;
+        top: rem-calc(4);
+        margin-right: rem-calc(7);
+        display: inline-block;
+
+        &_simple {
+            background: $water;
+        }
+
+        &_important {
+            background:#d0127d;
+        }
+    }
+      @include breakpoint(small only) {
+        &__title {
+          background: none;
+        }
+      &__legend {
+        padding-left: rem-calc(30);
+        padding-right: rem-calc(30);
+      } }
+}

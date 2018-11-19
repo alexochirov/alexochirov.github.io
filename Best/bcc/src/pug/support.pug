@@ -1,0 +1,47 @@
+extends index
+block top
+  .world
+    .world__header
+      include components/common/_header
+    .platform(style="background-image:url(./i/support.jpg);")
+      .row.columns.hide-for-small-only
+        .platform__title 
+          | Обучение партнеров
+          br
+          | от
+          strong  Bento Cloud
+block content
+  .cloud.cloud_no
+    .row.columns
+      .mb30
+      p.lead Миссией проекта является: обеспечение партнеров эффективным инструментом по полнофункциональному управлению и контролю доступа к облачным ресурсам и сервисам ведущих мировых и отечественных производителей. Мы считаем, что для успешного старта очень важно качественное обучение не только по платформе, но и по методике продаж облачных сервисов. Для этого у нас разработаны курсы обучения.
+  .additional
+    .row.medium-up-3.text-center
+      .columns
+        .training
+          .training__img
+            p
+              img(src="./images/knowledge.svg", alt="")
+          .training__title Тренинги
+          p.training__text Тренинги проводятся по отдельным сервисным продуктам      
+      .columns
+        .training
+          .training__img
+            p
+              img(src="./images/fluid.svg", alt="")
+          .training__title Гибкий подход к обучению
+          p.training__text Мы предлагаем гибкий подход к обучению, подразумевающий смешанную модель, которая сочетает в себе обучение под руководством нашего тренера, вебинары для региональных партнеров и тренинги на основе бизнес-игры
+      .columns
+        .training
+          .training__img
+            p
+              img(src="./images/idea.svg", alt="")
+          .training__title База знаний
+          p.training__text 
+            | В качестве самостоятельного обучения вы получаете доступ к 
+            a(href='/kb/') Базе знаний
+            | , в которой мы размещаем всю полезную информацию по сервисам.
+    .mb70        
+    .row.columns.text-center
+      a(href="./partnership.html").button.large Узнать больше
+    

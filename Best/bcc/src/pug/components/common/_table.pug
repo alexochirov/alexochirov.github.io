@@ -1,0 +1,58 @@
+.exhibit
+  .exhibit__th
+    a(href="#").exhibit__arrow
+      img(src="./images/calendar-arrow.svg", alt="")
+    .exhibit__date.text-center
+      .exhibit__month Январь
+      .exhibit__year 2017
+    a(href="#").exhibit__arrow.exhibit__arrow_right
+      img(src="./images/calendar-arrow.svg", alt="")
+  .row.small-up-7.collapse.exhibit__week.text-center
+    .columns.exhibit__weekday пн
+    .columns.exhibit__weekday вт
+    .columns.exhibit__weekday ср
+    .columns.exhibit__weekday чт
+    .columns.exhibit__weekday пт
+    .columns.exhibit__weekday сб
+    .columns.exhibit__weekday вс
+  .row.small-up-7.collapse.text-center.exhibit__main
+    -var i = 1
+    while i<=35
+      if i<=31
+        if i==3
+          .columns(data-toggle="date1")
+            .exhibit__day.exhibit__day_past= i++
+            
+            .events(data-dropdown data-hover="true" data-hover-pane="true").dropdown-pane#date1
+              .text-right
+                span.events__event Прошедшее
+                span.events__date 5 Апреля | 2017
+              .events__title.text-left Сценарии взаимодействия Партнера и Заказчика на платформе BentoCloud 
+              .events__desc.text-left Сценарии взаимодействия Партнера и Заказчика на платформе BentoCloud   
+        if i==4
+          .columns(data-toggle="date2")
+            .exhibit__day.exhibit__day_future= i++
+            
+            .events(data-dropdown data-hover="true" data-hover-pane="true").dropdown-pane#date2
+              .text-right
+                span.events__event.events__event_simple Ожидается
+                span.events__date 5 Апреля | 2017
+              .events__title.text-left Сценарии взаимодействия Партнера и Заказчика на платформе BentoCloud 
+              .events__desc.text-left Сценарии взаимодействия Партнера и Заказчика на платформе BentoCloud 
+        if i==5
+          .columns(data-toggle="date3")
+            .exhibit__day.exhibit__day_important= i++
+            
+            .events(data-dropdown data-hover="true" data-hover-pane="true").dropdown-pane#date3
+              .text-right
+                span.events__event.events__event_important Важное
+                span.events__date 5 Апреля | 2017
+              .events__title.text-left Сценарии взаимодействия Партнера и Заказчика на платформе BentoCloud 
+              .events__desc.text-left Сценарии взаимодействия Партнера и Заказчика на платформе BentoCloud 
+        else    
+          .columns
+            .exhibit__day= i++
+      else
+        .columns
+          .exhibit__day 
+          -var i=i+1 

@@ -1,0 +1,39 @@
+.boss {
+  &__img {
+    margin-bottom: rem-calc(25);
+
+    img {
+      display: inline-block;
+      border-radius: 50%;
+      width: rem-calc(96);
+      height: rem-calc(96);
+      overflow: hidden;
+      border: rem-calc(2) solid rgba($insta,.2);
+    }
+  }
+
+  &__phone {
+    font-size: rem-calc(13);
+    font-weight: 700;
+    margin-bottom: rem-calc(16);
+
+    a {
+      text-decoration: none;
+      color: $insta;
+    }
+  }
+
+  &__mail {}
+
+  &__author {
+    line-height: 1.4;
+    font-size: rem-calc(16);
+    color: $insta;
+    font-weight: 700;
+  }
+
+  &__role {
+    color: $secondary;
+    margin-bottom: rem-calc(18);
+  }
+}

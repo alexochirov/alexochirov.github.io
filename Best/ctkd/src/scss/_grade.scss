@@ -1,0 +1,34 @@
+.grade {
+  margin-left: rem-calc(0);
+  list-style-type: none;
+  margin-bottom: rem-calc(17);
+
+  &__link {
+    text-transform: uppercase;
+    color: $medium-gray;
+    font-weight: 700;
+
+    &:focus,
+    &:hover,
+    &_active {
+      color: $black;
+    }
+  }
+
+  &__item {
+    margin-bottom: rem-calc(10);
+    margin-left: rem-calc(30);
+    margin-right: rem-calc(30);
+    display: inline-block;
+
+    &:before {
+      display: none;
+    }
+  }
+  @include breakpoint(small only) {
+    &__item {
+      margin-left: rem-calc(10);
+      margin-right: rem-calc(10);
+    }
+  }
+}

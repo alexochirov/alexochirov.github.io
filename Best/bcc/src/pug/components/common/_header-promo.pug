@@ -1,0 +1,37 @@
+header.header
+  .row.header__row
+    .large-8.medium-4.small-6.columns.header__logo.text-center.medium-text-left
+      a(href="#")
+        img(src="./images/logo.svg", alt="")
+    //- .large-16.medium-20.small-14.columns.text-center.medium-text-left
+      .header__address
+        a.header__phone(href='tel:+74959561717') +7 495 956-17-17
+        a.header__email(href='mailto:mail@bentocloud.ru') mail@bentocloud.ru
+      .header__calendar.hide-for-small-only  
+        a.button.header__button(href='#calendar') Календарь событий
+        a.button.header__button(href='https://cp.bentocloud.ru/servlet/Turbine/frm/single/', target='_blank') Войти
+      .header__soc.hide-for-small-only
+        a.social(href='https://www.facebook.com/bentocloud/', target='_blank').text-fb
+          i.fa.fa-facebook.fa-2x
+        a.social.text-fb(href='https://twitter.com/bento_cloud', target='_blank')
+          i.fa.fa-twitter.fa-2x
+        a.social(href='https://www.facebook.com/bentocloud/', target='_blank').text-fb
+          i.fa.fa-linkedin.fa-2x
+    //- .small-4.columns.show-for-small-only
+      span(data-responsive-toggle='responsive-menu', data-hide-for='medium')
+        button.menu-icon.dark.header__toggle(type='button', data-toggle='')
+        
+  //- .row.columns
+    ul.decision.text-center.large-text-justify#responsive-menu
+      li.decision__item
+        a(data-toggle="dropdown1").decision__link Решения
+      li.decision__item
+        a(href="/support/").decision__link Поддержка
+      li.decision__item
+        a(href="/partnership/").decision__link Стать партнером
+      li.decision__item
+        a(data-toggle="dropdown2",href="/kb/").decision__link База знаний
+      li.decision__item
+        a(data-toggle="dropdown3",href="/about/").decision__link О проекте
+        
+    include _dropdown

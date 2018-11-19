@@ -1,0 +1,10 @@
+.world {
+  position: relative;
+  &__header {
+    z-index: 3;
+    position: absolute;
+    left: rem-calc(0);
+    top: rem-calc(0);
+    width: 100%;
+  }
+}

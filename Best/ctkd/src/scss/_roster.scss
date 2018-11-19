@@ -1,0 +1,15 @@
+.roster {
+
+
+  &__item {
+position: relative;
+padding-left: rem-calc(25);
+
+    &:before {
+      left: rem-calc(0);
+      top: rem-calc(0);
+      color: $black;
+      position: absolute;
+    }
+  }
+}

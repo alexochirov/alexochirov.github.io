@@ -1,0 +1,50 @@
+.control {
+  overflow: hidden;
+
+  &__main {
+    position: relative;
+    display: inline-block;
+    line-height: 2;
+
+    &:after,
+    &:before {
+      content: '';
+      position: absolute;
+      margin: auto 40px;
+      top: 0;
+      bottom: 0;
+      height: rem-calc(1);
+      width: rem-calc(60);
+      background: currentColor;
+    }
+
+    &:after {
+      right: rem-calc(-140);
+    }
+
+    &:before {
+      left: rem-calc(-140);
+    }
+
+    &_normal {
+      line-height: 1;
+      text-transform: none;
+      margin-bottom: rem-calc(25);
+      font-weight: 700;
+      letter-spacing: rem-calc(1.5);
+      font-size: rem-calc(60);
+    }
+  }
+    @include breakpoint(medium down) {
+    &__main {
+      &_normal {
+        font-size: rem-calc(39);
+      }
+    } }
+      @include breakpoint(small only) {
+        &__main {
+          &_normal {
+            font-size: rem-calc(29);
+          }
+        } }
+}

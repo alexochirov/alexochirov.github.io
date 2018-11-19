@@ -1,0 +1,17 @@
+.auth {
+  color: $white;
+  background: url($imagesPath +"/auth-bg.png")no-repeat center bottom #144170;
+  line-height: 1.4;
+  padding-top: rem-calc(42);
+  padding-bottom: rem-calc(10);
+
+  &__title {
+    font-size: rem-calc(18);
+  }
+
+  &__reg {
+    font-size: rem-calc(30);
+    font-weight: 700;
+    margin-bottom: rem-calc(40);
+  }
+}

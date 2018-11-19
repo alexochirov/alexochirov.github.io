@@ -1,0 +1,80 @@
+.header {
+    &__row {
+        padding-top: rem-calc(30);
+        padding-bottom: rem-calc(54);
+    }
+
+    &__calendar {
+        display: inline-block;
+    }
+
+    &__soc {
+        margin-top: rem-calc(34);
+        float: right;
+    }
+
+    &__email {
+        font-size: rem-calc(16);
+        display: block;
+        line-height: 1.2;
+    }
+
+    &__toggle {
+        outline: none;
+        margin-top: rem-calc(21);
+    }
+
+    &__address {
+        padding-top: rem-calc(20);
+        display: inline-block;
+        margin-bottom: rem-calc(10);
+    }
+
+    &__button {
+        margin-left: rem-calc(30);
+    }
+
+    &__phone {
+        color: $dirt;
+        font-weight: 700;
+        line-height: 1.2;
+        font-size: rem-calc(17);
+        text-decoration: none;
+        display: block;
+    }
+
+    &__logo {
+        img {
+            width: rem-calc(110);
+        }
+    }
+    @include breakpoint(medium down) {
+        &__button {
+            margin-left: rem-calc(10);
+        }
+
+        &__soc {
+            display: inline-block;
+            margin-top: rem-calc(0);
+            float: none;
+        }
+        &__row {
+          padding-top: rem-calc(10);
+          padding-bottom: rem-calc(10);
+        }
+    }
+    @include breakpoint(small only) {
+      &__row {
+        padding-bottom: rem-calc(0);
+      }
+      &__logo {
+padding-top: rem-calc(3);
+        img {
+          width: rem-calc(50);
+        }
+      }
+        &__address {
+            padding-top: rem-calc(0);
+        }
+    }
+}

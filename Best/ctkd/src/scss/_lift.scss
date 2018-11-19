@@ -1,0 +1,7 @@
+.lift {
+  position: relative;
+  top: rem-calc(-70);
+  @include breakpoint(small only) {
+    top: rem-calc(-30);
+  }
+}

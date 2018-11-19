@@ -1,0 +1,30 @@
+.chief {
+    padding-bottom: rem-calc(27);
+
+    .slick-dots {
+        bottom: rem-calc(0);
+
+        li {
+            button {
+                width: rem-calc(14);
+                height: rem-calc(14);
+                border-radius: rem-calc(14);
+                border: rem-calc(2) solid $dark-gray;
+            }
+
+            &.slick-active {
+                button {
+                    background: $insta;
+                    border-color: $insta;
+                }
+            }
+        }
+    }
+
+    &__text {
+        font-size: rem-calc(18);
+        line-height: 2;
+    }
+
+
+}

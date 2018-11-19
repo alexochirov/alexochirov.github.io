@@ -1,0 +1,11 @@
+.mac {
+  background: url($imagesPath +"/ecvi/mac.svg")no-repeat center top;
+  background-size: contain;
+  padding-top: rem-calc(15);
+  padding-left: rem-calc(11);
+  padding-right: rem-calc(11);
+  display: inline-block;
+  max-width: 100%;
+  width: rem-calc(428);
+  padding-bottom: rem-calc(115);
+}

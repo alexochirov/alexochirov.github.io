@@ -1,0 +1,29 @@
+.service {
+  margin-bottom: rem-calc(50);
+
+  &__block {
+    padding-left: rem-calc(20);
+    padding-right: rem-calc(30);
+    margin-bottom: rem-calc(20);
+  }
+
+  &__link {
+    font-size: rem-calc(18);
+    margin-bottom: rem-calc(20);
+    padding-bottom: rem-calc(5);
+    line-height: 2.1;
+    position: relative;
+    border-bottom: rem-calc(1) solid #d8e3fc;
+    text-decoration: none;
+
+    &:before {
+      position: absolute;
+      content: '';
+      width: rem-calc(6);
+      height: rem-calc(10);
+      left: rem-calc(-20);
+      top: rem-calc(8);
+      background: url($imagesPath +"/arrow.svg")no-repeat center;
+    }
+  }
+}

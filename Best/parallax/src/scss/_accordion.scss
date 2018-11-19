@@ -1,0 +1,15 @@
+.accordion {
+  &-menu {}
+
+  &-content {}
+&-title {
+  font-weight: 500;
+}
+  &-item {
+    &:last-child {
+      & > a {
+        border: rem-calc(1) solid $light-gray;
+      }
+    }
+  }
+}

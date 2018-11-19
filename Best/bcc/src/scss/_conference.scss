@@ -1,0 +1,27 @@
+.conference {
+  display: inline-block;
+  margin-bottom: rem-calc(23);
+
+  &__title {
+    font-size: rem-calc(16);
+    font-weight: 700;
+    padding-left: rem-calc(20);
+    padding-right: rem-calc(20);
+    float: left;
+    text-transform: uppercase;
+    margin-top: rem-calc(3);
+    letter-spacing: rem-calc(.4);
+  }
+
+  &__link {
+    float: left;
+    width: rem-calc(34);
+    opacity: .3;
+    height: rem-calc(34);
+    background: url($imagesPath +"/calendar-arrow.svg")no-repeat center;
+
+    &_prev {
+      transform: rotate(180deg);
+    }
+  }
+}

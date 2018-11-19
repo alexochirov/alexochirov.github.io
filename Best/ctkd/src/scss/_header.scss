@@ -1,0 +1,31 @@
+.header {
+  padding-top: rem-calc(18);
+  padding-bottom: rem-calc(18);
+  background-color: $warning-color;
+  background-image: linear-gradient(to top, #feaf01 0%, #fad800 100%);
+  transition: .3s;
+
+  &__phone {
+    margin-top: rem-calc(36);
+    display: inline-block;
+  }
+
+  &__toggle {
+    outline: none;
+    margin-top: rem-calc(17);
+  }
+  @include breakpoint(medium down) {
+    &__phone {
+      margin-top: rem-calc(10);
+    }
+
+    &__logo {
+      img {
+        max-width: none;
+        width: rem-calc(130);
+      }
+    }
+  }
+    @include breakpoint(small only) {
+    padding-bottom: rem-calc(10); }
+}

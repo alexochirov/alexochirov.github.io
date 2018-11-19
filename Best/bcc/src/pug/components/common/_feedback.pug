@@ -1,0 +1,32 @@
+aside.feedback(data-open="exampleModal1")
+  .feedback__text
+    h4.feedback__head
+      | Есть вопросы 
+      br
+      | и предложения?
+    | Напишите
+    | нам об этом
+.reveal.reveal_mini.text-center#exampleModal1(data-reveal)
+  h3 Есть вопросы или предложения?
+  form(action="#").reg
+    input(type="text",placeholder="ФИО").reg__input.text-center
+    input(type="text",placeholder="Ваш email").reg__input.text-center
+    div
+      select.reveal__select
+        option Вопросы партнерства
+        option Финансы
+        option Маркетинг
+        option Техническая поддержка
+    div.text-center
+      label.button(for='exampleFileUpload') Вложение
+      input#exampleFileUpload.show-for-sr(type='file')
+
+    .text-center
+      button.button(type="submit").bee Отправить
+  button.close-button(data-close='', aria-label='Close modal', type='button').umbrella
+    span(aria-hidden='true') ×
+
+
+    
+      
+        

@@ -1,0 +1,101 @@
+extends index
+block top
+  .world
+    .world__header
+      include components/common/_header
+    .platform(style="background-image:url(./i/events.png);")
+      .row.columns.hide-for-small-only
+        .platform__title.platform__title_high
+          | мероприятия,
+          br
+          | Вебинары и Учебные Курсы
+          br
+          | от
+          =" "
+          strong Bento Cloud
+      
+  
+    
+block content
+  .cloud.cloud_no.mb45
+    .row.columns.text-center
+      div.lead.mb0
+        | Наш календарь мероприятий поможет Вам узнать о предстоящих и прошедших
+        br
+        strong семинарах, вебинарах и учебных курсах.
+    
+  +bread(['Мероприятия'])
+  .row.columns.metro.text-right.mb45
+    .conference
+      a(href="#").conference__link.conference__link_prev
+      .conference__title Сентябрь | 2017
+      a(href="#").conference__link
+    
+    div(data-equalizer="bar",data-equalize-by-row='true')  
+      .row.expanded.large-up-4.medium-up-2.text-left(data-equalizer="text",data-equalize-by-row="true")
+        .columns
+          a.meeting(href="#")
+            .meeting__date 25 сен
+            .meeting__time 13:00  
+            .meeting__title(data-equalizer-watch="bar") CSI Annual Convention at CONSTRUCT
+            .meeting__text(data-equalizer-watch="text") Открытый вебинар при участии IT директоров известных компаний... Участвуют все желающие.
+            .text-center
+              .button.meeting__button Участвовать
+        .columns
+          a.meeting(href="#")
+            .meeting__date 26 сен
+            .meeting__time 13:00  
+            .meeting__title(data-equalizer-watch="bar") Bicsi Fall Conference and Exhibition
+            .meeting__text(data-equalizer-watch="text") Открытый вебинар при участии IT директоров известных компаний... Участвуют все желающие.
+            .text-center
+              .button.meeting__button Участвовать
+        .columns
+          a.meeting.meeting_active(href="#")
+            .meeting__date 27 сен
+            .meeting__time 13:00  
+            .meeting__title(data-equalizer-watch="bar") Bicsi Fall Conference and Exhibition
+            .meeting__text(data-equalizer-watch="text") Открытый вебинар при участии IT директоров известных компаний... Участвуют все желающие.
+            .text-center
+              .button.meeting__button Записаться
+        .columns
+          a.meeting(href="#")
+            .meeting__date 29 сен
+            .meeting__time 13:00  
+            .meeting__title(data-equalizer-watch="bar") CSI Annual Convention at CONSTRUCT
+            .meeting__text(data-equalizer-watch="text") Открытый вебинар при участии IT директоров известных компаний... Участвуют все желающие.
+            .text-center
+              .button.meeting__button Участвовать
+        .columns
+          a.meeting(href="#")
+            .meeting__date 30 сен
+            .meeting__time 13:00  
+            .meeting__title(data-equalizer-watch="bar") DataVisual On Display - Montreal, QC
+            .meeting__text(data-equalizer-watch="text") Открытый вебинар при участии IT директоров известных компаний... Участвуют все желающие.
+            .text-center
+              .button.meeting__button Участвовать
+        .columns
+          a.meeting.meeting_active(href="#")
+            .meeting__date 01 окт
+            .meeting__time 13:00  
+            .meeting__title(data-equalizer-watch="bar") Boston Society of Architects Conference & Expo
+            .meeting__text(data-equalizer-watch="text") Открытый вебинар при участии IT директоров известных компаний... Участвуют все желающие.
+            .text-center
+              .button.meeting__button Записаться
+      
+        .columns
+          a.meeting(href="#")
+            .meeting__date 03 окт
+            .meeting__time 13:00  
+            .meeting__title(data-equalizer-watch="bar") DataVisual On Display - Vancouver (Burnaby), BC
+            .meeting__text(data-equalizer-watch="text") Открытый вебинар при участии IT директоров известных компаний... Участвуют все желающие.
+            .text-center
+              .button.meeting__button Участвовать
+        .columns
+          a.meeting(href="#")
+            .meeting__date 06 окт
+            .meeting__time 13:00  
+            .meeting__title(data-equalizer-watch="bar") DataVisual On Display - Vancouver (Burnaby), BC
+            .meeting__text(data-equalizer-watch="text") Открытый вебинар при участии IT директоров известных компаний... Участвуют все желающие.
+            .text-center
+              .button.meeting__button Участвовать
+      

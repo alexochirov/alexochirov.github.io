@@ -1,0 +1,87 @@
+.reg {
+  padding: rem-calc(30);
+  background: $white;
+  margin-bottom: rem-calc(20);
+
+  &__submit {
+    font-size: rem-calc(18);
+    color: $blue;
+    padding-left: rem-calc(50);
+    cursor: pointer;
+    background: url($imagesPath +"/envelope.svg")no-repeat left center;
+  }
+
+  &__error {
+    display:none;
+    width: rem-calc(272);
+    max-width: 100%;
+    padding: rem-calc(12) rem-calc(40) rem-calc(12) rem-calc(12);
+    font-size: rem-calc(13);
+    background: #ff571d;
+    line-height: 1.4;
+    margin-bottom: rem-calc(20);
+    position: relative;
+
+    &:after {
+      position: absolute;
+      width: rem-calc(20);
+      height: rem-calc(20);
+      content: '';
+      right: rem-calc(11);
+      top: rem-calc(11);
+      background: url($imagesPath +"/attantion.svg")no-repeat center;
+    }
+  }
+
+  &__input {
+    height: rem-calc(33);
+    padding: rem-calc(0) rem-calc(0) rem-calc(13);
+    border: rem-calc(0);
+    font-size: rem-calc(13);
+    border-bottom: rem-calc(1) solid #b7bfc3;
+
+    &::-webkit-input-placeholder {
+      color: #979fa3;
+    }
+
+    &::-moz-placeholder {
+      color: #979fa3;
+    }
+
+    &:-moz-placeholder {
+      color: #979fa3;
+    }
+
+    &:-ms-input-placeholder {
+      color: #979fa3;
+    }
+
+    &:focus {
+      border: rem-calc(0);
+      border-bottom: rem-calc(1) solid #b7bfc3;
+    }
+
+    &_error {
+      color: $orange;
+
+      &::-webkit-input-placeholder {
+        color: $orange;
+      }
+
+      &::-moz-placeholder {
+        color: $orange;
+      }
+
+      &:-moz-placeholder {
+        color: $orange;
+      }
+
+      &:-ms-input-placeholder {
+        color: $orange;
+      }
+    }
+  }
+  &_shadow {
+    box-shadow: -10px 10px 20px 0 rgba(0, 0, 0, 0.1);
+  }
+}

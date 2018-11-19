@@ -1,0 +1,68 @@
+doctype html
+html.no-js(lang='ru')
+  include components/mixins/_mixin-bread
+  
+  include components/service/_head
+  body
+    include components/common/_feedback
+    block top
+      .world
+        .world__header
+          include components/common/_header
+        .bento
+          a.bento__slide(href="#",style="background-image:url(./i/slide2.jpg);").text-center  
+            button.hide-for-small-only.button.hollow.large.dark-blue.bento__button Узнать больше
+          a.bento__slide(href="#",style="background-image:url(./i/slide3.jpg);") 
+            button.hide-for-small-only.button.bento__azure Узнать больше 
+          .bento__slide(style="background-image:url(./i/slide4.jpg);")  
+            .row.columns.text-center.medium-text-left
+              .bento__title.show-for-large
+                | Платформа 
+                strong Bento Cloud
+                |  — новая страница вашего бизнеса
+              a(href="http://www.bentocloud.ru/services#infrastructure").infra.text-center
+                img(src="./images/structure.svg", alt="")
+                .infra__text Инфраструктура  
+              a(href="http://www.bentocloud.ru/services#services").infra.text-center.infra_fb
+                img(src="./images/user.svg", alt="")
+                .infra__text Сервисы
+              a(href="http://www.bentocloud.ru/services#security").infra.text-center.infra_visit
+                img(src="./images/shield.svg", alt="")
+                .infra__text Безопасность
+              a(href="http://www.bentocloud.ru/services#communications").infra.text-center.infra_blue
+                img(src="./images/message.svg", alt="")
+                .infra__text Коммуникации
+              a(href="http://www.bentocloud.ru/services#biz-apps").infra.text-center.infra_dark-gray
+                img(src="./images/cloud.svg", alt="")
+                .infra__text Бизнес приложения
+          .bento__slide(style="background-image:url(./i/slide5.jpg);")
+            .row
+              .large-14.columns.end
+                .bento__title.show-for-large
+                  |Всё
+                  br
+                  | необходимое
+                  br
+                  | на своих местах				
+                p.show-for-large
+                a(href="http://www.bentocloud.ru/partnership/").button.bento__more Узнать больше
+          .bento__slide(style="background-image:url(./i/slide6.jpg);")  
+            .row.columns
+              .bento__title.show-for-large
+                | Облачная
+                br
+                | платформа 
+                strong Bento Cloud
+              p.show-for-large
+              a(href="http://www.bentocloud.ru/partnership/").button.bento__more
+                  img(src="./images/cart.svg", alt="")
+                  | Подключиться
+              a(href="http://www.bentocloud.ru/partnership/").button.bento__more
+                  img(src="./images/cloud-in.svg", alt="")
+                  | Магазин приложений
+
+    block content
+      include components/common/_content
+
+    include components/common/_footer
+    include components/service/_js.html

@@ -1,0 +1,46 @@
+.shop {
+    color: $white;
+
+    &:hover {
+        color: $white;
+    }
+
+    &__icon {
+        width: rem-calc(54);
+        position: absolute;
+        left: rem-calc(0);
+        top: rem-calc(0);
+        bottom: rem-calc(0);
+        right: rem-calc(0);
+        margin: auto;
+    }
+
+    &__img {
+        display: inline-block;
+        position: relative;
+        margin-bottom: rem-calc(12);
+    }
+
+    &__inner {
+        display: inline-block;
+        width: rem-calc(200);
+        padding-top: rem-calc(15);
+        padding-left: rem-calc(15);
+        padding-right: rem-calc(15);
+        max-width: 100%;
+
+        &:hover {
+            background: rgba(255,255,255,0.1);
+        }
+    }
+
+    &__title {
+        line-height: 1.5;
+        font-weight: 700;
+        font-size: rem-calc(16);
+    }
+      @include breakpoint(small only) {
+      &__title {
+        font-size: rem-calc(14);
+      } }
+}

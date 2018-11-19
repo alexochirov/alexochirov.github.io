@@ -1,0 +1,26 @@
+.training {
+  margin-bottom: rem-calc(30);
+
+  a {
+    color: $white;
+  }
+
+  &__img {
+    margin-bottom: rem-calc(64);
+
+    img {
+      height: rem-calc(64);
+      width: rem-calc(64);
+    }
+  }
+
+  &__title {
+    font-size: rem-calc(15);
+    font-weight: 700;
+    margin-bottom: rem-calc(12);
+  }
+
+  &__text {
+    line-height: 1.4;
+  }
+}

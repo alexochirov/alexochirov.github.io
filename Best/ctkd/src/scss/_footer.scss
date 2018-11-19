@@ -1,0 +1,54 @@
+.footer {
+  background-size: cover;
+  background-position: center top;
+  padding-top: rem-calc(65);
+  font-size: rem-calc(10);
+  font-weight: 700;
+  text-transform: uppercase;
+
+  &__main {
+    padding-bottom: rem-calc(70);
+  }
+
+  &__bottom {
+    padding-top: rem-calc(13);
+    padding-bottom: rem-calc(14);
+    color: $white;
+    font-weight: 400;
+    background-image: linear-gradient(to top, #d30505 0%, #f92d2d 100%);
+  }
+
+  &__tel {
+    color: $black;
+    font-size: rem-calc(12);
+  }
+
+  &__link {
+    color: $black;
+  }
+
+  &__justify {
+    justify-content: space-between;
+    display: flex;
+  }
+
+  &__logo {
+    margin-bottom: rem-calc(11);
+    display: inline-block;
+
+    img {
+      margin-bottom: rem-calc(4);
+    }
+  }
+
+  &__rent {
+    font-size: rem-calc(10);
+    color: $black;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+    @include breakpoint(medium down) {
+    &__main {
+      padding-bottom: rem-calc(30);
+    } }
+}

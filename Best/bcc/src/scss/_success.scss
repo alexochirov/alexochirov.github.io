@@ -1,0 +1,49 @@
+.success {
+  background: #6d97bf;
+  color: $white;
+  padding-top: rem-calc(46);
+  padding-bottom: rem-calc(46);
+
+  &__head {
+    line-height: 1.4;
+    font-size: rem-calc(24);
+    margin-bottom: rem-calc(38);
+  }
+
+  &__block {
+    padding-left: rem-calc(20);
+    padding-right: rem-calc(30);
+    margin-bottom: rem-calc(20);
+  }
+
+  &__link {
+    font-size: rem-calc(18);
+    color: $white;
+    padding-bottom: rem-calc(5);
+    line-height: 2.1;
+    position: relative;
+    border-bottom: rem-calc(1) solid $white;
+    text-decoration: none;
+
+    &:before {
+      position: absolute;
+      content: '';
+      width: rem-calc(6);
+      height: rem-calc(10);
+      left: rem-calc(-20);
+      top: rem-calc(8);
+      background: url($imagesPath +"/white_arrow.svg")no-repeat center;
+    }
+
+    &:focus,
+    &:hover,
+    &:visited {
+      color: $white;
+    }
+  }
+    @include breakpoint(small only) {
+    &__block
+  {
+    padding-right: rem-calc(0);
+  } }
+}

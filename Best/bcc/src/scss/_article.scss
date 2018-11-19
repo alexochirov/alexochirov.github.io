@@ -1,0 +1,9 @@
+.article {
+  font-size: rem-calc(48);
+  color: $black;
+  font-weight: 700;
+  text-transform: none;
+  margin-bottom: rem-calc(60);
+    @include breakpoint(small only) {
+    font-size: rem-calc(34); }
+}

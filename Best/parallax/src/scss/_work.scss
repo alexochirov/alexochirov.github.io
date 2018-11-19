@@ -1,0 +1,29 @@
+.work {
+  margin-top: rem-calc(-177);
+  margin-bottom: rem-calc(80);
+
+  &_back {
+    background: #F7F9F9;
+    margin-top: rem-calc(-220);
+    padding-top: rem-calc(220);
+  }
+
+  &__adv {
+    text-transform: uppercase;
+    color: $tertiary;
+  }
+
+  &__block {
+    padding: rem-calc(55) rem-calc(25) rem-calc(30);
+    position: relative;
+    border-radius: rem-calc(2);
+    box-shadow: rem-calc(0 3 18 0) rgba(193,228,227,0.46);
+    background: $white;
+  }
+  @include breakpoint(medium down) {
+    &__block {
+      padding-left: rem-calc(10);
+      padding-right: rem-calc(10);
+    }
+  }
+}

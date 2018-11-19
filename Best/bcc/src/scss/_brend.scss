@@ -1,0 +1,29 @@
+.brend {
+  margin-bottom: rem-calc(30);
+  line-height: rem-calc(81);
+
+  &_col {
+    position: relative;
+    @include breakpoint(small only) {
+      min-height: rem-calc(126);
+    }
+  }
+  img {
+    max-height: rem-calc(81);
+    vertical-align: middle;
+  }
+
+  &__block {
+    line-height: 2;
+  }
+
+  a {
+    text-decoration: none;
+    color: $black;
+    font-size: rem-calc(14);
+
+    &:hover {
+      color: $blue;
+    }
+  }
+}

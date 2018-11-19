@@ -1,0 +1,17 @@
+.car {
+  box-shadow: rem-calc(0 1 5) rgba(0, 0, 0, 0.29);
+  padding: rem-calc(42 42 18);
+  margin-bottom: rem-calc(30);
+  text-transform: uppercase;
+
+  &__title {
+    font-weight: 700;
+    margin-bottom: rem-calc(42);
+  }
+  @include breakpoint(large down) {
+    padding-left: rem-calc(15);
+    padding-right: rem-calc(15);
+    padding-top: rem-calc(25);
+
+  }
+}

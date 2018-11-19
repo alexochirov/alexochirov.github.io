@@ -1,0 +1,35 @@
+.support {
+    list-style-type: none;
+    margin-left: rem-calc(0);
+    margin-bottom: rem-calc(24);
+
+    &__item {
+        display: inline-block;
+
+        &.active {
+            & > a {
+                color: $white;
+                background: $orange;
+
+            }
+        }
+    }
+
+    &__link {
+      display: block;
+      padding:rem-calc(5 12);
+        color: $black;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 700;
+
+        &:visited {
+            color: $black;
+        }
+
+        &:hover {
+            color: $white;
+            background: $orange;
+        }
+    }
+}

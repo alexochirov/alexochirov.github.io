@@ -1,0 +1,16 @@
+.gift {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: $white;
+  font-size: rem-calc(18);
+  text-decoration: none;
+  margin-bottom: rem-calc(90);
+  display: block;
+&:visited {
+  color: $white;
+}
+  img {
+    width: rem-calc(325);
+    max-height: rem-calc(70);
+  }
+}

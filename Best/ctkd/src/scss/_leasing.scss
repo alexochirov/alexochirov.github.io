@@ -1,0 +1,28 @@
+.leasing {
+  font-weight: 700;
+  border-bottom: rem-calc(1) dotted $medium-gray;
+  @include clearfix;
+  text-transform: uppercase;
+margin-bottom: rem-calc(10);
+  &__text {
+    float: left;
+    position: relative;
+    background: $white;
+    top: rem-calc(6);
+    line-height: 1;
+    color: $black;
+    padding-right: rem-calc(5);
+    z-index: 2;
+  }
+
+  &__val {
+    position: relative;
+    padding-left: rem-calc(5);
+    float: right;
+    z-index: 2;  top: rem-calc(4);
+    line-height: 1;
+    background: $white;
+    color: $primary-color;
+    font-size: rem-calc(18);
+  }
+}

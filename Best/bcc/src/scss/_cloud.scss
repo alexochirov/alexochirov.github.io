@@ -1,0 +1,27 @@
+.cloud {
+  background: url($imagesPath +"/bento_bottom.png") no-repeat center bottom $fb;
+  padding-top: rem-calc(46);
+  padding-bottom: rem-calc(65);
+  color: $white;
+  background-size: contain;
+  &_new {
+      background: url($imagesPath +"/2-layers.png") no-repeat center bottom #00346c;
+  }
+
+  &_dark {
+    background: url($imagesPath +"/bento_b.png")no-repeat center bottom $water;
+    background-size: contain;
+  }
+
+  &_no {
+    padding-top: rem-calc(15);
+    background: $fb;
+    padding-bottom: rem-calc(15);
+  }
+
+  &_mix {
+    padding-top: rem-calc(80);
+    padding-bottom: rem-calc(80);
+    background: $fb;
+  }
+}

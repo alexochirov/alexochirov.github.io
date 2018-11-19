@@ -1,0 +1,47 @@
+.events {
+  border: rem-calc(1) solid $light-gray;
+  background: rgba($white,.95);
+  padding: rem-calc(20) rem-calc(15) rem-calc(40);
+
+  &__date {
+    color: $fb;
+    font-size: rem-calc(12);
+    font-weight: 700;
+    display: inline-block;
+    padding-right: rem-calc(10);
+    padding-left: rem-calc(10);
+    margin-bottom: rem-calc(7);
+  }
+
+  &__event {
+    background: $dark-gray;
+    color: $white;
+    margin-bottom: rem-calc(7);
+    font-size: rem-calc(11);
+    display: inline-block;
+    padding: rem-calc(0 10 2);
+
+    &_simple {
+      background: $water;
+    }
+
+    &_important {
+      background: #d0127d;
+    }
+  }
+
+  &__title {
+    line-height: 1.4;
+    font-size: rem-calc(16);
+    font-weight: 700;
+    margin-bottom: rem-calc(15);
+  }
+
+  &__desc {
+    line-height: 1.4;
+  }
+  @include breakpoint(small only) {
+    left: rem-calc(0) !important;
+    width: 100%;
+  }
+}

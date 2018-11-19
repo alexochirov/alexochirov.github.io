@@ -1,0 +1,92 @@
+.platform {
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: rem-calc(700);
+  overflow: hidden;
+  padding-top: rem-calc(233);
+  position: relative;
+
+  &_empty {
+    height: rem-calc(250);
+  }
+
+  &__button {
+    letter-spacing: rem-calc(.45);
+    padding: rem-calc(24 60);border-radius: rem-calc(34);
+    font-weight: 800;
+    font-size: rem-calc(18);
+    background: $water;
+  }
+
+  &__titan {
+    margin-bottom: rem-calc(30);
+  }
+
+  &__tech {
+    margin-bottom: rem-calc(36);
+    text-shadow: 0 0 rem-calc(7) rgba(0, 0, 0, 0.3);
+    font-size: rem-calc(38);
+    text-transform: none;
+    line-height: 1.2;
+    color: $white;
+  }
+
+  &__logo {
+    margin-bottom: rem-calc(42);
+  }
+
+  &__text {
+    font-weight: 700;
+    color: #131313;
+    font-size: rem-calc(24);
+    text-transform: uppercase;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $primary-color;
+  }
+
+  &__title {
+    padding-top: rem-calc(70);
+    font-size: rem-calc(56);
+    text-transform: uppercase;
+    line-height: 1.2;
+    letter-spacing: rem-calc(2.8);
+    color: $dark-blue;
+    margin-bottom: rem-calc(10);
+
+    &_high {
+      line-height: 1.53;
+      min-height: rem-calc(325);
+    }
+
+    &_big {
+      padding-top: rem-calc(20);
+    }
+  }
+  @include breakpoint(medium down) {
+    &__title {
+      font-size: rem-calc(44);
+      padding-top: rem-calc(0);
+
+      &_high {
+        min-height: rem-calc(201);
+      }
+    }
+    min-height: rem-calc(500);
+
+    &_empty {
+      height: rem-calc(200);
+    }
+  }
+  @include breakpoint(small only) {
+    padding-top: rem-calc(70);
+    min-height: rem-calc(230);
+
+    &_empty {
+      height: rem-calc(80);
+    }
+  }
+}

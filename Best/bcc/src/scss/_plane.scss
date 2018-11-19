@@ -1,0 +1,12 @@
+.plane {
+  line-height: 1.4;font-size: rem-calc(14);
+  margin-bottom: rem-calc(37);
+
+  &__title {
+    font-size: rem-calc(18);
+  }
+
+  &__text {
+    line-height: 1.4;
+  }
+}

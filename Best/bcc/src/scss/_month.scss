@@ -1,0 +1,41 @@
+.month {
+    border-collapse: collapse;
+    font-size: rem-calc(14);
+    table-layout: fixed;
+
+    &__arrow {
+        width: rem-calc(16);
+        height: rem-calc(16);
+    }
+
+    &__days {
+        border: rem-calc(1) solid $light-gray;
+    }
+    &__event {
+
+      background: $medium-gray;
+      a
+      {
+          color: $white;
+          text-decoration: none;
+      }
+      &_simple {
+          background: $success;
+      }
+      &_important {
+          background: $alert;
+      }
+    }
+
+    td {
+      height: rem-calc(35);
+        border: rem-calc(1) solid $light-gray;
+    }
+
+    &__th {
+        background: #316699;
+        font-weight: 400;
+        text-align: center;
+        height: rem-calc(32);
+    }
+}

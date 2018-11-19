@@ -1,0 +1,61 @@
+.key {
+  margin-bottom: rem-calc(25);
+
+  &__img {
+    margin-bottom: rem-calc(9);
+  }
+
+  &__container {
+    position: relative;
+    margin-bottom: rem-calc(25);
+    padding-top: rem-calc(45);
+  }
+
+  &__subscribe {
+    letter-spacing: rem-calc(.4);
+    font-weight: 500;
+    font-family: $font-franklin;
+    position: absolute;
+    left: rem-calc(0);
+    top: rem-calc(0);
+    width: 100%;
+    font-size: rem-calc(16);
+    color: $medium-gray;
+  }
+
+  &__button {
+    text-transform: none;
+    font-weight: 400;
+    font-size: rem-calc(14);
+  }
+
+  &__text {
+    font-size: rem-calc(14);
+    color: $asphalt;
+    line-height: 1.43;
+    margin-bottom: rem-calc(26);
+  }
+
+  &__title {
+    font-family: $font-franklin;
+    padding: rem-calc(0 0 29);
+    font-weight: 500;
+    font-size: rem-calc(24);
+    color: $asphalt;
+    line-height: 1.5;
+    letter-spacing: rem-calc(.4);
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: calc(50% - 23px);
+      bottom: rem-calc(0);
+      width: rem-calc(55);
+      border-top: rem-calc(11) solid $medium-gray;
+    }
+  }
+  @include breakpoint(small only) {
+    margin-bottom: rem-calc(0);
+  }
+}
