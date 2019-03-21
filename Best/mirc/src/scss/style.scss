@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Merriweather&subset=cyrillic');
+// Все картинки и шрифты необходимо подключать с использованием этих двух переменных:
+$imagesPath: '../images' !default;
+$fontsPath: '../fonts' !default;
+
+$textSizes: (tiny: 0.7rem, xsmall: 0.8rem, small: 0.9rem, default: 1rem, large: 1.1rem, xlarge: 1.25rem, xxlarge: 1.5rem, xxxlarge: 2.5rem) !default;
+
+$fa-font-path: $fontsPath;
+
+$minify: false !default;
+@if $minify {
+  $imagesPath: './images';
+  $fontsPath: './fonts';
+  $fa-font-path: $fontsPath;}
+
+@import "foundation-settings";
+@import "font-awesome";
+@import "slick.scss";
+@import "foundation";
+@import "motion-ui";
+@import "jquery.fancybox";
+@include foundation-everything(true, true);
+
+@import "common";
+@import "slick/slick-theme";
+@import "carousel/carousel-main";
+@import "carousel/carousel-news";
+@import "carousel/carousel-services";
+@import "carousel/carousel-media-gallery";
+@import "carousel/carousel-advantages-gallery";
+
+@import "background";
+@import "button";
+@import "breadcrumbs";
+@import "checkbox-group";
+@import "dd";
+@import "menu-base";
+@import "menu-top";
+@import "menu-bottom";
+@import "rating";
+@import "search-top";
+@import "sticky-footer";
+@import "aside-menu";
+@import "tree-menu";
+@import "text";
+@import "content-block";
+@import "text-size";
+@import "header";
+@import "select-place";
+@import "soc";
+@import "bath";
+@import "round";
+@import "action";
+@import "voyage";
+@import "nature";
+@import "footer";
+@import "off-canvas";
+@import "program";
+@import "hr";
+@import "scroll";
+@import "price-table";
+@import "line-calendar";
+@import "advantages-block";
+@import "passage";
+@import "gray-box";
+@import "price-calculator";
+@import "article";
+@import "list";
+@import "card";
+@import "tag";
+@import "forms";
+@import "alerts";
+@import "special-program";
+@import "service-table";
+@import "output-type";
+@import "price-list";
+@import "loader";
+@import "step";

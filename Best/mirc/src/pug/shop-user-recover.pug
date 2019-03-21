@@ -1,0 +1,30 @@
+extends corp-regular
+
+block content
+    .grid-container: .grid-x.grid-padding-x: .cell.padding-top-6.margin-bottom-4
+        h1.text-center Восстановление пароля
+
+    .grid-container: .grid-x.grid-padding-x.align-center
+        .cell.small-24.medium-16.large-12.callout.gray-box.padding-6.margin-bottom-4
+            p
+                |Если вы забыли пароль, введите логин или E-Mail.
+                br
+                | Контрольная строка для смены пароля, а также ваши регистрационные данные, будут высланы вам по E-Mail.
+            form.user-form(action='shop-user-login.html')
+                label
+                    | Введите либо ваш логин
+                    input(type='text')
+                label
+                    | Либо ваш email
+                    input(type='email')
+                .grid-container: .grid-x.align-center
+                    .cell.auto.text-center.margin-top-4
+                        button.button
+                            i.fa.fa-paper-plane-o
+                            =" "
+                            | Выслать контрольную строку &nbsp;
+
+    .grid-container: .grid-x.align-center
+        .cell.auto
+            p.text-center.margin-0
+                a(href='shop-user-login.html', title='').font-bold Авторизация

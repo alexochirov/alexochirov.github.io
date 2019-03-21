@@ -1,0 +1,37 @@
+.anchor-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  font-size: rem-calc(16);
+  list-style: none;
+
+  &-wrapper {
+    padding: rem-calc(40 20 20 20);
+  }
+
+  &__item {
+    flex: 1 1 auto;
+    margin: rem-calc(0 0 5 0);
+
+    @include breakpoint(medium down) {
+      flex: unset;
+      min-width: rem-calc(19);
+      text-align: center;
+    }
+  }
+
+  &__link {
+    color: $black;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $primary-color;
+    }
+
+    &_active {
+      color: $primary-color;
+    }
+  }
+}

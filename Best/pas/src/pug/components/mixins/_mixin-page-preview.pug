@@ -1,0 +1,16 @@
+mixin pagePreview(imgSrc, namePage, date, title)
+  .cell
+    a.page-preview(href='corp-page.html')
+      .page-preview__image(data-equalizer-watch)
+        img(src=imgSrc alt="")
+      if namePage
+        .page-preview__title= namePage
+          span.page-preview__date= date
+      else
+        a.page-preview__desc(href='corp-page.html')
+          | Приняли на комплексное обслуживание новый сайт
+          span.page-preview__date 12345
+      if title
+        p.page-preview__desc= title
+      else
+        p.page-preview__desc Приняли на комплексное обслуживание новый сайт

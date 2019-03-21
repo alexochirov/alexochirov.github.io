@@ -1,0 +1,125 @@
+extends corp-index
+
+block page
+  include components/common/_breadcrumbs
+  block content
+      .grid-container: .grid-x.grid-padding-x.padding-top-4
+        .small-24.medium-16.large-18.cell.padding-bottom-6.text-center
+          h1 Аренда гостиной
+          .lead Большое пространство для уютных встреч по интересам, дней рождения и корпоративных мероприятий
+
+  .grid-container.content-block: .grid-x.grid-padding-x
+        .cell
+          include components/site/_carousel-media-gallery
+  .grid-container: .grid-x.grid-padding-x
+    .cell.small-24.medium-8.large-6.medium-order-2
+      include components/site/_rent-sidebar
+    .cell.auto.medium-order-1
+      .grid-container.margin-bottom-8: .grid-x.grid-padding-x.small-up-1.medium-up-3.advantages-block.margin-top-0
+        .cell
+          .advantages-block__icon
+            include ../images/icons/measure.svg
+          .advantages-block__title Площадь:
+          .advantages-block__desc: p 117 м
+            sup 2
+        .cell
+          .advantages-block__icon
+            include ../images/icons/table.svg
+          .advantages-block__title Посадочные места
+            br
+            | со столами
+
+          .advantages-block__desc: p до 50 мест
+        .cell
+          .advantages-block__icon
+            include ../images/icons/chairs.svg
+          .advantages-block__title Только стулья
+          .advantages-block__desc: p до 100 человек
+
+      section.content-block
+        h3.text-center Стоимость
+        .price-table
+          .grid-x.grid-padding-x.align-center.margin-bottom-6
+            .small-24.medium-12.cell
+              .price-table__item
+                .grid-x.margin-bottom-6: .cell: p: strong Одно помещение
+                .grid-x
+                  .small-12.cell.align-self-middle
+                    .price-table__item_left
+                      include ../images/icons/clock.svg
+                      p 1 час
+
+                  .small-12.cell.align-self-middle
+                    .price-table__item_right
+
+                      span Аренда зала
+                        p: strong  1800
+                          =" "
+                          i.fa.fa-rouble
+            .small-24.medium-12.cell
+              .price-table__item
+                .grid-x.margin-bottom-6: .cell: p: strong Совместно с другим помещением
+                .grid-x
+                  .small-12.cell.align-self-middle
+                    .price-table__item_left
+                      include ../images/icons/clock.svg
+                      p 1 час
+
+                  .small-12.cell.align-self-middle
+                    .price-table__item_right
+
+                      span Аренда зала
+                        p: strong  1200
+                          =" "
+                          i.fa.fa-rouble
+      section.content-block
+
+        article
+          h3.text-center Гостиная хороша еще и тем, что имеет:
+          p
+            strong Отдельную кухня с барной стойкой
+            br
+            | Вы можете самостоятельно подготовить нарезки и фуршет. Для ваших услуг на кухне расположены: холодильник, две конфорки, острые ножи, столовые приборы и бойлер с кипятком.
+          p
+            strong Отдельный гардероб
+            br
+            | На входе в зал есть выделенный для помещения вместительный гардероб
+          p
+            strong Удобное расположение
+            br
+            | Зал находится в пяти минутах от остановки метро «Речной вокзал» — одного из самых насыщенных транспортных узлов города.
+          p
+            strong Вид на реку
+            br
+            | В зале есть панорамные окна с прекрасным в любое время года видом на Обь. Вечером это добавит романтики в любое торжество.
+          p
+            strong Пространство здоровья
+            br
+            | Зал, как и весь Центр «Мира», — это место, свободное от алкоголя и табака.
+          p
+            strong Экологичный интерьер
+            br
+            | Зал стал одним из лучших примеров эко-дизайна в городе, в оформлении использованы только натуральные материалы
+          p Помещение находится в Центре здорового отдыха «Мира», поэтому любое мероприятие по желанию можно совместить с увлекательной программой для гостей. К вашим услугам Термальный центр, залы для практик и целый набор оздоровительных и бьюти-услуг.
+          p
+            hr
+            br
+          h3.text-center К вашим услугам:
+          ul.list
+            li
+              strong Мультимедийное оборудование
+                =" "
+                | с профессиональной звуковой аппаратурой.
+            li
+              strong Дополнительные помещения:
+              =" "
+              | большой зал 100 кв. м., который сдается отдельно и вмещает до 125 посадочных мест, и Каминный зал, который сдается отдельно и вмещает до 60 посадочных мест.
+            li
+              strong Парковка:
+              =" "
+              | бесплатный час на просторной парковке бизнес-центра, каждый последующий час 50р.;
+      section.content-block
+        .callout.text-center.lead.gray-box
+          | Все свои пожелания по оформлению залов вы можете адресовать Светлане, она ответит на все интересующие вас вопросы и подберет индивидуальную комплектацию залов, если это требуется:
+          br
+          | Светлана: 8-983-138-53-72, #[a(href='') bsa@miracentr.ru]

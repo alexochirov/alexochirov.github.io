@@ -1,0 +1,55 @@
+mixin productLine(discount, onDemand, inCart, inFavourites)
+  .grid-x.grid-padding-x
+    .cell.small-8.medium-6
+      .margin-bottom-6: img(src="./i/pr"  + Math.ceil(Math.random() * 6) + '.jpg' alt='Товар')
+    .cell.small-16.medium-18
+      .grid-x.grid-padding-x
+        .cell.small-24.medium-14
+          if discount
+            span.label
+              i.fa.fa-star-o
+              | &nbsp;Акция
+            | &nbsp;
+          a(href='shop-product.html').text-size-xlarge.font-bold Картридж совместимый SuperFine (SF-CN048AE) 951XL Magenta
+        .cell.small-24.medium-10.large-8.large-offset-2
+          if onDemand
+            .margin-bottom-6
+              span.text-dark-gray: em Нет в наличии&nbsp;
+          else
+            .margin-bottom-6
+              strong.text-size-xxlarge
+                | 1&nbsp;250&nbsp;
+                i.fa.fa-rub
+      
+      .grid-x.grid-padding-x
+        .cell.small-24.medium-24.large-14.align-self-middle
+          .margin-bottom-3.hide-for-small-only
+            | Образовательный конструктор Kid K'NEX Education "Организмы и жизненные циклы". Категория 3+. 18 моделей.
+          .margin-bottom-6
+            if !inFavourites
+              a.text-success(data-open="add-to-favourites-auth-popup")
+                i.fa.fa-heart-o
+                | &nbsp;Запомнить
+
+            else
+              a.text-dark-gray(href='' title='Удалить из запомненных')
+                i.fa.fa-heart
+                | &nbsp;Запомнено
+        .cell.small-24.medium-24.large-8.large-offset-2.align-self-bottom
+          if onDemand
+            .margin-bottom-6
+              a(href='#' title='')
+                i.fa.fa-bell-o
+                | &nbsp;Заказать
+          else
+            .margin-bottom-6
+              if inCart
+                a(href='shop-cart.html' title='')
+                  span.dark-gray
+                    i.fa.fa-check.fa-lg
+                    | &nbsp;В корзине
+              else
+                a(href='shop-cart.html' title='').button.hollow.margin-bottom-0
+                  i.fa.fa-shopping-basket
+                  | &nbsp;Купить
+  hr.margin-bottom-6

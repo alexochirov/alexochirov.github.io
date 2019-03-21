@@ -1,0 +1,27 @@
+.slide-events {
+  & .slick-prev,
+  & .slick-next {
+    padding-bottom: rem-calc(22);
+  }
+  & .slick-prev {
+    left: rem-calc(-21);
+  }
+  & .slick-next {
+    right: rem-calc(-13);
+  }
+  & .slick-dots {
+    position: relative;
+    right: rem-calc(0);
+  }
+  &__link {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+  }
+
+  & .slick-slide {
+    & .slide-events__image {
+      display: inline-block;
+    }
+  }
+}

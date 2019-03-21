@@ -1,0 +1,151 @@
+extends corp-index
+
+mixin qty-field
+  .grid-x.small-up-3.align-middle
+    .cell: button.button.button_minus(type='button') –
+    .cell: input(type='number')
+    .cell: button.button.button_plus(type='button') +
+
+
+block page
+  include components/common/_breadcrumbs
+  block content
+    .padding-top-6.padding-bottom-6
+      .grid-container: .grid-x.grid-padding-x
+        .cell.small-24.medium-8.large-6.medium-order-2
+          include components/site/_mira-spa-sidebar
+        .cell.auto.medium-order-1
+          h1.text-center Купить электронный билет на основное посещение термального центра
+          p Вы можете приобрести билет на основное посещение термального центра только по основному тарифу. Воспользоваться условиями специальных тарифов и акций вы можете только при покупке билета на рецепции термального комплекса в день посещения. Перед покупкой билета охнакомьтесь с правилами посещения, расписанием действия специальных тарифов и графиком работы термальных комплексов.
+          form.price-calculator(id='eticket-form' action='')
+            .margin-top-10.margin-bottom-6
+              .callout.gray-box
+                h3.text-center Выберите центр
+                fieldset
+                  .grid-x.grid-padding-x.margin-bottom-4.align-center
+                    .medium-12.large-8.cell.large-text-left
+                      .step
+                        input(type='radio' name="place" id='option6' checked).step__input
+                        label(for='option6').step__label Термы Мира. Набережная
+                    .medium-12.large-8.cell.large-text-left
+                      .step
+                        input(type='radio' name="place" id='option7').step__input
+                        label(for='option7').step__label Термы Мира. Сосновый бор
+
+                hr.margin-top-6.margin-bottom-6
+
+                h3.text-center Выберите тип билета
+                p.text-center: b Термы Мира. Сосновый бор
+                  br
+                  b Взрослые от 14 включительно
+                .grid-x.grid-padding-x.margin-bottom-2
+                  .cell.large-4.medium-7.small-9
+            
+                    .price-calculator__info.js-head2 Время
+                    .price-calculator__name.js-head1
+                    .price-calculator__hour 3 часа
+                    .margin-bottom-6 безлимит
+                    .show-for-small-only
+                      .price-calculator__name.js-head1
+                      .margin-bottom-6 3 часа
+                      .margin-bottom-6 безлимит
+                      
+                    .hide-for-large
+                      .price-calculator__info.js-head2 Время
+                      .price-calculator__name.js-head1
+                      .price-calculator__hour 3 часа
+                      .margin-bottom-6 безлимит
+                    .show-for-small-only
+                      .price-calculator__name.js-head1
+                      .margin-bottom-6 3 часа
+                      .margin-bottom-6 безлимит
+                  .cell.auto.medium-auto.price-calculator__divide
+                    .grid-x.grid-padding-x.large-up-2
+                      .cell
+                        .price-calculator__info.js-head2 Будние дни
+                        .grid-x.grid-padding-x.medium-up-2.align-middle
+                          .cell.text-center
+                            .price-calculator__name.price-calculator__name_border.js-head1 Зона «Аква»
+                            +qty-field
+                            +qty-field
+                          .cell.text-center
+                            .price-calculator__name.price-calculator__name_border.js-head1 Зона «Аква»+«Бани»
+                            +qty-field
+                            +qty-field
+                      .cell
+                        .price-calculator__info.js-head2 Выходные и праздничные дни
+                        .grid-x.grid-padding-x.medium-up-2.align-middle
+                          .cell.text-center
+                            .price-calculator__name.price-calculator__name_border.js-head1 Зона «Аква»
+                            +qty-field
+                            +qty-field
+                          .cell.text-center
+                            .price-calculator__name.price-calculator__name_border.js-head1 Зона «Аква»+«Бани»
+                            +qty-field
+                            +qty-field
+                      
+                    
+
+
+                p.text-center.text-dark-gray *для детей до 14 лет доступно только посещение зоны «Аква»
+
+                  hr.margin-top-6.margin-bottom-6
+
+                    //-------------------
+                p.text-center: b Детский, от 7 до 13 включительно
+
+                include components/common/_weekend
+                    
+        
+                
+          
+                
+
+                  //---------------------
+
+                hr.margin-top-6.margin-bottom-6
+
+                p.text-center: b Детский, от 0 до 6 включительно
+
+                include components/common/_weekend
+
+
+                //---------------------
+            .callout.gray-box
+              .margin-left-5
+                h3.text-center Ваш заказ
+                p Центр: #[b Термы Мира. Сосновый бор]
+                p Время отдыха: #[b Четверг, 6 Сентября 2018]
+                p Тип посещения: #[b Будни]
+                p Залы/Зоны: #[b «Аква» + «Бани»]
+                P Количество взрослых билетов от 14 лет, включительно: #[b 2]
+                P Количество детских билетов от 7 до 13 лет, включительно: #[b 1]
+                P Количество детских билетов от 0 до 6 лет, включительно: #[b 0]
+                P Срок действия билета: #[b с 10.09.2018 по 10.10.2018 включительно]
+                hr.margin-bottom-4
+                p #[b Общая сумма: 2 640 #[i.fa.fa-rouble]]
+
+
+            .callout.gray-box
+              h3.text-center Введите данные
+              .callout.gray-box
+                label ФИО*
+                input(type='text' required)
+                label Номер телефона*
+                input(type='text' required)
+                label E-mail*
+                input(type='email' required)
+                label
+                  input(type='checkbox' required)
+                  | Согласие на обработку персональных даннных*
+                label
+                  input(type='checkbox' required)
+                  | Согласие с #[a(href='') правилами покупки электронных билетов]*
+                label
+                  input(type='checkbox' required)
+                  | Согласие с #[a(href='') правилами посещения термального центра]*
+                label
+                  input(type='checkbox')
+                  | Соглашаюсь на получение рекламной информации по каналам связи
+
+          .text-center: button.button(type='submit' form='eticket-form') Оплатить заказ

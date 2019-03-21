@@ -1,0 +1,10 @@
+.text-center.info{color:#000000;}
+  .sm{font-size:9pt;}
+  .more-info { display: none; }
+  .more-info:not(:checked) + label + * { display: none; }
+
+  .more-info:not(:checked) + label,
+  .more-info:checked + label {
+    display: inline-block;
+    cursor: pointer;
+  }

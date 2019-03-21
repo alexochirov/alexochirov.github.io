@@ -1,0 +1,39 @@
+extends corp-index
+
+block page
+  .grid-container.agencies
+    .grid-x.grid-padding-x.agencies-head
+      .cell.large-shrink
+        h1.agencies-head__title Подписка через агентства
+      .cell.large-auto.align-self-bottom
+        a(href="").button.hollow.button_head Оформить подписку
+        a(href="").button.hollow.button_head Купить журнал
+
+    .grid-x.grid-padding-x.agencies-content
+      .cell.medium-18.large-12
+        p.agencies-content__head Оформить подписку на журнал «Retail & Loyalty» можно в любом отделении почтовой связи Российской Федерации:
+
+        .agency
+          h2.agency__title Агентство «Роспечать»
+          p #[span.agency__place Область подписки:] Москва, Россия, СНГ, Дальнее и Ближнее Зарубежье
+          p #[span.agency__index Подписной Индекс:] 84982
+          p #[span.agency__type Оформление подписки:] По каталогу Агентства «Газеты.Журналы» физические и юридические лица могут оформить подписку во всех отделениях почтовой связи Российской Федерации и странах СНГ и Балтии
+          p #[span.agency__contacts Контактная информация:] 123995, г. Москва, Д-308, ГСП-5, проспект Маршала Жукова, д. 4. Тел. #[a.link(href="tel:+74959212550") +7 495 921 2550], #[a.link(href="www.rosp.ru") www.rosp.ru]
+        .agency
+          h2.agency__title Агентство «Книга-Сервис»
+          p #[span.agency__place Область подписки:] Москва, Россия, СНГ, Дальнее и Ближнее Зарубежье
+          p #[span.agency__index Подписной Индекс:] 13189
+          p #[span.agency__type Оформление подписки:] по объединенному каталогу «Пресса России», интернет-каталогу #[a.link(href="www.akc.ru") www.akc.ru]
+          p #[span.agency__contacts Контактная информация:] 107996, г. Москва, Протопоповский пер., д. 19, корп.&nbsp;17.
+            br
+            | Тел. #[a.link(href="tel:+74956809088") +7 495 680 9088]. e-mail: #[a.link(href="mailto:public@akc.ru") public@akc.ru]
+        .agency
+          h2.agency__title Агентство «УРАЛ-ПРЕСС»
+          p #[span.agency__place Область подписки:] Москва, РФ, Казахстан, есть представительства за рубежом
+          p #[span.agency__contacts Контактная информация:] #[a.link(href="www.ural-press.ru/contact") www.ural-press.ru/contact]
+          p В Москве: Москва, ул. Новодмитровская, 5а, стр. 4, 1 подъезд, 2 этаж
+            br
+            | Тел.: #[a.link(href="tel:+74959612362") +7 495 961 2362], #[a.link(href="74957898636") 789 8636 (37)]. e-mail: #[a.link(href="mailto:moscow@ural-press.ru") moscow@ural-press.ru]
+            br
+            a.link(href="www.ural-press.ru") www.ural-press.ru
+

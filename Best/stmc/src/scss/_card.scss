@@ -1,0 +1,13 @@
+.card {
+  &__img {
+    height: rem-calc(150);
+    background-size: cover;
+    background-position: center top;
+
+    display: block;
+  }
+    @include breakpoint(small only) {
+    &__img {
+      height: rem-calc(200);  
+    } }
+}

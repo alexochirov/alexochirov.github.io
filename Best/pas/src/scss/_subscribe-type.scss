@@ -1,0 +1,31 @@
+.subscribe-type {
+  position: relative;
+  background-color: $primary-color;
+  border: rem-calc(1) solid $primary-color;
+  text-align: center;
+  padding: rem-calc(10);
+
+  &_hollow {
+    background-color: transparent;
+    padding-top: rem-calc(25);
+
+    & .subscribe-type__title {
+      color: $primary-color;
+    }
+  }
+  &__img {
+    max-height: 68px;
+  }
+
+  &__title {
+    margin-top: rem-calc(10);
+    color: $white;
+    font-family: $font-fira;
+    font-weight: 700;
+    font-size: rem-calc(14);
+    text-transform: uppercase;
+  }
+  &__buttons {
+    margin-top: rem-calc(15);
+  }
+}

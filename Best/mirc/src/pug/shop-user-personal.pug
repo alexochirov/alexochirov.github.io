@@ -1,0 +1,45 @@
+extends corp-regular
+block content
+    .grid-container: .grid-x.grid-padding-x: .cell.margin-top-6
+        h1.text-center Личный кабинет участника
+            br
+            | системы лояльности «Мираминуты»
+    .padding-top-2.padding-bottom-6
+    block personal
+        .grid-container.margin-bottom-4: .grid-x.grid-padding-x.align-center
+            .cell.small-24.medium-16.large-12
+                .callout.gray-box.padding-6
+                    .grid-container: .grid-x.grid-padding-x: .cell.auto.margin-bottom-4
+                        h5.text-center Регистрационные данные:
+                        p: hr
+                        p
+                            strong Email (логин):&nbsp;
+                            | user@mailserver.com
+                        p
+                            strong Имя:&nbsp;
+                            | Александр Константинов
+                        p: hr
+                        p.text-center.margin-0: a(href='shop-user-edit.html') Изменить данные
+        .grid-container.margin-bottom-4: .grid-x.grid-padding-x.align-center
+            .cell.small-24.medium-16.large-12
+                .callout.gray-box.padding-6
+                    h5.text-center Информация о «Мираминутах»:
+                    p: hr
+                    p
+                        strong Мираминут: &nbsp;
+                        | 75
+                    p: a(href="#") На что потратить бонусы
+
+        .grid-container.margin-bottom-4: .grid-x.grid-padding-x.align-center
+            .cell.small-24.medium-16.large-12
+                .callout.gray-box.padding-6
+                    h5.text-center Получать на электронную почту:
+                    p: hr
+                    form
+                        label
+                            input(type='checkbox' checked)
+                            | Сообщения об акциях и новостях
+                        p: hr
+                        p.margin-0.text-center
+                            button.button.margin-bottom-0 Сохранить
+

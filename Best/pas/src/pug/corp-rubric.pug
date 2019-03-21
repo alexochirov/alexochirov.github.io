@@ -1,0 +1,84 @@
+extends corp-index
+include components/mixins/_mixin-news-preview
+
+mixin rubricShortcard(imgSrc, entry, newsTitle, newsText)
+  .cell
+    a(href="#").art
+      .art__img
+        img(src=imgSrc, alt="")
+      .art__date
+        if entry
+          span.art__entry Статья
+        | 10:40, 13 Июля, 183 просмотра
+      .art__title= newsTitle
+      .art__short= newsText
+
+block page
+  .grid-container.margin-bottom-12
+    .grid-x.grid-padding-x
+      .cell.medium-8.large-6
+        include components/corporate/_left-side
+      .cell.auto
+        .grid-x.news-header
+          .cell.auto
+            h1.news-header__title E-Commerce
+          .cell.shrink.news-header__right
+            a.news-header__tab(href="") НОВОСТИ
+            a.news-header__tab(href="") СТАТЬИ
+        hr
+
+        +newsPreview('./i/news-preview-1.png', '10:40, 13 Июля, 183 просмотра', 'Держатели карты «Халва» могут покупать на Биглион в рассрочку', 'Биглион – крупнейший в России онлайн-сервис скидок и кэшбэка – присоединился к партнерской программе Совкомбанка для держателей карты «Халва».')
+
+        .grid-x.grid-padding-x
+          .cell.large-auto
+            .grid-x.grid-padding-x.medium-up-2
+              +rubricShortcard('./i/rubric-1.png', false, 'Walmart прекратит продажу одежды с символикой СССР', 'Американский ритейлер Walmart собирается прекратить продажу одежды с символикой')
+              +rubricShortcard('./i/rubric-2.png', false, 'Через маркетплейс «Беру!» начали продавать еду', 'Через онлайн-маркетплейс «Беру» – совместное предприятие «Яндекса» и Сбербанка – теперь можно купить еду.')
+          .cell.large-8
+            a(href="").blank
+              .blank__back
+              .blank__container
+                .blank__triangle
+              .blank__man.text-center
+                img(src="./i/person.png" alt="")
+              h3.blank__info Какие технологии станут драйверами развития ритейла?
+              p.blank__quote Через два-три года российские ритейлеры смогут догнать своих зарубежных коллег в технологическом плане
+
+        .grid-x.grid-padding-x.align-middle
+          .cell.large-auto
+            .margin-bottom-4
+              +advert('./i/580.png')
+          .cell.large-8
+            include components/corporate/_subscribe-block
+        .grid-x.grid-padding-x.medium-up-2.large-up-3
+          +rubricShortcard('./i/rubric-3.png', false, 'Acer запустила интернет-магазин в РФ', 'Acer запустила интернет-магазин в РФ', 'Здесь представлен широкий ассортимент устройств, в том числе премиального сегмента.')
+          +rubricShortcard('./i/rubric-4.png', false, 'Онлайн-ритейлеры осваивают новые форматы продаж', 'Крупные онлайн-ритейлеры, которые уже стали причиной снижения продаж у обычных розничных магазинов, решили развивать традиционный ритейл.')
+          +rubricShortcard('./i/rubric-5.png', false, 'Производители становятся онлайн-ритейлерами, или Успеть запрыгнуть в уходящий поезд', 'E-commerce агентство AERO представило на форуме Retail Business Russia результаты исследования «Производитель – новый ритейлер».')
+
+    .grid-x.grid-padding-x.article-preview.article-preview_entry
+      .cell.large-8.text-center
+        img.article-preview__image(src="./i/rubric-person-2.png" alt="")
+      .cell.large-12
+        .article-preview__date
+          span.article-preview__entry Статья
+          | 10:40, 13 Июля  |  183 просмотра
+        a(href="").article-preview__title
+          h2 Многообразие каналов повышает эффективность маркетинговой стратегии
+        p.article-preview__text Главное для тех, кто работает сегодня в онлайн-ритейле, – научиться узнавать как можно больше о покупателе. В противном случае компания может со временем оказаться в крайне незавидном положении, считает Андреас Мизера, старший операционный директор компании Criteo.
+
+    .grid-x.grid-padding-x.medium-up-2.large-up-4
+      +rubricShortcard('./i/rubric-3.png', false, 'Acer запустила интернет-магазин в РФ', 'Здесь представлен широкий ассортимент устройств, в том числе премиального сегмента.')
+      +rubricShortcard('./i/rubric-4.png', false, 'Онлайн-ритейлеры осваивают новые форматы продаж', 'Крупные онлайн-ритейлеры, которые уже стали причиной снижения продаж у обычных розничных магазинов, решили развивать традиционный ритейл.')
+      +rubricShortcard('./i/rubric-5.png', true, 'Производители становятся онлайн-ритейлерами, или Успеть запрыгнуть в уходящий поезд', 'E-commerce агентство AERO представило на форуме Retail Business Russia результаты исследования «Производитель – новый ритейлер».')
+      +rubricShortcard('./i/rubric-3.png', false, 'Acer запустила интернет-магазин в РФ', 'Здесь представлен широкий ассортимент устройств, в том числе премиального сегмента.')
+      +rubricShortcard('./i/rubric-3.png', false, 'Acer запустила интернет-магазин в РФ', 'Здесь представлен широкий ассортимент устройств, в том числе премиального сегмента.')
+      +rubricShortcard('./i/rubric-4.png', true, 'Онлайн-ритейлеры осваивают новые форматы продаж', 'Крупные онлайн-ритейлеры, которые уже стали причиной снижения продаж у обычных розничных магазинов, решили развивать традиционный ритейл.')
+      +rubricShortcard('./i/rubric-5.png', false, 'Производители становятся онлайн-ритейлерами, или Успеть запрыгнуть в уходящий поезд', 'E-commerce агентство AERO представило на форуме Retail Business Russia результаты исследования «Производитель – новый ритейлер».')
+      +rubricShortcard('./i/rubric-3.png', false, 'Acer запустила интернет-магазин в РФ', 'Здесь представлен широкий ассортимент устройств, в том числе премиального сегмента.')
+
+    .grid-x.align-middle
+      .cell.medium-auto
+        include components/common/_pagination-materials
+      .cell.medium-shrink.text-center
+        a(href="").button.button_bottom.hollow Все статьи
+        a(href="").button.button_bottom.hollow Все новости

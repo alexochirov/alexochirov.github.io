@@ -1,0 +1,67 @@
+.service {
+  font-size: rem-calc(16);
+  line-height: 1.5;
+  margin-bottom: rem-calc(36);
+
+  &__title {
+    margin-bottom: rem-calc(0);
+    font-size: rem-calc(41);
+  }
+
+  &__img {}
+
+  &__sub {
+    padding-top: rem-calc(14);
+  }
+
+  &__pos {
+    padding-top: rem-calc(100);
+  }
+
+  &__link {
+    display: block;
+    font-size: rem-calc(16);
+    margin-bottom: rem-calc(18);
+    color: $black;
+  }
+
+  &__theme {
+    font-weight: 800;
+    position: relative;
+    margin-bottom: rem-calc(14);
+    font-family: $font-fira;
+    font-size: rem-calc(20);
+
+    &_top {
+      margin-bottom: rem-calc(0);
+      top: rem-calc(-24);
+    }
+  }
+
+  &__buyer {
+    font-size: rem-calc(27);
+    font-weight: 800;
+    font-family: $font-fira;
+    color: $primary-color;
+    line-height: 1.1;
+    margin-bottom: rem-calc(25);
+  }
+  @include breakpoint(medium down) {
+    &__pos {
+      padding-top: rem-calc(0);
+    }
+  }
+  @include breakpoint(small only) {
+    &__theme {
+      top: rem-calc(0);
+    }
+
+    &__buyer {
+      font-size: rem-calc(20);
+    }
+
+    &__title {
+      font-size: rem-calc(32);
+    }
+  }
+}

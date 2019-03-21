@@ -1,0 +1,96 @@
+.bath {
+  background-size: cover;
+  background-position: center;
+
+  &__wrapper {
+    background: rgba($lime,0);
+    transition: 0.27s ease;
+  }
+  &:hover {
+    .bath__wrapper {
+    }
+    .bath__text {
+    }
+
+  }
+
+  &__text {
+    display: inline-block;
+    font-size: rem-calc(42);
+    font-family: 'Merriweather', serif;
+    color: $white;
+    width: 100%;
+    text-decoration: none;
+    padding: rem-calc(100) 1rem;
+    transition: 0.27s ease;
+
+  }
+  @include breakpoint(large down) {
+    height: rem-calc(380);
+    font-size: rem-calc(27);
+  }
+  @include breakpoint(medium down) {
+    height: rem-calc(300);
+  }
+  @include breakpoint(small only) {
+    height:auto;
+    border-bottom:2px solid #ffffff;
+    &__text {
+      font-size: 1.652rem;
+      padding: rem-calc(48) 1rem;
+    }
+  }
+  @include breakpoint(medium up) {
+    &:nth-child(1), &:nth-child(3) {
+      border-right: 2px solid #ffffff;
+    }
+    &:nth-child(2) {
+      border-right: 1px solid #ffffff;
+    }
+    &:nth-child(3) {
+      border-left: 1px solid #ffffff;
+    }
+
+  }
+  &_alt {
+    text-decoration: none;
+    margin-bottom: 1.5rem;
+    &__img svg {
+      height: rem-calc(120);
+      width: rem-calc(120);
+
+      #background {
+        fill: #ffffff;
+      }
+      #icon {
+        fill:$water;
+        transition: 0.1s ease;
+      }
+      * {
+        transition: 0.27s ease;
+      }
+    }
+    &__text {
+      font-family: "Fira Sans", "Helvetica Neue", sans-serif;
+      text-decoration: none;
+      font-size: rem-calc(32);
+    }
+    &:hover {
+      svg {
+        #background {
+          fill:lighten($lime,10);
+        }
+      }
+    }
+
+  }
+}
+@include breakpoint(small only) {
+  .bath_alt__img svg {
+    height: rem-calc(80);
+    width: rem-calc(80);
+  }
+  .bath_alt__text {
+    font-size: 1.5rem;
+  }
+}

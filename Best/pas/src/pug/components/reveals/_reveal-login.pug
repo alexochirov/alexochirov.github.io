@@ -1,0 +1,27 @@
+.reveal.reveal_login#login-form(data-reveal data-deep-link='true')
+  ul.tabs.tabs_login#user-tabs(data-tabs)
+    li.tabs-title.is-active: a(href="#user-login") Вход
+    li.tabs-title: a(href="#user-register" data-tabs-target="user-register") Регистрация
+
+  .tabs-content.tabs-content_login(data-tabs-content="user-tabs")
+    .tabs-panel.is-active#user-login
+      form.modal-form(action="#" method="POST")
+        input.modal-form__input(type="text" placeholder="Логин")
+        input.modal-form__input.modal-form__input_low(type="password" placeholder="Пароль")
+        a(href="#login-recovery") Напомнить пароль
+        button.button.button_login.expanded(type="submit") Вход
+        input.modal-form__checkbox(type="checkbox" id="remember")
+        label.modal-form__label(for="remember") Запомнить меня
+
+    .tabs-panel#user-register
+      form.modal-form(action="#" method="POST")
+        input.modal-form__input(type="text" placeholder="Логин")
+        input.modal-form__input_low(type="email" placeholder="Электронная почта")
+        span.modal-form__help На указанный адрес будет выслан пароль
+        input.modal-form__input(type="tel" placeholder="Мобильный телефон")
+        input.modal-form__input(type="password" placeholder="Пароль")
+        p.modal-form__text Нажатием кнопки «Зарегистрироваться» я подтверждаю свое согласие с #[a(href='#' title='Правила') Правилами сайта] и #[a(href='#' title='Условия') Условиями обработки данных]
+        button.button.button_register.expanded(type="submit") Зарегистрироваться
+
+  button.close-button.show-for-small-only(data-close aria-label="Close modal" type="button")
+    span(aria-hidden="true") &times;

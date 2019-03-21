@@ -1,0 +1,30 @@
+extends corp-index
+
+block page
+  .grid-container: .grid-x.grid-padding-x
+    .cell.auto
+      .text-center
+        h1.margin-bottom-10 Восстановление пароля
+      .grid-x.grid-padding-x.align-center
+        .cell.small-24.medium-24.large-16
+          p
+            | Если вы забыли пароль, введите логин или E-Mail.
+            br
+            | Контрольная строка для смены пароля, а также ваши регистрационные данные, будут высланы вам по E-Mail.
+          form(action='shop-user-login.html')
+            label
+              | Введите либо ваш логин
+              input(type='text')
+            label
+              | Либо ваш email
+              input(type='email')
+            button(type="submit").button
+              | Выслать контрольную строку &nbsp;
+              i.far.fa-envelope.fa-lg
+            a(href='shop-user-login.html', title='') Авторизация
+
+    .cell.medium-8.large-6
+      .margin-bottom-10
+        include components/corporate/_subscribe-journal
+      .margin-bottom-10
+        include components/corporate/_expert-forum

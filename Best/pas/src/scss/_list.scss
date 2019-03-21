@@ -1,0 +1,46 @@
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &_ordered {
+    counter-reset: li;
+
+    & .list__item {
+      counter-increment: li;
+
+      &:before {
+        display: inline-block;
+        margin-right: rem-calc(10);
+        content: counter(li) ".";
+        color: $primary-color;
+      }
+    }
+  }
+
+  &_unordered {
+
+    & .list__item {
+      position: relative;
+      padding-left: rem-calc(40);
+
+      &:before {
+        display: block;
+        position: absolute;
+        content: '';
+        top: rem-calc(8);
+        left: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: rem-calc(4 0 4 8);
+        border-color: transparent transparent transparent $primary-color;
+      }
+    }
+
+  }
+
+  &__item {
+    padding-bottom: rem-calc(20);
+  }
+}

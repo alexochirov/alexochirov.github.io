@@ -1,0 +1,18 @@
+extends corp-index
+include components/mixins/_mixin-spa-program
+block page
+  include components/common/_breadcrumbs
+  block content
+    .grid-container.margin-top-8.margin-bottom-6: .grid-x.grid-padding-x: .small-24.medium-16.large-18.cell.text-center
+      h1 Аква-зона
+    .grid-container: .grid-x.grid-padding-x
+      .cell.small-24.medium-8.large-6.medium-order-2
+        include components/site/_mira-thermes-sidebar
+      .cell.auto
+        .grid-x.grid-padding-x.small-up-1.medium-up-2.large-up-3.medium-order-1(data-equalizer="card-service" data-equalize-by-row="true")
+          .cell
+            +card-service('photo5', none ,'Большой бассейн','Бассейн с минерализованной водой бодрит и поднимает настроение','Сосновый бор')
+          .cell
+            +card-service('photo4', none ,'Джакузи','Джакузи тонизируют мышцы и улучшают циркуляцию крови','Набережная')
+          .cell
+            +card-service('photo3', none ,'Соляной грот','Насыщенный минералами воздух соляного грота улучшает дыхание','Сосновый бор')

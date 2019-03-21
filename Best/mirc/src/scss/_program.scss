@@ -1,0 +1,15 @@
+.program {
+  list-style-type: none;
+  margin-left: rem-calc(23);
+
+  &__item {
+    margin-bottom: rem-calc(18);
+  }
+
+  &__link {
+    font-weight: 500;
+    outline: none;
+    font-size: rem-calc(14);
+    text-decoration: none;
+  }
+}

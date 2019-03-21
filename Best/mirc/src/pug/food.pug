@@ -1,0 +1,24 @@
+extends corp-index
+
+block page
+  include components/common/_breadcrumbs
+  block content
+    .grid-container.margin-top-8.margin-bottom-6: .grid-x.grid-padding-x: .cell
+      h1.text-center Фудкорт
+      .lead.text-center Пара чашек чая после парной, или освежающий коктейль на пляже —
+        br
+        | не только вкусно, но и полезно
+    .grid-container
+      .grid-x.grid-padding-x.small-up-1.medium-up-2.large-up-4.align-center.margin-bottom-8(data-equalizer,data-equalize-by-row="true").text-center
+        .cell: .card
+          .card-image: a(href='food-place.html'): img(src='./i/photo1.jpg' alt='')
+          .card-section(data-equalizer-watch): a(href='food-place.html'): h4.margin-0 Ресторан
+        .cell: .card
+          .card-image: a(href='food-place.html'): img(src='./i/photo2.jpg' alt='')
+          .card-section(data-equalizer-watch): a(href='food-place.html'): h4.margin-0 Кафе
+        .cell: .card
+          .card-image: a(href='food-place.html'): img(src='./i/photo3.jpg' alt='')
+          .card-section(data-equalizer-watch): a(href='food-place.html'): h4.margin-0 Кофейня
+        .cell: .card
+          .card-image: a(href='food-place.html'): img(src='./i/photo4.jpg' alt='')
+          .card-section(data-equalizer-watch): a(href='food-place.html'): h4.margin-0 Бар

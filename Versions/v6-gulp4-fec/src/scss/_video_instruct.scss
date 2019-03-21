@@ -1,0 +1,28 @@
+.wrapper {
+  padding: 20px;
+}
+.video_instruct {
+  border: 1px solid #e2e2e2;
+  background: url(../images/arrow_down.png) no-repeat right 32px top 13px;
+  background-size: 15px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.video_instruct p {
+  margin-bottom: 5px;
+  font-size: 19px;
+  padding-left: 30px;
+}
+.you_video {
+  display: none;
+}
+
+.video_instruct-drop_up {
+  background: url(../images/arrow_up.png) no-repeat right 32px top 13px;
+  background-size: 15px;
+  margin-bottom: 20px;
+}
+
+.you_video-show {
+  display: block;
+}

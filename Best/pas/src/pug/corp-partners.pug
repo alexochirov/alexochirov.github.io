@@ -1,0 +1,19 @@
+extends corp-index
+
+mixin partner (img)
+  .cell
+    .partner(data-equalizer-watch="partner")
+      .partner__title Newland
+      img.partner__logo(src=img alt="newland")
+      .partner__contacts
+        p.partner__contact Телефон: #[a.partner__phone(href="tel:+74951111111") +7 495 111 1111]
+        p.partner__contact e-mail: #[a.partner__email(href="mailto:index@index.uru") index@index.uru]
+
+block page
+  .grid-container
+    h1 Партнеры
+    .grid-x.grid-padding-x.padding-vertical-20.large-up-4.medium-up-2(data-equalizer="partner")
+
+      - for (var i = 0; i < 16; i++)
+        +partner("./i/newland.png")
+

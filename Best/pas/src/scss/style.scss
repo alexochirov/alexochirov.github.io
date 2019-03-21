@@ -1,0 +1,101 @@
+@charset "utf-8";
+
+// Все картинки и шрифты необходимо подключать с использованием этих двух переменных:
+$imagesPath: '../images' !default;
+$fontsPath: '../fonts' !default;
+
+$textSizes: (tiny: 0.7rem, xsmall: 0.8rem, small: 0.9rem, default: 1rem, large: 1.1rem, xlarge: 1.25rem, xxlarge: 1.5rem, xxxlarge: 2.5rem) !default;
+
+$minify: false !default;
+@if $minify {
+  $imagesPath: './images';
+  $fontsPath: './fonts';
+  $fa-font-path: $fontsPath;
+}
+
+@import "fonts";
+@import "foundation-settings";
+
+@import "slick.scss";
+@import "foundation";
+@import "motion-ui";
+@import "jquery.fancybox";
+@include foundation-everything(true, true);
+
+@import "common";
+@import "slick/slick-theme";
+
+@import "carousel/carousel-main";
+@import "carousel/carousel-news";
+@import "carousel/carousel-services";
+@import "background";
+@import "checkbox-group";
+@import "dd";
+@import "menu-base";
+@import "menu-top";
+@import "rating";
+@import "search-top";
+@import "sticky-footer";
+@import "text";
+@import "text-size";
+@import "journal";
+@import "news";
+@import "header";
+@import "develop";
+@import "net";
+@import "info";
+@import "button";
+@import "tabs";
+@import "blank";
+@import "currency";
+@import "market";
+@import "solution";
+@import "js-head-height";
+@import "art";
+@import "buy";
+@import "breadcrumbs";
+@import "smart";
+@import "advance";
+@import "footer";
+@import "reveal";
+@import "drop";
+@import "events";
+@import "slide-events";
+@import "datepicker";
+@import "archive";
+@import "page-preview";
+@import "article-preview";
+@import "pagination";
+@import "form";
+@import "page";
+@import "subscribe-type";
+@import "read-also";
+@import "read-in-nubmer";
+@import "number";
+@import "pickmeup";
+@import "p_hint";
+@import "event-calendare";
+@import "modal-form";
+@import "contact";
+@import "link";
+@import "service";
+@import "acc";
+@import "ret";
+@import "paper";
+@import "direct";
+@import "special-projects";
+@import "project-card";
+@import "get-mobile";
+@import "partner";
+@import "svg-icon";
+@import "for-authors";
+@import "list";
+@import "agencies";
+@import "agency";
+@import "anchor-list";
+@import "term";
+@import "translation";
+@import "about";
+@import "subscription";
+@import "responsive-embed";
+@import "advertising";

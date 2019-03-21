@@ -1,0 +1,93 @@
+extends corp-index
+
+block page
+  .grid-container.margin-bottom-12.grid-x.grid-padding-x
+    .cell.auto
+      block blog-content
+        .grid-x
+          .cell.auto
+            h1.margin-bottom-0 База знаний
+          .cell.shrink.align-self-bottom
+            a(data-open="submit-term").button.hollow.button_low Предложить термин
+        hr
+
+        .grid-x.grid-padding-x.anchor-list-wrapper
+          .cell
+            ul.anchor-list
+              li.anchor-list__item: a.anchor-list__link.anchor-list__link_active А
+              each rus in ['Б', 'В', 'Г', 'Д', 'Е', 'Ё', 'Ж', 'З', 'И', 'Й', 'К', 'Л', 'М', 'Н', 'О', 'П', 'Р', 'С', 'Т', 'У', 'Ф', 'Х', 'Ц', 'Ч', 'Ш', 'Щ', 'Ы', 'Ъ', 'Ь', 'Э', 'Ю', 'Я']
+                li.anchor-list__item: a.anchor-list__link= rus
+          .cell.large-7
+            ul.anchor-list
+              each num in ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+                li.anchor-list__item: a.anchor-list__link= num
+          .cell.large-17
+            ul.anchor-list
+              each eng in ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+                li.anchor-list__item: a.anchor-list__link= eng
+
+        .margin-bottom-12
+          +advert('./i/580.png')
+
+        ul.term
+          li: a.term__item(href="corp-blog-article.html") #[span.term__title B2B] (англ. «Business to business» – рус. «Бизнес для бизнеса», сокращённо произносится, как «би ту би») – это сектор рынка, который работает не на конечного потребителя, а на другие компании...
+          li: a.term__item(href="corp-blog-article.html") #[span.term__title B2C] (англ. «Business-to-consumer», рус. «Бизнес для потребителя») – это сектор рынка, который работает на конечного потребителя...
+          li: a.term__item(href="corp-blog-article.html") #[span.term__title CRM] (англ. «Customer Relationship Management») переводится как «управление взаимоотношениями с клиентами». Это программное обеспечение, предназначенное для того, чтобы автоматизировать, организовать и упростить процесс работы с клиентами, сделать его более прозрачным и понятным...
+          li: a.term__item(href="corp-blog-article.html") #[span.term__title Cross-sell] (кросс-продажа, или дополнительная продажа) – продажа, совершаемая на фоне уже сделанной покупки, обычно ее дополняющая (продажа сопутствующих товаров).
+
+        h2 Азбука потребителя
+        include components/corporate/_carousel-special-projects-3th
+        ul.term
+          li: a.term__item(href="corp-blog-article.html") #[span.term__title Cross-sell] (кросс-продажа, или дополнительная продажа) Если вы продаете обувь, то сопутствующими товарами могут быть средства по уходу за ней.
+          li: a.term__item(href="corp-blog-article.html") #[span.term__title KPI] (англ. «Key Performance Indicators»), или ключевые показатели эффективности – это система оценки, которая помогает организации в достижении стратегических и тактических целей.
+          li: a.term__item(href="corp-blog-article.html") #[span.term__title Up-sell], или «поднятие суммы продажи» – это мотивация покупателя купить товар за бОльшую сумму. Например, в сравнении с более дорогим и более качественным/функциональным товаром, покупатель склоняется к более дорогому товару.
+          li: a.term__item(href="corp-blog-article.html") #[span.term__title Активные продажи] – это процесс продажи товара/услуги, включающий в себя поиск клиентов, выявление и удовлетворение их потребностей.
+          li: a.term__item(href="corp-blog-article.html") #[span.term__title Активное слушание] – коммуникативная техника, при которой роль слушателя заключается в поддержке говорящего.
+          li: a.term__item(href="corp-blog-article.html") #[span.term__title Альтернативный вопрос] – вопрос, в котором заключено два (три) варианта ответа.
+          li: a.term__item(href="corp-blog-article.html") #[span.term__title Аттракция] – приятное ощущение, чувство по отношению к кому- или чему-либо, возникающее у человека под влиянием собеседника.
+          li: a.term__item(href="corp-blog-article.html") #[span.term__title Влияющие лица] – участники закупочного центра, не участвующие непосредственно в совершении покупки, но влияющие на нее.
+          li: a.term__item(href="corp-blog-article.html") #[span.term__title Выяснение потребностей] – один из пяти этапов продаж, заключающийся в выявлении необходимости потенциального клиента решить определенные проблемы и задачи.
+
+        ul.pagination.pagination_bottom
+          li Терминов: 2246
+          li.pagination-previous.disabled
+            include ../images/arrow-prev.svg
+          li.current 1
+          for i in [2,3,4,5,6,7,8,9,10,11,12]
+            li
+              a(href='#' title='' aria-label='Страница #{i}') #{i}
+          li.ellipsis
+          li
+            a(href='#' title='' aria-label='Страница 13') 13
+          li.pagination-next
+            a(href='#' title='' aria-label='Следующая страница')
+              include ../images/arrow-next.svg
+
+    .cell.medium-9.large-6
+      .margin-bottom-10
+        include components/corporate/_subscribe-journal
+      .margin-bottom-10
+        include components/corporate/_figure-day
+      .margin-bottom-10
+        +advert('./i/ad-280x400.png')
+
+  .grid-container
+    .grid-x.grid-padding-x.align-center.margin-vertical-10
+      .cell.large-23
+        .slide-events
+          .slide-events__item
+            a.slide-events__link(title=""): img.slide-events__image(src="./i/event_slide.png", alt="")
+          .slide-events__item
+            a.slide-events__link(title=""): img.slide-events__image(src="./i/event_slide.png", alt="")
+          .slide-events__item
+            a.slide-events__link(title=""): img.slide-events__image(src="./i/event_slide.png", alt="")
+          .slide-events__item
+            a.slide-events__link(title=""): img.slide-events__image(src="./i/event_slide.png", alt="")
+          .slide-events__item
+            a.slide-events__link(title=""): img.slide-events__image(src="./i/event_slide.png", alt="")
+          .slide-events__item
+            a.slide-events__link(title=""): img.slide-events__image(src="./i/event_slide.png", alt="")
+          .slide-events__item
+            a.slide-events__link(title=""): img.slide-events__image(src="./i/event_slide.png", alt="")
+
+  include components/reveals/_reveal-submit-term

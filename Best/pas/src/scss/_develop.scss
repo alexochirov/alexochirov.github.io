@@ -1,0 +1,36 @@
+.develop {
+  display: flex;
+  list-style-type: none;
+  margin: rem-calc(0);
+
+  &__item {
+    margin-right: rem-calc(5);
+
+
+  }
+
+  &__link {
+    display: inline-block;
+    padding: rem-calc(10) rem-calc(13) rem-calc(9);
+    font-size: rem-calc(12);
+    text-transform: uppercase;
+    font-weight: 500;
+    color: $white;
+    font-family: $font-fira;
+
+&:focus,&:active{
+    color: $white;
+  }
+    &:hover {
+      background: $yellow;
+      color: $white;
+    }
+  }
+  @include breakpoint(medium down) {
+
+
+    &__item {
+      margin-left: rem-calc(5);
+    }
+  }
+}

@@ -1,0 +1,49 @@
+header.header
+  .header__top
+    .grid-container
+      .grid-x.grid-padding-x
+        .cell.large-5.medium-2.align-self-middle.small-5
+          .header__wrap.text-center
+            a(data-toggle="offCanvasLeftOverlap").header__link
+              i.fa.fa-bars
+
+
+        .cell.large-14.medium-14.hide-for-small-only.text-center.header__text Новосибирск, ул. Добролюбова, 2А, БЦ «Речной вокзал»
+        .cell.large-5.small-19.text-right.align-self-middle.medium-8
+          .header__wrap.header__wrap_no.text-center
+            a(href="#").header__link.text-center.margin-horizontal-2
+              i.fa.fa-search
+          .header__wrap.header__wrap_no.text-center
+            a(href="#").header__link
+              i.fa.fa-shopping-cart
+              span.header__cart 3
+          .header__wrap.text-center.header__wrap_sign
+            a(href="#").header__sign
+              i.fa.fa-sign-in
+  .header__main
+    .grid-container
+      .grid-x.grid-padding-x
+        .cell.show-for-small-only.text-center.small-12
+          a(data-toggle="cert tel embankment").header__toggle
+            i.fa.fa-bars
+          
+        .cell.large-6.header__info.medium-7.small-order-3.medium-order-2.text-center.medium-text-left#tel(data-toggler=".hide-for-small-only").hide-for-small-only
+          div Запись по телефону:
+          .margin-bottom-4
+            a(href="tel:+73833491849").header__tel +7 (383) 349-18-49
+          div
+            a(href="https://www.facebook.com/miracentr.ru/").soc
+              i.fa.fa-facebook
+            a(href="https://vk.com/miracentr").soc
+              i.fa.fa-vk
+            a(href="https://ok.ru/miracentr").soc
+              i.fa.fa-odnoklassniki
+            a(href="https://www.instagram.com/miracentrru/").soc
+              i.fa.fa-instagram
+        .cell.large-12.text-center.medium-8.small-12.small-order-2.medium-order-3.align-self-middle
+          a.header__logo(href='#')
+            img(src="./images/logo.svg", alt="")
+        .cell.large-6.header__cert.text-center.medium-text-right.medium-9.small-order-4#cert(data-toggler=".hide-for-small-only").hide-for-small-only
+          a(href="#").button.small.hollow.header__gift
+            | Купить сертификат
+            img(src="./images/gift.svg", alt="")

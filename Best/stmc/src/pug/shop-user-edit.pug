@@ -1,0 +1,36 @@
+extends shop-user-personal
+
+block personal
+    form.callout
+        label.text-white Наименование юрлица
+            input(type='text' required)
+        label.text-white ОПФ (ООО/ИП)
+            input(type='text' required)
+        label.text-white Система налогообложения (ОСН / УСН) 
+            input(type='text' required)
+        label.text-white ИНН
+            input(type='text' required)
+  
+        label.text-white Город
+            input(type='text' required)
+
+        label.text-white Имя
+            input(type='text')
+        label.text-white Фамилия
+            input(type='text')
+
+        label.text-white Электронная почта
+            input(type='email')
+
+        label.text-white Контактный телефон *
+            input(type='text' required)
+
+  
+
+        label.text-white Новый пароль
+            input(type='password')
+
+        label.text-white Подтверждение пароля
+            input(type='password')
+
+        button.button Сохранить

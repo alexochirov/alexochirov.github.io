@@ -1,0 +1,75 @@
+extends corp-index
+
+block page
+  .grid-container: .grid-x.grid-padding-x
+    .cell.auto
+      h1.margin-bottom-12 Профиль
+
+      .grid-x.grid-padding-x
+        .cell.large-9
+          form(action="#").form-personal
+            .grid-x.margin-bottom-6.align-middle
+              .cell.auto
+                h3.margin-0 Личные данные
+              .cell.shrink
+                button(type="submit").button.button_low.hollow Сохранить
+            .margin-bottom-12
+              input(type="email" placeholder="design@plus-alliance.com")
+              input(type="text" placeholder="Тимур Такташов")
+              .form-personal__custom
+                input.form-personal__custom__phone(type="tel" placeholder="8 (926) 532 37 11")
+                span.form-personal__success Подтвержден
+              input(type="text" placeholder="Компания")
+              input(type="text" placeholder="Должность")
+              span.form-personal__text Указажите все данных и Вам будет доступна Еженедельная тематическая рассылка (рассылка отправляется 1 раз в неделю) #[.text-primary + подписка на электронную версию журнала на 1 месяц]
+            h3.form-personal__title Смена пароля
+            .form-personal__custom
+              input.form-personal__custom__password(type="password" placeholder="Пароль")
+              span.form-personal__repeat Повторите пароль
+            span.form-personal__text Укажите новый пароль
+              br
+              | Пароль должен быть не менее 6 символов.
+        .cell.large-offset-1.large-14
+          .form-services
+            h3.form-services__title Подключение сервисов
+            .grid-x
+              .cell.small-24
+                input.form-services__checkbox(type="checkbox" id="daily-news")
+                label.form-services__text(for="daily-news") Ежедневные новости Retail & Loyalt
+                input.form-services__checkbox(type="checkbox" id="anonce-journal")
+                label.form-services__text(for="anonce-journal") Анонс содержания текущего номера журнала «Retail & Loyalty» (8 журналов в год)
+                input.form-services__checkbox(type="checkbox" id="retail-events")
+                label.form-services__text(for="retail-events") Retail&Loyalty-events (1 раз в месяц, анонс ближайших мероприятий индустрии)
+                input.form-services__checkbox(type="checkbox" id="weekly-sends")
+                label.form-services__text(for="weekly-sends") Еженедельная тематическая рассылка
+
+                h3.form-services__title.form-services__title_rubricks Выбрать рубрики
+                .form-services__rubricks
+                  for i in ['Инновации', 'Новости ритейла', 'E-Commerce', 'Cети', 'Технологии', 'Платежи и кассы', 'Лояльность', 'Логистика', 'HoReCA', 'FMCG']
+                    label.form-services__rubrick
+                      input.form-services__rubrick__checkbox(type="checkbox")
+                      span.form-services__rubrick__text #{i}
+
+          .form-subscribe
+            h3.form-subscribe__title Управление подпиской
+            .form-subscribe__buttons
+              a(href="//www.retail-loyalty.org/journal_retail_loyalty/podpiska/").button.form-subscribe__button.hollow Корпоративная подписка
+              a(href="//market.plusworld.ru/").button.form-subscribe__button.hollow Подписка для физических лиц
+
+            .get-mobile
+              .get-mobile__title Мобильное приложение
+              .get-mobile__links
+                a(href="")
+                  img.get-mobile__link(src="./images/apple-subscribe-button.svg" alt="")
+                a(href="")
+                  img.get-mobile__link(src="./images/google-subscribe-button.svg" alt="")
+
+          form(action="#").form-contact
+            .form-contact__title По вопросам и предложениям!
+            textarea(rows="7" placeholder="Тема сообщения").form-contact__text
+            button(type="submit").button.form-contact__button.hollow Отправить
+    .cell.medium-8.large-6
+      .margin-bottom-10
+        include components/corporate/_subscribe-journal
+      .margin-bottom-10
+        include components/corporate/_expert-forum

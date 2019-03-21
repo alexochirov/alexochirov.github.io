@@ -1,0 +1,77 @@
+.aside-menu {
+  border-left: 1px solid $light-gray;
+  text-align: center;
+  color: $water;
+  padding-left: 1rem;
+  hr {
+    border-color: lighten($light-gray,20);
+  }
+  &__item {
+    @extend .padding-6;
+    a {
+      text-decoration: none;
+      i {
+        display: inline-block;
+      }
+      p {
+        line-height: 1.25;
+        margin-top: 0.5rem;
+      }
+      &:hover {
+        color: $lime;
+        text-decoration: underline;
+      }
+    }
+    &:not(:last-child) {
+      border-bottom: 1px dotted lighten($light-gray,5);
+    }
+  }
+  @include breakpoint(small only) {
+    border: 0;
+    padding: 0 !important;
+
+    &__right {
+      margin-left: -.8rem;
+      margin-right: -.8rem;
+      flex-direction: row !important;
+      flex-wrap: wrap !important;
+      display: inline-flex;
+    }
+
+    &__item {
+      padding: 0 !important;
+      width: 120px;
+      & a {
+        padding-left: .2rem;
+        padding-right: .2rem;
+      }
+      &:not(:last-child) {
+        border-bottom: none;
+      }
+    }
+  }
+  @media screen and (max-width: 400px) {
+    &__item {
+      width: 105px;
+    }
+  }
+  .text-link {
+    li {
+      margin-bottom: 0.5rem;
+    }
+    a {
+      font-weight: 400;
+      text-decoration: underline;
+
+      &:hover {
+        color: $lime;
+      }
+    }
+    @include breakpoint(large) {
+      text-align: left;
+    }
+  }
+  &__second {
+    margin-top: -1rem;
+  }
+}

@@ -1,0 +1,35 @@
+extends shop-regular
+
+block content
+  .grid-container
+    h1 Новости
+  .grid-container.padding-bottom-6: .grid-x.grid-padding-x
+    .cell.medium-10.large-6.medium-order-2
+      include components/common/_sidebar
+      .margin-bottom-6.show-for-small-only(data-responsive-toggle='aside-subscribe', data-hide-for='medium')
+        span.button.expanded(data-toggle)
+          | Подписаться
+      #aside-subscribe
+        include components/common/_aside-subscribe
+    .cell.medium-auto.medium-order-1
+      each i in [1,2,3]
+        .grid-x.grid-padding-x.margin-bottom-6
+          .cell.medium-6.large-4.text-center.margin-bottom-6: a(href='news-article.html'): img(src="./i/pr"  + Math.ceil(Math.random() * 6) + '.jpg' alt='картинка к новости')
+          .cell.medium-auto
+            .margin-bottom-2.font-bold.text-primary 24.10.2017
+            h5: a(href='news-article.html') Компания СТЕМ И EDX Education приглашают Вас на WORLDDIDAC Russia 2017
+            .margin-bottom-2 С 1-3 ноября впервые в России, в Москве, будет проходить выставка Worlddidac Russia. Выставка будет проходить в международном выставочном центре Крокус Экспо, Павильон № 2, зал 9. Наш стенд № 13. Для того чтобы получить пригласительный билет необходимо пройти регистрацию http://worlddidac-russia.com/ru/visitors.html Буду очень рад видеть Вас на нашем стенде!!!
+        .grid-x.grid-padding-x.margin-bottom-6
+          .cell.medium-6.large-4.text-center.margin-bottom-6: a(href='news-article.html'): img(src="./i/pr"  + Math.ceil(Math.random() * 6) + '.jpg' alt='картинка к новости')
+          .cell.medium-auto
+            .margin-bottom-2.font-bold.text-primary 28.04.2017
+            h5: a(href='news-article.html') Компания СТЕМ на WORLDDIDAC Russia 2017
+            .margin-bottom-2 С 1 по 3 ноября 2017 года она впервые пройдет на территории России! На выставке будет представлено современное оборудование для учебных кабинетов и лабораторий, интерактивное оборудование, обучающие программы, мебель для детских садов и спортивных площадок, уникальные стенды и лаборатории для профобразования, робототехника, учебная литература и многое другое.
+        .grid-x.grid-padding-x.margin-bottom-6
+          .cell.medium-6.large-4.text-center.margin-bottom-6: a(href='news-article.html'): img(src="./i/pr"  + Math.ceil(Math.random() * 6) + '.jpg' alt='картинка к новости')
+          .cell.medium-auto
+            .margin-bottom-2.font-bold.text-primary 30.11.2016
+            h5: a(href='news-article.html') Робототехнические наборы K'NEX Edcucation Robotics Pack уже в продаже!
+            .margin-bottom-2 Компания СТЕМ начала продажи Робототехнических наборов K'NEX Edcucation Robotics Pack в России. Gratnells - один из самых известных и широко представленных в учебных заведениях Великобритании, производителей систем.
+
+      include components/common/_pagination

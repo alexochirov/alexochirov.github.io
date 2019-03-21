@@ -1,0 +1,83 @@
+.datepicker {
+  & .ui-datepicker-inline.ui-datepicker{
+    border: rem-calc(0);
+    width: 100%;
+    background-color: #f5f5f5;
+  }
+  & .ui-datepicker-header {
+    background-color: #b71852;
+    color: #fff;
+    border-radius: rem-calc(0);
+    margin-bottom: rem-calc(14);
+  }
+  & .ui-widget-header .ui-icon {
+    background-image: url(../i/datepicker-arrow.png);
+  }
+  & .ui-icon-circle-triangle-w {
+    background-position: rem-calc(0);
+  }
+  & .ui-datepicker .ui-datepicker-header {
+    padding: rem-calc(7) 0;
+  }
+  & .ui-datepicker .ui-datepicker-prev {
+    top: rem-calc(8);
+    left: rem-calc(11)
+  }
+  & .ui-datepicker {
+    padding: 0;
+  }
+  & .ui-widget {
+    font-family: "Fira Sans";
+  }
+  & .ui-datepicker table {
+    font-size: rem-calc(14);
+  }
+  & thead {
+    background-color: #f5f5f5;
+    border: rem-calc(0)
+  }
+  & tbody {
+    background-color: #f5f5f5;
+  }
+  & .ui-state-default, .ui-widget-content .ui-state-default {
+    border: rem-calc(0);
+    text-align: center;
+    color: #939393;
+    background-color: #f5f5f5;
+  }
+  & .ui-datepicker th {
+    font-weight: normal;
+    text-align: center;
+    font-size: rem-calc(13);
+  }
+  & tbody tr:nth-child(even) {
+    background-color: #f5f5f5;
+  }
+  & .ui-state-active, .ui-widget-content .ui-state-active {
+    background-color: #b71852;
+    color: #fff;
+  }
+  & .ui-datepicker td {
+    padding: rem-calc(7);
+  }
+  & .ui-datepicker .ui-datepicker-title {
+    font-family: "Fira Sans";
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+  & .ui-icon-circle-triangle-e {
+    background-position: rem-calc(0);
+    -webkit-transform: rotate(180deg); // разворот элемента для разных бразуеров
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  & .ui-datepicker .ui-datepicker-next {
+    top: rem-calc(8);
+    right: rem-calc(7);
+  }
+  & .ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover {
+    border: rem-calc(0);
+  }
+}

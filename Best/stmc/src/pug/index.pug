@@ -1,0 +1,18 @@
+doctype html
+html.no-js(lang='ru')
+    include components/service/_head
+    body.padding-vertical-20
+        .grid-container
+            .grid-x.grid-padding-x: .cell
+                h1 Сайт StemComplex
+        .padding-top-12.padding-bottom-6
+            .grid-container
+                .grid-x.grid-padding-x: .cell
+                    ul.tabs#product-tabs-1(data-tabs, data-deep-link='true')
+                        li.tabs-title.is-active
+                            a(href='#corp', aria-selected='true') Прототипы
+
+                    .tabs-content(data-tabs-content="product-tabs-1")
+                        .tabs-panel.is-active#corp
+                            include components/shop/_sitemap
+        include components/service/_js

@@ -1,0 +1,34 @@
+footer.footer: .grid-container
+  .grid-x.grid-padding-x.text-center.medium-text-left
+    .cell.large-8.medium-14
+      h5.footer__heading Каталог
+      ul.system
+        each title in ['Предметно-развивающая среда','Системы хранения Gratnells','Пособия для языковых центров','Пособия для начальной школы','Пособия для средней школы','Цифровые лаборатории','Интерактивные лаборатории','Робототехника и программирование']
+          li.system__item
+            a(href="#").system__link= title
+    .cell.large-8.medium-10
+      h5.footer__heading Информация
+      ul.system
+        each title in ['О нашей компании','Методика','Вебинары','Дилерам','Новости','Контакты']
+          li.system__item
+            a(href="#").system__link= title
+      .footer__net
+        a(href="#").fa.fa-linkedin-square.footer__soc.fa-lg
+        a(href="#").fa.fa-facebook-official.footer__soc.fa-lg
+        a(href="#").fa.fa-vk.footer__soc.fa-lg
+        a(href="#").fa.fa-youtube.footer__soc.fa-lg
+
+    .cell.large-6.large-offset-2.text-center.medium-12.medium-offset-6.margin-bottom-10
+      .footer__info
+        a(href="tel:+88002345905").footer__tel 8 (800) 2345-905
+        .text-size-large.margin-bottom-6 или мы перезвоним вам:
+        form(action="#")
+          input(type="text",placeholder="Введите имя*")
+          input(type="tel",placeholder="+7 (---) --- -- --*")
+          input(type="email",placeholder="Ваш email")
+          button.button.hollow.white.margin-bottom-0(type="submit") Отправить
+  .grid-x.grid-padding-x.text-center.medium-text-left.margin-bottom-4
+    .cell.large-8.medium-14
+      div.footer__company © Компания СТЕМ, 2017. Все&nbsp;права&nbsp;защищены.
+    .cell.large-8.medium-10
+      a(href="http://www.cetera.ru/support/default.php?project=CCD&lang=ru&page=//cetera.ru/webdevelopment/").footer__link Сообщить об ошибке

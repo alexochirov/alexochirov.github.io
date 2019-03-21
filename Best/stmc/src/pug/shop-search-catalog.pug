@@ -1,0 +1,41 @@
+extends shop-index
+
+block page
+  include components/common/_breadcrumbs
+  block content
+    .grid-container
+      h1 Поиск
+    
+    .grid-container.padding-bottom-6
+      include components/common/_search
+      .grid-x.grid-padding-x.small-up-1.medium-up-2.large-up-4.margin-bottom-6(data-equalizer data-equalize-by-row="true")
+        +productTile('Комби-перфоратор Metabo KHE 2650', false)
+        +productTile('Дрель-шуруповёрт RYOBI R18DDP-LL13G', false)
+        +productTile('Лобзик Metabo STEB 65 Quick', false)
+        +productTile('Торцовочная пила Ryobi EMS254L', true)
+        +productTile('Дрель-шуруповёрт RYOBI R18DDP-LL13G', false)
+        +productTile('Лобзик Metabo STEB 65 Quick', false)
+        +productTile('Комби-перфоратор Metabo KHE 2650', false)
+        +productTile('Дрель-шуруповёрт RYOBI R18DDP-LL13G', false)
+        +productTile('Лобзик Metabo STEB 65 Quick', false)
+  
+        +productTile('Лобзик Metabo STEB 65 Quick', false)
+        +productTile('Комби-перфоратор Metabo KHE 2650', false)
+        +productTile('Дрель-шуруповёрт RYOBI R18DDP-LL13G', false)
+        +productTile('Лобзик Metabo STEB 65 Quick', false)
+        +productTile('Торцовочная пила Ryobi EMS254L', true)
+        +productTile('Дрель-шуруповёрт RYOBI R18DDP-LL13G', false)
+        +productTile('Лобзик Metabo STEB 65 Quick', false)
+        +productTile('Комби-перфоратор Metabo KHE 2650', false)
+        +productTile('Дрель-шуруповёрт RYOBI R18DDP-LL13G', false)
+        +productTile('Лобзик Metabo STEB 65 Quick', false)
+        +productTile('Торцовочная пила Ryobi EMS254L', true)
+        +productTile('Дрель-шуруповёрт RYOBI R18DDP-LL13G', false)
+        +productTile('Лобзик Metabo STEB 65 Quick', false)
+        +productTile('Дрель-шуруповёрт RYOBI R18DDP-LL13G', false)
+        +productTile('Комби-перфоратор Metabo KHE 2650', false)
+        +productTile('Дрель-шуруповёрт RYOBI R18DDP-LL13G', false)
+        +productTile('Лобзик Metabo STEB 65 Quick', false)
+        +productTile('Торцовочная пила Ryobi EMS254L', true)
+        +productTile('Дрель-шуруповёрт RYOBI R18DDP-LL13G', false)
+      include ./components/common/_pagination

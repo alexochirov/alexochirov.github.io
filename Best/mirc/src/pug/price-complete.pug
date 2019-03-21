@@ -1,0 +1,88 @@
+extends corp-index
+include components/mixins/_mixin-service-table
+block page
+    include components/common/_breadcrumbs
+    block content
+        .grid-container: .grid-x.grid-padding-x: .small-24.medium-16.large-18.cell.padding-top-8
+            h1.text-center Цены на наши услуги
+        .padding-bottom-6
+            .grid-container: .grid-x.grid-padding-x
+                .cell.small-24.medium-8.large-6.medium-order-2
+                    include components/site/_mira-thermes-sidebar
+                .cell.auto.medium-order-1
+                    section.content-block
+                        nav.text-center.margin-bottom-6.text-center.padding-top-3
+                            a.tag(href='') Всё
+                            a.tag(href='') Акции
+                            a.tag(href='') Массажи
+                            a.tag(href='') Эксклюзивные массажи
+                            a.tag(href='') Программы для лица
+                            a.tag(href='') Маски для лица
+                            a.tag(href='') Скарбирование
+                            a.tag(href='') Обертывание
+                            a.tag(href='') Аромаванны
+                            a.tag(href='') Ножные ванны
+                            a.tag(href='') Парения в русской бане
+                            a.tag(href='') Банные ритуалы в хамаме
+                            a.tag(href='') Целевые программы
+                            a.tag(href='') Путешествия
+                        .search-panel: form.user-form: .callout.gray-box.padding-6: .grid-container: .grid-x.grid-padding-x
+                            .small-24.medium-8.large-6.cell
+                                label Выберите терму
+                                    select.margin-0
+                                        option(value="0") Все термы
+                                        option(value="1") Набережная
+                                        option(value="2") Сосновый бор
+                            .small-24.medium-8.large-6.cell
+                                label Продолжительность
+                                    select.margin-0
+                                        option(value="0") Любая
+                                        option(value="1") 10–30 мин.
+                                        option(value="2") 30–45 мин.
+                                        option(value="3") 45–60 мин.
+                            .small-24.medium-8.large-6.cell
+                                label Сортировать
+                                    select.margin-0
+                                        option(value="0") По цене ↓
+                                        option(value="1") По цене ↑
+                            .medium-24.large-6.cell.align-center.padding-top-6
+                                input(type="button",value="Найти предложения")
+                        .search-panel: form.user-form.output-type: .grid-container
+                            .grid-x.grid-padding-x.align-justify
+                                .auto.cell.padding-left-10.paddihd-top-4
+                                    span Показано:
+                                    =" "
+                                    span: strong 99 из 100
+                                .shrink.cell
+                                    input#output-list(type="radio",name="input-type",value="0",checked="checked")
+                                    label(for="output-list"): i.fa.fa-list
+                                    input#output-cards(type="radio",name="input-type",value="1")
+                                    label(for="output-cards"): i.fa.fa-table
+                            .grid-x: .auto.cell.padding-top-4: hr
+
+                        .service-table.content-block
+                            +service-table-item('«До седьмого пота», программа парения','«Новичок», 60 минут','1830')
+                            +service-table-item('«Паримся все вместе!», программа парения','Посещение для троих, 50 минут','2650')
+                            +service-table-item('«Счастливые часы», до 31 марта 2018 года','Посещение для троих, 50 минут','2650')
+                            +service-table-item('«До седьмого пота», программа парения','«Новичок», 60 минут','1830')
+                            +service-table-item('«Паримся все вместе!», программа парения','Посещение для троих, 50 минут','2650')
+                            +service-table-item('«Счастливые часы»','Посещение для троих, 50 минут','2650')
+                            +service-table-item('«До седьмого пота», программа парения','«Новичок», 60 минут','1830')
+                            +service-table-item('«Паримся все вместе!», программа парения','Посещение для троих, 50 минут','2650')
+                            +service-table-item('«Счастливые часы», до 31 марта 2018 года','Посещение для троих, 50 минут','2650')
+                            +service-table-item('«До седьмого пота», программа парения','«Новичок», 60 минут','1830')
+                            +service-table-item('«Паримся все вместе!», программа парения','Посещение для троих, 50 минут','2650')
+                            +service-table-item('«Счастливые часы»','Посещение для троих, 50 минут','2650')
+                            .grid-x: .auto.cell.padding-top-8
+                                p.text-center: a.button.hollow(href="#") Показать еще
+
+
+
+
+
+
+
+
+
+
+

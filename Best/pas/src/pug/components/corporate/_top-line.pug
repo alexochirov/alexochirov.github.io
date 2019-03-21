@@ -1,0 +1,74 @@
+.journal#journal.show-for-large(data-toggler=".show-for-large"): .grid-container.journal__container: .grid-x.grid-padding-x
+  .cell.medium-auto
+    ul.news
+      li.news__item
+        a(href="#").news__link.news__link_add Журнал
+        .drop
+          .grid-x.grid-padding-x
+            .cell.small-16
+              a(href="#").drop__link Свежий номер
+              a(href="#").drop__link О журнале
+              a(href="#").drop__link Мобильное приложение
+              a(href="#").drop__link Архив номеров
+            .cell.small-8
+              a(href="#").drop__link Авторам
+              a(href="#").drop__link Редакция
+              a(href="#").drop__link Контакты
+
+      li.news__item
+        a(href="#").news__link.news__link_add Новости
+        .drop.drop_mini
+          a(href="#").drop__link Все новости
+          a(href="#").drop__link Подписаться на новости
+          a(href="#").drop__link О портале
+          a(href="#").drop__link Разместить новость
+      li.news__item
+        a(href="#").news__link 
+          i.fa.fa-bars
+          span Рубрики
+        .drop.drop_big
+          .grid-x.small-up-3.grid-padding-x
+            .cell
+              a(href="#").drop__link Инновации
+              a(href="#").drop__link Новости ритейла
+              a(href="#").drop__link E-Commerce
+              a(href="#").drop__link Cети         
+            .cell.drop__line
+              a(href="#").drop__link Технологии
+              a(href="#").drop__link Платежи и кассы
+              a(href="#").drop__link Лояльность
+              a(href="#").drop__link Логистика     
+            .cell.drop__line
+              a(href="#").drop__link НoReCa
+              a(href="#").drop__link FMCG
+              a(href="#").drop__link Исследования
+              a(href="#").drop__link Выставки и конференции
+      li.news__item
+        a(href="#").news__link Статьи
+      li.news__item
+        a(href="#").news__link Плас-форум
+      li.news__item
+        a(href="#").news__link.news__link_add Сервисы
+        .drop.drop_micro
+          a(href="#").drop__link ПЛАС-Словарь
+          a(href="#").drop__link Полиграфия
+          a(href="#").drop__link База знаний
+          a(href="#").drop__link Бюро переводов
+      li.news__item
+        a(href="#").news__link Реклама
+      li.news__item
+        a(href="#").news__link Вакансии
+      li.news__item
+        a(href="#").news__link.news__link_subscribe Подписка
+      li.news__item
+        a(href="#").news__link.news__link_yellow Интернет-магазин
+      
+  .cell.medium-shrink.large-3.journal__info
+    a(href="#").journal__flag
+      img(src="./images/flag.svg", alt="")
+    button(type="button" data-open="login-form").journal__enter
+      span.journal__img: img(src="./images/Avatar.svg", alt="")
+      span вход
+
+include ../reveals/_reveal-login
+include ../reveals/_reveal-recovery-password

@@ -1,0 +1,14 @@
+.alert-block {
+  position: relative;
+  border-radius: 2rem;
+  border:0;
+  padding: 2rem;
+  margin-bottom: 4rem;
+}
+@each $name, $color in $foundation-palette {
+  .alert-block-#{$name} {
+    @extend .alert-block;
+    background: $color;
+    color: color-pick-contrast($color, ($primary, $white));
+  }
+}

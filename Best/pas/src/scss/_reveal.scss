@@ -1,0 +1,17 @@
+.reveal {
+  padding: rem-calc(0);
+  border: rem-calc(0);
+  outline: none;
+  width: rem-calc(800);
+  max-width: 100%;
+
+  &_login {
+    padding: rem-calc(37);
+    width: 100%;
+    max-width: rem-calc(390);
+
+    @include breakpoint(small down) {
+      max-width: 100%;
+    }
+  }
+}

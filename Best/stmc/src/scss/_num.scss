@@ -1,0 +1,25 @@
+.num {
+  float: left;
+  width: 100%;
+
+  &__input {
+    padding: 0 rem-calc(5);
+    width: rem-calc(50);
+    height: rem-calc(41);
+    text-align: center;
+    border: rem-calc(1) solid $green;
+    float: left;
+  }
+
+  &__minus,
+  &__plus {
+    float: left;
+    padding: rem-calc(7) rem-calc(10);
+    height: rem-calc(41);
+    cursor: pointer;
+    color: $white;
+    background-color: $green;
+  }
+
+
+}

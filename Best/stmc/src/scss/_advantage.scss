@@ -1,0 +1,47 @@
+.advantage {
+  background: $green;
+  margin-bottom: rem-calc(30);
+  border-radius: rem-calc(3);
+  padding-top: rem-calc(47);
+  padding-bottom: rem-calc(35);
+  padding-left: rem-calc(15);
+  padding-right: rem-calc(15);
+
+  *:nth-child(even) > & {
+    background: $success-color;
+
+    .advantage__icon {
+      &:after {
+        border-bottom-color: #71b361;
+      }
+    }
+  }
+
+  &__icon {
+    height: rem-calc(127);
+    margin-bottom: rem-calc(30);
+    position: relative;
+    padding-bottom: rem-calc(27);
+    line-height: rem-calc(100);
+
+    img {
+      max-height: rem-calc(100);
+    }
+
+    &:after {
+      position: absolute;
+      bottom: rem-calc(0);
+      border-bottom: rem-calc(1) solid #9ece89;
+      width: rem-calc(50);
+      left: calc(50% - 25px);
+      content: "";
+    }
+  }
+
+  &__title {
+    font-size: rem-calc(18);
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $white;
+  }
+}

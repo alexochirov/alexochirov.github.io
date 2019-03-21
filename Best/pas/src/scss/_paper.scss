@@ -1,0 +1,34 @@
+.paper {
+  font-size: rem-calc(16);
+  font-weight: 400;
+  margin-bottom: rem-calc(35);
+
+  &__title {
+    font-size: rem-calc(20);
+    color: $black;
+    margin-bottom: rem-calc(15);
+    font-family: $font-fira;
+    font-weight: 800;
+    text-align: center;
+  }
+
+  &__img {
+    text-align: center;
+    height: rem-calc(273);
+    line-height: rem-calc(273);
+    margin-bottom: rem-calc(11);
+
+    img {
+      max-height: rem-calc(273);
+    }
+  }
+
+  &__text {
+    margin-bottom: rem-calc(15);
+  }
+  @include breakpoint(medium down) {
+    text-align: center;
+    margin-bottom: rem-calc(20);
+    
+  }
+}

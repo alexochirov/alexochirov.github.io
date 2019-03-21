@@ -1,0 +1,55 @@
+a {
+  -webkit-transition: color 300ms ease-in-out;
+  -moz-transition: color 300ms ease-in-out;
+  -ms-transition: color 300ms ease-in-out;
+  -o-transition: color 300ms ease-in-out;
+  transition: color 300ms ease-in-out;
+
+}
+
+table {
+  margin-bottom: 6 * $global-margin;
+}
+
+[type='text'],
+[type='password'],
+[type='date'],
+[type='datetime'],
+[type='datetime-local'],
+[type='month'],
+[type='week'],
+[type='email'],
+[type='number'],
+[type='search'],
+[type='tel'],
+[type='time'],
+[type='url'],
+[type='color'],
+textarea {
+  padding-left: rem-calc(20);
+  padding-right: rem-calc(20);
+  height: rem-calc(45);
+  margin-bottom: rem-calc(20);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+}
+
+select {
+  padding-left: rem-calc(17);
+  padding-right: rem-calc(33);
+  height: rem-calc(45);
+  border: rem-calc(1) solid $black;
+  background: url($imagesPath +"/chevron-down.svg")no-repeat calc(100% - 18px) center;
+
+
+  &:active,
+  &:focus,
+  &:hover {
+    border: rem-calc(1) solid $black;
+  }
+}

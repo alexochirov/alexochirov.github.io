@@ -1,0 +1,10 @@
+.margin-bottom-6
+  a(href="./i/pr1.jpg" rel="gallery" data-fancybox="gallery").fancybox
+    img(src='./i/pr1.jpg' alt='товар')
+
+.grid-x.grid-padding-x.small-up-3.medium-up-5.large-up-5.hide-for-small-only
+  each i in [1,2,3,4,5]
+    -var imgSrc = "./i/pr"  + Math.ceil(Math.random() * 6) + '.jpg'
+    .cell.align-self-middle.margin-bottom-6
+      a(rel="gallery" href=imgSrc data-fancybox="gallery" ).fancybox
+       img(src=imgSrc  alt=i)

@@ -1,0 +1,12 @@
+mixin productTile(title, discount,margin)
+  .cell
+    a(href="#" class=margin).product
+      .product__img.text-center
+        img(src="./i/pr"  + Math.ceil(Math.random() * 6) + '.jpg', alt="")
+      .product__title Комплект съемных стеновых панелей: "Эмоции", "Лабиринт", "Инженер"
+      .product__price
+        | 4 129
+        |
+        span.product__rub руб. 
+      .text-center
+        .button.hollow Смотреть

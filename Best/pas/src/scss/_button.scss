@@ -1,0 +1,142 @@
+.button {
+  text-transform: uppercase;
+  font-family: $font-fira;
+
+  /*
+  &:active,
+  &:focus,
+  &:hover {
+    box-shadow: 0 0 0.5rem rgba(183, 24, 82, 1);
+  }
+  */
+
+  &_search {
+    height: 2.60207rem;
+    margin: 0 0 1.14286rem;
+  }
+
+  &.hollow {
+    &:active,
+    &:focus,
+    &:hover {
+      color: $white;
+      background: $primary-color;
+      border-color: $primary-color;
+    }
+  }
+
+  &_serv {
+    font-family: $font-noto;
+    font-size: rem-calc(12);
+    margin: rem-calc(0) rem-calc(8) rem-calc(10);
+    border: rem-calc(1) solid $primary-color;
+    background: none;
+    color: $primary-color;
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: $white;
+      background: $primary-color;
+      border-color: $primary-color;
+    }
+  }
+
+  &_low {
+    margin: rem-calc(5) rem-calc(0);
+  }
+
+  &_login,
+  &_register,
+  &_submit {
+    padding: rem-calc(13 0);
+    font-family: $font-fira;
+    font-weight: 500;
+    font-size: rem-calc(18);
+  }
+
+  &_bottom {
+    margin: rem-calc(0) rem-calc(20);
+  }
+
+  &_head {
+    margin: rem-calc(10 20);
+  }
+
+  &_tag {
+    margin: 0 rem-calc(15) rem-calc(5) 0;
+    font-size: rem-calc(12);
+    font-weight: 400;
+    color: $black;
+    background: transparent;
+    border: rem-calc(1) solid $primary-color;
+  }
+
+  &.button_arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $font-fira;
+    line-height: 1.4;
+
+    &:active,
+    &:focus,
+    &:hover {
+      & svg {
+        stroke: $white;
+        fill: $white;
+      }
+    }
+
+    & svg {
+      margin-left: rem-calc(10);
+      height: rem-calc(16);
+      width: rem-calc(16);
+    }
+  }
+
+  &_champ {
+    margin: rem-calc(5);
+    padding: rem-calc(0) rem-calc(5);
+    font-family: $font-noto-sans;
+    font-size: rem-calc(12);
+    font-weight: 700;
+    background: none;
+    color: $primary-color;
+    min-height: rem-calc(24);
+  line-height: rem-calc(22);
+    border-color: $primary-color;
+
+    & svg {
+      fill: $primary-color;
+      margin-right: rem-calc(5);
+    }
+
+    &:active,
+    &:focus,
+    &:hover {
+      & svg {
+        fill: $white;
+      }
+    }
+  }
+
+  &_app {
+    margin: rem-calc(5);
+    padding: rem-calc(3) rem-calc(5);
+    font-family: $font-noto-sans;
+    font-size: rem-calc(12);
+    font-weight: 700;
+
+    & svg {
+      fill: $primary-color;
+      margin-right: rem-calc(5);
+    }
+
+    &:hover {
+      & svg {
+        fill: $white;
+      }
+    }
+  }
+}

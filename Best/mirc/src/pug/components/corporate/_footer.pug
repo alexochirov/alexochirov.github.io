@@ -1,0 +1,36 @@
+// .grid-container.hide-for-small-only: .grid-x: .cell: .nature(style="background-image:url(./i/frontpage.png);")
+footer.footer
+  .grid-container
+    .grid-x.grid-padding-x.text-center.medium-text-left
+      .cell.large-10.text-center.large-text-left
+        p
+          | © 2018 «Термы Мира»
+          br
+          | ООО «Волна»
+        .footer__soc
+          a(href='https://www.facebook.com/miracentr.ru/', title='').fa-stack
+            i.fa.fa-circle.text-fb.fa-stack-2x
+            i.fa.fa-facebook.fa-stack-1x.fa-inverse 
+          a(href='https://vk.com/miracentr', title='').fa-stack
+            i.fa.fa-circle.text-vk.fa-stack-2x
+            i.fa.fa-vk.fa-stack-1x.fa-inverse 
+          a(href='https://ok.ru/miracentr', title='').fa-stack
+            i.fa.fa-circle.text-ok.fa-stack-2x
+            i.fa.fa-odnoklassniki.fa-stack-1x.fa-inverse
+          a(href='https://www.instagram.com/miracentrru/', title='').fa-stack
+            i.fa.fa-circle.text-in.fa-stack-2x
+            i.fa.fa-instagram.fa-stack-1x.fa-inverse 
+      .cell.large-14
+        ul.menu-base
+          each title in ['Термы','SPA','Аренда','Для детей','Фудкорт', 'Мираминуты', 'Купить посещение ', 'Контакты']
+            li.menu-base__item
+              a(href="#").menu-base__link= title
+        ul.menu-bottom
+          li.menu-bottom__item
+            a(href="#").menu-bottom__link Правила посещения
+          li.menu-bottom__item
+            | Создание сайта —
+            |
+            a(href="http://cetera.ru/").menu-bottom__link Cetera Labs
+          li.menu-bottom__item
+            a(target='_blank', href="http://www.cetera.ru/support/default.php?project=CCD&lang=ru&page=http://wireframes.cetera.ru/boilerplate_wireframe/").menu-bottom__link Сообщить об ошибке

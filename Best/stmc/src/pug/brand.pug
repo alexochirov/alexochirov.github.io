@@ -1,0 +1,41 @@
+extends shop-regular
+
+block content
+  .grid-container
+    h1 EDX Education
+
+  .grid-container.padding-bottom-6: .grid-x.grid-padding-x
+    .cell.small-24.medium-10.large-6.medium-order-2
+      include components/common/_sidebar
+    .cell.small-24.medium-14.large-18.medium-order-1.text-justify
+      img.margin-6.float-right.width-25(src="./i/pr"  + Math.ceil(Math.random() * 6) + '.jpg' alt='Логотип бренда' )
+      p.lead Оборудование для предметно-развивающей среды
+      p EDX Education — международный поставщик учебных материалов и качественных товаров образовательного назначения для заказчиков из более 50 стран. Работает на рынке образовательных товаров более 30 лет.
+      p EDX Education разрабатывает качественные инновационные образовательные продукты, рассчитанные на детей разного возраста: малышей, дошкольников и детей младшего школьного возраста. Продукция производится в Тайване, где предъявляются строгие требования к качеству. Вся продукция подвергается проверке на соответствие стандарту EN71, Закноу о повышении безопасности потребительских товаров, проходит проверку Американского общества по испытанию материалов. Ассортимент продукции включает развивающие материалы, активные игры для детей младшего возраста, аксессуары для прикладного творчества, учебные пособия для детских садов и начальной школы. Производство сертифицировано по стандарту ISO 9001.
+
+      .text-center
+        a.button.hollow(href=''): b В каталог EDX Education
+
+      hr.margin-bottom-6
+      h3 Наши бренды
+      .grid-x.grid-padding-x.small-up-1.large-up-2(data-equalizer data-equalize-by-row="true").text-left
+        a(href='brand.html').cell: .callout(data-equalizer-watch)
+          .grid-x.grid-padding-x
+            .cell.medium-12.margin-bottom-6
+              img(src="./i/pr"  + Math.ceil(Math.random() * 6) + '.jpg')
+            .cell.medium-12.align-self-middle Оборудование EDX Education для предметно-развивающей среды
+        a(href='brand.html').cell: .callout(data-equalizer-watch)
+          .grid-x.grid-padding-x
+            .cell.medium-12.margin-bottom-6
+              img(src="./i/pr"  + Math.ceil(Math.random() * 6) + '.jpg')
+            .cell.medium-12.align-self-middle Учебные пособия Learning Resources
+        a(href='brand.html').cell: .callout(data-equalizer-watch)
+          .grid-x.grid-padding-x
+            .cell.medium-12.margin-bottom-6
+              img(src="./i/pr"  + Math.ceil(Math.random() * 6) + '.jpg')
+            .cell.medium-12.align-self-middle Оборудование EDX Education для предметно-развивающей среды
+        a(href='brand.html').cell: .callout(data-equalizer-watch)
+          .grid-x.grid-padding-x
+            .cell.medium-12.margin-bottom-6
+              img(src="./i/pr"  + Math.ceil(Math.random() * 6) + '.jpg')
+            .cell.medium-12.align-self-middle Учебные пособия Learning Resources

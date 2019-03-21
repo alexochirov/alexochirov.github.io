@@ -1,0 +1,34 @@
+.forum {
+    padding-top: rem-calc(17);
+    padding-bottom: rem-calc(7);
+    border: 1px solid #e2e2e2;
+    padding-left: rem-calc(30);
+    padding-right: rem-calc(30);
+    border-top: rem-calc(0);
+
+
+    &_grey {
+        background: #f8f8f8;
+    }
+
+    h6 {
+        font-size: rem-calc(14);
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    ol,
+    ul {
+        color: #4c4c4c;
+        font-size: rem-calc(14);
+        line-height: 1.8;
+    }
+
+    ol {
+        margin-left: rem-calc(14);
+    }
+    @media (max-width: 640px) {
+        padding-left: rem-calc(10);
+        padding-right: rem-calc(10);
+    }
+}

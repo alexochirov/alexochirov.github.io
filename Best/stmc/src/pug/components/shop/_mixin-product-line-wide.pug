@@ -1,0 +1,52 @@
+mixin productLineWide(discount, onDemand, inCart, inFavourites)
+  .grid-x.grid-padding-x
+    .cell.medium-7.large-2.hide-for-small-only
+      .margin-bottom-6: img(src="./i/pr"  + Math.ceil(Math.random() * 6) + '.jpg' alt='Товар')
+    .cell.medium-17.large-8
+      h6
+        if discount
+          span.label
+            i.fa.fa-star-o
+            | &nbsp;Новинка
+          | &nbsp;
+        a(href='shop-product.html').font-bold Картридж совместимый SuperFine (SF-CN048AE) 951XL Magenta
+    .cell.small-24.medium-24.large-14.margin-bottom-6
+      
+      .grid-x.grid-padding-x
+        .cell.small-10.medium-9.large-9.medium-order-2.text-center.align-self-middle
+          if onDemand
+            span.text-dark-gray: em Нет в наличии&nbsp;
+          else
+            strong.text-size-xxlarge
+              | 1&nbsp;250&nbsp;
+              i.fa.fa-rub
+              | &nbsp;&nbsp;
+            if discount
+              div
+                del.text-dark-gray
+                  | 1&nbsp;750&nbsp;
+                  i.fa.fa-rub
+          .margin-bottom-3.show-for-small-only
+        .cell.small-14.medium-13.large-12.medium-order-3.text-center.align-self-middle
+          if onDemand
+            a(href='#' title='')
+              i.fa.fa-bell-o
+              | &nbsp;Заказать
+          else
+            if inCart
+              a(href='shop-cart.html' title='')
+                span.dark-gray
+                  i.fa.fa-check.fa-lg
+                  | &nbsp;В корзине
+            else
+              a(href='#' title='').button.hollow.margin-bottom-0
+                | Cмотреть
+        .cell.small-10.medium-2.large-3.medium-order-1.text-center.medium-text-left.align-self-middle
+          .show-for-small-only.margin-bottom-3
+          if !inFavourites
+            a.text-dark-gray(data-open="add-to-favourites-auth-popup")
+              i.fa.fa-heart-o.fa-lg
+
+          else
+            a.text-dark-gray(href='' title='Удалить из запомненных')
+              i.fa.fa-heart.fa-lg

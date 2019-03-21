@@ -1,0 +1,96 @@
+extends shop-regular
+
+block content
+  .grid-container
+    h1 О компании
+  .grid-container.padding-bottom-6: .grid-x.grid-padding-x
+    .cell.medium-8.large-6.medium-order-2
+      include components/common/_sidebar
+    .cell.medium-16.large-18.medium-order-1.text-justify
+  
+      #lead
+        p.lead Компания СТЕМ специализируется на продаже товаров для образования лучших мировых брендов.
+        p Продолжая начатую работу по представлению ведущих мировых производителей на российском рынке товаров для образования, Компания СТЕМ заключила партнерский договор с Learning Resources - британским производителем развивающих игрушек и учебно-игровых пособий для детей.
+        p #[b Наша миссия]: Обеспечить студентов, педагогов, творческих профессионалов по всему миру лучшими товарами для образования благодаря использованию инновационных решений»
+        .text-center: a.button(data-toggle='about-en') About the company
+        #about-en(data-toggler='hide').hide.callout.medium-gray
+          p STEM company is an educational supplies distributor.
+          p Our  experience and credibility allow us to draw customers from all over Russia. We are in the process of building nationwide distribution net.
+          p STEM company is an exclusive Russian distributor for several education-purposed products  manufacturers from Great Britain, Europe and Taiwan.
+          p STEM company provides promotion of products manufactured by foreign partners among which are import of products, customs clearance, certification and obtaining of permits, development and executions of marketing activities (production and distribution of promotional materials in the Russian language, participation in core exhibitions in Russia, holding meetings and negotiations with customers, development and support of a web-site, tracking competitors’ activities, pricing, execution of activities aimed at building of dealer network on the territory of Russia, etc.), performance of works on Russian language support for products; development of method support in compliance with Russian educational standards, complaints management, securing product warranty liabilities and representation of other manufacturers’ interests, if necessary.
+          p In our work we endorse fair trade and strive to be precise in performance of our obligations. This is what we also expect of our customers.
+          p We are open for communication. If you are interested to cooperate, we will be happy to discuss the possibilities.
+      .grid-x.grid-padding-x.small-up-1.medium-up-2(data-equalizer data-equalize-by-row="true")
+        .cell: .callout(data-equalizer-watch)
+          | C #[span.text-size-xxxlarge 2013] года
+          div
+            | Компания СТЕМ — официальный представитель британского производителя цифровых лабораторий Data Harvest Group Ltd в России.
+        .cell: .callout(data-equalizer-watch)
+          | C #[span.text-size-xxxlarge 2014] года
+          div
+            | Компания СТЕМ — эксклюзивный представитель производителя учебных материалов для дошкольников EDX Education.
+        .cell: .callout(data-equalizer-watch)
+          | C #[span.text-size-xxxlarge 2015] года
+          div
+            | Компания СТЕМ — официальный представитель британского производителя цифровых лабораторий Data Harvest Group Ltd в России.
+        .cell: .callout(data-equalizer-watch)
+          | C #[span.text-size-xxxlarge 2016] года
+          div
+            | Компания СТЕМ — эксклюзивный представитель производителя учебных материалов для дошкольников EDX Education.
+        .cell: .callout(data-equalizer-watch)
+          | C #[span.text-size-xxxlarge 2017] года
+          div
+            | Компания СТЕМ — официальный представитель британского производителя цифровых лабораторий Data Harvest Group Ltd в России.
+      
+      .margin-bottom-6
+        h2 Где купить
+      
+        p У компании СТЕМ более #[b 100 дилеров в 20 городах] России и ближнего зарубежья. Компания СТЕМ продолжает активно развивать свою дилерскую сеть в регионах.
+        p
+          a.margin-right-6(href='') Карта дилеров
+          a.margin-right-6(href='') Как стать дилером
+          a.margin-right-6(href='') Наши реквизиты
+      .margin-bottom-6#brands
+        h2 Наши бренды
+        p.text-center Товары для образования от лучших мировых брендов
+        .grid-x.grid-padding-x.small-up-1.large-up-2(data-equalizer data-equalize-by-row="true")
+          a(href='brand.html').cell: .callout(data-equalizer-watch)
+            .grid-x.grid-padding-x
+              .cell.medium-12.margin-bottom-6
+                img(src="./i/pr"  + Math.ceil(Math.random() * 6) + '.jpg')
+              .cell.medium-12.align-self-middle Оборудование EDX Education для предметно-развивающей среды
+          a(href='brand.html').cell: .callout(data-equalizer-watch)
+            .grid-x.grid-padding-x
+              .cell.medium-12.margin-bottom-6
+                img(src="./i/pr"  + Math.ceil(Math.random() * 6) + '.jpg')
+              .cell.medium-12.align-self-middle Учебные пособия Learning Resources
+          a(href='brand.html').cell: .callout(data-equalizer-watch)
+            .grid-x.grid-padding-x
+              .cell.medium-12.margin-bottom-6
+                img(src="./i/pr"  + Math.ceil(Math.random() * 6) + '.jpg')
+              .cell.medium-12.align-self-middle Оборудование EDX Education для предметно-развивающей среды
+          a(href='brand.html').cell: .callout(data-equalizer-watch)
+            .grid-x.grid-padding-x
+              .cell.medium-12.margin-bottom-6
+                img(src="./i/pr"  + Math.ceil(Math.random() * 6) + '.jpg')
+              .cell.medium-12.align-self-middle Учебные пособия Learning Resources
+              
+      
+      .margin-bottom-6
+        h2 Новости компании
+
+      
+        .grid-x.grid-padding-x.margin-bottom-10
+          .cell.medium-6.large-4.margin-bottom-6: a(href=''): img(src="./i/pr"  + Math.ceil(Math.random() * 6) + '.jpg' alt='картинка к новости')
+          .cell.medium-auto
+            .margin-bottom-2.text-dark-gray 24.10.2017
+            h5: a(href='') Компания СТЕМ И EDX Education приглашают Вас на WORLDDIDAC Russia 2017
+            .margin-bottom-2 С 1-3 ноября впервые в России, в Москве, будет проходить выставка Worlddidac Russia. Выставка будет проходить в международном выставочном центре Крокус Экспо, Павильон № 2, зал 9. Наш стенд № 13. Для того чтобы получить пригласительный билет необходимо пройти регистрациюhttp://worlddidac-russia.com/ru/visitors.html Буду очень рад видеть Вас на нашем стенде!!!
+        .grid-x.grid-padding-x.margin-bottom-10
+          .cell.medium-6.large-4.margin-bottom-6: a(href=''): img(src="./i/pr"  + Math.ceil(Math.random() * 6) + '.jpg' alt='картинка к новости')
+          .cell.medium-auto
+            .margin-bottom-2.text-dark-gray 30.11.2016
+            h5: a(href='') Робототехнические наборы K'NEX Edcucation Robotics Pack уже в продаже!
+            .margin-bottom-2 Компания СТЕМ начала продажи Робототехнических наборов K'NEX Edcucation Robotics Pack в России. Gratnells - один из самых известных и широко представленных в учебных заведениях Великобритании, производителей систем.
+
+        .text-center: a.button.hollow(href='news.html') Все новости #[i.fa.fa-angle-right]

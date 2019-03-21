@@ -1,0 +1,32 @@
+.line-calendar {
+  .cell {
+    padding: 0.5rem;
+  }
+  &__item {
+    text-align: center;
+    background: lighten($light-gray,10);
+    border-radius: rem-calc(16);
+    overflow: hidden;
+    opacity: 0.85;
+    &_day,
+    &_time {
+      padding: rem-calc(8);
+      p {
+        margin:0;
+      }
+    }
+    &_day {
+      background: $water;
+      color: #ffffff;
+    }
+    &_time {
+      font-weight: 700;
+    }
+
+    &.active {
+      opacity:1;
+      box-shadow: 0 4px 16px rgba($water,0.3);
+    }
+
+  }
+}

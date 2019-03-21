@@ -1,0 +1,109 @@
+extends shop-product
+
+block productContent
+  //- Для физ. лиц
+  h1 STEM - Набор «Робомышь»
+  .grid-x.grid-padding-x
+    .cell.large-auto.large-offset-1.medium-order-2
+    
+      .grid-x.grid-padding-x.margin-bottom-6
+        .cell.shrink
+          span.stat
+            | 25 280&nbsp;
+            i.fa.fa-rub
+        .cell.shrink
+          span.label.warning #[i.fa.fa-star-o] Новинка
+
+      a.button.large.expanded(href='') Где купить
+
+      hr.margin-vertical-6
+      include components/shop/_product-share-links
+    .cell.medium-24.large-15.medium-order-1
+      include components/shop/_product-images
+
+  ul.tabs#product-tabs-1(data-responsive-accordion-tabs="accordion medium-tabs" data-deep-link="true" data-update-history="false")
+    li.tabs-title.is-active
+      a(href='#product-tab-description' title='') Описание
+    li.tabs-title
+      a(href='#product-tab-spec' title='') Характеристики
+    li.tabs-title
+      a(href='#product-tab-features' title='') Особенности
+
+  .tabs-content(data-tabs-content="product-tabs-1")
+    .tabs-panel.is-active#product-tab-description
+      .grid-x.grid-padding-x: .cell.large-17
+        p.text-size-large Тренировка мелкой моторики, наблюдательности и сообразительности для детей дошкольного возраста.
+
+        div: b Область:
+        ul
+          li Познавательное развитие
+          li Социально-коммуникативное развитие
+          li Художественно-эстетическое развитие
+          li Речевое развитие
+
+        p #[b Рама для подвешивания съемных стеновых панелей.] Безопасная и эргономичная конструкция из дерева и металла служит основанием для сменных стеновых панелей. Металлическая поверхность прочная и долговечная. Основа панели из натуральной ольхи надёжная и экологичная.
+
+        p #[b Панель «Эмоции»]. Состоит из пяти двусторонних элементов. Позволяет проиллюстрировать изменения настроения, одежды и прически девочки. На гладкой поверхности, маркером для доски, можно рисовать дополнительные детали.
+
+        p #[b Настенная панель «Лабиринт»]. Отлично подходит для тренировки моторики ребенка. В процессе игры, ребёнок помогает фигуркам животных найти дорогу к пище. Подвижные диски зелёного и жёлтого цвета крепятся на магнит. Их можно менять местами.
+        div В набор панели входят:
+        ul
+          li лабиринт
+          li 4 диска, изображающих собаку, кошку, мышь и пчелу
+          li 4 диска, изображающих любимые лакомства животных: косточку, молоко, сыр и цветочный нектар
+
+        p #[b Панель «Инженер»]. Панель с движущимися элементами, которые приводится в движение с помощью деревянных зубчатых реек. На поверхности панели можно рисовать маркером для доски
+
+    .tabs-panel#product-tab-spec
+      table.unstriped.margin-bottom-6
+        tr
+          td Артикул
+          td SCNS 3073_K
+        tr
+          td Производитель
+          td Learning Resources
+        tr
+          td Возрастная группа
+          td 5-9 лет
+
+      div: b Рама для подвешивания стеновых панелей
+      table.unstriped.margin-bottom-6
+        tr
+          td Поверхность
+          td белая металлическая, толщиной 0,2&nbsp;см,
+        tr
+          td Основание панели
+          td Массив ольхи, толщиной 2&nbsp;см
+        tr
+          td Размеры рамы
+          td 53×45×6&nbsp;см
+
+      div: b Панель «Эмоции»
+      table.unstriped.margin-bottom-6
+        tr
+          td Материал панели
+          td МДФ
+        tr
+          td Размеры панели
+          td 50×45×3&nbsp;см
+
+      div: b Панель «Лабиринт»
+      table.unstriped.margin-bottom-6
+        tr
+          td Материал панели
+          td МДФ
+        tr
+          td Размеры панели
+          td 50×45×3&nbsp;см
+
+      div: b Панель «Инженер»
+      table.unstriped.margin-bottom-6
+        tr
+          td Материал панели
+          td МДФ
+        tr
+          td Размеры панели
+          td 50×45×3&nbsp;см
+
+    .tabs-panel#product-tab-features
+      include components/shop/_product-tab-features

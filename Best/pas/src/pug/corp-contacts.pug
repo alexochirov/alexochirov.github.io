@@ -1,0 +1,48 @@
+extends corp-regular
+
+block page
+
+  block content
+    .grid-container: .grid-x.grid-padding-x: .cell
+      h1 Контакты
+
+    .padding-top-12.padding-bottom-6
+      .grid-container: .grid-x.grid-padding-x
+        .small-24.medium-12.cell
+          p По вопросам сотрудничества и размещения рекламно-информационных материалов, взаимодействия с выставками / конференциями / семинарами обращайтесь:
+          .grid-x.grid-padding-x.contact
+            .cell.large-10.text-center.large-text-left
+              img.contact__photo(src="./i/KG.png" alt="")
+            .cell.large-14.align-self-middle
+              p.contact__name Константин Гризов
+              p.contact__position Директор по развитию бизнеса
+              p.contact__tel Моб.: #[a.link(href="tel:+79250054005") +7 925 005 4005]
+              p.contact__mail E-mail: #[a.link(href="mailto:konstantin@plusworld.ru") konstantin@plusworld.ru]
+              .contact__links
+                a(href="")
+                  i.fab.fa-telegram-plane.fa-lg.contact__link
+                a(href="")
+                  i.fab.fa-facebook-f.fa-lg.contact__link
+                a(href="")
+                  i.fab.fa-skype.fa-lg.contact__link
+                a(href="")
+                  i.fab.fa-linkedin-in.fa-lg.contact__link
+
+          p.contact__title Адрес редакции
+          ul.contact-list
+            li.contact-list__item 117218, Москва, ул. Кржижановского, д. 29, корп. 5, офис 2-20
+            li.contact-list__item т./ф. #[a.link(href="tel:+74959611065") +7 495 961 1065]
+
+          p.contact__title Электронная почта
+          ul.contact-list
+            li.contact-list__item Пресс-релизы: #[a.link(href="mailto:news@plusworld.ru") news@plusworld.ru]
+            li.contact-list__item Отдел маркетинга: #[a.link(href="mailto:marketing@plusworld.ru") marketing@plusworld.ru]
+            li.contact-list__item Отдел распространения: #[a.link(href="mailto:podpiska@plusworld.ru") podpiska@plusworld.ru]
+            li.contact-list__item Общие вопросы: #[a.link(href="mailto:info@plusworld.ru") info@plusworld.ru]
+
+        .small-24.medium-12.cell
+          .margin-bottom-12.responsive-embed
+            iframe(src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae1cf8bfc8602562c777ba0f635face5ed9c1f1c8ab389b4cae83e65b6e2969bc&amp;source=constructor" frameborder="0")
+          p.contact__title Как нас найти
+          p.margin-top-3.margin-bottom-1 Если Вы приехали на метро…
+          p Первый вагон из центра м. «Профсоюзная», выход налево. Пройти до перекрестка улицы Профсоюзной и Нахимовского проспекта. Повернуть направо, сесть на любой троллейбус, автобус №№ 44, 219 или маршрутное такси, идущее до ост. «Улица Цюрупы» (вторая остановка от метро). На остановке перейти дорогу по пешеходному переходу и продолжать движение вниз, по улице с односторонним движением (поток машин будет двигаться навстречу). Внизу улицы у пешеходного перехода с другой стороны улицы Вы увидите офисное здание, отделанное бежевой и голубой плиткой – дом 29, корп.1 по ул. Кржижановского. Вам нужен 5-й корпус, это следующее здание, кирпичное, с одним входом. Из вестибюля, где находится пост охраны, позвоните по внутреннему телефону, и мы Вас встретим.

@@ -1,0 +1,20 @@
+
+.stat.margin-bottom-6
+  | 25 280&nbsp;
+  i.fa.fa-rub
+
+form.input-group(action='shop-cart.html' method='get')
+  input.input-group-field(type='number' value='1' min='1')
+  .input-group-button
+    button(type='submit' title="Товар добавлен в корзину").button.secondary
+      i.fa.fa-shopping-basket.fa-lg
+      | &nbsp;В заказ
+      | &nbsp;
+.margin-bottom-6
+  a(data-open="add-to-favourites-auth-popup")
+    i.fa.fa-lg.fa-heart-o
+    span.text-dark-gray &nbsp;Запомнить
+.margin-bottom-6
+  b Наличие
+  = ' — '
+  span.text-success много

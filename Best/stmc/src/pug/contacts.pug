@@ -1,0 +1,77 @@
+extends shop-regular
+
+block content
+  .grid-container
+    h1 Контакты
+  .grid-container.padding-bottom-6: .grid-x.grid-padding-x
+    .cell.medium-8.large-6
+      include components/common/_sidebar
+    .cell.medium-16.large-18
+      .grid-x.grid-padding-x
+        .cell.large-12
+          .grid-x
+            .cell.shrink
+              i.fa.fa-lg.fa-map-marker.fa-fw.margin-right-2.margin-top-2
+            .cell.auto
+              h3 Адрес
+              p 150030, Ярославль, ул. Журавлёва 3, офис 213
+          .grid-x
+            .cell.shrink
+              i.fa.fa-lg.fa-clock-o.fa-fw.margin-right-2.margin-top-2
+            .cell.auto
+              h3 Режим работы
+              p Пн – Пт с 10:00 до 19:00
+          .grid-x
+            .cell.shrink
+              i.fa.fa-lg.fa-phone.fa-fw.margin-right-2.margin-top-2
+            .cell.auto
+              h3 Телефоны
+              ul
+                li
+                  a(href='tel:88002345905') 8 800 2345-905
+                  = ' (Бесплатный звонок по России)'
+                li
+                  a(href='tel:+74852593233') +7 (4852) 59-32-33
+                li
+                  a(href='tel:+74852594019') +7 (4852) 59-40-19
+          .grid-x
+            .cell.shrink
+              i.fa.fa-lg.fa-envelope-o.fa-fw.margin-right-2.margin-top-2
+            .cell.auto
+              h3 Электронная почта
+              ul
+                li
+                  a(href='mailto:info@stemco.ru') info@stemco.ru
+                  = ' (общие вопросы)'
+                li
+                  a(href='mailto:dealers@stemco.ru') dealers@stemco.ru
+                  = ' (для дилеров)'
+
+          .margin-bottom-6
+            a.margin-right-6(href='#', title='')
+              span.fa-stack.fa-lg.text-vk
+                i.fa.fa-circle.fa-stack-2x
+                i.fa.fa-vk.fa-stack-1x.fa-inverse
+              | &nbsp;vk.com/stemco
+            a(href='#', title='')
+              span.fa-stack.fa-lg.text-yt
+                i.fa.fa-circle.fa-stack-2x
+                i.fa.fa-youtube-play.fa-stack-1x.fa-inverse
+              | &nbsp;Смотрите нас на YouTube
+
+        .cell.large-12
+          .callout
+            h3 Есть вопросы?
+            form
+              label.text-white Представьтесь
+              input(type='text' required)
+
+              label.text-white Контактный телефон или email
+              input(type='text' required)
+
+              label.text-white Текст сообщения
+              textarea(rows='2')
+
+              button.button.margin-bottom-0(type='submit') Отправить сообщение #[i.fa.fa-envelope-o]
+
+      script(type='text/javascript', charset='utf-8', async='', src='https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af73413484da336c7cb4cf3c590fe987035e32cc3bfe6487b1deb6db8d5d53242&width=100%25&height=400&lang=ru_UA&scroll=false')

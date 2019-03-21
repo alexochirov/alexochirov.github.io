@@ -1,0 +1,44 @@
+extends corp-index
+include components/mixins/_mixin-page-preview
+
+block page
+  .grid-container.margin-bottom-12: .grid-x.grid-padding-x
+    .cell.small-24
+      .grid-x.archive.align-middle
+        .cell.large-auto
+          h2.archive__title Архив номеров
+            a(href="").button.hollow.archive__button О журнале
+        .cell.large-shrink
+          ul.archive-menu
+            li.archive-menu__item: a.archive-menu__link.archive-menu__link_active(href="") 2018
+            for i in [7,6,5,4,3,2,1,0]
+              li.archive-menu__item: a.archive-menu__link(href="") 201#{i}
+    .cell.auto
+      .grid-x.large-up-3.medium-up-2.small-up-1(data-equalizer)
+        +pagePreview('./i/page-preview-1.png', 'Retail&Loyalty', '4/2018 (75)', 'Аналитика больших данных. Взгляд ОФД «Такском»')
+        +pagePreview('./i/page-preview-2.png', 'Retail&Loyalty', '3/2018 (74)', '«Росинтер Ресторантс»: в приоритете технологии, ориентированные на гостей')
+        +pagePreview('./i/page-preview-3.png', 'Retail&Loyalty', '2/2018 (73)', 'MULTI SIM-карта для ритейла: бизнес не останется без связи')
+        +pagePreview('./i/page-preview-1.png', 'Retail&Loyalty', '4/2018 (75)', 'Аналитика больших данных. Взгляд ОФД «Такском»')
+        +pagePreview('./i/page-preview-2.png', 'Retail&Loyalty', '3/2018 (74)', '«Росинтер Ресторантс»: в приоритете технологии, ориентированные на гостей')
+        +pagePreview('./i/page-preview-3.png', 'Retail&Loyalty', '2/2018 (73)', 'MULTI SIM-карта для ритейла: бизнес не останется без связи')
+        +pagePreview('./i/page-preview-3.png', 'Retail&Loyalty', '4/2018 (75)', 'Аналитика больших данных. Взгляд ОФД «Такском»')
+        +pagePreview('./i/page-preview-3.png', 'Retail&Loyalty', '4/2018 (75)', 'Аналитика больших данных. Взгляд ОФД «Такском»')
+        +pagePreview('./i/page-preview-3.png', 'Retail&Loyalty', '4/2018 (75)', 'Аналитика больших данных. Взгляд ОФД «Такском»')
+
+      .margin-left-3
+        ul.archive-menu
+          li.archive-menu__item: a.archive-menu__link.archive-menu__link_active(href="") 2018
+          for i in [7,6,5,4,3,2,1,0]
+            li.archive-menu__item: a.archive-menu__link(href="") 201#{i}
+    .cell.medium-6
+      .blank.blank_app.text-center
+        p
+          img(src="./i/mobile-app.png" alt="")
+        .blank__title.blank__title_app Читайте журнал  Retail&Loyalty  в мобильном приложении
+        .blank__buttons
+          a(href="#").button.button_app.hollow
+            i.fab.fa-apple.fa-lg
+            | APP STORE
+          a(href="#").button.button_app.hollow
+            i.fab.fa-google-play.fa-lg
+            | GOOGLE PLAY

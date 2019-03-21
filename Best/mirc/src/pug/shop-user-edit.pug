@@ -1,0 +1,37 @@
+extends shop-user-personal
+mixin graybox()
+  .grid-container.margin-bottom-4: .grid-x.grid-padding-x.align-center
+    .cell.small-24.medium-16.large-12
+      .callout.gray-box.padding-6
+
+block personal
+  .grid-container: .grid-x: .cell.auto
+    .margin-bottom-5.text-center
+      a(href='shop-user-personal.html').text-decoration-none ← Вернуться
+  .grid-container.margin-bottom-4: .grid-x.grid-padding-x.align-center
+    .cell.small-24.medium-16.large-12
+      .callout.gray-box.padding-6
+        form.user-form
+          label Имя
+            input(type='text' required)
+          label Фамилия
+            input(type='text')
+          label Электронная почта *
+            input(type='email' value='user@email.com' required)
+          label Контактный телефон
+            input(type='text')
+          p.text-center.margin-0
+            br
+            button.button Сохранить
+  .grid-container.margin-bottom-4: .grid-x.grid-padding-x.align-center
+    .cell.small-24.medium-16.large-12
+      .callout.gray-box.padding-6
+        form.user-form
+          h3.text-center Смена пароля
+          label Новый пароль
+            input(type='password' required)
+          label Повторите новый пароль
+            input(type='password' required)
+          p.text-center.margin-0
+            br
+            button.button Сменить пароль

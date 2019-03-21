@@ -1,0 +1,251 @@
+extends corp-index
+
+block page
+  include components/common/_breadcrumbs
+  block content
+    .grid-container: .grid-x.grid-padding-x: .small-24.medium-16.large-18.cell
+      h1.text-center Цены
+    .padding-top-6.padding-bottom-6
+      .grid-container: .grid-x.grid-padding-x
+        .cell.small-24.medium-8.large-6.medium-order-2
+          include components/site/_mira-thermes-sidebar
+        .cell.auto.medium-order-1
+          section.content-block
+            include components/site/_price-sb3
+          section.content-block
+            .grid-container
+              .grid-x: .cell.text-center.margin-bottom-8
+                h2 Специальные предложения
+                hr
+              .grid-x: .cell
+
+                article.callout.special-program
+                  h3.special-program__title Счастливые часы
+                    sup.text-lime-color 4
+                  .margin-bottom-6
+                  .grid-x.grid-padding-x.small-padding-collapse.small-up-3.medium-up-4.large-up-7.line-calendar(data-equalizer)
+                    .cell
+                      .line-calendar__item.active
+                        .line-calendar__item_day
+                          p: strong ПН
+                        .line-calendar__item_time(data-equalizer-watch)
+                    .cell
+                      .line-calendar__item.active
+                        .line-calendar__item_day
+                          p: strong ВТ
+                        .line-calendar__item_time(data-equalizer-watch)
+                          p 9.00 – 14.00
+                            br
+                            span.tiny-text (вход)
+                    .cell
+                      .line-calendar__item
+                        .line-calendar__item_day
+                          p: strong СР
+                        .line-calendar__item_time(data-equalizer-watch)
+                    .cell
+                      .line-calendar__item
+                        .line-calendar__item_day
+                          p: strong ЧТ
+                        .line-calendar__item_time(data-equalizer-watch)
+                          p 9.00 – 15.00
+                    .cell
+                      .line-calendar__item.active
+                        .line-calendar__item_day
+                          p: strong ПТ
+                        .line-calendar__item_time(data-equalizer-watch)
+                          p 9.00 – 14.00
+                            br
+                            span.tiny-text (вход)
+                    .cell
+                      .line-calendar__item
+                        .line-calendar__item_day
+                          p: strong СБ
+                        .line-calendar__item_time(data-equalizer-watch)
+                    .cell
+                      .line-calendar__item
+                        .line-calendar__item_day
+                          p: strong ВС
+                        .line-calendar__item_time(data-equalizer-watch)
+
+                  .gray-box.special-program__price
+                    .grid-container
+                      .grid-x.grid-padding-x
+                        .small-24.medium-12.cell.special-program__price_divider
+                          .special-program__price_hall Зона «Бани»
+                          .grid-container: .grid-x.grid-padding-x
+                            .small-24.medium-12.cell
+                              .special-program__price_time
+                                i.fa.fa-clock-o
+                                | 3 часа
+                            .small-24.medium-12.cell
+                              .special-program__price_cost 830
+                                i.fa.fa-rouble
+                        .small-24.medium-12.cell
+                          .special-program__price_hall Зона «Аква»
+                          .grid-container: .grid-x.grid-padding-x
+                            .small-24.medium-12.cell
+                              .special-program__price_time
+                                i.fa.fa-clock-o
+                                | 3 часа
+                            .small-24.medium-12.cell
+                              .special-program__price_cost 1010
+                                i.fa.fa-rouble
+
+                article.callout.special-program
+                  h3.special-program__title «Мамин час»
+                    sup.text-lime-color 2
+                  .lead.margin-bottom-6 Один ребенок 1-6 лет бесплатно при оплате тарифа "Мамин час"
+                  .grid-x.grid-padding-x.small-padding-collapse.small-up-3.medium-up-4.large-up-7.line-calendar(data-equalizer)
+                    .cell
+                      .line-calendar__item.active
+                        .line-calendar__item_day
+                          p: strong ПН
+                        .line-calendar__item_time(data-equalizer-watch)
+                    .cell
+                      .line-calendar__item.active
+                        .line-calendar__item_day
+                          p: strong ВТ
+                        .line-calendar__item_time(data-equalizer-watch)
+                          p 9.00 – 14.00
+                            br
+                            span.tiny-text (вход)
+                    .cell
+                      .line-calendar__item
+                        .line-calendar__item_day
+                          p: strong СР
+                        .line-calendar__item_time(data-equalizer-watch)
+                    .cell
+                      .line-calendar__item.active
+                        .line-calendar__item_day
+                          p: strong ЧТ
+                        .line-calendar__item_time(data-equalizer-watch)
+                          p 9.00 – 15.00
+                            br
+                            span.tiny-text (вход)
+                    .cell
+                      .line-calendar__item
+                        .line-calendar__item_day
+                          p: strong ПТ
+                        .line-calendar__item_time(data-equalizer-watch)
+                    .cell
+                      .line-calendar__item
+                        .line-calendar__item_day
+                          p: strong СБ
+                        .line-calendar__item_time(data-equalizer-watch)
+                    .cell
+                      .line-calendar__item
+                        .line-calendar__item_day
+                          p: strong ВС
+                        .line-calendar__item_time(data-equalizer-watch)
+                  .gray-box.special-program__price
+                    .grid-container
+                      .grid-x.grid-padding-x
+                        .small-24.medium-12.cell.special-program__price_divider
+                          .special-program__price_hall Зона «Бани»
+                          .grid-container: .grid-x.grid-padding-x
+                            .small-24.medium-12.cell
+                              .special-program__price_time
+                                i.fa.fa-clock-o
+                                | 3 часа
+                            .small-24.medium-12.cell
+                              .special-program__price_cost 720
+                                i.fa.fa-rouble
+                        .small-24.medium-12.cell
+                          .special-program__price_hall Зона «Аква»
+                          .grid-container: .grid-x.grid-padding-x
+                            .small-24.cell
+                              p.text-center Тариф не действует
+
+                article.callout.special-program
+                  h3.special-program__title «День студента»
+                    sup.text-lime-color 3
+                  .margin-bottom-6
+                  .grid-x.grid-padding-x.small-padding-collapse.small-up-3.medium-up-4.large-up-7.line-calendar(data-equalizer)
+                    .cell
+                      .line-calendar__item.active
+                        .line-calendar__item_day
+                          p ПН
+                        .line-calendar__item_time(data-equalizer-watch)
+                          p.tiny-text Любое время
+                    .cell
+                      .line-calendar__item.active
+                        .line-calendar__item_day
+                          p: strong ВТ
+                        .line-calendar__item_time(data-equalizer-watch)
+                          p.tiny-text Любое время
+                    .cell
+                      .line-calendar__item.active
+                        .line-calendar__item_day
+                          p: strong СР
+                        .line-calendar__item_time(data-equalizer-watch)
+                          p.tiny-text Любое время
+                    .cell
+                      .line-calendar__item.active
+                        .line-calendar__item_day
+                          p: strong ЧТ
+                        .line-calendar__item_time(data-equalizer-watch)
+                          p.tiny-text Любое время
+                    .cell
+                      .line-calendar__item.active
+                        .line-calendar__item_day
+                          p: strong ПТ
+                        .line-calendar__item_time(data-equalizer-watch)
+                          p.tiny-text Любое время
+                    .cell
+                      .line-calendar__item.active
+                        .line-calendar__item_day
+                          p: strong СБ
+                        .line-calendar__item_time(data-equalizer-watch)
+                          p.tiny-text Любое время
+                    .cell
+                      .line-calendar__item.active
+                        .line-calendar__item_day
+                          p: strong ВС
+                        .line-calendar__item_time(data-equalizer-watch)
+                          p.tiny-text Любое время
+
+                  .gray-box.special-program__price
+                    .grid-container
+                      .grid-x.grid-padding-x
+                        .small-24.medium-12.cell.special-program__price_divider
+                          .special-program__price_hall Зона «Бани»
+                          .grid-container: .grid-x.grid-padding-x
+                            .small-24.medium-12.cell
+                              .special-program__price_time
+                                i.fa.fa-clock-o
+                                | 3 часа
+                            .small-24.medium-12.cell
+                              .special-program__price_cost 640
+                                i.fa.fa-rouble
+                        .small-24.medium-12.cell
+                          .special-program__price_hall Зона «Аква»
+                          .grid-container: .grid-x.grid-padding-x
+                            .small-24.medium-12.cell
+                              .special-program__price_time
+                                i.fa.fa-clock-o
+                                | 3 часа
+                            .small-24.medium-12.cell
+                              .special-program__price_cost 970
+                                i.fa.fa-rouble
+
+            .grid-container: .grid-x: .cell
+              article.margin-bottom-6
+                ul.list
+                  li: b Каждый третий вторник месяца в термальном центра технический день
+                  li При превышении лимита посещения, дополнительная тарификация почасовая, с округлением до 1 часа
+                  li В праздничные дни Термальный центр работает в режиме выходного дня
+              article.margin-bottom-6
+                p: hr
+                ol.list-num
+                  li.tiny-text При предъявлении пенсионного удостоверения (женщины от 55 лет, мужчины от 60 лет)
+                  li.tiny-text После окончания действия тарифа "Мамин час" (после 17:00) во вторник и четверг (после 15:00), а также в понедельник и выходные дни вход деткам до 6 лет 290 руб., безлимитное посещение деткам от 1 6 лет 420 руб. Взрослым - согласно времени посещения (только семейный зал). По данному тарифу возможен вход «1&nbsp;взрослый+1&nbsp;ребенок»
+                  li.tiny-text На данное акционное предложение "Мираминуты" не начисляются
+              p
+                hr
+                br
+
+              p.text-center
+                a.text-center(href='price-calculator.html')
+                  i.fa.fa-3x.fa-calculator
+                  br
+                  p.text-center.margin-bottom-0 Калькулятор цены посещения

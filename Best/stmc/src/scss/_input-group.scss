@@ -1,0 +1,38 @@
+.input-group {
+  &_top {
+    margin-top: rem-calc(7);
+    margin-bottom: rem-calc(7);
+  }
+
+  &-field {
+    text-transform: uppercase;
+    margin-bottom: rem-calc(0);
+    border: rem-calc(0);
+  }
+
+  &-button {
+    i {
+      font-size: rem-calc(20);
+    }
+  }
+
+  &__btn {
+    cursor: pointer;
+    padding-left: rem-calc(19);
+    padding-right: rem-calc(19);
+    background: $white;
+    color: $green;
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: $white;
+      background: $secondary-color;
+    }
+  }
+  @include breakpoint(medium down) {
+    &_top {
+      margin-top: rem-calc(0);
+    }
+  }
+}

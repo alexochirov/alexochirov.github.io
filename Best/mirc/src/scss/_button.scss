@@ -1,0 +1,115 @@
+.button {
+  background: linear-gradient(to right, #29b8b5 0%, #a2df1a 100%);
+  text-decoration: none;
+  font-weight: 400;
+  border: rem-calc(0);
+  padding: 1rem 2.5rem;
+  transition: 0.3s ease;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: $water;
+    opacity: 0.95;
+  }
+
+  &_plus {
+    padding: rem-calc(6 10);
+    color: $white;
+    background: $turq;
+    border: rem-calc(1) solid $light-gray;
+    display: block;
+    width: 100%;
+    outline: none;
+    border-left: rem-calc(0);
+    border-radius: rem-calc(0 8 8 0);
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: $white;
+    }
+  }
+
+  &_minus {
+    padding: rem-calc(6 10);
+    color: $white;
+    background: $turq;
+    border: rem-calc(1) solid $light-gray;
+    display: block;
+    outline: none;
+    width: 100%;
+    border-right: rem-calc(0);
+    border-radius: rem-calc(8 0 0 8);
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: $white;
+    }
+  }
+
+  &.secondary {
+    background: $secondary-color;
+    color: $white;
+  }
+
+  &.expanded {
+    padding-left: rem-calc(5);
+    padding-right: rem-calc(5);
+  }
+
+  &.lime {
+    background: $lime;
+    color: $white;
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: $black;
+    }
+
+    &.hollow {
+      border-color: $lime;
+      color: $lime;
+
+      &:active,
+      &:focus,
+      &:hover {
+        background: $lime;
+        color: $white;
+      }
+    }
+  }
+
+  &.hollow {
+    background: none;
+  }
+
+  &.small {
+    padding: rem-calc(7) rem-calc(10);
+    border-radius: rem-calc(15);
+  }
+
+  &.large {
+    padding: rem-calc(18 50);
+    border-radius: rem-calc(28);
+  }
+
+  &.xlarge {
+    padding: rem-calc(22) rem-calc(62) rem-calc(23);
+    border-radius: rem-calc(33);
+  }
+  @include breakpoint(medium down) {
+    &.xlarge {
+      padding: rem-calc(15) rem-calc(20);
+    }
+  }
+  @include breakpoint(small only) {
+    &.xlarge {
+      padding-left: rem-calc(12);
+      font-size: rem-calc(16);
+      padding-right: rem-calc(12);
+    }
+  }
+}

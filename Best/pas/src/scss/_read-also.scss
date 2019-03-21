@@ -1,0 +1,32 @@
+.read-also {
+  position: relative;
+  margin-bottom: rem-calc(40);
+
+  &__item {
+    margin-bottom: rem-calc(20);
+  }
+
+  &__head {
+    color: $primary-color;
+    text-transform: uppercase;
+    font-family: $font-fira;
+    font-size: rem-calc(16);
+    margin-bottom: rem-calc(20);
+  }
+
+  &__title {
+    font-size: rem-calc(18);
+    color: $black;
+    transition: ease 0.5s;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $primary-color;
+    }
+  }
+
+  &__text {
+    font-size: rem-calc(16);
+  }
+}

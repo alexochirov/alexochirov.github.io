@@ -1,0 +1,86 @@
+extends corp-index
+
+block page
+  include components/common/_breadcrumbs
+  block content
+      .grid-container: .grid-x.grid-padding-x.padding-top-4
+        .small-24.medium-16.large-18.cell.padding-bottom-6.text-center
+          h1 Аренда малого зала
+          .lead Уютное помещение для проведения занятий и лекций небольшими группами
+
+  .grid-container.content-block: .grid-x.grid-padding-x
+        .cell
+          include components/site/_carousel-media-gallery
+  .grid-container: .grid-x.grid-padding-x
+    .cell.small-24.medium-8.large-6.medium-order-2
+      include components/site/_rent-sidebar
+    .cell.auto.medium-order-1
+      .grid-container.margin-bottom-8: .grid-x.grid-padding-x.small-up-1.medium-up-3.advantages-block.margin-top-0
+        .cell
+          .advantages-block__icon
+            include ../images/icons/measure.svg
+          .advantages-block__title Площадь:
+          .advantages-block__desc: p 45 м
+            sup 2
+        .cell
+          .advantages-block__icon
+            include ../images/icons/table.svg
+          .advantages-block__title Вместимость зала
+            br
+            | со столами:
+
+          .advantages-block__desc: p до 15 человек
+        .cell
+          .advantages-block__icon
+            include ../images/icons/practice.svg
+          .advantages-block__title Статичная практика
+          .advantages-block__desc: p до 125 человек
+
+      section.content-block
+        h3.text-center Стоимость
+        .price-table
+          .grid-x.grid-padding-x.align-center.margin-bottom-6
+            .small-24.medium-12.cell
+              .price-table__item
+                .grid-x
+                  .small-12.cell.align-self-middle
+                    .price-table__item_left
+                      include ../images/icons/clock.svg
+                      p 1 час
+
+                  .small-12.cell.align-self-middle
+                    .price-table__item_right
+
+                      span Аренда зала
+                      p: strong  800
+                        =" "
+                        i.fa.fa-rouble
+          .grid-x.grid-padding-x.align-center
+            .small-24.medium-12.cell
+              .callout.gray-box
+                p.text-center
+                  strong Долгосрочная аренда зала:
+                  br
+                  | по договоренности
+
+
+      section.content-block
+        article
+          p Зеркала в полный рост, качественная вентиляционная система, обеспечивающая комфортную температуру воздуха, чистое и светлое пространство, возможность использовать коврики для йоги, столы или поставить кулер — все это сделает любое занятие успешным и приятным.
+          p
+            hr
+            br
+
+          h3.text-center К вашим услугам:
+          ul.list
+            li Большие зеркала по левой стене зала;
+            li Кондиционер;
+            li Мультимедийное оборудование с профессиональной звуковой аппаратурой;
+            li Парковка. Бесплатный час на просторной парковке бизнес-центра, каждый последующий час 50р.;
+
+
+      section.content-block
+        .callout.text-center.lead.gray-box
+          | Все свои пожелания по оформлению залов вы можете адресовать Светлане, она ответит на все интересующие вас вопросы и подберет индивидуальную комплектацию залов, если это требуется:
+          br
+          | Светлана: 8-983-138-53-72, #[a(href='') bsa@miracentr.ru]

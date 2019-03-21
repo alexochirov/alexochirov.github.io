@@ -1,0 +1,27 @@
+doctype html
+html.no-js(lang='ru')
+  include components/service/_head
+  include components/mixins/_mixin-advert-block
+  body
+    #example1.reveal(data-reveal='' data-deep-link="true")
+      a(href="#"): img(src="./i/800.png", alt="")
+
+    .text-center.background-black
+      img(src="./i/back1.png", alt="")
+
+    include components/corporate/_top-line
+    include components/corporate/_header
+
+    .page-content
+      block page
+        .grid-container: .grid-x.grid-padding-x
+          .cell.large-6.medium-9
+            include components/corporate/_left-side
+            include components/corporate/_figure-day
+          .cell.medium-auto
+            include components/common/_content
+        .grid-container
+          include components/common/_main
+
+    include components/corporate/_footer
+    include components/service/_js

@@ -1,0 +1,33 @@
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+  li {
+    position: relative;
+    padding-left: 1.2rem;
+    &:before {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 0.5rem;
+      height: 0.5rem;
+      border-radius: 50%;
+      background: $lime;
+      top: 6px;
+      left: 0;
+    }
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+  &-num {
+
+    li {
+      line-height: 1.25;
+    }
+    li:not(:last-child) {
+      margin-bottom: 0.5rem;
+    }
+  }
+}

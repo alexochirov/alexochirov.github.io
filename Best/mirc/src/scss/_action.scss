@@ -1,0 +1,53 @@
+.action {
+  margin-bottom: rem-calc(45);
+  margin-left: rem-calc(-20);
+  margin-right: rem-calc(-20);
+
+  .slick-track {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .slick-slide {
+    padding-left: rem-calc(20);
+    padding-right: rem-calc(20);
+    padding-top: rem-calc(20);
+    height: unset;
+
+    padding-bottom: rem-calc(2);
+    
+  }
+
+  .slick-prev {
+    left: rem-calc(-26);
+  }
+
+  .slick-next {
+    right: rem-calc(-26);
+  }
+  @media (max-width: 1280px) {
+    margin-left: rem-calc(0);
+    margin-right: rem-calc(0);
+
+    .slick-prev {
+      left: rem-calc(0);
+    }
+
+    .slick-next {
+      right: rem-calc(0);
+    }
+  }
+  @include breakpoint(small only) {
+    .slick-prev {
+      left: rem-calc(-7);
+    }
+
+    .slick-next {
+      right: rem-calc(-7);
+    }
+  }
+}

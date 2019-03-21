@@ -1,0 +1,181 @@
+.price-calculator {
+  &__divide {
+    border-left: rem-calc(1) solid darken($turq,10%);
+    position: relative;
+
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: rem-calc(0);
+      left: 50%;
+      height: 100%;
+      border-left: rem-calc(1) solid darken($turq,10%);
+    }
+  }
+
+  &__info {
+    color: $primary-color;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: rem-calc(0);
+      left: rem-calc(-15);
+      width: calc(100% + 30px);
+      border-bottom: rem-calc(1) solid darken($turq,10%);
+    }
+  }
+
+  &__hour {
+    margin-bottom: rem-calc(24);
+    position: relative;
+
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: rem-calc(-14);
+      left: rem-calc(-15);
+      width: calc(100% + 30px);
+      border-bottom: rem-calc(1) solid darken($turq,5%);
+    }
+  }
+
+  &__name {
+    display: flex;
+    align-items: center;
+    margin-bottom: rem-calc(5);
+    justify-content: center;
+    font-size: rem-calc(15);
+
+    &_top {
+      margin-bottom: rem-calc(30);
+    }
+
+    &_border {
+      position: relative;
+
+      &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: rem-calc(-45);
+        left: rem-calc(-15);
+        width: calc(100% + 30px);
+        border-bottom: rem-calc(1) solid darken($turq,5%);
+      }
+    }
+
+    &_thin {
+      position: relative;
+
+      &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: rem-calc(-45);
+        left: calc(-50% - 30px);
+        width: calc(200% + 60px);
+        border-bottom: rem-calc(1) solid darken($turq,5%);
+      }
+    }
+  }
+
+  label {
+    color: $water;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+
+    & > p {
+      margin: 0;
+      padding-top: 0.5rem;
+      line-height: 1.2;
+    }
+  }
+
+  input[type="number"],
+  select {
+    height: rem-calc(30);
+    padding-top: rem-calc(3);
+    padding-bottom: rem-calc(3);
+    line-height: rem-calc(30);
+    margin: rem-calc(0 0 20);
+    border-color: $light-gray;
+    border-radius: 0.1rem;
+
+    &:focus {
+      border-color: darken($light-gray,10);
+    }
+  }
+
+  input[type="text"],
+  input[type="date"],
+  input[type="email"],
+  select {
+    border-color: $light-gray;
+    border-radius: 0.5rem;
+
+    &:focus {
+      border-color: darken($light-gray,10);
+    }
+  }
+
+  .input-group-label {
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+
+  .input-group-label + .input-group-field {
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+
+  .button.light-gray {
+    border: 1px solid;
+    border-radius: 0.5rem 0.1rem 0.1rem 0.5rem;
+  }
+
+  .button.success {
+    border: 1px solid;
+    border-radius: 0.1rem 0.5rem 0.5rem 0.1rem;
+  }
+  @include breakpoint(medium down) {
+    &__info {
+      font-size: rem-calc(15);
+      background: #f3f6f9;
+      position: relative;
+      z-index: 2;
+    }
+
+    &__name {
+      &_thin {
+        &:after {
+          left: rem-calc(-15);
+          width: calc(100% + 30px);
+        }
+      }
+    }
+
+    &__divide {
+      &_uni {
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+  @include breakpoint(small only) {
+    &__divide {
+      &:after {
+        display: none;
+      }
+    }
+
+    &__name {}
+  }
+}

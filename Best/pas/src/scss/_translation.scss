@@ -1,0 +1,37 @@
+.translation {
+
+  &-head {
+
+    &__title,
+    &__subtitle {
+      color: $primary-color;
+    }
+
+    &__title {
+      margin-bottom: rem-calc(0);
+      font-weight: 800;
+      font-size: rem-calc(27);
+    }
+
+    &__subtitle {
+      margin-bottom: rem-calc(40);
+      font-family: $font-fira;
+      font-weight: 600;
+      font-size: rem-calc(17);
+    }
+  }
+
+  &-content {
+    margin-bottom: rem-calc(40);
+    font-size: rem-calc(16);
+
+    &__heading {
+      margin: rem-calc(40 0);
+      font-family: $font-noto;
+      font-weight: 400;
+      font-style: italic;
+      text-align: center;
+      color: $primary-color;
+    }
+  }
+}

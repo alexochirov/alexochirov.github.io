@@ -1,0 +1,21 @@
+mixin productViewed(title, discount)
+  .cell
+    .grid-x.align-top
+      .cell.align-self-middle.small-5.medium-24.margin-bottom-4(data-equalizer-watch)
+        a(href='shop-product.html'): img(src="./i/pr"  + Math.ceil(Math.random() * 6) + '.jpg' alt='товар')
+      .cell.small-18.medium-24.small-offset-1.medium-offset-0.margin-bottom-1
+        if discount
+          span.label
+            i.fa.fa-star-o
+            | &nbsp;Новинка
+          | &nbsp;
+        a(href='shop-product.html').font-bold
+          if title
+            = title
+          else
+            | Название товара
+    .margin-bottom-6
+      strong.text-size-large.text-nowrap
+        | 1 250 #[i.fa.fa-rub]
+
+    hr.margin-bottom-6.show-for-small-only

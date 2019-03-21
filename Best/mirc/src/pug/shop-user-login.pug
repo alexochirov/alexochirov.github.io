@@ -1,0 +1,61 @@
+extends corp-regular
+
+block content
+  .grid-container: .grid-x.grid-padding-x: .cell
+    h1.text-center Вход для участников
+      br
+      |системы лояльности «Мираминуты»
+  .padding-top-6.padding-bottom-6
+    block user-login
+      .grid-container: .grid-x.grid-padding-x.align-center
+        .cell.small-24.medium-16.large-12
+          .callout.gray-box
+            form.user-form.padding-top-4.padding-bottom-4(action='shop-user-account.html')
+              .grid-container: .grid-x.align-center.margin-bottom-2
+                .small-24.medium-22.cell
+                  label
+                    | Ваш email
+                    input(type='email')
+              .grid-container: .grid-x.align-center.margin-bottom-6
+                .small-24.medium-22.cell
+                  label
+                    | Пароль
+                    input(type='password')
+              .grid-container: .grid-x.align-center.margin-bottom-4
+                .small-22.medium-20.cell.text-center
+                  input#checkbox1(type='checkbox')
+                  label(for='checkbox1') Запомнить меня на этом компьютере
+              .grid-container: .grid-x.align-center.margin-bottom-2
+                .small-24.medium-20.cell
+                  p.text-center
+                    button.button.small-expanded
+                      | Войти &nbsp;
+                      i.fa.fa-sign-in.fa-lg
+              .grid-container: .grid-x.align-center.margin-bottom-2
+                .small-12.cell
+                  p.text-center
+                    a(href='shop-user-recover.html', title='').font-normal Забыли пароль?
+                .small-12.cell
+                  p.text-center
+                    a(href='shop-user-registration.html', title='').font-normal Регистрация
+              .grid-container: .grid-x.align-center
+                .small-24.medium-20.cell.text-center
+                    p: hr
+                    p.tiny-text.margin-0 Если вы впервые на сайте, заполните, пожалуйста, регистрационную форму.
+              .grid-container: .grid-x.align-center
+                .small-24.medium-20.cell.text-center
+                  p: hr
+                  p
+                    | Войти через: &nbsp;
+                    a(href='#', title='').fa-stack
+                      i.fa.fa-circle.text-fb.fa-stack-2x
+                      i.fa.fa-facebook.fa-stack-1x.fa-inverse
+                    a(href='#', title='').fa-stack
+                      i.fa.fa-circle.text-vk.fa-stack-2x
+                      i.fa.fa-vk.fa-stack-1x.fa-inverse
+                    a(href='#', title='').fa-stack
+                      i.fa.fa-circle.text-ok.fa-stack-2x
+                      i.fa.fa-odnoklassniki.fa-stack-1x.fa-inverse
+                    a(href='#', title='').fa-stack
+                      i.fa.fa-circle.text-in.fa-stack-2x
+                      i.fa.fa-instagram.fa-stack-1x.fa-inverse

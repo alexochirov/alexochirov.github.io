@@ -1,0 +1,52 @@
+.product {
+  border: rem-calc(1) solid $medium-gray;
+  display: block;
+  padding-left: rem-calc(10);
+  padding-right: rem-calc(10);
+  padding-bottom: rem-calc(6);
+  margin-bottom: rem-calc(30);
+
+  &_high {
+    margin-bottom: rem-calc(0);
+  }
+
+  &__img {
+    padding-top: rem-calc(10);
+    margin-bottom: rem-calc(22);
+    height: rem-calc(188);
+    line-height: rem-calc(188);
+
+    img {
+      display: inline-block;
+      max-height: rem-calc(188);
+    }
+  }
+
+  &__price {
+    font-size: rem-calc(30);
+    color: $black;
+    padding-left: rem-calc(22);
+    padding-right: rem-calc(22);
+    font-weight: 700;
+    margin-bottom: rem-calc(16);
+  }
+
+  &__rub {
+    font-size: rem-calc(18);
+  }
+
+  &__title {
+    color: $dark-green;
+    margin-bottom: rem-calc(16);
+    padding-left: rem-calc(22);
+    padding-right: rem-calc(22);
+  }
+  @include breakpoint(medium down) {
+    &_high {
+      margin-bottom: rem-calc(15);
+    }
+  }
+  @include breakpoint(small only) {
+    margin-bottom: rem-calc(15);
+  }
+}

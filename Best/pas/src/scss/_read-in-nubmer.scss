@@ -1,0 +1,49 @@
+.read-in-nubmer {
+  position: relative;
+
+  &__head {
+    font-family: $font-fira;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: $primary-color;
+    font-size: rem-calc(16);
+    margin-bottom: rem-calc(20);
+  }
+
+  &__item {
+    position: relative;
+    margin-bottom: rem-calc(10);
+
+    &:hover {
+      .read-in-nubmer__settings {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__title {
+    color: $black;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $primary-color;
+    }
+  }
+
+  &__settings {
+    opacity: 0;
+    transition: ease 0.5s;
+    & svg {
+      height: rem-calc(15);
+      fill: $medium-gray;
+      transition: ease 0.5s;
+
+      &:hover,
+      &:focus,
+      &:active {
+        fill: $black;
+      }
+    }
+  }
+}

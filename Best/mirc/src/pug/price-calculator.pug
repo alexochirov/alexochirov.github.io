@@ -1,0 +1,105 @@
+extends corp-index
+
+block page
+  include components/common/_breadcrumbs
+  block content
+    .padding-top-6.padding-bottom-6
+      .grid-container: .grid-x.grid-padding-x(data-equalizer,data-equalize-by-row="true").text-center
+        .cell.small-24.medium-8.large-6.medium-order-2
+          include components/site/_mira-spa-sidebar
+        .cell.auto.medium-order-1
+          h1.text-center Калькулятор стоимости посещения
+          .callout.gray-box(data-equalizer-watch)
+            form.price-calculator
+              .grid-x.grid-padding-x.margin-bottom-4
+                .small-12.medium-6.cell
+                  label(for='option11') Ваш пол
+                  select(name='gender' id='option11')
+                    option
+                    option Женщина
+                    option Мужчина
+                .small-12.medium-6.cell
+                  label(for='option12') Возраст
+                  select(name='age' id='option12')
+                    option
+                    option 1-6 лет
+                    option 7-13 лет
+                    option(selected) 14+ лет
+                .small-12.medium-6.cell
+                  label(for='option13') Спецтариф
+                  select(name='age' id='option13')
+                    option Нет
+                    option «Золотой возраст»
+                    option «Мамин час»
+                    option «День студента»
+                .small-12.medium-6.cell.align-self-middle.text-left
+                  a.text-alert.text-decoration-none #[i.fa.fa-minus-circle.text-alert] Удалить
+
+              .margin-bottom-8: a.text-success.text-decoration-none #[i.fa.fa-plus-circle] Добавить посетителя
+              hr.margin-bottom-5
+
+              fieldset
+                .grid-x.grid-padding-x.margin-bottom-4.align-center
+                  .medium-12.large-8.cell.large-text-left
+                    input(type='radio' name="place" id='option6' checked)
+                    label(for='option6') Термы Мира. Набережная
+                  .medium-12.large-8.cell.large-text-left
+                    input(type='radio' name="place" id='option7')
+                    label(for='option7') Термы Мира. Сосновый бор
+              hr.margin-bottom-5
+
+              label Когда хотите прийти
+              .grid-x.grid-padding-x.align-center
+                .shrink.cell
+                  .input-group
+                    .input-group-label Дата
+                    input.input-group-field(type='date')
+                .shrink.cell
+                  .input-group
+                    .input-group-label Время
+                    select.input-group-field
+                      option
+                      option с 9 до 14
+                      option с 9 до 15
+                      option с 9 до 17
+                      option с 17 до 22
+
+              p
+                br
+                button.button Посчитать стоимость
+
+          h3 Стоимость посещения для вас
+          .price-table
+            .grid-x.grid-padding-x
+              .small-24.medium-12.cell
+                .price-table__item
+                  .grid-x
+                    .small-12.cell.align-self-middle
+                      .price-table__item_left
+                        include ../images/icons/clock.svg
+                        p 3 часа
+
+                    .small-12.cell.align-self-middle
+                      .price-table__item_right
+                        span.margin-bottom-1 «Семейный» зал
+                        p.margin-bottom-8
+                          strong 2 640 #[i.fa.fa-rouble]
+                        span.margin-bottom-1 «Релакс» зал
+                        p.margin-bottom-2
+                          strong 3 750 #[i.fa.fa-rouble]
+
+              .small-24.medium-12.cell
+                .price-table__item
+                  .grid-x
+                    .small-12.cell.align-self-middle
+                      .price-table__item_left
+                        include ../images/icons/clock.svg
+                        p Весь день
+                    .small-12.cell.align-self-middle
+                      .price-table__item_right
+                        span.margin-bottom-1 «Семейный» зал
+                        p.margin-bottom-8
+                          strong 3 990 #[i.fa.fa-rouble]
+                        span.margin-bottom-1 «Релакс» зал
+                        p.margin-bottom-2
+                          strong 5 850 #[i.fa.fa-rouble]

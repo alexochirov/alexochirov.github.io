@@ -1,0 +1,63 @@
+.tabs {
+  &-title {
+    & > a {}
+  }
+
+  &-content {}
+
+  &-panel {}
+
+  &_login,
+  &_recovery {
+    border: none;
+
+    & .tabs-title {
+
+      a {
+        padding: rem-calc(0 38 38 38);
+        font-family: $font-fira;
+        font-weight: 500;
+        font-size: rem-calc(18);
+        text-transform: uppercase;
+        color: $black;
+
+        &:focus,
+        &:active {
+          outline: none;
+          color: $primary-color;
+          background: none;
+        }
+      }
+
+      &:first-child {
+        a {
+          padding-left: rem-calc(0);
+        }
+      }
+
+      &.is-active {
+        a {
+          color: $primary-color;
+          background: none;
+        }
+      }
+    }
+  }
+
+  &_recovery {
+    & .tabs-title {
+      a {
+        padding: rem-calc(0 5 38 5);
+      }
+    }
+  }
+}
+
+.tabs-content_login,
+.tabs-content_recovery {
+  border: none;
+
+  & .tabs-panel {
+    padding: rem-calc(0);
+  }
+}

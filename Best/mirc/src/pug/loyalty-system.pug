@@ -1,0 +1,23 @@
+extends corp-index
+block page
+  include components/common/_breadcrumbs
+  block content
+    .grid-container: .grid-x.grid-padding-x.padding-top-6
+      .cell.small-24.medium-8.large-6.medium-order-2
+        include components/site/_loyalty-system-sidebar
+      .cell.auto.medium-order-1
+        .grid-container: .grid-x.grid-padding-x: .cell
+          h1.text-center Система лояльности «Мираминуты»
+        article.content-block
+          p Каждый гость, заполнивший анкету и ознакомившийся с правилами программы лояльности МИРАМИНУТ, имеет возможность копить Мираминуты за каждое посещение «Термы Мира».
+          p В накоплении участвуют все позиции в чеке на услуги «Термы Мира». Питание в мокрой зоне кафе не накапливает Мираминуты.
+          p Если гость приобретает сертификат – Мираминуты не копятся, а если расплачивается сертификатом —начисляются.
+        article.content-block
+          h3.text-center На что потратить Мираминуты
+          p: hr
+          ul.list.margin-bottom-7
+            li Накопив 180 мираминут, Вы можете прийти в «Семейный» зал в любой день
+            li Накопив 250 Мираминут, Вы можете прийти в зал «Релакс» в любой день.
+            li Мираминутами можно оплатить СПА-услуги Термального центра. #[a(href='loyalty-system-menu.html' title='смотрите в бонусном меню') Стоимость услуг в Мираминутах].
+          .text-center
+            a(href="#").button Войти в личный кабинет  

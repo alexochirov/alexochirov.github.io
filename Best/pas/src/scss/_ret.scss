@@ -1,0 +1,24 @@
+.ret {
+  margin-bottom: rem-calc(14);
+
+  &__title {
+    font-size: rem-calc(18);
+    font-weight: 700;
+    color: $black;
+    font-style: italic;
+  }
+
+  &__num {
+    letter-spacing: rem-calc(2);
+    font-size: rem-calc(44);
+    color: $primary-color;
+    font-weight: 700;
+    line-height: 0.9;
+  }
+
+  &__percent {
+    font-size: rem-calc(22);
+    color: $primary-color;
+    font-weight: 700;
+  }
+}

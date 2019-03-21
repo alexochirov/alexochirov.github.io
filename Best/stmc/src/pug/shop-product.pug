@@ -1,0 +1,87 @@
+extends shop-regular
+
+block content
+  .grid-container.margin-bottom-8: .grid-x.grid-padding-x
+    .cell.medium-8.large-6
+      a.show-for-sr.show-on-focus(href='#mainContent') К описанию товара
+      .margin-bottom-6.show-for-small-only
+        span.button.expanded(data-toggle='menu-left')
+          i.fa.fa-lg.fa-bars
+          | &nbsp;Навигация
+      .hide-for-small-only.callout#menu-left(data-toggler='.hide-for-small-only')
+        ul.menu.vertical
+          li
+            a(href='#') Детский сад
+            ul.menu.vertical.nested
+              li.active: a(href='#') Инновационное оборудование
+              li: a(href='#') Конструирование
+              li: a(href='#') Мелкая моторика
+              li: a(href='#') Настенные развивающие модули
+              li: a(href='#') Наука для дошкольников
+              li: a(href='#') Образовательные комплекты
+              li: a(href='#') Основы математики
+              li: a(href='#') Сенсорное развитие
+              li: a(href='#') Системы хранения
+              li: a(href='#') Физическое развитие
+              li: a(href='#') Изучение языков
+          li: a(href='#') Школа
+          li: a(href='#') Основная образовательная программа
+
+    .cell.auto#mainContent(role="main")
+      block productContent
+        //- Для дилеров
+        h1 STEM - Набор «Робомышь»
+
+        .grid-x.grid-padding-x
+          .cell.medium-24.large-auto.medium-order-2
+            include components/shop/_product-base-info
+            hr.margin-vertical-6
+            include components/shop/_product-share-links
+          .cell.medium-24.large-15.medium-order-1
+            include components/shop/_product-images
+        .grid-x.grid-padding-x: .cell
+          ul.tabs#product-tabs-1(data-responsive-accordion-tabs="accordion medium-tabs" data-deep-link="true" data-update-history="false")
+            li.tabs-title.is-active
+              a(href='#product-tab-description' title='') Описание
+            li.tabs-title
+              a(href='#product-tab-spec' title='') Характеристики
+            li.tabs-title
+              a(href='#product-tab-features' title='') Особенности
+
+          .tabs-content(data-tabs-content="product-tabs-1")
+            .tabs-panel.is-active#product-tab-description
+              include components/shop/_product-tab-description
+            .tabs-panel#product-tab-spec
+              include components/shop/_product-tab-spec
+            .tabs-panel#product-tab-features
+              include components/shop/_product-tab-features
+
+
+      .grid-x.grid-padding-x: .cell
+        ul.tabs#product-tabs-2(data-responsive-accordion-tabs="accordion medium-tabs" data-deep-link="true" data-update-history="false")
+          li.tabs-title.is-active
+            a(href='#product-tab-accessories' title='') С этим товаром покупают
+
+
+        .tabs-content(data-tabs-content="product-tabs-2")
+          .tabs-panel.is-active#product-tab-accessories
+            include components/shop/_product-tab-accessories
+
+
+
+  .grid-container
+    h2 Похожие товары
+    .grid-x.grid-padding-x.small-up-1.medium-up-2.large-up-4(data-equalizer data-equalize-by-row="true").margin-bottom-6
+      +productTile('Комби-перфоратор Metabo KHE 2650', false)
+      +productTile('Дрель-шуруповёрт RYOBI R18DDP-LL13G', false)
+      +productTile('Лобзик Metabo STEB 65 Quick', false)
+      +productTile('Торцовочная пила Ryobi EMS254L', true)
+
+    h2 Вы смотрели
+    .grid-x.grid-padding-x.medium-up-3.large-up-6.margin-bottom-4(data-equalizer data-equalize-by-row="true")
+      +productViewed('Комби-перфоратор Metabo KHE 2650', false)
+      +productViewed('Дрель-шуруповёрт RYOBI R18DDP-LL13G', false)
+      +productViewed('Лобзик Metabo STEB 65 Quick', false)
+      +productViewed('Торцовочная пила Ryobi EMS254L', true)
+      +productViewed('Дрель-шуруповёрт RYOBI R18DDP-LL13G', false)
+      +productViewed('Лобзик Metabo STEB 65 Quick', false)

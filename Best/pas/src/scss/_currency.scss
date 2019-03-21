@@ -1,0 +1,34 @@
+.currency {
+  &__slide {
+    padding-left: rem-calc(28);
+    padding-right: rem-calc(28);
+    padding-bottom: rem-calc(6);
+  }
+
+  .slick-arrow {
+    top: rem-calc(30);
+    padding-bottom: rem-calc(22);
+  }
+
+  &__big {
+    font-size: rem-calc(70);
+    font-weight: 700;
+    line-height: 1;
+    font-family: $font-noto;
+    color: $primary-color;
+  }
+
+  &__text {
+    text-align: left;
+    font-family: $font-fira;
+  }
+
+  &__percent {
+    line-height: 1;
+    font-size: rem-calc(20);
+    margin-bottom: rem-calc(20);
+    font-weight: 700;
+    font-family: $font-noto;
+    color: $primary-color;
+  }
+}

@@ -1,0 +1,83 @@
+extends corp-index
+
+block page
+  include components/common/_breadcrumbs
+  block content
+    .grid-container: .grid-x.grid-padding-x: .cell
+      h1 Термы Мира «Сосновый бор»
+    .padding-top-6.padding-bottom-6
+      .grid-container: .grid-x.grid-padding-x
+        .cell.auto.small-order-2.medium-order-1
+          .margin-bottom-12.lead
+            strong Бассейн, бани, джакузи, соляная пещера
+            br
+            | для восстановление сил, положительных эмоций и равновесия мыслей
+
+          .grid-x.grid-padding-x.margin-bottom-8
+            .cell.small-24.medium-24.large-8.margin-bottom-4
+              a(href='mira-thermes-area.html'): img.round(src='./i/photo5.jpg' alt='')
+            .cell.small-24.medium-auto
+              h2 Аква-зона
+              .margin-bottom-7
+                | #[a.text-quaternary(href='') Бассейн] с минерализованной водой бодрит и поднимает настроение. Мощные струи минерализованной воды #[a.text-quaternary(href='') Джакузи] тонизируют мышцы и улучшают циркуляцию крови. Насыщенный минералами воздух #[a.text-quaternary(href='') соляного грота] улучшает дыхание.
+              a.button.hollow.lime(href='mira-thermes-area.html') Подробнее
+
+          .grid-x.grid-padding-x.margin-bottom-8
+            .cell.small-24.medium-24.large-8.margin-bottom-4
+              a(href='mira-thermes-area.html'): img.round(src='./i/photo4.jpg' alt='')
+            .cell.small-24.medium-auto
+              h2 Бани
+              .margin-bottom-7
+                | Специально для парения предусмотрена уютная парная. Здесь можно пройти банную программу парения. Хорошо прогреваются кости, мышцы, суставы. Обладает мощным оздоровительным эффектом, способствует снижению веса. Хорошая профилактика простуды.
+              a.button.hollow.lime(href='mira-thermes-area.html') Подробнее
+
+          .grid-x.grid-padding-x.margin-bottom-8
+            .cell.small-24.medium-24.large-8.margin-bottom-4
+              a(href='mira-thermes-area.html'): img.round(src='./i/photo3.jpg' alt='')
+            .cell.small-24.medium-auto
+              h2 Пляж
+              .margin-bottom-7
+                | Гармонии души и тела, эмоционального и физического баланса, красоты внешней и внутренней. Ощутите небывалое расслабление, забвение, состояние покоя и умиротворения. Атмосфера тёплого солнечного пляжа поможет отстраниться от всех тревог и забот.
+              a.button.hollow.lime(href='mira-thermes-area.html') Подробнее
+
+          hr.margin-bottom-12.margin-top-4
+
+          .grid-x.grid-padding-x.margin-bottom-8
+            .small-24.medium-14.cell.medium-order-2
+
+              .margin-bottom-4
+                iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6344.32377020446!2d37.57639787499114!3d55.79224500973831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b549f0c1269c0b%3A0x4236b28a4521323!2z0YPQuy4g0J3QuNC20L3Rj9GPINCc0LDRgdC70L7QstC60LAsIDgsINCc0L7RgdC60LLQsCwgMTI3MjIw!5e0!3m2!1sru!2sru!4v1467010638187"  height="350" style="width:100%; border:0" allowfullscreen)
+              .button-group.align-center
+                a.button.small.lime.margin-right-4 Карта
+                a.button.small.lime Панорама
+            .small-24.medium-10.cell.medium-order-1
+              p: strong Термы Мира «Сосновый бор»
+
+              p Новосибирск, ул. Добролюбова 2А, БЦ&nbsp;«Сосновый Бор»
+              p: a(href='').font-bold info@miracentr.ru
+              p: a(href='').font-bold +7 (383) 349-18-49
+
+              p
+                strong Режим работы
+                br
+                | Без выходных, с 08:00 до 22:00
+
+              p: a(href='') #[i.fa.fa-file.margin-right-1] Правила посещения
+
+        .cell.small-24.medium-8.large-6.text-center.small-order-1.medium-order-2
+          .margin-bottom-5.show-for-small-only(data-responsive-toggle='menu-left', data-hide-for='medium')
+            span.button.expanded(data-toggle)
+              i.fa.fa-lg.fa-bars
+              | &nbsp;Навигация
+          .padding-5.margin-bottom-5.aside-menu#menu-left
+            ul.menu.vertical.text-center
+
+              li.aside-menu__item: a(href='mira-thermes-schedule.html' title='')
+                .margin-bottom-3
+                  i.fa.fa-table.fa-3x
+                | Расписание
+              li.aside-menu__item: a(href='mira-thermes-price.html' title='')
+                .margin-bottom-3
+                  i.fa.fa-rub.fa-3x
+                | Цены
+

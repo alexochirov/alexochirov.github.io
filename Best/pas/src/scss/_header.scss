@@ -1,0 +1,116 @@
+.header {
+  background: $primary-color;
+  padding-top: rem-calc(13);
+  /*margin-bottom: rem-calc(16);*/
+
+  &__rel {
+    position: relative;
+  }
+
+  &__top {
+    padding-bottom: rem-calc(12);
+    border-bottom: rem-calc(1) solid $white;
+  }
+
+  &__marquee {
+    overflow: hidden;
+  }
+
+  &__title {
+    display: block;
+    margin-top: rem-calc(5);
+    margin-bottom: 0;
+    text-align: center;
+    font-family: $font-adventure;
+    font-weight: 400;
+    font-size: rem-calc(23);
+    color: $white;
+
+    @include breakpoint(medium down) {
+      margin-top: rem-calc(15);
+    }
+  }
+
+  &__about {
+    color: $white;
+    display: inline-block;
+    font-weight: 500;
+    padding: rem-calc(8 22 8 13);
+    text-transform: uppercase;
+    position: absolute;
+    bottom: rem-calc(-49);
+    z-index: 3;
+    background: $yellow;font-family: $font-fira;
+    left: rem-calc(10);
+
+    &:after {
+      width: 0;
+      height: 0;
+      display: block;
+      position: absolute;
+      right: rem-calc(9);
+      top: rem-calc(15);
+      transform: scaleX(.5);
+      content: "";
+      border-left: rem-calc(6) solid transparent;
+      border-right: rem-calc(6) solid transparent;
+      border-top: rem-calc(6) solid $white;
+    }
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: $white;
+    }
+  }
+
+  &__cont {
+    padding-left: rem-calc(0);
+  }
+
+  &__toggle {
+    color: $white;
+    font-size: rem-calc(30);
+    cursor: pointer;
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: $light-gray;
+    }
+  }
+
+  &__soc {
+    margin-left: rem-calc(10);
+    margin-right: rem-calc(10);
+    display: inline-block;
+    color: $white;
+    font-size: rem-calc(36);
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: $light-gray;
+    }
+  }
+  @include breakpoint(medium down) {
+    &__cont {
+      padding-left: rem-calc(10);
+    }
+
+    &__icons {
+      margin-top: rem-calc(10);
+    }
+  }
+  @include breakpoint(small only) {
+    &__toggle {
+      margin-top: rem-calc(5);
+    }
+
+    &__logo {
+      img {
+        max-height: rem-calc(37);
+      }
+    }
+  }
+}

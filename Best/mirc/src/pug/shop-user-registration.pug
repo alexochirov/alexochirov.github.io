@@ -1,0 +1,59 @@
+extends corp-regular
+block content
+  .grid-container: .grid-x.grid-padding-x: .cell
+    h1.text-center Регистрация
+  .padding-top-6.padding-bottom-6
+    .grid-container: .grid-x.grid-padding-x.align-center
+      .cell.small-24.medium-16.large-12
+        .alert-block-lime-color
+          h5
+            i.fa.fa-check-square
+            =" "
+            | Вы были успешно зарегистрированы!
+          p На вашу электронную почту отправлено письмо с подтверждением.
+
+        .alert-block-deep-red
+          h5
+            i.fa.fa-exclamation-triangle
+            =" "
+            | При регистрации произошли ошибки:
+          ul
+            li не заполнено поле Email
+            li пароль и его подтверждение не совпадают
+            li введен неверный код
+        .callout.gray-box.padding-8
+          form.user-form(action='shop-user-personal.html')
+            label
+              | Номер телефона с кодом подтверждения
+              input(type='text' required)
+            label
+              | Электронная почта (будет логином)
+              input(type='email' required)
+            label
+              | Придумайте пароль
+              input(type='password' required)
+            p.help-text Не менее 8 символов.
+
+            .grid-x.grid-padding-x
+              .cell.small-14.medium-16
+                label
+                  | Текст с картинки
+                  input(type='password')
+              .cell.small-10.medium-8.padding-top-6
+                img(src='./i/captcha.jpg' alt='Код проверки от роботов' style="height:41px;")
+            .grid-x.grid-padding-x
+              .cell.shrink.padding-top-1
+                input#checkbox1(type='checkbox')
+              .cell.auto
+                label(for='checkbox1'): p.text-size-small.font-normal
+                  | Я ознакомлен и принимаю условия &nbsp;
+                  a(href='corp-regular.html' title='') Соглашения об использовании сайта
+                  |, в том числе в части обработки и использования моих персональных данных
+          .grid-x.grid-padding-x.margin-top-6
+            .cell.auto.text-center
+              button.button.small-expanded.margin-0
+                | Регистрация &nbsp;
+                i.fa.fa-user-plus.fa-lg
+        p.text-center
+          = 'Уже зарегиcтрированы? '
+          a(href='shop-user-login.html' title='').font-bold Авторизоваться

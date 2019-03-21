@@ -1,0 +1,76 @@
+extends corp-index
+
+block page
+  include components/common/_breadcrumbs
+  block content
+    .grid-container: .grid-x.grid-padding-x: .small-12.medium-16.large-18.cell.padding-top-6.margin-bottom-6
+      h1.text-center Большой бассейн
+      .lead.text-center Бассейн с минерализованной водой. В бассейне расположены аэромассажные сидения
+        br.show-for-large
+        | и гидромассажные форсунки для массажа
+
+    .grid-container.margin-bottom-8: .grid-x.grid-padding-x
+      .cell
+        include components/site/_carousel-media-gallery
+    .grid-container: .grid-x.grid-padding-x
+      .cell.small-24.medium-8.large-6.medium-order-2
+        include components/site/_mira-thermes-sidebar
+      .cell.auto.medium-order-1
+          article.content-block
+            .grid-container.margin-bottom-8: .grid-x.small-up-1.medium-up-3.advantages-block.margin-top-0
+              .cell
+                .advantages-block__icon
+                  include ../images/icons/therm.svg
+                .advantages-block__title Температура:
+                .advantages-block__desc: p 70 – 80°С
+              .cell
+                .advantages-block__icon
+                  include ../images/icons/humidity.svg
+                .advantages-block__title Влажность:
+
+                .advantages-block__desc: p 40 — 60%
+              .cell
+                .advantages-block__icon
+                  include ../images/icons/timer.svg
+                .advantages-block__title Рекомендуем:
+                .advantages-block__desc: p 10 мин. за один заход
+
+            .grid-x.grid-padding-x.padding-top-6
+              .cell.small-24.medium-12
+                p
+                  strong #[i.fa.fa-plus-circle.text-success] Здоровая спина
+                  br
+                  | Плавание благотворно влияет на спину — укрепляет мышечный корсет и положительно сказывается на состоянии позвоночника за счет выталкивающей силы воды.
+
+                p
+                  strong #[i.fa.fa-plus-circle.text-success] Избавление от стресса
+                  br
+                  | Нахождение в теплой воде с гидромассажем оказывает прекрасный расслабляющий, успокаивающий эффект.
+
+                p
+                  strong #[i.fa.fa-plus-circle.text-success] Здоровье
+                  br
+                  | Все водные процедуры обладают закаливающим эффектом.
+              .cell.small-24.medium-12
+                p
+                  strong #[i.fa.fa-minus-circle.text-alert] Противопоказания
+                  br
+                  | Кожные, инфекционные заболевания, кровотечения
+          article.content-block
+            h3  О бассейне
+            p: hr
+            p Температура воды 32-34 °С; размер 3×8 м; глубина 0,9м.
+            p Бассейн — это отличное дополнение к другим процедурам Термального центра. Нахождение в теплой воде прекрасно расслабляет и дарит отличное настроение. Минерализованная вода бассейна не сушит кожу, поэтому купание подойдет даже для людей с чувствительной кожей.
+            p Очистка воды производится с помощью современных фильтров и хлорирования.
+            p В бассейне расположены аэромассажные сидения и гидромассажные форсунки для массажа стоп. Сеансы гидромассажа проводятся каждые 15 минут.
+            p Рекомендуемое время нахождения в воде – 20 минут.
+            p: b Внимание! Запрещено нахождение детей в воде без присмотра родителей! Строго запрещено прыгать с бортиков в воду, поднимать брызги, кричать!
+
+          article.content-block
+            h3  Очистка воды в бассейне
+            p: hr
+            ul.list
+              li фильтрация и циркуляция воды (физическая водоподготовка);
+              li обработка воды специальными препаратами (химическая водоподготовка).
+            .margin-bottom-6
+            p Химические и физические методы подготовки одинаково важны для хорошего качества воды в бассейне и дополняют друг друга. Одной только фильтрации недостаточно, чтобы предотвратить развития нежелательной флоры, которая погибает только при обработке дезинфектантами. Рост водорослей подавляют альгициды, а коагулянты устраняют мутность воды и фильтруют мельчайшие частицы.

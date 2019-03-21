@@ -1,0 +1,21 @@
+extends corp-index
+include components/mixins/_mixin-spa-program
+block page
+    include components/common/_breadcrumbs
+    block content
+        .grid-container: .grid-x.grid-padding-x: .cell.small-24.medium-16.large-18.medium-align-left.margin-top-8.margin-bottom-6
+            h1.text-center Акции и скидки
+        .padding-bottom-3
+            .grid-container: .grid-x.grid-padding-x
+                .cell.small-24.medium-8.large-6.medium-order-2
+                    include components/site/_mira-spa-sidebar
+                .cell.auto.medium-order-1
+                    include components/site/_select-place-medium
+                    .grid-x.grid-padding-x.small-up-1.medium-up-2.large-up-3.align-center(data-equalizer="card-promo",data-equalize-by-row="true").text-center
+                        .cell: +card-promo('photo1','Мамин час','Бесплатное посещение для детей от года до 6 лет','Вторник 09:00-17:00, четверг 09:00-15:00','Набережная')
+                        .cell: +card-promo('photo2','Золотой возраст','Посещение Термального центра по специальной цене','Вторник 09:00-17:00, четверг 09:00-15:00','Сосновый бор')
+                        .cell: +card-promo('photo3','Термы в день рождения!','Специальное предложение для именинников','Только для участников системы лояльности «Мираминуты»','Сосновый бор')
+                        .cell: +card-promo('photo4','День студента','В будний день и в любое время для студентов очного отделения','Понедельник и пятница 09:00-20:30','Набережная')
+                        .cell: +card-promo('photo5','«Мира» в подарок','Подарочные сертификаты по специальной цене! Включено посещение «Термы Мира.Сосновый бор» с момента открытия!','С 29 ноября 2017 по 8 января 2018','Сосновый бор')
+                        .cell: +card-promo('photo5','Счастливые часы','Спец. цена на посещение термального центра для всех','С 2 мая по 31 января 2018. Вторник и пятница с 09:00 до 14:00','Сосновый бор')
+                        .cell: +card-promo('photo2','Годовой абонемент','Абонемент на 12 посещений со скидкой 25%','Вы экономите 3 367 р.','Сосновый бор')

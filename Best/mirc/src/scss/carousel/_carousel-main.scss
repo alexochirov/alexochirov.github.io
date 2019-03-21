@@ -1,0 +1,26 @@
+.carousel-main {
+  text-align: center;
+}
+
+.carousel-main__item {
+  background: center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  display: none;
+  padding: 2rem;
+  &:first-child {
+    display: block;
+  }
+}
+
+@include breakpoint(medium up) {
+  .carousel-main__content {
+    min-height: rem-calc(300);
+  }
+}
+
+@include breakpoint(large up) {
+  .carousel-main__content {
+    min-height: rem-calc(400);
+  }
+}

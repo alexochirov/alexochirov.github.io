@@ -1,0 +1,43 @@
+.partner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: rem-calc(30);
+  padding: rem-calc(30);
+  border: rem-calc(1) solid $primary-color;
+  border-radius: rem-calc(5);
+  transition: 0.3s ease all;
+
+  &:hover,
+  &:focus,
+  &:active {
+    box-shadow: rem-calc(0 10 30 0) rgba(139, 50, 84, 0.3);
+  }
+
+  &__title {
+    margin-bottom: rem-calc(50);
+    font-family: $font-fira;
+    font-weight: 900;
+    font-size: rem-calc(16);
+    text-align: center;
+    width: 100%;
+  }
+
+  &__logo {
+    margin-bottom: rem-calc(40);
+  }
+
+  &__contacts {
+  }
+
+  &__contact {
+    margin-bottom: 0;
+  }
+
+  &__phone,
+  &__email {
+    display: inline-block;
+    color: $black;
+  }
+}

@@ -1,0 +1,114 @@
+.header {
+  padding-bottom: rem-calc(29);
+  border-top: rem-calc(5) solid $green;
+
+  &__authorization {
+    padding-top: rem-calc(69);
+  }
+
+  &__free {
+    color: $alert-color;
+    font-weight: 400;
+  }
+
+  &__del {
+    color: $medium-gray;
+    font-size: rem-calc(16);
+    margin-left: rem-calc(5);
+    margin-right: rem-calc(5);
+  }
+
+  &__enter {
+    font-weight: 400;
+    font-size: rem-calc(16);
+  }
+
+  &__tel {
+    font-size: rem-calc(30);
+    font-weight: 700;
+    line-height: 1.1;
+    display: block;
+    margin-top: rem-calc(60);
+    color: $black;
+    letter-spacing: rem-calc(.3);
+  }
+
+  &__logo {
+    margin-right: rem-calc(20);
+    display: block;
+    width: rem-calc(173);
+  }
+
+  &__name {
+    display: flex;
+    padding-top: rem-calc(15);
+  }
+
+  &__equipment {
+    font-weight: 400;
+    color: $dark-gray;
+    max-width: rem-calc(140);
+    padding-top: rem-calc(63);
+    position: relative;
+    line-height: 1.22;
+    padding-left: rem-calc(20);
+
+    &:after {
+      position: absolute;
+      content: "";
+      display: block;
+      left: rem-calc(0);
+      border-left: rem-calc(1) solid $medium-gray;
+      height: rem-calc(27);
+      top: rem-calc(66);
+    }
+  }
+
+  &__toggle {
+    margin-top: rem-calc(35);
+    cursor: pointer;
+    font-size: rem-calc(20);
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: $dark-gray;
+    }
+  }
+  @include breakpoint(medium down) {
+    &__logo {
+      width: rem-calc(106);
+      margin-right: rem-calc(0);
+    }
+
+    &__authorization {
+      padding-top: rem-calc(38);
+    }
+
+    &__tel {
+      margin-top: rem-calc(37);
+      font-size: rem-calc(20);
+    }
+  }
+  @include breakpoint(small only) {
+    padding-bottom: rem-calc(10);
+  &__name{
+    display: block;
+  }
+    &__logo {
+      display: inline-block;
+    }
+
+    &__tel {
+      margin-top: rem-calc(15);
+    }
+
+    &__authorization {
+      padding-top: rem-calc(10);
+    }
+
+    &__name {
+      padding-top: rem-calc(5);
+    }
+  }
+}

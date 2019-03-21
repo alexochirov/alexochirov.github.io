@@ -1,0 +1,49 @@
+extends shop-regular
+
+block content
+  .grid-container
+    h1 Специальное предложение на мини-погрузчики New Holland
+    div 16.02.2016
+
+  .grid-container.padding-bottom-6: .grid-x.grid-padding-x
+    .cell.medium-8.large-6.medium-order-2
+      include components/common/_sidebar
+      .margin-bottom-6.show-for-small-only(data-responsive-toggle='aside-subscribe', data-hide-for='medium')
+        span.button.expanded(data-toggle)
+          | Подписаться
+      #aside-subscribe
+        include components/common/_aside-subscribe
+    .cell.medium-auto.medium-order-1
+      p: img(src="./i/pr1.jpg"  alt='' )
+      p Компания «Русбизнесавто» предлагает мини-погрузчики New Holland по специальной зимней цене. Купить модели New Holland L218 и New Holland L225 можно всего от 2 200 000 руб. Также в настоящий момент предлагаются специальные условия при покупке техники в лизинг: удорожание всего 0%.*
+      p New Holland L218 и L225 – это компактная и маневренная колёсная техника для погрузочно-разгрузочных работ на объектах с ограниченной свободой движения. Мини-погрузчики справляются с узкоспециализированными задачами в различных хозяйственных и производственных сферах благодаря комплектации вилами, отвалом, буром и другими вариантами дополнительного оборудования.
+      p Оба мини-погрузчика New Holland оснащаются стрелой вертикального подъёма SUPER BOOM – собственной разработкой New Holland, обеспечивающей наилучшие показатели высоты и вылета разгрузки в классе. Управление осуществляется джойстиками, что гарантирует точность выполнения операций и высокую производительность погрузчика. На оба мини-погрузчика устанавливаются усиленные колёса 12х16,5, а для удобства старта зимой машины оснащены подогревом картера двигателя от сети 220В.
+      p Объём ковша мини-погрузчика New Holland L218 – 0,47 м3, а грузоподъёмность – 818 кг. Модель обладает различными функциями, увеличивающими комфорт оператора и производительность и снижающими потери материала на площадке. Ride Control уменьшает ударную нагрузку на кабину и ковш, а Self Level выравнивает ковш при подъёме стрелы, держит его параллельно поверхности.
+
+      include components/common/_page-tools
+
+      hr.margin-bottom-6
+
+      .grid-x.grid-padding-x.margin-bottom-6
+        .cell.medium-6.large-4: a(href=''): img(src="./i/pr"  + Math.ceil(Math.random() * 6) + '.jpg', alt="")
+        .cell.medium-auto
+          .margin-bottom-2.text-primary.font-bold 24.10.2017
+          h5: a(href='') Компания СТЕМ И EDX Education приглашают Вас на WORLDDIDAC Russia 2017
+          .margin-bottom-2 С 1-3 ноября впервые в России, в Москве, будет проходить выставка Worlddidac Russia. Выставка будет проходить в международном выставочном центре Крокус Экспо, Павильон № 2, зал 9. Наш стенд № 13. Для того чтобы получить пригласительный билет необходимо пройти регистрациюhttp://worlddidac-russia.com/ru/visitors.html Буду очень рад видеть Вас на нашем стенде!!!
+      .grid-x.grid-padding-x.margin-bottom-6
+        .cell.medium-6.large-4
+          img(src="./i/pr"  + Math.ceil(Math.random() * 6) + '.jpg', alt="")
+        .cell.medium-auto
+          .margin-bottom-2.text-primary.font-bold 28.04.2017
+          h5: a(href='') Компания СТЕМ на WORLDDIDAC Russia 2017
+          .margin-bottom-2 С 1 по 3 ноября 2017 года она впервые пройдет на территории России! На выставке будет представлено современное оборудование для учебных кабинетов и лабораторий, интерактивное оборудование, обучающие программы, мебель для детских садов и спортивных площадок, уникальные стенды и лаборатории для профобразования, робототехника, учебная литература и многое другое.
+      .grid-x.grid-padding-x.margin-bottom-6
+        .cell.medium-6.large-4: a(href=''): img(src="./i/pr"  + Math.ceil(Math.random() * 6) + '.jpg', alt="")
+        .cell.medium-auto
+          .margin-bottom-2.text-primary.font-bold 30.11.2016
+          h5: a(href='') Робототехнические наборы K'NEX Edcucation Robotics Pack уже в продаже!
+          .margin-bottom-2 Компания СТЕМ начала продажи Робототехнических наборов K'NEX Edcucation Robotics Pack в России. Gratnells - один из самых известных и широко представленных в учебных заведениях Великобритании, производителей систем.
+      hr.margin-bottom-6
+
+      .margin-bottom-6
+        a.button.hollow.small-expanded(href='news.html') #[i.fa.fa-angle-left] Все новости

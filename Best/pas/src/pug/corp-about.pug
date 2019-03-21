@@ -1,0 +1,85 @@
+extends corp-index
+
+block page
+  .grid-container.about
+    .grid-x.grid-padding-x
+      .cell.large-12
+        .grid-x.grid-padding-x.align-middle.margin-bottom-4.text-center.medium-text-left
+          .cell.medium-shrink
+            h1.about__title О портале
+          .cell.medium-auto
+            a.button.button_bottom.hollow(href="") Получить медиакит
+        p Информационный портал Retail-Loyalty.org представляет лучший зарубежный и отечественный опыт в области офлайн и онлайн ритейла: торговая розница, перспективные технологии, бизнес-кейсы, e-commerce, геолокация, CRM, лояльность, бесконтактные технологии (NFC, RFID и др.), самообслуживание, кассовые решения, IТ-решения, безопасность и др.
+        .about-auditory
+          h2.about-heading Аудитория портала – это представители:
+          ul.list.list_unordered
+            li.list__item торговых сетей  и традиционной розницы – food, non-food, DIY, fashion и др.;
+            li.list__item интернет-магазинов;
+            li.list__item гостиничного бизнеса, туроператоров,	авиакомпаний, транспортных компаний, 	компаний-операторов АЗК;
+            li.list__item банков и иных финансовых институтов, платежных систем;
+            li.list__item компаний-поставщиков продуктов, сервисов и решений для ритейла;
+            li.list__item телекома;
+            li.list__item госструктуры.
+
+      .cell.large-shrink
+        .about-statistic
+          img.about-statistic__image(src="./i/computer.png" alt="О портале")
+          .acc.acc_mini
+            span.acc__num +150 000
+            span.acc__title количество просмотров
+            span.acc__num 19%
+            span.acc__title показатель отказов
+            span.acc__num 2 мин
+            span.acc__title среднее время пребывания на сайте
+            .acc__info по данным metrika.yandex.ru
+
+    .grid-x.grid-padding-x
+      .cell.large-14
+        .about-categories
+          h2.about-heading Новостные разделы портала Retail-Loyalty.org:
+          .about-categories__list
+            ul.list.list_unordered
+              li.list__item Торговые сети
+              li.list__item Онлайн-коммерция
+              li.list__item Новости регуляторов рынка
+              li.list__item Малый и средний ритейл
+              li.list__item Логистика
+              li.list__item Программы лояльности
+              li.list__item IT в ритейле
+              li.list__item POS-оборудование и кассовые решения
+              li.list__item Мобильная коммерция
+              li.list__item Новости компаний
+            ul.list.list_unordered
+              li.list__item Horeca
+              li.list__item Безопасность
+              li.list__item Топливный и транспортный ритейл
+              li.list__item Выставки и конференции
+              li.list__item Исследования и обзоры
+              li.list__item Социальные сети
+              li.list__item Ко-брендинг
+              li.list__item Эквайринг
+              li.list__item Платежные технологии
+              li.list__item Топливный и транспортный ритейл
+        .margin-bottom-12
+          p Посетители занимают ключевые позиции в индустрии ритейла и принимают непосредственное участие в подготовке и принятии решений, а также в реализации проектов. Являются представителями наиболее активного возраста – #[span.text-primary.font-bold.font-italic от 28 до 50 лет]. Количество просмотров в месяц – #[span.text-primary.font-bold.font-italic +150 000], количество подписчиков на онлайн-новости - #[span.text-primary.font-bold.font-italic +5 000], в Faсebook – #[span.text-primary.font-bold.font-italic +2500] постоянных подписчиков, в Twitter – #[span.text-primary.font-bold.font-italic +1000] подписчиков.
+          h2.about-heading Разделы информационного портала Retail-Loyalty.org:
+          ul.list.list_unordered
+            li.list__item Retail&Loyalty News (он-лайн новости индустрии ритейла)
+            li.list__item Online версия журнала Retail&Loyalty (свежий номер и архив журнала)
+            li.list__item Календарь событий – самая полная информация о мероприятиях для ритейла
+            li.list__item База знаний
+            li.list__item Видео и фото галереи
+            li.list__item Исследования и обзоры – дополнительные сервисы по подготовке тематических исследований и обзоров рынка
+            li.list__item Бюро переводов ПЛАС – услуги профессионального письменного и устного перевода специализированных иностранных текстов любого уровня сложности
+
+        .contact
+          p.contact__name Константин Гризов
+          p.contact__position Директор по развитию бизнеса
+          p.contact__tel Моб.: #[a.text-black(href="tel:+79250054005") +7 925 005 4005]
+          p.contact__tel т./ф.: #[a.text-black(href="tel:+74959611065") +7 495 961 1065]
+          p.contact__mail E-mail: #[a.link(href="mailto:konstantin@plusworld.ru") konstantin@plusworld.ru]
+        .contact
+          p.contact__name Редакция журнала Retail & Loyalty
+          p.contact__position Россия, 117218 Москва, ул. Кржижановского, д. 29, корп. 5, оф. 1-3 "А"
+          p.contact__tel т./ф.: #[a.text-black(href="tel:+74959611065") +7 495 961 1065]
+          p.contact__mail E-mail: #[a.link(href="mailto:news@plusworld.ru") news@plusworld.ru]

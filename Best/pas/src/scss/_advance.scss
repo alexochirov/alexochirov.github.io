@@ -1,0 +1,33 @@
+.advance {
+  display: block;
+  margin-bottom: rem-calc(20);
+  color: $secondary-color;
+
+  &__title {
+    font-size: rem-calc(14);
+    font-weight: 700;
+  }
+
+  &__date {
+    position: absolute;
+    left: rem-calc(0);
+    bottom: rem-calc(0);
+    display: inline-block;
+    padding-left: rem-calc(9);
+    padding-right: rem-calc(9);
+    background: $primary-color;
+    font-family: $font-fira;
+    color: $white;
+    font-weight: 400;
+    font-size: rem-calc(14);
+  }
+
+  &__img {
+    position: relative;
+    margin-bottom: rem-calc(10);
+
+    img {
+      width: 100%;
+    }
+  }
+}

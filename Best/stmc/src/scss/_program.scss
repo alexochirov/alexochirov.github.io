@@ -1,0 +1,34 @@
+.program {
+  &__slide {
+    font-size: rem-calc(48);
+    font-weight: 300;
+    color: $white;
+    padding-top: rem-calc(100);
+    text-transform: uppercase;
+    padding-bottom: rem-calc(26);
+    background-size: cover;
+    background-position: center top;
+  }
+
+  &__text {
+    margin-bottom: rem-calc(24);
+    font-weight: 900;
+  }
+  @include breakpoint(medium down) {
+    .slick-next  {
+      right: rem-calc(10);
+
+    }
+    .slick-prev {
+      left: rem-calc(10);
+    }
+    &__slide {
+      padding-top: rem-calc(30);
+      font-size: rem-calc(32);
+    }
+  }
+    @include breakpoint(small only) {
+    &__slide {
+      font-size: rem-calc(25);
+    } }
+}

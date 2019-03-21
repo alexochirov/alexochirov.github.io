@@ -1,0 +1,62 @@
+.pagination {
+  font-family: $font-fira;
+  font-weight: 700;
+  font-size: rem-calc(12);
+  & li {
+    width: 5%;
+    border: rem-calc(1) solid $light-gray;
+    border-left: none;
+    margin-right: 0;
+    margin-left: rem-calc(-4);
+    &:first-child {
+      text-transform: uppercase;
+      width: 20%;
+      min-width: rem-calc(98);
+      border-left: rem-calc(1) solid $light-gray;
+      padding: rem-calc(10) rem-calc(0);
+    }
+    & a {
+      padding: rem-calc(10) rem-calc(0);
+    }
+    @include breakpoint(medium down) {
+      display: none;
+      &:first-child,
+      &:nth-child(2),
+      &:last-child,
+      & .current {
+        display: inline-block;
+      }
+    }
+  }
+  & .ellipsis {
+    padding: rem-calc(10) rem-calc(0);
+  }
+  &-previous {
+    padding: rem-calc(10) rem-calc(0);
+  }
+  & .disabled {
+    padding: rem-calc(10) rem-calc(0);
+    fill: $medium-gray;
+  }
+  & .current {
+    background: $primary-color;
+    color: $white;
+    padding: rem-calc(10) rem-calc(0);
+    border-top: rem-calc(1) solid $primary-color;
+    border-bottom: rem-calc(1) solid $primary-color;
+  }
+
+  &_bottom {
+    text-align: center;
+    margin-bottom: 0;
+
+    & li {
+      &:first-child {
+        min-width: rem-calc(150);
+      }
+    }
+    @include breakpoint(small down) {
+      margin-bottom: rem-calc(20);
+    }
+  }
+}

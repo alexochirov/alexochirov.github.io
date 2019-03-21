@@ -1,0 +1,25 @@
+extends shop-regular
+
+block content
+  .grid-container
+    h1 Авторизация
+  .grid-container.padding-bottom-6: .grid-x.grid-padding-x.align-center
+    .cell.small-24.medium-16.large-12
+      p Пожалуйста, авторизуйтесь:
+      form(action='shop-user-account.html').padding-top-7.callout.secondary
+        label.text-white
+          | Ваш email
+          input(type='email')
+        label.text-white.margin-bottom-6
+          | Пароль
+          input(type='password')
+          a(href='shop-user-recover.html', title='').text-white Забыли пароль?
+        .flex-container
+          input#checkbox1(type='checkbox')
+          label(for='checkbox1').text-white Запомнить меня на этом компьютере
+        div
+          button.button.hollow.white.margin-bottom-4
+            | Войти &nbsp;
+            i.fa.fa-sign-in.fa-lg
+  
+      a(href='shop-user-registration.html', title='').button Зарегистрироваться

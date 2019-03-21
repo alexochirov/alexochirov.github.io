@@ -1,0 +1,50 @@
+.special-projects {
+  position: relative;
+  margin-bottom: rem-calc(40);
+
+  & .slick-list {
+    @include breakpoint(medium down) {
+      margin-right: rem-calc(-10);
+    }
+  }
+
+  &_3th {
+    & .project-card {
+      width: rem-calc(275);
+    }
+  }
+
+  &__item {
+    margin: rem-calc(0 10);
+  }
+
+  &__button {
+    position: absolute;
+    top: rem-calc(-30);
+    padding: rem-calc(0 5);
+    height: rem-calc(20);
+    width: rem-calc(20);
+    border: rem-calc(1) solid $primary-color;
+    color: $primary-color;
+    font-size: rem-calc(9);
+
+    &.slick-prev {
+      left: auto;
+      right: rem-calc(21);
+    }
+
+    &.slick-next {
+      right: 0;
+    }
+
+    & svg {
+      top: rem-calc(0.5);
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $primary-color;
+    }
+  }
+}

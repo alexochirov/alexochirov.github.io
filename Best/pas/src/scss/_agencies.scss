@@ -1,0 +1,22 @@
+.agencies {
+
+  &-head {
+    margin-bottom: rem-calc(40);
+
+    &__title {
+      margin-bottom: 0;
+      font-size: rem-calc(41);
+    }
+
+    @include breakpoint(small down) {
+      text-align: center;
+    }
+  }
+
+  &-content {
+
+    &__head {
+      margin-bottom: rem-calc(60);
+    }
+  }
+}

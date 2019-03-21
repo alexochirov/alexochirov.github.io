@@ -1,0 +1,39 @@
+.breadcrumbs {
+  font-family: $font-fira;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+
+  li:first-child {
+    position: relative;
+    font-size: rem-calc(16);
+    margin-right: rem-calc(30);
+
+    &:after {
+      content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="20px" height="20px" viewBox="0 0 16 16">
+<path fill="#b71852" stroke="#b71852" stroke-width="0.7" d="M4 13h2l5-5-5-5h-2l5 5z"/>
+</svg>');
+      position: absolute;
+      display: block;
+      left: 100%;
+      top: 0;
+      margin-left: rem-calc(6);
+    }
+  }
+
+  a {
+    &:active,
+    &:focus,
+    &:hover {
+      color: $yellow;
+      text-decoration: none;
+    }
+  }
+
+  .current {
+    & > a {
+      color: $yellow;
+    }
+  }
+}

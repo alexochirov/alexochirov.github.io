@@ -1,0 +1,9 @@
+mixin newsPreview(imgSrc, date, newsTitle, newsText)
+  .grid-x.grid-padding-x.article-preview
+    .cell.large-8.text-center
+      img.article-preview__image(src=imgSrc alt="")
+    .cell.large-12
+      .article-preview__date= date
+      a(href="").article-preview__title
+        h2= newsTitle
+      p.article-preview__text= newsText

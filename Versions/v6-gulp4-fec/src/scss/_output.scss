@@ -1,0 +1,16 @@
+.output {
+  text-transform: uppercase;
+  width: 100%;
+  padding: rem-calc(12) rem-calc(5) rem-calc(13);
+  border-bottom: rem-calc(3) solid #bf2525;
+  background: #e23131;
+
+  &:active,
+  &:focus,
+  &:hover {
+    border-bottom-color: #383838;
+  }
+  @media (max-width: 960px) {
+    font-size: rem-calc(12);
+  }
+}

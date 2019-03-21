@@ -1,0 +1,23 @@
+.x-carousel-media-gallery {
+  &__item {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .slick-prev,
+  .slick-next {
+    width: rem-calc(40);
+    height: rem-calc(40);
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: rgba($lime, 0.5);
+    transition: 0.3s ease;
+    use {
+      fill: $water;
+    }
+    &:hover {
+      background-color: $lime;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+.term {
+  margin: rem-calc(0 0 20 0);
+  padding: 0;
+  list-style: none;
+  font-family: $font-noto;
+  font-size: rem-calc(16);
+
+  &__item {
+    display: block;
+    padding: rem-calc(20 10);
+    transition: 0.3s ease all;
+    color: $black;
+
+    &:hover,
+    &:focus,
+    &:active {
+      box-shadow: rem-calc(0 0 20 0) rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+  }
+
+  &-content {
+    font-size: rem-calc(16);
+  }
+
+  &-submit {
+    padding: rem-calc(40);
+    max-width: rem-calc(390);
+
+    &__title {
+      margin-bottom: rem-calc(30);
+      font-family: $font-fira;
+      font-weight: 500;
+      font-size: rem-calc(18);
+      text-transform: uppercase;
+    }
+
+    &__area {
+      margin-bottom: rem-calc(28);
+      height: rem-calc(180);
+      resize: none;
+    }
+
+    &__input {
+      margin-bottom: rem-calc(28);
+    }
+
+    @include breakpoint(small down) {
+      max-width: 100%;
+    }
+  }
+}

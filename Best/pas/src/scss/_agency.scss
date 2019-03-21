@@ -1,0 +1,10 @@
+.agency {
+  margin-bottom: rem-calc(60);
+
+  &__place,
+  &__index,
+  &__type,
+  &__contacts {
+    font-weight: 700;
+  }
+}

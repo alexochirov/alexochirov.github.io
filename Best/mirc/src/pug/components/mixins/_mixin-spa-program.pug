@@ -1,0 +1,59 @@
+mixin card-service(img,tag,title,desc,place)
+    .card-service
+        a(href="mira-spa-offer.html")
+            .card-service__image
+                if place
+                    .card-service__place= place
+                img(src="./i/" + img + ".jpg", alt="")
+                if tag
+                    .card-service__tag: span= tag
+            .card-service__section(data-equalizer-watch="card-service")
+                .card-service__title= title
+                .card-service__desc= desc
+                if tag
+                    .card-service__time
+                        i.fa.fa-clock-o
+                        =" "
+                        strong 45 минут
+                    .card-service__cost 999
+                        span: i.fa.fa-rub
+
+mixin card-promo(img,title,desc,sub,place)
+    .card-service
+        a(href="promo-offer.html")
+            .card-service__image
+                if place
+                    .card-service__place= place
+                img(src="./i/" + img + ".jpg", alt="")
+
+            .card-service__section(data-equalizer-watch="card-promo")
+                .card-service__title= title
+                .card-service__desc= desc
+                p.text-size-small: strong= sub
+
+mixin card-all-service(img,tag,title,desc,place)
+    .card-service
+        a(href="mira-thermes-location.html")
+            .card-service__image
+                if place
+                    .card-service__place= place
+                img(src="./i/" + img + ".jpg", alt="")
+                .card-service__tag: span= tag
+            .card-service__section(data-equalizer-watch="card-service")
+                .card-service__title= title
+                .card-service__desc= desc
+                .card-service__time: strong.text-primary Всю неделю 09:00-21:30
+
+mixin card-news(img,title,desc,time)
+    .card-news
+        a.card-news__link(href="#")
+            .card-news__image
+                img(src="./i/" + img ,alt= title)
+            .card-news__section
+                .card-news__title= title
+                .card-news__desc= desc
+                if time
+                    .card-news__time: strong.text-primary= time
+
+
+

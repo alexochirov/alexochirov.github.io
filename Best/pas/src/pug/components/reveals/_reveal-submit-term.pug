@@ -1,0 +1,11 @@
+.reveal.term-submit#submit-term(data-reveal data-deep-link='true')
+  h3.term-submit__title Предложить термин
+
+  form(action="#" method="POST")
+    textarea.term-submit__area(placeholder="Ваше сообщение")
+    input.term-submit__input(type="text" placeholder="Контактная информация")
+
+    button.button.button_submit.button_low.expanded(type="submit") Отправить
+
+  button.close-button.show-for-small-only(data-close aria-label="Close modal" type="button")
+    span(aria-hidden="true") &times;

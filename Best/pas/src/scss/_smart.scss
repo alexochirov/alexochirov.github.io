@@ -1,0 +1,25 @@
+.smart {
+  display: block;
+  margin-bottom: rem-calc(30);
+  line-height: 1.286;
+  color: $black;
+  font-weight: 700;
+  font-size: rem-calc(18);
+
+  &__img {
+    margin-bottom: rem-calc(14);
+  }
+
+  &__title {
+    font-family: $font-fira;
+  }
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: $primary-color;
+  }
+  @include breakpoint(small only) {
+    font-size: rem-calc(14);
+  }
+}

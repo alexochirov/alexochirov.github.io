@@ -1,0 +1,70 @@
+extends shop-user-personal
+
+block personal
+  .callout.callout_gray
+    h3 Заказ #4 от 11.03.2016 на сумму 6 388 руб
+
+    h4 Информация о покупателе
+    p
+      | Название дилера - можно с ИНН и с указанием ОСН/УСН (с НДС/ без НДС)
+      br
+      | i.ivanov@mail.com
+      br
+      | +7 900 456-87-98
+
+    h4 Адрес доставки
+    p: strong Россия, Московская область, г. Москва, ул. Уличная, д. 11, кв. 42
+
+
+    h4 Способ доставки
+    .margin-bottom-6
+      div: strong до терминала ТК в Ярославле
+      div: strong до терминала ТК в городе клиента
+
+    h4 Способ оплаты
+    p: strong Безналичный
+
+    h4 Состав заказа
+    .grid-x.grid-padding-x
+      .cell.small-6.medium-4.large-2.margin-bottom-6
+        img(src="./i/pr"  + Math.ceil(Math.random() * 6) + '.jpg' alt='Товар')
+      .cell.small-18.medium-10.large-12
+        h6: a(href='shop-product.html') Картридж совместимый SuperFine (SF-CN048AE) 951XL Magenta
+      .cell.small-24.medium-10.large-10
+        .grid-x.grid-padding-x
+          .cell.small-12.medium-14.large-8
+            .margin-bottom-6
+              strong
+                | 25 280&nbsp;
+                i.fa.fa-rub
+    
+          .cell.small-12.medium-10.large-6 1 шт
+          .cell.small-24.large-10
+            .margin-bottom-6
+              span.text-size-xxlarge
+                | 25 280&nbsp;
+                i.fa.fa-rub
+    hr.hr.margin-bottom-6
+    .grid-x.grid-padding-x
+      .cell.small-6.medium-4.large-2.margin-bottom-6
+        img(src="./i/pr"  + Math.ceil(Math.random() * 6) + '.jpg' alt='Товар')
+      .cell.small-18.medium-10.large-12
+        h6: a(href='shop-product.html') Картридж совместимый SuperFine (SF-CN048AE) 951XL Magenta
+      .cell.small-24.medium-10.large-10
+        .grid-x.grid-padding-x
+          .cell.small-12.medium-14.large-8
+            .margin-bottom-6
+              strong
+                | 25 280&nbsp;
+                i.fa.fa-rub
+      
+          .cell.small-12.medium-10.large-6 1 шт
+          .cell.small-24.large-10
+            .margin-bottom-6
+              span.text-size-xxlarge
+                | 25 280&nbsp;
+                i.fa.fa-rub
+    .margin-bottom-6.lead ИТОГО: &nbsp;
+      strong 6 388
+        = ' '
+        i.fa.fa-rub

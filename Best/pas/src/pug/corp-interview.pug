@@ -1,0 +1,181 @@
+extends corp-index
+
+block page
+  .grid-container.margin-bottom-20#data-stick-end: .grid-x.grid-padding-x.page
+    .cell.medium-9.large-6
+      .margin-bottom-10
+        include components/corporate/_left-side
+      .margin-bottom-10
+        include components/corporate/_figure-day
+    .cell.auto
+      .grid-x.page-head
+        .cell.small-21.small-order-1.medium-order-1.medium-13.large-order-1.large-9
+          a(href="#").button.button_low.hollow RETAIL&LOYALTY №5 (76)
+        .cell.small-24.small-order-3.medium-order-2.medium-11.large-order-2.large-8.page-head__time
+          include ../images/time.svg
+          span 20 Июля 2018, 14:20
+        .cell.small-24.small-order-4.medium-11.medium-order-4.large-order-3.large-6.page-head__view
+          include ../images/view.svg
+          span 19 просмотров
+        .cell.small-3.small-order-2.medium-order-3.medium-13.large-order-4.large-1
+          a.page-head__print(href="")
+            include ../images/print.svg
+
+      h1.page-title Столото: лотерея как качественное дополнение к программе лояльности ритейла
+        a(href="").page-title__settings
+          include ../images/lock.svg
+      .grid-x.page-person
+        .cell.large-15
+          img.page-person__photo(src="./i/interview-1.png" alt="")
+        .cell.large-offset-1.large-auto.align-self-bottom
+          .page-person__description
+            .page-person__name Антон Шапиро,
+            | генеральный директор «Технологической компании Центр"»
+      .page-interview
+        p.page-interview__title О том, что сегодня представляет собой лотерейный бизнес в России, как устроены и протекают внутренние процессы, о взаимодействии и планах организаторов лотерей с ритейлом журнал «Retail & Loyalty» беседует с Антоном Шапиро, генеральным директором «Технологической компании “Центр”», крупнейшего распространителя государственных лотерей в России под брендом «Столото».
+        p.page-interview__question
+          span.page-interview__person «Retail & Loyalty:&nbsp;
+          | Как вы оцениваете текущее законодательное регулирование лотерейного рынка? Насколько российское законодательство в лотерейном бизнесе коррелирует с зарубежным опытом?
+        p.page-interview__answer
+          span.page-interview__person А. Шапиро:&nbsp;
+          | Сегодня отечественный лотерейный рынок имеет очень простую, понятную и, как я считаю, единственно правильную структуру. С 2014 года в России проводятся только государственные лотереи, организаторами которых выступают два ведомства – Министерство финансов Российской Федерации и Министерство спорта Российской Федерации. Операторами лотерей являются компании «Спортлото» и «Государственные спортивные лотереи», выигравшие в свое время по конкурсу право проведения государственных лотерей. Крупнейшим распространителем государственных лотерей на территории Российской Федерации выступает «Технологическая компания «Центр».
+        p.page-interview__answer Соответственно, мы имеем собственную розницу, а также сотрудничаем с огромным количеством различных форм ритейла – от уличного до крупных федеральных торговых сетей, в которых обеспечиваем участникам лотерей возможность покупать билеты, получать выигрыши и всю необходимую информацию о лотерее. Также нам принадлежит самый большой в Восточной Европе интернет-магазин лотереи – stoloto.ru.
+        .margin-bottom-8
+          +advert('./i/580.png')
+        p.page-interview__question
+          span.page-interview__person «Retail & Loyalty:&nbsp;
+          | Насколько сегодня выгодно заниматься лотерейным бизнесом?
+        p.page-interview__answer
+          span.page-interview__person А. Шапиро:&nbsp;
+          | Лотерейным бизнесом выгодно заниматься всегда и везде при условии, если делать это правильно. Конечно, в России по сравнению со многими другими товарами и  услугами лотерейный бизнес несколько ограничен по уровню маржинальности. Это связано в первую очередь с жестким государственным регулированием. Ведь каждый рубль, полученный от продажи лотерейного билета, делится на составляющие: призовой фонд, целевые отчисления (отчисления в пользу государства) и маржу, которую делят между собой все участники процесса организации лотереи: от типографий, производящих лотерейные билеты, до провайдеров платежей и непосредственно агентов – ритейлеров, которые осуществляют торговые операции.
+        p.page-interview__embed
+          img.page-interview__embed__img(src="./i/interview-2.png" alt="")
+          | В 2017 году участник розыгрыша «Русского лото» сорвал рекордный в стране выигрыш за всю историю современных российских лотерей, джек-пот в размере 506 млн рублей
+        p.page-interview__question
+          span.page-interview__person «Retail & Loyalty:&nbsp;
+          | Как вы оцениваете текущее законодательное регулирование лотерейного рынка? Насколько российское законодательство в лотерейном бизнесе коррелирует с зарубежным опытом?
+        p.page-interview__answer
+          span.page-interview__person А. Шапиро:&nbsp;
+          | Сегодня в России одно из самых лучших «лотерейных» законодательств. Например, действующие условия проведения государственных лотерей позволяют достаточно гибко «настраивать» лотереи под потребности аудитории. Рынок лотерей в России растет очень быстрыми темпами. Следовательно, растет и количество игроков, принимающих в них участие. И у нас есть право менять форму игры для того, чтобы предложить лучшие призовые предложения под текущую аудиторию. И при этом такую вероятность выигрыша, в которую участник поверит.
+        p.page-interview__answer
+          | Например, если сегодня предложить лотерею с вероятностью выигрыша суперприза один к миллиарду, люди отнесутся к этому достаточно скептически. Если подбирать вероятности так, чтобы выигрыши случались достаточно часто, люди видели, что другие выигрывают, то их интерес многократно возрастает.
+        .grid-x.page-highlight
+          .cell.large-8.page-highlight__side
+            .page-highlight__left
+              | Ежедневно победителями лотерей становятся более 200 тыс. россиян, из них в среднем 20 еженедельно становятся лотерейными миллионерами
+          .cell.large-16.page-highlight__side
+            .page-highlight__right
+              | У нас очень прогрессивное лотерейное законодательство. Последние изменения позволили ввести такое понятие, как электронный лотерейный билет. Это позволяет не расходовать тонны бумаги для производства билетов, не накладывать дополнительных ограничений на участников рынка с точки зрения спецхранения, спец­учета и спецотчетности по таким билетам. При этом по электронным лотерейным билетам в разы повышается степень защиты. Электронный лотерейный билет – это уникальная категория, которая позволяет сделать продажу максимально простой и быстрой, но при этом абсолютно безопасной.
+        p.page-interview__question
+          span.page-interview__person «Retail & Loyalty:&nbsp;
+          | Назовите основные показатели лотерейного бизнеса по итогам 2017 года.
+        p.page-interview__answer
+          span.page-interview__person А. Шапиро:&nbsp;
+          | На конец 2017 года работало более 65 тыс. точек распространения лотерей по всей стране, в то время как годом ранее всего 48 тыс. В то же время посещаемость лотерейного супермаркета Stoloto.ru выросла по сравнению с 2016 годом с 23 млн до 31 млн уникальных посетителей.
+        p.page-interview__answer
+          | По данным исследовательской компании ГФК-Русь, существенно увеличилось проникновение лотерей – почти каждый пятый россиянин принимал участие в розыгрышах.
+        p.page-interview__answer
+          | Ежедневно победителями лотерей становятся более 200 тыс. россиян, из них в среднем 20 еженедельно становятся лотерейными миллионерами. Общее количество победителей в категории выигрышей от 1 млн рублей в прошлом году составило 702 россиянина. В 2017 году участник розыгрыша «Русского лото» сорвал джек-пот в размере 506 млн рублей – это рекордный в стране выигрыш за всю историю современных российских лотерей.
+        p.page-interview__embed
+          img.page-interview__embed__img(src="./i/interview-3.png" alt="")
+          | В 2017 году участник розыгрыша «Русского лото» сорвал рекордный в стране выигрыш за всю историю современных российских лотерей, джек-пот в размере 506 млн рублей
+        p.page-interview__question
+          span.page-interview__person «Retail & Loyalty:&nbsp;
+          | Не сталкиваетесь ли вы с трудностями в поисках интеграторов, которые и безопасность обеспечат, и техническое оснащение?
+        p.page-interview__answer
+          span.page-interview__person А. Шапиро:&nbsp;
+          | Здесь у нас нет никаких проблем. За последние десять лет пройден очень сложный путь становления. С одной стороны, нам было очень тяжело, потому что в 90-х гг. все наработки советских времен были утеряны и государственные лотереи в России строились с нуля. С другой стороны – у нас изначально была возможность внедрять самые современные решения. Сегодня наша транзакционная система, которая позволяет единовременно получать транзакции при продаже билетов и одновременно совершать выплаты по выигрышам, сопоставима с лучшими мировыми банковскими системами как по своей мощности, так и по защищенности. Ежегодно мы проходим проверку в ведущих аудиторских компаниях, таких как Gartner, Accenture и EY, и при внедрении новых технологий делаем соответствующие коррекции. Здесь мы готовы отвечать за каждую транзакцию, каждый проданный билет.
+        p.page-interview__question
+          span.page-interview__person «Retail & Loyalty:&nbsp;
+          | Какие технологии вы используете – зарубежные или российские?
+        p.page-interview__answer
+          span.page-interview__person А. Шапиро:&nbsp;
+          | Сегодня мы используем исключительно российские технологии, хотя начинали с систем крупных иностранных вендоров, в частности, системы компании Intralot. Со временем стало понятно, что, во-первых, существует специфика управленческого и бухгалтерского учета; во-вторых, никто не отменял общий тренд на российское программное обеспечение. Сейчас все делается in house.
+        p.page-interview__question
+          span.page-interview__person «Retail & Loyalty:&nbsp;
+          | Насколько сегодня широк на рынке выбор технологий для лотерейного бизнеса?
+        p.page-interview__answer
+          span.page-interview__person А. Шапиро:&nbsp;
+          | Необходимо четко разделять вещи, касающиеся непосредственно самого процессинга лотерей и продуктовых систем. В первом случае мы все делаем самостоятельно, но с привлечением серьезных консультантов-аудиторов с соответствующими сертификатами и опытом. Что же касается общих продуктовых систем, в частности системы ERP, использования облачных технологий, то здесь мы работаем в партнерстве с такими компаниями – SAP, SAS и Microsoft.
+        p.page-interview__question
+          span.page-interview__person «Retail & Loyalty:&nbsp;
+          | Какие процедуры необходимо пройти ритейлеру, чтобы заниматься продажей лотерейных билетов? Вопрос лицензирования актуален?
+        p.page-interview__answer
+          span.page-interview__person А. Шапиро:&nbsp;
+          | Вопрос лицензирования с точки зрения российского законодательства как таковой не стоит, потому что право воспринимаются населением. Несколько раз в год операторы
+
+      .grid-x.page-subscribe
+        .cell.small-24
+          .page-subscribe__title Продолжение материала содержит
+          .page-subscribe__title полезную для вашего бизнеса информацию…
+          .page-subscribe__subtitle Подписка позволяет читать все статьи портала
+        .cell.small-24
+          .grid-x.grid-padding-x.large-up-3(data-equalizer)
+            .cell.margin-bottom-6
+              a(href="")
+                .subscribe-type(data-equalizer-watch)
+                  img.subscribe-type__img(src="./images/subscribe-1.svg" alt="")
+                  .subscribe-type__title Корпоративная подписка
+            .cell.margin-bottom-6
+              a(href="")
+                .subscribe-type(data-equalizer-watch)
+                  img.subscribe-type__img(src="./images/subscribe-2.svg" alt="")
+                  .subscribe-type__title Подписка для физических лиц
+            .cell.margin-bottom-6
+              .subscribe-type.subscribe-type_hollow(data-equalizer-watch)
+                .subscribe-type__title Мобильное приложение
+                .grid-x.subscribe-type__buttons
+                  .cell.small-11.large-12
+                    a(href="")
+                      img.subscribe-type__apple(src="./images/apple-subscribe-button.svg" alt="")
+                  .cell.small-offset-2.small-11.large-offset-0.large-12
+                    a(href="")
+                      img.subscribe-type__google(src="./images/google-subscribe-button.svg" alt="")
+        .cell.small-24
+          .page-subscribe__bottom Если у вас уже есть подписка нажмите
+            a.page-subscribe__login(href="") Войти
+      .page-share
+        h5.page-share__title Понравился материал? Поделись
+        a(href="")
+          i.fab.fa-facebook-f.fa-lg.page-share__link
+        a(href="")
+          i.fab.fa-twitter.fa-lg.page-share__link
+        a(href="")
+          i.fab.fa-telegram-plane.fa-lg.page-share__link
+
+      form(action="#").page-newsletter
+        .page-newsletter__title
+          span.page-newsletter__count 8500
+          | подписчиков новостей получили этот материал
+        .page-newsletter__form
+          input.page-newsletter__input(type="text" placeholder="Подпишитесь, на новостную рассылку")
+          button(type="submit").page-newsletter__submit
+            i.fas.fa-arrow-right.fa-lg
+
+      .blank.blank_subscribe
+        .blank__back
+        .blank__container
+          .blank__triangle
+        .grid-x.align-middle
+          .cell.small-4
+            img(src="./i/subscribe-channel.png" alt="")
+          .cell.small-20
+            .blank__title
+              | Подписывайтесь на канал&nbsp;
+              span.text-primary RETAIL-LOYALTY.ORG &nbsp;
+              | на Яндекс.Дзен&nbsp;
+
+      .margin-bottom-10
+        img(src="./i/facebook-comments.png" alt="")
+
+      include components/corporate/_read-also
+
+    .cell.large-6
+      .margin-bottom-10
+        include components/corporate/_subscribe-journal
+      .margin-bottom-10
+        include components/corporate/_expert-forum
+      .margin-bottom-10
+        include components/corporate/_subscribe-block
+
+      include components/corporate/_read-in-number

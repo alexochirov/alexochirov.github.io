@@ -1,0 +1,29 @@
+.callout {
+  &_gray {
+    border-color: $light-gray;
+    padding-bottom: rem-calc(0);
+    background: $light-gray;
+    padding-top: rem-calc(24);
+    padding-left: rem-calc(24);
+    padding-right: rem-calc(24);
+    color: $black;
+  }
+
+  &.secondary {
+    border-color: $secondary-color;
+  }
+
+  &.light-gray {
+    border-color: $light-gray;
+  }
+
+  &__link {
+    color: $white;
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: $light-gray;
+    }
+  }
+}

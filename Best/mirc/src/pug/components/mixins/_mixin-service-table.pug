@@ -1,0 +1,7 @@
+mixin service-table-item(name,time,cost)
+    .service-table__item: .grid-container: .grid-x.grid-padding-x.align-stretch
+        .small-24.medium-8.cell.align-self-middle: .service-table__item__header= name
+        .small-24.medium-8.cell.align-self-middle: .service-table__item__time= time
+        .small-24.medium-8.cell.align-self-middle: .service-table__item__cost= cost
+            =" "
+            i.fa.fa-rouble

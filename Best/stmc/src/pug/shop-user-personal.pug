@@ -1,0 +1,44 @@
+extends shop-regular
+
+block content
+  .grid-container
+    h1 Персональный раздел
+
+  .grid-container.padding-bottom-6: .grid-x.grid-padding-x
+    .cell.small-24.medium-8.large-6
+      .margin-bottom-6.show-for-small-only: span.button.expanded(data-toggle="menu-left")
+        i.fa.fa-lg.fa-bars
+        | &nbsp;Навигация
+      .hide-for-small-only.callout.white#menu-left(data-toggler='.hide-for-small-only')
+        ul.equipment
+          li.equipment__item: a.equipment__link(href='shop-user-personal.html' title='') Персональный раздел
+          li.equipment__item: a.equipment__link(href='shop-user-edit.html' title='') Изменить данные о себе
+          li.equipment__item: a.equipment__link(href='shop-user-subscription.html' title='') Изменить подписку
+          li.equipment__item: a.equipment__link(href='') Материалы для вашего сайта
+          li.equipment__item: a.equipment__link(href='') Маркетинговые материалы
+          li.equipment__item: a.equipment__link(href='') Вебинары для дилеров
+          li.equipment__item: a.equipment__link(href='shop-cart.html' title='') Корзина
+          li.equipment__item: a.equipment__link(href='shop-wishlist.html' title='') Запомненные товары
+          li.equipment__item: a.equipment__link(href='shop-orders.html' title='') История заказов
+            
+    .cell.small-24.medium-16.large-18
+      block personal
+        .callout.light-gray.text-center
+          .margin-bottom-6.lead
+            = 'Ваш '
+            a(href='#' title='') заказ №123 от 30.06.2016
+            = ' подтверждён'
+
+          a.button(href='#' title='') Получить счет на оплату
+
+        .card
+          .card-divider Ваш менеджер
+          .card-section.text-black
+            .grid-x.grid-padding-x
+              .cell.small-14.medium-offset-0.small-offset-5.medium-5.large-3.margin-bottom-6
+                img.background-light-gray(src='./i/image.svg' alt='Фото сотрудника' style='width: 100%;')
+              .cell.medium-auto
+                h4 Александр Константинопольский
+                .margin-bottom-4.text-dark-gray Старший специалист по работе в сфере образования
+                .margin-bottom-2 +7 (499) 918-43-57
+                .margin-bottom-2: a(href='') #[i.fa.fa-envelope-o] a.konstantin@insoltele.com

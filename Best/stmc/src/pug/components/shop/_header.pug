@@ -1,0 +1,22 @@
+header.header
+  .grid-container
+    .grid-x.grid-padding-x
+      .cell.large-10.medium-6.header__name.small-12.text-center.medium-text-left
+        a(href="./shop-index.html").header__logo
+          img(src="./images/logo.svg", alt="")
+        .header__equipment.show-for-large Учебно-игровое оборудование 
+      .cell.show-for-small-only.small-12.text-center
+        .header__toggle(data-toggle="tel enter menu")
+          i.fa.fa-bars
+      .cell.large-9.text-center.medium-text-right.medium-10.hide-for-small-only(data-toggler=".hide-for-small-only")#tel
+        a(href="tel:+88002345905").header__tel
+          img(src="./images/tel.svg", alt="").margin-right-3
+          | 8 (800) 2345-905
+        .header__free Бесплатно из любой точки России  
+      .cell.large-5.text-center.medium-text-right.header__authorization.medium-8.hide-for-small-only(data-toggler=".hide-for-small-only")#enter
+        a(href="#").header__enter
+          img(src="./images/user.svg", alt="").margin-right-2
+          |
+          | Вход  
+        span.header__del |
+        a(href="#").header__enter Регистрация  

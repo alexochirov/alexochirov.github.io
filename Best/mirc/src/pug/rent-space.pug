@@ -1,0 +1,111 @@
+extends corp-index
+
+block page
+  include components/common/_breadcrumbs
+  block content
+      .grid-container: .grid-x.grid-padding-x.padding-top-4
+        .small-24.medium-16.large-18.cell.padding-bottom-6.text-center
+          h1 Аренда большого зала
+          .lead Помещение со сценой для мероприятий с отдельным изолированным входом.
+
+  .grid-container.content-block: .grid-x.grid-padding-x
+        .cell
+          include components/site/_carousel-media-gallery
+  .grid-container: .grid-x.grid-padding-x
+    .cell.small-24.medium-8.large-6.medium-order-2
+      include components/site/_rent-sidebar
+    .cell.auto.medium-order-1
+      .grid-container.margin-bottom-8: .grid-x.grid-padding-x.small-up-1.medium-up-3.advantages-block.margin-top-0
+        .cell
+          .advantages-block__icon
+            include ../images/icons/measure.svg
+          .advantages-block__title Площадь:
+          .advantages-block__desc: p 102 м
+            sup 2
+        .cell
+          .advantages-block__icon
+            include ../images/icons/table.svg
+          .advantages-block__title Вместимость зала
+            br
+            | со столами:
+
+          .advantages-block__desc: p 80 человек
+        .cell
+          .advantages-block__icon
+            include ../images/icons/chairs.svg
+          .advantages-block__title Вместимость зала
+            br
+            | только со стульями:
+          .advantages-block__desc: p до 125 человек
+
+      section.content-block
+        h3.text-center Стоимость
+        .price-table
+          .grid-x.grid-padding-x.align-center
+            .small-24.medium-12.cell
+              .price-table__item
+                .grid-x
+                  .small-12.cell.align-self-middle
+                    .price-table__item_left
+                      include ../images/icons/clock.svg
+                      p 1 час
+
+                  .small-12.cell.align-self-middle
+                    .price-table__item_right
+
+                      span Аренда зала
+                      p: strong 1 800
+                        =" "
+                        i.fa.fa-rouble
+
+      section.margin-bottom-8
+        article
+          h3.text-center К вашим услугам:
+          ul.list
+            li Мультимедийное оборудование с профессиональной звуковой аппаратурой.
+            li Дополнительные помещения. Большой зал 100 кв. м., который сдается отдельно и вмещает до 125 посадочных мест, и Каминный зал, который сдается отдельно и вмещает до 60 посадочных мест.
+            li Парковка. Бесплатный час на просторной парковке бизнес-центра, каждый последующий час 50р.
+            li: strong Возможны дополнительные услуги звукорежиссёра.
+          p
+            br
+            hr
+
+      section.content-block
+        article
+          h2.text-center.margin-bottom-8 Большой зал всем хорош:
+          .x-carousel-advantages-gallery
+            .x-carousel-advantages-gallery__item
+              .grid-x.grid-padding-x.margin-bottom-6
+                .cell.small-24.medium-auto.align-self-middle.medium-order-2
+                  h5: strong Удобное расположение
+                  p Зал находится в пяти минутах от остановки метро «Речной вокзал» — одного из самых насыщенных транспортных узлов города.
+                .cell.medium-12.medium-order-1.text-center.medium-text-left
+                  img(src='./i/photo1.jpg' alt='')
+
+            .x-carousel-advantages-gallery__item
+              .grid-x.grid-padding-x.margin-bottom-6
+                .cell.small-24.medium-auto.align-self-middle
+                  h5: strong Вид на реку
+                  p В зале есть панорамные окна с прекрасным в любое время года видом на Обь. Вечером это добавит романтики в любое торжество.
+                .cell.medium-12.text-center.medium-text-right
+                  img(src='./i/photo2.jpg' alt='')
+
+            .x-carousel-advantages-gallery__item
+              .grid-x.grid-padding-x.margin-bottom-6
+                .cell.small-24.medium-auto.align-self-middle.medium-order-2
+                  h5: strong Пространство здоровья
+                  p Зал, как и весь Центр «Мира», — это место, свободное от алкоголя и табака.
+                .cell.medium-12.text-center.medium-text-left.medium-order-1
+                  img(src='./i/photo3.jpg' alt='')
+            .x-carousel-advantages-gallery__item
+              .grid-x.grid-padding-x.margin-bottom-6
+                .cell.small-24.medium-auto.align-self-middle
+                  h5: strong Экологичный интерьер
+                  p Зал стал одним из лучших примеров эко-дизайна в городе, в оформлении использованы только натуральные материалы.
+                .cell.medium-12.text-center.medium-text-right
+                  img(src='./i/photo4.jpg' alt='')
+      section.content-block
+        .callout.text-center.lead.gray-box
+          | Все свои пожелания по оформлению залов вы можете адресовать Светлане, она ответит на все интересующие вас вопросы и подберет индивидуальную комплектацию залов, если это требуется:
+          br
+          | Светлана: 8-983-138-53-72, #[a(href='') bsa@miracentr.ru]

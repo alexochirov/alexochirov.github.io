@@ -1,0 +1,49 @@
+.journal {
+  background: $black;
+  color: $white;
+
+  &__container {
+    padding-left: rem-calc(0);
+
+  }
+
+  &__info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  &__img {
+    margin-right: rem-calc(7);
+  }
+
+  &__flag {
+    line-height: rem-calc(40);
+  }
+
+  &__enter {
+    display: flex;
+    font-weight: 700;
+    margin-left: rem-calc(15);
+    font-family: $font-fira;
+    text-transform: uppercase;
+    color: $white;
+    line-height: rem-calc(40);
+    cursor: pointer;
+    transition: 0.3s ease;
+
+    &:hover,
+    &:active {
+      color: $primary-color;
+    }
+  }
+
+  @include breakpoint(medium down) {
+    &__container {
+      padding-left: rem-calc(10);
+    }
+    &__info {
+      justify-content: center;
+    }
+  }
+}

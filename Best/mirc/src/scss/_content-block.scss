@@ -1,0 +1,22 @@
+.content-block {
+  margin-bottom: rem-calc(72);
+}
+
+.content-wrapper {
+  min-width: 850px;
+}
+
+.content-wrapper .callout {
+  padding: 0;
+}
+
+@media screen and (max-width: 59.9375em) {
+  .content {
+    flex-direction: column;
+  }
+
+  .content-wrapper {
+    flex-basis: auto !important;
+    min-width: auto;
+  }
+}

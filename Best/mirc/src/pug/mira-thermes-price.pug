@@ -1,0 +1,187 @@
+extends corp-index
+
+block page
+  include components/common/_breadcrumbs
+  block content
+    .grid-container: .grid-x.grid-padding-x: .small-24.medium-16.large-18.cell
+      h1.text-center Цены
+    .padding-top-6.padding-bottom-6
+      .grid-container: .grid-x.grid-padding-x
+        .cell.small-24.medium-8.large-6.medium-order-2
+          include components/site/_mira-thermes-sidebar
+        .cell.auto.medium-order-1
+          section.content-block
+            include components/site/_price
+          section.content-block
+            .grid-container
+              .grid-x: .cell.text-center
+                h2 Специальные предложения
+                hr
+              .grid-x: .cell
+
+                article.callout.special-program
+                  h3.special-program__title «Золотой возраст»
+                  .lead.margin-bottom-6
+                    | Женщины от 55 лет, мужчины от 60 лет.
+                    br
+                    | Необходимо предъявить пенсионное удостоверение
+                  include components/site/_line-calendar
+                  .gray-box.special-program__price
+                    .grid-container
+                      .grid-x.grid-padding-x
+                        .small-24.medium-12.cell.special-program__price_divider
+                          .special-program__price_hall «Семейный зал»
+                          .grid-container: .grid-x.grid-padding-x
+                            .small-24.medium-12.cell
+                              .special-program__price_time
+                                i.fa.fa-clock-o
+                                | 3 часа
+                            .small-24.medium-12.cell
+                              .special-program__price_cost 490
+                                i.fa.fa-rouble
+                        .small-24.medium-12.cell
+                          .special-program__price_hall «Семейный + Релакс»
+                          .grid-container: .grid-x.grid-padding-x
+                            .small-24.medium-12.cell
+                              .special-program__price_time
+                                i.fa.fa-clock-o
+                                | 3 часа
+                            .small-24.medium-12.cell
+                              .special-program__price_cost 490
+                                i.fa.fa-rouble
+
+                article.callout.special-program
+                  h3.special-program__title «Мамин час»
+                  .lead.margin-bottom-6
+                    | При условии 1 взрослый + 1 ребёнок (1–6 лет)
+                  include components/site/_line-calendar
+                  .gray-box.special-program__price
+                    .grid-container
+                      .grid-x.grid-padding-x
+                        .small-24.medium-12.cell.special-program__price_divider
+                          .special-program__price_hall «Семейный зал»
+                          .grid-container: .grid-x.grid-padding-x
+                            .small-24.medium-12.cell
+                              .special-program__price_time
+                                i.fa.fa-clock-o
+                                | 3 часа
+                            .small-24.medium-12.cell
+                              .special-program__price_cost 720
+                                i.fa.fa-rouble
+                        .small-24.medium-12.cell
+                          .special-program__price_hall «Семейный + Релакс»
+                          .grid-container: .grid-x.grid-padding-x
+                            .small-24.medium-12.cell
+                              .special-program__price_time
+                                i.fa.fa-clock-o
+                                | 3 часа
+                            .small-24.medium-12.cell
+                              .special-program__price_cost 580
+                                i.fa.fa-rouble
+
+                article.callout.special-program
+                  h3.special-program__title «День студента»
+                  .lead.margin-bottom-6
+                    | Необходимо предъявить студенческий билет очного отделения
+                  include components/site/_line-calendar
+                  .gray-box.special-program__price
+                    .grid-container
+                      .grid-x.grid-padding-x
+                        .small-24.medium-12.cell.special-program__price_divider
+                          .special-program__price_hall «Семейный зал»
+                          .grid-container: .grid-x.grid-padding-x
+                            .small-24.medium-12.cell
+                              .special-program__price_time
+                                i.fa.fa-clock-o
+                                | 3 часа
+                            .small-24.medium-12.cell
+                              .special-program__price_cost 580
+                                i.fa.fa-rouble
+                        .small-24.medium-12.cell
+                          .special-program__price_hall «Семейный + Релакс»
+                          .grid-container: .grid-x.grid-padding-x
+                            .small-24.medium-12.cell
+                              .special-program__price_time
+                                i.fa.fa-clock-o
+                                | 3 часа
+                            .small-24.medium-12.cell
+                              .special-program__price_cost 880
+                                i.fa.fa-rouble
+
+                article.callout.special-program
+                  h3.special-program__title «Женский день»
+                  .lead.margin-bottom-6
+                    | Только женщины и девочки от 7 лет
+                  include components/site/_line-calendar
+                  .gray-box.special-program__price
+                    .grid-container
+                      .grid-x.grid-padding-x
+                        .small-24.cell
+                          p.margin-0.text-center: a(href="#") По основному тарифу
+
+                article.callout.special-program
+                  h3.special-program__title «Счастливые часы»
+                  .lead.margin-bottom-6
+                    | Необходимо предъявить студенческий билет очного отделения
+                  include components/site/_line-calendar
+                  .gray-box.special-program__price
+                    .grid-container
+                      .grid-x.grid-padding-x
+                        .small-24.medium-12.cell.special-program__price_divider
+                          .special-program__price_hall «Семейный зал»
+                          .grid-container: .grid-x.grid-padding-x
+                            .small-24.medium-12.cell
+                              .special-program__price_time
+                                i.fa.fa-clock-o
+                                | 3 часа
+                            .small-24.medium-12.cell
+                              .special-program__price_cost 7000
+                                i.fa.fa-rouble
+                        .small-24.medium-12.cell
+                          .special-program__price_hall «Семейный + Релакс»
+                          .grid-container: .grid-x.grid-padding-x
+                            .small-24.medium-12.cell
+                              .special-program__price_time
+                                i.fa.fa-clock-o
+                                | 3 часа
+                            .small-24.medium-12.cell
+                              .special-program__price_cost 800
+                                i.fa.fa-rouble
+
+                article.callout.special-program
+                  h3.special-program__title «Взрослая пятница»
+                  .lead.margin-bottom-6
+                    | Весь день
+                    br
+                    | Только посетители от 14 лет
+                  include components/site/_line-calendar
+                  .gray-box.special-program__price
+                    .grid-container
+                      .grid-x.grid-padding-x
+                        .small-24.cell
+                          p.margin-0.text-center: a(href="#") По основному тарифу
+
+
+
+
+
+
+
+
+
+
+
+            .grid-container: .grid-x: .cell
+              article.margin-bottom-6
+                ul.list
+                  li: b Каждый третий вторник месяца в термальном центра технический день
+                  li При превышении лимита посещения, дополнительная тарификация почасовая, с округлением до 1 часа
+              p
+                hr
+                br
+
+              p.text-center
+                a.text-center(href='price-calculator.html')
+                  i.fa.fa-3x.fa-calculator
+                  br
+                  p.text-center.margin-bottom-0 Калькулятор цены посещения

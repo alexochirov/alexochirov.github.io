@@ -1,0 +1,93 @@
+extends shop-regular
+
+block content
+  .grid-container
+    h1 Каталог
+  .grid-container: .grid-x.grid-padding-x
+    .cell.medium-8.large-6
+      .margin-bottom-6.show-for-small-only
+        span.button.expanded(data-toggle='menu-left')
+          i.fa.fa-lg.fa-bars
+          | &nbsp;Навигация
+        span.button.expanded(data-toggle='filter-left')
+          i.fa.fa-lg.fa-filter
+          | &nbsp;Фильтр
+      .hide-for-small-only.callout.white#menu-left(data-toggler='.hide-for-small-only')
+        ul.equipment
+          li.equipment__item.equipment__item_nested
+            a(href='#').equipment__link Детский сад
+            ul.equipment
+              li.equipment__item: a(href='#').equipment__link Инновационное оборудование
+              li.equipment__item: a(href='#').equipment__link Конструирование
+              li.equipment__item: a(href='#').equipment__link Мелкая моторика
+              li.equipment__item: a(href='#').equipment__link Настенные развивающие модули
+              li.equipment__item: a(href='#').equipment__link Наука для дошкольников
+              li.equipment__item: a(href='#').equipment__link Образовательные комплекты
+              li.equipment__item: a(href='#').equipment__link Основы математики
+              li.equipment__item: a(href='#').equipment__link Сенсорное развитие
+              li.equipment__item: a(href='#').equipment__link Системы хранения
+              li.equipment__item: a(href='#').equipment__link Физическое развитие
+              li.equipment__item: a(href='#').equipment__link Изучение языков
+          li.equipment__item: a(href='#').equipment__link Школа
+          li.equipment__item: a(href='#').equipment__link Основная образовательная программа
+
+      .hide-for-small-only#filter-left(data-toggler='.hide-for-small-only')
+        ul.accordion(data-accordion data-multi-expand='true' data-allow-all-closed='true')
+        
+          li.accordion-item(data-accordion-item)
+            a.accordion-title(href='#'): strong Бренд
+            .accordion-content(data-tab-content)
+              div
+                input#checkbox10(type='checkbox')
+                label(for='checkbox10') Красный
+              div
+                input#checkbox11(type='checkbox')
+                label(for='checkbox11') Синий
+              div
+                input#checkbox12(type='checkbox')
+                label(for='checkbox12') Зеленый
+              div
+                input#checkbox13(type='checkbox')
+                label(for='checkbox13') Белый
+              div
+                input#checkbox14(type='checkbox')
+                label(for='checkbox14') Черный
+        button.button.expanded
+          i.fa.fa-filter.fa-lg
+          | &nbsp;Подобрать
+        button.button.light-gray.expanded
+          i.fa.fa-ban.fa-lg
+          | &nbsp;Сбросить фильтр
+
+    .cell.medium-16.large-18
+      .grid-x.align-right.grid-padding-x.margin-bottom-8
+        .cell.show-for-medium.medium-shrink.align-self-middle Сортировать
+        .cell.large-6
+          select.margin-bottom-0  
+            option По популярности
+            option По рейтингу
+            option Сначала новинки
+
+      block products
+        .grid-x.grid-padding-x.small-up-1.medium-up-1.large-up-3.margin-bottom-6(data-equalizer data-equalize-by-row="true")
+          +productTile('Комби-перфоратор Metabo KHE 2650', false)
+          +productTile('Дрель-шуруповёрт RYOBI R18DDP-LL13G', false)
+          +productTile('Лобзик Metabo STEB 65 Quick', false)
+          +productTile('Торцовочная пила Ryobi EMS254L', true)
+          +productTile('Дрель-шуруповёрт RYOBI R18DDP-LL13G', false)
+          +productTile('Лобзик Metabo STEB 65 Quick', false)
+          +productTile('Комби-перфоратор Metabo KHE 2650', false)
+          +productTile('Дрель-шуруповёрт RYOBI R18DDP-LL13G', false)
+          +productTile('Дрель-шуруповёрт RYOBI R18DDP-LL13G', false)
+
+      button.button.hollow.expanded.margin-bottom-12(type='button') Показать ещё
+
+  .grid-container
+    hr.margin-bottom-14
+    h2 Вы смотрели
+    .grid-x.grid-padding-x.small-up-1.medium-up-2.large-up-4(data-equalizer data-equalize-by-row="true")
+      +productTile('Комби-перфоратор Metabo KHE 2650', false)
+      +productTile('Дрель-шуруповёрт RYOBI R18DDP-LL13G', false)
+      +productTile('Лобзик Metabo STEB 65 Quick', false)
+
+      +productTile('Лобзик Metabo STEB 65 Quick', false)

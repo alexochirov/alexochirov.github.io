@@ -1,0 +1,30 @@
+extends shop-product-regular-designer
+
+//- Для дилеров
+block infoProduct
+  .callout.light-gray.no-border
+    strong Артикул
+    .margin-bottom-5 LSP2836-UK
+    strong Размер
+    .margin-bottom-5 XXL
+    strong Возрастная группа:
+    .margin-bottom-5 5+
+    strong Категория
+    .margin-bottom-5 Сенсорная моторика
+    
+    
+    .grid-x.grid-padding-x.margin-bottom-6
+      .cell.shrink
+        span.stat
+          | 25 280&nbsp;
+        span.text-size-xxlarge руб.
+        
+      .cell.shrink
+        span.label.warning #[i.fa.fa-star-o] Новинка
+    form.input-group(action='shop-cart.html' method='get')
+      input.input-group-field(type='number' value='1' min='1')
+      .input-group-button
+        button(type='submit' title="Товар добавлен в корзину").button.secondary
+          i.fa.fa-shopping-basket.fa-lg
+          | &nbsp;В заказ
+  

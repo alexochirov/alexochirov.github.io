@@ -1,0 +1,178 @@
+.form {
+  &-personal {
+    position: relative;
+    margin-bottom: rem-calc(40);
+
+    &__text {
+      font-family: $font-fira;
+    }
+
+    &__title {
+      margin-bottom: rem-calc(20);
+    }
+    &__custom {
+      position: relative;
+
+      &__phone {
+        padding-right: rem-calc(98);
+      }
+
+      &__password {
+        padding-right: rem-calc(130);
+      }
+    }
+    &__success,
+    &__repeat {
+      position: absolute;
+      top: rem-calc(10);
+      right: rem-calc(10);
+      color: $primary-color;
+      text-transform: uppercase;
+      font-family: $font-fira;
+      font-weight: 400;
+      font-size: rem-calc(12);
+    }
+  }
+
+  &-services {
+    margin-bottom: rem-calc(40);
+    margin-top: rem-calc(10);
+
+    &__title {
+      margin-bottom: rem-calc(20);
+      margin-left: rem-calc(5);
+      &_rubricks {
+        margin-top: rem-calc(10);
+        margin-left: rem-calc(35);
+        margin-bottom: rem-calc(15);
+        font-size: rem-calc(14);
+      }
+    }
+
+    &__checkbox {
+      position: absolute;
+      left: -9999px;
+    }
+
+    &__text {
+      position: relative;
+      padding-left: rem-calc(28);
+      cursor: pointer;
+      margin-bottom: rem-calc(4);
+      font-family: $font-fira;
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: rem-calc(7);
+        width: rem-calc(14);
+        height: rem-calc(14);
+        border: rem-calc(1) solid $primary-color;
+        border-radius: rem-calc(1);
+        background: $white;
+      }
+
+      &:after {
+        content: '✔';
+        position: absolute;
+        top: rem-calc(7);
+        left: rem-calc(3);
+        font-size: rem-calc(12);
+        line-height: 1.2;
+        color: $black;
+      }
+    }
+
+    &__checkbox:not(:checked) + &__text:after {
+      opacity: 0;
+      transform: scale(0);
+    }
+    &__checkbox:checked + &__text:after {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    &__rubricks {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: rem-calc(25);
+    }
+
+    &__rubrick {
+      cursor: pointer;
+      font-size: rem-calc(14);
+      font-family: $font-fira;
+      font-weight: 400;
+      margin: rem-calc(5) rem-calc(10);
+
+      &__text {
+        color: $black;
+        transition: ease 0.5s;
+        &:hover {
+          color: $primary-color;
+        }
+      }
+
+      &__checkbox {
+        display: none;
+      }
+      &__checkbox:checked + &__text {
+        color: $primary-color;
+      }
+    }
+  }
+
+  &-subscribe {
+    margin-bottom: rem-calc(40);
+    &__title {
+      margin-bottom: rem-calc(10);
+    }
+
+    &__buttons {
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+    }
+
+    &__button {
+      margin: rem-calc(5) rem-calc(3);
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  &-contact {
+    border: rem-calc(1) solid $yellow;
+    text-align: right;
+    margin-bottom: rem-calc(40);
+
+    &__title {
+      padding: rem-calc(10) 0 rem-calc(5) rem-calc(27);
+      background-color: $yellow;
+      color: $white;
+      font-size: rem-calc(18);
+      font-family: $font-fira;
+      font-weight: 700;
+      text-align: left;
+    }
+
+    &__text {
+      width: 100%;
+      resize: none;
+      border: none;
+      text-align: left;
+      font-family: $font-fira;
+      &:focus,
+      &:hover,
+      &:active {
+        border: none;
+      }
+    }
+
+    &__button {
+      margin: rem-calc(17) rem-calc(21);
+    }
+  }
+}

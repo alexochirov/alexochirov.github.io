@@ -1,0 +1,50 @@
+.price-table {
+  &__item {
+    background: lighten($light-gray,10);
+    border-radius: 2rem;
+    color: $water;
+    padding: 1.5rem;
+    text-align: center;
+    @include breakpoint(small only) {
+      margin-bottom: 1rem;
+    }
+    p {
+      margin: 0;
+      padding: 0;
+    }
+    &_left {
+      border-right: rem-calc(1) solid $light-gray;
+      svg {
+        width: 80px;
+        height: auto;
+        g path {
+          fill: $lime;
+        }
+      }
+      svg + p {
+        margin-top: 0.5rem;
+        font-size: 1.5rem;
+      }
+
+    }
+    &_right {
+      p {
+        font-size: 2rem;
+        i {
+          font-size: 85%;
+        }
+      }
+      span {
+        display: block;
+        padding: 0 0.5rem;
+        font-weight: 300;
+        font-size: rem-calc(14);
+        line-height: 1.25;
+        margin: 1.2rem 0 ;
+      }
+    }
+  }
+  @include breakpoint(small only) {
+    margin-bottom: 1rem;
+  }
+}

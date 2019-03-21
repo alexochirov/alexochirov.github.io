@@ -1,0 +1,128 @@
+extends corp-index
+
+block page
+  include components/common/_breadcrumbs
+  block content
+    .grid-container: .grid-x.grid-padding-x: .small-24.medium-16.large-18.cell.padding-top-6.margin-bottom-6
+      h1.text-center Дни рождения в центре «Мира»
+    .grid-container.margin-bottom-6: .grid-x.grid-padding-x
+      .cell
+        include components/site/_carousel-media-gallery
+      .grid-container: .grid-x.grid-padding-x.padding-top-8
+        .cell.small-24.medium-8.large-6.medium-order-2
+          include components/site/_kids-sidebar
+        .cell.auto.medium-order-1
+          article.content-block
+            h3.text-center Незабываемый праздник для ребенка или взрослого
+              br
+              | от Центра здорового отдыха
+
+            p Мы поможем Вам отпраздновать день рождения вашего ребенка в Центре «Мира».
+
+            p Наши программы подходят для детей всех возрастов .
+
+            p Необычные мастер-классы, харизматичные мастера и опытные вожатые для детей — сделают ваш праздник веселым и увлекательным!
+
+            p В стоимость (см.раздел прайс) входит час пребывания в отдельном зале — там можно устроить чаепитие или дружеские посиделки, во время занятий детей, взрослые могут накрыть себе домашний праздничный стол.
+
+            p У нас есть #[strong всё, чтобы устроить домашний праздник]: холодильник, бойлер, микроволновка, большие тарелки, разделочные доски
+
+            p #[strong Заказать угощение] возможно у менеджера вегетарианского #[strong кафе «Боттва» тел.8 (913) 787-77-88]
+
+          article.content-block
+            h3.text-center Мастер-классы на выбор
+            .lead.text-center Продолжительность одного мастер-класса 1 час
+            .margin-bottom-6
+            .grid-x.grid-padding-x.small-up-1.medium-up-2.large-up-3.title-grid(data-equalizer,data-equalize-by-row="true")
+              .cell: .card: .card-section(data-equalizer-watch)
+                strong Эбру
+                hr
+                p
+                | Рисование на воде
+              .cell: .card: .card-section(data-equalizer-watch)
+                strong Обережная кукла для взрослых и детей
+                hr
+                p
+                | Традиции наших предков на ярком и увлекательном занятии
+              .cell: .card: .card-section(data-equalizer-watch)
+                strong Развлекательное актерское мастерство
+                hr
+                p
+                | Шанс как для детей, так и для взрослых повеселиться и поиграть в необычных костюмах и разыграть веселое представление
+              .cell: .card: .card-section(data-equalizer-watch)
+                strong Мульти-диско
+                hr
+                p
+                | Детская дискотека под любимые песни в зале с дискоболом
+              .cell: .card: .card-section(data-equalizer-watch)
+                strong Мехенди
+                hr
+                p
+                | Это искусство росписи тела различными узорами с применением хны
+              .cell: .card: .card-section(data-equalizer-watch)
+                strong Флористический мастер-класс для детей
+                hr
+                p
+                | Это уникальная возможность окунуться в прекрасный мир цветов и насладиться творчеством!
+              .cell: .card: .card-section(data-equalizer-watch)
+                strong Кулинарный
+                hr
+                p
+                | Научимся делать полезные домашние сладости
+              .cell: .card: .card-section(data-equalizer-watch)
+                strong Шоу фокусника-иллюзиониста!
+                hr
+                p
+                | Работает с кроликом Рубик, который с удовольствием с Вами сфотографируется
+          article.content-block
+            h3.text-center Стоимость:
+            .callout.gray-box.text-size-large.text-center.margin-bottom-4
+              h4 Два мастер-класса (на выбор) и чаепитие
+              p: hr
+              P Цена зависит от выбранных мастер-классов
+            .callout.gray-box.text-size-large.text-center.margin-bottom-4
+              h4 Два мастер-класса (на выбор), чаепитие (30 мин) и дискотека (45 мин)
+              p: hr
+              p цена зависит от выбранных мастер-классов
+            .callout.gray-box.text-size-large.text-center.margin-bottom-4
+              h4 Квест и чаепитие (3 часа, до 9 детей)
+              p: hr
+              p: b 9 000
+                =" "
+                i.fa.fa-rouble.text-size-small
+            .callout.gray-box.text-size-large.text-center.margin-bottom-4
+              h4 Квест и чаепитие (3 часа, от 10 детей)
+              p: hr
+              p
+                b 1 000 &nbsp;
+                i.fa.fa-rouble.text-size-small
+                =" "
+                | (за 1 ребенка)
+            .callout.gray-box.text-size-large.text-center.margin-bottom-4
+
+              h4 Квест (1,5 часа),чаепитие (45 мин) и дискотека (45 мин) (3 часа, до 9 детей)
+              p: hr
+              p: b 11 000
+                =" "
+                i.fa.fa-rouble.text-size-small
+            .callout.gray-box.text-size-large.text-center.margin-bottom-4
+              h4 Квест (1,5 часа),чаепитие (45 мин) и дискотека (45 мин) (3 часа, от 10 детей)
+              p: hr
+              p
+                b 1 200 &nbsp;
+                i.fa.fa-rouble.text-size-small
+                =" "
+                | (за 1 ребенка)
+        
+
+          .callout.text-center.lead.margin-bottom-12
+            hr
+            p: br
+            | Подробности можно узнать у куратора проекта Юлии Исаковой:
+            br
+            i.fa.fa-phone.text-size-small
+            | &nbsp; 8-983-138-53-57
+            br
+            i.fa.fa-paper-plane.text-size-small
+            =" "
+            | #[a(href='mailto:iuo@miracentr.ru') iuo@miracentr.ru]

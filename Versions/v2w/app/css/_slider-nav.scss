@@ -1,0 +1,22 @@
+.slider-nav {
+  .slick-dots {
+    bottom: rem-calc(-50);
+    li {
+      margin-left: rem-calc(14);
+      margin-right: rem-calc(14);
+      &.slick-active {
+        button {
+          background: none;
+        }
+      }
+      button {
+        border: rem-calc(1) solid #e1e1e1;
+        width: rem-calc(120);
+        height: rem-calc(120);
+        padding: rem-calc(10);
+        background-size: cover;
+        background-position: center;
+      }
+    }
+  }
+}

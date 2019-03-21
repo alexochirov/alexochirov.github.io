@@ -1,0 +1,51 @@
+header.header
+  .header__top
+    .grid-container.header__rel
+      .grid-x.grid-padding-x
+        .cell.large-auto.medium-12.small-19
+          a(href="#").header__logo
+            img(src="./images/logo.svg", alt="")
+        .cell.medium-12.hide-for-large.text-right.small-5
+          .header__toggle(data-toggle="soc journal search net develop about")
+            i.fas.fa-bars
+        .cell.large-8#soc.show-for-large.large-text-right(data-toggler=".show-for-large").header__icons.medium-12.text-center.medium-text-left
+          a(href="#").header__soc
+            i.fab.fa-facebook-f(data-fa-transform='shrink-6 ', data-fa-mask='fas fa-circle', )
+          a(href="#").header__soc
+            i.fab.fa-twitter(data-fa-transform='shrink-8 ', data-fa-mask='fas fa-circle', )
+          a(href="#").header__soc
+            i.fab.fa-telegram-plane(data-fa-transform='shrink-6 ', data-fa-mask='fas fa-circle', )
+          a(href="#").header__soc
+            i.fas.fa-rss(data-fa-transform='shrink-9 ', data-fa-mask='fas fa-circle', )
+        .cell.large-5#search.show-for-large(data-toggler=".show-for-large").medium-12
+          form.search-top.input-group(action='shop-search.html' method='get')
+            input.search-top__input.input-group-field(type='text', value='')
+            .input-group-button
+              button.search-top__button(type='submit'): i.fas.fa-search
+  .grid-container: .grid-x
+    .cell.shrink
+      ul.news
+        li.news__item
+          a(href="#").news__link.news__link_add Рубрики
+          .drop.drop_full
+            a(href="#").drop__link.drop__link_full Инновации
+            a(href="#").drop__link.drop__link_full Новости ритейла
+            a(href="#").drop__link.drop__link_full E-Commerce
+            a(href="#").drop__link.drop__link_full Cети
+            a(href="#").drop__link.drop__link_full Технологии
+            a(href="#").drop__link.drop__link_full Платежи и кассы
+            a(href="#").drop__link.drop__link_full Лояльность
+            a(href="#").drop__link.drop__link_full Логистика
+            a(href="#").drop__link.drop__link_full НoReCa
+            a(href="#").drop__link.drop__link_full FMCG
+            a(href="#").drop__link.drop__link_full Исследования
+    .cell.auto
+      .header__marquee
+        ul.develop#develop.show-for-large(data-toggler=".show-for-large")
+          for i in [1,2,3]
+            li.develop__item
+              a(href="#").develop__link Драйвером развития складского рынка Москвы в 2018 году станет офлайн-ритейл
+            li.develop__item
+              a(href="#").develop__link Магнит запустил единый портал для поставщиков
+            li.develop__item
+              a(href="#").develop__link 54-ФЗ: законодатели готовят

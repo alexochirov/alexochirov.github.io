@@ -1,0 +1,17 @@
+.tag {
+  display: inline-block;
+  background: transparent;
+  border: 1px solid $water;
+  border-radius: 0.5rem;
+  margin: 0 1rem 1rem 0;
+  padding: 0.5rem 1rem;
+  font-size: rem-calc(12);
+  text-decoration: none;
+  color: $water;
+  line-height: 1;
+  transition: 0.3s ease;
+  &:hover {
+    background: $water;
+    color: #ffffff;
+  }
+}

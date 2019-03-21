@@ -1,0 +1,117 @@
+.cat {
+  margin-left: rem-calc(0);
+  margin-bottom: rem-calc(0);
+  list-style-type: none;
+transition: .3s;
+  &_nested {
+    background: #5f9f42;
+    position: absolute;
+    left: calc(100% - 15px);
+    padding-top: rem-calc(24);
+    padding-bottom: rem-calc(24);
+    width: calc(100% + 35px);
+    top: rem-calc(0);
+    display: none;
+    z-index: 4;
+  }
+
+  &__item {
+    position: relative;
+
+    &:active,
+    &:focus,
+    &:hover {
+      .cat_nested {
+        display: block;
+      }
+    }
+  }
+
+  &__link {
+    color: $white;
+    border-bottom: rem-calc(1) solid #5f9f42;
+    display: block;
+    height: 100%;
+    width: calc(100% - 25px);
+    padding-top: rem-calc(17);
+    padding-bottom: rem-calc(17);
+    font-size: rem-calc(16);
+    position: relative;
+    padding-left: rem-calc(22);
+    padding-right: rem-calc(22);
+    display: flex;
+    line-height: 1.53;
+    align-items: center;
+    font-weight: 900;
+
+    &:after {
+      width: 0;
+      height: 0;
+      position: absolute;
+      right: rem-calc(5);
+      top: calc(50% - 5px);
+      border-top: rem-calc(5) solid transparent;
+      border-bottom: rem-calc(5) solid transparent;
+      border-left: rem-calc(5) solid $white;
+      content: "";
+    }
+
+    &:active,
+    &:focus,
+    &:hover,
+    &_active {
+      width: 100%;
+      color: $white;
+
+      padding-right: rem-calc(47);
+      background: #5f9f42;
+
+      &:after {
+        right: rem-calc(30);
+        transform: rotate(90deg);
+      }
+    }
+
+    &_nested {
+      padding-top: rem-calc(12);
+      padding-bottom: rem-calc(12);
+      width: 100%;
+      padding-left: rem-calc(38);
+      padding-right: rem-calc(38);
+      font-weight: 400;
+
+      &:active,
+      &:focus,
+      &:hover {
+        color: $black;
+      }
+
+      &:after {
+        display: none;
+      }
+    }
+  }
+  @include breakpoint(medium down) {
+    &_nested {
+      width: calc(100% - 15px);
+    }
+  }
+  @include breakpoint(small only) {
+    &__link {
+      padding-left: rem-calc(0);
+      padding-right: rem-calc(0);
+      width: 100%;
+      padding-top: rem-calc(10);
+      padding-bottom: rem-calc(10);
+      justify-content: center;
+
+      &:after {
+        display: none;
+      }
+    }
+
+    &_nested {
+      display: none;
+    }
+  }
+}

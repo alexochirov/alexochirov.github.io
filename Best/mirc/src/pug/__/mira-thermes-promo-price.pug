@@ -1,0 +1,83 @@
+extends corp-index
+
+block page
+    include components/common/_breadcrumbs
+    block content
+        .grid-container: .grid-x.grid-padding-x: .cell
+            h1 Акции и скидки
+        .padding-top-12.padding-bottom-6
+            .grid-container: .grid-x.grid-padding-x
+                .cell.small-24.medium-8.large-6.medium-order-2
+                    include components/site/_mira-thermes-sidebar
+                .cell.auto.medium-order-1
+                    .margin-bottom-12
+                        b Термы Мира «Сосновый бор»
+                        br
+                        | Новосибирск, ул. Добролюбова, 2А, БЦ «Речной вокзал»
+                        br
+                        | Работаем каждый день с 9:00 до 23:00
+
+                    .margin-bottom-6.callout
+                        form
+                            .flex-container
+                                .flex-child-shrink.margin-right-2
+                                    label(for='option1') Ваш пол
+                                    select(name='gender' id='option1')
+                                        option
+                                        option Женщина
+                                        option Мужчина
+                                .flex-child-shrink.margin-right-2
+                                    label(for='option2') Возраст
+                                    select(name='age' id='option2')
+                                        option
+                                        option 1-6 лет
+                                        option 7-13 лет
+                                        option 14+ лет
+                                .flex-child-shrink.margin-right-4
+                                    label(for='option3') Статус
+                                    select(name='age' id='option3')
+                                        option
+                                        option Пенсионер
+                                        option Студент
+                                .flex-child-shrink.padding-top-10
+                                    a.text-alert #[i.fa.fa-minus-circle.text-alert] Убрать посетителя
+
+                            .margin-bottom-3: a.text-success #[i.fa.fa-plus-circle] Ещё один посетитель
+
+                            label Когда хотите прийти
+                            .flex-container
+                                input.flex-child-shrink.margin-right-2(type='date' placeholder='Дата' style='width:14.5em;')
+                                input(type='text' list='hours' placeholder='Час' style='width:4.5em;')
+                                datalist(id='hours')
+                                    option
+                                    option 8:00
+                                    option 9:00
+                                    option 10:00
+                                    option 11:00
+                                    option 12:00
+                                    option 13:00
+                                    option 14:00
+                                    option 15:00
+                                    option 16:00
+                                    option 17:00
+                                    option 18:00
+                                    option 19:00
+                                    option 20:00
+                                    option 21:00
+                                    option 22:00
+                                    option 23:00
+
+                            button.button.margin-bottom-0 Посчитать стоимость
+
+                    .margin-bottom-3.flex-container
+                        .button-group.margin-right-6
+                            button.button.hollow Женщина
+                            button.button.hollow Мужчина
+                        .button-group.margin-right-6
+                            button.button.hollow 1–7 лет
+                            button.button.hollow 7-14 лет
+                            button.button.hollow 14+ лет
+                        .button-group.margin-right-6
+                            button.button.hollow Студент
+                            button.button.hollow Пенсионер
+

@@ -1,0 +1,46 @@
+a {
+  -webkit-transition: color 300ms ease-in-out;
+  -moz-transition: color 300ms ease-in-out;
+  -ms-transition: color 300ms ease-in-out;
+  -o-transition: color 300ms ease-in-out;
+  transition: color 300ms ease-in-out;
+  text-decoration-skip-ink:none; 
+}
+
+table {
+  margin-bottom: 6 * $global-margin;
+}
+
+.fa-layers {
+  vertical-align: middle;
+}
+
+[type='text'],
+[type='password'],
+[type='date'],
+[type='datetime'],
+[type='datetime-local'],
+[type='month'],
+[type='week'],
+[type='email'],
+[type='number'],
+[type='search'],
+[type='tel'],
+[type='time'],
+[type='url'],
+[type='color'] {
+  height: rem-calc(36);
+}
+
+h1,
+h2,
+h3 {
+  font-family: $font-fira;
+}
+
+h6 {
+  text-transform: uppercase;
+  font-family: $font-fira;
+
+  margin-bottom: rem-calc(16);
+}

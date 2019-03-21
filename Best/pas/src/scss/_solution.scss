@@ -1,0 +1,20 @@
+.solution {
+  display: block;
+  margin-bottom: rem-calc(45);
+  transition: box-shadow 0.5s;
+  text-align: center;
+  img {
+    width: 100%;
+  }
+
+  &_shadow-primary {
+    &:hover,&:focus,&:active{
+      box-shadow: 0 0 rem-calc(30) rgba(166, 42, 84, 0.8);
+    }
+  }
+  &_shadow-orange {
+    &:hover,&:focus,&:active{
+      box-shadow: 0 0 rem-calc(30) rgba(222, 122, 0, 0.8);
+    }
+  }
+}

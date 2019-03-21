@@ -1,0 +1,12 @@
+.nature {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  height: 20rem;
+  @include breakpoint(medium down) {
+    height: rem-calc(250);
+  }
+  //@include breakpoint(small only) {
+  //  height: rem-calc(100);
+  //}
+}

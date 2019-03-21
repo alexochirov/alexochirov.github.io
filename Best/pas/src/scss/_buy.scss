@@ -1,0 +1,26 @@
+.buy {
+  color: $black;
+  display: block;
+  margin-bottom: rem-calc(24);
+
+  &__title {
+    font-size: rem-calc(15);
+    font-weight: 700;
+    margin-bottom: rem-calc(10);
+    font-family: $font-fira;
+    line-height: 1.286;
+  }
+
+  &__text {
+    font-family: $font-noto;
+
+  }
+
+  &__img {
+    margin-bottom: rem-calc(5);
+
+    img {
+      border-radius: 50%;
+    }
+  }
+}

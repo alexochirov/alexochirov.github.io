@@ -1,0 +1,61 @@
+extends shop-regular
+block content
+  .grid-container
+    h1 Карта дилеров
+
+  .grid-container.padding-bottom-6: .grid-x.grid-padding-x: .cell
+    p.text-center
+      b.margin-right-3 Санкт-Петербург
+      a(data-open='locationsModal') Сменить #[i.fa.fa-caret-down.fa-lg]
+
+    .margin-bottom-6
+      script(type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=XU8D7iNQGHyidT5XNZs_y6bn4mEQxSVP&amp;height=500&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=false")
+    .grid-x.align-right.grid-padding-x.margin-bottom-8
+      .cell.show-for-medium.large-shrink.text-center.align-self-middle Сортировать
+      .cell.large-6
+        select.margin-bottom-0  
+          option По рейтингу
+          option По алфавиту
+    .table-scroll      
+      table.unstriped
+        tr
+          td ООО «Название дилера»
+          td 
+            a(href="mailto:dealer1@mail.ru") dealer1@mail.ru
+          td 
+            a(href="https://dealer1.site.ru") https://dealer1.site.ru
+          td Shopping Mall «Svetlanovsky», Prospect Engels, 33, St. Petersburg
+          td (812) 309 34 46
+        tr
+          td ООО «Название дилера»
+          td 
+            a(href="mailto:dealer1@mail.ru") dealer1@mail.ru
+          td 
+            a(href="https://dealer1.site.ru") https://dealer1.site.ru
+          td Shopping Mall «Evrika», Sedova Str., 11, St. Petersburg
+          td (812) 309 78 92
+
+  .reveal.large(id="locationsModal" data-reveal data-deep-link='true')
+    .grid-x.grid-padding-x.small-up-1.medium-up-2.large-up-4
+      .cell
+        ul
+          each title in ['Москва и область', 'Санкт-Петербург и область', 'Алтайский край', 'Амурская область', 'Архангельская область', 'Астраханская область', 'Белгородская область', 'Брянская область', 'Владимирская область', 'Волгоградская область', 'Вологодская область', 'Воронежская область', 'Еврейская автономная область', 'Забайкальский край', 'Ивановская область', 'Иркутская область', 'Калининградская область', 'Калужская область', 'Камчатский край', 'Кемеровская область', 'Кировская область', 'Кисловодск']
+            li
+              a(href='#')= title
+      .cell
+        ul
+          each title in ['Костромская область', 'Краснодарский край', 'Красноярский край', 'Курганская область', 'Курская область', 'Липецкая область', 'Магаданская область', 'Мурманская область', 'Н.Новгород и область', 'Набережные Челны', 'Новгородская область', 'Новокузнецк', 'Новосибирская область', 'Омская область', 'Оренбургская область', 'Орловская область', 'Пензенская область', 'Пермский край', 'Приморский край', 'Псковская область', 'Республика Адыгея', 'Республика Алтай']
+            li
+              a(href='#')= title
+      .cell
+        ul
+          each title in ['Республика Башкортостан', 'Республика Бурятия', 'Республика Дагестан', 'Республика Ингушетия', 'Республика Кабардино-Балкария', 'Республика Калмыкия', 'Республика Карачаево-Черкесия', 'Республика Карелия', 'Республика Коми', 'Республика Марий Эл', 'Республика Мордовия', 'Республика Саха (Якутия)', 'Республика Северная Осетия', 'Республика Татарстан', 'Республика Тыва', 'Республика Хакасия', 'Ростовская область', 'Рязанская область', 'Самарская область', 'Саратовская область', 'Сахалинская область', 'Свердловская область']
+            li
+              a(href='#')= title
+      .cell
+        ul
+          each title in ['Смоленская область', 'Сочи', 'Ставропольский край', 'Сызрань', 'Тамбовская область', 'Тверская область', 'Тольятти', 'Томская область', 'Тульская область', 'Тюменская область', 'Удмуртская Республика', 'Ульяновская область', 'Хабаровский край', 'Ханты-Мансийский АО', 'Челябинская область', 'Череповец', 'Чеченская Республика', 'Чувашская Республика', 'Чукотский АО', 'Ямало-Ненецкий АО', 'Ярославская область']
+            li
+              a(href='#')= title
+    button.close-button(type="button" data-close aria-label="Закрыть")
+      span(aria-hidden="true") &times;

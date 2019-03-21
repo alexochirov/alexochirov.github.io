@@ -1,0 +1,29 @@
+extends shop-index
+
+block page
+  include components/common/_breadcrumbs
+  block content
+    .grid-container
+      h1 Поиск
+    .grid-container
+      include components/common/_search
+      - var n = 0
+      while n < 5
+        h4
+          a(href='#' title='').font-bold Конструктор-формы с болтикам Design & Drill®
+        .margin-bottom-6
+          | ... социально-трудовую компетенцию: трудолюбие, самостоятельность, умение доводить начатое дело до конца;   В комплект входят формы в виде:  #[b робота], лодки, автомобиля, ракеты, 30 красочных болтов, реверсивный ключ …
+        .text-dark-gray
+          | Изменено: 12.05.2015
+        ul.breadcrumbs
+            li
+                a(href='index.html' title='') Главная
+            li
+                a(href='#' title='') Раздел
+            li
+                a(href='#' title='') Путь до страницы
+            li.current
+                a(href='#' title='') Страница
+        hr.margin-bottom-6
+        - n++
+      include components/common/_pagination

@@ -1,0 +1,44 @@
+.info {
+  display: block;
+  color: $black;
+  padding-bottom: rem-calc(9);
+  margin-bottom: rem-calc(10);
+  border-bottom: rem-calc(1) solid $light-gray;
+  &:hover,&:focus,&:active{
+    .info__title {
+      color: $yellow;
+    }
+  }
+  &_subscribe {
+    border-bottom: rem-calc(2) solid $medium-gray;
+  }
+  &_last {
+    border-bottom: rem-calc(0);
+    margin-bottom: rem-calc(16);
+  }
+  &__date {
+    margin-right: rem-calc(12);
+    font-family: $font-fira;
+    font-size: rem-calc(12);
+    color: $dark-gray;
+    &_subscribe {
+      font-size: rem-calc(14);
+      color: $primary-color;
+    }
+  }
+
+  &__title {
+    margin-bottom: rem-calc(2);
+  }
+
+  &__line {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  &__cat {
+    color: $primary-color;
+    font-family: $font-fira;
+    font-size: rem-calc(12);font-weight: 500;
+  }
+}

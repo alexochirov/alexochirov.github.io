@@ -1,0 +1,148 @@
+extends corp-index
+
+mixin qty-field
+  .grid-x.small-up-3.align-middle
+    .cell: button.button.hollow.small.expanded.light-gray(type='button') –
+    .cell: input(type='text')
+    .cell: button.button.hollow.small.expanded.success(type='button') +
+  //-.input-group
+    .input-group-button
+      button.button.hollow(type='button') –
+    input.input-group-field(type='number' min='0' value='0' step='1')
+    .input-group-button
+      button.button.hollow(type='button') +
+
+block page
+  include components/common/_breadcrumbs
+  block content
+    .padding-top-6.padding-bottom-6
+      .grid-container: .grid-x.grid-padding-x
+        .cell.small-24.medium-8.large-6.medium-order-2
+          include components/site/_mira-spa-sidebar
+        .cell.auto.medium-order-1
+          h1.text-center Купить электронный билет на основное посещение термального центра
+          p Вы можете приобрести билет на основное посещение термального центра только по основному тарифу. Воспользоваться условиями специальных тарифов и акций вы можете только при покупке билета на рецепции термального комплекса в день посещения. Перед покупкой билета охнакомьтесь с правилами посещения, расписанием действия специальных тарифов и графиком работы термальных комплексов.
+          form.price-calculator(id='eticket-form' action='')
+            .margin-top-10.margin-bottom-6
+              .callout.gray-box
+                h3.text-center Выберите центр
+                fieldset
+                  .grid-x.grid-padding-x.margin-bottom-4.align-center
+                    .medium-12.large-8.cell.large-text-left
+                      input(type='radio' name="place" id='option6' checked)
+                      label(for='option6') Термы Мира. Набережная
+                    .medium-12.large-8.cell.large-text-left
+                      input(type='radio' name="place" id='option7')
+                      label(for='option7') Термы Мира. Сосновый бор
+
+
+                h3.margin-top-10.text-center Выберите тип билета
+                p.text-center: b Термы Мира. Сосновый бор
+                .grid-x.grid-padding-x.margin-bottom-2
+                  .cell.medium-6: b Взрослые от 14 включительно
+                  .cell.medium-auto
+                    .grid-x.grid-padding-x.medium-up-2.align-middle.margin-bottom-1
+                      .cell.text-center.background-light-gray.text-primary Будние дни
+                      .cell.text-center.background-light-gray.text-primary Выходные и праздничные дни
+                    .grid-x.grid-padding-x.medium-up-2.align-middle
+                      .cell
+                        .grid-x.grid-padding-x.medium-up-2.align-middle
+                          .cell.text-center Зона «Аква»
+                          .cell.text-center Зона «Аква»+«Бани»
+                      .cell
+                        .grid-x.grid-padding-x.medium-up-2.align-middle
+                          .cell.text-center Зона «Аква»
+                          .cell.text-center Зона «Аква»+«Бани»
+                .grid-x.grid-padding-x
+                  .cell.medium-6.medium-text-right 3 часа
+                  .cell.medium-9
+                    .grid-x.grid-padding-x.medium-up-2
+                      .cell: +qty-field
+                      .cell: +qty-field
+                  .cell.medium-9
+                    .grid-x.grid-padding-x.medium-up-2
+                      .cell: +qty-field
+                      .cell: +qty-field
+                .grid-x.grid-padding-x
+                  .cell.medium-6.medium-text-right безлимит
+                  .cell.medium-9
+                    .grid-x.grid-padding-x.medium-up-2
+                      .cell: +qty-field
+                      .cell: +qty-field
+                  .cell.medium-9
+                    .grid-x.grid-padding-x.medium-up-2
+                      .cell: +qty-field
+                      .cell: +qty-field
+                br
+                p.text-center.text-alert *для детей до 14 лет доступно только посещение зоны «Аква»
+
+                .grid-x.grid-padding-x.margin-bottom-2
+                  .cell.medium-6: b Детский, от 7 до 13 включительно
+                  .cell.medium-auto
+                    .grid-x.grid-padding-x.medium-up-2.align-middle.margin-bottom-1
+                      .cell.text-center.background-light-gray.text-primary Будние дни
+                      .cell.text-center.background-light-gray.text-primary Выходные и праздничные дни
+                    .grid-x.grid-padding-x.medium-up-2.align-middle
+                      .cell.medium-9 Зона «Аква»
+                      .cell.medium-9 Зона «Аква»
+                .grid-x.grid-padding-x
+                  .cell.medium-6.medium-text-right 3 часа
+                  .cell.medium-5: +qty-field
+                  .cell.medium-5.medium-offset-4: +qty-field
+                .grid-x.grid-padding-x
+                  .cell.medium-6.medium-text-right безлимит
+                  .cell.medium-5: +qty-field
+                  .cell.medium-5.medium-offset-4: +qty-field
+                br
+                .grid-x.grid-padding-x.margin-bottom-2
+                  .cell.medium-6: b Детский, от 0 до 6 включительно
+                  .cell.medium-auto
+                    .grid-x.grid-padding-x.medium-up-2.align-middle.margin-bottom-1
+                      .cell.text-center.background-light-gray.text-primary Будние дни
+                      .cell.text-center.background-light-gray.text-primary Выходные и праздничные дни
+                    .grid-x.grid-padding-x.medium-up-2.align-middle
+                      .cell.medium-9 Зона «Аква»
+                      .cell.medium-9 Зона «Аква»
+                .grid-x.grid-padding-x
+                  .cell.medium-6.medium-text-right 3 часа
+                  .cell.medium-5: +qty-field
+                  .cell.medium-5.medium-offset-4: +qty-field
+                .grid-x.grid-padding-x
+                  .cell.medium-6.medium-text-right безлимит
+                  .cell.medium-5: +qty-field
+                  .cell.medium-5.medium-offset-4: +qty-field
+
+            .callout.gray-box
+              h3 Ваш заказ
+              p #[b Центр]: Термы Мира. Сосновый бор
+              p #[b Время отдыха]: Четверг, 6 Сентября 2018
+              p #[b Тип посещения]: Будни
+              p #[b Залы/Зоны]: «Аква» + «Бани»
+              P #[b Количество взрослых билетов от 14 лет, включительно]: 2
+              P #[b Количество детских билетов от 7 до 13 лет, включительно]: 1
+              P #[b Количество детских билетов от 0 до 6 лет, включительно]: 0
+              P #[b Срок действия билета]: с 10.09.2018 по 10.10.2018 включительно
+              p #[b Общая сумма]: 2 640 #[i.fa.fa-rouble]
+            .callout.gray-box
+              h3 Введите данные
+              .callout.gray-box
+                label ФИО*
+                input(type='text' required)
+                label Номер телефона*
+                input(type='tel' required)
+                label E-mail*
+                input(type='tel' required)
+                label
+                  input(type='checkbox' required)
+                  | Согласие на обработку персональных даннных*
+                label
+                  input(type='checkbox' required)
+                  | Согласие с #[a(href='') правилами покупки электронных билетов]*
+                label
+                  input(type='checkbox' required)
+                  | Согласие с #[a(href='') правилами посещения термального центра]*
+                label
+                  input(type='checkbox')
+                  | Соглашаюсь на получение рекламной информации по каналам связи
+
+          .text-center: button.button(type='submit' form='eticket-form') Оплатить заказ

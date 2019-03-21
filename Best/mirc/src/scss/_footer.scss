@@ -1,0 +1,48 @@
+.footer {
+  background: $primary;
+  font-size: rem-calc(14);
+  padding-top: rem-calc(48);
+  padding-bottom: rem-calc(20);
+  
+  font-weight: 400;
+  color: #5fa1aa;
+
+  &__info {
+    margin-bottom: rem-calc(18);
+  }
+
+  &__soc {
+    font-size: rem-calc(18);
+    margin-bottom: rem-calc(18);
+	&__flamp {
+	  display: inline-block;
+	  position: absolute;
+	  width: 40px; 
+	  height: 40px;
+	  transform: scale(0.76); 
+	  margin: -3px;
+	  margin-top: -1px;
+	  overflow: hidden; 
+	  border-radius: 20px;
+	  z-index: 10;
+	}
+  }
+  @include breakpoint(medium down) {
+    &__info,
+    &__soc {
+      display: inline-block;
+    }
+	&__soc__flamp {
+	  margin: -3px;
+	  margin-top: -2px;
+	}
+  }
+  @include breakpoint(small only) {
+    padding-top: rem-calc(20);
+    padding-bottom: rem-calc(20);
+	&__soc__flamp {
+	  margin: -3px;
+	  margin-top: -2px;
+	}
+  }
+}

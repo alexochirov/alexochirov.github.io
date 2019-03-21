@@ -1,0 +1,88 @@
+extends corp-index
+
+block page
+  include components/common/_breadcrumbs
+  block content
+      .grid-container: .grid-x.grid-padding-x.padding-top-4
+        .small-24.medium-16.large-18.cell.padding-bottom-6.text-center
+          h1 Аренда каминного зала
+          .lead Уютное помещение для отдыха с друзьями или проведения деловых встреч.
+            br
+            | Дизайн помещения позволяет проводить мероприятия любого формата
+
+  .grid-container.content-block: .grid-x.grid-padding-x
+        .cell
+          include components/site/_carousel-media-gallery
+  .grid-container: .grid-x.grid-padding-x
+    .cell.small-24.medium-8.large-6.medium-order-2
+      include components/site/_rent-sidebar
+    .cell.auto.medium-order-1
+      .grid-container.margin-bottom-8: .grid-x.grid-padding-x.small-up-1.medium-up-3.advantages-block.margin-top-0
+        .cell
+          .advantages-block__icon
+            include ../images/icons/measure.svg
+          .advantages-block__title Площадь:
+          .advantages-block__desc: p 60 м
+            sup 2
+        .cell
+          .advantages-block__icon
+            include ../images/icons/chairs.svg
+          .advantages-block__title Только стулья:
+
+          .advantages-block__desc: p до 15 человек
+        .cell
+          .advantages-block__icon
+            include ../images/icons/practice.svg
+          .advantages-block__title Статичная практика
+          .advantages-block__desc: p до 35 человек
+
+      section.content-block
+        h3.text-center Стоимость
+        .price-table
+          .grid-x.grid-padding-x.align-center.margin-bottom-6
+            .small-24.medium-12.cell
+              .price-table__item
+                .grid-x.margin-bottom-6: .cell: p: strong Базовая стоимость
+
+                .grid-x
+                  .small-12.cell.align-self-middle
+                    .price-table__item_left
+                      include ../images/icons/clock.svg
+                      p 1 час
+
+                  .small-12.cell.align-self-middle
+                    .price-table__item_right
+
+                      span Аренда зала
+                        p: strong  1500
+                        =" "
+                        i.fa.fa-rouble
+
+
+      section.content-block
+        article
+          p Базовая комплектация зала — интерьер Каминного зала, посадочные места на 50 человек, проектор, экран, аудиосистема, индивидуальный гардероб, уборные, стол регистрации, кондиционер, флип-чарт (без блокнота), Wi-Fi.
+          p Дополнительная комплектация зала — базовый пакет + навигация в коридорах Центра, кулер, ноутбук, микрофон, встреча гостей, оформление зала по желанию.
+          p Зал оборудован настоящим камином. Стоимость использования камина оплачивается дополнительно. Об использовании камина необходимо договориться заранее.
+          p Возможность организации кофе-брейков. Прайс необходимо уточнить у менеджера.
+          p
+            strong Бесплатный час
+            =" "
+            | на просторной парковке бизнес-центра, каждый последующий час 50р.
+          p
+            hr
+            br
+
+          h3.text-center К вашим услугам:
+          ul.list
+            li Большие зеркала по левой стене зала;
+            li Кондиционер;
+            li Мультимедийное оборудование с профессиональной звуковой аппаратурой;
+            li Парковка. Бесплатный час на просторной парковке бизнес-центра, каждый последующий час 50р.;
+
+
+      section.content-block
+        .callout.text-center.lead.gray-box
+          | Все свои пожелания по оформлению залов вы можете адресовать Светлане, она ответит на все интересующие вас вопросы и подберет индивидуальную комплектацию залов, если это требуется:
+          br
+          | Светлана: 8-983-138-53-72, #[a(href='') bsa@miracentr.ru]

@@ -1,0 +1,81 @@
+.special-program {
+  border-bottom: 1px solid $light-gray;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  &__title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.2rem;
+  }
+  .lead {
+    text-align: center;
+  }
+  &__price {
+    margin-top: 2rem;
+    padding: 1rem;
+    &_divider {
+      @include breakpoint(medium up) {
+        border-right: 1px solid $light-gray;
+      }
+    }
+    &_hall {
+      font-weight: 700;
+      text-align: center;
+      padding: 0.5rem 0;
+    }
+    &_time,
+    &_cost {
+      font-size: rem-calc(18);
+      padding-top: 0.5rem;
+
+    }
+    &_time {
+      text-align: right;
+      i {
+        margin-right: 4px;
+        color: $lime;
+      }
+    }
+    &_cost {
+      text-align: left;
+      font-weight: 700;
+      i {
+        margin-left: 2px;
+        font-size: 85%;
+      }
+    }
+  }
+  @include breakpoint(medium only) {
+    padding: 0.5rem;
+    &__price {
+    &_hall {
+      font-size: 1rem;
+      line-height: 1.2;
+    }
+    &_time,
+    &_cost {
+      font-size: 1rem;
+    }
+      &_time {
+        font-weight: 700;
+        i {
+          display: none;
+        }
+      }
+  }
+  }
+  @include breakpoint(small only) {
+    &__price {
+      &_divider {
+        border-bottom: 1px solid $light-gray;
+      }
+      &_time,
+      &_cost {
+        text-align: center;
+      }
+      &_cost {
+      margin-bottom: 1rem;
+    }
+    }
+  }
+}

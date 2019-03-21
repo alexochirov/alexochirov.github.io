@@ -1,0 +1,29 @@
+.advantages-block {
+  text-align: center;
+  margin-top: rem-calc(24);
+  &__icon {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    $icSz: rem-calc(80);
+    width: $icSz;
+    height:$icSz;
+    svg {
+      width: 100%;
+      height: 100%;
+      g#icons {
+        fill: #ffffff;
+      }
+    }
+  }
+  &__title {
+    font-weight: 700;
+    color: $water;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+  }
+  &__desc {
+  font-size: rem-calc(16);
+    line-height: 1.25;
+  }
+}

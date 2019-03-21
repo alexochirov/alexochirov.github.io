@@ -1,0 +1,88 @@
+.footer {
+  background: $primary-color;
+  color: $white;
+  font-family: $font-fira;
+  font-size: rem-calc(12);
+  padding-top: rem-calc(35);
+
+  &__logo {
+    display: block;
+    margin-bottom: rem-calc(26);
+  }
+
+  &__row {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  &__link {
+    color: $white;
+    display: inline-block;
+    margin-bottom: rem-calc(10);
+    margin-right: rem-calc(30);
+
+    &:active,
+    &:focus,
+    &:hover {
+      text-decoration: underline;
+      color: $white;
+    }
+  }
+
+  &__wait {
+    font-size: rem-calc(14);
+    margin-bottom: rem-calc(7);
+    text-transform: uppercase;
+    margin-top: rem-calc(5);
+    font-weight: 700;
+  }
+
+  &__menu {
+    font-size: rem-calc(14);
+    text-transform: uppercase;
+    font-weight: 700;
+    display: block;
+    color: $white;
+    margin-bottom: rem-calc(16);
+
+    &:active,
+    &:focus,
+    &:hover {
+      text-decoration: underline;
+      color: $white;
+    }
+  }
+
+  &__mail {
+    font-size: rem-calc(14);
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $white;
+
+    &:active,
+    &:focus,
+    &:hover {
+      text-decoration: underline;
+      color: $white;
+    }
+  }
+
+  &__soc {
+    margin-right: rem-calc(20);
+    display: inline-block;
+    color: $white;
+    margin-bottom: rem-calc(20);
+    font-size: rem-calc(36);
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: $light-gray;
+    }
+  }
+  @include breakpoint(small only) {
+    &__row {
+      justify-content: center;
+    }
+  }
+}

@@ -1,0 +1,5 @@
+.js-head-height {
+  @include breakpoint(medium down) {
+    height: auto !important;
+  }
+}

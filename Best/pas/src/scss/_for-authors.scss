@@ -1,0 +1,19 @@
+.for-authors {
+  margin-bottom: rem-calc(40);
+
+  &__title {
+    margin-bottom: 0;
+    font-size: rem-calc(41);
+  }
+
+  &__subtitle {
+    margin-bottom: rem-calc(40);
+    color: $primary-color;
+    max-width: rem-calc(640);
+  }
+
+  &__text {
+    font-family: $font-noto;
+    font-size: rem-calc(16);
+  }
+}

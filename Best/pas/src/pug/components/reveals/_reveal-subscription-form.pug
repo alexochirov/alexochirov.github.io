@@ -1,0 +1,36 @@
+.reveal.subscription-form#subscription-form(data-reveal data-deep-link='true')
+  h3.subscription-form__title Подписка на журнал
+
+  form(action="#" method="POST")
+    .subscription-field
+      input.subscription-field__input#name(type="text" required)
+      label.subscription-field__label(for="name") Ф.И.О Получателя
+        span.text-primary *
+    .subscription-field.subscription-field_helping
+      input.subscription-field__input#company(type="text")
+      label.subscription-field__label(for="company") Компания
+      span.subscription-field__helptext Указать при оформлении корпоративной подписки
+    .subscription-field
+      input.subscription-field__input#phone(type="text" required)
+      label.subscription-field__label(for="phone") Телефон
+        span.text-primary *
+    .subscription-field
+      input.subscription-field__input#email(type="text" required)
+      label.subscription-field__label(for="email") E-mail
+        span.text-primary *
+    .subscription-field
+      textarea.subscription-field__area#comments
+      label.subscription-field__label(for="comments") Ваши комментарии
+    input.subscription-form__checkbox(type="checkbox" id="privacy")
+    label.subscription-form__label(for="privacy") Согласен на обработку #[a(href="") персональных данных*]
+    .subscription-form-captcha
+      p.subscription-form-captcha__title Защита от автоматического заполнения
+        span.text-primary *
+      p.subscription-form-captcha__text Введите символы с картинки
+      img.subscription-form-captcha__image(src="./i/captcha.png" alt="captcha")
+      input.subscription-form-captcha__input(type="text")
+    p #[span.text-primary *] - обязательные поля
+    button.button.button_submit.button_low.expanded(type="submit") Отправить
+
+  button.close-button.show-for-small-only(data-close aria-label="Close modal" type="button")
+    span(aria-hidden="true") &times;

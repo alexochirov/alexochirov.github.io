@@ -1,0 +1,20 @@
+.responsive-embed {
+
+  & iframe {
+    border: 0;
+  }
+
+  &.mobile-app {
+    margin-bottom: rem-calc(60);
+    padding-bottom: 35%;
+    max-width: rem-calc(550);
+
+    @include breakpoint(medium only) {
+      padding-bottom: 45%;
+    }
+
+    @include breakpoint(small only) {
+      padding-bottom: 56%;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+extends corp-index
+
+block page
+  .grid-container
+    include components/common/_breadcrumbs
+  block content
+    .grid-container: .grid-x.grid-padding-x: .cell
+      h1
+        small Ошибка 404
+        br
+        | Cтраница не найдена
+    .padding-top-12.padding-bottom-6
+      .grid-container: .grid-x.grid-padding-x
+        .cell.small-24.medium-20.large-16
+          include components/common/_404

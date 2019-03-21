@@ -1,0 +1,179 @@
+.b-pereshet {
+  font-family: 'segoe ui';
+  &__peresh {
+    padding-right: 28px;
+    padding-left: 30px;
+
+    border: 1px solid #e2e2e2;
+    border-right: 0;
+    background-color: white;
+  }
+  &__promo {
+    font-family: 'segoe ui';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    padding-top: 28px;
+    padding-bottom: 21px;
+    display: inline-block;
+    margin-right: 15px;
+
+    color: #a1a1a1;
+  }
+  &__pereshet-link {
+    font-family: 'segoe ui';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 50px;
+
+    display: block;
+
+    width: 100%;
+    margin-top: 22px;
+    margin-bottom: 25px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #383838;
+    border-bottom: 3px solid #b8b8b8;
+    background-color: #d4d4d4;
+    &:hover {
+      color: #03c;
+    }
+  }
+  &__podtv {
+    margin-bottom: 57px;
+    padding-right: 30px;
+    padding-left: 30px;
+
+    border: 1px solid #e2e2e2;
+  }
+  &__dosta {
+    font-family: 'Segoe UI';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+
+    padding-top: 26px;
+
+    color: #a1a1a1;
+    &-price {
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 26px;
+
+      float: right;
+
+      width: 115px;
+
+      color: #383838;
+    }
+  }
+  &__ndc {
+    font-family: 'Segoe UI';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+
+    color: #a1a1a1;
+    &-price {
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 26px;
+
+      float: right;
+
+      width: 115px;
+
+      color: #383838;
+    }
+  }
+  &__dostavka {
+    font-family: 'Segoe UI';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+
+    padding-bottom: 16px;
+
+    color: #a1a1a1;
+    border-bottom: 1px solid #d8d5d5;
+    &-dash {
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 26px;
+
+      float: right;
+      float: right;
+
+      width: 115px;
+      width: 115px;
+
+      color: #383838;
+    }
+  }
+  &__itog {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+
+    padding-top: 19px;
+    padding-bottom: 23px;
+
+    color: #a1a1a1;
+    &-price {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 26px;
+
+      float: right;
+
+      width: 115px;
+
+      color: #383838;
+    }
+  }
+  &__podtv-link {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 50px;
+
+    display: block;
+
+    margin-bottom: 24px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: white;
+    border-bottom: 3px solid #bf2626;
+    background-color: #e23131;
+  }
+}
+@media (max-width:1024px) {
+    .b-pereshet {
+      &__peresh {
+        margin-left: 0 !important;
+        width: 45%;
+      }
+      &__podtv {
+        width: 55%;
+      }
+    }
+}
+@media (max-width:640px) {
+    .b-pereshet {
+      &__peresh {
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 100%;border: 1px solid #e2e2e2;
+        border-bottom: 0;
+      }
+      &__podtv {
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 100%;
+      }
+    }
+}

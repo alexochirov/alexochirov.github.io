@@ -1,0 +1,35 @@
+.equipment {
+  padding: rem-calc(0);
+  margin-left: rem-calc(0);
+  margin-bottom: rem-calc(0);
+  list-style-type: none;
+  position: relative;
+  flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: flex;
+
+  .equipment {
+    margin-left: rem-calc(14);
+  }
+
+  &__item {}
+
+  &__link {
+    transition: 0s;
+    display: block;
+    padding: rem-calc(10 14);
+    line-height: 1;
+    color: $success-color;
+
+    &:active,
+    &:focus,
+    &:hover,
+    &_active {
+      background: $green;
+      color: $white;
+    }
+  }
+}

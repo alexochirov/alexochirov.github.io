@@ -1,0 +1,20 @@
+extends corp-index
+
+block page
+  include components/common/_breadcrumbs
+  block content
+    .grid-container.margin-top-8: .grid-x.grid-padding-x: .small-24.medium-16.large-18.cell.text-center
+      h1 Бонусное меню
+    .grid-container: .grid-x.grid-padding-x
+      .cell.small-24.medium-8.large-6.medium-order-2
+        include components/site/_loyalty-system-sidebar
+      .cell.auto
+        .content-block
+          a(href="./i/Bonusnoe_Menyu_Programmy_Loyalnosti-1.png",data-fancybox="gallery")
+            img(src='./i/Bonusnoe_Menyu_Programmy_Loyalnosti-1.png' alt='')
+        .content-block
+          a(href="./i/Bonusnoe_Menyu_Programmy_Loyalnosti-2.png",data-fancybox="gallery")
+            img(src='./i/Bonusnoe_Menyu_Programmy_Loyalnosti-2.png' alt='')
+        .content-block
+          a(href="./i/Bonusnoe_Menyu_Programmy_Loyalnosti-3.png",data-fancybox="gallery")
+            img(src='./i/Bonusnoe_Menyu_Programmy_Loyalnosti-3.png' alt='')

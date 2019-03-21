@@ -1,0 +1,16 @@
+.events {
+  &__date {
+    font-size: rem-calc(30);
+    font-weight: 700;
+  }
+  &__time {
+    color: #b71852;
+    font-weight: 400;
+  }
+  &__city {
+    font-weight: 700;
+  }
+  &__link {
+    color: #272727;
+  }
+}

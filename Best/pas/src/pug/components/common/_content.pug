@@ -1,0 +1,36 @@
+.grid-x.grid-padding-x.margin-bottom-3
+  .cell.large-16
+    .blank.blank_slider
+      .market
+        each i in [1,2,3,4,5]
+          .market__slide
+            img(src="./i/slider_pic.png")
+            h3.market__title Нетерпимость к теневому рынку сделает «белый» ритейл технологичнее?
+
+    .grid-x.grid-padding-x.medium-up-2
+      .cell: a(href="#").solution.solution_shadow-orange
+        img(src="./i/rec1.png", alt="")
+      .cell: a(href="#").solution.solution_shadow-primary
+        img(src="./i/rec2.png", alt="")
+
+    .grid-x.grid-padding-x.medium-up-2
+      each i in [1,1,1,1]
+        .cell
+          a(href="#").art
+            .art__img.text-center
+              img(src="./i/art.png", alt="")
+            .art__title Троян Neutrino: безопасен для POS-терминалов, но не для рынка?
+            .art__business С ноября 2017 года клиентам Росбанка из сегмента малого бизнеса стало доступно новое предложение: аренда платёжного терминала.
+
+    .margin-top-6.margin-bottom-12
+      +advert('./i/580.png')
+
+  .cell.large-auto
+    .margin-bottom-10
+      include ../corporate/_subscribe-journal
+    .margin-bottom-10
+      include ../corporate/_expert-forum
+    .margin-bottom-10
+      include ../corporate/_subscribe-block
+
+ 

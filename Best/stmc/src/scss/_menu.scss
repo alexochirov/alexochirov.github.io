@@ -1,0 +1,14 @@
+.menu {
+  a {
+    font-weight: 400;
+    transition: 0s;
+    color: $white;
+
+    &:active,
+    &:focus,
+    &:hover {
+      background: $primary-color;
+      color: $white;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.menu-base {
+  margin-left: rem-calc(0);
+  list-style-type: none;
+  margin-bottom: rem-calc(31);
+  border-bottom: rem-calc(1) solid #0e5872;
+  padding-bottom: rem-calc(23);
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  display: flex;
+
+  &__item {
+    display: inline-block;
+  }
+
+  &__link {
+    color: $secondary-color;
+    text-decoration: none;
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: $lime;
+    }
+  }
+  @include breakpoint(small only) {
+    display: block;
+margin-bottom: rem-calc(10);
+padding-bottom: rem-calc(10);
+    &__item {
+      margin-left: rem-calc(10);
+      margin-right: rem-calc(10);
+    }
+  }
+}

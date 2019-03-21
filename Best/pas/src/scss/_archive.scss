@@ -1,0 +1,41 @@
+.archive {
+
+  &__title {
+    font-family: 'Fira Sans';
+    font-weight: 800;
+    font-size: rem-calc(41);
+    margin-left: rem-calc(15);
+  }
+  &__button {
+    font-weight: 500;
+    margin: 0 0 0 rem-calc(15);
+  }
+
+  &-menu {
+    margin: 0;
+    font-family: 'Fira Sans';
+    font-weight: 800;
+    font-size: rem-calc(22);
+    padding: 0;
+    list-style: none;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+      padding: 0 rem-calc(6);
+    }
+
+    &__link {
+      color: $black;
+      &_active {
+        color: $primary-color;
+      }
+    }
+
+    @include breakpoint(medium down) {
+      justify-content: center;
+      margin-bottom: rem-calc(15);
+    }
+  }
+}

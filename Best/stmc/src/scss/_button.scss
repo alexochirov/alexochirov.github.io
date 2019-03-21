@@ -1,0 +1,28 @@
+.button {
+  text-transform: uppercase;
+  font-weight: 700;
+
+  &.expanded {
+    padding-left: rem-calc(5);
+    padding-right: rem-calc(5);
+  }
+
+  &.hollow {
+    &:active,
+    &:focus,
+    &:hover {
+      background: $primary-color;
+      border-color: $primary-color;
+      color: $white;
+    }
+
+    &.white {
+      &:active,
+      &:focus,
+      &:hover {
+        background: $white;
+        border-color: $white;
+      }
+    }
+  }
+}

@@ -1,0 +1,135 @@
+extends corp-index
+
+block page
+    include components/common/_breadcrumbs
+    block content
+        .grid-container: .grid-x.grid-padding-x: .small-12.medium-16.large-18.cell.padding-top-6.margin-bottom-6
+            h1.text-center Парение «По-царски»
+        .grid-container: .grid-x.grid-padding-x
+            .cell
+                include components/site/_carousel-media-gallery
+        .padding-top-12.padding-bottom-6
+            .grid-container: .grid-x.grid-padding-x
+                .cell.small-24.medium-8.large-6.medium-order-2
+                    include components/site/_mira-spa-sidebar
+                .cell.auto.medium-order-1
+                    article.margin-bottom-8
+                        .grid-container.margin-bottom-8: .grid-x.small-up-1.medium-up-3.advantages-block.margin-top-0
+                            .cell
+                                .advantages-block__icon
+                                    include ../images/icons/therm.svg
+                                .advantages-block__title Температура:
+                                .advantages-block__desc: p 70 – 80°С
+                            .cell
+                                .advantages-block__icon
+                                    include ../images/icons/humidity.svg
+                                .advantages-block__title Влажность:
+
+                                .advantages-block__desc: p 40 — 60%
+                            .cell
+                                .advantages-block__icon
+                                    include ../images/icons/timer.svg
+                                .advantages-block__title Рекомендуем:
+                                .advantages-block__desc: p 10 мин. за один заход
+                    article.content-block
+                        p.lead.margin-bottom-8 Почуствуйте себя «заново родившимися». Методика включает в себя 5-7 заходов в парную в режиме постоянного контраста низкой и высокой температур. В программу включены обтирание тела медом, маслом и горчицей. Программу по достоинству оценят знатоки парения, а новички получат массу ярких впечатлений и заряд позитива.
+                        div.text-center: a.button.large(href='') Записаться
+
+
+                    .price-table.margin-bottom-8
+                        .grid-x.grid-padding-x
+                            .small-24.medium-12.cell
+                                .price-table__item
+                                    .grid-x
+                                        .small-12.cell.align-self-middle
+                                            .price-table__item_left
+                                                include ../images/icons/clock.svg
+                                                p 60 мин.*
+                                        .small-12.cell.align-self-middle
+                                            .price-table__item_right
+                                                p: strong 1740
+                                                    =" "
+                                                    i.fa.fa-rouble
+                            .small-24.medium-12.cell
+                                .price-table__item
+                                    .grid-x
+                                        .small-12.cell.align-self-middle
+                                            .price-table__item_left
+                                                include ../images/icons/clock.svg
+                                                p 120 мин.*
+                                        .small-12.cell.align-self-middle
+                                            .price-table__item_right
+                                                p: strong 3100
+                                                    =" "
+                                                    i.fa.fa-rouble
+                    p.tiny-text.text-center: i *Основное посещение не включено
+                    p: hr
+
+
+
+
+
+                    .grid-x.grid-padding-x.margin-top-6
+                        .cell.small-24.medium-12
+                            article.content-block
+                                p
+                                    b #[i.fa.fa-plus-circle.text-success] Здоровье
+                                    br
+                                    | Программа запускает внутренние механизмы оздоровления, улучшает сопротивляемость организма внешним негативным факторам.
+                                p
+                                    b #[i.fa.fa-plus-circle.text-success] Выносливость
+                                    br
+                                    | Парение прекрасно тренирует сосуды и сердце, делает организм более выносливым к стрессовым ситуациям и физическим нагрузкам.
+                                p
+                                    b #[i.fa.fa-plus-circle.text-success] Чистая и красивая кожа
+                                    br
+                                    | Комплекс процедур выводит из организма шлаки и токсины, прекрасно очищает кожу. Снимает кожные воспаления за счет мощного противовоспалительного и антимикробного эффекта.
+                                p
+                                    b #[i.fa.fa-plus-circle.text-success] Омолаживающий эффект
+                                    br
+                                    | Постоянная практика этой процедуры препятствует преждевременному старению, благодаря улучшению обмена веществ и тонизирующему воздействию на кожу.
+                                p
+                                    b #[i.fa.fa-plus-circle.text-success] Бодрость
+                                    br
+                                    | Прилив сил, ощущение физического и эмоционального обновления на длительный срок.
+                        .cell.small-24.medium-12
+                            article.content-block
+                                p
+                                    b #[i.fa.fa-minus-circle.text-alert] Противопоказания
+                                    br
+                                    | Заболевания в стадии обострения, повышенная температура тела, кожные заболевания, сердечно-сосудистые заболевания, беременность, кровотечение.
+
+                    .grid-x.grid-padding-x: .cell
+                        article.content-block
+                            h3 Контрастные процедуры
+                            p: hr
+                            p Это главный элемент банного процесса, который позволяет запустить врожденные механизмы адаптации к внешним условиям благодаря терморегуляции. С каждым посещением этой процедуры время ее увеличивается, так как сосуды становятся тренированными, а тело выносливым к высокой и низкой температурам.
+                        article.content-block
+                            .callout: p.lead.text-center Контрастные процедуры — главный элемент банного процесса,
+                                br
+                                | который позволяет запустить врожденные механизмы
+                                br
+                                | адаптации к внешним условиям благодаря терморегуляции.
+                                br
+                                | С каждым посещением этой процедуры время ее увеличивается,
+                                br
+                                | так как сосуды становятся тренированными, а тело выносливым
+                                br
+                                |к высокой и низкой температурам.
+                    .grid-container: .grid-x.grid-padding-x.align-center
+                        .medium-24.large-18.cell
+                            .callout.gray-box.padding-6
+                                form.user-form
+                                    .grid-container: .grid-x.align-center: .auto.cell
+                                        label Выберите желаемую дату посещения
+                                            input(type="date")
+                                    .grid-container: .grid-x.align-center: .auto.cell
+                                        label Как вас зовут
+                                            input(type="text")
+                                    .grid-container: .grid-x.align-center: .auto.cell
+                                        label Номер контактного телефона
+                                            input(type="text")
+                                    .grid-container: .grid-x: .cell
+                                        p.tiny-text  Запись на процедуру становится действительной только после подтверждения заказа оператором!
+                                        p.tiny-text Если администратор не может дозвониться до вас в течении трех календарных дней, то заказ аннулируется
+                                    .text-center: a.button.margin-0(href='') Записаться

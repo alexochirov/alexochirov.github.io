@@ -1,0 +1,16 @@
+extends shop-user-personal
+
+block personal
+  .callout
+    p: strong Получать на электронную почту
+    form
+      label.text-white
+        input(type='checkbox' checked required disabled)
+        | Информацию о заказах
+      label.text-white
+        input(type='checkbox')
+        | Сообщения о наших акциях
+      label.text-white
+        input(type='checkbox')
+        | Сообщения про обновления ассортимента
+      button.button Сохранить

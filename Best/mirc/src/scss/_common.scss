@@ -1,0 +1,21 @@
+a {
+  -webkit-transition: color 200ms ease-in-out;
+  -moz-transition: color 200ms ease-in-out;
+  -ms-transition: color 200ms ease-in-out;
+  -o-transition: color 200ms ease-in-out;	
+  transition: color 200ms ease-in-out;
+  text-decoration-skip-ink: none;
+}
+
+table {
+  margin-bottom: 5 * $global-margin;
+
+
+  td {
+    border: rem-calc(2) solid $secondary-color;
+  }
+}
+
+.opacity-0 {
+    opacity: 0;
+}

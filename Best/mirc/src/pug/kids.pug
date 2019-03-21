@@ -1,0 +1,27 @@
+extends corp-index
+
+block page
+  include components/common/_breadcrumbs
+  block content
+    .grid-container: .grid-x.grid-padding-x: .cell.text-center.margin-6
+      h1 «Мира» детям
+      .lead Отличная возможность отметить детский праздник или отдохнуть
+        br
+        | компанией друзей в необычной запоминающейся обстановке
+
+    .padding-top-6.padding-bottom-6
+      .grid-container
+
+        .grid-x.grid-padding-x.small-up-1.medium-up-2.large-up-4(data-equalizer,data-equalize-by-row="true").text-center
+          .cell: .card
+            .card-image: a(href='kids-event.html'): img(src='./i/photo1.jpg' alt='')
+            .card-section(data-equalizer-watch): a(href='kids-event.html'): strong Дни рождения
+          .cell: .card
+            .card-image: a(href='kids-event.html'): img(src='./i/photo2.jpg' alt='')
+            .card-section(data-equalizer-watch): a(href='kids-event.html'): strong Каникулы
+          .cell: .card
+            .card-image: a(href='kids-event.html'): img(src='./i/photo3.jpg' alt='')
+            .card-section(data-equalizer-watch): a(href='kids-event.html'): strong Выпускной в форме квеста
+          .cell: .card
+            .card-image: a(href='kids-event.html'): img(src='./i/photo4.jpg' alt='')
+            .card-section(data-equalizer-watch): a(href='kids-event.html'): strong «Мировые» экскурсии

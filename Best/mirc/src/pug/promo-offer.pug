@@ -1,0 +1,102 @@
+extends corp-index
+
+block page
+  include components/common/_breadcrumbs
+  block content
+      .grid-container: .grid-x.grid-padding-x: .small-24.medium-16.large-18.cell.padding-top-6.margin-bottom-6
+        h1.text-center «Золотой возраст»
+        .lead.text-center Два раза в неделю гости «золотого возраста» посещают Термальный центр
+          br
+          | по специальной цене.
+          =" "
+          strong Предварительная запись не требуется.
+      .grid-container.margin-bottom-6: .grid-x.grid-padding-x
+        .cell
+          include components/site/_carousel-media-gallery
+      .grid-container: .grid-x.grid-padding-x
+        .cell.small-24.medium-8.large-6.medium-order-2
+          include components/site/_mira-spa-sidebar
+        .cell.medium-16.large-18.medium-order-1
+          section.content-block
+            .grid-container: .grid-x.grid-padding-x.small-up-1.medium-up-3.advantages-block
+              .cell
+                .advantages-block__icon
+                  include ../images/icons/list.svg
+                .advantages-block__title Что входит:
+                .advantages-block__desc: p Посещения бань, бассейнов и зон отдыха в зависимости от выбора зала - «Семейный» или «Релакс»*
+              .cell
+                .advantages-block__icon
+                  include ../images/icons/people.svg
+                .advantages-block__title Для кого:
+                .advantages-block__desc: p Женщин и мужчин пенсионного возраста. Вход при предъявлении пенсионного удостоверения.
+              .cell
+                .advantages-block__icon
+                  include ../images/icons/event.svg
+                .advantages-block__title Когда действует:
+                .advantages-block__desc: p Понедельник и четверг
+                  br
+                  | с 9.00 до 15.00**.
+            .grid-container: .grid-x.grid-padding-x.align-center.advantages-block
+                .small-12.medium-12.large-8.cell
+                  .advantages-block__icon
+                    include ../images/icons/hourglass.svg
+                  .advantages-block__title Время посещения:
+                  .advantages-block__desc: p 3 часа
+                .small-12.medium-12.large-8.cell
+                  .advantages-block__icon
+                    include ../images/icons/stuff.svg
+                  .advantages-block__title Что взять с собой:
+                  .advantages-block__desc: p Комплект из 2-х полотенец, халата и тапочек***
+            .grid-container: .grid-x.grid-padding-x: .cell.padding-top-8
+              hr
+              p.tiny-text.padding-top-4
+                | * На время посещения кафе «Bottva» и дополнительных процедур время посещения приостанавливается.
+                br
+                | ** Если на понедельник или четверг выпал праздничный выходной день, то действуют условия посещения и прайс-лист выходного дня. Спецпредложение в этом случае не действует.
+                br
+                | *** Так же их можно взять в прокат на ресепшн. Количество проката ограничено. Проносить в Термальный центр еду, алкоголь и косметику запрещено.
+          section.content-block
+            h3 Стоимость
+            .price-table
+              .grid-x.grid-padding-x
+                .small-24.medium-12.cell
+                  .price-table__item
+                    .grid-x
+                      .small-12.cell.align-self-middle
+                        .price-table__item_left
+                          include ../images/icons/clock.svg
+                          p 3 часа
+
+                      .small-12.cell.align-self-middle
+                        .price-table__item_right
+
+                          span «Семейный» зал, понедельник и четверг,
+                            =" "
+                            strong 9:00 - 15:00
+                          p: strong 490
+                            =" "
+                            i.fa.fa-rouble
+
+                .small-24.medium-12.cell
+                  .price-table__item
+                    .grid-x
+                      .small-12.cell.align-self-middle
+                        .price-table__item_left
+                          include ../images/icons/clock.svg
+                          p 3 часа
+                      .small-12.cell.align-self-middle
+                        .price-table__item_right
+                          span Зал «Релакс», понедельник и четверг
+                            =" "
+                            strong 9:00 - 15:00
+                          p: strong 820
+                            =" "
+                            i.fa.fa-rouble
+          section.content-block
+            h3 Расписание
+            include components/site/_line-calendar
+
+      //.grid-container
+      //  hr.margin-bottom-5
+      //  h3.text-center Другие акции
+      //  include components/site/_other-actions

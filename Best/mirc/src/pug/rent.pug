@@ -1,0 +1,38 @@
+extends corp-index
+
+block page
+  include components/common/_breadcrumbs
+  block content
+    .grid-container.margin-top-8.margin-bottom-6: .grid-x.grid-padding-x: .cell.text-center
+      h1 Аренда
+      .lead Проведите встречу, торжество или просто соберитесь с друзьями
+        br
+        | в необычной запоминающейся обстановке
+    .grid-container
+      .grid-x.grid-padding-x.small-up-1.medium-up-2.large-up-4(data-equalizer,data-equalize-by-row="true").text-center.content-block
+        .cell: .card
+          .card-image: a(href='rent-space.html'): img(src='./i/photo1.jpg' alt='')
+          .card-section(data-equalizer-watch): ar(href='rent-space.html'): h4.margin-0 Большой зал
+        .cell: .card
+          .card-image: a(href='rent-space.html'): img(src='./i/photo2.jpg' alt='')
+          .card-section(data-equalizer-watch): a(href='rent-space.html'): h4.margin-0 Малый зал
+        .cell: .card
+          .card-image: a(href='rent-space.html'): img(src='./i/photo3.jpg' alt='')
+          .card-section(data-equalizer-watch): a(href='rent-space.html'): h4.margin-0 Каминный зал
+        .cell: .card
+          .card-image: a(href='rent-space.html'): img(src='./i/photo4.jpg' alt='')
+          .card-section(data-equalizer-watch): a(href='rent-space.html'): h4.margin-0 Гостиная
+
+      .callout.gray-box.text-center.lead
+        | Учтём ваши пожелания. Ответим на вопросы по аренде зала.
+        br
+        | Подберём нужное оборудование и мебель
+        p: hr
+        p
+          b Светлана:
+          br
+          i.fa.fa-phone.text-size-small
+          | &nbsp; 8-983-138-53-72,
+          br
+          i.fa.fa-paper-plane.text-size-small
+          | &nbsp; #[a(href='mailto:bsa@miracentr.ru') bsa@miracentr.ru]

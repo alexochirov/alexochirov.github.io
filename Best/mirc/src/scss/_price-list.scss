@@ -1,0 +1,171 @@
+.price-list {
+  position: relative;
+  &__table {
+    text-align: center;
+    width: 100%;
+  }
+  &__table--spec {
+    display: table !important;
+    border-radius: 2rem;
+  }
+
+  tbody,
+  td {
+    border: 0;
+    background: transparent;
+  }
+  tbody {
+    width: 100%;
+    tr {
+      width: 100%;
+    }
+    tr:nth-child(even) {
+      background: transparent;
+    }
+    tr,
+    tr:nth-child(even) {
+      border-bottom: 1px dotted $light-gray;
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+  }
+
+  th,
+  td {
+    padding: 1rem 1.4rem;
+    line-height: 1.25;
+  }
+  td {
+    font-size: 1.2rem;
+    font-weight: 700;
+    white-space: nowrap;
+    .fa {
+      font-size: 80%;
+      margin-left: 0.1rem;
+    }
+  }
+  .locked {
+    text-align: right;
+    border-right: 2px solid $light-gray;
+    font-family: "Merriweather", serif;
+  }
+  &__head {
+    font-weight: 400;
+    th:not(.locked) {
+      font-family: 'Fira Sans', 'Roboto', sans-serif;
+      &:not(:last-child) {
+        border-right: 1px solid $light-gray;
+      }
+    }
+  }
+  &__subhead {
+    th {
+      font-size: rem-calc(14);
+      color: $lime;
+      vertical-align: top;
+      padding-top: 0.8rem;
+      padding-bottom: 0.5rem;
+      span {
+        display: block;
+        text-align: center;
+        color: $water;
+        font-weight: 400;
+      }
+    }
+    th:not(:last-child) {
+      border-right: 1px dotted $light-gray;
+    }
+    th:nth-child(3):not(:last-child) {
+      border-right: 1px solid $light-gray;
+    }
+  }
+  &__row {
+    td:not(:last-child) {
+      border-right: 1px dotted $light-gray;
+    }
+    td:nth-child(4):not(:last-child) {
+      border-right: 1px solid $light-gray;
+    }
+    &_sub {
+      th,
+      td {
+        font-weight: 400;
+        font-size: 1rem;
+        &:not(:last-child) {
+          border-right: 1px dotted $light-gray;
+        }
+        hr {
+          margin: 0.5rem 0;
+        }
+      }
+      &:nth-child(odd) {
+        background: lighten($light-gray, 7);
+      }
+    }
+  }
+
+  @media screen and (max-width: 28.124em) {
+    & .locked,
+    & td {
+      font-size: .9rem;
+    }
+
+    &__table th,
+    &__table td {
+      padding: 0.1rem;
+    }
+  }
+
+  @media screen and (max-width: 38.124em) {
+    .grid-container.price {
+      padding: 0 5px;
+    }
+  }
+
+  @media screen and (max-width: 41.874em) {
+    &__table--big {
+      display: none !important;
+    }
+
+    &__table--small {
+      display: block !important;
+    }
+
+    &__table--spec th,
+    &__table--spec &__table td {
+      padding: 0;
+    }
+  }
+
+  @media screen and (max-width: 44.374em) {
+    &__table--spec th,
+    &__table--spec .price-list__table td {
+      padding: 0.1rem;
+    }
+
+    &__table--spec &__row_sub th,
+    &__row_sub td {
+      font-size: .9rem;
+    }
+
+    &__table--spec .locked {
+      width: 10rem;
+    }
+  }
+
+  @include breakpoint(medium down) {
+    &__table {
+      th,
+      td {
+        padding: 0.5rem;
+      }
+    }
+  }
+
+  @media screen and (min-width: 41.875em) {
+    &__table--small {
+      display: none !important;
+    }
+  }
+}

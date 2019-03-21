@@ -1,0 +1,85 @@
+.drop {
+  position: absolute;
+  width: rem-calc(290);
+  left: rem-calc(0);
+  z-index: 3;
+  top: 100%;
+  background: $yellow;
+  display: none;
+  padding: rem-calc(5) rem-calc(0) rem-calc(0);
+
+  &_big {
+    width: rem-calc(430);
+    padding: rem-calc(5) rem-calc(0);
+  }
+
+  &_mini {
+    width: rem-calc(200);
+  }
+
+  &_micro {
+    width: rem-calc(130);
+  }
+
+  &_full {
+    flex-wrap: wrap;
+    background: transparent;
+    @include breakpoint(small down) {
+      background: $yellow;
+    }
+  }
+
+  &__line {
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: rem-calc(0);
+      top: rem-calc(7);
+      display: block;
+      height: calc(100% - 14px);
+      border-left: rem-calc(1) solid $white;
+    }
+  }
+
+  &__link {
+    display: block;
+    color: $white;
+    padding-top: rem-calc(2);
+    padding-bottom: rem-calc(2);
+    font-weight: 400;
+    padding-left: rem-calc(7);
+    padding-right: rem-calc(7);
+    font-size: rem-calc(14);
+    font-family: $font-fira;
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: $white;
+      background-color: rgb(254, 197, 142);
+    }
+    &_full {
+      font-weight: 500;
+      text-transform: uppercase;
+      color: $black;
+      background: transparent;
+      &:hover,
+      &:active,
+      &:focus {
+        background: transparent;
+        color: $primary-color;
+      }
+      @include breakpoint(small down) {
+        color: $white;
+        &:active,
+        &:focus,
+        &:hover {
+          color: $white;
+          background-color: rgb(254, 197, 142);
+        }
+      }
+    }
+  }
+}

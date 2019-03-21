@@ -1,0 +1,65 @@
+.number {
+  position: relative;
+  margin-bottom: rem-calc(40);
+
+  &__poster {
+    margin-bottom: rem-calc(40);
+    box-shadow: 0 0 rem-calc(20) 0 rgba(0, 0, 0, 0.2);
+
+    @include breakpoint(small down) {
+      display: block;
+      margin: 0 auto rem-calc(40) auto;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: rem-calc(10);
+  }
+
+  &__archive {
+    margin: 0 0 rem-calc(40) 0;
+
+    @include breakpoint(medium down) {
+      margin: 0 0 rem-calc(30) 0;
+    }
+  }
+
+  &__title {
+    font-family: $font-fira;
+    font-weight: 900;
+    font-size: rem-calc(40);
+    color: $black;
+    margin-bottom: rem-calc(20);
+
+    @include breakpoint(medium down) {
+      font-size: rem-calc(30);
+    }
+  }
+
+  &__date {
+    display: inline-block;
+    color: $primary-color;
+  }
+
+  &__subtitle {
+    font-family: $font-fira;
+    font-weight: 900;
+    font-size: rem-calc(25);
+    margin-bottom: rem-calc(20);
+
+    @include breakpoint(medium down) {
+      font-size: rem-calc(20);
+    }
+  }
+
+  &__text {
+    font-size: rem-calc(16);
+
+    @include breakpoint(medium down) {
+      font-size: rem-calc(14);
+    }
+  }
+}

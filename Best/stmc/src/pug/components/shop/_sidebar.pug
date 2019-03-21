@@ -1,0 +1,53 @@
+.margin-bottom-6.show-for-small-only
+  span.button.expanded(data-toggle='menu-left')
+    i.fa.fa-lg.fa-bars
+    | &nbsp;Навигация
+  span.button.expanded(data-toggle='filter-left')
+    i.fa.fa-lg.fa-filter
+    | &nbsp;Фильтр
+.hide-for-small-only.callout#menu-left(data-toggler='.hide-for-small-only')
+  ul.menu.vertical
+    li
+      a(href='#') Детский сад
+      ul.menu.vertical.nested
+        li: a(href='#') Инновационное оборудование
+        li: a(href='#') Конструирование
+        li: a(href='#') Мелкая моторика
+        li: a(href='#') Настенные развивающие модули
+        li.active: a(href='#') Наука для дошкольников
+        li: a(href='#') Образовательные комплекты
+        li: a(href='#') Основы математики
+        li: a(href='#') Сенсорное развитие
+        li: a(href='#') Системы хранения
+        li: a(href='#') Физическое развитие
+        li: a(href='#') Изучение языков
+    li: a(href='#') Школа
+    li: a(href='#') Основная образовательная программа
+
+.hide-for-small-only#filter-left(data-toggler='.hide-for-small-only')
+  ul.accordion(data-accordion data-multi-expand='true' data-allow-all-closed='true')
+  
+    li.accordion-item(data-accordion-item)
+      a.accordion-title(href='#'): strong Бренд
+      .accordion-content(data-tab-content)
+        div
+          input#checkbox10(type='checkbox')
+          label(for='checkbox10') Красный
+        div
+          input#checkbox11(type='checkbox')
+          label(for='checkbox11') Синий
+        div
+          input#checkbox12(type='checkbox')
+          label(for='checkbox12') Зеленый
+        div
+          input#checkbox13(type='checkbox')
+          label(for='checkbox13') Белый
+        div
+          input#checkbox14(type='checkbox')
+          label(for='checkbox14') Черный
+  button.button.expanded
+    i.fa.fa-filter.fa-lg
+    | &nbsp;Подобрать
+  button.button.light-gray.expanded
+    i.fa.fa-ban.fa-lg
+    | &nbsp;Сбросить фильтр

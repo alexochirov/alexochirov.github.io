@@ -1,0 +1,28 @@
+.project-card {
+  display: block;
+  border: rem-calc(1) solid $primary-color;
+  border-radius: rem-calc(2);
+  color: $black;
+  height: rem-calc(300);
+  width: rem-calc(280);
+
+  &__image {
+    width: 100%;
+    height: rem-calc(170);
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__wrapper {
+    padding: rem-calc(20 20 0 20);
+  }
+
+  &__title {
+    margin-bottom: rem-calc(10);
+  }
+
+  &__text {
+    margin-bottom: rem-calc(10);
+    font-family: $font-noto;
+  }
+}

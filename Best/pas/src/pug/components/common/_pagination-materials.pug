@@ -1,0 +1,14 @@
+ul.pagination.pagination_bottom
+  li Материалов: 2246
+  li.pagination-previous.disabled
+    include ../../../images/arrow-prev.svg
+  li.current 1
+  for i in [2,3,4,5,6,7,8,9,10,11,12]
+    li
+      a(href='#' title='' aria-label='Страница #{i}') #{i}
+  li.ellipsis
+  li
+    a(href='#' title='' aria-label='Страница 13') 13
+  li.pagination-next
+    a(href='#' title='' aria-label='Следующая страница')
+      include ../../../images/arrow-next.svg

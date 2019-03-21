@@ -1,0 +1,48 @@
+extends corp-index
+block page
+  include components/common/_breadcrumbs
+  block content
+    .grid-container: .grid-x.grid-padding-x: .small-24.medium-16.large-18.cell
+      h1.text-center Сосновый бор
+    .padding-top-6.padding-bottom-6
+      .grid-container: .grid-x.grid-padding-x
+        .cell.small-24.medium-8.large-6.medium-order-2
+          include components/site/_mira-thermes-sidebar
+        .cell.auto.medium-order-1
+          section.content-block
+            h3.text-center Зона «Аква»
+            include components/site/_price-t1
+          section.content-block
+            h3.text-center Зона «Бани»
+            include components/site/_price-t1-2
+          section.content-block
+            h3.text-center Тарифы и акции
+            include components/site/_price-t2-3
+          .grid-container: .grid-x: .cell
+            article.margin-bottom-6
+              ul.list
+                li: b Цены действительны на момент публикации
+                li: b Каждый третий вторник месяца в термальном центра технический день
+                li При превышении лимита посещения, дополнительная тарификация почасовая, с округлением до 1 часа
+                li Стоимость для дедей до 6 лет — 290 рублей, на 3 часа, в любой день. Безлимитное посещение — 420 рублей.
+                li Дети до 7 лет могут посещать «Семейный» зал в любой день, кроме среды и пятницы.
+                li Дети от 7 до 13 лет могут посещать «Семейный» зал в лбой день, кроме пятницы и среды для мальчиков.
+            article.margin-bottom-6
+              p: hr
+              ol.list-num
+                li.tiny-text При предъявлении пенсионного удостоверения (женщины от 55 лет, мужчины от 60 лет)
+                li.tiny-text После окончания действия тарифа "Мамин час" (после 17:00) во вторник и четверг (после 15:00), а также в понедельник и выходные дни вход детяам до 6 лет 290 руб., безлимитное посещение детям до 6 лет 420 руб. Взрослым - согласно времени посещения (только зона «Аква»).
+                li.tiny-text По предъявлении студенческого билета (продленный, очной формы обучения)
+                li.tiny-text В течении всего дня, вход для гостей, старше 14 лет.
+            p
+              hr
+              br
+
+            p.text-center
+              a.text-center(href='price-calculator.html')
+                i.fa.fa-3x.fa-calculator
+                br
+                p.text-center.margin-bottom-0 Калькулятор цены посещения
+
+
+

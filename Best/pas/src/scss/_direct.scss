@@ -1,0 +1,24 @@
+.direct {
+  background: #f6f7fb;
+  font-size: rem-calc(16);
+  font-weight: 400;
+  padding-top: rem-calc(15);
+  padding-bottom: rem-calc(170);
+
+  &__block {
+    margin-bottom: rem-calc(32);
+  }
+
+  &__tel {
+    color: $black;
+  }
+
+  &__mail {
+    display: inline-block;
+    color: $black;
+    border-bottom: rem-calc(1) solid $primary-color;
+  }
+  @include breakpoint(medium down) {
+    padding-bottom: rem-calc(70);
+  }
+}

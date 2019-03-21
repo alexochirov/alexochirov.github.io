@@ -1,0 +1,29 @@
+.net {
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: rem-calc(0);
+  list-style-type: none;
+  justify-content: space-between;
+
+  &__item {
+    margin-right: rem-calc(5);
+  }
+
+  &__link {
+    display: inline-block;
+    text-transform: uppercase;
+    color: $black;
+    font-family: $font-fira;
+    font-weight: 500;
+
+    &:active,
+    &:focus,
+    &:hover {}
+  }
+  @include breakpoint(medium down) {
+    justify-content: center;
+    &__item {
+      margin-left: rem-calc(5);
+    }
+  }
+}

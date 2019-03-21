@@ -1,0 +1,17 @@
+.x-carousel-advantages-gallery {
+  .slick-dots {
+    margin: 0;
+    li {
+      button {
+        background: $lime;
+      }
+      &.slick-active {
+        background: lighten($lime,30);
+        border-radius: 50%;
+        button {
+          background: $water;
+        }
+      }
+    }
+  }
+}

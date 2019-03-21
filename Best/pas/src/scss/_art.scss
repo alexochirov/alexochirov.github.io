@@ -1,0 +1,59 @@
+.art {
+  color: $black;
+  display: block;
+  margin-bottom: rem-calc(20);
+
+  &__title {
+    font-size: rem-calc(20);
+    font-weight: 700;
+    line-height: 1.22;
+    margin-bottom: rem-calc(12);
+    font-family: $font-fira;
+
+    &_big {
+      font-size: rem-calc(25);
+    }
+  }
+
+  &__date {
+    color: $dark-gray;
+    font-family: $font-fira;
+    font-size: rem-calc(12);
+  }
+
+  &__entry {
+    color: $yellow;
+    text-transform: uppercase;
+    margin-right: rem-calc(10);
+    font-weight: 600;
+  }
+
+  &__text {
+    font-size: rem-calc(18);
+  }
+
+  &__short {
+    font-size: rem-calc(16);
+    font-family: $font-noto;
+  }
+
+  &__business {
+    font-size: rem-calc(14);
+    font-family: $font-noto;
+  }
+
+  &__img {
+    margin-bottom: rem-calc(15);
+    text-align: center;
+  }
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: $black;
+
+    .art__title,.art__business,.art__text,.art__short {
+      color: $primary-color;
+    }
+  }
+}

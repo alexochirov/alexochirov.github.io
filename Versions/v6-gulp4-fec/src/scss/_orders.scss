@@ -1,0 +1,315 @@
+.b-orders
+{
+    width: 100%;
+    max-width: rem-calc(535);
+    margin-bottom: rem-calc(30);
+    padding: rem-calc(30);
+
+    border: 1px solid #e2e2e2;
+    &__info
+    {
+        margin-bottom: rem-calc(30);
+        padding-bottom: 30px;
+
+        border-bottom: 1px solid #e2e2e2;
+    }
+    &__status
+    {
+        font-family: segoe ui, Arial, sans-serif;
+        font-size: rem-calc(11);
+        line-height: rem-calc(40);
+
+        display: inline-block;
+
+        width: rem-calc(215);
+        height: rem-calc(40);
+        margin-right: rem-calc(25);
+        margin-left: -30px;
+        padding-left: rem-calc(15);
+
+        text-transform: uppercase;
+
+        color: #fff;
+        &.orange
+        {
+            background: #f5ac1e;
+        }
+        &.green
+        {
+            background: #3da054;
+        }
+        &.gray
+        {
+          background: #ccc;
+        }
+    }
+    &__title
+    {
+        font-family: segoe ui, Arial, sans-serif;
+        font-size: rem-calc(20);
+        font-weight: bold;
+        line-height: rem-calc(40);
+
+        display: inline-block;
+
+        height: rem-calc(40);
+
+        vertical-align: middle;
+        text-transform: uppercase;
+
+        color: #153f93;
+    }
+    &__inform
+    {
+        font-family: segoe ui, Arial, sans-serif;
+        font-size: rem-calc(14);
+
+        color: #4c4c4c;
+        .columns
+        {
+            margin-bottom: rem-calc(5);
+        }
+        &-qw
+        {
+        }
+        &-answ
+        {
+            font-family: 'Conv_SegoeUIBold';
+
+            padding-left: rem-calc(15);
+            &_no-bold
+            {
+                font-family: segoe ui, Arial, sans-serif;
+            }
+        }
+    }
+    &__goods
+    {
+        font-family: ptsanserifreg;
+        font-size: rem-calc(14);
+
+        color: #383838;
+        a
+        {
+            color: #153f93;
+            &:hover
+            {
+                color: #153f93;
+            }
+        }
+    }
+    &__buttons
+    {
+        margin-top: rem-calc(30);
+        padding-top: rem-calc(30);
+
+        border-top: 1px solid #e2e2e2;
+        &-repeat
+        {
+            font-size: .875rem;
+            font-weight: bold;
+            line-height: 46px;
+
+            display: inline-block;
+
+            width: 250px;
+            height: 46px;
+
+            text-align: center;
+            text-transform: uppercase;
+
+            color: #fff;
+            border: none;
+            border-bottom: .1875rem solid #121111;
+            outline: none;
+            background: #262525;
+            &:hover
+            {
+                color: #fff;
+            }
+        }
+        &-cancel
+        {
+            font-family: segoe ui, Arial, sans-serif;
+            font-size: rem-calc(14);
+            font-weight: bold;
+
+            display: inline-block;
+
+            width: calc(100% - 255px);
+            height: 46px;
+            margin-left: rem-calc(30);
+            margin-left: 0;
+            padding-top: 10px;
+
+            text-align: center;
+
+            color: #a1a1a1;
+        }
+        &-invoice {
+          text-transform: uppercase;
+          font-weight: bold;
+          font-size: rem-calc(16);
+          color: #000;
+        }
+    }
+    &__complete
+    {
+        width: 100%;
+        margin: 0;
+
+        border: none;
+        th
+        {
+            font-family: segoe ui, Arial, sans-serif;
+            font-size: rem-calc(16);
+            font-weight: bold;
+
+            min-width: rem-calc(130);
+            padding-bottom: rem-calc(20);
+
+            color: #383838;
+        }
+        td
+        {
+            font-family: segoe ui, Arial, sans-serif;
+            font-size: rem-calc(14);
+
+            padding-top: rem-calc(25);
+            padding-bottom: rem-calc(25);
+
+            color: #383838;
+            a
+            {
+                font-family: segoe ui, Arial, sans-serif;
+                font-size: rem-calc(16);
+
+                color: #153f93;
+                &:hover
+                {
+                    color: #153f93;
+                }
+            }
+        }
+        tr
+        {
+            border-bottom: rem-calc(1) solid #e2e2e2;
+            background: none !important;
+            &:last-child
+            {
+                border-bottom: none;
+            }
+        }
+    }
+}
+@media (max-width:1200px)
+{
+    .b-orders
+    {
+        padding-top: 15px;
+        &__complete
+        {
+            td
+            {
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
+            tr:last-child
+            {
+                td
+                {
+                    padding-bottom: 0;
+                }
+            }
+        }
+    }
+}
+@media (max-width:960px)
+{
+    .b-orders
+    {
+        padding-right: 15px;
+        padding-bottom: 18px;
+        padding-left: 15px;
+        &__info
+        {
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+        }
+        &__status
+        {
+            margin-left: -15px;
+        }
+        &__buttons
+        {
+            margin-top: 20px;
+            padding-top: 20px;
+            &-repeat
+            {
+                width: 230px;
+            }
+            &-cancel
+            {
+                width: calc(100% - 235px);
+            }
+        }
+    }
+}
+@media (max-width:640px)
+{
+    .b-orders
+    {
+        max-width: none;
+        margin-bottom: 20px;
+        &-menu {
+          &__button {
+            padding-left: 7px;
+            padding-right: 7px;
+          }
+        }
+        &_table
+        {
+            padding-left: 13px;
+        }
+        &__complete
+        {
+            th
+            {
+                &:nth-child(even)
+                {
+                    padding-right: 0;
+                }
+                &:nth-child(odd)
+                {
+                    padding-left: 0;
+                }
+            }
+            td
+            {
+                padding-top: 8px;
+                padding-bottom: 8px;
+                &:nth-child(odd)
+                {
+                    padding-left: 0;
+                }
+                &:nth-child(even)
+                {
+                    padding-right: 0;
+                }
+            }
+        }
+        &__buttons
+        {
+            padding-top: 20px;
+            margin-top: 9px;
+            &-repeat
+            {
+                width: 100%;
+            }
+            &-cancel
+            {
+                width: 100%;
+            }
+        }
+    }
+}

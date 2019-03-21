@@ -1,0 +1,44 @@
+.voyage {
+  border: rem-calc(1) solid $medium-gray;
+  font-size: rem-calc(14);
+  position: relative;
+width: 100%;
+  &__img {
+    position: relative;
+    top: rem-calc(-15);
+    left: rem-calc(15);
+    margin-bottom: rem-calc(2);
+  }
+
+  &__time {
+    color: $lime;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: absolute;
+    left: rem-calc(14);
+    width: calc(100% - 28px);
+    bottom: rem-calc(47);
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-size: rem-calc(18);
+    margin-bottom: rem-calc(7);
+    font-weight: 700;
+  }
+
+  &__more {
+    position: absolute;
+    bottom: rem-calc(14);
+    font-weight: 400;
+    width: calc(100% - 28px);
+    left: rem-calc(14);
+    font-size: rem-calc(12);
+  }
+
+  &__main {
+    padding-bottom: rem-calc(67);
+    padding-left: rem-calc(14);
+    padding-right: rem-calc(14);
+  }
+}

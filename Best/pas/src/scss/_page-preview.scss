@@ -1,0 +1,40 @@
+.page-preview {
+  text-align: center;
+  display: block;
+  padding: rem-calc(15);
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  &__image {
+    box-shadow: 0 0 rem-calc(30) 0 rgba(0,0,0,0.20);
+
+    & img {
+      height: inherit;
+    }
+  }
+
+  &__title {
+    display: inline-block;
+    padding: rem-calc(20) 0 0 0;
+    font-family: 'Fira Sans';
+    font-weight: 800;
+    font-size: rem-calc(20);
+    color: $black;
+  }
+  &__date {
+    display: inline-block;
+    margin-left: rem-calc(10);
+    color: $primary-color;
+  }
+  &__desc {
+    padding: 0;
+    font-size: rem-calc(16);
+    color: $black;
+    transition: 0.3s ease;
+  }
+
+  &:hover {
+    .page-preview__desc {
+      color: $primary-color;
+    }
+  }
+}

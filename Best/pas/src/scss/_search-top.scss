@@ -1,0 +1,41 @@
+$search-input-padding: rem-calc(5);
+$search-height: rem-calc(36);
+
+.search-top {
+  width: 100%;
+  margin: rem-calc(8 0 0);
+}
+
+.search-top__input {
+  width: 100%;
+  border: 0;
+  padding: $search-input-padding;
+  line-height: $global-lineheight;
+  margin: 0;
+
+  &:focus,
+  &:hover {
+    border: 0;
+  }
+}
+
+button.search-top__button {
+  border: 0;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  background: $white;
+  height: $search-height;
+  font-size: rem-calc(20);
+  width: $search-height;
+  color: $dark-gray;
+}
+@include breakpoint(medium down) {
+  .search-top {
+    margin-top: rem-calc(18);
+  }
+}
+  @include breakpoint(small only) {
+  .search-top {
+    margin-top: rem-calc(8);
+  } }

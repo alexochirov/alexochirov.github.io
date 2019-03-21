@@ -1,0 +1,84 @@
+extends corp-index
+
+block page
+  .grid-container.subscription
+    .grid-x.grid-padding-x.subscription-head
+      .cell.large-shrink
+        h1.subscription-head__title Подписка на журнал
+      .cell.large-auto.align-self-bottom
+        a(data-open="subscription-form").button.hollow.button_head Оформить подписку
+        a(href="").button.hollow.button_head Купить журнал
+
+    .grid-x.grid-padding-x.padding-bottom-20
+      .cell.large-18
+
+        .grid-x.grid-padding-x.align-middle
+          .cell.medium-auto
+            p Подписка на журнал «Retail & Loyalty» дает возможность быть в курсе последних тенденций бизнеса, наиболее важных событий рынка и индустрии, а также знакомиться с мнениями и аналитическими исследованиями авторитетных специалистов, обеспечивая широкие возможности для профессионального и карьерного роста читателя.
+          .cell.medium-shrink
+            .subscription-frequency
+              .subscription-frequency__num 8
+              .subscription-frequency__title номеров в год
+
+        .grid-x.grid-padding-x.subscription-types
+          .cell
+            h2.subscription-title Подписка на печатную версию журнала:
+          .cell.large-12
+            p.subscription-types__type Подписка на год:
+            ul.no-bullet
+              li Для подписчиков из России – 6488 рублей.
+              li Для подписчиков из других стран – 7192 рубля
+            p.subscription-types__info В стоимость подписки на журнал включена доставка!
+
+            h2.subscription-title Бонусы:
+
+            p Подписчики на печатную версию журнала получают в подарок 2 пароля для доступа к электронной версии и архиву номеров на весь период подписки
+            p Доставка журнала курьерской службой для подписчиков из г. Москвы
+
+          .cell.large-12
+            p.subscription-types__type Подписка на полугодие:
+            ul.no-bullet
+              li для подписчиков из России – 3244 рубля
+              li для подписчиков из других стран – 3596 рублей
+            img.subscription-types__image(src='./i/newspaper.png' alt='Номера')
+
+        .grid-x.grid-padding-x.align-bottom
+          .cell
+            h2.subscription-title Вы можете оформить подписку на электронную версию журнала
+          .cell.medium-auto
+            ul.no-bullet
+              li Подписка на год – #[span.text-primary 5840 рублей]
+              li Подписка на первое полугодие 2019 года – #[span.text-primary 2920 рублей]
+              li.text-size-small Возможна оплата в рублях или евро
+
+            p Подписчики журналов ПЛАС и Retail&Loyalty получат Словарь ПЛАС в подарок.
+
+            p * Если Вы не являетесь подписчиком журнала ПЛАС или Retail&Loyalty, стоимость словаря будет составлять 780 руб., не включая стоимость доставки.
+              br
+              | Подробная информация о Словаре ПЛАС на сайте: #[a.link(href="dictionary.plusworld.ru") dictionary.plusworld.ru]
+          .cell.medium-shrink.text-center.medium-text-left
+            img(src="./i/journal-subscribe.png" alt='Журнал')
+
+        h2.subscription-title.subscription-title_low Читайте журнал Retail & Loyalty в мобильном приложении
+        .blank.blank_low
+          .blank__buttons
+            a(href="#").button.button_app.hollow
+              i.fab.fa-apple.fa-lg
+              | APP STORE
+            a(href="#").button.button_app.hollow
+              i.fab.fa-google-play.fa-lg
+              | GOOGLE PLAY
+
+        .responsive-embed.widescreen.mobile-app
+          iframe(src="https://www.youtube.com/embed/l1-L6z-3ln0")
+
+        h2.subscription-title Варианты оформления подписки
+        ul.no-bullet
+          li Вы можете оформить подписку через агентство
+          li Отправить сообщение на электронную почту #[a.link(href="podpiska@plusworld.ru") podpiska@plusworld.ru]
+          li или позвонить по телефону #[a.text-black(href="tel:+74959611065") +7 495 961 1065 доб. 1207, 1205]
+        .subscription-buttons
+          a.button.button_low.hollow(data-open="subscription-form") Оформить подписку
+          a.button.button_low.hollow(href="") Купить журнал
+
+  include components/reveals/_reveal-subscription-form

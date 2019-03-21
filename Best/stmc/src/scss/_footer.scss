@@ -1,0 +1,106 @@
+.footer {
+  background: $green;
+  color: $white;
+  padding-bottom: rem-calc(17);
+  font-weight: 400;
+  padding-top: rem-calc(58);
+
+  &__tel {
+    font-weight: 700;
+    font-size: rem-calc(30);
+    color: $white;
+  }
+
+  &__info {
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: rem-calc(-33);
+      top: rem-calc(13);
+      width: rem-calc(1);
+      height: calc(100% - 14px);
+      background: $white;
+    }
+  }
+
+  &__net {
+    margin-bottom: rem-calc(44);
+  }
+
+  &__soc {
+    color: $white;
+    margin-right: rem-calc(10);
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: $light-gray;
+    }
+  }
+
+  &__link {
+    color: $white;
+    display: block;
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: $light-gray;
+    }
+  }
+
+  &__heading {
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: rem-calc(45);
+
+    &:after {
+      content: '';
+      position: absolute;
+      background: $white;
+      height: rem-calc(3);
+      width: rem-calc(40);
+      left: 0;
+      right: 0;
+      bottom: rem-calc(-20);
+    }
+  }
+  @include breakpoint(large down) {
+    &__tel {
+      font-size: rem-calc(25);
+    }
+  }
+  @include breakpoint(medium down) {
+    &__info {
+      &:before {
+        display: none;
+      }
+    }
+
+    &__link {
+      margin-bottom: rem-calc(20);
+    }
+  }
+  @include breakpoint(small only) {
+    padding-top: rem-calc(20);
+&__link {
+  margin-bottom: rem-calc(10);
+}
+    &__net {
+      margin-bottom: rem-calc(10);
+    }
+
+    &__company {
+      margin-bottom: rem-calc(20);
+    }
+
+    &__heading {
+      &:after {
+        left: calc(50% - 20px);
+      }
+    }
+  }
+}

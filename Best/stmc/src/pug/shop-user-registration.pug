@@ -1,0 +1,47 @@
+extends shop-regular
+
+block content
+  .grid-container
+    h1 Регистрация
+  .grid-container.padding-bottom-6: .grid-x.grid-padding-x.align-center
+    .cell.small-24.medium-16.large-12
+
+      form(action='shop-user-personal.html').padding-top-7.callout.light-gray
+        .margin-bottom-4= 'Уже регистрировались? '
+        a(href='shop-user-login.html' title='').button Авторизоваться
+        label Наименование юрлица #[span.text-light-gray (будет логином)]
+        input(type='text' required)
+        label ОПФ (ООО/ИП)
+        input(type='text' required)
+        label Система налогообложения (ОСН / УСН) 
+        input(type='text' required)
+        label ИНН
+        input(type='text' required)
+        label Город 
+        input(type='text' required)
+        label Электронная почта
+        input(type='email' required)
+        label Пароль
+        input(type='password' required)
+        p.help-text Не менее 8 символов. Буквы и цифры.
+        label Повторите пароль
+        input(type='password' required)
+        .grid-x.grid-padding-x.margin-bottom-6
+          .cell.small-14.medium-16
+            label Введите текст с изображения
+              input(type='password' required).margin-bottom-0
+          .cell.small-10.medium-8.align-self-bottom
+            img(src='./i/captcha.jpg' alt='' style='width:100%;height:45px;')
+        .grid-x.grid-padding-x.margin-bottom-3
+          .cell.shrink.padding-top-1
+            input#checkbox1(type='checkbox')
+          .cell.auto
+            label(for='checkbox1')
+              | Я ознакомлен и принимаю условия &nbsp;
+              a(href='shop-regular.html' title='') Соглашения об использовании сайта
+              |, в том числе в части обработки и использования моих персональных данных
+        div
+          button.button
+            | Зарегистрироваться &nbsp;
+            i.fa.fa-user-plus.fa-lg
+      

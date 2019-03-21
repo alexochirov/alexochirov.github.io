@@ -1,0 +1,81 @@
+extends shop-regular
+
+mixin _faq-answer
+  p Программа клиента SSL VPN использует TСР порт 4100 для подключения к Firebox c целью загрузки обновлений программного обеспечения клиента и его конфигурационного файла.
+  p Если пользователь не может подключиться через ТСР порт 4100, но при наличии конфигурационного файла он может создать VPN-соединение, но при этом не сможет загрузить обновленный конфигурационный файл.
+  p Пользователь увидит диалоговое окно с ошибкой «Could not download the configuration from the server. Do you want to try to connect using the most recent configuration?». Затем пользователю следует нажать Yes и создать VPN-соединение, только если он не изменил параметры Mobile VPN with SSL в конфигурации Firebox.
+  p Если пользователь не может подключиться к устройству Firebox через порт 4100, так как он заблокирован брандмауэром или ISP, то вы можете пользователю отправить программу клиента и конфигурационный файл. Для более подробной информации см. Manually distribute and install the Mobile VPN with SSL client software and configuration file
+
+block content
+  .grid-container
+    h1 Ваши вопросы
+  .grid-container.padding-bottom-6: .grid-x.grid-padding-x
+    aside.small-24.medium-8.large-6.cell
+      .margin-bottom-6.show-for-small-only(data-responsive-toggle='menu-left', data-hide-for='medium'): span.button.expanded(data-toggle)
+        i.fa.fa-lg.fa-bars
+        | &nbsp;Навигация
+      .callout#menu-left
+        ul.menu.vertical
+          li
+            a(href='#') Частые вопросы
+          li
+            a(href='#') Оплата
+          li
+            a(href='#') Доставка
+          li
+            a(href='#') Условия возврата
+
+    .small-24.medium-16.large-18.cell
+      ul.accordion(data-accordion data-multi-expand="true" data-allow-all-closed="true")
+        li.accordion-item(data-accordion-item)
+          a.accordion-title(href="#"): strong Как зарегистрироваться?
+          div.accordion-content(data-tab-content)
+            +_faq-answer
+        li.accordion-item(data-accordion-item)
+          a.accordion-title(href="#"): strong Почему такая сложная регистрация?
+          div.accordion-content(data-tab-content)
+            +_faq-answer
+        li.accordion-item(data-accordion-item)
+          a.accordion-title(href="#"): strong Установка и настройка ПО клиента Mobile VPN with IPSec для конечных пользователей?
+          div.accordion-content(data-tab-content)
+            +_faq-answer
+        li.accordion-item(data-accordion-item)
+          a.accordion-title(href="#"): strong Какие права необходимы на компьютере для запуска клиента Mobile VPN with SSL?
+          div.accordion-content(data-tab-content)
+            +_faq-answer
+        li.accordion-item(data-accordion-item)
+          a.accordion-title(href="#"): strong Есть ли версия клиента Mobile VPN for IPSec для Mac OS X? [WSM/Fireware XTM v11.x]
+          div.accordion-content(data-tab-content)
+            +_faq-answer
+        li.accordion-item(data-accordion-item)
+          a.accordion-title(href="#"): strong Настройка Mobile VPN with IPSec для работы с Firebox, у которого динамический внешний IP адрес?
+          div.accordion-content(data-tab-content)
+            +_faq-answer
+        li.accordion-item(data-accordion-item)
+          a.accordion-title(href="#"): strong Что такое группы Diffie-Hellman и чем они отличаются друг от друга?
+          div.accordion-content(data-tab-content)
+            +_faq-answer
+
+  
+
+  .grid-container.padding-bottom-6
+    hr.margin-bottom-6
+    h2.text-center
+      | Нет нужного ответа?
+      br
+      | Задайте свой вопрос
+    .grid-x.grid-padding-x.align-center
+      .small-24.medium-18.large-14.cell
+        .callout
+          form
+            label.text-white Представьтесь
+            input(type='text')
+
+            label.text-white Ваш email *
+              span.text-light-gray &#160; для ответа вам на вопрос
+            input(type='email')
+
+            label.text-white Текст вопроса *
+            textarea(rows='3')
+
+            button.button Отправить вопрос

@@ -1,0 +1,37 @@
+.user-form {
+  @extend .price-calculator;
+  input[type="password"],
+  input[type="email"] {
+    border-color: $light-gray;
+    border-radius: 0.5rem;
+    &:focus {
+      border-color: darken($light-gray,10);
+    }
+  }
+  [type="button"] {
+    cursor: pointer;
+    padding: 0.65rem 1rem;
+    font-weight: 300;
+    border-radius: 0.5rem;
+    border: 0;
+    color: #ffffff;
+    background: $water;
+    transition: o.27s ease;
+    &:hover {
+      background: $lime;
+    }
+  }
+  & input[type="submit"] {
+      cursor: pointer;
+      padding: .65rem 1rem;
+      font-weight: 300;
+      border-radius: .5rem;
+      border: 0;
+      color: #fff;
+      background: #0e5872;
+      -webkit-transition: o .27s ease;
+      transition: o .27s ease;
+  }
+}
+
+

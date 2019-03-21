@@ -1,0 +1,52 @@
+.article-preview {
+  margin: rem-calc(40) 0;
+
+  &__image {
+    height: auto;
+    max-height: rem-calc(220);
+    margin-bottom: rem-calc(10);
+  }
+
+  &__category {
+    display: block;
+    margin-bottom: rem-calc(10);
+    color: $primary-color;
+    text-transform: uppercase;
+    font-family: $font-fira;
+    font-size: rem-calc(16);
+  }
+
+  &__date {
+    color: $dark-gray;
+    font-family: $font-fira;
+    font-size: rem-calc(12);
+
+    @include breakpoint(medium down) {
+      margin-top: rem-calc(20);
+    }
+  }
+
+  &__entry {
+    color: $yellow;
+    text-transform: uppercase;
+    margin-right: rem-calc(10);
+    font-weight: 600;
+    font-size: rem-calc(14);
+  }
+
+  &__title {
+    color: $black;
+  }
+
+  &__text {
+    font-family: $font-noto;
+    font-size: rem-calc(18);
+    margin-bottom: 0;
+  }
+
+  &_entry {
+    & .article-preview__image {
+      max-height: unset;
+    }
+  }
+}

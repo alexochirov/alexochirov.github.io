@@ -1,0 +1,242 @@
+/**
+ * @package PickMeUp
+ * @author  Nazar Mokrynskyi <nazar@mokrynskyi.com>
+ * @license 0BSD
+ */
+$border-radius                    : 0em !default;
+$background                       : transparent !default;
+$color                            : #777 !default;
+$background-hover                 : transparent !default;
+$color-hover                      : #88c5eb !default;
+$nav-color                        : $color !default;
+$nav-color-hover                  : $color-hover !default;
+$not-in-month                     : #ccc !default;
+$not-in-month-hover               : #999 !default;
+$disabled                         : #333 !default;
+$selected                         : #fff !default;
+$selected-background              : #b71852 !default;
+$not-in-month-selected-background : #17384d !default;
+$day-of-week                      : $not-in-month-hover !default;
+$today-background                 : $not-in-month-selected-background !default;
+$today-color                      : $color-hover !default;
+
+.pickmeup {
+	background      : $background;
+	border-radius   : $border-radius;
+	-moz-box-sizing : content-box;
+	box-sizing      : content-box;
+	display         : inline-block;
+	position        : absolute;
+	touch-action    : manipulation;
+  width           : 100%;
+
+	& .pmu-instance nav .pmu-prev {
+		background: url(../i/datepicker-arrow.png);
+		background-repeat: no-repeat;
+		background-position-y: rem-calc(8);
+		background-position-x: rem-calc(20);
+		width: rem-calc(30)!important;
+	}
+	& .pmu-instance nav .pmu-prev:hover {
+		background: url(../i/datepicker-arrow.png);
+		background-repeat: no-repeat;
+		background-position-y: rem-calc(8);
+		background-position-x: rem-calc(20);
+		width: rem-calc(30)!important;
+	}
+
+	& .pmu-instance nav .pmu-next {
+		background: url(../i/datepicker-arrow.png);
+		background-repeat: no-repeat;
+		transform: rotate(180deg);
+		background-position-x: rem-calc(20);
+		background-position-y: rem-calc(6);
+		width: rem-calc(30)!important;
+	}
+	& .pmu-instance nav .pmu-next:hover {
+		background: url(../i/datepicker-arrow.png);
+		background-repeat: no-repeat;
+		transform: rotate(180deg);
+		background-position-x: rem-calc(20);
+		background-position-y: rem-calc(6);
+		width: rem-calc(30)!important;
+	}
+
+	* {
+		-moz-box-sizing : border-box;
+		box-sizing      : border-box;
+	}
+
+	&.pmu-flat {
+		position : relative;
+	}
+
+	&.pmu-hidden {
+		display : none;
+	}
+
+	.pmu-instance {
+		display    : inline-block;
+		padding    : 0em;
+		text-align : center;
+		background-color: #f5f5f5;
+		width: 100%;
+
+		.pmu-days {
+			display: flex;
+			flex-flow: row wrap;
+			position: relative;
+			padding: rem-calc(15);
+		}
+		.pmu-day-of-week {
+			display: flex;
+			flex-flow: row wrap;
+			position: relative;
+			background-color: #f5f5f5;
+			padding-left: rem-calc(15);
+			padding-right: rem-calc(15);
+			padding-top: rem-calc(15);
+			div {
+				margin: 4px;
+				flex: 0 1 calc(14.28% - 8px);
+				color: #222222;
+				font-family: "Fira Sans";
+				font-size: 12px;
+				text-transform: uppercase;
+			}
+		}
+		.pmu-button {
+			color           : $color;
+			cursor          : pointer;
+			outline         : none;
+			text-decoration : none;
+			padding: rem-calc(4);
+			flex: 0 1 calc(14.28%);
+			font-family: "Fira Sans";
+			font-size: rem-calc(14);
+		}
+
+		.pmu-today {
+		}
+
+		.pmu-button:hover {
+		}
+
+		.pmu-not-in-month {
+			color : $not-in-month!important;
+			font-family: "Fira Sans";
+			font-size: rem-calc(14);
+		}
+
+		.pm-selecteditem {
+			background: #b71852!important;
+			color: #fff!important;
+		}
+
+		.pmu-disabled,
+		.pmu-disabled:hover {
+			color  : $disabled;
+			cursor : default;
+		}
+
+		.pmu-selected {
+			background : $selected-background;
+			color      : $selected;
+		}
+
+		.pmu-not-in-month.pmu-selected {
+			background : $not-in-month-selected-background;
+		}
+
+		nav:first-child {
+			background-color: #b71852;
+			height: rem-calc(54);
+			padding: rem-calc(10 15);
+		}
+
+		nav {
+			color       : $nav-color;
+			display     : -ms-flexbox;
+			display     : -webkit-flex;
+			display     : flex;
+			line-height : 2em;
+			justify-content: space-between;
+
+			*:first-child :hover {
+				color : $nav-color-hover;
+			}
+
+			.pmu-prev,
+			.pmu-next {
+				display : none;
+				height  : 2em;
+				width   : 1em;
+			}
+			.pmu-month {
+				width : 14em;
+			}
+		}
+
+		.pmu-years,
+		.pmu-months {
+			* {
+				display     : inline-block;
+				line-height : 3.6em;
+				width       : 3.5em;
+			}
+		}
+
+		.pmu-day-of-week {
+			color  : $day-of-week;
+			cursor : default;
+		}
+
+		.pmu-day-of-week,
+		.pmu-days {
+			* {
+				display     : inline-block;
+				line-height : 2em;
+			}
+		}
+
+		.pmu-day-of-week * {
+			line-height : 1.8em;
+		}
+	}
+
+	.pmu-instance:first-child .pmu-prev,
+	.pmu-instance:last-child .pmu-next {
+		display : block;
+	}
+
+	.pmu-instance:first-child,
+	.pmu-instance:last-child {
+		.pmu-month {
+			width : 13em;
+		}
+	}
+
+	.pmu-instance:first-child:last-child .pmu-month {
+		width : 80%;
+		font-family: "Fira Sans";
+		font-size: rem-calc(14);
+		font-weight: 400;
+		text-transform: uppercase;
+		letter-spacing: 0.21px;
+		white-space: nowrap;
+		color: #fff;
+		font-family: "Fira Sans";
+		font-size: rem-calc(14);
+	}
+
+	&:not(.pmu-view-days) .pmu-days,
+	&:not(.pmu-view-days) .pmu-day-of-week,
+	&:not(.pmu-view-months) .pmu-months,
+	&:not(.pmu-view-years) .pmu-years {
+		display : none;
+	}
+}
+
+.datecollection {
+	position: relative;
+}

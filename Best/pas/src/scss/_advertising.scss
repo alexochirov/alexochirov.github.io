@@ -1,0 +1,42 @@
+.advertising {
+  font-size: rem-calc(16);
+
+  &-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    margin-bottom: rem-calc(20);
+    width: 100%;
+    max-width: rem-calc(680);
+
+    &__title {
+      margin-right: rem-calc(10);
+      margin-bottom: 0;
+      font-size: rem-calc(41);
+    }
+
+    @include breakpoint(small down) {
+      text-align: center;
+      justify-content: center;
+    }
+  }
+
+  &-categories {
+    margin-bottom: rem-calc(40);
+    padding-top: rem-calc(30);
+    box-shadow: rem-calc(0 -50 45 -56) rgba(0,0,0,0.3), rem-calc(0 50 45 -56) rgba(0,0,0,0.3);
+
+    &__image {
+      margin-bottom: rem-calc(20);
+    }
+  }
+
+  &-heading {
+    margin-bottom: rem-calc(30);
+    font-family: $font-fira;
+    font-weight: 900;
+    font-size: rem-calc(20);
+    text-align: center;
+  }
+}

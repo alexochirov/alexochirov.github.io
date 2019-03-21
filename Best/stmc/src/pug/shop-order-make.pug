@@ -1,0 +1,138 @@
+extends shop-regular
+
+block content
+  .grid-container
+    h1 Оформление заказа
+  .grid-container.padding-bottom-6: .grid-x.grid-padding-x
+    .cell.small-24.medium-16.large-18#order-container
+      .callout.light-gray.padding-top-7.padding-horizontal-7
+        h2 Товары в заказе
+        .grid-x.grid-padding-x
+          .cell.small-6.medium-4.large-2.margin-bottom-6
+            img(src="./i/pr"  + Math.ceil(Math.random() * 6) + '.jpg' alt='товар')
+          .cell.small-18.medium-10.large-12
+            h6: a(href='shop-product.html') Картридж совместимый SuperFine (SF-CN048AE) 951XL Magenta
+          .cell.small-24.medium-10.large-10
+            .grid-x.grid-padding-x
+              .cell.small-12.medium-14.large-8
+                .margin-bottom-6
+                  strong
+                    | 25 280&nbsp;
+                    i.fa.fa-rub
+                  div
+                    del.text-dark-gray
+                      | 27 150 &nbsp;
+                      i.fa.fa-rub
+              .cell.small-12.medium-10.large-6 1 шт
+              .cell.small-24.large-10
+                .margin-bottom-6
+                  span.text-size-xxlarge
+                    | 25 280&nbsp;
+                    i.fa.fa-rub
+        hr.margin-bottom-6
+        .grid-x.grid-padding-x
+          .cell.small-6.medium-4.large-2.margin-bottom-6
+            img(src="./i/pr"  + Math.ceil(Math.random() * 6) + '.jpg' alt='товар')
+          .cell.small-18.medium-10.large-12
+            h6: a(href='shop-product.html') Картридж совместимый SuperFine (SF-CN048AE) 951XL Magenta
+          .cell.small-24.medium-10.large-10
+            .grid-x.grid-padding-x
+              .cell.small-12.medium-14.large-8
+                .margin-bottom-6
+                  strong
+                    | 25 280&nbsp;
+                    i.fa.fa-rub
+                  div
+                    del.text-dark-gray
+                      | 27 150 &nbsp;
+                      i.fa.fa-rub
+              .cell.small-12.medium-10.large-6 1 шт
+              .cell.small-24.large-10
+                .margin-bottom-6
+                  span.text-size-xxlarge
+                    | 25 280&nbsp;
+                    i.fa.fa-rub
+      .callout.light-gray.padding-top-7.padding-horizontal-7
+        h2 Регион доставки
+        .grid-x.grid-padding-x.large-up-2
+          .cell
+            label
+              strong
+                span.text-primary *&nbsp;
+                | Регион
+              select
+                option Москва
+                option Уфа
+                option Другое
+          .cell    
+            label
+              strong
+                span.text-primary *&nbsp;
+                | Терминал
+              select
+                option Терминал 1
+                option Терминал 2
+                option Терминал 3
+        p.help-text Выберите свой город в списке. Если вы не нашли свой город, выберите "другое местоположение", а город впишите в поле "Город"
+
+      .callout.light-gray.padding-top-7.padding-horizontal-7
+        h2 Покупатель
+        label Наименование юрлица #[span.text-light-gray (будет логином)]
+        input(type='text' required)
+        label ОПФ (ООО/ИП)
+        input(type='text' required)
+        label Система налогообложения (ОСН / УСН) 
+        input(type='text' required)
+        label ИНН
+        input(type='text' required)
+        label Город 
+        input(type='text' required)
+        label Электронная почта
+        input(type='email' required)
+        label Пароль
+        input(type='password' required)
+    
+        label
+          strong
+            span.text-primary *&nbsp;
+            | Комментарий к заказу
+          textarea
+    .cell.small-24.medium-8.large-6
+      div(data-sticky-container).margin-bottom-6
+        .sticky.callout(data-sticky data-anchor="order-container" data-sticky-on="medium" style="width: 100%")
+          .grid-x.grid-padding-x
+            .cell.small-10: strong Товаров на
+            .cell.small-14.text-right: strong
+              | 500
+              = ' '
+              i.fa.fa-rub
+      
+          hr.margin-bottom-6
+          .grid-x.grid-padding-x
+            .cell.small-10 НДС
+            .cell.small-14.text-right
+              | 90
+              = ' '
+              i.fa.fa-rub
+            .cell.small-24: small: em 18%, включен в цену
+    
+          hr.margin-bottom-6
+          .grid-x.grid-padding-x
+            .cell.small-10 Доставка
+            .cell.small-14.text-right
+              | 500
+              = ' '
+              i.fa.fa-rub
+
+          hr.margin-bottom-6
+          .grid-x.grid-padding-x
+            .cell.small-10: strong Итого
+            .cell.small-14.text-right.text-size-xxlarge
+              | 1000
+              = ' '
+              i.fa.fa-rub
+    .cell.small-24.medium-16.large-18.end.text-right
+      a.button(href='shop-order-confirmation.html')
+        i.fa.fa-credit-card
+        = ' '
+        | Оформить заказ

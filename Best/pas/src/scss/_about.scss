@@ -1,0 +1,63 @@
+.about {
+  font-size: rem-calc(16);
+
+  &-heading {
+    margin-bottom: rem-calc(30);
+    font-family: $font-fira;
+    font-weight: 900;
+    font-size: rem-calc(20);
+    text-align: center;
+  }
+
+  &-auditory {
+    margin-top: rem-calc(80);
+
+    @include breakpoint(medium down) {
+      margin-top: rem-calc(40);
+    }
+  }
+
+  &-statistic {
+    &__image {
+      margin-bottom: rem-calc(20);
+    }
+
+    @include breakpoint(medium only) {
+      display: flex;
+
+      &__image {
+        margin-right: rem-calc(20);
+      }
+    }
+
+    @include breakpoint(small down) {
+      text-align: center;
+    }
+  }
+
+  &-categories {
+    margin: rem-calc(40 0);
+    padding-top: rem-calc(30);
+    box-shadow: rem-calc(0 -50 45 -56) rgba(0,0,0,0.3), rem-calc(0 50 45 -56) rgba(0,0,0,0.3);
+
+    &__list {
+      display: flex;
+      justify-content: space-between;
+
+      & .list {
+        &:not(:last-child) {
+          margin-right: rem-calc(20);
+        }
+      }
+
+      @include breakpoint(small down) {
+        flex-wrap: wrap;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: rem-calc(5);
+    font-size: rem-calc(41);
+  }
+}

@@ -1,0 +1,75 @@
+doctype html
+html.no-js(lang='ru')
+  include components/service/_head
+  body
+    include components/common/_offcanvas
+    
+    include components/corporate/_header
+
+    block page
+      include components/site/_select-place
+      include components/mixins/_mixin-spa-program
+      .background-opacity-lime
+        .grid-container: .grid-x.large-up-4.text-center.medium-up-2.small-up-2.padding-top-8
+          a.cell.bath_alt(href="#")
+              .bath_alt__img
+                include ../images/icons/icon-4.svg
+              .bath_alt__text Бани
+          a.cell.bath_alt(href="#")
+              .bath_alt__img
+                include ../images/icons/icon-1.svg
+              .bath_alt__text SPA
+          a.cell.bath_alt(href="#")
+              .bath_alt__img
+                include ../images/icons/icon-3.svg
+              .bath_alt__text Аквазона
+          a.cell.bath_alt(href="#")
+              .bath_alt__img
+                include ../images/icons/icon-2.svg
+              .bath_alt__text Пляж
+
+      .background-opacity-lime.text-center.padding-bottom-10.padding-top-14.margin-bottom-17
+        .grid-container
+          a(href="#").button.large Регистрация в системе лояльности
+      .grid-container
+        .grid-x.grid-padding-x.margin-bottom-10
+          .cell.large-16  
+            h2 Подарочные сертификаты «Мира»
+            p
+              | Каждый гость, заполнивший анкету и ознакомившийся с правилами программы лояльности МИРАМИНУТ, имеет возможность копить Мираминуты за каждое посещение «Термы Мира».
+              br
+              | В накоплении участвуют все позиции в чеке на услуги «Термы Мира». Питание в мокрой зоне кафе не накапливает Мираминуты. Если гость приобретает сертификат – Мираминуты не копятся, а если расплачивается сертификатом — начисляются.
+          .cell.large-8.margin-bottom-11.text-center
+            img.round(src="./i/bitmap.png", alt="")
+          .cell.text-center
+            a(href="#").button.large.small-expanded Купить подарочный сертификат  
+        hr.margin-bottom-17.hide-for-small-only      
+        h2.text-center Акции и новости
+        .action(data-equalizer="card-news")
+          .action__slide
+            +card-news('vo1.png','Акции месяца','Любимые процедуры по цене 900 руб.','Пн – Пт, 12.00 – 23.00')
+          .action__slide
+            +card-news('vo2.png','Мамин час','Специальное предложение — бесплатное посещение для детей до 6 лет', 'Ежедневно, 10.00 – 18.00')
+          .action__slide
+            +card-news('vo3.png','Золотой возраст','Два раза в неделю гости «золотого возраста» посещают Термальный центр по специальной цене','Пн – Пт, 12.00 – 23.00')
+          .action__slide
+            +card-news('vo4.png','День студента','В будний день и в любое время для студентов очного отделения','Пн – Пт, 12.00 – 23.00')
+          .action__slide
+            +card-news('vo1.png','Акции месяца','Пн – Пт, 12.00 – 23.00')
+          .action__slide
+            +card-news('vo2.png','Мамин час','Специальное предложение — бесплатное посещение для детей до 6 лет','Пн – Пт, 12.00 – 23.00')
+          .action__slide
+            +card-news('vo3.png','Золотой возраст','Два раза в неделю гости «золотого возраста» посещают Термальный центр по специальной цене','Пн – Пт, 12.00 – 23.00')
+          .action__slide
+            +card-news('vo4.png','День студента','В будний день и в любое время для студентов очного отделения','Пн – Пт, 12.00 – 23.00')
+          .action__slide
+            +card-news('vo1.png','Акции месяца','Любимые процедуры по цене 900 руб.','Пн – Пт, 12.00 – 23.00')
+
+    
+
+        
+            
+
+
+    include components/corporate/_footer
+    include components/service/_js

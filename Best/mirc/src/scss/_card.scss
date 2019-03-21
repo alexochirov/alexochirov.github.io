@@ -1,0 +1,195 @@
+.card {
+  border: 0;
+  border-radius: 2rem;
+  overflow: hidden;
+  transition: 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 0 0 rgba($water,0.1);
+  &-section {
+    background: lighten($light-gray,10);
+    padding-bottom: 1.5rem;
+    a {
+      text-decoration: none;
+    }
+  }
+  &:hover {
+    box-shadow: 0 0 16px rgba($water,0.35);
+    transform: translateY(-4px);
+  }
+  &-image {
+    position: relative;
+  }
+}
+
+.card-service {
+  @extend .card;
+  &__image {
+    @extend .card-image;
+    position: relative;
+  }
+  &__place {
+    display: inline-block;
+    padding: 0.5rem 1.5rem ;
+    font-size: rem-calc(12);
+    font-weight: 400;
+    background: rgba($water,0.75);
+    border: 1px solid $water;
+    color: #fff;
+    border-radius: 10em;
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  a {
+    text-decoration: none;
+  }
+  &__tag {
+    text-align: center;
+    width:100%;
+    font-size: rem-calc(12);
+    position: absolute;
+    bottom: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+    span {
+      display: inline-block;
+      padding: 0.5rem 0.8rem;
+      font-weight: 400;
+      border-radius: 10em;
+      background: #ffffff;
+      color: $water;
+      box-shadow: 0 0 16px rgba($water,0.5);
+    }
+  }
+  &__section {
+    @extend .card-section;
+  }
+  &__title {
+    text-align: center;
+    font-weight: 400;
+    font-size: rem-calc(20);
+    margin: 0.5rem 0 0.5rem 0;
+    font-family: 'Merriweather','PT Serif',serif;
+  }
+  &__desc {
+    text-align: center;
+    font-size: rem-calc(14);
+    line-height: 1.62;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid $light-gray;
+  }
+  &__time,
+  &__cost{
+    text-align: center;
+  }
+  &__time {
+    color: darken($light-gray,20);
+    margin-bottom: 0.5rem;
+  }
+  &__cost {
+    font-weight: 700;
+    font-size: rem-calc(20);
+    span {
+      display: inline-block;
+      margin-left: rem-calc(2);
+      font-size: 85%;
+    }
+  }
+
+}
+
+.card-news {
+  @extend .card;
+  text-align: center;
+  &__link {
+    text-decoration: none;
+    &:hover {
+      .card-news__desc {
+        text-decoration: underline;
+      }
+    }
+  }
+  &__image {
+    @extend .card-image;
+  }
+  &__section {
+    @extend .card-section;
+  }
+  &__title {
+    @extend .card-service__title;
+  }
+  &__time {
+    @extend .card-service__time;
+    border-top:1px solid $light-gray;
+    padding-top: 1rem;
+    margin-top:1rem;
+  }
+  @include breakpoint(small only) {
+    & img {
+      width: 100%;
+    }
+  }
+}
+.card-price {
+  text-align: center;
+  background: lighten($light-gray,10);
+  padding-bottom: 1rem;
+  &__head {
+    background: $water;
+    padding: 1rem 0;
+    text-align: center;
+    background: $water;
+
+    &_hall {
+      color: $lime;
+      font-weight: 700;
+    }
+    &_group {
+      color: #ffffff;
+    }
+  }
+
+  &__section {
+    padding: 0.5rem 0;
+
+    &_title {
+      text-align: center;
+      font-weight: 700;
+      i {
+        color: $lime;
+      }
+      span {
+        margin-left: 4px;
+      }
+    }
+    &_title {
+      margin-top: 1rem;
+      padding-bottom: 0.25rem;
+      font-size: rem-calc(18);
+      border-bottom: 1px dotted $light-gray;
+    }
+  }
+  &__row {
+    margin-bottom: 1rem;
+    .cell {
+      @extend .align-self-middle;
+    }
+
+    &_days {
+      text-align: center;
+      font-size: rem-calc(14);
+      line-height: 1.2;
+      margin-bottom: 0.5rem;
+    }
+    &_cost {
+      font-size: rem-calc(18);
+      text-align: center;
+      font-weight: 700;
+      i {
+        font-size: 85%;
+        margin-left: 2px;
+      }
+    }
+  }
+}

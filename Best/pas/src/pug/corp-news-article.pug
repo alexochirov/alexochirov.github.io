@@ -1,0 +1,97 @@
+extends corp-index
+
+block page
+  .grid-container: .grid-x.grid-padding-x.page
+    .cell.medium-9.large-6
+      include components/corporate/_left-side
+      include components/corporate/_figure-day
+
+    .cell.auto
+      .grid-x.page-head
+        .cell.small-21.small-order-1.medium-order-1.medium-13.large-order-1.large-9
+          a(href="#").button.button_low.hollow Сети и поставщики
+        .cell.small-24.small-order-3.medium-order-2.medium-11.large-order-2.large-8.page-head__time
+          include ../images/time.svg
+          span 20 Июля 2018, 14:20
+        .cell.small-24.small-order-4.medium-11.medium-order-4.large-order-3.large-6.page-head__view
+          include ../images/view.svg
+          span 19 просмотров
+        .cell.small-3.small-order-2.medium-order-3.medium-13.large-order-4.large-1
+          a.page-head__print(href="")
+            include ../images/print.svg
+      .page-news
+        h1.page-news__title Магнит сможет напрямую закупать лекарства
+        .grid-x
+          .cell.large-12
+            p.font-italic Группа «М.Видео-Эльдорадо», крупнейшая российская розничная компания на рынке электроники и бытовой техники, входящая в ПФГ САФМАР Михаила Гуцериева, проанализировала спрос на цифровую электронику в преддверии нового учебного и бизнес года.
+          .cell.large-12
+            p.page-news__embed
+              img.page-news__embed__img(src="./i/news-1.png" alt="")
+              | Фото: название сайта
+        p Структура «Магнита», краснодарское АО «Тандер», в начале сентября приобрела 100% в московском ООО «Фармасистемс», следует из данных «СПАРК-Интерфакс». В «Магните» подтвердили факт сделки. «Фармасистемс» создана в 2017 году, предыдущим владельцем компании был Никита Шестерников. В мае текущего года ООО получило лицензию Росздравнадзора на осуществление фармацевтической деятельности.
+        .grid-x
+          .cell.medium-13.large-12
+            .page-shortcard
+              .page-shortcard__title Читайте также
+              img(src="./i/news-1.png" alt="").page-shortcard__image
+              a(href="").page-shortcard__text Около семи тысяч участников рынка подключились к Национальному каталогу товаров
+          .cell.medium-11.large-12
+            p Как пояснили в «Магните», приобретение «Фармасистемс» связано с развитием собственной аптечной сети ритейлера. «Фармасистемс обладает оптовой фармацевтической лицензией и будет осуществлять закупки лекарственных средств напрямую у производителей для обеспечения аптечной розницы»,— заявил представитель ритейлера.
+
+        .margin-bottom-10
+          +advert('./i/580.png')
+
+        p Пилотный проект собственных аптек «Магнит» запустил в 2017 году. В рамках него была открыта 51 аптека (на площадях магазинов «Магнит») в Краснодарском крае, Ростовской области и Адыгее. «Тестирование показало, что объекты востребованы у покупателей и отвечают их актуальным потребностям»,— утверждают в пресс-службе «Магнита».
+
+        p.page-news__source Источник: М.Видео и Эльдорадо
+
+        .page-tags
+          .page-tags__title Теги:
+          a(href="").button.button_tag Москва
+          a(href="").button.button_tag Правительство
+          a(href="").button.button_tag Отставка
+
+        .page-share
+          h5.page-share__title Понравился материал? Поделись
+          a(href="")
+            i.fab.fa-facebook-f.fa-lg.page-share__link
+          a(href="")
+            i.fab.fa-twitter.fa-lg.page-share__link
+          a(href="")
+            i.fab.fa-telegram-plane.fa-lg.page-share__link
+
+        form(action="#").page-newsletter
+          .page-newsletter__title
+            span.page-newsletter__count 8500
+            | подписчиков новостей получили этот материал
+          .page-newsletter__form
+            input.page-newsletter__input(type="text" placeholder="Подпишитесь, на новостную рассылку")
+            button(type="submit").page-newsletter__submit
+              i.fas.fa-arrow-right.fa-lg
+
+        .blank.blank_subscribe
+          .blank__back
+          .blank__container
+            .blank__triangle
+          .grid-x.align-middle
+            .cell.small-4
+              img(src="./i/subscribe-channel.png" alt="")
+            .cell.small-20
+              .blank__title
+                | Подписывайтесь на канал&nbsp;
+                span.text-primary RETAIL-LOYALTY.ORG &nbsp;
+                | на Яндекс.Дзен&nbsp;
+
+        .margin-bottom-10
+          img(src="./i/facebook-comments.png" alt="")
+
+        include components/corporate/_read-also
+
+
+    .cell.large-6
+      .margin-bottom-10
+        include components/corporate/_subscribe-journal
+      .margin-bottom-10
+        include components/corporate/_expert-forum
+      .margin-bottom-10
+        include components/corporate/_subscribe-block

@@ -1,0 +1,23 @@
+.get-mobile {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: rem-calc(20);
+
+  &__title {
+    margin-right: rem-calc(10);
+    font-family: $font-fira;
+    font-weight: 700;
+    font-size: rem-calc(16);
+    color: $primary-color;
+  }
+
+  &__links {
+
+  }
+
+  &__link {
+    margin: rem-calc(0 10);
+    height: rem-calc(25);
+  }
+}
