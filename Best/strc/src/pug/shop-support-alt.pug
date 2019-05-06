@@ -1,0 +1,15 @@
+extends shop-regular
+block content
+  .grid-container.text-center
+    h1 Ваши вопросы
+  .section
+    .grid-container: .grid-x.grid-padding-x
+      aside.small-24.medium-8.large-6.cell
+        include components/common/_side
+
+      .small-24.medium-16.large-18.cell
+        include components/common/_faq
+
+  .grid-container
+    hr.margin-bottom-3
+  include components/_site/_ask-question

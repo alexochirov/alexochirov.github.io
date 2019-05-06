@@ -1,0 +1,6 @@
+.padding-top-12.padding-bottom-6
+    .grid-container: .grid-x.grid-padding-x.small-up-2.medium-up-3.large-up-6
+        each item, img in {"./images/delivery.svg":"Бесплатная доставка от 1200 рублей", "./images/ecommerce.svg":"Доставка по всей России", "./images/schedule.svg":"Доставка от 3 до 10 дней", "./images/wallet.svg":"Защищённый платёж", "./images/save-money.svg":"Гибкая система скидок", "./images/parcel.svg":"Сборка в день доставки"}
+            .cell.text-center
+                .margin-bottom-2: img(src=img alt=item style='height: 70px; width: 70px')
+                .margin-bottom-6= item

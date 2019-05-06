@@ -1,0 +1,32 @@
+.month {
+  &__block {
+    padding-top: rem-calc(116);
+    padding-bottom: rem-calc(100);
+    padding-left: calc(100% - 650px);
+    background: $tertiary;
+    padding-right: rem-calc(140);
+  }
+
+  &__slider {
+    padding-top: rem-calc(116);
+    background: $light-gray;
+    height: 100%;
+    padding-bottom: rem-calc(20);
+    padding-left: rem-calc(146);
+    padding-right: calc(100% - 650px);
+  }
+  @media (max-width: 1350px) {
+    &__block,
+    &__slider {
+      padding-left: rem-calc(15);
+      padding-right: rem-calc(15);
+    }
+  }
+  @include breakpoint(medium down) {
+    &__block,
+    &__slider {
+      padding-bottom: rem-calc(10);
+      padding-top: rem-calc(30);
+    }
+  }
+}

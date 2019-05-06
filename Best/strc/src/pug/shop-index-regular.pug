@@ -1,0 +1,26 @@
+doctype html
+html.no-js(lang='ru')
+  include components/service/_head
+  body
+    include components/mixins/_mixin-nested-menu
+    include components/shop/_header
+    include components/shop/_mixin-product-tile
+    include components/shop/_mixin-product-line
+    include components/mixins/_mixin-block-title
+
+    include components/shop/_add-to-favourites-auth-popup
+    .grid-x.grid-padding-x
+      .cell.small-24.medium-8.large-6.s-container(data-sticky-container).small-order-2.medium-order-1.strainer
+        .sticky.strainer__cont(data-sticky,data-top-anchor="primaryContent:top",data-btm-anchor="primaryContent:bottom", data-margin-top="11")
+      
+          include components/shop/_sidebar-sale
+      .cell.small-24.medium-16.large-18.small-order-1.medium-order-2#primaryContent
+        include components/common/_breadcrumbs
+        block products
+    .grid-container.fluid
+      block addContent
+
+    .grid-container: .grid-x.grid-padding-x: .cell: hr
+    include components/shop/_benefits
+    include components/shop/_footer
+    include components/service/_js

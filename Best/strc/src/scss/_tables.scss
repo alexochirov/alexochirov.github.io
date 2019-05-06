@@ -1,0 +1,11 @@
+.white-table {
+  & tbody tr {
+    color: unset;
+    background-color: unset;
+  }
+  & tbody th,
+  & tbody td {
+    text-align: center;
+    border: 1px solid #40794c;
+  }
+}

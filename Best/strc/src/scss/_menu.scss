@@ -1,0 +1,78 @@
+.menu {
+  font-size: rem-calc(15);
+
+  &.accordion-menu .is-accordion-submenu-parent:not(.has-submenu-toggle) > a {
+    position: relative;
+
+    &:after {
+      font-size: rem-calc(12);
+      position: absolute;
+      transition: 0.3s;
+      left: rem-calc(0);
+      display: block;
+      content: "\f105";
+      top: rem-calc(9);
+      right: auto;
+      z-index: 3;
+      font-family: FontAwesome;
+      margin: rem-calc(0);
+      border: rem-calc(0);
+      width: auto;
+      height: auto;
+    }
+  }
+
+  &.nested .is-accordion-submenu-parent:not(.has-submenu-toggle) > a:after {
+    top: rem-calc(7);
+  }
+
+  &.accordion-menu .is-accordion-submenu-parent[aria-expanded='true'] > a::after {
+    transform: rotate(90deg);
+  }
+
+  a {
+    &:active,
+    &:focus,
+    &:hover {
+      background: $primary-color;
+      color: $white;
+    }
+  }
+
+  .menu__link {
+    color: $white;
+    padding-top: rem-calc(8);
+    padding-bottom: rem-calc(8);
+    font-weight: 600;
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: $tertiary;
+    }
+
+    &_green {
+      color: $primary-color;
+
+      &:active,
+      &:focus,
+      &:hover {
+        background: transparent;
+        color: darken($green, 10);
+      }
+    }
+  }
+
+  .is-accordion-submenu .menu__link {
+    font-weight: 400;
+    padding-left: rem-calc(19);
+    color: $white;
+    font-size: rem-calc(13);
+    padding-top: rem-calc(7);
+    padding-bottom: rem-calc(7);
+
+    &_third {
+      padding-left: rem-calc(12);
+    }
+  }
+}

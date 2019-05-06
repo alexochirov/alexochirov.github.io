@@ -1,0 +1,71 @@
+extends shop-index-regular
+block products
+  
+  h1 Мебель для переговорной комнаты
+  include components/_site/_tagline
+  .grid-x.grid-padding-x
+    .cell.auto.medium-shrink
+      button.button.main.dropdown(data-toggle='sort-dropdown' data-position="bottom" data-alignment="left") По популярности
+      #sort-dropdown.dropdown-pane(data-dropdown)
+        ul.menu.vertical
+          li: a(href='') Сначала новинки
+          li: a(href='') Сначала дешёвые
+          li: a(href='') Сначала дорогие
+          li.active: a(href='') По размеру скидки
+          li: a(href='') По популярности
+    .cell.show-for-medium.auto
+    .cell.shrink
+      a.button.expanded.main(href='shop-compare.html')
+        i.fa.fa-lg.fa-balance-scale.hide-for-medium-only
+        span.hide-for-small-only &nbsp;Сравнить:
+        | &nbsp;5
+
+  +blockTitle('Столы для переговорной')
+  .grid-x.grid-padding-x.small-up-1.medium-up-1.large-up-2.xlarge-up-4(data-equalizer data-equalize-by-row="true")
+    +productTile('Комби-перфоратор Metabo KHE 2650', false, 'novel')
+    +productTile('Дрель-шуруповёрт RYOBI R18DDP-LL13G', false, 'lead')
+    +productTile('Лобзик Metabo STEB 65 Quick', false, 'action')
+    +productTile('Торцовочная пила Ryobi EMS254L', true)
+  +blockTitle('Стулья для переговорной')
+  .grid-x.grid-padding-x.small-up-1.medium-up-1.large-up-2.xlarge-up-4(data-equalizer data-equalize-by-row="true")
+    +productTile('Дрель-шуруповёрт RYOBI R18DDP-LL13G', false)
+    +productTile('Лобзик Metabo STEB 65 Quick', false)
+    +productTile('Комби-перфоратор Metabo KHE 2650', false)
+    +productTile('Дрель-шуруповёрт RYOBI R18DDP-LL13G', false)
+  +blockTitle('Аксессуары')
+  .grid-x.grid-padding-x.small-up-1.medium-up-1.large-up-2.xlarge-up-4(data-equalizer data-equalize-by-row="true")
+    +productTile('Лобзик Metabo STEB 65 Quick', false)
+    +productTile('Торцовочная пила Ryobi EMS254L', true)
+    +productTile('Дрель-шуруповёрт RYOBI R18DDP-LL13G', false)
+    +productTile('Лобзик Metabo STEB 65 Quick', false)
+  +blockTitle('Офисные перегородки для переговорной')
+  .grid-x.grid-padding-x.small-up-1.medium-up-1.large-up-2.xlarge-up-4(data-equalizer data-equalize-by-row="true")
+    +productTile('Комби-перфоратор Metabo KHE 2650', false)
+    +productTile('Дрель-шуруповёрт RYOBI R18DDP-LL13G', false)
+    +productTile('Лобзик Metabo STEB 65 Quick', false)
+    +productTile('Торцовочная пила Ryobi EMS254L', true)
+  +blockTitle('Кресла для переговорной')
+  .grid-x.grid-padding-x.small-up-1.medium-up-1.large-up-2.xlarge-up-4(data-equalizer data-equalize-by-row="true")
+    +productTile('Дрель-шуруповёрт RYOBI R18DDP-LL13G', false)
+    +productTile('Лобзик Metabo STEB 65 Quick', false)
+    +productTile('Комби-перфоратор Metabo KHE 2650', false)
+    +productTile('Дрель-шуруповёрт RYOBI R18DDP-LL13G', false)
+  +blockTitle('Диваны для переговорной')
+  .grid-x.grid-padding-x.small-up-1.medium-up-1.large-up-2.xlarge-up-4(data-equalizer data-equalize-by-row="true")
+    +productTile('Лобзик Metabo STEB 65 Quick', false)
+    +productTile('Торцовочная пила Ryobi EMS254L', true)
+    +productTile('Дрель-шуруповёрт RYOBI R18DDP-LL13G', false)
+    +productTile('Лобзик Metabo STEB 65 Quick', false)
+  .text-center
+    include components/common/_pagination
+block addContent
+  .grid-x.grid-padding-x: .cell: hr.margin-bottom-6
+  .grid-container
+    h2 Вы смотрели
+  .grid-x.grid-padding-x.small-up-1.medium-up-3.large-up-4.xlarge-up-6(data-equalizer data-equalize-by-row="true")
+    +productTile('Комби-перфоратор Metabo KHE 2650', false)
+    +productTile('Дрель-шуруповёрт RYOBI R18DDP-LL13G', false)
+    +productTile('Лобзик Metabo STEB 65 Quick', false)
+    +productTile('Торцовочная пила Ryobi EMS254L', true)
+    +productTile('Дрель-шуруповёрт RYOBI R18DDP-LL13G', false)
+    +productTile('Лобзик Metabo STEB 65 Quick', false)

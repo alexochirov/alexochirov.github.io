@@ -1,0 +1,13 @@
+.gradient-container {
+  @include breakpoint(medium up) {
+    background: linear-gradient(90deg, $primary-color, $primary-color 50%, $light-gray 50%);
+  }
+
+  &__left-cell {
+    background-color: $primary-color;
+  }
+
+  &__right-cell {
+    background-color: $light-gray;
+  }
+}

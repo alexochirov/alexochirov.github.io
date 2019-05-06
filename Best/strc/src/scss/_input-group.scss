@@ -1,0 +1,57 @@
+.input-group {
+  &_dark {
+    border: rem-calc(2) solid $dark-gray;
+    border-radius: rem-calc(6);
+    margin-bottom: rem-calc(25);
+  }
+
+  &-button {
+    &_white {
+      padding-right: rem-calc(18);
+
+      button {
+        cursor: pointer;
+        color: $white;
+        font-size: rem-calc(20);
+      }
+    }
+  }
+
+  .input-group-field {
+    
+    &_dark {
+      color: $dark-gray;
+      border-bottom: rem-calc(0);
+      padding-left: rem-calc(30);
+      background: none;
+      height: rem-calc(46);
+      padding-right: rem-calc(10);
+
+      &:active,
+      &:focus,
+      &:hover {
+        border-bottom: rem-calc(0);
+      }
+
+      &::-webkit-input-placeholder {
+        color: $dark-gray;
+        font-weight: 600;
+      }
+
+      &::-moz-placeholder {
+        color: $dark-gray;
+        font-weight: 600;
+      }
+
+      &:-moz-placeholder {
+        color: $dark-gray;
+        font-weight: 600;
+      }
+
+      &:-ms-input-placeholder {
+        color: $dark-gray;
+        font-weight: 600;
+      }
+    }
+  }
+}

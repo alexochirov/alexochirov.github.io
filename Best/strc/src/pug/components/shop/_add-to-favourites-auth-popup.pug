@@ -1,0 +1,14 @@
+#add-to-favourites-auth-popup.reveal(data-reveal)
+  .grid-x.grid-padding-x
+    .medium-12.cell
+      img(src="./i/ta"  + Math.ceil(Math.random() * 4) + '.jpg' alt='изображение')
+
+    .small-24.medium-12.text-center.cell
+      h4 Товар добавлен в список любимых товаров!
+      p Чтобы сохранить список, вам нужно:
+      a(href='login.html', title='').button.expanded Войти
+      p или
+      a(href='login.html', title='').button.expanded Зарегистрироваться
+
+  button.close-button(data-close aria-label="Закрыть")
+    span(aria-hidden="true") &times;

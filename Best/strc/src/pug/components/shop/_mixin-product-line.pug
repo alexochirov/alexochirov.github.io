@@ -1,0 +1,77 @@
+mixin productLine(discount, onDemand, inCart, inFavourites)
+  .grid-x.grid-padding-x
+    .cell.small-8.medium-6
+      .margin-bottom-6: img(src="./i/ta"  + Math.ceil(Math.random() * 4) + '.jpg' alt='Товар')
+    .cell.small-16.medium-18
+      .grid-x.grid-padding-x
+        .cell.small-24.medium-14
+          h5
+            if discount
+              .margin-bottom-2
+                span.label.purple
+                  i.fa.fa-star-o
+                  | &nbsp;Акция
+
+            a(href='shop-product.html') Кресло руководителя «Advantage» XXL
+            .text-size-small.text-medium-gray арт. 123456
+          .margin-bottom-3: a.text-gray.text-size-small.text-underline(href='shop-catalog.html') Мебель для руководителя
+        .cell.small-24.medium-10.large-8.large-offset-2
+          if onDemand
+            .margin-bottom-6
+              .label.medium-gray Нет в наличии&nbsp;
+          else
+            .margin-bottom-6
+              strong.text-size-xxlarge
+                | 1&nbsp;250&nbsp;
+                i.fa.fa-rub
+              if discount
+                br
+                del.text-dark-gray
+                  | 1&nbsp;750&nbsp;
+                  i.fa.fa-rub
+      .grid-x.grid-padding-x
+        .cell.small-24.medium-14.align-self-middle
+          ul.margin-bottom-3.hide-for-small-only.user-info__list.margin-bottom-4
+            li
+              h4.display-inline Гарантия:&nbsp;
+              | 1 год
+            li
+              h4.display-inline  Глубина:&nbsp;
+              | 42 см
+            li
+              h4.display-inline Цвет:&nbsp;
+              | Красный
+            li
+              h4.display-inline Страна:&nbsp;
+              | Китай
+          .margin-bottom-6
+            if !inFavourites
+              a.text-dark-gray(data-open="add-to-favourites-auth-popup")
+                i.fa.fa-heart-o
+                | &nbsp;Запомнить
+
+            else
+              a.text-success(href='' title='Удалить из запомненных').display-inline-block
+                i.fa.fa-heart
+                | &nbsp;Запомнено
+            | &nbsp;&nbsp;
+            a.text-ptimary.display-inline-block(href='shop-compare.html' title='')
+              i.fa.fa-balance-scale
+              | &nbsp;Сравнить
+        .cell.small-24.medium-10.large-8.large-offset-2.align-self-bottom
+          if onDemand
+            .margin-bottom-6
+              a(href='#' title='')
+                i.fa.fa-bell-o
+                | &nbsp;Заказать
+          else
+            .margin-bottom-6
+              if inCart
+                a(href='shop-cart.html' title='')
+                  span.dark-gray
+                    i.fa.fa-check.fa-lg
+                    | &nbsp;В корзине
+              else
+                a(href='shop-cart.html' title='').button.margin-bottom-0
+                  i.fa.fa-shopping-basket
+                  | &nbsp;Купить

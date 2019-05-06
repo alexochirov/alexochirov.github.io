@@ -1,0 +1,75 @@
+@media print {
+    @page {
+        margin-top: 1cm;
+    }
+
+    .print-flex-column {
+        flex-direction: column !important;
+    }
+
+    .print-width-100 {
+        width: 100% !important;
+    }
+
+    .print-margin-left-auto {
+      margin-left: auto !important;
+    }
+
+    .print-text-align-right {
+      text-align: right !important;
+    }
+
+    .print-top-text p {
+      font-size: 0.8rem;
+      margin-bottom: 0;
+    }    
+
+    .armchair__img {
+        text-align: center;
+        border: none !important;
+    }   
+
+    .table-scroll, .user-table {
+        page-break-inside: avoid;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    a[href]:after {
+        content: '' !important;
+    }
+
+    .header, .breadcrumbs, .footer {
+        display: none !important;
+    }
+
+    #product-tab-spec {
+        display: block !important;
+        padding-top: 0;
+    }
+
+    #product-tab-spec p {
+        margin: 0;
+    }
+
+    .section, #product-tab-spec-label {
+        padding: 0 !important;
+    }
+
+    .tabs-title a, .complete-kit.tabs-panel {
+        padding: 0 !important;
+    }
+
+    .example > div {
+        margin-bottom: 0 !important;
+    }
+
+    .sticky.armchair,
+    .sticky.is-anchored,
+    .sticky {
+        position: static !important;
+        transform: none !important;
+    }
+}

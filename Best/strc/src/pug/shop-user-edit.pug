@@ -1,0 +1,31 @@
+extends shop-user-personal
+
+block personal
+
+    .user-info: fieldset.fieldset.user-info__fieldset
+        form
+            label Имя *
+                input(type='text' required)
+
+            label Фамилия
+                input(type='text')
+
+            label Электронная почта
+                input(type='email')
+
+            label Контактный телефон *
+                input(type='text' required)
+
+            label Организация
+                input(type='text')
+
+            label Должность
+                input(type='text')
+
+            label Новый пароль
+                input(type='password')
+
+            label Подтверждение пароля
+                input(type='password')
+
+            button.button Сохранить

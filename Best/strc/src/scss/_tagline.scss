@@ -1,0 +1,25 @@
+.tagline {
+  border: 0;
+  text-align: center;
+  background: #f9f9f9;
+
+  &__link {
+    display: inline-block;
+    padding:rem-calc(4 8);
+    background: white;
+    border: rem-calc(1) solid $green;
+    border-radius: 10em;
+    margin: 0 0.5rem 0.5rem 0;
+    font-size: rem-calc(11);
+    font-weight: 400;
+
+    &:active,
+    &:focus,
+    &:hover,
+    &.active {
+      background: $green;
+      color: $white;
+      border-color: $green;
+    }
+  }
+}

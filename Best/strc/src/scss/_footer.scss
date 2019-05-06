@@ -1,0 +1,60 @@
+.footer {
+  background: #292929;
+  border-bottom: rem-calc(2) solid $dark-gray;
+  color: $dark-gray;
+  padding-bottom: rem-calc(33);
+  padding-top: rem-calc(40);
+  font-weight: 700;
+  font-size: rem-calc(14);
+
+  &__copy {}
+
+  &__cetera {
+    color: $dark-gray;
+  }
+
+  &__block {
+    display: flex;
+    margin-bottom: rem-calc(20);
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  &__soc {
+    color: $white;
+    display: inline-block;
+    font-size: rem-calc(29);
+    width: rem-calc(30);
+    line-height: 1;
+    text-align: center;
+  }
+
+  &__hr {
+    border-color: $dark-gray;
+    margin-bottom: rem-calc(34);
+  }
+
+  &__link {
+    color: $white;
+    font-size: rem-calc(14);
+    font-weight: 600;
+    display: block;
+    margin-bottom: rem-calc(10);
+  }
+
+  &__info {
+    margin-top: rem-calc(14);
+    color: $white;
+    display: block;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  @include breakpoint(medium down) {
+    &__info {
+      margin-bottom: rem-calc(10);
+    }
+  }
+  @include breakpoint(small only) {
+    padding-top: rem-calc(10);
+  }
+}

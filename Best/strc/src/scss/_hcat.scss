@@ -1,0 +1,131 @@
+.hcat {
+  list-style-type: none;
+  margin-left: rem-calc(0);
+  background: $tertiary;
+  padding: rem-calc(0);
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  margin-bottom: 0;
+
+  &__img {
+    height: rem-calc(28);
+    line-height: rem-calc(17);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 0.25rem;
+    img {
+      max-height: rem-calc(30);
+    }
+
+    path {
+      fill: $green;
+      transition: 0.3s;
+    }
+
+    svg {
+      position: relative;
+      max-height: 100%;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: rem-calc(8 0);
+    background: $tertiary;
+    height: 100%;
+    font-size: rem-calc(16);
+    text-align: center;
+    color: $black;
+    margin: 0;
+    flex-flow: row wrap;
+
+    &:active,
+    &:focus,
+    &:hover,
+    &.active {
+      background: $primary-color;
+      color: $white;
+
+      path {
+        fill: $white;
+      }
+    }
+  }
+  &__text {
+    width: 100%;
+    text-align: center;
+  }
+
+  &__submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    width: 100%;
+    height: 56px;
+    padding: 30px 0;
+    margin: 0;
+
+    opacity: 0;
+    pointer-events: none;
+    list-style: none;
+    background-color: #ffffff;
+    box-shadow: 0 0 16px 0 rgba(0, 0, 0, .15);
+    transition: opacity .3s ease-in-out;
+    z-index: -1;
+  }
+
+  &__link:hover ~ &__submenu,
+  &__link:focus ~ &__submenu,
+  &__submenu--current {
+    height: auto;
+
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 1;
+  }
+
+  &__submenu a {
+    display: block;
+    padding: 10px 15px;
+    transition: transform .3s ease-in-out;
+    transform: translateY(10px);
+  }
+
+  &__link:hover ~ &__submenu,
+  &__link:focus ~ &__submenu,
+  &__submenu--current a {
+    transform: translateY(0);
+  }
+
+  @include breakpoint(large down) {
+    justify-content: center;
+  }
+  @include breakpoint(large) {
+    &__item {
+      flex-direction: row;
+      padding: 0;
+      position: relative;
+    }
+    &__link {
+      padding: 0.75rem 1rem;
+    }
+
+    &__img {
+      width: auto;
+      padding-right: rem-calc(15);
+      img {
+        height: 1.2rem;
+      }
+    }
+    &__text {
+      width: auto;
+    }
+  }
+
+}

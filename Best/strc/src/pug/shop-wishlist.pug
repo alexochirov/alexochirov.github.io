@@ -1,0 +1,26 @@
+extends shop-regular
+
+block content
+  .grid-container.text-center
+    h1 Отложенные товары
+  .section
+    .grid-container
+      +productLine(false, 'onDemand', false, 'inFavourites')
+      hr.margin-bottom-6
+      +productLine(false, false, 'inCart', 'inFavourites')
+      hr.margin-bottom-6
+      +productLine('discount', false, false, 'inFavourites')
+      hr.margin-bottom-6
+      +productLine(false, 'onDemand', false, 'inFavourites')
+      hr.margin-bottom-6
+      +productLine(false, false, 'inCart', 'inFavourites')
+      hr.margin-bottom-6
+      +productLine('discount', false, false, 'inFavourites')
+      hr.margin-bottom-6
+      +productLine(false, 'onDemand', false, 'inFavourites')
+      hr.margin-bottom-6
+      +productLine(false, false, 'inCart', 'inFavourites')
+      hr.margin-bottom-6
+      +productLine('discount', false, false, 'inFavourites')
+    .text-center
+      include components/common/_pagination

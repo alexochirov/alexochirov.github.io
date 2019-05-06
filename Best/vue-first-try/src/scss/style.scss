@@ -1,0 +1,14 @@
+@charset "utf-8";
+// Все картинки и шрифты необходимо подключать с использованием этих двух переменных:
+$imagesPath: '../images' !default;
+$fontsPath: '../fonts' !default;
+
+@import "foundation-settings/*.scss";
+
+@import "slick.scss";
+@import "foundation";
+@import "vuetify";
+@include foundation-everything(true, false);
+@import "../blocks/general/margin-level/_margin-level";
+@import "../blocks/**/*.scss";
+@import "common";

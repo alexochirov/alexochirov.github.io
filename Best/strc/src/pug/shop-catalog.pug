@@ -1,0 +1,30 @@
+extends shop-regular
+include components/mixins/_mixin-seсtion
+
+block content
+  .grid-container: .grid-x.grid-padding-x: .cell.text-center
+    h1 Каталог товаров
+  .section
+    .grid-x.grid-padding-x.small-up-1.medium-up-2.large-up-3.xxlarge-up-4.align-center(data-equalizer, data-equalie-by-row="true",data-equalize-on="medium")
+      +section('Мебель для персонала')
+      +section('Мебель для руководителя')
+      +section('Мебель для переговорной')
+      +section('Мебель для приемной')
+      +section('Кресла и стулья для посетителей')
+      +section('Мягкая мебель','Офисные и модульные диваны, мягкие кресла, банкетки')
+      +section('Металлическая мебель','Металлические стеллажи, шкафы, архивная мебель')
+      +section('Офисные аксессуары','Вешалки, журнальные столы, прочее')
+
+
+
+  .grid-container: hr.margin-bottom-6
+  .section
+    .grid-container: .cell.text-center
+      h2 Специальные предложения
+    .grid-x.grid-padding-x.small-up-1.medium-up-3.large-up-4.xlarge-up-6(data-equalizer data-equalize-by-row="true")
+      +productTile('Комби-перфоратор Metabo KHE 2650', false)
+      +productTile('Дрель-шуруповёрт RYOBI R18DDP-LL13G', false)
+      +productTile('Лобзик Metabo STEB 65 Quick', false)
+      +productTile('Торцовочная пила Ryobi EMS254L', true)
+      +productTile('Дрель-шуруповёрт RYOBI R18DDP-LL13G', false)
+      +productTile('Лобзик Metabo STEB 65 Quick', false)

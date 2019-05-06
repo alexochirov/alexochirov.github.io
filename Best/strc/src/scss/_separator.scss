@@ -1,0 +1,12 @@
+.separator {
+  &-left {
+    margin-bottom: rem-calc(38);
+
+
+    &:after {
+      margin-top: rem-calc(20);
+      width: rem-calc(106);
+      border-bottom: rem-calc(4) solid $green;
+    }
+  }
+}

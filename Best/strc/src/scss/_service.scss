@@ -1,0 +1,85 @@
+.service {
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: rem-calc(0);
+  list-style-type: none;
+  justify-content: space-between;
+  margin-bottom: 1.8rem;
+
+  &__item {
+    position: relative;
+
+    &_menu {
+      padding-right: rem-calc(14);
+
+      &:after {
+        font-family: FontAwesome;
+        content: "\f078";
+        top: rem-calc(22);
+        right: rem-calc(2);
+        color: $green;
+        font-size: rem-calc(8);
+        transition: 0.3s;
+        position: absolute;
+        transform: rotate(0deg);
+      }
+    }
+
+    &:hover {
+      .drop {
+        display: block;
+      }
+
+      &:after {
+        top: rem-calc(7);
+        transform: rotate(180deg);
+      }
+    }
+
+    &.active .service__link {
+      border-bottom-color: $green;
+    }
+  }
+
+  &__link {
+    font-weight: 600;
+    color: $green;
+    display: block;
+    padding-top: rem-calc(16);
+    padding-bottom: rem-calc(16);
+    border-bottom: rem-calc(2) solid transparent;
+
+
+    &:hover {
+      border-bottom-color: $green;
+    }
+  }
+  @include breakpoint(large down) {
+    &__item {
+      margin-right: rem-calc(10);
+    }
+  }
+  @include breakpoint(medium down) {
+    &__link {
+      border-bottom: rem-calc(0);
+
+      &:hover {
+        border-bottom: rem-calc(0);
+      }
+    }
+  }
+  @include breakpoint(small only) {
+    justify-content: center;
+    margin-bottom: rem-calc(0);
+    &__item {
+      margin-bottom: rem-calc(10);
+      margin-left: rem-calc(10);
+
+      &:hover {
+        .drop {
+          display: none;
+        }
+      }
+    }
+  }
+}

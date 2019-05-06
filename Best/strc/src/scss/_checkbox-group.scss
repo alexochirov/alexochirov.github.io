@@ -1,0 +1,28 @@
+.checkbox-group {
+  font-size: 0;
+  margin: 0 0 6 * $global-margin;
+}
+
+label.checkbox-group__label, span.checkbox-group__label {
+  font-size: $global-font-size;
+  padding: 0.83rem;
+  margin: 0;
+  min-width: 3rem;
+  background: $white;
+  line-height: 1;
+  display: inline-block;
+  border: rem-calc(3) solid transparent;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.27s ease;
+  margin-right: 0.25rem;
+}
+
+input.checkbox-group__item {
+  display: none;
+}
+
+input.checkbox-group__item:checked + label.checkbox-group__label, .color-box.is-active .checkbox-group__label {
+  border-color: $green !important;
+  box-shadow: 0 0 24px rgba($green,0.25);
+}

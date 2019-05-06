@@ -1,0 +1,13 @@
+extends shop-index
+
+block page
+  include components/common/_breadcrumbs
+  block content
+    .grid-container.text-alert.text-center
+      h1.text-red Ошибка 404
+      .text-size-xlarge.margin-bottom-6 Cтраница не найдена
+    .section
+      .grid-container: .grid-x.grid-padding-x.align-center
+        .cell.small-24.medium-20.large-16
+          .user-info: fieldset.fieldset.user-info__fieldset
+            include components/common/_404

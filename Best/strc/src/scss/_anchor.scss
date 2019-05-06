@@ -1,0 +1,6 @@
+.anchor {
+  text-decoration: underline;
+  &:hover,&:focus,&:active{
+    text-decoration: none;
+  }
+}

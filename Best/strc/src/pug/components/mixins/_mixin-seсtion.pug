@@ -1,0 +1,13 @@
+mixin section(title,customer)
+  .cell
+      figure.project(data-equalizer-watch)
+        img.project__image(src="./i/ta" + Math.ceil(Math.random() * 4) + ".jpg",alt="")
+        figcaption.project__block
+          if title
+            .project__title= title
+          else
+            .project__title  Товарный раздел
+          if customer
+            .project__desc= customer
+          else
+            .project__desc Описание раздела

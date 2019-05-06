@@ -1,0 +1,48 @@
+.header(data-sticky-container)
+  .header__cont#stickyHeader(data-sticky data-options="anchor:body;marginTop:0;" data-sticky-on="small" )
+    .grid-container
+      .grid-x.grid-padding-x.header__top
+        .small-24.medium-10.large-5.xlarge-7.cell.text-center.large-text-left.position-relative
+          a.header__logo(href='shop-index.html' title='')
+            img(src='./images/Logo.svg', alt='logo')
+
+          .grid-x.grid-padding-x.header__scrolling.invisible.text-center
+            .cell.large-shrink
+              a(href='shop-index.html' title=''): img.header__tiny(src='./images/logo-tiny.svg', alt='logo')
+            .cell.large-auto.position-relative
+              div(data-toggle="contCat").header__cat Каталог
+          #contCat.context-cat.hide(data-toggler=".hide")
+            include ../_site/_cat-menu
+
+        .small-24.medium-auto.large-auto.cell.header__info
+          .grid-x.grid-padding-x
+            .cell.show-for-small-only.small-6
+              div(data-toggle="stickyHeaderMenu form").header__toggle
+                i.fa.fa-bars
+            .large-8.cell.show-for-medium.medium-24
+              a.button.header__call.hollow.expanded Заказать обратный звонок
+            .large-7.xlarge-6.cell.medium-16.small-6
+              a.header__tel(href='tel:88007755293')
+                img.header__phone(src="./images/phone.svg", alt="")
+                span.text-secondary.hide-for-small-only 8 (800) 775-52-93
+            .large-2.cell.medium-4.small-6
+              a(href='shop-user-login.html')
+                img(src="./images/profile.svg", alt="")
+            .large-2.cell.medium-4.small-6
+              a.header__basket(href='shop-cart.html')
+                img(src="./images/basket.svg", alt="")
+                .header__num 3
+            .small-24.medium-24.large-auto.cell(data-toggler="hide-for-small-only").hide-for-small-only#form
+              form.search-top.input-group(action='shop-search.html' method='get')
+                input.search-top__input.input-group-field(type='text', value='' placeholder='Искать на сайте',)
+                .input-group-button
+                  button.search-top__button.fa.fa-search(type='submit')
+
+          #stickyHeaderMenu(data-toggler="hide-for-small-only").hide-for-small-only
+            include _menu-line
+    block info-bottom        
+      ul.hide-for-small-only.hcat
+        each word,index in ['Офисная мебель', 'Кабинет руководителя','Ресепшен','Металлическая мебель','Кресла и стулья','Мягкая мебель','Аксессуары для мебели']
+          .hcat__item: a.hcat__link(href="shop-catalog.html")
+            .hcat__img: img(src="./images/of"+ (index+1) +".svg", alt="").js-svg
+            .hcat__text #{word}

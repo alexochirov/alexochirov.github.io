@@ -1,0 +1,16 @@
+extends shop-regular
+include components/mixins/_mixin-projects
+
+block content
+  .grid-container.fluid: .grid-x.grid-padding-x: .cell
+    h1.text-center: strong Реализованные проекты
+  .section
+    .grid-x.grid-padding-x.small-up-1.medium-up-2.large-up-3.xxlarge-up-4.align-center
+      +project('Кабинет руководителя')
+      +project('Ресепшен')
+      +project('Кабинет')
+      +project('Переговорная')
+      +project
+      +project
+      +project
+      +project

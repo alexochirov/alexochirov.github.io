@@ -1,0 +1,56 @@
+mixin productLineWide(discount, onDemand, inCart, inFavourites)
+  .grid-x.grid-padding-x
+    .cell.medium-5.large-2.hide-for-small-only
+      .margin-bottom-6: img(src="./i/ta"  + Math.ceil(Math.random() * 4) + '.jpg' alt='Товар')
+    .cell.medium-auto.large-11
+      h6
+        if discount
+          .margin-bottom-2
+            span.label.purple
+              i.fa.fa-star-o
+              | &nbsp;Акция
+        a(href='shop-product.html') Картридж совместимый SuperFine (SF-CN048AE) 951XL Magenta
+      .margin-bottom-3.hide-for-small-only: a.text-dark-gray.text-size-small.text-underline(href='shop-catalog.html') Шуроповерты
+    .cell.small-24.medium-24.large-11
+      .margin-bottom-6
+        .grid-x.grid-padding-x
+          .cell.small-24.medium-8.medium-order-2
+            if onDemand
+              span.text-dark-gray: em Нет в наличии&nbsp;
+            else
+              strong.text-size-xxlarge
+                | 1&nbsp;250&nbsp;
+                i.fa.fa-rub
+                | &nbsp;&nbsp;
+              if discount
+                br.hide-for-small-only
+                del.text-dark-gray
+                  | 1&nbsp;750&nbsp;
+                  i.fa.fa-rub
+            .margin-bottom-3.show-for-small-only
+          .cell.small-16.medium-8.large-8.medium-order-3
+            if onDemand
+              a(data-toggle='no-size-popup')
+                i.fa.fa-bell-o
+                | &nbsp;Заказать
+            else
+              if inCart
+                a(href='shop-cart.html' title='')
+                  span.dark-gray
+                    i.fa.fa-check.fa-lg
+                    | &nbsp;В корзине
+              else
+                a(href='shop-cart.html' title='').button
+                  i.fa.fa-shopping-basket
+                  | &nbsp;Купить
+          .cell.small-8.medium-8.medium-order-1.text-right.medium-text-left
+            if !inFavourites
+              a.text-dark-gray(data-open="add-to-favourites-auth-popup")
+                i.fa.fa-heart-o.fa-lg
+
+            else
+              a.text-dark-gray(href='' title='Удалить из запомненных')
+                i.fa.fa-heart.fa-lg
+            | &nbsp;&nbsp;
+            a.text-dark-gray(href='shop-compare.html' title='')
+              i.fa.fa-balance-scale.fa-lg

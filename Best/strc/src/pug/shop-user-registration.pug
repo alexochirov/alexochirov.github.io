@@ -1,0 +1,61 @@
+extends shop-regular
+
+block content
+  .grid-container.text-center
+    h1 Регистрация
+  .section
+    .grid-container: .grid-x.grid-padding-x.align-center
+      .cell.small-24.medium-16.large-12
+        .success.callout
+          h5 Вы были успешно зарегистрированы!
+          p На вашу электронную почту отправлено письмо с подтверждением.
+        .alert.callout
+          h5 При регистрации произошли следующие ошибки:
+          ul
+            li не заполнено поле Email
+            li пароль и его подтверждение не совпадают
+            li введен неверный код
+        fieldset.fieldset.user-info__fieldset
+          form(action='shop-user-personal.html')
+            label
+              | Имя
+              input(type='text')
+            label
+              | Фамилия
+              input(type='text')
+            label
+              | Логин*
+              input(type='text')
+            label
+              | Пароль*
+              input(type='password')
+            p.help-text Пароль должен быть не менее 6 символов длиной
+            label
+              | Подтверждение пароля*
+              input(type='password')
+            label
+              | Электронная почта*
+              input(type='email')
+            .grid-x.grid-padding-x
+              .cell.small-14.medium-16
+                label
+                  | Введите код*
+                  input(type='password')
+              .cell.small-10.medium-8.margin-bottom-2
+                img(src='./i/image.svg' alt='Капча' style='height:55px;').width-100
+            .grid-x.grid-padding-x.margin-bottom-6
+              .cell.shrink.padding-top-1
+                input#checkbox1(type='checkbox')
+              .cell.auto
+                label(for='checkbox1')
+                  | Я ознакомлен и принимаю условия &nbsp;
+                  a(href='shop-regular.html' title='') Соглашения об использовании сайта
+                  |, в том числе в части обработки и использования моих персональных данных
+
+            div: button.button
+              | Регистрация &nbsp;
+              i.fa.fa-user-plus.fa-lg
+          .margin-bottom-6 * - Обязательные поля
+        .margin-bottom-6
+          p
+           a.text-underline(href='shop-user-login.html' title='') Авторизация

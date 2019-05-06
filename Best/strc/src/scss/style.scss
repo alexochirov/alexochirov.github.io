@@ -1,0 +1,97 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800&subset=cyrillic');
+
+// Все картинки и шрифты необходимо подключать с использованием этих двух переменных:
+$imagesPath: '../images' !default;
+$fontsPath: '../fonts' !default;
+
+$textSizes: (tiny: 0.7rem, xsmall: 0.8rem, small: 0.9rem, default: 1rem, large: 1.1rem, xlarge: 1.25rem, xxlarge: 1.5rem, xxxlarge: 2rem) !default;
+
+$fa-font-path: $fontsPath;
+
+$minify: false !default;
+@if $minify {
+  $imagesPath: './images';
+  $fontsPath: './fonts';
+  $fa-font-path: $fontsPath;
+}
+
+@import "fonts";
+@import "foundation-settings";
+
+@import "font-awesome";
+@import "slick.scss";
+@import "foundation";
+@import "motion-ui";
+@import "jquery.fancybox";
+@include foundation-everything(true, true);
+
+@import "common";
+@import "slick/slick-theme";
+
+@import "carousel/carousel-main";
+@import "carousel/carousel-news";
+@import "carousel/carousel-services";
+@import "menu";
+@import "background";
+@import "button";
+@import "tabs";
+@import "checkbox-group";
+@import "dd";
+@import "menu-base";
+@import "menu-top";
+@import "rating";
+@import "search-top";
+@import "sticky-footer";
+@import "text";
+@import "text-size";
+@import "gradient-container";
+@import "product";
+@import "faq-block";
+@import "tagline";
+@import "blockTitle";
+@import "complect-item";
+@import "aside-cat";
+@import "hcat";
+@import "context-сat";
+@import "strainer";
+@import "breadcrumbs";
+@import "header";
+@import "anchor";
+@import "grad";
+@import "footer";
+@import "service";
+@import "drop";
+@import "furniture";
+@import "cab";
+@import "room";
+@import "prod";
+@import "month";
+@import "separator";
+@import "chair";
+@import "input-group";
+@import "js-hide";
+@import "part";
+@import "office";
+@import "chief";
+@import "section";
+@import "project";
+@import "frame";
+@import "wheat";
+@import "callout";
+@import "dropdown-pane";
+@import "dock";
+@import "shadow-box";
+@import "white-box";
+@import "user-info";
+@import "aside-menu";
+@import "user-table";
+@import "project-showcase";
+@import "faq-question";
+@import "armchair";
+@import "sofa";
+@import "tables";
+@import "roistat";
+@import "print-priority";
+@import "morph-button";

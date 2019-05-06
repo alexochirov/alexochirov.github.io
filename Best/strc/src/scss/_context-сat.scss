@@ -1,0 +1,18 @@
+.context-cat {
+  position: absolute;
+  top: rem-calc(78);
+  left: calc(25% - 3px);
+  width: rem-calc(277);
+text-align: left;
+
+  @include breakpoint(large down) {
+    left: rem-calc(10);
+  }
+  @include breakpoint(medium down) {
+    top: rem-calc(162);
+  }
+  @include breakpoint(small only) {
+    top: rem-calc(102);
+  left: calc(50% - 138px);
+  }
+}

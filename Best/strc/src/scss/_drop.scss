@@ -1,0 +1,27 @@
+.drop {
+  list-style-type: none;
+  position: absolute;
+  top: calc(100% + 11px);
+  padding: rem-calc(15);
+  margin-left: rem-calc(0);
+  left: rem-calc(0);
+  width: rem-calc(290);
+  display: none;
+  border-radius: rem-calc(6);
+  box-shadow: rem-calc(0 0 20) rgba($black,.2);
+  background: $white;
+  z-index: 2;
+
+  &__item {
+    margin-bottom: rem-calc(5);
+  }
+
+  &__link {
+    font-weight: 600;
+    color: $green;
+  }
+  @include breakpoint(medium down) {
+    left: auto;
+    right: rem-calc(0);
+  }
+}

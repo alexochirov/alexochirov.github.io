@@ -1,0 +1,299 @@
+.grid-x.grad
+  .cell.xlarge-8.large-7.text-right.grad__block.medium-10
+    .grad__inside.text-left
+      ul.furniture
+        li.furniture__item
+          a(href="#").furniture__link.furniture__link_menu
+            .furniture__block: img(src="./images/of1.svg", alt="").furniture__img
+            span.furniture__span Офисная мебель
+          include _office  
+        li.furniture__item
+          a(href="#").furniture__link.furniture__link_menu
+            .furniture__block: img(src="./images/of2.svg", alt="").furniture__img
+            span.furniture__span Кабинет руководителя
+          include _office  
+        li.furniture__item
+          a(href="#").furniture__link.furniture__link_menu
+            .furniture__block: img(src="./images/of3.svg", alt="").furniture__img
+            span.furniture__span Ресепшн
+          include _office  
+        li.furniture__item
+          a(href="#").furniture__link.furniture__link_menu
+            .furniture__block: img(src="./images/of4.svg", alt="").furniture__img
+            span.furniture__span Металлическая мебель
+          include _office  
+        li.furniture__item
+          a(href="#").furniture__link.furniture__link_menu
+            .furniture__block: img(src="./images/of5.svg", alt="").furniture__img
+            span.furniture__span Кресла и стулья
+          include _office-2  
+        li.furniture__item
+          a(href="#").furniture__link
+            .furniture__block: img(src="./images/of6.svg", alt="").furniture__img
+            span.furniture__span Мягкая мебель
+        li.furniture__item
+          a(href="#").furniture__link
+            .furniture__block: img(src="./images/of7.svg", alt="").furniture__img
+            span.furniture__span Аксессуары для офиса
+  .cell.medium-auto.grad__chair
+    .part
+      .part__slide(style="background-image:url(./i/s1.jpg);")
+        .grid-x.grid-padding-x.text-center.large-text-left
+          .cell.xlarge-10.large-12
+            h2.grad__h2 Новая коллекция офисной мебели
+            a(href="#").button.large Смотреть
+      .part__slide(style="background-image:url(./i/s2.jpg);")
+        .grid-x.grid-padding-x.text-center.large-text-left
+          .cell.xlarge-10.large-15
+            h2.grad__h2 Старая коллекция офисной мебели
+            a(href="#").button.large Смотреть
+
+.grid-x.grid-padding-x.cab
+  .cell.xlarge-12.large-12.text-right.cab__room
+    a.cab__block.text-left(href="#" style="background-image:url(./i/rr.png);")
+      h2.text-warning Кабинет директора
+  .cell.xlarge-8.large-12
+    .grid-x.grid-margin-x.small-up-2.text-center
+      a.cell(href="#").room
+        .room__img
+          img(src="./i/r1.png", alt="")
+        .room__title Кресло Dico    
+      a.cell(href="#").room
+        .room__img
+          img(src="./i/r2.png", alt="")
+        .room__title Журнальный стол  
+      a.cell(href="#").room
+        .room__img
+          img(src="./i/r3.png", alt="")
+        .room__title Настенные полки
+      a.cell(href="#").room.room_warn
+        .room__img
+          img(src="./i/r4.png", alt="")
+        .room__title Кресло Dico    
+.grid-x.grid-padding-x.cab
+
+  .cell.xlarge-8.large-12.xlarge-offset-4
+    .grid-x.grid-margin-x.small-up-2.text-center
+      a.cell(href="#").room
+        .room__img
+          img(src="./i/r5.png", alt="")
+        .room__title Кресло Prestige
+      a.cell(href="#").room
+        .room__img
+          img(src="./i/r6.png", alt="")
+        .room__title Стол
+      a.cell(href="#").room
+        .room__img
+          img(src="./i/r7.png", alt="")
+        .room__title Стол
+      a.cell(href="#").room.room_warn
+        .room__img
+          img(src="./i/r8.png", alt="")
+        .room__title Кресло Bridge
+  .cell.xlarge-12.large-12.text-right.cab__talk
+    a.cab__block.text-left(href="#" style="background-image:url(./i/rr1.png);")
+      h2 Переговорная
+ul#example-tabs.tabs( data-responsive-accordion-tabs="tabs small-accordion medium-tabs")
+  li.tabs-title.is-active
+    a(href='#panel1') Бестселлеры
+  li.tabs-title
+    a(data-tabs-target='panel2', href='#panel2') Распродажа
+  li.tabs-title
+    a(data-tabs-target='panel3', href='#panel3') Смотрят сейчас
+.tabs-content(data-tabs-content='example-tabs')
+  #panel1.tabs-panel.is-active
+    .grid-x.grid-padding-x.medium-up-2.large-up-3.xlarge-up-4.xxlarge-up-5(data-equalizer data-equalie-by-row="true")
+      .cell
+        a(href="#").prod
+          .prod__img
+            img(src="./i/p1.png", alt="")
+          .prod__title(data-equalizer-watch) Кресло офисное Black
+          .prod__art арт. 123456
+          .grid-x.grid-padding-x.prod__row
+            .cell.shrink.prod__price 7 520 Р
+            .cell.shrink    
+              .button В корзину
+      .cell
+        a(href="#").prod
+          .prod__img
+            img(src="./i/p2.png", alt="")
+          .prod__title(data-equalizer-watch) Стул Port
+          .prod__art арт. 123456
+          .grid-x.grid-padding-x.prod__row
+            .cell.shrink.prod__price 57 520 Р
+            .cell.shrink    
+              .button В корзину
+      .cell
+        a(href="#").prod
+          .prod__img
+            img(src="./i/p3.png", alt="")
+          .prod__title(data-equalizer-watch) Кресло Purple
+          .prod__art арт. 123456
+          .grid-x.grid-padding-x.prod__row
+            .cell.shrink.prod__price 17 520 Р
+            .cell.shrink    
+              .button В корзину
+      .cell
+        a(href="#").prod
+          .prod__img
+            img(src="./i/p4.png", alt="")
+          .prod__title(data-equalizer-watch) Кресло Purple
+          .prod__art арт. 123456
+          .grid-x.grid-padding-x.prod__row
+            .cell.shrink.prod__price 17 520 Р
+            .cell.shrink    
+              .button В корзину
+      .cell
+        a(href="#").prod
+          .prod__img
+            img(src="./i/p5.png", alt="")
+          .prod__title(data-equalizer-watch) Кресло Purple
+          .prod__art арт. 123456
+          .grid-x.grid-padding-x.prod__row
+            .cell.shrink.prod__price 17 520 Р
+            .cell.shrink    
+              .button В корзину
+      .cell
+        a(href="#").prod
+          .prod__img
+            img(src="./i/p6.png", alt="")
+          .prod__title(data-equalizer-watch) Кресло Purple
+          .prod__art арт. 123456
+          .grid-x.grid-padding-x.prod__row
+            .cell.shrink.prod__price 17 520 Р
+            .cell.shrink    
+              .button В корзину
+      .cell
+        a(href="#").prod
+          .prod__img
+            img(src="./i/p7.png", alt="")
+          .prod__title(data-equalizer-watch) Кресло Purple
+          .prod__art арт. 123456
+          .grid-x.grid-padding-x.prod__row
+            .cell.shrink.prod__price 17 520 Р
+            .cell.shrink    
+              .button В корзину
+      .cell
+        a(href="#").prod
+          .prod__img
+            img(src="./i/p8.png", alt="")
+          .prod__title(data-equalizer-watch) Кресло Purple
+          .prod__art арт. 123456
+          .grid-x.grid-padding-x.prod__row
+            .cell.shrink.prod__price 17 520 Р
+            .cell.shrink    
+              .button В корзину
+    .text-center.margin-bottom-10
+      a(href="#").button.hollow Показать ещё          
+  #panel2.tabs-panel
+    .grid-x.grid-padding-x.medium-up-2.large-up-3.xlarge-up-4.xxlarge-up-5(data-equalizer data-equalie-by-row="true")
+      .cell
+        a(href="#").prod
+          .prod__img
+            img(src="./i/p7.png", alt="")
+          .prod__title(data-equalizer-watch) Кресло офисное Black
+          .prod__art арт. 123456
+          .grid-x.grid-padding-x.prod__row
+            .cell.shrink.prod__price 7 520 Р
+            .cell.shrink    
+              .button В корзину
+      .cell
+        a(href="#").prod
+          .prod__img
+            img(src="./i/p2.png", alt="")
+          .prod__title(data-equalizer-watch) Стул Port
+          .prod__art арт. 123456
+          .grid-x.grid-padding-x.prod__row
+            .cell.shrink.prod__price 57 520 Р
+            .cell.shrink    
+              .button В корзину
+      .cell
+        a(href="#").prod
+          .prod__img
+            img(src="./i/p3.png", alt="")
+          .prod__title(data-equalizer-watch) Кресло Purple
+          .prod__art арт. 123456
+          .grid-x.grid-padding-x.prod__row
+            .cell.shrink.prod__price 17 520 Р
+            .cell.shrink    
+              .button В корзину
+      .cell
+        a(href="#").prod
+          .prod__img
+            img(src="./i/p4.png", alt="")
+          .prod__title(data-equalizer-watch) Кресло Purple
+          .prod__art арт. 123456
+          .grid-x.grid-padding-x.prod__row
+            .cell.shrink.prod__price 17 520 Р
+            .cell.shrink    
+              .button В корзину
+  #panel3.tabs-panel
+    .grid-x.grid-padding-x.medium-up-2.large-up-3.xlarge-up-4.xxlarge-up-5(data-equalizer data-equalie-by-row="true")
+      .cell
+        a(href="#").prod
+          .prod__img
+            img(src="./i/p3.png", alt="")
+          .prod__title(data-equalizer-watch) Кресло офисное Black
+          .prod__art арт. 123456
+          .grid-x.grid-padding-x.prod__row
+            .cell.shrink.prod__price 7 520 Р
+            .cell.shrink    
+              .button В корзину
+      .cell
+        a(href="#").prod
+          .prod__img
+            img(src="./i/p2.png", alt="")
+          .prod__title(data-equalizer-watch) Стул Port
+          .prod__art арт. 123456
+          .grid-x.grid-padding-x.prod__row
+            .cell.shrink.prod__price 57 520 Р
+            .cell.shrink    
+              .button В корзину
+      .cell
+        a(href="#").prod
+          .prod__img
+            img(src="./i/p3.png", alt="")
+          .prod__title(data-equalizer-watch) Кресло Purple
+          .prod__art арт. 123456
+          .grid-x.grid-padding-x.prod__row
+            .cell.shrink.prod__price 17 520 Р
+            .cell.shrink    
+              .button В корзину
+      .cell
+        a(href="#").prod
+          .prod__img
+            img(src="./i/p4.png", alt="")
+          .prod__title(data-equalizer-watch) Кресло Purple
+          .prod__art арт. 123456
+          .grid-x.grid-padding-x.prod__row
+            .cell.shrink.prod__price 17 520 Р
+            .cell.shrink    
+              .button В корзину
+.grid-x.month
+  .cell.medium-12
+    .month__block
+      h2.separator-left Новости
+      h6 Июнь – Месяц гостиных! СКИДКИ до 69%!
+      .text-primary.margin-bottom-1 14 июня
+      p Дорогие покупатели! Июнь объявлен «Месяцем гостиных» – СКИДКИ до 69%! 
+      h6 Хотите шкаф-купе в подарок?
+      .text-primary.margin-bottom-1 13 июня
+      p Дорогие покупатели! Во всей розничной сети "Столплит", гипермаркетах "Столплит Хоум" и в интернет магазине.
+      h6 Летние скидки на кухни «Столлайн»
+      .text-primary.margin-bottom-1 12 июня
+      p Скидка предоставляется на ВЕСЬ ЗАКАЗ (корпус + фасад) цоколь, петли, ручки, сушки, организации, наполнения).
+      a(href="#").button.hollow Все новости
+  .cell.medium-12
+    .month__slider
+      h2.separator-left Обзоры новинок
+      .chair
+        .chair__slide
+          .chair__img
+            img(src="./i/ch.png", alt="")
+          h6 Кожаное кресло для офиса    
+          p.text-justify Новинка этого сезона! Голубое кожанное кресло, которое украсит вашу приемную и покажут ваш статус партнерам!
+        .chair__slide
+          .chair__img
+            img(src="./i/ch.png", alt="")
+          h6 Кожаное кресло для офиса    
+          p.text-justify Новинка этого сезона! Голубое кожанное кресло, которое украсит вашу приемную и покажут ваш статус партнерам!

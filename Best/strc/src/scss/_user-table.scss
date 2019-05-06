@@ -1,0 +1,25 @@
+.user-table {
+  border-color: transparent;
+  thead {
+    background: darken($light-gray,15);
+    color: $black;
+    border:0;
+  }
+  tbody {
+    border: 1px solid #e1e1e1;
+    td {
+      text-align: center;
+    }
+    tr:nth-child(even) {
+      background: $light-gray;
+      color: $black;
+
+    }
+    th{
+      text-align: right;
+    }
+    tr,th {
+      vertical-align: middle;
+    }
+  }
+}

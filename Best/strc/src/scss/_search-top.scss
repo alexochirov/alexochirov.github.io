@@ -1,0 +1,37 @@
+$search-input-padding: rem-calc(5);
+$search-height: $global-lineheight * rem-calc($global-font-size) + 2 * $search-input-padding;
+
+.search-top {
+  width: 100%;
+  margin: 0;
+}
+
+.search-top__input {
+  width: 100%;
+  line-height: $global-lineheight;
+  height: $search-height;
+  margin: 0;
+}
+
+button.search-top__button {
+  border-bottom: rem-calc(1) solid $tertiary;
+  margin: 0;
+  padding: 0;
+  color: $green;
+  background: $white;
+  font-size: rem-calc(19);
+  height: $search-height;
+  width: rem-calc(19);
+  cursor: pointer;
+
+  &:active,
+  &:focus,
+  &:hover {
+    border-bottom: rem-calc(1) solid $green;
+  }
+}
+@include breakpoint(medium down) {
+  .search-top {
+    margin-bottom: rem-calc(10);
+  }
+}

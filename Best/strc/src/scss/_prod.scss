@@ -1,0 +1,80 @@
+.prod {
+  display: block;
+  font-size: rem-calc(16);
+  font-weight: 900;
+  color: $black;
+  margin-bottom: rem-calc(40);
+  text-align:center;
+  border: 1px solid transparent;
+  border-radius: .75rem;
+  transition: 0.27s ease;
+  position: relative;
+
+  &:active,
+  &:focus,
+  &:hover {
+   border: 1px solid #e1e1e1;
+    & .prod__label {
+      border-top-right-radius: 5px;
+    }
+  }
+
+  &__row {
+    justify-content: space-between;
+  }
+
+  &__img {
+    height: rem-calc(290);
+    line-height: rem-calc(290);
+    border: rem-calc(1) solid $light-gray;
+    margin-bottom: rem-calc(14);
+    text-align: center;
+
+    img {
+      max-height: rem-calc(280);
+    }
+  }
+
+  &__title {
+    margin-bottom: rem-calc(3);
+  }
+
+  &__art {
+    font-size: rem-calc(16);
+    color: $medium-gray;
+    margin-bottom: rem-calc(10);
+    font-weight: 400;
+  }
+
+  &__price {
+    margin-bottom: rem-calc(10);
+    font-weight: 700;
+    font-size: rem-calc(24);
+  }
+
+  &__label {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: $white;
+    padding: rem-calc(5) rem-calc(8);
+    font-size: 11px;
+    border-bottom-left-radius: 5px;
+
+    &.lead {
+      background-color: #2dcc66;
+    }
+
+    &.novel {
+      background-color: #d90e2b;
+    }
+
+    &.action {
+      background-color: #4c82ca;
+    }
+  }
+
+  @include breakpoint(medium down) {
+    margin-bottom: rem-calc(10);
+  }
+}

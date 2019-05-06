@@ -1,0 +1,15 @@
+.callout {
+  &.light-gray {
+    color: $black;
+  }
+  &.main {
+    color: $black;
+  }
+  &_big {
+    padding: rem-calc(64);
+  }
+    @include breakpoint(small only) {
+    &_big {
+      padding: rem-calc(15);
+    } }
+}

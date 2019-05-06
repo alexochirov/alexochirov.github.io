@@ -1,0 +1,153 @@
+.morph-button {
+  position: relative;
+
+  &::before {
+    content: '';
+    width: 100vw;
+    height: 100vh;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    opacity: 0;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+    pointer-events: none;
+    z-index: 800;
+    background: rgba(0,0,0,0.5);
+  }
+
+  &.open::before {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  &.active::before {
+    z-index: 1800;
+  }
+
+  & .morph-content {
+    z-index: 900;
+    opacity: 0;
+
+    overflow: hidden;
+    pointer-events: none;
+    -webkit-transition: opacity 0.3s 0.5s, width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s;
+    transition: opacity 0.3s 0.5s, width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s;
+  }
+
+  &.open .morph-content {
+    top: 100px;
+    width: 600px;
+    height: 341px;
+
+    padding: 1.5rem;
+
+    opacity: 1;
+    pointer-events: auto;
+    border: 1px solid #a3a3a3;
+    border-radius: .25rem;
+
+    -webkit-transition: width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s;
+    transition: width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s;
+  }
+
+  & .morph-content > div {
+    visibility: hidden;
+    height: 0;
+    opacity: 0;
+    -webkit-transition: opacity 0.1s, visibility 0s 0.1s, height 0s 0.1s;
+    transition: opacity 0.1s, visibility 0s 0.1s, height 0s 0.1s;
+  }
+
+  &.open .morph-content > div {
+    visibility: visible;
+    height: auto;
+    opacity: 1;
+    -webkit-transition: opacity 0.3s 0.5s;
+    transition: opacity 0.3s 0.5s;
+  }
+
+  &.active .morph-content {
+    z-index: 1900;
+  }
+
+  & .morph-content,
+  &.open .morph-content {
+    -webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+    transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+  }
+
+  .noscroll {
+    overflow: hidden;
+  }
+
+  .no-transition {
+    -webkit-transition: none !important;
+    transition: none !important;
+  }
+
+  .morph-content h4,
+  .morph-content input,
+  .morph-content label,
+  .morph-content button[type="submit"] {
+    opacity: 0;
+    -webkit-transition: opacity 0.2s 0.3s, -webkit-transform 0.2s 0.3s;
+    transition: opacity 0.2s 0.3s, transform 0.2s 0.3s;
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+  }
+
+  .morph-content h4 {
+    -webkit-transition-delay: 0.35s;
+    transition-delay: 0.35s;
+  }
+
+  .morph-content form input[name="webform"] + label {
+    -webkit-transition-delay: 0.40s;
+    transition-delay: 0.40s;
+  }
+
+  .morph-content form input[name="name"] {
+    -webkit-transition-delay: 0.45s;
+    transition-delay: 0.45s;
+  }
+
+  .morph-content form input[name="name"] + label {
+    -webkit-transition-delay: 0.50s;
+    transition-delay: 0.50s;
+  }
+
+  .morph-content form input[name="tel"] {
+    -webkit-transition-delay: 0.55s;
+    transition-delay: 0.55s;
+  }
+
+  .morph-content form input[name="tel"] + label {
+    -webkit-transition-delay: 0.60s;
+    transition-delay: 0.60s;
+  }
+
+  .morph-content button[type="submit"] {
+    -webkit-transition-delay: 0.65s;
+    transition-delay: 0.65s;
+  }
+
+  &.open .morph-content h4,
+  &.open .morph-content input,
+  &.open .morph-content label,
+  &.open .morph-content button[type="submit"] {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  @include breakpoint(medium down) {
+    &.open .morph-content {
+      width: 500px;
+      top: 40px;
+      left: -150px;
+    }
+  }
+}

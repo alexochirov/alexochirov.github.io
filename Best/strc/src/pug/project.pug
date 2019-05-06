@@ -1,0 +1,73 @@
+extends shop-regular
+include components/mixins/_mixin-projects
+
+block content
+  .grid-container.margin-bottom-4
+    h1.text-center Название проекта
+    p.lead.text-center.margin-bottom-4.text-medium-gray Подзаголовок проекта
+  section.project-showcase
+    .project-showcase__img-full
+      img(src="./images/interior/int_big.jpg",width="100%",height="auto",alt="Большое изображение")
+    .grid-container.project-showcase__advantages
+      .grid-x.grid-padding-x.align-center
+        .small-24.medium-8.cell
+          .project-showcase__advantages__item
+            .project-showcase__advantages__item__img
+              img(src="./images/interior/icon-1.svg",alt="")
+            .project-showcase__advantages__item__desc Место:
+              span Московская область
+                br
+                | г. Балашиха
+
+        .small-24.medium-8.cell
+          .project-showcase__advantages__item
+            .project-showcase__advantages__item__img
+              img(src="./images/interior/icon-2.svg",alt="")
+            .project-showcase__advantages__item__desc Метраж:
+              span 420 м
+                sup 2
+        .small-24.medium-8.cell
+          .project-showcase__advantages__item
+            .project-showcase__advantages__item__img
+              img(src="./images/interior/icon-3.svg",alt="")
+            .project-showcase__advantages__item__desc Помещений:
+              span 5
+
+
+
+
+
+  .grid-container.text-justify
+    h2.text-center Описание проекта
+    p Между тем, христианско-демократический национализм неизменяем. Н.А.Бердяев отмечает, что политическое учение Руссо случайно. По сути, политическое учение Н. Макиавелли отражает авторитаризм. Как писал С.Хантингтон, политическое учение Платона отражает феномен толпы. Н.А.Бердяев отмечает, что континентально-европейский тип политической культуры доказывает механизм власти.
+    p Понятие политического конфликта иллюстрирует системный субъект власти. Социализм, как правило, неоднозначен. Политическая система верифицирует классический кризис легитимности.
+  .grid-container.project-showcase.margin-bottom-16
+    .grid-x.small-up-2.medium-up-4
+      .cell: a(href="./images/interior/int_1.jpg",data-fancybox): img(src="./images/interior/int_1.jpg",alt="")
+      .cell: a(href="./images/interior/int_2.jpg",data-fancybox): img(src="./images/interior/int_2.jpg",alt="")
+      .cell: a(href="./images/interior/int_3.jpg",data-fancybox): img(src="./images/interior/int_3.jpg",alt="")
+      .cell: a(href="./images/interior/int_4.jpg",data-fancybox): img(src="./images/interior/int_4.jpg",alt="")
+      .cell: a(href="./images/interior/int_5.jpg",data-fancybox): img(src="./images/interior/int_5.jpg",alt="")
+      .cell: a(href="./images/interior/int_6.jpg",data-fancybox): img(src="./images/interior/int_6.jpg",alt="")
+      .cell: a(href="./images/interior/int_2.jpg",data-fancybox): img(src="./images/interior/int_2.jpg",alt="")
+      .cell: a(href="./images/interior/int_1.jpg",data-fancybox): img(src="./images/interior/int_1.jpg",alt="")
+
+  .grid-container: h2.text-center Предметы в интерьере
+  .grid-x.align-center.grid-padding-x.small-up-1.medium-up-2.large-up-4.xlarge-up-6(data-equalizer data-equalize-by-row="true")
+    +productTile('Комби-перфоратор Metabo KHE 2650', false)
+    +productTile('Дрель-шуруповёрт RYOBI R18DDP-LL13G', false)
+    +productTile('Лобзик Metabo STEB 65 Quick', false)
+    +productTile('Торцовочная пила Ryobi EMS254L', true)
+    +productTile('Дрель-шуруповёрт RYOBI R18DDP-LL13G', false)
+    +productTile('Лобзик Metabo STEB 65 Quick', false)
+
+
+  .grid-container
+    hr.margin-bottom-6
+    h2.text-center Похожие проекты
+  .section
+    .grid-x.grid-padding-x.small-up-1.medium-up-2.large-up-4.align-center
+      +project('Кабинет руководителя')
+      +project('Ресепшен')
+      +project('Кабинет')
+      +project('Переговорная')

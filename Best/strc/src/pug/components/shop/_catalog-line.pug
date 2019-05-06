@@ -1,0 +1,107 @@
+.gradient-container
+    .grid-container.padding-horizontal-0: .grid-x.align-stretch
+        .small-24.medium-8.cell#catalog_menu
+            .gradient-container__left-cell
+                .padding-vertical-6
+                    ul.menu.vertical
+                        li.margin-bottom-4
+                            a.menu-base__link.text-white(href='shop-catalog.html' data-toggle-hover-dd='catalog_menu_item_0')
+                                i.fa.fa-star-o
+                                | &nbsp;Офисная мебель
+                        li.margin-bottom-4
+                            a.menu-base__link.text-white(href='shop-catalog.html' data-toggle-hover-dd='catalog_menu_item_0')
+                                i.fa.fa-star-o
+                                | &nbsp;Кабинет руководителя
+                        li.margin-bottom-4
+                            a.menu-base__link.text-white(href='shop-catalog.html' data-toggle-hover-dd='catalog_menu_item_0')
+                                i.fa.fa-star-o
+                                | &nbsp;Ресепшен
+                        li.margin-bottom-4
+                            a.menu-base__link.text-white(href='shop-catalog.html' data-toggle-hover-dd='catalog_menu_item_0')
+                                i.fa.fa-star-o
+                                | &nbsp;Металлическая мебель
+                        li.margin-bottom-4
+                            a.menu-base__link.text-white(href='shop-catalog.html' data-toggle-hover-dd='catalog_menu_item_0')
+                                i.fa.fa-star-o
+                                | &nbsp;Кресла и стулья
+                        li.margin-bottom-4
+                            a.menu-base__link.text-white(href='shop-catalog.html' data-toggle-hover-dd='catalog_menu_item_0')
+                                i.fa.fa-star-o
+                                | &nbsp;Мягкая мебель
+                        li.margin-bottom-4
+                            a.menu-base__link.text-white(href='shop-catalog.html' data-toggle-hover-dd='catalog_menu_item_0')
+                                i.fa.fa-star-o
+                                | &nbsp;Аксессуары для офиса
+
+
+                    .margin-bottom-6.show-for-small-only
+        .small-24.medium-16.cell
+            .dd.hide-for-small-only#catalog_menu_item_0(data-toggler-hover-dd='dd_show')
+                .dd__content.callout
+                    .grid-container: .grid-x.grid-padding-x
+                        .auto.shrink
+                            ul
+                                each title in ['Вешалкии', 'Дурнальные столы', 'Банкетки', 'Прочее']
+                                    li
+                                        a(href='#' title='')= title
+            .dd.hide-for-small-only#catalog_menu_item_1(data-toggler-hover-dd='dd_show')
+                .dd__content.callout
+                    .grid-container: .grid-x.grid-padding-x
+                        .small-12.medium-8.large-6.cell
+                            h5 Одежда
+                            ul
+                                each title in ['Все категории', 'Платья', 'Пальто', 'Пуховики', 'Куртки', 'Парки', 'Юбки', 'Брюки', 'Блузы и рубашки', 'Деним', 'Свитеры и трикотаж', 'Комбинезоны', 'Топы', 'Нижнее белье', 'Распродажа']
+                                    li
+                                        a(href='#' title='')= title
+                        .small-12.medium-8.large-6.cell
+                            h5 Актуально
+                            ul
+                                each title in ['Классика гардероба', 'Одежда для фитнеса', 'Новый сезон', 'Бизнес-класс', 'Выход в свет', 'Бестселлеры', 'Рукав-колокол', 'Миниатюрные сумки', 'Бархат', 'Вечерние образы', 'Пуховики']
+                                    li
+                                        a(href='#')= title
+                        .small-24.medium-8.large-offset-4.cell
+                            .margin-bottom-6: img(src='./i/photo.svg' alt='2')
+                            span.label.success
+                                i.fa.fa-star-o
+                                | &nbsp;Акция
+                            | &nbsp;
+                            a(href='shop-product.html') Торцовочная пила Ryobi EMS254L
+            .dd.hide-for-small-only#catalog_menu_item_2(data-toggler-hover-dd='dd_show')
+                .dd__content.callout
+                    .grid-container: .grid-x.grid-padding-x
+                        .small-12.medium-8.large-6.cell
+                            h5 Мягкая мебель
+                            ul
+                                each title in ['Офисные диваны', 'Модульные диваны', 'Мягкие кресла', 'Банкетки']
+                                    li
+                                        a(href='#')= title
+                        .small-12.medium-8.large-6.cell
+                            h5 Металлическая мебель
+                            ul
+                                each title in ['Металлические стеллажи', 'Металлические шкафы', 'Мебель для архивов', 'Сейфы']
+                                    li
+                                        a(href='#')= title
+                    .small-24.medium-8.large-offset-4.cell
+                            .margin-bottom-6: img(src='./i/photo.svg' alt='3')
+                            span.label.success
+                                i.fa.fa-star-o
+                                | &nbsp;Акция
+                            | &nbsp;
+                            a(href='shop-product.html') Торцовочная пила Ryobi EMS254L
+
+            .gradient-container__right-cell.padding-20
+                .grid-x.grid-padding-x
+                    .cell.medium-11.align-self-middle
+                        h2 Место для баннеров
+                        p.text-grey
+                            | В этом блоке можно располагать как один, так и группу баннеров,
+                            br
+                            | или несколько карточек акционных товаров
+                            br
+                        p
+                            a.button.secondary(href='#') Узнайте стоимость товаров &nbsp;<i class="fa fa-long-arrow-right"></i>
+                    .cell.medium-11.medium-offset-2.show-for-medium
+                        img(src='./i/photo.svg' style='width: 100%;')
+
+
+

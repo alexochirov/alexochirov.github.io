@@ -1,0 +1,8 @@
+.roistat-lh-table {
+  & tbody {
+    border: none !important;
+    & tr:nth-child(even) {
+      background-color: #ffffff !important;
+    }
+  }
+}

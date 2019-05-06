@@ -1,0 +1,26 @@
+.callout.aside-cat
+  ul.vertical.menu.accordion-menu(data-accordion-menu, data-submenu-toggle)
+    li
+      a(href="#").menu__link Офисная мебель
+      ul.menu.vertical.nested.is-active
+        li
+          a(href="#").menu__link Вешалки
+          ul.menu.vertical.nested
+            li: a(href="#").menu__link Журнальные столы 2
+            li: a(href="#").menu__link Банкетки  2
+            li: a(href="#").menu__link Прочее  2
+        li
+          a(href="#").menu__link Журнальные столы
+          +nested-menu
+        li
+          a(href="#").menu__link Банкетки
+          +nested-menu
+        li
+          a(href="#").menu__link Прочее
+          +nested-menu
+    li
+      a(href="#").menu__link Кабинет руководителя
+      +nested-menu
+    li: a(href="#").menu__link Ресепшен
+    li: a(href="#").menu__link Металлическая мебель
+    li: a(href="#").menu__link Кресла и стулья

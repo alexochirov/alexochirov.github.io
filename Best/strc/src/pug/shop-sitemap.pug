@@ -1,0 +1,12 @@
+extends shop-index
+
+block page
+  .grid-container
+    include components/common/_breadcrumbs
+  block content
+    .grid-container
+      h1 Карта сайта
+    .section
+      .grid-container: .grid-x.grid-padding-x
+        .cell.small-24.medium-16.large-12
+          include components/shop/_sitemap

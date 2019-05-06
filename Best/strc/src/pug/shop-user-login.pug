@@ -1,0 +1,47 @@
+extends shop-regular
+
+block content
+  .grid-container.text-center
+    h1 Авторизация
+  .section
+    .grid-container: .grid-x.grid-padding-x.align-center
+      .cell.small-24.medium-16.large-12
+        .callout.white-box.margin-bottom-4
+          p: strong Пожалуйста, авторизуйтесь:
+          form(action='shop-user-account.html')
+            label
+              | Ваш email
+              input(type='email')
+            label
+              | Пароль
+              input(type='password')
+            input#checkbox1(type='checkbox')
+            label(for='checkbox1') Запомнить меня на этом компьютере
+            div.margin-vertical-6: button.button
+              | Войти &nbsp;
+              i.fa.fa-sign-in.fa-lg
+          .margin-bottom-5
+            a(href='shop-user-recover.html', title='') Забыли пароль?
+          div
+            a(href='shop-user-registration.html', title='') Зарегистрироваться
+            br
+            br
+            em.text-size-small.text-center.margin-top-6 Если вы впервые на сайте, заполните, пожалуйста, регистрационную форму.
+
+        .callout.white-box
+          | Войти через: &nbsp;
+          a(href='#', title='').fa-stack.fa-lg.text-vk
+            i.fa.fa-circle.fa-stack-2x
+            i.fa.fa-vk.fa-stack-1x.fa-inverse
+          = '  '
+          a(href='#', title='').fa-stack.fa-lg.text-tw
+            i.fa.fa-circle.fa-stack-2x
+            i.fa.fa-twitter.fa-stack-1x.fa-inverse
+          = '  '
+          a(href='#', title='').fa-stack.fa-lg.text-fb
+            i.fa.fa-circle.fa-stack-2x
+            i.fa.fa-facebook.fa-stack-1x.fa-inverse
+          = '  '
+          a(href='#', title='').fa-stack.fa-lg.text-gp
+            i.fa.fa-circle.fa-stack-2x
+            i.fa.fa-google-plus.fa-stack-1x.fa-inverse

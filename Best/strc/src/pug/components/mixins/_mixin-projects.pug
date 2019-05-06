@@ -1,0 +1,13 @@
+mixin project(title,customer)
+  .cell
+    a(href="project.html" style="background-image:url(./images/interior/int_"  + Math.ceil(Math.random() * 6) + ".jpg);").project_card
+      .project_card__block
+        span
+          if title
+            h3= title
+          else
+            h3 Название проекта
+          if customer
+            p.lead= customer
+          else
+            p.text-underline.align-center.margin-0 Заказчик проекта

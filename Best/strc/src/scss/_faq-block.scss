@@ -1,0 +1,17 @@
+.faq-block {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+&__item {
+    margin-bottom: 0.5rem;
+}
+
+  &__link {
+    text-decoration: underline;
+    font-size: 1.2rem;
+    &_white {
+      color: $white;
+    }
+  }
+}

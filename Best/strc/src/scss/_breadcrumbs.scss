@@ -1,0 +1,15 @@
+.breadcrumbs {
+  display: inline-block;
+  margin-top: 0;
+}
+
+@media screen and (min-width: 0) {
+  .breadcrumbs .current a {
+    color: #010101;
+    cursor: unset;
+  }
+
+  .breadcrumbs .current a:hover {
+    text-decoration: none;
+  }
+}

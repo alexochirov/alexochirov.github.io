@@ -1,0 +1,14 @@
+mixin complect-item(title)
+  .grid-x.grid-padding-x.complect-item
+    .small-24.large-18.cell.medium-16.text-center.medium-text-left
+      strong: a.complect-item__title(href="shop-product.html")= title
+      span.complect-item__price: strong 1235&#160;&#8381;
+      .text-size-tiny арт. 123456
+
+    .small-12.large-6.cell.medium-8
+      .input-group.safe
+        .input-group-button
+          input.button.expanded.safe__btn.safe__btn_next(type="button",value="+")
+        input.input-group-field.safe__input.text-center(type="number",value="1")
+        .input-group-button
+          input.button.expanded.safe__btn.safe__btn_prev(type="button",value="-")

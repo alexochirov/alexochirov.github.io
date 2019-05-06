@@ -1,0 +1,69 @@
+include ../mixins/_mixin-complect-item
+
+p Шкафы, разные по высоте и ширине, но, самое главное, одной глубины идеально сочетаются с мебелью серии Nova: рабочими местами, кабинетом для руководителя, а также мебелью для приемной. Кроме того, с помощью шкафов NOVA легко разделить офисное пространство на индивидуальные рабочие зоны.
+hr.margin-bottom-6
+
+.grid-x.grid-padding-x
+  .small-24.large-4.cell Отделка:
+  .cell.auto
+    .checkbox-group
+      input.checkbox-group__item(type='radio' id='color1' name='color')
+      label.checkbox-group__label(for='color1' style='background-color: #eee;') &nbsp;
+      input.checkbox-group__item(type='radio' id='color2' name='color')
+      label.checkbox-group__label(for='color2' style='background-color: #ca3034;') &nbsp;
+      input.checkbox-group__item(type='radio' id='color3' name='color')
+      label.checkbox-group__label(for='color3' style='background-color: #578b93;') &nbsp;
+      input.checkbox-group__item(type='radio' id='color4' name='color')
+      label.checkbox-group__label(for='color4' style='background-color: #deb887;') &nbsp;
+hr.margin-bottom-3
+#no-size-popup.reveal(data-reveal data-deep-linking="true")
+  h4 Этого цвета сейчас нет. Сообщить о появлении?
+  form.input-group
+    input.input-group-field(type='text' placeholder='На email')
+    .input-group-button
+      button.button.margin-bottom-0(type='button') Сообщить
+
+  button.close-button(data-close aria-label="Закрыть")
+    span(aria-hidden="true") &times;
+
+.grid-x.grid-padding-x.margin-bottom-6
+  .cell.shrink
+    span.text-size-xxxlarge.summ
+      | 25 280&nbsp;
+      i.fa.fa-rub
+  .cell.shrink.padding-top-2
+    del.text-dark-gray.product__old-price
+      | 27 150 &nbsp;
+      i.fa.fa-rub
+.grid-x.grid-padding-x.align-middle
+  .small-24.large-auto.cell.auto
+    a.button.expanded
+      i.fa.fa-shopping-basket.fa-lg
+      =" "
+      span.text-size-large В корзину
+
+  .small-24.large-shrink.cell.margin-bottom-6
+    a(href='shop-compare.html' title="Товар добавлен к сравнению.")
+      i.fa.fa-lg.fa-balance-scale
+      span.text-dark-gray &nbsp;К сравнению
+    | &nbsp; &nbsp;
+    a(data-open="add-to-favourites-auth-popup")
+      i.fa.fa-lg.fa-heart-o
+      span.text-dark-gray &nbsp;Запомнить
+
+
+.grid-x.grid-padding-x.margin-top-6: .cell
+.margin-bottom-3
+  span.rating
+    input.rating__input#rating5(type="radio" name="rating")
+    label.rating__star(for="rating5")
+    input.rating__input#rating4(type="radio" name="rating")
+    label.rating__star(for="rating4")
+    input.rating__input#rating3(type="radio" name="rating")
+    label.rating__star(for="rating3")
+    input.rating__input#rating2(type="radio" name="rating")
+    label.rating__star(for="rating2")
+    input.rating__input#rating1(type="radio" name="rating")
+    label.rating__star(for="rating1")
+  em.text-primary &nbsp;оценок 25
+  | &nbsp; &nbsp;

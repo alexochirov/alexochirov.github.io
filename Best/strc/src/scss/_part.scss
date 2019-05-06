@@ -1,0 +1,18 @@
+.part {
+  height: 100%;
+  & .slick-track, & .slick-list {
+    height: 100%;
+  }
+  &__slide {
+    padding-top: rem-calc(66);
+    padding-left: rem-calc(55);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  @include breakpoint(medium down) {
+    &__slide {
+      padding-left: rem-calc(0);
+      padding-bottom: rem-calc(10);
+    }
+  }
+}

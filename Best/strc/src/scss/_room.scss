@@ -1,0 +1,34 @@
+.room {
+  display: block;
+  margin-bottom: rem-calc(30);
+  background: $tertiary;
+  padding-top: rem-calc(28);
+  padding-left: rem-calc(15);
+  padding-right: rem-calc(15);
+  color: $black;
+transition: .3s;
+  &_warn {
+    background: $warning-color;
+  }
+
+  &__img {
+    margin-bottom: rem-calc(13);
+    line-height: rem-calc(150);
+    img {
+      max-height: rem-calc(150);
+    }
+  }
+
+  &__title {
+    margin-bottom: rem-calc(20);
+    font-size: rem-calc(14);
+    font-weight: 600;
+  }
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: $white;
+    background: #a5d468;
+  }
+}

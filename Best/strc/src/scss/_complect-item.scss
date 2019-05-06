@@ -1,0 +1,21 @@
+.complect-item {
+  margin-bottom: 0.5rem;
+  justify-content: space-between;
+
+  &__basket {
+    display: block;
+    padding-top: rem-calc(5);
+  }
+
+  &__ruble {
+    margin-left: rem-calc(8);
+    font-size: rem-calc(14);
+  }
+
+  &__price {
+    margin-left: rem-calc(8);
+  }
+  @include breakpoint(small only) {
+    justify-content: center;
+  }
+}

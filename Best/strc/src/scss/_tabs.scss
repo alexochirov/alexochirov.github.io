@@ -1,0 +1,56 @@
+.tabs {
+  border: rem-calc(0);
+  border-bottom: rem-calc(1) solid $light-gray;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding-left: rem-calc(180);
+  padding-right: rem-calc(180);
+
+  &:after,
+  &:before {
+    display: none;
+  }
+
+  &-title {
+    position: relative;
+    text-transform: uppercase;
+margin-left: rem-calc(10);
+margin-right: rem-calc(10);
+    & > a {
+      outline: none;
+      padding-left: rem-calc(0);
+      padding-right: rem-calc(0);
+      &:hover,&:focus,&:active{
+        background: none;
+      }
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      left: rem-calc(0);
+      bottom: rem-calc(-1);
+      height: rem-calc(4);
+      width: 100%;
+      background: transparent;
+      display: block;
+    }
+
+    &.is-active {
+      &:after {
+        background: $success-color;
+      }
+    }
+  }
+
+  &-panel {
+    & .tabs-panel {
+      padding-top: 0;
+    }
+  }
+  @include breakpoint(large down) {
+    padding-left: rem-calc(0);
+    padding-right: rem-calc(0);
+  }
+}

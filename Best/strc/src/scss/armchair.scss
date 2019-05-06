@@ -1,0 +1,23 @@
+.armchair {
+  &__img {
+    border: rem-calc(1) solid #e1e1e1;
+    border-radius: 1rem;
+    overflow: hidden;
+    
+    margin-bottom: rem-calc(24);
+  }
+  &__box {
+    position: relative;
+  }
+
+}
+@include breakpoint(medium down) {
+  .sticky {
+    &.is-stuck {
+      .armchair__img {
+
+      }
+    }
+  }
+
+}

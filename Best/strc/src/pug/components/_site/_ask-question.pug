@@ -1,0 +1,18 @@
+.section.user-info.grid-container.padding-horizontal-1: .grid-x
+  .small-24.medium-16.large-18.medium-offset-8.large-offset-6.cell
+    .grid-container: h4 Нет нужного ответа?
+    .grid-container: .grid-x.align-left: .small-24.large-18.cell
+      fieldset.fieldset.user-info__fieldset
+        legend Задайте свой вопрос
+        form
+          label Представьтесь
+          input(type='text' placeholder="Иван")
+
+          label Ваш email *
+            span.text-dark-gray.margin-left-2 для ответа вам на вопрос
+          input(type='email' placeholder="ivan@mail.ru")
+
+          label Текст вопроса *
+          textarea(rows='3' placeholder="Текст")
+
+          button.button Отправить вопрос

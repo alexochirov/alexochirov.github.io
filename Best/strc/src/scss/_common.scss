@@ -1,0 +1,131 @@
+a {
+  -webkit-transition: color 300ms ease-in-out;
+  -moz-transition: color 300ms ease-in-out;
+  -ms-transition: color 300ms ease-in-out;
+  -o-transition: color 300ms ease-in-out;
+  transition: color 300ms ease-in-out;
+  text-decoration-skip-ink: none;
+}
+
+table {
+  margin-bottom: 6 * $global-margin;
+
+  tr:nth-child(even) {
+    color: $white;
+  }
+}
+
+h6 {
+  margin-bottom: rem-calc(0);
+}
+
+[type='text'],
+[type='password'],
+[type='date'],
+[type='datetime'],
+[type='datetime-local'],
+[type='month'],
+[type='week'],
+[type='email'],
+[type='number'],
+[type='search'],
+[type='tel'],
+[type='time'],
+[type='url'],
+[type='color'] {
+  padding-left: rem-calc(0);
+  padding-right: rem-calc(2);
+  border-bottom: rem-calc(1) solid #bee67f;
+
+  &:active,
+  &:focus,
+  &:hover {
+    border-bottom: rem-calc(1) solid $green;
+  }
+}
+
+textarea {
+  border: rem-calc(1) solid #bee67f;
+
+  &:active,
+  &:focus,
+  &:hover {
+    border: rem-calc(1) solid $green;
+  }
+}
+@mixin position-center() {
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+article {
+  max-width: rem-calc(960);
+}
+
+.text-center h1,
+.text-center h2,
+h1.text-center,
+h2.text-center {
+  &:after {
+    @include position-center();
+  }
+}
+@include breakpoint(medium up) {
+  .medium-text-center h1,
+  .medium-text-center h2,
+  h1.medium-text-center,
+  h2.medium-text-center {
+    &:after {
+      @include position-center();
+    }
+  }
+}
+@include breakpoint(large up) {
+  .large-text-center h1,
+  .large-text-center h2,
+  h1.large-text-center,
+  h2.large-text-center {
+    &:after {
+      @include position-center();
+    }
+  }
+}
+.text-underline {
+  font-weight: 400;
+  text-decoration: underline;
+}
+.text-viol {
+  color: $purple;
+}
+
+.violet {
+  background: $purple;
+}
+.button.hollow {
+  border-radius: rem-calc(6) !important;
+}
+.text-right {
+  text-align: right !important;
+}
+.summ {
+  font-size: 1.35rem;
+  .fa-rub {
+    font-size: 85%;
+  }
+}
+hr {
+  border-color: #e1e1e1;
+}
+.bordered {
+  border: 1px solid #e1e1e1;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.fa-rub {
+  font-size: 85%;
+}
+*:focus {
+  outline: none
+}

@@ -1,0 +1,83 @@
+extends shop-user-personal
+
+block personal
+  h2.text-ceter Заказы
+  .margin-bottom-6: a.text-underline(href='#' title='') Посмотреть историю заказов
+  .user-info
+    fieldset.fieldset.user-info__fieldset
+      legend Заказы в статусе «Оплачен, формируется к отправке»
+      strong: a.text-underline(href='shop-order.html' title='') Заказ №3 от 27.10.2016, 2 товара на сумму 4 398
+        = ' '
+        i.fa.fa-rub
+      fieldset.fieldset
+        legend Оплата
+        strong Счет №3/1 от 27.10.2016, Наличные курьеру
+        = ' '
+        span.label.success Оплачено
+        br
+        | Сумма к оплате по счету: 4 398
+        = ' '
+        i.fa.fa-rub
+
+      fieldset.fieldset.user-info__fieldset
+        legend Доставка
+        strong Отгрузка №3/2, стоимость доставки 500
+          = ' '
+          i.fa.fa-rub
+        = ' '
+        span.label.alert Не отгружено
+        br
+        | Статус отгрузки:
+        = ' '
+        span.label.light-gray Ожидает обработки
+        br
+        | Служба доставки: Доставка курьером
+      .grid-x.grid-padding-x
+        .cell.small-24.medium-8
+          a.text-underline(href='shop-order.html' title='') Подробнее о заказе
+        .cell.small-24.medium-16.medium-text-right
+          a.text-underline.margin-right-3(href='#' title='')
+            i.fa.fa-undo
+            = ' '
+            | Повторить заказ
+
+          a.text-underline.text-alert(href='#') Отменить заказ
+    fieldset.fieldset.user-info__fieldset
+      legend Заказы в статусе «Принят, ожидается оплата»
+      strong: a.text-underline(href='shop-order.html' title='') Заказ №3 от 27.10.2016, 2 товара на сумму 4 398
+        = ' '
+        i.fa.fa-rub
+      fieldset.fieldset
+        legend Оплата
+        strong Счет №3/1 от 27.10.2016, Наличные курьеру
+        = ' '
+        span.label.success Оплачено
+        br
+        | Сумма к оплате по счету: 4 398
+        = ' '
+        i.fa.fa-rub
+
+      fieldset.fieldset.user-info__fieldset
+        legend Доставка
+        strong Отгрузка №3/2, стоимость доставки 500
+          = ' '
+          i.fa.fa-rub
+        = ' '
+        span.label.alert Не отгружено
+        br
+        | Статус отгрузки:
+        = ' '
+        span.label.light-gray Ожидает обработки
+        br
+        | Служба доставки: Доставка курьером
+      .grid-x.grid-padding-x
+        .cell.small-24.medium-8
+          a.text-underline(href='shop-order.html' title='') Подробнее о заказе
+        .cell.small-24.medium-16.medium-text-right
+          a.text-underline.margin-right-3(href='#' title='')
+            i.fa.fa-undo
+            = ' '
+            | Повторить заказ
+
+          a.text-underline.text-alert(href='#') Отменить заказ
+

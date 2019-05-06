@@ -1,0 +1,85 @@
+extends shop-regular
+
+mixin productTileForCompare(instock, incart)
+  .margin-bottom-6.text-center
+    a.text-alert.no-wrap.text-size-small(href="#" title='')
+      i.fa.fa-times-circle-o
+      =" "
+      span.text-underline Убрать
+  .dock: a(href="shop-product.html" title=''): img(src="./i/ta"  + Math.ceil(Math.random() * 4) + '.jpg' alt='Товар')
+  .margin-bottom-3.text-center: a(href='shop-product.html' title='') Кресло реководителя
+    br
+    | арт. .123456
+  .margin-bottom-3.text-center: strong
+    | 73&nbsp;250&nbsp;
+    i.fa.fa-rub
+  .margin-bottom-3.text-center
+    if instock
+      if incart
+        i.fa.fa-check &#160;
+        | В корзине
+      unless incart
+        a(href='shop-cart.html' title='').button.hollow Купить
+    unless instock
+      span.text-dark-gray Нет в наличии
+
+block content
+  .grid-container: .grid-x.grid-padding-x: .cell.text-center
+    h1 Сравнить товары
+  .padding-top-12.padding-bottom-6
+    .grid-container: .grid-x.grid-padding-x: .cell
+      .margin-bottom-6
+        span.text-dark-gray Показать:
+        | &nbsp; &nbsp;
+        strong Только отличия
+        | &nbsp; &nbsp;
+        a.text-underline(href='#' title='') Основные параметры
+        | &nbsp; &nbsp;
+        a.text-underline(href='#' title='') Все параметры
+
+      .table-scroll
+        table.user-table
+          tr(style="vertical-align:top;")
+            td
+              a.no-wrap.text-alert(href="#" title='')
+                i.fa.fa-lg.fa-times-circle
+                =" "
+                span.text-underline Очистить список
+            td
+              +productTileForCompare('instock')
+            td
+              +productTileForCompare
+            td
+              +productTileForCompare('instock','incart')
+            td
+              +productTileForCompare
+            td
+              +productTileForCompare
+          tr
+            th.text-user-small Вес
+            td 25кг
+            td 35кг
+            td 30кг
+            td 31кг
+            td 27,5кг
+          tr
+            th.text-user-small Максимальный вес
+            td 0,25-160
+            td 0,30-180
+            td 0,25-155
+            td 0,30-180
+            td 0,30-170
+          tr
+            th.text-user-small Глубина
+            td 28 см
+            td 28 см
+            td 28 см
+            td 28 см
+            td 28 см
+          tr
+            th.text-user-small Наличие подголовника
+            td +
+            td +
+            td —
+            td +
+            td —

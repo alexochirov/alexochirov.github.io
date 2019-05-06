@@ -1,0 +1,36 @@
+.cab {
+  .cab__room {
+    padding-left: rem-calc(0);
+  }
+
+  .cab__talk {
+    padding-right: rem-calc(0);
+  }
+
+  &__block {
+    height: calc(100% - 30px);
+    margin-bottom: rem-calc(30);
+    background-size: cover;
+    padding-left: rem-calc(60);
+    display: flex;
+    flex-flow: row wrap;
+    color: $black;
+    align-items: flex-end;
+    background-position: center bottom;
+    padding-bottom: rem-calc(24);
+  }
+  @include breakpoint(medium down) {
+    .cab__room {
+      padding-left: rem-calc(15);
+    }
+
+    .cab__talk {
+      padding-right: rem-calc(15);
+    }
+
+    &__block {
+      min-height: rem-calc(200);
+      padding-left: rem-calc(30);
+    }
+  }
+}

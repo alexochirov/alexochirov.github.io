@@ -1,0 +1,56 @@
+.product {
+  position: relative;
+  align-items: flex-start;
+
+  &__img {
+    height: rem-calc(200);
+    text-align: center;
+    line-height: rem-calc(200);
+    margin-bottom: rem-calc(12);
+
+    img {
+      max-height: rem-calc(200);
+    }
+  }
+
+  &__old-price {
+    font-size: rem-calc(22);
+  }
+
+  &__label {
+    position: absolute;
+    border-radius: 0;
+    top: 0;
+    left: 0;
+  }
+
+  &__mark-info {
+    @include tooltip;
+    max-width: 20rem;
+    background: rgba(147, 194, 82, 0.95);
+  }
+  &__mark-label {
+    font-size: rem-calc(14);
+    border-radius: 50%;
+    border: 1px solid $success-color;
+    background-color: $white;
+    cursor: pointer;
+    font-weight: bolder;
+    display: flex;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      background-color: $success-color;
+      color: $white;
+    }
+  }
+  &__mark-box.is-active {
+    padding: 0;
+  }
+}
+.wraps {
+  position: relative;
+}

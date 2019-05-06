@@ -1,0 +1,28 @@
+mixin productTileCoplect(title, label)
+  .cell
+    a(href="#").prod.padding-4
+      .prod__img
+        img(src="./i/ta"  + Math.ceil(Math.random() * 4) + '.jpg', alt="")
+      case label
+        when 'novel'
+          span.prod__label.novel Новинка
+        when 'lead'
+          span.prod__label.lead Лидер продаж
+        when 'action'
+          span.prod__label.action -5%
+      .prod__title(data-equalizer-watch)
+        if title
+          = title
+        else
+          | Кресло офисное Black
+      .prod__art арт. 123456
+      .grid-x.grid-padding-x.prod__row
+        .cell.shrink.prod__price 73 520 Р
+        .cell.shrink    
+          .button.small.margin-0 В корзину
+      .grid-x.grid-padding-x.align-center: .cell.text-center
+          hr.margin-vertical-6
+          .button.hollow.small
+            i.fa.fa-plus
+            =" "
+            | В комплект

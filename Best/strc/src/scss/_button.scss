@@ -1,0 +1,68 @@
+.button {
+  font-weight: 600;
+
+  &.large {
+    padding-left: rem-calc(74);
+    padding-right: rem-calc(74);
+    padding-top: rem-calc(20);
+    letter-spacing: rem-calc(1.2);
+    padding-bottom: rem-calc(20);
+    border-radius: rem-calc(29);
+    text-transform: uppercase;
+  }
+
+  &.expanded {
+    padding-left: rem-calc(6);
+    padding-right: rem-calc(6);
+  }
+
+  &.main {
+    &.dropdown {
+      padding-left: rem-calc(10);
+      padding-right: rem-calc(10);
+
+      &:after {
+        margin-left: rem-calc(10);  border-top-color: $primary-color;
+      }
+
+      &:active,
+      &:focus,
+      &:hover {
+        &:after {
+          border-top-color: $primary-color;
+        }
+      }
+    }
+  }
+
+  &.hollow {
+    border-radius: rem-calc(23);
+
+    &:active,
+    &:focus,
+    &:hover {
+      background: $success-color;
+      color: $white;
+      border-color: $success-color;
+    }
+  }
+
+  &.print {
+      min-width: 140px;
+      position: relative;
+
+      white-space: nowrap;
+      color: #93c252;
+      border-color: #93c252;
+      background-color: #ffffff;
+  }
+
+  &.print:hover {
+      background-color: #7ead3d;
+      color: #fff;
+  }
+
+  &.print svg {
+      transform: translate(8px, 2px);
+  }
+}
