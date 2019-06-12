@@ -1,0 +1,27 @@
+.aloft {
+  display: none;
+  justify-content: center;
+  position: fixed;
+  z-index: 10;
+  bottom: rem-calc(20);
+  left: rem-calc(0);
+
+  &.js-show {
+    display: inline-flex;
+  }
+
+  &__link {
+    background: get-color(secondary);
+    border-radius: $global-radius;
+    flex: 0 1 auto;
+    opacity: 0.9;
+    padding: 0.25rem 1.5rem;
+    position: relative;
+    bottom: rem-calc(21);
+    color: $white;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

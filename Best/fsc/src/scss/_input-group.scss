@@ -1,0 +1,8 @@
+.input-group {
+    &-field_other {
+        margin-bottom: 0;
+    }
+    &-button_other .button {
+        padding-top: rem-calc(3px);
+    }
+}

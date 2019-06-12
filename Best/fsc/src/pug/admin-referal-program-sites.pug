@@ -1,0 +1,28 @@
+extends regular
+
+block content
+  .grid-container: .grid-x.grid-padding-x.align-center: .cell.large-20
+    .info
+      ul.menu.simple.sect 
+        li.active: a(href='admin-referal-program-sites.html') Сайты
+        li: a(href='admin-referal-program-links.html') Переходы по ссылкам
+      .callout
+        h3 Сайты
+        table.unstriped
+          thead
+            tr
+              th Адрес сайта
+              th Клиент
+              th Начислено
+              th 
+          tbody
+            - var i = 0
+            while i < 15
+              - i++
+              tr
+                td www.cilentswebsite.com
+                td Константин Александровский
+                td 1 820 ₽
+                td: a(href='admin-referal-program-site.html') Подробности
+
+        include components/common/_pagination    

@@ -1,0 +1,12 @@
+mixin feedback(company, author)
+    .callout.grid-x
+        .cell.medium-16.readable
+            if block
+                block
+        .cell.medium-7.medium-offset-1
+            .sect: img.background-light-gray(src='./i/image.svg' style='width: 155px; height: 55px;' alt='Логотип компании-автора отзыва')
+            if author
+                .sect= author
+                    .text-dark-gray= company
+            else 
+                .sect= company

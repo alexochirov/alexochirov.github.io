@@ -1,0 +1,79 @@
+extends regular
+
+include components/mixins/_mixin-feedback
+include components/mixins/_mixin-job-description
+
+block page
+    .grid-container: .grid-x.grid-padding-x: .cell
+        ul.breadcrumbs
+            li
+                a(href='corp-index.html' title='') Главная
+        h1.text-center Об авторе Fastsite
+    .grid-container.info
+        .grid-x.grid-padding-x.align-center
+            .cell.small-24.medium-18.large-17
+                .info_down.lead.text-center Компания Cetera — разработчик конструктора сайтов Fastsite. 
+        .grid-x.grid-padding-x.align-center
+            .cell.large-8.readable
+                <p>Cetera помогает организовать присутствие в интернете. Компания привлекает потребителей к товарам и услугам наших клиентов. Cetera <a href="https://cetera.ru/how-we-develop/website/support/">развивает</a>, <a href="https://cetera.ru/how-we-develop/website/hosting/">поддерживает</a> и&nbsp;<a href="https://cetera.ru/webdevelopment/">создает сайты</a>, <a href="http://www.cetera.ru/ecommerce/">интернет-магазины</a> и <a href="https://cetera.ru/massmedia/">интернет-СМИ</a>.</p>
+                <p>С 2002 года создали <a href="http://www.cetera.ru/webdevelopment/portfolio/">более 500 сайтов</a> более чем для 200 клиентов. В штате компании — более 50 человек. Основное производство размещено в <a href="http://www.cetera.ru/about/contacts/">Ярославле</a>.</p>
+            .cell.large-8.large-offset-1.readable
+                <p>Компания Cetera — автор <a href="https://cetera.ru/how-we-develop/website/cms/">Cetera CMS</a>, Cetera eCommerce, Cetera Mobitorg, Cetera Call.</p>
+                <p>Cetera разработала и продвигает на рынке 2 уникальные модели обслуживания клиентов: <a href="https://cetera.ru/how-we-develop/methodology/fastsite">«Быстрый старт»</a> и <a href="https://cetera.ru/how-we-develop/methodology/complexservice">комплексное безлимитном абонентское обслуживание</a>.</p>
+            .cell.large-17.info.text-center.readable-light
+                p <a href="http://fastsite.ru/">Бесплатно создадим ваш сайт за 1 минуту</a>. Затем привлечем к нему потребителей с помощью рекламных кампаний. И поможем вам <a href="https://cetera.ru/how-we-develop/website/support">развить сайт</a> с учетом реальных данных о <a href="https://cetera.ru/how-we-develop/promo/conversion">конверсии</a>
+    .info_down: .background-main.info
+        .grid-container: .grid-x.grid-padding-x
+            .cell.large-8
+                h2 Нанимаем таланты
+                p.text-dark-gray В офис в Ярославле
+                    br
+                    | По трудоустройству пишите на #[a(href='') hr@cetera.ru]
+            .cell.large-16
+                ul.accordion(data-accordion data-multi-expand='false' data-allow-all-closed='true')
+                    li.accordion-item(data-accordion-item)
+                        a.accordion-title(href='') front-end разработчик
+                        .accordion-content(data-tab-content)
+                            +job-description
+                    li.accordion-item(data-accordion-item)
+                        a.accordion-title(href='') back-end разработчик
+                        .accordion-content(data-tab-content)
+                            +job-description
+
+    .grid-container: .grid-x.grid-padding-x.align-center
+        .cell.large-17
+            .info_down
+                +feedback('Посёлок «Деревня мира»','Мая Вдовина')
+                    p «Андрей, доброго дня! Я понимаю, что наш дизайн с этим меню не совсем удачен. Так как ваш дизайнер уже переработал большую часть нашего дизайна, можете обсудить задачу о изменении меню и вариантах. У нас уже оплачен дизайн страниц в рамках ДС с брендинговым агентством, но мы ребята очень живые, проектов очень много - каждый день что-то меняется, с вами работать в этом плане легче и оперативнее ;)»
+                .sect.text-center: a(href=''): b Все отзывы
+    
+    .reveal.small(id='apply-for-job-modal' data-reveal data-deep-link='true')
+        h2 Заявка на вакансию
+        form
+            label Имя *
+            input(type='text' required)
+
+            label Контактный телефон
+            input(type='tel')
+
+            label Email *
+                input(type='email' required)
+
+            label Приложить резюме
+            input(type='file')
+
+            label Комментарий
+                textarea(rows='2')
+
+            .grid-x.grid-padding-x
+                .cell.small-12.medium-8
+                    img.background-medium-gray(src='./i/image.svg' alt='Капча' style='height: 40px; width: 100%;')
+                .cell.small-12.medium-8
+                    input(type='text' placeholder='Код с картинки')
+            label.margin-bottom-3
+                input(type='checkbox' required)
+                | Соглашаюсь с #[a(href='') условиями обработки персональных данных] *
+
+            button.button(type='submit') Отправить
+        button.close-button(type='button' data-close aria-label='Закрыть')
+            span(aria-hidden='true') &times;

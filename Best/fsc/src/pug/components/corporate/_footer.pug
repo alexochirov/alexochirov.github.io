@@ -1,0 +1,33 @@
+footer.footer
+  .grid-container: .grid-x.grid-padding-x
+    .small-24.medium-12.large-6.medium-order-1.large-order-1.cell.footer__block
+      a(href='#')
+        img(src='./images/logo_white.svg',  alt='logo').footer__logo
+    nav.small-24.medium-12.large-6.medium-order-3.large-order-2.cell.footer__nav
+      a.footer__link(href='corp-index.html') Главная
+      a.footer__link(href='services.html') Создание сайтов
+      a.footer__link(href='.html') Решения
+      a.footer__link(href='pricing.html') Цены
+      a.footer__link(href='portfolio.html') Портфолио
+      a.footer__link(href='about.html') О компании
+      a.footer__link(href='contacts.html') Контакты
+    .small-24.medium-12.large-6.medium-order-2.large-order-3.cell.footer__nav
+      nav.footer__nav
+        a.footer__link(href='support.html') Помощь
+        a.footer__link(href='releases.html') Обновления
+        a.footer__link(href='affiliate.html') Партнёрская программа
+    .small-24.medium-12.large-6.medium-order-4.large-order-4.cell.footer__nav
+      h6 Для новых клиентов и общих вопросов
+      .footer__client
+        a.footer__tel(href='tel:88007755293') 8 (800) 775-52-93
+        br
+        a.footer__tel(href='mailto:welcome@ceteralabs.ru' title='') welcome@ceteralabs.ru
+      h6 Служба поддержки
+      .footer__client
+        a.footer__tel(href='mailto:support@ceteralabs.ru' title='') support@ceteralabs.ru
+      h6 Адрес офиса
+      .footer__client Проспект Ленина, дом 25, 6 этаж, офис 606 (Адрес для курьера)
+  .grid-container: .grid-x.grid-padding-x: .cell.footer__soc
+    include ../common/_soc
+
+  include ../common/_footer-info

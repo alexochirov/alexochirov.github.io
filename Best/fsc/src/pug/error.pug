@@ -1,0 +1,14 @@
+extends corp-index
+
+block page
+    .grid-container.info.info_down: .grid-x.align-center
+        .cell.small-24.medium-14.large-10
+            h1
+                small Ошибка 404
+                br
+                | Cтраница не найдена
+            .info
+                p.text-size-xlarge Адрес страницы неправильный или страницу удалили
+                p: a(href='corp-index.html' title='') На главную страницу #[i.fas.fa-chevron-right]
+                p: a.text-dark-gray(title='Сообщить об ошибке', target='_blank', href='http://www.cetera.ru/support/default.php?project=CCD&lang=ru&page=http://wireframes.cetera.ru/boilerplate_wireframe/') 
+                    | Cообщите, если считаете это ошибкой

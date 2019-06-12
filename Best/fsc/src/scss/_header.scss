@@ -1,0 +1,53 @@
+.header {
+  padding: rem-calc(30) rem-calc(60) rem-calc(22);
+  border-bottom: rem-calc(2) solid rgba($white,.1);
+  position: relative;
+  border-radius: rem-calc(16 16 0 0);
+  position: absolute;
+  left: rem-calc(0);
+  width: 100%;
+  top: rem-calc(0);
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    z-index: 7;
+    left: rem-calc(0);
+    background: url($imagesPath +"/head-back.png")no-repeat center;
+    width: 100%;
+    height: rem-calc(74);
+    display: block;
+  }
+
+  &__hamb {
+    color: $white;
+    font-size: rem-calc(25);
+  }
+
+  .js-menu {
+    z-index: 9;
+  }
+
+  &__logo {
+    width: rem-calc(129);
+    height: rem-calc(22);
+    display: block;
+    max-width: 100%;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  @include breakpoint(large down) {
+    padding-left: rem-calc(40);
+    padding-right: rem-calc(40);
+  }
+  @include breakpoint(small only) {
+    padding-left: rem-calc(10);
+    padding-right: rem-calc(10);
+    background: rgba($black,.15);
+    border-bottom: rem-calc(0);
+  }
+}

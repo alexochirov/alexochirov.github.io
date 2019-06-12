@@ -1,0 +1,41 @@
+extends regular
+
+block content
+  .grid-container: .grid-x.grid-padding-x.align-center: .cell.large-20
+    .info
+      p: a(href='user-referal-program.html') #[i.fas.fa-chevron-left] Реферальная программа
+      .grid-x.grid-padding-x
+        .cell.large-14: .callout
+          h3 Личные данные
+          form
+            .grid-x
+              .cell.medium-8
+                label Имя
+                  input(type='text' value='Иванов')
+              .cell.medium-8
+                label Фамилия
+                  input(type='text' value='Иван')
+              .cell.medium-8
+                label Отчество
+                  input(type='text' value='Иванович')
+            label Компания
+              input(type='text' value='ИП Иванов')
+            label Электронная почта
+              input(type='email' value='welcome@cetera.ru')
+            label Телефон
+              input(type='tel' value='8 123 456-78-90')
+            label Страна, город, адрес регистрации
+              input(type='text' value='Проспект Ленина, дом 25, 6 этаж, офис 606')
+            label Адрес сайта
+              input(type='text' value='www.cetera.ru')
+            button.button(type='submit') Сохранить
+        .cell.large-10: .callout
+          h3 Смена пароля
+          form
+            label Действующий пароль
+              input(type='password')
+            label Новый пароль
+              input(type='password')
+            label Подтверждение пароля
+              input(type='password')
+            button.button(type='submit') Сменить пароль

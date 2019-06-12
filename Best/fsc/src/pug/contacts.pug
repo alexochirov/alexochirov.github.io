@@ -1,0 +1,40 @@
+extends regular
+
+block page
+  .grid-container: .grid-x.grid-padding-x: .cell
+    ul.breadcrumbs
+      li
+        a(href='corp-index.html' title='') Главная
+    h1 Контакты
+  .grid-container.info: .grid-x.grid-padding-x
+    .cell.medium-8
+      h3 Отдел продаж
+      p
+        b Телефон
+        br
+        a(href='tel:88007755293') 8 (800) 775-52-93
+      p
+        b Режим работы
+        br
+        | Понедельник-пятница, 9:00-18:00
+      p
+        a(href='mailto:welcome@fastsite.ru') #[i.fas.fa-envelope] welcome@fastsite.ru
+    .cell.medium-8
+      h3 Техническая поддержка
+      p
+        b Телефон
+        br
+        a(href='tel:88007755293') 8 (800) 775-52-93
+      p
+        b Режим работы
+        br
+        | Понедельник-пятница, 8:00-20:00
+      p
+        a(href='mailto:support@fastsite.ru') #[i.fas.fa-envelope] support@fastsite.ru
+    .cell.medium-8
+      h3 Офис в Ярославле
+      p 150040, город Ярославль, проспект Ленина, дом 25, офис 603
+      .map
+        iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6344.32377020446!2d37.57639787499114!3d55.79224500973831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b549f0c1269c0b%3A0x4236b28a4521323!2z0YPQuy4g0J3QuNC20L3Rj9GPINCc0LDRgdC70L7QstC60LAsIDgsINCc0L7RgdC60LLQsCwgMTI3MjIw!5e0!3m2!1sru!2sru!4v1467010638187" allowfullscreen)
+  .grid-container: hr#feedback
+  include components/corporate/_footer-form

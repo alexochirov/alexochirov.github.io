@@ -1,0 +1,18 @@
+header.header
+  .grid-x.grid-padding-x
+    .large-8.cell.medium-6.small-18
+      a(href="#").header__logo
+        include ../common/_logo
+    .small-6.show-for-small-only.cell.text-right
+      a(data-toggle="js-menu").header__hamb
+        i.fas.fa-bars    
+    .large-16.cell.medium-18.hide-for-small-only.js-menu  
+      ul.menu-top
+        li.menu-top__item
+          a.menu-top__link(data-slide="3") Портфолио
+        li.menu-top__item
+          a.menu-top__link(data-slide="2") Тарифы
+        li.menu-top__item
+          a.menu-top__link(data-slide="4") Контакты
+        li.menu-top__item
+          a.menu-top__link(href="./article.html") F.A.Q

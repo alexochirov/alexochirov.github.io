@@ -1,0 +1,30 @@
+extends regular
+
+block content
+  .grid-container: .grid-x.grid-padding-x.align-center: .cell.large-20
+    .info
+      ul.menu.simple.sect 
+        li: a(href='admin-referal-program-sites.html') Сайты
+        li: a(href='admin-referal-program-links.html') Переходы по ссылкам
+      .callout
+        h3 www.clientswebsite.com
+        p #[b Клиент]: Константин Александровский
+        table.unstriped
+          thead
+            tr
+              th Услуга
+              th Дата оказания
+              th Вознаграждение
+          tbody
+            - var i = 0
+            while i < 15
+              - i++
+              tr
+                td Название услуги, оказанной сайту клиента
+                td 2019.03.20
+                td 200 ₽
+                  if i < 4
+                    br
+                    a(href='') Начислисть
+
+        include components/common/_pagination    

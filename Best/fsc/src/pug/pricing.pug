@@ -1,0 +1,179 @@
+extends regular
+
+//- Примеры
+  https://tilda.cc/ru/pricing/
+  https://readymag.com/pricing/
+  https://ru.wix.com/upgrade/website
+  https://megagroup.ru/price
+  https://ru.shopify.com/pricing
+
+//- Сейчас
+  http://www.fastsite.ru/price/
+
+block page
+  .grid-container
+    .grid-x.grid-padding-x: .cell
+      ul.breadcrumbs
+        li
+          a(href='corp-index.html' title='') Главная
+      h1.text-center Цены на создание сайтов 
+    .info
+      .grid-container
+        .grid-x.grid-padding-x.align-center: .cell.large-20
+          .info_down.lead.text-center Дизайн, программирование, наполнение и продвижение
+          h2 Сайт и логотип
+          .info_down.grid-x.grid-padding-x.medium-up-3(data-equalizer data-equalize-by-row='true')
+            .cell: .callout.flex-container.flex-dir-column(data-equalizer-watch)
+              .flex-child-auto
+                h5.text-center Простой сайт
+                .text-center На основе готового #[a(href='') отраслевого решения]
+                .info.text-center #[span.stat Бесплатно]
+                  br
+                  b за 1 день
+                hr.sect
+                b Включает
+                ul.no-bullet
+                  li + Получение платежей PayU
+                  li + Систему управления сайтом 
+                  li + Домен (.ru)
+                  li + Хостинг бессрочно
+                b Не включает
+                ul.no-bullet
+                  li – Работы по наполнению сайта
+              .flex-child-shrink
+                a.button.expanded(href='http://www.fastsite.ru/bid/') Заказать
+            
+            .cell: .callout.flex-container.flex-dir-column(data-equalizer-watch)
+              .flex-child-auto
+                h5.text-center Сайт с дизайном
+                .text-center Готовый сайт с индивидуальным дизайном.
+                .info.text-center #[span.stat 32 000] #[b р]
+                  br
+                  b от 5 дней
+                hr.sect
+                b Включает
+                ul.no-bullet
+                  li + Всё, что включает простой сайт
+                  li + Индивидуальный дизайн сайта
+                b Не включает
+                ul.no-bullet
+                  li – Работы по наполнению сайта
+                  li – Создание логотипа
+              .flex-child-shrink
+                a.button.expanded(href='http://www.fastsite.ru/bid/') Заказать
+          
+            .cell: .callout.flex-container.flex-dir-column(data-equalizer-watch)
+              .flex-child-auto
+                h5.text-center Логотип
+                .text-center Запоминается лучше, чем просто название
+                .info.text-center #[span.stat 9 000] #[b р]
+                  br
+                  b от 3 дней
+                hr.sect
+                p Вы получите индивидуальный логотип в форматах, подходящих для использования в Интернете. Наш дизайнер расскажет, почему логотип сделан таким.
+              .flex-child-shrink
+                  a.button.expanded(href='') Заказать
+          
+          h2 Расширенные возможности
+          .info_down.grid-x.grid-padding-x.medium-up-3(data-equalizer data-equalize-by-row='true')
+            .cell: .callout.flex-container.flex-dir-column(data-equalizer-watch)
+              .flex-child-auto
+                h5.text-center Индивидуальный модуль для сайта на Fastsite
+                .text-center Программирование функциональности под ваши задачи. #[a(href='') Посмотреть примеры].
+                .info.text-center #[span.stat 19 000] #[b р]
+                  br
+                  b от 3 дней
+              .flex-child-shrink
+                a.button.expanded(href='') Заказать
+            
+            .cell: .callout.flex-container.flex-dir-column(data-equalizer-watch)
+              .flex-child-auto
+                h5.text-center Подключение сервиса доставки на сайт 
+                .text-center Интеграция со службой доставки для автоматического расчёта стоимости доставки в корзине и заказе на сайте.
+                .info.text-center #[span.stat 5 000] #[b р]
+                  br
+                  b 3 дня
+              .flex-child-shrink
+                a.button.expanded(href='') Заказать
+            
+            .cell: .callout.flex-container.flex-dir-column(data-equalizer-watch)
+              .flex-child-auto
+                h5.text-center Подключение платежей на сайт
+                .text-center Позволяет оплачивать товары и услуги на вашем сайте.
+                .info.text-center 
+                  .sect PayU
+                    br
+                    | #[span.stat Бесплатно]
+                  .sect Другой эквайринг
+                    br
+                    | #[span.stat 14 000] #[b р]
+                  b 3 дня
+              .flex-child-shrink
+                a.button.expanded(href='') Заказать
+            
+          h2 Наполнение и продвижение сайта
+          .info_down.grid-x.grid-padding-x.medium-up-3(data-equalizer data-equalize-by-row='true')
+            .cell: .callout.flex-container.flex-dir-column(data-equalizer-watch)
+              .flex-child-auto
+                h5.text-center Наполнение сайта
+                .text-center Вы предоставляете тексты, фото, видео и мы публикуем их согласно утверждённой структуре сайта.
+                .info.text-center #[span.stat 5 000] #[b р]
+                  .sect за 10 материалов
+                  .sect
+                    | #[span.stat +100] #[b р]
+                    br
+                    | за каждый дополниительный материал или товар
+                  b от 1 дня
+                  br
+                  | Зависит от объёма материалов
+              .flex-child-shrink
+                a.button.expanded(href='') Заказать
+            
+            .cell: .callout.flex-container.flex-dir-column(data-equalizer-watch)
+              .flex-child-auto
+                h5.text-center Написание текстовых материалов
+                .text-center
+                .info.text-center #[span.stat 20 000] #[b р]
+                  .sect в месяц, без ограничений
+                    br
+                    | или
+                  .sect #[span.stat 1] #[b р] 
+                    br
+                    | за знак
+                  b от 1 дня
+                  br
+                  | Зависит от объёма материалов и сложности темы
+              .flex-child-shrink
+                a.button.expanded(href='') Заказать
+
+            .cell: .callout.flex-container.flex-dir-column(data-equalizer-watch)
+              .flex-child-auto
+                h5.text-center Базовая поисковая оптимизация 
+                .text-center Сайт будет ближе к первой странице результатов поиска по важным для вас запросам. Расскажем, как продвигать сайт дальше.
+                .info.text-center #[span.stat 9 000] #[b р]
+                  br
+                  b 3 дня
+              .flex-child-shrink
+                a.button.expanded(href='') Заказать
+
+          h2.text-center В любой сайт, который мы делаем, входят
+          .info_down.grid-x.grid-padding-x.medium-up-3.text-center
+            .cell #[i.fas.fa-check.text-success] Система управления сайтом
+            .cell #[i.fas.fa-check.text-success] Домен .ru в подарок
+            .cell #[i.fas.fa-check.text-success] Хостинг, бессрочно
+          //- .info_down.text-center
+            p Мы продумали и учли множество мелочей, чтобы ваш сайт был не только красивым, но и функциональным.
+            a(href='') Полный список возможностей
+  .background-main
+    .grid-container: .info.grid-x.grid-padding-x.align-center: .cell.medium-16
+      h2 Покупателей интересует
+      
+      ul.accordion(data-accordion data-multi-expand='true' data-allow-all-closed='true')
+        for title in ['В чем отличие тарифных планов Personal и Business?','Можно ли привязать свой домен к сайту?','Подскажите, что понимается под «Экспорт исходного кода» в тарифе Business?','Что будет если я не продлю подписку?','Чем отличается сайт от страницы?','Будет ли сайт хорошо индексироваться поисковиками?','Что такое «не брендированный»?']
+          li.accordion-item(data-accordion-item)
+            a.accordion-title(href='')= title
+            .accordion-content(data-tab-content)
+              p Экспортируется статичный html плюс все необходимые файлы (картинки, css, js). Сайт пакуется в архив и вам дается ссылка на его скачивание. Просто разархивируйте файлы и скопируйте их к себе на сервер. Вы получите сайт, который будет открываться с вашего сервера и не будет зависим. Прочитайте инструкцию, как это сделать.
+
+
+        

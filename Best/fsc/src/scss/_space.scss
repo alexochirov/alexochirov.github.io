@@ -1,0 +1,12 @@
+.space {
+  display: block;
+  border-radius: rem-calc(16);
+  text-align: center;
+  margin-bottom: rem-calc(20);
+  transform: scale(1);
+  transition: 0.3s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}

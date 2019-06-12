@@ -1,0 +1,14 @@
+extends corp-index
+
+block page
+  include components/common/_breadcrumbs
+  block content
+    .grid-container: .grid-x.grid-padding-x: .cell
+    .info
+      .grid-container: .grid-x.grid-padding-x
+        .cell.small-24.medium-10.large-7.large-offset-1.medium-order-2
+          include components/common/_sidebar
+        .cell.small-24.medium-14.large-16.medium-order-1
+          h1 Заголовок страницы h1
+          .info
+            include components/common/_text

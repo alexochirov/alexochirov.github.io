@@ -1,0 +1,58 @@
+.lot {
+  box-shadow: rem-calc(4 4 18) rgba(46, 46, 46, 0.21);
+  border-radius: rem-calc(16);
+  text-align: center;
+  font-size: rem-calc(18);
+  font-weight: 700;
+  display: block;
+  padding: rem-calc(45) rem-calc(10);
+  @include margin-level(bottom,red);
+  color: $black;
+  line-height: 1.3;
+  transition: 0.3s;
+  transform: scale(1);
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: $black;
+    transform: scale(1.05);
+  }
+
+  &__icon {
+    margin-bottom: rem-calc(30);
+    height: rem-calc(148);
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      max-height: rem-calc(148);
+    }
+  }
+  @include breakpoint(small only) {
+    padding-top: rem-calc(20);
+    padding-bottom: rem-calc(20);
+
+    &__icon {
+      height: rem-calc(40);
+
+      img {
+        max-height: rem-calc(40);
+      }
+    }
+  }
+  @media (max-height: 640px) {
+    padding-top: rem-calc(20);
+    padding-bottom: rem-calc(20);
+
+    &__icon {
+      height: rem-calc(50);
+
+      img {
+        max-height: rem-calc(50);
+      }
+    }
+  }
+}

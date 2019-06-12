@@ -1,0 +1,12 @@
+.show-for-small-only(data-responsive-toggle='menu-left', data-hide-for='medium')
+  .button.expanded(data-toggle)
+    i.fas.fa-lg.fa-bars.picture
+    | Разделы помощи
+.side#menu-left
+  form.sect(action='support-search.html')
+    .input-group
+      input.input-group-field(type='text' placeholder='Поиск в помощи')
+      .input-group-button
+        button.button(type='submit' title='Найти'): i.fas.fa-search
+  include _sidebar-support-part
+

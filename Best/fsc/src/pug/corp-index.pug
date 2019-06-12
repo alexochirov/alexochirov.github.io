@@ -1,0 +1,32 @@
+doctype html
+html.no-js(lang='ru')
+  include components/service/_head
+  body
+    include components/mixins/_mixin-step
+    include components/mixins/_mixin-madeonfastsite
+    include components/mixins/_mixin-feedback
+    include components/mixins/_mixin-portfolio
+    include components/mixins/_mixin-close-button
+
+
+    block page
+      .hangar
+        block slides
+          .field
+            .field__slide(style="background-image:url(./i/bg.jpg);")
+            .field__slide(style="background-image:url(./i/bg2.jpg);")
+            .field__slide(style="background-image:url(./i/bg3.jpg);")
+            .field__slide(style="background-image:url(./i/bg4.jpg);")
+            .field__slide(style="background-image:url(./i/bg5.jpg);")
+            
+            
+  
+        .hangar__wrap
+          .site
+            block inner-slides
+              include components/common/_site-inner
+          
+    include components/common/_reveal-order
+    include components/common/_reveal-ready
+    include components/common/_to-top-link
+    include components/service/_js

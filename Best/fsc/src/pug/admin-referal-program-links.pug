@@ -1,0 +1,32 @@
+extends regular
+
+block content
+  .grid-container: .grid-x.grid-padding-x.align-center: .cell.large-20
+    .info
+      ul.menu.simple.sect
+        li: a(href='admin-referal-program-sites.html') Сайты
+        li.active: a(href='admin-referal-program-links.html') Переходы по ссылкам
+      .callout
+        h3 Переходы по реферальным ссылкам
+        table.unstriped
+          thead
+            tr
+              th Клиент
+              th Сайт клиента
+              th Реферальная ссылка
+              th Чья ссылка
+              //- th Вознаграждение
+          tbody
+            - var i = 0
+            while i < 15
+              - i++
+              tr
+                td Константин Александровский
+                td www.cilentswebsite.com
+                td www.fastsite.ru/?ref=someotherwebsite.com
+                td Александр Константиновский
+                //- td 200 ₽
+                  br
+                  a(href='') Начислисть
+
+        include components/common/_pagination    

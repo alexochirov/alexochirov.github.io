@@ -1,0 +1,155 @@
+extends regular
+
+//- Примеры
+  https://readymag.com/affiliate/
+  https://ru.wix.com/about/affiliates
+  https://megagroup.ru/ap
+
+block content
+  .grid-container: .grid-x.grid-padding-x.align-center: .cell.large-20
+    .callout
+      .grid-x.grid-padding-x
+          .cell.medium-16.medium-offset-1
+              br
+              br
+              br
+              br
+              h1 Зарабатывайте с Fastsite
+              br
+              p.lead Привлекая клиентов
+              br
+              br
+    .info
+      h2 Как это работает
+      .readable
+        | Находите людей, которым нужен сайт и дайте им ссылку на Fastsite
+        br
+        | Получайте 1&nbsp;000&nbsp;₽ за каждого привлечённого пользователя или % со всех их платежей.
+    
+    .info
+      .callout.text-center
+        a.button.large(data-open='affiliate-form-modal') Стать партнёром
+        .text-dark-gray Участвуя в программе, вы соглашаетесь на #[a(href='') её условия]
+
+    .info
+      h2 Что вы получите от партнёрства с Fastsite
+      .grid-x.grid-padding-x.medium-up-2(data-equalizer data-equalize-by-row='true')
+        .cell: .callout(data-equalizer-watch)
+          h3 Получайте 1 000 ₽ за каждую заявку
+          .readable Разово, в течении 48 часов или всю сумму ежемесячно. Даже за бесплатные регистрации.
+        .cell: .callout(data-equalizer-watch)
+          h3 Получайте % с платежей привлечённых клиентов
+          .readable Ежемесячно. Всегда, пока клиент платит. Ваше вознаграждение будет расти по мере привлечения новых клиентов.
+        .cell: .callout(data-equalizer-watch)
+          h3 Получайте % с партнёров, привлекающих новых клиентов
+          .readable До 5 уровней в сети оплачиваемых вознаграждений.
+        .cell: .callout(data-equalizer-watch)
+          h3 Получите базовую версий Fastsite для себя. Бесплатно
+          .readable Эту версию вы можете дать клиенту на тестирование и уже получить вознаграждение.
+        
+    .info
+      h2 Преимущества партнёрской программы Fastsite
+      .grid-x.grid-padding-x.medium-up-2(data-equalizer data-equalize-by-row='true')
+        .cell(data-equalizer-watch)
+          h3 Многоуровневая система
+          .readable Вы можете привлекать других партнеров и получать вознаграждение и за их клиентов тоже. Есть встроенные инструменты активизации сети, которые вы можете использовать. Также всем клиентам предлагается стать партнерами автоматически - и их продажи засчитываются на ваш счет. Вам также доступна полная контактная база ваших клиентов первого уровня.
+        .cell(data-equalizer-watch)
+          h3 Не требуются технические навыки
+          .readable Вы легко разберетесь как создавать сайт на конструкторе и легко расскажете об этом клиенту. В вашем распоряжении для установки: каталог модулей и каталог тем оформления. Если вам потребуется разработать индивидуальный модуль или тему   вы можете создать его самостоятельно или вам поможет компания-создатель системы по фиксированной цене.
+      
+    .info
+      h2 Идеи где разместить партнёрскую ссылку
+      ul.grid-x.grid-padding-x.small-up-2
+        li.cell 
+          .text-size-large В тематических блогах 
+          .text-dark-gray Упоминайте о Fastsite комментариях
+        li.cell 
+          .text-size-large На своём сайте
+          .text-dark-gray Напишите статью, почему вам нравиться Fastsite
+        li.cell 
+          .text-size-large В своих соц. сетях
+          .text-dark-gray Расскажите, от том что вы сотрудничаете с Fastsite
+        li.cell 
+          .text-size-large В общении с друзьями и коллегами
+          .text-dark-gray Делитесь впечатлениями и рекомендуйте Fastsite
+    
+    .callout.text-center
+      a.button.large(data-open='affiliate-link-modal') Получить партнёрскую ссылку
+      .text-dark-gray Участвуя в программе, вы соглашаетесь на #[a(href='') её условия]
+  
+    .info
+      h2 Частые вопросы
+      //- p 
+        b.text-size-large Что такое партнёрская программа Fastsite?
+      //- p 
+        b.text-size-large Кто может стать партнёром?
+      //- p 
+        b.text-size-large Как мне вступить в партнерскую программу?
+      //- p 
+        b.text-size-large Сколько я могу заработать?
+      p 
+        b.text-size-large Какие сайты могут участвовать в партнерской программе?
+        br
+        | Запрещены: спам, порно-сайты, вирусная активность и автоматические регистрации. Разрешено все остальное.
+      p 
+        b.text-size-large Как отслеживается результат?
+        br
+        | Вознаграждение за нового клиента выплачивается после ручной проверки контактной информации. Мы звоним каждому клиенту. Если клиент не наполнил сайт информацией или не ответил на наши простые вопросы по телефону, сайт не считается активированным, вознаграждение не засчитывается, сайт автоматически удаляется.
+      p 
+        b.text-size-large Когда и как я получу свои деньги?
+        br
+        | В течении 48 часов после регистрации каждой заявки. Или накопившуюся сумму в конце месяца. Безналичным переводом. Также вы можете третить заработаное внутри системы на модули и услуги Fastsite.
+      p 
+        b.text-size-large Есть ли какие-то ограничения по объемам?
+        br
+        | Ограничений нет. Оплатим любое количество привлечённых клиентов и заявок.
+      p 
+        b.text-size-large Остались вопросы?
+        br
+        a(href='contacts.html') Свяжитесь с нами
+
+    .info
+      .callout
+        h2 Вы программист?
+        .redable
+          p Напишите для Fastsite платный модуль или тему и получайте 70% от их продажи всегда.
+          p: a(href='') Подробнее
+          //- А также, предоставляйте платные услуги внутри системы. Узнайте технические нюансы #[a(href='') в службе поддержки].
+
+  .reveal.tiny(id='affiliate-link-modal' data-reveal data-deep-link='true')
+    h3 Получить партнёрскую ссылку
+    p Индивидуальная ссылка опубликована в интерфейсе вашего сайта на конструкторе Fastsite. Найдите её в модуле «Сервис > Партнёрская программа». Там же опубликованы типовые баннеры и рекомендации для партнёров.
+    button.close-button(type='button' data-close aria-label='Закрыть')
+      span(aria-hidden='true') &times;
+
+  .reveal.small(id='affiliate-form-modal' data-reveal data-deep-link='true')
+    h3 Регистрация партнёра
+    form
+      .grid-x
+        .cell.medium-8
+          label Имя
+            input(type='text')
+        .cell.medium-8
+          label Фамилия
+            input(type='text')
+        .cell.medium-8
+          label Отчество
+            input(type='text')
+      label Компания
+        input(type='text')
+      label Электронная почта
+        input(type='email')
+      label Телефон
+        input(type='tel')
+      label Страна, город, адрес регистрации
+        input(type='text')
+      br
+      label Адрес сайта
+        input(type='text')
+      +step('Сайт не содержит <a href="regular.html" title="">запрещённый контент</a>')
+      br
+      +step('Соглашаюсь с <a href="regular.html" title="">правилами партнёрской программы</a>')
+      +step('Соглашаюсь с <a href="regular.html" title="">условиями обработки персональных данных</a>')
+      button.button(type='submit') Отправить
+    button.close-button(type='button' data-close aria-label='Закрыть')
+      span(aria-hidden='true') &times;

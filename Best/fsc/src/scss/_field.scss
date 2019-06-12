@@ -1,0 +1,85 @@
+.field {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: rem-calc(0);
+  top: rem-calc(0);
+  overflow: hidden;
+
+  .slick-arrow {
+    left: calc(50% - 697px);
+    right: auto;
+    width: rem-calc(37);
+    height: rem-calc(22);
+    background: none;
+    transform: none;
+    padding: rem-calc(0);
+
+    &:active,
+    &:focus,
+    &:hover {
+      path {
+        fill: $light-gray;
+      }
+    }
+  }
+
+  .slick-next {
+    top: auto;
+  }
+
+  .slick-dots {
+    left: calc(50% - 695px);
+    top: 50%;
+    transform: translateY(-50%);
+    align-items: center;
+    z-index: 5;
+    height: auto;
+    display: flex;
+    width: rem-calc(20);
+    margin: rem-calc(0);
+    flex-flow: row wrap;
+    position: absolute;
+
+    li {
+      width: 100%;
+      height: rem-calc(13);
+      margin: rem-calc(10);
+
+      button {
+        cursor: pointer;
+        width: rem-calc(13);
+        height: rem-calc(13);
+        margin: rem-calc(0);
+        border: rem-calc(2) solid $white;
+        border-radius: rem-calc(7);
+      }
+    }
+
+    .slick-active {
+      button {
+        background: $white;
+      }
+    }
+  }
+
+  .field__slide {
+    width: 100%;
+    height: 100vh;
+    border: rem-calc(0);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+
+  .slick-current {}
+  @media (max-width: 1400px) {
+    .slick-dots {
+      left: rem-calc(12);
+    }
+
+    .slick-arrow {
+      left: rem-calc(10);
+    }
+  }
+}

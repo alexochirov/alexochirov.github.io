@@ -1,0 +1,65 @@
+extends regular
+
+block content
+  .grid-container: .grid-x.grid-padding-x: .cell
+    h1 Помощь
+  .info.grid-container: .grid-x.grid-padding-x
+      .cell.small-24.medium-10.large-7.large-offset-1.medium-order-2
+        include components/common/_sidebar-support
+      .cell.small-24.medium-14.large-16.medium-order-1
+        .grid-x.grid-padding-x.medium-up-2(data-equalizer data-equalize-by-row='true')
+          .cell: .callout(data-equalizer-watch)
+              h3 Только что зарегистрировались?
+              p Узнайте как #[a(href='') создать] и #[a(href='') настроить] сайт
+          .cell: .callout(data-equalizer-watch)
+              p: b Нашли ошибку?
+              p Ссылка «#[a(href='') Сообщить об ошибке]» размещена в нижней части любого сайта на Fastsite и в административном интерфейсе.
+          .cell: .callout(data-equalizer-watch)
+              p: a(href='support-article.html' title='К первой статье руководства'): b Пользователю
+              p Работа со структурой сайта. Создание и редактирование материалов сайта. Управления доступом и пользователями
+              p: a(href='support-article.html' title='К первой статье руководства') Всё руководство пользователя
+          .cell: .callout(data-equalizer-watch)
+              p: a(href='support-article.html' title='К первой статье руководства'): b Администратору
+              p Технические требования для установки и запуска системы. Версии системы.
+              p: a(href='support-article.html' title='К первой статье руководства') Всё руководство администратора
+          .cell: .callout(data-equalizer-watch)
+              p: a(href='support-article.html' title='К первой статье руководства'): b Разработчику
+              p Модификация системы. Виджеты плагины и модули. Разработка новой темы. API
+              p: a(href='support-article.html' title='К первой статье руководства') Всё руководство разработчика
+        br
+        br
+        h2 Частые вопросы
+        .grid-x.grid-padding-x.medium-up-2.large-up-3(data-equalizer data-equalize-by-row='true')
+          .cell: .callout(data-equalizer-watch)
+            p: a(href=''): b Сколько стоит забрать отдельные части сайта?
+            p Цены на перенос отдельных частей сайта с нашего сервера.
+          .cell: .callout(data-equalizer-watch)
+            p: a(href=''): b Как установить счётчики
+            p Добавить на ваш сайт возможность отслеживания статистики посещений и запросов.
+          .cell: .callout(data-equalizer-watch)
+            p: a(href=''): b Как внести изменения в шаблон сайта
+            p Изменить контактную информацию и другие стандартные поля.
+          .cell: .callout(data-equalizer-watch)
+            p: a(href=''): b Как заказать индивидуальный модуль
+            p Получить плагин для сайта, идеальный для ваших нужд.
+          .cell: .callout(data-equalizer-watch)
+            p: a(href=''): b Как заказать индивидуальный дизайн
+            p Сделать дизайн вашего сайта уникальным.
+          .cell: .callout(data-equalizer-watch)
+            p: a(href=''): b Как установить дополнительные модули
+            p Расширить функционал сайта, установив дополнительные плагины.
+        p: a(href=''): b Все частые вопросы
+  .grid-container: hr
+  .info.grid-container: .grid-x.grid-padding-x.medium-up-3
+    .cell
+        p: b Индивидуализация
+        p
+          a(href='') Заказать индивидуальный модуль 
+          br
+          a(href='') Заказать индивидуальный дизайн 
+    .cell
+        p: b Партнёрская программа
+        p: a(href='affiliate.html') Стать партнёром
+    .cell
+        p: b Предложить свой модуль для Fastsite
+        p: a(href='') В Marketplace

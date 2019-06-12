@@ -1,0 +1,99 @@
+extends regular
+
+block content
+  .grid-container: .grid-x.grid-padding-x.align-center: .cell.large-20
+    .info
+      .text-right
+        a(href='affiliate-data.html') #[i.fas.fa-user] Личные данные
+      h1 Реферальная программа
+      br
+      .grid-x.grid-margin-x.medium-up-3
+        .cell.callout
+          <div class="referal-program-tile">
+            <p class="text-medium-gray">К выплате</p>
+            <p class="stat text-nowrap">320 ₽</p><a data-open="payment-order-modal" aria-controls="payment-order-modal" aria-haspopup="true" tabindex="0">Заказать выплату</a>
+          </div>
+        .cell.callout
+          <div class="referal-program-tile">
+            <p class="text-medium-gray">Уже выплачено</p>
+            <p class="stat text-success text-nowrap">9 000 ₽</p><a href="">Смотреть детализацию</a>
+          </div>
+        .cell.callout
+          <div class="referal-program-tile">
+            <p class="text-medium-gray">Всего вы заработали</p>
+            <p class="stat text-success"><b class="text-nowrap">9 320 ₽</b></p><a href="">Смотреть отчёт</a>
+          </div>
+      .callout
+        h3 История выплат
+        table.unstriped
+          thead
+            tr
+              <th>Номер счёта</th>
+              <th>Дата заказа выплаты</th>
+              <th>Дата выплаты</th>
+              <th>Способ выплаты</th>
+              <th>Параметры выплаты</th>
+              <th>Сумма</th>
+              <th>Статус</th>
+          tbody
+            tr
+              <td>101859</td>
+              <td>2018.05.29, 11:41:18</td>
+              <td>2018.05.29, 11:41:18</td>
+              <td>На баланс клиента</td>
+              <td>На свой лицевой счёт</td>
+              <td>715&nbsp;₽</td>
+              <td><span class="label label_success">выплачено</span></td>
+        .text-center <a class="button" href="user-referal-program-details.html">Вся история <i class="fa fa-angle-right"></i></a>
+
+      .callout
+        h3 Статистика <a class="referal-stats-nav-item active" href="">по клиентам</a> <a class="referal-stats-nav-item" href="">по дате начисления</a></h3>
+        table.unstriped
+          thead
+            tr
+              <th>Email клиента</th>
+              <th>Дата регистрации</th>
+              <th>Окончания срока комиссии</th>
+              <th>Сумма вознаграждения</th>
+          tbody
+            tr
+              <td>clientmail@domain.com</td>
+              <td>2018.04.03</td>
+              <td>2019.04.04</td>
+              <td>Ещё не было списаний</td>
+            tr
+              <td>clientmail@domain.com</td>
+              <td>2018.04.03</td>
+              <td>2019.04.04</td>
+              <td>Ещё не было списаний</td>
+            tr
+              <td>clientmail@domain.com</td>
+              <td>2018.04.03</td>
+              <td>2019.04.04</td>
+              <td><a data-toggle="user3-more" aria-controls="user3-more">7 145 ₽ <i class="fa fa-caret-down"></i></a>
+                <div class="hide text-dark-gray" id="user3-more" data-toggler="hide" aria-expanded="false">Подробности списания</div>
+              </td>
+            tr
+              <td>clientmail@domain.com</td>
+              <td>2018.04.03</td>
+              <td>2019.04.04</td>
+              <td>Ещё не было списаний</td>
+            tr
+              <td>clientmail@domain.com</td>
+              <td>2018.04.03</td>
+              <td>2019.04.04</td>
+              <td><a data-toggle="user5-more" aria-controls="user5-more">2 360 ₽ <i class="fa fa-caret-down"></i></a>
+                <div class="hide text-dark-gray" id="user5-more" data-toggler="hide" aria-expanded="false">Подробности списания</div>
+              </td>
+            tr
+              <td>clientmail@domain.com</td>
+              <td>2018.04.03</td>
+              <td>2019.04.04</td>
+              <td>Ещё не было списаний</td>
+            tr
+              <td>clientmail@domain.com</td>
+              <td>2018.04.03</td>
+              <td>2019.04.04</td>
+              <td>Ещё не было списаний</td>
+        .text-center <a class="button" href="user-referal-program-details.html">Вся статистика <i class="fa fa-angle-right"></i></a>
+    

@@ -1,0 +1,19 @@
+extends regular
+
+block page
+  .grid-container: .grid-x.grid-padding-x.align-center
+    .cell.small-24.medium-16.large-12
+      .info: h1 Восстановление пароля
+      p: b Если вы забыли пароль, мы пришлём ссылку для его восстановления.
+      form.sect(action='user-login.html')
+        .grid-x.align-bottom
+          .cell.medium-auto
+            label Email, указанный при регистрации
+            .input-group
+              input.input-group-field.input-group-field_other(type='email' required)
+              .input-group-button.input-group-button_other
+                button.button(type='submit') Отправить
+          .cell.medium-shrink
+      hr.hr
+      p
+        a(href='user-login.html', title='') #[i.fas.fa-chevron-left] Войти

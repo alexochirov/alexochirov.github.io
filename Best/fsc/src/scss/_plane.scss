@@ -1,0 +1,45 @@
+.plane {
+  display: flex;
+  color: $dark-gray;
+  font-size: rem-calc(18);
+  @include margin-level(bottom,red);
+
+  &__prefix {
+    padding-left: rem-calc(17);
+    padding-right: rem-calc(17);
+    height: rem-calc(44);
+    display: flex;
+    background-color: #f8fafb;
+    flex-flow: row wrap;
+    align-items: center;
+    border: rem-calc(2) solid $medium-gray;
+    border-radius: rem-calc(22 0 0 22);
+  }
+
+  &__postfix {
+    background-color: #f8fafb;
+    padding-left: rem-calc(17);
+    padding-right: rem-calc(17);
+    height: rem-calc(44);
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    border: rem-calc(2) solid $medium-gray;
+    border-radius: rem-calc(0 22 22 0);
+  }
+
+  &__input {
+    border-left: rem-calc(0);
+    border-right: rem-calc(0);
+    background-color: #f8fafb;
+    border-radius: rem-calc(0);
+    width: calc(100% - 210px);
+
+    &:active,
+    &:focus,
+    &:hover {
+      border-left: rem-calc(0);
+      border-right: rem-calc(0);
+    }
+  }
+}

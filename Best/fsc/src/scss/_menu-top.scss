@@ -1,0 +1,69 @@
+.menu-top {
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+
+  &__hamburger {
+    margin: rem-calc(16 0 16);
+  }
+
+  &__item {
+    display: block;
+    @include disable-mouse-outline;
+    border-width: rem-calc(0 0 0 1);
+  }
+
+  &__link {
+    @include disable-mouse-outline;
+    display: block;
+padding: rem-calc(0);
+margin-left: rem-calc(28);
+margin-right: rem-calc(28);
+    font-size: rem-calc(20);
+    font-weight: 700;
+    color: $white;
+    position: relative;
+
+  &:hover,&:focus,&:active{
+    color: $white;
+    &:after {
+      content:"";
+      display: block;
+      height: rem-calc(3);
+      background: $white;
+      width: 100%;
+      position: absolute;
+      bottom: rem-calc(-24);
+      left: rem-calc(0);
+    }
+  }
+  }
+  @include breakpoint(large down) {
+    &__link {
+      margin-left: rem-calc(24);
+      margin-right: rem-calc(24);
+    }
+  }
+  @include breakpoint(medium down) {
+    justify-content: center;
+
+    &__link {
+      margin-left: rem-calc(7);
+      margin-right: rem-calc(7);
+    }
+  }
+  @include breakpoint(small only) {
+    justify-content: center;
+
+
+
+    &__link {
+      text-align: right;
+    }
+  }
+}

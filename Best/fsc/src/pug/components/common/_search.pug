@@ -1,0 +1,10 @@
+form(action='#' method='get')
+    .grid-x.grid-padding-x
+        .small-19.medium-auto.cell
+            .input-group
+                input.input-group-field(type='text', placeholder='Поиск на сайте' value='теги')
+                .input-group-button: button.button.light-gray(type='reset' title='Очистить строку поиска') &times;
+        .small-5.medium-shrink.cell
+            button.button.expanded(type='submit')
+                i.fa.fa-lg.fa-search.hide-for-medium
+                span.show-for-medium Искать

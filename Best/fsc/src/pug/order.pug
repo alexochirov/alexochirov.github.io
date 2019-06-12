@@ -1,0 +1,143 @@
+extends regular
+
+block page
+    .grid-container: .grid-x.grid-padding-x: .cell
+        ul.breadcrumbs
+            li
+                a(href='corp-index.html' title='') Главная
+        h1.text-center Заказать сайт на Fastsite
+    .grid-container.info
+        .grid-x.grid-padding-x: .cell
+            .info_down.lead.text-center Заполните заявку и мы предложим решение
+        .grid-x.grid-padding-x.align-center: .cell.large-14
+            form.sect()
+                label Ваше ФИО
+                    input(type='text' placeholder='Иванов Иван Иванович')
+                label Название компании
+                    input(type='text' placeholder='ООО Компания')
+                label Вид деятельности
+                    input(type='text')
+                label Контактный email
+                    input(type='email' placeholder='________@________.ru')
+                label Контактный телефон
+                    input(type='tel' placeholder='+7 ()')
+                label Для чего вам нужен сайт? 
+                    input(type='text' placeholder='Например: для продаж')
+                label Если у вас есть сайт, скажите адрес
+                    input(type='text' placeholder='www')
+
+                ul.accordion(data-accordion data-multi-expand='true' data-allow-all-closed='true')
+                    li.accordion-item(data-accordion-item)
+                        a.accordion-title(href='') Если сайта нет
+                        .accordion-content(data-tab-content)
+                            .grid-x
+                                .cell.shrink
+                                    .switch.tiny.picture
+                                        input.switch-input(id='smallSwitch1' type='checkbox' name='orderSwitch1')
+                                        label.switch-paddle(for='smallSwitch1')
+                                            span.show-for-sr Нужен ли вам сайт срочно?
+                                .cell.auto Сайт нужен срочно
+                            .grid-x
+                                .cell.shrink
+                                    .switch.tiny.picture
+                                        input.switch-input(id='smallSwitch2' type='checkbox' name='orderSwitch2')
+                                        label.switch-paddle(for='smallSwitch2')
+                                            span.show-for-sr Будете ли вы продвигать сайт в поисковых системах? 
+                                .cell.auto Нужно поисковое продвижение
+                            .grid-x
+                                .cell.shrink
+                                    .switch.tiny.picture
+                                        input.switch-input(id='smallSwitch3' type='checkbox' name='orderSwitch3')
+                                        label.switch-paddle(for='smallSwitch3')
+                                            span.show-for-sr Есть ли у вас уже домен для сайта? 
+                                .cell.auto Уже куплено имя сайта
+                            .grid-x
+                                .cell.shrink
+                                    .switch.tiny.picture
+                                        input.switch-input(id='smallSwitch4' type='checkbox' name='orderSwitch4')
+                                        label.switch-paddle(for='smallSwitch4')
+                                            span.show-for-sr Есть ли у вас фирменный стиль или логотип? 
+                                .cell.auto Есть фирменный стиль или логотип
+                            .grid-x
+                                .cell.shrink
+                                    .switch.tiny.picture
+                                        input.switch-input(id='smallSwitch5' type='checkbox' name='orderSwitch5')
+                                        label.switch-paddle(for='smallSwitch5')
+                                            span.show-for-sr Готовы ли материалы для сайта? 
+                                .cell.auto Есть материалы для наполнения сайта
+                            label Если на сайте будут товары, то откуда появится их описание? 
+                                input(type='text' placeholder='Например: из 1С')
+                    li.accordion-item(data-accordion-item)
+                        a.accordion-title(href='') Если сайт есть
+                        .accordion-content(data-tab-content)
+                            .grid-x
+                                .cell.shrink
+                                    .switch.tiny.picture
+                                        input.switch-input(id='smallSwitch6' type='checkbox' name='orderSwitch6')
+                                        label.switch-paddle(for='smallSwitch6')
+                                            span.show-for-sr Есть ли Техническое задание на развитие? 
+                                .cell.auto Есть ТЗ на развитие сайта
+                            label Есть ли задачи, не описанные в Техническом задании? А потом будут? 
+                                input(type='text')
+                            label Кто сейчас обслуживает сайт? 
+                                input(type='text')
+                            label Где сейчас размещается сайт? Кто хранит доступы к сайту? 
+                                input(type='text')
+                            .grid-x
+                                .cell.shrink
+                                    .switch.tiny.picture
+                                        input.switch-input(id='smallSwitch7' type='checkbox' name='orderSwitch7')
+                                        label.switch-paddle(for='smallSwitch7') 
+                                            span.show-for-sr Нужно ли продвижение в результатах поиска? 
+                                .cell.auto Нужно поисковое продвижение
+                            .grid-x
+                                .cell.shrink
+                                    .switch.tiny.picture
+                                        input.switch-input(id='smallSwitch8' type='checkbox' name='orderSwitch8')
+                                        label.switch-paddle(for='smallSwitch8') 
+                                            span.show-for-sr Нужно ли продвижение в контекстной рекламе?
+                                .cell.auto Нужна контекстная реклама в поиске
+                            .grid-x
+                                .cell.shrink
+                                    .switch.tiny.picture
+                                        input.switch-input(id='smallSwitch9' type='checkbox' name='orderSwitch9')
+                                        label.switch-paddle(for='smallSwitch9') 
+                                            span.show-for-sr Нужно ли продвижение в социальных сетях? 
+                                .cell.auto Нужно продвижение в соц. сетях
+                    li.accordion-item(data-accordion-item)
+                        a.accordion-title(href='') Если вам нужен Интернет-магазин
+                        .accordion-content(data-tab-content)
+                            label Чем именно вы торгуете? 
+                                input(type='text')
+                            label Какой объем номенклатуры? 
+                                select
+                                    option(disabled selected) выбрать
+                                    option Меньше
+                                    option Сотни
+                                    option Тысячи
+                                    option Десятки тысяч
+                            label Торгуем с новыми клиентами или с уже существующими клиентами? 
+                                input(type='text')
+                            label Где хранятся данные о товарах? 
+                                input(type='text' placeholder='Например: в 1С')
+                            label Какая у вас складская система и кто её обслуживает? 
+                                input(type='text')
+                            label Как планируете доставлять: сами или курьерской службой? 
+                                input(type='text')
+                            label Хотите ли принимать электронные платежи?
+                                input(type='text')
+                            label Торговать будете с конечными клиентами в розницу или с дилерами оптом? 
+                                input(type='text')
+                            label Есть ли у вас политика предоставления скидок? Расскажите коротко, как она устроена? 
+                                input(type='text')
+
+                label Когда будете принимать решение о выборе подрядчика? 
+                    input(type='text')
+                label Когда планируете проводить презентации подрядчиков у вас в офисе? 
+                    input(type='text')
+                label По какому адресу прислать коммерческое предложение и наше печатное портфолио? 
+                    input(type='text')
+                br
+                +step('Соглашаюсь с <a href="regular.html" title="">условиями обработки персональных данных</a>')
+                button.button.large(type='submit') Отправить заявку
+            

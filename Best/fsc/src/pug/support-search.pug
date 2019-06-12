@@ -1,0 +1,58 @@
+extends regular
+
+block content
+  .grid-container: .grid-x.grid-padding-x: .cell
+    h1 Помощь
+  .info.grid-container: .grid-x.grid-padding-x
+      .cell.small-24.medium-10.large-7.large-offset-1.medium-order-2
+        .show-for-small-only(data-responsive-toggle='menu-left', data-hide-for='medium')
+          .button.expanded(data-toggle)
+            i.fas.fa-lg.fa-bars.picture
+            | Разделы помощи
+        .side#menu-left
+          include components/common/_sidebar-support-part
+      .cell.small-24.medium-14.large-16.medium-order-1
+        include components/common/_search
+        .sect Результаты поиска 1-10 из 200
+        hr.sect
+        .sect
+          h3.project__title: a(href='' target='_blank') Настройка Google Tag Manager
+          div …Fastsite help center Инструкция по созданию тега и отслеживанию событий Тильды через GTM Google Tag Manager — это сервис компании Google, который позволяет добавить на страницу один код GTM и управлять…
+          .sect.text-dark-gray Название раздела помощи
+        .sect
+          h3.project__title: a(href='' target='_blank') Гид по SEO: продвижение сайта
+          div …месте Как добавить название и описание сайта (мета-теги для SEO) Прописываем теги Title и Description Как добавить тег H1, H2, H3 Теги для заголовков, чтобы создать на сайте структуру, понятную…
+          .sect.text-dark-gray Название раздела помощи
+        .sect
+          h3.project__title: a(href='' target='_blank') Подтверждение права собственности на домен
+          div Мы рекомендуем вам использовать следующие: Яндекс 1) Добавление мета-тега Откройте страницу Яндекс-вебмастер https://webmaster.yandex.ru/ Нажмите «Добавить сайт» Напишите адрес сайта и нажмите «Добавить…
+          .sect.text-dark-gray Название раздела помощи
+        .sect
+          h3.project__title: a(href='' target='_blank') Mixpanel
+          div …необходимо открыть код опубликованной страницы и найти класс открывающего тега DIV, содержащего вашу ссылку. Чтобы узнать класс блока для отслеживания, необходимо открыть код опубликованной страницы…
+          .sect.text-dark-gray Название раздела помощи
+        .sect
+          h3.project__title: a(href='' target='_blank') Подключение почты к своему домену
+          div …на Тильде можно подтвердить двумя из них — с помощью мета-тега и добавив запись в редактор DNS вашего регистратора. Мы рассмотрим самый простой способ — подтверждение домена с помощью мета-тега…
+          .sect.text-dark-gray Название раздела помощи
+        .sect
+          h3.project__title: a(href='' target='_blank') Публикация на Facebook
+          div …на facebook была видна информация, отличная от той, что прописана в настройках страницы, то в настройках страницы перейдите на вкладку «Бейджик», нажмите « Задать специальные настройки мета-тегов для постинга в фейсбук».
+          .sect.text-dark-gray Название раздела помощи
+        .sect
+          h3.project__title: a(href='' target='_blank') Как подключить к сайту Яндекс.Метрику
+          div …повторно опубликовать все страницы. Важно: Чтобы заработал Вебвизор 2.0, его необходимо дополнительно включить в интерфейсе Яндекс Метрики. Google Analytics Система статистики Google Google Tag Manager Диспетчер тегов Google…
+          .sect.text-dark-gray Название раздела помощи
+        .sect
+          h3.project__title: a(href='' target='_blank') Как исключить из поиска неправильную ссылку на сай…
+          div //www.mysite.ru Важно: Для того, чтобы подтвердить владение доменом вида http://project12345.Fastsite.ws нужно вставить мета-тег в Head вашего сайта. Это можно сделать в Настройках сайта → Еще → Вставка…
+          .sect.text-dark-gray Название раздела помощи
+        .sect
+          h3.project__title: a(href='' target='_blank') Вставка html кода
+          div …тэги script style. HTML код можно добавлять на страницу (внутрь тега <body>), либо в head сайта или страницы. Чтобы добавить блок на страницу, откройте Библиотеку блоков → Другое и добавьте блок…
+          .sect.text-dark-gray Название раздела помощи
+        .sect
+          h3.project__title: a(href='' target='_blank') Справочный центр
+          div Оптимизация загрузки изображений О технологии Lazy Load. Как исключить из поиска неправильную ссылку на сайт Как создать ленту RSS Добавляем RSS к сайту на Тильде SEO Задавайте мета-теги и тег H1 для страниц…
+          .sect.text-dark-gray Название раздела помощи
+        include components/common/_pagination

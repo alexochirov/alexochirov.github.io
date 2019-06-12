@@ -1,0 +1,13 @@
+.carousel {
+  &__item {
+    display: none;
+
+    &:first-child {
+      display: block;
+    }
+  }
+
+  .slick-dots {
+    margin: .5rem 0 2rem 0;
+  }
+}

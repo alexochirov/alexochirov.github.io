@@ -1,0 +1,11 @@
+mixin madeonfastsite(title, description)
+    .cell: .card(data-equalizer-watch)
+        a(href='explore-item.html'): img(src='./i/photo.svg')
+        .card-section
+            .sect.text-size-large: a(href='explore-item.html')= title
+            .sect= description + ' и организуйте продвижение сайта'
+            .grid-x.grid-padding-x
+                .cell.small-12
+                    a.button.expanded(href='') Создать сайт
+                .cell.small-12
+                    a.button.hollow.expanded(href='') Демо-версия

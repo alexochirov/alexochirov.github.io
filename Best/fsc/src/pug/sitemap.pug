@@ -1,0 +1,31 @@
+extends regular
+
+block page
+  .info
+    .grid-container: .grid-x.grid-padding-x: .cell.info_down
+      h1.text-center Карта сайта
+    .grid-container: .grid-x.grid-padding-x.align-center
+      .cell.medium-5
+        ul.menu.vertical.readable.info_down
+          li: a(href='corp-index.html' title='') Главная
+          li: a(href='about.html') О компании
+          li: a(href='feedback.html') Отзывы
+          li: a(href='news.html' title='') Новости
+          li: a(href='contacts.html' title='') Контакты
+      .cell.medium-5.medium-offset-1
+        ul.menu.vertical.readable.info_down
+          li: a(href='services.html') Создание сайтов
+          li: a(href='features.html') Возможности
+          li: a(href='explore.html') Решения
+          li: a(href='pricing.html') Цены 
+          li: a(href='portfolio.html') Портфолио
+      .cell.medium-7.medium-offset-1
+        ul.menu.vertical.info_down
+          li: a(href='affiliate.html') Партнёрская программа
+          li: a(href='support.html') Помощь 
+          li: a(href='releases.html') Обновления
+        form.info_down(action='search.html')
+          .input-group
+            input.input-group-field(type='text' placeholder='Поиск на сайте')
+            .input-group-button
+              button.button(type='submit' title='Найти'): i.fas.fa-search

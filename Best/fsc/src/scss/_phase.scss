@@ -1,0 +1,62 @@
+.phase {
+  margin-bottom: rem-calc(21);
+  box-shadow: rem-calc(4 4 18) rgba(46, 46, 46, 0.21);
+  border-radius: rem-calc(16);
+  background: $white;
+  padding-top: rem-calc(32);
+  padding-bottom: rem-calc(20);
+
+  &__title {
+    font-weight: 700;
+    font-size: rem-calc(18);
+    color: $black;
+    text-align: center;
+    line-height: 1;
+    margin-bottom: rem-calc(10);
+  }
+
+  &__price {
+    background: $white;
+    color: $black;
+    font-size: rem-calc(14);
+    line-height: 1;
+    text-align: center;
+    width: rem-calc(120);
+    justify-content: center;
+    height: rem-calc(40);
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    border-radius: rem-calc(16);
+  }
+
+  &__wrap {
+    padding-left: rem-calc(16);
+    padding-right: rem-calc(16);
+  }
+
+  &__block {
+    background-size: cover;
+    margin-bottom: rem-calc(16);
+    height: rem-calc(68);
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    align-items: center;
+    background-position: center;
+  }
+
+  &__text {
+    border-bottom: rem-calc(1) solid $light-gray;
+    margin-bottom: rem-calc(1);
+    padding-bottom: rem-calc(1);
+    font-size: rem-calc(14);
+  }
+
+  &__day {
+    font-size: rem-calc(16);
+    font-weight: 700;
+    text-align: center;
+  }
+
+}

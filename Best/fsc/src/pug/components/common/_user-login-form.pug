@@ -1,0 +1,12 @@
+form(action='user-personal.html')
+    input(type='email' placeholder='Email')
+    input(type='password' placeholder='Пароль')
+    .grid-x
+        .cell.small-12.medium-order-2.text-right
+            a(href='user-recover.html', title='') Забыли пароль?
+        .cell.small-12.medium-order-1
+            +step('Запомнить меня')
+    br
+    button.button.expanded.margin-bottom-0(type='submit') 
+        | Войти
+        i.fas.fa-sign-in-alt.fa-lg.canv

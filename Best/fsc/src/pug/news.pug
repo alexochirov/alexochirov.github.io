@@ -1,0 +1,39 @@
+extends regular
+
+mixin news(title, description)
+    .cell.medium-8: .card(data-equalizer-watch)
+        .card-section.flex-container.flex-dir-column
+            .flex-child-auto
+                .sect.text-size-large= title
+                .sect= description
+            .flex-child-shrink.sect.text-dark-gray 08.11.2018
+
+mixin news-large(title, description)
+    .cell.medium-16: .card(data-equalizer-watch)
+        .grid-x.grid-padding-x
+            .cell.medium-12
+                img(src='./i/photo.svg')
+            .cell.medium-12: .card-section.flex-container.flex-dir-column
+                .flex-child-auto
+                    h3: a(href='news-article.html')= title
+                    .sect= description
+                .flex-child-shrink.sect.text-dark-gray 08.11.2018
+
+block content
+    .grid-container: .grid-x.grid-padding-x.align-center: .cell.large-20
+        h1 Новости и события
+    .grid-container.info
+        .grid-x.grid-padding-x.align-center: .cell.large-20
+            .info_down.grid-x.grid-padding-x(data-equalizer data-equalize-by-row='true')
+                +news('Cetera подписала договор с компанией «Европлант» на разработку промо-сайта www.gelositin.ru','Компания «Европлант» занимается дистрибуцией и продвижением продуктов на основе растительного сырья')
+                +news('Cetera заключила договор с компанией ТОО «ДПД Казахстан»  на поисковую оптимизацию сайта','«ДПД Казахстан» оказывает транспортно-логистические услуг по уникальной технологии экспресс-экспедирования')
+                +news('Сetera заключила договор с компанией ООО "Брокер Авто" на поисковую оптимизацию сайта standart-p.ru','ООО "Брокер Авто" — Российско-Шведская компания, оказывает микрофинансовые и консалтинговые услуги') 
+                +news-large('Cetera заключила договор с компанией Pe for girls на поисковую оптимизацию сайта peforgirls.ru','Pe for girls - бренд женской одежды, дочерняя марка Ruban. Pe for girls создаёт удобные, хорошо сидящие костюмы, идеальные для путешествий, тёплые пальто и красивые платья.')        
+                +news('Cetera подписала договор с SNR Technology на комплексное обслуживание сайта www.snrshop.kz.','SNR Technology — поставщик телекоммуникационного оборудования для компьютерных сетей')
+                +news('Cetera подписала договор с компанией «Frolova complex» на создание и обслуживание корпоративного сайта medicalconcept.ru','«Frolova Complex» предоставляет информацию о лечении в Германии')  
+                +news('Cetera подписала договор с Дмитрием Сироткиным на комплексное обслуживание сайта','Cetera сдеает образовательный интернет-портал с бесплатными материалами и уникальными возмонжностями')  
+                +news('Cetera разработала промо-сайт для ООО «Альт-Инвестt»  www.alt-invest.ru','«Альт-Инвест» разрабатывает ПО для оценки инвестиционных проектов, проводит обучение и консалтинг в области инвестиционно-финансового анализа и планирования')
+                +news-large('Cetera заключила договор с ТМ «АВТОЛИГА» на комплексное обслуживание сайта avtoliga.net','ТМ «АВТОЛИГА» продаёт автозапчасти и выполняет комплексное тех. обслуживание и ремонтом любых легковых автомобилей.')
+                +news('Компания Cetera подписала договор с АО «Орех» на комплексное обслуживание и развитие сайта www.opex.ru','Компания «Орех» продаёт запчасти для отечественных и зарубежных грузовых автомобилей, тракторов и спецтехники')
+            include components/common/_pagination
+                        

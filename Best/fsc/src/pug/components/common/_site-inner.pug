@@ -1,0 +1,248 @@
+.site__field(style="background-image:url(./i/under1.jpg);")
+  include ../corporate/_header
+  .grid-x.grid-padding-x.site__main: .large-12.cell
+    h2.site__h2 Откройте сайт
+      span.site__extra за 1 минуту
+    .site__text Создание индивидуальных сайтов
+      br
+      | и интернет-магазинов быстро и недорого  
+    .site__row
+      .site__cell  
+        .plane
+          .plane__prefix https://  
+          input(type="text",placeholder="").plane__input
+          .plane__postfix fastsite.ru
+      .site__cell    
+        .grid-x.grid-padding-x: .large-16.cell  
+          a(href="#").button.button_expanded.button_site Получить сайт  
+.site__field.site__field_warning(style="background-image:url(./i/under2.jpg);")
+  include ../corporate/_header
+  .grid-x.grid-padding-x.site__main: .large-12.cell
+    h2.site__h2 выберите готовые
+      span.site__extra решения сайта
+    .site__text Вы создаете сайт в базовом шаблоне, 
+
+      br
+      | но вы можете выбрать отраслевое решение
+    .grid-x.grid-padding-x: .large-18.cell  
+      .vault
+        .vault__input(data-num="1") Корпоративный сайт
+        .vault__block.mCustomScrollbar(data-mcs-theme="dark")
+          .vault__item(data-num="1") Корпоративный сайт
+          .vault__item(data-num="2") Сайт-магазин
+          .vault__item(data-num="3") СМИ
+          .vault__item(data-num="4") Корпоративный сайт2
+          .vault__item(data-num="5") Сайт-магазин2
+          .vault__item(data-num="6") СМИ2
+          .vault__item(data-num="13") СМИ
+          .vault__item(data-num="14") Корпоративный сайт2
+          .vault__item(data-num="15") Сайт-магазин2
+          .vault__item(data-num="16") СМИ2
+      .site__flow.site__flow_first
+        a(href="#").button.button_demo Посмотреть демо    
+        a(href="#" data-toggle="blocks").button.button_chosen Я выбрал!
+      .site__flow.site__flow_second
+        a(data-toggle="order").button.button_demo заказать дизайн 
+        a(data-toggle="ready").button.button_chosen готово!
+        a(href="#").site__order Заказать индивидуальный дизайн от 5 000 руб!
+
+.site__field.site__field_success(style="background-image:url(./i/under3.jpg);")
+  include ../corporate/_header
+  .grid-x.grid-padding-x.site__main
+    .large-12.cell
+      h2.site__extra.text-center.large-text-left Тарифы
+    .large-12.cell.site__base
+      a.site__chevron.site__chevron_prev
+        include _ch-left
+      a.site__chevron.site__chevron_next
+        include _ch-right
+      a(href="#").button.button_spec скачать pdf
+  .stage
+    .stage__slide
+      .phase
+        .phase__title.js-eq1 Создание сайта
+        .phase__block(style="background-image:url(./images/f1.svg);")
+          .phase__price Бесплатно    
+        .phase__wrap  
+          .phase__text.js-eq2
+            p Включает в себя запуск сайта на одном из готовых отраслевых решений.
+            p Наполнение сайта материалами оплачивается отдельно.
+          .phase__day 1 день  
+    .stage__slide
+      .phase
+        .phase__title.js-eq1 Наполнение
+        .phase__block(style="background-image:url(./images/f2.svg);")
+          .phase__price от 5 000 руб
+        .phase__wrap  
+          .phase__text.js-eq2
+            p После согласования разделов, структуры сайта и предоставления материалов (тексты, фото, видео) они публикуются на сайт, согласно нашим стандартам публикации. 
+          .phase__day от 1 дня
+    .stage__slide
+      .phase
+        .phase__title.js-eq1 Система управления сайтом 
+        .phase__block(style="background-image:url(./images/f3.svg);")
+          .phase__price 
+            div в подарок к
+              br
+              | «Наполнению»
+        .phase__wrap  
+          .phase__text.js-eq2
+            p Переданы доступы в систему управления сайтом.
+          .phase__day 3 дня
+
+    .stage__slide
+      .phase
+        .phase__title.js-eq1 Домен .ru
+        .phase__block(style="background-image:url(./images/f4.svg);")
+          .phase__price 
+            div в подарок к
+              br
+              | «Наполнению»
+        .phase__wrap  
+          .phase__text.js-eq2
+            p Вашему сайту присвоен домен в зоне .ru.
+          .phase__day 1 час
+
+
+    .stage__slide
+      .phase
+        .phase__title.js-eq1 Хостинг бессрочно
+        .phase__block(style="background-image:url(./images/f5.svg);")
+          .phase__price 
+            div в подарок к
+              br
+              | «Наполнению»
+        .phase__wrap  
+          .phase__text.js-eq2
+            p Ваш сайт установлен 		на мощном сервере, а также обсепечена его бесперебойная работос- пособность. 
+          .phase__day 1 час
+
+    .stage__slide
+      .phase
+        .phase__title.js-eq1 Разработка логотипа
+        .phase__block(style="background-image:url(./images/f6.svg);")
+          .phase__price 9 000 руб
+        .phase__wrap  
+          .phase__text.js-eq2
+            p После указания пожеланий и заполнения анкеты наш дизайнер предложит вам наиболее подходящий логотип, затем расскажет, почему предлагаем именно данный вариант.
+          .phase__day от 3 дней
+    .stage__slide
+      .phase
+        .phase__title.js-eq1 Индивидуальный дизайн
+        .phase__block(style="background-image:url(./images/f7.svg);")
+          .phase__price 32 000 руб
+        .phase__wrap  
+          .phase__text.js-eq2
+            p Вы получите нарисован-
+              br
+              | ный дизайнером эскиз сайта, и после согласова-
+              br
+              | ния с вами, он будет реализован на сайте под ключ. Дизайн создается с учетом будущей адаптивности сайта.
+          .phase__day от 5 дней
+
+    .stage__slide
+      .phase
+        .phase__title.js-eq1 Подключение эквайринга
+        .phase__block(style="background-image:url(./images/f8.svg);")
+          .phase__price PayU бесплатно
+            br
+            | Иной 14 000 руб
+        .phase__wrap  
+          .phase__text.js-eq2
+            p На сайте подлючен эквайринг и покупатели могут оплачивать товары/услуги онлайн.
+          .phase__day 3 дня
+
+    .stage__slide
+      .phase
+        .phase__title.js-eq1 Подключение сервиса доставки
+        .phase__block(style="background-image:url(./images/f9.svg);")
+          .phase__price 5 000 руб
+        .phase__wrap  
+          .phase__text.js-eq2
+            p Проводится интеграция со службой доставки, после чего в корзине происходит подсчет стоимости и оформление доставки в автоматичес- ком режиме.
+          .phase__day 3 дня
+
+    .stage__slide
+      .phase
+        .phase__title.js-eq1 Базовая поисковая оптимизация
+        .phase__block(style="background-image:url(./images/f10.svg);")
+          .phase__price 9 000 руб
+        .phase__wrap  
+          .phase__text.js-eq2
+            p Отработка чек-листа необходимых действий + подключение к поисковикам, а также создание обширного семантического ядра      на основе реальных поисковых запросов пользователей.
+          .phase__day 3 дня
+
+    .stage__slide
+      .phase
+        .phase__title.js-eq1 Написание текстовых материалов
+        .phase__block(style="background-image:url(./images/f11.svg);")
+          .phase__price 20 000 руб/мес
+        .phase__wrap  
+          .phase__text.js-eq2
+            p Написание и опублика- ция статей на сайте, согласно семантичес- кому ядру. На сайте растет органический трафик по поисковым запросам.
+          .phase__day от 1 дня
+                
+    .stage__slide
+      .phase
+        .phase__title.js-eq1 Индивидуальный модуль
+        .phase__block(style="background-image:url(./images/f12.svg);")
+          .phase__price 19 000 руб
+        .phase__wrap  
+          .phase__text.js-eq2
+            p Итогом является создание и внедрение   на сайт модуля нестан- дартного функционала. 
+          .phase__day от 3 дней
+
+
+
+.site__field.site__field_port(style="background-image:url(./i/under4.jpg);")
+  include ../corporate/_header
+  .js-main
+    .grid-x.grid-padding-x.site__port
+      .large-12.cell
+        h2
+          span.site__extra Портфолио
+          span Отраслевые решения
+    .grid-x.grid-padding-x.large-up-3.medium-up-3
+      .cell      
+        a(data-toggle="js-port-1").lot.js-eq3
+          .lot__icon
+            img(src="./images/w1.svg", alt="")
+          .lot__title Интернет-магазины
+            br
+            | и сайты с каталогом    
+      .cell      
+        a(data-toggle="js-port-2").lot.js-eq3
+          .lot__icon
+            img(src="./images/w2.svg", alt="")
+          .lot__title Сайты на готовых
+            br
+            | решениях 
+      .cell      
+        a(data-toggle="js-port-3").lot.js-eq3
+          .lot__icon
+            img(src="./images/w3.svg", alt="")
+          .lot__title Сайты с индивидуальным
+            br
+            | дизайном  
+  .js-port-1.js-blocks
+    include _p1        
+  .js-port-2.js-blocks
+    include _p1        
+  .js-port-3.js-blocks
+    include _p1        
+
+
+.site__field.site__field_tertiary(style="background-image:url(./i/under5.jpg);")
+  include ../corporate/_header
+  .grid-x.grid-padding-x
+    .cell
+      h2.site__edit Контакты
+    .xlarge-7.cell.site__info.large-9.medium-12
+      .site__manager Дмитрий Розов
+      .site__vacancy Менеджер по продажам
+      a(href="#").site__link 5@cetera.ru
+      a(href="tel:+74999184357").site__tel +7 (499) 918-43-57 (#212)
+      a(href="tel:+79605356739").site__tel +7 (960) 535-67-39
+    .medium-auto.cell
+      .site__photo
+        img(src="./i/d.jpg", alt="") 

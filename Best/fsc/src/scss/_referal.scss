@@ -1,0 +1,9 @@
+.referal-stats-nav-item.active {
+    // background: scale-color($secondary-color, $lightness: 20%);
+    // border-radius: $global-radius;
+    // color: get-color(white);
+    // padding: rem-calc(0 8 4 8);
+    border-bottom: 2px solid currentColor;
+    color: get-color(primary); 
+    margin: rem-calc(0 8);
+}

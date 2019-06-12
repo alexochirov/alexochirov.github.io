@@ -1,0 +1,55 @@
+extends regular
+
+mixin update(title, description)
+    .sect
+        .text-size-large= title
+        .sect= description
+
+block content
+    .info
+        .grid-container: .grid-x.grid-padding-x
+            .cell.small-24.medium-10.large-7.large-offset-1.medium-order-2
+                .show-for-small-only(data-responsive-toggle='menu-left', data-hide-for='medium')
+                    .button.expanded(data-toggle)
+                        i.fas.fa-lg.fa-bars.picture
+                        | Обновления
+                .side#menu-left
+                    ul.menu.vertical
+                        li.active: a(href='')
+                            b 15.11.2018
+                            br
+                            | Перевели тему на английский язык
+                        li: a(href='')
+                            b 23.10.2018
+                            br
+                            | Обновили темы и исправили недочёты
+                        li: a(href='')
+                            b 09.08.2018
+                            br
+                            | Обновили темы и исправили недочёты
+                        li: a(href='')
+                            b 27.07.2018
+                            br
+                            | Обновили темы и исправили недочёты
+                        li: a(href='')
+                            b 09.06.2018
+                            br
+                            | Добавили новые виджеты и исправили недочёты
+                        li: a(href='')
+                            b 16.05.2018
+                            br
+                            | Добавили новые виджеты и исправили недочёты
+            .cell.small-24.medium-14.large-15.medium-order-1
+                h1 Обновление от 15.11.2018
+                .info
+                    p.readable-light Обновили темы и исправили недочёты.
+                    p: b Исправления
+                    ul
+                        li Исправлена новая тема для ресторана
+                        li Исправлены баги и недочеты
+                    p: b Новое
+                    p Теперь в Fastsite доступна тема для ресторана: Опишите и сфотографируйте меню, добавляйте и редактируйте материалы, настройте бронирование столиков и организуйте продвижение сайта ресторана.
+                    p: img.width-75(src='./i/photo.svg')
+                    include components/common/_share-links
+                
+                        

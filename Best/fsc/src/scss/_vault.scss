@@ -1,0 +1,85 @@
+.vault {
+  font-size: rem-calc(18);
+  font-weight: 400;
+  color: $dark-gray;
+  z-index: 5;
+  position: relative;
+  margin-bottom: rem-calc(21);
+max-width: 100%;
+width: rem-calc(400);
+  &__input {
+    padding-left: rem-calc(23);
+    padding-right: rem-calc(45);
+    position: relative;
+    background: $white;
+    height: rem-calc(44);
+    cursor: pointer;
+    border-radius: rem-calc(22);
+    border: rem-calc(2) solid $medium-gray;
+    line-height: rem-calc(40);
+
+    &:after {
+      content: '';
+      width: rem-calc(18);
+      display: block;
+      position: absolute;
+      right: rem-calc(23);
+      top: calc(50% - 5px);
+      height: rem-calc(10);
+      background: url($imagesPath +"/arr-d.svg")no-repeat center;
+      transition: 0.3s;
+      transform: rotate(0deg);
+    }
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: $warning-color;
+    }
+
+    &_active {
+      border-radius: rem-calc(22 22 0 0);
+      border-bottom: rem-calc(0);
+
+      &:after {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &__block {
+    position: absolute;
+    left: rem-calc(0);
+    top: 100%;
+    background: $white;
+    width: 100%;
+    z-index: 5;
+    padding-left: rem-calc(23);
+    padding-right: rem-calc(30);
+    padding-bottom: rem-calc(14);
+    height: rem-calc(240);
+    border: rem-calc(2) solid $medium-gray;
+    border-top: rem-calc(0);
+    display: none;
+    border-radius: rem-calc(0 0 22 22);
+
+    &_active {
+      display: block;
+    }
+  }
+
+  &__item {
+    border-top: rem-calc(2) solid $medium-gray;
+    padding-top: rem-calc(8);
+    padding-bottom: rem-calc(8);
+    display: flex;
+    flex-flow: row wrap;
+    cursor: pointer;
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: $warning-color;
+    }
+  }
+}

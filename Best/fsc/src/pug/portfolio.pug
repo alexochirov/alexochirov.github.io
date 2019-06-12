@@ -1,0 +1,34 @@
+extends regular
+
+include components/mixins/_mixin-portfolio
+
+block page
+    .grid-container: .grid-x.grid-padding-x: .cell
+        ul.breadcrumbs
+            li
+                a(href='corp-index.html' title='') Главная
+        h1.text-center Портфолио
+    .grid-container.info
+        .grid-x.grid-padding-x.align-center
+            .cell.small-24.medium-14.large-16
+                .info_down.lead.text-center Посмотрите сайты, сделанные на Fastsite
+        .grid-x.grid-padding-x.align-center: .cell.large-20
+            .info_down
+                .sect.grid-x.grid-padding-x.medium-up-3(data-equalizer data-equalize-by-row='true')
+                    +portfolio('Тахограф Мастер','Корпоративный сайт')
+                    +portfolio('Стоматология 32 Дент','Корпоративный сайт')
+                    +portfolio('Камень и Технологии»','Корпоративный сайт с каталогом')
+                    +portfolio('InteriGroup','Корпоративный сайт с каталогом')
+                    +portfolio('Marka','Корпоративный сайт с каталогом')
+                    +portfolio('Space Lord','Лендинг')
+                    +portfolio('Партнер Яндекс.Такси Вологда','Корпоративный сайт')
+                    +portfolio('Retrofit.PRO','Корпоративный сайт с каталогом')
+                    +portfolio('Мастер-дизайн','Корпоративный сайт')
+                    +portfolio('Купол Маркет','Интернет-магазин')
+                    +portfolio('Hyundai Avtoliga','Корпоративный сайт')
+                    +portfolio('Дизель Комплекс','Корпоративный сайт')
+                include components/common/_pagination
+                        
+        .info_down.grid-x.grid-padding-x.align-center: .cell.medium-16
+            h2.text-center Уникальный дизайн, широкая базовая функциональность, возможности развития сайта
+            .text-center: a.button(href='') Создать сайт на Fastsite 
