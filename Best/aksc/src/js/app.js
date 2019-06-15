@@ -9,7 +9,7 @@ $(document).foundation();
     $(".paint").slick({
       infinite: true,
       dots: false,
-      arrows: true,
+      arrows:false,
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,
@@ -160,8 +160,8 @@ $(document).foundation();
         }, 300);
       }
     });
-    
-    
+
+
     var $regLoginContent = $('#reg-login-content').html();
   	var timer;
     //**Обработчик кнопки Авторизоваться в модальном окне
@@ -174,17 +174,17 @@ $(document).foundation();
           	  	if(data.indexOf('success') + 1){
 									location.reload();
 								}
-          	  		
+
           	  	else{
 									$('#login-content_modal').html(data);
 								}
-          	  	 	
+
           	  }
           	);
 		});
-		
+
 		//**Обработчик кнопки Авторизоваться на страницах
-  	$('#login-content').on('click', '#login_btn',function(){		
+  	$('#login-content').on('click', '#login_btn',function(){
       var formAuth =$('#form_auth').serialize();
       $.post(
           	  "/auth/login.php",
@@ -193,15 +193,15 @@ $(document).foundation();
           	  	if(data.indexOf('success') + 1){
 									location.reload();
 								}
-          	  		
+
           	  	else{
 									$('#login-content').html(data);
 								}
-          	  	 	
+
           	  }
           	);
 		});
-    
+
     //**Обработчик кнопки Зарегистироваться в модальном окне
   	$('#reg-login-content').on('click', '#register_btn',function(){
   		completeMethod();
@@ -224,7 +224,7 @@ $(document).foundation();
           	  onAjaxSuccess
           	);
 		});
-		
+
 			function onAjaxSuccess(data)
       {
       	// данные, отправленные сервером в окно регистрации.
@@ -297,7 +297,7 @@ $(document).foundation();
 				$('#clockdiv').show();
 			return interval_id;
 		};
-		
+
 				//копка Обновить капчу
 		$('#reg-login-content').on('click', '#refresh_captcha',function(){
 			$.get('/ajax/refresh_captcha.php',
@@ -311,7 +311,7 @@ $(document).foundation();
 		});
 
 	var forgotPswContent = $('#forgot-psw-content').html();
-	
+
 	//кнопка Закрыть сбрасывает форму восстановления к началу
 	$('#close_forgot_btn').on('click',function(){
 			setTimeout(function() { $('#forgot-psw-content').html(forgotPswContent);}, 500);
@@ -327,12 +327,12 @@ $(document).foundation();
           	  	 	$('#forgot-psw-content').html(data);
           	  	 	 var regState = $('#regState').attr('value');
         					if(regState=='activate'){
-        						timer = initTimer(); 
+        						timer = initTimer();
 									}
           	  }
           	);
 		});
-		//**Обработчик кнопки Подтвердить в восстановлении пароля 
+		//**Обработчик кнопки Подтвердить в восстановлении пароля
 		$('#forgot-psw-content').on('click', '#activation_btn',function(){
 			var formActivation =$('#formActivation').serialize()+'&activation_btn=1&curtime='+$('#clockdiv').html();
           	$.post(
@@ -342,7 +342,7 @@ $(document).foundation();
           	  	 	$('#forgot-psw-content').html(data);
           	  	 	 var regState = $('#regState').attr('value');
         if(regState=='activate'){
-        	timer = initTimer(); 
+        	timer = initTimer();
 				}
           	  }
           	);
@@ -357,12 +357,12 @@ $(document).foundation();
           	  	 	$('#forgot-psw-content').html(data);
           	  	 	 var regState = $('#regState').attr('value');
           	  	 	 if(regState=='activate'){
-          	  	 	 	timer = initTimer(); 
+          	  	 	 	timer = initTimer();
           	  	 	 }
           	  }
           	);
 		});
-		
+
 		//**Обработчик кнопки Сменить пароль в восстановлении пароля
 		$('#forgot-psw-content').on('click', '#change_psw_btn',function(){
 			var psw = $('#new_password').val();
@@ -370,11 +370,11 @@ $(document).foundation();
 			$("#msg_err").remove();
 			if(psw.length < 6){
 				$("#formChangePsw").prepend("<div class='alert callout' id='msg_err'>Длина менее 6 символов</div>");
-				return; 
+				return;
 			}
 			if(psw != psw_cnf){
 				$("#formChangePsw").prepend("<div class='alert callout' id='msg_err'>Пароли не совпадают</div>");
-				return; 
+				return;
 			}
 
 			var formChangePsw = $('#formChangePsw').serialize()+'&change_psw_btn=1';
@@ -383,11 +383,11 @@ $(document).foundation();
           	  formChangePsw,
           	  function (data){
           	  	 	$('#forgot-psw-content').html(data);
-          	  	 	
+
           	  }
           	);
-		}); 
-		
+		});
+
 		/*$('#forgot-psw-content').on('focus', '.reg-login_input',function()
 		{
 			$("#msg_err").remove();

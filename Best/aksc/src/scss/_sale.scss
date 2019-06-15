@@ -5,20 +5,25 @@
     padding-left: rem-calc(14);
     padding-right: rem-calc(14);
   }
-.slick-arrow {
-  top: auto;
-  bottom: rem-calc(-50);
-  width: rem-calc(40);
-  height: rem-calc(40);
-  display: block !important; 
-}
-  .slick-prev {
 
+  .slick-arrow {
+    top: auto;
+    bottom: rem-calc(-50);
+    width: rem-calc(40);
+    height: rem-calc(40);
+    display: block !important;
+
+    &:before {
+      position: relative;
+      top: rem-calc(2);
+    }
+  }
+
+  .slick-prev {
     left: calc(50% - 58px);
   }
 
   .slick-next {
-
     right: calc(50% - 58px);
   }
 }
