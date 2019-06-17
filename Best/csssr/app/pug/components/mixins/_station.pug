@@ -1,0 +1,5 @@
+mixin station(text,name,checked)
+  -var id =  Math.ceil(Math.random() * 1000);
+  .station
+    input.station__input(type="radio" name=name id=id checked=checked)
+    label.station__label(for=id) !{text}

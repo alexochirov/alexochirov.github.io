@@ -1,0 +1,31 @@
+.fact {
+  display: flex;
+margin-bottom: rem-calc(13);
+  &__input {
+    border: 0;
+    background: url($imagesPath +"/border.png")repeat-x right bottom;
+    box-shadow: none;
+    font-size: rem-calc(30);
+    font-family: $font-courier;
+    color: #231f20;
+    padding-bottom: rem-calc(5);
+    width: 100%;
+    padding-left: rem-calc(18);
+    padding-right: rem-calc(18);
+    height: rem-calc(49);
+    &:hover,&:focus,&:active{
+      color: #000;
+    }
+  }
+
+  &__text {
+    display: block;
+    color: #2f1b15;
+    margin-top: rem-calc(17);
+    padding-right: rem-calc(16);
+    white-space: nowrap;
+    font-weight: 700;
+    font-size: rem-calc(22);
+
+  }
+}

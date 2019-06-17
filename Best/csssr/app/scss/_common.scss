@@ -1,0 +1,43 @@
+a {
+  -webkit-transition: color 300ms ease-in-out;
+  -moz-transition: color 300ms ease-in-out;
+  -ms-transition: color 300ms ease-in-out;
+  -o-transition: color 300ms ease-in-out;
+  transition: color 300ms ease-in-out;
+  text-decoration-skip-ink: none;
+}
+
+*:focus {
+  outline: none;
+}
+fieldset {
+  border: rem-calc(0);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin-bottom: rem-calc(22);
+}
+
+body:not(.outline) * {
+  outline: none;
+}
+
+body {
+  line-height: 1.533;
+  font-size: rem-calc(15);
+  background-color: #797979;
+  font-family: $font-pt;
+  color: #3d3d3d;
+}
+
+.h3,
+h3 {
+  margin-bottom: rem-calc(5);
+  font-size: rem-calc(24);
+  color: #2f1b15;
+  font-weight: 700;
+}

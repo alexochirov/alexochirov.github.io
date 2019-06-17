@@ -1,0 +1,8 @@
+.fake {
+  display: inline-block;
+  visibility: hidden;
+  position: absolute;
+  word-break: break-word;
+  left: rem-calc(-20000);
+  top: rem-calc(0);
+}

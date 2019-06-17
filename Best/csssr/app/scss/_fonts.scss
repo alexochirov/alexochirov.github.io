@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'PT Sans';
+  src: url($fontsPath+ "/PTSans-Bold.woff2") format('woff2'), url($fontsPath+ "/PTSans-Bold.woff") format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PT Sans';
+  src: url($fontsPath+ "/PTSans-Regular.woff2") format('woff2'), url($fontsPath+ "/PTSans-Regular.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Courier New';
+  src: url($fontsPath+ "/CourierNewPSMT.woff2") format('woff2'), url($fontsPath+ "/CourierNewPSMT.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+$font-courier: 'Courier New',sans-serif;
+$font-pt: 'PT Sans',sans-serif;

@@ -1,0 +1,78 @@
+doctype html
+html(lang='ru')
+  include components/service/_head
+  
+  include components/mixins/_step
+  include components/mixins/_station
+  
+  body
+    form.paper
+      header.paper__row
+        .paper__block
+          a(href="https://csssr.com/ru").paper__link
+            img(src="./images/logo.png", alt="").paper__logo
+        .paper__secret
+          img(src="./images/self.png", alt="") 
+      main.paper__main    
+        .paper__file
+          img(src="./images/file.png", alt="") 
+        fieldset.paper__info  
+          label.fact
+            span.fact__text Полное ФИО
+            input.fact__input(type="text",value="Очиров Александр Русланович")
+          label.fact
+            span.fact__text Год рождения
+            input.fact__input(type="text",value="1993")
+          label.fact
+            span.fact__text Место жительства
+            input.fact__input(type="text",value="г. Кировское, Донецкая Народная Республика")
+          label.fact
+            span.fact__text Скайп
+            input.fact__input(type="text",value="treasurehunter29009")
+          label.fact
+            span.fact__text Почта
+            input.fact__input(type="text",value="vergil.009@mail.ru")
+        section      
+          h3 Расскажите о себе чекбоксами
+          p Отметьте чекбоксами пункты, которые соответствуют вашим скиллам. Кстати, отсутствие опыта не означает, что у вас меньше шансов стать одним из наших товарищей. Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.   
+        .paper__data
+          .paper__cell
+            +step('БЭМ/OOCSS',true)
+            +step('Pug (Jade)',true)
+            +step('Stylus/LESS/SASS',true)
+            +step('Работаю с SVG',true)
+            +step('Верстаю семантично',true)
+            +step('Accessibility (A11Y)')
+            +step('ES2015/ES2016')
+          .paper__cell
+            +step('Gulp/GRUNT',true)
+            +step('Webpack')
+            +step('Дружу с WebGL')
+            +step('jQuery',true)
+            +step('Знаю/изучаю Angular')
+            +step('Знаю/изучаю React')
+            +step('Знаю/изучаю Node.js')
+          .paper__cell
+            +step('Использую Git',true)
+            +step('С глазомером всё ок',true)
+            +step('Читаю <a href="http://blog.csssr.ru/" class="step__link">blog.csssr.ru</a>',true)
+            +step('Я ленивый(-ая)')
+            +step('У меня хороший английский',true)
+        h3 Уровень владения JavaScript    
+        .lore
+          .lore__triangle
+          .lore__block Не владею
+          .lore__block.lore__block_second Использую готовые решения
+          .lore__block.lore__block_third.js-active Использую готовые решения и умею их переделывать
+          .lore__block.lore__block_last Пишу сложный JS с нуля
+        h3 Расскажите о себе словами
+        p Напишите пару предложений, чем вас привлекла наша вакансия и чего вы ожидаете от работы в CSSSR. Кстати, будет здорово, если при нехватке места для текста строки будут добавляться автоматически.  
+        textarea.paper__textarea(placeholder="Ну-ууу-уу...") Вакансия четко описана, без лишней 'воды'. Стараюсь ничего ни от кого не ожидать. Человек сам строит свою жизнь и пожинает плоды своего труда. Занимаюсь спортом в свободное время(подтягивания, приседания, отжимания). Ближайшие пару лет планирую верстать, а потом возможно и js изучать углубленно.
+        h3 Какие у вас планы на будущее?
+        p Этот ответ ни на что не повлияет. Не беда, если в будущем ваши планы поменяются.
+        +station('Верстать','plans',true)
+        +station('Прокачиваться в JS','plans')
+        +station('Менеджерство','plans')
+        +station('Другое','plans')
+
+    include components/service/_js
