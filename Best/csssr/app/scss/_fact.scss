@@ -1,6 +1,7 @@
 .fact {
   display: flex;
-margin-bottom: rem-calc(13);
+  margin-bottom: rem-calc(13);
+
   &__input {
     border: 0;
     background: url($imagesPath +"/border.png")repeat-x right bottom;
@@ -13,7 +14,10 @@ margin-bottom: rem-calc(13);
     padding-left: rem-calc(18);
     padding-right: rem-calc(18);
     height: rem-calc(49);
-    &:hover,&:focus,&:active{
+
+    &:active,
+    &:focus,
+    &:hover {
       color: #000;
     }
   }
@@ -26,6 +30,23 @@ margin-bottom: rem-calc(13);
     white-space: nowrap;
     font-weight: 700;
     font-size: rem-calc(22);
+  }
+  @media (max-width: 550px) {
+    flex-flow: row wrap;
 
+    &_date {
+      flex-flow: nowrap;
+    }
+
+    &__input {
+      font-size: rem-calc(22);
+    }
+
+    &__input,
+    &__text {
+      width: 100%;
+      padding-left: rem-calc(0);
+      padding-right: rem-calc(0);
+    }
   }
 }

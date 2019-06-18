@@ -1,10 +1,10 @@
 doctype html
 html(lang='ru')
   include components/service/_head
-  
+
   include components/mixins/_step
   include components/mixins/_station
-  
+
   body
     form.paper
       header.paper__row
@@ -12,10 +12,10 @@ html(lang='ru')
           a(href="https://csssr.com/ru").paper__link
             img(src="./images/logo.png", alt="").paper__logo
         .paper__secret
-          img(src="./images/self.png", alt="") 
+          img(src="./images/self.png", alt="").paper__secret-img 
       main.paper__main    
         .paper__file
-          img(src="./images/file.png", alt="") 
+          img(src="./images/file.png", alt="").paper__file-img
         fieldset.paper__info  
           label.fact
             span.fact__text Полное ФИО
@@ -70,9 +70,15 @@ html(lang='ru')
         textarea.paper__textarea(placeholder="Ну-ууу-уу...") Вакансия четко описана, без лишней 'воды'. Стараюсь ничего ни от кого не ожидать. Человек сам строит свою жизнь и пожинает плоды своего труда. Занимаюсь спортом в свободное время(подтягивания, приседания, отжимания). Ближайшие пару лет планирую верстать, а потом возможно и js изучать углубленно.
         h3 Какие у вас планы на будущее?
         p Этот ответ ни на что не повлияет. Не беда, если в будущем ваши планы поменяются.
-        +station('Верстать','plans',true)
-        +station('Прокачиваться в JS','plans')
-        +station('Менеджерство','plans')
-        +station('Другое','plans')
+        fieldset.paper__field
+          .paper__area
+            +station('Верстать','plans',true)
+            +station('Прокачиваться в JS','plans')
+            +station('Менеджерство','plans')
+            +station('Другое','plans')
+          .paper__date  
+            label.fact.fact_date
+              span.fact__text Дата заполнения
+              input.fact__input(type="text",value="18.06.2019")
 
     include components/service/_js

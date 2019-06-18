@@ -25,7 +25,10 @@ p {
 body:not(.outline) * {
   outline: none;
 }
-
+img {
+  display: inline-block;
+  max-width: 100%;
+}
 body {
   line-height: 1.533;
   font-size: rem-calc(15);
@@ -40,4 +43,10 @@ h3 {
   font-size: rem-calc(24);
   color: #2f1b15;
   font-weight: 700;
+}
+@media (max-width: 550px)
+{
+  html {
+    font-size: 3.5vw;
+  }
 }
