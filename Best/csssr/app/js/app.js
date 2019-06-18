@@ -53,8 +53,11 @@
     $(document).ready(function() {
       createHeightOfSlider();
       positioningOfTrianle();
-      initDivForCalculateHeightOfTextarea($('.paper__textarea'))
-      setHeightOfTextarea($('.paper__textarea'));
+      initDivForCalculateHeightOfTextarea($('.paper__textarea'));
+      setTimeout(function() {
+        setHeightOfTextarea($('.paper__textarea'));
+      }, 1000);
+
     });
     var debounceOfSlider = debounce(function() {
       createHeightOfSlider();
