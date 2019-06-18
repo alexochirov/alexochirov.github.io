@@ -28,7 +28,9 @@
     function setHeightOfTextarea(area) {
       var text = area.val();
       $span.text(text);
-      area.height($span.height());
+      var lineHeight = area.css('line-height').slice(0, -2);
+      var numOfRows = Math.ceil($span.height() / lineHeight);
+      area.height(numOfRows * lineHeight);
     } //end of .paper__textarea helper function
     //begin of debounce function
 

@@ -38,9 +38,6 @@
   @media (max-width: 550px) {
     flex-flow: row wrap;
 
-    &_date {
-      flex-flow: nowrap;
-    }
 
     &__input {
       font-size: rem-calc(22);
