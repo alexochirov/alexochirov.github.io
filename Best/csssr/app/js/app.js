@@ -7,9 +7,12 @@
     var $span = $('<div class="fake">').appendTo('body');
 
     function initDivForCalculateHeightOfTextarea(textarea) {
+
       $span.text(textarea.text())
-      .width(textarea.width())
-      .css('font', textarea.css('font'));
+        .width(textarea.width())
+        .css('font-size', textarea.css('font-size'))
+        .css('font-family', textarea.css('font-family'))
+        .css('line-height', textarea.css('line-height'));
     }
     $('.paper__textarea').on({
       input: function() {
@@ -80,8 +83,10 @@
     function positioningOfTrianle() {
       $('.lore').each(function() {
         var leftOffsetOfCurrentBlock;
+        var rightOffsetOfCurrentBlock = $(this).width() - 5;
+
         if ($(this).find('.lore__block.js-active').hasClass('lore__block_last')) {
-          leftOffsetOfCurrentBlock = 'calc(100% - 5px)';
+          leftOffsetOfCurrentBlock = rightOffsetOfCurrentBlock;
         } else {
           leftOffsetOfCurrentBlock = $('.lore__block.js-active').css('left');
         }
@@ -92,8 +97,9 @@
 
     $('.lore__block').click(function() {
       var leftOffsetOfCurrentBlock = $(this).css('left');
+      var rightOffsetOfCurrentBlock = $(this).closest('.lore').width() - 5;
       if ($(this).hasClass('lore__block_last')) {
-        $(this).closest('.lore').find('.lore__triangle').css('left', 'calc(100% - 5px)');
+        $(this).closest('.lore').find('.lore__triangle').css('left', rightOffsetOfCurrentBlock);
       } else {
         $(this).closest('.lore').find('.lore__triangle').css('left', leftOffsetOfCurrentBlock);
       }

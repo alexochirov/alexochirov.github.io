@@ -76,6 +76,8 @@
 
   &__main {
     padding-right: rem-calc(58);
+    width: 100%;
+    display: block;
   }
 
   &__block {
@@ -83,6 +85,7 @@
   }
 
   &__file {
+    margin-bottom: rem-calc(42);
     text-align: center;
   }
 
