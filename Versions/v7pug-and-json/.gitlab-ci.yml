@@ -1,0 +1,45 @@
+    # $CI_PROJECT_DIR - название проекта в GIT. Это переменная gitlab. Не меняйте её.
+    # $CI_PROJECT_NAME - название проекта в GIT. Это переменная gitlab. Не меняйте её.
+    # $LAYOUTS - это массив имен папок внутри каталога working, для которых мы собираем верстку и выкладываем в wireframes
+    before_script:
+      - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+      - 'which rsync || ( apt-get update -y && apt-get install rsync -y )'
+      - 'which perl || (apt-get update -y && apt-get install perl -y)'
+      - eval $(ssh-agent -s)
+      - ssh-add <(echo "$DEPLOY_KEY")
+      - mkdir -p ~/.ssh
+      - '[[ -f /.dockerenv ]] && echo "$SSH_SERVER_HOSTKEYS" > ~/.ssh/known_hosts'
+      # Нижеследующая строчка положит в LAYOUTS все папки внутри working.
+      #- cd $CI_PROJECT_DIR/working/ && export LAYOUTS=(`ls -1 -d ./*/|perl -nE '$_ =~ s/^\.\/(.+)\/$\//$1/; chomp; say'`)
+      # Если хочется указать вручную избранные папки, например folder1 и folder2, надо раскомментировать следующую строку и закомментировать строку выше.
+      #- export LAYOUTS=(folder1 folder2)
+
+    stages:
+      - build
+      - deploy
+
+    minify:
+      stage: build
+      script:
+      # здесь задается скрипт для сборки верстки
+      - cd $CI_PROJECT_DIR && npm install && npm run minify
+      artifacts:
+        paths:
+        - "dist"
+        expire_in: 1 week
+
+    job_deploy_to_staging:
+      stage: deploy
+      environment:
+        name: staging
+        url: http://wireframes.cetera.ru/$CI_PROJECT_NAME/
+      script:
+      - rsync -e ssh /dev/null root@vps10.cetera.ru::wireframe/$CI_PROJECT_NAME/
+      - rsync -avuz  --numeric-ids --chown=33:33 -e ssh $CI_PROJECT_DIR/dist/ vps10.cetera.ru::wireframe/$CI_PROJECT_NAME/
+      only:
+        refs:
+          - master
+      # always - сборка запускается автоматически при каждом коммите в master
+      # manual - надо будет руками запустить сборку, нажав на кнопку в интерфейсе gitlab'а на странице pipelines
+      when: always # always | manual
+

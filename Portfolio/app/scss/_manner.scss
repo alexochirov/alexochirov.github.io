@@ -1,0 +1,35 @@
+.manner {
+  background: #282c34;
+  padding-top: rem-calc(40);
+  padding-bottom: rem-calc(40);
+  font-size: rem-calc(24);
+  color: #abb2bf;
+
+  &__links {
+    margin-bottom: rem-calc(50);
+  }
+
+  &__info {
+    margin: 0 auto;
+    max-width: 100%;
+    padding-left: rem-calc(20);
+    padding-right: rem-calc(20);
+    width: rem-calc(1200);
+  }
+
+  &__link {
+    color: #abb2bf;
+    text-decoration: none;
+    margin-bottom: rem-calc(20);
+    display: block;
+    font-size: rem-calc(20);
+    word-break: break-all;
+    font-weight: 600;
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: #fff;
+    }
+  }
+}
