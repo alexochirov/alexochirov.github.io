@@ -1,1 +1,1 @@
-Portfolio repo of Alex Ochirov
+Portfolio repo of Alex Ochirov.
