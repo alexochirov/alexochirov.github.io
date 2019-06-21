@@ -5,6 +5,13 @@
   background: url($imagesPath +"/slider.png")no-repeat rem-calc(1 6);
   background-size: 100% rem-calc(60);
 
+  &__wrap {
+    width: calc(100% + 8px);
+    position: relative;
+    left: rem-calc(0);
+    top: rem-calc(0);
+  }
+
   &__triangle {
     width: rem-calc(17);
     height: rem-calc(14);
@@ -16,6 +23,7 @@
     margin-left: rem-calc(-4);
     display: block;
     background: url($imagesPath +"/triangle.png")no-repeat center;
+    cursor: e-resize;
     background-size: rem-calc(17 14);
   }
 

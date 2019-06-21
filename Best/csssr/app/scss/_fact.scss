@@ -18,7 +18,9 @@
     height: rem-calc(49);
     flex: 1 1 0;
     display: block;
-
+&_rear {
+  padding-right: rem-calc(0);
+}
     &:active,
     &:focus,
     &:hover {

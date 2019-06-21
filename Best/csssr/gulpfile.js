@@ -29,9 +29,10 @@ const paths = {
   },
   src: {
     html: 'app/pug/' + nameChosenPage + '.pug',
-    js: 'app/js/*.js',
+    js: 'app/js/app.js',
     jsLib: [
       'node_modules/jquery/dist/jquery.min.js',
+      'app/js/jquery-ui.js'
     ],
     css: ['app/scss/style.scss'],
     images: 'app/images/**/*.*',

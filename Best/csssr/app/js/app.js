@@ -3,6 +3,38 @@
 (function($) {
   "use strict";
   $(function() {
+    //begin of draggable plugin jquery-ui
+    var startPosOfTriangle = 0;
+
+    $(".lore__triangle").draggable({
+      axis: "x",
+      containment: "parent",
+      scroll: false,
+
+    });
+
+    $(".lore__triangle").draggable({
+      start: function() {
+        startPosOfTriangle = $(this).css('left');
+      },
+
+      stop: function() {
+
+        var sumOfWidthOfLoreBlocks = $(this).closest('.lore').width();
+        var numOfLoreBlocks = $(this).closest('.lore').find('.lore__block').length;
+        var currentPos = $(this).css('left').slice(0, -2);
+        var averageWidthOfLoreBlock = sumOfWidthOfLoreBlocks / (numOfLoreBlocks);
+        var numOfCurrentActiveBlock = Math.round((currentPos - (0)) / averageWidthOfLoreBlock);
+        $(this).closest('.lore').find('.lore__block.js-active').removeClass('js-active');
+
+        if (numOfCurrentActiveBlock == numOfLoreBlocks) {
+          numOfCurrentActiveBlock--;
+        }
+        $(this).closest('.lore').find('.lore__block').eq(numOfCurrentActiveBlock).click();
+
+      }
+    });
+    //end of draggable plugin jquery-ui
     //begin of .paper__textarea helper function
     var $span = $('<div class="fake">').appendTo('body');
 
