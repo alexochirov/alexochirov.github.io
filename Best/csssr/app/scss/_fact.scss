@@ -1,6 +1,6 @@
 .fact {
   display: flex;
-  margin-bottom: rem-calc(13);
+  margin-bottom: rem-calc(10);
 
   &__input {
     border: 0;
@@ -9,6 +9,8 @@
     font-size: rem-calc(30);
     font-family: $font-courier;
     color: #231f20;
+
+
     padding-bottom: rem-calc(5);
     width: 100%;
     padding-left: rem-calc(18);
@@ -27,8 +29,8 @@
   &__text {
     display: block;
     color: #2f1b15;
-    margin-top: rem-calc(17);
-    margin-right: rem-calc(16);
+    margin-top: rem-calc(19);
+    margin-right: rem-calc(18);
     white-space: nowrap;
     width: auto;
     flex: 0 0 auto;

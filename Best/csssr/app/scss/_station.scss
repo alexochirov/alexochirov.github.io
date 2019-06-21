@@ -8,7 +8,7 @@
     display: none;
 
     &:checked + .station__label {
-      background: url($imagesPath +"/ch2.png")no-repeat left rem-calc(0);
+      background: url($imagesPath +"/ch2.png")no-repeat  rem-calc(-8 4);
       background-size: rem-calc(41 45);
     }
 
@@ -20,18 +20,18 @@
 
   &__label {
     line-height: 1.19;
-    margin-right: rem-calc(0);
-    background: url($imagesPath +"/ch1.png")no-repeat left rem-calc(0);
+    margin-right: rem-calc(8);
+    background: url($imagesPath +"/ch1.png")no-repeat  rem-calc(-8 4);
     background-size: rem-calc(41 45);
     min-height: rem-calc(45);
     margin-left: rem-calc(0);
     padding-right: rem-calc(8);
-    padding-top: rem-calc(10);
+    padding-top: rem-calc(16);
     color: #000000;
     cursor: pointer;
     font-size: rem-calc(20);
     font-weight: 700;
-    padding-left: rem-calc(45);
+    padding-left: rem-calc(32);
 
     &:active,
     &:focus,

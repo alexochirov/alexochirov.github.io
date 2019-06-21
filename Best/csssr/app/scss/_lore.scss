@@ -2,18 +2,18 @@
   position: relative;
   width: 100%;
   margin-bottom: rem-calc(30);
-  background: url($imagesPath +"/slider.png")no-repeat left rem-calc(6);
+  background: url($imagesPath +"/slider.png")no-repeat rem-calc(1 6);
   background-size: 100% rem-calc(60);
 
   &__triangle {
     width: rem-calc(17);
     height: rem-calc(14);
-    top: rem-calc(17);
+    top: rem-calc(16);
     transition: 0.3s;
     left: rem-calc(0);
     z-index: 2;
     position: absolute;
-    margin-left: rem-calc(-6);
+    margin-left: rem-calc(-4);
     display: block;
     background: url($imagesPath +"/triangle.png")no-repeat center;
     background-size: rem-calc(17 14);
@@ -27,7 +27,7 @@
     cursor: pointer;
     font-size: rem-calc(13);
     font-weight: 700;
-    padding-top: rem-calc(61);
+    padding-top: rem-calc(63);
     top: rem-calc(0);
     padding-right: rem-calc(10);
     line-height: 1.46;
@@ -40,12 +40,12 @@
 
     &_second {
       width: 29.2%;
-      left: 19.2%;
+      left: 19%;
     }
 
     &_third {
       left: 48.4%;
-      width: 22%;
+      width: 24%;
     }
 
     &_last {
@@ -53,7 +53,7 @@
       right: rem-calc(0);
       left: auto;
       padding-right: rem-calc(0);
-      width: 26%;
+      width: 24%;
     }
   }
   @media (max-width: 992px) {
