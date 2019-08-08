@@ -39,14 +39,7 @@ const paths = {
         js: 'src/js/*.js',
         json: 'src/json/*.json',
         jsLib: [
-            'node_modules/jquery/dist/jquery.min.js',
-            'node_modules/foundation-sites/dist/js/foundation.min.js',
-            'node_modules/slick-carousel/slick/slick.min.js',
-            'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js',
-            'node_modules/@fortawesome/fontawesome/index.js',
-            'node_modules/@fortawesome/fontawesome-free-solid/index.js',
-            'node_modules/@fortawesome/fontawesome-free-regular/index.js',
-            'node_modules/@fortawesome/fontawesome-free-brands/index.js'
+
         ],
         css: ['src/scss/style.scss'],
         images: 'src/images/**/*.*',
@@ -54,7 +47,7 @@ const paths = {
         fonts: 'src/fonts/**/*.*'
     },
     watch: {
-        html: ['src/pug/**/*.pug','src/blocks/**/*.pug'],
+        html: ['src/pug/**/*.*','src/blocks/**/*.pug'],
         js: ['src/js/**/*.js'],
         json: ['src/json/**/*.json'],
         css:['src/scss/**/*.scss','src/blocks/**/*.scss'],
@@ -158,7 +151,7 @@ let watch = () => {
     gulp.watch(paths.watch.html, gulp.series(cleanHtml, pug, reloadBrowser));
     gulp.watch(paths.watch.i, gulp.series(cleanI, i, reloadBrowser));
     gulp.watch(paths.watch.fonts, gulp.series(cleanFonts, fonts, reloadBrowser));
-    gulp.watch(paths.watch.js, gulp.series(cleanJs, jsLib, jsApp, reloadBrowser));
+    gulp.watch(paths.watch.js, gulp.series(cleanJs, jsApp, reloadBrowser));
     gulp.watch(paths.watch.json, gulp.series(cleanJson,json, reloadBrowser));
 
     let imagesWatcher = gulp.watch(paths.watch.images, images);
@@ -180,7 +173,7 @@ let browserSync = () =>
 gulp.task('default',
     gulp.series(
         clean,
-        gulp.parallel(sass, pug, images, i, fonts, jsLib, jsApp,json),
+        gulp.parallel(sass, pug, images, i, fonts, jsApp,json),
         gulp.parallel(watch,browserSync)
     )
 );
