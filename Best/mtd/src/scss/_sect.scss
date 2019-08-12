@@ -1,0 +1,29 @@
+.sect {
+margin-bottom: rem-calc(16);
+
+  &_big {
+    font-size: rem-calc(18);
+  }
+
+  &_main {
+    background: $main-color;
+  }
+&_par {
+  margin-bottom: rem-calc(9);font-weight: 700;
+}
+  &_dark {
+    color: $dark-gray;
+  }
+
+  &_yellow {
+    margin-bottom: rem-calc(30);
+  }
+
+  &__date {
+    color: $medium-gray;
+  }
+
+  &_orange {
+    @include margin-level(bottom,orange);
+  }
+}

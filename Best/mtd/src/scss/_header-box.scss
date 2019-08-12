@@ -1,0 +1,48 @@
+.header-box {
+  background: $red !important;
+  padding-top: rem-calc(25);
+  margin-bottom: rem-calc(25);
+  position: relative;
+  border-radius: rem-calc(0);
+  padding-left: rem-calc(24);
+  padding-right: rem-calc(24);
+  border: rem-calc(1) solid rgba(32,32,32,0.25);
+  padding-bottom: rem-calc(1);
+  color: $white;
+
+  & > :last-child,
+  & > :last-child > :last-child,
+  & > :last-child > :last-child > :last-child,
+  & > :last-child > :last-child > :last-child > :last-child {
+    margin-bottom: rem-calc(0);
+  }
+
+  &_next {
+    padding-top: rem-calc(12);
+    padding-bottom: rem-calc(12);
+  }
+
+  &__h1 {
+    margin-bottom: rem-calc(0);
+  }
+
+  &_small {
+    padding-bottom: rem-calc(23);
+  }
+
+  &__link {
+    color: $white;
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: $light-gray;
+    }
+  }
+
+  @include breakpoint(small only) {
+    &__h1 {
+      margin-bottom: rem-calc(12);
+    }
+  }
+}

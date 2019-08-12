@@ -1,0 +1,28 @@
+extends smi-regular
+block content
+  .grid-container: .grid-x.grid-padding-x
+    .small-24.large-16.cell.small-order-2.large-order-1.info
+      include components/arch/_search-box
+      .grid-x.grid-padding-x.align-middle
+        .cell
+          h1 История просмотров
+      .grid-x.grid-padding-x.align-middle
+        .cell
+          h3 Издания
+        .cell.shrink
+          a.button.button_hollow(href="search-smi.html") Показать все
+      include components/arch/_arch-tiles
+
+      .grid-x.grid-padding-x.align-middle
+        .cell
+          h3 Статьи
+        .cell.shrink
+          a.button.button_hollow(href="smi-search-result.html") Показать все
+      include components/arch/_search-result
+    .small-24.large-8.small-order-1.large-order-2.cell
+      .aside-right
+        h4 Уточнить результаты
+        ul.accordion(data-accordion data-multi-expand='true' data-allow-all-closed='true')
+          include components/arch/_filter-by-date
+          include components/arch/_filter-by-edition
+          include components/arch/_filter-by-added

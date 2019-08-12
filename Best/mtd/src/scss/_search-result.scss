@@ -1,0 +1,52 @@
+.search-result {
+  border: 1px dotted $light-gray;
+padding: rem-calc(29 48 27 16);
+  margin-bottom: 2rem;
+  position: relative;
+  &__title {
+    font-weight: 700;
+    font-family: $font-noto;
+    font-size: rem-calc(14);
+    text-decoration: none;
+  }
+  &__res-text {
+    font-weight: 900;
+    color: $orange;
+  }
+
+  &__add-to-fav {
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+
+  }
+  &__checkbox {
+    display: none;
+  }
+  &__checkbox-pretty {
+    position: relative;
+    width: 3rem;
+    height: 3rem;
+    background: #fbfbfb url($iPath + "heart-o.svg") no-repeat center;
+  }
+  &__checkbox-pretty,
+  &__checkbox-label {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  &__text {
+    font-size: rem-calc(14);
+    color: #767676;
+  }
+
+  &__checkbox:checked + &__checkbox-pretty {
+    background:azure url($iPath + "heart.svg") no-repeat center;
+  }
+
+  &__image {
+    max-width:rem-calc(100);
+  }
+
+
+}

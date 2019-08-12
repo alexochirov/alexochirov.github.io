@@ -1,0 +1,135 @@
+.contacts {
+  padding-top: rem-calc(17);
+  padding-bottom: rem-calc(12);
+  background: $black;
+  font-size: rem-calc(13);
+  color: $white;
+
+  &__icon {
+    margin-right: rem-calc(4);
+    font-size: rem-calc(17);
+    line-height: 0.75rem;
+  }
+
+  &__search {
+    color: $white;
+    font-weight: $global-weight-bold;
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: $medium-gray;
+    }
+  }
+
+  &__drop {
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+
+    &:active,
+    &:focus,
+    &:hover {
+      .drop {
+        display: flex;
+      }
+
+      .contacts__arr {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &__arr {
+    position: absolute;
+    right: rem-calc(2);
+    top: rem-calc(8);
+    width: rem-calc(12);
+    height: rem-calc(7);
+    transition: 0.3s;
+    transform: rotate(0deg);
+    overflow: hidden;
+
+    svg {
+      display: block;
+      margin-top: rem-calc(0);
+      width: rem-calc(12);
+      height: rem-calc(7);
+    }
+  }
+
+  &__text {
+    color: $white;
+    font-size: rem-calc(16);
+    font-weight: 700;
+    padding-right: rem-calc(20);
+    position: relative;
+    height: rem-calc(24);
+    overflow: hidden;
+    padding-left: rem-calc(32);
+  }
+
+  &__block {
+    border-left: rem-calc(1) solid #2d2d2d;
+    border-right: rem-calc(1) solid #2d2d2d;
+    text-align: center;
+  }
+
+  &__link {
+    color: $white;
+    font-weight: $global-weight-bold;
+    margin-right: rem-calc(10);
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: $medium-gray;
+    }
+  }
+
+  &__menu {
+    color: $white;
+    cursor: pointer;
+    display: none;
+    margin-right: rem-calc(10);
+  }
+
+  &__cab {
+    padding-bottom: rem-calc(7);
+  }
+
+  &__info {
+    padding-bottom: rem-calc(7);
+    text-align: right;
+  }
+  @include breakpoint(large down) {
+    &__text {
+      padding-left: rem-calc(0);
+    }
+  }
+  @include breakpoint(medium down) {
+    text-align: center;
+&__block
+{
+@include margin-level(bottom,red);
+}
+    &__info {
+      text-align: center;
+    }
+  }
+  @include breakpoint(small only) {
+    padding-bottom: rem-calc(13);
+
+    &__icon {
+      display: none;
+    }
+
+    &__menu {
+      display: inline-block;
+    }
+
+    &__info {
+      text-align: left;
+    }
+  }
+}

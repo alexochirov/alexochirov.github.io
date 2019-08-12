@@ -1,0 +1,94 @@
+.grid-container: .grid-x.grid-padding-x: .cell
+  .callout.main-search.main-search_opt
+    .grid-x.grid-padding-x.align-center
+      .auto.cell.padding-vertical-6
+        form.main-search__form
+            .input-group
+              input.main-search__input.input-group-field(type="text",placeholder="Что ищем:")
+              input.button.main-search__butto.input-group-button(type="submit", value="Искать")
+              span &nbsp;&nbsp;
+              a.button.button_hollow.input-group-button.alert(data-toggle="adSearch") Расширенный поиск
+            #adSearch.main-search__submenu.is-hidden(data-toggler=".is-hidden"): form
+              .grid-x: .cell
+                fieldset.fieldset
+                  legend: strong Информация об издании
+                  .grid-x.grid-padding-x
+                    .auto.cell.rail
+                      label Наименование
+                      select.multiselect(multiple="multiple")
+                        optgroup(label="Областные издания")
+                          option(value="1") Больше молока
+                          option(value="2") Бюллетень политотдела
+                        optgroup(label="Районные газеты")
+                          option(value="3") Известия  исполкома
+                          option(value="4") Путь к коммунизму
+                          option(value="5") Северный рабочий
+                        optgroup(label="Отраслевые издания")
+                          option(value="5") Ярославский отраслевик
+                          option(value="5") Навстречу победе
+                    .small-auto.medium-8.cell
+                      label Год выпуска
+                        include ../arch/_data-range
+                    .small-12.medium-4.cell
+                      label Месяц
+                      select
+                        option(value="0") Все
+                        option(value="1") Январь
+                        option(value="2") Февраль
+                    .small-12.medium-4.cell
+                      label День
+                      select
+                        option(value="0") 1
+                        option(value="1") 2
+                        option(value="2") 3
+                .grid-x.grid-padding-x.align-middle
+                  .small-auto.medium-16.large-12.cell
+                    fieldset.fieldset
+                      legend: strong Место выпуска издания
+                      .grid-x.grid-padding-x
+                        .small-auto.medium-12.cell
+                          label Район
+                            select
+                              option(value="0") Все районы
+                              option(value="1") Ярославский
+                              option(value="1") Район 1
+                              option(value="1") Район 2
+                              option(value="1") Район 3
+                        .small-auto.medium-12.cell
+                          label Населенный пункт
+                            select
+                              option(value="0") Все
+                              option(value="1") Ярославль
+                              option(value="1") Город 1
+                              option(value="1") Деревня 2
+                              option(value="1") Поселок 3
+                  .small-auto.medium-8.large-12.cell
+                    fieldset.fieldset
+                      legend: strong Статусы
+                      .grid-x.grid-padding-x
+                        .small-auto.medium-12.cell
+                          label Модерация
+                            select
+                              option Любой статус
+                              option На проверке
+                              option Принят
+                              option На доработку
+                        .small-auto.medium-12.cell
+                          label Обработка
+                            select
+                              option Любой статус
+                              option Обработан
+                              option Не обработан
+                              option Частично
+              .grid-x
+                .cell: p.text-center: a.button(href="#") Искать
+                hr
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,42 @@
+extends smi-regular
+include components/mixins/_mixin-step
+block content
+    .grid-container: .grid-x.grid-padding-x: .cell
+        h1 Редактирование личных данных
+    .info
+        .grid-container: .grid-x.grid-padding-x
+            .cell.small-24.medium-8.large-6
+                .show-for-small-only(data-responsive-toggle='menu-left', data-hide-for='medium'): .button.button_light-gray.button_expanded(data-toggle)
+                    i.fas.fa-lg.fa-bars.picture
+                    | Навигация
+                .side#menu-left
+                    ul.partners
+                        li.partners__item: a.partners__link.partners__link_active(href='user-edit.html' title='') Изменить данные о себе
+                        li.partners__item: a.partners__link(href='favourites.html' title='') Сохраненные материалы
+                        li.partners__item: a.partners__link(href='shop-user-personal.html' title='') Изменить подписку
+
+            .cell.small-24.medium-16.large-18.enter
+                form
+                    label Имя *
+                        input(type='text' required)
+
+                    label Фамилия
+                        input(type='text')
+
+                    label Электронная почта
+                        input(type='email')
+
+                    label Контактный телефон *
+                        input(type='text' required)
+
+                    label Должность
+                        input(type='text')
+
+                    label Новый пароль
+                        input(type='password')
+
+                    label Подтверждение пароля
+                        input(type='password')
+
+                    button.button Сохранить
+

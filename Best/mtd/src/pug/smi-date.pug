@@ -1,0 +1,16 @@
+extends smi-regular
+block content
+  .grid-container: .grid-x.grid-padding-x
+    .small-24.large-16.cell.small-order-2.large-order-1.info
+      include components/arch/_search-box
+      .header-box.header-box_small
+        h1 25 октября 1986 г.
+
+      include components/arch/_arch-tiles
+      include components/common/_pagination
+    .small-24.large-8.small-order-1.large-order-2.cell
+      .aside-right
+        h4 Уточнить результаты
+
+        ul.accordion(data-accordion data-multi-expand='true' data-allow-all-closed='true')
+          include components/arch/_filter-by-edition

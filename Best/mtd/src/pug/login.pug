@@ -1,0 +1,28 @@
+extends smi-regular
+include components/mixins/_mixin-step
+block content
+
+  .info.grid-container: .grid-x.grid-padding-x.align-center
+    .cell: h1 Авторизация
+    .cell.large-12
+      p Пожалуйста, авторизуйтесь:
+      form(action='shop-user-account.html')
+        label
+          span.level Ваш email
+          input(type='email')
+        label
+          span.level Пароль
+          input(type='password')
+        +step('Запомнить меня на этом компьютере')
+        button.button
+          | Войти
+          i.fas.fa-sign-in-alt.fa-lg.canv
+      p
+        a(href='shop-user-recover.html', title='') Забыли пароль?
+      div
+        a(href='shop-user-registration.html', title='') Зарегистрироваться
+      p
+        em Если вы впервые на сайте, заполните, пожалуйста, регистрационную форму.
+      .share
+        span.share__enter Войти через:
+        include components/common/_soc

@@ -1,0 +1,35 @@
+extends smi-regular
+
+block content
+  .grid-container: .grid-x.align-center
+    .cell.large-16
+      h1.text-center Рейтинг
+      .info
+        block rating
+          .grid-x.align-justify
+            .cell.medium-18
+              ul.menu.menu_small
+                li: a(href='rating.html') Волонтёры
+                li: a(href='rating.html') Модераторы
+                li.active: a(href='rating-cities.html') Города
+            .cell.small-12.medium-6
+              select
+                option по 10
+                option по 30
+                option по 50
+                option по 100
+                option по 500
+
+          .grid-x.grid-margin-x.align-justify.info
+            .cell.medium-3.large-3.small-4.text-center Место
+            .cell.small-12.medium-14.large-14.large-offset-1.text-center Город
+            .cell.medium-7.large-6.small-8.text-right Участников
+          hr.hr.hr_null
+          for item, index in [['Москва , Россия','2 764'],['Санкт-Петербург , Россия','346'],['Калининград , Россия','129'],['Екатеринбург , Россия','75'],['Челябинск , Россия','69'],['Новосибирск , Россия','64'],['Пермь , Россия','58'],['Самара , Россия','57'],['Нижний Новгород , Россия','55'],['Ростов-на-Дону , Россия','54']]
+            .grid-x.grid-margin-x.porter.porter_city
+              .cell.medium-3.large-3.small-4.text-center.stat.stat_small= index+1
+              .cell.small-12.medium-14.large-14.large-offset-1.text-center.align-self-middle
+                = item[0]
+              .cell.medium-7.large-6.small-8.text-right.stat.stat_small= item[1]
+          .info
+          include components/common/_pagination

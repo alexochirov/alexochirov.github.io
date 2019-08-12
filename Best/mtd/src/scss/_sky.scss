@@ -1,0 +1,9 @@
+.sky {
+  background: #f9f9f9;
+  padding-bottom: rem-calc(52);
+  padding-top: rem-calc(64);
+  @include breakpoint(small only) {
+    padding-top: rem-calc(35);
+    padding-bottom: rem-calc(43);
+  }
+}

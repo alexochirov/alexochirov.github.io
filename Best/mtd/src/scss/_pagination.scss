@@ -1,0 +1,10 @@
+.pagination {
+  margin-bottom: rem-calc(16);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+
+  .current {
+    background: $secondary-color;
+  }
+}

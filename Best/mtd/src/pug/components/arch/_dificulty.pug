@@ -1,0 +1,31 @@
+mixin dificulty(n)
+    span.rating
+        input.rating__input(id="dificulty-5" + n type="radio" name="dificulty")
+        label.rating__star(for="dificulty-5" + n)
+            i.far.fa-circle.rating__solid
+            i.fas.fa-circle.rating__regular
+        input.rating__input(id="dificulty-4" + n type="radio" name="dificulty")
+        label.rating__star(for="dificulty-4" + n)
+            i.far.fa-circle.rating__solid
+            i.fas.fa-circle.rating__regular
+        input.rating__input(id="dificulty-3" + n type="radio" name="dificulty")
+        label.rating__star(for="dificulty-3" + n)
+            i.far.fa-circle.rating__solid
+            i.fas.fa-circle.rating__regular
+        input.rating__input(id="dificulty-2" + n type="radio" name="dificulty")
+        label.rating__star(for="dificulty-2" + n)
+            i.far.fa-circle.rating__solid
+            i.fas.fa-circle.rating__regular
+        input.rating__input(id="dificulty-1" + n type="radio" name="dificulty")
+        label.rating__star(for="dificulty-1" + n)
+            i.far.fa-circle.rating__solid
+            i.fas.fa-circle.rating__regular
+
+mixin dificulty-info(limit=4)
+    .flex-container
+        for i in [1,2,3,4,5]
+            if i > limit
+                i.far.fa-circle.rating__solid
+            else
+                i.fas.fa-circle.rating__solid
+        

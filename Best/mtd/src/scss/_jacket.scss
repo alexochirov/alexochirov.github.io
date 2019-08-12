@@ -1,0 +1,14 @@
+.jacket {
+  border-bottom: rem-calc(1) solid $light-gray;
+  margin-bottom: rem-calc(30);
+  padding-bottom: rem-calc(14);
+&:last-child{
+  border-bottom: rem-calc(0);
+  margin-bottom: rem-calc(0);
+}
+  &__pos {
+    margin-bottom: rem-calc(14);
+    font-weight: 700;
+  }
+
+}

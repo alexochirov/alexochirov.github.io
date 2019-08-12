@@ -1,0 +1,8 @@
+mixin project(title='Фотовыставка "Пионерское лето" в Ярославском городском дворце пионеров', cat="Новости",hideForMediumOnly)
+  -var rand =  Math.ceil(Math.random() * 6);
+  .cell(class=hideForMediumOnly==true? 'hide-for-medium-only':''): a(href="#").project
+    .project__img(style="background-image:url(./i/pr" + rand + ".jpg);")
+    .project__cat= cat
+    .project__title= title
+    .project__text Кругом метели и морозы, а во Дворце Пионеров "Пионерское лето"! 31 января 2019 года в 16.00 в выставочном фойе Ярославского городского дворца пионеров пройдет торжественное открытие выставки «Пионерское лето»...
+    .project__read Читать

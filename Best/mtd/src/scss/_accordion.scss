@@ -1,0 +1,19 @@
+.accordion {
+  &-menu {}
+
+  &-content {}
+
+  &-title {
+    font-weight: $global-weight-bold;
+    font-size: rem-calc(16);
+    padding-right: rem-calc(30);
+  }
+
+  &-item {
+    &:last-child {
+      & > a {
+        border: rem-calc(1) solid $light-gray;
+      }
+    }
+  }
+}

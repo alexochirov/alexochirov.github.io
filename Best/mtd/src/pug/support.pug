@@ -1,0 +1,27 @@
+extends smi-regular
+
+include components/mixins/_accordion
+
+block content
+  .grid-container: .grid-x.grid-padding-x: .cell
+    h1 Помощь
+  .grid-container: .grid-x.grid-padding-x
+    .cell.medium-15.info
+      +accordion
+    aside.cell.medium-9.large-8.large-offset-1.info
+      .callout
+        h2 Задать вопрос
+        form
+          label Ваш email
+            span.callout__quest для ответа вам
+            input(type='email')
+          label Текст вопроса
+            textarea(rows='3')
+          .grid-x.grid-padding-x
+            .cell.xlarge-12
+              label
+                | Текст с картинки
+                input(type='text')
+            .cell.xlarge-12.sect.sect_orange
+              img(src='./i/image.svg' alt='Капча' ).capt__img
+          button.button(type='submit') Отправить вопрос

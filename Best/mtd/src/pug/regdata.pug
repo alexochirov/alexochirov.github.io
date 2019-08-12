@@ -1,0 +1,53 @@
+extends smi-regular
+include components/mixins/_mixin-step
+block content
+  .grid-container: .grid-x.grid-padding-x: .cell
+    h1 Персональный раздел
+  .grid-container: .grid-x.grid-padding-x
+    .cell.small-24.medium-8.large-6.info
+      .show-for-small-only(data-responsive-toggle='menu-left', data-hide-for='medium').info.info_key: .button.button_expanded(data-toggle)
+        i.fas.fa-lg.fa-bars.picture
+        | Навигация
+      .side#menu-left
+        ul.partners
+          li.partners__item: a.partners__link.partners__link_active(href='regdata-edit.html' title='') Изменить данные о себе
+          li.partners__item: a.partners__link(href='favourites.html' title='') Сохраненные материалы
+          li.partners__item: a.partners__link(href='shop-user-personal.html' title='') Изменить подписку
+  
+      h5 Личный рейтинг
+      .callout
+        .text-center
+          .stat 173
+          .sect балла
+        .sect.grid-x.grid-margin-x.align-justify
+          .cell.medium-24.shrink.xlarge-shrink Место в рейтинге
+          .cell.medium-24.shrink.xlarge-shrink.text-right #[b 256] (+3)
+        .sect.grid-x.grid-margin-x.align-justify
+          .cell.medium-24.shrink.xlarge-shrink Вы проверили
+          .cell.medium-24.shrink.xlarge-shrink.text-right #[b 17 статей]
+            br
+            | c 15.07.2018
+
+    .cell.small-24.medium-16.large-17.large-offset-1.info
+      block personal
+        h2 Регистрационные данные
+        .indent
+          span.indent__name Электронная почта:&nbsp;
+          | user@email.com
+        .indent
+          span.indent__name Логин:&nbsp;
+          | user
+        .indent
+          span.indent__name Имя:&nbsp;
+          | user
+        .indent
+          span.indent__name Фамилия:&nbsp;
+          | user
+
+        hr.hr.hr_new
+
+        h2 Получать на электронную почту
+        form
+          +step('Сообщения о наших акциях')
+          +step('Сообщения о пополнении архива')
+          button.button Сохранить

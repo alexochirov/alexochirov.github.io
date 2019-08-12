@@ -1,0 +1,56 @@
+extends smi-regular
+block content
+  .off-canvas.position-left.article-showcase#article-content(data-off-canvas)
+    button.close-button(aria-label="Закрыть панель", type="button", data-close)
+      span(aria-hidden="true") &times;
+    content.article-showcase__content
+      h3 Заголовок материалa
+      p Парадигма трансформации общества верифицирует конструктивный феномен толпы. Референдум ограничивает гносеологический феномен толпы, впрочем, не все политологи разделяют это мнение. Капиталистическое мировое общество стабильно. Либерализм ограничивает доиндустриальный тип политической культуры, отмечает автор, цитируя К.Маркса и Ф.Энгельса. Управление политическими конфликтами доказывает христианско-демократический национализм.
+      hr
+      p: a(href="smi-regular.html") Читать полный текст →
+      p: a(href="#") #[i.far.fa-file-pdf] Открыть в pdf
+      hr
+      .sect
+        .article-showcase__info-head Автор
+        .article-showcase__info Николай Симферополев
+      hr
+      .sect
+        .article-showcase__info-head Дата публикации
+        .article-showcase__info 16 Ноября 1986 г.
+      hr
+      .article-showcase__info-head Номера страниц
+      .article-showcase__info
+        a(href="#") 1
+        |,&nbsp;
+        a(href="#") 24
+      hr
+      .article-showcase__info-head Ключевые слова
+      .article-showcase__info
+        a(href="#") лагерь
+        |,&nbsp;
+        a(href="#") Молодая гвардия
+        |,&nbsp;
+        a(href="#") лето
+        |,&nbsp;
+        a(href="#") Отдых и туризм
+      hr
+      .article-showcase__info-head Поделиться материалом
+      .article-showcase__info: a(href="#")
+        i.fab.fa-vk
+        | &nbsp;&nbsp; ВКонтакте
+      .article-showcase__info: a(href="#")
+        i.fab.fa-facebook
+        | &nbsp;&nbsp; Facebook
+      .article-showcase__info: a(href="#")
+        i.fab.fa-twitter
+        | &nbsp;&nbsp; Twitter
+
+
+
+  .off-canvas-content(data-off-canvas-content)
+    .grid-container.info
+      h1.worker «Северный рабочий», 23 марта 1986 г.
+      .newspaper
+        a(href="#", data-toggle="article-content")
+          .callout
+            img(src="./i/1.jpg").newspaper__img

@@ -1,0 +1,33 @@
+.cell.xlarge-3.large-4.chassis__rel#issue-pages(data-toggler='hide')
+  .button.button.button_hollow(data-toggle='issue-pages issue-pages-closed')
+    i.fas.fa-angle-left.fa-lg
+  .callout(data-toggler='hide' ).chassis__toggler
+    .article-showcase__info-head Страницы
+    .article-showcase__row
+      for i in [1,1,1,2,4,4,6,7,8,10,11,11,11,12,15,16]
+        .article-showcase__info: a(href="#" title='К границе статьи')
+          i.fas.fa-file.fa-4x
+.cell.large-auto.chassis__elem
+  hr
+  .grid-x.sect
+    .cell.large-auto
+      .hide#issue-pages-closed(data-toggler='hide'): .button.button(data-toggle='issue-pages issue-pages-closed')
+        i.fas.fa-angle-right.fa-lg
+      button.button.button_clear: img(src='./i/tool-pointer-small.png')
+      button.button.button_clear: img(src='./i/tool-hand-small.png')
+      button.button.button_clear: img(src='./i/tool-region-small.png')
+      button.button.button_clear: img(src='./i/tool-regions-small.png')
+      button.button.button_clear: img(src='./i/tool-region-delete-small.png')
+      button.button.button_clear: img(src='./i/tool-region-red-small.png')
+      button.button.button_clear: img(src='./i/tool-text-small.png')
+      button.button.button_clear: img(src='./i/tool-image-small.png')
+      button.button.button_clear: img(src='./i/tool-table-small.png')
+
+    .cell.large-shrink.align-self-bottom.text-center
+      .sect 87%
+      button.button.button_hollow: i.fas.fa-plus
+      button.button.button_hollow: i.fas.fa-minus
+  .newspaper-content
+    .callout
+      img(src="./i/4.jpg").chassis__img
+  hr

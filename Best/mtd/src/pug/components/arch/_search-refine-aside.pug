@@ -1,0 +1,22 @@
+include ../mixins/_mixin-search-refine
+ul.accordion(data-accordion)
+    li.accordion-item.is-active(data-accordion-item)
+        a.accordion-title(href="#") По дате
+        .accordion-content(data-tab-content)
+            +search-refine
+            +search-refine('1920 – 1930','5')
+            +search-refine
+    li.accordion-item.is-active(data-accordion-item)
+        a.accordion-title(href="#") По изданию
+        .accordion-content(data-tab-content)
+            each name in ['Бюллетень ярославского сыртреста','Ярославский крестьянин','Северный рабочий','Юность','Северный рабочий на уборке урожая']
+                +search-refine(name ,'5')
+    li.accordion-item.is-active(data-accordion-item)
+        a.accordion-title(href="#") По дате добавления
+        .accordion-content(data-tab-content)
+            +search-refine('Сегодня','15')
+            +search-refine('В последние 30 дней','27')
+
+
+
+

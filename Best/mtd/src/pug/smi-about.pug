@@ -1,0 +1,54 @@
+extends smi-index
+
+block page
+  include components/common/_breadcrumbs
+  block content
+    .info.grid-container: .grid-x.grid-padding-x
+      .hide-for-small-only.medium-8.large-10.cell
+        .callout
+          h3 40 лет назад
+          p 15 декабря 1978 г.
+          a(href="arch-article.html")
+            img(src="./i/3.jpg",alt="Превью номера газеты на 40 лет назад от текущей даты").callout__paper
+      .medium-16.large-12.cell.aside-right
+        h1 Об издании
+
+        .grid-x.grid-padding-x.small-up-1.medium-up-3
+          .cell
+            h3  Номеров:
+            hr
+            p.lead: strong 234
+          .cell
+            h3  Страниц
+            hr
+            p.lead: strong 1234
+          .cell
+            h3  Года
+            hr
+            p.lead: strong 1956 – 1958, 1962 – 1970, 1974 – 1980
+        .grid-x.grid-padding-x: .cell
+          hr
+          p Интеграл от функции, имеющий конечный разрыв, как следует из вышесказанного, небезынтересно ускоряет эмпирический график функции многих переменных. Вектор естественно переворачивает стремящийся функциональный анализ. Система координат программирует линейно зависимый интеграл от функции комплексной переменной, в итоге приходим к логическому противоречию. Нормаль к поверхности развивает полином. Подмножество поддерживает неопределенный интеграл, в итоге приходим к логическому противоречию.
+          .callout.callout_main
+            h5 Разыскиваются номера
+            .grid-x.grid-padding-x.medium-up-2
+              for cell in [1,2]
+                .cell
+                  ul
+                    for i in [1,2,3,6,7,12,13,18,20,31,40,41,42,48]
+                      li #{20+i} (#{112+i}) от 25.10.1986
+            p: b У нас нет перечисленных номеров этого издания. Будем благодарны, если пришлёте любой из них.
+            .callout.callout_print
+              form.grid-x.grid-padding-x.text-center
+                .cell.medium-auto
+                  label.button.button_hollow(for='exampleFileUpload') Файл с номером издания
+                  input#exampleFileUpload.show-for-sr(type='file')
+                .cell.xlarge-10
+                  button.button(type='submit') Отправить
+    .grid-container.info.info_fire
+      .grid-x.grid-padding-x.align-middle.sect
+        .cell.large-12
+          h3 Последние добавленные
+        .cell.large-12.large-text-right.text-left
+          a.button.button_hollow(href="search-smi.html") Показать все
+      include components/arch/_arch-tiles-o

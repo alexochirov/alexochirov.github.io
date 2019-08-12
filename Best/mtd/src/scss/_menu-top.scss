@@ -1,0 +1,31 @@
+.menu-top {
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+  width: 100%;
+
+
+  display: flex;
+  flex-flow: row wrap;
+
+  &__item {
+margin-right: rem-calc(30);
+  }
+
+  &__link {
+    font-size: rem-calc(16);
+    font-weight: 700;
+    color: $white;
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: $dark-gray;
+    }
+  }
+    @include breakpoint(large down) {
+        justify-content: space-between;
+    &__item {
+      margin-right: rem-calc(0);
+    } }
+}

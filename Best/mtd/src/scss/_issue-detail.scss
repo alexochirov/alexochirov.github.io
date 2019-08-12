@@ -1,0 +1,66 @@
+.issue-detail {
+    margin-bottom: rem-calc(67);
+
+    &__page {
+        position: relative;
+        height: 85vh;
+    }
+
+    &__buttons {
+        position: absolute;
+        top: 0.75rem;
+        right: 1.5rem;
+    }
+
+    &__img {
+        height: 80vh;
+        width: 100%;
+        display: block;
+        background: $light-gray;
+    }
+
+    &__content {
+        height: 90vh;
+        overflow-y: auto;
+    }
+
+    &__slider {
+        position: relative;
+        height: 10vh;
+        box-sizing: content-box;
+        padding: rem-calc(26) rem-calc(24);
+        border-top: 1px solid $light-gray;
+        border-bottom: 1px solid $light-gray;
+    }
+
+    &__preview {
+        height: 10vh;
+        float: left;
+        margin: 0 1rem 0 0;
+        cursor: pointer;
+    }
+
+    &__prev {
+        top: calc(50% - 16px);
+        left: 0;
+    }
+
+    &__next {
+        top: calc(50% - 16px);
+        right: 0;
+    }
+
+    @include breakpoint(medium down) {
+        margin-bottom: rem-calc(50);
+        &__page {
+            height: auto;
+        }
+
+        &__content {
+            height: auto;
+        }
+    }
+    @include breakpoint(small only) {
+
+    }
+}

@@ -1,0 +1,39 @@
+.chassis {
+  width: 100%;
+  position: relative;
+  margin-bottom: rem-calc(67);
+
+  &__toggler {
+    height: 79vh;
+    width: 100%;
+    padding-left: rem-calc(10);
+    padding-right: rem-calc(10);
+    overflow-y: auto;
+    margin-bottom: rem-calc(0);
+    border: rem-calc(1) solid $light-gray;
+  }
+
+  &__elem {}
+
+  &__img {
+    width: 100%;
+  }
+
+  &__content {
+    height: 79vh;
+    overflow-y: auto;
+  }
+  @include breakpoint(medium down) {
+    margin-bottom: rem-calc(50);
+    &__toggler {
+      height: auto;
+    }
+
+    &__content {
+      height: auto;
+    }
+  }
+  @include breakpoint(small only) {
+
+  }
+}

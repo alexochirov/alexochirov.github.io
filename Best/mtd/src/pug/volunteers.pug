@@ -1,0 +1,82 @@
+extends smi-index
+
+block page
+  include components/common/_breadcrumbs
+  block content
+    include components/corporate/_carousel-volunteers
+    .info.grid-container
+      .grid-x.grid-padding-x: .cell
+        .callout
+          .grid-x.grid-padding-x.medium-up-2.large-up-4(data-equalizer data-equalize-by-row="true")
+            .cell.text-center
+              div(data-equalizer-watch) Волонтеров
+              .stat.stat_down 500
+            .cell.text-center
+              div(data-equalizer-watch) Статей проверено
+              .stat.stat_down 1700
+            .cell.text-center
+              div(data-equalizer-watch) Рабочих часов
+              .stat.stat_down 12 000 
+            .cell.text-center 
+              div(data-equalizer-watch) Экономический эффект
+              span.stat.stat_down.picture 250 000 ₽
+              |
+              span(data-tooltip title='Или 1,3 года работы одного человека со средней зарплатой')
+                i.fas.fa-question-circle
+      .grid-x.grid-padding-x.align-center
+        .cell.large-16.info.text-center
+          p Занятие по силам и для души
+          p: a.button.button_large(href='' title='На FAQ по волонтёрству') Подробнее о волонтёрстве
+          .info.grid-x.grid-padding-x
+            .cell.medium-12
+              .callout.callout_sun
+                h3 Помощь он-лайн
+                .indent Тем, кто хочет помогать
+                a.button(href='') Присоединяётесь
+            .cell.medium-12
+              .callout.callout_sun
+                h3 Помощь оффлайн
+                .indent Вам нужна помощь?
+                a.button(href='') Расскажите, что требуется
+          .info.text-center
+            h2 Мы всегда рады помощникам
+            p Помощи мало не бывает. Всегде есть дело каждому по силам
+            a.button(href='') Чем можно помочь
+          hr.hr.hr_border
+      .grid-x.grid-padding-x: .cell.info
+        h2.text-center Нам помогают
+        .grid-x.align-center: .cell.medium-16.large-14.text-center
+          p Благодаря нашим партнёрам мы смогли сделать сайт-архив редких,уникальных и просто любимых газет ит журналов. Известных и не очень.
+        .grid-x.grid-padding-x.small-up-2.medium-up-4.large-up-7
+          for i in [1,2,3,4,5,6,7]
+            .cell.sect: img(src='./i/'+i +'.jpg' alt='Логотип компании-партнёра')
+      .info.grid-x.grid-padding-x.align-center
+        .cell.medium-16.large-14
+          h2.text-center Стать волонтёром
+          form
+            label
+              span.level Имя и фамилия
+              input(type='text' required)
+            label
+              span.level Регион (не обязательно)
+              input(type='text')
+            label
+              span.level Электронная почта
+              input(type='email' required)
+            label
+              span.level Телефон
+              input(type='tel' required)
+            label
+              span.level Пароль
+              input(type='password' required)
+            p.help-text Не менее 6 символов. Цифры и латинские буквы.
+
+            .grid-x.grid-padding-x
+              .cell.small-14.medium-16
+                label
+                  span.level Текст с картинки
+                  input(type='text')
+              .cell.small-10.medium-8.capt
+                img(src='./i/image.svg' alt='Капча' ).capt__img
+            +step('Соглашаюсь с <a href="shop-regular.html" title="">условиями обработки персональных данных</a>')
+            button.button Зарегистрироваться

@@ -1,0 +1,16 @@
+.promo {
+  padding-top: rem-calc(70);
+  padding-bottom: rem-calc(70);
+  text-align: center;
+  font-weight: bold;
+  background: transparent;
+  h2 {
+    line-height: 1.3;
+    &:after {
+      display: none;
+    }
+  }
+  &__img {
+    width: 100%;
+  }
+}

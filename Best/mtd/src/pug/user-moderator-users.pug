@@ -1,0 +1,58 @@
+extends smi-index
+
+block page
+  include components/common/_breadcrumbs
+  block content
+    .grid-container: .grid-x.grid-padding-x: .cell
+      h1 Модератор
+    .info.info_bottom.grid-container: .grid-x.grid-padding-x
+      .cell.small-24.large-8.large-order-2
+        include components/arch/_sidebar-admin
+      .cell.small-24.large-16.large-order-1
+        hr
+        h3 Волонтёры
+        .grid-x.grid-padding-x: .cell
+          .callout.main-search.main-search_opt
+            .grid-x.grid-padding-x.align-center
+              .auto.cell.padding-vertical-6
+                form.main-search__form
+                  .input-group
+                    input.input-group-field(type="text",placeholder="Введите имя пользователя")
+                    input.button.input-group-button(type="submit", value="Искать")
+
+          include components/arch/_alphabet
+          .callout.callout_product
+            .grid-x.grid-padding-x
+              .small-8.medium-4.cell.sect: img(src="./i/5.jpg",alt="User picture")
+              .small-16.medium-20.cell
+                .label.label_success Волонтер
+                .label.label_alert Премиум
+                h4 Александров Владимир
+                .grid-x.grid-padding-x
+                  .shrink.medium-24.large-12.cell
+                    label Блокировка
+                    select
+                      option Нет
+                      option Заблокирован
+                  .shrink.medium-shrink.cell.align-self-middle
+                    a(data-open="sendMessage") Сообщение
+          .callout.callout_product
+            .grid-x.grid-padding-x
+              .small-8.medium-4.cell.sect: img(src="./i/5.jpg",alt="User picture")
+              .small-16.medium-20.cell
+                .label.label_secondary Волонтер
+                h4 Борисов Александр
+                .grid-x.grid-padding-x
+                  .shrink.medium-24.large-12.cell
+                    label Блокировка
+                    select
+                      option Нет
+                      option Заблокирован
+                  .shrink.medium-shrink.cell.align-self-middle
+                    a(data-open="sendMessage") Сообщение
+
+  .reveal#sendMessage(data-reveal)
+    h4 Отправить сообщение
+    form
+      textarea(placeholder="Текст сообщения")
+      a.button(href="#") Отправить

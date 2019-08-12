@@ -1,0 +1,158 @@
+.footer {
+  padding-top: rem-calc(48);
+  padding-bottom: rem-calc(21);
+  color: $white;
+  background: $black;
+
+  &__copy {
+    font-size: rem-calc(14);
+    font-weight: 400;
+    @include margin-level(bottom,yellow);
+  }
+
+  &__head {
+    color: $white;
+    font-size: rem-calc(18);
+    display: block;
+    font-weight: 700;
+    @include margin-level(bottom,red);
+  }
+
+  &__shop {
+    color: $white;
+    display: block;
+    font-weight: 300;
+    margin-bottom: rem-calc(8);
+    line-height: 1.5;
+    font-size: rem-calc(17);
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: $light-gray;
+    }
+  }
+
+  &__bottom {
+    font-size: rem-calc(13);
+    text-align: center;
+  }
+
+  &__soc {
+    margin-bottom: rem-calc(21);
+    font-size: rem-calc(26);
+    text-align: center;
+  }
+
+  &__link {
+    font-weight: 700;
+    display: block;
+    margin-bottom: rem-calc(10);
+    color: $white;
+    font-size: rem-calc(14);
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: $red;
+    }
+  }
+
+  &__pay {
+    height: rem-calc(24);
+  }
+
+  &__call {
+    font-weight: $global-weight-bold;
+    display: block;
+    color: $tertiary;
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: $white;
+    }
+  }
+
+  &__client {
+    @include margin-level(bottom,blue);
+  }
+
+  &__cetera {
+    font-size: rem-calc(14);
+    font-weight: 400;
+    color: $dark-gray;
+  }
+
+  &__mail {
+    color: $primary-color;
+    font-size: rem-calc(16);
+    display: block;
+    @include margin-level(bottom,blue);
+    font-weight: 700;
+  }
+
+  &__tel {
+    color: $white;
+    font-size: rem-calc(16);
+    display: block;
+    @include margin-level(bottom,blue);
+    font-weight: 700;
+
+        &:active,
+        &:focus,
+        &:hover {
+          color: $red;
+        }
+  }
+
+  &__labs {
+    color: $primary-color;
+    font-weight: 700;
+    display: inline-block;
+    @include margin-level(bottom,blue);
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: $white;
+    }
+  }
+
+  &__error {
+    display: block;
+    color: $dark-gray;
+    font-weight: 700;
+    font-size: rem-calc(14);
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: $white;
+    }
+  }
+
+  &__address {
+    font-size: rem-calc(14);
+    color: $white;
+    margin-bottom: rem-calc(10);
+  }
+
+  &__logo {
+    width: rem-calc(265);
+    @include margin-level(bottom,red);
+  }
+
+  &__block {
+    @include margin-level(bottom,yellow);
+  }
+  @include breakpoint(medium down) {
+    &__address {
+      display: inline-block;
+      margin-right: rem-calc(4);
+    }
+  }
+  @include breakpoint(small only) {
+    text-align: center;
+  }
+}

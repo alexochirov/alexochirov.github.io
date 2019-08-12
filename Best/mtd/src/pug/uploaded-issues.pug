@@ -1,0 +1,72 @@
+extends smi-regular
+
+include components/arch/_rating
+include components/arch/_dificulty
+
+block content
+  .grid-container: .grid-x.grid-padding-x: .cell
+    h1 Загрузка изданий
+  .grid-container
+    .grid-x.grid-padding-x
+      .cell.medium-15.large-16.info
+        .callout.callout_issue
+          .grid-x.grid-padding-x
+            .cell.medium-auto 
+              label
+              +step('Выбрать все')
+            .cell.medium-shrink.text-right.hide-for-small-only Размер
+
+          - var i = 1
+          while i < 18
+            .grid-x.grid-padding-x.file
+              .cell.medium-auto
+          
+                +step('<i class="fas fa-file fa-lg"></i> 1234_20.01.2019.pdf')
+            
+              .cell.medium-7.large-4.text-left.medium-text-right 4,5&nbsp;Мб
+    
+            - i++
+      .cell.medium-9.large-8.info
+        form.callout.callout_issue
+          .grid-x.grid-margin-x
+            .cell.xlarge-12
+              .input-group
+                .input-group-label №
+                input.input-group-field(type='text' placeholder='Номер')
+            .cell.xlarge-12
+              .input-group
+                .input-group-label (
+                input.input-group-field(type='text' placeholder='Сквозной номер')
+                .input-group-label )
+          label
+            span.level Дата выпуска
+            input(type='text')
+          label
+            span.level Название издания
+            input.font-bold(type='text')
+          fieldset
+            legend: b Место выпуска
+            .grid-x.grid-padding-x
+              .cell.xlarge-12
+                label
+                  span.level Район
+                  input(type='text')
+              .cell.xlarge-12
+                label
+                  span.level Населенный пункт
+                  input(type='text')
+          label
+            span.level Тип издания
+            select
+              option
+              option Сельская
+              option Фабричная 
+              option Заводская
+              option Общественных объединений
+              option Университетов
+          .sect   
+            span.level Сложность
+            div
+              +dificulty(n)
+          
+          button.button.button_expanded(type='submit') Сохранить

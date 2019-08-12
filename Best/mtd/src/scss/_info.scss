@@ -1,0 +1,142 @@
+.info {
+  margin-bottom: rem-calc(66);
+
+  & > :last-child,
+  & > :last-child > :last-child,
+  & > :last-child > :last-child > :last-child,
+  & > :last-child > :last-child > :last-child > :last-child {
+    margin-bottom: rem-calc(0);
+  }
+
+  &_rel {
+    margin-bottom: rem-calc(40);
+  }
+
+  &_bottom {
+    margin-bottom: rem-calc(50);
+  }
+
+  &_cont {
+    margin-bottom: rem-calc(50);
+  }
+
+  &_reg {
+    margin-bottom: rem-calc(40);
+  }
+
+  &_fire {
+    margin-bottom: rem-calc(17);
+  }
+
+
+  &_par {
+    margin-bottom: rem-calc(23);
+  }
+
+  &_down {
+    padding-bottom: rem-calc(42);
+  }
+
+  &_spec {
+    margin-bottom: rem-calc(30);
+  }
+
+  &_top {
+    @include margin-level(bottom,red);
+  }
+
+  &__show {
+    font-size: rem-calc(14);
+    color: #767676;
+    margin-bottom: rem-calc(14);
+  }
+
+  &__autor {
+    margin-bottom: rem-calc(24);
+    font-size: rem-calc(14);
+    color: #767676;
+  }
+
+  &__dib {
+    display: inline-block;
+    margin-right: rem-calc(8);
+  }
+
+  &__type {
+    margin-bottom: rem-calc(8);
+    font-weight: $global-weight-bold;
+  }
+
+  &__primary {
+    color: $primary-color;
+  }
+
+  &__label {
+    font-weight: $global-weight-bold;
+  }
+
+  &_medium {
+    margin-bottom: rem-calc(0);
+  }
+  @include breakpoint(medium down) {
+    margin-bottom: rem-calc(45);
+
+    &_fire {
+      margin-bottom: rem-calc(0);
+    }
+
+    &_rel {
+      margin-bottom: rem-calc(20);
+    }
+
+    &_bottom {
+      margin-bottom: rem-calc(33);
+    }
+
+    &_family {
+      margin-bottom: rem-calc(35);
+    }
+
+    &_cont {
+      margin-bottom: rem-calc(30);
+    }
+
+    &_medium {
+      margin-bottom: rem-calc(50);
+    }
+
+    &_empty {
+      margin-bottom: rem-calc(0);
+    }
+
+    &_reg {
+      margin-bottom: rem-calc(22);
+    }
+
+    &_top {
+      margin-bottom: rem-calc(27);
+    }
+  }
+  @include breakpoint(small only) {
+    &_rel {
+      margin-bottom: rem-calc(26);
+    }
+
+    &_key {
+      margin-bottom: rem-calc(24);
+    }
+
+    &_family {
+      margin-bottom: rem-calc(35);
+    }
+
+    &_micro {
+      margin-bottom: rem-calc(16);
+    }
+
+    &_medium {
+      padding-top: rem-calc(3);
+      margin-bottom: rem-calc(28);
+    }
+  }
+}

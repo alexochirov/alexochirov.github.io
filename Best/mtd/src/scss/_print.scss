@@ -1,0 +1,18 @@
+@media print {
+  .header__tgl {
+    display:none;
+  }
+  .soc:after {
+    position: relative;
+    top: rem-calc(20);font-size: rem-calc(12);
+  }
+  .soc:last-child:after {
+    top: rem-calc(40);
+  }
+  .craf_zebra:after {
+    display:none;
+  }
+  .footer .cell {
+    width:33.33%;
+  }
+}

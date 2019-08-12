@@ -1,0 +1,150 @@
+doctype html
+html.no-js(lang='ru')
+  include components/service/_head
+  body
+    include components/mixins/_mixin-step
+    include components/mixins/_mixin-magazine-tile
+    include components/mixins/_mixin-read-comment
+    include components/mixins/_mixin-advice
+    include components/mixins/_mixin-prod
+    include components/mixins/_mixin-project
+    include components/mixins/_mixin-search-refine
+    include components/mixins/_admin-issue-line
+
+    include components/smi/_top-nav
+    include components/smi/_header
+    block article
+
+    block page
+      .paper(style="background-image:url(./i/paper.jpg);")
+        .grid-container
+          .paper__main 123 газет и журналов
+            br
+            | 657456 статей
+          .paper__text c 1812 года до сегодняшнего дня
+          .paper__flex
+            .paper__search
+              .input-group
+                .input-group-field: input(type="text",placeholder="Что ищем")
+                .input-group-button: input.button.button_submit(type="submit", value="Искать")
+            div: a(href="#").button.button_white Расширенный поиск  
+      .sky: .grid-container
+        .grid-x.grid-padding-x
+          .large-12.cell.medium-12      
+            h2 Популярные издания
+          .large-12.cell.medium-12
+            ul.sort 
+              li.sort__item: a(href="#").sort__link По названию
+              li.sort__item: a(href="#").sort__link По количеству выпусков
+              li.sort__item: a(href="#").sort__link По рейтингу
+        .grid-x.grid-padding-x.large-up-4.medium-up-2(data-equalizer data-equalize-by-row="true")
+          each title in [1,2,3,4,5,6,7,8]
+            +prod()
+        .text-center
+          a(href="#").button.button_hollow смотреть все издания
+      .lake
+        .grid-container.lake__top: .grid-x.grid-padding-x: .cell
+          h2 10 лучших волонтеров
+        .wing
+          each i in [1,2,3,4,5,6,1]
+            .wing__slide
+              a.wing__block(href="#" style="background-image:url(./i/p" + i + ".jpg);")
+                .wing__stat Статей: 
+                  span.wing__num 231  
+                .wing__name Виолетта Крылова
+        .text-center: a(href="#").button Cтать волонтером        
+                
+      .grid-container
+        .grid-x.grid-padding-x
+          .large-18.cell.info.info_medium
+            .grid-x.grid-padding-x
+              .large-12.cell.text-center.large-text-left
+                h2 В этот день 100 лет назад
+              .info.info_top.large-12.cell.text-center.large-text-right
+                a(href="#").button.button_hollow все материалы
+            .grid-x.grid-padding-x.large-up-3.info.info_cyan.medium-up-2.align-center
+              +project()
+              +project('Открытое письмо ведущих архитекторов и историков Ярославля','политика')
+              +project('«Дом с башней» на Гиганте включат в список выявленных объектов культурного наследия','объявления',true)
+            .grid-x.grid-padding-x
+              .large-12.cell.text-center.large-text-left
+                h2 Добавлено недавно
+              .info.info_top.large-12.cell.text-center.large-text-right
+                a(href="#").button.button_hollow все материалы
+            .grid-x.grid-padding-x.large-up-3.info.info_cyan.medium-up-2.align-center
+              +project('Открытие памятной доски премьер - министру В.Н. Коковцову')
+              +project('Вокзал Ярославль-Главный внесен в список выявленных ОКН','политика')
+              +project('Установка информационных надписей, Ярославский район','объявления',true)
+            .grid-x.grid-padding-x.medium-up-2.info
+              .cell  
+                p: a(href="#")
+                  img(src="./i/s1.jpg", alt="")
+              .cell  
+                p: a(href="#")
+                  img(src="./i/s2.jpg", alt="")
+        
+          .large-6.cell
+            .craft
+              .craft__back
+                .craft__wrap
+                  h5 Интересные статьи
+                  a(href="#").letter
+                    .letter__title «Дом с башней» на Гиганте включат в список выявленных объектов культурного наследия
+                    .letter__text Жилой дом на 57 квартир, спроектированный архитектором Матвеевой и реализованный в 1949-1952... 
+                  hr
+                  a(href="#").letter
+                    .letter__title «Дом с башней» на Гиганте включат в список выявленных объектов культурного наследия
+                    .letter__text Жилой дом на 57 квартир, спроектированный архитектором Матвеевой и реализованный в 1949-1952... 
+                  a(href="#").button.button_hollow.button_expanded все статьи
+                  
+            .craft.craft_red
+              .craft__back.craft__back_red
+                a(href="#").craft__wrap.craft__wrap_red
+                  h5 Внимание, конкурс!
+                  .sect
+                    img(src="./i/fond.jpg", alt="")
+                  .craft__text Друзья! ЯОО ВООПИиК приглашает вас принять участие в творческом конкурсе фотографий, рисунков, эссе и исследовательских работ
+            .craft.craft_other
+              .craft__back
+                .craft__wrap.craft__wrap_other
+                  h5 Цитата
+                  blockquote
+                    | Диалогический контекст, за счет использования параллелизмов и повторов на разных языковых уровнях, представляет собой метаязык.
+                    cite Пафнутий Непарнокобылкин
+                    
+            .craft.craft_zebra
+              .craft__back.craft__back_zebra
+                form.craft__wrap.craft__wrap_zebra
+                  h5 Подписка
+                  label E-mail
+                  input(type="email",placeholder="")
+                  button.button.button_expanded подписаться
+                  button.button.button_empty Как отписаться?
+            .craft.craft_last
+              .craft__back.craft__back_last
+                .craft__wrap.craft__wrap_last
+                  h5 Теги
+                  a(href="#").tag Госзакупки
+                  a(href="#").tag.tag_dark-gray Грипп
+                  a(href="#").tag.tag_red Губернатор
+                  a(href="#").tag Деньги
+                  a(href="#").tag.tag_dark-gray Депутаты
+                  a(href="#").tag.tag_red Дети
+                  a(href="#").tag Дорога
+                  a(href="#").tag.tag_dark-gray Дороги
+                  a(href="#").tag.tag_red ДТП
+                  a(href="#").tag ЕДДС
+                  a(href="#").tag Единая Россия
+                  a(href="#").tag.tag_dark-gray Животные
+                  a(href="#").tag.tag_red ЖКХ
+                  a(href="#").tag.tag_dark-gray ЗАГС
+                  a(href="#").tag.tag_red Законодательное собрание
+                  a(href="#").tag.tag_dark-gray Законодательство
+                  a(href="#").tag.tag_red Здоровье
+                  a(href="#").tag Здравоохранение
+                  a(href="#").tag Интернет
+                
+    include components/common/_send-message
+
+    include components/smi/_footer
+    include components/service/_js

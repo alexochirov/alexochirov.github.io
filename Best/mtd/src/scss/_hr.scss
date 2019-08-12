@@ -1,0 +1,41 @@
+.hr {
+  @include margin-level(bottom,red);
+
+  &_border {
+    margin-bottom: rem-calc(4);
+  }
+
+  &_null {
+    margin-bottom: rem-calc(0);
+  }
+
+  &_new {
+    margin-bottom: rem-calc(20);
+    margin-top: rem-calc(25);
+  }
+
+  &_table {
+    margin-bottom: rem-calc(30);
+  }
+
+  &_high {
+    @include margin-level(bottom,orange);
+    @include margin-level(top,orange);
+  }
+
+  &_journal {
+    margin-top: rem-calc(30);
+    margin-bottom: rem-calc(20);
+  }
+  @include breakpoint(medium down) {
+    &_table {
+      margin-top: rem-calc(7);
+      margin-bottom: rem-calc(25);
+    }
+  }
+  @include breakpoint(small only) {
+    &_border {
+      margin-bottom: rem-calc(12);
+    }
+  }
+}

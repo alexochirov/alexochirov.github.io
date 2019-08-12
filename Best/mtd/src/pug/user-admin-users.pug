@@ -1,0 +1,100 @@
+extends smi-index
+
+block page
+  include components/common/_breadcrumbs
+  block content
+    .grid-container: .grid-x.grid-padding-x: .cell
+      h1 Администратор
+    .grid-container: .grid-x.grid-padding-x
+      .cell.small-24.large-8.large-order-2.info
+        include components/arch/_sidebar-admin
+        h4 Фильтровать
+
+        ul.accordion(data-accordion data-multi-expand='true' data-allow-all-closed='true')
+          li.accordion-item.is-active(data-accordion-item)
+            a.accordion-title(href="#") По роли
+            .accordion-content(data-tab-content)
+              +search-refine('Читатели')
+              +search-refine('Волонтёры','12')
+              +search-refine('Модераторы','5')
+          li.accordion-item.is-active(data-accordion-item)
+            a.accordion-title(href="#") По рангу
+            .accordion-content(data-tab-content)
+              +search-refine('Обычный')
+              +search-refine('Премиум','17')
+          li.accordion-item.is-active(data-accordion-item)
+            a.accordion-title(href="#") По блокировке
+            .accordion-content(data-tab-content)
+              +search-refine('Допущены')
+              +search-refine('Заблокированы','5')
+      .cell.small-24.large-16.large-order-1.info
+        hr
+        h3 Пользователи
+          |  
+          a(href='user-admin-add-user.html' title='Создать пользователя'): i.fas.fa-plus-circle
+        .grid-x.grid-padding-x: .cell
+          .callout.main-search.main-search_opt
+            .grid-x.grid-padding-x.align-center
+              .auto.cell.padding-vertical-6
+                form.main-search__form
+                  .input-group
+                    input.input-group-field(type="text",placeholder="Введите имя пользователя")
+                    input.button.input-group-button(type="submit", value="Искать")
+
+          include components/arch/_alphabet
+          .callout.callout_name
+            .grid-x.grid-padding-x
+              .small-8.medium-4.cell.sect: img(src="./i/5.jpg",alt="User picture")
+              .small-16.medium-20.cell
+                .label.label_success Волонтер
+                .label.label_alert Премиум
+                h4 Александров Владимир
+                .grid-x.grid-padding-x
+                  .large-6.cell
+                    label Статус
+                    select
+                      option(selected) Премиум
+                      option Обычный
+                  .large-6.cell
+                    label Участие
+                    select
+                      option Пользователь
+                      option(selected) Волонтер
+                      option Модератор
+                  .large-6.cell
+                    label Блокировка
+                    select
+                      option Нет
+                      option Заблокирован
+                  .shrink.cell.align-self-middle
+                    a(data-open="sendMessage") Собщение
+          .callout.callout_name
+            .grid-x.grid-padding-x
+              .small-8.medium-4.cell.sect: img(src="./i/5.jpg",alt="User picture")
+              .small-16.medium-20.cell
+                .label.label_secondary Обычный
+                h4 Борисов Александр
+                .grid-x.grid-padding-x
+                  .large-6.cell
+                    label Статус
+                    select
+                      option Премиум
+                      option(selected) Обычный
+                  .large-6.cell
+                    label Участие
+                    select
+                      option(selected) Пользователь
+                      option Волонтер
+                  .large-6.cell
+                    label Блокировка
+                    select
+                      option Нет
+                      option Заблокирован
+                  .shrink.cell.align-self-middle
+                    a(data-open="sendMessage") Собщение
+
+  .reveal#sendMessage(data-reveal)
+    h4 Отправить сообщение
+    form
+      textarea(placeholder="Текст сообщения")
+      a.button(href="#") Отправить

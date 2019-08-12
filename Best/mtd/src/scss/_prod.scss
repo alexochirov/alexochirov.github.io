@@ -1,0 +1,77 @@
+.prod {
+  background: $white;
+  display: block;
+  color: $black;
+  font-size: rem-calc(14);
+  font-weight: 700;
+  padding-bottom: rem-calc(23);
+  font-family: $font-noto;
+  margin-bottom: rem-calc(25);
+
+  &__date {
+    color: $primary-color;
+    font-family: $font-pt;
+  }
+
+  &__icon {
+    width: rem-calc(14);
+    position: relative;
+    top: rem-calc(2);
+    height: rem-calc(14);
+  }
+
+  &__main {
+    padding-left: rem-calc(30);
+    padding-right: rem-calc(30);
+  }
+
+  &__row {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  &__title {
+    position: relative;
+    margin-bottom: rem-calc(53);
+
+    &:after {
+      content: "";
+      position: absolute;
+      left: rem-calc(0);
+      bottom: rem-calc(-27);
+      width: rem-calc(70);
+      height: rem-calc(2);
+      background: $black;
+    }
+  }
+
+  &__num {
+    font-size: rem-calc(14);
+    font-weight: 400;
+    font-family: $font-pt;
+    padding-left: rem-calc(6);
+  }
+
+  &__quant {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  &__rating {
+    display: flex;
+    margin-right: rem-calc(57);
+    flex-flow: row wrap;
+
+    svg {
+      font-size: rem-calc(15);
+      color: $warning-color;
+    }
+  }
+
+  &__img {
+    height: rem-calc(200);
+    margin-bottom: rem-calc(24);
+    background-size: cover;
+    background-position: center;
+  }
+}

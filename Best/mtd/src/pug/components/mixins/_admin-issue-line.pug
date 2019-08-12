@@ -1,0 +1,55 @@
+include _user-multiselect
+include ../arch/_rating
+include ../arch/_dificulty
+
+mixin admin-issue-line(name,n)
+  .callout.callout_admin
+    .grid-x.grid-padding-x
+      .cell.medium-4.sect.text-center
+        img(src="./i/1.jpg",alt="Превью")
+      .medium-20.cell
+        a(href="#")
+          if name
+            h4= name
+          else
+            h4 Бюллетень яровславского сыртреста
+          p №321 от 4 Сентября 1965 г.
+  
+        form
+          .grid-x.grid-padding-x
+        
+            .small-auto.medium-shrink.cell
+              label Статус
+              select
+                option(selected) Не обработан
+                option В работе
+                option Обработан
+                option На доработку
+                option Принят
+            .small-auto.medium-shrink.cell
+              label Исполнитель
+              select.user-multiselect(id="ms0" + n)
+                optgroup(label="A")
+                  option Александров Борис
+                  option Аникеев Вячеслав
+                optgroup(label="Б")
+                  option Барабанов Сигизмунд
+                  option Баранов Поликарп
+          .grid-x.grid-padding-x
+            .small-auto.medium-shrink.cell.callout__tree
+              label Сложность
+              div
+                +dificulty(n)
+            .small-auto.medium-shrink.cell.callout__tree
+              label Оценка работы волонтера
+              div
+                +rating(n)
+            .small-auto.medium-shrink.cell.align-self-bottom.callout__tree
+              a(data-open="sendMessage") Собщение
+    
+          .grid-x.cell.align-center
+        
+            .cell
+              hr.hr.hr_table
+            .cell.shrink: a.button(href="#") Сохранить изменения
+  

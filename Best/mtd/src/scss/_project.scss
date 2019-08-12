@@ -1,0 +1,57 @@
+.project {
+  display: block;
+  margin-bottom: rem-calc(24);
+  color: $black;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: $primary-color;
+  }
+
+  &__img {
+    height: rem-calc(180);
+    background-size: cover;
+    margin-bottom: rem-calc(16);
+    background-position: center;
+  }
+
+  &__cat {
+    color: $dark-gray;
+    font-size: rem-calc(12);
+    font-weight: 700;
+    margin-bottom: rem-calc(12);
+    text-transform: uppercase;
+    letter-spacing: rem-calc(0.24);
+  }
+
+  &__read {
+    text-transform: uppercase;
+    font-size: rem-calc(12);
+    font-weight: 700;
+    color: $primary-color;
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: #8d3021;
+    }
+  }
+
+  &__text {
+    font-size: rem-calc(14);
+    font-weight: 400;
+    color: $secondary-color;
+    margin-bottom: rem-calc(11);
+  }
+
+  &__title {
+    font-size: rem-calc(14);
+    margin-bottom: rem-calc(12);
+    font-weight: 700;
+    font-family: $font-noto;
+  }
+  @include breakpoint(medium down) {
+    margin-bottom: rem-calc(34);
+  }
+}

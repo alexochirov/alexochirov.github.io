@@ -1,0 +1,20 @@
+extends smi-regular
+block content
+  .grid-container: .grid-x.grid-padding-x
+    .small-24.large-16.cell.small-order-2.large-order-1.info
+      include components/arch/_search-box
+      .header-box.header-box_next
+        .grid-x
+          .cell.medium-auto.align-self-middle
+            h1.header-box__h1 Бюллетень ярославского сыртреста
+          .cell.medium-shrink
+            .header-box__button
+              a.button.button_white(href="smi-about.html") О издании
+      
+      include components/arch/_arch-tiles-o
+      include components/common/_pagination
+    .small-24.large-8.small-order-1.large-order-2.cell
+      .aside-right
+        h4 Уточнить результаты
+        ul.accordion(data-accordion data-multi-expand='true' data-allow-all-closed='true')
+          include components/arch/_filter-by-date

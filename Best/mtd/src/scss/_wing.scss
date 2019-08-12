@@ -1,0 +1,127 @@
+.wing {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+margin-bottom: rem-calc(51);
+
+  &:before {
+    width: rem-calc(263);
+    height: 100%;
+    position: absolute;
+    left: rem-calc(0);
+    top: rem-calc(0);
+    display: block;
+    content: "";
+    background: rgba($white,.7);
+    z-index: 1;
+  }
+
+  &:after {
+    width: rem-calc(263);
+    height: 100%;
+    position: absolute;
+    right: rem-calc(0);
+    top: rem-calc(0);
+    display: block;
+    content: "";
+    background: rgba($white,.7);
+    z-index: 1;
+  }
+
+  .slick-list {
+    margin-left: rem-calc(-62);
+    margin-right: rem-calc(-62);
+  }
+
+  .slick-arrow {
+    width: rem-calc(41);
+    height: rem-calc(184);
+    z-index: 2;
+
+    &:active,
+    &:focus,
+    &:hover {
+      * {
+        fill: $primary-color;
+      }
+    }
+  }
+
+  &__slide {
+    padding-left: rem-calc(14);
+    padding-right: rem-calc(14);
+    height: unset;
+  }
+
+  &__block {
+    height: rem-calc(389);
+    padding-left: rem-calc(5);
+    overflow: hidden;
+    padding-right: rem-calc(5);
+    background-size: cover;
+    background-position: center;
+    color: $white;
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: column-reverse;
+    text-align: center;
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: $light-gray;
+    }
+  }
+
+  &__stat {
+    font-size: rem-calc(14);
+    font-weight: 400;
+    position: relative;
+    width: 100%;
+    margin-bottom: rem-calc(25);
+
+    &:after,
+    &:before {
+      width: rem-calc(30);
+      height: rem-calc(2);
+      background: $white;
+      content: "";
+      position: absolute;
+      top: calc(50% - 1px);
+      left: calc(50% - 90px);
+    }
+
+    &:after {
+      left: auto;
+      right: calc(50% - 90px);
+    }
+  }
+
+  &__name {
+    font-size: rem-calc(16);
+    margin-bottom: rem-calc(4);
+    font-weight: 700;
+    font-family: $font-noto;
+    width: 100%;
+    letter-spacing: rem-calc(.32);
+  }
+  @include breakpoint(xlarge down) {
+    .slick-list {
+      margin-left: rem-calc(0);
+      margin-right: rem-calc(0);
+    }
+
+    .slick-prev {
+      left: rem-calc(24);
+    }
+
+    .slick-next {
+      right: rem-calc(24);
+    }
+
+    &:after,
+    &:before {
+      display: none;
+    }
+  }
+}

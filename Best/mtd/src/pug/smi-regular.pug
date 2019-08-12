@@ -1,0 +1,12 @@
+extends smi-index
+
+block page
+  include components/common/_breadcrumbs
+  block content
+    .grid-container: .grid-x.grid-padding-x: .cell
+      h1 Заголовок страницы h1
+    .info.grid-container: .grid-x.grid-padding-x
+      .cell.large-8.large-order-2
+        include components/common/_sidebar
+      .cell.large-16.large-order-1
+        include components/common/_text

@@ -1,0 +1,5 @@
+.date {
+  font-weight: $global-weight-bold;
+  color: $secondary-color;
+  @include margin-level(bottom,red);
+}

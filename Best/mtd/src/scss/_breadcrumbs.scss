@@ -1,0 +1,16 @@
+.breadcrumbs {
+margin-bottom: rem-calc(27);
+margin-top: rem-calc(10);
+  .current {
+    padding-top: rem-calc(2);
+  }
+
+  a {
+    color: $secondary-color;
+    font-size: rem-calc(12);
+  }
+  @include breakpoint(medium down) {
+    margin-bottom: rem-calc(26);
+    margin-top: rem-calc(20);
+  }
+}

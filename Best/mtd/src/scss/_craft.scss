@@ -1,0 +1,170 @@
+.craft {
+  position: relative;
+  @include margin-level(top,cyan,-1);
+
+  &_red {
+    margin-top: rem-calc(0);
+  }
+
+  &_last {
+    margin-top: rem-calc(3);
+  }
+
+  &_other {
+    margin-top: rem-calc(0);
+  }
+
+  &_zebra {
+    margin-top: rem-calc(0);
+
+    &:after {
+      content: "";
+      position: absolute;
+      left: rem-calc(-3);
+      top: rem-calc(-3);
+      background: url($imagesPath +"/zebra.svg")no-repeat center;
+      background-size: cover;
+      width: calc(50vw - 313px);
+      height: calc(100% + 6px);
+      display: block;
+      z-index: 2;
+    }
+  }
+
+  &__back {
+    background: #f9f9f9;
+    z-index: 2;
+    position: relative;
+    width: calc(50vw - 313px);
+    padding: rem-calc(9) rem-calc(42) rem-calc(1);
+
+    &_red {
+      background: $primary-color;
+      padding-top: rem-calc(42);
+      padding-bottom: rem-calc(9);
+    }
+
+    &_zebra {
+      z-index: 3;
+      padding-top: rem-calc(30);
+    }
+  }
+
+  &__wrap {
+    @include margin-level(top,cyan);
+    width: rem-calc(212);
+    position: relative;
+    display: block;
+    @include margin-level(bottom,yellow);
+    z-index: 3;
+
+    &_last {
+      @include margin-level(top,yellow);
+    }
+
+    &_other {
+      @include margin-level(top,yellow);
+      @include margin-level(bottom,green);
+    }
+
+    &_red {
+      @include margin-level(bottom,yellow);
+      margin-top: rem-calc(0);
+      color: $white;
+
+      &:active,
+      &:focus,
+      &:hover {
+        color: $light-gray;
+      }
+    }
+
+    &_zebra {
+      background: #f9f9f9;
+      margin-top: rem-calc(0);
+      @include margin-level(bottom,yellow);
+    }
+  }
+
+  &__text {
+    font-size: rem-calc(14);
+  }
+  @include breakpoint(large down) {
+    &__back {
+      padding-left: rem-calc(20);
+      padding-right: rem-calc(20);
+    }
+
+    &__back,
+    &__wrap {
+      width: 100%;
+    }
+  }
+  @include breakpoint(medium down) {
+    margin-top: rem-calc(3);
+
+    &__wrap {
+      margin-top: rem-calc(0);
+      margin-bottom: rem-calc(45);
+
+      &_other {
+        padding-top: rem-calc(35);
+      }
+    }
+
+    &_zebra {
+      &:after {
+        width: calc(100% + 6px);
+      }
+    }
+
+    &__back {
+      padding-left: rem-calc(12);
+      padding-right: rem-calc(12);
+
+      &_last {
+        padding-top: rem-calc(43);
+      }
+
+      &_zebra {
+        padding-top: rem-calc(40);
+      }
+    }
+  }
+  @include breakpoint(medium down) {
+    &__back {
+      padding-top: rem-calc(39);
+    }
+  }
+  @include breakpoint(small only) {
+    &__wrap {
+      &_red {
+        margin-bottom: rem-calc(40);
+      }
+
+      &_zebra {
+        margin-bottom: rem-calc(40);
+      }
+
+      &_other {
+        padding-top: rem-calc(20);
+      }
+    }
+
+    &__back {
+      padding-top: rem-calc(42);
+
+      &_last {
+        padding-top: rem-calc(42);
+      }
+
+      &_zebra {
+        padding-top: rem-calc(42);
+      }
+
+      &_red {
+        padding-top: rem-calc(37);
+      }
+    }
+  }
+}

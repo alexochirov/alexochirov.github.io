@@ -1,0 +1,23 @@
+.letter {
+  display: block;
+  color: $black;
+
+  &__title {
+    font-size: rem-calc(14);
+    font-weight: 700;
+    font-family: $font-noto;
+    @include margin-level(bottom,blue);
+  }
+
+  &__text {
+    color: $secondary-color;
+    @include margin-level(bottom,red);
+    font-size: rem-calc(14);
+    font-weight: 400;
+  }
+  @include breakpoint(medium down) {
+    &__text {
+      margin-bottom: rem-calc(25);
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.capt {
+  align-items: flex-end;
+  justify-content: flex-end;
+  display: flex;
+padding-bottom: rem-calc(16);
+  &__img {
+    background: get-color(light-gray);
+    height: rem-calc(44);
+    width: 100%;
+  }
+}

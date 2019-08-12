@@ -1,0 +1,58 @@
+extends smi-regular
+block content
+  include components/mixins/_volunteer-issue-line
+  .grid-container: .grid-x.grid-padding-x
+    .small-24.large-16.cell.small-order-2.large-order-1.info
+      include components/arch/_search-box
+      .grid-x.grid-padding-x.align-middle
+        .cell.large-12
+          h1 Номера
+        .cell.large-12.text-right
+          p: a.button.button_hollow(data-open='fetch-task-modal'): b Получить пакет
+      .info__show Показано 3 из 95
+      for name, index in ['Северный рабочий','Бюллетень ярославского сыртреста','Юность']
+        +volunteer-issue-line(name,index)
+      include components/common/_pagination
+    .small-24.large-8.small-order-1.large-order-2.cell
+      .aside-right
+        h4 Фильтровать
+
+        ul.accordion(data-accordion data-multi-expand='true' data-allow-all-closed='true')
+          include components/arch/_filter-by-status
+          include components/arch/_filter-by-level
+          include components/arch/_filter-by-date
+          include components/arch/_filter-by-edition
+          include components/arch/_filter-by-place
+          include components/arch/_filter-by-type
+          include components/arch/_filter-by-added
+      
+
+  .reveal.reveal_spec(id='fetch-task-modal' data-reveal data-deep-link='true')
+    .grid-x.grid-padding-x
+      .cell.large-16
+        h3 Необработанные номера
+        -var i = 1;
+        while i < 11
+          .callout
+            a(href="#" title='Взять в работу').grid-x.grid-padding-x
+              .small-5.cell
+                img(src="./i/3.jpg",alt="Превью")
+              .small-19.cell
+                h4 Название издания #{i}
+                p №321 от 4 Сентября 1965 г
+                .callout__row
+                  span.callout__diff Сложность
+                  +dificulty-info
+          -i++;
+        include components/common/_pagination
+      .cell.large-8
+        .aside-right
+          h4 Фильтровать
+          ul.accordion(data-accordion data-multi-expand='true' data-allow-all-closed='true')
+            include components/arch/_filter-by-level
+            include components/arch/_filter-by-date
+            include components/arch/_filter-by-edition
+            include components/arch/_filter-by-place
+            include components/arch/_filter-by-type
+    button.close-button(type='button' data-close aria-label='Закрыть')
+      span(aria-hidden='true') &times;

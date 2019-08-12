@@ -1,0 +1,20 @@
+extends smi-regular
+block content
+    .info
+        .grid-container: .grid-x.grid-padding-x
+            .small-24.medium-16.cell.small-order-2.medium-order-1
+                include components/arch/_search-box
+                .grid-x.grid-padding-x.align-middle
+                    .cell
+                        .header-box
+                            h3 Результаты поиска:&nbsp;
+                            span: strong текст поискового запроса
+                        hr
+                    .cell.small-auto.medium-shrink
+                .info
+                    include components/arch/_search-result
+                    include components/common/_pagination
+            .small-24.medium-8.small-order-1.medium-order-2.cell
+                .aside-right
+                    h4 Уточнить результаты
+                    include components/arch/_search-refine-aside

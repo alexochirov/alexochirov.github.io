@@ -1,0 +1,37 @@
+.main-search {
+  padding: rem-calc(50) rem-calc(10) rem-calc(34);
+  background: #f9f9f9;
+  border: darken(#f9f9f9, 20);
+margin-bottom: rem-calc(25);
+  &__input {
+    margin: 0;
+  }
+
+  &__button {
+    background: $orange;
+
+    &_adv {
+      display: inline-block;
+      margin-left: 1rem;
+    }
+  }
+
+  &__submenu {
+    h5 {
+      margin: 0;
+      line-height: 1;
+      font-weight: bold;
+      font-size: 1rem;
+      padding: 0.7rem 1rem 0.7rem 0;
+    }
+
+    a {
+      text-decoration: underline;
+    }
+  }
+
+  &_opt {
+    background: transparent;
+    padding: 0;
+  }
+}

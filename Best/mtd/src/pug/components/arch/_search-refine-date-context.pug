@@ -1,0 +1,10 @@
+include ../mixins/_mixin-search-refine
+ul.accordion(data-accordion)
+    li.accordion-item.is-active(data-accordion-item)
+        a.accordion-title(href="#") По изданию
+        .accordion-content(data-tab-content)
+            each name in ['Бюллетень ярославского сыртреста','Ярославский крестьянин','Северный рабочий','Юность','Северный рабочий на уборке урожая']
+                +search-refine(name ,'5')
+
+
+

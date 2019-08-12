@@ -1,0 +1,72 @@
+extends smi-regular
+
+mixin team-member(name, position)
+  .grid-x.jacket
+    .cell.small-5.sect
+      img(src='./i/p1.jpg')
+    .cell.small-18.small-offset-1
+      h4= name
+      .jacket__pos= position
+      .sect Курирует вопросы стратегического развития Boxberry. Контролирует качество работы направления в целом, определяет политику взаимодействия с партнерами и клиентами, оценивает перспективы при внедрении нововведений. 
+      .sect: a(data-open='team-member-message-modal') #[i.fas.fa-lg.fa-envelope] Написать сообщение
+
+
+mixin team-member-alt(name, position)
+  .grid-x.jacket
+    .cell.small-18
+      h4= name
+      .jacket__pos= position
+      .sect Организует работу отделов коммерческого департамента. Планирует бюджет и контролирует его исполнение, определяет ценовую политику Boxberry, согласует скидки и бонусные программы. 
+      .sect: a(data-open='team-member-message-modal') #[i.fas.fa-lg.fa-envelope] Написать сообщение
+    .cell.small-5.sect.small-offset-1
+      img(src='./i/p2.jpg')
+
+
+block content
+  .grid-container: .grid-x.grid-padding-x: .cell
+    h1 Наша комнада
+  .info.grid-container.info_rel: .grid-x.grid-padding-x
+    .cell.large-7.large-offset-1.large-order-2
+      include components/common/_sidebar
+    .cell.large-16.large-order-1
+      p.lead Эти люди каждый день делают всё возможное и невозможное для работы сервиса. Ценим их труд и энтузиазм.
+      +team-member('Михаил Бахарев','Руководитель бизнес-направления')
+      +team-member-alt('Александр Митурич','Директор региональной сети')
+      +team-member('Алексей Бездеткин','Коммерческий директор')
+      +team-member-alt('Михаил Конев','Руководитель производственного департамента')
+      +team-member('Александра Грефенштейн','Директор по качеству')
+      +team-member-alt('Светлана Берендеева','Операционный директор')
+      +team-member('Сергей Калегин','Директор по информационным технологиям')
+      +team-member-alt('Ирина Каргина','Финансовый директор')
+      +team-member('Ольга Маклакова','Директор по персоналу')
+
+  .reveal(id='team-member-message-modal' data-reveal data-deep-link='true')
+    h3 Сообщение сотруднику
+    .callout: .grid-x.grid-margin-x
+      .cell.small-19
+        div КОМУ
+        div: b Александра Грефенштейн
+        div Руководитель производственного департамента
+      .cell.small-5
+        img(src='./i/p3.jpg')
+    form
+      label
+        span.level Представьтесь
+        input(type='text')
+      label
+        span.level Ваш email (для ответа вам)
+        input(type='email')
+      label
+        span.level Сообщение
+        textarea(rows='4')
+      .grid-x.grid-margin-x
+        .cell.small-12.medium-8
+          label
+            span.level Текст с картинки
+            input(type='text')
+        .cell.small-12.medium-8.capt
+          img(src='./i/image.svg' alt='Капча').capt__img
+      +step('Соглашаюсь с <a href="" title="">условиями обработки персональных данных</a>')
+      button.button(type='submit') Отправить
+    button.close-button(type='button' data-close aria-label='Закрыть')
+      span(aria-hidden='true') &times;

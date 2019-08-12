@@ -1,0 +1,69 @@
+extends smi-regular
+block content
+  .grid-container: .grid-x.grid-padding-x: .cell
+
+    h1 «Северный рабочий», 23 марта 1986 г
+  .grid-container.chassis
+    .grid-x.grid-padding-x
+      include components/common/_issue
+      .cell.large-8
+        ul.tabs(data-tabs id='issue-data-tabs')
+          li.tabs-title: a(href='#issue-data-panel1' aria-selected='true') Статья
+          li.tabs-title.is-active: a(href='#issue-data-panel2') Номер
+        .tabs-content(data-tabs-content='issue-data-tabs' ).chassis__content
+          .tabs-panel(id='issue-data-panel1')
+            form
+              label
+                span.level Заголовок материалa
+                input(type='text')
+              label
+                span.level Текст материалa
+              .button.button_expanded.text-center Кнопки визуального редактора
+              textarea(rows='8')
+                | Парадигма трансформации общества верифицирует конструктивный феномен толпы. Референдум ограничивает гносеологический феномен толпы, впрочем, не все политологи разделяют это мнение. Капиталистическое мировое общество стабильно. Либерализм ограничивает доиндустриальный тип политической культуры, отмечает автор, цитируя К.Маркса и Ф.Энгельса. Управление политическими конфликтами доказывает христианско-демократический национализм.
+              label 
+                +step('Статья с фотографией')
+              label
+                span.level Автор
+                input(type='text')
+              label
+                span.level Ключевые слова
+                input(type='text' value='лагерь; Молодая гвардия; лето; Отдых и туризм')
+              label
+                span.level Номера страницы
+                input(type='text' value='1; 6; 7; 8')
+              fieldset.fieldset
+                legend Об издании
+                label
+                  span.level Дата публикации
+                  input(type='text')
+                label
+                  span.level Название издания
+                  input.font-bold(type='text')
+                label
+                  span.level Принадлежность к организации
+                  input(type='text' placeholder='Название организации')
+              button.button(type='submit') Сохранить
+
+          .tabs-panel.is-active(id='issue-data-panel2')
+            form
+              .grid-x.grid-margin-x
+                .cell.xlarge-12.medium-24
+                  .input-group
+                    .input-group-label №
+                    input.input-group-field(type='text' placeholder='Номер')
+                .cell.xlarge-12.medium-24
+                  .input-group
+                    .input-group-label (
+                    input.input-group-field(type='text' placeholder='Сквозной номер')
+                    .input-group-label )
+              label
+                span.level Дата выпуска
+                input(type='text')
+              label
+                span.level Название издания
+                input.font-bold(type='text')
+              label
+                span.level Принадлежность к организации
+                input(type='text' placeholder='Название организации')
+              button.button.button_expanded(type='submit') Сохранить

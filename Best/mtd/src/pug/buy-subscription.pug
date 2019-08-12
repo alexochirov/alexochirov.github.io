@@ -1,0 +1,78 @@
+extends smi-index
+
+mixin subscription-detials(n)
+  .background-main.hide(id='subscription-detials-'+n data-toggler='hide')
+    hr
+    ul
+      li #[b Безлимитный доступ] к статьям на сайте и в приложении
+      li #[b Первыми] получите новые возможности сервиса
+      li #[b Библиография] и алфавитный указатель всего архива публикаций
+      li #[b Бонусы] и другие преимущества сервиса
+    .sect #[span.stat 200 ₽] в неделю
+    a.button(href='') Купить подписку
+
+mixin faq-answer
+  p Вы можете отменить подписку в любое время. При отмене бронирования мы прекратим списание средств с вашего счета в следующем платежном цикле. Каждый цикл составляет четыре недели, поэтому ваш неограниченный доступ будет продолжаться на протяжении четырех недель.
+  p Чтобы активировать цифровую подписку, необходимо подключить подписку на доставку на дом к учетной записи. Если вы еще не сделали этого, посетите эту страницу для подключения учетных записей.
+
+block page
+  include components/common/_breadcrumbs
+  block content
+
+    .grid-container: .grid-x.grid-padding-x: .cell.text-center.flame
+
+      h1.flame__title Купить подписку
+      p.lead Доступ ко всем изданиям когда и где вам удобно
+
+    .info.grid-container.info_reg: .grid-x.grid-padding-x.align-center
+      .cell.medium-18.large-16
+        .card
+          .card-divider Рекомендуем
+          .card-section
+            .grid-x
+              .cell.medium-16
+                h3.subheader Основная
+                h2 Все издания, без ограничений
+                ul
+                  li Любое устройство и способ просмотра статей
+                  li Безлимитный просмотр статей за период
+                  li Доступ к эксклюзивному содержимому
+              .cell.medium-7.medium-offset-1
+                .sect.sect_yellow
+                .sect #[span.stat 100 ₽] 
+                  br
+                  | в неделю
+                a.button(href='') Купить подписку
+        .grid-x.align-center
+          .cell.medium-20.large-18
+            .callout
+              a(data-toggle='subscription-detials-1')
+                h4.subheader Полный доступ
+                h5 Бонус-подписка и неограниченный доступ на любом устройстве
+              +subscription-detials(1)
+            .callout
+              a(data-toggle='subscription-detials-2')
+                h4.subheader Полный доступ ПЛЮС
+                h5 Все преимещуства полного доступа и бонус-подписка
+              +subscription-detials(2)
+            .callout
+              a(data-toggle='subscription-detials-3')
+                h4.subheader Для учебных заведений
+                h5 Используйте нашу базу публикаций для проведения научных изысканий
+              +subscription-detials(3)
+            hr.hr.hr_journal  
+            .info
+              h2.text-center Часто спрашивают 
+              ul.accordion(data-accordion data-multi-expand='true' data-allow-all-closed='true')
+                li.accordion-item(data-accordion-item)
+                  a.accordion-title(href='') Что за «цифровая подписка»? Что я получу?
+                  .accordion-content(data-tab-content)
+                    +faq-answer
+                li.accordion-item(data-accordion-item)
+                  a.accordion-title(href='') Был подписан на бумажный вариант одного издания. Можно мне электронную версию?
+                  .accordion-content(data-tab-content)
+                    +faq-answer
+                li.accordion-item(data-accordion-item)
+                  a.accordion-title(href='') Мне не нравиться. Как отменить опдписку и вернуть деньги?
+                  .accordion-content(data-tab-content)
+                    +faq-answer

@@ -1,0 +1,18 @@
+.place {
+  &__icon {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__img {
+    width: rem-calc(50);
+    height: rem-calc(50);
+    overflow: hidden;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    align-self: center;
+    border-radius: 50%;
+  }
+}

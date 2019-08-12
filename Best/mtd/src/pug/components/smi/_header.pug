@@ -1,0 +1,18 @@
+header.header
+  .grid-container: .grid-x.grid-padding-x
+    .cell.small-15.large-10.medium-7.header__info
+      a(href='#' title='')
+        img(src='./images/logo-red.svg',  alt='logo').header__logo
+
+    .show-for-small-only.small-9.cell
+      div(data-toggle='menu contacts').header__tgl
+        div(data-toggle)
+          i.fas.fa-bars
+    .large-14.cell.medium-17
+      ul.cat#menu(data-toggler=".hide-for-small-only").hide-for-small-only
+        li.cat__item
+          a.cat__link(href='#') Расширенный поиск
+        li.cat__item
+          a.cat__link(href='#') Архив изданий
+        li.cat__item
+          a.cat__link(href='#') О проекте

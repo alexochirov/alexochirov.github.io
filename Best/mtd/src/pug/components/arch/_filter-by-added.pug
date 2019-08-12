@@ -1,0 +1,5 @@
+li.accordion-item(data-accordion-item)
+    a.accordion-title(href="#") По дате добавления
+    .accordion-content(data-tab-content)
+        +search-refine('Сегодня','15')
+        +search-refine('В последние 30 дней','27')

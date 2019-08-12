@@ -1,0 +1,11 @@
+.input-group {
+  &-label {
+    border: rem-calc(1) solid $light-gray;
+  }
+  &-field {
+    input {
+      margin-bottom: rem-calc(0);
+
+    }
+  }
+}

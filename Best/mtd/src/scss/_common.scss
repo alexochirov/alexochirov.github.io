@@ -1,0 +1,147 @@
+a {
+  -webkit-transition: color 300ms ease-in-out;
+  -moz-transition: color 300ms ease-in-out;
+  -ms-transition: color 300ms ease-in-out;
+  -o-transition: color 300ms ease-in-out;
+  transition: color 300ms ease-in-out;
+  color: $primary-color;
+  text-decoration-skip-ink: none;
+  outline: none;
+
+  &:active,
+  &:focus,
+  &:hover {
+    outline: none;
+    color: $red;
+  }
+}
+
+blockquote {
+  border-left: rem-calc(3) solid $primary-color;
+  padding-left: rem-calc(17);
+}
+
+blockquote,
+blockquote p {
+  color: $black;
+  font-style: italic;
+  font-size: rem-calc(14);
+  font-family: $font-noto;
+}
+
+cite {
+  color: $secondary-color;
+  @include margin-level(top,red);
+  font-style: normal;
+  font-size: rem-calc(14);
+  font-family: $font-pt;
+}
+
+hr {
+  margin: 0 auto rem-calc(24);
+  border-bottom: rem-calc(1) solid $light-gray;
+}
+
+label {
+  line-height: 1.4286;
+  font-size: rem-calc(14);
+  font-family: $font-noto;
+  margin-bottom: rem-calc(5);
+}
+
+table {
+  margin-bottom: 6 * $global-margin;
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: rem-calc(4);
+}
+
+dl,
+ol,
+p,
+ul {
+  line-height: 1.4286;
+margin-bottom: rem-calc(24);
+}
+
+tfoot,
+thead {
+  background: $sky;
+  border: rem-calc(1) solid $sky;
+
+  td,
+  th {
+    font-weight: $global-weight-bold;
+  }
+
+  tr {
+    background: transparent;
+  }
+}
+
+tbody {
+  background: $white;
+  border: rem-calc(1) solid $sky;
+
+  td,
+  th {
+    padding: rem-calc(8 10);
+  }
+
+  tr:nth-child(even) {
+    background: $sky;
+    border-bottom: rem-calc(0);
+  }
+}
+
+[type='text'],
+[type='password'],
+[type='date'],
+[type='datetime'],
+[type='datetime-local'],
+[type='month'],
+[type='week'],
+[type='email'],
+[type='number'],
+[type='search'],
+[type='tel'],
+[type='time'],
+[type='url'],
+[type='color'],
+textarea {
+  box-shadow: none;
+  padding-left: rem-calc(18);
+  padding-right: rem-calc(18);
+  height: rem-calc(44);
+  font-size: rem-calc(14);
+  font-weight: 400;
+  border: rem-calc(2) solid $light-gray;
+  background-color: #fbfbfb;
+
+  &::-webkit-input-placeholder {
+    color: $dark-gray;
+  }
+
+  &::-moz-placeholder {
+    color: $dark-gray;
+  }
+
+  &:-moz-placeholder {
+    color: $dark-gray;
+  }
+
+  &:-ms-input-placeholder {
+    color: $dark-gray;
+  }
+
+  &:active,
+  &:focus,
+  &:hover {
+    box-shadow: none;
+    border: rem-calc(2) solid #d0d0d0;
+  }
+}
+
+select {
+  height: rem-calc(44);
+}

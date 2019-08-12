@@ -1,0 +1,8 @@
+li.accordion-item(data-accordion-item)
+    a.accordion-title(href="#") По статусу
+    .accordion-content(data-tab-content)
+        +search-refine('Не обработан')
+        +search-refine('На доработку','5')
+        +search-refine('На проверке','12')
+        +search-refine('Обработан')
+        +search-refine('Принят','97')

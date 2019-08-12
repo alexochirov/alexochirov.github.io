@@ -1,0 +1,32 @@
+.grid-x.grid-padding-x: .cell
+  .callout.main-search.main-search_regular
+    .grid-x.grid-padding-x.align-center
+      .small-24.large-20.cell
+        form.main-search__form
+          .input-group
+            .input-group-field: input(type="text",placeholder="Что ищем:")
+            .input-group-button: input.button(type="submit", value="Искать")
+          .grid-x.grid-padding-x.align-middle
+            .small-auto.medium-shrink.cell
+              +step('Точное соответствие')
+        
+            .small-auto.medium-shrink.cell
+              +step('С учётом дореформенной орфографии')
+            
+          .grid-x.grid-padding-x.align-justify
+            .small-auto.medium-shrink.cell
+              button.button.button_hollow(type='button') Сохранить фильтры
+            .small-auto.medium-shrink.cell
+              .button-group
+                a.button(href="#") Сохранить результаты
+                a.button(data-toggle='saved-searches-dropdown' title='Посмотреть сохранённые поиски')
+                  i.fas.fa-bookmark
+                  |  3
+  .dropdown-pane(id='saved-searches-dropdown' data-dropdown data-auto-focus='true' data-position='bottom' data-alignment='right')
+    h5 Сохранённые поиски
+    .sect
+      a(href='smi-search-result.html') #[b текст поискового запроса] (47)
+    .sect
+      a(href='smi-search-result.html') #[b текст поискового запроса] (150)
+    .sect
+      a(href='smi-search-result.html') #[b текст поискового запроса] (8)

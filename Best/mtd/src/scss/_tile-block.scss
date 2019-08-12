@@ -1,0 +1,26 @@
+.tile-block {
+  border: 1px solid $light-gray;
+  display: block;
+  margin-bottom: 2rem;
+  padding-bottom: 1.2rem;
+&__img {
+  height: rem-calc(160);
+  width: 100%;
+}
+  &__image {
+    border-bottom: 1px solid $light-gray;
+    margin-bottom: 1rem;
+  }
+  &__data {
+    padding: 0 1rem;
+  }
+  &__issue {
+    padding: 0 1rem;
+    font-weight: 900;
+    line-height: 1;
+    margin-top: 0.5rem;
+    color: darken(#634f8e,10);
+
+  }
+
+}

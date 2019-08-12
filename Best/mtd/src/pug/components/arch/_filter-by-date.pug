@@ -1,0 +1,22 @@
+li.accordion-item.is-active(data-accordion-item)
+  a.accordion-title(href="#") По дате
+  .accordion-content(data-tab-content)
+
+    .search-refine.search-refine_high
+      label Год выпуска
+      include _data-range
+    .grid-x.grid-padding-x
+      .small-12.large-12.medium-12.cell
+        label
+          span.level Месяц
+          select
+            option(value="0") Все
+            option(value="1") Январь
+            option(value="2") Февраль
+      .small-12.large-12.medium-12.cell
+        label
+          span.level День
+          select
+            option(value="0") 1
+            option(value="1") 2
+            option(value="2") 3

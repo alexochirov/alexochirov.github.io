@@ -1,0 +1,11 @@
+.tabs {
+  &-title {
+    & > a {
+      outline: none;
+    }
+  }
+
+  &-content {}
+
+  &-panel {}
+}

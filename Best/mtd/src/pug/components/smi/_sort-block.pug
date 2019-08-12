@@ -1,0 +1,43 @@
+mixin sort-item(name, rtng, count)
+    .sort-item.cell
+        .callout(data-equalizer-watch="sort")
+            img(src="./i/image.svg",style="width:100%;height:80px;",alt="логотип издания")
+            a(href="#"): h3.sort-item__title= name
+            p
+                strong Рейтинг:&nbsp;
+                span.sort-item__rating= rtng
+            p
+                strong Номеров:&nbsp;
+                span.sort-item__count= count
+
+
+.info: .grid-container
+    .grid-x.grid-padding-x: .cell
+        h2 Популярные издания
+    .grid-x.grid-padding-x: #sorts.selector-group.button-group
+        button.button(data-sort-by="name") По названию
+        button.button.button_hollow(data-sort-by="count") По количеству выпусков
+        button.button.button_hollow(data-sort-by="rating") По рейтингу
+
+    .sort-grid.grid-x.grid-padding-x.small-up-1.medium-up-3.large-up-5(data-equalizer="sort",data-equalize-on="medium")
+        +sort-item('Бюллетень ярославского сыртреста','3.5','23')
+        +sort-item('Ярославский крестьянин','1.5','213')
+        +sort-item('Северный рабочий','4.5','113')
+        +sort-item('Юность','5.0','243')
+        +sort-item('Посадские вести','3.5','43')
+        +sort-item('Юный ленивец','2.5','143')
+        +sort-item('Бюллетень ярославского сыртреста','1.5','523')
+        +sort-item('Ярославский крестьянин','4.5','13')
+        +sort-item('Северный рабочий','7.5','1133')
+        +sort-item('Векселя и клювы','5.0','2243')
+        +sort-item('Вести из сыроварни','3.5','43')
+        +sort-item('Пожилой борщевик','2.5','143')
+        +sort-item('Бюллетень ярославского сыртреста','3.5','23')
+        +sort-item('Ярославский крестьянин','1.5','213')
+        +sort-item('Юный ленивец','2.5','143')
+    .grid-x.align-center: .cell.shrink: a.button.button_hollow(href="#") Смотреть все издания
+
+
+
+
+

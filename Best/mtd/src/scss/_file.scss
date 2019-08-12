@@ -1,0 +1,12 @@
+.file {
+  padding-bottom: rem-calc(15);
+  padding-top: rem-calc(30);
+  border-bottom: rem-calc(1) solid $light-gray;
+  @include breakpoint(small only) {
+    padding-bottom: rem-calc(26);
+  }
+}
+
+.file__sort {
+    margin: 0;
+}

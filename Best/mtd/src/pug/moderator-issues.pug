@@ -1,0 +1,32 @@
+extends smi-regular
+
+block content
+  
+  .grid-container: .grid-x.grid-padding-x
+    .small-24.large-16.cell.small-order-2.large-order-1.info
+      include components/arch/_search-box
+      .grid-x.grid-padding-x.align-middle
+        .cell
+          h1 Номера
+        .cell.sect
+          label.button(for='uploadEdition') #[i.fas.fa-lg.fa-upload] #[b Загрузить номера]
+          input.show-for-sr(type='file' id='uploadEdition')
+
+      .info__show Показано 3 из 95
+      for name, index in ['Северный рабочий','Бюллетень ярославского сыртреста','Юность']
+        +admin-issue-line(name,index)
+      include components/common/_pagination
+
+    .small-24.large-8.small-order-1.large-order-2.cell
+      .aside-right
+        h4 Фильтровать
+
+        ul.accordion(data-accordion data-multi-expand='true' data-allow-all-closed='true')
+          include components/arch/_filter-by-status
+          include components/arch/_filter-by-level
+          include components/arch/_filter-by-date
+          include components/arch/_filter-by-edition
+          include components/arch/_filter-by-place
+          include components/arch/_filter-by-type
+          include components/arch/_filter-by-added
+        

@@ -1,0 +1,11 @@
+.menu {
+  margin-bottom: rem-calc(14);
+  @include breakpoint(small only) {
+    &_small {
+      a {
+        padding-left: rem-calc(10);
+        padding-right: rem-calc(10);
+      }
+    }
+  }
+}

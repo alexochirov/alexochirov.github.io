@@ -1,0 +1,38 @@
+include _user-multiselect
+include ../arch/_rating
+include ../arch/_dificulty
+
+mixin volunteer-issue-line(name,n)
+
+  .callout
+    .grid-x.grid-padding-x
+      .medium-4.cell.text-center.sect
+        img(src="./i/3.jpg",alt="Превью")
+      .medium-20.cell
+        a(href="volunteer-edition.html")
+          if name
+            h4= name
+          else
+            h4 Бюллетень яровславского сыртреста
+          p №321 от 4 Сентября 1965 г.
+
+        form
+          .grid-x.grid-padding-x
+            .small-auto.medium-shrink.cell
+              label
+                span.level Статус
+                select
+                  option(selected) Не обработан
+                  option В работе
+                  option На доработку
+                  option Обработан
+            .small-auto.medium-shrink.cell
+              span.level Сложность
+              div.sect
+                +dificulty-info
+
+          .grid-x.cell.text-center
+            .cell
+              hr
+            .cell: a.button(href="#") Сохранить изменения
+    

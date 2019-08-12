@@ -1,0 +1,12 @@
+.stat {
+  @include breakpoint(medium down) {
+    &_down {
+      margin-bottom: rem-calc(15);
+    }
+  }
+  @include breakpoint(small only) {
+    &_small {
+      font-size: rem-calc(24);
+    }
+  }
+}

@@ -1,0 +1,6 @@
+.aside-right {
+  padding-left: 1rem;
+  @include breakpoint(medium down) {
+    padding-left: rem-calc(0);
+  }
+}

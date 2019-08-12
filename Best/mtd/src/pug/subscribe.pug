@@ -1,0 +1,21 @@
+extends smi-regular
+block content
+  .info.grid-container: .grid-x.align-center: .medium-16.large-12.cell
+    h1 Подписаться на обновления
+
+    .callout
+      .grid-x.grid-padding-x
+        .cell.large-12.medium-12
+          h3 Подписка
+        .cell.large-12.medium-12.text-left.medium-text-right
+          a(href='#', title='').callout__rss
+            i.fas.fa-rss-square.picture
+            | RSS
+
+
+      form(action='#' method='post', data-abide='', novalidate='novalidate')
+        input(type='email', placeholder='Ваша эл. почта', required='')
+        button.button.button_expanded(type='submit') Подписаться
+          i.far.fa-envelope.fa-lg.canv
+      .callout__info.text-center
+        a.button.button_empty.button_expanded(href='#', title='') Как отписаться?

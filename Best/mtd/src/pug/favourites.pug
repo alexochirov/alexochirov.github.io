@@ -1,0 +1,60 @@
+extends smi-regular
+block content
+  .grid-container: .grid-x.grid-padding-x
+    .small-24.large-16.cell.small-order-2.large-order-1.info
+      include components/arch/_search-box
+      .grid-x.grid-padding-x.align-middle
+        .cell
+          h1 Избранное
+
+      .grid-x.grid-padding-x.align-middle.sect
+        .cell
+          h3 Издания
+        .cell.shrink
+          .info__show Показано 8 из 95
+        .cell.shrink
+          a.button.button_hollow(href="search-smi.html") Показать все
+      include components/arch/_arch-tiles
+  
+      .grid-x.grid-padding-x.align-middle
+        .cell
+          h3 Статьи
+        .cell.shrink
+          .info__show Показано 8 из 12
+        .cell.shrink
+          a.button.button_hollow(href="smi-search-result.html") Показать все
+      include components/arch/_search-result
+    .small-24.large-8.small-order-1.large-order-2.cell
+      .aside-right
+        h4 Коллекции
+        .side
+          ul.menu.vertical
+            li.grid-x
+              .cell.small-18.active: a(href='') Основная (42)
+            for item, i in ['Моё старое','Для Моторного завода']
+              li.hide(id='collection-name-edit-'+i data-toggler='hide')
+                | &nbsp;
+                .input-group
+                  input.input-group-field(type='text' value=item)
+                  .input-group-button
+                    button.button(type='button' title='Сохранить' data-toggle='collection-name-edit-'+i+' collection-name-'+i): i.fas.fa-check
+                  .input-group-button
+                    button.button.button_hollow(type='button' title='Закрыть' data-toggle='collection-name-edit-'+i+' collection-name-'+i): i.fas.fa-times
+              li.grid-x(id='collection-name-'+i data-toggler='hide')
+                .cell.small-18
+                  a(href='')= item+' (9)'
+                .cell.small-3
+                  a(data-toggle='collection-name-edit-'+i+' collection-name-'+i title='Изменить название')
+                    i.fas.fa-pencil-alt
+                .cell.small-3
+                  a(data-toggle='del-collection-dropdown-'+i title='Удалить коллекцию'): i.fas.fa-times-circle
+              .dropdown-pane(id='del-collection-dropdown-'+i data-dropdown data-auto-focus='true' data-position='left' data-alignment='center' style='width: auto;')
+                button.button.alert(type='button') Удалить&nbsp;коллекцию
+  
+        h4 Уточнить результаты
+
+
+        ul.accordion(data-accordion data-multi-expand='true' data-allow-all-closed='true')
+          include components/arch/_filter-by-date
+          include components/arch/_filter-by-edition
+          include components/arch/_filter-by-added

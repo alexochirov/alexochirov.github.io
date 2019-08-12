@@ -1,0 +1,10 @@
+li.accordion-item(data-accordion-item)
+  a.accordion-title(href="#") По изданию
+  .accordion-content.filter-by-edition-content(data-tab-content)
+    each name in ['Бюллетень ярославского сыртреста','Ярославский крестьянин','Северный рабочий','Юность','Северный рабочий на уборке урожая']
+      .search-refine.search-refine_long
+        .grid-x.grid-padding-x.align-middle
+          .large-20.medium.cell.medium-24.small-19
+            +step(name)
+          .large-4.cell.medium-24.small-5.text-right.align-self-middle
+            .label 5

@@ -1,0 +1,41 @@
+extends smi-regular
+
+block content
+  .grid-container: .grid-x.align-center
+    .cell.large-16
+      h1.text-center Рейтинг
+      .info
+        block rating
+          .grid-x.align-justify.sect
+            .cell.medium-18
+              ul.menu.menu_small
+                li.active: a(href='rating.html') Волонтёры
+                li: a(href='rating.html') Модераторы
+                li: a(href='rating-cities.html') Города
+            .cell.medium-6.small-12
+              select
+                option по 10
+                option по 30
+                option по 50
+                option по 100
+                option по 500
+      
+          .grid-x.grid-margin-x.info
+            .cell.medium-4.large-3.small-5.text-center Место
+            .cell.medium-13.large-14.small-11.large-offset-1 Участник
+            .cell.medium-7.large-6.small-8.text-right Статей
+          hr.hr.hr_null
+          for item, index in [['Акжигетова Наталия Васильевна','Москва, Россия','5 070'],['Наталья Юрьевна Клементьева','Москва, Россия','3 632'],['Синельникова Ольга Романовна','Балашиха, Россия','2 103'],['Шибаев Александр','Череповец, Россия','1 872'],['Зарина Галина Рудольфовна','Москва, Россия','1 843'],['Шибалкина Марина Викторовна','Москва, Россия','1 750'],['Аксенов Александр Валерьевич','Санкт-Петербург, Россия','1 312'],['Ройтман Михаил Аврумович','Москва, Россия','1 237'],['Легкая Елена Ивановна','Белгород, Россия','1 222'],['Варенье Виктория','Москва, Россия','772']]
+            .grid-x.grid-margin-x.porter
+              .cell.medium-4.large-3.small-5.stat.stat_small.text-center= index+1
+              .cell.medium-13.large-14.small-11.large-offset-1
+                .grid-x.align-middle
+                  .cell.large-4.medium-6.align-self-middle
+                    .place
+                      .place__img: img(src="./i/p2.jpg", alt="").place__icon
+                  .cell.medium-auto
+                    div= item[0]
+                    div= item[1]
+              .cell.medium-7.large-6.small-8.text-right.stat.stat_small= item[2]
+          .info
+          include components/common/_pagination

@@ -1,0 +1,13 @@
+mixin search-refine(text,count)
+  a.search-refine(href="#")
+    .grid-x.grid-padding-x.align-middle
+      .auto.cell
+        if text
+          .search-refine__title= text
+        else
+          .search-refine__title 1800 – 1810
+      .shrink.cell
+        if count
+          .label= count
+        else
+          .label 99

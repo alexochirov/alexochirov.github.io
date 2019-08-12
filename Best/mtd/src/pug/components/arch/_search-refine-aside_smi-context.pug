@@ -1,0 +1,12 @@
+include ../mixins/_mixin-search-refine
+ul.accordion(data-accordion)
+    li.accordion-item.is-active(data-accordion-item)
+        a.accordion-title(href="#") По дате
+        .accordion-content(data-tab-content)
+            +search-refine
+            +search-refine('1920 – 1930','5')
+            +search-refine
+
+
+
+

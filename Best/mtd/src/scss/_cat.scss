@@ -1,0 +1,125 @@
+.cat {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: rem-calc(10);
+  margin-left: rem-calc(0);
+  list-style-type: none;
+  padding: 0;
+  position: relative;
+  justify-content: flex-end;
+  font-weight: $global-weight-bold;
+
+  &__item {
+    padding-right: rem-calc(50);
+    @include disable-mouse-outline;
+    position: relative;
+
+    &:last-child {
+      padding-right: rem-calc(0);
+    }
+
+    & .cat {
+      text-transform: none;
+      font-weight: 400;
+      display: none;
+      position: absolute;
+      margin: rem-calc(-3 0 0) -1rem;
+      padding: 0.5rem 0;
+      top: 100%;
+      left: 0;
+      width: 13rem;
+      background: scale-color($main-color, $lightness: 50%);
+      border-bottom: rem-calc(2) solid $warning-color;
+
+      & .cat {
+        left: 100%;
+        top: 0;
+      }
+    }
+
+    & .cat__item {
+      padding: 0;
+      width: 100%;
+
+      & .cat__link {
+        display: block;
+        padding: 0.5rem 1rem;
+        color: $secondary-color;
+
+        &:after {
+          display: none;
+        }
+
+        &:hover {
+          color: $secondary-color;
+          background: scale-color($main-color, $lightness: -5%);
+        }
+      }
+    }
+
+    &:hover > .cat {
+      display: block;
+    }
+
+    &:hover > .cat__link:after {
+      width: 100%;
+    }
+
+    & .cat .cat__item:hover > .cat {
+      display: block;
+    }
+  }
+
+  &__link {
+    @include disable-mouse-outline;
+    display: block;
+    color: $black;
+    position: relative;
+    font-size: rem-calc(16);
+    font-weight: 700;
+
+    &:active,
+    &:focus,
+    &:hover,
+    &_active {
+      color: $red;
+    }
+  }
+  @include breakpoint(large down) {
+    &_top {
+      margin-top: rem-calc(0);
+    }
+
+    &__item {
+      padding-right: rem-calc(15);
+      padding-top: rem-calc(5);
+      padding-bottom: rem-calc(5);
+
+      & .cat .cat__item:hover > .cat {
+        display: none;
+      }
+    }
+  }
+  @include breakpoint(medium down) {
+
+
+
+    &__item {
+      &:hover {
+        & > .cat {
+          display: none;
+        }
+
+        & > .cat__link:after {
+          width: 0;
+        }
+      }
+    }
+  }
+  @include breakpoint(small only) {
+    text-align: center;
+    &__item {
+      width: 100%;
+    }
+  }
+}

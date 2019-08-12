@@ -1,0 +1,19 @@
+extends smi-regular
+
+block content
+  .grid-container: .grid-x.grid-padding-x
+    .large-16.small-order-2.large-order-1.cell.info
+      include components/arch/_search-box
+      h1.scene Номера
+      
+      .info__show Показано 16 из 95
+      include components/arch/_arch-tiles
+      include components/common/_pagination
+    .large-8.small-order-1.large-order-2.cell
+      .aside-right
+        h4 Фильтровать
+        ul.accordion(data-accordion data-multi-expand='true' data-allow-all-closed='true')
+          include components/arch/_filter-by-date
+          include components/arch/_filter-by-edition
+          include components/arch/_filter-by-place
+          include components/arch/_filter-by-type

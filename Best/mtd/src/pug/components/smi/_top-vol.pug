@@ -1,0 +1,24 @@
+mixin volunteer(name,count)
+    .cell
+        .callout.volunteer-info(data-equalizer-watch)
+            img(src="./i/image.svg",style="width:80px;height:80px;",alt="Фото волонтера")
+            h3.volunteer-info__name= name
+            p
+                strong Статей:&nbsp;
+                span.volunteer-info__count= count
+
+.info.grid-container
+    .grid-x.grid-padding-x: .cell
+        h2 10 лучших волонтеров
+    .grid-x.grid-padding-x.small-up-1.medium-up-3.large-up-5(data-equalizer,data-equalize-on="medium")
+        +volunteer('Сергей Иванов','234')
+        +volunteer('Николай Курицын','233')
+        +volunteer('Виолетта Крылова','232')
+        +volunteer('Елизавета Андреева','231')
+        +volunteer('Дмитрий Андреев','201')
+        +volunteer('Кондрат Терентьев','199')
+        +volunteer('Демьян Тарасов','198')
+        +volunteer('Гавриил Никодимов','197')
+        +volunteer('Гермоген Платов','196')
+        +volunteer('Александр Васильев','195')
+    .grid-x.align-center: .cell.shrink: a.button.button_hollow(href="#") Стать волонтером

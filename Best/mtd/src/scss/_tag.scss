@@ -1,0 +1,16 @@
+.tag {
+  display: inline-block;
+  color: $secondary-color;
+  font-size: rem-calc(14);
+  @include margin-level(bottom,blue);
+  margin-right: rem-calc(5);
+  font-weight: 400;
+
+  &_dark-gray {
+    color: $dark-gray;
+  }
+
+  &_red {
+    color: $primary-color;
+  }
+}

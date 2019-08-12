@@ -1,0 +1,53 @@
+.soc {
+  color: $medium-gray;
+  font-size: rem-calc(24);
+  margin-left: rem-calc(15);
+  margin-right: rem-calc(15);
+  border: rem-calc(1) solid $medium-gray;
+  border-radius: 50%;
+  width: rem-calc(28);
+  height: rem-calc(28);
+  text-align: center;
+  transition: 0s;
+  @include margin-level(bottom,blue);
+
+  &:active,
+  &:focus,
+  &:hover {
+    border-color: $red;
+    color: $red;
+  }
+
+  &_footer {
+    border: rem-calc(1) solid $white;
+    color: $white;
+    margin-left: rem-calc(0);
+    margin-right: rem-calc(24);
+    @include margin-level(bottom,red);
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: $red;
+      border-color: $red;
+    }
+  }
+  @include breakpoint(large down) {
+    &_footer {
+      margin-right: rem-calc(10);
+    }
+  }
+  @include breakpoint(medium down) {
+    margin-left: rem-calc(5);
+    margin-right: rem-calc(5);
+
+    &_footer {
+      margin-right: rem-calc(10);
+      margin-left: rem-calc(0);
+    }
+  }
+  @include breakpoint(small only) {
+    margin-left: rem-calc(2);
+    margin-right: rem-calc(2);
+  }
+}

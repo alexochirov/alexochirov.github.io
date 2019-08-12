@@ -1,0 +1,22 @@
+.contacts#contacts(data-toggler=".hide-for-small-only").hide-for-small-only
+  .grid-container: .grid-x.grid-padding-x
+    .small-24.medium-12.large-8.cell
+      .contacts__cab
+        ul.menu-top
+          li.menu-top__item
+            a.menu-top__link(href='#') О проекте
+          li.menu-top__item
+            a.menu-top__link(href='#') Контакты
+          li.menu-top__item
+            a.menu-top__link(href='login.html') Личный кабинет
+    .large-10.cell.medium-12       
+      .contacts__block: include ../common/_soc
+    .large-6.cell.medium-10.medium-offset-14.large-offset-0        
+      .contacts__drop
+        .contacts__text Константин Николаевич
+        .contacts__arr
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 12 7"><defs><path id="w9jya" d="M1355.002 25.997l5.998 4.33 5.998-4.33v2.674L1361 33l-5.998-4.33z"/></defs><g><g transform="translate(-1355 -26)"><use fill="#fff" xlink:href="#w9jya"/></g></g></svg>
+        ul.drop
+          each title in [1,2,3,4]
+            li.drop__item
+              a(href="#").drop__link Пункт меню

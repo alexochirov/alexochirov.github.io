@@ -1,0 +1,51 @@
+extends smi-index
+
+block page
+  include components/common/_breadcrumbs
+  block content
+    .grid-container: .grid-x.grid-padding-x: .cell
+      h1 Администратор
+    .info.info_reg.grid-container: .grid-x.grid-padding-x
+      .cell.large-8.large-order-2
+        include components/arch/_sidebar-admin
+      .cell.large-16.large-order-1
+        hr
+        h3 Новый пользователь
+        form(action='shop-user-personal.html')
+        label
+          span.level Роль
+        select
+          option
+          option Читатель
+          option Волонтёр
+          option Модератор
+          option Администратор
+        label
+          span.level Статус
+        select
+          option
+          option Обычный
+          option Премиум
+        label
+          span.level Имя
+          input(type='text')
+        label
+          span.level Фамилия
+          input(type='text')
+        label
+          span.level Логин*
+          input(type='text')
+        label
+          span.level Пароль*
+          input(type='password')
+        p.help-text Пароль должен быть не менее 6 символов длиной
+        label
+          span.level Подтверждение пароля*
+          input(type='password')
+        label
+          span.level Электронная почта*
+          input(type='email')
+        button.button
+          | Зарегистрировать
+          i.fas.fa-user-plus.fa-lg.canv
+        p * - Обязательные поля

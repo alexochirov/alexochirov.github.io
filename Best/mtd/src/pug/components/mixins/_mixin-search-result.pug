@@ -1,0 +1,34 @@
+mixin search-result
+  .search-result
+    .grid-x.grid-padding-x
+      .hide-for-small-only.shrink.cell
+        img.search-result__image(src="./i/screenshot-1.png", alt="превью статьи")
+      .auto.cell
+        a(href="#"): h4.search-result__title Всякая психическая функция в культурном развитии ребенка появляется на сцену дважды
+        p.search-result__text Всякая психическая функция в культурном развитии ребенка появляется на сцену дважды, в двух планах,— сперва социальном, потом —
+          span.search-result__res-text &nbsp;на ярославском трамвае&nbsp;
+          | инсайт выбирает стресс. Самонаблюдение притягивает филосовский эскапизм...
+          hr
+        .grid-y
+          .cell.shrink
+            span: strong Опубликовано:&nbsp;
+            span 5 Апреля 1986 г.
+          .cell.shrink
+            span: strong Издание:&nbsp;
+            span: a(href="arch-paper.html") Ярославский рабочий
+    .search-result__add-to-fav
+      label(data-toggle='favs-cat-dropdown-'+i)
+        input.search-result__checkbox(type="checkbox",name="checkbox" + i)
+        span.search-result__checkbox-pretty
+        span.search-result__checkbox-label
+
+    .dropdown-pane(id='favs-cat-dropdown-'+i data-dropdown data-auto-focus='true' data-hover='true' data-hover-pane='true' data-position='bottom' data-alignment='right')
+      form
+        label Коллекция избранного
+          select
+            option(selected) Основная (12)
+            option Моё старое (42)
+            option Для Моторного завода (9)
+        label или новая коллекция
+          input(type='text' placeholder='Название новой коллекции')
+        button.button(type='button') Запомнить

@@ -1,0 +1,126 @@
+.callout
+  form(action='#' method='get')
+    .grid-x.grid-padding-x.align-right
+      .small-24.medium-16.cell
+        h3 Поиск по ключевым словам и фразам
+    .grid-x.grid-padding-x
+      .small-24.medium-8.cell.text-left.medium-text-right
+        label: strong Искать по всем словам
+      .small-24.medium-16.cell: input#allWords(type="text", placeholder="Например: «запуск, городской, трамвая»")
+    .grid-x.grid-padding-x
+      .small-24.medium-8.cell.text-left.medium-text-right
+        label: strong Искать по некоторым словам
+      .small-24.medium-16.cell: input#someWords(type="text", placeholder="Например: «запуск, город, трамвай»")
+    .grid-x.grid-padding-x
+      .small-24.medium-8.cell.text-left.medium-text-right
+        label: strong Исключить слова
+      .small-24.medium-16.cell: input#someWords(type="text", placeholder="Например: «закрытие, рельсы, ночь»")
+    .grid-x.grid-padding-x
+      .small-24.medium-8.cell.text-left.medium-text-right
+        label: strong Использовать точную фразу
+      .small-24.medium-16.cell: input#exactPhrase(type="text", placeholder="Например: «Запуск городского трамвая»")
+    .grid-x.grid-padding-x.align-right
+      .small-24.medium-16.cell.callout__reform
+        +step('Использовать точное соответствие')
+        +step('С учётом дореформенной орфографии')
+    
+    .grid-x.grid-padding-x: .cell: hr
+    .grid-x.grid-padding-x.align-right
+      .small-24.medium-16.cell
+  
+        .button-group
+          a.button(href="#") Искать
+          span &nbsp;&nbsp;
+          a.button.button_hollow(href="#") Сбросить
+.callout
+  .grid-x.grid-padding-x.align-right
+    .small-24.medium-16.cell
+      h3 Поиск по публикациям
+  form(action='#' method='get')
+    .grid-x.grid-padding-x
+      .small-24.medium-8.cell.text-left.medium-text-right
+        label: strong Искать в издании
+      .small-24.medium-16.cell
+        select
+          option Везде
+          option Ярославский комсомолец
+          option Ярославские вести
+    .grid-x.grid-padding-x.align-left
+      .small-24.medium-8.cell.text-left.medium-text-right
+        .sect
+        label: strong Искать по дате
+    .grid-x.grid-padding-x
+      .small-24.medium-8.cell.text-left.medium-text-right
+        label: strong От
+      .small-24.medium-16.cell
+        .grid-x.align-left.grid-padding-x
+          .cell.shrink
+            select
+              option День
+              option 1
+              option 2
+              option 3
+          .cell.shrink
+            select
+              option Месяц
+              option 1
+              option 2
+              option 3
+          .cell.shrink
+            select
+              option Год
+              option 1812
+              option 1813
+              option 1814
+    .grid-x.grid-padding-x
+      .small-24.medium-8.cell.text-left.medium-text-right
+        label: strong До
+      .small-24.medium-16.cell
+        .grid-x.align-left.grid-padding-x
+          .cell.shrink
+            select
+              option День
+              option 1
+              option 2
+              option 3
+          .cell.shrink
+            select
+              option Месяц
+              option 1
+              option 2
+              option 3
+          .cell.shrink
+            select
+              option Год
+              option 1812
+              option 1813
+              option 1814
+
+    .grid-x.grid-padding-x
+      .small-24.medium-8.cell.text-left.medium-text-right
+        label: strong Тип материала
+      .small-24.medium-16.cell
+  
+        +step('Статьи')
+        +step('Объявления (в т.ч. реклама)')
+        +step('C фото')
+        +step('Разное')
+      
+    .grid-x.grid-padding-x
+      .small-24.medium-8.cell.text-left.medium-text-right
+        label: strong Искать по тегам
+      .small-24.medium-16.cell: input#tagSearch(type="text",placeholder="Например: «Трамвай»")
+    .grid-x.grid-padding-x
+      .small-24.medium-8.cell.text-left.medium-text-right
+        label: strong Сортировать результаты по:
+      .small-24.medium-16.cell
+        select
+          option Релевантноcти
+          option Дате: от самой старой
+          option Дате: от самой последней
+    .grid-x.grid-padding-x.align-right
+      .small-24.medium-16.cell
+        .button-group
+          a.button(href="#") Искать
+          span &nbsp;&nbsp;
+          a.button.button_hollow(href="#") Сбросить

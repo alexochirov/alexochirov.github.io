@@ -1,0 +1,14 @@
+.volunteer-info {
+  text-align: center;
+  img {
+    display: inline-block;
+    border-radius: 50%;
+    border: 1px solid #f8f8f8;
+    margin-bottom: 1rem;
+  }
+  &__name {
+    font-size: 1.2rem;
+    font-weight: 900;
+    margin-bottom: 0.5rem;
+  }
+}

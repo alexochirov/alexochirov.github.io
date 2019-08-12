@@ -1,0 +1,18 @@
+.lake {
+  background: $light-gray;
+  padding-top: rem-calc(57);
+  padding-bottom: rem-calc(55);
+  @include margin-level(bottom,cyan);
+
+  &__top {
+    margin-bottom: rem-calc(30);
+  }
+  @include breakpoint(medium down) {
+    margin-bottom: rem-calc(80);
+  }
+  @include breakpoint(small only) {
+    padding-top: rem-calc(44);
+  padding-bottom: rem-calc(45);
+    margin-bottom: rem-calc(40);
+  }
+}

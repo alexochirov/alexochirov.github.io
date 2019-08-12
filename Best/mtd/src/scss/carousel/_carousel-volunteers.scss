@@ -1,0 +1,41 @@
+.carousel-volunteers {
+  background: $main-color;
+  padding-top: rem-calc(42);
+
+  .slick-arrow {
+    width: rem-calc(41);
+    height: rem-calc(184);
+    z-index: 2;
+
+    &:active,
+    &:focus,
+    &:hover {
+      * {
+        fill: $primary-color;
+      }
+    }
+  }
+
+  &__img {
+    margin-bottom: rem-calc(21);
+    width: 100%;
+  }
+
+  &__text {
+    margin-bottom: rem-calc(21);
+    text-align: center;
+  }
+
+  &__item {
+    padding-left: rem-calc(12);
+    padding-right: rem-calc(12);
+    display: none;
+
+    &:first-child {
+      display: block;
+    }
+  }
+  @include breakpoint(small only) {
+    padding-top: rem-calc(20);
+  }
+}
