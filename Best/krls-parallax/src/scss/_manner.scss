@@ -1,0 +1,26 @@
+.manner {
+
+  &__wrap {
+    left: rem-calc(140);
+    position: relative;
+    z-index: -2;
+  }
+
+  &__text {
+    padding-top: rem-calc(100);
+  }
+  @media (max-width: 1500px) {
+    &__wrap {
+      left: rem-calc(0);
+    }
+  }
+  @include breakpoint(small only) {
+      overflow:hidden;
+    &__wrap {
+      width: rem-calc(299);
+      height: rem-calc(437);
+      text-align: center;
+      left: calc(50% - 80px);
+    }
+  }
+}

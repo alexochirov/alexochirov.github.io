@@ -1,0 +1,79 @@
+.tabs {
+  background: none;
+  border: rem-calc(0);
+
+  &-title {
+    & > a {
+      background: none;
+      padding: rem-calc(11 0);
+      outline: none;
+      color: rgba($primary-color,.6);
+      font-size: rem-calc(20);
+      line-height: 1.2;
+      position: relative;
+      display: inline-block;
+
+      &:after {
+        position: absolute;
+        width: 100%;
+        height: rem-calc(3);
+        background: $primary-color;
+        content: "";
+        left: rem-calc(0);
+        bottom: rem-calc(3);
+        display: none;
+      }
+
+      &:before {
+        position: absolute;
+        width: rem-calc(10);
+        height: rem-calc(10);
+        background: url($imagesPath +"/arr-top.svg")no-repeat center;
+        background-size: rem-calc(10 10);
+        content: "";
+        left: calc(50% - 5px);
+        top: rem-calc(-3);
+        display: none;
+      }
+
+      &:active,
+      &:focus,
+      &:hover {
+        background: none;
+
+        &:after {
+          display: block;
+        }
+      }
+    }
+
+    &.is-active {
+      & > a {
+        background: none;
+
+        &:after,
+        &:before {
+          display: block;
+        }
+      }
+    }
+  }
+
+  &-content {
+    border: rem-calc(0);
+    background: none;
+    margin-bottom: rem-calc(80);
+  }
+
+  &-panel {
+    font-weight: 300;
+    padding: rem-calc(0);
+  }
+
+  &-panel__help {
+    font-weight: 400;
+    color: $primary-color;
+    font-size: rem-calc(16);
+    line-height: 1.6;
+  }
+}

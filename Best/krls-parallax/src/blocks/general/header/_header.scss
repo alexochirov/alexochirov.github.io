@@ -1,0 +1,136 @@
+.header {
+  background: $primary-color;
+  padding-top: rem-calc(20);
+  padding-bottom: rem-calc(20);
+  z-index: 10;
+  position: relative;
+
+  &__submit {
+    width: rem-calc(26);
+    height: rem-calc(26);
+    margin-left: rem-calc(10);
+    border: rem-calc(0);
+    background: url($imagesPath +"/search-green.svg")no-repeat center;
+    padding: rem-calc(0);
+    background-size: rem-calc(20 20);
+
+    &:active,
+    &:focus,
+    &:hover {
+      outline: none;
+    }
+  }
+
+  &__src {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    opacity: 0;
+    transition: 0.3s;
+    z-index: -9;
+    transform: translateY(0%);
+
+    &.js-open {
+      transform: translateY(100%);
+      opacity: 1;
+      z-index: 10;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+  }
+
+  &__logo {
+    width: rem-calc(355);
+    height: rem-calc(60);
+
+    &:active,
+    &:focus,
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &__input {
+    margin: 0;
+    width: calc(100% - 26px - 12px);
+    color: #231f20;
+    border: 0;
+    padding: rem-calc(8);
+
+    &:active,
+    &:focus,
+    &:hover {
+      border: rem-calc(0);
+    }
+  }
+
+  &__form {
+    padding-top: rem-calc(16);
+    padding-bottom: rem-calc(16);
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+
+  &__hamb {
+    display: none;
+    cursor: pointer;
+
+    svg {
+      width: rem-calc(40);
+      display: block;
+      height: rem-calc(40);
+    }
+
+    path {
+      position: relative;
+      transition: 0.3s;
+    }
+
+    &.js-open path:first-child {
+      transform: translate(rem-calc(39),rem-calc(14)) rotate(135deg);
+    }
+
+    &.js-open path {
+      transform: translate(rem-calc(-200),0);
+    }
+
+    &.js-open path:last-child {
+      transform: translate(rem-calc(11),rem-calc(56)) rotate(-135deg);
+    }
+  }
+
+  &__icon {
+    cursor: pointer;
+    width: rem-calc(20);
+    height: rem-calc(20);
+  }
+
+  &__search {
+    padding-top: rem-calc(6);
+    text-align: right;
+  }
+  @include breakpoint(medium down) {
+    &__hamb {
+      align-self: center;
+      display: block;
+    }
+  }
+  @include breakpoint(small only) {
+    padding-top: rem-calc(8);
+    padding-bottom: rem-calc(8);
+
+    &__search {
+      padding-right: rem-calc(7);
+    }
+
+    &__logo {
+      width: rem-calc(62);
+      height: rem-calc(62);
+    }
+  }
+}

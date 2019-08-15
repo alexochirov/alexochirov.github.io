@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'Museo Sans Cyrl';
+    src: url($fontsPath +'/MuseoSansCyrl-300.woff2') format('woff2'),
+        url($fontsPath +'/MuseoSansCyrl-300.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo Sans Cyrl';
+    src: url($fontsPath +'/MuseoSansCyrl-500.woff2') format('woff2'),
+        url($fontsPath +'/MuseoSansCyrl-500.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo Sans Cyrl';
+    src: url($fontsPath +'/MuseoSansCyrl-700.woff2') format('woff2'),
+        url($fontsPath +'/MuseoSansCyrl-700.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+$font-museo:'Museo Sans Cyrl',Arial,sans-serif;
+@font-face {
+    font-family: 'Pacifico';
+    src: url($fontsPath +'/Pacifico-Regular.woff2') format('woff2'),
+        url($fontsPath +'/Pacifico-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+$font-pacifico:'Pacifico',Verdana,sans-serif;

@@ -1,0 +1,35 @@
+.cloud {
+  position: relative;
+  overflow: hidden;
+  min-height: rem-calc(800);
+
+  &_top {
+    padding-top: rem-calc(150);
+    padding-bottom: rem-calc(152);
+
+    .cloud__back {
+      top: rem-calc(-50);
+      left: 70%;
+    }
+  }
+
+  &__back {
+    position: absolute;
+    z-index: -1;
+    opacity: 0.1;
+    left: 50%;
+    top: rem-calc(0);
+    transform: translate(-50% ,0);
+
+    img {
+      max-width: none;
+    }
+  }
+
+  &__main {
+    z-index: 2;
+  }
+  @include breakpoint(small only) {
+    padding-bottom: rem-calc(0);
+  }
+}

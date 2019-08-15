@@ -1,0 +1,14 @@
+.hosp {
+  background: $primary-color;
+  margin-top: rem-calc(-60);
+  margin-bottom: rem-calc(20);
+  padding-bottom: rem-calc(187);
+  padding-top: rem-calc(80);
+  color: $white;
+  font-size: rem-calc(20);
+
+  &__par {
+    line-height: 1.24;
+    color: $light-gray;
+  }
+}

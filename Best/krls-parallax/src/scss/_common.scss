@@ -1,0 +1,205 @@
+a {
+  -webkit-transition: color 300ms ease-in-out;
+  -moz-transition: color 300ms ease-in-out;
+  -ms-transition: color 300ms ease-in-out;
+  -o-transition: color 300ms ease-in-out;
+  transition: color 300ms ease-in-out;
+  color: $primary-color;
+  text-decoration-skip-ink: none;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: scale-color($primary-color, $lightness: -30%);
+  }
+}
+body {
+  overflow-x: hidden;
+}
+hr {
+  margin-left: auto;
+  margin-top: rem-calc(0);
+  margin-right: auto;
+  @include margin-level(bottom,red);
+  border-bottom: rem-calc(1) solid $light-gray;
+}
+
+label {
+  line-height: 1.5;
+}
+
+table {
+  @include margin-level(bottom,red);
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: rem-calc(4);
+}
+
+dl,
+ol,
+p,
+ul {
+  margin-bottom: rem-calc(20);
+}
+
+blockquote {
+  border-left: rem-calc(2) solid $primary-color;
+}
+
+blockquote,
+blockquote p {
+  padding: rem-calc(0 14);
+}
+
+tfoot,
+thead {
+  background: $sky;
+  border: rem-calc(1) solid $sky;
+
+  td,
+  th {
+    font-weight: $global-weight-bold;
+  }
+
+  tr {
+    background: transparent;
+  }
+}
+
+tbody {
+  background: $white;
+  border: rem-calc(1) solid $sky;
+
+  td,
+  th {
+    padding: rem-calc(8 10);
+  }
+
+  tr:nth-child(even) {
+    background: $sky;
+    border-bottom: rem-calc(0);
+  }
+}
+
+[type='text'],
+[type='password'],
+[type='date'],
+[type='datetime'],
+[type='datetime-local'],
+[type='month'],
+[type='week'],
+[type='email'],
+[type='number'],
+[type='search'],
+[type='tel'],
+[type='time'],
+[type='url'],
+[type='color'],
+textarea {
+  box-shadow: none;
+  height: $global-input-height;
+
+  &:active,
+  &:focus,
+  &:hover {
+    box-shadow: none;
+  }
+}
+
+select {
+  height: $global-input-height;
+  padding-top: rem-calc(0);
+  padding-bottom: rem-calc(0);
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-style: normal;
+  font-weight: 400;
+  color: $primary-color;
+  text-rendering: optimizeLegibility;
+}
+
+.h1,
+h1 {
+  @include margin-level(bottom,orange);
+  line-height: 1;
+  font-size: rem-calc(50);
+}
+
+.h2,
+h2 {
+  line-height: 1.1;
+  font-size: rem-calc(48);
+  margin-bottom: rem-calc(80);
+}
+
+.h3,
+h3 {
+  line-height: 1.2;
+  font-size: rem-calc(40);
+  @include margin-level(bottom,blue);
+}
+
+.h4,
+h4 {
+  line-height: 1.3;
+  font-size: rem-calc(28);
+  @include margin-level(bottom,blue);
+}
+
+.h5,
+h5 {
+  line-height: 1.4;
+  font-size: rem-calc(24);
+  @include margin-level(bottom,blue);
+}
+
+.h6,
+h6 {
+  line-height: 1.5;
+  font-size: rem-calc(18);
+  @include margin-level(bottom,blue);
+}
+@include breakpoint(small only) {
+  .h1,
+  h1 {
+    font-size: rem-calc(32);
+  }
+
+  .h2,
+  h2 {
+    font-size: rem-calc(26);
+    margin-bottom: rem-calc(40);
+  }
+
+  .h3,
+  h3 {
+    font-size: rem-calc(22);
+  }
+
+  .h4,
+  h4 {
+    font-size: rem-calc(20);
+  }
+
+  .h5,
+  h5 {
+    font-size: rem-calc(18);
+  }
+
+  .h6,
+  h6 {
+    font-size: rem-calc(16);
+  }
+}

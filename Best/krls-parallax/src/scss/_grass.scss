@@ -1,0 +1,21 @@
+.grass {
+  list-style-type: none;
+  margin-left: rem-calc(0);
+  margin-bottom: rem-calc(0);
+  display: flex;
+  flex-flow: row wrap;
+
+  &__item {
+    margin-left: rem-calc(20);
+    margin-right: rem-calc(20);
+  }
+
+  &__link {
+    color: $black;
+    line-height: 1.6;
+    font-size: rem-calc(20);
+  }
+  @include breakpoint(medium down) {
+    justify-content: center;
+  }
+}

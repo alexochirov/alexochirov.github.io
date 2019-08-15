@@ -1,0 +1,26 @@
+header.header
+  .grid-container
+    .grid-x.grid-padding-x
+      .small-4.cell.medium-3.header__hamb
+        img(src="./images/menu.svg", alt="").js-inl-svg
+      .medium-18.small-16.large-8.cell.text-center.large-text-left
+        a(href='#' title='').header__link
+          img(src='./images/logo.svg', alt='logo').header__logo.hide-for-small-only
+          img(src='./images/logo2.svg', alt='logo').header__logo.show-for-small-only
+      .large-14.cell.align-self-middle.large-order-3.small-order-4
+        ul.offer.show-for-large
+          li.offer__item.show-for-small-only: div Лекарственные травы и сборы
+          li.offer__item: a(href="#").offer__link О компании
+          li.offer__item: a(href="#").offer__link Продукты
+          li.offer__item: a(href="#").offer__link Контакты
+          li.offer__item: a(href="#").offer__link Где купить?
+      .large-2.cell.align-self-middle.large-order-4.small-order-3.medium-3.small-4
+        .header__search.header__search_prime
+          img(src="./images/search.svg", alt="").header__icon.js-inl-svg
+        .header__search.hide
+          img(src="./images/close.svg", alt="").header__icon.js-inl-svg
+  .header__src
+    .grid-container
+      form.header__form(action='/search/index.php')
+        input.header__input(type='text', placeholder='Что вы ищите?', name='q')
+        input.header__submit(type='submit', value='')

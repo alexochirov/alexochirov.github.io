@@ -1,0 +1,67 @@
+.offer {
+  display: flex;
+  flex-flow: row wrap;
+  list-style-type: none;
+  justify-content: flex-end;
+  margin: rem-calc(0);
+
+  &__item {
+    display: block;
+    font-size: rem-calc(16);
+    font-weight: 400;
+    margin-left: rem-calc(40);
+
+  }
+
+  &__link {
+    font-size: rem-calc(18);
+    color: $white;
+    position: relative;
+
+    &:active,
+    &:focus,
+    &:hover,
+    &_active {
+      color: $light-gray;
+
+      &:after {
+        content: "";
+        position: absolute;
+        right: rem-calc(-10);
+        width: rem-calc(6);
+        height: rem-calc(10);
+        top: calc(50% - 5px);
+        background: url($imagesPath +"/vector.svg")no-repeat center;
+        background-size: rem-calc(6 10);
+      }
+    }
+  }
+  @include breakpoint(medium down) {
+    justify-content: center;
+
+    &__item {
+      margin-left: rem-calc(20);
+      margin-right: rem-calc(20);
+    }
+  }
+  @include breakpoint(small only) {
+    text-align: left;
+    flex-direction: column;
+    height: calc(100vh - 78px);
+    padding-left: rem-calc(12);
+    padding-right: rem-calc(12);
+
+    &__item {
+      border-bottom: rem-calc(1) solid rgba(255,255,255,.3);
+      padding: rem-calc(5 0);
+      color: $white;
+      margin-left: rem-calc(0);
+      margin-right: rem-calc(0);
+      margin-bottom: rem-calc(15);
+      width: 100%;
+      &:first-child {
+        border-bottom: rem-calc(0);
+      }
+    }
+  }
+}

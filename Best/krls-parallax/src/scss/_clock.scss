@@ -1,0 +1,25 @@
+.clock {
+  margin-bottom: rem-calc(50);
+  &__title {
+    font-family: $font-pacifico;
+    font-size: rem-calc(36);
+    margin-bottom: rem-calc(6);
+    color: $primary-color;
+  }
+
+  &__text {
+    font-size: rem-calc(20);
+    font-weight: 300;
+  }
+
+  &__wrap {
+    height: rem-calc(120);
+    justify-content: flex-start;
+    display: flex;
+    margin-bottom: rem-calc(5);
+  }
+
+  &__icon {
+    max-height: rem-calc(120);
+  }
+}

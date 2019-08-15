@@ -1,0 +1,31 @@
+.parallax-img {
+  z-index: -3;
+  position: absolute;
+
+  &_animate {
+    z-index: -1;
+    animation: pos 10s infinite ease-in-out;
+
+    &:nth-child(2n) {
+      animation: pos-reverse 10s infinite ease-in-out;
+    }
+  }
+}
+@keyframes pos {
+  from {
+    transform: rotate(0deg) translate(rem-calc(-10)) rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg) translate(rem-calc(-10)) rotate(-360deg);
+  }
+}
+@keyframes pos-reverse {
+  to {
+    transform: rotate(0deg) translate(rem-calc(-10)) rotate(0deg);
+  }
+
+  from {
+    transform: rotate(360deg) translate(rem-calc(-10)) rotate(-360deg);
+  }
+}

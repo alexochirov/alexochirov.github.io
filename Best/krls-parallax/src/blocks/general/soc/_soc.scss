@@ -1,0 +1,14 @@
+.soc {
+  display: inline-block;
+  margin-left: rem-calc(10);
+  margin-bottom: rem-calc(20);
+  margin-right: rem-calc(10);
+  width: rem-calc(40);
+  height: rem-calc(40);
+
+  &:active,
+  &:focus,
+  &:hover {
+    opacity: 0.8;
+  }
+}

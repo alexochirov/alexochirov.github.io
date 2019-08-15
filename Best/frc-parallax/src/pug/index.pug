@@ -1,0 +1,16 @@
+doctype html
+html.no-js(lang='ru')
+  include components/service/_head
+  body
+    include components/shop/_header
+
+
+    include components/mixins/_mixin-step
+    include components/mixins/_mixin-radio
+
+
+    block page
+      include components/common/_cont
+
+    include components/shop/_footer
+    include components/service/_js

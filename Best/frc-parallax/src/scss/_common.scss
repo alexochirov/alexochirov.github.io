@@ -1,0 +1,109 @@
+a {
+  -webkit-transition: color 300ms ease-in-out;
+  -moz-transition: color 300ms ease-in-out;
+  -ms-transition: color 300ms ease-in-out;
+  -o-transition: color 300ms ease-in-out;
+  transition: color 300ms ease-in-out;
+  color: $primary-color;
+  text-decoration: underline;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: scale-color($primary-color, $lightness: -30%);
+    text-decoration: none;
+  }
+}
+
+hr {
+  margin: 0 auto;
+  border-bottom: rem-calc(1) solid $light-gray;
+}
+
+label {
+  line-height: 1.5;
+}
+
+table {
+  margin-bottom: 6 * $global-margin;
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: rem-calc(4);
+}
+
+dl,
+ol,
+p,
+ul {
+  line-height: 1.5;
+  margin-bottom: rem-calc(21);
+}
+
+blockquote {
+  border-left: rem-calc(2) solid $primary-color;
+}
+
+blockquote,
+blockquote p {
+  padding: rem-calc(0 14);
+}
+
+tfoot,
+thead {
+  background: $sky;
+  border: rem-calc(1) solid $sky;
+
+  td,
+  th {
+    font-weight: 500;
+  }
+
+  tr {
+    background: transparent;
+  }
+}
+
+tbody {
+  background: $white;
+  border: rem-calc(1) solid $sky;
+
+  td,
+  th {
+    padding: rem-calc(8 10);
+  }
+
+  tr:nth-child(even) {
+    background: $sky;
+    border-bottom: rem-calc(0);
+  }
+}
+
+[type='text'],
+[type='password'],
+[type='date'],
+[type='datetime'],
+[type='datetime-local'],
+[type='month'],
+[type='week'],
+[type='email'],
+[type='number'],
+[type='search'],
+[type='tel'],
+[type='time'],
+[type='url'],
+[type='color'],
+textarea {
+  box-shadow: none;
+  height: rem-calc(55);
+  background: $white;
+  margin-bottom: rem-calc(24);
+  border-radius: rem-calc(0);
+  font-size: rem-calc(16);
+  border: rem-calc(1) solid #D9ECEB;
+
+  &:active,
+  &:focus,
+  &:hover {
+    box-shadow: none;
+  }
+}

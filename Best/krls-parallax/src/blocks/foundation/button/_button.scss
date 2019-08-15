@@ -1,0 +1,71 @@
+.button {
+  padding: rem-calc(13 30 18);
+  border-radius: rem-calc(31);
+  margin-bottom: rem-calc(20);
+  background: $primary-color;
+  color: $white;
+  font-size: rem-calc(20);
+svg {
+  position: relative;
+  top: rem-calc(5);
+  margin-right: rem-calc(20);
+}
+  &:active,
+  &:focus,
+  &:hover {
+    background: scale-color($primary-color, $lightness: -15%);
+  }
+
+
+
+  &_expanded {
+    display: block;
+    width: 100%;
+    padding-left: rem-calc(8);
+    padding-right: rem-calc(8);
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  &_light-gray {
+    background: $light-gray;
+    color: $black;
+  }
+
+
+  &_hollow {
+    background: none;
+    border: rem-calc(1) solid $primary-color;
+    color: $primary-color;
+
+    &:active,
+    &:focus,
+    &:hover {
+      background: $primary-color;
+      border-color: $primary-color;
+      color: $white;
+    }
+
+    &.button_dropdown {
+      &:after {
+        border-color: $primary-color transparent transparent;
+      }
+
+      &:active,
+      &:focus,
+      &:hover {
+        &:after {
+          border-color: $white transparent transparent;
+        }
+      }
+    }
+  }
+&_warning {
+  background: $warning-color;
+  color: $white;
+}
+  &_secondary {
+    background: $secondary-color;
+color: $primary-color;
+  }
+}

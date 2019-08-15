@@ -1,0 +1,10 @@
+.magazine {
+  margin-bottom: rem-calc(21);
+
+  &__img {
+    margin-bottom: rem-calc(10);
+    width: 100%;
+    height: rem-calc(280);
+    background: $light-gray;
+  }
+}

@@ -1,0 +1,217 @@
+doctype html
+html.no-js(lang='ru')
+  include components/service/_head
+  body
+    include ../blocks/foundation/callout/_callout
+    include ../blocks/foundation/label/_label
+    include ../blocks/foundation/pagination/_pagination
+    include ../blocks/foundation/accordion/_accordion
+    include ../blocks/foundation/button/_button
+    include ../blocks/foundation/slider/_slider
+    include ../blocks/foundation/close-button/_close-button
+    include ../blocks/foundation/breadcrumbs/_breadcrumbs
+    include ../blocks/foundation/badge/_badge
+
+    include ../blocks/general/side/_side
+    include ../blocks/general/step/_step
+    include ../blocks/general/cat/_cat
+    include ../blocks/general/dd/_dd
+    include ../blocks/general/share/_share
+    include ../blocks/general/art/_art
+    include ../blocks/general/partners/_partners
+    include ../blocks/general/promo/_promo
+
+
+
+
+    include components/shop/_header
+
+
+    block page
+
+      .grid-container
+        .grid-x.grid-padding-x.manner
+
+          .large-12.cell.manner__text.small-order-2.large-order-1
+            h2 Боярышника плоды
+            p Это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. Давайте попробуем уложиться в четыре строчки.
+            .limb
+              img(src="./images/5.svg", alt="").js-inl-svg.limb__icon
+              .limb__info Заболевания нервной системы
+            .limb
+              img(src="./images/9.svg", alt="").js-inl-svg.limb__icon
+              .limb__info Заболевания сердечно-сосудистой системы
+            div: a(href="#").button
+              img(src="./images/down-arrow.svg", alt="").js-inl-svg
+              | Скачать инструкцию
+            div: a(href="#").button.button_secondary
+              img(src="./images/map-marker.svg", alt="").js-inl-svg
+              | Где купить
+          .large-12.cell.text-right.small-order-1.large-order-2
+
+            .parallax-img.parallax-img_animate(style="left:calc(50% - 5vw);top:0rem;"): img(src="./i/im2.png", alt="")
+            .parallax-img.parallax-img_animate(style="left:calc(50% + 20vw);top:13rem;"): img(src="./i/im7.png", alt="")
+            .parallax-img(style="left:calc(50% - 8vw);top:-1rem;"): img(src="./i/im3.png", alt="")
+            .parallax-img(style="left:calc(50% + 14vw);top:0rem;"): img(src="./i/im5.png", alt="")
+            .parallax-img(style="right:0;top:24rem;"): img(src="./i/im6.png", alt="")
+
+            .parallax-img(style="left:calc(50% - 4vw);top:15rem;"): img(src="./i/im8.png", alt="")
+            .parallax-img(style="left:calc(50% - 2vw);top:-3rem;"): img(src="./i/im9.png", alt="")
+            .parallax-img(style="right:0;top:0rem;"): img(src="./i/im10.png", alt="")
+            .parallax-img(style="right:0;top:18em;"): img(src="./i/im11.png", alt="")
+
+
+            .manner__wrap
+              img(src="./i/im1.png", alt="")
+
+        h2 Показания к применению
+        .grid-x.grid-padding-x
+          .large-6.cell
+            ul#example-tabs.tabs.vertical(data-tabs='')
+              li.tabs-title.is-active
+                a(href='#panel1') Кардиалгия
+              li.tabs-title
+                a(data-tabs-target='panel2', href='#panel2') Нейро-циркуляторная дистония
+          .large-18.cell
+            .tabs-content(data-tabs-content='example-tabs')
+              #panel1.tabs-panel.is-active
+                .grid-x.grid-padding-x
+                  .large-14.cell
+                    p
+                      | Одно из основных проявлений вегетативной дисфункции, так называемые «боли в сердце», чувство давления, сжатия, парестезии и т. п. в области сердца, или более широко в области левой, а иногда и правой, части грудной клетки. Кардиалгический синдром относится к расстройствам функции сердечно-сосудистой системы с разнообразными клиническими проявлениями, субъективного и объективно-функционального характера, не имеющих при этом органических изменений в кардиоваскулярной системе.
+                  .large-8.large-offset-2.cell
+                    .limb
+                      img(src="./images/9.svg", alt="").js-inl-svg.limb__icon
+                      .limb__info Заболевания сердечно-сосудистой системы
+                    .tabs-panel__help Боли имеют волнообразный характер, длительность боли, как правило, продолжительная, но возможны и кратковременные боли. Также возможны приступообразные боли, длительностью 3-5 минут. 
+              #panel2.tabs-panel
+                .grid-x.grid-padding-x
+                  .large-14.cell
+                    p
+                      | Одно из основных проявлений вегетативной дисфункции, так называемые «боли в сердце», чувство давления, сжатия, парестезии и т. п. в области сердца, или более широко в области левой, а иногда и правой, части грудной клетки. 
+                  .large-8.large-offset-2.cell
+                    .limb
+                      img(src="./images/9.svg", alt="").js-inl-svg.limb__icon
+                      .limb__info Заболевания сердечно-сосудистой системы
+                    .tabs-panel__help Боли имеют волнообразный характер.
+      .cloud
+        .cloud__back: img(src="./images/cloud.png", alt="")
+        .grid-container.cloud__main
+          h2 О растении
+          .grid-x.grid-padding-x
+            .large-6.cell
+              ul#example-tabs2.tabs.vertical(data-tabs='')
+                li.tabs-title.is-active
+                  a(data-tabs-target='panel21',href='#panel21') Описание
+                li.tabs-title
+                  a(data-tabs-target='panel22', href='#panel22') Состав
+                li.tabs-title
+                  a(data-tabs-target='panel23', href='#panel23') Фарм. действие
+            .large-18.cell
+              .tabs-content(data-tabs-content='example-tabs2')
+                #panel21.tabs-panel.is-active
+                  .grid-x.grid-padding-x
+                    .large-14.cell
+                      .knight Боярышник
+                      p
+                        | Cнижает возбудимость центральной нервной системы и сердечной мышцы, обладает избирательным спазмолитическим действием
+                      p
+                        | Cнижает возбудимость центральной нервной системы и сердечной мышцы, обладает избирательным спазмолитическим действием
+                    .large-10.cell.rel
+                      img(src="./i/im22.png", alt="").rel.rel_down
+                      .parallax-img.parallax-img_animate(style="left:3vw;top:0rem;"): img(src="./i/im23.png", alt="")
+                      .grid-x.align-center.grid-padding-x: .large-17.cell
+                        .nib Цвет плодов от желто-оранжевого и буровато-красного до темно-бурого или черного цвета, иногда с белым налетом выкристаллизовавшегося сахара. Запах отсутствует. Вкус сладковатый.
+                #panel22.tabs-panel
+                #panel23.tabs-panel
+                  .grid-x.grid-padding-x
+                    .large-14.cell
+                      p
+                        | Cнижает возбудимость центральной нервной системы и сердечной мышцы, обладает избирательным спазмолитическим действием
+                    .large-10.cell.rel
+                      img(src="./images/xx.png", alt="")
+                      .parallax-img.parallax-img_animate(style="left:0;top:0rem;"): img(src="./i/im20.png", alt="")
+                    .cell.rel
+                      .parallax-img.parallax-img_animate(style="left:0;top:2rem;"): img(src="./i/im21.png", alt="")
+
+      .grid-container
+        h2 Интересные факты
+        .grid-x.grid-padding-x
+          .large-6.cell.rel
+            img(src="./i/tree1.png", alt="")
+            .parallax-img.parallax-img_animate(style="left:0;top:0rem;"): img(src="./i/im24.png", alt="")
+          .large-10.cell.rel
+            .knight Диоскорид
+            p Применение боярышника с лекарственной целью известно со времен Диоскорида (I в. н.э.) как средства лечения сердечных заболеваний, бессонницы, головокружения и одышки.
+          .large-8.cell.rel
+            img(src="./i/im25.png", alt="")
+            .parallax-img(style="left:0;top:17rem;"): img(src="./i/im26.png", alt="")
+
+      .cloud.cloud_top
+        .cloud__back: img(src="./images/gr.svg", alt="")
+        .grid-container.cloud__main
+          .parallax-img.parallax-img_animate(style="right:4vw;top:12rem;"): img(src="./i/im27.png", alt="")
+          h2 Способ применения
+          .grid-x.grid-padding-x
+            .large-6.cell.rel
+              
+              ul#example-tabs3.tabs.vertical(data-tabs='')
+                li.tabs-title.is-active
+                  a(data-tabs-target='panel31',href='#panel31') Фильтр-пакеты
+                li.tabs-title
+                  a(data-tabs-target='panel32', href='#panel32') Насыпная пачка
+
+            .large-18.cell
+              .tabs-content(data-tabs-content='example-tabs3')
+                #panel31.tabs-panel.is-active
+                  .show-for-large.parallax-img.parallax-img_animate(style="left:6vw;top:10rem;"): img(src="./i/im28.png", alt="")
+                  .grid-x.grid-padding-x.align-justify
+                    .cell.clock.large-10
+                      .clock__wrap: img(src="./images/tea-bag.svg", alt="").clock__icon
+                      .clock__title 1 фильтр-пакет
+                      .clock__text поместить в стеклянную или эмалированную посуду
+                    .cell.clock.large-10
+                      .clock__wrap: img(src="./images/icon.svg", alt="").clock__icon
+                      .clock__title залить 100 мл
+                      .clock__text кипятка и накрыть посуду
+                    .cell.clock.large-10
+                      .clock__wrap: img(src="./images/icon2.svg", alt="").clock__icon
+                      .clock__title настоять 15 минут
+                      .clock__text периодически надавливая на пакетик ложкой, затем его отжимают
+                    .cell.clock.large-10
+                      .clock__wrap: img(src="./images/icon3.svg", alt="").clock__icon
+                      .clock__title довести до 100 мл
+                      .clock__text объем полученного настоя кипяченной водой
+                    .cell.clock.large-10
+                      .clock__wrap: img(src="./images/icon4.svg", alt="").clock__icon
+                      .clock__title внутрь по 1/2 стакана
+                      .clock__text за 30 минут до еды
+                    .cell.clock.large-10
+                      .clock__wrap: img(src="./images/icon5.svg", alt="").clock__icon
+                      .clock__title 2-3 раза в день
+                      .clock__text Курс лечения 20-30 дней
+                #panel32.tabs-panel
+                  .show-for-large.parallax-img(style="left:2vw;top:22rem;"): img(src="./i/im29.png", alt="")
+                  .grid-x.grid-padding-x.align-justify
+                    .cell.clock.large-10
+                      .clock__wrap: img(src="./images/sp1.svg", alt="").clock__icon
+                      .clock__title 1 столовая ложка
+                      .clock__text около 6 г помещают в эмалированную посуду
+                    .cell.clock.large-10
+                      .clock__wrap: img(src="./images/sp2.svg", alt="").clock__icon
+                      .clock__title залить 200 мл
+                      .clock__text охлажденной кипяченой воды и закрыть крышкой
+                    .cell.clock.large-10
+                      .clock__wrap: img(src="./images/sp3.svg", alt="").clock__icon
+                      .clock__title нагревать 15 минут
+                      .clock__text на кипящей водяной бане
+                    .cell.clock.large-10
+                      .clock__wrap: img(src="./images/sp4.svg", alt="").clock__icon
+                      .clock__title охладить 45 минут
+                      .clock__text при комнатной температуре. Объем настоя довести кипяченой водой до 200 мл
+                  
+      .grid-container
+        h2 Где купить
+
+    include components/shop/_footer
+    include components/service/_js
