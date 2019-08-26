@@ -1,0 +1,101 @@
+.helmet {
+  background: url($imagesPath +"/mailing-bgr-1.png");
+  width: 100%;
+  margin-bottom: 20px;
+
+  &__right {
+    text-align: right;
+  }
+
+  &__focus {
+    text-align: right;
+  }
+
+  &__mouse {
+    padding-top: 37px;
+    padding-bottom: 37px;
+  }
+
+  &__title {
+    font-weight: 600;
+    color: #000;
+    font-size: 16px;
+    display: block;
+    text-align: center;
+  }
+
+  &__tel {
+    font-size: 17px;
+    font-weight: 700;
+    color: $white !important;
+    text-decoration: none !important;
+    display: block;
+
+    span {
+      color: $white !important;
+      text-decoration: none !important;
+    }
+  }
+
+  &__helper {
+    display: inline-block;
+
+  }
+
+
+
+  &__wig {
+    display: inline-block;
+    width: 160px;
+  }
+
+  &__td {
+    padding: 18px 10px 22px 15px;
+  }
+
+  &__detective {
+    background: #2a62ab;
+    width: 100%;
+    .large-5.columns {
+      padding-left: 0;
+      padding-right:0;
+    }
+  }
+
+  &__header {
+
+    padding-bottom: 38px;
+    padding-top: 20px;
+  }
+
+  &__info {
+    td {
+      padding-top: 22px;
+      padding-left: 25px;
+    }
+  }
+
+  &__detail {
+    color: #FFFD65;
+    display: inline-block;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 15px;text-align: left;
+    line-height: 1.2;
+  }
+
+  &__auto {
+    display: inline-block;
+
+    height: 105px;
+  }
+
+  &__wrap {
+    display: inline-block;
+  }
+
+  &__logo {
+    width: 122px;
+    height: 65px;
+  }
+}

@@ -1,0 +1,64 @@
+.content {
+width:171px;
+padding-right: 3px;
+padding-left: 3px;
+
+  &__img {
+    width: 171px;
+    height: 184px;
+  }
+
+  &__price {
+    font-size: 18px;
+    font-weight: 700;
+    padding-top: 3px;
+    padding-bottom: 0px;
+    line-height: 1.3;
+  }
+
+  &__cat {
+    padding-bottom: 7px;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  &__name {
+    height: 60px;
+    overflow:hidden;
+    padding-bottom: 4px;
+  }
+
+  &__wrap {
+    display: block;
+  }
+
+  &__td {
+    padding-bottom: 10px;
+  }
+
+  &__desc {
+    text-align: right;
+    padding-left: 10px;
+    width: 25px;
+    padding-right: 13px;
+
+    height: 25px;
+  }
+
+  &__art {
+    font-size: 11px;
+    color: #A3A3A4;
+    font-weight: 400;
+  }
+
+  &__title {
+    font-size: 12px;
+    font-weight: 400;
+    display: block;
+
+    text-decoration: none;
+    line-height: 1.3;
+  }
+}
