@@ -1,15 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./style.css";
+import "./style.scss";
 import * as serviceWorker from "./serviceWorker";
 
-function Square(props) {
-  return (
-    <button className="square" onClick={props.onClick}>
-      {" "}
-      {props.value}{" "}
-    </button>
-  );
+class Square extends React.Component {
+  render() {
+    return (
+      <button
+        onClick={this.props.onClick}
+        className={this.props.winner ? "js-win game__square" : "game__square"}
+      >
+        {" "}
+        {this.props.value}{" "}
+      </button>
+    );
+  }
 }
 
 class Board extends React.Component {
@@ -17,12 +22,13 @@ class Board extends React.Component {
     return (
       <Square
         key={i}
-        className={winner ? "js-win" : null}
+        winner={winner}
         value={this.props.squares[i]}
         onClick={() => this.props.onClick(i)}
       />
     );
   }
+
   tableLoop = () => {
     let table = [];
 
@@ -33,17 +39,18 @@ class Board extends React.Component {
       for (let j = 0; j < 3; j++) {
         const currIndexSquare = i * 3 + j;
         let winner;
-        for (let z = 0; z < this.props.winningCombination; z++) {
-          if (this.props.winningCombination[z] === currIndexSquare) {
-            winner = true;
+        if (this.props.winningCombination) {
+          for (let z = 0; z < this.props.winningCombination.length; z++) {
+            if (this.props.winningCombination[z] === currIndexSquare) {
+              winner = true;
+            }
           }
         }
-        console.log(this.props.winningCombination);
         children.push(this.renderSquare(currIndexSquare, winner));
       }
       //Create the parent and add the children
       table.push(
-        <div key={i} className="board-row">
+        <div key={i} className="game__row">
           {" "}
           {children}{" "}
         </div>
@@ -66,7 +73,7 @@ class Sort extends React.Component {
   }
   render() {
     return (
-      <div>
+      <div className="game__sort">
         <label htmlFor="sort">Ascend</label>
         <input onChange={this.handleChange} type="checkbox" id="sort" />
       </div>
@@ -147,7 +154,7 @@ class Game extends React.Component {
       <li key={move}>
         <div> {descOfPosClick} </div>{" "}
         <button
-          className={this.state.isButtonActive === move ? "js-active" : null}
+          className={this.state.isButtonActive === move ? "game__button js-active" : "game__button"}
           onClick={() => this.jumpTo(move)}
         >
           {" "}
@@ -162,7 +169,15 @@ class Game extends React.Component {
     const arrOfPositionClick = this.state.arrOfPositionClick;
     const current = history[this.state.stepNumber];
     const winner = calculateWinner(current.squares);
-    console.log(current.squares);
+
+    let isEndOfTheGame = false;
+    for (let z = 0; z < current.squares.length; z++) {
+      if (current.squares[z] === null) {
+        isEndOfTheGame = false;
+        break;
+      }
+      isEndOfTheGame = true;
+    }
     let moves = [];
 
     if (this.state.isSortAscend) {
@@ -186,23 +201,29 @@ class Game extends React.Component {
     }
 
     let status;
+    let winningCombination;
     if (winner) {
-      status = "Winner: " + winner;
+      status = "Winner: " + winner[1];
+      winningCombination = winner[0];
     } else {
-      status = "Next player: " + (this.state.xIsNext ? "X" : "O");
+      if (isEndOfTheGame) {
+        status = "Tie. End of the game";
+      } else {
+        status = "Next player: " + (this.state.xIsNext ? "X" : "O");
+      }
     }
 
     return (
       <div className="game">
-        <Sort onSortChange={i => this.handleSort()} />
-        <div className="game-board">
+        <div className="game__board">
+          <Sort onSortChange={i => this.handleSort()} />
           <Board
-            winningCombination={this.state.winningCombination}
+            winningCombination={winningCombination}
             squares={current.squares}
             onClick={i => this.handleClick(i)}
           />{" "}
         </div>{" "}
-        <div className="game-info">
+        <div>
           <div> {status} </div> <ol> {moves} </ol>{" "}
         </div>{" "}
       </div>
@@ -228,8 +249,8 @@ function calculateWinner(squares) {
   for (let i = 0; i < lines.length; i++) {
     const [a, b, c] = lines[i];
     if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
-      console.log(lines[i]);
-      return squares[a];
+      let answer = [lines[i], squares[a]];
+      return answer;
     }
   }
   return null;
