@@ -1,13 +1,17 @@
 body {
   font: 14px "Century Gothic", Futura, sans-serif;
 }
-
+* {
+  box-sizing: border-box;
+}
 .calc {
   border: 1px solid #000;
   width: 320px;
-
+display:flex; flex-flow: row wrap;
   &__main {
-    width: 100%;
+    width: 100%;font-size: 20px;
+    text-align: right;
+    padding: 10px 30px;
     height: 58px;
   }
 
