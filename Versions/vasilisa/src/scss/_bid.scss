@@ -1,7 +1,0 @@
-.bid {
-  @include breakpoint(small only) {
-    padding-bottom: rem-calc(10);
-    margin-bottom: rem-calc(0);
-    border-bottom: rem-calc(4) solid #d8d8d8;
-  }
-}

@@ -1,6 +1,0 @@
-.inner-header {
-    @include breakpoint(medium down) {
-    font-size: rem-calc(18); }
-      @include breakpoint(small only) {
-      font-size: rem-calc(16); }
-}

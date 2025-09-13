@@ -1,7 +1,0 @@
-.wear {
-  @include breakpoint(small only) {
-    padding: rem-calc(0);
-    margin-bottom: rem-calc(0);
-    border: rem-calc(0);
-  }
-}

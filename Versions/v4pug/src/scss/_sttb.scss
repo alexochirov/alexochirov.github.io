@@ -1,9 +1,0 @@
-.sttb{
-  display: none;
-  @media (min-width: 1065px) {
-    display: table;
-  }
-  & tbody {
-    background-color: transparent !important;
-  }
-}
